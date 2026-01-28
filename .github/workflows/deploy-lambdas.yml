@@ -1,0 +1,95 @@
+name: Deploy Lambdas
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/lambdas/**"
+      - "infra/**"
+      - ".github/workflows/deploy-lambdas.yml"
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Environment to deploy to"
+        required: true
+        default: "dev"
+        type: choice
+        options:
+          - dev
+          - staging
+          - prod
+
+concurrency:
+  group: deploy-lambdas-${{ github.event.inputs.environment || 'dev' }}
+  cancel-in-progress: false
+
+env:
+  AWS_REGION: us-east-1
+
+jobs:
+  deploy:
+    name: Deploy to AWS
+    runs-on: ubuntu-latest
+    # Only run on main branch
+    if: github.ref == 'refs/heads/main'
+
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install AWS SAM CLI
+        run: pip install aws-sam-cli
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Determine environment
+        id: env
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "environment=${{ github.event.inputs.environment }}" >> $GITHUB_OUTPUT
+          else
+            echo "environment=dev" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build SAM application
+        working-directory: infra
+        run: sam build --parallel
+
+      - name: Deploy SAM application
+        working-directory: infra
+        run: |
+          ENV="${{ steps.env.outputs.environment }}"
+
+          if [ "$ENV" == "dev" ]; then
+            sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
+          else
+            sam deploy --config-env "$ENV" --no-confirm-changeset --no-fail-on-empty-changeset
+          fi
+
+      - name: Output Stack Info
+        working-directory: infra
+        run: |
+          ENV="${{ steps.env.outputs.environment }}"
+          STACK_NAME="attic-${ENV}"
+
+          echo "Deployment complete for stack: ${STACK_NAME}"
+          echo ""
+          echo "Stack outputs:"
+          aws cloudformation describe-stacks \
+            --stack-name "$STACK_NAME" \
+            --query 'Stacks[0].Outputs' \
+            --output table || echo "Could not retrieve stack outputs"
