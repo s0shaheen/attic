@@ -1,0 +1,42 @@
+name: Deploy Backend
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/backend/**"
+      - ".github/workflows/deploy-backend.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-backend
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy to Render
+    runs-on: ubuntu-latest
+    # Only run on main branch
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Trigger Render Deploy
+        run: |
+          if [ -z "${{ secrets.RENDER_DEPLOY_HOOK_URL }}" ]; then
+            echo "RENDER_DEPLOY_HOOK_URL secret is not set."
+            echo "Render auto-deploys from GitHub, so this is optional."
+            echo "To enable manual deploys, add the deploy hook URL as a secret."
+            exit 0
+          fi
+
+          curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
+          echo "Deploy triggered successfully"
+
+      - name: Deployment Note
+        run: |
+          echo "Backend deployment to Render has been triggered."
+          echo ""
+          echo "If RENDER_DEPLOY_HOOK_URL is not configured, Render will"
+          echo "auto-deploy when it detects changes on the main branch."
+          echo ""
+          echo "Monitor deployment at: https://dashboard.render.com"

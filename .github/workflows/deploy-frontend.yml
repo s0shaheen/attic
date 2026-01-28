@@ -1,0 +1,49 @@
+name: Deploy Frontend
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/frontend/**"
+      - ".github/workflows/deploy-frontend.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-frontend
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy to Vercel
+    runs-on: ubuntu-latest
+    # Only run on main branch
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Deployment Note
+        run: |
+          echo "Frontend deployment to Vercel."
+          echo ""
+          echo "Vercel automatically deploys from GitHub when changes are"
+          echo "pushed to the main branch. No manual action is required."
+          echo ""
+          echo "This workflow serves as documentation and can be extended"
+          echo "to add pre-deployment checks or notifications."
+          echo ""
+          echo "Monitor deployments at: https://vercel.com/dashboard"
+
+      # Optional: Add Vercel CLI deployment if you want more control
+      # Uncomment and configure if needed:
+      #
+      # - name: Checkout code
+      #   uses: actions/checkout@v4
+      #
+      # - name: Install Vercel CLI
+      #   run: npm install -g vercel
+      #
+      # - name: Deploy to Vercel
+      #   run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
+      #   working-directory: src/frontend
+      #   env:
+      #     VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      #     VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
