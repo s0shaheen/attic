@@ -1,0 +1,83 @@
+# Attic Local Development Environment
+# Docker Compose configuration for local development
+#
+# Services:
+# - localstack: AWS services emulation (S3, SQS, Step Functions, Lambda)
+# - backend: FastAPI backend with hot-reload
+#
+# Supabase runs separately via `supabase start`
+#
+# Usage:
+#   docker-compose up -d
+#   docker-compose logs -f
+#   docker-compose down
+
+services:
+  localstack:
+    image: localstack/localstack:3.0
+    container_name: attic-localstack
+    ports:
+      - "4566:4566"           # LocalStack Gateway
+      - "4510-4559:4510-4559" # External service ports
+    environment:
+      - SERVICES=s3,sqs,stepfunctions,lambda,iam,logs
+      - DEBUG=${DEBUG:-0}
+      - PERSISTENCE=1
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - LAMBDA_EXECUTOR=docker
+      - LAMBDA_DOCKER_NETWORK=attic-network
+    volumes:
+      - "./.docker/localstack:/etc/localstack/init/ready.d"
+      - "localstack-data:/var/lib/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    networks:
+      - attic-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4566/_localstack/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  backend:
+    build:
+      context: .
+      dockerfile: .docker/backend/Dockerfile.dev
+    container_name: attic-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - "./src/backend:/app"
+    environment:
+      # Supabase connection (via host machine)
+      - DATABASE_URL=postgresql://postgres:postgres@host.docker.internal:54322/postgres
+      - SUPABASE_URL=http://host.docker.internal:54321
+      - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY:-}
+      - SUPABASE_SERVICE_KEY=${SUPABASE_SERVICE_KEY:-}
+      # LocalStack AWS endpoints
+      - AWS_ENDPOINT_URL=http://localstack:4566
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+      - AWS_DEFAULT_REGION=us-east-1
+      # Application settings
+      - ENVIRONMENT=local
+      - DEBUG=true
+      - LOG_LEVEL=DEBUG
+      # Temp bucket name
+      - TEMP_BUCKET=attic-temp-media
+    depends_on:
+      localstack:
+        condition: service_healthy
+    networks:
+      - attic-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+networks:
+  attic-network:
+    name: attic-network
+    driver: bridge
+
+volumes:
+  localstack-data:
+    name: attic-localstack-data

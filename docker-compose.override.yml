@@ -1,0 +1,21 @@
+# Attic Local Development Overrides
+# This file is automatically loaded by docker-compose
+# Use for local development customizations
+#
+# This file is gitignored by default - add your local overrides here
+
+services:
+  backend:
+    # Increase debug output in development
+    environment:
+      - DEBUG=true
+      - LOG_LEVEL=DEBUG
+    # Mount additional local config if needed
+    # volumes:
+    #   - "./.env.local:/app/.env.local:ro"
+
+  localstack:
+    environment:
+      - DEBUG=1
+      # Enable verbose logging for debugging
+      - LS_LOG=trace
