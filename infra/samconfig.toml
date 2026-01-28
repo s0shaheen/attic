@@ -1,0 +1,48 @@
+# SAM CLI configuration for Attic infrastructure deployment
+version = 0.1
+
+[default]
+[default.global.parameters]
+stack_name = "attic-dev"
+
+[default.build.parameters]
+debug = true
+parallel = true
+
+[default.validate.parameters]
+lint = true
+
+[default.deploy.parameters]
+stack_name = "attic-dev"
+resolve_s3 = true
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM CAPABILITY_NAMED_IAM"
+parameter_overrides = "Environment=dev"
+confirm_changeset = true
+disable_rollback = false
+
+[default.delete.parameters]
+stack_name = "attic-dev"
+region = "us-east-1"
+
+# Staging environment
+[staging]
+[staging.deploy.parameters]
+stack_name = "attic-staging"
+resolve_s3 = true
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM CAPABILITY_NAMED_IAM"
+parameter_overrides = "Environment=staging"
+confirm_changeset = true
+disable_rollback = false
+
+# Production environment
+[prod]
+[prod.deploy.parameters]
+stack_name = "attic-prod"
+resolve_s3 = true
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM CAPABILITY_NAMED_IAM"
+parameter_overrides = "Environment=prod"
+confirm_changeset = true
+disable_rollback = false
