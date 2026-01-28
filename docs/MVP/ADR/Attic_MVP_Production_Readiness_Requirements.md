@@ -1,4 +1,4 @@
-# ADR-000X: Define “Production-Ready MVP” Ship Gate for Attic
+# ADR-0002: Define “Production-Ready MVP” Ship Gate for Attic
 
 ## Status
 Accepted — 2026-01-25

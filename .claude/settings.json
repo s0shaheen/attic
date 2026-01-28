@@ -1,0 +1,44 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pytest*)",
+      "Bash(ruff*)",
+      "Bash(npm test*)",
+      "Bash(npm run*)",
+      "Bash(alembic*)",
+      "Bash(supabase*)",
+      "Bash(sam local*)",
+      "Bash(git checkout*)",
+      "Bash(git branch*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(pip install*)",
+      "Bash(npm install*)",
+      "Bash(mkdir*)",
+      "Bash(touch*)",
+      "Bash(cat*)",
+      "Bash(ls*)",
+      "Bash(cd*)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)*",
+      "Bash(*--force*delete*)",
+      "Bash(git push --force*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/hooks/post-edit-lint.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

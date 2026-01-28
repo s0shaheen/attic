@@ -1,4 +1,4 @@
-# Attic - Plug-and-Play Tool Recommendations
+# ADR-0001: Plug-and-Play Tool Recommendations
 
 **Analysis Date:** 2026-01-23  
 **Purpose:** Replace custom implementations with battle-tested tools/libraries
