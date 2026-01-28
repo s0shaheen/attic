@@ -78,7 +78,7 @@ Sets up the foundational architecture for both backend and frontend.
 | 0.6 | DONE | Yes | [0-0.6.md](specs/0-0.6.md) | 0.5 |
 | 0.7 | DONE | Yes | [0-0.7.md](specs/0-0.7.md) | 0.3, 0.5 |
 | 0.8 | DONE | Yes | [0-0.8.md](specs/0-0.8.md) | None |
-| 0.9 | SPEC_READY | - | [0-0.9.md](specs/0-0.9.md) | 0.3-0.7 |
+| 0.9 | DONE | Yes | [0-0.9.md](specs/0-0.9.md) | 0.3-0.7 |
 
 **Dependencies:** None (foundational)
 
