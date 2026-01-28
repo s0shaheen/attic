@@ -223,6 +223,36 @@ For each wave, for each task:
    **If dependency not ready:**
    - Skip task, it will be picked up in next run
 
+### Phase 3.5: Merge Completed Tasks (After Each Wave)
+
+After all tasks in a wave complete (or are blocked/skipped):
+
+1. **Collect completed branches for this wave**
+   ```
+   completed_branches = [task.branch for task in wave if task.status == DONE]
+   ```
+
+2. **Merge each completed branch to main**
+   ```bash
+   git checkout main
+   git pull origin main 2>/dev/null || true
+
+   for branch in completed_branches:
+       git merge {branch} --no-ff -m "Merge {task_id}: {description}"
+       if merge_failed:
+           git merge --abort
+           mark task as "Merge Conflict"
+           continue
+       git branch -d {branch}
+   ```
+
+3. **Update tracking after merges**
+   - Spec files: Set `**Merged**: Yes (YYYY-MM-DD)`
+   - Dev Guide: Set Merged column to `Yes`
+   - Commit tracking updates: `git commit -m "docs: update merge status for wave N"`
+
+4. **Proceed to next wave** (which can now use merged code)
+
 ### Phase 4: Summary Report
 
 ```
@@ -246,12 +276,15 @@ Skipped: 1 task
     Reason: Depends on blocked task 0.4
 
 ───────────────────────────────────────────────────────────
-Branches created:
-  - feature/0-0.1-backend-scaffolding
-  - feature/0-0.2-frontend-scaffolding
-  - feature/0-0.3-supabase-setup
-  - feature/0-0.5-aws-infrastructure
-  - feature/0-0.6-cicd-pipeline
+Merged to main:
+  ✓ feature/0-0.1-backend-scaffolding
+  ✓ feature/0-0.2-frontend-scaffolding
+  ✓ feature/0-0.3-supabase-setup
+  ✓ feature/0-0.5-aws-infrastructure
+  ✓ feature/0-0.6-cicd-pipeline
+
+Merge conflicts (manual resolution needed):
+  ✗ {none or list branches with conflicts}
 
 Next steps:
   1. Fix blocker for 0.4 (check Supabase credentials)
