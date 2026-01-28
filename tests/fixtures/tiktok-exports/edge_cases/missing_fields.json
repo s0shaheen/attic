@@ -1,0 +1,21 @@
+{
+  "Comment": {
+    "Comments": {
+      "App": 1
+    }
+  },
+  "Likes and Favorites": {
+    "Like List": {
+      "ItemFavoriteList": [
+        {
+          "link": "https://www.tiktokv.com/share/video/123"
+        }
+      ]
+    }
+  },
+  "Your Activity": {
+    "Login History": {
+      "LoginHistoryList": []
+    }
+  }
+}

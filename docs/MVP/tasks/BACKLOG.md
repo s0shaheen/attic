@@ -53,7 +53,7 @@ Items that have been converted to specs. Kept for reference.
 
 | ID | Title | Became Task | Completed |
 |----|-------|-------------|-----------|
-| | | | |
+| B-001 | TikTok Test Fixture Strategy | Implemented directly (no spec) | 2026-01-28 |
 
 ---
 
@@ -78,4 +78,4 @@ Items that have been converted to specs. Kept for reference.
 
 ## Current ID Counter
 
-**Next Available ID:** B-001
+**Next Available ID:** B-002

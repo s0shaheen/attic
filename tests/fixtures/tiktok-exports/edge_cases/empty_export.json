@@ -1,0 +1,128 @@
+{
+  "Comment": {
+    "Comments": {
+      "App": 1,
+      "CommentsList": []
+    }
+  },
+  "Direct Message": {
+    "Direct Messages": {
+      "ChatHistory": {}
+    }
+  },
+  "Income+ Wallet": {
+    "Transaction History": {
+      "TransactionList": []
+    }
+  },
+  "Likes and Favorites": {
+    "Favorite Collection": {},
+    "Favorite Effects": {
+      "FavoriteEffectsList": []
+    },
+    "Favorite Hashtags": {
+      "FavoriteHashtagList": []
+    },
+    "Favorite Location": {},
+    "Favorite Sounds": {
+      "FavoriteSoundList": []
+    },
+    "Favorite Videos": {
+      "FavoriteVideoList": []
+    },
+    "Like List": {
+      "ItemFavoriteList": []
+    }
+  },
+  "Location Review": {
+    "Location Reviews": {
+      "LocationReviewList": []
+    }
+  },
+  "Post": {
+    "Posts": {
+      "PostList": []
+    },
+    "Recently Deleted Posts": {
+      "DeletedPostList": []
+    }
+  },
+  "Profile And Settings": {
+    "Autofill": {
+      "PhoneNumber": "",
+      "Email": "",
+      "FirstName": "",
+      "LastName": "",
+      "Address": "",
+      "ZipCode": "",
+      "Unit": "",
+      "City": "",
+      "State": "",
+      "Country": ""
+    },
+    "Block List": {
+      "BlockList": []
+    },
+    "Follower": {
+      "FollowerList": []
+    },
+    "Following": {
+      "FollowingList": []
+    },
+    "Profile Info": {
+      "App": 1,
+      "ProfileMap": {
+        "PlatformInfo": [],
+        "bioDescription": "",
+        "birthDate": "",
+        "emailAddress": "",
+        "likesReceived": "0",
+        "profilePhoto": "",
+        "profileVideo": "",
+        "telephoneNumber": "",
+        "userName": ""
+      }
+    },
+    "Settings": {}
+  },
+  "TikTok Live": {
+    "Go Live History": {
+      "GoLiveList": []
+    },
+    "Go Live Settings": {},
+    "Watch Live History": {
+      "WatchLiveList": []
+    },
+    "Watch Live Settings": {}
+  },
+  "TikTok Shop": {
+    "Communication With Shops": {},
+    "Current Payment Information": {},
+    "Customer Support History": {},
+    "Order Dispute History": {},
+    "Order History": {}
+  },
+  "Your Activity": {
+    "Ad Interests": {
+      "AdInterestList": []
+    },
+    "Instant Form Ads Responses": {},
+    "Login History": {
+      "LoginHistoryList": []
+    },
+    "Off TikTok Activity": {},
+    "Purchases": {
+      "PurchaseList": []
+    },
+    "Searches": {
+      "SearchList": []
+    },
+    "Share History": {
+      "ShareList": []
+    },
+    "Status": {},
+    "Watch History": {
+      "VideoList": []
+    }
+  }
+}

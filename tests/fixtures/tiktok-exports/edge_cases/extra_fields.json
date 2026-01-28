@@ -1,0 +1,49 @@
+{
+  "Comment": {
+    "Comments": {
+      "App": 1,
+      "CommentsList": [
+        {
+          "date": "2024-01-01 12:00:00",
+          "comment": "Test comment",
+          "photo": "N/A",
+          "url": "",
+          "unknown_field": "should be ignored",
+          "new_feature_data": {
+            "nested": "data"
+          }
+        }
+      ],
+      "NewMetadataField": "v2.0"
+    }
+  },
+  "Likes and Favorites": {
+    "Like List": {
+      "ItemFavoriteList": [
+        {
+          "date": "2024-01-01 12:00:00",
+          "link": "https://example.com/video1",
+          "engagement_score": 0.95,
+          "ai_category": "entertainment"
+        }
+      ]
+    },
+    "New Category": {
+      "items": []
+    }
+  },
+  "Profile And Settings": {
+    "Profile Info": {
+      "App": 1,
+      "ProfileMap": {
+        "userName": "test_user",
+        "bioDescription": "Test bio",
+        "verificationStatus": "verified",
+        "creatorTier": "gold"
+      }
+    }
+  },
+  "New Top Level Section": {
+    "data": []
+  }
+}

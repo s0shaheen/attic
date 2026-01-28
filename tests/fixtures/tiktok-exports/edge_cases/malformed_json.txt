@@ -1,0 +1,15 @@
+{
+    "Comment": {
+        "Comments": {
+            "CommentsList": [
+                {"date": "2024-01-01", "comment": "unclosed string,
+            ]
+        }
+    },
+    "Likes and Favorites": {
+        "Like List": {
+            // This is not valid JSON - comments aren't allowed
+            "items": [1, 2, 3,]  // trailing comma
+        }
+    }
+    // Missing closing brace

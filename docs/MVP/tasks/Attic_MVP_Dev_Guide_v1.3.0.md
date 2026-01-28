@@ -97,6 +97,17 @@ Implements user authentication via Supabase Auth with Google OAuth.
 | 1.5 | Sign out functionality | Session cleanup, token invalidation |
 | 1.6 | Account deletion flow | GDPR-compliant account and data deletion |
 
+### Epic 1 Status
+
+| Task | Status | Merged | Spec | Blocked By |
+|------|--------|--------|------|------------|
+| 1.1 | NOT_STARTED | No | [1-1.1.md](specs/1-1.1.md) | 0.3 |
+| 1.2 | NOT_STARTED | No | [1-1.2.md](specs/1-1.2.md) | 1.1, 0.2 |
+| 1.3 | NOT_STARTED | No | [1-1.3.md](specs/1-1.3.md) | 0.1, 1.1 |
+| 1.4 | NOT_STARTED | No | [1-1.4.md](specs/1-1.4.md) | 1.1, 1.2, 0.2 |
+| 1.5 | NOT_STARTED | No | [1-1.5.md](specs/1-1.5.md) | 1.2, 1.4 |
+| 1.6 | NOT_STARTED | No | [1-1.6.md](specs/1-1.6.md) | 1.3, 1.5, 0.4 |
+
 **Dependencies:** Epic 0
 
 ---
@@ -351,6 +362,83 @@ The template has 12 sections (0-11) plus Progress Tracking:
 | **TanStack Query over fetch/SWR** | Caching, pagination helpers, optimistic updates |
 | **Stripe Billing over custom payments** | Industry standard, customer portal, dunning handling |
 | **Sentry + PostHog over multiple tools** | Consolidated observability, sufficient for MVP scale |
+
+---
+
+## Test Data Strategy
+
+TikTok export fixtures for testing the processing pipeline. All fixtures are derived from a real export file with PII anonymized.
+
+### Fixture Locations
+
+| Directory | Git Status | Description |
+|-----------|------------|-------------|
+| `tests/fixtures/tiktok-exports/real/` | **GITIGNORED** | Original export with PII (local only) |
+| `tests/fixtures/tiktok-exports/anonymized/` | Tracked | Full export with PII replaced |
+| `tests/fixtures/tiktok-exports/slices/` | Tracked | Category-specific subsets |
+| `tests/fixtures/tiktok-exports/edge_cases/` | Tracked | Error handling test data |
+| `tests/fixtures/tiktok-exports/synthetic/` | Tracked | Multi-user synthetic data |
+
+### Available Pytest Fixtures
+
+| Fixture | Scope | Description | Use Case |
+|---------|-------|-------------|----------|
+| `tiktok_export_full_anonymized` | session | Complete export (~6K likes, ~16K watch history) | Integration tests, search tests |
+| `tiktok_export_minimal` | session | 1-5 items per category | Fast unit tests |
+| `tiktok_export_likes_only` | session | Just Likes and Favorites section | URL extraction, like processing |
+| `tiktok_export_favorites_only` | session | Just Favorite Videos | Favorites-specific tests |
+| `tiktok_export_watch_history_only` | session | Just Watch History (~16K items) | Performance tests, pagination |
+| `tiktok_export_comments_only` | session | Just Comments section | Text processing tests |
+| `tiktok_export_user_alice` | session | Synthetic power user (500 likes, 2K watch) | Multi-user scenarios |
+| `tiktok_export_user_bob` | session | Synthetic casual user (50 likes) | Multi-user scenarios |
+| `tiktok_export_empty` | function | Valid structure, empty arrays | Empty state handling |
+| `tiktok_export_missing_fields` | function | Partial/incomplete export | Graceful degradation |
+| `tiktok_export_null_values` | function | Null values throughout | Null handling |
+| `tiktok_export_extra_fields` | function | Unknown fields | Forward compatibility |
+| `tiktok_export_builder` | function | Factory for custom exports | Custom test data |
+| `tiktok_liked_video_factory` | function | Factory for like entries | Individual item tests |
+| `tiktok_comment_factory` | function | Factory for comment entries | Individual item tests |
+
+### Usage in Tests
+
+```python
+def test_parse_likes(tiktok_export_minimal):
+    likes = tiktok_export_minimal["Likes and Favorites"]["Like List"]
+    assert len(likes["ItemFavoriteList"]) <= 5
+
+def test_empty_export_handling(tiktok_export_empty):
+    result = parse_export(tiktok_export_empty)
+    assert result.total_items == 0
+
+def test_custom_data(tiktok_export_builder):
+    export = tiktok_export_builder(likes_count=10, comments_count=5)
+    assert len(export["Likes and Favorites"]["Like List"]["ItemFavoriteList"]) == 10
+```
+
+### Regenerating Fixtures
+
+If the source export changes or you need to update fixtures:
+
+```bash
+# 1. Anonymize the real export
+python tests/tools/anonymize_export.py
+
+# 2. Generate slices and edge cases
+python tests/tools/slice_export.py
+
+# 3. Generate synthetic users
+python tests/tools/generate_synthetic.py
+```
+
+### Task Fixture Requirements
+
+| Task | Recommended Fixtures |
+|------|---------------------|
+| 2.4 TikTok export parser | All fixtures |
+| 3.2 Lambda: PARSE_EXPORT | `minimal`, `empty`, edge cases |
+| 3.3 Lambda: APIFY_ENRICH | `likes_only` (needs URLs) |
+| 6.1 Keyword search API | `full_anonymized` |
+| 6.2 Semantic search API | `full_anonymized` |
 
 ---
 
