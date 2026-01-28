@@ -1,0 +1,1 @@
+"""Attic backend application package."""

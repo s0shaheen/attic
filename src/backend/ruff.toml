@@ -1,0 +1,13 @@
+# Ruff configuration for Attic backend
+# See: https://docs.astral.sh/ruff/configuration/
+
+line-length = 100
+target-version = "py312"
+
+[lint]
+select = ["E", "F", "I", "UP"]
+ignore = []
+
+[format]
+quote-style = "double"
+indent-style = "space"
