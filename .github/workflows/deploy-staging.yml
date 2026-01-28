@@ -1,0 +1,137 @@
+name: Deploy to Staging
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      skip_smoke_tests:
+        description: 'Skip smoke tests after deployment'
+        required: false
+        default: 'false'
+        type: boolean
+
+# Only run one staging deployment at a time
+concurrency:
+  group: staging-deployment
+  cancel-in-progress: true
+
+env:
+  AWS_REGION: us-east-1
+  ENVIRONMENT: staging
+
+jobs:
+  deploy-lambdas:
+    name: Deploy AWS Lambda Functions
+    runs-on: ubuntu-latest
+    environment: staging
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Setup AWS SAM CLI
+        uses: aws-actions/setup-sam@v2
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Build SAM application
+        run: sam build --use-container
+        working-directory: infra
+
+      - name: Deploy to staging
+        run: sam deploy --config-file staging/samconfig.toml --no-confirm-changeset --no-fail-on-empty-changeset
+        working-directory: infra
+
+  deploy-backend:
+    name: Deploy Backend to Render
+    runs-on: ubuntu-latest
+    environment: staging
+
+    steps:
+      - name: Trigger Render deployment
+        # Render auto-deploys on push, but we can trigger manually if needed
+        # Skip if RENDER_STAGING_DEPLOY_HOOK_URL is not set
+        if: ${{ secrets.RENDER_STAGING_DEPLOY_HOOK_URL != '' }}
+        run: |
+          curl -X POST "${{ secrets.RENDER_STAGING_DEPLOY_HOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            --fail --silent --show-error
+
+      - name: Wait for Render deployment
+        # Give Render time to start the deployment
+        run: sleep 60
+
+  smoke-tests:
+    name: Run Smoke Tests
+    needs: [deploy-lambdas, deploy-backend]
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.skip_smoke_tests != 'true' }}
+    environment: staging
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+      - name: Wait for services to stabilize
+        run: sleep 30
+
+      - name: Run smoke tests
+        env:
+          STAGING_BACKEND_URL: ${{ secrets.STAGING_BACKEND_URL }}
+          STAGING_FRONTEND_URL: ${{ secrets.STAGING_FRONTEND_URL }}
+          STAGING_SUPABASE_URL: ${{ secrets.STAGING_SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.STAGING_SUPABASE_ANON_KEY }}
+          TEST_USER_EMAIL: ${{ secrets.STAGING_TEST_USER_EMAIL }}
+          TEST_USER_PASSWORD: ${{ secrets.STAGING_TEST_USER_PASSWORD }}
+          VERBOSE: 'true'
+        run: |
+          chmod +x scripts/smoke-tests/*.sh
+          ./scripts/smoke-tests/run.sh --env staging
+
+  notify-success:
+    name: Notify Success
+    needs: [smoke-tests]
+    runs-on: ubuntu-latest
+    if: success()
+
+    steps:
+      - name: Deployment successful
+        run: |
+          echo "::notice::Staging deployment successful!"
+          echo "Backend: ${{ secrets.STAGING_BACKEND_URL }}"
+          echo "Frontend: ${{ secrets.STAGING_FRONTEND_URL }}"
+
+  notify-failure:
+    name: Notify Failure
+    needs: [deploy-lambdas, deploy-backend, smoke-tests]
+    runs-on: ubuntu-latest
+    if: failure()
+
+    steps:
+      - name: Deployment failed
+        run: |
+          echo "::error::Staging deployment failed. Check the logs above for details."

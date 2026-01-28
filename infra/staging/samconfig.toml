@@ -1,0 +1,34 @@
+# AWS SAM configuration for Attic Staging Environment
+#
+# Deploy with: sam deploy --config-file infra/staging/samconfig.toml
+#
+# Prerequisites:
+# - AWS CLI configured with appropriate credentials
+# - S3 bucket 'attic-sam-staging' created in target region
+# - Appropriate IAM permissions for CloudFormation, Lambda, Step Functions, SQS, S3
+
+version = 0.1
+
+[default.global.parameters]
+stack_name = "attic-staging"
+
+[default.build.parameters]
+cached = true
+parallel = true
+
+[default.deploy.parameters]
+stack_name = "attic-staging"
+s3_bucket = "attic-sam-staging"
+s3_prefix = "attic-staging"
+region = "us-east-1"
+confirm_changeset = false
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Environment=staging"
+tags = "Project=Attic Environment=staging CostCenter=development"
+fail_on_empty_changeset = false
+
+[default.validate.parameters]
+lint = true
+
+[default.sync.parameters]
+watch = true
