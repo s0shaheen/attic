@@ -223,35 +223,80 @@ For each wave, for each task:
    **If dependency not ready:**
    - Skip task, it will be picked up in next run
 
-### Phase 3.5: Merge Completed Tasks (After Each Wave)
+### Phase 3.5: Create PRs and Merge (After Each Wave)
 
 After all tasks in a wave complete (or are blocked/skipped):
 
-1. **Collect completed branches for this wave**
-   ```
-   completed_branches = [task.branch for task in wave if task.status == DONE]
-   ```
-
-2. **Merge each completed branch to main**
+1. **Push branches and create PRs for completed tasks**
    ```bash
-   git checkout main
-   git pull origin main 2>/dev/null || true
+   for task in completed_tasks:
+       git checkout {task.branch}
+       git push -u origin {task.branch}
 
-   for branch in completed_branches:
-       git merge {branch} --no-ff -m "Merge {task_id}: {description}"
-       if merge_failed:
-           git merge --abort
-           mark task as "Merge Conflict"
-           continue
-       git branch -d {branch}
+       gh pr create \
+         --title "feat({scope}): {task_id} - {description}" \
+         --body "$(cat <<'EOF'
+   ## Task
+   Implements {task_id}: {task_name} from Dev Guide
+
+   ## Changes
+   {brief summary from spec}
+
+   ## Spec
+   See: docs/MVP/tasks/specs/{spec_file}
+   EOF
+   )"
    ```
 
-3. **Update tracking after merges**
-   - Spec files: Set `**Merged**: Yes (YYYY-MM-DD)`
-   - Dev Guide: Set Merged column to `Yes`
-   - Commit tracking updates: `git commit -m "docs: update merge status for wave N"`
+2. **Wait for CI to pass on all PRs**
+   ```bash
+   for pr in created_prs:
+       gh pr checks {pr_number} --watch
+       if checks_failed:
+           mark task as "CI Failed"
+           continue
+   ```
 
-4. **Proceed to next wave** (which can now use merged code)
+3. **Squash merge passing PRs**
+   ```bash
+   for pr in passing_prs:
+       gh pr merge {pr_number} --squash --delete-branch
+       update spec: Merged = Yes
+       update Dev Guide: Merged = Yes
+   ```
+
+4. **Handle CI failures**
+
+   **Within a wave (safe to continue):**
+   - Tasks in the same wave are independent (touch different files)
+   - If PR #15 (task 0.4) fails CI, PR #16 (task 0.5) can still merge
+   - The failed PR stays open; task marked as "CI Failed"
+   - Fix locally, push, CI re-runs, merge when passing
+
+   **Across waves (must wait):**
+   - If ANY task in Wave N fails CI, do NOT start Wave N+1 yet
+   - Later waves depend on earlier waves
+   - Options:
+     a. Fix the failing task, merge, then proceed
+     b. Skip the failing task (mark BLOCKED), proceed if no dependents
+     c. Stop the backlog run, report status
+
+   **Decision logic:**
+   ```
+   if task_ci_failed:
+       if has_dependent_tasks_in_later_waves:
+           BLOCK later_waves  # Must fix before continuing
+       else:
+           CONTINUE  # Independent task, can fix later
+   ```
+
+5. **Update tracking after merges**
+   - Spec files: Set `**Merged**: Yes (YYYY-MM-DD)`
+   - Spec files: Set `**Branch**: Deleted (merged via PR #{number})`
+   - Dev Guide: Set Merged column to `Yes`
+   - Commit: `git commit -m "docs: update merge status for wave N"`
+
+6. **Proceed to next wave** (which can now use merged code)
 
 ### Phase 4: Summary Report
 
@@ -260,34 +305,30 @@ After all tasks in a wave complete (or are blocked/skipped):
  IMPLEMENTATION COMPLETE
 ═══════════════════════════════════════════════════════════
 
-Completed: 5 tasks
-  ✓ 0.1: Backend project scaffolding
-  ✓ 0.2: Frontend project scaffolding
-  ✓ 0.3: Supabase project setup
-  ✓ 0.5: AWS infrastructure setup
-  ✓ 0.6: CI/CD pipeline
+Wave 1 - Complete:
+  ✓ PR #12: feat(backend): 0.1 - Backend scaffolding [merged]
+  ✓ PR #13: feat(frontend): 0.2 - Frontend scaffolding [merged]
 
-Blocked: 1 task
-  ✗ 0.4: Database migrations
-    Reason: Supabase connection failed (check .env.local)
+Wave 2 - Complete:
+  ✓ PR #14: feat(infra): 0.3 - Supabase setup [merged]
+  ✓ PR #16: feat(infra): 0.5 - AWS infrastructure [merged]
 
-Skipped: 1 task
-  ○ 0.7: Local development environment
-    Reason: Depends on blocked task 0.4
+Wave 3 - Partial:
+  ✗ PR #15: feat(db): 0.4 - Database migrations [CI failed: pytest]
+    → 3 dependents blocked: 0.7, 0.9, 1.1
+
+Wave 4 - Not started (waiting on 0.4):
+  ○ 0.6: CI/CD pipeline [blocked by 0.4]
+  ○ 0.7: Local development environment [blocked by 0.4]
 
 ───────────────────────────────────────────────────────────
-Merged to main:
-  ✓ feature/0-0.1-backend-scaffolding
-  ✓ feature/0-0.2-frontend-scaffolding
-  ✓ feature/0-0.3-supabase-setup
-  ✓ feature/0-0.5-aws-infrastructure
-  ✓ feature/0-0.6-cicd-pipeline
-
-Merge conflicts (manual resolution needed):
-  ✗ {none or list branches with conflicts}
+Summary:
+  Merged: 4 PRs
+  CI Failed: 1 PR (0.4 - pytest failures)
+  Blocked: 2 tasks (depend on 0.4)
 
 Next steps:
-  1. Fix blocker for 0.4 (check Supabase credentials)
+  1. Fix CI failures for PR #15 (0.4: Database migrations)
   2. Run: /implement-backlog 0 (to continue)
 ```
 

@@ -34,7 +34,8 @@
       "Bash(python3*)",
       "Bash(node*)",
       "Bash(npx*)",
-      "Bash(uv *)"
+      "Bash(uv *)",
+      "Bash(gh *)"
     ],
     "deny": [
       "Bash(rm -rf /)*",

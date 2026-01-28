@@ -200,7 +200,7 @@ CREATE POLICY "policy_name" ON table_name
 **Status**: NOT_STARTED | IN_PROGRESS | BLOCKED | DONE
 **Last Updated**: YYYY-MM-DD
 **Merged**: No | Yes (YYYY-MM-DD) | Conflict
-**Branch**: feature/{epic}-{task}-{short-name} | Deleted (merged to main)
+**Branch**: feature/{epic}-{task}-{short-name} | Deleted (merged via PR #123)
 
 ### Completed
 - {Nothing yet}
