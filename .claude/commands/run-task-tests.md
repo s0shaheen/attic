@@ -120,7 +120,16 @@ Run all tests specified in a task's spec file and report results with actionable
    - Coverage: 80% (run with --cov for details)
    ```
 
-7. **Coverage Report (Optional)**
+7. **Update Dev Guide**
+
+   Update the task status in `docs/MVP/tasks/Attic_MVP_Dev_Guide_v1.3.0.md`:
+
+   - Find the epic's status table
+   - If tests **failed**: Set status to `BLOCKED`
+   - If tests **passed** and implementation is complete: Set status to `DONE`
+   - Update "Blocked By" column if needed
+
+8. **Coverage Report (Optional)**
 
    If `--coverage` flag or tests all pass:
    ```bash

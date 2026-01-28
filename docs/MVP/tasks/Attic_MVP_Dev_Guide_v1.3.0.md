@@ -70,15 +70,15 @@ Sets up the foundational architecture for both backend and frontend.
 
 | Task | Status | Spec | Blocked By |
 |------|--------|------|------------|
-| 0.1 | SPEC_READY | [0-0.1.md](specs/0-0.1.md) | None |
-| 0.2 | SPEC_READY | [0-0.2.md](specs/0-0.2.md) | None |
-| 0.3 | SPEC_READY | [0-0.3.md](specs/0-0.3.md) | 0.1 |
-| 0.4 | SPEC_READY | [0-0.4.md](specs/0-0.4.md) | 0.1, 0.3 |
-| 0.5 | SPEC_READY | [0-0.5.md](specs/0-0.5.md) | 0.8 |
-| 0.6 | SPEC_READY | [0-0.6.md](specs/0-0.6.md) | 0.1, 0.2, 0.5 |
-| 0.7 | SPEC_READY | [0-0.7.md](specs/0-0.7.md) | 0.1, 0.2, 0.3, 0.5 |
-| 0.8 | SPEC_READY | [0-0.8.md](specs/0-0.8.md) | 0.1, 0.2 |
-| 0.9 | SPEC_READY | [0-0.9.md](specs/0-0.9.md) | 0.1-0.8 |
+| 0.1 | DONE | [0-0.1.md](specs/0-0.1.md) | None |
+| 0.2 | DONE | [0-0.2.md](specs/0-0.2.md) | None |
+| 0.3 | SPEC_READY | [0-0.3.md](specs/0-0.3.md) | None |
+| 0.4 | SPEC_READY | [0-0.4.md](specs/0-0.4.md) | 0.3 |
+| 0.5 | SPEC_READY | [0-0.5.md](specs/0-0.5.md) | None |
+| 0.6 | SPEC_READY | [0-0.6.md](specs/0-0.6.md) | 0.5 |
+| 0.7 | SPEC_READY | [0-0.7.md](specs/0-0.7.md) | 0.3, 0.5 |
+| 0.8 | DONE | [0-0.8.md](specs/0-0.8.md) | None |
+| 0.9 | SPEC_READY | [0-0.9.md](specs/0-0.9.md) | 0.3-0.7 |
 
 **Dependencies:** None (foundational)
 
