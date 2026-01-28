@@ -49,8 +49,8 @@ if [[ -n "$TEST_USER_EMAIL" && -n "$TEST_USER_PASSWORD" && -n "$SUPABASE_ANON_KE
         -d "{\"email\":\"$TEST_USER_EMAIL\",\"password\":\"$TEST_USER_PASSWORD\"}" \
         "$signin_url" 2>/dev/null || echo -e "\n000")
 
-    signin_body=$(echo "$signin_response" | head -n -1)
     signin_status=$(echo "$signin_response" | tail -n 1)
+    signin_body=$(echo "$signin_response" | sed '$d')
 
     if [[ "$signin_status" == "200" ]]; then
         if echo "$signin_body" | jq -e '.access_token' >/dev/null 2>&1; then

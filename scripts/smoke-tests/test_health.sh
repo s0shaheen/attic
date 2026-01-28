@@ -12,9 +12,9 @@ TIMEOUT=${TIMEOUT:-10}
 # Make request
 response=$(curl -s -w "\n%{http_code}" --max-time "$TIMEOUT" "$BACKEND_URL/health" 2>/dev/null || echo -e "\n000")
 
-# Split response body and status code
-body=$(echo "$response" | head -n -1)
+# Split response body and status code (compatible with BSD and GNU)
 status_code=$(echo "$response" | tail -n 1)
+body=$(echo "$response" | sed '$d')
 
 # Validate status code
 if [[ "$status_code" != "200" ]]; then
