@@ -5,7 +5,32 @@ argument-hint: "[epic_number] [--parallel] [--dry-run]"
 
 ## Mission
 
-Implement tasks from validated specs. Automatically determine correct sequencing based on dependencies. Use subagents for parallelizable work when `--parallel` flag is provided.
+Implement tasks from validated specs. Automatically determine correct sequencing based on dependencies. **ALL implementation is delegated to subagents** to prevent context bloat in the main orchestrator.
+
+## Orchestrator Discipline (CRITICAL)
+
+To prevent auto-compaction of the main conversation:
+
+**The orchestrator MUST NOT:**
+- Read implementation files (source code, tests)
+- Write or edit any source code directly
+- Debug test failures or lint errors
+- Analyze stack traces or error details
+- Accumulate implementation context
+
+**The orchestrator MUST:**
+- Only read spec files for task metadata (ID, status, dependencies)
+- Only read Dev Guide for status tracking
+- Delegate ALL implementation work to subagents
+- Run subagents in background (`run_in_background: true`)
+- Accept subagent status reports at face value
+- Escalate to user ONLY when subagent reports BLOCKED with `NEEDS_USER` flag
+
+**Context Budget:**
+The orchestrator should stay under ~20% of context window by:
+- Spawning subagents for any file reading/writing
+- Never requesting code snippets in subagent responses
+- Trusting subagent completion reports
 
 ## Arguments
 
@@ -111,85 +136,54 @@ For each wave, for each task:
    - Read each file in "Context References"
    - Load relevant skills if task involves Supabase, Lambda, etc.
 
-3. **Decide: Main Agent vs Subagent**
+3. **ALWAYS Delegate to Subagent**
 
-   **Use Main Agent when:**
-   - First task in an epic (establishes patterns)
-   - Task creates shared infrastructure (migrations, base classes)
-   - Task is sole item in its wave
-   - `--parallel` flag not provided
+   **CRITICAL**: To prevent context bloat and auto-compaction, the orchestrator
+   NEVER implements directly. Every task is delegated to an implementer subagent.
 
-   **Use Subagent when:**
-   - `--parallel` flag provided AND
-   - Multiple tasks in same wave AND
-   - Tasks touch different file sets AND
-   - Task doesn't establish foundational patterns
+   The orchestrator's role is ONLY to:
+   - Build and display the execution plan
+   - Spawn subagents (sequentially or in parallel)
+   - Monitor subagent status via their reports
+   - Update Dev Guide with final status
+   - Handle critical escalations that require user input
 
-4. **Execute Implementation**
+   **Sequential Mode (default):**
+   - Spawn ONE subagent at a time
+   - Wait for DONE/FAILED/BLOCKED before spawning next
+   - Run subagents in background to preserve orchestrator context
 
-   **If Main Agent:**
-   
-   Follow this order strictly:
-   
-   a. **Data Contracts** (10%)
-      - Create Pydantic models in `src/backend/app/models/`
-      - Create Zod schemas in `src/frontend/lib/schemas/`
-      - Create TypeScript types if needed
-   
-   b. **Database Migrations** (20%) - if needed
-      ```bash
-      cd src/backend
-      alembic revision --autogenerate -m "{task}: {description}"
-      # Review the generated migration
-      alembic upgrade head
-      ```
-   
-   c. **Core Implementation** (50%)
-      - Follow existing patterns in codebase
-      - Type hints on everything (Python)
-      - Strict mode compliance (TypeScript)
-      - Write unit tests alongside each function
-   
-   d. **Integration Tests** (15%)
-      - API endpoint tests
-      - Database interaction tests
-   
-   e. **Verification** (5%)
-      ```bash
-      # Python
-      cd src/backend && pytest tests/ -v --tb=short
-      cd src/backend && ruff check . && ruff format .
-      
-      # TypeScript
-      cd src/frontend && npm run typecheck
-      cd src/frontend && npm run lint
-      cd src/frontend && npm test
-      ```
+   **Parallel Mode (--parallel flag):**
+   - Spawn multiple subagents for independent tasks in same wave
+   - Wait for all to complete before proceeding to next wave
 
-   **If Subagent:**
-   
-   Delegate with full context:
+4. **Spawn Implementer Subagent**
+
+   Delegate with full context using the Task tool:
    ```
-   Use the implementer subagent to implement task {task_id}.
-   
-   Spec file: docs/MVP/tasks/specs/{spec_file}
-   Branch name: feature/{epic}-{task}-{short-name}
-   
-   Context files to read:
-   - {context_file_1}
-   - {context_file_2}
-   - CLAUDE.md
-   
-   Implementation order:
-   1. Data contracts first
-   2. Database migrations if needed
-   3. Core implementation with unit tests
-   4. Integration tests
-   5. Run all verification commands
-   
-   Update the spec file with progress.
-   Report back: DONE | FAILED (with error) | BLOCKED (with reason)
+   Task tool parameters:
+     subagent_type: implementer
+     run_in_background: true   # CRITICAL: Prevents context bloat
+     description: "Implement {task_id}"
+     prompt: |
+       Implement task {task_id}.
+
+       Spec file: docs/MVP/tasks/specs/{spec_file}
+       Branch name: feature/{epic}-{task}-{short-name}
+
+       Context files to read:
+       - {context_file_1}
+       - {context_file_2}
+       - CLAUDE.md
+
+       Report back: DONE | FAILED (with error) | BLOCKED (with reason)
    ```
+
+   **Monitoring Background Subagents:**
+   - The Task tool returns an `output_file` path
+   - Check progress periodically: `Read` the output file or `Bash(tail -50 {output_file})`
+   - Wait for the subagent to report DONE/FAILED/BLOCKED before proceeding
+   - For parallel mode: launch multiple subagents, then monitor all output files
 
 5. **After Each Task Completes**
    
@@ -207,21 +201,37 @@ For each wave, for each task:
       git commit -m "feat({scope}): implement {task_id} - {description}"
       ```
 
-6. **Handle Failures**
+6. **Handle Subagent Responses**
 
-   **If tests fail:**
-   - Log failure details to spec's Implementation Notes
-   - Set status to `BLOCKED`
-   - Add to "Blocked By": "Tests failing: {summary}"
-   - Continue to next task (don't stop entire backlog)
-   
-   **If subagent reports BLOCKED:**
+   Read the subagent's output file and parse the final status:
+
+   **If DONE:**
+   - Update spec status to `DONE`
+   - Update Dev Guide status table
+   - Proceed to merge step
+   - Continue to next task
+
+   **If FAILED:**
+   - Update spec status to `BLOCKED`
+   - Add failure reason to spec's Implementation Notes
+   - DO NOT attempt to debug (you lack context)
+   - Continue to next task
+
+   **If BLOCKED (without NEEDS_USER):**
    - Update spec with blocker details
    - Set status to `BLOCKED`
+   - Continue to next task (will be retried later)
+
+   **If BLOCKED: NEEDS_USER:**
+   - STOP and surface to user immediately
+   - Display the decision/question to user
+   - Wait for user input before continuing
+   - This is the ONLY case where orchestrator pauses for intervention
+
+   **If subagent appears stuck (no output for extended period):**
+   - Check output file for progress
+   - If truly stuck, mark as `BLOCKED: Subagent timeout`
    - Continue to next task
-   
-   **If dependency not ready:**
-   - Skip task, it will be picked up in next run
 
 ### Phase 3.5: Merge Completed Tasks (After Each Wave)
 

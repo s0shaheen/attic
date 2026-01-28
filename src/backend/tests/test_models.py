@@ -3,7 +3,6 @@
 Verifies that models match the PRD schema and have all required fields.
 """
 
-from datetime import datetime
 from decimal import Decimal
 from uuid import UUID
 
