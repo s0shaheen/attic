@@ -7,6 +7,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
 from app.models import HealthResponse
+from app.routers import user_router
 
 # Configure logging
 logging.basicConfig(
@@ -35,6 +36,9 @@ app = FastAPI(
     version=VERSION,
     lifespan=lifespan,
 )
+
+# Register routers
+app.include_router(user_router)
 
 
 @app.get("/health", response_model=HealthResponse)
