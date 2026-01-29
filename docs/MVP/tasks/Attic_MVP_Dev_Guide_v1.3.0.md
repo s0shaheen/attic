@@ -137,13 +137,13 @@ Core async pipeline using AWS Step Functions for workflow orchestration and Lamb
 
 | Task | Name | Description |
 |------|------|-------------|
-| 3.1 | Step Functions state machine | VideoProcessingPipeline with all states and retry policies |
-| 3.2 | Lambda: PARSE_EXPORT | Extract URLs from ZIP, create media_event rows |
-| 3.3 | Lambda: APIFY_ENRICH | Fetch TikTok metadata (batched, 50/call) |
-| 3.4 | Lambda: MEDIA_DOWNLOAD | Download video/images to S3 temp storage |
+| 3.1 | Step Functions state machine | MediaProcessingPipeline with all states and retry policies |
+| 3.2 | Lambda: PARSE_EXPORT | Extract URLs from ZIP, create media_event rows with media_type |
+| 3.3 | Lambda: APIFY_ENRICH | Fetch TikTok metadata, detect media_type (batched, 50/call) |
+| 3.4 | Lambda: MEDIA_DOWNLOAD | Download media to S3 temp, handle videos/images/slideshows |
 | 3.5 | Lambda: SUBTITLE_FETCH | Get subtitles if available |
-| 3.6 | Lambda: WHISPER_TRANSCRIBE | Transcribe audio via OpenAI API if no subtitles |
-| 3.7 | Lambda: VISION_ANALYSIS | GPT-4 Vision tagging (batched, 5 images/call) |
+| 3.6 | Lambda: WHISPER_TRANSCRIBE | Transcribe audio via OpenAI API (returns empty for non-audio) |
+| 3.7 | Lambda: VISION_ANALYSIS | GPT-4 Vision tagging for all media types (batched, 5 images/call) |
 | 3.8 | Lambda: TEXT_FUSION | Combine all text fields |
 | 3.9 | Lambda: EMBEDDING | Generate search vectors via OpenAI API (batched, 100/call) |
 | 3.10 | Lambda: DERIVED_FIELDS | Compute engagement rate, etc. |
@@ -151,7 +151,7 @@ Core async pipeline using AWS Step Functions for workflow orchestration and Lamb
 | 3.12 | SQS trigger integration | S3 upload → SQS → Lambda → Step Functions |
 | 3.13 | Capability interfaces | Protocol classes for vendor abstraction |
 | 3.14 | Error handling & retry policies | Step Functions retry policies, dead letter queue |
-| 3.15 | Progress update mechanism | Lambda updates `upload_pipeline_runs` for Supabase Realtime |
+| 3.15 | Progress update mechanism | Lambda updates `upload_pipeline_runs` (items_*) for Supabase Realtime |
 
 **Dependencies:** Epic 0, Epic 2
 

@@ -8,10 +8,15 @@ logger = get_logger("vision_analysis")
 
 
 def handler(event: dict, context: object) -> dict:
-    """Analyze video frames using GPT-4 Vision for visual tagging.
+    """Analyze media using GPT-4 Vision for visual tagging.
+
+    Handles all media types:
+    - VIDEO: Extracts and analyzes key frames
+    - IMAGE: Analyzes the single image directly
+    - SLIDESHOW: Analyzes all slideshow images
 
     Args:
-        event: Lambda event containing S3 path to video/frames.
+        event: Lambda event containing S3 path to media.
         context: Lambda execution context.
 
     Returns:

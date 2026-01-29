@@ -2,7 +2,7 @@
 
 ## What is Attic?
 
-Personal analytics platform for TikTok data. Users upload their TikTok data export ZIP, and Attic enriches each video with metadata, visual analysis, and semantic tagging.
+Personal analytics platform for TikTok data. Users upload their TikTok data export ZIP, and Attic enriches each media item (videos, images, slideshows) with metadata, visual analysis, and semantic tagging.
 
 ## Stack
 
@@ -62,6 +62,21 @@ sam local invoke FunctionName       # Test Lambda locally
 10. `SEARCH_INDEX` → Update full-text (GIN) + vector (ivfflat) indexes
 
 **CRITICAL**: Every Lambda function MUST be idempotent. Use upserts and deterministic IDs.
+
+### Media Type Handling
+
+TikTok exports contain multiple media types, classified via `media_type` enum:
+
+| Type | Description | Audio Processing |
+|------|-------------|------------------|
+| `video` | Standard video | Whisper transcription |
+| `image` | Single static image | Skip (empty transcript) |
+| `slideshow` | Multiple images (photo mode) | Skip (empty transcript) |
+
+- **Pipeline uses `$.media_items`** (not `$.videos`) for media-agnostic processing
+- **Progress tracking uses `items_*` fields** (e.g., `items_enriched`, `items_complete`)
+- **Whisper Lambda returns empty gracefully** for non-video content (no state machine branching)
+- **`image_count` and `image_urls`** fields store slideshow data
 
 ### Capability Abstraction
 

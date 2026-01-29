@@ -8,14 +8,17 @@ logger = get_logger("apify_enrich")
 
 
 def handler(event: dict, context: object) -> dict:
-    """Fetch TikTok metadata for a batch of video URLs.
+    """Fetch TikTok metadata for a batch of media URLs.
+
+    Detects media_type from Apify response (is_slideshow, video_duration)
+    and sets image_count/image_urls for slideshows.
 
     Args:
         event: Lambda event containing batch of URLs.
         context: Lambda execution context.
 
     Returns:
-        Response with enriched metadata for each URL.
+        Response with enriched metadata for each URL including media_type.
     """
     logger.info(
         "Starting apify_enrich",

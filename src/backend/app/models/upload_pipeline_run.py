@@ -16,6 +16,7 @@ class UploadPipelineRun(Base):
 
     Each upload can have multiple pipeline runs (e.g., on retry).
     Used by Supabase Realtime to broadcast progress to the frontend.
+    Tracks processing of all media types (videos, images, slideshows).
     """
 
     __tablename__ = "upload_pipeline_runs"
@@ -32,14 +33,17 @@ class UploadPipelineRun(Base):
     )  # 'pending', 'processing', 'complete', 'failed'
     started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     finished_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-    total_videos: Mapped[int | None] = mapped_column(Integer)
-    videos_enriched: Mapped[int] = mapped_column(Integer, server_default="0")
-    videos_media_downloaded: Mapped[int] = mapped_column(Integer, server_default="0")
-    videos_transcribed: Mapped[int] = mapped_column(Integer, server_default="0")
-    videos_vision_done: Mapped[int] = mapped_column(Integer, server_default="0")
-    videos_embedded: Mapped[int] = mapped_column(Integer, server_default="0")
-    videos_complete: Mapped[int] = mapped_column(Integer, server_default="0")
-    videos_failed: Mapped[int] = mapped_column(Integer, server_default="0")
+
+    # Progress tracking (media-agnostic naming for videos/images/slideshows)
+    total_items: Mapped[int | None] = mapped_column(Integer)
+    items_enriched: Mapped[int] = mapped_column(Integer, server_default="0")
+    items_media_downloaded: Mapped[int] = mapped_column(Integer, server_default="0")
+    items_transcribed: Mapped[int] = mapped_column(Integer, server_default="0")
+    items_vision_done: Mapped[int] = mapped_column(Integer, server_default="0")
+    items_embedded: Mapped[int] = mapped_column(Integer, server_default="0")
+    items_complete: Mapped[int] = mapped_column(Integer, server_default="0")
+    items_failed: Mapped[int] = mapped_column(Integer, server_default="0")
+
     total_cost_usd: Mapped[Decimal] = mapped_column(Numeric(10, 4), server_default="0")
     estimated_completion_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     error_summary: Mapped[dict | None] = mapped_column(JSONB)

@@ -21,13 +21,14 @@ from sqlalchemy.dialects.postgresql import ARRAY, JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.base import Base
+from app.models.enums import MediaType
 
 
 class MediaEvent(Base):
-    """Media event model representing a TikTok video interaction.
+    """Media event model representing a TikTok media interaction.
 
-    This is the core entity storing enriched video metadata, AI analysis,
-    and search vectors.
+    This is the core entity storing enriched media metadata, AI analysis,
+    and search vectors. Supports videos, images, and slideshows.
     """
 
     __tablename__ = "media_events"
@@ -70,6 +71,12 @@ class MediaEvent(Base):
     is_ad: Mapped[bool | None] = mapped_column(Boolean)
     is_pinned: Mapped[bool | None] = mapped_column(Boolean)
     is_slideshow: Mapped[bool | None] = mapped_column(Boolean)
+
+    # Media type classification (added for multi-media support)
+    media_type: Mapped[str] = mapped_column(String(20), server_default=MediaType.VIDEO.value)
+    image_count: Mapped[int | None] = mapped_column(Integer)
+    image_urls: Mapped[list[str] | None] = mapped_column(ARRAY(Text))
+
     location_created: Mapped[str | None] = mapped_column(String(100))
     music_id: Mapped[str | None] = mapped_column(String(255))
     music_name: Mapped[str | None] = mapped_column(String(255))
@@ -174,5 +181,6 @@ class MediaEvent(Base):
         Index("idx_media_events_creator", "creator_username"),
         Index("idx_media_events_mood", "mood_primary"),
         Index("idx_media_events_interaction", "interaction_at"),
-        {"comment": "TikTok video interactions with enrichment data"},
+        Index("idx_media_events_media_type", "media_type"),
+        {"comment": "TikTok media interactions with enrichment data"},
     )

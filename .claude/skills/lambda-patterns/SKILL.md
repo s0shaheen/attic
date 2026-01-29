@@ -180,7 +180,7 @@ def handler(event: dict, context: Any) -> dict:
 
 ```json
 {
-  "Comment": "Attic Video Processing Pipeline",
+  "Comment": "Attic Media Processing Pipeline",
   "StartAt": "ParseExport",
   "States": {
     "ParseExport": {

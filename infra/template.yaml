@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  Attic Video Processing Pipeline
+  Attic Media Processing Pipeline
   SAM template for AWS infrastructure: Step Functions, Lambda, SQS, S3, IAM
 
 Globals:
@@ -119,7 +119,7 @@ Resources:
                 Action:
                   - states:StartExecution
                 Resource:
-                  - !Sub "arn:aws:states:${AWS::Region}:${AWS::AccountId}:stateMachine:attic-video-processing-${Environment}"
+                  - !Sub "arn:aws:states:${AWS::Region}:${AWS::AccountId}:stateMachine:attic-media-processing-${Environment}"
       Tags:
         - Key: project
           Value: attic
@@ -353,10 +353,10 @@ Resources:
       Role: !GetAtt LambdaExecutionRole.Arn
 
   # ---------- Step Functions State Machine ----------
-  VideoProcessingPipeline:
+  MediaProcessingPipeline:
     Type: AWS::Serverless::StateMachine
     Properties:
-      Name: !Sub "attic-video-processing-${Environment}"
+      Name: !Sub "attic-media-processing-${Environment}"
       Role: !GetAtt StepFunctionsRole.Arn
       Tracing:
         Enabled: true
@@ -367,7 +367,7 @@ Resources:
           - CloudWatchLogsLogGroup:
               LogGroupArn: !GetAtt StepFunctionsLogGroup.Arn
       Definition:
-        Comment: "Attic Video Processing Pipeline"
+        Comment: "Attic Media Processing Pipeline"
         StartAt: "ParseExport"
         States:
           ParseExport:
@@ -403,16 +403,16 @@ Resources:
                       MaxAttempts: 3
                       BackoffRate: 2
                       IntervalSeconds: 2
-            Next: ProcessVideos
+            Next: ProcessMediaItems
             Catch:
               - ErrorEquals:
                   - "States.ALL"
                 Next: HandleError
                 ResultPath: "$.error"
 
-          ProcessVideos:
+          ProcessMediaItems:
             Type: Map
-            ItemsPath: "$.videos"
+            ItemsPath: "$.media_items"
             MaxConcurrency: 5
             Iterator:
               StartAt: DownloadMedia
@@ -547,7 +547,7 @@ Resources:
   StepFunctionsLogGroup:
     Type: AWS::Logs::LogGroup
     Properties:
-      LogGroupName: !Sub "/aws/states/attic-video-processing-${Environment}"
+      LogGroupName: !Sub "/aws/states/attic-media-processing-${Environment}"
       RetentionInDays: 14
 
 Outputs:
@@ -575,11 +575,11 @@ Outputs:
     Export:
       Name: !Sub "${AWS::StackName}-UploadQueueArn"
 
-  VideoProcessingPipelineArn:
+  MediaProcessingPipelineArn:
     Description: Step Functions state machine ARN
-    Value: !Ref VideoProcessingPipeline
+    Value: !Ref MediaProcessingPipeline
     Export:
-      Name: !Sub "${AWS::StackName}-VideoProcessingPipelineArn"
+      Name: !Sub "${AWS::StackName}-MediaProcessingPipelineArn"
 
   LambdaExecutionRoleArn:
     Description: IAM role ARN for Lambda functions

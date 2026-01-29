@@ -8,14 +8,18 @@ logger = get_logger("whisper_transcribe")
 
 
 def handler(event: dict, context: object) -> dict:
-    """Transcribe video audio using OpenAI Whisper API.
+    """Transcribe media audio using OpenAI Whisper API.
+
+    For images/slideshows without audio, returns empty transcript gracefully.
+    The pipeline does not branch by media_type; instead, this handler
+    attempts transcription and returns empty result if no audio exists.
 
     Args:
-        event: Lambda event containing S3 path to video.
+        event: Lambda event containing S3 path to media.
         context: Lambda execution context.
 
     Returns:
-        Response with transcription text.
+        Response with transcription text (empty string for non-audio content).
     """
     logger.info(
         "Starting whisper_transcribe",
