@@ -51,6 +51,8 @@ See [ADR: Tech Stack Changes](../../docs/MVP/ADR/Attic_MVP_Tech_Stack_Changes.md
 ---
 
 ## Epic 0: Infrastructure & Foundation
+**Default Strategy**: `parallel`
+**Rationale**: Foundational tasks with minimal file overlap; most can run independently.
 
 Sets up the foundational architecture for both backend and frontend.
 
@@ -85,6 +87,8 @@ Sets up the foundational architecture for both backend and frontend.
 ---
 
 ## Epic 1: Authentication (PRD F1)
+**Default Strategy**: `stacked`
+**Rationale**: Linear dependency chain (1.1 → 1.2 → 1.3 → 1.4 → 1.5 → 1.6); auth components build on each other.
 
 Implements user authentication via Supabase Auth with Google OAuth.
 
@@ -113,6 +117,21 @@ Implements user authentication via Supabase Auth with Google OAuth.
 ---
 
 ## Epic 2: Upload & Consent (PRD F2 + F3)
+**Default Strategy**: `stacked`
+**Wave Overrides**:
+  - Wave 1 (2-2.1, 2-2.4): `parallel` — Independent infra, 0% file overlap
+  - Wave 2 (2-2.2): `parallel` — Single task, creates backend API
+  - Wave 3 (2-2.3): `parallel` — Single task, pure frontend
+  - Wave 4 (2-2.5 → 2-2.6 → 2-2.7): `stacked` — Linear chain, 75% file overlap (uploads.py, schemas)
+  - Wave 5 (2-2.8): `parallel` — Final integration task
+
+**File Overlap Analysis** (auto-generated):
+| File | Tasks | Overlap Level |
+|------|-------|---------------|
+| `src/backend/app/routers/uploads.py` | 2.2, 2.5, 2.6, 2.7 | HIGH |
+| `src/backend/app/schemas/uploads.py` | 2.2, 2.5, 2.6, 2.7 | HIGH |
+| `src/backend/app/services/uploads.py` | 2.2, 2.6 | Medium |
+| `src/frontend/components/upload/*` | 2.3, 2.5, 2.7, 2.8 | Medium |
 
 Handles file upload via Uppy and Supabase Storage, plus user consent.
 
@@ -127,11 +146,30 @@ Handles file upload via Uppy and Supabase Storage, plus user consent.
 | 2.7 | Consent screen UI component | Data usage disclosure, consent capture |
 | 2.8 | Upload page frontend | Uppy drag-drop, guide, scope selection, consent modal |
 
+### Epic 2 Status
+
+| Task | Status | Merged | Spec | Blocked By |
+|------|--------|--------|------|------------|
+| 2.1 | NOT_STARTED | No | [2-2.1.md](specs/2-2.1.md) | 0.3 |
+| 2.2 | NOT_STARTED | No | [2-2.2.md](specs/2-2.2.md) | 0.1, 0.4, 1.3, 2.1 |
+| 2.3 | NOT_STARTED | No | [2-2.3.md](specs/2-2.3.md) | 0.2, 1.2, 2.2 |
+| 2.4 | NOT_STARTED | No | [2-2.4.md](specs/2-2.4.md) | 0.1 |
+| 2.5 | NOT_STARTED | No | [2-2.5.md](specs/2-2.5.md) | 0.4, 2.1, 2.3, 2.4 |
+| 2.6 | NOT_STARTED | No | [2-2.6.md](specs/2-2.6.md) | 0.1, 2.5 |
+| 2.7 | NOT_STARTED | No | [2-2.7.md](specs/2-2.7.md) | 0.2, 0.4, 2.6 |
+| 2.8 | NOT_STARTED | No | [2-2.8.md](specs/2-2.8.md) | 0.2, 1.2, 1.4, 2.2-2.7 |
+
 **Dependencies:** Epic 0, Epic 1
 
 ---
 
 ## Epic 3: Processing Pipeline (PRD F4)
+**Default Strategy**: `stacked`
+**Wave Overrides**:
+  - Wave 1 (3.1, 3.13): `parallel` — State machine + capability interfaces (no overlap)
+  - Wave 2 (3.2 → 3.11): `stacked` — Sequential Lambda functions with shared patterns
+  - Wave 3 (3.12, 3.14, 3.15): `parallel` — Independent integration tasks
+**Rationale**: Lambda functions share common patterns and may touch shared capability interfaces.
 
 Core async pipeline using AWS Step Functions for workflow orchestration and Lambda for compute.
 
@@ -158,6 +196,8 @@ Core async pipeline using AWS Step Functions for workflow orchestration and Lamb
 ---
 
 ## Epic 4: Progress & Notifications (PRD F8)
+**Default Strategy**: `stacked`
+**Rationale**: 4.1 → 4.2 → 4.3 form a chain (API → Realtime → UI); 4.4, 4.5 can parallel after.
 
 Real-time progress tracking and user notifications.
 
@@ -174,6 +214,8 @@ Real-time progress tracking and user notifications.
 ---
 
 ## Epic 5: Library View (PRD F5)
+**Default Strategy**: `stacked`
+**Rationale**: 5.1 → 5.2 (API → Query layer) → remaining tasks; high overlap in library components.
 
 Main content library interface.
 
@@ -192,6 +234,12 @@ Main content library interface.
 ---
 
 ## Epic 6: Search (PRD F6)
+**Default Strategy**: `stacked`
+**Wave Overrides**:
+  - Wave 1 (6.1, 6.2): `parallel` — Keyword and semantic search are independent
+  - Wave 2 (6.3, 6.4): `stacked` — Hybrid search builds on both; filters touch same code
+  - Wave 3 (6.5, 6.6): `stacked` — UI components share search context
+**Rationale**: Search APIs are independent but UI components have high overlap.
 
 Full-text and semantic search capabilities.
 
@@ -209,6 +257,8 @@ Full-text and semantic search capabilities.
 ---
 
 ## Epic 7: Detail View (PRD F7)
+**Default Strategy**: `stacked`
+**Rationale**: 7.1 (API) → 7.2 (page) → remaining components; all touch detail view files.
 
 Individual video detail page.
 
@@ -225,6 +275,10 @@ Individual video detail page.
 ---
 
 ## Epic 8: User Settings & Landing
+**Default Strategy**: `parallel`
+**Wave Overrides**:
+  - Wave 1 (8.3, 8.4, 8.6): `stacked` — Stripe tasks are tightly coupled
+**Rationale**: Settings, landing page, and payments are largely independent domains.
 
 User management, payments, and marketing pages.
 
@@ -244,8 +298,10 @@ User management, payments, and marketing pages.
 
 
 ## Epic 9: Production Readiness & Guardrails (Cross-cutting)
+**Default Strategy**: `parallel`
+**Rationale**: Guardrail tasks are largely independent hardening efforts across different areas.
 
-Implements and verifies the minimum requirements to safely run Attic with real users. This epic is **required for launch**, even if feature work is “done”.
+Implements and verifies the minimum requirements to safely run Attic with real users. This epic is **required for launch**, even if feature work is "done".
 
 | Task | Name | Description |
 |------|------|-------------|
@@ -264,6 +320,8 @@ Implements and verifies the minimum requirements to safely run Attic with real u
 
 
 ## Observability Tasks (Cross-cutting)
+**Default Strategy**: `parallel`
+**Rationale**: Sentry, PostHog, and tracing are independent integrations with minimal overlap.
 
 These tasks should be integrated early and maintained throughout.
 

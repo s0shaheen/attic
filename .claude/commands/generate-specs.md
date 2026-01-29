@@ -285,3 +285,178 @@ Before finalizing each spec, verify:
 - [ ] Data model matches PRD schema (or note deviations)
 - [ ] Dependencies listed match the epic dependency graph in Dev Guide
 - [ ] Test cases cover all acceptance criteria
+
+---
+
+## Phase 7: Branching Strategy Analysis (Auto-Run)
+
+After generating specs for an epic, automatically analyze and recommend a branching strategy.
+
+### Step 1: Compute File Overlap Matrix
+
+For each pair of tasks, calculate file overlap:
+
+```
+overlap_matrix = {}
+for task_a in specs:
+    for task_b in specs:
+        if task_a != task_b:
+            shared_files = task_a.components ∩ task_b.components
+            overlap_pct = len(shared_files) / len(task_a.components ∪ task_b.components)
+            overlap_matrix[(task_a, task_b)] = {
+                "shared": shared_files,
+                "percentage": overlap_pct
+            }
+```
+
+### Step 2: Build Dependency Graph
+
+Extract dependency chains:
+
+```
+dep_graph = {}
+for spec in specs:
+    dep_graph[spec.task_id] = {
+        "depends_on": spec.dependencies,        # Tasks this one waits for
+        "depended_by": [],                      # Tasks waiting for this one
+    }
+
+# Populate reverse dependencies
+for task_id, deps in dep_graph.items():
+    for dep in deps["depends_on"]:
+        dep_graph[dep]["depended_by"].append(task_id)
+```
+
+### Step 3: Identify Dependency Patterns
+
+Classify the dependency structure:
+
+- **Linear chain**: A → B → C → D (each task depends on previous)
+- **Fan-out**: A → [B, C, D] (multiple tasks depend on one)
+- **Fan-in**: [A, B, C] → D (one task depends on multiple)
+- **Independent**: No dependencies between tasks
+- **Mixed**: Combination of patterns
+
+### Step 4: Strategy Recommendation Rules
+
+Apply these heuristics:
+
+| Pattern | File Overlap | Recommended Strategy |
+|---------|--------------|---------------------|
+| Linear chain | Any | `stacked` |
+| Independent | Low (<20%) | `parallel` |
+| Independent | High (>50%) | `epic-branch` |
+| Fan-out | Low | `parallel` |
+| Fan-out | High | First task `parallel`, children `stacked` |
+| Fan-in | Any | All parents `parallel`, final task separate wave |
+| Mixed | Variable | Group by overlap into waves, strategy per wave |
+
+### Step 5: Generate Wave Groupings
+
+Based on dependency analysis and overlap:
+
+```
+waves = []
+remaining_tasks = all_tasks.copy()
+
+while remaining_tasks:
+    # Find tasks with no unmet dependencies
+    ready = [t for t in remaining_tasks if all(d in completed for d in t.deps)]
+
+    # Group ready tasks by overlap
+    wave = {"tasks": [], "strategy": None}
+    for task in ready:
+        overlaps_with_wave = any(
+            overlap_matrix[(task, existing)]["percentage"] > 0.3
+            for existing in wave["tasks"]
+        )
+        if overlaps_with_wave:
+            # High overlap: either stack or defer to next wave
+            if len(wave["tasks"]) == 1:
+                wave["strategy"] = "stacked"
+                wave["tasks"].append(task)
+            else:
+                # Start new wave for this task
+                continue
+        else:
+            wave["tasks"].append(task)
+
+    if not wave["strategy"]:
+        wave["strategy"] = "parallel" if len(wave["tasks"]) > 1 else "parallel"
+
+    waves.append(wave)
+    remaining_tasks -= wave["tasks"]
+    completed += wave["tasks"]
+```
+
+### Step 6: Output Strategy Recommendation
+
+Display analysis results and write to Dev Guide:
+
+```
+═══════════════════════════════════════════════════════════
+ BRANCHING STRATEGY ANALYSIS
+═══════════════════════════════════════════════════════════
+
+Epic 2: Upload & Consent
+
+File Overlap Analysis:
+┌─────────┬─────────────────────────────────────────────────┐
+│ File    │ Tasks                                  │ Level  │
+├─────────┼─────────────────────────────────────────────────┤
+│ uploads.py        │ 2.2, 2.5, 2.6, 2.7          │ HIGH   │
+│ uploads/schemas   │ 2.2, 2.5, 2.6, 2.7          │ HIGH   │
+│ upload-*.tsx      │ 2.3, 2.5, 2.7, 2.8          │ MEDIUM │
+│ parser.py         │ 2.4                         │ NONE   │
+│ storage.py        │ 2.1                         │ NONE   │
+└─────────┴─────────────────────────────────────────────────┘
+
+Dependency Graph:
+2-2.1 (Storage) ────────────────────┐
+                                    ├──→ 2-2.5 ──→ 2-2.6 ──→ 2-2.7 ──→ 2-2.8
+2-2.4 (Parser) ─────────────────────┘
+                                              │
+2-2.2 (Presigned) ──→ 2-2.3 (Uppy) ───────────┘
+
+Recommended Strategy:
+┌───────┬────────────────────────┬──────────┬─────────────────────────────┐
+│ Wave  │ Tasks                  │ Strategy │ Rationale                   │
+├───────┼────────────────────────┼──────────┼─────────────────────────────┤
+│ 1     │ 2-2.1, 2-2.4          │ parallel │ No deps, 0% file overlap    │
+│ 2     │ 2-2.2                 │ parallel │ Single task                 │
+│ 3     │ 2-2.3                 │ parallel │ Single task, pure frontend  │
+│ 4     │ 2-2.5 → 2-2.6 → 2-2.7 │ stacked  │ Linear chain, 75% overlap   │
+│ 5     │ 2-2.8                 │ parallel │ Final integration           │
+└───────┴────────────────────────┴──────────┴─────────────────────────────┘
+
+───────────────────────────────────────────────────────────
+Strategy written to Dev Guide. Review and adjust if needed.
+```
+
+### Step 7: Write Strategy to Dev Guide
+
+Update the epic header in `docs/MVP/tasks/Attic_MVP_Dev_Guide_v1.3.0.md`:
+
+```markdown
+## Epic 2: Upload & Consent (PRD F2 + F3)
+**Default Strategy**: `stacked`
+**Wave Overrides**:
+  - Wave 1 (2-2.1, 2-2.4): `parallel`
+  - Wave 2 (2-2.2): `parallel`
+  - Wave 3 (2-2.3): `parallel`
+  - Wave 4 (2-2.5 → 2-2.6 → 2-2.7): `stacked`
+  - Wave 5 (2-2.8): `parallel`
+```
+
+### Step 8: User Override Prompt
+
+After displaying the recommendation:
+
+```
+Strategy recommendation complete. Options:
+  1. Accept recommendation (default)
+  2. Override default strategy: --strategy <parallel|stacked|epic-branch>
+  3. Edit wave overrides manually in Dev Guide
+
+Press Enter to accept, or specify override:
+```

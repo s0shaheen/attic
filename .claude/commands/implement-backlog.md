@@ -37,6 +37,61 @@ The orchestrator should stay under ~20% of context window by:
 - `epic_number` (optional): Limit to specific epic. Without this, processes all ready specs.
 - `--parallel`: Enable subagent delegation for independent tasks
 - `--dry-run`: Show execution plan without implementing
+- `--strategy <parallel|stacked|epic-branch>`: Override the epic's default branching strategy
+
+## Branching Strategies
+
+Three strategies control how tasks are branched, committed, and merged:
+
+### 1. `parallel` (Default)
+- Each task branches from `main`
+- Best for: Independent tasks with no file overlap
+- PRs merge independently to `main`
+
+```
+main ─────┬─────────────────────────────────────→
+          ├─ feature/2-2.1 ──→ PR #1 ──→ merge
+          ├─ feature/2-2.2 ──→ PR #2 ──→ merge
+          └─ feature/2-2.3 ──→ PR #3 ──→ merge
+```
+
+### 2. `stacked`
+- Each task branches from the previous task's branch
+- Best for: Sequential tasks with significant file overlap
+- PRs target parent branch, then retarget to `main` after parent merges
+
+```
+main ──┬─────────────────────────────────────────→
+       └─ 2-2.1 ─┬─────────────────────→ merge to main
+                 └─ 2-2.2 ─┬───────────→ merge to 2-2.1 (then main)
+                           └─ 2-2.3 ───→ merge to 2-2.2 (then 2-2.1, then main)
+```
+
+### 3. `epic-branch`
+- Single branch for entire epic/wave
+- All tasks commit sequentially to this branch
+- Best for: Tightly coupled tasks, major refactors
+- One PR at wave/epic completion
+
+```
+main ──┬───────────────────────────────→
+       └─ feature/epic-2 ─────────────→ single PR
+           ├─ commit: 2-2.1
+           ├─ commit: 2-2.2
+           └─ commit: 2-2.3
+```
+
+### Strategy Configuration in Dev Guide
+
+Strategies are defined in the Dev Guide at the epic level with optional wave overrides:
+
+```markdown
+## Epic 2: Upload & Consent (F2)
+**Default Strategy**: `stacked`
+**Wave Overrides**:
+  - Wave 1 (2-2.1, 2-2.4): `parallel`
+  - Wave 2 (2-2.5 → 2-2.6 → 2-2.7): `stacked`
+```
 
 ## Instructions
 
@@ -48,13 +103,13 @@ The orchestrator should stay under ~20% of context window by:
      specs = docs/MVP/tasks/specs/{epic}-*.md
    Else:
      specs = docs/MVP/tasks/specs/*.md
-   
+
    Filter to: Status in [NOT_STARTED, SPEC_READY, IN_PROGRESS]
    Exclude: Status in [DONE, BLOCKED]
    ```
 
 2. **Parse Dependencies**
-   
+
    For each spec, extract:
    - Task ID (from filename: `{epic}-{task}.md` → `{epic}.{task}`)
    - Dependencies (from "Tasks that must complete first")
@@ -90,6 +145,43 @@ The orchestrator should stay under ~20% of context window by:
    - Tasks touching DIFFERENT files/components can run in parallel
    - Tasks touching SAME files must be sequential within wave
 
+6. **Parse Branching Strategy**
+
+   Read strategy from Dev Guide for each epic:
+   ```
+   epic_strategy = parse_dev_guide_strategy(epic_number)
+
+   # Structure:
+   {
+     "default": "parallel" | "stacked" | "epic-branch",
+     "wave_overrides": {
+       "1": {"strategy": "parallel", "tasks": ["2-2.1", "2-2.4"]},
+       "2": {"strategy": "stacked", "tasks": ["2-2.5", "2-2.6", "2-2.7"]}
+     }
+   }
+   ```
+
+   **Priority order:**
+   1. Command-line `--strategy` flag (overrides everything)
+   2. Wave override from Dev Guide
+   3. Epic default strategy from Dev Guide
+   4. Global default: `parallel`
+
+7. **Assign Strategy Per Wave**
+
+   For each wave, determine its strategy:
+   ```
+   for wave in waves:
+       # Check if any task in wave has a wave override
+       wave_tasks = [task for task in wave.tasks]
+       override = find_wave_override(wave_tasks, epic_strategy.wave_overrides)
+
+       if override:
+           wave.strategy = override.strategy
+       else:
+           wave.strategy = epic_strategy.default
+   ```
+
 ### Phase 2: Display Execution Plan
 
 ```
@@ -97,24 +189,46 @@ The orchestrator should stay under ~20% of context window by:
  EXECUTION PLAN
 ═══════════════════════════════════════════════════════════
 
-Wave 1 - Foundation (Sequential):
-  → 0.1: Backend project scaffolding
-  → 0.2: Frontend project scaffolding
-
-Wave 2 - Infrastructure (Parallel Eligible):
-  ⇉ 0.3: Supabase project setup [can parallel]
-  ⇉ 0.5: AWS infrastructure setup [can parallel]
-  
-Wave 3 - Database (Sequential, depends on 0.3):
-  → 0.4: Database migrations
-
-Wave 4 - Services (Parallel Eligible):
-  ⇉ 0.6: CI/CD pipeline [can parallel]
-  ⇉ 0.7: Local development environment [can parallel]
+Epic 2: Upload & Consent
+Default Strategy: stacked
+Strategy Source: Dev Guide (wave overrides active)
 
 ───────────────────────────────────────────────────────────
-Total: 7 tasks across 4 waves
-Estimated time: ~2-3 hours (faster with --parallel)
+
+Wave 1 - Infrastructure [PARALLEL]:
+  ⇉ 2-2.1: Supabase Storage bucket setup
+  ⇉ 2-2.4: TikTok export parser
+  Branching: Each task → main
+
+Wave 2 - Backend API [PARALLEL]:
+  → 2-2.2: Presigned URL API
+  Branching: Task → main
+
+Wave 3 - Frontend Integration [PARALLEL]:
+  → 2-2.3: Uppy integration
+  Branching: Task → main
+
+Wave 4 - Core Upload Flow [STACKED]:
+  ⊢ 2-2.5: Upload validation & error handling
+  ├─ 2-2.6: Scope selection API (branches from 2-2.5)
+  └─ 2-2.7: Consent screen UI (branches from 2-2.6)
+  Branching: Chain → each targets previous branch
+  Auto-rebase: Enabled (downstream branches updated after each merge)
+
+Wave 5 - Integration [PARALLEL]:
+  → 2-2.8: Upload page frontend
+  Branching: Task → main
+
+───────────────────────────────────────────────────────────
+Total: 8 tasks across 5 waves
+Strategies: 4 parallel waves, 1 stacked wave
+
+Legend:
+  ⇉ Can run in parallel (--parallel flag)
+  → Sequential task
+  ⊢ Stack root (branches from main)
+  ├─ Stack child (branches from previous)
+  └─ Stack leaf (branches from previous)
 
 Proceed? [y/n/dry-run details]
 ```
@@ -123,12 +237,84 @@ If `--dry-run`, stop here.
 
 ### Phase 3: Execute Tasks
 
-For each wave, for each task:
+For each wave, execute based on the wave's branching strategy:
+
+---
+
+#### Strategy: `parallel` (Default)
+
+For each task in the wave:
 
 1. **Pre-Implementation Setup**
    ```bash
-   # Create feature branch
+   # Always branch from main
+   git checkout main && git pull origin main
    git checkout -b feature/{epic}-{task}-{short-name}
+   ```
+
+---
+
+#### Strategy: `stacked`
+
+For tasks in stacked waves, maintain a branch chain:
+
+1. **Pre-Implementation Setup (Stacked)**
+   ```bash
+   # First task in stack: branch from main
+   if is_first_in_stack:
+       git checkout main && git pull origin main
+       git checkout -b feature/{epic}-{task}-{short-name}
+       stack_root = current_branch
+
+   # Subsequent tasks: branch from previous task's branch
+   else:
+       git checkout {previous_task_branch}
+       git checkout -b feature/{epic}-{task}-{short-name}
+   ```
+
+2. **Track Stack Chain**
+   ```
+   stack_chain = []
+   for task in stacked_wave.tasks:
+       stack_chain.append({
+           "task_id": task.id,
+           "branch": task.branch,
+           "parent_branch": previous_task.branch or "main",
+           "pr_number": None  # Set after PR creation
+       })
+   ```
+
+---
+
+#### Strategy: `epic-branch`
+
+For epic-branch waves, all tasks share one branch:
+
+1. **Pre-Implementation Setup (Epic Branch)**
+   ```bash
+   # Create epic branch if not exists
+   if not epic_branch_exists:
+       git checkout main && git pull origin main
+       git checkout -b feature/epic-{epic_number}
+
+   # Otherwise checkout existing epic branch
+   else:
+       git checkout feature/epic-{epic_number}
+       git pull origin feature/epic-{epic_number}
+   ```
+
+2. **No separate branches per task** - all commits go to the epic branch
+
+---
+
+#### Common Steps (All Strategies)
+
+For all tasks regardless of strategy:
+
+1. **Pre-Implementation Setup** (Strategy-Specific)
+   ```bash
+   # See strategy-specific setup above
+   git checkout -b feature/{epic}-{task}-{short-name}  # parallel/stacked only
    ```
 
 2. **Load Context**
@@ -235,7 +421,11 @@ For each wave, for each task:
 
 ### Phase 3.5: Create PRs and Merge (After Each Wave)
 
-After all tasks in a wave complete (or are blocked/skipped):
+After all tasks in a wave complete (or are blocked/skipped), handle based on strategy:
+
+---
+
+#### Strategy: `parallel` (Default Behavior)
 
 1. **Push branches and create PRs for completed tasks**
    ```bash
@@ -244,6 +434,7 @@ After all tasks in a wave complete (or are blocked/skipped):
        git push -u origin {task.branch}
 
        gh pr create \
+         --base main \
          --title "feat({scope}): {task_id} - {description}" \
          --body "$(cat <<'EOF'
    ## Task
@@ -258,55 +449,184 @@ After all tasks in a wave complete (or are blocked/skipped):
    )"
    ```
 
-2. **Wait for CI to pass on all PRs**
+2. **Merge PRs independently** (no ordering required)
+
+---
+
+#### Strategy: `stacked`
+
+1. **Push all branches in the stack**
    ```bash
-   for pr in created_prs:
-       gh pr checks {pr_number} --watch
-       if checks_failed:
-           mark task as "CI Failed"
-           continue
+   for task in stack_chain:
+       git checkout {task.branch}
+       git push -u origin {task.branch}
    ```
 
-3. **Squash merge passing PRs**
+2. **Create PRs targeting parent branches**
    ```bash
-   for pr in passing_prs:
-       gh pr merge {pr_number} --squash --delete-branch
-       update spec: Merged = Yes
-       update Dev Guide: Merged = Yes
-   ```
-
-4. **Handle CI failures**
-
-   **Within a wave (safe to continue):**
-   - Tasks in the same wave are independent (touch different files)
-   - If PR #15 (task 0.4) fails CI, PR #16 (task 0.5) can still merge
-   - The failed PR stays open; task marked as "CI Failed"
-   - Fix locally, push, CI re-runs, merge when passing
-
-   **Across waves (must wait):**
-   - If ANY task in Wave N fails CI, do NOT start Wave N+1 yet
-   - Later waves depend on earlier waves
-   - Options:
-     a. Fix the failing task, merge, then proceed
-     b. Skip the failing task (mark BLOCKED), proceed if no dependents
-     c. Stop the backlog run, report status
-
-   **Decision logic:**
-   ```
-   if task_ci_failed:
-       if has_dependent_tasks_in_later_waves:
-           BLOCK later_waves  # Must fix before continuing
+   for task in stack_chain:
+       if task.is_first_in_stack:
+           base_branch = "main"
        else:
-           CONTINUE  # Independent task, can fix later
+           base_branch = task.parent_branch
+
+       gh pr create \
+         --base {base_branch} \
+         --head {task.branch} \
+         --title "feat({scope}): {task_id} - {description}" \
+         --body "$(cat <<'EOF'
+   ## Task
+   Implements {task_id}: {task_name} from Dev Guide
+
+   ## Stack Position
+   {position} of {total} in stacked wave
+   Parent: {base_branch}
+   Children: {child_branches or "None (leaf)"}
+
+   ## Changes
+   {brief summary from spec}
+
+   ## Spec
+   See: docs/MVP/tasks/specs/{spec_file}
+   EOF
+   )"
+
+       task.pr_number = created_pr_number
    ```
 
-5. **Update tracking after merges**
-   - Spec files: Set `**Merged**: Yes (YYYY-MM-DD)`
-   - Spec files: Set `**Branch**: Deleted (merged via PR #{number})`
-   - Dev Guide: Set Merged column to `Yes`
-   - Commit: `git commit -m "docs: update merge status for wave N"`
+3. **Merge in order (root first)**
+   ```bash
+   for task in stack_chain:  # Already ordered root-to-leaf
+       # Wait for CI
+       gh pr checks {task.pr_number} --watch
 
-6. **Proceed to next wave** (which can now use merged code)
+       if checks_passed:
+           # Merge to parent (or main for root)
+           gh pr merge {task.pr_number} --squash --delete-branch
+
+           # CRITICAL: Retarget downstream PRs to main
+           for downstream_task in stack_chain.after(task):
+               # Update base to main since parent just merged
+               gh pr edit {downstream_task.pr_number} --base main
+
+               # Rebase downstream branch onto updated main
+               git checkout {downstream_task.branch}
+               git fetch origin
+               git rebase origin/main
+               git push --force-with-lease
+       else:
+           # Block all downstream tasks
+           mark_downstream_blocked(task, stack_chain)
+           break
+   ```
+
+4. **Auto-Rebase Logic for Stacked Strategy**
+
+   After each PR merge in the stack:
+   ```bash
+   # 1. Identify remaining unmerged branches in the stack
+   remaining_branches = get_unmerged_downstream(merged_branch, stack_chain)
+
+   # 2. Rebase each onto new main
+   for branch in remaining_branches:
+       git checkout {branch}
+       git fetch origin
+       git rebase origin/main
+
+       # Handle rebase conflicts
+       if rebase_has_conflicts:
+           git rebase --abort
+           notify_user("Rebase conflict in {branch}. Manual resolution required.")
+           mark_task_blocked(branch, "Rebase conflict after {merged_branch} merge")
+           break
+
+       # Push updated branch
+       git push --force-with-lease
+
+       # Update PR base to main
+       pr_number = gh pr view {branch} --json number -q '.number'
+       gh pr edit {pr_number} --base main
+   ```
+
+---
+
+#### Strategy: `epic-branch`
+
+1. **After all tasks in the wave complete, push the epic branch**
+   ```bash
+   git checkout feature/epic-{epic_number}
+   git push -u origin feature/epic-{epic_number}
+   ```
+
+2. **Create a single PR for the entire wave/epic**
+   ```bash
+   gh pr create \
+     --base main \
+     --head feature/epic-{epic_number} \
+     --title "feat({scope}): Epic {epic_number} - {epic_name}" \
+     --body "$(cat <<'EOF'
+   ## Epic Summary
+   Implements Epic {epic_number}: {epic_name}
+
+   ## Tasks Included
+   {for each task: - {task_id}: {task_name}}
+
+   ## Changes
+   {combined summary from all specs}
+
+   ## Specs
+   {for each task: - docs/MVP/tasks/specs/{spec_file}}
+   EOF
+   )"
+   ```
+
+3. **Merge the single PR** after all CI passes
+
+---
+
+#### Common: Handle CI Failures
+
+**Within a wave (parallel strategy):**
+- Tasks in the same wave are independent (touch different files)
+- If PR #15 (task 0.4) fails CI, PR #16 (task 0.5) can still merge
+- The failed PR stays open; task marked as "CI Failed"
+- Fix locally, push, CI re-runs, merge when passing
+
+**Within a stacked wave:**
+- Failures block ALL downstream tasks in the stack
+- Must fix from the point of failure, not skip ahead
+- The stack maintains sequential integrity
+
+**Across waves (all strategies):**
+- If ANY task in Wave N fails CI, do NOT start Wave N+1 yet
+- Later waves depend on earlier waves
+- Options:
+  a. Fix the failing task, merge, then proceed
+  b. Skip the failing task (mark BLOCKED), proceed if no dependents
+  c. Stop the backlog run, report status
+
+**Decision logic:**
+```
+if task_ci_failed:
+    if strategy == "stacked":
+        BLOCK all_downstream_in_stack  # Must fix before continuing
+    elif has_dependent_tasks_in_later_waves:
+        BLOCK later_waves  # Must fix before continuing
+    else:
+        CONTINUE  # Independent task, can fix later
+```
+
+---
+
+#### Common: Update Tracking After Merges
+
+For all strategies:
+- Spec files: Set `**Merged**: Yes (YYYY-MM-DD)`
+- Spec files: Set `**Branch**: Deleted (merged via PR #{number})`
+- Dev Guide: Set Merged column to `Yes`
+- Commit: `git commit -m "docs: update merge status for wave N"`
+
+Proceed to next wave (which can now use merged code)
 
 ### Phase 4: Summary Report
 
@@ -315,31 +635,41 @@ After all tasks in a wave complete (or are blocked/skipped):
  IMPLEMENTATION COMPLETE
 ═══════════════════════════════════════════════════════════
 
-Wave 1 - Complete:
-  ✓ PR #12: feat(backend): 0.1 - Backend scaffolding [merged]
-  ✓ PR #13: feat(frontend): 0.2 - Frontend scaffolding [merged]
+Epic 2: Upload & Consent
+Strategy: stacked (with wave overrides)
 
-Wave 2 - Complete:
-  ✓ PR #14: feat(infra): 0.3 - Supabase setup [merged]
-  ✓ PR #16: feat(infra): 0.5 - AWS infrastructure [merged]
+───────────────────────────────────────────────────────────
 
-Wave 3 - Partial:
-  ✗ PR #15: feat(db): 0.4 - Database migrations [CI failed: pytest]
-    → 3 dependents blocked: 0.7, 0.9, 1.1
+Wave 1 [PARALLEL] - Complete:
+  ✓ PR #12: feat(storage): 2-2.1 - Supabase Storage bucket [merged]
+  ✓ PR #13: feat(parser): 2-2.4 - TikTok export parser [merged]
 
-Wave 4 - Not started (waiting on 0.4):
-  ○ 0.6: CI/CD pipeline [blocked by 0.4]
-  ○ 0.7: Local development environment [blocked by 0.4]
+Wave 2 [PARALLEL] - Complete:
+  ✓ PR #14: feat(api): 2-2.2 - Presigned URL API [merged]
+
+Wave 3 [PARALLEL] - Complete:
+  ✓ PR #15: feat(upload): 2-2.3 - Uppy integration [merged]
+
+Wave 4 [STACKED] - Partial:
+  ✓ PR #16: feat(upload): 2-2.5 - Upload validation [merged → main]
+  ✓ PR #17: feat(upload): 2-2.6 - Scope selection [merged → main, rebased after #16]
+  ✗ PR #18: feat(consent): 2-2.7 - Consent screen [CI failed: type errors]
+    → Stack blocked at this point
+    → Auto-rebase was successful, CI failure is in new code
+
+Wave 5 [PARALLEL] - Not started (waiting on Wave 4):
+  ○ 2-2.8: Upload page frontend [blocked by 2-2.7]
 
 ───────────────────────────────────────────────────────────
 Summary:
-  Merged: 4 PRs
-  CI Failed: 1 PR (0.4 - pytest failures)
-  Blocked: 2 tasks (depend on 0.4)
+  Merged: 6 PRs (4 parallel, 2 stacked)
+  CI Failed: 1 PR (2-2.7 - type errors in consent component)
+  Blocked: 1 task (depends on 2-2.7)
+  Stacked merges: 2/3 successful (auto-rebase worked)
 
 Next steps:
-  1. Fix CI failures for PR #15 (0.4: Database migrations)
-  2. Run: /implement-backlog 0 (to continue)
+  1. Fix CI failures for PR #18 (2-2.7: Consent screen)
+  2. Run: /implement-backlog 2 (to continue from Wave 4)
 ```
 
 ## Subagent Coordination (--parallel mode)
