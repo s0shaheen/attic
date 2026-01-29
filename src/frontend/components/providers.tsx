@@ -3,6 +3,7 @@
 import React from "react"
 import { QueryClientProvider } from "@tanstack/react-query"
 import { createQueryClient } from "@/lib/query-client"
+import { SupabaseProvider } from "@/components/providers/SupabaseProvider"
 import type { QueryClient } from "@tanstack/react-query"
 
 let browserQueryClient: QueryClient | undefined
@@ -20,5 +21,9 @@ function getQueryClient(): QueryClient {
 export function Providers({ children }: { children: React.ReactNode }) {
   const queryClient = getQueryClient()
 
-  return <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+  return (
+    <SupabaseProvider>
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    </SupabaseProvider>
+  )
 }

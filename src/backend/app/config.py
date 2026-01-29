@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     database_url: str = Field(description="PostgreSQL connection URL (asyncpg)")
     supabase_url: str = Field(description="Supabase project URL")
     supabase_service_key: str = Field(description="Supabase service role key (server-side only)")
+    supabase_jwt_secret: str = Field(description="Supabase JWT secret for token verification")
 
     # AWS
     aws_access_key_id: str = Field(description="AWS access key ID")

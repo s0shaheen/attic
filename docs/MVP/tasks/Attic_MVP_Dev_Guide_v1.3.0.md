@@ -105,10 +105,10 @@ Implements user authentication via Supabase Auth with Google OAuth.
 
 | Task | Status | Merged | Spec | Blocked By |
 |------|--------|--------|------|------------|
-| 1.1 | NOT_STARTED | No | [1-1.1.md](specs/1-1.1.md) | 0.3 |
-| 1.2 | NOT_STARTED | No | [1-1.2.md](specs/1-1.2.md) | 1.1, 0.2 |
-| 1.3 | NOT_STARTED | No | [1-1.3.md](specs/1-1.3.md) | 0.1, 1.1 |
-| 1.4 | NOT_STARTED | No | [1-1.4.md](specs/1-1.4.md) | 1.1, 1.2, 0.2 |
+| 1.1 | DONE | Yes | [1-1.1.md](specs/1-1.1.md) | 0.3 |
+| 1.2 | DONE | No | [1-1.2.md](specs/1-1.2.md) | 1.1, 0.2 |
+| 1.3 | DONE | No | [1-1.3.md](specs/1-1.3.md) | 0.1, 1.1 |
+| 1.4 | DONE | No | [1-1.4.md](specs/1-1.4.md) | 1.1, 1.2, 0.2 |
 | 1.5 | NOT_STARTED | No | [1-1.5.md](specs/1-1.5.md) | 1.2, 1.4 |
 | 1.6 | NOT_STARTED | No | [1-1.6.md](specs/1-1.6.md) | 1.3, 1.5, 0.4 |
 
