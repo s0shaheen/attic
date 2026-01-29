@@ -5,6 +5,7 @@ Contains both Pydantic schemas (API contracts) and SQLAlchemy ORM models.
 
 from pydantic import BaseModel
 
+from app.models.auth import AuthenticatedUser, AuthErrorCode, AuthErrorResponse
 from app.models.cost_model import CostModel
 from app.models.media_event import MediaEvent
 from app.models.processing_step import ProcessingStep
@@ -23,7 +24,11 @@ class HealthResponse(BaseModel):
 
 
 __all__ = [
-    # Pydantic
+    # Pydantic - Auth
+    "AuthenticatedUser",
+    "AuthErrorCode",
+    "AuthErrorResponse",
+    # Pydantic - API
     "HealthResponse",
     # SQLAlchemy
     "CostModel",
