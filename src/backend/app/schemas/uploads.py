@@ -1,10 +1,11 @@
 """Upload-related Pydantic schemas for API contracts.
 
 This module defines request/response schemas for the upload API endpoints,
-including presigned URL generation and upload record creation.
+including presigned URL generation, upload record creation, and validation.
 """
 
 from datetime import datetime
+from enum import Enum
 from uuid import UUID
 
 from pydantic import BaseModel, Field
@@ -66,3 +67,66 @@ class UploadErrorResponse(BaseModel):
 
     detail: str = Field(..., description="Human-readable error message")
     code: str = Field(..., description="Machine-readable error code")
+
+
+# ============================================================================
+# Validation schemas (Task 2-2.5)
+# ============================================================================
+
+
+class ValidationErrorCode(str, Enum):
+    """Error codes for validation failures."""
+
+    INVALID_FILE = "INVALID_FILE"  # Not a valid ZIP
+    INVALID_EXPORT = "INVALID_EXPORT"  # ZIP doesn't contain TikTok export
+    EMPTY_EXPORT = "EMPTY_EXPORT"  # No liked/favorited videos
+    FILE_TOO_LARGE = "FILE_TOO_LARGE"  # Exceeds 500MB
+    FILE_CORRUPTED = "FILE_CORRUPTED"  # ZIP is corrupted
+    UNSUPPORTED_FORMAT = "UNSUPPORTED_FORMAT"  # Not JSON format export
+
+
+class ValidationResult(BaseModel):
+    """Result of file validation.
+
+    Attributes:
+        valid: Whether the file passed validation
+        error_code: Error code if validation failed
+        error_message: Human-readable error message if validation failed
+        liked_count: Number of liked videos found (if valid)
+        favorited_count: Number of favorited videos found (if valid)
+        file_hash: SHA256 hash for debugging (not content)
+    """
+
+    valid: bool = Field(..., description="Whether the file passed validation")
+    error_code: ValidationErrorCode | None = Field(
+        default=None,
+        description="Error code if validation failed",
+    )
+    error_message: str | None = Field(
+        default=None,
+        description="Human-readable error message",
+    )
+    liked_count: int | None = Field(
+        default=None,
+        description="Number of liked videos found (if valid)",
+    )
+    favorited_count: int | None = Field(
+        default=None,
+        description="Number of favorited videos found (if valid)",
+    )
+    file_hash: str | None = Field(
+        default=None,
+        description="SHA256 hash for debugging (not content)",
+    )
+
+
+class ValidateUploadResponse(BaseModel):
+    """Response from validation endpoint.
+
+    Attributes:
+        upload_id: The upload that was validated
+        validation: The validation result
+    """
+
+    upload_id: UUID
+    validation: ValidationResult

@@ -1,0 +1,145 @@
+# Detect Merge Conflicts Workflow
+# Runs every 6 hours + on push to main
+# Labels PRs with 'merge-conflict' if they can't cleanly merge
+# Adds comment with resolution instructions
+
+name: Detect Merge Conflicts
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  detect-conflicts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check Open PRs for Conflicts
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+
+          echo "Fetching open PRs..."
+          PRS=$(gh pr list --state open --json number,headRefName,author --jq '.[] | "\(.number) \(.headRefName) \(.author.login)"')
+
+          if [ -z "$PRS" ]; then
+            echo "No open PRs found"
+            exit 0
+          fi
+
+          echo "Checking PRs for merge conflicts..."
+
+          CONFLICT_COUNT=0
+          RESOLVED_COUNT=0
+
+          while IFS=' ' read -r PR_NUMBER BRANCH AUTHOR; do
+            [ -z "$PR_NUMBER" ] && continue
+
+            echo ""
+            echo "=== PR #$PR_NUMBER (branch: $BRANCH) ==="
+
+            # Check if PR is mergeable
+            MERGEABLE=$(gh pr view "$PR_NUMBER" --json mergeable --jq '.mergeable')
+
+            # Get current labels
+            HAS_CONFLICT_LABEL=$(gh pr view "$PR_NUMBER" --json labels --jq '.labels[].name' | grep -c "merge-conflict" || true)
+
+            if [ "$MERGEABLE" = "CONFLICTING" ]; then
+              CONFLICT_COUNT=$((CONFLICT_COUNT + 1))
+              echo "  Status: CONFLICT DETECTED"
+
+              if [ "$HAS_CONFLICT_LABEL" = "0" ]; then
+                echo "  Adding merge-conflict label..."
+
+                # Add label (create if doesn't exist)
+                gh label create "merge-conflict" --description "PR has merge conflicts that need resolution" --color "d93f0b" 2>/dev/null || true
+                gh pr edit "$PR_NUMBER" --add-label "merge-conflict"
+
+                # Add comment with instructions
+                COMMENT="## Merge Conflict Detected
+
+          This PR has conflicts with the \`main\` branch that need to be resolved before it can be merged.
+
+          ### How to resolve:
+
+          \`\`\`bash
+          # Fetch latest changes
+          git fetch origin
+
+          # Checkout your branch
+          git checkout $BRANCH
+
+          # Rebase onto main
+          git rebase origin/main
+
+          # Resolve any conflicts, then continue
+          git add .
+          git rebase --continue
+
+          # Push the rebased branch
+          git push --force-with-lease
+          \`\`\`
+
+          Or you can merge main into your branch:
+
+          \`\`\`bash
+          git checkout $BRANCH
+          git merge origin/main
+          # Resolve conflicts
+          git add .
+          git commit
+          git push
+          \`\`\`
+
+          ---
+          *This comment was added automatically by the merge conflict detection workflow.*"
+
+                gh pr comment "$PR_NUMBER" --body "$COMMENT"
+                echo "  Comment added with resolution instructions"
+              else
+                echo "  Label already present"
+              fi
+
+            elif [ "$MERGEABLE" = "MERGEABLE" ]; then
+              echo "  Status: Clean (mergeable)"
+
+              if [ "$HAS_CONFLICT_LABEL" != "0" ]; then
+                RESOLVED_COUNT=$((RESOLVED_COUNT + 1))
+                echo "  Removing merge-conflict label (conflict resolved)..."
+                gh pr edit "$PR_NUMBER" --remove-label "merge-conflict"
+
+                # Add resolution comment
+                gh pr comment "$PR_NUMBER" --body "Merge conflict resolved! This PR can now be merged."
+              fi
+
+            else
+              echo "  Status: Unknown ($MERGEABLE)"
+            fi
+
+          done <<< "$PRS"
+
+          echo ""
+          echo "=== Summary ==="
+          echo "PRs with conflicts: $CONFLICT_COUNT"
+          echo "PRs with resolved conflicts: $RESOLVED_COUNT"
+
+      - name: Summary
+        run: |
+          echo "## Merge Conflict Check Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Checked all open PRs for merge conflicts with main branch." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "PRs with conflicts are labeled \`merge-conflict\` and have resolution instructions added as a comment." >> $GITHUB_STEP_SUMMARY

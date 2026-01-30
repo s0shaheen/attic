@@ -10,3 +10,5 @@ export type { UploadProgressProps } from './UploadProgress';
 
 export { UploadError } from './UploadError';
 export type { UploadErrorProps } from './UploadError';
+
+export { ValidationError, type ValidationErrorProps } from "./ValidationError";

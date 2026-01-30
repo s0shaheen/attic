@@ -1,11 +1,13 @@
 """Upload management routes.
 
 This module contains endpoints for managing TikTok export uploads,
-including presigned URL generation for direct-to-storage uploads.
+including presigned URL generation for direct-to-storage uploads
+and validation of uploaded files.
 """
 
 import logging
 from typing import Annotated
+from uuid import UUID
 
 from fastapi import APIRouter, Depends, HTTPException
 
@@ -17,6 +19,7 @@ from app.schemas.uploads import (
     PresignedUrlResponse,
     UploadErrorCode,
     UploadErrorResponse,
+    ValidateUploadResponse,
 )
 from app.services.uploads import UploadService
 
@@ -155,4 +158,112 @@ async def create_presigned_url(
         storage_path=result.storage_path,  # type: ignore[arg-type]
         expires_at=result.expires_at,  # type: ignore[arg-type]
         max_file_size=result.max_file_size,  # type: ignore[arg-type]
+    )
+
+
+@router.post(
+    "/{upload_id}/validate",
+    response_model=ValidateUploadResponse,
+    status_code=200,
+    responses={
+        200: {"description": "Validation complete (check valid field for result)"},
+        401: {"description": "Not authenticated"},
+        403: {"description": "Upload belongs to different user"},
+        404: {"description": "Upload not found"},
+        500: {"description": "Validation failed unexpectedly"},
+    },
+)
+async def validate_upload(
+    upload_id: UUID,
+    user: Annotated[AuthenticatedUser, Depends(get_current_user)],
+    settings: Annotated[Settings, Depends(get_settings)],
+) -> ValidateUploadResponse:
+    """Validate an uploaded TikTok export file.
+
+    This endpoint validates that the uploaded file:
+    1. Is a valid ZIP file
+    2. Contains a TikTok data export structure
+    3. Has liked and/or favorited videos
+
+    On success, returns the count of liked and favorited videos.
+    On failure, returns an appropriate error code and message.
+
+    The upload status is updated based on the validation result:
+    - validated: File passed validation
+    - invalid: File failed validation
+
+    Args:
+        upload_id: The upload ID to validate
+        user: Authenticated user from JWT
+        settings: Application settings
+
+    Returns:
+        ValidateUploadResponse with validation result
+
+    Raises:
+        HTTPException: 401 if not authenticated, 403 if not owner,
+                      404 if upload not found, 500 if validation fails
+    """
+    logger.info(
+        {
+            "event": "validate_upload_requested",
+            "upload_id": str(upload_id),
+            "user_id": str(user.id),
+        }
+    )
+
+    # TODO: Implement proper upload lookup from database
+    # For now, we'll implement a mock that shows the API contract
+    # This will be updated when database integration is complete
+    #
+    # Expected implementation:
+    # 1. Query uploads table for upload_id
+    # 2. Verify user_id matches (RLS should handle this)
+    # 3. Get storage_path from upload record
+    # 4. Download file from Supabase Storage
+    # 5. Validate file content
+    # 6. Update upload record with validation result
+
+    # Mock: Return 404 for unknown uploads
+    # In real implementation, this would be a database lookup
+    #
+    # upload = await db.query(Upload).filter(Upload.id == upload_id).first()
+    # if not upload:
+    #     raise HTTPException(status_code=404, detail="Upload not found")
+    #
+    # if upload.user_id != user.id:
+    #     raise HTTPException(status_code=403, detail="Access denied")
+    #
+    # # Download file from storage
+    # storage_service = SupabaseStorageService(settings)
+    # file_content = await storage_service.download_file(upload.storage_path)
+    #
+    # # Validate
+    # validation_service = ValidationService()
+    # result = await validation_service.validate_upload(
+    #     upload_id=upload_id,
+    #     user_id=user.id,
+    #     file_content=file_content,
+    # )
+    #
+    # # Update upload record
+    # if result.should_update_status:
+    #     upload.status = result.new_status
+    #     error_code = result.result.error_code
+    #     upload.validation_error = error_code.value if error_code else None
+    #     upload.validation_message = result.result.error_message
+    #     upload.validated_at = datetime.now(UTC)
+    #     await db.commit()
+    #
+    # return ValidateUploadResponse(upload_id=upload_id, validation=result.result)
+
+    # Temporary: Return a mock response indicating the endpoint exists
+    # but requires database integration
+    raise HTTPException(
+        status_code=404,
+        detail={
+            "error": "Upload not found",
+            "message": "This endpoint requires database integration. "
+            "The upload record lookup is not yet implemented.",
+        },
     )

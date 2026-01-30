@@ -18,6 +18,9 @@
       "Bash(git show*)",
       "Bash(git merge*)",
       "Bash(git pull*)",
+      "Bash(git push*)",
+      "Bash(git fetch*)",
+      "Bash(git rebase*)",
       "Bash(pip install*)",
       "Bash(pip *)",
       "Bash(npm install*)",
@@ -35,12 +38,35 @@
       "Bash(node*)",
       "Bash(npx*)",
       "Bash(uv *)",
-      "Bash(gh *)"
+      "Bash(gh *)",
+      "Bash(gh pr checks*)",
+      "Bash(gh run watch*)",
+      "Bash(head*)",
+      "Bash(tail*)",
+      "Bash(jq *)",
+      "Bash(curl *)",
+      "Bash(kill *)",
+      "Bash(ps *)",
+      "Bash(wc *)",
+      "Bash(sort *)",
+      "Bash(uniq *)",
+      "Bash(cut *)",
+      "Bash(xargs *)"
     ],
     "deny": [
       "Bash(rm -rf /)*",
       "Bash(*--force*delete*)",
-      "Bash(git push --force*)"
+      "Bash(git push --force*)",
+      "Bash(git push * --force*)",
+      "Bash(sam deploy*prod*)",
+      "Bash(sam deploy*--stack-name*prod*)",
+      "Bash(gh repo delete*)",
+      "Bash(gh pr merge*--admin*)",
+      "Bash(aws*--profile prod*)",
+      "Bash(aws*production*)",
+      "Bash(DROP TABLE*)",
+      "Bash(DROP DATABASE*)",
+      "Bash(TRUNCATE*)"
     ]
   },
   "hooks": {
