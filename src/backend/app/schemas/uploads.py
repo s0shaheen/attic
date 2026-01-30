@@ -204,3 +204,48 @@ class TierLimitExceededError(BaseModel):
     tier_limit: int
     tier: str
     upgrade_required: bool = Field(default=True)
+
+
+# ============================================================================
+# Consent schemas (Task 2-2.7)
+# ============================================================================
+
+# Current consent text version - increment when text changes
+CURRENT_CONSENT_VERSION = "1.0.0"
+
+
+class ConsentRequest(BaseModel):
+    """Request to record consent for data processing.
+
+    Attributes:
+        consent_given: User explicitly consented
+        consent_version: Version of consent text shown
+    """
+
+    consent_given: bool = Field(
+        ...,
+        description="User explicitly consented to data processing",
+    )
+    consent_version: str = Field(
+        default=CURRENT_CONSENT_VERSION,
+        description="Version of consent text shown to user",
+        max_length=20,
+    )
+
+
+class ConsentResponse(BaseModel):
+    """Response after consent is recorded.
+
+    Attributes:
+        upload_id: The upload ID that was updated
+        consent_given: Whether consent was given
+        consent_version: Version of consent text recorded
+        consent_at: Timestamp when consent was recorded
+        ready_to_process: Whether processing can now start
+    """
+
+    upload_id: UUID
+    consent_given: bool = Field(..., description="Whether consent was given")
+    consent_version: str = Field(..., description="Version of consent text recorded")
+    consent_at: datetime = Field(..., description="Timestamp when consent was recorded")
+    ready_to_process: bool = Field(..., description="Whether processing can now start")

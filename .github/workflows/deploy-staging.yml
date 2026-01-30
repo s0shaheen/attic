@@ -58,14 +58,16 @@ jobs:
     name: Deploy Backend to Render
     runs-on: ubuntu-latest
     environment: staging
+    env:
+      RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_STAGING_DEPLOY_HOOK_URL }}
 
     steps:
       - name: Trigger Render deployment
         # Render auto-deploys on push, but we can trigger manually if needed
         # Skip if RENDER_STAGING_DEPLOY_HOOK_URL is not set
-        if: ${{ secrets.RENDER_STAGING_DEPLOY_HOOK_URL != '' }}
+        if: env.RENDER_DEPLOY_HOOK_URL != ''
         run: |
-          curl -X POST "${{ secrets.RENDER_STAGING_DEPLOY_HOOK_URL }}" \
+          curl -X POST "$RENDER_DEPLOY_HOOK_URL" \
             -H "Content-Type: application/json" \
             --fail --silent --show-error
 

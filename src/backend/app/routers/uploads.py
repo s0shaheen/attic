@@ -2,7 +2,7 @@
 
 This module contains endpoints for managing TikTok export uploads,
 including presigned URL generation for direct-to-storage uploads,
-validation of uploaded files, and scope selection.
+validation of uploaded files, scope selection, and consent capture.
 """
 
 import logging
@@ -15,6 +15,8 @@ from app.core.auth import get_current_user
 from app.core.config import Settings, get_settings
 from app.models.auth import AuthenticatedUser
 from app.schemas.uploads import (
+    ConsentRequest,
+    ConsentResponse,
     PresignedUrlRequest,
     PresignedUrlResponse,
     ScopeSelectionRequest,
@@ -386,6 +388,157 @@ async def set_scope(
     # await db.commit()
     #
     # return result.response
+
+    # Temporary: Return a mock response indicating the endpoint exists
+    # but requires database integration
+    raise HTTPException(
+        status_code=404,
+        detail={
+            "error": "Upload not found",
+            "message": "This endpoint requires database integration. "
+            "The upload record lookup is not yet implemented.",
+        },
+    )
+
+
+@router.post(
+    "/{upload_id}/consent",
+    response_model=ConsentResponse,
+    status_code=200,
+    responses={
+        200: {"description": "Consent recorded successfully"},
+        400: {"description": "consent_given is false"},
+        401: {"description": "Not authenticated"},
+        403: {"description": "Upload belongs to different user"},
+        404: {"description": "Upload not found"},
+        409: {"description": "Consent already recorded"},
+        422: {"description": "Scope not selected yet"},
+    },
+)
+async def record_consent(
+    upload_id: UUID,
+    request: ConsentRequest,
+    user: Annotated[AuthenticatedUser, Depends(get_current_user)],
+    settings: Annotated[Settings, Depends(get_settings)],
+) -> ConsentResponse:
+    """Record user consent for data processing.
+
+    This endpoint captures explicit user consent before data processing begins.
+    The consent includes version tracking for future consent text changes.
+
+    Processing cannot start without consent being recorded. Once recorded,
+    consent cannot be withdrawn through the API (account deletion handles this).
+
+    Args:
+        upload_id: The upload ID to record consent for
+        request: The consent request with consent_given and version
+        user: Authenticated user from JWT
+        settings: Application settings
+
+    Returns:
+        ConsentResponse with consent details and processing readiness
+
+    Raises:
+        HTTPException:
+            - 400: consent_given is false (decline should be handled client-side)
+            - 401: Not authenticated
+            - 403: Upload belongs to different user
+            - 404: Upload not found
+            - 409: Consent already recorded
+            - 422: Scope not selected yet
+    """
+    logger.info(
+        {
+            "event": "consent_requested",
+            "upload_id": str(upload_id),
+            "user_id": str(user.id),
+            "consent_given": request.consent_given,
+            "consent_version": request.consent_version,
+        }
+    )
+
+    # Validate that consent_given is true
+    if not request.consent_given:
+        logger.info(
+            {
+                "event": "consent_declined",
+                "upload_id": str(upload_id),
+                "user_id": str(user.id),
+            }
+        )
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": "CONSENT_NOT_GIVEN",
+                "message": "Consent must be given to proceed. "
+                "If you wish to cancel, use the cancel button.",
+            },
+        )
+
+    # TODO: Implement proper upload lookup from database
+    # For now, we'll implement a mock that shows the API contract
+    # This will be updated when database integration is complete
+    #
+    # Expected implementation:
+    # 1. Query uploads table for upload_id
+    # 2. Verify user_id matches (RLS should handle this)
+    # 3. Check upload status (must be scope_selected)
+    # 4. Check consent not already recorded
+    # 5. Record consent with version and timestamp
+    # 6. Update upload status to "consented"
+    # 7. Return response
+    #
+    # Example:
+    # upload = await db.query(Upload).filter(Upload.id == upload_id).first()
+    # if not upload:
+    #     raise HTTPException(status_code=404, detail="Upload not found")
+    #
+    # if upload.user_id != user.id:
+    #     raise HTTPException(status_code=403, detail="Access denied")
+    #
+    # # Check scope is selected
+    # if upload.status not in ("scope_selected",):
+    #     if upload.status in ("pending", "validated"):
+    #         raise HTTPException(
+    #             status_code=422,
+    #             detail={
+    #                 "error": "SCOPE_NOT_SELECTED",
+    #                 "message": "Please select a processing scope before providing consent.",
+    #             },
+    #         )
+    #     elif upload.consent_given:
+    #         raise HTTPException(
+    #             status_code=409,
+    #             detail={
+    #                 "error": "CONSENT_ALREADY_RECORDED",
+    #                 "message": "Consent has already been recorded for this upload.",
+    #             },
+    #         )
+    #     else:
+    #         raise HTTPException(
+    #             status_code=409,
+    #             detail={
+    #                 "error": "INVALID_STATE",
+    #                 "message": f"Upload is in state '{upload.status}' and cannot accept consent.",
+    #             },
+    #         )
+    #
+    # # Record consent
+    # from datetime import datetime, UTC
+    # now = datetime.now(UTC)
+    # upload.consent_given = True
+    # upload.consent_version = request.consent_version
+    # upload.consent_at = now
+    # upload.status = "consented"
+    # await db.commit()
+    #
+    # return ConsentResponse(
+    #     upload_id=upload_id,
+    #     consent_given=True,
+    #     consent_version=request.consent_version,
+    #     consent_at=now,
+    #     ready_to_process=True,
+    # )
 
     # Temporary: Return a mock response indicating the endpoint exists
     # but requires database integration

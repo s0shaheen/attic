@@ -240,3 +240,96 @@ export function getTierThatFits(count: number): Tier | null {
   }
   return null;
 }
+
+// ============================================================================
+// Consent (Task 2-2.7)
+// ============================================================================
+
+import { CONSENT_VERSION } from "@/lib/consent/content";
+
+/**
+ * Current consent version (re-exported for convenience).
+ */
+export const CURRENT_CONSENT_VERSION = CONSENT_VERSION;
+
+/**
+ * Request to record consent.
+ */
+export const consentRequestSchema = z.object({
+  consent_given: z.boolean(),
+  consent_version: z.string().max(20).default(CONSENT_VERSION),
+});
+export type ConsentRequest = z.infer<typeof consentRequestSchema>;
+
+/**
+ * Response after consent is recorded.
+ */
+export const consentResponseSchema = z.object({
+  upload_id: z.string().uuid(),
+  consent_given: z.boolean(),
+  consent_version: z.string(),
+  consent_at: z.string().datetime(),
+  ready_to_process: z.boolean(),
+});
+export type ConsentResponse = z.infer<typeof consentResponseSchema>;
+
+/**
+ * Records user consent for an upload.
+ *
+ * @param uploadId - The upload ID to record consent for
+ * @param token - Auth token for the request
+ * @param consentVersion - Version of consent text shown to user
+ * @returns The consent response or throws an error
+ */
+export async function recordConsent(
+  uploadId: string,
+  token: string,
+  consentVersion: string = CONSENT_VERSION
+): Promise<ConsentResponse> {
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || "";
+
+  const response = await fetch(`${apiUrl}/api/uploads/${uploadId}/consent`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({
+      consent_given: true,
+      consent_version: consentVersion,
+    }),
+  });
+
+  if (!response.ok) {
+    const errorData = await response.json().catch(() => ({
+      error: "UNKNOWN_ERROR",
+      message: `HTTP ${response.status}: ${response.statusText}`,
+    }));
+
+    // Handle specific error codes
+    if (response.status === 401) {
+      throw new Error("Authentication required. Please sign in again.");
+    }
+    if (response.status === 403) {
+      throw new Error("You do not have permission to access this upload.");
+    }
+    if (response.status === 404) {
+      throw new Error("Upload not found.");
+    }
+    if (response.status === 409) {
+      throw new Error(
+        errorData.message || "Consent has already been recorded for this upload."
+      );
+    }
+    if (response.status === 422) {
+      throw new Error(
+        errorData.message || "Please select a scope before providing consent."
+      );
+    }
+
+    throw new Error(errorData.message || "Failed to record consent.");
+  }
+
+  const data = await response.json();
+  return consentResponseSchema.parse(data);
+}
