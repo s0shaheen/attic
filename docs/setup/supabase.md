@@ -114,11 +114,14 @@ These are enabled in the seed file and migrations.
 
 ## Storage
 
-A storage bucket named `uploads` will be created for TikTok export files:
+A storage bucket named `tiktok-exports` is created for TikTok data export files:
 
-- **Bucket**: `uploads`
+- **Bucket**: `tiktok-exports`
 - **Public**: No (requires authentication)
 - **Max file size**: 500MB
+- **Allowed MIME types**: ZIP files only
+
+For detailed storage configuration, see [Storage Setup](./STORAGE_SETUP.md).
 
 ## Troubleshooting
 
