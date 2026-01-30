@@ -60,3 +60,84 @@ export type PresignedUrlResponse = z.infer<typeof presignedUrlResponseSchema>;
 export type UploadErrorResponse = z.infer<typeof uploadErrorResponseSchema>;
 export type UploadErrorCodeType =
   (typeof UploadErrorCode)[keyof typeof UploadErrorCode];
+
+/**
+ * Error thrown when upload API request fails.
+ */
+export class UploadApiError extends Error {
+  constructor(
+    message: string,
+    public readonly code: UploadErrorCodeType | 'UNKNOWN_ERROR',
+    public readonly status: number
+  ) {
+    super(message);
+    this.name = 'UploadApiError';
+  }
+}
+
+/**
+ * Fetches a presigned URL for uploading a TikTok export file.
+ *
+ * Makes an authenticated request to the backend API to get a presigned URL
+ * that can be used to upload a file directly to Supabase Storage.
+ *
+ * @param request - Request containing filename and content_type
+ * @param accessToken - Supabase JWT access token for authentication
+ * @returns Presigned URL response containing upload_id, presigned_url, storage_path, expires_at
+ * @throws UploadApiError if the request fails
+ */
+export async function getPresignedUrl(
+  request: PresignedUrlRequest,
+  accessToken: string
+): Promise<PresignedUrlResponse> {
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+  if (!apiUrl) {
+    throw new UploadApiError(
+      'API URL not configured',
+      'UNKNOWN_ERROR',
+      500
+    );
+  }
+
+  const response = await fetch(`${apiUrl}/api/uploads/presigned-url`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${accessToken}`,
+    },
+    body: JSON.stringify(request),
+  });
+
+  if (!response.ok) {
+    // Try to parse error response
+    let errorMessage = 'Failed to get presigned URL';
+    let errorCode: UploadErrorCodeType | 'UNKNOWN_ERROR' = 'UNKNOWN_ERROR';
+
+    try {
+      const errorData = await response.json();
+      const parsed = uploadErrorResponseSchema.safeParse(errorData);
+      if (parsed.success) {
+        errorMessage = parsed.data.detail;
+        errorCode = parsed.data.code as UploadErrorCodeType;
+      }
+    } catch {
+      // Ignore JSON parse errors, use default message
+    }
+
+    throw new UploadApiError(errorMessage, errorCode, response.status);
+  }
+
+  const data = await response.json();
+  const parsed = presignedUrlResponseSchema.safeParse(data);
+
+  if (!parsed.success) {
+    throw new UploadApiError(
+      'Invalid response from server',
+      'UNKNOWN_ERROR',
+      500
+    );
+  }
+
+  return parsed.data;
+}
