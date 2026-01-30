@@ -1,0 +1,310 @@
+# Claude Code CI Fixer
+# Automatically attempts to fix CI failures on PRs
+#
+# Trigger: PR check failure (lint, type, test)
+# Behavior:
+# - Spawns Claude Code with ci-fixer agent
+# - Maximum 2 fix attempts per failure
+# - Comments on PR with fix status
+# - Can be disabled per-PR with "no-autofix" label
+
+name: Claude Code CI Fixer
+
+on:
+  # Trigger on check suite completion (when CI fails)
+  check_suite:
+    types: [completed]
+
+  # Also allow manual trigger
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number to fix'
+        type: number
+        required: true
+
+env:
+  MAX_FIX_ATTEMPTS: 2
+
+jobs:
+  check-eligibility:
+    runs-on: ubuntu-latest
+    if: |
+      (github.event_name == 'workflow_dispatch') ||
+      (github.event.check_suite.conclusion == 'failure' &&
+       github.event.check_suite.head_branch != 'main')
+    outputs:
+      should_fix: ${{ steps.check.outputs.should_fix }}
+      pr_number: ${{ steps.check.outputs.pr_number }}
+      branch: ${{ steps.check.outputs.branch }}
+      attempt_number: ${{ steps.check.outputs.attempt_number }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check Fix Eligibility
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+
+          # Determine PR number
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            PR_NUMBER="${{ inputs.pr_number }}"
+          else
+            # Get PR for this branch
+            BRANCH="${{ github.event.check_suite.head_branch }}"
+            PR_NUMBER=$(gh pr list --head "$BRANCH" --json number --jq '.[0].number // empty')
+          fi
+
+          if [ -z "$PR_NUMBER" ]; then
+            echo "No PR found for this branch"
+            echo "should_fix=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+
+          # Get PR details
+          PR_DATA=$(gh pr view "$PR_NUMBER" --json labels,headRefName,author)
+          BRANCH=$(echo "$PR_DATA" | jq -r '.headRefName')
+          LABELS=$(echo "$PR_DATA" | jq -r '.labels[].name')
+
+          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+          # Check for "no-autofix" label
+          if echo "$LABELS" | grep -q "no-autofix"; then
+            echo "PR has no-autofix label, skipping"
+            echo "should_fix=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # Check fix attempt count
+          # We track attempts via PR comments with a specific format
+          ATTEMPT_COUNT=$(gh pr view "$PR_NUMBER" --comments --json comments \
+            --jq '[.comments[] | select(.body | contains("Claude Code CI Fix Attempt"))] | length')
+
+          ATTEMPT_NUMBER=$((ATTEMPT_COUNT + 1))
+          echo "attempt_number=$ATTEMPT_NUMBER" >> $GITHUB_OUTPUT
+
+          if [ "$ATTEMPT_NUMBER" -gt "$MAX_FIX_ATTEMPTS" ]; then
+            echo "Max fix attempts ($MAX_FIX_ATTEMPTS) reached for PR #$PR_NUMBER"
+
+            # Add comment explaining max attempts reached
+            gh pr comment "$PR_NUMBER" --body "### ⚠️ Claude Code CI Fixer: Max Attempts Reached
+
+          This PR has had $MAX_FIX_ATTEMPTS automatic fix attempts. Further fixes require manual intervention.
+
+          To re-enable automatic fixing, remove and re-add the failing commits or manually fix the issues.
+
+          ---
+          _This message was added automatically by the CI Fixer workflow._"
+
+            echo "should_fix=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          echo "should_fix=true" >> $GITHUB_OUTPUT
+          echo "Will attempt fix #$ATTEMPT_NUMBER for PR #$PR_NUMBER (branch: $BRANCH)"
+
+  fix-ci:
+    needs: check-eligibility
+    if: needs.check-eligibility.outputs.should_fix == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout PR Branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.check-eligibility.outputs.branch }}
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: |
+          # Install Claude Code
+          npm install -g @anthropic-ai/claude-code
+
+          # Install project dependencies for linting/testing
+          if [ -f "src/backend/requirements.txt" ]; then
+            pip install -r src/backend/requirements.txt
+          fi
+
+          if [ -f "src/frontend/package.json" ]; then
+            cd src/frontend && npm ci
+          fi
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Get Failure Details
+        id: failures
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ needs.check-eligibility.outputs.pr_number }}
+        run: |
+          # Get failing checks
+          CHECKS=$(gh pr checks "$PR_NUMBER" --json name,state,link --jq '.[] | select(.state == "FAILURE")')
+
+          if [ -z "$CHECKS" ]; then
+            echo "No failing checks found"
+            echo "has_failures=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          echo "has_failures=true" >> $GITHUB_OUTPUT
+
+          # Extract failure types
+          FAILURE_TYPES=""
+          if echo "$CHECKS" | grep -qi "lint\|ruff\|eslint"; then
+            FAILURE_TYPES="lint"
+          fi
+          if echo "$CHECKS" | grep -qi "type\|mypy\|typescript\|tsc"; then
+            FAILURE_TYPES="$FAILURE_TYPES type"
+          fi
+          if echo "$CHECKS" | grep -qi "test\|pytest\|vitest\|jest"; then
+            FAILURE_TYPES="$FAILURE_TYPES test"
+          fi
+
+          echo "failure_types=$FAILURE_TYPES" >> $GITHUB_OUTPUT
+          echo "Failure types: $FAILURE_TYPES"
+
+      - name: Post Fix Attempt Comment
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ needs.check-eligibility.outputs.pr_number }}
+          ATTEMPT: ${{ needs.check-eligibility.outputs.attempt_number }}
+          FAILURES: ${{ steps.failures.outputs.failure_types }}
+        run: |
+          gh pr comment "$PR_NUMBER" --body "### 🔧 Claude Code CI Fix Attempt #$ATTEMPT
+
+          **Status**: In Progress
+          **Failure types**: $FAILURES
+          **Time**: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          Attempting to automatically fix CI failures...
+
+          ---"
+
+      - name: Run Claude Code CI Fixer
+        id: fix
+        if: steps.failures.outputs.has_failures == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ needs.check-eligibility.outputs.pr_number }}
+          BRANCH: ${{ needs.check-eligibility.outputs.branch }}
+          FAILURE_TYPES: ${{ steps.failures.outputs.failure_types }}
+        run: |
+          set +e
+
+          # Construct the prompt for ci-fixer agent
+          PROMPT="Fix the CI failures for PR #$PR_NUMBER on branch $BRANCH. Failure types: $FAILURE_TYPES"
+
+          # Run Claude Code with the ci-fixer task
+          OUTPUT=$(claude --dangerously-skip-permissions "$PROMPT" 2>&1)
+          EXIT_CODE=$?
+
+          echo "$OUTPUT"
+
+          # Check if fix was successful
+          if [ $EXIT_CODE -eq 0 ] && echo "$OUTPUT" | grep -q "FIXED"; then
+            echo "status=fixed" >> $GITHUB_OUTPUT
+          elif echo "$OUTPUT" | grep -q "UNFIXABLE"; then
+            echo "status=unfixable" >> $GITHUB_OUTPUT
+          else
+            echo "status=error" >> $GITHUB_OUTPUT
+          fi
+
+          # Save output for comment
+          echo "output<<EOF" >> $GITHUB_OUTPUT
+          echo "$OUTPUT" | tail -50 >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Push Fixes
+        if: steps.fix.outputs.status == 'fixed'
+        env:
+          BRANCH: ${{ needs.check-eligibility.outputs.branch }}
+        run: |
+          git add -A
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "fix: resolve CI failures (auto-fix attempt)
+
+          Co-Authored-By: Claude <noreply@anthropic.com>"
+
+            git push origin "$BRANCH"
+          fi
+
+      - name: Post Result Comment
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ needs.check-eligibility.outputs.pr_number }}
+          ATTEMPT: ${{ needs.check-eligibility.outputs.attempt_number }}
+          STATUS: ${{ steps.fix.outputs.status }}
+          OUTPUT: ${{ steps.fix.outputs.output }}
+        run: |
+          case "$STATUS" in
+            fixed)
+              EMOJI="✅"
+              TITLE="Fix Applied"
+              MESSAGE="Fixes have been pushed. CI will re-run automatically."
+              ;;
+            unfixable)
+              EMOJI="⚠️"
+              TITLE="Unable to Auto-Fix"
+              MESSAGE="The failures require manual intervention. See details below."
+              ;;
+            *)
+              EMOJI="❌"
+              TITLE="Fix Attempt Failed"
+              MESSAGE="An error occurred during the fix attempt."
+              ;;
+          esac
+
+          gh pr comment "$PR_NUMBER" --body "### $EMOJI Claude Code CI Fix Attempt #$ATTEMPT: $TITLE
+
+          $MESSAGE
+
+          <details>
+          <summary>Details</summary>
+
+          \`\`\`
+          $OUTPUT
+          \`\`\`
+
+          </details>
+
+          **Workflow run**: [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+          ---"
+
+      - name: Add Label on Failure
+        if: steps.fix.outputs.status == 'unfixable'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ needs.check-eligibility.outputs.pr_number }}
+        run: |
+          gh label create "needs-manual-fix" --description "CI failures require manual intervention" --color "d93f0b" 2>/dev/null || true
+          gh pr edit "$PR_NUMBER" --add-label "needs-manual-fix"

@@ -1,0 +1,348 @@
+# Claude Code Remote Executor
+# Execute Claude Code commands from GitHub mobile app via workflow_dispatch
+#
+# Features:
+# - Trigger from GitHub mobile app (Actions → Run workflow)
+# - Creates tracking issue with progress updates
+# - Slack notification on completion/failure
+# - Uses --dangerously-skip-permissions (safe in controlled CI environment)
+# - 2-hour timeout for full epic runs
+
+name: Claude Code Remote
+
+on:
+  workflow_dispatch:
+    inputs:
+      command:
+        description: 'Command to execute'
+        type: choice
+        required: true
+        default: 'custom'
+        options:
+          - '/run-epic 2'
+          - '/run-epic 2 --auto-merge'
+          - '/run-epic 3'
+          - '/implement-backlog 2 --parallel'
+          - '/implement-backlog 3 --parallel'
+          - '/generate-specs 2'
+          - '/generate-specs 3'
+          - '/validate-specs 2'
+          - '/validate-specs 3'
+          - 'custom'
+      custom_command:
+        description: 'Custom command (if "custom" selected above)'
+        type: string
+        required: false
+      auto_merge:
+        description: 'Auto-merge passing PRs'
+        type: boolean
+        default: false
+      create_tracking_issue:
+        description: 'Create GitHub issue to track progress'
+        type: boolean
+        default: true
+      notify_slack:
+        description: 'Send Slack notification on completion'
+        type: boolean
+        default: true
+
+env:
+  # Explicit deny rules even with --dangerously-skip-permissions
+  CLAUDE_DENY_PATTERNS: |
+    rm -rf /
+    --force*delete
+    git push --force
+    sam deploy*prod
+    gh repo delete
+    gh pr merge*--admin
+    aws*--profile prod
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120  # 2-hour timeout for full epic runs
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+
+    outputs:
+      tracking_issue_number: ${{ steps.create-issue.outputs.issue_number }}
+      result_status: ${{ steps.run-claude.outputs.status }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Determine Command
+        id: command
+        run: |
+          if [ "${{ inputs.command }}" = "custom" ]; then
+            COMMAND="${{ inputs.custom_command }}"
+          else
+            COMMAND="${{ inputs.command }}"
+          fi
+
+          if [ -z "$COMMAND" ]; then
+            echo "Error: No command specified"
+            exit 1
+          fi
+
+          # Add --auto-merge flag if selected and not already present
+          if [ "${{ inputs.auto_merge }}" = "true" ] && [[ ! "$COMMAND" =~ "--auto-merge" ]]; then
+            COMMAND="$COMMAND --auto-merge"
+          fi
+
+          echo "command=$COMMAND" >> $GITHUB_OUTPUT
+          echo "Command to execute: $COMMAND"
+
+      - name: Create Tracking Issue
+        id: create-issue
+        if: inputs.create_tracking_issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMAND: ${{ steps.command.outputs.command }}
+        run: |
+          ISSUE_BODY=$(cat <<'EOF'
+          ## Claude Code Remote Execution
+
+          **Command**: `${{ env.COMMAND }}`
+          **Triggered by**: @${{ github.actor }}
+          **Workflow run**: [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+          ### Status
+
+          - [ ] Started
+          - [ ] In Progress
+          - [ ] Completed
+
+          ### Progress Log
+
+          _Updates will be added as comments below._
+
+          ---
+          _This issue was created automatically by the Claude Code Remote workflow._
+          EOF
+          )
+
+          ISSUE_NUMBER=$(gh issue create \
+            --title "Claude Code: $COMMAND" \
+            --body "$ISSUE_BODY" \
+            --label "automation,claude-code" \
+            --json number --jq '.number')
+
+          echo "issue_number=$ISSUE_NUMBER" >> $GITHUB_OUTPUT
+          echo "Created tracking issue #$ISSUE_NUMBER"
+
+          # Create labels if they don't exist
+          gh label create "automation" --description "Automated workflow" --color "0e8a16" 2>/dev/null || true
+          gh label create "claude-code" --description "Claude Code execution" --color "7057ff" 2>/dev/null || true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Claude Code
+        run: |
+          npm install -g @anthropic-ai/claude-code
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Post Start Update
+        if: inputs.create_tracking_issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ steps.create-issue.outputs.issue_number }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "### Started
+
+          **Time**: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          Executing command...
+
+          ---"
+
+      - name: Run Claude Code
+        id: run-claude
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMAND: ${{ steps.command.outputs.command }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          set +e  # Don't exit on error
+
+          # Create output file
+          OUTPUT_FILE=$(mktemp)
+
+          # Run Claude Code with permission skip (safe in CI with explicit denies)
+          # Pipe to tee for logging while capturing output
+          claude --dangerously-skip-permissions "$COMMAND" 2>&1 | tee "$OUTPUT_FILE"
+
+          EXIT_CODE=${PIPESTATUS[0]}
+
+          # Determine status
+          if [ $EXIT_CODE -eq 0 ]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          else
+            echo "status=failed" >> $GITHUB_OUTPUT
+          fi
+
+          # Save output for later steps (truncate if too long)
+          OUTPUT=$(cat "$OUTPUT_FILE" | tail -500)
+          echo "output<<EOF" >> $GITHUB_OUTPUT
+          echo "$OUTPUT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+          rm "$OUTPUT_FILE"
+
+          exit $EXIT_CODE
+
+      - name: Commit Any Changes
+        if: always()
+        run: |
+          git add -A
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: changes from Claude Code remote execution
+
+          Command: ${{ steps.command.outputs.command }}
+          Workflow: ${{ github.run_id }}
+
+          Co-Authored-By: Claude <noreply@anthropic.com>"
+
+            git push origin HEAD
+          fi
+
+      - name: Post Completion Update
+        if: always() && inputs.create_tracking_issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ steps.create-issue.outputs.issue_number }}
+          STATUS: ${{ steps.run-claude.outputs.status }}
+          OUTPUT: ${{ steps.run-claude.outputs.output }}
+        run: |
+          if [ "$STATUS" = "success" ]; then
+            EMOJI="✅"
+            STATUS_TEXT="Completed successfully"
+          else
+            EMOJI="❌"
+            STATUS_TEXT="Failed"
+          fi
+
+          # Truncate output for comment (GitHub has 65536 char limit)
+          TRUNCATED_OUTPUT=$(echo "$OUTPUT" | tail -200)
+
+          gh issue comment "$ISSUE_NUMBER" --body "### $EMOJI $STATUS_TEXT
+
+          **Time**: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          <details>
+          <summary>Output (last 200 lines)</summary>
+
+          \`\`\`
+          $TRUNCATED_OUTPUT
+          \`\`\`
+
+          </details>
+
+          **Workflow run**: [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+          ---"
+
+          # Close issue if successful
+          if [ "$STATUS" = "success" ]; then
+            gh issue close "$ISSUE_NUMBER" --comment "Execution completed successfully. Closing issue."
+          fi
+
+      - name: Send Slack Notification
+        if: always() && inputs.notify_slack && env.SLACK_WEBHOOK_URL != ''
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          STATUS: ${{ steps.run-claude.outputs.status }}
+          COMMAND: ${{ steps.command.outputs.command }}
+          ISSUE_NUMBER: ${{ steps.create-issue.outputs.issue_number }}
+        run: |
+          if [ "$STATUS" = "success" ]; then
+            COLOR="good"
+            EMOJI=":white_check_mark:"
+            STATUS_TEXT="Completed"
+          else
+            COLOR="danger"
+            EMOJI=":x:"
+            STATUS_TEXT="Failed"
+          fi
+
+          curl -X POST "$SLACK_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"attachments\": [{
+                \"color\": \"$COLOR\",
+                \"blocks\": [
+                  {
+                    \"type\": \"header\",
+                    \"text\": {
+                      \"type\": \"plain_text\",
+                      \"text\": \"$EMOJI Claude Code: $STATUS_TEXT\"
+                    }
+                  },
+                  {
+                    \"type\": \"section\",
+                    \"fields\": [
+                      {
+                        \"type\": \"mrkdwn\",
+                        \"text\": \"*Command:*\n\`$COMMAND\`\"
+                      },
+                      {
+                        \"type\": \"mrkdwn\",
+                        \"text\": \"*Triggered by:*\n@${{ github.actor }}\"
+                      }
+                    ]
+                  },
+                  {
+                    \"type\": \"section\",
+                    \"text\": {
+                      \"type\": \"mrkdwn\",
+                      \"text\": \"<${{ github.server_url }}/${{ github.repository }}/issues/$ISSUE_NUMBER|View Tracking Issue> | <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Workflow Run>\"
+                    }
+                  }
+                ]
+              }]
+            }"
+
+      - name: Summary
+        if: always()
+        env:
+          STATUS: ${{ steps.run-claude.outputs.status }}
+          COMMAND: ${{ steps.command.outputs.command }}
+        run: |
+          if [ "$STATUS" = "success" ]; then
+            echo "## ✅ Claude Code Execution Successful" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## ❌ Claude Code Execution Failed" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Command**: \`$COMMAND\`" >> $GITHUB_STEP_SUMMARY
+          echo "**Triggered by**: @${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ -n "${{ steps.create-issue.outputs.issue_number }}" ]; then
+            echo "**Tracking Issue**: #${{ steps.create-issue.outputs.issue_number }}" >> $GITHUB_STEP_SUMMARY
+          fi

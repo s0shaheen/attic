@@ -2,10 +2,15 @@
  * Upload API schemas and types.
  *
  * This module defines Zod schemas for the upload API endpoints,
- * providing runtime validation for API requests and responses.
+ * providing runtime validation for API requests and responses,
+ * including presigned URL generation and scope selection.
  */
 
 import { z } from 'zod';
+
+// ============================================================================
+// Presigned URL (Task 2-2.2)
+// ============================================================================
 
 /**
  * Request schema for generating a presigned upload URL.
@@ -140,4 +145,98 @@ export async function getPresignedUrl(
   }
 
   return parsed.data;
+}
+
+// ============================================================================
+// Scope Selection (Task 2-2.6)
+// ============================================================================
+
+/**
+ * Valid scope options for video processing.
+ */
+export const scopeSchema = z.enum(["liked", "favorited", "both"]);
+export type Scope = z.infer<typeof scopeSchema>;
+
+/**
+ * Request to set the processing scope.
+ */
+export const scopeSelectionRequestSchema = z.object({
+  scope: scopeSchema,
+});
+export type ScopeSelectionRequest = z.infer<typeof scopeSelectionRequestSchema>;
+
+/**
+ * Response after successful scope selection.
+ */
+export const scopeSelectionResponseSchema = z.object({
+  upload_id: z.string().uuid(),
+  scope: scopeSchema,
+  total_items: z.number().int().nonnegative(),
+  liked_count: z.number().int().nonnegative(),
+  favorited_count: z.number().int().nonnegative(),
+  tier_limit: z.number().int().positive(),
+  within_limit: z.boolean(),
+  estimated_processing_minutes: z.number().int().nonnegative(),
+  ready_for_consent: z.boolean(),
+});
+export type ScopeSelectionResponse = z.infer<typeof scopeSelectionResponseSchema>;
+
+/**
+ * Error response when scope exceeds tier limit.
+ */
+export const tierLimitExceededErrorSchema = z.object({
+  error: z.literal("TIER_LIMIT_EXCEEDED"),
+  message: z.string(),
+  selected_count: z.number().int().nonnegative(),
+  tier_limit: z.number().int().positive(),
+  tier: z.string(),
+  upgrade_required: z.boolean(),
+});
+export type TierLimitExceededError = z.infer<typeof tierLimitExceededErrorSchema>;
+
+// ============================================================================
+// Tier Information
+// ============================================================================
+
+/**
+ * Subscription tier names.
+ */
+export const tierSchema = z.enum(["free", "explorer", "expert", "pioneer"]);
+export type Tier = z.infer<typeof tierSchema>;
+
+/**
+ * Tier video limits (from PRD).
+ */
+export const TIER_LIMITS: Record<Tier, number> = {
+  free: 200,
+  explorer: 1_500,
+  expert: 3_000,
+  pioneer: 7_500,
+};
+
+/**
+ * Get the video limit for a tier.
+ */
+export function getTierLimit(tier: Tier): number {
+  return TIER_LIMITS[tier];
+}
+
+/**
+ * Check if a count is within a tier's limit.
+ */
+export function isWithinTierLimit(tier: Tier, count: number): boolean {
+  return count <= TIER_LIMITS[tier];
+}
+
+/**
+ * Get the lowest tier that can accommodate a video count.
+ */
+export function getTierThatFits(count: number): Tier | null {
+  const tiers: Tier[] = ["free", "explorer", "expert", "pioneer"];
+  for (const tier of tiers) {
+    if (TIER_LIMITS[tier] >= count) {
+      return tier;
+    }
+  }
+  return null;
 }

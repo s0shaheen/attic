@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """API schemas package.
 
 Contains Pydantic schemas for API contracts and data transfer objects.
@@ -25,3 +26,6 @@ __all__ = [
     "TikTokVideoReference",
     "ZipSecurityError",
 ]
+=======
+"""Pydantic schemas for API request/response validation."""
+>>>>>>> cc2e010 (feat(upload): implement upload validation & error handling (2.5))

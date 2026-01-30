@@ -130,3 +130,77 @@ class ValidateUploadResponse(BaseModel):
 
     upload_id: UUID
     validation: ValidationResult
+
+
+# ============================================================================
+# Scope selection schemas (Task 2-2.6)
+# ============================================================================
+
+
+class ScopeType(str, Enum):
+    """Scope options for video processing.
+
+    Determines which videos from the TikTok export to process.
+    """
+
+    LIKED = "liked"
+    FAVORITED = "favorited"
+    BOTH = "both"
+
+
+class ScopeSelectionRequest(BaseModel):
+    """Request to set the processing scope.
+
+    Attributes:
+        scope: Which videos to process (liked, favorited, or both)
+    """
+
+    scope: ScopeType = Field(..., description="Which videos to process")
+
+
+class ScopeSelectionResponse(BaseModel):
+    """Response after scope selection.
+
+    Attributes:
+        upload_id: The upload ID that was updated
+        scope: The selected scope
+        total_items: Number of items to process based on scope
+        liked_count: Liked videos included in selection
+        favorited_count: Favorited videos included in selection
+        tier_limit: User's tier video limit
+        within_limit: Whether selection fits within tier limit
+        estimated_processing_minutes: Estimated time to complete processing
+        ready_for_consent: Whether upload is ready for consent capture
+    """
+
+    upload_id: UUID
+    scope: ScopeType
+    total_items: int = Field(..., description="Number of items to process")
+    liked_count: int = Field(..., description="Liked videos in selection")
+    favorited_count: int = Field(..., description="Favorited videos in selection")
+    tier_limit: int = Field(..., description="User's tier video limit")
+    within_limit: bool = Field(..., description="Selection fits within tier limit")
+    estimated_processing_minutes: int = Field(
+        ..., description="Estimated time to complete processing"
+    )
+    ready_for_consent: bool = Field(..., description="Whether upload is ready for consent capture")
+
+
+class TierLimitExceededError(BaseModel):
+    """Error response when scope exceeds tier limit.
+
+    Attributes:
+        error: Error code
+        message: Human-readable error message
+        selected_count: Number of items selected
+        tier_limit: User's tier limit
+        tier: User's current subscription tier
+        upgrade_required: Whether upgrade is needed to process this selection
+    """
+
+    error: str = Field(default="TIER_LIMIT_EXCEEDED")
+    message: str
+    selected_count: int
+    tier_limit: int
+    tier: str
+    upgrade_required: bool = Field(default=True)

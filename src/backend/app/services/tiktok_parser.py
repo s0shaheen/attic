@@ -490,9 +490,12 @@ def parse_tiktok_export(
 
         # Check if this is a combined single-file export or directory structure
         zip_names = zf.namelist()
+<<<<<<< HEAD
         is_combined = any(
             name.endswith(".json") and "/" not in name.strip("/") for name in zip_names
         )
+=======
+>>>>>>> cc2e010 (feat(upload): implement upload validation & error handling (2.5))
 
         # Check for a single JSON file that might be the combined export
         single_json_files = [
@@ -512,11 +515,16 @@ def parse_tiktok_export(
                     favorited_videos = []
                 elif scope == "favorited":
                     liked_videos = []
+<<<<<<< HEAD
             else:
                 # Not a combined export, continue with normal parsing
                 is_combined = False
 
         if not is_combined or (not liked_videos and not favorited_videos):
+=======
+
+        if not liked_videos and not favorited_videos:
+>>>>>>> cc2e010 (feat(upload): implement upload validation & error handling (2.5))
             # Try to find individual files
 
             # Parse liked videos

@@ -1,8 +1,8 @@
 """Upload management routes.
 
 This module contains endpoints for managing TikTok export uploads,
-including presigned URL generation for direct-to-storage uploads
-and validation of uploaded files.
+including presigned URL generation for direct-to-storage uploads,
+validation of uploaded files, and scope selection.
 """
 
 import logging
@@ -17,6 +17,9 @@ from app.models.auth import AuthenticatedUser
 from app.schemas.uploads import (
     PresignedUrlRequest,
     PresignedUrlResponse,
+    ScopeSelectionRequest,
+    ScopeSelectionResponse,
+    TierLimitExceededError,
     UploadErrorCode,
     UploadErrorResponse,
     ValidateUploadResponse,
@@ -256,6 +259,133 @@ async def validate_upload(
     #     await db.commit()
     #
     # return ValidateUploadResponse(upload_id=upload_id, validation=result.result)
+
+    # Temporary: Return a mock response indicating the endpoint exists
+    # but requires database integration
+    raise HTTPException(
+        status_code=404,
+        detail={
+            "error": "Upload not found",
+            "message": "This endpoint requires database integration. "
+            "The upload record lookup is not yet implemented.",
+        },
+    )
+
+
+@router.patch(
+    "/{upload_id}/scope",
+    response_model=ScopeSelectionResponse,
+    status_code=200,
+    responses={
+        200: {"description": "Scope set successfully"},
+        400: {"description": "Invalid scope value"},
+        401: {"description": "Not authenticated"},
+        403: {"description": "Upload belongs to different user"},
+        404: {"description": "Upload not found"},
+        409: {
+            "description": "Upload already processing or scope exceeds tier limit",
+            "model": TierLimitExceededError,
+        },
+        422: {"description": "Upload not validated yet"},
+    },
+)
+async def set_scope(
+    upload_id: UUID,
+    request: ScopeSelectionRequest,
+    user: Annotated[AuthenticatedUser, Depends(get_current_user)],
+    settings: Annotated[Settings, Depends(get_settings)],
+) -> ScopeSelectionResponse:
+    """Set the processing scope for an upload.
+
+    This endpoint allows users to select which videos from their TikTok export
+    to process: liked videos only, favorited videos only, or both.
+
+    The selection is validated against the user's subscription tier limits.
+    Scope can be changed until processing starts (consent captured).
+
+    Args:
+        upload_id: The upload ID to update
+        request: The scope selection request
+        user: Authenticated user from JWT
+        settings: Application settings
+
+    Returns:
+        ScopeSelectionResponse with scope details and item counts
+
+    Raises:
+        HTTPException:
+            - 400: Invalid scope value
+            - 401: Not authenticated
+            - 403: Upload belongs to different user
+            - 404: Upload not found
+            - 409: Upload already processing or scope exceeds tier limit
+            - 422: Upload not validated yet
+    """
+    logger.info(
+        {
+            "event": "scope_selection_requested",
+            "upload_id": str(upload_id),
+            "user_id": str(user.id),
+            "scope": request.scope.value,
+        }
+    )
+
+    # TODO: Implement proper upload lookup from database
+    # For now, we'll implement a mock that shows the API contract
+    # This will be updated when database integration is complete
+    #
+    # Expected implementation:
+    # 1. Query uploads table for upload_id
+    # 2. Verify user_id matches (RLS should handle this)
+    # 3. Check upload status allows scope change
+    # 4. Get user's subscription tier from users table
+    # 5. Call UploadsService.select_scope()
+    # 6. Update upload record with scope and total_items
+    # 7. Return response
+    #
+    # Example:
+    # upload = await db.query(Upload).filter(Upload.id == upload_id).first()
+    # if not upload:
+    #     raise HTTPException(status_code=404, detail="Upload not found")
+    #
+    # if upload.user_id != user.id:
+    #     raise HTTPException(status_code=403, detail="Access denied")
+    #
+    # user_record = await db.query(User).filter(User.id == user.id).first()
+    #
+    # service = UploadsService()
+    # result = await service.select_scope(
+    #     upload_id=upload_id,
+    #     user_id=user.id,
+    #     scope=request.scope,
+    #     user_tier=user_record.subscription_tier,
+    #     upload_status=upload.status,
+    #     liked_count=upload.validation_liked_count,  # stored during validation
+    #     favorited_count=upload.validation_favorited_count,
+    # )
+    #
+    # if not result.success:
+    #     if result.error_type == "not_validated":
+    #         raise HTTPException(status_code=422, detail=result.error_message)
+    #     elif result.error_type == "already_processing":
+    #         raise HTTPException(status_code=409, detail=result.error_message)
+    #     elif result.error_type == "tier_limit_exceeded":
+    #         raise HTTPException(
+    #             status_code=409,
+    #             detail={
+    #                 "error": "TIER_LIMIT_EXCEEDED",
+    #                 "message": result.error_message,
+    #                 **result.error_details,
+    #             },
+    #         )
+    #
+    # # Update upload record
+    # upload.scope = request.scope.value
+    # upload.total_items = result.response.total_items
+    # upload.status = "scope_selected"
+    # await db.commit()
+    #
+    # return result.response
 
     # Temporary: Return a mock response indicating the endpoint exists
     # but requires database integration

@@ -1,0 +1,3 @@
+# Epic run state files are stored here
+# Format: {epic}-{timestamp}.json
+# Used for resumable epic runs via /run-epic --resume
