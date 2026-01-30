@@ -191,6 +191,36 @@ Core async pipeline using AWS Step Functions for workflow orchestration and Lamb
 | 3.14 | Error handling & retry policies | Step Functions retry policies, dead letter queue |
 | 3.15 | Progress update mechanism | Lambda updates `upload_pipeline_runs` (items_*) for Supabase Realtime |
 
+### Epic 3 Status
+
+| Task | Status | Merged | Spec | Blocked By |
+|------|--------|--------|------|------------|
+| 3.1 | NOT_STARTED | No | [3-3.1.md](specs/3-3.1.md) | 0.5 |
+| 3.2 | NOT_STARTED | No | [3-3.2.md](specs/3-3.2.md) | 3.1, 2.4 |
+| 3.3 | NOT_STARTED | No | [3-3.3.md](specs/3-3.3.md) | 3.1, 3.2, 3.13 |
+| 3.4 | NOT_STARTED | No | [3-3.4.md](specs/3-3.4.md) | 3.1, 3.3 |
+| 3.5 | NOT_STARTED | No | [3-3.5.md](specs/3-3.5.md) | 3.1, 3.4 |
+| 3.6 | NOT_STARTED | No | [3-3.6.md](specs/3-3.6.md) | 3.1, 3.4, 3.5, 3.13 |
+| 3.7 | NOT_STARTED | No | [3-3.7.md](specs/3-3.7.md) | 3.1, 3.4, 3.13 |
+| 3.8 | NOT_STARTED | No | [3-3.8.md](specs/3-3.8.md) | 3.1, 3.3, 3.6, 3.7 |
+| 3.9 | NOT_STARTED | No | [3-3.9.md](specs/3-3.9.md) | 3.1, 3.8, 3.13, 0.3 |
+| 3.10 | NOT_STARTED | No | [3-3.10.md](specs/3-3.10.md) | 3.1, 3.3, 3.7 |
+| 3.11 | NOT_STARTED | No | [3-3.11.md](specs/3-3.11.md) | 3.1, 3.8, 3.9, 0.4 |
+| 3.12 | NOT_STARTED | No | [3-3.12.md](specs/3-3.12.md) | 3.1, 2.1, 0.5 |
+| 3.13 | NOT_STARTED | No | [3-3.13.md](specs/3-3.13.md) | 0.1 |
+| 3.14 | NOT_STARTED | No | [3-3.14.md](specs/3-3.14.md) | 3.1, 4.4 |
+| 3.15 | NOT_STARTED | No | [3-3.15.md](specs/3-3.15.md) | 3.1, 0.4, 0.3 |
+
+**File Overlap Analysis** (auto-generated):
+| File/Directory | Tasks | Overlap Level |
+|----------------|-------|---------------|
+| `src/backend/lambdas/*/handler.py` | 3.2-3.11, 3.12 | HIGH |
+| `src/backend/capabilities/` | 3.3, 3.6, 3.7, 3.9, 3.13 | HIGH |
+| `upload_pipeline_runs` table | 3.11, 3.14, 3.15 | MEDIUM |
+| `media_events` table | 3.2-3.11 | HIGH |
+| `processing_steps` table | 3.2-3.11 | HIGH |
+| `infrastructure/sam/` | 3.1, 3.12, 3.14 | MEDIUM |
+
 **Dependencies:** Epic 0, Epic 2
 
 ---
