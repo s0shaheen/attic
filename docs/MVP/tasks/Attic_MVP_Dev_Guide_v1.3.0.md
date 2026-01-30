@@ -150,14 +150,14 @@ Handles file upload via Uppy and Supabase Storage, plus user consent.
 
 | Task | Status | Merged | Spec | Blocked By |
 |------|--------|--------|------|------------|
-| 2.1 | NOT_STARTED | No | [2-2.1.md](specs/2-2.1.md) | 0.3 |
-| 2.2 | NOT_STARTED | No | [2-2.2.md](specs/2-2.2.md) | 0.1, 0.4, 1.3, 2.1 |
-| 2.3 | NOT_STARTED | No | [2-2.3.md](specs/2-2.3.md) | 0.2, 1.2, 2.2 |
-| 2.4 | NOT_STARTED | No | [2-2.4.md](specs/2-2.4.md) | 0.1 |
-| 2.5 | NOT_STARTED | No | [2-2.5.md](specs/2-2.5.md) | 0.4, 2.1, 2.3, 2.4 |
-| 2.6 | NOT_STARTED | No | [2-2.6.md](specs/2-2.6.md) | 0.1, 2.5 |
-| 2.7 | NOT_STARTED | No | [2-2.7.md](specs/2-2.7.md) | 0.2, 0.4, 2.6 |
-| 2.8 | NOT_STARTED | No | [2-2.8.md](specs/2-2.8.md) | 0.2, 1.2, 1.4, 2.2-2.7 |
+| 2.1 | DONE | Yes | [2-2.1.md](specs/2-2.1.md) | 0.3 |
+| 2.2 | DONE | Yes | [2-2.2.md](specs/2-2.2.md) | 0.1, 0.4, 1.3, 2.1 |
+| 2.3 | DONE | Yes | [2-2.3.md](specs/2-2.3.md) | 0.2, 1.2, 2.2 |
+| 2.4 | DONE | Yes | [2-2.4.md](specs/2-2.4.md) | 0.1 |
+| 2.5 | DONE | Yes | [2-2.5.md](specs/2-2.5.md) | 0.4, 2.1, 2.3, 2.4 |
+| 2.6 | DONE | Yes | [2-2.6.md](specs/2-2.6.md) | 0.1, 2.5 |
+| 2.7 | DONE | Yes | [2-2.7.md](specs/2-2.7.md) | 0.2, 0.4, 2.6 |
+| 2.8 | DONE | Yes | [2-2.8.md](specs/2-2.8.md) | 0.2, 1.2, 1.4, 2.2-2.7 |
 
 **Dependencies:** Epic 0, Epic 1
 
