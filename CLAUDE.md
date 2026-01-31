@@ -107,8 +107,16 @@ class EmbeddingProvider(Protocol):
 
 1. **SPEC**: Generate spec from Dev Guide task using `/generate-specs`
 2. **VALIDATE**: Check spec against PRD/production requirements using `/validate-specs`
-3. **IMPLEMENT**: Build feature with tests using `/implement-backlog`
-4. **VERIFY**: Run task-specific tests using `/run-task-tests`
+3. **TEST-DESIGN**: Generate test stubs (TDD) using `/generate-tests`
+4. **IMPLEMENT**: Build feature using `/implement-backlog`
+5. **VERIFY**: Run task-specific tests using `/run-task-tests`
+
+### Command Options
+
+All core commands support options for large epics:
+- `--parallel`: Run subagents in parallel for independent tasks
+- `--dry-run`: Show execution plan without making changes
+- `--wave N`: Process only specific wave (where applicable)
 
 ### Spec File Convention
 

@@ -1,6 +1,6 @@
 ---
 description: Chain the full epic lifecycle with automatic CI monitoring
-argument-hint: "<epic_number> [--dry-run] [--auto-merge] [--resume]"
+argument-hint: "<epic_number> [--phase <name>] [--dry-run] [--auto-merge] [--resume]"
 ---
 
 ## Mission
@@ -30,11 +30,61 @@ To prevent auto-compaction of the main conversation:
 ## Arguments
 
 - `epic_number` (required): The epic number to run (e.g., 2)
+- `--phase <name>`: Run ONLY the specified phase, then exit (see Phase Routing below)
 - `--dry-run`: Show execution plan without implementing
 - `--auto-merge`: Automatically merge passing PRs (default: create PRs only)
 - `--resume`: Resume from last saved state (reads from `.claude/epic-runs/`)
 - `--parallel`: Enable parallel subagent delegation (passed to implement-backlog)
 - `--skip-specs`: Skip spec generation/validation phases
+
+## Phase Routing
+
+If `--phase` argument is provided, execute ONLY that phase and exit immediately (no chaining to next phase).
+
+**Available phases:**
+- `preflight`: Verify main branch, check dependencies, validate CI
+- `specs`: Generate and validate specs (invokes /generate-specs + /validate-specs)
+- `implementation`: Run implement-backlog (can combine with --wave)
+- `ci-merge`: Push branches, create PRs, monitor CI, merge
+- `retrospective`: Update specs, Dev Guide, generate summary
+
+**Single-phase execution flow:**
+
+1. **Load State** from `.claude/epic-runs/{epic}-latest.json` (if exists)
+2. **Verify Prerequisites** for the requested phase
+3. **Execute ONLY that phase**
+4. **Save State** and exit immediately
+5. **DO NOT chain** to next phase
+
+**IMPORTANT**: If no `--phase` is specified, display this warning before proceeding:
+
+```
+⚠️  Running all phases in one session may hit context limits on large epics.
+
+For large epics, consider using the multi-session orchestrator:
+  ./scripts/run-epic.sh {epic}
+
+Or run phases individually:
+  /run-epic {epic} --phase preflight
+  /run-epic {epic} --phase specs
+  /run-epic {epic} --phase implementation
+  /run-epic {epic} --phase ci-merge
+  /run-epic {epic} --phase retrospective
+```
+
+### Phase Prerequisites
+
+Before executing a phase, verify its prerequisites are met:
+
+| Phase | Prerequisites |
+|-------|--------------|
+| `preflight` | None |
+| `specs` | `preflight` completed (or skip if clean main branch) |
+| `implementation` | `specs` completed (or --skip-specs flag) |
+| `ci-merge` | `implementation` completed (at least partial) |
+| `retrospective` | `ci-merge` completed (or partial results to report) |
+
+If prerequisites are not met, display an error and suggest running the prerequisite phase first.
 
 ## State Persistence
 
@@ -57,6 +107,41 @@ Epic runs save state to `.claude/epic-runs/{epic}-{timestamp}.json`:
 ```
 
 ## Instructions
+
+### Phase Router (if --phase specified)
+
+If the `--phase` argument is provided:
+
+1. **Parse Phase Argument**
+   - Valid values: `preflight`, `specs`, `implementation`, `ci-merge`, `retrospective`
+   - If invalid, display error and list valid phases
+
+2. **Load Existing State** (if available)
+   ```bash
+   STATE_FILE=".claude/epic-runs/${EPIC}-latest.json"
+   if [ -f "$STATE_FILE" ]; then
+       # Read completed_phases from state
+   fi
+   ```
+
+3. **Verify Prerequisites**
+   - Check if required prerequisite phases are complete
+   - If not, display error with suggestion:
+     ```
+     Error: Phase 'implementation' requires 'specs' to be complete.
+     Run: /run-epic {epic} --phase specs
+     ```
+
+4. **Execute Single Phase**
+   - Jump directly to the requested phase section below
+   - Execute ONLY that phase
+
+5. **Update State and Exit**
+   - Add phase to `completed_phases` in state file
+   - Update `current_phase` to the next logical phase
+   - **Exit immediately** - do NOT continue to other phases
+
+---
 
 ### Phase 0: Resume Check (if --resume)
 

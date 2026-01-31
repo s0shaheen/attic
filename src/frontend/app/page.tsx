@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 
@@ -23,7 +24,9 @@ export default function Home() {
             </CardDescription>
           </CardHeader>
           <CardContent className="flex justify-center">
-            <Button size="lg">Get Started</Button>
+            <Button size="lg" asChild>
+              <Link href="/auth/login">Get Started</Link>
+            </Button>
           </CardContent>
         </Card>
 

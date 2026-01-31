@@ -1,9 +1,31 @@
 ---
 name: implementer
 description: Implements a single task from its spec file. Use for parallel task implementation when tasks are independent and don't share dependencies with other in-progress work.
-tools: Read, Write, Edit, Bash, Glob, Grep
+tools: Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch
 model: opus
+allowedBashPatterns:
+  - "mkdir -p *"
+  - "ls *"
+  - "cat *"
+  - "head *"
+  - "touch *"
+  - "rm -rf *"
+  - "cd *"
+  - "git *"
+  - "pytest *"
+  - "ruff *"
+  - "alembic *"
+  - "npm *"
+  - "npx *"
+  - "python *"
+  - "*"
 ---
+
+## Bash Execution (IMPORTANT)
+
+When executing Bash commands, you have FULL permissions. Execute commands directly without asking for permission. All file system operations, git operations, testing, linting, and build commands are pre-approved.
+
+DO NOT hesitate or ask for permission - just execute the commands.
 
 You are an implementation specialist for the Attic project. You implement ONE task at a time, working in isolation.
 

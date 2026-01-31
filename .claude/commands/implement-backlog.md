@@ -1,6 +1,6 @@
 ---
 description: Implement tasks from the backlog, handling sequencing and parallelization automatically
-argument-hint: "[epic_number] [--parallel] [--dry-run]"
+argument-hint: "[epic_number] [--wave <N|N-M>] [--list-waves] [--parallel] [--dry-run]"
 ---
 
 ## Mission
@@ -35,9 +35,44 @@ The orchestrator should stay under ~20% of context window by:
 ## Arguments
 
 - `epic_number` (optional): Limit to specific epic. Without this, processes all ready specs.
+- `--wave <N|N-M>`: Run ONLY specified wave(s) (e.g., `--wave 1` or `--wave 1-3`)
+- `--list-waves`: Output wave numbers only, one per line (for script consumption)
 - `--parallel`: Enable subagent delegation for independent tasks
 - `--dry-run`: Show execution plan without implementing
 - `--strategy <parallel|stacked|epic-branch>`: Override the epic's default branching strategy
+
+## Wave Filtering
+
+If `--wave` argument is provided, only tasks in the specified wave(s) will be executed:
+
+1. **Build full task queue** and dependency graph (as normal)
+2. **Determine all waves** via topological sort
+3. **Filter tasks** to only those in specified wave(s)
+4. **Check completion status** - skip tasks that are already DONE
+5. **Execute filtered tasks** only
+6. **Exit** after specified waves complete (do not continue to other waves)
+
+**Wave argument formats:**
+- `--wave 1`: Execute only wave 1
+- `--wave 2-4`: Execute waves 2, 3, and 4
+- `--wave 1,3,5`: Execute waves 1, 3, and 5 (non-contiguous)
+
+## List Waves Mode
+
+If `--list-waves` is provided:
+
+1. **Build dependency graph** and determine wave structure (no implementation)
+2. **Output wave numbers only**, one per line:
+   ```
+   1
+   2
+   3
+   4
+   5
+   ```
+3. **Exit immediately** - no tasks are executed
+
+This output format is designed for script consumption (e.g., by `scripts/run-epic.sh`).
 
 ## Branching Strategies
 
@@ -145,7 +180,55 @@ Strategies are defined in the Dev Guide at the epic level with optional wave ove
    - Tasks touching DIFFERENT files/components can run in parallel
    - Tasks touching SAME files must be sequential within wave
 
-6. **Parse Branching Strategy**
+6. **Handle --list-waves (if specified)**
+
+   If `--list-waves` flag is set:
+   ```
+   # Output wave numbers only, one per line
+   for wave_num in sorted(waves.keys()):
+       print(wave_num)
+
+   # Exit immediately - no execution
+   exit(0)
+   ```
+
+   Example output:
+   ```
+   1
+   2
+   3
+   4
+   5
+   ```
+
+7. **Apply Wave Filter (if --wave specified)**
+
+   If `--wave` argument is set:
+   ```python
+   # Parse wave specification
+   if '-' in wave_arg:
+       start, end = wave_arg.split('-')
+       selected_waves = range(int(start), int(end) + 1)
+   elif ',' in wave_arg:
+       selected_waves = [int(w) for w in wave_arg.split(',')]
+   else:
+       selected_waves = [int(wave_arg)]
+
+   # Filter waves
+   waves = {k: v for k, v in waves.items() if k in selected_waves}
+
+   # Check prerequisites
+   for wave_num in selected_waves:
+       for task in waves[wave_num]:
+           for dep in task.dependencies:
+               if dep.status != 'DONE':
+                   # Check if dep is in an earlier selected wave
+                   dep_wave = find_wave(dep)
+                   if dep_wave not in selected_waves or dep_wave >= wave_num:
+                       warn(f"Task {task.id} depends on {dep.id} which is not DONE")
+   ```
+
+8. **Parse Branching Strategy**
 
    Read strategy from Dev Guide for each epic:
    ```
@@ -167,7 +250,7 @@ Strategies are defined in the Dev Guide at the epic level with optional wave ove
    3. Epic default strategy from Dev Guide
    4. Global default: `parallel`
 
-7. **Assign Strategy Per Wave**
+9. **Assign Strategy Per Wave**
 
    For each wave, determine its strategy:
    ```
