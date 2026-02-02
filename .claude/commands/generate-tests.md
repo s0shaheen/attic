@@ -1,6 +1,6 @@
 ---
 description: Design test strategy and write test stubs BEFORE implementation. Enables TDD workflow.
-argument-hint: "<epic_number> [task_ids] [--parallel] [--wave N] [--dry-run]"
+argument-hint: "<epic_number> [task_id] [--list-tasks] [--parallel] [--wave N] [--dry-run]"
 ---
 
 ## Mission
@@ -34,10 +34,43 @@ The orchestrator should stay under ~20% of context window by:
 ## Arguments
 
 - `epic_number` (required): Epic to generate tests for
-- `task_ids` (optional): Specific task IDs (e.g., `3 3.1 3.2`)
+- `task_id` (optional): Single task ID to process (e.g., `3.1`) - used by shell orchestrator
+- `--list-tasks`: Output task IDs only, one per line (for script consumption)
 - `--parallel`: Enable parallel subagent spawning for independent tasks
 - `--wave N`: Only process tasks in wave N
 - `--dry-run`: Show execution plan without generating tests
+
+## List Tasks Mode
+
+If `--list-tasks` is provided:
+
+1. **Build task queue** (gather specs, parse dependencies)
+2. **Output task IDs only**, one per line:
+   ```
+   3.1
+   3.2
+   3.3
+   3.13
+   ```
+3. **Exit immediately** - no tests are generated
+
+This output format is designed for script consumption (e.g., by `scripts/generate-tests.sh`).
+
+## Single Task Mode
+
+If a single `task_id` is provided as the second argument:
+
+1. **Locate spec file**: `docs/MVP/tasks/specs/{epic}-{task_id}.md`
+2. **Spawn ONE test-designer subagent** for that task
+3. **Wait for completion**
+4. **Report result and exit**
+
+This mode is used by `scripts/generate-tests.sh` to run each task with fresh context.
+
+**IMPORTANT**: When running all tasks in one session (no `task_id` argument), display this warning:
+
+> ⚠️ Running all tasks in one session may hit context limits.
+> For large epics, use: `./scripts/generate-tests.sh {epic}`
 
 ## Instructions
 
@@ -82,6 +115,19 @@ The orchestrator should stay under ~20% of context window by:
    ```
 
    Within each wave, all tasks can run in parallel (tests don't have file conflicts like implementations).
+
+5. **Handle --list-tasks (if specified)**
+
+   If `--list-tasks` flag is set:
+   ```
+   # Output task IDs only, one per line (in wave order)
+   for wave in waves:
+       for task in wave.tasks:
+           print(task.id)
+
+   # Exit immediately - no execution
+   exit(0)
+   ```
 
 ### Phase 2: Display Execution Plan
 
