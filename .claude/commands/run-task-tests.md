@@ -234,6 +234,7 @@ record results
 Task tool parameters:
   subagent_type: tester
   run_in_background: true   # CRITICAL: Prevents context bloat
+  max_turns: 30
   description: "Run tests for {task_id}"
   prompt: |
     Run tests for task {task_id}.

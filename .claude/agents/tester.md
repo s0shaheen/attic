@@ -2,7 +2,7 @@
 name: tester
 description: Writes and runs tests for implemented features. Use when implementation is complete but tests are missing, failing, or need expansion.
 tools: Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch
-model: opus
+model: sonnet
 allowedBashPatterns:
   - "mkdir -p *"
   - "ls *"

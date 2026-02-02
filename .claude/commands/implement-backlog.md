@@ -433,6 +433,7 @@ For all tasks regardless of strategy:
    Task tool parameters:
      subagent_type: implementer
      run_in_background: true   # CRITICAL: Prevents context bloat
+     max_turns: 50             # Implementation needs more turns
      description: "Implement {task_id}"
      prompt: |
        Implement task {task_id}.

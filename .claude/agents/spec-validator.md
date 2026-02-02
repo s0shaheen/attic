@@ -2,7 +2,7 @@
 name: spec-validator
 description: Validates task specifications against PRD and production requirements. Use for parallel validation of multiple specs.
 tools: Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch
-model: opus
+model: sonnet
 allowedBashPatterns:
   - "mkdir -p *"
   - "ls *"

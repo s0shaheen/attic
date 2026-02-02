@@ -111,6 +111,7 @@ record results
 Task tool parameters:
   subagent_type: spec-validator
   run_in_background: true   # CRITICAL: Prevents context bloat
+  max_turns: 25
   description: "Validate {spec_file}"
   prompt: |
     Validate specification file: {spec_file}

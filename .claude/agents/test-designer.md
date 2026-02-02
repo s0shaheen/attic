@@ -2,7 +2,7 @@
 name: test-designer
 description: Designs test strategy and writes test stubs BEFORE implementation. Use after validate-specs and before implement-backlog to enable TDD workflow.
 tools: Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch
-model: opus
+model: sonnet
 allowedBashPatterns:
   - "mkdir -p *"
   - "ls *"

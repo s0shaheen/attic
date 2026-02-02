@@ -59,6 +59,7 @@ When a backlog ID is provided, delegate to a single spec-writer subagent:
 Task tool parameters:
   subagent_type: spec-writer
   run_in_background: true
+  max_turns: 25
   description: "Generate spec from B-{XXX}"
   prompt: |
     Generate a spec from backlog item B-{XXX}.
@@ -177,6 +178,7 @@ record results
 Task tool parameters:
   subagent_type: spec-writer
   run_in_background: true   # CRITICAL: Prevents context bloat
+  max_turns: 25
   description: "Generate spec for {task_id}"
   prompt: |
     Generate specification for task {task_id} in Epic {epic}.

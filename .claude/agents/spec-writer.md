@@ -2,7 +2,7 @@
 name: spec-writer
 description: Generates detailed task specifications from Dev Guide entries. Use when batch-generating specs for an epic or when a task needs its spec created.
 tools: Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch
-model: opus
+model: sonnet
 allowedBashPatterns:
   - "mkdir -p *"
   - "ls *"

@@ -197,6 +197,7 @@ for wave in waves:
 Task tool parameters:
   subagent_type: test-designer
   run_in_background: true   # CRITICAL: Prevents context bloat
+  max_turns: 25
   description: "Generate tests for {task_id}"
   prompt: |
     Generate test stubs for task {task_id}.
