@@ -25,7 +25,6 @@ os.environ.setdefault("STRIPE_WEBHOOK_SECRET", "test-stripe-webhook")
 os.environ.setdefault("RESEND_API_KEY", "test-resend-key")
 
 import pytest
-from urllib.parse import urlparse, parse_qs
 
 
 class TestGoogleOAuthRedirectUrl:
