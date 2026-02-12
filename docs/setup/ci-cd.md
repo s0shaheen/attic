@@ -20,7 +20,7 @@ Attic uses GitHub Actions for continuous integration and deployment:
 Runs on every pull request and push to main. Validates code quality across all components.
 
 **Backend Job:**
-- Python 3.12 setup with pip caching
+- Python 3.13 setup with pip caching
 - Install dependencies: `pip install -e ".[dev]"`
 - Linting: `ruff check .`
 - Format check: `ruff format --check .`
@@ -35,7 +35,7 @@ Runs on every pull request and push to main. Validates code quality across all c
 - Build: `npm run build`
 
 **Lambdas Job:**
-- Python 3.12 setup
+- Python 3.13 setup
 - AWS SAM CLI installation
 - Template validation: `sam validate --lint`
 

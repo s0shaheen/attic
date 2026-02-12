@@ -6,7 +6,7 @@ Description: >
 
 Globals:
   Function:
-    Runtime: python3.12
+    Runtime: python3.13
     Timeout: 900
     MemorySize: 512
     Architectures:
@@ -254,7 +254,7 @@ Resources:
       Description: Shared utilities for Attic Lambda functions
       ContentUri: ../src/lambdas/
       CompatibleRuntimes:
-        - python3.12
+        - python3.13
       RetentionPolicy: Retain
 
   # ---------- Lambda Functions ----------

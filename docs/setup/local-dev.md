@@ -20,8 +20,8 @@ Before starting, ensure you have the following installed:
    - macOS: `brew install node@20`
    - Or use nvm: `nvm install 20`
 
-4. **Python** (v3.12+)
-   - macOS: `brew install python@3.12`
+4. **Python** (v3.13+)
+   - macOS: `brew install python@3.13`
 
 ### Optional (for AWS local testing)
 

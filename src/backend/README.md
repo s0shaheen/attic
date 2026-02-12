@@ -4,7 +4,7 @@ FastAPI backend for Attic - Personal analytics platform for TikTok data.
 
 ## Requirements
 
-- Python 3.12+
+- Python 3.13+
 - pip
 
 ## Setup
@@ -12,7 +12,7 @@ FastAPI backend for Attic - Personal analytics platform for TikTok data.
 1. Create a virtual environment:
    ```bash
    cd src/backend
-   python3.12 -m venv .venv
+   python3.13 -m venv .venv
    source .venv/bin/activate
    ```
 
