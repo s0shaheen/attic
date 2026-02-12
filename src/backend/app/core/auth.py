@@ -23,10 +23,14 @@ from typing import Annotated
 from uuid import UUID
 
 import jwt
+from jwt import PyJWKClient
 from fastapi import Depends, HTTPException, Request
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
 from app.core.config import Settings, get_settings
+
+# Cache JWKS clients per Supabase URL to avoid repeated fetches
+_jwk_clients: dict[str, PyJWKClient] = {}
 from app.models.auth import AuthenticatedUser, AuthErrorCode, AuthErrorResponse
 
 logger = logging.getLogger(__name__)
@@ -70,22 +74,39 @@ def _validate_and_decode_token(
         HTTPException: 401 error if token is invalid
     """
     try:
-        # Decode and verify the JWT
-        # - verify=True (default) checks signature
-        # - algorithms specifies allowed algorithms (HS256 for Supabase)
-        # - issuer validates the 'iss' claim
-        # - audience validates the 'aud' claim
-        # - options require_exp=True ensures expiry is checked
+        header = jwt.get_unverified_header(token)
+
+        if header.get("alg") == "ES256" and header.get("kid"):
+            # Asymmetric JWT (newer Supabase) — verify with JWKS public key
+            jwks_url = f"{settings.supabase_url}/auth/v1/.well-known/jwks.json"
+            if jwks_url not in _jwk_clients:
+                _jwk_clients[jwks_url] = PyJWKClient(jwks_url)
+            signing_key = _jwk_clients[jwks_url].get_signing_key_from_jwt(token)
+            key = signing_key.key
+            algorithms = ["ES256"]
+        else:
+            # Symmetric JWT (classic Supabase) — verify with shared secret
+            key = settings.supabase_jwt_secret
+            algorithms = ["HS256"]
+
         payload = jwt.decode(
             token,
-            settings.supabase_jwt_secret,
-            algorithms=["HS256"],
-            issuer=f"{settings.supabase_url}/auth/v1",
+            key,
+            algorithms=algorithms,
             audience="authenticated",
             options={
                 "require": ["exp", "iat", "sub"],
+                "verify_iss": False,
             },
         )
+
+        # Validate issuer manually — accept both Docker-internal and localhost URLs
+        token_issuer = payload.get("iss", "")
+        expected_suffix = "/auth/v1"
+        if not token_issuer.endswith(expected_suffix):
+            logger.info({"event": "auth_failed", "reason": "INVALID_ISSUER", "iss": token_issuer})
+            raise jwt.InvalidIssuerError("Invalid token issuer")
+
         return payload
 
     except jwt.ExpiredSignatureError:

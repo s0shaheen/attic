@@ -10,7 +10,7 @@
  * file upload, validation, scope selection, and consent capture.
  */
 
-import { useCallback, useReducer } from "react";
+import { useCallback, useMemo, useReducer } from "react";
 import type { Scope } from "@/lib/api/uploads";
 
 // ============================================================================
@@ -351,70 +351,105 @@ export function useUploadFlow(): {
 } {
   const [state, dispatch] = useReducer(uploadFlowReducer, initialState);
 
-  const actions: UploadFlowActions = {
-    startUpload: useCallback(() => {
-      dispatch({ type: "START_UPLOAD" });
-    }, []),
+  const startUpload = useCallback(() => {
+    dispatch({ type: "START_UPLOAD" });
+  }, []);
 
-    onUploadComplete: useCallback((result: UploadResult) => {
-      dispatch({ type: "UPLOAD_COMPLETE", payload: result });
-    }, []),
+  const onUploadComplete = useCallback((result: UploadResult) => {
+    dispatch({ type: "UPLOAD_COMPLETE", payload: result });
+  }, []);
 
-    onUploadError: useCallback((error: Error) => {
-      dispatch({
-        type: "UPLOAD_ERROR",
-        payload: { code: "UPLOAD_FAILED", message: error.message },
-      });
-    }, []),
+  const onUploadError = useCallback((error: Error) => {
+    dispatch({
+      type: "UPLOAD_ERROR",
+      payload: { code: "UPLOAD_FAILED", message: error.message },
+    });
+  }, []);
 
-    onUploadCancel: useCallback(() => {
-      dispatch({ type: "UPLOAD_CANCEL" });
-    }, []),
+  const onUploadCancel = useCallback(() => {
+    dispatch({ type: "UPLOAD_CANCEL" });
+  }, []);
 
-    onValidationStart: useCallback(() => {
-      dispatch({ type: "VALIDATION_START" });
-    }, []),
+  const onValidationStart = useCallback(() => {
+    dispatch({ type: "VALIDATION_START" });
+  }, []);
 
-    onValidationComplete: useCallback((result: ValidationResult) => {
-      dispatch({ type: "VALIDATION_COMPLETE", payload: result });
-    }, []),
+  const onValidationComplete = useCallback((result: ValidationResult) => {
+    dispatch({ type: "VALIDATION_COMPLETE", payload: result });
+  }, []);
 
-    selectScope: useCallback((scope: Scope) => {
-      dispatch({ type: "SELECT_SCOPE", payload: scope });
-    }, []),
+  const selectScope = useCallback((scope: Scope) => {
+    dispatch({ type: "SELECT_SCOPE", payload: scope });
+  }, []);
 
-    confirmScope: useCallback(() => {
-      dispatch({ type: "CONFIRM_SCOPE" });
-    }, []),
+  const confirmScope = useCallback(() => {
+    dispatch({ type: "CONFIRM_SCOPE" });
+  }, []);
 
-    giveConsent: useCallback(() => {
-      dispatch({ type: "GIVE_CONSENT" });
-    }, []),
+  const giveConsent = useCallback(() => {
+    dispatch({ type: "GIVE_CONSENT" });
+  }, []);
 
-    cancelConsent: useCallback(() => {
-      dispatch({ type: "CANCEL_CONSENT" });
-    }, []),
+  const cancelConsent = useCallback(() => {
+    dispatch({ type: "CANCEL_CONSENT" });
+  }, []);
 
-    retry: useCallback(() => {
-      dispatch({ type: "RETRY" });
-    }, []),
+  const retry = useCallback(() => {
+    dispatch({ type: "RETRY" });
+  }, []);
 
-    reset: useCallback(() => {
-      dispatch({ type: "RESET" });
-    }, []),
+  const reset = useCallback(() => {
+    dispatch({ type: "RESET" });
+  }, []);
 
-    setLoading: useCallback((loading: boolean) => {
-      dispatch({ type: "SET_LOADING", payload: loading });
-    }, []),
+  const setLoading = useCallback((loading: boolean) => {
+    dispatch({ type: "SET_LOADING", payload: loading });
+  }, []);
 
-    setTierLimit: useCallback((limit: number) => {
-      dispatch({ type: "SET_TIER_LIMIT", payload: limit });
-    }, []),
+  const setTierLimit = useCallback((limit: number) => {
+    dispatch({ type: "SET_TIER_LIMIT", payload: limit });
+  }, []);
 
-    setEstimatedMinutes: useCallback((minutes: number) => {
-      dispatch({ type: "SET_ESTIMATED_MINUTES", payload: minutes });
-    }, []),
-  };
+  const setEstimatedMinutes = useCallback((minutes: number) => {
+    dispatch({ type: "SET_ESTIMATED_MINUTES", payload: minutes });
+  }, []);
+
+  const actions: UploadFlowActions = useMemo(
+    () => ({
+      startUpload,
+      onUploadComplete,
+      onUploadError,
+      onUploadCancel,
+      onValidationStart,
+      onValidationComplete,
+      selectScope,
+      confirmScope,
+      giveConsent,
+      cancelConsent,
+      retry,
+      reset,
+      setLoading,
+      setTierLimit,
+      setEstimatedMinutes,
+    }),
+    [
+      startUpload,
+      onUploadComplete,
+      onUploadError,
+      onUploadCancel,
+      onValidationStart,
+      onValidationComplete,
+      selectScope,
+      confirmScope,
+      giveConsent,
+      cancelConsent,
+      retry,
+      reset,
+      setLoading,
+      setTierLimit,
+      setEstimatedMinutes,
+    ]
+  );
 
   return { state, actions };
 }

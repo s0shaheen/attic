@@ -50,17 +50,26 @@ services:
       - "./src/backend:/app"
     environment:
       # Supabase connection (via host machine)
-      - DATABASE_URL=postgresql://postgres:postgres@host.docker.internal:54322/postgres
+      - DATABASE_URL=postgresql+asyncpg://postgres:postgres@host.docker.internal:54322/postgres
       - SUPABASE_URL=http://host.docker.internal:54321
       - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY:-}
       - SUPABASE_SERVICE_KEY=${SUPABASE_SERVICE_KEY:-}
+      - SUPABASE_JWT_SECRET=${SUPABASE_JWT_SECRET:-super-secret-jwt-token-with-at-least-32-characters-long}
       # LocalStack AWS endpoints
       - AWS_ENDPOINT_URL=http://localstack:4566
       - AWS_ACCESS_KEY_ID=test
       - AWS_SECRET_ACCESS_KEY=test
       - AWS_DEFAULT_REGION=us-east-1
+      # Third-party APIs (placeholders — not needed for auth/upload UI testing)
+      - APIFY_API_TOKEN=${APIFY_API_TOKEN:-placeholder}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-placeholder}
+      # Payments (placeholders)
+      - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY:-sk_test_placeholder}
+      - STRIPE_WEBHOOK_SECRET=${STRIPE_WEBHOOK_SECRET:-whsec_placeholder}
+      # Notifications (placeholder)
+      - RESEND_API_KEY=${RESEND_API_KEY:-re_placeholder}
       # Application settings
-      - ENVIRONMENT=local
+      - ENVIRONMENT=development
       - DEBUG=true
       - LOG_LEVEL=DEBUG
       # Temp bucket name
