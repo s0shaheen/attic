@@ -157,4 +157,4 @@ See [`docs/setup/`](docs/setup/) for detailed guides on AWS, Supabase, environme
 
 ---
 
-*Archived March 2026 by [@s0shaheen](https://github.com/s0shaheen)*
+*Archived Q1 2026 by [@s0shaheen](https://github.com/s0shaheen)*
