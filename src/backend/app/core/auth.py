@@ -102,8 +102,8 @@ def _validate_and_decode_token(
 
         # Validate issuer manually — accept both Docker-internal and localhost URLs
         token_issuer = payload.get("iss", "")
-        expected_suffix = "/auth/v1"
-        if not token_issuer.endswith(expected_suffix):
+        expected_issuer = f"{settings.supabase_url}/auth/v1"
+        if token_issuer != expected_issuer:
             logger.info({"event": "auth_failed", "reason": "INVALID_ISSUER", "iss": token_issuer})
             raise jwt.InvalidIssuerError("Invalid token issuer")
 
