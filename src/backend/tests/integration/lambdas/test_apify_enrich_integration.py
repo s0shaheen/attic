@@ -8,12 +8,10 @@ These tests verify the apify_enrich Lambda function integrates correctly
 with the database, Apify API, and Step Functions in a test environment.
 """
 
-import json
 import os
 from uuid import uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, patch
 
 # Set environment variables BEFORE importing Lambda handler
 os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
@@ -42,7 +40,7 @@ class TestApifyEnrichDatabaseIntegration:
         test_user_id = uuid4()
         test_media_event_id = uuid4()
 
-        event = {
+        {
             "upload_id": str(test_upload_id),
             "user_id": str(test_user_id),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -80,7 +78,7 @@ class TestApifyEnrichDatabaseIntegration:
         test_user_id = uuid4()
         test_media_event_id = uuid4()
 
-        event = {
+        {
             "upload_id": str(test_upload_id),
             "user_id": str(test_user_id),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -127,7 +125,7 @@ class TestApifyEnrichDatabaseIntegration:
             for i in range(10)
         ]
 
-        event = {
+        {
             "upload_id": str(test_upload_id),
             "user_id": str(test_user_id),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -166,7 +164,7 @@ class TestApifyEnrichApiRetry:
             # Third attempt succeeds
             return {"items": [{"desc": "Test video"}]}
 
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -205,7 +203,7 @@ class TestApifyEnrichApiRetry:
                 raise ConnectionError("Network timeout")
             return {"items": [{"desc": "Test video"}]}
 
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -239,7 +237,7 @@ class TestApifyEnrichStepFunctionsIntegration:
         # TODO: Set up LocalStack Step Functions
         # TODO: Deploy minimal state machine with EnrichBatch Map state
         # TODO: Prepare test execution input
-        test_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -271,7 +269,7 @@ class TestApifyEnrichStepFunctionsIntegration:
         # TODO: Set up Step Functions with EnrichBatch and DownloadMedia states
         # TODO: Prepare test input
         test_upload_id = str(uuid4())
-        test_input = {
+        {
             "upload_id": test_upload_id,
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -303,14 +301,14 @@ class TestApifyEnrichEndToEnd:
     @pytest.mark.integration
     @pytest.mark.skipif(
         not os.getenv("APIFY_API_KEY") or os.getenv("APIFY_API_KEY").startswith("test"),
-        reason="Real Apify API key required for E2E test"
+        reason="Real Apify API key required for E2E test",
     )
     async def test_apify_enrich_real_api_call(self):
         """Test Lambda with real Apify API call (requires valid API key)."""
         # Arrange
         # TODO: Use real Apify API key from environment
         # TODO: Use real TikTok video URL (public, stable test video)
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",

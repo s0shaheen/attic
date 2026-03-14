@@ -9,8 +9,6 @@ VideoMetadataProvider protocol, maps API responses, and handles errors gracefull
 """
 
 import os
-from datetime import datetime, timezone
-from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
@@ -59,45 +57,6 @@ class TestApifyProviderResponseMapping:
         """Test that Apify API response fields are correctly mapped to VideoMetadataResult."""
         # Arrange
         # TODO: Create mock Apify API response with all fields
-        mock_apify_response = {
-            "id": "7234567890123456789",
-            "desc": "Test caption text",
-            "hashtags": [{"name": "test"}, {"name": "video"}],
-            "mentions": [{"username": "user1"}],
-            "author": {
-                "uniqueId": "testuser",
-                "nickname": "Test User",
-                "id": "123456",
-                "fans": 10000,
-                "verified": True,
-            },
-            "stats": {
-                "playCount": 100000,
-                "diggCount": 5000,
-                "commentCount": 200,
-                "shareCount": 50,
-                "collectCount": 30,
-            },
-            "video": {
-                "duration": 15,
-            },
-            "createTime": 1640995200,
-            "isAd": False,
-            "isPinned": False,
-            "imagePost": {
-                "images": ["https://example.com/img1.jpg", "https://example.com/img2.jpg"],
-            },
-            "locationCreated": "New York, NY",
-            "music": {
-                "id": "music123",
-                "title": "Test Song",
-                "authorName": "Artist Name",
-                "original": True,
-            },
-            "effectStickers": [{"name": "effect1"}, {"name": "effect2"}],
-            "covers": ["https://example.com/thumb.jpg"],
-            "subtitleInfos": [{"Url": "https://example.com/subs.vtt"}],
-        }
         # TODO: Mock Apify API client
         # TODO: Create ApifyMetadataProvider with mocked client
 
@@ -116,10 +75,6 @@ class TestApifyProviderResponseMapping:
         """Test that ApifyMetadataProvider handles missing optional fields gracefully."""
         # Arrange
         # TODO: Create minimal Apify response with only required fields
-        minimal_response = {
-            "id": "7234567890123456789",
-            # All other fields missing
-        }
         # TODO: Mock Apify API client with minimal response
 
         # Act
@@ -155,7 +110,7 @@ class TestApifyProviderBatching:
         """Test that ApifyMetadataProvider batches URLs in single API call."""
         # Arrange
         # TODO: Create list of 50 URLs
-        urls = [f"https://tiktok.com/@user/video/{i}" for i in range(50)]
+        [f"https://tiktok.com/@user/video/{i}" for i in range(50)]
         # TODO: Mock Apify API client
 
         # Act

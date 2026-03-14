@@ -9,7 +9,6 @@ implementations properly satisfy the interface contracts.
 """
 
 import pytest
-from typing import Protocol, runtime_checkable
 
 # TODO: Import protocol interfaces once implemented
 # from capabilities.interfaces import (

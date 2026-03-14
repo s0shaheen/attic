@@ -10,11 +10,9 @@ DLQ, CloudWatch, and user notification systems.
 
 import json
 import os
-from datetime import datetime, timezone
 from uuid import uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, Mock, patch
 
 # Set test environment variables before importing app modules
 os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
@@ -44,17 +42,19 @@ class TestRetryBehaviorIntegration:
 
         upload_id = uuid4()
         user_id = uuid4()
-        event = {
+        {
             "upload_id": str(upload_id),
             "user_id": str(user_id),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
             "error": {
                 "Error": "rate_limit",
-                "Cause": json.dumps({
-                    "error_type": "rate_limit",
-                    "error_code": "429",
-                    "error_message": "API rate limit exceeded",
-                }),
+                "Cause": json.dumps(
+                    {
+                        "error_type": "rate_limit",
+                        "error_code": "429",
+                        "error_message": "API rate limit exceeded",
+                    }
+                ),
             },
             "step_name": "APIFY_ENRICH",
             "attempt": 1,
@@ -82,7 +82,7 @@ class TestRetryBehaviorIntegration:
 
         upload_id = uuid4()
         user_id = uuid4()
-        event = {
+        {
             "upload_id": str(upload_id),
             "user_id": str(user_id),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -113,7 +113,7 @@ class TestRetryBehaviorIntegration:
 
         upload_id = uuid4()
         user_id = uuid4()
-        event = {
+        {
             "upload_id": str(upload_id),
             "user_id": str(user_id),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -144,7 +144,7 @@ class TestRetryBehaviorIntegration:
         # TODO: Execute multiple retries
 
         upload_id = uuid4()
-        event = {
+        {
             "upload_id": str(upload_id),
             "error": {"Error": "rate_limit"},
             "step_name": "APIFY_ENRICH",
@@ -174,20 +174,8 @@ class TestDLQIntegration:
         # TODO: Mock SQS client
         # TODO: Configure DLQ queue URL
 
-        upload_id = uuid4()
-        user_id = uuid4()
-        execution_arn = "arn:aws:states:us-east-1:123456789:execution:attic-pipeline:test"
-        error_summary = {
-            "status": "failed",
-            "total_errors": 1,
-            "critical_error": {
-                "step_name": "PARSE_EXPORT",
-                "error_type": "invalid_input",
-                "error_message": "ZIP file corrupted",
-            },
-            "items_failed": 100,
-            "items_succeeded": 0,
-        }
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Invoke send_to_dlq(upload_id, user_id, execution_arn, "PARSE_EXPORT", error_summary)
@@ -210,8 +198,8 @@ class TestDLQIntegration:
         # TODO: Create DLQ message for failed execution
         # TODO: Mock SQS client
 
-        upload_id = uuid4()
-        user_id = uuid4()
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Send message to DLQ
@@ -233,7 +221,7 @@ class TestDLQIntegration:
         # TODO: Trigger failure
 
         upload_id = uuid4()
-        execution_input = {
+        {
             "upload_id": str(upload_id),
             "scope": "liked",
             "storage_path": "uploads/test/export.zip",
@@ -257,7 +245,7 @@ class TestDLQIntegration:
         # TODO: Mock SQS client
 
         upload_id = uuid4()
-        event = {
+        {
             "upload_id": str(upload_id),
             "error": {"Error": "timeout"},
             "step_name": "SUBTITLE_FETCH",  # Skippable step
@@ -304,7 +292,7 @@ class TestCloudWatchAlarmIntegration:
         # TODO: Mock CloudWatch client
         # TODO: Create test error
 
-        upload_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Handle error and publish metrics
@@ -345,17 +333,8 @@ class TestUserNotificationIntegration:
         # TODO: Create permanent failure scenario
         # TODO: Mock user email retrieval
 
-        upload_id = uuid4()
-        user_id = uuid4()
-        user_email = "test@example.com"
-        error_summary = {
-            "status": "failed",
-            "critical_error": {
-                "step_name": "PARSE_EXPORT",
-                "error_type": "invalid_input",
-                "error_message": "Invalid ZIP file format",
-            },
-        }
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Invoke send_error_notification(user_id, upload_id, error_summary)
@@ -377,21 +356,8 @@ class TestUserNotificationIntegration:
         # TODO: Mock Resend client
         # TODO: Create partial failure scenario (some items succeeded)
 
-        upload_id = uuid4()
-        user_id = uuid4()
-        user_email = "test@example.com"
-        error_summary = {
-            "status": "partial_failure",
-            "items_succeeded": 90,
-            "items_failed": 10,
-            "step_errors": [
-                {
-                    "step_name": "WHISPER_TRANSCRIBE",
-                    "error_type": "rate_limit",
-                    "items_affected": 10,
-                }
-            ],
-        }
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Invoke send_error_notification(user_id, upload_id, error_summary)
@@ -411,8 +377,8 @@ class TestUserNotificationIntegration:
         # TODO: Mock Resend client
         # TODO: Create transient error being retried
 
-        upload_id = uuid4()
-        user_id = uuid4()
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Handle transient error with retry scheduled
@@ -430,14 +396,7 @@ class TestUserNotificationIntegration:
         # TODO: Mock Resend client
         # TODO: Create error summary with various fields
 
-        upload_id = uuid4()
-        error_summary = {
-            "status": "failed",
-            "critical_error": {
-                "step_name": "APIFY_ENRICH",
-                "error_message": "TikTok API unavailable",
-            },
-        }
+        uuid4()
 
         # Act
         # TODO: Render email template with error_summary
@@ -462,15 +421,7 @@ class TestDatabaseErrorSummaryIntegration:
         # TODO: Create upload_pipeline_run record
         # TODO: Create error scenario
 
-        upload_id = uuid4()
-        error_summary = {
-            "status": "failed",
-            "total_errors": 1,
-            "critical_error": {
-                "step_name": "PARSE_EXPORT",
-                "error_type": "invalid_input",
-            },
-        }
+        uuid4()
 
         # Act
         # TODO: Update upload_pipeline_run with error_summary
@@ -492,7 +443,7 @@ class TestDatabaseErrorSummaryIntegration:
         # TODO: Connect to test database
         # TODO: Create upload record with status 'processing'
 
-        upload_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Mark pipeline as failed
@@ -512,7 +463,7 @@ class TestDatabaseErrorSummaryIntegration:
         # TODO: Create upload record
         # TODO: Create partial failure scenario
 
-        upload_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Mark pipeline as partial_failure
@@ -627,8 +578,8 @@ class TestEndToEndErrorScenarios:
         # TODO: Set up full test environment (DB, SQS, Resend, Step Functions)
         # TODO: Create upload with invalid ZIP
 
-        upload_id = uuid4()
-        user_id = uuid4()
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Start Step Functions execution
@@ -653,7 +604,7 @@ class TestEndToEndErrorScenarios:
         # TODO: Create upload with 100 videos
         # TODO: Simulate SUBTITLE_FETCH failure for 10 videos
 
-        upload_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Start Step Functions execution
@@ -676,7 +627,7 @@ class TestEndToEndErrorScenarios:
         # TODO: Simulate rate_limit error on first attempt
         # TODO: Return success on second attempt
 
-        upload_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Start Step Functions execution

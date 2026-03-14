@@ -5,7 +5,7 @@ including presigned URL generation, upload record creation, and validation.
 """
 
 from datetime import datetime
-from enum import Enum
+from enum import StrEnum
 from uuid import UUID
 
 from pydantic import BaseModel, Field
@@ -74,7 +74,7 @@ class UploadErrorResponse(BaseModel):
 # ============================================================================
 
 
-class ValidationErrorCode(str, Enum):
+class ValidationErrorCode(StrEnum):
     """Error codes for validation failures."""
 
     INVALID_FILE = "INVALID_FILE"  # Not a valid ZIP
@@ -137,7 +137,7 @@ class ValidateUploadResponse(BaseModel):
 # ============================================================================
 
 
-class ScopeType(str, Enum):
+class ScopeType(StrEnum):
     """Scope options for video processing.
 
     Determines which videos from the TikTok export to process.

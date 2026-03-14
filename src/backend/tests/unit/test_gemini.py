@@ -6,8 +6,7 @@ from unittest.mock import AsyncMock, patch
 import httpx
 import pytest
 
-from app.services.gemini import ClassifyResult, VisualAnalysisResult, analyze_visual, classify
-
+from app.services.gemini import analyze_visual, classify
 
 # ---------------------------------------------------------------------------
 # classify
@@ -23,11 +22,7 @@ class TestClassify:
         }
         mock_response = httpx.Response(
             200,
-            json={
-                "candidates": [
-                    {"content": {"parts": [{"text": json.dumps(classification)}]}}
-                ]
-            },
+            json={"candidates": [{"content": {"parts": [{"text": json.dumps(classification)}]}}]},
         )
         with patch("app.services.gemini.httpx.AsyncClient") as mock_client:
             mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
@@ -102,11 +97,7 @@ class TestClassify:
     async def test_classify_invalid_json_response(self):
         mock_response = httpx.Response(
             200,
-            json={
-                "candidates": [
-                    {"content": {"parts": [{"text": "not valid json {{{"}]}}
-                ]
-            },
+            json={"candidates": [{"content": {"parts": [{"text": "not valid json {{{"}]}}]},
         )
         with patch("app.services.gemini.httpx.AsyncClient") as mock_client:
             mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)

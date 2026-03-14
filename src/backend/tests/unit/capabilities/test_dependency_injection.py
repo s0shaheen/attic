@@ -9,7 +9,6 @@ allow Lambda handlers to use capability interfaces without tight coupling.
 """
 
 import os
-from unittest.mock import MagicMock, patch
 
 import pytest
 

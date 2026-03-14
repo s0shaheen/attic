@@ -11,12 +11,9 @@ These tests verify subtitle fetch Lambda integration with:
 Tests run against test database or LocalStack.
 """
 
-import json
-import os
 from uuid import uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, patch
 
 
 class TestSubtitleFetchDatabaseIntegration:
@@ -30,10 +27,9 @@ class TestSubtitleFetchDatabaseIntegration:
         # TODO: Set up test database with media_events record
         # TODO: Mock HTTP client to return VTT content
         # TODO: Prepare SubtitleFetchInput
-        upload_id = uuid4()
-        user_id = uuid4()
-        media_event_id = uuid4()
-        subtitle_text = "Test subtitle content"
+        uuid4()
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -54,8 +50,8 @@ class TestSubtitleFetchDatabaseIntegration:
         # TODO: Set up test database
         # TODO: Mock HTTP client to return subtitle content
         # TODO: Prepare SubtitleFetchInput
-        upload_id = uuid4()
-        media_event_id = uuid4()
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -91,7 +87,7 @@ class TestSubtitleFetchDatabaseIntegration:
         # TODO: Set up test database with existing processing_steps record
         # TODO: Mock HTTP client
         # TODO: Prepare SubtitleFetchInput
-        media_event_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler twice (simulating retry)
@@ -114,7 +110,6 @@ class TestSubtitleFetchHTTPIntegration:
         # TODO: Set up test database
         # TODO: Use real HTTP client (or mock server)
         # TODO: Prepare valid subtitle_url
-        subtitle_url = "https://cdn.tiktokcdn.com/subtitles/test.vtt"
 
         # Act
         # TODO: Call lambda_handler
@@ -133,7 +128,6 @@ class TestSubtitleFetchHTTPIntegration:
         # TODO: Set up test database
         # TODO: Use real HTTP client
         # TODO: Prepare valid SRT subtitle_url
-        subtitle_url = "https://cdn.tiktokcdn.com/subtitles/test.srt"
 
         # Act
         # TODO: Call lambda_handler
@@ -191,7 +185,7 @@ class TestSubtitleFetchLambdaInvocation:
         # TODO: Set up LocalStack or AWS test environment
         # TODO: Deploy Lambda function
         # TODO: Prepare valid input payload
-        valid_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456:execution:test",
@@ -200,9 +194,9 @@ class TestSubtitleFetchLambdaInvocation:
                     "media_event_id": str(uuid4()),
                     "media_type": "video",
                     "subtitle_url": "https://cdn.tiktokcdn.com/subtitles/test.vtt",
-                    "subtitle_language": "en"
+                    "subtitle_language": "en",
                 }
-            ]
+            ],
         }
 
         # Act
@@ -220,7 +214,7 @@ class TestSubtitleFetchLambdaInvocation:
         # Arrange
         # TODO: Set up LocalStack
         # TODO: Prepare invalid input (missing required fields)
-        invalid_input = {
+        {
             "upload_id": str(uuid4()),
             # Missing user_id, execution_arn, media_items
         }
@@ -245,9 +239,9 @@ class TestSubtitleFetchEndToEnd:
         # TODO: Set up test database with media_events record
         # TODO: Mock HTTP server to serve VTT content
         # TODO: Prepare SubtitleFetchInput
-        upload_id = uuid4()
-        user_id = uuid4()
-        media_event_id = uuid4()
+        uuid4()
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -269,8 +263,8 @@ class TestSubtitleFetchEndToEnd:
         # TODO: Set up test database with multiple media_events
         # TODO: Mock HTTP server for video subtitle
         # TODO: Prepare SubtitleFetchInput with 3 items: video, image, slideshow
-        upload_id = uuid4()
-        user_id = uuid4()
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -289,8 +283,8 @@ class TestSubtitleFetchEndToEnd:
         # Arrange
         # TODO: Set up test database
         # TODO: Prepare SubtitleFetchInput with subtitle_url=None
-        upload_id = uuid4()
-        media_event_id = uuid4()
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -314,8 +308,8 @@ class TestSubtitleFetchIdempotencyIntegration:
         # TODO: Set up test database
         # TODO: Mock HTTP server to return consistent subtitle content
         # TODO: Prepare SubtitleFetchInput
-        upload_id = uuid4()
-        media_event_id = uuid4()
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler first time

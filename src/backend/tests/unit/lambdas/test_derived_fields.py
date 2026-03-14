@@ -6,11 +6,9 @@ Spec: docs/MVP/tasks/specs/3-3.10.md
 """
 
 import os
-from datetime import datetime
 from uuid import UUID, uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, Mock, patch
 
 # Set test environment variables before importing app modules
 os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
@@ -35,6 +33,7 @@ os.environ.setdefault("RESEND_API_KEY", "test-resend-key")
 
 
 # Test fixtures
+
 
 @pytest.fixture
 def mock_upload_id() -> UUID:
@@ -286,7 +285,7 @@ class TestUserRoleInference:
 
     @pytest.mark.asyncio
     async def test_derived_user_role_early_morning_wind_down(self):
-        """Test that user_role is inferred as 'wind_down' for early morning (1-4am) funny content."""
+        """Test user_role is 'wind_down' for early morning (1-4am) funny content."""
         # Arrange
         # TODO: Create MediaItemInput with hour=2, mood_primary='funny'
 
@@ -439,7 +438,9 @@ class TestDerivedFieldsHandler:
         pytest.skip("Test stub - implement during task 3.10")
 
     @pytest.mark.asyncio
-    async def test_derived_handler_handles_missing_optional_fields(self, derived_fields_input: dict):
+    async def test_derived_handler_handles_missing_optional_fields(
+        self, derived_fields_input: dict
+    ):
         """Test that handler gracefully handles missing optional fields."""
         # Arrange
         # TODO: Modify media_item to have None for optional fields

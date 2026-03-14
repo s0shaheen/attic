@@ -16,7 +16,6 @@ This module tests the embedding Lambda function including:
 
 import os
 from uuid import uuid4
-from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
@@ -51,10 +50,8 @@ class TestEmbeddingDimension:
         # Arrange
         # TODO: Create EmbeddingInput with single media item
         # TODO: Mock OpenAI Embeddings API to return 1536-dim vector
-        upload_id = uuid4()
-        media_event_id = uuid4()
-        full_text = "This is a test text for embedding generation."
-        expected_dimension = 1536
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler with input
@@ -71,7 +68,6 @@ class TestEmbeddingDimension:
         # Arrange
         # TODO: Create EmbeddingInput
         # TODO: Mock OpenAI API to return embedding with float values
-        full_text = "Sample text"
 
         # Act
         # TODO: Call lambda_handler
@@ -91,8 +87,7 @@ class TestEmbeddingBatchProcessing:
         # Arrange
         # TODO: Create EmbeddingInput with 250 media items
         # TODO: Mock OpenAI API (should be called 3 times: 100, 100, 50)
-        upload_id = uuid4()
-        num_items = 250
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -110,7 +105,6 @@ class TestEmbeddingBatchProcessing:
         # Arrange
         # TODO: Create EmbeddingInput with 75 media items
         # TODO: Mock OpenAI API (should be called once)
-        num_items = 75
 
         # Act
         # TODO: Call lambda_handler
@@ -127,7 +121,6 @@ class TestEmbeddingBatchProcessing:
         # Arrange
         # TODO: Create EmbeddingInput with exactly 100 media items
         # TODO: Mock OpenAI API (should be called once)
-        num_items = 100
 
         # Act
         # TODO: Call lambda_handler
@@ -148,8 +141,8 @@ class TestEmbeddingEmptyTextHandling:
         # Arrange
         # TODO: Create EmbeddingInput with full_text=""
         # TODO: Mock OpenAI API (should NOT be called)
-        upload_id = uuid4()
-        media_event_id = uuid4()
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -219,8 +212,6 @@ class TestEmbeddingTextTruncation:
         # Arrange
         # TODO: Create EmbeddingInput with very long full_text (>8191 tokens)
         # TODO: Mock OpenAI API to accept truncated text
-        long_text = "word " * 10000  # Simulate text over token limit
-        max_tokens = 8191
 
         # Act
         # TODO: Call lambda_handler
@@ -238,7 +229,6 @@ class TestEmbeddingTextTruncation:
         # Arrange
         # TODO: Create EmbeddingInput with text under token limit
         # TODO: Mock OpenAI API
-        normal_text = "This is a normal length caption with hashtags and transcript."
 
         # Act
         # TODO: Call lambda_handler
@@ -260,8 +250,6 @@ class TestEmbeddingCostCalculation:
         # TODO: Create EmbeddingInput with text
         # TODO: Mock OpenAI API to return usage.total_tokens = 5000
         # TODO: Calculate expected cost: 5000 / 1_000_000 * 0.02 = $0.0001
-        expected_tokens = 5000
-        expected_cost = 0.0001
 
         # Act
         # TODO: Call lambda_handler
@@ -312,7 +300,7 @@ class TestEmbeddingCostCalculation:
         # TODO: Calculate expected total cost
         batch_tokens = [10000, 9500, 5000]  # 3 batches
         expected_total_tokens = sum(batch_tokens)
-        expected_total_cost = expected_total_tokens / 1_000_000 * 0.02
+        expected_total_tokens / 1_000_000 * 0.02
 
         # Act
         # TODO: Call lambda_handler
@@ -385,8 +373,7 @@ class TestEmbeddingOutputFormat:
         # Arrange
         # TODO: Create EmbeddingInput with multiple items
         # TODO: Mock OpenAI API
-        upload_id = uuid4()
-        batch_index = 0
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -446,7 +433,6 @@ class TestEmbeddingIdempotency:
         # Arrange
         # TODO: Create two EmbeddingInputs with identical full_text
         # TODO: Mock OpenAI API to return embeddings
-        identical_text = "This is the exact same text for both items."
 
         # Act
         # TODO: Call lambda_handler for both inputs

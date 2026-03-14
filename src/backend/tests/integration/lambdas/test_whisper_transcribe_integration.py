@@ -11,11 +11,9 @@ These tests verify end-to-end behavior including:
 - Step Functions integration
 """
 
-import os
 from uuid import uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, patch
 
 
 class TestWhisperTranscribeS3Integration:
@@ -30,9 +28,8 @@ class TestWhisperTranscribeS3Integration:
         # TODO: Upload test video file to S3 bucket
         # TODO: Create WhisperTranscribeInput with s3_video_path
         # TODO: Mock OpenAI API
-        upload_id = uuid4()
-        media_event_id = uuid4()
-        s3_video_path = f"attic-media-temp/{upload_id}/{media_event_id}/video.mp4"
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -75,8 +72,7 @@ class TestWhisperTranscribeDatabaseIntegration:
         # TODO: Insert test media_event row with subtitle_text=NULL
         # TODO: Mock S3, ffmpeg, OpenAI API
         # TODO: Create WhisperTranscribeInput
-        media_event_id = uuid4()
-        expected_transcript = "This is the transcribed text."
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -98,7 +94,6 @@ class TestWhisperTranscribeDatabaseIntegration:
         # TODO: Insert media_event with subtitle_text="Existing subtitle"
         # TODO: Mock S3, ffmpeg, OpenAI (should NOT be called)
         # TODO: Create WhisperTranscribeInput
-        existing_subtitle = "Existing subtitle from TikTok"
 
         # Act
         # TODO: Call lambda_handler
@@ -120,7 +115,6 @@ class TestWhisperTranscribeDatabaseIntegration:
         # TODO: Insert test media_event
         # TODO: Mock S3, ffmpeg, OpenAI API
         # TODO: Create WhisperTranscribeInput with 120 second video
-        expected_cost = 2.0 * 0.006  # 2 minutes * $0.006/min
 
         # Act
         # TODO: Call lambda_handler
@@ -258,9 +252,9 @@ class TestWhisperTranscribeObservability:
         # TODO: Set up log capture
         # TODO: Mock S3, ffmpeg, OpenAI API
         # TODO: Create WhisperTranscribeInput
-        upload_id = uuid4()
-        user_id = uuid4()
-        media_event_id = uuid4()
+        uuid4()
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -330,7 +324,8 @@ class TestWhisperTranscribeObservability:
 
         # Assert
         # TODO: Verify PostHog event "whisper_transcribe_completed" emitted
-        # TODO: Verify event properties include upload_id, items_transcribed, items_skipped, total_cost_usd
+        # TODO: Verify event properties include upload_id,
+        # items_transcribed, items_skipped, total_cost_usd
         pytest.skip("Test stub - implement during task 3.6")
 
 
@@ -366,7 +361,7 @@ class TestWhisperTranscribeCostControl:
         # TODO: Mock S3, ffmpeg, OpenAI API
         video_durations = [60, 120, 180]  # 1, 2, 3 minutes
         expected_costs = [d / 60.0 * 0.006 for d in video_durations]
-        expected_total = sum(expected_costs)
+        sum(expected_costs)
 
         # Act
         # TODO: Call lambda_handler

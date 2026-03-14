@@ -1,9 +1,9 @@
 """Shared enums for Attic models."""
 
-from enum import Enum
+from enum import StrEnum
 
 
-class MediaType(str, Enum):
+class MediaType(StrEnum):
     """Media type classification for content processing.
 
     Used to determine pipeline branching and processing requirements.

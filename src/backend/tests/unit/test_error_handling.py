@@ -9,11 +9,10 @@ and graceful degradation logic for the Step Functions pipeline.
 """
 
 import os
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from uuid import UUID, uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, Mock, patch
 
 # Set test environment variables before importing app modules
 os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
@@ -38,6 +37,7 @@ os.environ.setdefault("RESEND_API_KEY", "test-resend-key")
 
 
 # Test fixtures
+
 
 @pytest.fixture
 def mock_upload_id() -> UUID:
@@ -66,7 +66,7 @@ def mock_step_error() -> dict:
         "error_code": "429",
         "error_message": "Rate limit exceeded",
         "attempt": 1,
-        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "timestamp": datetime.now(UTC).isoformat(),
         "items_affected": 50,
     }
 
@@ -265,7 +265,6 @@ class TestStepClassification:
     def test_is_skippable_step_subtitle_fetch_returns_true(self):
         """Test that SUBTITLE_FETCH is classified as skippable."""
         # Arrange
-        step_name = "SUBTITLE_FETCH"
 
         # Act
         # TODO: result = is_skippable_step(step_name)
@@ -277,7 +276,6 @@ class TestStepClassification:
     def test_is_skippable_step_whisper_transcribe_returns_true(self):
         """Test that WHISPER_TRANSCRIBE is classified as skippable."""
         # Arrange
-        step_name = "WHISPER_TRANSCRIBE"
 
         # Act
         # TODO: result = is_skippable_step(step_name)
@@ -289,7 +287,6 @@ class TestStepClassification:
     def test_is_skippable_step_vision_analysis_returns_true(self):
         """Test that VISION_ANALYSIS is classified as skippable."""
         # Arrange
-        step_name = "VISION_ANALYSIS"
 
         # Act
         # TODO: result = is_skippable_step(step_name)
@@ -301,7 +298,6 @@ class TestStepClassification:
     def test_is_skippable_step_parse_export_returns_false(self):
         """Test that PARSE_EXPORT is not skippable."""
         # Arrange
-        step_name = "PARSE_EXPORT"
 
         # Act
         # TODO: result = is_skippable_step(step_name)
@@ -313,7 +309,6 @@ class TestStepClassification:
     def test_is_critical_step_parse_export_returns_true(self):
         """Test that PARSE_EXPORT is classified as critical."""
         # Arrange
-        step_name = "PARSE_EXPORT"
 
         # Act
         # TODO: result = is_critical_step(step_name)
@@ -325,7 +320,6 @@ class TestStepClassification:
     def test_is_critical_step_apify_enrich_returns_true(self):
         """Test that APIFY_ENRICH is classified as critical."""
         # Arrange
-        step_name = "APIFY_ENRICH"
 
         # Act
         # TODO: result = is_critical_step(step_name)
@@ -337,7 +331,6 @@ class TestStepClassification:
     def test_is_critical_step_embedding_returns_true(self):
         """Test that EMBEDDING is classified as critical."""
         # Arrange
-        step_name = "EMBEDDING"
 
         # Act
         # TODO: result = is_critical_step(step_name)
@@ -349,7 +342,6 @@ class TestStepClassification:
     def test_is_critical_step_search_index_returns_true(self):
         """Test that SEARCH_INDEX is classified as critical."""
         # Arrange
-        step_name = "SEARCH_INDEX"
 
         # Act
         # TODO: result = is_critical_step(step_name)
@@ -361,7 +353,6 @@ class TestStepClassification:
     def test_is_critical_step_subtitle_fetch_returns_false(self):
         """Test that SUBTITLE_FETCH is not critical."""
         # Arrange
-        step_name = "SUBTITLE_FETCH"
 
         # Act
         # TODO: result = is_critical_step(step_name)

@@ -1,6 +1,7 @@
 {
   "name": "attic-frontend",
   "private": true,
+  "type": "module",
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",

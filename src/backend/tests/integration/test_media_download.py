@@ -10,11 +10,9 @@ These tests verify end-to-end behavior including:
 - Step Functions integration
 """
 
-import os
 from uuid import uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, patch
 
 
 class TestMediaDownloadS3Integration:
@@ -29,8 +27,8 @@ class TestMediaDownloadS3Integration:
         # TODO: Create test bucket "attic-media-temp"
         # TODO: Mock HTTP client to return test video bytes
         # TODO: Create MediaDownloadInput
-        upload_id = uuid4()
-        media_event_id = uuid4()
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -239,8 +237,8 @@ class TestMediaDownloadObservability:
         # TODO: Set up log capture
         # TODO: Mock HTTP and S3 clients
         # TODO: Create MediaDownloadInput
-        upload_id = uuid4()
-        user_id = uuid4()
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler

@@ -14,7 +14,6 @@ This module tests the media download Lambda function including:
 
 import os
 from uuid import uuid4
-from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
@@ -45,9 +44,8 @@ class TestMediaDownloadVideo:
         # TODO: Create MediaDownloadInput with single video item
         # TODO: Mock HTTP client to return video bytes
         # TODO: Mock S3 client
-        upload_id = uuid4()
-        media_event_id = uuid4()
-        expected_path = f"attic-media-temp/{upload_id}/{media_event_id}/video.mp4"
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler with video input
@@ -117,13 +115,8 @@ class TestMediaDownloadSlideshow:
         # TODO: Create MediaDownloadInput with image_urls list (3 images)
         # TODO: Mock HTTP client to return image bytes for each URL
         # TODO: Mock S3 client
-        upload_id = uuid4()
-        media_event_id = uuid4()
-        expected_paths = [
-            f"attic-media-temp/{upload_id}/{media_event_id}/image_0.jpg",
-            f"attic-media-temp/{upload_id}/{media_event_id}/image_1.jpg",
-            f"attic-media-temp/{upload_id}/{media_event_id}/image_2.jpg",
-        ]
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler with slideshow input
@@ -177,9 +170,8 @@ class TestMediaDownloadSingleImage:
         # TODO: Create MediaDownloadInput with media_type="image"
         # TODO: Mock HTTP client to return image bytes
         # TODO: Mock S3 client
-        upload_id = uuid4()
-        media_event_id = uuid4()
-        expected_path = f"attic-media-temp/{upload_id}/{media_event_id}/image_0.jpg"
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler

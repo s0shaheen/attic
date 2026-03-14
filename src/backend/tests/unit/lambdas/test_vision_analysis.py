@@ -17,7 +17,6 @@ This module tests the vision_analysis Lambda function including:
 
 import os
 from uuid import uuid4
-from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
@@ -53,9 +52,8 @@ class TestVisionAnalysisKeyframeExtraction:
         # TODO: Create VisionAnalysisInput with video media_type
         # TODO: Mock S3 client to return video file bytes
         # TODO: Mock ffmpeg keyframe extraction
-        upload_id = uuid4()
-        media_event_id = uuid4()
-        video_duration_seconds = 60  # Should extract 5 frames (every 10s)
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call extract_keyframes function
@@ -74,7 +72,6 @@ class TestVisionAnalysisKeyframeExtraction:
         # TODO: Create input with 25-second video
         # TODO: Mock S3 client
         # TODO: Mock ffmpeg
-        video_duration_seconds = 25  # Should extract 2 frames (at 10s, 20s)
 
         # Act
         # TODO: Call extract_keyframes function
@@ -91,7 +88,6 @@ class TestVisionAnalysisKeyframeExtraction:
         # TODO: Create input with 5-second video
         # TODO: Mock S3 client
         # TODO: Mock ffmpeg
-        video_duration_seconds = 5
 
         # Act
         # TODO: Call extract_keyframes function
@@ -112,14 +108,8 @@ class TestVisionAnalysisSlideshowHandling:
         # TODO: Include s3_image_paths with 4 images
         # TODO: Mock S3 client to return image bytes for each path
         # TODO: Mock OpenAI Vision API
-        upload_id = uuid4()
-        media_event_id = uuid4()
-        s3_image_paths = [
-            f"attic-media-temp/{upload_id}/{media_event_id}/image_0.jpg",
-            f"attic-media-temp/{upload_id}/{media_event_id}/image_1.jpg",
-            f"attic-media-temp/{upload_id}/{media_event_id}/image_2.jpg",
-            f"attic-media-temp/{upload_id}/{media_event_id}/image_3.jpg",
-        ]
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler with slideshow input
@@ -158,9 +148,8 @@ class TestVisionAnalysisSingleImage:
         # TODO: Include s3_image_paths with 1 image
         # TODO: Mock S3 client to return image bytes
         # TODO: Mock OpenAI Vision API
-        upload_id = uuid4()
-        media_event_id = uuid4()
-        s3_image_path = f"attic-media-temp/{upload_id}/{media_event_id}/image_0.jpg"
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler with single image input
@@ -182,17 +171,6 @@ class TestVisionAnalysisResponseParsing:
         # Arrange
         # TODO: Create mock Vision API response with all fields
         # TODO: Mock OpenAI client
-        mock_response = {
-            "visual_tags": ["person", "indoor", "smiling"],
-            "ocr_text": "Hello TikTok!",
-            "mood_distribution": {"happy": 0.8, "neutral": 0.2},
-            "mood_primary": "happy",
-            "mood_primary_confidence": 0.8,
-            "content_category_distribution": {"lifestyle": 0.7, "comedy": 0.3},
-            "content_category_primary": "lifestyle",
-            "content_category_primary_confidence": 0.7,
-            # ... additional fields
-        }
 
         # Act
         # TODO: Call parse_vision_response function
@@ -210,12 +188,6 @@ class TestVisionAnalysisResponseParsing:
         # Arrange
         # TODO: Create mock Vision API response with only some fields
         # TODO: Mock OpenAI client
-        mock_response = {
-            "visual_tags": ["person", "outdoor"],
-            "ocr_text": None,
-            "mood_distribution": None,
-            # Missing other fields
-        }
 
         # Act
         # TODO: Call parse_vision_response function
@@ -255,7 +227,7 @@ class TestVisionAnalysisCostTracking:
         # TODO: Mock response: input_tokens=1500, output_tokens=500
         expected_input_cost = 1500 * 0.00001  # GPT-4 Vision pricing
         expected_output_cost = 500 * 0.00003
-        expected_total_cost = expected_input_cost + expected_output_cost
+        expected_input_cost + expected_output_cost
 
         # Act
         # TODO: Call lambda_handler
@@ -522,7 +494,6 @@ class TestVisionAnalysisFieldExtraction:
         """Test that mood_distribution and primary mood are extracted."""
         # Arrange
         # TODO: Mock Vision API with mood_distribution
-        mock_distribution = {"happy": 0.7, "excited": 0.2, "neutral": 0.1}
 
         # Act
         # TODO: Call lambda_handler
@@ -538,7 +509,6 @@ class TestVisionAnalysisFieldExtraction:
         """Test that content_category_distribution is extracted."""
         # Arrange
         # TODO: Mock Vision API with content_category_distribution
-        mock_distribution = {"comedy": 0.6, "lifestyle": 0.3, "educational": 0.1}
 
         # Act
         # TODO: Call lambda_handler
@@ -554,7 +524,6 @@ class TestVisionAnalysisFieldExtraction:
         """Test that creator_archetype_distribution is extracted."""
         # Arrange
         # TODO: Mock Vision API with creator_archetype_distribution
-        mock_distribution = {"storyteller": 0.5, "educator": 0.3, "entertainer": 0.2}
 
         # Act
         # TODO: Call lambda_handler
@@ -569,7 +538,6 @@ class TestVisionAnalysisFieldExtraction:
         """Test that audience_role_distribution is extracted."""
         # Arrange
         # TODO: Mock Vision API with audience_role_distribution
-        mock_distribution = {"observer": 0.6, "participant": 0.4}
 
         # Act
         # TODO: Call lambda_handler
@@ -667,10 +635,6 @@ class TestVisionAnalysisFieldExtraction:
         """Test that entities list is extracted."""
         # Arrange
         # TODO: Mock Vision API with entities list
-        mock_entities = [
-            {"type": "person", "value": "celebrity", "confidence": 0.8},
-            {"type": "brand", "value": "Nike", "confidence": 0.9}
-        ]
 
         # Act
         # TODO: Call lambda_handler

@@ -16,7 +16,6 @@ import os
 from uuid import uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, patch
 
 
 class TestEmbeddingDatabaseIntegration:
@@ -32,8 +31,7 @@ class TestEmbeddingDatabaseIntegration:
         # TODO: Insert test media_event row with embedding_vector=NULL
         # TODO: Mock OpenAI API to return 1536-dim embedding
         # TODO: Create EmbeddingInput
-        media_event_id = uuid4()
-        expected_dimension = 1536
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -55,7 +53,6 @@ class TestEmbeddingDatabaseIntegration:
         # TODO: Insert media_event
         # TODO: Mock OpenAI API
         # TODO: Create EmbeddingInput with full_text
-        embedding_values = [0.123, -0.456, 0.789] * 512  # 1536 values
 
         # Act
         # TODO: Call lambda_handler
@@ -75,7 +72,6 @@ class TestEmbeddingDatabaseIntegration:
         # TODO: Insert media_event with existing embedding_vector
         # TODO: Mock OpenAI API (should NOT be called)
         # TODO: Create EmbeddingInput
-        existing_embedding = [0.1] * 1536
 
         # Act
         # TODO: Call lambda_handler
@@ -120,8 +116,6 @@ class TestEmbeddingProcessingStepsIntegration:
         # TODO: Insert test media_event
         # TODO: Mock OpenAI API with token count
         # TODO: Create EmbeddingInput
-        expected_tokens = 5000
-        expected_cost = 0.0001  # $0.02 per 1M tokens
 
         # Act
         # TODO: Call lambda_handler
@@ -279,9 +273,8 @@ class TestEmbeddingObservability:
         # TODO: Set up log capture
         # TODO: Mock OpenAI API
         # TODO: Create EmbeddingInput
-        upload_id = uuid4()
-        user_id = uuid4()
-        batch_index = 0
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -352,7 +345,9 @@ class TestEmbeddingObservability:
 
         # Assert
         # TODO: Verify PostHog event "embedding_batch_completed" emitted
-        # TODO: Verify event properties include upload_id, batch_index, items_embedded, items_skipped, total_tokens, cost_usd
+        # TODO: Verify event properties include upload_id,
+        # batch_index, items_embedded, items_skipped,
+        # total_tokens, cost_usd
         pytest.skip("Test stub - implement during task 3.9")
 
 
@@ -368,8 +363,6 @@ class TestEmbeddingCostTracking:
         # TODO: Insert media_event
         # TODO: Mock OpenAI API with specific token count
         # TODO: Create EmbeddingInput
-        expected_tokens = 10000
-        expected_cost = 0.0002  # 10000 / 1M * 0.02
 
         # Act
         # TODO: Call lambda_handler
@@ -391,7 +384,7 @@ class TestEmbeddingCostTracking:
         # TODO: Create EmbeddingInput with 3 items
         token_counts = [5000, 7500, 3000]
         expected_total = sum(token_counts)
-        expected_cost = expected_total / 1_000_000 * 0.02
+        expected_total / 1_000_000 * 0.02
 
         # Act
         # TODO: Call lambda_handler
@@ -498,8 +491,7 @@ class TestEmbeddingOpenAIIntegration:
     @pytest.mark.asyncio
     @pytest.mark.integration
     @pytest.mark.skipif(
-        os.getenv("SKIP_OPENAI_TESTS") == "true",
-        reason="Skipping real OpenAI API tests"
+        os.getenv("SKIP_OPENAI_TESTS") == "true", reason="Skipping real OpenAI API tests"
     )
     async def test_embedding_calls_real_openai_api(self):
         """Test that Lambda can call real OpenAI Embeddings API."""
@@ -508,7 +500,6 @@ class TestEmbeddingOpenAIIntegration:
         # TODO: Insert media_event with real full_text
         # TODO: Create EmbeddingInput (NO MOCK - real API call)
         # TODO: Verify OPENAI_API_KEY is set
-        full_text = "This is a real test of OpenAI embeddings API."
 
         # Act
         # TODO: Call lambda_handler with real API

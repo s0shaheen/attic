@@ -9,12 +9,12 @@ use to update upload_pipeline_runs table with per-step progress counts.
 """
 
 import os
-from datetime import datetime, timedelta
+from datetime import datetime
 from decimal import Decimal
+from unittest.mock import AsyncMock, Mock
 from uuid import UUID, uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, Mock, patch
 
 # Set test environment variables before importing app modules
 os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
@@ -41,6 +41,7 @@ os.environ.setdefault("RESEND_API_KEY", "test-resend-key")
 
 
 # Test fixtures
+
 
 @pytest.fixture
 def mock_upload_id() -> UUID:
@@ -151,7 +152,9 @@ class TestUpdateProgress:
         pytest.skip("Test stub - implement during task 3.15")
 
     @pytest.mark.asyncio
-    async def test_update_progress_failed_items_tracked(self, mock_upload_id: UUID, mock_db_session):
+    async def test_update_progress_failed_items_tracked(
+        self, mock_upload_id: UUID, mock_db_session
+    ):
         """Test that update_progress tracks failed items separately."""
         # Arrange
         # TODO: Set up test database with a pipeline run
@@ -173,7 +176,9 @@ class TestUpdateProgress:
         pytest.skip("Test stub - implement during task 3.15")
 
     @pytest.mark.asyncio
-    async def test_update_progress_updates_current_step(self, mock_upload_id: UUID, mock_db_session):
+    async def test_update_progress_updates_current_step(
+        self, mock_upload_id: UUID, mock_db_session
+    ):
         """Test that update_progress sets current_step field."""
         # Arrange
         # TODO: Set up test database with a pipeline run
@@ -193,7 +198,9 @@ class TestUpdateProgress:
         pytest.skip("Test stub - implement during task 3.15")
 
     @pytest.mark.asyncio
-    async def test_update_progress_sets_estimated_completion(self, mock_upload_id: UUID, mock_db_session):
+    async def test_update_progress_sets_estimated_completion(
+        self, mock_upload_id: UUID, mock_db_session
+    ):
         """Test that update_progress calculates and sets estimated_completion_at."""
         # Arrange
         # TODO: Set up test database with a pipeline run
@@ -214,7 +221,9 @@ class TestUpdateProgress:
         pytest.skip("Test stub - implement during task 3.15")
 
     @pytest.mark.asyncio
-    async def test_update_progress_invalid_step_name_raises_error(self, mock_upload_id: UUID, mock_db_session):
+    async def test_update_progress_invalid_step_name_raises_error(
+        self, mock_upload_id: UUID, mock_db_session
+    ):
         """Test that update_progress raises error for invalid step names."""
         # Arrange
         # TODO: Set up test database with a pipeline run
@@ -232,7 +241,9 @@ class TestUpdateProgress:
         pytest.skip("Test stub - implement during task 3.15")
 
     @pytest.mark.asyncio
-    async def test_update_progress_zero_items_processed_allowed(self, mock_upload_id: UUID, mock_db_session):
+    async def test_update_progress_zero_items_processed_allowed(
+        self, mock_upload_id: UUID, mock_db_session
+    ):
         """Test that update_progress handles zero items_processed gracefully."""
         # Arrange
         # TODO: Set up test database with a pipeline run

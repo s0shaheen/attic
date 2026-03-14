@@ -35,7 +35,9 @@ def upgrade() -> None:
             server_default=sa.text("gen_random_uuid()"),
             primary_key=True,
         ),
-        sa.Column("user_id", sa.UUID(), sa.ForeignKey("users.id", ondelete="CASCADE"), nullable=False),
+        sa.Column(
+            "user_id", sa.UUID(), sa.ForeignKey("users.id", ondelete="CASCADE"), nullable=False
+        ),
         sa.Column("title", sa.Text(), nullable=True),
         sa.Column(
             "created_at",
@@ -97,16 +99,12 @@ def upgrade() -> None:
         "CREATE INDEX idx_media_events_classifications "
         "ON media_events USING GIN (cached_classifications)"
     )
-    op.execute(
-        "CREATE INDEX idx_media_events_entities "
-        "ON media_events USING GIN (cached_entities)"
-    )
+    op.execute("CREATE INDEX idx_media_events_entities ON media_events USING GIN (cached_entities)")
 
     # --- RLS policies ---
     op.execute("ALTER TABLE conversations ENABLE ROW LEVEL SECURITY")
     op.execute(
-        "CREATE POLICY conversations_user_isolation ON conversations "
-        "USING (user_id = auth.uid())"
+        "CREATE POLICY conversations_user_isolation ON conversations USING (user_id = auth.uid())"
     )
 
     op.execute("ALTER TABLE messages ENABLE ROW LEVEL SECURITY")

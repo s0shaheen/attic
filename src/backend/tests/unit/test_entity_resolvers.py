@@ -11,10 +11,8 @@ from app.services.entity_resolvers import (
     resolve_book,
     resolve_entity,
     resolve_movie_or_tv,
-    resolve_music,
     resolve_place,
 )
-
 
 # ---------------------------------------------------------------------------
 # Google Maps (Places)
@@ -239,10 +237,17 @@ class TestResolveMovieOrTv:
 class TestResolveEntityDispatcher:
     def test_entity_type_map_covers_all_types(self):
         expected_types = {
-            "place", "restaurant", "location",
+            "place",
+            "restaurant",
+            "location",
             "book",
-            "movie", "tv", "tv_show", "show",
-            "music", "song", "artist",
+            "movie",
+            "tv",
+            "tv_show",
+            "show",
+            "music",
+            "song",
+            "artist",
         }
         assert set(ENTITY_TYPE_MAP.keys()) == expected_types
 

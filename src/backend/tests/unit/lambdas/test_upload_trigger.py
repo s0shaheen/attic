@@ -7,10 +7,10 @@ Spec: docs/MVP/tasks/specs/3-3.12.md
 
 import json
 import os
+from unittest.mock import Mock
 from uuid import UUID, uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, Mock, patch
 
 # Set test environment variables before importing app modules
 os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
@@ -24,13 +24,17 @@ os.environ.setdefault("OPENAI_API_KEY", "test-openai-key")
 os.environ.setdefault("STRIPE_SECRET_KEY", "test-stripe-key")
 os.environ.setdefault("STRIPE_WEBHOOK_SECRET", "test-stripe-webhook")
 os.environ.setdefault("RESEND_API_KEY", "test-resend-key")
-os.environ.setdefault("STEP_FUNCTIONS_ARN", "arn:aws:states:us-east-1:123456789:stateMachine:attic-media-processing-pipeline")
+os.environ.setdefault(
+    "STEP_FUNCTIONS_ARN",
+    "arn:aws:states:us-east-1:123456789:stateMachine:attic-media-processing-pipeline",
+)
 
 # TODO: Import the Lambda handler once implemented
 # from lambdas.upload_trigger.handler import handler, process_upload_trigger
 
 
 # Test fixtures
+
 
 @pytest.fixture
 def mock_upload_id() -> UUID:
@@ -85,7 +89,9 @@ def mock_context():
     context.aws_request_id = "test-request-id"
     context.function_name = "attic-upload-trigger"
     context.memory_limit_in_mb = 512
-    context.invoked_function_arn = "arn:aws:lambda:us-east-1:123456789:function:attic-upload-trigger"
+    context.invoked_function_arn = (
+        "arn:aws:lambda:us-east-1:123456789:function:attic-upload-trigger"
+    )
     return context
 
 
@@ -178,9 +184,7 @@ class TestUploadTriggerValidation:
     """Tests for upload validation."""
 
     @pytest.mark.asyncio
-    async def test_trigger_skips_nonexistent_upload(
-        self, sqs_event: dict, mock_context
-    ):
+    async def test_trigger_skips_nonexistent_upload(self, sqs_event: dict, mock_context):
         """Test that trigger skips nonexistent upload."""
         # Arrange
         # TODO: Mock database to return None (upload not found)
@@ -237,9 +241,7 @@ class TestUploadTriggerErrorHandling:
     """Tests for error handling scenarios."""
 
     @pytest.mark.asyncio
-    async def test_trigger_handles_step_functions_error(
-        self, sqs_event: dict, mock_context
-    ):
+    async def test_trigger_handles_step_functions_error(self, sqs_event: dict, mock_context):
         """Test that trigger handles Step Functions errors appropriately."""
         # Arrange
         # TODO: Mock database to return valid upload
@@ -252,9 +254,7 @@ class TestUploadTriggerErrorHandling:
         pytest.skip("Test stub - implement during task 3.12")
 
     @pytest.mark.asyncio
-    async def test_trigger_handles_database_error(
-        self, sqs_event: dict, mock_context
-    ):
+    async def test_trigger_handles_database_error(self, sqs_event: dict, mock_context):
         """Test that trigger handles database errors appropriately."""
         # Arrange
         # TODO: Mock database to raise exception on query
@@ -267,21 +267,10 @@ class TestUploadTriggerErrorHandling:
         pytest.skip("Test stub - implement during task 3.12")
 
     @pytest.mark.asyncio
-    async def test_trigger_handles_invalid_message_format(
-        self, mock_context
-    ):
+    async def test_trigger_handles_invalid_message_format(self, mock_context):
         """Test that trigger handles invalid SQS message format."""
         # Arrange
         # TODO: Create SQS event with invalid JSON body
-        invalid_event = {
-            "Records": [
-                {
-                    "messageId": "test-message-id",
-                    "body": "not-valid-json",
-                    "attributes": {},
-                }
-            ]
-        }
 
         # Act & Assert
         # TODO: Verify handler raises exception
@@ -290,9 +279,7 @@ class TestUploadTriggerErrorHandling:
         pytest.skip("Test stub - implement during task 3.12")
 
     @pytest.mark.asyncio
-    async def test_trigger_handles_missing_required_fields(
-        self, mock_context
-    ):
+    async def test_trigger_handles_missing_required_fields(self, mock_context):
         """Test that trigger handles missing required fields in message."""
         # Arrange
         # TODO: Create SQS event with missing upload_id field
@@ -301,7 +288,7 @@ class TestUploadTriggerErrorHandling:
             "storage_path": "uploads/...",
             # Missing upload_id
         }
-        invalid_event = {
+        {
             "Records": [
                 {
                     "messageId": "test-message-id",
@@ -348,7 +335,6 @@ class TestUploadTriggerDatabaseUpdate:
         """Test that trigger sets Step Functions execution ARN in database."""
         # Arrange
         # TODO: Mock database to return valid upload
-        execution_arn = "arn:aws:states:us-east-1:123456789:execution:attic-pipeline:upload-123"
         # TODO: Mock Step Functions to return execution_arn
 
         # Act
@@ -384,9 +370,7 @@ class TestUploadTriggerBatchProcessing:
         pytest.skip("Test stub - implement during task 3.12")
 
     @pytest.mark.asyncio
-    async def test_trigger_returns_batch_item_failures(
-        self, mock_context
-    ):
+    async def test_trigger_returns_batch_item_failures(self, mock_context):
         """Test that trigger returns batch item failures for failed messages."""
         # Arrange
         # TODO: Create SQS event with 3 messages
@@ -427,9 +411,7 @@ class TestUploadTriggerLogging:
         pytest.skip("Test stub - implement during task 3.12")
 
     @pytest.mark.asyncio
-    async def test_trigger_logs_metrics(
-        self, sqs_event: dict, mock_context
-    ):
+    async def test_trigger_logs_metrics(self, sqs_event: dict, mock_context):
         """Test that handler logs required metrics."""
         # Arrange
         # TODO: Mock database and Step Functions
@@ -446,9 +428,7 @@ class TestUploadTriggerLogging:
         pytest.skip("Test stub - implement during task 3.12")
 
     @pytest.mark.asyncio
-    async def test_trigger_logs_sentry_breadcrumbs(
-        self, sqs_event: dict, mock_context
-    ):
+    async def test_trigger_logs_sentry_breadcrumbs(self, sqs_event: dict, mock_context):
         """Test that handler logs Sentry breadcrumbs."""
         # Arrange
         # TODO: Mock Sentry SDK
@@ -490,9 +470,7 @@ class TestUploadTriggerStepFunctionsInput:
         pytest.skip("Test stub - implement during task 3.12")
 
     @pytest.mark.asyncio
-    async def test_trigger_uses_correct_state_machine_arn(
-        self, sqs_event: dict, mock_context
-    ):
+    async def test_trigger_uses_correct_state_machine_arn(self, sqs_event: dict, mock_context):
         """Test that trigger uses correct Step Functions ARN."""
         # Arrange
         # TODO: Mock database and Step Functions
@@ -511,9 +489,7 @@ class TestUploadTriggerOutput:
     """Tests for output format validation."""
 
     @pytest.mark.asyncio
-    async def test_trigger_output_matches_schema(
-        self, sqs_event: dict, mock_context
-    ):
+    async def test_trigger_output_matches_schema(self, sqs_event: dict, mock_context):
         """Test that output matches TriggerResult schema."""
         # Arrange
         # TODO: Mock database and Step Functions

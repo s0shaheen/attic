@@ -23,15 +23,15 @@ from typing import Annotated
 from uuid import UUID
 
 import jwt
-from jwt import PyJWKClient
 from fastapi import Depends, HTTPException, Request
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
+from jwt import PyJWKClient
 
 from app.core.config import Settings, get_settings
+from app.models.auth import AuthenticatedUser, AuthErrorCode, AuthErrorResponse
 
 # Cache JWKS clients per Supabase URL to avoid repeated fetches
 _jwk_clients: dict[str, PyJWKClient] = {}
-from app.models.auth import AuthenticatedUser, AuthErrorCode, AuthErrorResponse
 
 logger = logging.getLogger(__name__)
 

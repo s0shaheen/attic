@@ -7,10 +7,10 @@ Spec: docs/MVP/tasks/specs/3-3.12.md
 
 import json
 import os
+from unittest.mock import Mock
 from uuid import UUID, uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, Mock, patch
 
 # Set test environment variables before importing app modules
 os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
@@ -24,13 +24,17 @@ os.environ.setdefault("OPENAI_API_KEY", "test-openai-key")
 os.environ.setdefault("STRIPE_SECRET_KEY", "test-stripe-key")
 os.environ.setdefault("STRIPE_WEBHOOK_SECRET", "test-stripe-webhook")
 os.environ.setdefault("RESEND_API_KEY", "test-resend-key")
-os.environ.setdefault("STEP_FUNCTIONS_ARN", "arn:aws:states:us-east-1:123456789:stateMachine:attic-media-processing-pipeline")
+os.environ.setdefault(
+    "STEP_FUNCTIONS_ARN",
+    "arn:aws:states:us-east-1:123456789:stateMachine:attic-media-processing-pipeline",
+)
 
 # TODO: Import the Lambda handler once implemented
 # from lambdas.upload_trigger.handler import handler
 
 
 # Test fixtures
+
 
 @pytest.fixture
 def mock_upload_id() -> UUID:
@@ -85,7 +89,9 @@ def mock_context():
     context.aws_request_id = "test-request-id"
     context.function_name = "attic-upload-trigger"
     context.memory_limit_in_mb = 512
-    context.invoked_function_arn = "arn:aws:lambda:us-east-1:123456789:function:attic-upload-trigger"
+    context.invoked_function_arn = (
+        "arn:aws:lambda:us-east-1:123456789:function:attic-upload-trigger"
+    )
     return context
 
 
@@ -106,9 +112,7 @@ class TestUploadTriggerSQSIntegration:
     """Tests for SQS integration."""
 
     @pytest.mark.asyncio
-    async def test_trigger_receives_sqs_message(
-        self, sqs_event: dict, mock_context, db_session
-    ):
+    async def test_trigger_receives_sqs_message(self, sqs_event: dict, mock_context, db_session):
         """Test that trigger receives and parses SQS message correctly."""
         # Arrange
         # TODO: Set up test database with valid upload record
@@ -184,9 +188,7 @@ class TestUploadTriggerDatabaseIntegration:
         pytest.skip("Test stub - implement during task 3.12")
 
     @pytest.mark.asyncio
-    async def test_trigger_validates_upload_exists(
-        self, sqs_event: dict, mock_context, db_session
-    ):
+    async def test_trigger_validates_upload_exists(self, sqs_event: dict, mock_context, db_session):
         """Test that trigger validates upload exists before starting."""
         # Arrange
         # TODO: Do NOT create upload record in database
@@ -417,9 +419,7 @@ class TestUploadTriggerErrorRecovery:
         pytest.skip("Test stub - implement during task 3.12")
 
     @pytest.mark.asyncio
-    async def test_trigger_partial_batch_failure(
-        self, mock_context, db_session
-    ):
+    async def test_trigger_partial_batch_failure(self, mock_context, db_session):
         """Test that partial batch failures are handled correctly."""
         # Arrange
         # TODO: Create SQS event with 3 messages
@@ -505,9 +505,7 @@ class TestUploadTriggerObservability:
         pytest.skip("Test stub - implement during task 3.12")
 
     @pytest.mark.asyncio
-    async def test_trigger_tracks_metrics(
-        self, sqs_event: dict, mock_context, db_session
-    ):
+    async def test_trigger_tracks_metrics(self, sqs_event: dict, mock_context, db_session):
         """Test that trigger tracks required metrics."""
         # Arrange
         # TODO: Create upload record in database
@@ -580,9 +578,7 @@ class TestUploadTriggerSecurity:
         pytest.skip("Test stub - implement during task 3.12")
 
     @pytest.mark.asyncio
-    async def test_trigger_no_pii_in_logs(
-        self, sqs_event: dict, mock_context, db_session
-    ):
+    async def test_trigger_no_pii_in_logs(self, sqs_event: dict, mock_context, db_session):
         """Test that trigger does not log PII."""
         # Arrange
         # TODO: Create upload record in database

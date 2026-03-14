@@ -9,7 +9,6 @@ VisionAnalyzer protocol, analyzes images, and extracts structured metadata.
 """
 
 import os
-from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
@@ -58,9 +57,6 @@ class TestOpenAIVisionAnalysis:
         """Test that analyze() extracts visual tags from images."""
         # Arrange
         # TODO: Mock OpenAI Vision API response with visual tags
-        mock_response = {
-            "visual_tags": ["person", "outdoor", "sunset", "beach"],
-        }
         # TODO: Create image bytes
         # TODO: Create VideoContext
 
@@ -89,11 +85,6 @@ class TestOpenAIVisionAnalysis:
         """Test that analyze() classifies mood with confidence scores."""
         # Arrange
         # TODO: Mock OpenAI Vision response with mood classification
-        mock_mood_distribution = {
-            "happy": 0.7,
-            "excited": 0.2,
-            "calm": 0.1,
-        }
 
         # Act
         # TODO: Call analyzer.analyze()
@@ -174,7 +165,6 @@ class TestOpenAIVisionBatching:
         """Test that analyze() processes multiple images in single call."""
         # Arrange
         # TODO: Create list of 5 image bytes
-        images = [b"image_data_1", b"image_data_2", b"image_data_3", b"image_data_4", b"image_data_5"]
         # TODO: Mock OpenAI Vision API
 
         # Act
@@ -209,26 +199,6 @@ class TestOpenAIVisionResponseParsing:
         """Test that OpenAIVisionAnalyzer parses GPT-4 Vision response correctly."""
         # Arrange
         # TODO: Mock OpenAI Vision API with full response structure
-        mock_response = {
-            "visual_tags": ["person", "indoor"],
-            "ocr_text": "Welcome to the show",
-            "mood_distribution": {"happy": 0.8, "excited": 0.2},
-            "content_category_distribution": {"entertainment": 0.9},
-            "creator_archetype_distribution": {"influencer": 0.7},
-            "audience_role_distribution": {"viewer": 0.6},
-            "is_satire": False,
-            "satire_confidence": 0.1,
-            "setting": "living room",
-            "setting_confidence": 0.85,
-            "aesthetic_style": "modern",
-            "aesthetic_style_confidence": 0.75,
-            "content_format": "talking head",
-            "content_format_confidence": 0.9,
-            "meme_format": None,
-            "meme_format_confidence": 0.0,
-            "apparent_intent": "inform",
-            "entities": [{"type": "person", "name": "John Doe"}],
-        }
 
         # Act
         # TODO: Call analyzer.analyze()

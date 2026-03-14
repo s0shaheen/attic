@@ -9,12 +9,9 @@ and that progress counters remain accurate across full pipeline execution.
 """
 
 import os
-from datetime import datetime
-from decimal import Decimal
 from uuid import UUID, uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, Mock, patch
 
 # Set test environment variables before importing app modules
 os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
@@ -36,6 +33,7 @@ os.environ.setdefault("RESEND_API_KEY", "test-resend-key")
 
 
 # Test fixtures
+
 
 @pytest.fixture
 def mock_upload_id() -> UUID:

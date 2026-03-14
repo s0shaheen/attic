@@ -10,11 +10,9 @@ Tests run against LocalStack or AWS test environment.
 """
 
 import json
-import os
 from uuid import uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, patch
 
 
 class TestStateMachineHappyPath:
@@ -29,12 +27,12 @@ class TestStateMachineHappyPath:
         # TODO: Deploy state machine to LocalStack
         # TODO: Mock all Lambda functions to return success
         # TODO: Prepare valid input:
-        valid_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{uuid4()}/export.zip",
             "scope": "both",
-            "tier": "free"
+            "tier": "free",
         }
 
         # Act
@@ -55,12 +53,12 @@ class TestStateMachineHappyPath:
         # TODO: Set up LocalStack
         # TODO: Mock ParseExport to return multiple items
         # TODO: Mock downstream Lambdas to handle items array
-        valid_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{uuid4()}/export.zip",
             "scope": "both",
-            "tier": "explorer"
+            "tier": "explorer",
         }
 
         # Act
@@ -79,15 +77,8 @@ class TestStateMachineHappyPath:
         # Arrange
         # TODO: Set up LocalStack with instrumented Lambdas
         # TODO: Capture Lambda invocation payloads
-        test_upload_id = str(uuid4())
-        test_user_id = str(uuid4())
-        valid_input = {
-            "upload_id": test_upload_id,
-            "user_id": test_user_id,
-            "storage_path": f"uploads/{test_user_id}/{test_upload_id}/export.zip",
-            "scope": "liked",
-            "tier": "free"
-        }
+        str(uuid4())
+        str(uuid4())
 
         # Act
         # TODO: Execute state machine
@@ -119,12 +110,12 @@ class TestStateMachineRetryBehavior:
             return {"statusCode": 200, "body": json.dumps({"success": True})}
 
         # TODO: Configure mock Lambda with retry behavior
-        valid_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{uuid4()}/export.zip",
             "scope": "both",
-            "tier": "free"
+            "tier": "free",
         }
 
         # Act
@@ -168,12 +159,12 @@ class TestStateMachineRetryBehavior:
             attempt_count["value"] += 1
             raise Exception("Persistent Lambda error")
 
-        valid_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{uuid4()}/export.zip",
             "scope": "both",
-            "tier": "free"
+            "tier": "free",
         }
 
         # Act
@@ -198,12 +189,12 @@ class TestStateMachineTimeoutHandling:
         # TODO: Set up LocalStack
         # TODO: Mock Lambda to exceed timeout (sleep longer than TimeoutSeconds)
         # TODO: Configure state with short timeout for testing
-        valid_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{uuid4()}/export.zip",
             "scope": "both",
-            "tier": "free"
+            "tier": "free",
         }
 
         # Act
@@ -245,12 +236,12 @@ class TestStateMachineErrorHandling:
         # Arrange
         # TODO: Set up LocalStack
         # TODO: Mock Lambda to return task failure
-        valid_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{uuid4()}/export.zip",
             "scope": "both",
-            "tier": "free"
+            "tier": "free",
         }
 
         # Act
@@ -270,12 +261,12 @@ class TestStateMachineErrorHandling:
         # Arrange
         # TODO: Set up LocalStack
         # TODO: Mock Map state Lambda to fail for some items but succeed for others
-        valid_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{uuid4()}/export.zip",
             "scope": "both",
-            "tier": "explorer"
+            "tier": "explorer",
         }
 
         # Act
@@ -298,12 +289,12 @@ class TestStateMachineErrorHandling:
         # TODO: Create upload record in database
         # TODO: Mock Lambda to fail fatally
         test_upload_id = str(uuid4())
-        valid_input = {
+        {
             "upload_id": test_upload_id,
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{test_upload_id}/export.zip",
             "scope": "both",
-            "tier": "free"
+            "tier": "free",
         }
 
         # Act
@@ -328,12 +319,12 @@ class TestStateMachineIdempotency:
         # TODO: Set up LocalStack and test database
         # TODO: Mock Lambda functions with idempotent behavior (upserts)
         test_upload_id = str(uuid4())
-        valid_input = {
+        {
             "upload_id": test_upload_id,
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{test_upload_id}/export.zip",
             "scope": "both",
-            "tier": "free"
+            "tier": "free",
         }
 
         # Act
@@ -357,12 +348,12 @@ class TestStateMachineIdempotency:
         # Arrange
         # TODO: Set up LocalStack
         # TODO: Instrument Lambda to capture execution_id
-        valid_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{uuid4()}/export.zip",
             "scope": "both",
-            "tier": "free"
+            "tier": "free",
         }
 
         # Act
@@ -386,12 +377,12 @@ class TestStateMachineMapStateExecution:
         # TODO: Set up LocalStack
         # TODO: Mock ParseExport to return array of items
         # TODO: Mock Map state Lambdas to process individual items
-        valid_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{uuid4()}/export.zip",
             "scope": "both",
-            "tier": "explorer"
+            "tier": "explorer",
         }
 
         # Act
@@ -411,7 +402,7 @@ class TestStateMachineMapStateExecution:
         # TODO: Set up LocalStack
         # TODO: Prepare input with media_items array
         # TODO: Mock Map state Lambdas
-        valid_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{uuid4()}/export.zip",
@@ -420,8 +411,8 @@ class TestStateMachineMapStateExecution:
             "media_items": [
                 {"id": "1", "url": "https://tiktok.com/video/1", "media_type": "video"},
                 {"id": "2", "url": "https://tiktok.com/video/2", "media_type": "image"},
-                {"id": "3", "url": "https://tiktok.com/video/3", "media_type": "slideshow"}
-            ]
+                {"id": "3", "url": "https://tiktok.com/video/3", "media_type": "slideshow"},
+            ],
         }
 
         # Act
@@ -480,12 +471,12 @@ class TestStateMachineObservability:
         # Arrange
         # TODO: Set up LocalStack with CloudWatch
         # TODO: Configure state machine with logging
-        valid_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{uuid4()}/export.zip",
             "scope": "both",
-            "tier": "free"
+            "tier": "free",
         }
 
         # Act
@@ -506,12 +497,12 @@ class TestStateMachineObservability:
         # Arrange
         # TODO: Set up LocalStack with CloudWatch
         # TODO: Configure metrics collection
-        valid_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "storage_path": f"uploads/test-user/{uuid4()}/export.zip",
             "scope": "both",
-            "tier": "free"
+            "tier": "free",
         }
 
         # Act

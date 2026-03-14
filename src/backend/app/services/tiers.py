@@ -11,13 +11,13 @@ Tier Limits (from PRD):
 """
 
 import logging
-from enum import Enum
+from enum import StrEnum
 from typing import Final
 
 logger = logging.getLogger(__name__)
 
 
-class SubscriptionTier(str, Enum):
+class SubscriptionTier(StrEnum):
     """User subscription tiers.
 
     String-based enum for database compatibility.

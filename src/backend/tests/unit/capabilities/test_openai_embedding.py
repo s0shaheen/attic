@@ -9,7 +9,6 @@ EmbeddingProvider protocol, generates embeddings, and tracks costs.
 """
 
 import os
-from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
@@ -58,18 +57,6 @@ class TestOpenAIEmbeddingGeneration:
         """Test that embed() generates embeddings for text."""
         # Arrange
         # TODO: Mock OpenAI Embeddings API response
-        mock_embedding = [0.1] * 1536  # 1536-dimensional embedding
-        mock_response = {
-            "data": [
-                {
-                    "embedding": mock_embedding,
-                    "index": 0,
-                }
-            ],
-            "usage": {
-                "total_tokens": 10,
-            },
-        }
         # TODO: Create OpenAIEmbeddingProvider
 
         # Act
@@ -116,7 +103,7 @@ class TestOpenAIEmbeddingBatching:
         """Test that OpenAIEmbeddingProvider batches texts efficiently."""
         # Arrange
         # TODO: Create list of 100 texts (batch size per spec)
-        texts = [f"Text {i}" for i in range(100)]
+        [f"Text {i}" for i in range(100)]
         # TODO: Mock OpenAI API
 
         # Act
@@ -132,7 +119,7 @@ class TestOpenAIEmbeddingBatching:
         """Test that embed() handles batches larger than API limit."""
         # Arrange
         # TODO: Create list of 250 texts (exceeds typical batch limit)
-        texts = [f"Text {i}" for i in range(250)]
+        [f"Text {i}" for i in range(250)]
         # TODO: Mock OpenAI API
 
         # Act
@@ -167,8 +154,6 @@ class TestOpenAIEmbeddingCostTracking:
         # Arrange
         # TODO: Mock OpenAI API response with token usage
         # TODO: Set known text-embedding-3-large pricing ($0.00013 per 1K tokens)
-        mock_usage = {"total_tokens": 1000}
-        expected_cost = 0.00013  # $0.00013 for 1000 tokens
 
         # Act
         # TODO: Call provider.embed()
@@ -273,7 +258,6 @@ class TestOpenAIEmbeddingTextPreprocessing:
         """Test that embed() truncates text exceeding token limit."""
         # Arrange
         # TODO: Create very long text exceeding model's max tokens (8191 for text-embedding-3)
-        long_text = "word " * 10000
 
         # Act
         # TODO: Call provider.embed([long_text])
@@ -288,7 +272,6 @@ class TestOpenAIEmbeddingTextPreprocessing:
         """Test that embed() handles text with special characters."""
         # Arrange
         # TODO: Create text with emojis, unicode, newlines
-        special_text = "Hello 👋\nWorld 🌍\t\r\n"
 
         # Act
         # TODO: Call provider.embed([special_text])

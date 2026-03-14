@@ -15,7 +15,6 @@ This module tests the whisper transcribe Lambda function including:
 
 import os
 from uuid import uuid4
-from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
@@ -47,9 +46,8 @@ class TestWhisperTranscribeAPI:
         # TODO: Mock S3 client to return video file
         # TODO: Mock ffmpeg audio extraction
         # TODO: Mock OpenAI Whisper API response
-        upload_id = uuid4()
-        media_event_id = uuid4()
-        expected_transcript = "This is a test transcription from OpenAI Whisper."
+        uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler with video input
@@ -221,7 +219,6 @@ class TestWhisperTranscribeCostCalculation:
         # Arrange
         # TODO: Create WhisperTranscribeInput with video_duration_seconds=120 (2 min)
         # TODO: Mock S3, ffmpeg, OpenAI
-        expected_cost = 2.0 * 0.006  # 2 minutes * $0.006/min = $0.012
 
         # Act
         # TODO: Call lambda_handler
@@ -240,7 +237,7 @@ class TestWhisperTranscribeCostCalculation:
         # TODO: Mock S3, ffmpeg, OpenAI
         expected_cost_1 = 1.0 * 0.006  # $0.006
         expected_cost_2 = 3.0 * 0.006  # $0.018
-        expected_total = expected_cost_1 + expected_cost_2  # $0.024
+        expected_cost_1 + expected_cost_2  # $0.024
 
         # Act
         # TODO: Call lambda_handler
@@ -278,7 +275,6 @@ class TestWhisperTranscribeLongVideoHandling:
         # TODO: Create WhisperTranscribeInput with video_duration_seconds=900 (15 min)
         # TODO: Mock S3, ffmpeg (extract only first 10 min)
         # TODO: Mock OpenAI API
-        max_duration = 600  # 10 minutes
 
         # Act
         # TODO: Call lambda_handler
@@ -318,7 +314,7 @@ class TestWhisperTranscribeOutputFormat:
         # Arrange
         # TODO: Create WhisperTranscribeInput with 2 videos
         # TODO: Mock S3, ffmpeg, OpenAI
-        upload_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler

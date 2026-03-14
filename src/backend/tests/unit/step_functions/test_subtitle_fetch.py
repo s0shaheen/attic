@@ -14,7 +14,6 @@ This module tests the subtitle fetch Lambda function including:
 
 import os
 from uuid import uuid4
-from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
@@ -45,14 +44,6 @@ class TestSubtitleFetchVTTParsing:
         # Arrange
         # TODO: Create sample VTT content with multiple cue blocks
         # TODO: Mock HTTP client to return VTT bytes
-        sample_vtt = """WEBVTT
-
-00:00:00.000 --> 00:00:02.000
-First subtitle line
-
-00:00:02.500 --> 00:00:05.000
-Second subtitle line
-"""
 
         # Act
         # TODO: Call parse_vtt function
@@ -68,15 +59,6 @@ Second subtitle line
         """Test that VTT cues with multiple lines are parsed correctly."""
         # Arrange
         # TODO: Create VTT with multi-line cues
-        sample_vtt = """WEBVTT
-
-00:00:00.000 --> 00:00:03.000
-First line
-Second line
-
-00:00:03.500 --> 00:00:05.000
-Third line
-"""
 
         # Act
         # TODO: Call parse_vtt function
@@ -92,18 +74,6 @@ Third line
         """Test that VTT STYLE and NOTE blocks are ignored."""
         # Arrange
         # TODO: Create VTT with STYLE and NOTE blocks
-        sample_vtt = """WEBVTT
-
-NOTE This is a comment
-
-STYLE
-::cue {
-  color: white;
-}
-
-00:00:00.000 --> 00:00:02.000
-Actual subtitle
-"""
 
         # Act
         # TODO: Call parse_vtt function
@@ -123,14 +93,6 @@ class TestSubtitleFetchSRTParsing:
         """Test that SRT subtitle file is parsed to plain text."""
         # Arrange
         # TODO: Create sample SRT content with sequence numbers and timecodes
-        sample_srt = """1
-00:00:00,000 --> 00:00:02,000
-First subtitle line
-
-2
-00:00:02,500 --> 00:00:05,000
-Second subtitle line
-"""
 
         # Act
         # TODO: Call parse_srt function
@@ -146,15 +108,6 @@ Second subtitle line
         """Test that SRT entries with multiple text lines are parsed correctly."""
         # Arrange
         # TODO: Create SRT with multi-line entries
-        sample_srt = """1
-00:00:00,000 --> 00:00:03,000
-First line of entry
-Second line of entry
-
-2
-00:00:03,500 --> 00:00:05,000
-Third line
-"""
 
         # Act
         # TODO: Call parse_srt function
@@ -169,14 +122,6 @@ Third line
         """Test that SRT formatting tags (<i>, <b>) are stripped or preserved."""
         # Arrange
         # TODO: Create SRT with HTML-like formatting
-        sample_srt = """1
-00:00:00,000 --> 00:00:02,000
-<i>Italicized text</i>
-
-2
-00:00:02,500 --> 00:00:05,000
-<b>Bold text</b>
-"""
 
         # Act
         # TODO: Call parse_srt function
@@ -197,7 +142,7 @@ class TestSubtitleFetchMediaTypeHandling:
         # Arrange
         # TODO: Create SubtitleFetchInput with media_type="image"
         # TODO: Mock HTTP client (should NOT be called)
-        media_event_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -215,7 +160,7 @@ class TestSubtitleFetchMediaTypeHandling:
         # Arrange
         # TODO: Create SubtitleFetchInput with media_type="slideshow"
         # TODO: Mock HTTP client (should NOT be called)
-        media_event_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -234,7 +179,7 @@ class TestSubtitleFetchMediaTypeHandling:
         # TODO: Create SubtitleFetchInput with media_type="video"
         # TODO: Mock HTTP client to return VTT bytes
         # TODO: Mock database updates
-        media_event_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -255,7 +200,7 @@ class TestSubtitleFetchMissingURL:
         # Arrange
         # TODO: Create SubtitleFetchInput with subtitle_url=None
         # TODO: Mock HTTP client (should NOT be called)
-        media_event_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -273,7 +218,7 @@ class TestSubtitleFetchMissingURL:
         # Arrange
         # TODO: Create SubtitleFetchInput with subtitle_url
         # TODO: Mock HTTP client to raise 404 error
-        media_event_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -291,7 +236,6 @@ class TestSubtitleFetchMissingURL:
         # Arrange
         # TODO: Create SubtitleFetchInput with subtitle_url
         # TODO: Mock HTTP client to return invalid VTT/SRT
-        malformed_content = b"Not a valid VTT or SRT file"
 
         # Act
         # TODO: Call lambda_handler
@@ -313,8 +257,7 @@ class TestSubtitleFetchDatabaseUpdates:
         # TODO: Create SubtitleFetchInput with valid subtitle_url
         # TODO: Mock HTTP client to return VTT content
         # TODO: Mock database session
-        media_event_id = uuid4()
-        expected_text = "Subtitle text from VTT"
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -334,7 +277,7 @@ class TestSubtitleFetchDatabaseUpdates:
         # TODO: Create SubtitleFetchInput
         # TODO: Mock HTTP client to return subtitle bytes
         # TODO: Mock database session
-        media_event_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -370,7 +313,7 @@ class TestSubtitleFetchProcessingSteps:
         # TODO: Create SubtitleFetchInput
         # TODO: Mock HTTP client to return subtitle bytes
         # TODO: Mock database session
-        media_event_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler
@@ -392,7 +335,7 @@ class TestSubtitleFetchProcessingSteps:
         # TODO: Mock existing processing_steps record in database
         # TODO: Mock HTTP client to return subtitle bytes
         # TODO: Mock database session
-        media_event_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler (simulating retry)
@@ -453,7 +396,7 @@ class TestSubtitleFetchIdempotency:
         # TODO: Create SubtitleFetchInput
         # TODO: Mock HTTP client to return same subtitle content
         # TODO: Mock database session
-        media_event_id = uuid4()
+        uuid4()
 
         # Act
         # TODO: Call lambda_handler twice with same input
@@ -494,7 +437,6 @@ class TestSubtitleFetchOutputStructure:
         # Arrange
         # TODO: Create SubtitleFetchInput with subtitle_url
         # TODO: Mock HTTP client to return subtitle with known length
-        expected_length = 150
 
         # Act
         # TODO: Call lambda_handler

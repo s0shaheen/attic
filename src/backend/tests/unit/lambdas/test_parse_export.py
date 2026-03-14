@@ -9,11 +9,9 @@ import io
 import json
 import os
 import zipfile
-from datetime import datetime
 from uuid import UUID, uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, Mock, patch
 
 # Set test environment variables before importing app modules
 os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
@@ -33,6 +31,7 @@ os.environ.setdefault("RESEND_API_KEY", "test-resend-key")
 
 
 # Test fixtures
+
 
 @pytest.fixture
 def mock_upload_id() -> UUID:
@@ -122,10 +121,12 @@ def create_combined_export(liked_videos: list[dict], favorited_videos: list[dict
     """
     liked_data = {"Like List": {"ItemFavoriteList": liked_videos}}
     favorited_data = {"Favorite Videos": {"FavoriteVideoList": favorited_videos}}
-    return create_test_zip({
-        "Activity/Like List.json": json.dumps(liked_data),
-        "Activity/Favorite Videos.json": json.dumps(favorited_data),
-    })
+    return create_test_zip(
+        {
+            "Activity/Like List.json": json.dumps(liked_data),
+            "Activity/Favorite Videos.json": json.dumps(favorited_data),
+        }
+    )
 
 
 class TestParseExportHappyPath:
@@ -144,7 +145,9 @@ class TestParseExportHappyPath:
         # Assert
         # TODO: Verify output contains media_items list
         # TODO: Verify total_items matches expected count
-        # TODO: Verify each media_item has required fields (media_event_id, platform_id, canonical_url, interaction_type, media_type)
+        # TODO: Verify each media_item has required fields
+        # (media_event_id, platform_id, canonical_url,
+        # interaction_type, media_type)
         pytest.skip("Test stub - implement during task 3.2")
 
     @pytest.mark.asyncio
@@ -165,7 +168,9 @@ class TestParseExportHappyPath:
         pytest.skip("Test stub - implement during task 3.2")
 
     @pytest.mark.asyncio
-    async def test_parse_export_favorited_only_scope_filters_correctly(self, parse_export_input: dict):
+    async def test_parse_export_favorited_only_scope_filters_correctly(
+        self, parse_export_input: dict
+    ):
         """Test that favorited scope only returns favorited videos."""
         # Arrange
         # TODO: Create combined export with both liked and favorited
@@ -247,8 +252,10 @@ class TestParseExportIdempotency:
         # TODO: result2 = handler(parse_export_input, context)
 
         # Assert
-        # TODO: Verify result1.media_items[0].media_event_id == result2.media_items[0].media_event_id
-        # TODO: Verify IDs are generated using uuid5(user_id:platform:platform_id)
+        # TODO: Verify result1.media_items[0].media_event_id
+        # == result2.media_items[0].media_event_id
+        # TODO: Verify IDs are generated using
+        # uuid5(user_id:platform:platform_id)
         pytest.skip("Test stub - implement during task 3.2")
 
 

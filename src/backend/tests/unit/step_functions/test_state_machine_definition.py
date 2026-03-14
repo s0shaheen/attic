@@ -8,10 +8,6 @@ These tests verify that the MediaProcessingPipeline state machine definition
 is correctly structured with proper retry policies, timeouts, and error handling.
 """
 
-import json
-import os
-from pathlib import Path
-
 import pytest
 
 
@@ -22,7 +18,8 @@ class TestStateMachineDefinitionValidation:
     async def test_state_machine_definition_valid_json(self):
         """Test that state machine definition is valid ASL JSON."""
         # Arrange
-        # TODO: Load state machine definition from infrastructure/step-functions/media-pipeline.asl.json
+        # TODO: Load state machine definition from
+        # infrastructure/step-functions/media-pipeline.asl.json
         # TODO: Validate it's parseable JSON
 
         # Act
@@ -168,9 +165,14 @@ class TestStateMachineTimeoutPolicies:
         # TODO: Load state machine definition
         # Expected timeouts (in seconds):
         # ParseExport: 300 (5 min), EnrichBatch: 1800 (30 min), DownloadMedia: 3600 (60 min)
-        # FetchSubtitles: 600 (10 min), TranscribeAudio: 1800 (30 min), AnalyzeVision: 3600 (60 min)
-        # FuseText: 600 (10 min), GenerateEmbeddings: 1800 (30 min), ComputeDerivedFields: 600 (10 min)
-        # UpdateSearchIndex: 900 (15 min), FinalizeUpload: 120 (2 min)
+        # FetchSubtitles: 600 (10 min),
+        # TranscribeAudio: 1800 (30 min),
+        # AnalyzeVision: 3600 (60 min)
+        # FuseText: 600 (10 min),
+        # GenerateEmbeddings: 1800 (30 min),
+        # ComputeDerivedFields: 600 (10 min)
+        # UpdateSearchIndex: 900 (15 min),
+        # FinalizeUpload: 120 (2 min)
 
         # Act
         # TODO: Extract TimeoutSeconds for each state
@@ -316,7 +318,9 @@ class TestStateMachineLambdaReferences:
         # TODO: Load state machine definition
         # Expected Lambdas: ParseExportFunction, EnrichBatchFunction, DownloadMediaFunction,
         #                   FetchSubtitlesFunction, TranscribeAudioFunction, AnalyzeVisionFunction,
-        #                   FuseTextFunction, GenerateEmbeddingsFunction, ComputeDerivedFieldsFunction,
+        #                   FuseTextFunction,
+        #                   GenerateEmbeddingsFunction,
+        #                   ComputeDerivedFieldsFunction,
         #                   UpdateSearchIndexFunction, FinalizeUploadFunction
 
         # Act

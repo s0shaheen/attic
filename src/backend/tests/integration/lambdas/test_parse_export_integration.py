@@ -9,11 +9,9 @@ import io
 import json
 import os
 import zipfile
-from datetime import datetime
 from uuid import UUID, uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, Mock, patch
 
 # Set test environment variables before importing app modules
 os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
@@ -33,6 +31,7 @@ os.environ.setdefault("RESEND_API_KEY", "test-resend-key")
 
 
 # Test fixtures
+
 
 @pytest.fixture
 def mock_upload_id() -> UUID:
@@ -136,9 +135,7 @@ class TestParseExportDatabaseIntegration:
         pytest.skip("Test stub - implement during task 3.2")
 
     @pytest.mark.asyncio
-    async def test_parse_export_creates_pipeline_run(
-        self, parse_export_input: dict, db_session
-    ):
+    async def test_parse_export_creates_pipeline_run(self, parse_export_input: dict, db_session):
         """Test that parse_export creates upload_pipeline_runs record."""
         # Arrange
         # TODO: Create test ZIP with videos
@@ -180,9 +177,7 @@ class TestParseExportDatabaseIntegration:
         pytest.skip("Test stub - implement during task 3.2")
 
     @pytest.mark.asyncio
-    async def test_parse_export_respects_rls_policies(
-        self, parse_export_input: dict, db_session
-    ):
+    async def test_parse_export_respects_rls_policies(self, parse_export_input: dict, db_session):
         """Test that created media_events respect RLS policies."""
         # Arrange
         # TODO: Create test ZIP with videos
@@ -296,9 +291,7 @@ class TestParseExportEndToEnd:
         pytest.skip("Test stub - implement during task 3.2")
 
     @pytest.mark.asyncio
-    async def test_parse_export_handles_large_export(
-        self, parse_export_input: dict, db_session
-    ):
+    async def test_parse_export_handles_large_export(self, parse_export_input: dict, db_session):
         """Test parse_export handles large export (1000+ videos) efficiently."""
         # Arrange
         # TODO: Create test ZIP with 1000+ video URLs

@@ -47,7 +47,6 @@ class TestMockVideoMetadataProvider:
         """Test that MockVideoMetadataProvider returns fixture data for testing."""
         # Arrange
         # TODO: Create MockVideoMetadataProvider
-        test_urls = ["https://tiktok.com/@user/video/123"]
 
         # Act
         # TODO: Call mock_provider.fetch_metadata(test_urls)
@@ -63,7 +62,6 @@ class TestMockVideoMetadataProvider:
         """Test that MockVideoMetadataProvider returns deterministic results."""
         # Arrange
         # TODO: Create mock provider
-        test_urls = ["https://tiktok.com/@user/video/123"]
 
         # Act
         # TODO: Call fetch_metadata() twice with same URLs
@@ -108,7 +106,6 @@ class TestMockMediaDownloader:
         """Test that MockMediaDownloader.download_batch() returns multiple results."""
         # Arrange
         # TODO: Create mock downloader
-        items = [("url1", "id1"), ("url2", "id2"), ("url3", "id3")]
 
         # Act
         # TODO: Call mock_downloader.download_batch(items, "prefix")

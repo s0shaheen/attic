@@ -9,7 +9,6 @@ MediaDownloader protocol, handles downloads, and manages S3 uploads.
 """
 
 import os
-from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
@@ -93,8 +92,6 @@ class TestS3DownloaderSingleDownload:
         """Test that download() generates correct S3 key path."""
         # Arrange
         # TODO: Create S3MediaDownloader
-        platform_id = "7234567890123456789"
-        destination_prefix = "temp/upload_123"
 
         # Act
         # TODO: Call downloader.download()
@@ -139,11 +136,6 @@ class TestS3DownloaderBatchDownload:
         """Test that download_batch() processes multiple media items."""
         # Arrange
         # TODO: Create list of (url, platform_id) tuples
-        items = [
-            ("https://example.com/video1.mp4", "id1"),
-            ("https://example.com/video2.mp4", "id2"),
-            ("https://example.com/video3.mp4", "id3"),
-        ]
         # TODO: Mock HTTP and S3 clients
 
         # Act
@@ -252,7 +244,6 @@ class TestS3DownloaderFileSizeTracking:
         """Test that download() tracks downloaded file size."""
         # Arrange
         # TODO: Mock HTTP response with known byte size
-        expected_size = 1024 * 500  # 500 KB
 
         # Act
         # TODO: Call downloader.download()

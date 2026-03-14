@@ -8,12 +8,10 @@ These tests verify the vision_analysis Lambda function integrates correctly
 with the database, OpenAI Vision API, S3, and Step Functions in a test environment.
 """
 
-import json
 import os
 from uuid import uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, patch
 
 # Set environment variables BEFORE importing Lambda handler
 os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
@@ -43,7 +41,7 @@ class TestVisionAnalysisDatabaseIntegration:
         test_user_id = uuid4()
         test_media_event_id = uuid4()
 
-        event = {
+        {
             "upload_id": str(test_upload_id),
             "user_id": str(test_user_id),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -52,7 +50,9 @@ class TestVisionAnalysisDatabaseIntegration:
                 {
                     "media_event_id": str(test_media_event_id),
                     "media_type": "image",
-                    "s3_image_paths": [f"attic-media-temp/{test_upload_id}/{test_media_event_id}/image_0.jpg"],
+                    "s3_image_paths": [
+                        f"attic-media-temp/{test_upload_id}/{test_media_event_id}/image_0.jpg"
+                    ],
                     "caption_text": "My test image",
                     "hashtags": ["#test"],
                 }
@@ -87,7 +87,7 @@ class TestVisionAnalysisDatabaseIntegration:
         test_user_id = uuid4()
         test_media_event_id = uuid4()
 
-        event = {
+        {
             "upload_id": str(test_upload_id),
             "user_id": str(test_user_id),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -96,7 +96,9 @@ class TestVisionAnalysisDatabaseIntegration:
                 {
                     "media_event_id": str(test_media_event_id),
                     "media_type": "video",
-                    "s3_video_path": f"attic-media-temp/{test_upload_id}/{test_media_event_id}/video.mp4",
+                    "s3_video_path": (
+                        f"attic-media-temp/{test_upload_id}/{test_media_event_id}/video.mp4"
+                    ),
                     "caption_text": None,
                     "hashtags": None,
                 }
@@ -127,10 +129,8 @@ class TestVisionAnalysisDatabaseIntegration:
         # TODO: Insert prompt_template with step_type='VISION_ANALYSIS', is_active=True
         # TODO: Create test media_event
         # TODO: Mock OpenAI API and capture prompt used
-        test_prompt_version = "v1.5.0"
-        test_prompt_content = "Analyze this TikTok content for mood, tags, and categories..."
 
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -178,7 +178,7 @@ class TestVisionAnalysisDatabaseIntegration:
             for i in range(5)
         ]
 
-        event = {
+        {
             "upload_id": str(test_upload_id),
             "user_id": str(test_user_id),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -213,7 +213,7 @@ class TestVisionAnalysisS3Integration:
         test_media_event_id = uuid4()
         test_s3_path = f"attic-media-temp/{test_upload_id}/{test_media_event_id}/image_0.jpg"
 
-        event = {
+        {
             "upload_id": str(test_upload_id),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -250,7 +250,7 @@ class TestVisionAnalysisS3Integration:
         test_media_event_id = uuid4()
         test_video_path = f"attic-media-temp/{test_upload_id}/{test_media_event_id}/video.mp4"
 
-        event = {
+        {
             "upload_id": str(test_upload_id),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -297,7 +297,7 @@ class TestVisionAnalysisOpenAIRetry:
                 "mood_distribution": {"neutral": 1.0},
             }
 
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -341,7 +341,7 @@ class TestVisionAnalysisOpenAIRetry:
                 "mood_distribution": {"neutral": 1.0},
             }
 
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -377,7 +377,7 @@ class TestVisionAnalysisStepFunctionsIntegration:
         # TODO: Set up LocalStack Step Functions
         # TODO: Deploy minimal state machine with AnalyzeVision Map state
         # TODO: Prepare test execution input
-        test_input = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -411,7 +411,7 @@ class TestVisionAnalysisStepFunctionsIntegration:
         # TODO: Set up Step Functions with AnalyzeVision and TextFusion states
         # TODO: Prepare test input
         test_upload_id = str(uuid4())
-        test_input = {
+        {
             "upload_id": test_upload_id,
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -446,7 +446,7 @@ class TestVisionAnalysisEndToEnd:
     @pytest.mark.integration
     @pytest.mark.skipif(
         not os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY").startswith("test"),
-        reason="Real OpenAI API key required for E2E test"
+        reason="Real OpenAI API key required for E2E test",
     )
     async def test_vision_analysis_real_api_call(self):
         """Test Lambda with real OpenAI Vision API call (requires valid API key)."""
@@ -457,7 +457,7 @@ class TestVisionAnalysisEndToEnd:
         test_upload_id = uuid4()
         test_media_event_id = uuid4()
 
-        event = {
+        {
             "upload_id": str(test_upload_id),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -466,7 +466,9 @@ class TestVisionAnalysisEndToEnd:
                 {
                     "media_event_id": str(test_media_event_id),
                     "media_type": "image",
-                    "s3_image_paths": [f"attic-media-temp/{test_upload_id}/{test_media_event_id}/test.jpg"],
+                    "s3_image_paths": [
+                        f"attic-media-temp/{test_upload_id}/{test_media_event_id}/test.jpg"
+                    ],
                     "caption_text": "A person smiling indoors",
                     "hashtags": ["#lifestyle", "#happy"],
                 }
@@ -490,7 +492,7 @@ class TestVisionAnalysisEndToEnd:
     @pytest.mark.integration
     @pytest.mark.skipif(
         not os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY").startswith("test"),
-        reason="Real OpenAI API key required for E2E test"
+        reason="Real OpenAI API key required for E2E test",
     )
     async def test_vision_analysis_real_video_keyframe_extraction(self):
         """Test Lambda with real video keyframe extraction and Vision API."""
@@ -501,7 +503,7 @@ class TestVisionAnalysisEndToEnd:
         test_upload_id = uuid4()
         test_media_event_id = uuid4()
 
-        event = {
+        {
             "upload_id": str(test_upload_id),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -510,7 +512,9 @@ class TestVisionAnalysisEndToEnd:
                 {
                     "media_event_id": str(test_media_event_id),
                     "media_type": "video",
-                    "s3_video_path": f"attic-media-temp/{test_upload_id}/{test_media_event_id}/video.mp4",
+                    "s3_video_path": (
+                        f"attic-media-temp/{test_upload_id}/{test_media_event_id}/video.mp4"
+                    ),
                     "caption_text": "My video",
                     "hashtags": ["#test"],
                 }
@@ -542,7 +546,7 @@ class TestVisionAnalysisIdempotencyIntegration:
         # TODO: Mock OpenAI API with consistent response
         test_media_event_id = uuid4()
 
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",

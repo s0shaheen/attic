@@ -2,14 +2,13 @@
 
 import json
 from unittest.mock import AsyncMock, MagicMock, patch
-from uuid import UUID, uuid4
+from uuid import uuid4
 
 import pytest
 
 from app.services.agent import (
     MAX_TOOL_CALLS_PER_HOUR,
     MAX_TOOL_CALLS_PER_QUERY,
-    SSEEvent,
     _check_hourly_limit,
     _dispatch_tool,
     _hourly_counts,
@@ -20,7 +19,6 @@ from app.services.agent import (
     run_agent,
 )
 from app.services.agent_tools import AgentToolResult
-
 
 # ---------------------------------------------------------------------------
 # SSE helpers
@@ -91,7 +89,7 @@ class TestDispatchTool:
     async def test_dispatch_query_items(self):
         with patch("app.services.agent.query_items", new_callable=AsyncMock) as mock:
             mock.return_value = AgentToolResult(success=True, data={"items": []})
-            result = await _dispatch_tool(
+            await _dispatch_tool(
                 "query_items",
                 {"search_text": "food", "limit": 10, "unknown_key": "ignored"},
                 MagicMock(),
@@ -357,7 +355,10 @@ class TestRunAgent:
     async def test_tool_use_with_end_turn_still_processes_tools(self):
         """Regression: tool_use blocks with end_turn stop_reason must still be processed."""
         tool_response = _make_mock_response(
-            [_text_block("Let me search..."), _tool_use_block("query_items", {"search_text": "food"})],
+            [
+                _text_block("Let me search..."),
+                _tool_use_block("query_items", {"search_text": "food"}),
+            ],
             stop_reason="end_turn",  # This was the bug — end_turn skipped tool processing
         )
         final_response = _make_mock_response([_text_block("Found results.")])

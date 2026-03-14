@@ -9,12 +9,10 @@ TikTok metadata via Apify Clockworks Data Extractor, detects media types,
 and updates media_events with enrichment data.
 """
 
-import json
 import os
 from uuid import uuid4
 
 import pytest
-from unittest.mock import AsyncMock, MagicMock, patch
 
 # Set environment variables BEFORE importing Lambda handler
 os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
@@ -37,41 +35,7 @@ class TestApifyEnrichFieldMapping:
         # Arrange
         # TODO: Create mock Apify response with all fields populated
         # TODO: Set up mock database connection
-        mock_apify_response = {
-            "desc": "Test caption",
-            "hashtags": ["#test", "#video"],
-            "mentions": ["@user1"],
-            "author": {
-                "uniqueId": "testuser",
-                "nickname": "Test User",
-                "id": "123456",
-                "fans": 10000,
-                "verified": True,
-            },
-            "stats": {
-                "playCount": 5000,
-                "diggCount": 250,
-                "commentCount": 50,
-                "shareCount": 25,
-                "collectCount": 10,
-            },
-            "video": {
-                "duration": 30,
-                "cover": "https://example.com/thumbnail.jpg",
-            },
-            "createTime": 1706745600,
-            "isAd": False,
-            "isPinned": False,
-            "locationCreated": "US",
-            "music": {
-                "id": "789",
-                "title": "Test Song",
-                "authorName": "Artist Name",
-                "original": True,
-            },
-            "effectStickers": [{"id": "effect1"}],
-        }
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -121,16 +85,7 @@ class TestApifyEnrichFieldMapping:
         """Test that handler handles missing optional fields without errors."""
         # Arrange
         # TODO: Create mock Apify response with only required fields
-        mock_apify_response = {
-            "desc": "Minimal video",
-            "stats": {
-                "playCount": 100,
-            },
-            "video": {
-                "duration": 15,
-            },
-        }
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -162,16 +117,7 @@ class TestApifyEnrichMediaTypeDetection:
         """Test that handler correctly detects standard video media type."""
         # Arrange
         # TODO: Create mock Apify response for video (has video.duration, no imagePost)
-        mock_apify_response = {
-            "video": {
-                "duration": 45,
-                "cover": "https://example.com/cover.jpg",
-            },
-            "stats": {
-                "playCount": 1000,
-            },
-        }
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -200,22 +146,7 @@ class TestApifyEnrichMediaTypeDetection:
         """Test that handler correctly detects slideshow (photo mode) media type."""
         # Arrange
         # TODO: Create mock Apify response for slideshow (has imagePost.images array)
-        mock_apify_response = {
-            "imagePost": {
-                "images": [
-                    {"imageURL": {"urlList": ["https://example.com/img1.jpg"]}},
-                    {"imageURL": {"urlList": ["https://example.com/img2.jpg"]}},
-                    {"imageURL": {"urlList": ["https://example.com/img3.jpg"]}},
-                ]
-            },
-            "video": {
-                "duration": 0,  # Slideshows have 0 or very short duration
-            },
-            "stats": {
-                "playCount": 500,
-            },
-        }
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -245,20 +176,7 @@ class TestApifyEnrichMediaTypeDetection:
         """Test that handler correctly detects single image media type."""
         # Arrange
         # TODO: Create mock Apify response for single image (has imagePost with 1 image)
-        mock_apify_response = {
-            "imagePost": {
-                "images": [
-                    {"imageURL": {"urlList": ["https://example.com/single.jpg"]}},
-                ]
-            },
-            "video": {
-                "duration": 0,
-            },
-            "stats": {
-                "playCount": 200,
-            },
-        }
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -299,7 +217,7 @@ class TestApifyEnrichBatchProcessing:
             }
             for i in range(50)
         ]
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -330,7 +248,7 @@ class TestApifyEnrichBatchProcessing:
             }
             for i in range(10)
         ]
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -363,7 +281,7 @@ class TestApifyEnrichCostTracking:
             }
             for i in range(25)
         ]
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -386,7 +304,7 @@ class TestApifyEnrichCostTracking:
         # Arrange
         # TODO: Set up mock database
         # TODO: Create event with 5 media items
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -421,7 +339,7 @@ class TestApifyEnrichErrorHandling:
         """Test that handler marks items as failed when video not found (404)."""
         # Arrange
         # TODO: Mock Apify API to return 404 for specific video
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -450,7 +368,7 @@ class TestApifyEnrichErrorHandling:
         """Test that successful items are returned even when some fail."""
         # Arrange
         # TODO: Mock Apify API to succeed for 2 videos, fail for 1 video
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -490,7 +408,7 @@ class TestApifyEnrichErrorHandling:
         """Test that handler handles Apify API errors gracefully."""
         # Arrange
         # TODO: Mock Apify API to raise exception
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -519,7 +437,7 @@ class TestApifyEnrichDatabaseOperations:
         # Arrange
         # TODO: Set up mock database with existing media_event
         # TODO: Mock Apify response
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -550,7 +468,7 @@ class TestApifyEnrichDatabaseOperations:
         # Arrange
         # TODO: Set up database
         # TODO: Create event
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",
@@ -583,7 +501,7 @@ class TestApifyEnrichOutputFormat:
         """Test that handler output matches ApifyEnrichOutput schema."""
         # Arrange
         # TODO: Create event with 3 media items
-        event = {
+        {
             "upload_id": str(uuid4()),
             "user_id": str(uuid4()),
             "execution_arn": "arn:aws:states:us-east-1:123456789:execution:test",

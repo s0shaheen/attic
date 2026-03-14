@@ -52,7 +52,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Check for source files
+        id: check-src
+        run: |
+          if [ -d "src" ] || [ -d "app" ]; then
+            echo "has_source=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_source=false" >> "$GITHUB_OUTPUT"
+            echo "No frontend source files yet — skipping checks"
+          fi
+
       - name: Set up Node.js 20
+        if: steps.check-src.outputs.has_source == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: "20"
@@ -60,18 +71,23 @@ jobs:
           cache-dependency-path: src/frontend/package-lock.json
 
       - name: Install dependencies
+        if: steps.check-src.outputs.has_source == 'true'
         run: npm ci
 
       - name: Run linting
+        if: steps.check-src.outputs.has_source == 'true'
         run: npm run lint
 
       - name: Run type checking
+        if: steps.check-src.outputs.has_source == 'true'
         run: npm run typecheck
 
       - name: Run tests
+        if: steps.check-src.outputs.has_source == 'true'
         run: npm test --if-present
 
       - name: Build application
+        if: steps.check-src.outputs.has_source == 'true'
         run: npm run build
 
   lambdas:

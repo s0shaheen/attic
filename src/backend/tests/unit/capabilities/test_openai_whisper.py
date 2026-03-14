@@ -9,7 +9,6 @@ TranscriptionProvider protocol, transcribes audio, and tracks costs.
 """
 
 import os
-from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
@@ -58,11 +57,6 @@ class TestOpenAIWhisperTranscription:
         """Test that transcribe() returns transcribed text from audio."""
         # Arrange
         # TODO: Mock OpenAI Whisper API response
-        mock_response = {
-            "text": "This is a test transcription.",
-            "language": "en",
-            "duration": 15.5,
-        }
         # TODO: Mock S3 download of audio file
         # TODO: Create OpenAIWhisperProvider
 
@@ -81,7 +75,6 @@ class TestOpenAIWhisperTranscription:
         # Arrange
         # TODO: Mock S3 client
         # TODO: Mock OpenAI API
-        s3_path = "s3://test-bucket/temp/upload_123/audio.mp3"
 
         # Act
         # TODO: Call provider.transcribe(s3_path)
@@ -127,8 +120,6 @@ class TestOpenAIWhisperCostTracking:
         # Arrange
         # TODO: Mock OpenAI API response with duration
         # TODO: Set known Whisper pricing ($0.006 per minute as of spec)
-        duration_seconds = 90.0  # 1.5 minutes
-        expected_cost = 1.5 * 0.006  # $0.009
 
         # Act
         # TODO: Call provider.transcribe()
