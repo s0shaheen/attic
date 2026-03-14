@@ -2,19 +2,15 @@
 
 > Personal analytics platform for TikTok data — understanding your digital footprint through AI-powered enrichment.
 
-**This project has been archived.** See [ARCHIVED.md](ARCHIVED.md) for details and [portable-ai-data-kit](https://github.com/s0shaheen/portable-ai-data-kit) for the successor project.
-
----
+Upload your TikTok data export, and Attic enriches each media item with metadata, visual analysis, transcription, and semantic tagging — turning raw platform data into searchable, structured insights.
 
 ## Architecture
 
 ```
-                         Attic — System Architecture
-
   Browser                    API                        AWS
  ┌─────────────────┐   ┌─────────────┐   ┌──────────────────────────────┐
  │                  │   │             │   │  Step Functions              │
- │  Next.js 14      │   │  FastAPI    │   │  ┌────────────────────────┐  │
+ │  Next.js 16      │   │  FastAPI    │   │  ┌────────────────────────┐  │
  │  ├─ Auth (OAuth) ├──►│  ├─ Auth    ├──►│  │ 1. Parse Export        │  │
  │  ├─ Upload (Uppy)│   │  ├─ Upload  │   │  │ 2. Apify Enrich       │  │
  │  ├─ Library      │   │  ├─ Search  │   │  │ 3. Media Download     │  │
@@ -34,127 +30,121 @@
   Vercel (hosting)
 ```
 
-## What Was Built
-
-| Component | Description | Status |
-|-----------|-------------|--------|
-| **TikTok Parser** | Security-hardened ZIP export parser (634 lines) — zip-slip defense, path traversal prevention, multiple format variations | Production-ready |
-| **Authentication** | JWT validation (HS256 + ES256), Supabase JWKS, Google OAuth, session middleware | Complete |
-| **Upload Pipeline** | Drag-and-drop upload, presigned URLs, validation, scope selection, consent flow | Complete |
-| **Database Schema** | 5 Alembic migrations, 70+ fields per media event, pgvector embeddings, RLS policies | Complete |
-| **User Deletion** | GDPR-compliant cascade — storage files, Supabase Auth, confirmation email | Complete |
-| **Frontend** | Auth flow, upload flow, settings, error handling — Next.js + shadcn/ui | Complete |
-| **Lambda Stubs** | 10 pipeline handlers + error handler, shared logger + idempotency decorator | Scaffolded |
-| **Infrastructure** | SAM template, Step Functions state machine, S3 lifecycle, SQS + DLQ, Docker Compose | Scaffolded |
-| **Processing Pipeline** | Apify enrichment, Whisper transcription, GPT-4 Vision, embeddings, search indexing | Not started |
-
-**23 of ~78 total tasks completed (Epics 0-2).** Epic 3 (processing pipeline) was next.
-
-## Test Coverage
-
-| Area | Tests | Notes |
-|------|-------|-------|
-| Backend unit | ~60 | Auth (17 JWT cases), parser (15 format variations), uploads, validation, consent, GDPR deletion, models |
-| Frontend | ~30 | Uppy uploader (20 cases), API client, Supabase client/server/middleware, hooks |
-| Test fixtures | — | Synthetic TikTok exports (~13K lines each), edge case slices, anonymized data, generation tools |
-| Pipeline stubs | ~29 files | Test structure defined with `pytest.skip()` for all 10 Lambda steps |
-
 ## Tech Stack
 
 | Layer | Technologies |
 |-------|-------------|
-| **Frontend** | Next.js 14, TypeScript, Tailwind, shadcn/ui, TanStack Query, Uppy |
-| **Backend** | Python 3.12, FastAPI, SQLAlchemy 2.0, Pydantic |
+| **Frontend** | Next.js 16, TypeScript, Tailwind, shadcn/ui, TanStack Query, Uppy |
+| **Backend** | Python 3.13, FastAPI, SQLAlchemy 2.0, Pydantic |
 | **Database** | Supabase PostgreSQL + pgvector, Alembic migrations |
-| **Auth** | Supabase Auth (Google OAuth), JWT validation |
+| **Auth** | Supabase Auth (Google OAuth), JWT (HS256 + ES256) |
 | **Workflow** | AWS Step Functions, Lambda, SQS |
 | **AI/Enrichment** | Apify (metadata), OpenAI (vision, transcription, embeddings) |
-| **Infrastructure** | AWS SAM, Docker Compose, Vercel, Render |
+| **Observability** | Sentry (errors), PostHog (analytics) |
+| **Infrastructure** | Vercel, Render, AWS SAM, Docker Compose |
 
-## Documentation
+## Status
 
-| Document | Path |
-|----------|------|
-| Product Requirements (v1.3.0) | [`docs/MVP/PRD/Attic_MVP_PRD_v1.3.0.md`](docs/MVP/PRD/Attic_MVP_PRD_v1.3.0.md) |
-| Dev Guide (v1.3.0) | [`docs/MVP/tasks/Attic_MVP_Dev_Guide_v1.3.0.md`](docs/MVP/tasks/Attic_MVP_Dev_Guide_v1.3.0.md) |
-| Task Specs (37 specs) | [`docs/MVP/tasks/specs/`](docs/MVP/tasks/specs/) |
-| Architecture Decisions | [`docs/MVP/ADR/`](docs/MVP/ADR/) |
-| Setup Guides (7 guides) | [`docs/setup/`](docs/setup/) |
-| Repository Status | [`docs/REPO_STATUS.md`](docs/REPO_STATUS.md) |
+| Epic | Name | Progress |
+|------|------|----------|
+| 0 | Infrastructure & Foundation | 9/9 |
+| 1 | Authentication | 6/6 |
+| 2 | Upload & Consent | 8/8 |
+| 3 | Processing Pipeline | 0/15 |
+| 4 | Progress & Notifications | 0/5 |
+| 5 | Library View | 0/7 |
+| 6 | Search | 0/6 |
+| 7 | Detail View | 0/5 |
+| 8 | User Settings & Landing | 0/7 |
+| 9 | Production Readiness | 0/10 |
 
-## Why Archived
+**23/78 tasks complete.** Currently working on Epic 3 — the 10-step processing pipeline.
 
-Attic was a learning-intensive project that validated several ideas but grew beyond practical scope for a solo project:
+See [docs/REPO_STATUS.md](docs/REPO_STATUS.md) for detailed implementation status.
 
-1. **Infrastructure cost** — 10 Lambda functions, OpenAI API calls, Apify scraping, S3 storage, and Supabase all running adds up fast
-2. **Maintenance burden** — TikTok export formats change without notice; keeping the parser current requires ongoing effort
-3. **Narrower opportunity** — The most reusable piece (parsing messy platform exports into clean data) works better as a standalone tool
-
-The data parsing work continues in [portable-ai-data-kit](https://github.com/s0shaheen/portable-ai-data-kit).
-
-## Successor Project
-
-**[portable-ai-data-kit](https://github.com/s0shaheen/portable-ai-data-kit)** extracts the core insight from Attic — turning platform data exports into AI-ready datasets — into a focused, open-source CLI tool. No cloud infrastructure required.
-
-<details>
-<summary><strong>Running Locally</strong></summary>
+## Getting Started
 
 ### Prerequisites
 
-- Python 3.12+
-- Node.js 18+
-- Docker (for LocalStack and Supabase)
-- AWS SAM CLI
+- Docker Desktop 4.0+
+- Supabase CLI 1.0+
+- Node.js 20+
+- Python 3.13+
 
-### Backend
+### Quick Start
 
 ```bash
+# Start backend + local infrastructure
+./scripts/dev-start.sh
+
+# Start frontend
+cd src/frontend && npm install && npm run dev
+```
+
+| Service | URL |
+|---------|-----|
+| Frontend | http://localhost:3000 |
+| Backend API | http://localhost:8000 |
+| API Docs (Swagger) | http://localhost:8000/docs |
+| Supabase Studio | http://localhost:54323 |
+| LocalStack | http://localhost:4566 |
+
+See [docs/setup/](docs/setup/) for detailed guides on [local dev](docs/setup/local-dev.md), [AWS](docs/setup/aws.md), [Supabase](docs/setup/supabase.md), [environment variables](docs/setup/environment.md), [staging](docs/setup/staging.md), and [CI/CD](docs/setup/ci-cd.md).
+
+## Development
+
+```bash
+# Backend (from src/backend/)
+pytest tests/ -v                    # Run all tests
+ruff check . && ruff format .       # Lint + format
+alembic upgrade head                # Run migrations
+
+# Frontend (from src/frontend/)
+npm test                            # Run tests
+npm run lint                        # Lint
+npm run typecheck                   # Type check
+npm run build                       # Production build
+```
+
+## Testing
+
+60+ unit tests across backend and frontend, with synthetic TikTok export fixtures for deterministic testing.
+
+```bash
+# Backend
 cd src/backend
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+.venv/bin/python -m pytest -v       # 231 passing, 674 skipped (Epic 3+ stubs)
 
-# Run tests
-pytest tests/ -v
-
-# Lint + format
-ruff check . && ruff format .
-
-# Database migrations
-alembic upgrade head
-```
-
-### Frontend
-
-```bash
+# Frontend
 cd src/frontend
-npm install
-
-# Dev server
-npm run dev
-
-# Tests, lint, typecheck
 npm test
-npm run lint
-npm run typecheck
 ```
 
-### Infrastructure
+Test fixtures at `tests/fixtures/tiktok-exports/` include synthetic user data (~13K lines each), edge case slices, and generation tools.
 
-```bash
-# Start local Supabase
-supabase start
+## Documentation
 
-# Start LocalStack (S3, SQS, Step Functions)
-docker compose up -d
+| Document | Description |
+|----------|-------------|
+| [PRD v1.3.0](docs/MVP/PRD/Attic_MVP_PRD_v1.3.0.md) | Product spec, data model, API contracts |
+| [Dev Guide v1.3.0](docs/MVP/tasks/Attic_MVP_Dev_Guide_v1.3.0.md) | Epic/task breakdown with status |
+| [Task Specs](docs/MVP/tasks/specs/) | 37 individual task specifications |
+| [ADRs](docs/MVP/ADR/) | Architecture decision records |
+| [Setup Guides](docs/setup/) | 7 guides (local dev, AWS, Supabase, env, staging, CI/CD, storage) |
 
-# Test Lambda locally
-sam local invoke FunctionName
-```
+## Processing Pipeline
 
-See [`docs/setup/`](docs/setup/) for detailed guides on AWS, Supabase, environment variables, staging, CI/CD, and storage configuration.
+10-step async pipeline orchestrated by AWS Step Functions:
 
-</details>
+1. **Parse Export** — Extract URLs from ZIP, create `media_event` rows
+2. **Apify Enrich** — Fetch TikTok metadata (batched, 50/call)
+3. **Media Download** — Download video/images to S3 temp
+4. **Subtitle Fetch** — Get subtitles if available
+5. **Whisper Transcribe** — Transcribe via OpenAI if no subtitles
+6. **Vision Analysis** — GPT-4 Vision tagging (batched, 5 images/call)
+7. **Text Fusion** — Combine caption + hashtags + transcript + OCR + visual tags
+8. **Embedding** — Generate 1536-dim vectors (batched, 100/call)
+9. **Derived Fields** — Compute engagement rate, interaction hour, etc.
+10. **Search Index** — Update full-text (GIN) + vector (ivfflat) indexes
 
----
-
-*Archived March 2026 by [@s0shaheen](https://github.com/s0shaheen)*
+Every Lambda function is idempotent — safe under retries via upserts and deterministic IDs.
