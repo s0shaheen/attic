@@ -15,6 +15,12 @@ os.environ.setdefault("OPENAI_API_KEY", "test-openai-key")
 os.environ.setdefault("STRIPE_SECRET_KEY", "test-stripe-key")
 os.environ.setdefault("STRIPE_WEBHOOK_SECRET", "test-stripe-webhook")
 os.environ.setdefault("RESEND_API_KEY", "test-resend-key")
+os.environ.setdefault("ANTHROPIC_API_KEY", "test-anthropic-key")
+os.environ.setdefault("GEMINI_API_KEY", "test-gemini-key")
+os.environ.setdefault("GOOGLE_MAPS_API_KEY", "test-google-maps-key")
+os.environ.setdefault("TMDB_API_KEY", "test-tmdb-key")
+os.environ.setdefault("SPOTIFY_CLIENT_ID", "test-spotify-id")
+os.environ.setdefault("SPOTIFY_CLIENT_SECRET", "test-spotify-secret")
 
 import pytest
 from httpx import ASGITransport, AsyncClient

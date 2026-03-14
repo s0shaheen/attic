@@ -1,7 +1,7 @@
 # Attic — Current Implementation Plan
 
 **Architecture:** Hybrid Agentic (minimal pre-processing + agent chat layer)
-**Status:** Wave 1 — IN PROGRESS
+**Status:** Wave 2 — COMPLETE
 **Last Updated:** 2026-03-14
 **Full Review:** `.claude/plans/velvety-orbiting-widget.md`
 
@@ -38,15 +38,15 @@ Frontend: Minimal chat UI (rebuild from scratch)
 ### Wave 2: Agent Backend
 > Dependencies: Wave 1 complete (migration 006 must exist)
 
-- [ ] **2.1** `app/services/ontology.py` — ONTOLOGY_V1 dict, validate_classification(), format_ontology_for_prompt()
-- [ ] **2.2** `app/services/gemini.py` — Gemini 3 Flash client (classify + analyze_visual)
-- [ ] **2.3** `app/services/entity_resolvers.py` — Google Maps, Books, TMDB, Spotify wrappers
-- [ ] **2.4** `app/services/agent_tools.py` — query_items, classify, analyze_visual, resolve_entity
-- [ ] **2.5** `app/services/agent.py` — agent loop (~50 lines), SSE event generation
-- [ ] **2.6** `app/routers/chat.py` — POST /api/chat endpoint, SSE streaming, rate limiting
-- [ ] **2.7** `app/config.py` — add ANTHROPIC_API_KEY, GEMINI_API_KEY, entity API keys
-- [ ] **2.8** `app/main.py` — register chat router
-- [ ] **2.9** Per-user cost tracking — tool call counter (50/query, 200/hour)
+- [x] **2.1** `app/services/ontology.py` — ONTOLOGY_V1 dict, validate_classification(), format_ontology_for_prompt()
+- [x] **2.2** `app/services/gemini.py` — Gemini 3 Flash client (classify + analyze_visual)
+- [x] **2.3** `app/services/entity_resolvers.py` — Google Maps, Books, TMDB, Spotify wrappers
+- [x] **2.4** `app/services/agent_tools.py` — query_items, classify, analyze_visual, resolve_entity
+- [x] **2.5** `app/services/agent.py` — agent loop (~50 lines), SSE event generation
+- [x] **2.6** `app/routers/chat.py` — POST /api/chat endpoint, SSE streaming, rate limiting
+- [x] **2.7** `app/config.py` — add ANTHROPIC_API_KEY, GEMINI_API_KEY, entity API keys
+- [x] **2.8** `app/main.py` — register chat router
+- [x] **2.9** Per-user cost tracking — tool call counter (50/query, 200/hour) — built into agent.py
 
 ### Wave 3: Pipeline
 > Dependencies: Wave 1 complete. Independent of Wave 2.
@@ -137,7 +137,19 @@ When a conversation runs low on context, update this file:
 ### Current Progress
 _Updated by each session before ending._
 
-**Wave:** 1 — COMPLETE. Ready to commit and start Wave 2.
-**Current step:** Done — all 6 steps complete
+**Wave:** 2 — COMPLETE. Ready to commit and start Wave 3.
+**Current step:** Done — all 9 steps complete
 **Blockers:** None
-**Notes:** Dead code deleted (11 Lambda dirs, 15 specs, frontend source). CLAUDE.md rewritten. Migration 006 created (conversations, messages, cached_classifications, cached_entities + GIN indexes + RLS). Conversation/Message SQLAlchemy models added.
+**Notes:**
+- Wave 2 implemented full agent backend:
+  - `ontology.py` — 8-facet ONTOLOGY_V1 dict, validate_classification() tier-1/tier-2 split, format_ontology_for_prompt()
+  - `gemini.py` — classify() + analyze_visual() via Gemini REST API with JSON mode + Google Search grounding
+  - `entity_resolvers.py` — Google Maps, Books, TMDB, Spotify wrappers with Result-style returns + dispatcher
+  - `agent_tools.py` — 4 tools (query_items, classify, analyze_visual, resolve_entity) with DB caching + Anthropic tool definitions
+  - `agent.py` — manual Anthropic SDK tool loop with SSE events, per-query (50) and per-hour (200) rate limits
+  - `chat.py` — POST /api/chat SSE endpoint, conversation/message persistence, auth
+  - `config.py` — added anthropic_api_key, gemini_api_key, google_maps_api_key, tmdb_api_key, spotify credentials
+  - `main.py` + `routers/__init__.py` — chat router registered
+  - `media_event.py` — added cached_classifications/cached_entities model columns
+  - `pyproject.toml` — added anthropic dependency
+- All files pass ruff lint + format

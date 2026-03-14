@@ -8,7 +8,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.models import HealthResponse
-from app.routers import uploads_router, user_router
+from app.routers import chat_router, uploads_router, user_router
 
 # Configure logging
 logging.basicConfig(
@@ -48,6 +48,7 @@ app.add_middleware(
 )
 
 # Register routers
+app.include_router(chat_router)
 app.include_router(uploads_router)
 app.include_router(user_router)
 

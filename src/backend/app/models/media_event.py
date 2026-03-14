@@ -133,6 +133,10 @@ class MediaEvent(Base):
         JSONB
     )  # [{"surface": "Atomic Habits", "type": "book", ...}]
 
+    # Agent cache (JSONB, GIN-indexed — written by agent tools)
+    cached_classifications: Mapped[dict | None] = mapped_column(JSONB)
+    cached_entities: Mapped[list | None] = mapped_column(JSONB)
+
     # Derived fields
     engagement_rate: Mapped[float | None] = mapped_column(Float)
     interaction_hour: Mapped[int | None] = mapped_column(Integer)  # 0-23

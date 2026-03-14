@@ -19,8 +19,10 @@ from app.db.session import build_database_url
 # Import all models so they are registered with Base.metadata
 # This is required for autogenerate to detect model changes
 from app.models import (  # noqa: F401
+    Conversation,
     CostModel,
     MediaEvent,
+    Message,
     ProcessingStep,
     PromptTemplate,
     Upload,

@@ -36,7 +36,20 @@ class Settings(BaseSettings):
 
     # Third-party APIs
     apify_api_token: str = Field(description="Apify API token for TikTok scraping")
-    openai_api_key: str = Field(description="OpenAI API key for vision/embedding")
+    openai_api_key: str = Field(description="OpenAI API key for embeddings")
+
+    # Agent LLM APIs
+    anthropic_api_key: str = Field(description="Anthropic API key for Claude orchestrator")
+    gemini_api_key: str = Field(description="Google Gemini API key for classification/vision")
+
+    # Entity resolution APIs
+    google_maps_api_key: str = Field(description="Google Maps API key for place resolution")
+    google_books_api_key: str | None = Field(
+        default=None, description="Google Books API key (optional, uses public endpoint)"
+    )
+    tmdb_api_key: str = Field(description="TMDB API key for movie/show resolution")
+    spotify_client_id: str = Field(description="Spotify client ID for music resolution")
+    spotify_client_secret: str = Field(description="Spotify client secret for music resolution")
 
     # Payments
     stripe_secret_key: str = Field(description="Stripe secret key")
