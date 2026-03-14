@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.1.1] - 2026-03-14
+
+### Fixed
+- Migration 006: changed `cached_classifications`/`cached_entities` columns from JSON to JSONB with `jsonb_ops` operator class for GIN index compatibility
+- Pipeline handler: URL normalization (`tiktokv.com` → `tiktok.com`) for Apify TikTok scraper compatibility
+- Pipeline handler: stub `app.services` package to avoid eager import of backend config in Lambda context
+
+### Added
+- `scripts/sam-build.sh` wrapper for SAM container builds (copies backend `app/` into layer mount)
+
+## [0.2.1.0] - 2026-03-14
+
+### Added
+- Unified 4-step pipeline Lambda handler: parse_export → apify_enrich → subtitle_fetch → embed
+- Idempotent processing with deterministic IDs and processing_state gating per step
+- Apify TikTok scraper integration with batched URL processing (50/call) and poll-for-completion
+- OpenAI embedding generation with text fusion and batched API calls (100/call)
+- Media type detection (video/image/slideshow) from Apify response
+- SAM Makefile-based CommonLayer build bundling backend app/ for Lambda reuse
+
+### Changed
+- Simplified SAM template from 589 to 188 lines: replaced Step Functions + 11 Lambdas with single SQS-triggered Lambda
+- Removed StepFunctionsRole, 11 CloudWatch log groups, and state machine definition
+- Added SAM parameters for database and API credentials (DATABASE_URL, SUPABASE_URL/KEY, APIFY, OPENAI)
+
 ## [0.2.0.0] - 2026-03-14
 
 ### Added

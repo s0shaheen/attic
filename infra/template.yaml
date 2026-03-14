@@ -2,21 +2,15 @@ AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 Description: >
   Attic Media Processing Pipeline
-  SAM template for AWS infrastructure: Step Functions, Lambda, SQS, S3, IAM
+  SAM template: SQS -> single Lambda (parse -> apify -> subtitle -> embed)
 
 Globals:
   Function:
     Runtime: python3.13
     Timeout: 900
-    MemorySize: 512
+    MemorySize: 1024
     Architectures:
       - x86_64
-    Layers:
-      - !Ref CommonLayer
-    Environment:
-      Variables:
-        ENVIRONMENT: !Ref Environment
-        TEMP_BUCKET: !Sub "attic-temp-media-${Environment}"
 
 Parameters:
   Environment:
@@ -28,8 +22,32 @@ Parameters:
       - prod
     Description: Deployment environment
 
-# ---------- S3 Bucket ----------
+  DatabaseUrl:
+    Type: String
+    NoEcho: true
+    Description: PostgreSQL connection URL
+
+  SupabaseUrl:
+    Type: String
+    Description: Supabase project URL
+
+  SupabaseServiceKey:
+    Type: String
+    NoEcho: true
+    Description: Supabase service role key
+
+  ApifyApiToken:
+    Type: String
+    NoEcho: true
+    Description: Apify API token for TikTok scraping
+
+  OpenAiApiKey:
+    Type: String
+    NoEcho: true
+    Description: OpenAI API key for embeddings
+
 Resources:
+  # ---------- S3 Bucket ----------
   TempMediaBucket:
     Type: AWS::S3::Bucket
     Properties:
@@ -77,7 +95,7 @@ Resources:
       QueueName: !Sub "attic-upload-queue-dlq-${Environment}"
       MessageRetentionPeriod: 1209600
 
-  # ---------- IAM Roles ----------
+  # ---------- IAM Role ----------
   LambdaExecutionRole:
     Type: AWS::IAM::Role
     Properties:
@@ -114,441 +132,62 @@ Resources:
                   - sqs:GetQueueAttributes
                 Resource:
                   - !GetAtt UploadQueue.Arn
-              # Step Functions: start executions
-              - Effect: Allow
-                Action:
-                  - states:StartExecution
-                Resource:
-                  - !Sub "arn:aws:states:${AWS::Region}:${AWS::AccountId}:stateMachine:attic-media-processing-${Environment}"
       Tags:
         - Key: project
           Value: attic
         - Key: environment
           Value: !Ref Environment
-
-  StepFunctionsRole:
-    Type: AWS::IAM::Role
-    Properties:
-      RoleName: !Sub "attic-stepfunctions-${Environment}"
-      AssumeRolePolicyDocument:
-        Version: "2012-10-17"
-        Statement:
-          - Effect: Allow
-            Principal:
-              Service: states.amazonaws.com
-            Action: sts:AssumeRole
-      Policies:
-        - PolicyName: AtticStepFunctionsPolicy
-          PolicyDocument:
-            Version: "2012-10-17"
-            Statement:
-              - Effect: Allow
-                Action:
-                  - lambda:InvokeFunction
-                Resource:
-                  - !GetAtt ParseExportFunction.Arn
-                  - !GetAtt ApifyEnrichFunction.Arn
-                  - !GetAtt MediaDownloadFunction.Arn
-                  - !GetAtt SubtitleFetchFunction.Arn
-                  - !GetAtt WhisperTranscribeFunction.Arn
-                  - !GetAtt VisionAnalysisFunction.Arn
-                  - !GetAtt TextFusionFunction.Arn
-                  - !GetAtt EmbeddingFunction.Arn
-                  - !GetAtt DerivedFieldsFunction.Arn
-                  - !GetAtt SearchIndexFunction.Arn
-                  - !GetAtt ErrorHandlerFunction.Arn
-              - Effect: Allow
-                Action:
-                  - logs:CreateLogDelivery
-                  - logs:GetLogDelivery
-                  - logs:UpdateLogDelivery
-                  - logs:DeleteLogDelivery
-                  - logs:ListLogDeliveries
-                  - logs:PutResourcePolicy
-                  - logs:DescribeResourcePolicies
-                  - logs:DescribeLogGroups
-                Resource: "*"
-      Tags:
-        - Key: project
-          Value: attic
-        - Key: environment
-          Value: !Ref Environment
-
-  # ---------- CloudWatch Log Groups ----------
-  ParseExportLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub "/aws/lambda/attic-parse-export-${Environment}"
-      RetentionInDays: 14
-      Tags:
-        - Key: project
-          Value: attic
-        - Key: environment
-          Value: !Ref Environment
-
-  ApifyEnrichLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub "/aws/lambda/attic-apify-enrich-${Environment}"
-      RetentionInDays: 14
-
-  MediaDownloadLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub "/aws/lambda/attic-media-download-${Environment}"
-      RetentionInDays: 14
-
-  SubtitleFetchLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub "/aws/lambda/attic-subtitle-fetch-${Environment}"
-      RetentionInDays: 14
-
-  WhisperTranscribeLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub "/aws/lambda/attic-whisper-transcribe-${Environment}"
-      RetentionInDays: 14
-
-  VisionAnalysisLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub "/aws/lambda/attic-vision-analysis-${Environment}"
-      RetentionInDays: 14
-
-  TextFusionLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub "/aws/lambda/attic-text-fusion-${Environment}"
-      RetentionInDays: 14
-
-  EmbeddingLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub "/aws/lambda/attic-embedding-${Environment}"
-      RetentionInDays: 14
-
-  DerivedFieldsLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub "/aws/lambda/attic-derived-fields-${Environment}"
-      RetentionInDays: 14
-
-  SearchIndexLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub "/aws/lambda/attic-search-index-${Environment}"
-      RetentionInDays: 14
-
-  ErrorHandlerLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub "/aws/lambda/attic-error-handler-${Environment}"
-      RetentionInDays: 30
 
   # ---------- Lambda Layer ----------
   CommonLayer:
     Type: AWS::Serverless::LayerVersion
     Properties:
       LayerName: !Sub "attic-common-${Environment}"
-      Description: Shared utilities for Attic Lambda functions
+      Description: Shared utilities and backend app for Attic Lambda functions
       ContentUri: ../src/lambdas/
       CompatibleRuntimes:
         - python3.13
       RetentionPolicy: Retain
+    Metadata:
+      BuildMethod: makefile
 
-  # ---------- Lambda Functions ----------
-  ParseExportFunction:
+  # ---------- CloudWatch Log Group ----------
+  PipelineLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/attic-pipeline-${Environment}"
+      RetentionInDays: 14
+      Tags:
+        - Key: project
+          Value: attic
+        - Key: environment
+          Value: !Ref Environment
+
+  # ---------- Pipeline Lambda ----------
+  PipelineFunction:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: !Sub "attic-parse-export-${Environment}"
+      FunctionName: !Sub "attic-pipeline-${Environment}"
       Handler: handler.handler
-      CodeUri: ../src/lambdas/parse_export/
+      CodeUri: ../src/lambdas/pipeline/
       Role: !GetAtt LambdaExecutionRole.Arn
+      Layers:
+        - !Ref CommonLayer
+      Environment:
+        Variables:
+          ENVIRONMENT: !Ref Environment
+          TEMP_BUCKET: !Sub "attic-temp-media-${Environment}"
+          DATABASE_URL: !Ref DatabaseUrl
+          SUPABASE_URL: !Ref SupabaseUrl
+          SUPABASE_SERVICE_KEY: !Ref SupabaseServiceKey
+          APIFY_API_TOKEN: !Ref ApifyApiToken
+          OPENAI_API_KEY: !Ref OpenAiApiKey
       Events:
         SQSTrigger:
           Type: SQS
           Properties:
             Queue: !GetAtt UploadQueue.Arn
             BatchSize: 1
-
-  ApifyEnrichFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub "attic-apify-enrich-${Environment}"
-      Handler: handler.handler
-      CodeUri: ../src/lambdas/apify_enrich/
-      Role: !GetAtt LambdaExecutionRole.Arn
-
-  MediaDownloadFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub "attic-media-download-${Environment}"
-      Handler: handler.handler
-      CodeUri: ../src/lambdas/media_download/
-      Role: !GetAtt LambdaExecutionRole.Arn
-
-  SubtitleFetchFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub "attic-subtitle-fetch-${Environment}"
-      Handler: handler.handler
-      CodeUri: ../src/lambdas/subtitle_fetch/
-      Role: !GetAtt LambdaExecutionRole.Arn
-
-  WhisperTranscribeFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub "attic-whisper-transcribe-${Environment}"
-      Handler: handler.handler
-      CodeUri: ../src/lambdas/whisper_transcribe/
-      Role: !GetAtt LambdaExecutionRole.Arn
-
-  VisionAnalysisFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub "attic-vision-analysis-${Environment}"
-      Handler: handler.handler
-      CodeUri: ../src/lambdas/vision_analysis/
-      Role: !GetAtt LambdaExecutionRole.Arn
-
-  TextFusionFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub "attic-text-fusion-${Environment}"
-      Handler: handler.handler
-      CodeUri: ../src/lambdas/text_fusion/
-      Role: !GetAtt LambdaExecutionRole.Arn
-
-  EmbeddingFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub "attic-embedding-${Environment}"
-      Handler: handler.handler
-      CodeUri: ../src/lambdas/embedding/
-      Role: !GetAtt LambdaExecutionRole.Arn
-
-  DerivedFieldsFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub "attic-derived-fields-${Environment}"
-      Handler: handler.handler
-      CodeUri: ../src/lambdas/derived_fields/
-      Role: !GetAtt LambdaExecutionRole.Arn
-
-  SearchIndexFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub "attic-search-index-${Environment}"
-      Handler: handler.handler
-      CodeUri: ../src/lambdas/search_index/
-      Role: !GetAtt LambdaExecutionRole.Arn
-
-  ErrorHandlerFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub "attic-error-handler-${Environment}"
-      Handler: handler.handler
-      CodeUri: ../src/lambdas/error_handler/
-      Role: !GetAtt LambdaExecutionRole.Arn
-
-  # ---------- Step Functions State Machine ----------
-  MediaProcessingPipeline:
-    Type: AWS::Serverless::StateMachine
-    Properties:
-      Name: !Sub "attic-media-processing-${Environment}"
-      Role: !GetAtt StepFunctionsRole.Arn
-      Tracing:
-        Enabled: true
-      Logging:
-        Level: ALL
-        IncludeExecutionData: true
-        Destinations:
-          - CloudWatchLogsLogGroup:
-              LogGroupArn: !GetAtt StepFunctionsLogGroup.Arn
-      Definition:
-        Comment: "Attic Media Processing Pipeline"
-        StartAt: "ParseExport"
-        States:
-          ParseExport:
-            Type: Task
-            Resource: !GetAtt ParseExportFunction.Arn
-            Next: EnrichBatch
-            Retry:
-              - ErrorEquals:
-                  - "States.ALL"
-                MaxAttempts: 3
-                BackoffRate: 2
-                IntervalSeconds: 2
-            Catch:
-              - ErrorEquals:
-                  - "States.ALL"
-                Next: HandleError
-                ResultPath: "$.error"
-
-          EnrichBatch:
-            Type: Map
-            ItemsPath: "$.batches"
-            MaxConcurrency: 10
-            Iterator:
-              StartAt: CallApify
-              States:
-                CallApify:
-                  Type: Task
-                  Resource: !GetAtt ApifyEnrichFunction.Arn
-                  End: true
-                  Retry:
-                    - ErrorEquals:
-                        - "States.ALL"
-                      MaxAttempts: 3
-                      BackoffRate: 2
-                      IntervalSeconds: 2
-            Next: ProcessMediaItems
-            Catch:
-              - ErrorEquals:
-                  - "States.ALL"
-                Next: HandleError
-                ResultPath: "$.error"
-
-          ProcessMediaItems:
-            Type: Map
-            ItemsPath: "$.media_items"
-            MaxConcurrency: 5
-            Iterator:
-              StartAt: DownloadMedia
-              States:
-                DownloadMedia:
-                  Type: Task
-                  Resource: !GetAtt MediaDownloadFunction.Arn
-                  Next: FetchSubtitles
-                  Retry:
-                    - ErrorEquals:
-                        - "States.ALL"
-                      MaxAttempts: 3
-                      BackoffRate: 2
-                      IntervalSeconds: 2
-                FetchSubtitles:
-                  Type: Task
-                  Resource: !GetAtt SubtitleFetchFunction.Arn
-                  Next: CheckSubtitles
-                  Retry:
-                    - ErrorEquals:
-                        - "States.ALL"
-                      MaxAttempts: 3
-                      BackoffRate: 2
-                      IntervalSeconds: 2
-                CheckSubtitles:
-                  Type: Choice
-                  Choices:
-                    - Variable: "$.has_subtitles"
-                      BooleanEquals: false
-                      Next: TranscribeAudio
-                  Default: AnalyzeVision
-                TranscribeAudio:
-                  Type: Task
-                  Resource: !GetAtt WhisperTranscribeFunction.Arn
-                  Next: AnalyzeVision
-                  Retry:
-                    - ErrorEquals:
-                        - "States.ALL"
-                      MaxAttempts: 3
-                      BackoffRate: 2
-                      IntervalSeconds: 2
-                AnalyzeVision:
-                  Type: Task
-                  Resource: !GetAtt VisionAnalysisFunction.Arn
-                  Next: GenerateEmbedding
-                  Retry:
-                    - ErrorEquals:
-                        - "States.ALL"
-                      MaxAttempts: 3
-                      BackoffRate: 2
-                      IntervalSeconds: 2
-                GenerateEmbedding:
-                  Type: Task
-                  Resource: !GetAtt EmbeddingFunction.Arn
-                  End: true
-                  Retry:
-                    - ErrorEquals:
-                        - "States.ALL"
-                      MaxAttempts: 3
-                      BackoffRate: 2
-                      IntervalSeconds: 2
-            Next: TextFusion
-            Catch:
-              - ErrorEquals:
-                  - "States.ALL"
-                Next: HandleError
-                ResultPath: "$.error"
-
-          TextFusion:
-            Type: Task
-            Resource: !GetAtt TextFusionFunction.Arn
-            Next: DerivedFields
-            Retry:
-              - ErrorEquals:
-                  - "States.ALL"
-                MaxAttempts: 3
-                BackoffRate: 2
-                IntervalSeconds: 2
-            Catch:
-              - ErrorEquals:
-                  - "States.ALL"
-                Next: HandleError
-                ResultPath: "$.error"
-
-          DerivedFields:
-            Type: Task
-            Resource: !GetAtt DerivedFieldsFunction.Arn
-            Next: UpdateSearchIndex
-            Retry:
-              - ErrorEquals:
-                  - "States.ALL"
-                MaxAttempts: 3
-                BackoffRate: 2
-                IntervalSeconds: 2
-            Catch:
-              - ErrorEquals:
-                  - "States.ALL"
-                Next: HandleError
-                ResultPath: "$.error"
-
-          UpdateSearchIndex:
-            Type: Task
-            Resource: !GetAtt SearchIndexFunction.Arn
-            Next: FinalizeUpload
-            Retry:
-              - ErrorEquals:
-                  - "States.ALL"
-                MaxAttempts: 3
-                BackoffRate: 2
-                IntervalSeconds: 2
-            Catch:
-              - ErrorEquals:
-                  - "States.ALL"
-                Next: HandleError
-                ResultPath: "$.error"
-
-          FinalizeUpload:
-            Type: Pass
-            End: true
-            Result:
-              status: completed
-
-          HandleError:
-            Type: Task
-            Resource: !GetAtt ErrorHandlerFunction.Arn
-            End: true
-
-      Tags:
-        project: attic
-        environment: !Ref Environment
-
-  StepFunctionsLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub "/aws/states/attic-media-processing-${Environment}"
-      RetentionInDays: 14
 
 Outputs:
   TempMediaBucketName:
@@ -575,11 +214,11 @@ Outputs:
     Export:
       Name: !Sub "${AWS::StackName}-UploadQueueArn"
 
-  MediaProcessingPipelineArn:
-    Description: Step Functions state machine ARN
-    Value: !Ref MediaProcessingPipeline
+  PipelineFunctionArn:
+    Description: Pipeline Lambda function ARN
+    Value: !GetAtt PipelineFunction.Arn
     Export:
-      Name: !Sub "${AWS::StackName}-MediaProcessingPipelineArn"
+      Name: !Sub "${AWS::StackName}-PipelineFunctionArn"
 
   LambdaExecutionRoleArn:
     Description: IAM role ARN for Lambda functions

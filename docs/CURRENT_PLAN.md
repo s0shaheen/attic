@@ -1,7 +1,7 @@
 # Attic — Current Implementation Plan
 
 **Architecture:** Hybrid Agentic (minimal pre-processing + agent chat layer)
-**Status:** Wave 2 — COMPLETE
+**Status:** Wave 3 — COMPLETE
 **Last Updated:** 2026-03-14
 **Full Review:** `.claude/plans/velvety-orbiting-widget.md`
 
@@ -51,9 +51,9 @@ Frontend: Minimal chat UI (rebuild from scratch)
 ### Wave 3: Pipeline
 > Dependencies: Wave 1 complete. Independent of Wave 2.
 
-- [ ] **3.1** `src/lambdas/pipeline/handler.py` — unified 4-step handler (parse→apify→subtitle→embed)
-- [ ] **3.2** Simplify `infra/template.yaml` — delete state machine + 10 Lambdas, keep SQS + 1 Lambda
-- [ ] **3.3** Update CommonLayer to bundle src/backend/app/
+- [x] **3.1** `src/lambdas/pipeline/handler.py` — unified 4-step handler (parse→apify→subtitle→embed)
+- [x] **3.2** Simplify `infra/template.yaml` — delete state machine + 10 Lambdas, keep SQS + 1 Lambda
+- [x] **3.3** Update CommonLayer to bundle src/backend/app/
 
 ### Wave 4: Minimal Frontend + Tests
 > Dependencies: Wave 2 + Wave 3 complete.
@@ -137,19 +137,25 @@ When a conversation runs low on context, update this file:
 ### Current Progress
 _Updated by each session before ending._
 
-**Wave:** 2 — COMPLETE. Ready to commit and start Wave 3.
-**Current step:** Done — all 9 steps complete
+**Wave:** 3 — COMPLETE. Ready to start Wave 4 (frontend + tests).
+**Current step:** Done — all 3 steps complete
 **Blockers:** None
 **Notes:**
-- Wave 2 implemented full agent backend:
-  - `ontology.py` — 8-facet ONTOLOGY_V1 dict, validate_classification() tier-1/tier-2 split, format_ontology_for_prompt()
-  - `gemini.py` — classify() + analyze_visual() via Gemini REST API with JSON mode + Google Search grounding
-  - `entity_resolvers.py` — Google Maps, Books, TMDB, Spotify wrappers with Result-style returns + dispatcher
-  - `agent_tools.py` — 4 tools (query_items, classify, analyze_visual, resolve_entity) with DB caching + Anthropic tool definitions
-  - `agent.py` — manual Anthropic SDK tool loop with SSE events, per-query (50) and per-hour (200) rate limits
-  - `chat.py` — POST /api/chat SSE endpoint, conversation/message persistence, auth
-  - `config.py` — added anthropic_api_key, gemini_api_key, google_maps_api_key, tmdb_api_key, spotify credentials
-  - `main.py` + `routers/__init__.py` — chat router registered
-  - `media_event.py` — added cached_classifications/cached_entities model columns
-  - `pyproject.toml` — added anthropic dependency
+- Wave 3 implemented unified pipeline:
+  - `src/lambdas/pipeline/handler.py` — 4-step sync handler (parse→apify→subtitle→embed)
+    - Step 1: Downloads ZIP from Supabase Storage, parses with tiktok_parser, upserts media_event rows with deterministic IDs
+    - Step 2: Batches URLs (50/call) to Apify TikTok scraper, maps response to media_event columns, detects media_type
+    - Step 3: Advances images/slideshows past subtitle step, marks videos as subtitled
+    - Step 4: Fuses text fields (caption+hashtags+subtitles+creator+music), batches to OpenAI embeddings (100/call)
+    - Uses sync SQLAlchemy (psycopg2) + stdlib urllib for HTTP — no async complexity in Lambda
+    - Idempotent: deterministic IDs via generate_idempotency_key(), processing_state gating per step
+    - Progress tracking via UploadPipelineRun updates after each batch
+  - `infra/template.yaml` — simplified from 589→188 lines
+    - Deleted: 11 Lambda functions, 11 log groups, Step Functions state machine + role + log group
+    - Kept: S3 bucket, SQS queue + DLQ, IAM role (removed states:StartExecution)
+    - Added: Single PipelineFunction with SQS trigger (BatchSize: 1), SAM parameters for secrets
+  - `src/lambdas/Makefile` — SAM build target for CommonLayer
+    - Copies common/ + ../backend/app/ into layer artifacts
+    - Lambda runtime adds /opt/ to sys.path, so both packages importable
+  - `src/lambdas/pipeline/requirements.txt` — sqlalchemy, psycopg2-binary, pydantic, pgvector
 - All files pass ruff lint + format

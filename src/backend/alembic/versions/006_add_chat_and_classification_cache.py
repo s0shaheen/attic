@@ -87,19 +87,22 @@ def upgrade() -> None:
     # --- cached_classifications + cached_entities on media_events ---
     op.add_column(
         "media_events",
-        sa.Column("cached_classifications", sa.JSON(), nullable=True),
+        sa.Column("cached_classifications", sa.dialects.postgresql.JSONB(), nullable=True),
     )
     op.add_column(
         "media_events",
-        sa.Column("cached_entities", sa.JSON(), nullable=True),
+        sa.Column("cached_entities", sa.dialects.postgresql.JSONB(), nullable=True),
     )
 
     # GIN indexes for fast JSONB containment queries (@>)
     op.execute(
         "CREATE INDEX idx_media_events_classifications "
-        "ON media_events USING GIN (cached_classifications)"
+        "ON media_events USING GIN (cached_classifications jsonb_ops)"
     )
-    op.execute("CREATE INDEX idx_media_events_entities ON media_events USING GIN (cached_entities)")
+    op.execute(
+        "CREATE INDEX idx_media_events_entities "
+        "ON media_events USING GIN (cached_entities jsonb_ops)"
+    )
 
     # --- RLS policies ---
     op.execute("ALTER TABLE conversations ENABLE ROW LEVEL SECURITY")
