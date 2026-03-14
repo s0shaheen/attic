@@ -31,3 +31,4 @@ build/
 
 # Real test files
 tests/fixtures/tiktok-exports/real/
+.gstack/
