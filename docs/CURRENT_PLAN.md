@@ -1,8 +1,8 @@
 # Attic — Current Implementation Plan
 
 **Architecture:** Hybrid Agentic (minimal pre-processing + agent chat layer)
-**Status:** Wave 3 — COMPLETE
-**Last Updated:** 2026-03-14
+**Status:** Wave 4 — COMPLETE
+**Last Updated:** 2026-03-15
 **Full Review:** `.claude/plans/velvety-orbiting-widget.md`
 
 ---
@@ -58,16 +58,16 @@ Frontend: Minimal chat UI (rebuild from scratch)
 ### Wave 4: Minimal Frontend + Tests
 > Dependencies: Wave 2 + Wave 3 complete.
 
-- [ ] **4.1** Scaffold fresh Next.js 14 app
-- [ ] **4.2** Auth pages (login, callback) — reuse Supabase patterns
-- [ ] **4.3** Chat page — message list + input + SSE streaming
-- [ ] **4.4** `tests/test_ontology.py` — validation tests
-- [ ] **4.5** `tests/test_agent_tools.py` — unit tests (mocked externals)
-- [ ] **4.6** `tests/test_agent.py` — agent loop tests
-- [ ] **4.7** `tests/test_chat_endpoint.py` — integration tests
-- [ ] **4.8** `tests/test_pipeline_handler.py` — integration test
-- [ ] **4.9** `tests/test_pipeline_steps.py` — unit tests per step
-- [ ] **4.10** Cover critical failure gaps: entity rate limit, DB constraint, stale conversation
+- [x] **4.1** Scaffold fresh Next.js 14 app
+- [x] **4.2** Auth pages (login, callback) — reuse Supabase patterns
+- [x] **4.3** Chat page — message list + input + SSE streaming
+- [x] **4.4** `tests/test_ontology.py` — validation tests (existed from Wave 2)
+- [x] **4.5** `tests/test_agent_tools.py` — unit tests (mocked externals)
+- [x] **4.6** `tests/test_agent.py` — agent loop tests (existed from Wave 2)
+- [x] **4.7** `tests/test_chat_endpoint.py` — integration tests
+- [x] **4.8** `tests/test_pipeline_handler.py` — integration test
+- [x] **4.9** `tests/test_pipeline_steps.py` — unit tests per step
+- [x] **4.10** Cover critical failure gaps: entity rate limit, DB constraint, stale conversation
 
 ---
 
@@ -137,25 +137,13 @@ When a conversation runs low on context, update this file:
 ### Current Progress
 _Updated by each session before ending._
 
-**Wave:** 3 — COMPLETE. Ready to start Wave 4 (frontend + tests).
-**Current step:** Done — all 3 steps complete
+**Wave:** 4 — COMPLETE (all 10 tasks done)
+**Current step:** Done
 **Blockers:** None
 **Notes:**
-- Wave 3 implemented unified pipeline:
-  - `src/lambdas/pipeline/handler.py` — 4-step sync handler (parse→apify→subtitle→embed)
-    - Step 1: Downloads ZIP from Supabase Storage, parses with tiktok_parser, upserts media_event rows with deterministic IDs
-    - Step 2: Batches URLs (50/call) to Apify TikTok scraper, maps response to media_event columns, detects media_type
-    - Step 3: Advances images/slideshows past subtitle step, marks videos as subtitled
-    - Step 4: Fuses text fields (caption+hashtags+subtitles+creator+music), batches to OpenAI embeddings (100/call)
-    - Uses sync SQLAlchemy (psycopg2) + stdlib urllib for HTTP — no async complexity in Lambda
-    - Idempotent: deterministic IDs via generate_idempotency_key(), processing_state gating per step
-    - Progress tracking via UploadPipelineRun updates after each batch
-  - `infra/template.yaml` — simplified from 589→188 lines
-    - Deleted: 11 Lambda functions, 11 log groups, Step Functions state machine + role + log group
-    - Kept: S3 bucket, SQS queue + DLQ, IAM role (removed states:StartExecution)
-    - Added: Single PipelineFunction with SQS trigger (BatchSize: 1), SAM parameters for secrets
-  - `src/lambdas/Makefile` — SAM build target for CommonLayer
-    - Copies common/ + ../backend/app/ into layer artifacts
-    - Lambda runtime adds /opt/ to sys.path, so both packages importable
-  - `src/lambdas/pipeline/requirements.txt` — sqlalchemy, psycopg2-binary, pydantic, pgvector
-- All files pass ruff lint + format
+- Wave 4 session (2026-03-15):
+  - 200 backend tests passing across 9 test files
+  - Pipeline handler was on `feature/wave-2-agent-backend` (never merged to main after Wave 2 PR). Cherry-picked into working tree.
+  - Frontend: Next.js app with App Router, Supabase auth (Google OAuth), SSE chat page, Tailwind v4. Build passes clean.
+  - Branch: `feature/wave4-tests-frontend`
+- Prior waves: Wave 1 (cleanup), Wave 2 (agent backend), Wave 3 (pipeline)

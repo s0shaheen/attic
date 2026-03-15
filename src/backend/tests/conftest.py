@@ -6,7 +6,7 @@ import os
 # This is necessary because app.config validates settings at import time
 os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
 os.environ.setdefault("SUPABASE_URL", "https://test-project.supabase.co")
-os.environ.setdefault("SUPABASE_SERVICE_KEY", "test-service-key")
+os.environ.setdefault("SUPABASE_SECRET_KEY", "test-secret-key")
 os.environ.setdefault("SUPABASE_JWT_SECRET", "test-jwt-secret-for-testing-only")
 os.environ.setdefault("AWS_ACCESS_KEY_ID", "test-aws-key")
 os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "test-aws-secret")

@@ -55,7 +55,7 @@ class SupabaseStorageService:
         """
         self.settings = settings
         self.supabase_url = settings.supabase_url
-        self.service_key = settings.supabase_service_key
+        self.service_key = settings.supabase_secret_key
 
     def _get_storage_path(self, user_id: UUID, upload_id: UUID) -> str:
         """Generate the storage path for an upload.

@@ -58,7 +58,7 @@ class UserDeletionService:
         """
         self.settings = settings
         self.supabase_url = settings.supabase_url
-        self.service_key = settings.supabase_service_key
+        self.service_key = settings.supabase_secret_key
 
     async def delete_user_storage_files(self, user_id: UUID) -> bool:
         """Delete all files owned by the user from Supabase Storage.

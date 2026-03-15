@@ -52,7 +52,7 @@ logger = get_logger("pipeline")
 
 DATABASE_URL = os.environ.get("DATABASE_URL", "")
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
-SUPABASE_SERVICE_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
+SUPABASE_SECRET_KEY = os.environ.get("SUPABASE_SECRET_KEY", "")
 APIFY_API_TOKEN = os.environ.get("APIFY_API_TOKEN", "")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
@@ -181,8 +181,8 @@ def step_parse_export(
         _http_download(
             download_url,
             headers={
-                "Authorization": f"Bearer {SUPABASE_SERVICE_KEY}",
-                "apikey": SUPABASE_SERVICE_KEY,
+                "Authorization": f"Bearer {SUPABASE_SECRET_KEY}",
+                "apikey": SUPABASE_SECRET_KEY,
             },
             dest_path=tmp_path,
         )

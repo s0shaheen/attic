@@ -382,22 +382,22 @@ async def resolve_entity(
     entity_type: str,
     query: str,
     *,
-    google_maps_api_key: str,
+    google_maps_api_key: str | None,
     google_books_api_key: str | None,
-    tmdb_api_key: str,
-    spotify_client_id: str,
-    spotify_client_secret: str,
+    tmdb_api_key: str | None,
+    spotify_client_id: str | None,
+    spotify_client_secret: str | None,
 ) -> EntityResolutionResult:
     """Dispatch entity resolution to the appropriate API.
 
     Args:
         entity_type: Type of entity (place, book, movie, tv, music, etc.).
         query: The surface-form text to resolve.
-        google_maps_api_key: Google Maps API key.
+        google_maps_api_key: Google Maps API key (None = resolver unavailable).
         google_books_api_key: Google Books API key (optional).
-        tmdb_api_key: TMDB API key.
-        spotify_client_id: Spotify client ID.
-        spotify_client_secret: Spotify client secret.
+        tmdb_api_key: TMDB API key (None = resolver unavailable).
+        spotify_client_id: Spotify client ID (None = resolver unavailable).
+        spotify_client_secret: Spotify client secret (None = resolver unavailable).
 
     Returns:
         EntityResolutionResult with resolved entity or error.
@@ -408,12 +408,18 @@ async def resolve_entity(
         return EntityResolutionResult(success=False, error=f"Unknown entity type: {entity_type}")
 
     if resolver_type == "place":
+        if not google_maps_api_key:
+            return EntityResolutionResult(success=False, error="Google Maps API key not configured")
         return await resolve_place(google_maps_api_key, query)
     elif resolver_type == "book":
         return await resolve_book(google_books_api_key, query)
     elif resolver_type == "movie_or_tv":
+        if not tmdb_api_key:
+            return EntityResolutionResult(success=False, error="TMDB API key not configured")
         return await resolve_movie_or_tv(tmdb_api_key, query)
     elif resolver_type == "music":
+        if not spotify_client_id or not spotify_client_secret:
+            return EntityResolutionResult(success=False, error="Spotify credentials not configured")
         return await resolve_music(spotify_client_id, spotify_client_secret, query)
     else:
         return EntityResolutionResult(success=False, error=f"No resolver for: {resolver_type}")

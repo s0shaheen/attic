@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.2.0] - 2026-03-15
+
+### Added
+- Fresh Next.js 16 frontend: App Router, Tailwind v4, dark theme, TypeScript strict mode
+- Login page with Google OAuth via Supabase Auth (`@supabase/ssr`)
+- Chat page with SSE streaming, message bubbles, auto-scroll, error handling
+- Auth middleware protecting `/chat` routes with session refresh
+- 401 retry with automatic token refresh in chat client
+- 202 backend unit tests across 9 test files (136 new):
+  - `test_agent_tools.py` — 40 tests for DB-backed tool functions
+  - `test_chat_endpoint.py` — 15 tests for SSE streaming endpoint
+  - `test_critical_failures.py` — 14 tests for rate limits, DB constraints, graceful degradation
+  - `test_pipeline_handler.py` — 21 tests for Lambda handler orchestration
+  - `test_pipeline_steps.py` — 46 tests for pipeline pure functions and helpers
+- Pipeline handler cherry-picked from unmerged Wave 3 branch
+- Supabase publishable/secret key naming convention across all env files
+
+### Changed
+- Entity resolution API keys (Maps, TMDB, Spotify) now optional — agent tools degrade gracefully
+- Stripe, Resend API keys now optional for MVP development
+- Renamed `SUPABASE_SERVICE_KEY` → `SUPABASE_SECRET_KEY` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` → `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` across all config, env files, and docker-compose
+
+### Fixed
+- JSON.parse in SSE parser wrapped in try/catch to handle malformed chunks
+- Middleware error handling for unreachable Supabase (treats as unauthenticated)
+- Removed stale root `package-lock.json` that caused Next.js Turbopack to use wrong workspace root, preventing middleware from loading
+
 ## [0.2.1.1] - 2026-03-14
 
 ### Fixed

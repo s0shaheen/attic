@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     # Database
     database_url: str = Field(description="PostgreSQL connection URL (asyncpg)")
     supabase_url: str = Field(description="Supabase project URL")
-    supabase_service_key: str = Field(description="Supabase service role key (server-side only)")
+    supabase_secret_key: str = Field(description="Supabase secret API key (server-side only)")
     supabase_jwt_secret: str = Field(description="Supabase JWT secret for token verification")
 
     # AWS
@@ -42,21 +42,31 @@ class Settings(BaseSettings):
     anthropic_api_key: str = Field(description="Anthropic API key for Claude orchestrator")
     gemini_api_key: str = Field(description="Google Gemini API key for classification/vision")
 
-    # Entity resolution APIs
-    google_maps_api_key: str = Field(description="Google Maps API key for place resolution")
+    # Entity resolution APIs (optional — agent tools degrade gracefully without them)
+    google_maps_api_key: str | None = Field(
+        default=None, description="Google Maps API key for place resolution"
+    )
     google_books_api_key: str | None = Field(
         default=None, description="Google Books API key (optional, uses public endpoint)"
     )
-    tmdb_api_key: str = Field(description="TMDB API key for movie/show resolution")
-    spotify_client_id: str = Field(description="Spotify client ID for music resolution")
-    spotify_client_secret: str = Field(description="Spotify client secret for music resolution")
+    tmdb_api_key: str | None = Field(
+        default=None, description="TMDB API key for movie/show resolution"
+    )
+    spotify_client_id: str | None = Field(
+        default=None, description="Spotify client ID for music resolution"
+    )
+    spotify_client_secret: str | None = Field(
+        default=None, description="Spotify client secret for music resolution"
+    )
 
-    # Payments
-    stripe_secret_key: str = Field(description="Stripe secret key")
-    stripe_webhook_secret: str = Field(description="Stripe webhook signing secret")
+    # Payments (optional for MVP)
+    stripe_secret_key: str | None = Field(default=None, description="Stripe secret key")
+    stripe_webhook_secret: str | None = Field(
+        default=None, description="Stripe webhook signing secret"
+    )
 
-    # Notifications
-    resend_api_key: str = Field(description="Resend API key for email")
+    # Notifications (optional for MVP)
+    resend_api_key: str | None = Field(default=None, description="Resend API key for email")
 
     # Observability (optional)
     sentry_dsn: str | None = Field(default=None, description="Sentry DSN for error tracking")
