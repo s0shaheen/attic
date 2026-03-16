@@ -16,8 +16,10 @@ from app.services.agent_tools import (
     AgentToolResult,
     analyze_visual,
     classify,
+    get_stats,
     query_items,
     resolve_entity,
+    search_similar,
 )
 
 # ---------------------------------------------------------------------------
@@ -112,6 +114,7 @@ def _make_settings() -> MagicMock:
     """Build a mock Settings object with test API keys."""
     settings = MagicMock()
     settings.gemini_api_key = "test-gemini-key"
+    settings.openai_api_key = "test-openai-key"
     settings.google_maps_api_key = "test-maps-key"
     settings.google_books_api_key = "test-books-key"
     settings.tmdb_api_key = "test-tmdb-key"
@@ -889,3 +892,268 @@ class TestAgentToolResult:
             partial_data={"items": [1]},
         )
         assert result.partial_data == {"items": [1]}
+
+
+# ---------------------------------------------------------------------------
+# Tool: search_similar
+# ---------------------------------------------------------------------------
+
+
+def _make_search_db(*, embedded_count: int = 10, search_rows: list | None = None) -> AsyncMock:
+    """Build a mock AsyncSession for search_similar tests.
+
+    search_similar calls execute three times:
+    1. Count query (embedded items) -> scalar()
+    2. Raw SQL similarity search -> mappings().all()
+    """
+    db = AsyncMock()
+
+    count_result = MagicMock()
+    count_result.scalar.return_value = embedded_count
+
+    search_result = MagicMock()
+    search_mappings = MagicMock()
+    search_mappings.all.return_value = search_rows or []
+    search_result.mappings.return_value = search_mappings
+
+    db.execute = AsyncMock(side_effect=[count_result, search_result])
+    return db
+
+
+def _make_search_row(
+    *,
+    id: UUID | None = None,
+    distance: float = 0.2,
+    caption_text: str = "A test caption",
+    creator_username: str = "testuser",
+) -> dict:
+    """Build a mock row dict for search_similar results."""
+    return {
+        "id": id or uuid4(),
+        "caption_text": caption_text,
+        "creator_username": creator_username,
+        "hashtags": ["test"],
+        "media_type": "video",
+        "interaction_type": "liked",
+        "interaction_at": datetime(2025, 6, 15, 12, 0, 0, tzinfo=UTC),
+        "thumbnail_url": "https://example.com/thumb.jpg",
+        "canonical_url": "https://www.tiktok.com/@user/video/123",
+        "music_name": "Original Sound",
+        "play_count": 1000,
+        "like_count": 500,
+        "cached_classifications": None,
+        "distance": distance,
+    }
+
+
+class TestSearchSimilar:
+    async def test_search_similar_success_returns_items(self):
+        """search_similar returns items with similarity scores."""
+        user_id = uuid4()
+        rows = [
+            _make_search_row(distance=0.15, caption_text="relaxing nature"),
+            _make_search_row(distance=0.25, caption_text="calm ocean waves"),
+        ]
+        db = _make_search_db(embedded_count=100, search_rows=rows)
+
+        mock_embedding = [0.1] * 1536
+        with patch("app.services.agent_tools._embed_query", new_callable=AsyncMock) as mock_embed:
+            mock_embed.return_value = mock_embedding
+            result = await search_similar(db, _make_settings(), user_id, query_text="relaxing")
+
+        assert result.success is True
+        assert len(result.data["items"]) == 2
+        assert result.data["total_embedded"] == 100
+        assert result.data["query"] == "relaxing"
+        # Similarity = 1 - distance
+        assert result.data["items"][0]["similarity"] == round(1.0 - 0.15, 4)
+        assert result.data["items"][0]["caption"] == "relaxing nature"
+
+    async def test_search_similar_empty_results(self):
+        """search_similar returns empty list when no similar items found."""
+        user_id = uuid4()
+        db = _make_search_db(embedded_count=100, search_rows=[])
+
+        with patch("app.services.agent_tools._embed_query", new_callable=AsyncMock) as mock_embed:
+            mock_embed.return_value = [0.1] * 1536
+            result = await search_similar(db, _make_settings(), user_id, query_text="xyz")
+
+        assert result.success is True
+        assert result.data["items"] == []
+        assert result.data["total_embedded"] == 100
+
+    async def test_search_similar_no_embeddings_returns_note(self):
+        """search_similar returns informative note when no embeddings exist."""
+        user_id = uuid4()
+        # Only the count query is executed when embedded_count == 0
+        db = AsyncMock()
+        count_result = MagicMock()
+        count_result.scalar.return_value = 0
+        db.execute = AsyncMock(return_value=count_result)
+
+        result = await search_similar(db, _make_settings(), user_id, query_text="test")
+
+        assert result.success is True
+        assert result.data["total_embedded"] == 0
+        assert "still being processed" in result.data["note"]
+        assert result.data["items"] == []
+
+    async def test_search_similar_openai_timeout_returns_error(self):
+        """search_similar returns error when OpenAI embedding API fails."""
+        user_id = uuid4()
+        db = _make_search_db(embedded_count=100)
+
+        with patch("app.services.agent_tools._embed_query", new_callable=AsyncMock) as mock_embed:
+            mock_embed.side_effect = Exception("Connection timeout")
+            result = await search_similar(db, _make_settings(), user_id, query_text="test")
+
+        assert result.success is False
+        assert "search embedding" in result.error.lower()
+
+
+# ---------------------------------------------------------------------------
+# Tool: get_stats
+# ---------------------------------------------------------------------------
+
+
+def _make_stats_db(*, row: dict | None = None, rows: list | None = None) -> AsyncMock:
+    """Build a mock AsyncSession for get_stats tests.
+
+    Args:
+        row: Single row return (for queries using .one())
+        rows: Multiple rows return (for queries using .all())
+    """
+    db = AsyncMock()
+
+    if row is not None:
+        result = MagicMock()
+        mapping = MagicMock()
+        mapping.one.return_value = row
+        result.mappings.return_value = mapping
+        db.execute = AsyncMock(return_value=result)
+    elif rows is not None:
+        result = MagicMock()
+        mapping = MagicMock()
+        mapping.all.return_value = rows
+        result.mappings.return_value = mapping
+        db.execute = AsyncMock(return_value=result)
+
+    return db
+
+
+class TestGetStats:
+    async def test_get_stats_overview(self):
+        """get_stats overview returns counts, date range, and media types."""
+        user_id = uuid4()
+        row = {
+            "total_items": 847,
+            "earliest": datetime(2024, 1, 1, tzinfo=UTC),
+            "latest": datetime(2025, 6, 15, tzinfo=UTC),
+            "video_count": 700,
+            "image_count": 100,
+            "slideshow_count": 47,
+            "unique_creators": 234,
+            "embedded_count": 800,
+        }
+        db = _make_stats_db(row=row)
+
+        result = await get_stats(db, user_id, stat_type="overview")
+
+        assert result.success is True
+        assert result.data["total_items"] == 847
+        assert result.data["media_types"]["video"] == 700
+        assert result.data["unique_creators"] == 234
+        assert result.data["embedded_count"] == 800
+
+    async def test_get_stats_top_creators(self):
+        """get_stats top_creators returns creators sorted by count."""
+        user_id = uuid4()
+        rows = [
+            {"creator_username": "chef123", "item_count": 45},
+            {"creator_username": "dancer456", "item_count": 30},
+        ]
+        db = _make_stats_db(rows=rows)
+
+        result = await get_stats(db, user_id, stat_type="top_creators")
+
+        assert result.success is True
+        assert len(result.data["creators"]) == 2
+        assert result.data["creators"][0]["creator"] == "chef123"
+        assert result.data["creators"][0]["count"] == 45
+
+    async def test_get_stats_top_hashtags(self):
+        """get_stats top_hashtags returns hashtags sorted by frequency."""
+        user_id = uuid4()
+        rows = [
+            {"tag": "cooking", "frequency": 120},
+            {"tag": "food", "frequency": 95},
+            {"tag": "recipe", "frequency": 60},
+        ]
+        db = _make_stats_db(rows=rows)
+
+        result = await get_stats(db, user_id, stat_type="top_hashtags")
+
+        assert result.success is True
+        assert len(result.data["hashtags"]) == 3
+        assert result.data["hashtags"][0]["hashtag"] == "cooking"
+        assert result.data["hashtags"][0]["count"] == 120
+
+    async def test_get_stats_interaction_timeline(self):
+        """get_stats interaction_timeline returns monthly counts."""
+        user_id = uuid4()
+        rows = [
+            {"month": datetime(2025, 1, 1, tzinfo=UTC), "item_count": 100},
+            {"month": datetime(2025, 2, 1, tzinfo=UTC), "item_count": 150},
+            {"month": datetime(2025, 3, 1, tzinfo=UTC), "item_count": 120},
+        ]
+        db = _make_stats_db(rows=rows)
+
+        result = await get_stats(db, user_id, stat_type="interaction_timeline")
+
+        assert result.success is True
+        assert len(result.data["timeline"]) == 3
+        assert result.data["timeline"][1]["count"] == 150
+
+    async def test_get_stats_classification_breakdown_sparse(self):
+        """get_stats classification_breakdown includes coverage context."""
+        user_id = uuid4()
+
+        # First call: count query returns total + classified counts
+        count_result = MagicMock()
+        count_mapping = MagicMock()
+        count_mapping.one.return_value = {"total_count": 847, "classified_count": 45}
+        count_result.mappings.return_value = count_mapping
+
+        # Second call: single facet query returns all facets in one result set
+        facet_rows = [
+            {"facet": "topic", "label": "food", "count": 20},
+            {"facet": "topic", "label": "fitness", "count": 10},
+            {"facet": "affect", "label": "funny", "count": 25},
+            {"facet": "genre", "label": "tutorial", "count": 15},
+        ]
+        facet_result = MagicMock()
+        facet_mapping = MagicMock()
+        facet_mapping.all.return_value = facet_rows
+        facet_result.mappings.return_value = facet_mapping
+
+        db = AsyncMock()
+        db.execute = AsyncMock(side_effect=[count_result, facet_result])
+
+        result = await get_stats(db, user_id, stat_type="classification_breakdown")
+
+        assert result.success is True
+        assert result.data["classified_count"] == 45
+        assert result.data["total_count"] == 847
+        assert result.data["coverage_pct"] == round((45 / 847) * 100, 1)
+        assert len(result.data["distributions"]["topic"]) == 2
+        assert result.data["distributions"]["topic"][0]["label"] == "food"
+
+    async def test_get_stats_invalid_stat_type(self):
+        """get_stats returns error for unknown stat_type."""
+        user_id = uuid4()
+        db = AsyncMock()
+
+        result = await get_stats(db, user_id, stat_type="invalid_type")
+
+        assert result.success is False
+        assert "Unknown stat_type" in result.error

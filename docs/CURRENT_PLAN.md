@@ -137,10 +137,21 @@ When a conversation runs low on context, update this file:
 ### Current Progress
 _Updated by each session before ending._
 
-**Wave:** 4 — COMPLETE (all 10 tasks done)
+**Wave:** Founder-Testable — COMPLETE (all 6 tasks done)
 **Current step:** Done
 **Blockers:** None
 **Notes:**
+- Founder-testable session (2026-03-15):
+  - 443 backend tests passing (14 new: 4 search_similar, 6 get_stats, 4 process endpoint)
+  - Frontend: build + lint + typecheck all pass
+  - Branch: `s0shaheen/founder-testable`
+  - New tools: `search_similar` (pgvector semantic search), `get_stats` (5 stat types)
+  - New endpoint: `POST /api/uploads/process` (SQS trigger, 202 response)
+  - New page: `/upload` (Uppy drag-drop → S3 → process → redirect to chat)
+  - Chat upgrades: starter prompt chips, markdown rendering (react-markdown + remark-gfm + typography)
+  - System prompt tuned with all 6 tools, intent reading, markdown formatting guidance
+  - TODOS.md created with 4 deferred items (video cards, pipeline feedback, pgvector index, frontend tests)
+  - Plan: `.claude/plans/serialized-beaming-wirth.md`
 - Wave 4 session (2026-03-15):
   - 200 backend tests passing across 9 test files
   - Pipeline handler was on `feature/wave-2-agent-backend` (never merged to main after Wave 2 PR). Cherry-picked into working tree.

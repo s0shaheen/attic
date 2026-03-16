@@ -5,11 +5,14 @@ including presigned URL generation for direct-to-storage uploads,
 validation of uploaded files, scope selection, and consent capture.
 """
 
+import json
 import logging
 from typing import Annotated
 from uuid import UUID
 
+import boto3
 from fastapi import APIRouter, Depends, HTTPException
+from pydantic import BaseModel
 
 from app.core.auth import get_current_user
 from app.core.config import Settings, get_settings
@@ -550,3 +553,102 @@ async def record_consent(
             "The upload record lookup is not yet implemented.",
         },
     )
+
+
+# ---------------------------------------------------------------------------
+# Simplified pipeline trigger (for founder testing)
+# ---------------------------------------------------------------------------
+
+
+class ProcessUploadRequest(BaseModel):
+    """Request body for triggering pipeline processing."""
+
+    upload_id: str
+    storage_path: str
+
+
+@router.post(
+    "/process",
+    status_code=202,
+    responses={
+        202: {"description": "Pipeline processing triggered"},
+        400: {"description": "Missing SQS queue URL configuration"},
+        401: {"description": "Not authenticated"},
+        500: {"description": "Failed to send SQS message"},
+    },
+)
+async def process_upload(
+    request: ProcessUploadRequest,
+    user: Annotated[AuthenticatedUser, Depends(get_current_user)],
+    settings: Annotated[Settings, Depends(get_settings)],
+) -> dict:
+    """Trigger pipeline processing for an uploaded TikTok export.
+
+    Simplified endpoint for founder testing — sends an SQS message to kick off
+    the 4-step pipeline (parse → enrich → subtitles → embed) without requiring
+    the full validate → scope → consent wizard.
+
+    Args:
+        request: Upload ID and storage path from presigned URL response.
+        user: Authenticated user from JWT.
+        settings: Application settings.
+
+    Returns:
+        202 with message_id on success.
+    """
+    if not settings.sqs_queue_url:
+        raise HTTPException(
+            status_code=400,
+            detail="Pipeline processing is not configured (missing SQS queue URL).",
+        )
+
+    sqs_body = {
+        "upload_id": request.upload_id,
+        "user_id": str(user.id),
+        "storage_path": request.storage_path,
+        "scope": "both",
+    }
+
+    try:
+        sqs_kwargs: dict = {
+            "region_name": settings.aws_region,
+            "aws_access_key_id": settings.aws_access_key_id,
+            "aws_secret_access_key": settings.aws_secret_access_key,
+        }
+        if settings.aws_endpoint_url:
+            sqs_kwargs["endpoint_url"] = settings.aws_endpoint_url
+
+        sqs_client = boto3.client("sqs", **sqs_kwargs)
+        response = sqs_client.send_message(
+            QueueUrl=settings.sqs_queue_url,
+            MessageBody=json.dumps(sqs_body),
+        )
+
+        logger.info(
+            {
+                "event": "pipeline_triggered",
+                "upload_id": request.upload_id,
+                "user_id": str(user.id),
+                "message_id": response.get("MessageId"),
+            }
+        )
+
+        return {
+            "status": "processing",
+            "message_id": response.get("MessageId"),
+            "upload_id": request.upload_id,
+        }
+
+    except Exception as e:
+        logger.error(
+            {
+                "event": "sqs_send_failed",
+                "upload_id": request.upload_id,
+                "user_id": str(user.id),
+                "error": str(e),
+            }
+        )
+        raise HTTPException(
+            status_code=500,
+            detail="Failed to trigger pipeline processing. Please try again.",
+        )

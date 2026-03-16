@@ -2,7 +2,9 @@
 
 import { parseSSEChunk } from "@/lib/sse";
 import { createClient } from "@/lib/supabase/client";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 interface Message {
   id: string;
@@ -11,6 +13,13 @@ interface Message {
 }
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+
+const STARTER_PROMPTS = [
+  "What creators do I watch most?",
+  "Show me funny videos",
+  "What's my feed about?",
+  "Find cooking content",
+];
 
 export default function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -69,9 +78,8 @@ export default function ChatPage() {
     return response;
   }
 
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    const trimmed = input.trim();
+  async function submitMessage(text: string) {
+    const trimmed = text.trim();
     if (!trimmed || isStreaming) return;
 
     const token = await getAccessToken();
@@ -133,6 +141,11 @@ export default function ChatPage() {
       setIsStreaming(false);
       inputRef.current?.focus();
     }
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    await submitMessage(input);
   }
 
   function handleSSEEvent(
@@ -199,6 +212,18 @@ export default function ChatPage() {
                 Ask about your TikTok history — search videos, discover
                 patterns, explore your data.
               </p>
+              <div className="mt-8 flex flex-wrap justify-center gap-2">
+                {STARTER_PROMPTS.map((prompt) => (
+                  <button
+                    key={prompt}
+                    onClick={() => submitMessage(prompt)}
+                    disabled={isStreaming}
+                    className="rounded-full border border-neutral-700 px-4 py-2 text-sm text-neutral-300 transition-colors hover:border-blue-500 hover:text-white disabled:opacity-50"
+                  >
+                    {prompt}
+                  </button>
+                ))}
+              </div>
             </div>
           )}
 
@@ -214,8 +239,32 @@ export default function ChatPage() {
                     : "bg-neutral-800 text-neutral-100"
                 }`}
               >
-                {message.content || (
-                  <span className="inline-block h-4 w-4 animate-pulse rounded-full bg-neutral-600" />
+                {message.role === "assistant" ? (
+                  message.content ? (
+                    <div className="prose prose-sm prose-invert max-w-none prose-headings:text-neutral-100 prose-p:text-neutral-200 prose-strong:text-white prose-li:text-neutral-200 prose-code:text-blue-300">
+                      <ReactMarkdown
+                        remarkPlugins={[remarkGfm]}
+                        components={{
+                          a: ({ href, children }) => (
+                            <a
+                              href={href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-blue-400 underline hover:text-blue-300"
+                            >
+                              {children}
+                            </a>
+                          ),
+                        }}
+                      >
+                        {message.content}
+                      </ReactMarkdown>
+                    </div>
+                  ) : (
+                    <span className="inline-block h-4 w-4 animate-pulse rounded-full bg-neutral-600" />
+                  )
+                ) : (
+                  message.content
                 )}
               </div>
             </div>

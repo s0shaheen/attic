@@ -33,6 +33,9 @@ class Settings(BaseSettings):
     aws_endpoint_url: str | None = Field(
         default=None, description="AWS endpoint URL (for LocalStack)"
     )
+    sqs_queue_url: str | None = Field(
+        default=None, description="SQS queue URL for upload processing pipeline"
+    )
 
     # Third-party APIs
     apify_api_token: str = Field(description="Apify API token for TikTok scraping")

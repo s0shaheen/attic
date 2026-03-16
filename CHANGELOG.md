@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.4.0] - 2026-03-16
+
+### Added
+- `search_similar` agent tool — pgvector cosine similarity semantic search with OpenAI embeddings
+- `get_stats` agent tool — 5 stat types: overview, top_creators, top_hashtags, interaction_timeline, classification_breakdown
+- `POST /api/uploads/process` endpoint — simplified SQS pipeline trigger for founder testing (202 async)
+- Upload page (`/upload`) — Uppy drag-drop file upload with presigned URL flow and pipeline trigger
+- Conversation starter prompt chips on empty chat state
+- Markdown rendering for assistant messages (react-markdown + remark-gfm + @tailwindcss/typography)
+- `sqs_queue_url` config setting for pipeline processing
+- `TODOS.md` with 4 deferred work items (video cards, pipeline feedback, HNSW index, frontend tests)
+- 14 new backend tests: 4 search_similar, 6 get_stats, 4 process endpoint
+
+### Changed
+- System prompt expanded with all 6 tools, intent-reading guidelines, markdown formatting, follow-up suggestions
+- Classification breakdown uses single `jsonb_each()` query instead of per-facet f-string SQL
+
 ## [0.2.3.0] - 2026-03-15
 
 ### Removed

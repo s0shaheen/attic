@@ -17,6 +17,8 @@ os.environ.setdefault("OPENAI_API_KEY", "test-openai-key")
 os.environ.setdefault("STRIPE_SECRET_KEY", "test-stripe-key")
 os.environ.setdefault("STRIPE_WEBHOOK_SECRET", "test-stripe-webhook")
 os.environ.setdefault("RESEND_API_KEY", "test-resend-key")
+os.environ.setdefault("ANTHROPIC_API_KEY", "test-anthropic-key")
+os.environ.setdefault("GEMINI_API_KEY", "test-gemini-key")
 
 import jwt
 import pytest
@@ -732,3 +734,129 @@ def test_max_file_size_is_500mb():
 def test_presigned_url_expiry_is_one_hour():
     """Presigned URL expiry is 3600 seconds (1 hour)."""
     assert PRESIGNED_URL_EXPIRY_SECONDS == 3600
+
+
+# =============================================================================
+# Tests for POST /api/uploads/process (pipeline trigger)
+# =============================================================================
+
+
+@pytest.fixture
+async def process_test_client():
+    """Create test client with dependency overrides for process endpoint tests."""
+    from unittest.mock import MagicMock
+
+    from app.core.config import get_settings
+
+    app = create_test_app()
+
+    mock_settings = MagicMock()
+    mock_settings.sqs_queue_url = "https://sqs.us-east-1.amazonaws.com/123456/test-queue"
+    mock_settings.aws_region = "us-east-1"
+    mock_settings.aws_access_key_id = "test-key"
+    mock_settings.aws_secret_access_key = "test-secret"
+    mock_settings.aws_endpoint_url = None
+    mock_settings.supabase_jwt_secret = TEST_JWT_SECRET
+    mock_settings.supabase_url = TEST_SUPABASE_URL
+
+    app.dependency_overrides[get_settings] = lambda: mock_settings
+
+    transport = ASGITransport(app=app)
+    async with AsyncClient(transport=transport, base_url="http://test") as client:
+        yield client
+
+    app.dependency_overrides.clear()
+
+
+@pytest.mark.asyncio
+async def test_process_upload_success(process_test_client: AsyncClient):
+    """POST /api/uploads/process returns 202 and sends SQS message."""
+    token = create_test_token()
+
+    with patch("app.routers.uploads.boto3") as mock_boto3:
+        mock_sqs = mock_boto3.client.return_value
+        mock_sqs.send_message.return_value = {"MessageId": "msg-123"}
+
+        response = await process_test_client.post(
+            "/api/uploads/process",
+            json={
+                "upload_id": str(uuid4()),
+                "storage_path": f"{TEST_USER_ID}/test-upload.zip",
+            },
+            headers={"Authorization": f"Bearer {token}"},
+        )
+
+    assert response.status_code == 202
+    data = response.json()
+    assert data["status"] == "processing"
+    assert data["message_id"] == "msg-123"
+    mock_sqs.send_message.assert_called_once()
+
+
+@pytest.mark.asyncio
+async def test_process_upload_no_sqs_url_returns_400():
+    """POST /api/uploads/process returns 400 when SQS URL is not configured."""
+    from unittest.mock import MagicMock
+
+    from app.core.config import get_settings
+
+    app = create_test_app()
+
+    mock_settings = MagicMock()
+    mock_settings.sqs_queue_url = None
+    mock_settings.supabase_jwt_secret = TEST_JWT_SECRET
+    mock_settings.supabase_url = TEST_SUPABASE_URL
+
+    app.dependency_overrides[get_settings] = lambda: mock_settings
+
+    token = create_test_token()
+    transport = ASGITransport(app=app)
+    async with AsyncClient(transport=transport, base_url="http://test") as client:
+        response = await client.post(
+            "/api/uploads/process",
+            json={
+                "upload_id": str(uuid4()),
+                "storage_path": f"{TEST_USER_ID}/test-upload.zip",
+            },
+            headers={"Authorization": f"Bearer {token}"},
+        )
+
+    assert response.status_code == 400
+    assert "not configured" in response.json()["detail"].lower()
+    app.dependency_overrides.clear()
+
+
+@pytest.mark.asyncio
+async def test_process_upload_requires_auth(test_client: AsyncClient):
+    """POST /api/uploads/process requires authentication."""
+    response = await test_client.post(
+        "/api/uploads/process",
+        json={
+            "upload_id": str(uuid4()),
+            "storage_path": "test/path.zip",
+        },
+    )
+
+    assert response.status_code == 401
+
+
+@pytest.mark.asyncio
+async def test_process_upload_sqs_failure_returns_500(process_test_client: AsyncClient):
+    """POST /api/uploads/process returns 500 when SQS send fails."""
+    token = create_test_token()
+
+    with patch("app.routers.uploads.boto3") as mock_boto3:
+        mock_sqs = mock_boto3.client.return_value
+        mock_sqs.send_message.side_effect = Exception("SQS connection failed")
+
+        response = await process_test_client.post(
+            "/api/uploads/process",
+            json={
+                "upload_id": str(uuid4()),
+                "storage_path": f"{TEST_USER_ID}/test-upload.zip",
+            },
+            headers={"Authorization": f"Bearer {token}"},
+        )
+
+    assert response.status_code == 500
+    assert "failed" in response.json()["detail"].lower()

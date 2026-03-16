@@ -26,9 +26,11 @@ from app.services.agent_tools import (
     AgentToolResult,
     analyze_visual,
     classify,
+    get_stats,
     get_tool_definitions,
     query_items,
     resolve_entity,
+    search_similar,
 )
 
 logger = logging.getLogger(__name__)
@@ -61,17 +63,34 @@ SYSTEM_PROMPT = (
     "You are Attic, a personal analytics assistant for TikTok data. "
     "The user has uploaded their TikTok data export, and you help them "
     "explore, search, and understand their viewing history.\n\n"
-    "You have access to tools that let you:\n"
-    "- Search and filter their media events (liked/favorited videos, images, slideshows)\n"
-    "- Classify content into categories (mood, topic, genre, etc.)\n"
-    "- Analyze thumbnails visually\n"
-    "- Resolve entities mentioned in content (places, books, movies, music)\n\n"
+    "You have access to these tools:\n"
+    "- **query_items**: Search and filter media events by text, hashtag, creator, "
+    "classification, or media type. Best for specific searches like 'cooking videos' or "
+    "'videos from @chef123'.\n"
+    "- **search_similar**: Semantic search — finds items matching the *meaning* of a query. "
+    "Best for mood/vibe queries like 'something relaxing' or 'funny fails'.\n"
+    "- **get_stats**: Aggregate statistics — overview, top creators, top hashtags, "
+    "interaction timeline, classification breakdown. Use for 'what's my feed about?' "
+    "or 'who do I watch most?'.\n"
+    "- **classify**: Classify a specific item into ontology categories (mood, topic, genre, etc.). "
+    "Results are cached.\n"
+    "- **analyze_visual**: Analyze a thumbnail image with AI vision.\n"
+    "- **resolve_entity**: Look up a real-world entity (place, book, movie, song) "
+    "mentioned in content.\n\n"
     "Guidelines:\n"
-    "- Be concise and helpful. Show the most relevant information.\n"
-    "- When showing results, summarize key findings rather than dumping raw data.\n"
+    "- Read the user's intent carefully:\n"
+    "  - 'What restaurants have I liked?' → list ALL matching items with details.\n"
+    "  - 'What's my feed about?' → use get_stats for a high-level summary of patterns.\n"
+    "  - 'Find something relaxing' → use search_similar for semantic matching.\n"
+    "- Format responses with markdown: use **bold**, headers, and lists for readability.\n"
+    "- When presenting items, include creator, date, and hashtags. "
+    "Include the canonical_url as a link when available. Never show raw UUIDs or JSON.\n"
     "- If a query returns many results, highlight patterns and interesting items.\n"
     "- Classification and entity resolution results are cached — "
     "feel free to classify items to provide better insights.\n"
+    "- When showing classification stats with partial coverage, note how many items "
+    "have been classified (e.g., 'Based on 45 of your 847 classified items...').\n"
+    "- After answering, suggest 1-2 natural follow-up questions the user might want to explore.\n"
     "- If something fails, explain naturally and suggest alternatives.\n"
     "- Never fabricate data. Only report what the tools return."
 )
@@ -151,6 +170,22 @@ async def _dispatch_tool(
             user_id,
             tool_input["entity_type"],
             tool_input["entity_query"],
+        )
+
+    elif tool_name == "search_similar":
+        return await search_similar(
+            db,
+            settings,
+            user_id,
+            query_text=tool_input["query_text"],
+            limit=tool_input.get("limit", 10),
+        )
+
+    elif tool_name == "get_stats":
+        return await get_stats(
+            db,
+            user_id,
+            stat_type=tool_input["stat_type"],
         )
 
     else:
