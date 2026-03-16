@@ -8,6 +8,7 @@ import pytest
 from app.services.entity_resolvers import (
     ENTITY_TYPE_MAP,
     EntityResolutionResult,
+    _request_with_retry,
     resolve_book,
     resolve_entity,
     resolve_movie_or_tv,
@@ -64,7 +65,10 @@ class TestResolvePlace:
     @pytest.mark.asyncio
     async def test_resolve_place_api_error(self):
         mock_response = httpx.Response(500, json={})
-        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+        with (
+            patch("app.services.entity_resolvers._get_client") as mock_get_client,
+            patch("asyncio.sleep", new_callable=AsyncMock),
+        ):
             mock_client = AsyncMock()
             mock_get_client.return_value = mock_client
             mock_client.post = AsyncMock(return_value=mock_response)
@@ -294,3 +298,202 @@ class TestResolveEntityDispatcher:
                 spotify_client_secret="k",
             )
             mock.assert_called_once_with("bk", "test")
+
+
+# ---------------------------------------------------------------------------
+# _request_with_retry()
+# ---------------------------------------------------------------------------
+
+
+class TestRequestWithRetry:
+    @pytest.mark.asyncio
+    async def test_request_with_retry_429_with_retry_after_succeeds(self):
+        """T1: 429 with Retry-After header -> waits -> retries -> 200."""
+        resp_429 = httpx.Response(
+            429,
+            headers={"Retry-After": "1"},
+            json={},
+        )
+        resp_200 = httpx.Response(200, json={"ok": True})
+
+        with (
+            patch("app.services.entity_resolvers._get_client") as mock_get_client,
+            patch("asyncio.sleep", new_callable=AsyncMock) as mock_sleep,
+        ):
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(side_effect=[resp_429, resp_200])
+
+            result = await _request_with_retry("get", "https://example.com/api")
+
+        assert result.status_code == 200
+        mock_sleep.assert_called_once_with(1.0)
+
+    @pytest.mark.asyncio
+    async def test_request_with_retry_429_exponential_backoff(self):
+        """T2: 429 without Retry-After -> uses backoff schedule (1s first)."""
+        resp_429 = httpx.Response(429, json={})
+        resp_200 = httpx.Response(200, json={"ok": True})
+
+        with (
+            patch("app.services.entity_resolvers._get_client") as mock_get_client,
+            patch("asyncio.sleep", new_callable=AsyncMock) as mock_sleep,
+        ):
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(side_effect=[resp_429, resp_200])
+
+            result = await _request_with_retry("get", "https://example.com/api")
+
+        assert result.status_code == 200
+        mock_sleep.assert_called_once_with(1)
+
+    @pytest.mark.asyncio
+    async def test_request_with_retry_5xx_exhausted_returns_last_response(self):
+        """T3: All 4 attempts return 503 -> returns last 503 response."""
+        resp_503 = httpx.Response(503, json={})
+
+        with (
+            patch("app.services.entity_resolvers._get_client") as mock_get_client,
+            patch("asyncio.sleep", new_callable=AsyncMock) as mock_sleep,
+        ):
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(return_value=resp_503)
+
+            result = await _request_with_retry("get", "https://example.com/api")
+
+        assert result.status_code == 503
+        assert mock_sleep.call_count == 3
+        assert mock_client.get.call_count == 4  # initial + 3 retries
+
+    @pytest.mark.asyncio
+    async def test_request_with_retry_200_no_retry(self):
+        """T4: 200 on first try -> returns immediately, no sleep."""
+        resp_200 = httpx.Response(200, json={"ok": True})
+
+        with (
+            patch("app.services.entity_resolvers._get_client") as mock_get_client,
+            patch("asyncio.sleep", new_callable=AsyncMock) as mock_sleep,
+        ):
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(return_value=resp_200)
+
+            result = await _request_with_retry("get", "https://example.com/api")
+
+        assert result.status_code == 200
+        mock_sleep.assert_not_called()
+        mock_client.get.assert_called_once()
+
+    @pytest.mark.asyncio
+    async def test_request_with_retry_retry_after_capped_at_30s(self):
+        """T5: Retry-After: 120 -> capped to 30s."""
+        resp_429 = httpx.Response(
+            429,
+            headers={"Retry-After": "120"},
+            json={},
+        )
+        resp_200 = httpx.Response(200, json={"ok": True})
+
+        # start=0.0, elapsed check after first attempt: monotonic returns 0.0
+        # so elapsed=0, wait=30, elapsed+wait=30 which is NOT > 30 -> proceed
+        with (
+            patch("app.services.entity_resolvers._get_client") as mock_get_client,
+            patch("asyncio.sleep", new_callable=AsyncMock) as mock_sleep,
+            patch("time.monotonic", side_effect=[0.0, 0.0]),
+        ):
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(side_effect=[resp_429, resp_200])
+
+            result = await _request_with_retry("get", "https://example.com/api")
+
+        assert result.status_code == 200
+        mock_sleep.assert_called_once_with(30)
+
+    @pytest.mark.asyncio
+    async def test_resolver_uses_request_with_retry(self):
+        """T6: resolve_place calls _request_with_retry with correct args."""
+        mock_response = httpx.Response(
+            200,
+            json={
+                "places": [
+                    {
+                        "displayName": {"text": "Shake Shack"},
+                        "formattedAddress": "123 Broadway, NY",
+                        "types": ["restaurant"],
+                        "rating": 4.5,
+                        "googleMapsUri": "https://maps.google.com/...",
+                    }
+                ]
+            },
+        )
+        with patch(
+            "app.services.entity_resolvers._request_with_retry",
+            new_callable=AsyncMock,
+        ) as mock_retry:
+            mock_retry.return_value = mock_response
+
+            result = await resolve_place("test-key", "Shake Shack NYC")
+
+        assert result.success is True
+        mock_retry.assert_called_once()
+        call_args = mock_retry.call_args
+        assert call_args[0][0] == "post"
+        assert "places.googleapis.com" in call_args[0][1]
+
+    @pytest.mark.asyncio
+    async def test_request_with_retry_total_timeout_cap(self):
+        """T6b: Elapsed time > 30s -> stops retrying early."""
+        resp_503 = httpx.Response(503, json={})
+
+        # Simulate: start=0, after first request elapsed=25s, wait=4s would exceed 30s
+        # So we need: monotonic returns 0 (start), then 25.0 (after first attempt)
+        # wait would be _BACKOFF_SCHEDULE[0]=1, elapsed+wait=26 < 30 -> retry
+        # Then monotonic returns 28.0, wait=2, elapsed+wait=30 -> stops
+        # Actually let me make it simpler: start at 0, after first call returns 29,
+        # wait=1s, elapsed+wait=30 -> 30 > 30 is False (not >), actually >=30 not > 30
+        # The check is: if elapsed + wait > _TOTAL_RETRY_TIMEOUT: return resp
+        # So 29 + 1 = 30, which is NOT > 30, so it would continue.
+        # Let's use: start=0, after first call=29.1, wait=1 -> 30.1 > 30 -> stop
+        with (
+            patch("app.services.entity_resolvers._get_client") as mock_get_client,
+            patch("asyncio.sleep", new_callable=AsyncMock) as mock_sleep,
+            patch("time.monotonic", side_effect=[0.0, 29.1]),
+        ):
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(return_value=resp_503)
+
+            result = await _request_with_retry("get", "https://example.com/api")
+
+        assert result.status_code == 503
+        # Should NOT have slept -- total timeout exceeded before first retry
+        mock_sleep.assert_not_called()
+        # Only 1 HTTP call made (initial attempt, then timeout check stops it)
+        mock_client.get.assert_called_once()
+
+    @pytest.mark.asyncio
+    async def test_request_with_retry_invalid_retry_after_uses_backoff(self):
+        """T7: Non-numeric Retry-After header falls back to backoff schedule."""
+        resp_429 = httpx.Response(
+            429,
+            headers={"Retry-After": "Wed, 21 Oct 2026 07:28:00 GMT"},
+            json={},
+        )
+        resp_200 = httpx.Response(200, json={"ok": True})
+
+        with (
+            patch("app.services.entity_resolvers._get_client") as mock_get_client,
+            patch("asyncio.sleep", new_callable=AsyncMock) as mock_sleep,
+        ):
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(side_effect=[resp_429, resp_200])
+
+            result = await _request_with_retry("get", "https://example.com/api")
+
+        assert result.status_code == 200
+        # Falls back to _BACKOFF_SCHEDULE[0] = 1
+        mock_sleep.assert_called_once_with(1)

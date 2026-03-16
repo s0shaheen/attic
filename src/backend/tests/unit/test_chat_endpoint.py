@@ -1,11 +1,13 @@
 """Tests for the chat endpoint (POST /api/chat).
 
 Tests cover authentication, request validation, conversation management,
-and SSE streaming behavior. All external dependencies (DB, agent, auth)
-are mocked via FastAPI dependency overrides.
+SSE streaming behavior, and partial save on disconnect. All external
+dependencies (DB, agent, auth) are mocked via FastAPI dependency overrides.
 """
 
+import asyncio
 import json
+import logging
 from unittest.mock import AsyncMock, MagicMock, patch
 from uuid import uuid4
 
@@ -16,6 +18,7 @@ from app.core.auth import get_current_user
 from app.db.session import get_db
 from app.main import app
 from app.models.auth import AuthenticatedUser
+from app.models.conversation import Message
 from app.services.agent import SSEEvent
 
 # ---------------------------------------------------------------------------
@@ -427,3 +430,157 @@ class TestFormatSSE:
         result = _format_sse("done", {"total_tokens": 42})
         parsed = json.loads(result.split("data: ")[1].strip())
         assert parsed["total_tokens"] == 42
+
+
+# ---------------------------------------------------------------------------
+# Test: Partial save on disconnect
+# ---------------------------------------------------------------------------
+
+
+class TestPartialSaveOnDisconnect:
+    """Tests for the try/finally partial message save behavior.
+
+    When a client disconnects mid-stream (tab close, network drop),
+    the ASGI server cancels the generator via asyncio.CancelledError.
+    The finally block should save whatever partial response has been
+    accumulated to the database.
+    """
+
+    async def test_disconnect_mid_stream_saves_partial_message(self, client):
+        """T7: Simulated disconnect should trigger partial message save.
+
+        When run_agent raises CancelledError after yielding tokens,
+        the finally block should save the accumulated partial text.
+        """
+        mock_db = _make_mock_db()
+        app.dependency_overrides[get_db] = lambda: mock_db
+
+        async def mock_run_agent(**kwargs):
+            yield SSEEvent(event="token", data=json.dumps({"text": "Hello "}))
+            yield SSEEvent(event="token", data=json.dumps({"text": "world"}))
+            # Simulate ASGI cancellation on client disconnect
+            raise asyncio.CancelledError()
+
+        with patch("app.routers.chat.run_agent", side_effect=mock_run_agent):
+            # The request may raise or return partial -- either way,
+            # the finally block in event_stream should have executed.
+            try:
+                await client.post(
+                    "/api/chat",
+                    json={"message": "hello"},
+                )
+            except Exception:
+                pass  # Transport error is expected when generator raises
+
+        # Verify partial message was saved via finally block.
+        # mock_db.add is called for: Conversation, user Message, partial Message
+        added_messages = [
+            c.args[0]
+            for c in mock_db.add.call_args_list
+            if isinstance(c.args[0], Message) and c.args[0].role == "assistant"
+        ]
+        assert len(added_messages) == 1
+        assert added_messages[0].content == "Hello world"
+        assert added_messages[0].token_count is None  # No token count for partial
+
+        # commit should have been called (by the finally block)
+        assert mock_db.commit.await_count >= 1
+
+    async def test_normal_completion_finally_is_noop(self, client):
+        """T8: Normal completion sets saved=True, so finally does not save again.
+
+        When the done event is received and the message is saved normally,
+        the finally block should be a no-op (no duplicate save).
+        """
+        mock_db = _make_mock_db()
+        app.dependency_overrides[get_db] = lambda: mock_db
+
+        async def mock_run_agent(**kwargs):
+            yield SSEEvent(event="token", data=json.dumps({"text": "Complete "}))
+            yield SSEEvent(event="token", data=json.dumps({"text": "response"}))
+            yield SSEEvent(event="done", data=json.dumps({"total_tokens": 50}))
+
+        with patch("app.routers.chat.run_agent", side_effect=mock_run_agent):
+            response = await client.post(
+                "/api/chat",
+                json={"message": "hello"},
+            )
+
+        assert response.status_code == 200
+
+        # Only one assistant message should have been saved (from the done handler)
+        added_messages = [
+            c.args[0]
+            for c in mock_db.add.call_args_list
+            if isinstance(c.args[0], Message) and c.args[0].role == "assistant"
+        ]
+        assert len(added_messages) == 1
+        assert added_messages[0].content == "Complete response"
+        assert added_messages[0].token_count == 50
+
+        # commit should be called exactly once (from the done handler, not from finally)
+        assert mock_db.commit.await_count == 1
+
+    async def test_partial_save_db_failure_logged(self, client, caplog):
+        """T9: DB failure in finally block is logged, not raised.
+
+        When the partial save in the finally block fails (e.g., DB connection
+        lost), the error should be caught and logged, not crash the server.
+        """
+        mock_db = _make_mock_db()
+        # Make commit raise an exception (simulating DB failure in finally)
+        mock_db.commit = AsyncMock(side_effect=Exception("DB connection lost"))
+        app.dependency_overrides[get_db] = lambda: mock_db
+
+        async def mock_run_agent(**kwargs):
+            yield SSEEvent(event="token", data=json.dumps({"text": "Partial"}))
+            raise asyncio.CancelledError()
+
+        with (
+            patch("app.routers.chat.run_agent", side_effect=mock_run_agent),
+            caplog.at_level(logging.ERROR, logger="app.routers.chat"),
+        ):
+            try:
+                await client.post(
+                    "/api/chat",
+                    json={"message": "hello"},
+                )
+            except Exception:
+                pass  # Transport error is expected
+
+        # Verify the error was logged (not raised)
+        partial_save_failed_logs = [
+            r for r in caplog.records if "partial_message_save_failed" in str(r.message)
+        ]
+        assert len(partial_save_failed_logs) >= 1
+
+    async def test_disconnect_before_any_tokens_no_save(self, client):
+        """T10: Disconnect before any tokens are received should not save anything.
+
+        When CancelledError fires before any token events, full_response is empty
+        and the finally block should be a no-op.
+        """
+        mock_db = _make_mock_db()
+        app.dependency_overrides[get_db] = lambda: mock_db
+
+        async def mock_run_agent(**kwargs):
+            # Disconnect immediately — no tokens yielded
+            raise asyncio.CancelledError()
+            yield  # noqa: unreachable — makes this an async generator
+
+        with patch("app.routers.chat.run_agent", side_effect=mock_run_agent):
+            try:
+                await client.post(
+                    "/api/chat",
+                    json={"message": "hello"},
+                )
+            except Exception:
+                pass
+
+        # No assistant message should have been saved
+        added_messages = [
+            c.args[0]
+            for c in mock_db.add.call_args_list
+            if isinstance(c.args[0], Message) and c.args[0].role == "assistant"
+        ]
+        assert len(added_messages) == 0

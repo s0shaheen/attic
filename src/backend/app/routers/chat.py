@@ -129,34 +129,64 @@ async def chat(
         yield _format_sse("meta", {"conversation_id": str(conversation_id)})
 
         full_response = []
+        saved = False
 
-        async for event in run_agent(
-            user_message=request.message,
-            conversation_history=conversation_history,
-            db=db,
-            settings=settings,
-            user_id=user.id,
-        ):
-            yield _format_sse(event.event, json.loads(event.data))
+        try:
+            async for event in run_agent(
+                user_message=request.message,
+                conversation_history=conversation_history,
+                db=db,
+                settings=settings,
+                user_id=user.id,
+            ):
+                yield _format_sse(event.event, json.loads(event.data))
 
-            # Accumulate text for persistence
-            if event.event == "token":
-                token_data = json.loads(event.data)
-                full_response.append(token_data.get("text", ""))
+                # Accumulate text for persistence
+                if event.event == "token":
+                    token_data = json.loads(event.data)
+                    full_response.append(token_data.get("text", ""))
 
-            # On done, save assistant message
-            if event.event == "done":
+                # On done, save assistant message
+                if event.event == "done":
+                    assistant_text = "".join(full_response)
+                    if assistant_text:
+                        token_data = json.loads(event.data)
+                        assistant_msg = Message(
+                            conversation_id=conversation_id,
+                            role="assistant",
+                            content=assistant_text,
+                            token_count=token_data.get("total_tokens"),
+                        )
+                        db.add(assistant_msg)
+                        await db.commit()
+                        saved = True
+        finally:
+            if not saved and full_response:
                 assistant_text = "".join(full_response)
                 if assistant_text:
-                    token_data = json.loads(event.data)
-                    assistant_msg = Message(
-                        conversation_id=conversation_id,
-                        role="assistant",
-                        content=assistant_text,
-                        token_count=token_data.get("total_tokens"),
-                    )
-                    db.add(assistant_msg)
-                    await db.commit()
+                    try:
+                        partial_msg = Message(
+                            conversation_id=conversation_id,
+                            role="assistant",
+                            content=assistant_text,
+                        )
+                        db.add(partial_msg)
+                        await db.commit()
+                        logger.info(
+                            {
+                                "event": "partial_message_saved",
+                                "conversation_id": str(conversation_id),
+                                "length": len(assistant_text),
+                            }
+                        )
+                    except Exception as e:
+                        logger.error(
+                            {
+                                "event": "partial_message_save_failed",
+                                "conversation_id": str(conversation_id),
+                                "error": str(e),
+                            }
+                        )
 
     return StreamingResponse(
         event_stream(),

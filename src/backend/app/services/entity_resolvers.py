@@ -10,6 +10,7 @@ Supported entity types:
 - music → Spotify Web API
 """
 
+import asyncio
 import logging
 import time
 from dataclasses import dataclass, field
@@ -21,6 +22,13 @@ logger = logging.getLogger(__name__)
 
 REQUEST_TIMEOUT = 10.0
 
+# Retry configuration for transient HTTP errors
+_RETRYABLE_STATUSES = {429, 500, 502, 503}
+_MAX_RETRIES = 3
+_BACKOFF_SCHEDULE = [1, 2, 4]  # seconds
+_MAX_RETRY_AFTER = 30  # cap Retry-After header
+_TOTAL_RETRY_TIMEOUT = 30  # seconds total across all retries
+
 # Module-level client for connection reuse across calls
 _client: httpx.AsyncClient | None = None
 
@@ -31,6 +39,54 @@ def _get_client() -> httpx.AsyncClient:
     if _client is None:
         _client = httpx.AsyncClient(timeout=REQUEST_TIMEOUT)
     return _client
+
+
+async def _request_with_retry(
+    method: str,
+    url: str,
+    **kwargs: Any,
+) -> httpx.Response:
+    """HTTP request with retry on 429 + 5xx. Respects Retry-After header."""
+    client = _get_client()
+    start = time.monotonic()
+
+    for attempt in range(_MAX_RETRIES + 1):
+        http_method = getattr(client, method)
+        resp = await http_method(url, **kwargs)
+
+        if resp.status_code not in _RETRYABLE_STATUSES:
+            return resp
+
+        if attempt == _MAX_RETRIES:
+            return resp  # exhausted retries, return last response
+
+        # Calculate wait time
+        retry_after = resp.headers.get("Retry-After")
+        if retry_after:
+            try:
+                wait = min(float(retry_after), _MAX_RETRY_AFTER)
+            except ValueError:
+                wait = _BACKOFF_SCHEDULE[attempt]
+        else:
+            wait = _BACKOFF_SCHEDULE[attempt]
+
+        # Check total time cap
+        elapsed = time.monotonic() - start
+        if elapsed + wait > _TOTAL_RETRY_TIMEOUT:
+            return resp
+
+        logger.warning(
+            {
+                "event": "http_retry",
+                "url": url,
+                "status": resp.status_code,
+                "attempt": attempt + 1,
+                "wait_seconds": wait,
+            }
+        )
+        await asyncio.sleep(wait)
+
+    return resp  # unreachable but satisfies type checker
 
 
 # ---------------------------------------------------------------------------
@@ -76,8 +132,8 @@ async def resolve_place(
         EntityResolutionResult with place data or error.
     """
     try:
-        client = _get_client()
-        resp = await client.post(
+        resp = await _request_with_retry(
+            "post",
             "https://places.googleapis.com/v1/places:searchText",
             headers={
                 "X-Goog-Api-Key": api_key,
@@ -146,8 +202,8 @@ async def resolve_book(
         if api_key:
             params["key"] = api_key
 
-        client = _get_client()
-        resp = await client.get(
+        resp = await _request_with_retry(
+            "get",
             "https://www.googleapis.com/books/v1/volumes",
             params=params,
         )
@@ -206,8 +262,8 @@ async def resolve_movie_or_tv(
         EntityResolutionResult with movie/TV data or error.
     """
     try:
-        client = _get_client()
-        resp = await client.get(
+        resp = await _request_with_retry(
+            "get",
             "https://api.themoviedb.org/3/search/multi",
             params={"api_key": api_key, "query": query, "page": "1"},
         )
@@ -316,8 +372,8 @@ async def resolve_music(
         return EntityResolutionResult(success=False, error="Failed to authenticate with Spotify")
 
     try:
-        client = _get_client()
-        resp = await client.get(
+        resp = await _request_with_retry(
+            "get",
             "https://api.spotify.com/v1/search",
             headers={"Authorization": f"Bearer {token}"},
             params={"q": query, "type": "track", "limit": "1"},
@@ -331,7 +387,8 @@ async def resolve_music(
             token = await _get_spotify_token(client_id, client_secret)
             if not token:
                 return EntityResolutionResult(success=False, error="Spotify re-auth failed")
-            resp = await client.get(
+            resp = await _request_with_retry(
+                "get",
                 "https://api.spotify.com/v1/search",
                 headers={"Authorization": f"Bearer {token}"},
                 params={"q": query, "type": "track", "limit": "1"},

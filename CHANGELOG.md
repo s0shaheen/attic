@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.12.0] - 2026-03-16
+
+### Added
+- HTTP retry helper (`_request_with_retry`) for entity resolvers — retries on 429/5xx with exponential backoff, Retry-After header support, and 30s total timeout cap
+- Partial message save on SSE disconnect — `try/finally` in chat endpoint saves accumulated tokens when client disconnects mid-stream
+- 11 new tests covering retry logic (7 tests) and partial save behavior (4 tests)
+
+### Changed
+- All 4 entity resolvers (Google Maps, Google Books, TMDB, Spotify) now use `_request_with_retry` instead of direct HTTP calls
+
+### Removed
+- Dead `SYSTEM_PROMPT` constant from `agent.py` (replaced by `build_system_prompt()` in Wave 5.1)
+
 ## [0.2.11.0] - 2026-03-16
 
 ### Changed
