@@ -67,18 +67,31 @@ See [docs/REPO_STATUS.md](docs/REPO_STATUS.md) for detailed implementation statu
 ### Prerequisites
 
 - Docker Desktop 4.0+
-- Supabase CLI 1.0+
+- Supabase CLI (`brew install supabase/tap/supabase`)
 - Node.js 20+
-- Python 3.13+
+- Python 3.13+ with [uv](https://docs.astral.sh/uv/)
 
-### Quick Start
+### First-Time Setup
 
 ```bash
-# Start backend + local infrastructure
+./scripts/dev-setup.sh
+```
+
+This handles everything automatically:
+1. Starts local Supabase (if not already running)
+2. Creates `.env` files with local Supabase keys (copies API keys from `~/Dev/attic` if available)
+3. Installs backend and frontend dependencies
+4. Runs database migrations
+5. Seeds test data (test user + 10 media events with embeddings)
+
+### Start Services
+
+```bash
+# Start Supabase, LocalStack, and backend API
 ./scripts/dev-start.sh
 
-# Start frontend
-cd src/frontend && npm install && npm run dev
+# Start frontend (separate terminal)
+cd src/frontend && npm run dev
 ```
 
 | Service | URL |
@@ -88,6 +101,16 @@ cd src/frontend && npm install && npm run dev
 | API Docs (Swagger) | http://localhost:8000/docs |
 | Supabase Studio | http://localhost:54323 |
 | LocalStack | http://localhost:4566 |
+
+**Test login:** `test@attic.dev` / `testtest123` — pre-loaded with 10 media events (7 restaurant, 3 other).
+
+### Other Dev Scripts
+
+| Script | What it does |
+|--------|--------------|
+| `./scripts/dev-stop.sh` | Stop all services |
+| `./scripts/dev-reset.sh` | Reset data to clean state |
+| `./scripts/dev-start.sh --skip-supabase` | Start without Supabase (if already running) |
 
 See [docs/setup/](docs/setup/) for detailed guides on [local dev](docs/setup/local-dev.md), [AWS](docs/setup/aws.md), [Supabase](docs/setup/supabase.md), [environment variables](docs/setup/environment.md), [staging](docs/setup/staging.md), and [CI/CD](docs/setup/ci-cd.md).
 
