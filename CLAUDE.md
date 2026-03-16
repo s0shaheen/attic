@@ -155,6 +155,13 @@ Claude Haiku 4.5 orchestrates via manual tool loop (~50 lines, Anthropic SDK). T
 - Branch: `feature/{wave}-{step}-short-name` or `fix/{description}`
 - Commits: `feat(scope): description` (conventional commits)
 
+### Versioning
+
+- **VERSION is bumped at ship time only** — never in feature branches
+- Feature branches add changelog entries under `## [Unreleased]` in CHANGELOG.md
+- `/ship` moves Unreleased entries into a versioned section and bumps VERSION
+- This prevents merge conflicts when multiple branches ship in parallel
+
 ## Testing Requirements
 
 ### Unit Tests

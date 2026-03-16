@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.9.1] - 2026-03-16
+
+### Changed
+- Updated CLAUDE.md with versioning strategy: VERSION bumped only at ship time, feature branches add entries under [Unreleased], /ship promotes entries into versioned section
+
+## [Unreleased]
+
 ## [0.2.9.0] - 2026-03-16
 
 ### Added
