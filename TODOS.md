@@ -31,3 +31,9 @@ Deferred work items captured during engineering review (2026-03-15).
 - **Why:** The system prompt is the #1 product differentiator. Changes can silently regress entity retrieval quality. No automated check exists today.
 - **Depends on:** Wave 5.1 (system prompt rewrite) shipped. Stepping stone toward full eval infra (task 8.4 in TODO.md).
 - **Where to start:** `tests/eval/` dir or extend `tests/unit/test_prompts.py`. Define expected tool call sequences per query type, mock Claude responses to verify the agent follows plan templates.
+
+## TODO 6: Vision result caching with focus-aware key
+- **What:** Cache `analyze_visual` results so repeated calls for the same image + focus mode don't re-invoke Gemini. Use composite key `(media_event_id, focus_mode)`.
+- **Why:** Unlike `classify` (cached to `cached_classifications`), vision results are never cached — every call hits Gemini. With focus modes, the same image may be analyzed multiple times with different focuses, making caching more valuable but also more complex (cache key must include focus).
+- **Depends on:** Wave 5.5 cost instrumentation to confirm vision calls are a meaningful cost driver. Don't optimize without data.
+- **Where to start:** Add `cached_visual_analyses: dict | None` column to `media_events` table (JSON dict keyed by focus mode). Check cache before calling `gemini_analyze` in `agent_tools.py:analyze_visual`. Upsert result on success.

@@ -10,6 +10,7 @@ Both return Result-style dataclasses (never raise on API errors).
 import json
 import logging
 from dataclasses import dataclass, field
+from enum import StrEnum
 
 import httpx
 
@@ -25,6 +26,108 @@ GEMINI_MODEL = "gemini-2.0-flash"  # Google's latest Flash model
 CLASSIFY_MAX_TOKENS = 1024
 VISUAL_MAX_TOKENS = 2048
 REQUEST_TIMEOUT = 30.0
+
+
+# ---------------------------------------------------------------------------
+# Vision focus modes
+# ---------------------------------------------------------------------------
+
+
+class VisionFocus(StrEnum):
+    """Focus mode for targeted vision analysis prompts."""
+
+    GENERAL = "general"
+    BOOKS = "books"
+    SCENES = "scenes"
+    PLACES = "places"
+    TEXT = "text"
+    PRODUCTS = "products"
+
+
+_VISION_PROMPTS: dict[VisionFocus, str] = {
+    VisionFocus.GENERAL: (
+        "Analyze this TikTok thumbnail/image. Provide:\n"
+        "1. A brief description of what's shown\n"
+        "2. Key objects, people, or products visible\n"
+        "3. Any text detected in the image (OCR)\n"
+        "\n"
+        "Return JSON with keys: description (str), objects (list of str), "
+        "text_detected (str or null).\n"
+        "Return ONLY valid JSON, no markdown fences."
+    ),
+    VisionFocus.BOOKS: (
+        "Analyze this image for book-related content. Look for:\n"
+        "- Book covers, spines, or pages\n"
+        "- Titles, author names, publisher logos\n"
+        "- ISBN barcodes or bookshelf contents\n"
+        "- Any reading material (magazines, comics, textbooks)\n"
+        "\n"
+        "List each identifiable book with title and author if visible.\n"
+        "Capture any visible text on covers, spines, or pages.\n"
+        "\n"
+        "Return JSON with keys: description (str), objects (list of str), "
+        "text_detected (str or null).\n"
+        "Return ONLY valid JSON, no markdown fences."
+    ),
+    VisionFocus.SCENES: (
+        "Analyze this image for movie, TV show, or entertainment content. Look for:\n"
+        "- Recognizable actors, characters, or celebrities\n"
+        "- Movie or TV show scenes, frames, or posters\n"
+        "- Streaming service UI or video player screenshots\n"
+        "- Award shows, premieres, or entertainment events\n"
+        "\n"
+        "Identify specific movies, TV shows, or actors if recognizable.\n"
+        "Note any on-screen text like titles or credits.\n"
+        "\n"
+        "Return JSON with keys: description (str), objects (list of str), "
+        "text_detected (str or null).\n"
+        "Return ONLY valid JSON, no markdown fences."
+    ),
+    VisionFocus.PLACES: (
+        "Analyze this image for place and location content. Look for:\n"
+        "- Restaurant facades, interiors, or menus\n"
+        "- Store signage, business names, or logos\n"
+        "- Landmarks, monuments, or recognizable buildings\n"
+        "- Street signs, addresses, or neighborhood features\n"
+        "\n"
+        "Identify specific businesses, restaurants, or landmarks if recognizable.\n"
+        "Capture all visible signage text, addresses, and business names.\n"
+        "\n"
+        "Return JSON with keys: description (str), objects (list of str), "
+        "text_detected (str or null).\n"
+        "Return ONLY valid JSON, no markdown fences."
+    ),
+    VisionFocus.TEXT: (
+        "Focus on extracting ALL visible text from this image. This may be:\n"
+        "- A screenshot of an app, website, or message\n"
+        "- A recipe, ingredient list, or instructions\n"
+        "- A note, list, article, or caption card\n"
+        "- Overlaid text, subtitles, or watermarks\n"
+        "\n"
+        "Transcribe ALL readable text as accurately as possible.\n"
+        "Preserve formatting like line breaks and bullet points where visible.\n"
+        "Put all transcribed text in the text_detected field.\n"
+        "\n"
+        "Return JSON with keys: description (str), objects (list of str), "
+        "text_detected (str or null).\n"
+        "Return ONLY valid JSON, no markdown fences."
+    ),
+    VisionFocus.PRODUCTS: (
+        "Analyze this image for products and commercial items. Look for:\n"
+        "- Product packaging, labels, or brand logos\n"
+        "- Price tags, store displays, or shopping content\n"
+        "- Unboxing content or product reviews\n"
+        "- Specific brand names, model numbers, or product names\n"
+        "\n"
+        "Identify specific brands and product names if visible.\n"
+        "Capture any text on labels, packaging, or price tags.\n"
+        "\n"
+        "Return JSON with keys: description (str), objects (list of str), "
+        "text_detected (str or null).\n"
+        "Return ONLY valid JSON, no markdown fences."
+    ),
+}
+
 
 # Module-level client for connection reuse across calls
 _client: httpx.AsyncClient | None = None
@@ -170,6 +273,7 @@ async def analyze_visual(
     api_key: str,
     image_url: str,
     caption: str | None = None,
+    focus: VisionFocus = VisionFocus.GENERAL,
 ) -> VisualAnalysisResult:
     """Analyze a thumbnail or image using Gemini vision + Google Search grounding.
 
@@ -177,24 +281,16 @@ async def analyze_visual(
         api_key: Gemini API key.
         image_url: URL of the image/thumbnail to analyze.
         caption: Optional caption for context.
+        focus: Vision analysis focus mode for targeted extraction.
 
     Returns:
         VisualAnalysisResult with description, detected objects/text, and grounding sources.
     """
-    prompt_parts = [
-        "Analyze this TikTok thumbnail/image. Provide:",
-        "1. A brief description of what's shown",
-        "2. Key objects, people, or products visible",
-        "3. Any text detected in the image (OCR)",
-        "",
-        "Return JSON with keys: description (str), objects (list of str), "
-        "text_detected (str or null).",
-        "Return ONLY valid JSON, no markdown fences.",
-    ]
+    base_prompt = _VISION_PROMPTS[focus]
     if caption:
-        prompt_parts.insert(0, f"Context caption: {caption}\n")
-
-    prompt = "\n".join(prompt_parts)
+        prompt = f"Context caption: {caption}\n\n{base_prompt}"
+    else:
+        prompt = base_prompt
 
     try:
         client = _get_client()

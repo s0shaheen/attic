@@ -125,7 +125,13 @@ async def _dispatch_tool(
         return await classify(db, settings, UUID(tool_input["media_event_id"]), user_id)
 
     elif tool_name == "analyze_visual":
-        return await analyze_visual(db, settings, UUID(tool_input["media_event_id"]), user_id)
+        return await analyze_visual(
+            db,
+            settings,
+            UUID(tool_input["media_event_id"]),
+            user_id,
+            focus=tool_input.get("focus"),
+        )
 
     elif tool_name == "resolve_entity":
         return await resolve_entity(

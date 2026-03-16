@@ -490,10 +490,13 @@ class TestAnalyzeVisual:
         assert result.data["text_detected"] == "Recipe: Easy Pasta"
         assert len(result.data["grounding_sources"]) == 1
 
+        from app.services.gemini import VisionFocus
+
         mock_analyze.assert_called_once_with(
             api_key="test-gemini-key",
             image_url="https://example.com/thumb.jpg",
             caption=event.caption_text,
+            focus=VisionFocus.GENERAL,
         )
 
     async def test_analyze_visual_no_thumbnail_returns_error(self):
@@ -567,6 +570,85 @@ class TestAnalyzeVisual:
 
         assert result.success is False
         assert "Visual analysis failed" in result.error
+
+    async def test_analyze_visual_passes_focus_to_gemini(self):
+        """analyze_visual passes focus mode through to gemini_analyze."""
+        from app.services.gemini import VisionFocus
+
+        user_id = uuid4()
+        event_id = uuid4()
+        event = _make_media_event(
+            id=event_id,
+            user_id=user_id,
+            thumbnail_url="https://example.com/thumb.jpg",
+        )
+        db = _make_db_session(scalar_one_or_none=event)
+
+        visual_result = MagicMock()
+        visual_result.success = True
+        visual_result.description = "A book cover"
+        visual_result.objects = ["book"]
+        visual_result.text_detected = "Atomic Habits"
+        visual_result.grounding_sources = []
+
+        with patch(
+            "app.services.agent_tools.gemini_analyze", new_callable=AsyncMock
+        ) as mock_analyze:
+            mock_analyze.return_value = visual_result
+
+            result = await analyze_visual(db, _make_settings(), event_id, user_id, focus="books")
+
+        assert result.success is True
+        mock_analyze.assert_called_once_with(
+            api_key="test-gemini-key",
+            image_url="https://example.com/thumb.jpg",
+            caption=event.caption_text,
+            focus=VisionFocus.BOOKS,
+        )
+
+    async def test_analyze_visual_none_focus_defaults_to_general(self):
+        """analyze_visual with focus=None passes VisionFocus.GENERAL to gemini."""
+        from app.services.gemini import VisionFocus
+
+        user_id = uuid4()
+        event_id = uuid4()
+        event = _make_media_event(
+            id=event_id,
+            user_id=user_id,
+            thumbnail_url="https://example.com/thumb.jpg",
+        )
+        db = _make_db_session(scalar_one_or_none=event)
+
+        visual_result = MagicMock()
+        visual_result.success = True
+        visual_result.description = "A cooking scene"
+        visual_result.objects = ["pan"]
+        visual_result.text_detected = None
+        visual_result.grounding_sources = []
+
+        with patch(
+            "app.services.agent_tools.gemini_analyze", new_callable=AsyncMock
+        ) as mock_analyze:
+            mock_analyze.return_value = visual_result
+
+            await analyze_visual(db, _make_settings(), event_id, user_id, focus=None)
+
+        mock_analyze.assert_called_once()
+        assert mock_analyze.call_args.kwargs["focus"] == VisionFocus.GENERAL
+
+    async def test_analyze_visual_invalid_focus_returns_error(self):
+        """analyze_visual returns error for invalid focus mode."""
+        user_id = uuid4()
+        event_id = uuid4()
+
+        result = await analyze_visual(
+            AsyncMock(), _make_settings(), event_id, user_id, focus="invalid_mode"
+        )
+
+        assert result.success is False
+        assert "Invalid focus mode" in result.error
+        assert "invalid_mode" in result.error
+        assert "general" in result.error  # Lists valid values
 
 
 # ---------------------------------------------------------------------------

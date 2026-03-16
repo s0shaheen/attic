@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.7.0] - 2026-03-16
+
+### Added
+- `VisionFocus` StrEnum with 6 targeted vision analysis modes: general, books, scenes, places, text, products
+- Focus-specific prompt templates in `_VISION_PROMPTS` dict — each mode optimizes extraction for its content type
+- `focus` parameter on `analyze_visual` tool schema (optional, enum-constrained, defaults to general)
+- Explicit `VisionFocus` validation with descriptive error messages in `agent_tools.py`
+- Vision focus mode guidance in system prompt (recall check + cost awareness sections)
+- 13 new tests: focus prompt selection, backward compat regression, invalid focus handling, dispatcher forwarding, schema validation
+- TODO 6: vision result caching with focus-aware key (deferred to post-5.5)
+
+### Changed
+- `gemini.py:analyze_visual()` accepts `focus: VisionFocus` kwarg (default GENERAL preserves backward compat)
+- `agent.py` dispatcher forwards `focus` parameter from tool input to `analyze_visual`
+- System prompt mentions focus modes in entity retrieval plan and cost awareness sections
+
 ## [0.2.6.0] - 2026-03-16
 
 ### Added

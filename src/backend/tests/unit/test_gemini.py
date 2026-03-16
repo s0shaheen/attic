@@ -6,7 +6,7 @@ from unittest.mock import AsyncMock, patch
 import httpx
 import pytest
 
-from app.services.gemini import analyze_visual, classify
+from app.services.gemini import _VISION_PROMPTS, VisionFocus, analyze_visual, classify
 
 # ---------------------------------------------------------------------------
 # classify
@@ -232,3 +232,123 @@ class TestAnalyzeVisual:
 
         assert result.success is False
         assert "timed out" in result.error
+
+
+# ---------------------------------------------------------------------------
+# Vision focus modes
+# ---------------------------------------------------------------------------
+
+
+class TestVisionFocus:
+    @pytest.mark.asyncio
+    async def test_default_focus_is_general(self):
+        """Calling without focus kwarg uses GENERAL prompt."""
+        analysis = {"description": "test", "objects": [], "text_detected": None}
+        mock_response = httpx.Response(
+            200,
+            json={"candidates": [{"content": {"parts": [{"text": json.dumps(analysis)}]}}]},
+        )
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
+
+            await analyze_visual(
+                api_key="test-key",
+                image_url="https://example.com/thumb.jpg",
+            )
+
+            call_args = mock_client.post.call_args
+            body = call_args.kwargs["json"]
+            prompt_text = body["contents"][0]["parts"][0]["text"]
+            # GENERAL prompt contains these key phrases (backward compat regression)
+            assert "brief description" in prompt_text
+            assert "objects, people, or products" in prompt_text
+            assert "text detected" in prompt_text.lower()
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize("focus", list(VisionFocus))
+    async def test_each_focus_uses_its_prompt_template(self, focus):
+        """Each focus mode produces a prompt matching its template."""
+        analysis = {"description": "test", "objects": [], "text_detected": None}
+        mock_response = httpx.Response(
+            200,
+            json={"candidates": [{"content": {"parts": [{"text": json.dumps(analysis)}]}}]},
+        )
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
+
+            await analyze_visual(
+                api_key="test-key",
+                image_url="https://example.com/thumb.jpg",
+                focus=focus,
+            )
+
+            call_args = mock_client.post.call_args
+            body = call_args.kwargs["json"]
+            prompt_text = body["contents"][0]["parts"][0]["text"]
+            assert prompt_text == _VISION_PROMPTS[focus]
+
+    @pytest.mark.asyncio
+    async def test_books_focus_contains_book_keywords(self):
+        """BOOKS focus prompt mentions book-specific content."""
+        analysis = {"description": "test", "objects": [], "text_detected": None}
+        mock_response = httpx.Response(
+            200,
+            json={"candidates": [{"content": {"parts": [{"text": json.dumps(analysis)}]}}]},
+        )
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
+
+            await analyze_visual(
+                api_key="test-key",
+                image_url="https://example.com/thumb.jpg",
+                focus=VisionFocus.BOOKS,
+            )
+
+            call_args = mock_client.post.call_args
+            body = call_args.kwargs["json"]
+            prompt_text = body["contents"][0]["parts"][0]["text"]
+            assert "book" in prompt_text.lower()
+            assert "title" in prompt_text.lower()
+            assert "author" in prompt_text.lower()
+
+    @pytest.mark.asyncio
+    async def test_caption_prepended_with_focus(self):
+        """Caption is prepended to the focus-specific prompt."""
+        analysis = {"description": "test", "objects": [], "text_detected": None}
+        mock_response = httpx.Response(
+            200,
+            json={"candidates": [{"content": {"parts": [{"text": json.dumps(analysis)}]}}]},
+        )
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
+
+            await analyze_visual(
+                api_key="test-key",
+                image_url="https://example.com/thumb.jpg",
+                caption="great book recommendation",
+                focus=VisionFocus.BOOKS,
+            )
+
+            call_args = mock_client.post.call_args
+            body = call_args.kwargs["json"]
+            prompt_text = body["contents"][0]["parts"][0]["text"]
+            assert prompt_text.startswith("Context caption: great book recommendation")
+            assert "book" in prompt_text.lower()
+
+    def test_all_focus_modes_have_prompt_templates(self):
+        """Every VisionFocus enum value has a corresponding prompt template."""
+        for focus in VisionFocus:
+            assert focus in _VISION_PROMPTS, f"Missing prompt template for {focus}"
+
+    def test_all_prompts_request_json_output(self):
+        """All prompt templates end with JSON output instruction."""
+        for focus, prompt in _VISION_PROMPTS.items():
+            assert "Return ONLY valid JSON" in prompt, f"{focus} prompt missing JSON instruction"

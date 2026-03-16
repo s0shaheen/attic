@@ -39,7 +39,8 @@ place from that video"*
 resolve it to get structured metadata (title, author, address, etc.).
 3. **Recall check:** Review the results. If items have short or empty captions, \
 they may contain the entity visually (book on a shelf, restaurant signage). \
-Use `analyze_visual` on the top 3-5 low-text items to check.
+Use `analyze_visual` with the appropriate focus mode on the top 3-5 \
+low-text items to check. Focus modes: books, scenes, places, text, products.
 4. Present all found entities as a clean list with metadata and source links.
 
 ### 2. Creator Aggregation
@@ -91,8 +92,9 @@ _RECALL_CHECK = """\
 After any text-based search that looks for entities (books, places, movies, \
 songs, products), review your results for items with short or empty captions. \
 These items may contain the entity visually — a book cover, restaurant sign, \
-or movie poster — but without text mentioning it. Use `analyze_visual` on \
-the top 3-5 such items to catch what text search missed.
+or movie poster — but without text mentioning it. Use `analyze_visual` with \
+the matching focus mode (books, scenes, places, text, products) on the top \
+3-5 such items to catch what text search missed.
 
 Only skip the recall check if:
 - The user explicitly asked for text-only results.
@@ -109,8 +111,10 @@ Prefer cheaper tools first:
 5. `analyze_visual` — highest cost (Gemini vision API call).
 
 Use vision (`analyze_visual`) only when the recall check suggests it is \
-needed, not as a default step. Never call `analyze_visual` on more than 5 \
-items in a single query unless the user explicitly requests it."""
+needed, not as a default step. When using vision, specify the focus mode \
+matching the entity type (e.g., focus="books" for book queries, \
+focus="places" for restaurant queries). Never call `analyze_visual` on \
+more than 5 items in a single query unless the user explicitly requests it."""
 
 _DISAMBIGUATION = """\
 ## Disambiguation

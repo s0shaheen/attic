@@ -24,6 +24,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.config import Settings
 from app.models.media_event import MediaEvent
 from app.services.entity_resolvers import resolve_entity as _resolve_entity
+from app.services.gemini import VisionFocus
 from app.services.gemini import analyze_visual as gemini_analyze
 from app.services.gemini import classify as gemini_classify
 from app.services.ontology import validate_classification
@@ -359,7 +360,8 @@ async def classify(
     description=(
         "Analyze the thumbnail/image of a media event using AI vision. "
         "Returns a description of visual content, detected objects, "
-        "OCR text, and relevant web sources from Google Search grounding."
+        "OCR text, and relevant web sources from Google Search grounding. "
+        "Use the focus parameter to optimize extraction for specific content types."
     ),
     input_schema={
         "type": "object",
@@ -367,6 +369,19 @@ async def classify(
             "media_event_id": {
                 "type": "string",
                 "description": "UUID of the media event to analyze visually.",
+            },
+            "focus": {
+                "type": "string",
+                "enum": ["general", "books", "scenes", "places", "text", "products"],
+                "description": (
+                    "Vision analysis focus mode. "
+                    "'books' for book titles, authors, covers. "
+                    "'scenes' for movie/TV scenes, actors, shows. "
+                    "'places' for restaurants, landmarks, signage. "
+                    "'text' for heavy OCR (screenshots, recipes, notes). "
+                    "'products' for product brands, packaging. "
+                    "'general' for broad analysis (default)."
+                ),
             },
         },
         "required": ["media_event_id"],
@@ -377,6 +392,7 @@ async def analyze_visual(
     settings: Settings,
     media_event_id: UUID,
     user_id: UUID,
+    focus: str | None = None,
 ) -> AgentToolResult:
     """Analyze a media event's thumbnail using Gemini vision.
 
@@ -385,10 +401,18 @@ async def analyze_visual(
         settings: Application settings (for API keys).
         media_event_id: The media event whose thumbnail to analyze.
         user_id: The user's ID (for isolation).
+        focus: Optional vision focus mode for targeted extraction.
 
     Returns:
         AgentToolResult with visual analysis data.
     """
+    # Validate focus mode
+    try:
+        vision_focus = VisionFocus(focus) if focus else VisionFocus.GENERAL
+    except ValueError:
+        valid = ", ".join(f.value for f in VisionFocus)
+        return AgentToolResult(success=False, error=f"Invalid focus mode '{focus}'. Valid: {valid}")
+
     try:
         stmt = select(MediaEvent).where(
             MediaEvent.id == media_event_id,
@@ -403,11 +427,12 @@ async def analyze_visual(
         if not event.thumbnail_url:
             return AgentToolResult(success=False, error="No thumbnail available for this item")
 
-        # Call Gemini vision
+        # Call Gemini vision with focus mode
         visual_result = await gemini_analyze(
             api_key=settings.gemini_api_key,
             image_url=event.thumbnail_url,
             caption=event.caption_text,
+            focus=vision_focus,
         )
 
         if not visual_result.success:
