@@ -3,6 +3,9 @@
     "defaultMode": "bypassPermissions",
     "allow": [
       "Write(**)",
+      "Read(/Users/s0shaheen/.gstack/**)",
+      "Edit(/Users/s0shaheen/.gstack/**)",
+      "Write(/Users/s0shaheen/.gstack/**)",
       "Bash(pytest*)",
       "Bash(ruff*)",
       "Bash(npm test*)",

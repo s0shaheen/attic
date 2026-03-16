@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.9.2] - 2026-03-16
+
+### Changed
+- Updated Claude Code settings to allow gstack directory read/write access for faster browser automation workflows
+
 ## [0.2.9.1] - 2026-03-16
 
 ### Changed
