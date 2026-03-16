@@ -6,19 +6,97 @@ Personal analytics platform for TikTok data. Users upload their TikTok data expo
 
 **"Your entire TikTok history, finally organized and searchable."**
 
-## Current Plan & Progress
+## Issue Tracking (MANDATORY — read before any work)
 
-**READ FIRST:** `docs/CURRENT_PLAN.md` — task checklist with status, architecture decisions, and context handoff notes. Check this at the start of every session.
+**Every PR MUST reference an issue with `Closes #N`. If no issue exists, create one first.**
 
-**Full Engineering Review:** `.claude/plans/velvety-orbiting-widget.md`
+**TL;DR — 4 rules that keep tracking in sync automatically:**
+1. **Before writing code:** move the issue to the In Progress board column
+2. **Every PR:** include `Closes #N` in the body — this auto-closes the issue on merge
+3. **Specs from eng review:** paste the full spec into a GitHub issue comment (not a local file)
+4. **Session end:** verify all issues you touched have correct board column
 
-### Context Handoff Protocol
+**Board:** [GitHub Project Board](https://github.com/users/s0shaheen/projects/2) — Backlog | Up Next | In Progress | Paused | Done
 
-When running low on context or ending a session:
-1. Update task checkboxes in `docs/CURRENT_PLAN.md`
-2. Update the "Current Progress" section at the bottom of that file
-3. Note any in-progress files, blockers, or decisions needed
-4. The new session reads `CLAUDE.md` + `docs/CURRENT_PLAN.md` to resume
+**Quick filters:**
+```bash
+gh issue list --label ready                      # Ready to implement
+gh issue list --label p0-critical,p1-high         # Urgent items
+gh issue list --label needs-decision              # Waiting on founder
+```
+
+### Session Start Checks
+
+At the start of every session, run these checks:
+1. Read `CLAUDE.md` + `docs/CURRENT_PLAN.md`
+2. Check for orphaned In Progress issues: are there issues in In Progress that don't match the current workspace's branch? If found, ask the user whether to move them to Paused or back to Up Next.
+3. Quick board health: `gh issue list --search "label:ready label:p0-critical label:p1-high" --state open` — flag anything urgent.
+
+### Sync Points
+
+| When this happens... | ...do this automatically |
+|---|---|
+| **You start working on an issue** | Move to In Progress column. Do this BEFORE writing any code. |
+| **You create a branch** | Name it `s0shaheen/issue-N-short-desc`. GitHub auto-links it. |
+| **You create a PR** | Include `Closes #N` in the PR body. Non-negotiable. |
+| **An eng review produces a spec** | Paste the full spec into an issue comment. Move issue to Up Next. |
+| **A CEO review defers an item** | Create issue with `deferred` label OR comment on existing issue. |
+| **Scope changes mid-implementation** | Comment on the issue with what changed and why. |
+| **You discover a blocker** | Comment on the issue. Add `blocked` label. |
+| **You discover a new task** | Create a new issue — do NOT silently expand current scope. Link with "Discovered while working on #N". |
+| **A decision is made** | Comment on the issue with the decision and rationale. |
+| **You finish a session** | Verify every issue you touched has correct board column. |
+
+### Before Creating Any Issue
+
+1. Search existing open issues: `gh issue list --search "KEYWORDS" --state open`
+2. If a match exists, classify the relationship:
+   - **Subset** → add as comment or checklist item on existing issue
+   - **Supersedes** → close old with comment linking to new
+   - **Conflicts** → present both to the user, ask which approach
+   - **Adjacent** → create new issue, note the relationship
+3. If no match, create the issue
+
+### Issue Template
+
+```markdown
+## What
+[One sentence — what changes]
+
+## Why
+[User-facing impact or technical necessity]
+
+## Files Touched
+[List files this will modify — critical for parallelism planning]
+
+## Open Questions
+[Anything requiring founder input — remove section if none]
+
+## Not In Scope
+[Explicit boundaries]
+```
+
+### Labels (4 dimensions)
+
+- **Priority**: `p0-critical`, `p1-high`, `p2-medium`, `p3-low`, `p4-someday`
+- **Readiness**: `ready` (spec'd, unblocked), `needs-spec` (needs eng review), `needs-decision` (founder must choose), `needs-data` (requires production data)
+- **Autonomy**: `autonomous` (agent can implement without asking), `guided` (needs founder input during work), `founder-only` (only the founder can do this)
+- **Component**: `backend`, `frontend`, `agent`, `pipeline`, `infra`, `security`
+
+### Board Columns
+
+- **Backlog**: Ideas, deferred, `needs-spec`, `needs-decision`, `needs-data`
+- **Up Next**: `ready` — has spec or is simple enough, all decisions made, dependencies merged
+- **In Progress**: Currently being worked on in a Conductor workspace
+- **Paused**: Work that was started but stopped — abandoned workspaces, deprioritized, or explicitly paused
+- **Done**: PR merged and closed
+
+### Context Handoff
+
+When ending a session:
+1. Verify every issue you touched has correct board column
+2. Note any blockers or decisions needed as issue comments
+3. The new session reads `CLAUDE.md` + `docs/CURRENT_PLAN.md` to resume
 
 ## Stack
 
@@ -118,7 +196,7 @@ Claude Haiku 4.5 orchestrates via manual tool loop (~50 lines, Anthropic SDK). T
 
 ## Key Files
 
-- `docs/CURRENT_PLAN.md` — Implementation plan with task checklist and progress
+- `docs/CURRENT_PLAN.md` — Architecture decisions reference
 - `docs/CEO_PLAN_REVIEW_2026-03-14.md` — Architecture decision record
 - `app/services/agent.py` — Agent loop (Wave 2)
 - `app/services/agent_tools.py` — Tool functions (Wave 2)
@@ -152,8 +230,9 @@ Claude Haiku 4.5 orchestrates via manual tool loop (~50 lines, Anthropic SDK). T
 
 ### Git
 
-- Branch: `feature/{wave}-{step}-short-name` or `fix/{description}`
+- Branch: `s0shaheen/issue-N-short-desc` or `fix/{description}`
 - Commits: `feat(scope): description` (conventional commits)
+- PRs that close an issue: include `Closes #N` in the PR body
 
 ### Versioning
 

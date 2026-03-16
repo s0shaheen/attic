@@ -1,0 +1,27 @@
+name: PR Issue Reference Check
+
+on:
+  pull_request:
+    types: [opened, edited]
+
+jobs:
+  check-issue-reference:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Check for issue reference
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.pull_request.body || '';
+            const issuePattern = /(?:closes|fixes|resolves)\s+#\d+/i;
+
+            if (!issuePattern.test(body)) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.pull_request.number,
+                body: '⚠️ **Missing issue reference.** This PR does not contain `Closes #N`, `Fixes #N`, or `Resolves #N` in the body.\n\nPer CLAUDE.md, every PR must reference an issue. If no issue exists for this work, please create one first, then update the PR body.'
+              });
+            }

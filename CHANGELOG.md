@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.11.0] - 2026-03-16
+
+### Changed
+- Migrate task tracking from markdown files (TODO.md, TODOS.md) to GitHub Projects + Issues (#58-#103)
+- Rewrite CLAUDE.md with mandatory issue tracking rules, sync points table, and deduplication instructions
+- Strip CURRENT_PLAN.md to static architecture reference (remove progress tracking, handoff notes)
+- Branch naming convention: `s0shaheen/issue-N-short-desc` (was `feature/{wave}-{step}-short-name`)
+
+### Added
+- GitHub Issue template (`.github/ISSUE_TEMPLATE/task.md`) with What/Why/Files Touched/Open Questions/Not In Scope
+- GitHub Action (`pr-issue-check.yml`) that warns on PRs missing `Closes #N`
+- Label taxonomy: 4 dimensions (priority, readiness, autonomy, component)
+- Board columns: Backlog → Up Next → In Progress → Paused → Done
+
+### Removed
+- `TODO.md` — 42 items migrated to GitHub Issues
+- `TODOS.md` — 8 items migrated to GitHub Issues
+
 ## [0.2.10.0] - 2026-03-16
 
 ### Added
