@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.6.0] - 2026-03-16
+
+### Added
+- System prompt module (`prompts.py`) with `build_system_prompt()` — cached, testable, DRY
+- 5 explicit query plan templates: entity retrieval, creator aggregation, simple filter, interpretive/vibe, ambiguous/broad
+- Full ontology integration in system prompt via `format_ontology_for_prompt()`
+- Recall check instruction: analyze_visual on low-text items after entity searches
+- Cost awareness rules: prefer cheap tools first, limit vision calls
+- Disambiguation rules: default to most specific intent, fallback to semantic search
+- 10 new unit tests for prompt content, caching, and DRY compliance
+- TODO 5: prompt regression eval suite (deferred to post-5.1)
+
+### Removed
+- Inline `SYSTEM_PROMPT` constant from `agent.py` (35 lines replaced by `prompts.py` import)
+
 ## [0.2.5.0] - 2026-03-16
 
 ### Changed

@@ -25,3 +25,9 @@ Deferred work items captured during engineering review (2026-03-15).
 - **Why:** Currently only 1 smoke test + SSE parser tests. As frontend grows, component tests prevent regressions.
 - **Depends on:** Nothing — can be added anytime.
 - **Where to start:** `npm install -D vitest @testing-library/react @testing-library/jest-dom jsdom`
+
+## TODO 5: Prompt regression eval suite
+- **What:** Minimal eval for system prompt quality: 5-10 representative queries with expected tool call patterns (e.g., "what books have I saved?" should trigger query_items then analyze_visual on low-text results).
+- **Why:** The system prompt is the #1 product differentiator. Changes can silently regress entity retrieval quality. No automated check exists today.
+- **Depends on:** Wave 5.1 (system prompt rewrite) shipped. Stepping stone toward full eval infra (task 8.4 in TODO.md).
+- **Where to start:** `tests/eval/` dir or extend `tests/unit/test_prompts.py`. Define expected tool call sequences per query type, mock Claude responses to verify the agent follows plan templates.
