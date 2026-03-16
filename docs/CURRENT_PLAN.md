@@ -138,7 +138,8 @@ When a conversation runs low on context, update this file:
 _Updated by each session before ending._
 
 **Wave:** Founder-Testable — COMPLETE (all 6 tasks done)
-**Current step:** Done
+**Current step:** Done — TODO.md restructured with Phase 1-3 roadmap (2026-03-16)
+**Next:** Wave 5 (Agent Intelligence) — see TODO.md for P0/P1 items
 **Blockers:** None
 **Notes:**
 - Founder-testable session (2026-03-15):

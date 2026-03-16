@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.5.0] - 2026-03-16
+
+### Changed
+- Restructured `TODO.md` from flat parking lot into prioritized execution tracker with Phase 1-3 roadmap
+- TODO items now use canonical format: What/Why/Context/Effort/Priority/Depends-on
+- Organized by phase: Phase 1 (Ship MVP, P0/P1), Phase 2 (Discovery + Conditional, P2/P3), Phase 3 (Moat, P4), Deferred Product
+- 3 P0 items (system prompt rewrite, targeted vision, RLS hardening), 7 P1 items, 9 P2, 6 P3, 17 P4
+- Merged overlapping items: entity rate limit + conversation 404 → Error Handling Polish
+- Added `CURRENT_PLAN.md` pointer to Wave 5 as next phase
+
+### Added
+- CEO plan review decisions documented: credit system storage (user_credits table), credit reset (lazy), aggregate_field injection protection (allowlist), prompt storage (prompts.py module), credit check performance (single read/write), credit feature flag (CREDITS_ENABLED)
+
 ## [0.2.4.0] - 2026-03-16
 
 ### Added
