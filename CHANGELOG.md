@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.8.1] - 2026-03-16
+
+### Fixed
+- Chat page redirects unauthenticated users to `/login` on mount instead of showing inline error after interaction
+- Ruff E501 line-too-long in auth.py issuer validation
+
 ## [0.2.8.0] - 2026-03-16
 
 ### Added
