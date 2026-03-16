@@ -2,6 +2,10 @@
 
 Provides database connection management with support for both local
 Supabase CLI development and cloud Supabase deployment.
+
+The engine is initialized lazily on first use via get_settings() — no
+os.getenv calls at module level, so .env loading is handled entirely
+by pydantic-settings.
 """
 
 import logging
@@ -13,8 +17,18 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 logger = logging.getLogger(__name__)
 
 
+def _normalize_database_url(url: str) -> str:
+    """Ensure the URL uses the asyncpg driver."""
+    if url.startswith("postgresql://"):
+        return url.replace("postgresql://", "postgresql+asyncpg://", 1)
+    return url
+
+
 def build_database_url() -> str:
     """Construct the async DATABASE_URL from environment variables.
+
+    Used ONLY by alembic/env.py (CLI context without FastAPI DI).
+    Application code uses get_db() which reads from Settings.
 
     Priority:
     1. DATABASE_URL if set directly
@@ -27,21 +41,15 @@ def build_database_url() -> str:
     Raises:
         ValueError: If required environment variables are missing.
     """
-    # Direct override for flexibility
     direct_url = os.getenv("DATABASE_URL")
     if direct_url:
-        # Normalize to asyncpg driver
-        if direct_url.startswith("postgresql://"):
-            direct_url = direct_url.replace("postgresql://", "postgresql+asyncpg://", 1)
-        return direct_url
+        return _normalize_database_url(direct_url)
 
-    # Local development with Supabase CLI
     if os.getenv("USE_LOCAL_SUPABASE", "").lower() in ("1", "true", "yes"):
         host = os.getenv("SUPABASE_LOCAL_HOST", "127.0.0.1")
         port = os.getenv("SUPABASE_LOCAL_PORT", "54322")
         return f"postgresql+asyncpg://postgres:postgres@{host}:{port}/postgres"
 
-    # Build from Supabase cloud credentials
     supabase_url = os.getenv("SUPABASE_URL")
     db_password = os.getenv("SUPABASE_DB_PASSWORD")
 
@@ -51,8 +59,6 @@ def build_database_url() -> str:
             "See docs/setup/supabase.md for configuration."
         )
 
-    # Extract project reference from SUPABASE_URL
-    # Format: https://{project_ref}.supabase.co
     project_ref = supabase_url.replace("https://", "").replace(".supabase.co", "").strip("/")
 
     if not db_password:
@@ -64,53 +70,44 @@ def build_database_url() -> str:
     return f"postgresql+asyncpg://postgres.{project_ref}:{db_password}@aws-0-us-east-1.pooler.supabase.com:6543/postgres"
 
 
-def _get_pool_settings() -> dict:
-    """Return connection pool configuration from environment."""
-    return {
-        "pool_size": int(os.getenv("DB_POOL_SIZE", "5")),
-        "max_overflow": int(os.getenv("DB_MAX_OVERFLOW", "10")),
-        "pool_pre_ping": True,
-        "pool_recycle": int(os.getenv("DB_POOL_RECYCLE", "300")),
-    }
-
-
 # Module-level engine and session factory (lazy initialization)
 _engine = None
 _session_factory = None
 
 
-def _initialize() -> None:
-    """Initialize the module-level engine and session factory."""
+def _initialize_from_settings() -> None:
+    """Initialize the engine from pydantic Settings (reads .env via pydantic-settings)."""
     global _engine, _session_factory
     if _engine is None:
-        url = build_database_url()
-        pool_settings = _get_pool_settings()
+        from app.config import get_settings
+
+        settings = get_settings()
+        url = _normalize_database_url(settings.database_url)
 
         _engine = create_async_engine(
             url,
-            echo=os.getenv("DB_ECHO", "").lower() in ("1", "true", "yes"),
-            **pool_settings,
+            pool_size=5,
+            max_overflow=10,
+            pool_pre_ping=True,
+            pool_recycle=300,
         )
         _session_factory = async_sessionmaker(
             _engine,
             class_=AsyncSession,
             expire_on_commit=False,
         )
-        logger.info(
-            "Database engine created",
-            extra={"pool_size": pool_settings["pool_size"]},
-        )
+        logger.info("Database engine created")
 
 
 def get_engine():
     """Return the async engine, initializing if needed."""
-    _initialize()
+    _initialize_from_settings()
     return _engine
 
 
 def async_session_factory() -> async_sessionmaker[AsyncSession]:
     """Return the async session factory, initializing if needed."""
-    _initialize()
+    _initialize_from_settings()
     return _session_factory
 
 

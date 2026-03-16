@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.8.0] - 2026-03-16
+
+### Added
+- `scripts/dev-setup.sh` — one-command local dev environment setup (creates .env files, installs deps, runs migrations, seeds test data)
+- `scripts/seed_local.py` — seeds local Supabase with 10 media_events (7 restaurant, 3 other) with real OpenAI embeddings for testing
+
+### Fixed
+- pgvector cosine distance query uses `CAST(:query_vec AS vector)` instead of `::vector` cast syntax that breaks with asyncpg parameter binding
+- Auth issuer validation accepts both `localhost` and `127.0.0.1` variants for local Supabase
+
+### Changed
+- `db/session.py` reads database URL from pydantic Settings instead of `os.getenv` — eliminates need for `load_dotenv` hack or `set -a; source .env`
+- `build_database_url()` retained only for alembic CLI usage, documented as such
+
 ## [0.2.7.0] - 2026-03-16
 
 ### Added

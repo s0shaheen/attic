@@ -193,6 +193,7 @@ export default function ChatPage() {
             setMessages([]);
             setConversationId(null);
             setError(null);
+            setInput("");
           }}
           className="rounded-md px-3 py-1.5 text-sm text-neutral-400 transition-colors hover:bg-neutral-800 hover:text-white"
         >

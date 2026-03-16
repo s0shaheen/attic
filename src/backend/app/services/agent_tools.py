@@ -714,7 +714,7 @@ async def search_similar(
                    interaction_type, interaction_at, thumbnail_url, music_name,
                    canonical_url, play_count, like_count,
                    cached_classifications, cached_entities,
-                   (embedding_vector <=> :query_vec::vector) AS distance
+                   (embedding_vector <=> CAST(:query_vec AS vector)) AS distance
             FROM media_events
             WHERE user_id = :uid AND embedding_vector IS NOT NULL
             ORDER BY distance ASC
