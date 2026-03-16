@@ -20,11 +20,9 @@ Deferred work items captured during engineering review (2026-03-15).
 - **Depends on:** `search_similar` tool shipping first.
 - **Where to start:** `alembic revision --autogenerate -m "add hnsw index on embedding_vector"`
 
-## TODO 4: Frontend component test infrastructure
-- **What:** Set up Vitest + React Testing Library. Add component tests for key UI (messages, starters, upload).
-- **Why:** Currently only 1 smoke test + SSE parser tests. As frontend grows, component tests prevent regressions.
-- **Depends on:** Nothing — can be added anytime.
-- **Where to start:** `npm install -D vitest @testing-library/react @testing-library/jest-dom jsdom`
+## ~~TODO 4: Frontend component test infrastructure~~ — COMPLETE
+- **Completed:** v0.2.10.0 (2026-03-16)
+- Vitest + React Testing Library already installed; 9 auth component tests added (AuthProvider, AppHeader, DevBanner, ?next= sanitization).
 
 ## TODO 5: Prompt regression eval suite
 - **What:** Minimal eval for system prompt quality: 5-10 representative queries with expected tool call patterns (e.g., "what books have I saved?" should trigger query_items then analyze_visual on low-text results).
@@ -38,7 +36,13 @@ Deferred work items captured during engineering review (2026-03-15).
 - **Depends on:** Wave 5.5 cost instrumentation to confirm vision calls are a meaningful cost driver. Don't optimize without data.
 - **Where to start:** Add `cached_visual_analyses: dict | None` column to `media_events` table (JSON dict keyed by focus mode). Check cache before calling `gemini_analyze` in `agent_tools.py:analyze_visual`. Upsert result on success.
 
-## TODO 7: Composite index (user_id, creator_username)
+## TODO 7: Supabase email templates customization
+- **What:** Customize the Supabase email templates for password reset, email confirmation, and magic link emails with Attic branding (logo, colors, copy).
+- **Why:** Default Supabase templates are generic and look like phishing. Branded emails build trust and improve email verification completion rate.
+- **Depends on:** Email/password auth shipping first (auth-login-flow-expansion plan).
+- **Where to start:** Supabase Dashboard → Authentication → Email Templates. Customize HTML for: Confirm Signup, Reset Password, Magic Link. Alternatively, configure custom SMTP via Resend for full control.
+
+## TODO 8: Composite index (user_id, creator_username)
 - **What:** Add composite index via Alembic migration: `CREATE INDEX idx_media_events_user_creator ON media_events(user_id, creator_username)`.
 - **Why:** `creator_details` and `field_distribution` both filter by `user_id` then GROUP BY `creator_username`. Composite index enables index-only scans instead of filtering + sequential scan. Unnecessary below ~100K items/user.
 - **Depends on:** Wave 5.5 (cost instrumentation) shipping first to provide query latency data.

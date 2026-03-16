@@ -5,7 +5,10 @@ import { NextResponse, type NextRequest } from "next/server";
 export async function GET(request: NextRequest) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get("code");
-  const next = searchParams.get("next") ?? "/chat";
+  const rawNext = searchParams.get("next") ?? "/chat";
+  // Sanitize redirect target — only allow relative paths (prevent open redirect)
+  const next =
+    rawNext.startsWith("/") && !rawNext.includes("://") ? rawNext : "/chat";
 
   if (code) {
     const cookieStore = await cookies();

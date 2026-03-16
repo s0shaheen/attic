@@ -1,6 +1,7 @@
 "use client";
 
-import { createClient } from "@/lib/supabase/client";
+import { AppHeader } from "@/components/app-header";
+import { useAuth } from "@/lib/auth-context";
 import Uppy from "@uppy/core";
 import DragDrop from "@uppy/drag-drop";
 import ProgressBar from "@uppy/progress-bar";
@@ -24,12 +25,12 @@ export default function UploadPage() {
   const progressRef = useRef<HTMLDivElement>(null);
   const uppyRef = useRef<Uppy | null>(null);
   const router = useRouter();
+  const { supabase } = useAuth();
 
   const getAccessToken = useCallback(async (): Promise<string | null> => {
-    const supabase = createClient();
     const { data } = await supabase.auth.getSession();
     return data.session?.access_token ?? null;
-  }, []);
+  }, [supabase]);
 
   useEffect(() => {
     const uppy = new Uppy({
@@ -149,7 +150,9 @@ export default function UploadPage() {
   }, [getAccessToken]);
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-neutral-950 px-4">
+    <div className="flex min-h-screen flex-col bg-neutral-950">
+      <AppHeader />
+      <div className="flex flex-1 flex-col items-center justify-center px-4">
       <div className="w-full max-w-lg">
         <h1 className="mb-2 text-center text-2xl font-semibold text-white">
           Upload your TikTok data
@@ -227,6 +230,7 @@ export default function UploadPage() {
             </button>
           </div>
         )}
+      </div>
       </div>
     </div>
   );

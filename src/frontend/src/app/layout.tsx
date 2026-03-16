@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DevBanner } from "@/components/dev-banner";
 import { Providers } from "@/components/providers";
 import "./globals.css";
 
@@ -15,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className="min-h-screen antialiased">
-        <Providers>{children}</Providers>
+        <Providers>
+          <DevBanner />
+          {children}
+        </Providers>
       </body>
     </html>
   );

@@ -1,7 +1,8 @@
 "use client";
 
+import { AppHeader } from "@/components/app-header";
+import { useAuth } from "@/lib/auth-context";
 import { parseSSEChunk } from "@/lib/sse";
-import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
@@ -22,9 +23,17 @@ const STARTER_PROMPTS = [
   "Find cooking content",
 ];
 
+const WELCOME_MESSAGE: Message = {
+  id: "welcome",
+  role: "assistant",
+  content:
+    "Welcome to Attic! I can help you explore your TikTok history — search videos, discover patterns, and understand your data.\n\nTry asking something like:\n- **\"What restaurants have I liked?\"**\n- **\"Who are my top creators?\"**\n- **\"Find something relaxing\"**",
+};
+
 export default function ChatPage() {
+  const { user, loading: authLoading, supabase } = useAuth();
   const router = useRouter();
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [messages, setMessages] = useState<Message[]>([WELCOME_MESSAGE]);
   const [input, setInput] = useState("");
   const [isStreaming, setIsStreaming] = useState(false);
   const [conversationId, setConversationId] = useState<string | null>(null);
@@ -33,20 +42,16 @@ export default function ChatPage() {
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
-    const supabase = createClient();
-    supabase.auth.getSession().then(({ data }) => {
-      if (!data.session) {
-        router.replace("/login");
-      }
-    });
-  }, [router]);
+    if (!authLoading && !user) {
+      router.replace("/login");
+    }
+  }, [authLoading, user, router]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
   async function getAccessToken(): Promise<string | null> {
-    const supabase = createClient();
     const { data } = await supabase.auth.getSession();
     return data.session?.access_token ?? null;
   }
@@ -66,7 +71,6 @@ export default function ChatPage() {
 
     // On 401, refresh session and retry once
     if (response.status === 401) {
-      const supabase = createClient();
       const { data } = await supabase.auth.getUser();
       if (!data.user) throw new Error("Session expired. Please log in again.");
       const { data: sessionData } = await supabase.auth.getSession();
@@ -98,6 +102,9 @@ export default function ChatPage() {
       setError("Not authenticated. Please log in.");
       return;
     }
+
+    // Remove welcome message on first real interaction
+    setMessages((prev) => prev.filter((m) => m.id !== "welcome"));
 
     // Add user message
     const userMsg: Message = {
@@ -194,37 +201,33 @@ export default function ChatPage() {
     }
   }
 
+  function handleNewChat() {
+    setMessages([WELCOME_MESSAGE]);
+    setConversationId(null);
+    setError(null);
+    setInput("");
+  }
+
   return (
     <div className="flex h-screen flex-col bg-neutral-950">
-      {/* Header */}
-      <header className="flex items-center justify-between border-b border-neutral-800 px-4 py-3">
-        <h1 className="text-lg font-semibold text-white">Attic</h1>
-        <button
-          onClick={() => {
-            setMessages([]);
-            setConversationId(null);
-            setError(null);
-            setInput("");
-          }}
-          className="rounded-md px-3 py-1.5 text-sm text-neutral-400 transition-colors hover:bg-neutral-800 hover:text-white"
-        >
-          New Chat
-        </button>
-      </header>
+      <AppHeader
+        actions={
+          <button
+            onClick={handleNewChat}
+            className="rounded-md px-3 py-1.5 text-sm text-neutral-400 transition-colors hover:bg-neutral-800 hover:text-white"
+          >
+            New Chat
+          </button>
+        }
+      />
 
       {/* Messages */}
       <div className="flex-1 overflow-y-auto px-4 py-6">
         <div className="mx-auto max-w-2xl space-y-6">
-          {messages.length === 0 && (
-            <div className="flex flex-col items-center justify-center pt-20 text-center">
-              <h2 className="text-xl font-medium text-white">
-                What would you like to know?
-              </h2>
-              <p className="mt-2 text-sm text-neutral-400">
-                Ask about your TikTok history — search videos, discover
-                patterns, explore your data.
-              </p>
-              <div className="mt-8 flex flex-wrap justify-center gap-2">
+          {/* Show starters only when just the welcome message is present */}
+          {messages.length === 1 && messages[0].id === "welcome" && (
+            <div className="flex flex-col items-center justify-center pt-4 text-center">
+              <div className="mt-4 flex flex-wrap justify-center gap-2">
                 {STARTER_PROMPTS.map((prompt) => (
                   <button
                     key={prompt}

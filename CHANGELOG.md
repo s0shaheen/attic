@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.10.0] - 2026-03-16
+
+### Added
+- Email/password authentication (Supabase Auth) alongside Google OAuth — works in dev and production
+- AuthProvider context (`lib/auth-context.tsx`) with `useAuth()` hook and `onAuthStateChange` listener
+- PostHog frontend SDK integration with `trackAuthEvent()` helper for auth funnel analytics
+- Shared AppHeader component with Radix DropdownMenu for user menu (nav, settings, sign out)
+- Settings page (`/settings`) with account info, sign out, and account deletion (typed "DELETE" confirmation)
+- Password reset flow: forgot password → email → `/auth/reset-password` → set new password
+- Email verification screen (`/auth/verify`) for production sign-ups
+- DevBanner component — shows "Dev mode" + user email in development environment
+- Dev quick login: login page auto-fills test credentials when `NEXT_PUBLIC_ENVIRONMENT=development`
+- Login rate limit detection: shows "Too many attempts" message on Supabase 429
+- Open redirect prevention: `?next=` parameter sanitized to relative paths only (middleware + callback)
+- PII sanitization: Supabase error messages stripped of email addresses before sending to PostHog
+- Auth guard on settings page: redirects to /login when session expires
+- Welcome message on first chat visit with suggested starter questions
+- 9 new Vitest tests: AuthProvider context, AppHeader, DevBanner, `?next=` sanitization
+- `seed_local.py`: creates test user via Supabase Admin API (not raw SQL into auth.users)
+- `seed_local.py`: environment safety check — refuses to run against non-localhost databases
+- TODO 7: Supabase email template customization (deferred)
+
+### Changed
+- Login page rebuilt: sign-in/sign-up/forgot toggle, Google OAuth + email/password, `?next=` awareness
+- Chat page refactored to use AppHeader + AuthProvider (removed inline auth check)
+- Upload page refactored to use AppHeader + AuthProvider
+- Middleware now protects `/chat`, `/upload`, and `/settings` (was `/chat` only)
+- Middleware passes `?next=` param through login redirect flow
+- Auth callback sanitizes `?next=` param (open redirect prevention)
+- `seed_local.py` requires `SUPABASE_SECRET_KEY` env var (no hardcoded keys)
+- CLAUDE.md: Auth stack updated to include Email/Password
+
+### Removed
+- Dead `SYSTEM_PROMPT` constant from `agent.py` (35 lines, replaced by `build_system_prompt()` in prompts.py)
+
 ## [0.2.9.2] - 2026-03-16
 
 ### Changed

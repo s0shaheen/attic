@@ -1,5 +1,7 @@
 "use client";
 
+import { AuthProvider } from "@/lib/auth-context";
+import { PostHogProvider } from "@/lib/posthog";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState, type ReactNode } from "react";
 
@@ -21,6 +23,10 @@ export function Providers({ children }: ProvidersProps) {
   );
 
   return (
-    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    <PostHogProvider>
+      <QueryClientProvider client={queryClient}>
+        <AuthProvider>{children}</AuthProvider>
+      </QueryClientProvider>
+    </PostHogProvider>
   );
 }

@@ -1,6 +1,17 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
+/** Routes that require authentication. */
+const PROTECTED_PREFIXES = ["/chat", "/upload", "/settings"];
+
+/** Sanitize a redirect target — only allow relative paths. */
+function sanitizeNext(value: string | null): string {
+  if (!value) return "/chat";
+  if (value.includes("://") || value.startsWith("//")) return "/chat";
+  if (!value.startsWith("/")) return "/chat";
+  return value;
+}
+
 export async function updateSession(request: NextRequest) {
   let supabaseResponse = NextResponse.next({
     request,
@@ -39,13 +50,19 @@ export async function updateSession(request: NextRequest) {
     // If Supabase is unreachable, treat as unauthenticated
   }
 
-  // Protect /chat routes: redirect unauthenticated users to /login
-  if (
-    !user &&
-    request.nextUrl.pathname.startsWith("/chat")
-  ) {
+  // Protect authenticated routes: redirect unauthenticated users to /login
+  const pathname = request.nextUrl.pathname;
+  const isProtected = PROTECTED_PREFIXES.some((prefix) =>
+    pathname.startsWith(prefix),
+  );
+
+  if (!user && isProtected) {
     const url = request.nextUrl.clone();
+    const next = sanitizeNext(pathname);
     url.pathname = "/login";
+    if (next !== "/chat") {
+      url.searchParams.set("next", next);
+    }
     return NextResponse.redirect(url);
   }
 

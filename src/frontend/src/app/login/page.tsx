@@ -1,33 +1,146 @@
 "use client";
 
-import { createClient } from "@/lib/supabase/client";
-import { useState } from "react";
+import { useAuth } from "@/lib/auth-context";
+import { trackAuthEvent } from "@/lib/posthog";
+import { useRouter, useSearchParams } from "next/navigation";
+import { Suspense, useEffect, useState } from "react";
 
-export default function LoginPage() {
+const isDev = process.env.NEXT_PUBLIC_ENVIRONMENT === "development";
+
+/** Strip potential PII from Supabase error messages before sending to analytics. */
+function sanitizeErrorForAnalytics(message: string): string {
+  // Replace anything that looks like an email with [REDACTED]
+  return message.replace(/[^\s@]+@[^\s@]+\.[^\s@]+/g, "[REDACTED]");
+}
+
+function LoginForm() {
+  const { user, supabase } = useAuth();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const nextParam = searchParams.get("next");
+  const messageParam = searchParams.get("message");
+
+  const [mode, setMode] = useState<"signin" | "signup" | "forgot">("signin");
+  const [email, setEmail] = useState(isDev ? "test@attic.dev" : "");
+  const [password, setPassword] = useState(isDev ? "testtest123" : "");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [info, setInfo] = useState<string | null>(null);
+
+  // Sanitize redirect target
+  const redirectTo =
+    nextParam && nextParam.startsWith("/") && !nextParam.includes("://")
+      ? nextParam
+      : "/chat";
+
+  // Redirect if already authenticated
+  useEffect(() => {
+    if (user) {
+      router.replace(redirectTo);
+    }
+  }, [user, router, redirectTo]);
+
+  async function handleEmailAuth(e: React.FormEvent) {
+    e.preventDefault();
+    if (loading) return;
+
+    setLoading(true);
+    setError(null);
+    setInfo(null);
+
+    if (mode === "forgot") {
+      const { error: resetError } = await supabase.auth.resetPasswordForEmail(
+        email,
+        { redirectTo: `${window.location.origin}/auth/reset-password` },
+      );
+      setLoading(false);
+      if (resetError) {
+        setError(resetError.message);
+        trackAuthEvent("password_reset_failure", {
+          reason: sanitizeErrorForAnalytics(resetError.message),
+        });
+      } else {
+        setInfo("Check your email for a password reset link.");
+        trackAuthEvent("password_reset_requested");
+      }
+      return;
+    }
+
+    if (mode === "signup") {
+      const { error: signUpError } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(redirectTo)}`,
+        },
+      });
+      setLoading(false);
+      if (signUpError) {
+        if (signUpError.message.toLowerCase().includes("rate limit")) {
+          setError("Too many attempts. Please try again in 60 seconds.");
+        } else {
+          setError(signUpError.message);
+        }
+        trackAuthEvent("signup_failure", { reason: sanitizeErrorForAnalytics(signUpError.message) });
+      } else {
+        trackAuthEvent("signup_success");
+        // In dev, email confirm is disabled so onAuthStateChange will fire
+        // In prod, redirect to verify page
+        if (!isDev) {
+          router.push("/auth/verify");
+        }
+      }
+      return;
+    }
+
+    // Sign in
+    const { error: signInError } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+    setLoading(false);
+    if (signInError) {
+      if (signInError.message.toLowerCase().includes("rate limit")) {
+        setError("Too many attempts. Please try again in 60 seconds.");
+      } else {
+        setError("Invalid email or password.");
+      }
+      trackAuthEvent("login_failure", {
+        reason: sanitizeErrorForAnalytics(signInError.message),
+        method: "email",
+      });
+    } else {
+      trackAuthEvent("login_success", { method: "email" });
+      router.push(redirectTo);
+    }
+  }
 
   async function handleGoogleLogin() {
     setLoading(true);
     setError(null);
 
-    const supabase = createClient();
-    const { error } = await supabase.auth.signInWithOAuth({
+    const { error: oauthError } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
+        redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(redirectTo)}`,
       },
     });
 
-    if (error) {
-      setError(error.message);
+    if (oauthError) {
+      setError(oauthError.message);
       setLoading(false);
+      trackAuthEvent("login_failure", {
+        reason: sanitizeErrorForAnalytics(oauthError.message),
+        method: "google",
+      });
+    } else {
+      trackAuthEvent("login_attempt", { method: "google" });
     }
   }
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-neutral-950">
-      <div className="w-full max-w-sm space-y-8 px-4">
+      <div className="w-full max-w-sm space-y-6 px-4">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-white">Attic</h1>
           <p className="mt-2 text-sm text-neutral-400">
@@ -35,6 +148,17 @@ export default function LoginPage() {
           </p>
         </div>
 
+        {/* Status messages */}
+        {messageParam === "account_deleted" && (
+          <p className="text-center text-sm text-green-400">
+            Your account has been deleted.
+          </p>
+        )}
+        {info && (
+          <p className="text-center text-sm text-blue-400">{info}</p>
+        )}
+
+        {/* Google OAuth */}
         <button
           onClick={handleGoogleLogin}
           disabled={loading}
@@ -58,13 +182,134 @@ export default function LoginPage() {
               fill="#EA4335"
             />
           </svg>
-          {loading ? "Signing in..." : "Continue with Google"}
+          Continue with Google
         </button>
+
+        <div className="flex items-center gap-3">
+          <div className="h-px flex-1 bg-neutral-800" />
+          <span className="text-xs text-neutral-500">or</span>
+          <div className="h-px flex-1 bg-neutral-800" />
+        </div>
+
+        {/* Email/Password form */}
+        <form onSubmit={handleEmailAuth} className="space-y-4">
+          <div>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email"
+              required
+              disabled={loading}
+              className="w-full rounded-lg border border-neutral-700 bg-neutral-900 px-4 py-3 text-sm text-white placeholder-neutral-500 focus:border-blue-500 focus:outline-none disabled:opacity-50"
+            />
+          </div>
+
+          {mode !== "forgot" && (
+            <div>
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Password"
+                required
+                minLength={6}
+                disabled={loading}
+                className="w-full rounded-lg border border-neutral-700 bg-neutral-900 px-4 py-3 text-sm text-white placeholder-neutral-500 focus:border-blue-500 focus:outline-none disabled:opacity-50"
+              />
+            </div>
+          )}
+
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full rounded-lg bg-blue-600 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-500 disabled:opacity-50"
+          >
+            {loading
+              ? "..."
+              : mode === "signin"
+                ? "Sign in"
+                : mode === "signup"
+                  ? "Create account"
+                  : "Send reset link"}
+          </button>
+        </form>
+
+        {/* Mode toggles */}
+        <div className="flex flex-col items-center gap-2 text-sm">
+          {mode === "signin" && (
+            <>
+              <button
+                onClick={() => {
+                  setMode("forgot");
+                  setError(null);
+                }}
+                className="text-neutral-400 hover:text-white"
+              >
+                Forgot password?
+              </button>
+              <button
+                onClick={() => {
+                  setMode("signup");
+                  setError(null);
+                }}
+                className="text-neutral-400 hover:text-white"
+              >
+                Don&apos;t have an account?{" "}
+                <span className="text-blue-400">Sign up</span>
+              </button>
+            </>
+          )}
+          {mode === "signup" && (
+            <button
+              onClick={() => {
+                setMode("signin");
+                setError(null);
+              }}
+              className="text-neutral-400 hover:text-white"
+            >
+              Already have an account?{" "}
+              <span className="text-blue-400">Sign in</span>
+            </button>
+          )}
+          {mode === "forgot" && (
+            <button
+              onClick={() => {
+                setMode("signin");
+                setError(null);
+                setInfo(null);
+              }}
+              className="text-neutral-400 hover:text-white"
+            >
+              Back to sign in
+            </button>
+          )}
+        </div>
+
+        {/* Dev quick login */}
+        {isDev && mode === "signin" && (
+          <div className="rounded-lg border border-amber-800/50 bg-amber-950/30 p-3">
+            <p className="mb-2 text-xs text-amber-300">
+              Dev mode — credentials pre-filled
+            </p>
+            <p className="text-xs text-amber-400/70">
+              test@attic.dev / testtest123
+            </p>
+          </div>
+        )}
 
         {error && (
           <p className="text-center text-sm text-red-400">{error}</p>
         )}
       </div>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense>
+      <LoginForm />
+    </Suspense>
   );
 }

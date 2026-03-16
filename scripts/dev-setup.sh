@@ -148,6 +148,8 @@ NEXT_PUBLIC_SUPABASE_URL=$SUPABASE_URL
 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=$PUBLISHABLE_KEY
 NEXT_PUBLIC_API_URL=http://localhost:8000
 NEXT_PUBLIC_ENVIRONMENT=development
+NEXT_PUBLIC_POSTHOG_KEY=
+NEXT_PUBLIC_POSTHOG_HOST=
 EOF
     info "Created $FRONTEND_ENV"
 else
@@ -194,7 +196,8 @@ echo "  cd src/frontend && npm run dev"
 echo ""
 echo "Then open: http://localhost:3000"
 echo ""
-echo "Test user: test@attic.dev / testtest123"
+echo "Login credentials: test@attic.dev / testtest123"
 echo "  - 10 pre-loaded media_events (7 restaurant, 3 other)"
+echo "  - Sign in with email/password on the login page"
 echo "  - Try asking: 'pull all the restaurants ive liked'"
 echo ""

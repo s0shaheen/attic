@@ -24,7 +24,7 @@ When running low on context or ending a session:
 
 | Layer             | Technologies                                                 |
 | ----------------- | ------------------------------------------------------------ |
-| **Auth**          | Supabase Auth (Google OAuth)                                 |
+| **Auth**          | Supabase Auth (Google OAuth + Email/Password)                |
 | **Database**      | Supabase PostgreSQL + pgvector, SQLAlchemy 2.0, Alembic      |
 | **Backend**       | Python 3.13, FastAPI                                         |
 | **Frontend**      | Next.js 14, TypeScript, Tailwind, shadcn/ui (rebuilding)     |

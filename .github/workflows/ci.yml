@@ -89,6 +89,9 @@ jobs:
       - name: Build application
         if: steps.check-src.outputs.has_source == 'true'
         run: npm run build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: http://localhost:54321
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.placeholder
 
   lambdas:
     name: Lambdas (SAM Validate)
