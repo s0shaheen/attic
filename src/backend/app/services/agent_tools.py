@@ -47,10 +47,95 @@ class AgentToolResult:
 
 
 # ---------------------------------------------------------------------------
+# Tool registry
+# ---------------------------------------------------------------------------
+
+_TOOL_REGISTRY: dict[str, dict[str, Any]] = {}
+
+
+def tool(name: str, description: str, input_schema: dict):
+    """Register a tool function with its Anthropic API schema.
+
+    Usage:
+        @tool("my_tool", description="...", input_schema={...})
+        async def my_tool(...) -> AgentToolResult:
+            ...
+    """
+
+    def decorator(fn):
+        _TOOL_REGISTRY[name] = {
+            "fn": fn,
+            "schema": {
+                "name": name,
+                "description": description,
+                "input_schema": input_schema,
+            },
+        }
+        return fn
+
+    return decorator
+
+
+def get_tool_definitions() -> list[dict]:
+    """Return Anthropic-formatted tool definitions for all registered tools."""
+    return [entry["schema"] for entry in _TOOL_REGISTRY.values()]
+
+
+# ---------------------------------------------------------------------------
 # Tool: query_items
 # ---------------------------------------------------------------------------
 
 
+@tool(
+    "query_items",
+    description=(
+        "Search and filter the user's TikTok media events. "
+        "Supports text search, hashtag filtering, creator filtering, "
+        "and classification-based filters. Returns matching items with metadata."
+    ),
+    input_schema={
+        "type": "object",
+        "properties": {
+            "search_text": {
+                "type": "string",
+                "description": "Full-text search across captions, subtitles, and text content.",
+            },
+            "hashtag": {
+                "type": "string",
+                "description": "Filter by hashtag (e.g., 'cooking').",
+            },
+            "creator": {
+                "type": "string",
+                "description": "Filter by creator username.",
+            },
+            "topic": {
+                "type": "string",
+                "description": "Filter by classification topic (e.g., 'food', 'fitness').",
+            },
+            "affect": {
+                "type": "string",
+                "description": "Filter by affect/mood (e.g., 'funny', 'inspiring').",
+            },
+            "genre": {
+                "type": "string",
+                "description": "Filter by content genre (e.g., 'tutorial', 'recipe').",
+            },
+            "media_type": {
+                "type": "string",
+                "enum": ["video", "image", "slideshow"],
+                "description": "Filter by media type.",
+            },
+            "limit": {
+                "type": "integer",
+                "description": "Max results to return (default 20, max 50).",
+            },
+            "offset": {
+                "type": "integer",
+                "description": "Offset for pagination.",
+            },
+        },
+    },
+)
 async def query_items(
     db: AsyncSession,
     user_id: UUID,
@@ -172,6 +257,24 @@ async def query_items(
 # ---------------------------------------------------------------------------
 
 
+@tool(
+    "classify",
+    description=(
+        "Classify a specific media event into ontology categories "
+        "(affect, topic, genre, communicative intent, etc.). "
+        "Results are cached — subsequent calls return the cache instantly."
+    ),
+    input_schema={
+        "type": "object",
+        "properties": {
+            "media_event_id": {
+                "type": "string",
+                "description": "UUID of the media event to classify.",
+            },
+        },
+        "required": ["media_event_id"],
+    },
+)
 async def classify(
     db: AsyncSession,
     settings: Settings,
@@ -248,6 +351,24 @@ async def classify(
 # ---------------------------------------------------------------------------
 
 
+@tool(
+    "analyze_visual",
+    description=(
+        "Analyze the thumbnail/image of a media event using AI vision. "
+        "Returns a description of visual content, detected objects, "
+        "OCR text, and relevant web sources from Google Search grounding."
+    ),
+    input_schema={
+        "type": "object",
+        "properties": {
+            "media_event_id": {
+                "type": "string",
+                "description": "UUID of the media event to analyze visually.",
+            },
+        },
+        "required": ["media_event_id"],
+    },
+)
 async def analyze_visual(
     db: AsyncSession,
     settings: Settings,
@@ -314,6 +435,46 @@ async def analyze_visual(
 # ---------------------------------------------------------------------------
 
 
+@tool(
+    "resolve_entity",
+    description=(
+        "Resolve a named entity (place, book, movie, TV show, song) "
+        "mentioned in a media event. Returns structured metadata from "
+        "Google Maps, Google Books, TMDB, or Spotify. "
+        "Results are cached on the media event."
+    ),
+    input_schema={
+        "type": "object",
+        "properties": {
+            "media_event_id": {
+                "type": "string",
+                "description": "UUID of the media event the entity was found in.",
+            },
+            "entity_type": {
+                "type": "string",
+                "enum": [
+                    "place",
+                    "restaurant",
+                    "location",
+                    "book",
+                    "movie",
+                    "tv",
+                    "tv_show",
+                    "show",
+                    "music",
+                    "song",
+                    "artist",
+                ],
+                "description": "Type of entity to resolve.",
+            },
+            "entity_query": {
+                "type": "string",
+                "description": "The name/surface form to search for (e.g., 'Atomic Habits').",
+            },
+        },
+        "required": ["media_event_id", "entity_type", "entity_query"],
+    },
+)
 async def resolve_entity(
     db: AsyncSession,
     settings: Settings,
@@ -391,137 +552,3 @@ async def resolve_entity(
             {"event": "resolve_entity_error", "error": str(e), "entity_query": entity_query}
         )
         return AgentToolResult(success=False, error=f"Entity resolution failed: {e}")
-
-
-# ---------------------------------------------------------------------------
-# Tool definitions for Anthropic API
-# ---------------------------------------------------------------------------
-
-TOOL_DEFINITIONS = [
-    {
-        "name": "query_items",
-        "description": (
-            "Search and filter the user's TikTok media events. "
-            "Supports text search, hashtag filtering, creator filtering, "
-            "and classification-based filters. Returns matching items with metadata."
-        ),
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "search_text": {
-                    "type": "string",
-                    "description": "Full-text search across captions, subtitles, and text content.",
-                },
-                "hashtag": {
-                    "type": "string",
-                    "description": "Filter by hashtag (e.g., 'cooking').",
-                },
-                "creator": {
-                    "type": "string",
-                    "description": "Filter by creator username.",
-                },
-                "topic": {
-                    "type": "string",
-                    "description": "Filter by classification topic (e.g., 'food', 'fitness').",
-                },
-                "affect": {
-                    "type": "string",
-                    "description": "Filter by affect/mood (e.g., 'funny', 'inspiring').",
-                },
-                "genre": {
-                    "type": "string",
-                    "description": "Filter by content genre (e.g., 'tutorial', 'recipe').",
-                },
-                "media_type": {
-                    "type": "string",
-                    "enum": ["video", "image", "slideshow"],
-                    "description": "Filter by media type.",
-                },
-                "limit": {
-                    "type": "integer",
-                    "description": "Max results to return (default 20, max 50).",
-                },
-                "offset": {
-                    "type": "integer",
-                    "description": "Offset for pagination.",
-                },
-            },
-        },
-    },
-    {
-        "name": "classify",
-        "description": (
-            "Classify a specific media event into ontology categories "
-            "(affect, topic, genre, communicative intent, etc.). "
-            "Results are cached — subsequent calls return the cache instantly."
-        ),
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "media_event_id": {
-                    "type": "string",
-                    "description": "UUID of the media event to classify.",
-                },
-            },
-            "required": ["media_event_id"],
-        },
-    },
-    {
-        "name": "analyze_visual",
-        "description": (
-            "Analyze the thumbnail/image of a media event using AI vision. "
-            "Returns a description of visual content, detected objects, "
-            "OCR text, and relevant web sources from Google Search grounding."
-        ),
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "media_event_id": {
-                    "type": "string",
-                    "description": "UUID of the media event to analyze visually.",
-                },
-            },
-            "required": ["media_event_id"],
-        },
-    },
-    {
-        "name": "resolve_entity",
-        "description": (
-            "Resolve a named entity (place, book, movie, TV show, song) "
-            "mentioned in a media event. Returns structured metadata from "
-            "Google Maps, Google Books, TMDB, or Spotify. "
-            "Results are cached on the media event."
-        ),
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "media_event_id": {
-                    "type": "string",
-                    "description": "UUID of the media event the entity was found in.",
-                },
-                "entity_type": {
-                    "type": "string",
-                    "enum": [
-                        "place",
-                        "restaurant",
-                        "location",
-                        "book",
-                        "movie",
-                        "tv",
-                        "tv_show",
-                        "show",
-                        "music",
-                        "song",
-                        "artist",
-                    ],
-                    "description": "Type of entity to resolve.",
-                },
-                "entity_query": {
-                    "type": "string",
-                    "description": "The name/surface form to search for (e.g., 'Atomic Habits').",
-                },
-            },
-            "required": ["media_event_id", "entity_type", "entity_query"],
-        },
-    },
-]

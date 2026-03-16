@@ -20,7 +20,7 @@ services:
       - "4566:4566"           # LocalStack Gateway
       - "4510-4559:4510-4559" # External service ports
     environment:
-      - SERVICES=s3,sqs,stepfunctions,lambda,iam,logs
+      - SERVICES=s3,sqs,lambda,iam,logs
       - DEBUG=${DEBUG:-0}
       - PERSISTENCE=1
       - DOCKER_HOST=unix:///var/run/docker.sock

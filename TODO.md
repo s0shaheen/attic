@@ -9,7 +9,9 @@
 - [ ] **Prompt caching verification** — verify Claude prompt caching is working (ontology prefix is cache-hit across users). Check Anthropic dashboard metrics after launch.
 - [ ] **Split agent_tools.py if >500 lines** — currently single file, split by tool type if it grows.
 - [ ] **Extract shared package (attic_core/)** — if Lambda/backend code sharing gets messy, extract models+parser into a shared package. Deferred at MVP.
-- [ ] **LocalStack Docker simplification** — remove Step Functions from docker-compose SERVICES list, update health check expectations.
+- [x] **LocalStack Docker simplification** — remove Step Functions from docker-compose SERVICES list, update health check expectations.
+
+- [ ] **SSE stream drop → save partial assistant response** — chat.py `event_stream()` only saves the assistant message on the `done` event. If the client disconnects mid-stream, the response is lost entirely. Add try/finally or background task to save partial response on disconnect.
 
 ## Deferred Product
 

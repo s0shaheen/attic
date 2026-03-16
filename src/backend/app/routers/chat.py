@@ -26,6 +26,9 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api/chat", tags=["chat"])
 
+# Rolling window size for conversation history sent to Claude
+MAX_CONVERSATION_HISTORY = 30
+
 
 # ---------------------------------------------------------------------------
 # Request / Response schemas
@@ -98,14 +101,15 @@ async def chat(
     db.add(user_msg)
     await db.flush()
 
-    # Load conversation history (for context)
+    # Load conversation history (rolling window of last N messages for context)
     history_stmt = (
         select(Message)
         .where(Message.conversation_id == conversation.id)
-        .order_by(Message.created_at)
+        .order_by(Message.created_at.desc())
+        .limit(MAX_CONVERSATION_HISTORY + 1)  # +1 to account for the just-added user message
     )
     history_result = await db.execute(history_stmt)
-    history_rows = history_result.scalars().all()
+    history_rows = list(reversed(history_result.scalars().all()))
 
     # Build Anthropic message format from history (exclude current message, it's passed separately)
     conversation_history: list[dict] = []

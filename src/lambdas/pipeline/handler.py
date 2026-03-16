@@ -33,18 +33,7 @@ from common.logger import get_logger
 from app.models.media_event import MediaEvent
 from app.models.upload import Upload
 from app.models.upload_pipeline_run import UploadPipelineRun
-
-# Prevent app.services.__init__ from loading (it eagerly imports uploads.py →
-# config.py which requires all backend env vars). We only need tiktok_parser.
-import sys
-import types
-
-_svc_stub = types.ModuleType("app.services")
-_svc_stub.__path__ = []  # Makes it a package so submodule imports work
-_svc_stub.__package__ = "app.services"
-sys.modules.setdefault("app.services", _svc_stub)
-
-from app.services.tiktok_parser import parse_tiktok_export  # noqa: E402
+from app.services.tiktok_parser import parse_tiktok_export
 
 logger = get_logger("pipeline")
 

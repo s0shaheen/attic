@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.3.0] - 2026-03-15
+
+### Removed
+- ~40 dead test stub files (old 10-step Lambda pipeline + Step Functions tests)
+- ~35 stale documentation files (`docs/MVP/` tree, `REPO_STATUS.md`, handoff doc)
+- Dead models: `PromptTemplate`, `ProcessingStep` (tables remain in DB via migrations)
+- Empty directories: `.conductor/`, `infra/staging/`, `requirements/`, `app/repositories/`
+- Tracked build artifacts from git (`src/lambdas/tests/six*`, `.pyc` files, `.entire/`)
+- Duplicate `eslint.config.js` (kept `.mjs`), unused Jest devDependencies
+- `stepfunctions` from docker-compose LocalStack SERVICES
+
+### Added
+- `/ready` endpoint with DB connectivity check (liveness vs readiness separation)
+- Tool registry decorator (`@tool`) — co-locates Anthropic schema with tool functions
+- SSE parsing utility (`lib/sse.ts`) extracted from chat page with 8 unit tests
+- `vitest.config.ts` with path alias support for frontend tests
+- Spotify token cache TTL (expires 100s before actual token expiry)
+- Conversation history rolling window (last 30 messages)
+- `.gitignore` entries for `.aws-sam/`, `.ruff_cache/`, `.entire/`, `tsconfig.tsbuildinfo`
+
+### Changed
+- CORS now reads from `CORS_ORIGINS` env var via Settings (was hardcoded to localhost)
+- httpx clients reused at module level in `gemini.py` and `entity_resolvers.py`
+- Anthropic client reused at module level in `agent.py` (reads key from Settings lazily)
+- `app/services/__init__.py` no longer eagerly imports all services (fixes Lambda import hack)
+- Lambda handler removed `sys.modules` stub workaround for `app.services`
+- Chat page uses extracted `parseSSEChunk()` utility instead of inline parsing
+- `CEO_PLAN_REVIEW` doc marked as superseded with deprecation note
+
+### Fixed
+- `_get_anthropic_client()` no longer accepts stale API key parameter
+
 ## [0.2.2.0] - 2026-03-15
 
 ### Added

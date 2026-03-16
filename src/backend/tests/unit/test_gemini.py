@@ -24,10 +24,10 @@ class TestClassify:
             200,
             json={"candidates": [{"content": {"parts": [{"text": json.dumps(classification)}]}}]},
         )
-        with patch("app.services.gemini.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(return_value=mock_response)
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
 
             result = await classify(
                 api_key="test-key",
@@ -57,10 +57,10 @@ class TestClassify:
     @pytest.mark.asyncio
     async def test_classify_api_error(self):
         mock_response = httpx.Response(500, text="Internal Server Error")
-        with patch("app.services.gemini.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(return_value=mock_response)
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
 
             result = await classify(
                 api_key="test-key",
@@ -76,10 +76,10 @@ class TestClassify:
 
     @pytest.mark.asyncio
     async def test_classify_timeout(self):
-        with patch("app.services.gemini.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(side_effect=httpx.TimeoutException("timeout"))
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(side_effect=httpx.TimeoutException("timeout"))
 
             result = await classify(
                 api_key="test-key",
@@ -99,10 +99,10 @@ class TestClassify:
             200,
             json={"candidates": [{"content": {"parts": [{"text": "not valid json {{{"}]}}]},
         )
-        with patch("app.services.gemini.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(return_value=mock_response)
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
 
             result = await classify(
                 api_key="test-key",
@@ -122,10 +122,10 @@ class TestClassify:
             200,
             json={"candidates": [{"content": {"parts": [{"text": "{}"}]}}]},
         )
-        with patch("app.services.gemini.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(return_value=mock_response)
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
 
             await classify(
                 api_key="test-key",
@@ -137,7 +137,7 @@ class TestClassify:
             )
 
             # Check prompt contains all metadata
-            call_args = mock_client.return_value.post.call_args
+            call_args = mock_client.post.call_args
             body = call_args.kwargs["json"]
             prompt_text = body["contents"][0]["parts"][0]["text"]
             assert "caption" in prompt_text
@@ -175,10 +175,10 @@ class TestAnalyzeVisual:
                 ]
             },
         )
-        with patch("app.services.gemini.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(return_value=mock_response)
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
 
             result = await analyze_visual(
                 api_key="test-key",
@@ -205,10 +205,10 @@ class TestAnalyzeVisual:
                 ]
             },
         )
-        with patch("app.services.gemini.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(return_value=mock_response)
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
 
             result = await analyze_visual(
                 api_key="test-key",
@@ -220,10 +220,10 @@ class TestAnalyzeVisual:
 
     @pytest.mark.asyncio
     async def test_analyze_visual_timeout(self):
-        with patch("app.services.gemini.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(side_effect=httpx.TimeoutException("timeout"))
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(side_effect=httpx.TimeoutException("timeout"))
 
             result = await analyze_visual(
                 api_key="test-key",

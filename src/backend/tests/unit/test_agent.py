@@ -199,10 +199,10 @@ class TestRunAgent:
         """Agent returns text without tool calls."""
         mock_response = _make_mock_response([_text_block("Hello!")])
 
-        with patch("app.services.agent.anthropic.AsyncAnthropic") as mock_anthropic:
+        with patch("app.services.agent._get_anthropic_client") as mock_get_client:
             mock_client = AsyncMock()
             mock_client.messages.create = AsyncMock(return_value=mock_response)
-            mock_anthropic.return_value = mock_client
+            mock_get_client.return_value = mock_client
 
             events = []
             async for event in run_agent(
@@ -231,12 +231,12 @@ class TestRunAgent:
         text_response = _make_mock_response([_text_block("Found 5 items about food.")])
 
         with (
-            patch("app.services.agent.anthropic.AsyncAnthropic") as mock_anthropic,
+            patch("app.services.agent._get_anthropic_client") as mock_get_client,
             patch("app.services.agent._dispatch_tool", new_callable=AsyncMock) as mock_dispatch,
         ):
             mock_client = AsyncMock()
             mock_client.messages.create = AsyncMock(side_effect=[tool_response, text_response])
-            mock_anthropic.return_value = mock_client
+            mock_get_client.return_value = mock_client
             mock_dispatch.return_value = AgentToolResult(
                 success=True, data={"items": [], "total": 5}
             )
@@ -300,12 +300,12 @@ class TestRunAgent:
             return tool_response
 
         with (
-            patch("app.services.agent.anthropic.AsyncAnthropic") as mock_anthropic,
+            patch("app.services.agent._get_anthropic_client") as mock_get_client,
             patch("app.services.agent._dispatch_tool", new_callable=AsyncMock) as mock_dispatch,
         ):
             mock_client = AsyncMock()
             mock_client.messages.create = AsyncMock(side_effect=mock_create)
-            mock_anthropic.return_value = mock_client
+            mock_get_client.return_value = mock_client
             mock_dispatch.return_value = AgentToolResult(success=True, data={})
 
             events = []
@@ -326,7 +326,7 @@ class TestRunAgent:
         """Agent handles Anthropic API errors gracefully."""
         import anthropic
 
-        with patch("app.services.agent.anthropic.AsyncAnthropic") as mock_anthropic:
+        with patch("app.services.agent._get_anthropic_client") as mock_get_client:
             mock_client = AsyncMock()
             mock_client.messages.create = AsyncMock(
                 side_effect=anthropic.APIError(
@@ -335,7 +335,7 @@ class TestRunAgent:
                     body=None,
                 )
             )
-            mock_anthropic.return_value = mock_client
+            mock_get_client.return_value = mock_client
 
             events = []
             async for event in run_agent(
@@ -364,12 +364,12 @@ class TestRunAgent:
         final_response = _make_mock_response([_text_block("Found results.")])
 
         with (
-            patch("app.services.agent.anthropic.AsyncAnthropic") as mock_anthropic,
+            patch("app.services.agent._get_anthropic_client") as mock_get_client,
             patch("app.services.agent._dispatch_tool", new_callable=AsyncMock) as mock_dispatch,
         ):
             mock_client = AsyncMock()
             mock_client.messages.create = AsyncMock(side_effect=[tool_response, final_response])
-            mock_anthropic.return_value = mock_client
+            mock_get_client.return_value = mock_client
             mock_dispatch.return_value = AgentToolResult(
                 success=True, data={"items": [], "total": 0}
             )
@@ -396,10 +396,10 @@ class TestRunAgent:
         ]
         mock_response = _make_mock_response([_text_block("Reply.")])
 
-        with patch("app.services.agent.anthropic.AsyncAnthropic") as mock_anthropic:
+        with patch("app.services.agent._get_anthropic_client") as mock_get_client:
             mock_client = AsyncMock()
             mock_client.messages.create = AsyncMock(return_value=mock_response)
-            mock_anthropic.return_value = mock_client
+            mock_get_client.return_value = mock_client
 
             events = []
             async for event in run_agent(

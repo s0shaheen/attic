@@ -1,5 +1,6 @@
 "use client";
 
+import { parseSSEChunk } from "@/lib/sse";
 import { createClient } from "@/lib/supabase/client";
 import { useEffect, useRef, useState } from "react";
 
@@ -114,28 +115,12 @@ export default function ChatPage() {
         const { done, value } = await reader.read();
         if (done) break;
 
-        buffer += decoder.decode(value, { stream: true });
-
-        // SSE events are separated by double newlines
-        const events = buffer.split("\n\n");
-        // Keep the last chunk (may be incomplete)
-        buffer = events.pop() ?? "";
+        const chunk = decoder.decode(value, { stream: true });
+        const { events, remaining } = parseSSEChunk(chunk, buffer);
+        buffer = remaining;
 
         for (const event of events) {
-          if (!event.trim()) continue;
-          let eventType = "";
-          let eventData = "";
-          for (const line of event.split("\n")) {
-            if (line.startsWith("event: ")) eventType = line.slice(7).trim();
-            else if (line.startsWith("data: ")) eventData = line.slice(6);
-          }
-          if (eventType && eventData) {
-            try {
-              handleSSEEvent(eventType, JSON.parse(eventData), assistantId);
-            } catch {
-              // Skip malformed SSE data
-            }
-          }
+          handleSSEEvent(event.type, event.data, assistantId);
         }
       }
     } catch (err) {

@@ -13,8 +13,6 @@ from app.db.base import Base
 from app.models import (
     CostModel,
     MediaEvent,
-    ProcessingStep,
-    PromptTemplate,
     Upload,
     UploadPipelineRun,
     User,
@@ -201,70 +199,6 @@ class TestMediaEventModel:
         assert expected.issubset(index_names), f"Missing indexes: {expected - index_names}"
 
 
-class TestProcessingStepModel:
-    """Tests for the ProcessingStep model."""
-
-    def test_processing_step_has_required_fields(self) -> None:
-        """ProcessingStep model has all required fields from PRD."""
-        mapper = inspect(ProcessingStep)
-        columns = {c.key for c in mapper.columns}
-
-        required = {
-            "id",
-            "media_event_id",
-            "step_type",
-            "provider",
-            "status",
-            "attempt",
-            "started_at",
-            "finished_at",
-            "input_summary",
-            "output_summary",
-            "error_message",
-            "cost_usd",
-            "prompt_version",
-            "created_at",
-        }
-        assert required.issubset(columns), f"Missing columns: {required - columns}"
-
-    def test_processing_step_has_indexes(self) -> None:
-        """ProcessingStep has required indexes."""
-        table = ProcessingStep.__table__
-        index_names = {idx.name for idx in table.indexes}
-
-        expected = {
-            "idx_processing_steps_media",
-            "idx_processing_steps_pending",
-            "idx_processing_steps_step",
-        }
-        assert expected.issubset(index_names), f"Missing indexes: {expected - index_names}"
-
-
-class TestPromptTemplateModel:
-    """Tests for the PromptTemplate model."""
-
-    def test_prompt_template_has_required_fields(self) -> None:
-        """PromptTemplate model has all required fields from PRD."""
-        mapper = inspect(PromptTemplate)
-        columns = {c.key for c in mapper.columns}
-
-        required = {
-            "id",
-            "name",
-            "version",
-            "model",
-            "temperature",
-            "max_tokens",
-            "system_prompt",
-            "user_prompt_template",
-            "response_schema",
-            "is_active",
-            "created_at",
-            "notes",
-        }
-        assert required.issubset(columns), f"Missing columns: {required - columns}"
-
-
 class TestCostModel:
     """Tests for the CostModel model."""
 
@@ -297,7 +231,7 @@ class TestAllModelsHaveTimestamps:
 
     @pytest.mark.parametrize(
         "model",
-        [User, Upload, UploadPipelineRun, MediaEvent, ProcessingStep, PromptTemplate],
+        [User, Upload, UploadPipelineRun, MediaEvent],
     )
     def test_model_has_created_at(self, model: type) -> None:
         """All models have created_at timestamp."""
@@ -324,8 +258,6 @@ class TestBaseMetadata:
             "uploads",
             "upload_pipeline_runs",
             "media_events",
-            "processing_steps",
-            "prompt_templates",
             "cost_models",
         }
         assert expected.issubset(table_names), f"Missing tables: {expected - table_names}"

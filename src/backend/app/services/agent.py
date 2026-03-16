@@ -23,10 +23,10 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.config import Settings
 from app.services.agent_tools import (
-    TOOL_DEFINITIONS,
     AgentToolResult,
     analyze_visual,
     classify,
+    get_tool_definitions,
     query_items,
     resolve_entity,
 )
@@ -35,6 +35,24 @@ logger = logging.getLogger(__name__)
 
 # Agent config
 MODEL = "claude-haiku-4-5-20251001"
+
+# Module-level Anthropic client for connection reuse
+_anthropic_client: anthropic.AsyncAnthropic | None = None
+
+
+def _get_anthropic_client() -> anthropic.AsyncAnthropic:
+    """Get or create the shared Anthropic client.
+
+    Reads API key from settings on first init. Cached for process lifetime.
+    """
+    global _anthropic_client
+    if _anthropic_client is None:
+        from app.config import get_settings
+
+        _anthropic_client = anthropic.AsyncAnthropic(api_key=get_settings().anthropic_api_key)
+    return _anthropic_client
+
+
 MAX_TOKENS = 4096
 MAX_TOOL_CALLS_PER_QUERY = 50
 MAX_TOOL_CALLS_PER_HOUR = 200
@@ -200,7 +218,7 @@ async def run_agent(
     messages = list(conversation_history)
     messages.append({"role": "user", "content": user_message})
 
-    client = anthropic.AsyncAnthropic(api_key=settings.anthropic_api_key)
+    client = _get_anthropic_client()
     tool_calls_this_query = 0
     total_tokens = 0
 
@@ -211,7 +229,7 @@ async def run_agent(
                 model=MODEL,
                 max_tokens=MAX_TOKENS,
                 system=SYSTEM_PROMPT,
-                tools=TOOL_DEFINITIONS,
+                tools=get_tool_definitions(),
                 messages=messages,
             )
 

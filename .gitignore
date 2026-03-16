@@ -33,3 +33,15 @@ build/
 # Real test files
 tests/fixtures/tiktok-exports/real/
 .gstack/
+
+# AWS SAM build artifacts
+.aws-sam/
+
+# Linter caches
+.ruff_cache/
+
+# Dev tools
+.entire/
+
+# TypeScript build cache
+tsconfig.tsbuildinfo

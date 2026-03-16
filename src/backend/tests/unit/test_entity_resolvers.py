@@ -36,10 +36,10 @@ class TestResolvePlace:
                 ]
             },
         )
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(return_value=mock_response)
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
 
             result = await resolve_place("test-key", "Shake Shack NYC")
 
@@ -51,10 +51,10 @@ class TestResolvePlace:
     @pytest.mark.asyncio
     async def test_resolve_place_no_results(self):
         mock_response = httpx.Response(200, json={"places": []})
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(return_value=mock_response)
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
 
             result = await resolve_place("test-key", "nonexistent place")
 
@@ -64,10 +64,10 @@ class TestResolvePlace:
     @pytest.mark.asyncio
     async def test_resolve_place_api_error(self):
         mock_response = httpx.Response(500, json={})
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(return_value=mock_response)
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
 
             result = await resolve_place("test-key", "Shake Shack")
 
@@ -76,10 +76,10 @@ class TestResolvePlace:
 
     @pytest.mark.asyncio
     async def test_resolve_place_timeout(self):
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(side_effect=httpx.TimeoutException("timeout"))
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(side_effect=httpx.TimeoutException("timeout"))
 
             result = await resolve_place("test-key", "Shake Shack")
 
@@ -111,10 +111,10 @@ class TestResolveBook:
                 ]
             },
         )
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.get = AsyncMock(return_value=mock_response)
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(return_value=mock_response)
 
             result = await resolve_book(None, "Atomic Habits")
 
@@ -125,10 +125,10 @@ class TestResolveBook:
     @pytest.mark.asyncio
     async def test_resolve_book_no_results(self):
         mock_response = httpx.Response(200, json={"items": []})
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.get = AsyncMock(return_value=mock_response)
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(return_value=mock_response)
 
             result = await resolve_book(None, "nonexistent book")
 
@@ -137,10 +137,10 @@ class TestResolveBook:
     @pytest.mark.asyncio
     async def test_resolve_book_with_api_key(self):
         mock_response = httpx.Response(200, json={"items": [{"volumeInfo": {"title": "Test"}}]})
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.get = AsyncMock(return_value=mock_response)
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(return_value=mock_response)
 
             result = await resolve_book("test-key", "Test Book")
 
@@ -171,10 +171,10 @@ class TestResolveMovieOrTv:
                 ]
             },
         )
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.get = AsyncMock(return_value=mock_response)
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(return_value=mock_response)
 
             result = await resolve_movie_or_tv("test-key", "Inception")
 
@@ -199,10 +199,10 @@ class TestResolveMovieOrTv:
                 ]
             },
         )
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.get = AsyncMock(return_value=mock_response)
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(return_value=mock_response)
 
             result = await resolve_movie_or_tv("test-key", "Breaking Bad")
 
@@ -219,10 +219,10 @@ class TestResolveMovieOrTv:
                 ]
             },
         )
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.get = AsyncMock(return_value=mock_response)
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(return_value=mock_response)
 
             result = await resolve_movie_or_tv("test-key", "Christopher Nolan")
 

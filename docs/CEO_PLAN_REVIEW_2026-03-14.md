@@ -1,3 +1,5 @@
+> **Note (2026-03-15):** This document is superseded by `CURRENT_PLAN.md` and `CLAUDE.md` for current architecture. Some decisions below (MCPs, YAML ontology, Gemini 2.5 Flash) were revised during implementation. Retained as a historical architecture decision record.
+
 # Attic — CEO Plan Review & Architecture Decision Record
 
 **Date:** 2026-03-14

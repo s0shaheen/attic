@@ -42,10 +42,10 @@ class TestEntityRateLimitAndTimeout:
     async def test_google_maps_429_returns_error(self):
         """Google Maps 429 should not raise, just return error."""
         mock_response = httpx.Response(429, json={"error": "rate limited"})
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(return_value=mock_response)
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
 
             result = await resolve_place("key", "test")
 
@@ -56,10 +56,10 @@ class TestEntityRateLimitAndTimeout:
     async def test_tmdb_429_returns_error(self):
         """TMDB 429 should not raise, just return error."""
         mock_response = httpx.Response(429, json={})
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.get = AsyncMock(return_value=mock_response)
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(return_value=mock_response)
 
             result = await resolve_movie_or_tv("key", "test")
 
@@ -70,10 +70,10 @@ class TestEntityRateLimitAndTimeout:
     async def test_books_429_returns_error(self):
         """Google Books 429 should not raise, just return error."""
         mock_response = httpx.Response(429, json={})
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.get = AsyncMock(return_value=mock_response)
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.get = AsyncMock(return_value=mock_response)
 
             result = await resolve_book(None, "test")
 
@@ -86,12 +86,10 @@ class TestEntityRateLimitAndTimeout:
         token_path = "app.services.entity_resolvers._get_spotify_token"
         with patch(token_path, new_callable=AsyncMock) as mock_token:
             mock_token.return_value = "test-token"
-            client_path = "app.services.entity_resolvers.httpx.AsyncClient"
-            with patch(client_path) as mock_client:
-                ctx = mock_client.return_value
-                ctx.__aenter__ = AsyncMock(return_value=ctx)
-                ctx.__aexit__ = AsyncMock(return_value=False)
-                ctx.get = AsyncMock(side_effect=httpx.TimeoutException("timeout"))
+            with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+                mock_client = AsyncMock()
+                mock_get_client.return_value = mock_client
+                mock_client.get = AsyncMock(side_effect=httpx.TimeoutException("timeout"))
 
                 result = await resolve_music("id", "secret", "test query")
 
@@ -101,12 +99,10 @@ class TestEntityRateLimitAndTimeout:
     @pytest.mark.asyncio
     async def test_connection_error_returns_error(self):
         """Connection errors should be handled gracefully."""
-        with patch("app.services.entity_resolvers.httpx.AsyncClient") as mock_client:
-            mock_client.return_value.__aenter__ = AsyncMock(return_value=mock_client.return_value)
-            mock_client.return_value.__aexit__ = AsyncMock(return_value=False)
-            mock_client.return_value.post = AsyncMock(
-                side_effect=httpx.ConnectError("connection refused")
-            )
+        with patch("app.services.entity_resolvers._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(side_effect=httpx.ConnectError("connection refused"))
 
             result = await resolve_place("key", "test")
 
@@ -327,13 +323,13 @@ class TestAgentCostControls:
                 return final_resp
             return tool_resp
 
+        mock_client = AsyncMock()
+        mock_client.messages.create = AsyncMock(side_effect=mock_create)
+
         with (
-            patch("app.services.agent.anthropic.AsyncAnthropic") as mock_anthropic,
+            patch("app.services.agent._get_anthropic_client", return_value=mock_client),
             patch("app.services.agent._dispatch_tool", new_callable=AsyncMock) as mock_dispatch,
         ):
-            mock_client = AsyncMock()
-            mock_client.messages.create = AsyncMock(side_effect=mock_create)
-            mock_anthropic.return_value = mock_client
             mock_dispatch.return_value = AgentToolResult(success=True, data={})
 
             events = []
@@ -396,13 +392,13 @@ class TestAgentGracefulDegradation:
         text_resp.content = [_text_block("Sorry, classification failed for that item.")]
         text_resp.usage = MagicMock(input_tokens=10, output_tokens=10)
 
+        mock_client = AsyncMock()
+        mock_client.messages.create = AsyncMock(side_effect=[tool_resp, text_resp])
+
         with (
-            patch("app.services.agent.anthropic.AsyncAnthropic") as mock_anthropic,
+            patch("app.services.agent._get_anthropic_client", return_value=mock_client),
             patch("app.services.agent._dispatch_tool", new_callable=AsyncMock) as mock_dispatch,
         ):
-            mock_client = AsyncMock()
-            mock_client.messages.create = AsyncMock(side_effect=[tool_resp, text_resp])
-            mock_anthropic.return_value = mock_client
             # Tool fails
             mock_dispatch.return_value = AgentToolResult(
                 success=False, error="Gemini classification timed out"
@@ -426,11 +422,10 @@ class TestAgentGracefulDegradation:
 
     async def test_unexpected_exception_in_agent_yields_error(self):
         """Unexpected exceptions should yield error + done, not crash."""
-        with patch("app.services.agent.anthropic.AsyncAnthropic") as mock_anthropic:
-            mock_client = AsyncMock()
-            mock_client.messages.create = AsyncMock(side_effect=RuntimeError("unexpected crash"))
-            mock_anthropic.return_value = mock_client
+        mock_client = AsyncMock()
+        mock_client.messages.create = AsyncMock(side_effect=RuntimeError("unexpected crash"))
 
+        with patch("app.services.agent._get_anthropic_client", return_value=mock_client):
             events = []
             async for event in run_agent(
                 user_message="hi",

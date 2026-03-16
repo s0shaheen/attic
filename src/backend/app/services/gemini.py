@@ -19,12 +19,23 @@ logger = logging.getLogger(__name__)
 
 # Gemini API endpoint
 GEMINI_API_BASE = "https://generativelanguage.googleapis.com/v1beta"
-GEMINI_MODEL = "gemini-2.0-flash"
+GEMINI_MODEL = "gemini-2.0-flash"  # Google's latest Flash model
 
 # Request defaults
 CLASSIFY_MAX_TOKENS = 1024
 VISUAL_MAX_TOKENS = 2048
 REQUEST_TIMEOUT = 30.0
+
+# Module-level client for connection reuse across calls
+_client: httpx.AsyncClient | None = None
+
+
+def _get_client() -> httpx.AsyncClient:
+    """Get or create the shared httpx client."""
+    global _client
+    if _client is None:
+        _client = httpx.AsyncClient(timeout=REQUEST_TIMEOUT)
+    return _client
 
 
 @dataclass
@@ -110,39 +121,39 @@ async def classify(
     )
 
     try:
-        async with httpx.AsyncClient(timeout=REQUEST_TIMEOUT) as client:
-            resp = await client.post(
-                f"{GEMINI_API_BASE}/models/{GEMINI_MODEL}:generateContent",
-                params={"key": api_key},
-                json={
-                    "contents": [{"parts": [{"text": prompt}]}],
-                    "generationConfig": {
-                        "maxOutputTokens": CLASSIFY_MAX_TOKENS,
-                        "temperature": 0.2,
-                        "responseMimeType": "application/json",
-                    },
+        client = _get_client()
+        resp = await client.post(
+            f"{GEMINI_API_BASE}/models/{GEMINI_MODEL}:generateContent",
+            params={"key": api_key},
+            json={
+                "contents": [{"parts": [{"text": prompt}]}],
+                "generationConfig": {
+                    "maxOutputTokens": CLASSIFY_MAX_TOKENS,
+                    "temperature": 0.2,
+                    "responseMimeType": "application/json",
                 },
+            },
+        )
+
+        if resp.status_code != 200:
+            logger.warning(
+                {
+                    "event": "gemini_classify_error",
+                    "status": resp.status_code,
+                    "body": resp.text[:200],
+                }
+            )
+            return ClassifyResult(
+                success=False,
+                error=f"Gemini API error: {resp.status_code}",
             )
 
-            if resp.status_code != 200:
-                logger.warning(
-                    {
-                        "event": "gemini_classify_error",
-                        "status": resp.status_code,
-                        "body": resp.text[:200],
-                    }
-                )
-                return ClassifyResult(
-                    success=False,
-                    error=f"Gemini API error: {resp.status_code}",
-                )
+        data = resp.json()
+        text = data["candidates"][0]["content"]["parts"][0]["text"]
 
-            data = resp.json()
-            text = data["candidates"][0]["content"]["parts"][0]["text"]
-
-            # Parse the JSON response
-            classification = json.loads(text)
-            return ClassifyResult(success=True, raw_classification=classification)
+        # Parse the JSON response
+        classification = json.loads(text)
+        return ClassifyResult(success=True, raw_classification=classification)
 
     except httpx.TimeoutException:
         logger.warning({"event": "gemini_classify_timeout"})
@@ -186,66 +197,66 @@ async def analyze_visual(
     prompt = "\n".join(prompt_parts)
 
     try:
-        async with httpx.AsyncClient(timeout=REQUEST_TIMEOUT) as client:
-            resp = await client.post(
-                f"{GEMINI_API_BASE}/models/{GEMINI_MODEL}:generateContent",
-                params={"key": api_key},
-                json={
-                    "contents": [
-                        {
-                            "parts": [
-                                {"text": prompt},
-                                {
-                                    "fileData": {
-                                        "mimeType": "image/jpeg",
-                                        "fileUri": image_url,
-                                    }
-                                },
-                            ]
-                        }
-                    ],
-                    "generationConfig": {
-                        "maxOutputTokens": VISUAL_MAX_TOKENS,
-                        "temperature": 0.2,
-                        "responseMimeType": "application/json",
-                    },
-                    "tools": [{"googleSearch": {}}],
-                },
-            )
-
-            if resp.status_code != 200:
-                logger.warning(
+        client = _get_client()
+        resp = await client.post(
+            f"{GEMINI_API_BASE}/models/{GEMINI_MODEL}:generateContent",
+            params={"key": api_key},
+            json={
+                "contents": [
                     {
-                        "event": "gemini_visual_error",
-                        "status": resp.status_code,
-                        "body": resp.text[:200],
+                        "parts": [
+                            {"text": prompt},
+                            {
+                                "fileData": {
+                                    "mimeType": "image/jpeg",
+                                    "fileUri": image_url,
+                                }
+                            },
+                        ]
                     }
-                )
-                return VisualAnalysisResult(
-                    success=False,
-                    error=f"Gemini API error: {resp.status_code}",
-                )
+                ],
+                "generationConfig": {
+                    "maxOutputTokens": VISUAL_MAX_TOKENS,
+                    "temperature": 0.2,
+                    "responseMimeType": "application/json",
+                },
+                "tools": [{"googleSearch": {}}],
+            },
+        )
 
-            data = resp.json()
-            candidate = data["candidates"][0]
-            text = candidate["content"]["parts"][0]["text"]
-            parsed = json.loads(text)
-
-            # Extract grounding metadata if present
-            grounding = []
-            grounding_meta = candidate.get("groundingMetadata", {})
-            for chunk in grounding_meta.get("groundingChunks", []):
-                web = chunk.get("web", {})
-                if web.get("uri"):
-                    grounding.append({"uri": web["uri"], "title": web.get("title", "")})
-
-            return VisualAnalysisResult(
-                success=True,
-                description=parsed.get("description"),
-                objects=parsed.get("objects", []),
-                text_detected=parsed.get("text_detected"),
-                grounding_sources=grounding,
+        if resp.status_code != 200:
+            logger.warning(
+                {
+                    "event": "gemini_visual_error",
+                    "status": resp.status_code,
+                    "body": resp.text[:200],
+                }
             )
+            return VisualAnalysisResult(
+                success=False,
+                error=f"Gemini API error: {resp.status_code}",
+            )
+
+        data = resp.json()
+        candidate = data["candidates"][0]
+        text = candidate["content"]["parts"][0]["text"]
+        parsed = json.loads(text)
+
+        # Extract grounding metadata if present
+        grounding = []
+        grounding_meta = candidate.get("groundingMetadata", {})
+        for chunk in grounding_meta.get("groundingChunks", []):
+            web = chunk.get("web", {})
+            if web.get("uri"):
+                grounding.append({"uri": web["uri"], "title": web.get("title", "")})
+
+        return VisualAnalysisResult(
+            success=True,
+            description=parsed.get("description"),
+            objects=parsed.get("objects", []),
+            text_detected=parsed.get("text_detected"),
+            grounding_sources=grounding,
+        )
 
     except httpx.TimeoutException:
         logger.warning({"event": "gemini_visual_timeout"})
