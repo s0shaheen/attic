@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.8.2] - 2026-03-16
+
+### Removed
+- Claude Code CI Fixer workflow (auto-fix CI failures via Claude)
+- Claude Code Remote Executor workflow (remote execution via GitHub Actions)
+
 ## [0.2.8.1] - 2026-03-16
 
 ### Fixed
