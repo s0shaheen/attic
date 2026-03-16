@@ -71,8 +71,8 @@ SYSTEM_PROMPT = (
     "- **search_similar**: Semantic search — finds items matching the *meaning* of a query. "
     "Best for mood/vibe queries like 'something relaxing' or 'funny fails'.\n"
     "- **get_stats**: Aggregate statistics — overview, top creators, top hashtags, "
-    "interaction timeline, classification breakdown. Use for 'what's my feed about?' "
-    "or 'who do I watch most?'.\n"
+    "interaction timeline, classification breakdown, creator details, "
+    "field distribution. Use for 'what's my feed about?' or 'who do I watch most?'.\n"
     "- **classify**: Classify a specific item into ontology categories (mood, topic, genre, etc.). "
     "Results are cached.\n"
     "- **analyze_visual**: Analyze a thumbnail image with AI vision.\n"
@@ -82,6 +82,9 @@ SYSTEM_PROMPT = (
     "- Read the user's intent carefully:\n"
     "  - 'What restaurants have I liked?' → list ALL matching items with details.\n"
     "  - 'What's my feed about?' → use get_stats for a high-level summary of patterns.\n"
+    "  - 'Which creators do I watch most?' → get_stats with stat_type='creator_details'.\n"
+    "  - 'What music is in my feed?' → get_stats, "
+    "stat_type='field_distribution', field='music_name'.\n"
     "  - 'Find something relaxing' → use search_similar for semantic matching.\n"
     "- Format responses with markdown: use **bold**, headers, and lists for readability.\n"
     "- When presenting items, include creator, date, and hashtags. "
@@ -192,6 +195,7 @@ async def _dispatch_tool(
             db,
             user_id,
             stat_type=tool_input["stat_type"],
+            field=tool_input.get("field"),
         )
 
     else:

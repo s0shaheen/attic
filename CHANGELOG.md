@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.9.0] - 2026-03-16
+
+### Added
+- `creator_details` stat type for `get_stats` tool — top 20 creators with item counts, date ranges, and top cached topics (2-query bulk fetch)
+- `field_distribution` stat type for `get_stats` tool — GROUP BY + COUNT for allowlisted fields (music_name, creator_username, media_type, interaction_type)
+- `field` parameter on `get_stats` tool schema (enum-constrained, required for field_distribution)
+- Allowlist validation (`_AGGREGATE_FIELDS` frozenset) for field_distribution to prevent SQL injection
+- Intent-mapping hints in system prompt for new stat types
+- 16 new tests: creator_details (6), field_distribution (7), schema validation (3)
+- TODO 7: composite index (user_id, creator_username) for aggregation query performance
+
 ## [0.2.8.2] - 2026-03-16
 
 ### Removed

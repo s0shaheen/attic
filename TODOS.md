@@ -37,3 +37,9 @@ Deferred work items captured during engineering review (2026-03-15).
 - **Why:** Unlike `classify` (cached to `cached_classifications`), vision results are never cached — every call hits Gemini. With focus modes, the same image may be analyzed multiple times with different focuses, making caching more valuable but also more complex (cache key must include focus).
 - **Depends on:** Wave 5.5 cost instrumentation to confirm vision calls are a meaningful cost driver. Don't optimize without data.
 - **Where to start:** Add `cached_visual_analyses: dict | None` column to `media_events` table (JSON dict keyed by focus mode). Check cache before calling `gemini_analyze` in `agent_tools.py:analyze_visual`. Upsert result on success.
+
+## TODO 7: Composite index (user_id, creator_username)
+- **What:** Add composite index via Alembic migration: `CREATE INDEX idx_media_events_user_creator ON media_events(user_id, creator_username)`.
+- **Why:** `creator_details` and `field_distribution` both filter by `user_id` then GROUP BY `creator_username`. Composite index enables index-only scans instead of filtering + sequential scan. Unnecessary below ~100K items/user.
+- **Depends on:** Wave 5.5 (cost instrumentation) shipping first to provide query latency data.
+- **Where to start:** `alembic revision --autogenerate -m "add composite index user_id creator_username"`

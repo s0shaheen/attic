@@ -10,6 +10,8 @@ Tools:
 - resolve_entity: Resolve an entity (place, book, movie, music) via external APIs.
 - search_similar: Semantic search via pgvector cosine similarity.
 - get_stats: Aggregate statistics on user's media events.
+  Stat types: overview, top_creators, top_hashtags, interaction_timeline,
+  classification_breakdown, creator_details, field_distribution.
 """
 
 import logging
@@ -767,8 +769,18 @@ async def search_similar(
 # ---------------------------------------------------------------------------
 
 _VALID_STAT_TYPES = frozenset(
-    {"overview", "top_creators", "top_hashtags", "interaction_timeline", "classification_breakdown"}
+    {
+        "overview",
+        "top_creators",
+        "top_hashtags",
+        "interaction_timeline",
+        "classification_breakdown",
+        "creator_details",
+        "field_distribution",
+    }
 )
+
+_AGGREGATE_FIELDS = frozenset({"music_name", "creator_username", "media_type", "interaction_type"})
 
 
 @tool(
@@ -790,7 +802,17 @@ _VALID_STAT_TYPES = frozenset(
                     "'top_creators' (top 20 creators by count), "
                     "'top_hashtags' (top 30 hashtags by frequency), "
                     "'interaction_timeline' (items per month over time), "
-                    "'classification_breakdown' (distribution of cached classifications)."
+                    "'classification_breakdown' (distribution of cached classifications), "
+                    "'creator_details' (top 20 creators with date ranges and top topics), "
+                    "'field_distribution' (value counts for a specific field — "
+                    "requires 'field' param)."
+                ),
+            },
+            "field": {
+                "type": "string",
+                "enum": list(_AGGREGATE_FIELDS),
+                "description": (
+                    "Required when stat_type is 'field_distribution'. The field to group by."
                 ),
             },
         },
@@ -802,6 +824,7 @@ async def get_stats(
     user_id: UUID,
     *,
     stat_type: str,
+    field: str | None = None,
 ) -> AgentToolResult:
     """Compute aggregate statistics on user's media events.
 
@@ -809,6 +832,7 @@ async def get_stats(
         db: Async database session.
         user_id: The user's ID (for isolation).
         stat_type: Which statistic to compute.
+        field: Required when stat_type is 'field_distribution'. The field to group by.
 
     Returns:
         AgentToolResult with the requested statistics.
@@ -821,6 +845,21 @@ async def get_stats(
                 f"Valid types: {', '.join(sorted(_VALID_STAT_TYPES))}",
             )
 
+        if stat_type == "field_distribution":
+            if not field:
+                return AgentToolResult(
+                    success=False,
+                    error="'field' is required when stat_type is 'field_distribution'. "
+                    f"Valid fields: {', '.join(sorted(_AGGREGATE_FIELDS))}",
+                )
+            if field not in _AGGREGATE_FIELDS:
+                return AgentToolResult(
+                    success=False,
+                    error=f"Invalid field '{field}'. "
+                    f"Valid fields: {', '.join(sorted(_AGGREGATE_FIELDS))}",
+                )
+            return await _stats_field_distribution(db, user_id, field)
+
         if stat_type == "overview":
             return await _stats_overview(db, user_id)
         elif stat_type == "top_creators":
@@ -831,6 +870,8 @@ async def get_stats(
             return await _stats_interaction_timeline(db, user_id)
         elif stat_type == "classification_breakdown":
             return await _stats_classification_breakdown(db, user_id)
+        elif stat_type == "creator_details":
+            return await _stats_creator_details(db, user_id)
 
         # Unreachable, but satisfies exhaustiveness
         return AgentToolResult(success=False, error="Unknown stat type")
@@ -1011,3 +1052,116 @@ async def _stats_classification_breakdown(db: AsyncSession, user_id: UUID) -> Ag
             "distributions": distributions,
         },
     )
+
+
+async def _stats_creator_details(db: AsyncSession, user_id: UUID) -> AgentToolResult:
+    """Top 20 creators with item counts, date ranges, and top cached topics.
+
+    Two sequential queries:
+    1. Top creators by count + date range (GROUP BY creator_username)
+    2. Bulk topic fetch for those creators from cached_classifications JSONB
+    """
+    # Query 1: Top 20 creators with counts and date range
+    creators_stmt = text(
+        """
+        SELECT creator_username,
+               COUNT(*) AS item_count,
+               MIN(interaction_at) AS first_seen,
+               MAX(interaction_at) AS last_seen
+        FROM media_events
+        WHERE user_id = :uid AND creator_username IS NOT NULL
+        GROUP BY creator_username
+        ORDER BY item_count DESC
+        LIMIT 20
+        """
+    )
+    result = await db.execute(creators_stmt, {"uid": str(user_id)})
+    creator_rows = result.mappings().all()
+
+    if not creator_rows:
+        return AgentToolResult(
+            success=True,
+            data={
+                "creators": [],
+                "note": "No creator data found. Your items may not have creator information.",
+            },
+        )
+
+    # Build base creator list
+    creator_names = [row["creator_username"] for row in creator_rows]
+    creators = {
+        row["creator_username"]: {
+            "creator": row["creator_username"],
+            "count": row["item_count"],
+            "first_seen": row["first_seen"].isoformat() if row["first_seen"] else None,
+            "last_seen": row["last_seen"].isoformat() if row["last_seen"] else None,
+            "top_topics": [],
+        }
+        for row in creator_rows
+    }
+
+    # Query 2: Bulk topic fetch for top creators
+    topics_stmt = text(
+        """
+        SELECT creator_username,
+               cached_classifications->'topic'->>'label' AS topic,
+               COUNT(*) AS topic_count
+        FROM media_events
+        WHERE user_id = :uid
+          AND creator_username = ANY(:creators)
+          AND cached_classifications->'topic'->>'label' IS NOT NULL
+        GROUP BY creator_username, topic
+        ORDER BY creator_username, topic_count DESC
+        """
+    )
+    topic_result = await db.execute(
+        topics_stmt,
+        {"uid": str(user_id), "creators": creator_names},
+    )
+    topic_rows = topic_result.mappings().all()
+
+    # Post-process: top 3 topics per creator
+    for row in topic_rows:
+        creator = row["creator_username"]
+        if creator in creators and len(creators[creator]["top_topics"]) < 3:
+            creators[creator]["top_topics"].append(
+                {"topic": row["topic"], "count": row["topic_count"]}
+            )
+
+    # Return in original rank order
+    ordered = [creators[name] for name in creator_names]
+    return AgentToolResult(success=True, data={"creators": ordered})
+
+
+async def _stats_field_distribution(db: AsyncSession, user_id: UUID, field: str) -> AgentToolResult:
+    """Value counts for a specific field (GROUP BY + COUNT + ORDER BY count DESC).
+
+    Field name is validated against _AGGREGATE_FIELDS before this function is called,
+    so the f-string injection is safe.
+    """
+    # Safe: field is validated against _AGGREGATE_FIELDS allowlist in get_stats()
+    stmt = text(
+        f"""
+        SELECT {field} AS field_value, COUNT(*) AS item_count
+        FROM media_events
+        WHERE user_id = :uid AND {field} IS NOT NULL
+        GROUP BY {field}
+        ORDER BY item_count DESC
+        LIMIT 30
+        """
+    )
+    result = await db.execute(stmt, {"uid": str(user_id)})
+    rows = result.mappings().all()
+
+    if not rows:
+        return AgentToolResult(
+            success=True,
+            data={
+                "field": field,
+                "distribution": [],
+                "note": f"No data found for field '{field}'.",
+            },
+        )
+
+    distribution = [{"value": row["field_value"], "count": row["item_count"]} for row in rows]
+    return AgentToolResult(success=True, data={"field": field, "distribution": distribution})
