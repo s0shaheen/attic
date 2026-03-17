@@ -22,10 +22,35 @@ os.environ.setdefault("TMDB_API_KEY", "test-tmdb-key")
 os.environ.setdefault("SPOTIFY_CLIENT_ID", "test-spotify-id")
 os.environ.setdefault("SPOTIFY_CLIENT_SECRET", "test-spotify-secret")
 
+import socket
+
 import pytest
 from httpx import ASGITransport, AsyncClient
 
 from app.main import app
+
+
+def _pg_reachable() -> bool:
+    """Check if PostgreSQL is reachable on localhost:5432."""
+    try:
+        sock = socket.create_connection(("127.0.0.1", 5432), timeout=1)
+        sock.close()
+        return True
+    except OSError:
+        return False
+
+
+_DB_AVAILABLE = _pg_reachable()
+
+
+def pytest_collection_modifyitems(config, items):
+    """Auto-skip tests marked with @pytest.mark.requires_db when no DB is available."""
+    if _DB_AVAILABLE:
+        return
+    skip_marker = pytest.mark.skip(reason="PostgreSQL not available on localhost:5432")
+    for item in items:
+        if "requires_db" in item.keywords:
+            item.add_marker(skip_marker)
 
 
 @pytest.fixture

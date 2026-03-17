@@ -3,7 +3,7 @@
 from datetime import datetime
 from uuid import UUID
 
-from sqlalchemy import DateTime, ForeignKey, Integer, String, func
+from sqlalchemy import Boolean, DateTime, ForeignKey, Integer, String, Text, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.base import Base
@@ -22,10 +22,10 @@ class Upload(Base):
         ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True
     )
     source_platform: Mapped[str] = mapped_column(String(50), server_default="tiktok")
-    scope: Mapped[str] = mapped_column(String(50), nullable=False)  # 'liked', 'favorited', 'both'
+    scope: Mapped[str | None] = mapped_column(String(50), nullable=True)
     status: Mapped[str] = mapped_column(
         String(50), server_default="pending"
-    )  # 'pending', 'processing', 'complete', 'failed'
+    )  # pending → validated → scope_selected → consented → processing → complete | failed
     total_items: Mapped[int | None] = mapped_column(Integer)
     processed_items: Mapped[int] = mapped_column(Integer, server_default="0")
     file_hash: Mapped[str | None] = mapped_column(String(64))  # for debugging, not content
@@ -36,6 +36,16 @@ class Upload(Base):
         DateTime(timezone=True), server_default=func.now(), nullable=False
     )
     completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+
+    # Validation fields (from migration 004)
+    validation_error: Mapped[str | None] = mapped_column(String(50))
+    validation_message: Mapped[str | None] = mapped_column(Text)
+    validated_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+
+    # Consent fields (from migration 005)
+    consent_given: Mapped[bool] = mapped_column(Boolean, server_default="false")
+    consent_version: Mapped[str | None] = mapped_column(String(20))
+    consent_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
     # Relationships
     user = relationship("User", back_populates="uploads")

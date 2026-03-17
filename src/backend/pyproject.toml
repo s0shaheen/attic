@@ -36,6 +36,7 @@ where = ["."]
 asyncio_mode = "auto"
 testpaths = ["tests"]
 pythonpath = ["."]
+markers = ["requires_db: test requires a running PostgreSQL database"]
 
 [tool.ruff]
 line-length = 100

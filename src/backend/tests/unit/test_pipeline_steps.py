@@ -13,7 +13,6 @@ from __future__ import annotations
 
 import hashlib
 import sys
-import types
 import uuid
 from datetime import UTC, datetime
 from pathlib import Path
@@ -21,82 +20,20 @@ from types import SimpleNamespace
 from typing import Any
 from unittest.mock import MagicMock, patch
 
-# ---------------------------------------------------------------------------
-# Module import setup: stub heavy/incompatible dependencies before handler import
-# ---------------------------------------------------------------------------
-#
-# The handler (src/lambdas/pipeline/handler.py) does:
-#   from app.models.media_event import MediaEvent
-#   from app.models.upload import Upload
-#   from app.models.upload_pipeline_run import UploadPipelineRun
-#   from app.services.tiktok_parser import parse_tiktok_export
-#
-# On Python <3.10, these model files fail because they use `str | None` syntax.
-# We inject lightweight mock modules into sys.modules BEFORE importing the
-# handler so the real model files are never loaded.
-#
-# We also add src/lambdas to sys.path for `common.*` and `pipeline.*`.
-
+# Ensure the lambdas directory is on sys.path so we can import the handler
 _lambdas_dir = str(Path(__file__).resolve().parents[3] / "lambdas")
 if _lambdas_dir not in sys.path:
     sys.path.insert(0, _lambdas_dir)
 
+from pipeline.handler import handler  # noqa: E402
 
-def _ensure_mock_module(name, attrs=None):
-    """Create a stub module in sys.modules if not already present."""
-    if name not in sys.modules:
-        mod = types.ModuleType(name)
-        mod.__package__ = name.rsplit(".", 1)[0] if "." in name else name
-        if attrs:
-            for k, v in attrs.items():
-                setattr(mod, k, v)
-        sys.modules[name] = mod
-    return sys.modules[name]
-
-
-# Stub the app packages so no real __init__.py runs
-_ensure_mock_module("app")
-_models_mod = _ensure_mock_module("app.models")
-_models_mod.__path__ = []  # type: ignore[attr-defined]  # makes it a package
-
-# Stub app.db and app.db.base with a mock Base
-_ensure_mock_module("app.db")
-sys.modules["app.db"].__path__ = []  # type: ignore[attr-defined]
-_mock_base = type("Base", (), {"__tablename__": None, "metadata": MagicMock()})
-_ensure_mock_module("app.db.base", {"Base": _mock_base})
-
-# Stub app.models.enums with a mock MediaType enum
-_mock_media_type = type("MediaType", (), {"VIDEO": type("_", (), {"value": "video"})()})
-_ensure_mock_module("app.models.enums", {"MediaType": _mock_media_type})
-
-# Stub the individual model modules with mock classes that have the columns
-# needed by the handler (for query building with .id, .processing_state, etc.)
-_MockMediaEvent = MagicMock()
-_MockMediaEvent.__tablename__ = "media_events"
-_ensure_mock_module("app.models.media_event", {"MediaEvent": _MockMediaEvent})
-
-_MockUpload = MagicMock()
-_MockUpload.__tablename__ = "uploads"
-_ensure_mock_module("app.models.upload", {"Upload": _MockUpload})
-
-_MockUploadPipelineRun = MagicMock()
-_MockUploadPipelineRun.__tablename__ = "upload_pipeline_runs"
-_ensure_mock_module("app.models.upload_pipeline_run", {"UploadPipelineRun": _MockUploadPipelineRun})
-
-# Stub app.services and tiktok_parser
-_ensure_mock_module("app.services")
-sys.modules["app.services"].__path__ = []  # type: ignore[attr-defined]
-_ensure_mock_module("app.services.tiktok_parser", {"parse_tiktok_export": MagicMock()})
-
-# Now import handler functions — all the heavy imports hit our stubs
-from pipeline.handler import (  # noqa: E402
+from app.services.pipeline import (  # noqa: E402
     _extract_platform_id,
     _extract_platform_id_or_hash,
     _fuse_text,
     _get_engine,
     _map_apify_to_update,
     _normalize_tiktok_url,
-    handler,
 )
 
 # ---------------------------------------------------------------------------
@@ -486,7 +423,7 @@ class TestMapApifyToUpdate:
 class TestGetEngine:
     def test_normalizes_asyncpg_url(self):
         """_get_engine should replace postgresql+asyncpg:// with postgresql://."""
-        import pipeline.handler as handler_module
+        import app.services.pipeline as handler_module
 
         # Reset cached engine
         handler_module._engine = None
@@ -510,7 +447,7 @@ class TestGetEngine:
 
     def test_caches_engine_on_second_call(self):
         """_get_engine should return the same cached engine on subsequent calls."""
-        import pipeline.handler as handler_module
+        import app.services.pipeline as handler_module
 
         handler_module._engine = None
         original_db_url = handler_module.DATABASE_URL
@@ -532,7 +469,7 @@ class TestGetEngine:
 
     def test_no_change_for_plain_postgresql_url(self):
         """Standard postgresql:// URL should pass through unchanged."""
-        import pipeline.handler as handler_module
+        import app.services.pipeline as handler_module
 
         handler_module._engine = None
         original_db_url = handler_module.DATABASE_URL

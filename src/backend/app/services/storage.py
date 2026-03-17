@@ -140,8 +140,10 @@ class SupabaseStorageService:
                         )
 
                     # If the URL is relative, make it absolute
+                    # Supabase returns paths like /object/upload/sign/...
+                    # but Kong routes storage via /storage/v1/...
                     if signed_url.startswith("/"):
-                        signed_url = f"{self.supabase_url}{signed_url}"
+                        signed_url = f"{self.supabase_url}/storage/v1{signed_url}"
 
                     logger.info(
                         {

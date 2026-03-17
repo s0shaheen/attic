@@ -78,3 +78,29 @@ async def readiness_check(db: AsyncSession = Depends(get_db)) -> HealthResponse:
     """
     await db.execute(text("SELECT 1"))
     return HealthResponse(status="ready", version=VERSION)
+
+
+@app.get("/api/dev-status")
+async def dev_status() -> dict:
+    """Dev status endpoint — shows which services are configured.
+
+    Only available in development. Returns service configuration status
+    so the dev banner can show what's real vs. fake.
+    """
+    settings = get_settings()
+    if settings.is_production:
+        return {"error": "Not available in production"}
+
+    return {
+        "environment": settings.environment,
+        "services": {
+            "apify": "configured" if settings.apify_api_token else "fake",
+            "openai": "configured" if settings.openai_api_key else "fake",
+            "anthropic": "configured" if settings.anthropic_api_key else "missing",
+            "gemini": "configured" if settings.gemini_api_key else "missing",
+            "sqs": "configured" if settings.sqs_queue_url else "inline",
+            "google_maps": "configured" if settings.google_maps_api_key else "missing",
+            "tmdb": "configured" if settings.tmdb_api_key else "missing",
+            "spotify": "configured" if settings.spotify_client_id else "missing",
+        },
+    }

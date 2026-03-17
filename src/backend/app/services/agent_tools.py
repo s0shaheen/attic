@@ -695,6 +695,41 @@ async def search_similar(
                 },
             )
 
+        # Dev mode fallback: no OpenAI key means random embeddings, skip vector search
+        if not settings.openai_api_key:
+            logger.info({"event": "search_similar_fallback_recency", "reason": "no_openai_key"})
+            fallback_stmt = (
+                select(MediaEvent)
+                .where(MediaEvent.user_id == user_id)
+                .where(MediaEvent.processing_state == "complete")
+                .order_by(MediaEvent.interaction_at.desc())
+                .limit(limit)
+            )
+            fallback_result = await db.execute(fallback_stmt)
+            fallback_rows = fallback_result.scalars().all()
+            items = [
+                {
+                    "id": str(e.id),
+                    "caption": e.caption_text,
+                    "creator": e.creator_username,
+                    "hashtags": e.hashtags,
+                    "media_type": e.media_type,
+                    "interaction_type": e.interaction_type,
+                    "interaction_at": e.interaction_at.isoformat() if e.interaction_at else None,
+                    "similarity": None,
+                }
+                for e in fallback_rows
+            ]
+            return AgentToolResult(
+                success=True,
+                data={
+                    "items": items,
+                    "total_results": len(items),
+                    "note": "Semantic search unavailable in dev mode (no OpenAI key). "
+                    "Results sorted by recency instead.",
+                },
+            )
+
         # Embed the query text
         try:
             query_embedding = await _embed_query(settings.openai_api_key, query_text)

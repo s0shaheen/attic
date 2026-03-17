@@ -1,22 +1,29 @@
 """Upload management routes.
 
-This module contains endpoints for managing TikTok export uploads,
-including presigned URL generation for direct-to-storage uploads,
-validation of uploaded files, scope selection, and consent capture.
+Endpoint flow:
+  /presigned-url ──► /validate ──► /scope ──► /consent ──► /process
+       │                                                       │
+       └── creates Upload record                    ├── SQS (prod)
+                                                    └── inline (dev)
 """
 
 import json
 import logging
+from datetime import UTC, datetime
 from typing import Annotated
 from uuid import UUID
 
 import boto3
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException
 from pydantic import BaseModel
+from sqlalchemy import select
+from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.config import Settings, get_settings
 from app.core.auth import get_current_user
-from app.core.config import Settings, get_settings
+from app.db.session import get_db
 from app.models.auth import AuthenticatedUser
+from app.models.upload import Upload
 from app.schemas.uploads import (
     ConsentRequest,
     ConsentResponse,
@@ -28,6 +35,7 @@ from app.schemas.uploads import (
     UploadErrorCode,
     UploadErrorResponse,
     ValidateUploadResponse,
+    ValidationResult,
 )
 from app.services.uploads import UploadService
 
@@ -36,69 +44,49 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/uploads", tags=["uploads"])
 
 
+# ---------------------------------------------------------------------------
+# Helper: look up upload and verify ownership
+# ---------------------------------------------------------------------------
+
+
+async def _get_upload_or_404(upload_id: UUID, user_id: UUID, db: AsyncSession) -> Upload:
+    """Query upload by ID and verify ownership."""
+    result = await db.execute(select(Upload).where(Upload.id == upload_id))
+    upload = result.scalar_one_or_none()
+    if not upload:
+        raise HTTPException(status_code=404, detail="Upload not found")
+    if upload.user_id != user_id:
+        raise HTTPException(status_code=403, detail="Access denied")
+    return upload
+
+
+# ---------------------------------------------------------------------------
+# POST /presigned-url
+# ---------------------------------------------------------------------------
+
+
 @router.post(
     "/presigned-url",
     response_model=PresignedUrlResponse,
     status_code=200,
     responses={
         200: {"description": "Presigned URL generated successfully"},
-        400: {
-            "description": "Invalid content type",
-            "model": UploadErrorResponse,
-        },
+        400: {"description": "Invalid content type", "model": UploadErrorResponse},
         401: {"description": "Not authenticated"},
-        403: {
-            "description": "Upload limit exceeded for tier",
-            "model": UploadErrorResponse,
-        },
-        500: {
-            "description": "Failed to generate presigned URL",
-            "model": UploadErrorResponse,
-        },
+        403: {"description": "Upload limit exceeded", "model": UploadErrorResponse},
+        500: {"description": "Failed to generate presigned URL", "model": UploadErrorResponse},
     },
 )
 async def create_presigned_url(
     request: PresignedUrlRequest,
     user: Annotated[AuthenticatedUser, Depends(get_current_user)],
     settings: Annotated[Settings, Depends(get_settings)],
+    db: Annotated[AsyncSession, Depends(get_db)],
 ) -> PresignedUrlResponse:
-    """Generate a presigned URL for uploading a TikTok export.
-
-    This endpoint creates a presigned URL that allows the client to upload
-    a TikTok export ZIP file directly to Supabase Storage. The URL is valid
-    for 1 hour.
-
-    The endpoint also creates a pending upload record in the database to
-    track the upload status.
-
-    Note: Currently, tier limits and upload counts are not enforced via
-    database queries. This is a placeholder for when the database layer
-    is fully integrated. Free tier users are assumed to have 0 existing
-    uploads (can always upload).
-
-    Args:
-        request: Presigned URL request with filename and content type
-        user: Authenticated user from JWT
-        settings: Application settings
-
-    Returns:
-        PresignedUrlResponse with presigned URL and upload metadata
-
-    Raises:
-        HTTPException: 400 if content type invalid, 401 if not authenticated,
-                      403 if upload limit exceeded, 500 if storage error
-    """
+    """Generate a presigned URL and create a pending upload record."""
     upload_service = UploadService(settings)
 
-    # TODO: Query database for user's tier and existing upload count
-    # For now, use default values:
-    # - All users are treated as free tier
-    # - Existing upload count is 0 (allows first upload)
-    #
-    # This will be implemented when database integration is complete:
-    # 1. Query users table for subscription_tier
-    # 2. Query uploads table for count where user_id = user.id
-    #    and status NOT IN ('failed')
+    # Tier/count defaults — full tier enforcement is a follow-up
     user_tier = "free"
     current_upload_count = 0
 
@@ -111,7 +99,6 @@ async def create_presigned_url(
     )
 
     if not result.success:
-        # Map error codes to HTTP status codes
         if result.error_code == UploadErrorCode.INVALID_CONTENT_TYPE:
             raise HTTPException(
                 status_code=400,
@@ -129,7 +116,6 @@ async def create_presigned_url(
                 ).model_dump(),
             )
         else:
-            # Storage error or unknown error
             logger.error(
                 {
                     "event": "presigned_url_endpoint_failed",
@@ -146,19 +132,15 @@ async def create_presigned_url(
                 ).model_dump(),
             )
 
-    # TODO: Create upload record in database with pending status
-    # This will be implemented when database integration is complete:
-    # upload_record = Upload(
-    #     id=result.upload_id,
-    #     user_id=user.id,
-    #     source_platform="tiktok",
-    #     scope=None,  # Set later via scope selection
-    #     status="pending",
-    #     storage_path=result.storage_path,
-    #     original_filename=request.filename,
-    # )
-    # await db.add(upload_record)
-    # await db.commit()
+    # Create upload record in DB (fixes FK violation when pipeline runs)
+    upload = Upload(
+        id=result.upload_id,
+        user_id=user.id,
+        source_platform="tiktok",
+        status="pending",
+    )
+    db.add(upload)
+    # get_db() auto-commits on success
 
     return PresignedUrlResponse(
         upload_id=result.upload_id,  # type: ignore[arg-type]
@@ -167,6 +149,11 @@ async def create_presigned_url(
         expires_at=result.expires_at,  # type: ignore[arg-type]
         max_file_size=result.max_file_size,  # type: ignore[arg-type]
     )
+
+
+# ---------------------------------------------------------------------------
+# POST /{upload_id}/validate
+# ---------------------------------------------------------------------------
 
 
 @router.post(
@@ -178,103 +165,47 @@ async def create_presigned_url(
         401: {"description": "Not authenticated"},
         403: {"description": "Upload belongs to different user"},
         404: {"description": "Upload not found"},
-        500: {"description": "Validation failed unexpectedly"},
     },
 )
 async def validate_upload(
     upload_id: UUID,
     user: Annotated[AuthenticatedUser, Depends(get_current_user)],
     settings: Annotated[Settings, Depends(get_settings)],
+    db: Annotated[AsyncSession, Depends(get_db)],
 ) -> ValidateUploadResponse:
     """Validate an uploaded TikTok export file.
 
-    This endpoint validates that the uploaded file:
-    1. Is a valid ZIP file
-    2. Contains a TikTok data export structure
-    3. Has liked and/or favorited videos
-
-    On success, returns the count of liked and favorited videos.
-    On failure, returns an appropriate error code and message.
-
-    The upload status is updated based on the validation result:
-    - validated: File passed validation
-    - invalid: File failed validation
-
-    Args:
-        upload_id: The upload ID to validate
-        user: Authenticated user from JWT
-        settings: Application settings
-
-    Returns:
-        ValidateUploadResponse with validation result
-
-    Raises:
-        HTTPException: 401 if not authenticated, 403 if not owner,
-                      404 if upload not found, 500 if validation fails
+    Marks upload as validated. Full ZIP download + content validation
+    is a follow-up — for now this advances the state machine so the
+    upload flow can proceed.
     """
+    upload = await _get_upload_or_404(upload_id, user.id, db)
+
+    now = datetime.now(UTC)
+    upload.status = "validated"
+    upload.validated_at = now
+
     logger.info(
         {
-            "event": "validate_upload_requested",
+            "event": "upload_validated",
             "upload_id": str(upload_id),
             "user_id": str(user.id),
         }
     )
 
-    # TODO: Implement proper upload lookup from database
-    # For now, we'll implement a mock that shows the API contract
-    # This will be updated when database integration is complete
-    #
-    # Expected implementation:
-    # 1. Query uploads table for upload_id
-    # 2. Verify user_id matches (RLS should handle this)
-    # 3. Get storage_path from upload record
-    # 4. Download file from Supabase Storage
-    # 5. Validate file content
-    # 6. Update upload record with validation result
-
-    # Mock: Return 404 for unknown uploads
-    # In real implementation, this would be a database lookup
-    #
-    # upload = await db.query(Upload).filter(Upload.id == upload_id).first()
-    # if not upload:
-    #     raise HTTPException(status_code=404, detail="Upload not found")
-    #
-    # if upload.user_id != user.id:
-    #     raise HTTPException(status_code=403, detail="Access denied")
-    #
-    # # Download file from storage
-    # storage_service = SupabaseStorageService(settings)
-    # file_content = await storage_service.download_file(upload.storage_path)
-    #
-    # # Validate
-    # validation_service = ValidationService()
-    # result = await validation_service.validate_upload(
-    #     upload_id=upload_id,
-    #     user_id=user.id,
-    #     file_content=file_content,
-    # )
-    #
-    # # Update upload record
-    # if result.should_update_status:
-    #     upload.status = result.new_status
-    #     error_code = result.result.error_code
-    #     upload.validation_error = error_code.value if error_code else None
-    #     upload.validation_message = result.result.error_message
-    #     upload.validated_at = datetime.now(UTC)
-    #     await db.commit()
-    #
-    # return ValidateUploadResponse(upload_id=upload_id, validation=result.result)
-
-    # Temporary: Return a mock response indicating the endpoint exists
-    # but requires database integration
-    raise HTTPException(
-        status_code=404,
-        detail={
-            "error": "Upload not found",
-            "message": "This endpoint requires database integration. "
-            "The upload record lookup is not yet implemented.",
-        },
+    return ValidateUploadResponse(
+        upload_id=upload_id,
+        validation=ValidationResult(
+            valid=True,
+            liked_count=0,
+            favorited_count=0,
+        ),
     )
+
+
+# ---------------------------------------------------------------------------
+# PATCH /{upload_id}/scope
+# ---------------------------------------------------------------------------
 
 
 @router.patch(
@@ -283,14 +214,10 @@ async def validate_upload(
     status_code=200,
     responses={
         200: {"description": "Scope set successfully"},
-        400: {"description": "Invalid scope value"},
         401: {"description": "Not authenticated"},
         403: {"description": "Upload belongs to different user"},
         404: {"description": "Upload not found"},
-        409: {
-            "description": "Upload already processing or scope exceeds tier limit",
-            "model": TierLimitExceededError,
-        },
+        409: {"description": "Upload already processing", "model": TierLimitExceededError},
         422: {"description": "Upload not validated yet"},
     },
 )
@@ -299,109 +226,48 @@ async def set_scope(
     request: ScopeSelectionRequest,
     user: Annotated[AuthenticatedUser, Depends(get_current_user)],
     settings: Annotated[Settings, Depends(get_settings)],
+    db: Annotated[AsyncSession, Depends(get_db)],
 ) -> ScopeSelectionResponse:
-    """Set the processing scope for an upload.
+    """Set the processing scope for an upload."""
+    upload = await _get_upload_or_404(upload_id, user.id, db)
 
-    This endpoint allows users to select which videos from their TikTok export
-    to process: liked videos only, favorited videos only, or both.
+    # Check status allows scope change
+    if upload.status not in ("validated", "scope_selected"):
+        if upload.status == "pending":
+            raise HTTPException(status_code=422, detail="Upload not validated yet")
+        raise HTTPException(
+            status_code=409,
+            detail=f"Upload is in state '{upload.status}' and cannot change scope",
+        )
 
-    The selection is validated against the user's subscription tier limits.
-    Scope can be changed until processing starts (consent captured).
+    upload.scope = request.scope.value
+    upload.status = "scope_selected"
 
-    Args:
-        upload_id: The upload ID to update
-        request: The scope selection request
-        user: Authenticated user from JWT
-        settings: Application settings
-
-    Returns:
-        ScopeSelectionResponse with scope details and item counts
-
-    Raises:
-        HTTPException:
-            - 400: Invalid scope value
-            - 401: Not authenticated
-            - 403: Upload belongs to different user
-            - 404: Upload not found
-            - 409: Upload already processing or scope exceeds tier limit
-            - 422: Upload not validated yet
-    """
     logger.info(
         {
-            "event": "scope_selection_requested",
+            "event": "scope_selected",
             "upload_id": str(upload_id),
             "user_id": str(user.id),
             "scope": request.scope.value,
         }
     )
 
-    # TODO: Implement proper upload lookup from database
-    # For now, we'll implement a mock that shows the API contract
-    # This will be updated when database integration is complete
-    #
-    # Expected implementation:
-    # 1. Query uploads table for upload_id
-    # 2. Verify user_id matches (RLS should handle this)
-    # 3. Check upload status allows scope change
-    # 4. Get user's subscription tier from users table
-    # 5. Call UploadsService.select_scope()
-    # 6. Update upload record with scope and total_items
-    # 7. Return response
-    #
-    # Example:
-    # upload = await db.query(Upload).filter(Upload.id == upload_id).first()
-    # if not upload:
-    #     raise HTTPException(status_code=404, detail="Upload not found")
-    #
-    # if upload.user_id != user.id:
-    #     raise HTTPException(status_code=403, detail="Access denied")
-    #
-    # user_record = await db.query(User).filter(User.id == user.id).first()
-    #
-    # service = UploadsService()
-    # result = await service.select_scope(
-    #     upload_id=upload_id,
-    #     user_id=user.id,
-    #     scope=request.scope,
-    #     user_tier=user_record.subscription_tier,
-    #     upload_status=upload.status,
-    #     liked_count=upload.validation_liked_count,  # stored during validation
-    #     favorited_count=upload.validation_favorited_count,
-    # )
-    #
-    # if not result.success:
-    #     if result.error_type == "not_validated":
-    #         raise HTTPException(status_code=422, detail=result.error_message)
-    #     elif result.error_type == "already_processing":
-    #         raise HTTPException(status_code=409, detail=result.error_message)
-    #     elif result.error_type == "tier_limit_exceeded":
-    #         raise HTTPException(
-    #             status_code=409,
-    #             detail={
-    #                 "error": "TIER_LIMIT_EXCEEDED",
-    #                 "message": result.error_message,
-    #                 **result.error_details,
-    #             },
-    #         )
-    #
-    # # Update upload record
-    # upload.scope = request.scope.value
-    # upload.total_items = result.response.total_items
-    # upload.status = "scope_selected"
-    # await db.commit()
-    #
-    # return result.response
-
-    # Temporary: Return a mock response indicating the endpoint exists
-    # but requires database integration
-    raise HTTPException(
-        status_code=404,
-        detail={
-            "error": "Upload not found",
-            "message": "This endpoint requires database integration. "
-            "The upload record lookup is not yet implemented.",
-        },
+    return ScopeSelectionResponse(
+        upload_id=upload_id,
+        scope=request.scope,
+        total_items=0,
+        liked_count=0,
+        favorited_count=0,
+        tier_limit=500,
+        within_limit=True,
+        estimated_processing_minutes=5,
+        ready_for_consent=True,
     )
+
+
+# ---------------------------------------------------------------------------
+# POST /{upload_id}/consent
+# ---------------------------------------------------------------------------
 
 
 @router.post(
@@ -423,147 +289,61 @@ async def record_consent(
     request: ConsentRequest,
     user: Annotated[AuthenticatedUser, Depends(get_current_user)],
     settings: Annotated[Settings, Depends(get_settings)],
+    db: Annotated[AsyncSession, Depends(get_db)],
 ) -> ConsentResponse:
-    """Record user consent for data processing.
+    """Record user consent for data processing."""
+    if not request.consent_given:
+        raise HTTPException(
+            status_code=400,
+            detail={"error": "CONSENT_NOT_GIVEN", "message": "Consent must be given to proceed."},
+        )
 
-    This endpoint captures explicit user consent before data processing begins.
-    The consent includes version tracking for future consent text changes.
+    upload = await _get_upload_or_404(upload_id, user.id, db)
 
-    Processing cannot start without consent being recorded. Once recorded,
-    consent cannot be withdrawn through the API (account deletion handles this).
+    # Check status
+    if upload.status not in ("scope_selected",):
+        if upload.status in ("pending", "validated"):
+            raise HTTPException(status_code=422, detail="Select a processing scope first")
+        elif upload.consent_given:
+            raise HTTPException(status_code=409, detail="Consent already recorded")
+        else:
+            raise HTTPException(
+                status_code=409,
+                detail=f"Upload is in state '{upload.status}' and cannot accept consent",
+            )
 
-    Args:
-        upload_id: The upload ID to record consent for
-        request: The consent request with consent_given and version
-        user: Authenticated user from JWT
-        settings: Application settings
+    now = datetime.now(UTC)
+    upload.consent_given = True
+    upload.consent_version = request.consent_version
+    upload.consent_at = now
+    upload.status = "consented"
 
-    Returns:
-        ConsentResponse with consent details and processing readiness
-
-    Raises:
-        HTTPException:
-            - 400: consent_given is false (decline should be handled client-side)
-            - 401: Not authenticated
-            - 403: Upload belongs to different user
-            - 404: Upload not found
-            - 409: Consent already recorded
-            - 422: Scope not selected yet
-    """
     logger.info(
         {
-            "event": "consent_requested",
+            "event": "consent_recorded",
             "upload_id": str(upload_id),
             "user_id": str(user.id),
-            "consent_given": request.consent_given,
-            "consent_version": request.consent_version,
         }
     )
 
-    # Validate that consent_given is true
-    if not request.consent_given:
-        logger.info(
-            {
-                "event": "consent_declined",
-                "upload_id": str(upload_id),
-                "user_id": str(user.id),
-            }
-        )
-        raise HTTPException(
-            status_code=400,
-            detail={
-                "error": "CONSENT_NOT_GIVEN",
-                "message": "Consent must be given to proceed. "
-                "If you wish to cancel, use the cancel button.",
-            },
-        )
-
-    # TODO: Implement proper upload lookup from database
-    # For now, we'll implement a mock that shows the API contract
-    # This will be updated when database integration is complete
-    #
-    # Expected implementation:
-    # 1. Query uploads table for upload_id
-    # 2. Verify user_id matches (RLS should handle this)
-    # 3. Check upload status (must be scope_selected)
-    # 4. Check consent not already recorded
-    # 5. Record consent with version and timestamp
-    # 6. Update upload status to "consented"
-    # 7. Return response
-    #
-    # Example:
-    # upload = await db.query(Upload).filter(Upload.id == upload_id).first()
-    # if not upload:
-    #     raise HTTPException(status_code=404, detail="Upload not found")
-    #
-    # if upload.user_id != user.id:
-    #     raise HTTPException(status_code=403, detail="Access denied")
-    #
-    # # Check scope is selected
-    # if upload.status not in ("scope_selected",):
-    #     if upload.status in ("pending", "validated"):
-    #         raise HTTPException(
-    #             status_code=422,
-    #             detail={
-    #                 "error": "SCOPE_NOT_SELECTED",
-    #                 "message": "Please select a processing scope before providing consent.",
-    #             },
-    #         )
-    #     elif upload.consent_given:
-    #         raise HTTPException(
-    #             status_code=409,
-    #             detail={
-    #                 "error": "CONSENT_ALREADY_RECORDED",
-    #                 "message": "Consent has already been recorded for this upload.",
-    #             },
-    #         )
-    #     else:
-    #         raise HTTPException(
-    #             status_code=409,
-    #             detail={
-    #                 "error": "INVALID_STATE",
-    #                 "message": f"Upload is in state '{upload.status}' and cannot accept consent.",
-    #             },
-    #         )
-    #
-    # # Record consent
-    # from datetime import datetime, UTC
-    # now = datetime.now(UTC)
-    # upload.consent_given = True
-    # upload.consent_version = request.consent_version
-    # upload.consent_at = now
-    # upload.status = "consented"
-    # await db.commit()
-    #
-    # return ConsentResponse(
-    #     upload_id=upload_id,
-    #     consent_given=True,
-    #     consent_version=request.consent_version,
-    #     consent_at=now,
-    #     ready_to_process=True,
-    # )
-
-    # Temporary: Return a mock response indicating the endpoint exists
-    # but requires database integration
-    raise HTTPException(
-        status_code=404,
-        detail={
-            "error": "Upload not found",
-            "message": "This endpoint requires database integration. "
-            "The upload record lookup is not yet implemented.",
-        },
+    return ConsentResponse(
+        upload_id=upload_id,
+        consent_given=True,
+        consent_version=request.consent_version,
+        consent_at=now,
+        ready_to_process=True,
     )
 
 
 # ---------------------------------------------------------------------------
-# Simplified pipeline trigger (for founder testing)
+# POST /process — trigger pipeline (SQS or inline)
 # ---------------------------------------------------------------------------
 
 
 class ProcessUploadRequest(BaseModel):
     """Request body for triggering pipeline processing."""
 
-    upload_id: str
+    upload_id: UUID
     storage_path: str
 
 
@@ -572,7 +352,6 @@ class ProcessUploadRequest(BaseModel):
     status_code=202,
     responses={
         202: {"description": "Pipeline processing triggered"},
-        400: {"description": "Missing SQS queue URL configuration"},
         401: {"description": "Not authenticated"},
         500: {"description": "Failed to send SQS message"},
     },
@@ -581,29 +360,50 @@ async def process_upload(
     request: ProcessUploadRequest,
     user: Annotated[AuthenticatedUser, Depends(get_current_user)],
     settings: Annotated[Settings, Depends(get_settings)],
+    background_tasks: BackgroundTasks,
 ) -> dict:
     """Trigger pipeline processing for an uploaded TikTok export.
 
-    Simplified endpoint for founder testing — sends an SQS message to kick off
-    the 4-step pipeline (parse → enrich → subtitles → embed) without requiring
-    the full validate → scope → consent wizard.
-
-    Args:
-        request: Upload ID and storage path from presigned URL response.
-        user: Authenticated user from JWT.
-        settings: Application settings.
-
-    Returns:
-        202 with message_id on success.
+    - If SQS_QUEUE_URL is configured: sends SQS message (production path)
+    - If not: runs pipeline inline via BackgroundTasks (dev path)
     """
     if not settings.sqs_queue_url:
-        raise HTTPException(
-            status_code=400,
-            detail="Pipeline processing is not configured (missing SQS queue URL).",
+        # Dev mode: run pipeline inline via background thread
+        def _run_inline() -> None:
+            try:
+                from app.services.pipeline import run_pipeline
+
+                run_pipeline(
+                    upload_id=str(request.upload_id),
+                    user_id=str(user.id),
+                    storage_path=request.storage_path,
+                    scope="both",
+                )
+            except Exception:
+                logger.exception(
+                    "Inline pipeline failed",
+                    extra={"upload_id": str(request.upload_id)},
+                )
+
+        background_tasks.add_task(_run_inline)
+
+        logger.info(
+            {
+                "event": "pipeline_inline_triggered",
+                "upload_id": str(request.upload_id),
+                "user_id": str(user.id),
+            }
         )
 
+        return {
+            "status": "processing",
+            "message_id": "inline",
+            "upload_id": str(request.upload_id),
+        }
+
+    # Production path: send to SQS
     sqs_body = {
-        "upload_id": request.upload_id,
+        "upload_id": str(request.upload_id),
         "user_id": str(user.id),
         "storage_path": request.storage_path,
         "scope": "both",
@@ -627,7 +427,7 @@ async def process_upload(
         logger.info(
             {
                 "event": "pipeline_triggered",
-                "upload_id": request.upload_id,
+                "upload_id": str(request.upload_id),
                 "user_id": str(user.id),
                 "message_id": response.get("MessageId"),
             }
@@ -636,14 +436,14 @@ async def process_upload(
         return {
             "status": "processing",
             "message_id": response.get("MessageId"),
-            "upload_id": request.upload_id,
+            "upload_id": str(request.upload_id),
         }
 
     except Exception as e:
         logger.error(
             {
                 "event": "sqs_send_failed",
-                "upload_id": request.upload_id,
+                "upload_id": str(request.upload_id),
                 "user_id": str(user.id),
                 "error": str(e),
             }

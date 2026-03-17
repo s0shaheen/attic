@@ -1,6 +1,6 @@
 # SAM build target for CommonLayer.
-# Bundles common/ (logger, idempotency) + app/ (backend models, services, schemas).
-# Lambda runtime adds /opt/ to sys.path, so both packages are importable directly.
+# Bundles app/ (backend models, services, schemas, common utilities).
+# Lambda runtime adds /opt/ to sys.path, so app/ is importable directly.
 #
 # NOTE: In container builds, SAM only mounts this directory (src/lambdas/).
 # Run `scripts/sam-build.sh` which copies app/ here before `sam build --use-container`.
@@ -9,7 +9,6 @@ MAKEFILE_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
 build-CommonLayer:
 	mkdir -p $(ARTIFACTS_DIR)
-	cp -r $(MAKEFILE_DIR)/common $(ARTIFACTS_DIR)/
 	@if [ -d $(MAKEFILE_DIR)/app ]; then \
 		cp -r $(MAKEFILE_DIR)/app $(ARTIFACTS_DIR)/; \
 	elif [ -d $(MAKEFILE_DIR)/../backend/app ]; then \

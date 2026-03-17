@@ -172,14 +172,10 @@ info "Running database migrations..."
 # ---------- Seed test data ----------
 
 info "Seeding test data..."
-if [ -z "$OPENAI_KEY" ]; then
-    warn "No OPENAI_API_KEY found — skipping seed (embeddings need OpenAI). Run manually:"
-    warn "  cd src/backend && uv run python ../../scripts/seed_local.py"
-else
-    (cd "$ROOT/src/backend" && \
-        DATABASE_URL="$DB_URL" OPENAI_API_KEY="$OPENAI_KEY" \
-        uv run python "$ROOT/scripts/seed_local.py" 2>&1) || warn "Seed may have already been run"
-fi
+(cd "$ROOT/src/backend" && \
+    DATABASE_URL="$DB_URL" OPENAI_API_KEY="${OPENAI_KEY:-}" \
+    SUPABASE_URL="$SUPABASE_URL" SUPABASE_SECRET_KEY="$SECRET_KEY" \
+    uv run python "$ROOT/scripts/seed_local.py" 2>&1) || warn "Seed may have already been run"
 
 # ---------- Done ----------
 
@@ -198,6 +194,6 @@ echo "Then open: http://localhost:3000"
 echo ""
 echo "Login credentials: test@attic.dev / testtest123"
 echo "  - 10 pre-loaded media_events (7 restaurant, 3 other)"
-echo "  - Sign in with email/password on the login page"
+echo "  - API keys are optional — backend runs with fake data in dev"
 echo "  - Try asking: 'pull all the restaurants ive liked'"
 echo ""

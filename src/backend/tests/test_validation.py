@@ -389,6 +389,7 @@ async def test_client():
         yield client
 
 
+@pytest.mark.requires_db
 class TestValidateUploadEndpoint:
     """Tests for the POST /api/uploads/{upload_id}/validate endpoint."""
 

@@ -476,6 +476,7 @@ async def test_presigned_url_endpoint_expired_token_returns_401(test_client: Asy
 
 
 @pytest.mark.asyncio
+@pytest.mark.requires_db
 async def test_presigned_url_endpoint_success(test_client: AsyncClient):
     """POST /api/uploads/presigned-url returns 200 on success."""
     token = create_test_token()
@@ -636,6 +637,7 @@ async def test_presigned_url_endpoint_empty_filename_returns_422(test_client: As
 
 
 @pytest.mark.asyncio
+@pytest.mark.requires_db
 async def test_presigned_url_endpoint_default_content_type(test_client: AsyncClient):
     """POST /api/uploads/presigned-url uses default content type if not provided."""
     token = create_test_token()
@@ -674,6 +676,7 @@ async def test_presigned_url_endpoint_default_content_type(test_client: AsyncCli
 
 
 @pytest.mark.asyncio
+@pytest.mark.requires_db
 async def test_presigned_url_endpoint_user_id_from_token(test_client: AsyncClient):
     """POST /api/uploads/presigned-url uses user_id from JWT, not client."""
     from uuid import UUID
@@ -794,8 +797,8 @@ async def test_process_upload_success(process_test_client: AsyncClient):
 
 
 @pytest.mark.asyncio
-async def test_process_upload_no_sqs_url_returns_400():
-    """POST /api/uploads/process returns 400 when SQS URL is not configured."""
+async def test_process_upload_no_sqs_url_runs_inline():
+    """POST /api/uploads/process returns 202 with inline pipeline when SQS is not configured."""
     from unittest.mock import MagicMock
 
     from app.core.config import get_settings
@@ -821,8 +824,10 @@ async def test_process_upload_no_sqs_url_returns_400():
             headers={"Authorization": f"Bearer {token}"},
         )
 
-    assert response.status_code == 400
-    assert "not configured" in response.json()["detail"].lower()
+    assert response.status_code == 202
+    data = response.json()
+    assert data["message_id"] == "inline"
+    assert data["status"] == "processing"
     app.dependency_overrides.clear()
 
 

@@ -29,8 +29,13 @@ gh issue list --label needs-decision              # Waiting on founder
 
 At the start of every session, run these checks:
 1. Read `CLAUDE.md` + `docs/CURRENT_PLAN.md`
-2. Check for orphaned In Progress issues: are there issues in In Progress that don't match the current workspace's branch? If found, ask the user whether to move them to Paused or back to Up Next.
-3. Quick board health: `gh issue list --search "label:ready label:p0-critical label:p1-high" --state open` — flag anything urgent.
+2. Install dependencies (workspaces don't inherit `node_modules` or `.venv`):
+   ```bash
+   cd src/frontend && npm install --silent && cd ../..
+   cd src/backend && uv sync --all-extras --quiet && cd ../..
+   ```
+3. Check for orphaned In Progress issues: are there issues in In Progress that don't match the current workspace's branch? If found, ask the user whether to move them to Paused or back to Up Next.
+4. Quick board health: `gh issue list --search "label:ready label:p0-critical label:p1-high" --state open` — flag anything urgent.
 
 ### Sync Points
 

@@ -364,6 +364,7 @@ async def test_client():
         yield client
 
 
+@pytest.mark.requires_db
 class TestScopeEndpoint:
     """Tests for the PATCH /api/uploads/{upload_id}/scope endpoint."""
 

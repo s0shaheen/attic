@@ -173,6 +173,7 @@ async def test_client():
         yield client
 
 
+@pytest.mark.requires_db
 class TestConsentEndpoint:
     """Tests for the POST /api/uploads/{upload_id}/consent endpoint."""
 
@@ -295,6 +296,7 @@ class TestConsentEndpoint:
         assert response.status_code == 404
 
 
+@pytest.mark.requires_db
 class TestConsentEndpointIntegration:
     """Integration tests for consent endpoint.
 

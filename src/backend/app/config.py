@@ -6,7 +6,7 @@ Missing required variables will cause the application to fail fast with clear er
 
 from functools import lru_cache
 
-from pydantic import Field, field_validator
+from pydantic import Field, field_validator, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -37,13 +37,19 @@ class Settings(BaseSettings):
         default=None, description="SQS queue URL for upload processing pipeline"
     )
 
-    # Third-party APIs
-    apify_api_token: str = Field(description="Apify API token for TikTok scraping")
-    openai_api_key: str = Field(description="OpenAI API key for embeddings")
+    # Third-party APIs (optional in dev — production guard below)
+    apify_api_token: str | None = Field(
+        default=None, description="Apify API token for TikTok scraping"
+    )
+    openai_api_key: str | None = Field(default=None, description="OpenAI API key for embeddings")
 
-    # Agent LLM APIs
-    anthropic_api_key: str = Field(description="Anthropic API key for Claude orchestrator")
-    gemini_api_key: str = Field(description="Google Gemini API key for classification/vision")
+    # Agent LLM APIs (optional in dev — production guard below)
+    anthropic_api_key: str | None = Field(
+        default=None, description="Anthropic API key for Claude orchestrator"
+    )
+    gemini_api_key: str | None = Field(
+        default=None, description="Google Gemini API key for classification/vision"
+    )
 
     # Entity resolution APIs (optional — agent tools degrade gracefully without them)
     google_maps_api_key: str | None = Field(
@@ -108,6 +114,23 @@ class Settings(BaseSettings):
         if v_upper not in allowed:
             raise ValueError(f"log_level must be one of {allowed}")
         return v_upper
+
+    @model_validator(mode="after")
+    def check_production_api_keys(self) -> "Settings":
+        """Ensure all API keys are set in production."""
+        if self.is_production:
+            missing = []
+            if not self.apify_api_token:
+                missing.append("APIFY_API_TOKEN")
+            if not self.openai_api_key:
+                missing.append("OPENAI_API_KEY")
+            if not self.anthropic_api_key:
+                missing.append("ANTHROPIC_API_KEY")
+            if not self.gemini_api_key:
+                missing.append("GEMINI_API_KEY")
+            if missing:
+                raise ValueError(f"Production requires all API keys. Missing: {', '.join(missing)}")
+        return self
 
     @property
     def is_production(self) -> bool:

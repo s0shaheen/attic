@@ -16,13 +16,13 @@ import pytest
 # Ensure the lambdas directory is on sys.path so we can import the handler
 sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "lambdas"))
 
-from pipeline.handler import (  # noqa: E402, I001
+from app.services.pipeline import (  # noqa: E402, I001
     _ensure_pipeline_run,
     _extract_platform_id,
     _fuse_text,
     _normalize_tiktok_url,
-    handler,
 )
+from pipeline.handler import handler  # noqa: E402
 
 
 # ---------------------------------------------------------------------------
@@ -124,12 +124,14 @@ class TestHandler:
         mock_event_ids = [str(uuid4()), str(uuid4())]
 
         with (
-            patch("pipeline.handler._session", return_value=mock_session),
-            patch("pipeline.handler._ensure_pipeline_run", return_value=str(uuid4())),
-            patch("pipeline.handler.step_parse_export", return_value=mock_event_ids) as mock_parse,
-            patch("pipeline.handler.step_apify_enrich") as mock_apify,
-            patch("pipeline.handler.step_subtitle_fetch") as mock_subtitle,
-            patch("pipeline.handler.step_embed") as mock_embed,
+            patch("app.services.pipeline._session", return_value=mock_session),
+            patch("app.services.pipeline._ensure_pipeline_run", return_value=str(uuid4())),
+            patch(
+                "app.services.pipeline.step_parse_export", return_value=mock_event_ids
+            ) as mock_parse,
+            patch("app.services.pipeline.step_apify_enrich") as mock_apify,
+            patch("app.services.pipeline.step_subtitle_fetch") as mock_subtitle,
+            patch("app.services.pipeline.step_embed") as mock_embed,
         ):
             result = handler(event, _make_context())
 
@@ -153,12 +155,12 @@ class TestHandler:
         mock_session = _make_mock_session()
 
         with (
-            patch("pipeline.handler._session", return_value=mock_session),
-            patch("pipeline.handler._ensure_pipeline_run", return_value=str(uuid4())),
-            patch("pipeline.handler.step_parse_export", return_value=[]) as mock_parse,
-            patch("pipeline.handler.step_apify_enrich"),
-            patch("pipeline.handler.step_subtitle_fetch"),
-            patch("pipeline.handler.step_embed"),
+            patch("app.services.pipeline._session", return_value=mock_session),
+            patch("app.services.pipeline._ensure_pipeline_run", return_value=str(uuid4())),
+            patch("app.services.pipeline.step_parse_export", return_value=[]) as mock_parse,
+            patch("app.services.pipeline.step_apify_enrich"),
+            patch("app.services.pipeline.step_subtitle_fetch"),
+            patch("app.services.pipeline.step_embed"),
         ):
             handler(event, _make_context())
 
@@ -174,13 +176,13 @@ class TestHandler:
         mock_session = _make_mock_session()
 
         with (
-            patch("pipeline.handler._session", return_value=mock_session),
-            patch("pipeline.handler._ensure_pipeline_run", return_value=str(uuid4())),
+            patch("app.services.pipeline._session", return_value=mock_session),
+            patch("app.services.pipeline._ensure_pipeline_run", return_value=str(uuid4())),
             patch(
-                "pipeline.handler.step_parse_export",
+                "app.services.pipeline.step_parse_export",
                 side_effect=RuntimeError("download failed"),
             ),
-            patch("pipeline.handler._mark_upload_failed") as mock_mark_failed,
+            patch("app.services.pipeline._mark_upload_failed") as mock_mark_failed,
         ):
             with pytest.raises(RuntimeError, match="download failed"):
                 handler(event, _make_context())
@@ -194,12 +196,12 @@ class TestHandler:
         mock_session = _make_mock_session()
 
         with (
-            patch("pipeline.handler._session", return_value=mock_session),
-            patch("pipeline.handler._ensure_pipeline_run", return_value=str(uuid4())),
-            patch("pipeline.handler.step_parse_export", return_value=[]),
-            patch("pipeline.handler.step_apify_enrich"),
-            patch("pipeline.handler.step_subtitle_fetch"),
-            patch("pipeline.handler.step_embed"),
+            patch("app.services.pipeline._session", return_value=mock_session),
+            patch("app.services.pipeline._ensure_pipeline_run", return_value=str(uuid4())),
+            patch("app.services.pipeline.step_parse_export", return_value=[]),
+            patch("app.services.pipeline.step_apify_enrich"),
+            patch("app.services.pipeline.step_subtitle_fetch"),
+            patch("app.services.pipeline.step_embed"),
         ):
             handler(event, _make_context())
 
@@ -212,13 +214,13 @@ class TestHandler:
         mock_session = _make_mock_session()
 
         with (
-            patch("pipeline.handler._session", return_value=mock_session),
-            patch("pipeline.handler._ensure_pipeline_run", return_value=str(uuid4())),
+            patch("app.services.pipeline._session", return_value=mock_session),
+            patch("app.services.pipeline._ensure_pipeline_run", return_value=str(uuid4())),
             patch(
-                "pipeline.handler.step_parse_export",
+                "app.services.pipeline.step_parse_export",
                 side_effect=RuntimeError("boom"),
             ),
-            patch("pipeline.handler._mark_upload_failed"),
+            patch("app.services.pipeline._mark_upload_failed"),
         ):
             with pytest.raises(RuntimeError):
                 handler(event, _make_context())
@@ -322,18 +324,18 @@ class TestPipelineEndToEnd:
         media_event_ids = [str(uuid4()) for _ in range(3)]
 
         with (
-            patch("pipeline.handler._session", return_value=mock_session),
+            patch("app.services.pipeline._session", return_value=mock_session),
             patch(
-                "pipeline.handler._ensure_pipeline_run",
+                "app.services.pipeline._ensure_pipeline_run",
                 return_value=pipeline_run_id,
             ),
             patch(
-                "pipeline.handler.step_parse_export",
+                "app.services.pipeline.step_parse_export",
                 return_value=media_event_ids,
             ),
-            patch("pipeline.handler.step_apify_enrich"),
-            patch("pipeline.handler.step_subtitle_fetch"),
-            patch("pipeline.handler.step_embed"),
+            patch("app.services.pipeline.step_apify_enrich"),
+            patch("app.services.pipeline.step_subtitle_fetch"),
+            patch("app.services.pipeline.step_embed"),
         ):
             result = handler(event, _make_context())
 
@@ -368,12 +370,12 @@ class TestPipelineEndToEnd:
             call_order.append("embed")
 
         with (
-            patch("pipeline.handler._session", return_value=mock_session),
-            patch("pipeline.handler._ensure_pipeline_run", return_value=str(uuid4())),
-            patch("pipeline.handler.step_parse_export", side_effect=track_parse),
-            patch("pipeline.handler.step_apify_enrich", side_effect=track_apify),
-            patch("pipeline.handler.step_subtitle_fetch", side_effect=track_subtitle),
-            patch("pipeline.handler.step_embed", side_effect=track_embed),
+            patch("app.services.pipeline._session", return_value=mock_session),
+            patch("app.services.pipeline._ensure_pipeline_run", return_value=str(uuid4())),
+            patch("app.services.pipeline.step_parse_export", side_effect=track_parse),
+            patch("app.services.pipeline.step_apify_enrich", side_effect=track_apify),
+            patch("app.services.pipeline.step_subtitle_fetch", side_effect=track_subtitle),
+            patch("app.services.pipeline.step_embed", side_effect=track_embed),
         ):
             handler(event, _make_context())
 
@@ -387,14 +389,14 @@ class TestPipelineEndToEnd:
         mock_session = _make_mock_session()
 
         with (
-            patch("pipeline.handler._session", return_value=mock_session),
-            patch("pipeline.handler._ensure_pipeline_run", return_value=str(uuid4())),
-            patch("pipeline.handler.step_parse_export", return_value=[str(uuid4())]),
+            patch("app.services.pipeline._session", return_value=mock_session),
+            patch("app.services.pipeline._ensure_pipeline_run", return_value=str(uuid4())),
+            patch("app.services.pipeline.step_parse_export", return_value=[str(uuid4())]),
             patch(
-                "pipeline.handler.step_apify_enrich",
+                "app.services.pipeline.step_apify_enrich",
                 side_effect=RuntimeError("Apify timeout"),
             ),
-            patch("pipeline.handler._mark_upload_failed") as mock_mark_failed,
+            patch("app.services.pipeline._mark_upload_failed") as mock_mark_failed,
         ):
             with pytest.raises(RuntimeError, match="Apify timeout"):
                 handler(event, _make_context())
@@ -409,12 +411,12 @@ class TestPipelineEndToEnd:
         mock_session = _make_mock_session()
 
         with (
-            patch("pipeline.handler._session", return_value=mock_session),
-            patch("pipeline.handler._ensure_pipeline_run", return_value=str(uuid4())),
-            patch("pipeline.handler.step_parse_export", return_value=[]),
-            patch("pipeline.handler.step_apify_enrich") as mock_apify,
-            patch("pipeline.handler.step_subtitle_fetch") as mock_subtitle,
-            patch("pipeline.handler.step_embed") as mock_embed,
+            patch("app.services.pipeline._session", return_value=mock_session),
+            patch("app.services.pipeline._ensure_pipeline_run", return_value=str(uuid4())),
+            patch("app.services.pipeline.step_parse_export", return_value=[]),
+            patch("app.services.pipeline.step_apify_enrich") as mock_apify,
+            patch("app.services.pipeline.step_subtitle_fetch") as mock_subtitle,
+            patch("app.services.pipeline.step_embed") as mock_embed,
         ):
             result = handler(event, _make_context())
 
