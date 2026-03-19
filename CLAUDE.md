@@ -289,6 +289,7 @@ Single secret source:
 Default: Supabase Cloud (always on, no Docker needed)
 Optional: Local Supabase via `supabase start` (for migration work or full resets)
 
+
 ### Primary IDE: VS Code + Claude Code
 
 Terminal layout:
