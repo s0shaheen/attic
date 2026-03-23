@@ -37,9 +37,15 @@ FIXTURE_PATH = Path(__file__).parent.parent / "tests/fixtures/tiktok-exports/syn
 TEST_USER_ID = "9e9019d7-62a7-4518-853c-e420f41cad5c"
 TEST_EMAIL = "test@attic.dev"
 TEST_PASSWORD = "testtest123"
-DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql+asyncpg://postgres:postgres@localhost:54322/postgres")
+DATABASE_URL = os.environ.get("DATABASE_URL")
+if not DATABASE_URL:
+    print("ERROR: DATABASE_URL not set. Run ./scripts/setup-env.sh first.")
+    sys.exit(1)
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
-SUPABASE_URL = os.environ.get("SUPABASE_URL", "http://127.0.0.1:54321")
+SUPABASE_URL = os.environ.get("SUPABASE_URL")
+if not SUPABASE_URL:
+    print("ERROR: SUPABASE_URL not set. Run ./scripts/setup-env.sh first.")
+    sys.exit(1)
 SUPABASE_SECRET_KEY = os.environ.get("SUPABASE_SECRET_KEY", "")
 
 EMBEDDING_DIMENSIONS = 1536
@@ -180,7 +186,10 @@ async def main():
     await _create_auth_user()
 
     print(f"  Connecting to {DATABASE_URL.split('@')[1]}...")
-    engine = create_async_engine(DATABASE_URL, echo=False)
+    connect_args = {}
+    if "pooler.supabase.com" in DATABASE_URL or ":6543/" in DATABASE_URL:
+        connect_args["statement_cache_size"] = 0
+    engine = create_async_engine(DATABASE_URL, echo=False, connect_args=connect_args)
     async_session = sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
 
     async with async_session() as db:

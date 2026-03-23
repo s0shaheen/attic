@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attic — All Screen Wireframes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F8F7F4; --surface: #FFFFFF; --subtle: #F0EEE8;
+    --ink: #1C1B18; --soft-black: #2C2926; --stone: #9C9890;
+    --placeholder: #B8B4AC; --border: #E6E4DE; --border-hover: #D0CCC4;
+    --cinnamon: #A06840; --cinnamon-light: #BC8058; --cinnamon-dark: #7E5030;
+    --cinnamon-subtle: rgba(160,104,64,0.07); --cinnamon-border: rgba(160,104,64,0.15);
+    --font-display: 'Crimson Pro', Georgia, serif;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'DM Mono', ui-monospace, monospace;
+    --radius-sm: 4px; --radius-md: 8px; --radius-lg: 12px; --radius-xl: 16px; --radius-full: 9999px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: var(--font-sans); background: #EDEBE6; color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+  /* === Master nav === */
+  .master-nav {
+    position: sticky; top: 0; z-index: 100; background: var(--soft-black);
+    display: flex; align-items: center; gap: 4px; padding: 8px 16px; overflow-x: auto;
+  }
+  .master-tab {
+    font-family: var(--font-sans); font-size: 12px; font-weight: 500; color: #B8B4AC;
+    background: none; border: none; padding: 6px 14px; border-radius: var(--radius-full);
+    cursor: pointer; white-space: nowrap; transition: all 0.15s;
+  }
+  .master-tab:hover { color: #F8F7F4; }
+  .master-tab.active { background: rgba(255,255,255,0.12); color: #F8F7F4; }
+  .master-label { font-family: var(--font-display); font-size: 14px; color: #F8F7F4; margin-right: 12px; letter-spacing: -0.03em; }
+
+  .screen { display: none; }
+  .screen.active { display: block; }
+
+  /* === Shared components === */
+  .sidebar {
+    width: 260px; background: var(--surface); border-right: 0.5px solid var(--border);
+    display: flex; flex-direction: column; flex-shrink: 0;
+  }
+  .sidebar-header {
+    padding: 16px 20px; border-bottom: 0.5px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .wordmark { font-family: var(--font-display); font-size: 18px; font-weight: 500; color: var(--ink); letter-spacing: -0.03em; }
+  .new-chat-btn {
+    font-family: var(--font-sans); font-size: 12px; font-weight: 500;
+    background: var(--soft-black); color: var(--bg); border: none; border-radius: var(--radius-md);
+    padding: 6px 12px; cursor: pointer;
+  }
+  .new-chat-btn:hover { opacity: 0.85; }
+  .sidebar-section-label { font-size: 11px; font-weight: 500; color: var(--stone); padding: 12px 20px 4px; }
+  .sidebar-list { list-style: none; padding: 0 8px; }
+  .sidebar-item {
+    padding: 8px 12px; border-radius: var(--radius-md); cursor: pointer;
+    font-size: 13px; color: var(--ink); display: flex; flex-direction: column; gap: 1px;
+  }
+  .sidebar-item:hover { background: var(--subtle); }
+  .sidebar-item.active { background: var(--subtle); }
+  .sidebar-item .title { font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sidebar-item .meta { font-size: 11px; color: var(--stone); }
+  .sidebar-footer {
+    margin-top: auto; padding: 12px 20px; border-top: 0.5px solid var(--border);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .avatar {
+    width: 28px; height: 28px; border-radius: var(--radius-full);
+    background: var(--subtle); border: 0.5px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 500; color: var(--stone);
+  }
+  .sidebar-footer .name { font-size: 13px; font-weight: 500; flex: 1; }
+  .settings-link { font-size: 11px; color: var(--stone); text-decoration: underline; text-decoration-color: var(--border-hover); text-underline-offset: 2px; cursor: pointer; }
+
+  .app-layout { display: flex; height: calc(100vh - 44px); }
+  .main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+
+  .chat-header {
+    padding: 12px 24px; border-bottom: 0.5px solid var(--border); background: var(--surface);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .chat-title { font-size: 15px; font-weight: 500; }
+  .chat-meta { font-size: 11px; color: var(--stone); font-family: var(--font-mono); }
+
+  .messages {
+    flex: 1; overflow-y: auto; padding: 24px;
+    display: flex; flex-direction: column; gap: 16px;
+    max-width: 740px; margin: 0 auto; width: 100%;
+  }
+  .msg-row { display: flex; flex-direction: column; gap: 4px; }
+  .msg-row.user { align-items: flex-end; }
+  .msg-row.assistant { align-items: flex-start; }
+  .bubble { padding: 10px 14px; border-radius: var(--radius-lg); font-size: 14px; line-height: 1.55; max-width: 85%; }
+  .bubble.user { background: var(--soft-black); color: var(--bg); }
+  .bubble.assistant { background: var(--surface); color: var(--ink); border: 0.5px solid var(--border); }
+
+  .entity-group { display: flex; flex-direction: column; gap: 8px; max-width: 85%; }
+  .entity-card {
+    background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg);
+    padding: 12px; display: flex; gap: 12px; align-items: flex-start; cursor: pointer; transition: border-color 0.15s;
+  }
+  .entity-card:hover { border-color: var(--border-hover); }
+  .entity-thumb { width: 56px; height: 56px; border-radius: var(--radius-md); flex-shrink: 0; }
+  .entity-info { flex: 1; min-width: 0; }
+  .entity-title { font-size: 14px; font-weight: 500; margin-bottom: 2px; }
+  .entity-meta { font-size: 12px; color: var(--stone); line-height: 1.4; }
+  .entity-link { font-size: 12px; color: var(--ink); text-decoration: underline; text-decoration-color: var(--border-hover); text-underline-offset: 2px; cursor: pointer; }
+  .entity-badge { display: inline-block; font-size: 10px; font-weight: 500; padding: 2px 8px; border-radius: var(--radius-full); }
+  .badge-open { background: #F2F8F3; color: #2E5E38; border: 0.5px solid #BCE8C4; }
+  .badge-count { background: var(--subtle); color: var(--stone); border: 0.5px solid rgba(28,27,24,0.07); cursor: pointer; }
+  .badge-rating { color: var(--cinnamon); font-size: 11px; letter-spacing: 1px; }
+
+  .entity-tiktoks { display: flex; gap: 3px; margin-top: 6px; padding-top: 6px; border-top: 0.5px solid var(--border); }
+  .entity-tiktok-thumb { width: 28px; height: 38px; border-radius: 3px; flex-shrink: 0; cursor: pointer; }
+  .entity-tiktok-more { width: 28px; height: 38px; border-radius: 3px; background: var(--subtle); display: flex; align-items: center; justify-content: center; font-size: 9px; color: var(--stone); }
+  .entity-source-label { font-size: 10px; color: var(--stone); margin-right: 6px; align-self: center; }
+
+  .thumb-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; border-radius: var(--radius-lg); overflow: hidden; max-width: 320px; }
+  .thumb-cell { aspect-ratio: 9/16; cursor: pointer; }
+  .thumb-more-cell { aspect-ratio: 9/16; background: var(--subtle); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; color: var(--stone); cursor: pointer; }
+
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; padding: 4px 0; }
+  .chip { font-size: 12px; padding: 5px 12px; border-radius: var(--radius-full); background: var(--surface); border: 0.5px solid var(--border); color: var(--ink); cursor: pointer; font-family: var(--font-sans); white-space: nowrap; }
+  .chip:hover { background: var(--subtle); }
+
+  .editorial { font-style: italic; font-size: 14px; color: var(--stone); line-height: 1.55; padding: 8px 14px; max-width: 85%; border-left: 2px solid var(--border); }
+
+  .input-area { padding: 16px 24px 20px; border-top: 0.5px solid var(--border); background: var(--surface); }
+  .input-wrapper { max-width: 740px; margin: 0 auto; display: flex; gap: 8px; align-items: flex-end; }
+  .input-box {
+    flex: 1; font-family: var(--font-sans); font-size: 14px; color: var(--ink);
+    background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg);
+    padding: 12px 16px; resize: none; outline: none; line-height: 1.5; min-height: 44px;
+  }
+  .input-box::placeholder { color: var(--placeholder); }
+  .input-box:focus { border-color: var(--ink); }
+  .send-btn {
+    width: 40px; height: 40px; border-radius: var(--radius-md); border: none;
+    background: var(--soft-black); color: var(--bg); cursor: pointer;
+    display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600; flex-shrink: 0;
+  }
+  .input-hint { font-size: 11px; color: var(--stone); text-align: center; margin-top: 6px; max-width: 740px; margin-left: auto; margin-right: auto; }
+
+  /* === Expanded views === */
+  .expanded-panel { max-width: 800px; margin: 0 auto; padding: 24px; }
+  .expanded-header { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 16px; border-bottom: 0.5px solid var(--border); margin-bottom: 20px; }
+  .expanded-title { font-size: 18px; font-weight: 500; }
+  .expanded-meta { font-size: 12px; color: var(--stone); }
+  .expanded-back { font-size: 12px; color: var(--stone); cursor: pointer; text-decoration: underline; text-decoration-color: var(--border-hover); text-underline-offset: 2px; }
+  .expanded-group-label { font-size: 13px; font-weight: 500; color: var(--stone); padding: 16px 0 8px; }
+  .expanded-entity { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 14px; display: flex; gap: 14px; margin-bottom: 8px; cursor: pointer; }
+  .expanded-entity:hover { border-color: var(--border-hover); }
+  .expanded-entity-thumb { width: 64px; height: 64px; border-radius: var(--radius-md); flex-shrink: 0; }
+  .expanded-entity-title { font-size: 15px; font-weight: 500; margin-bottom: 3px; }
+  .expanded-entity-meta { font-size: 12px; color: var(--stone); line-height: 1.45; }
+  .expanded-entity-actions { display: flex; gap: 8px; margin-top: 6px; align-items: center; }
+  .tiktok-strip { display: flex; gap: 4px; margin-top: 10px; padding-top: 10px; border-top: 0.5px solid var(--border); }
+  .tiktok-strip-thumb { width: 40px; height: 54px; border-radius: var(--radius-sm); flex-shrink: 0; cursor: pointer; }
+  .tiktok-strip-label { font-size: 10px; color: var(--stone); align-self: center; margin-right: 6px; }
+
+  /* === TikTok grid === */
+  .tiktok-grid-container { max-width: 900px; margin: 0 auto; padding: 24px; }
+  .tiktok-masonry { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .tiktok-grid-card { border-radius: var(--radius-md); overflow: hidden; cursor: pointer; position: relative; transition: transform 0.15s; }
+  .tiktok-grid-card:hover { transform: scale(1.02); }
+  .tiktok-grid-visual { width: 100%; aspect-ratio: 9/16; display: block; }
+  .tiktok-grid-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(28,27,24,0.7)); padding: 8px; }
+  .tiktok-grid-creator { font-size: 10px; font-weight: 500; color: #FFF; }
+  .tiktok-grid-caption { font-size: 9px; color: rgba(255,255,255,0.75); line-height: 1.3; margin-top: 2px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .tiktok-grid-entities { position: absolute; top: 6px; right: 6px; display: flex; gap: 3px; }
+  .tiktok-entity-pip { width: 20px; height: 20px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.5); }
+
+  /* === TikTok detail === */
+  .tiktok-detail { max-width: 600px; margin: 0 auto; padding: 24px; }
+  .tiktok-detail-meta-grid { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 13px; padding: 16px; background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); margin-bottom: 16px; }
+  .tiktok-detail-label { color: var(--stone); }
+  .tiktok-detail-entities-label { font-size: 13px; font-weight: 500; margin-bottom: 8px; }
+
+  /* === Empty state === */
+  .empty-state { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 24px; gap: 32px; max-width: 600px; margin: 0 auto; width: 100%; }
+  .empty-wordmark { font-family: var(--font-display); font-size: 28px; font-weight: 500; color: var(--ink); letter-spacing: -0.03em; margin-bottom: 8px; }
+  .empty-tagline { font-family: var(--font-display); font-style: italic; font-size: 16px; color: var(--stone); line-height: 1.4; }
+  .empty-stats { display: flex; gap: 24px; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-num { font-family: var(--font-display); font-size: 24px; font-weight: 600; color: var(--ink); letter-spacing: -0.02em; }
+  .stat-label { font-size: 12px; color: var(--stone); margin-top: 2px; }
+  .prompt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; }
+  .prompt-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 14px 16px; cursor: pointer; display: flex; flex-direction: column; gap: 4px; }
+  .prompt-card:hover { border-color: var(--border-hover); background: var(--subtle); }
+  .prompt-text { font-size: 13px; font-weight: 500; color: var(--ink); }
+  .prompt-hint { font-size: 11px; color: var(--stone); }
+
+  /* === Landing === */
+  .landing-page { max-width: 860px; margin: 0 auto; padding: 0 24px; background: var(--bg); }
+  .nav { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 0.5px solid var(--border); }
+  .nav-wordmark { font-family: var(--font-display); font-size: 20px; font-weight: 500; color: var(--ink); letter-spacing: -0.03em; }
+  .nav-links { display: flex; gap: 24px; align-items: center; }
+  .nav-link { font-size: 13px; color: var(--stone); cursor: pointer; }
+  .nav-cta { font-size: 13px; font-weight: 500; background: var(--soft-black); color: var(--bg); border: none; border-radius: var(--radius-md); padding: 8px 16px; cursor: pointer; font-family: var(--font-sans); }
+  .hero { text-align: center; padding: 80px 0 60px; }
+  .hero-headline { font-family: var(--font-display); font-size: 48px; font-weight: 600; color: var(--ink); letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 16px; }
+  .hero-sub { font-size: 17px; color: var(--stone); line-height: 1.55; max-width: 520px; margin: 0 auto 32px; }
+  .hero-cta { display: inline-block; font-size: 15px; font-weight: 500; background: var(--soft-black); color: var(--bg); border-radius: var(--radius-lg); padding: 14px 32px; cursor: pointer; font-family: var(--font-sans); text-decoration: none; }
+  .hero-note { font-size: 12px; color: var(--stone); margin-top: 12px; }
+  .preview { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-xl); padding: 20px; margin-bottom: 80px; }
+  .preview-header { display: flex; gap: 8px; margin-bottom: 12px; }
+  .preview-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); }
+  .preview-content { display: flex; flex-direction: column; gap: 8px; max-width: 500px; }
+  .preview-bubble-user { align-self: flex-end; background: var(--soft-black); color: var(--bg); padding: 8px 12px; border-radius: var(--radius-lg); font-size: 13px; }
+  .preview-bubble-bot { align-self: flex-start; background: var(--bg); border: 0.5px solid var(--border); color: var(--ink); padding: 8px 12px; border-radius: var(--radius-lg); font-size: 13px; line-height: 1.5; }
+  .preview-entity { align-self: flex-start; background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 10px; display: flex; gap: 10px; }
+  .preview-entity-thumb { width: 44px; height: 44px; border-radius: var(--radius-md); flex-shrink: 0; }
+  .preview-entity-title { font-size: 13px; font-weight: 500; }
+  .preview-entity-meta { font-size: 11px; color: var(--stone); }
+  .preview-thumbs { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; border-radius: var(--radius-md); overflow: hidden; max-width: 180px; }
+  .preview-thumb { aspect-ratio: 9/16; }
+  .section { margin-bottom: 80px; }
+  .section-label { font-size: 12px; font-weight: 500; color: var(--stone); letter-spacing: 0.02em; text-align: center; margin-bottom: 8px; }
+  .section-title { font-family: var(--font-display); font-size: 28px; font-weight: 500; color: var(--ink); text-align: center; letter-spacing: -0.02em; margin-bottom: 40px; }
+  .steps { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  .step { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 24px 20px; text-align: center; }
+  .step-num { font-family: var(--font-display); font-size: 28px; font-weight: 600; color: var(--cinnamon); margin-bottom: 12px; }
+  .step-title { font-size: 15px; font-weight: 500; margin-bottom: 6px; }
+  .step-desc { font-size: 13px; color: var(--stone); line-height: 1.5; }
+  .props { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .prop { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 24px 20px; }
+  .prop-title { font-size: 15px; font-weight: 500; margin-bottom: 6px; }
+  .prop-desc { font-size: 13px; color: var(--stone); line-height: 1.5; }
+  .proof { text-align: center; }
+  .proof-quote { font-family: var(--font-display); font-style: italic; font-size: 20px; color: var(--ink); line-height: 1.45; max-width: 500px; margin: 0 auto 12px; }
+  .proof-attr { font-size: 13px; color: var(--stone); }
+  .final-cta { text-align: center; padding: 60px 0 40px; border-top: 0.5px solid var(--border); margin-top: 20px; }
+  .final-cta-title { font-family: var(--font-display); font-size: 28px; font-weight: 500; color: var(--ink); letter-spacing: -0.02em; margin-bottom: 12px; }
+  .final-cta-sub { font-size: 14px; color: var(--stone); margin-bottom: 24px; }
+  .final-cta-btn { display: inline-block; font-size: 15px; font-weight: 500; background: var(--soft-black); color: var(--bg); border-radius: var(--radius-lg); padding: 14px 32px; cursor: pointer; font-family: var(--font-sans); text-decoration: none; }
+  .footer { text-align: center; padding: 24px 0; border-top: 0.5px solid var(--border); font-size: 12px; color: var(--stone); }
+  .footer a { color: var(--stone); text-decoration: underline; text-decoration-color: var(--border-hover); text-underline-offset: 2px; }
+
+  /* === Reveal === */
+  .reveal { max-width: 600px; margin: 0 auto; padding: 40px 24px 60px; background: var(--bg); display: flex; flex-direction: column; }
+  .reveal-nav { display: flex; justify-content: center; padding-bottom: 40px; }
+  .reveal-hero { text-align: center; margin-bottom: 48px; }
+  .reveal-hero-label { font-size: 12px; font-weight: 500; color: var(--stone); margin-bottom: 12px; }
+  .reveal-hero-number { font-family: var(--font-display); font-size: 72px; font-weight: 700; color: var(--cinnamon); letter-spacing: -0.04em; line-height: 1; }
+  .reveal-hero-unit { font-family: var(--font-display); font-size: 20px; color: var(--ink); margin-top: 4px; }
+  .reveal-hero-range { font-size: 13px; color: var(--stone); margin-top: 8px; font-family: var(--font-mono); }
+  .reveal-section { margin-bottom: 36px; }
+  .reveal-section-title { font-family: var(--font-display); font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 12px; }
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .stat-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 16px; text-align: center; }
+  .stat-card-num { font-family: var(--font-display); font-size: 32px; font-weight: 600; color: var(--ink); letter-spacing: -0.03em; line-height: 1; }
+  .stat-card-num.accent { color: var(--cinnamon); }
+  .stat-card-label { font-size: 12px; color: var(--stone); margin-top: 4px; }
+  .topic-list { display: flex; flex-direction: column; gap: 6px; }
+  .topic-row { display: flex; align-items: center; gap: 12px; padding: 10px 14px; background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); }
+  .topic-rank { font-family: var(--font-mono); font-size: 12px; color: var(--stone); width: 20px; text-align: right; }
+  .topic-name { font-size: 14px; font-weight: 500; flex: 1; }
+  .topic-bar-wrap { width: 100px; height: 6px; background: var(--subtle); border-radius: 3px; overflow: hidden; }
+  .topic-bar { height: 100%; background: var(--cinnamon); border-radius: 3px; }
+  .topic-count { font-size: 12px; color: var(--stone); font-family: var(--font-mono); min-width: 36px; text-align: right; }
+  .creator-list { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+  .creator-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 14px 16px; min-width: 160px; flex-shrink: 0; text-align: center; }
+  .creator-avatar { width: 40px; height: 40px; border-radius: var(--radius-full); background: var(--subtle); margin: 0 auto 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; color: var(--stone); }
+  .creator-name { font-size: 13px; font-weight: 500; }
+  .creator-meta { font-size: 11px; color: var(--stone); margin-top: 2px; }
+  .highlight-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 20px; text-align: center; }
+  .highlight-label { font-size: 11px; color: var(--stone); margin-bottom: 8px; }
+  .highlight-value { font-family: var(--font-display); font-size: 18px; font-weight: 500; color: var(--ink); line-height: 1.35; }
+  .highlight-context { font-size: 12px; color: var(--stone); margin-top: 4px; }
+  .reveal-editorial { font-family: var(--font-display); font-style: italic; font-size: 15px; color: var(--stone); line-height: 1.55; text-align: center; padding: 16px 20px; margin: 8px 0 36px; }
+  .reveal-cta-area { text-align: center; margin-top: auto; padding-top: 24px; }
+  .reveal-cta { display: inline-block; font-size: 15px; font-weight: 500; background: var(--soft-black); color: var(--bg); border-radius: var(--radius-lg); padding: 14px 32px; cursor: pointer; font-family: var(--font-sans); text-decoration: none; }
+  .reveal-cta-hint { font-size: 12px; color: var(--stone); margin-top: 8px; }
+  .thumb-strip { display: flex; gap: 4px; justify-content: center; margin-top: 12px; }
+  .thumb-strip-item { width: 36px; height: 48px; border-radius: var(--radius-sm); }
+
+  /* === Colors === */
+  .c1{background:#D4523A}.c2{background:#4AA86C}.c3{background:#5B6ABF}
+  .c4{background:#E0A830}.c5{background:#CF4F6A}.c6{background:#45A5D4}
+  .c7{background:#8B6BB5}.c8{background:#D48045}.c9{background:#3D8B7A}
+  .c10{background:#B85C5C}.c11{background:#5C8BB8}.c12{background:#8BAA5C}
+</style>
+</head>
+<body>
+
+<div class="master-nav">
+  <span class="master-label">attic wireframes</span>
+  <button class="master-tab active" onclick="showScreen('chat')">Chat</button>
+  <button class="master-tab" onclick="showScreen('entities')">Expanded entities</button>
+  <button class="master-tab" onclick="showScreen('tiktoks')">TikTok grid</button>
+  <button class="master-tab" onclick="showScreen('detail')">TikTok detail</button>
+  <button class="master-tab" onclick="showScreen('empty')">Chat empty</button>
+  <button class="master-tab" onclick="showScreen('reveal')">Reveal</button>
+  <button class="master-tab" onclick="showScreen('landing')">Landing</button>
+</div>
+
+<!-- ===== SCREEN: CHAT ===== -->
+<div id="chat" class="screen active">
+<div class="app-layout">
+  <nav class="sidebar">
+    <div class="sidebar-header"><span class="wordmark">attic</span><button class="new-chat-btn">New chat</button></div>
+    <div class="sidebar-section-label">Today</div>
+    <ul class="sidebar-list">
+      <li class="sidebar-item active"><span class="title">Chicago restaurants from saves</span><span class="meta">12 results</span></li>
+      <li class="sidebar-item"><span class="title">Cooking videos I saved last month</span><span class="meta">34 videos</span></li>
+    </ul>
+    <div class="sidebar-section-label">Yesterday</div>
+    <ul class="sidebar-list">
+      <li class="sidebar-item"><span class="title">Books from BookTok</span><span class="meta">8 books</span></li>
+      <li class="sidebar-item"><span class="title">Fitness content breakdown</span><span class="meta">Overview</span></li>
+    </ul>
+    <div class="sidebar-section-label">Last week</div>
+    <ul class="sidebar-list"><li class="sidebar-item"><span class="title">That pasta place in Brooklyn</span><span class="meta">1 restaurant</span></li></ul>
+    <div class="sidebar-footer"><div class="avatar">S</div><span class="name">Salman</span><span class="settings-link">Settings</span></div>
+  </nav>
+  <div class="main">
+    <div class="chat-header"><span class="chat-title">Chicago restaurants from saves</span><span class="chat-meta">847 items · Dec 15, 2024</span></div>
+    <div class="messages">
+      <div class="msg-row user"><div class="bubble user">What restaurants did I save in Chicago?</div></div>
+      <div class="msg-row assistant"><div class="bubble assistant">Found <strong>12 restaurants</strong> across 4 neighborhoods. Here are the most saved:</div></div>
+      <div class="msg-row assistant"><div class="entity-group">
+        <div class="entity-card">
+          <div class="entity-thumb" style="background:linear-gradient(135deg,#E8D0B0,#C4A882)"></div>
+          <div class="entity-info">
+            <div class="entity-title">Girl & The Goat <span class="badge-rating">&#9733;&#9733;&#9733;&#9733;</span></div>
+            <div class="entity-meta">West Loop · Saved 3x · @chicagofoodguide</div>
+            <div style="display:flex;gap:6px;align-items:center;margin-top:4px"><span class="entity-badge badge-open">Open now</span><span class="entity-link">directions</span></div>
+            <div class="entity-tiktoks"><span class="entity-source-label">from</span><div class="entity-tiktok-thumb c1"></div><div class="entity-tiktok-thumb c4"></div><div class="entity-tiktok-thumb c6"></div></div>
+          </div>
+        </div>
+        <div class="entity-card">
+          <div class="entity-thumb" style="background:linear-gradient(135deg,#C8D5C0,#A8BFA0)"></div>
+          <div class="entity-info">
+            <div class="entity-title">Portillo's <span class="badge-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+            <div class="entity-meta">River North · Saved 5x · @midwestfoodie, @chicagoeats</div>
+            <div style="display:flex;gap:6px;align-items:center;margin-top:4px"><span class="entity-badge badge-open">Open now</span><span class="entity-link">directions</span></div>
+            <div class="entity-tiktoks"><span class="entity-source-label">from</span><div class="entity-tiktok-thumb c2"></div><div class="entity-tiktok-thumb c5"></div><div class="entity-tiktok-thumb c8"></div><div class="entity-tiktok-thumb c3"></div><div class="entity-tiktok-more">+1</div></div>
+          </div>
+        </div>
+        <div class="entity-card">
+          <div class="entity-thumb" style="background:linear-gradient(135deg,#D4C0B0,#BCA898)"></div>
+          <div class="entity-info">
+            <div class="entity-title">Au Cheval <span class="badge-rating">&#9733;&#9733;&#9733;&#9733;</span></div>
+            <div class="entity-meta">West Loop · Saved 2x · @eater</div>
+            <div style="display:flex;gap:6px;align-items:center;margin-top:4px"><span class="entity-badge badge-count">View all 12 restaurants &#8594;</span></div>
+          </div>
+        </div>
+      </div></div>
+      <div class="msg-row assistant"><div class="bubble assistant" style="padding-bottom:6px">The TikToks these came from:</div></div>
+      <div class="msg-row assistant"><div class="thumb-grid"><div class="thumb-cell c1"></div><div class="thumb-cell c2"></div><div class="thumb-cell c3"></div><div class="thumb-cell c4"></div><div class="thumb-cell c5"></div><div class="thumb-more-cell">+7</div></div></div>
+      <div class="msg-row assistant"><div class="editorial">Heavy on the West Loop — 5 of your 12 restaurant saves are from that neighborhood. You might have a type.</div></div>
+      <div class="msg-row assistant"><div class="chips"><button class="chip">Show all 12</button><button class="chip">Which ones are open now?</button><button class="chip">View all source TikToks</button><button class="chip">Any in other cities?</button></div></div>
+    </div>
+    <div class="input-area"><div class="input-wrapper"><textarea class="input-box" placeholder="Ask about your saves..." rows="1"></textarea><button class="send-btn">&#8593;</button></div><div class="input-hint">Attic searches your 847 saved TikToks</div></div>
+  </div>
+</div>
+</div>
+
+<!-- ===== SCREEN: EXPANDED ENTITIES ===== -->
+<div id="entities" class="screen">
+<div class="expanded-panel" style="background:var(--bg);min-height:calc(100vh - 44px);">
+  <div class="expanded-header"><div><div class="expanded-title">All restaurants in Chicago</div><div class="expanded-meta">12 restaurants · 4 neighborhoods · from 18 TikToks</div></div><span class="expanded-back" onclick="showScreen('chat')">&#8592; back to chat</span></div>
+  <div class="expanded-group-label">West Loop · 5 restaurants</div>
+  <div class="expanded-entity"><div class="expanded-entity-thumb" style="background:linear-gradient(135deg,#E8D0B0,#C4A882)"></div><div style="flex:1"><div class="expanded-entity-title">Girl & The Goat <span class="badge-rating">&#9733;&#9733;&#9733;&#9733;</span></div><div class="expanded-entity-meta">809 W Randolph St · Saved 3x · @chicagofoodguide, @westloopfood</div><div class="expanded-entity-actions"><span class="entity-badge badge-open">Open now</span><span class="entity-link">directions</span><span class="entity-link">website</span></div><div class="tiktok-strip"><span class="tiktok-strip-label">Sources:</span><div class="tiktok-strip-thumb c1"></div><div class="tiktok-strip-thumb c4"></div><div class="tiktok-strip-thumb c6"></div></div></div></div>
+  <div class="expanded-entity"><div class="expanded-entity-thumb" style="background:linear-gradient(135deg,#D4C0B0,#BCA898)"></div><div style="flex:1"><div class="expanded-entity-title">Au Cheval <span class="badge-rating">&#9733;&#9733;&#9733;&#9733;</span></div><div class="expanded-entity-meta">800 W Randolph St · Saved 2x · @eater</div><div class="expanded-entity-actions"><span class="entity-link">directions</span><span class="entity-link">website</span></div><div class="tiktok-strip"><span class="tiktok-strip-label">Sources:</span><div class="tiktok-strip-thumb c7"></div><div class="tiktok-strip-thumb c9"></div></div></div></div>
+  <div class="expanded-group-label">River North · 3 restaurants</div>
+  <div class="expanded-entity"><div class="expanded-entity-thumb" style="background:linear-gradient(135deg,#C8D5C0,#A8BFA0)"></div><div style="flex:1"><div class="expanded-entity-title">Portillo's <span class="badge-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div><div class="expanded-entity-meta">100 W Ontario St · Saved 5x · @midwestfoodie, @chicagoeats, +1</div><div class="expanded-entity-actions"><span class="entity-badge badge-open">Open now</span><span class="entity-link">directions</span></div><div class="tiktok-strip"><span class="tiktok-strip-label">Sources:</span><div class="tiktok-strip-thumb c2"></div><div class="tiktok-strip-thumb c5"></div><div class="tiktok-strip-thumb c8"></div><div class="tiktok-strip-thumb c3"></div><div class="tiktok-strip-thumb c11"></div></div></div></div>
+</div>
+</div>
+
+<!-- ===== SCREEN: TIKTOK GRID ===== -->
+<div id="tiktoks" class="screen">
+<div class="tiktok-grid-container" style="background:var(--bg);min-height:calc(100vh - 44px);">
+  <div class="expanded-header"><div><div class="expanded-title">Source TikToks</div><div class="expanded-meta">18 TikToks mentioning restaurants in Chicago</div></div><span class="expanded-back" onclick="showScreen('chat')">&#8592; back to chat</span></div>
+  <div class="tiktok-masonry">
+    <div class="tiktok-grid-card" onclick="showScreen('detail')"><div class="tiktok-grid-visual c1"></div><div class="tiktok-grid-overlay"><div class="tiktok-grid-creator">@chicagofoodguide</div><div class="tiktok-grid-caption">Top 5 restaurants in West Loop you NEED to try</div></div><div class="tiktok-grid-entities"><div class="tiktok-entity-pip" style="background:linear-gradient(135deg,#E8D0B0,#C4A882)"></div><div class="tiktok-entity-pip" style="background:linear-gradient(135deg,#C8B8D0,#A898B8)"></div></div></div>
+    <div class="tiktok-grid-card"><div class="tiktok-grid-visual c2"></div><div class="tiktok-grid-overlay"><div class="tiktok-grid-creator">@midwestfoodie</div><div class="tiktok-grid-caption">Portillo's italian beef review</div></div></div>
+    <div class="tiktok-grid-card"><div class="tiktok-grid-visual c3"></div><div class="tiktok-grid-overlay"><div class="tiktok-grid-creator">@eater</div><div class="tiktok-grid-caption">The burger that put Au Cheval on the map</div></div></div>
+    <div class="tiktok-grid-card"><div class="tiktok-grid-visual c4"></div><div class="tiktok-grid-overlay"><div class="tiktok-grid-creator">@westloopfood</div><div class="tiktok-grid-caption">Girl and the goat brunch was incredible</div></div></div>
+    <div class="tiktok-grid-card"><div class="tiktok-grid-visual c5"></div><div class="tiktok-grid-overlay"><div class="tiktok-grid-creator">@chicagoeats</div><div class="tiktok-grid-caption">Best cheap eats in River North</div></div></div>
+    <div class="tiktok-grid-card"><div class="tiktok-grid-visual c6"></div><div class="tiktok-grid-overlay"><div class="tiktok-grid-creator">@foodtiktok</div><div class="tiktok-grid-caption">Underrated spots in Chicago</div></div></div>
+    <div class="tiktok-grid-card"><div class="tiktok-grid-visual c7"></div><div class="tiktok-grid-overlay"><div class="tiktok-grid-creator">@tastechi</div><div class="tiktok-grid-caption">Date night West Loop crawl</div></div></div>
+    <div class="tiktok-grid-card"><div class="tiktok-grid-visual c8"></div><div class="tiktok-grid-overlay"><div class="tiktok-grid-creator">@chicagobites</div><div class="tiktok-grid-caption">Portillos vs superdawg — who wins?</div></div></div>
+  </div>
+</div>
+</div>
+
+<!-- ===== SCREEN: TIKTOK DETAIL ===== -->
+<div id="detail" class="screen">
+<div class="tiktok-detail" style="background:var(--bg);min-height:calc(100vh - 44px);">
+  <div class="expanded-header"><div><div class="expanded-title">TikTok detail</div></div><span class="expanded-back" onclick="showScreen('tiktoks')">&#8592; back to grid</span></div>
+  <div class="c1" style="aspect-ratio:9/16;border-radius:12px;max-width:340px;margin:0 auto 20px;"></div>
+  <div class="tiktok-detail-meta-grid">
+    <span class="tiktok-detail-label">Creator</span><span>@chicagofoodguide</span>
+    <span class="tiktok-detail-label">Caption</span><span>Top 5 restaurants in West Loop you NEED to try #chicago #westloop #foodtiktok</span>
+    <span class="tiktok-detail-label">Saved</span><span>Nov 12, 2024</span>
+    <span class="tiktok-detail-label">Type</span><span>Liked + Favorited</span>
+    <span class="tiktok-detail-label">Hashtags</span><span style="font-family:var(--font-mono);font-size:12px">#chicago #westloop #foodtiktok #restaurants</span>
+  </div>
+  <div class="tiktok-detail-entities-label">Entities extracted from this TikTok</div>
+  <div style="display:flex;flex-direction:column;gap:8px">
+    <div class="entity-card"><div class="entity-thumb" style="background:linear-gradient(135deg,#E8D0B0,#C4A882)"></div><div class="entity-info"><div class="entity-title">Girl & The Goat</div><div class="entity-meta">West Loop · Also in 2 other saves</div><span class="entity-link">directions</span></div></div>
+    <div class="entity-card"><div class="entity-thumb" style="background:linear-gradient(135deg,#C8B8D0,#A898B8)"></div><div class="entity-info"><div class="entity-title">Avec</div><div class="entity-meta">West Loop · Also in 0 other saves</div><span class="entity-link">directions</span></div></div>
+  </div>
+</div>
+</div>
+
+<!-- ===== SCREEN: CHAT EMPTY ===== -->
+<div id="empty" class="screen">
+<div class="app-layout">
+  <nav class="sidebar">
+    <div class="sidebar-header"><span class="wordmark">attic</span><button class="new-chat-btn">New chat</button></div>
+    <div class="sidebar-section-label">Yesterday</div>
+    <ul class="sidebar-list">
+      <li class="sidebar-item"><span class="title">Books from BookTok</span><span class="meta">8 books</span></li>
+      <li class="sidebar-item"><span class="title">Fitness content breakdown</span><span class="meta">Overview</span></li>
+    </ul>
+    <div class="sidebar-section-label">Last week</div>
+    <ul class="sidebar-list"><li class="sidebar-item"><span class="title">That pasta place in Brooklyn</span><span class="meta">1 restaurant</span></li></ul>
+    <div class="sidebar-footer"><div class="avatar">S</div><span class="name">Salman</span><span class="settings-link">Settings</span></div>
+  </nav>
+  <div class="main">
+    <div class="empty-state">
+      <div style="text-align:center"><div class="empty-wordmark">attic</div><div class="empty-tagline">Remember what you forgot you loved.</div></div>
+      <div class="empty-stats"><div class="stat"><div class="stat-num">847</div><div class="stat-label">saves</div></div><div class="stat"><div class="stat-num">23</div><div class="stat-label">topics</div></div><div class="stat"><div class="stat-num">142</div><div class="stat-label">creators</div></div><div class="stat"><div class="stat-num">12</div><div class="stat-label">cities</div></div></div>
+      <div class="prompt-grid">
+        <div class="prompt-card"><span class="prompt-text">What restaurants did I save?</span><span class="prompt-hint">Found 12 across 4 cities</span></div>
+        <div class="prompt-card"><span class="prompt-text">Show me my BookTok saves</span><span class="prompt-hint">8 books from 6 creators</span></div>
+        <div class="prompt-card"><span class="prompt-text">What have I been into lately?</span><span class="prompt-hint">Topic breakdown over time</span></div>
+        <div class="prompt-card"><span class="prompt-text">Find that recipe I saved</span><span class="prompt-hint">34 cooking videos found</span></div>
+      </div>
+    </div>
+    <div class="input-area"><div class="input-wrapper" style="max-width:600px"><textarea class="input-box" placeholder="Ask about your saves..." rows="1"></textarea><button class="send-btn">&#8593;</button></div><div class="input-hint" style="max-width:600px">Your data stays private. Attic only searches your uploaded saves.</div></div>
+  </div>
+</div>
+</div>
+
+<!-- ===== SCREEN: REVEAL ===== -->
+<div id="reveal" class="screen">
+<div class="reveal">
+  <div class="reveal-nav"><span class="wordmark">attic</span></div>
+  <div class="reveal-hero">
+    <div class="reveal-hero-label">Your TikTok saves</div>
+    <div class="reveal-hero-number">847</div>
+    <div class="reveal-hero-unit">saves, finally searchable</div>
+    <div class="reveal-hero-range">Jan 2023 — Dec 2024</div>
+  </div>
+  <div class="reveal-section"><div class="stat-grid">
+    <div class="stat-card"><div class="stat-card-num accent">23</div><div class="stat-card-label">topics discovered</div></div>
+    <div class="stat-card"><div class="stat-card-num">142</div><div class="stat-card-label">unique creators</div></div>
+    <div class="stat-card"><div class="stat-card-num accent">12</div><div class="stat-card-label">cities mentioned</div></div>
+    <div class="stat-card"><div class="stat-card-num">47</div><div class="stat-card-label">restaurants found</div></div>
+  </div></div>
+  <div class="reveal-editorial">You've been quietly building a restaurant guide, a reading list, and a fitness plan — all inside your saved folder.</div>
+  <div class="reveal-section">
+    <div class="reveal-section-title">Your top topics</div>
+    <div class="topic-list">
+      <div class="topic-row"><span class="topic-rank">1</span><span class="topic-name">Cooking & recipes</span><div class="topic-bar-wrap"><div class="topic-bar" style="width:100%"></div></div><span class="topic-count">124</span></div>
+      <div class="topic-row"><span class="topic-rank">2</span><span class="topic-name">Restaurants & food spots</span><div class="topic-bar-wrap"><div class="topic-bar" style="width:72%"></div></div><span class="topic-count">89</span></div>
+      <div class="topic-row"><span class="topic-rank">3</span><span class="topic-name">Fitness & workouts</span><div class="topic-bar-wrap"><div class="topic-bar" style="width:55%"></div></div><span class="topic-count">68</span></div>
+      <div class="topic-row"><span class="topic-rank">4</span><span class="topic-name">Books & reading</span><div class="topic-bar-wrap"><div class="topic-bar" style="width:38%"></div></div><span class="topic-count">47</span></div>
+      <div class="topic-row"><span class="topic-rank">5</span><span class="topic-name">Travel & places</span><div class="topic-bar-wrap"><div class="topic-bar" style="width:28%"></div></div><span class="topic-count">35</span></div>
+    </div>
+  </div>
+  <div class="reveal-section">
+    <div class="reveal-section-title">Most saved creators</div>
+    <div class="creator-list">
+      <div class="creator-card"><div class="creator-avatar">CF</div><div class="creator-name">@chicagofoodguide</div><div class="creator-meta">18 saves</div></div>
+      <div class="creator-card"><div class="creator-avatar">BB</div><div class="creator-name">@bookishbronte</div><div class="creator-meta">12 saves</div></div>
+      <div class="creator-card"><div class="creator-avatar">MF</div><div class="creator-name">@midwestfoodie</div><div class="creator-meta">11 saves</div></div>
+      <div class="creator-card"><div class="creator-avatar">SG</div><div class="creator-name">@slowgrowth</div><div class="creator-meta">9 saves</div></div>
+    </div>
+  </div>
+  <div class="reveal-section"><div class="reveal-section-title">Highlights</div>
+    <div class="highlight-card" style="margin-bottom:8px"><div class="highlight-label">Most saved single video</div><div class="highlight-value">"Top 5 restaurants in West Loop you NEED to try"</div><div class="highlight-context">@chicagofoodguide · saved 3x</div><div class="thumb-strip"><div class="thumb-strip-item c1"></div></div></div>
+    <div class="highlight-card" style="margin-bottom:8px"><div class="highlight-label">Busiest save month</div><div class="highlight-value">October 2024</div><div class="highlight-context">127 saves — 3x your average month</div></div>
+    <div class="highlight-card"><div class="highlight-label">Hidden interest</div><div class="highlight-value">Apartment & interior design</div><div class="highlight-context">34 saves you might not have noticed</div><div class="thumb-strip"><div class="thumb-strip-item c7"></div><div class="thumb-strip-item c8"></div><div class="thumb-strip-item c9"></div><div class="thumb-strip-item c3"></div></div></div>
+  </div>
+  <div class="reveal-editorial">All that scrolling meant something. Let's see what's in there.</div>
+  <div class="reveal-cta-area"><a href="#" class="reveal-cta">Start exploring</a><div class="reveal-cta-hint">Opens your personal chat — ask anything about your saves</div></div>
+</div>
+</div>
+
+<!-- ===== SCREEN: LANDING ===== -->
+<div id="landing" class="screen">
+<div class="landing-page">
+  <nav class="nav"><span class="nav-wordmark">attic</span><div class="nav-links"><span class="nav-link">How it works</span><span class="nav-link">Privacy</span><button class="nav-cta">Get started</button></div></nav>
+  <div class="hero">
+    <h1 class="hero-headline">Remember what you<br>forgot you loved.</h1>
+    <p class="hero-sub">Upload your TikTok data export and chat with your saves. Find that restaurant, that recipe, that song — organized by AI, owned by you.</p>
+    <a href="#" class="hero-cta">Get started — it's free</a>
+    <p class="hero-note">No credit card. Your data stays private. Takes 2 minutes.</p>
+  </div>
+  <div class="preview"><div class="preview-header"><div class="preview-dot"></div><div class="preview-dot"></div><div class="preview-dot"></div></div>
+    <div class="preview-content">
+      <div class="preview-bubble-user">What restaurants did I save in Chicago?</div>
+      <div class="preview-bubble-bot">Found <strong>12 restaurants</strong> across 4 neighborhoods. Here are the most saved:</div>
+      <div class="preview-entity"><div class="preview-entity-thumb" style="background:linear-gradient(135deg,#E8D0B0,#C4A882)"></div><div><div class="preview-entity-title">Girl & The Goat</div><div class="preview-entity-meta">West Loop · Saved 3x · from @chicagofoodguide</div></div></div>
+      <div class="preview-entity"><div class="preview-entity-thumb" style="background:linear-gradient(135deg,#C8D5C0,#A8BFA0)"></div><div><div class="preview-entity-title">Portillo's</div><div class="preview-entity-meta">River North · Saved 5x · @midwestfoodie</div></div></div>
+      <div class="preview-thumbs"><div class="preview-thumb c1"></div><div class="preview-thumb c2"></div><div class="preview-thumb c3"></div></div>
+    </div>
+  </div>
+  <div class="section"><div class="section-label">How it works</div><div class="section-title">Three steps. Two minutes. Zero tech skills.</div>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div class="step-title">Export your data</div><div class="step-desc">Request your TikTok data export from the app. Takes 1–3 days. We'll walk you through it.</div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-title">Upload the ZIP</div><div class="step-desc">Drag and drop your export file. We parse, enrich, and classify every saved video.</div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-title">Chat with your saves</div><div class="step-desc">Ask anything. "Show me recipes." "What books did BookTok recommend?" "Find that song."</div></div>
+    </div>
+  </div>
+  <div class="section"><div class="section-label">What you get</div><div class="section-title">Your scroll, decoded.</div>
+    <div class="props">
+      <div class="prop"><div class="prop-title">Search your saves</div><div class="prop-desc">Natural language search across every video you've saved or liked. No more scrolling through hundreds of saves to find that one video.</div></div>
+      <div class="prop"><div class="prop-title">Automatic collections</div><div class="prop-desc">Restaurants, books, recipes, workouts, travel spots — organized into browsable collections without you lifting a finger.</div></div>
+      <div class="prop"><div class="prop-title">Your Wrapped moment</div><div class="prop-desc">See your saves like never before. Top topics, favorite creators, hidden patterns — all that scrolling meant something.</div></div>
+      <div class="prop"><div class="prop-title">Private by default</div><div class="prop-desc">Your data stays on our servers, never sold, never shared. Delete anytime. We process your export — we don't scrape TikTok.</div></div>
+    </div>
+  </div>
+  <div class="section"><div class="proof"><div class="proof-quote">"I had 1,200 saved TikToks and couldn't find a single one when I needed it. Attic found it in 5 seconds."</div><div class="proof-attr">— Early beta user (placeholder)</div></div></div>
+  <div class="final-cta"><div class="final-cta-title">All that scrolling meant something.</div><div class="final-cta-sub">Upload your TikTok export and see what your saves say about you.</div><a href="#" class="final-cta-btn">Get started — it's free</a></div>
+  <footer class="footer"><p>attic · <a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Contact</a></p></footer>
+</div>
+</div>
+
+<script>
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.master-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  var tabs = document.querySelectorAll('.master-tab');
+  var map = {chat:0,entities:1,tiktoks:2,detail:3,empty:4,reveal:5,landing:6};
+  if(map[id]!==undefined) tabs[map[id]].classList.add('active');
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>

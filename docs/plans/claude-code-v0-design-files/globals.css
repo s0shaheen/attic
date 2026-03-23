@@ -1,0 +1,178 @@
+/*
+ * Attic — Global CSS Custom Properties
+ *
+ * Palette: "Parchment + Ink" with Cinnamon accent
+ * Default: Light mode
+ * Dark mode: Deferred (tokens ready in design-tokens.ts)
+ *
+ * These variables are consumed by Tailwind classes and
+ * any component that needs direct CSS access to tokens.
+ */
+
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/* Base theme: Light (Parchment + Ink)                                */
+/* ------------------------------------------------------------------ */
+
+:root {
+  /* Typography — fonts loaded via next/font in layout.tsx */
+  /* --font-display, --font-sans, --font-mono are set by next/font */
+
+  /* Backgrounds */
+  --color-bg: #F8F7F4;
+  --color-surface: #FFFFFF;
+  --color-subtle: #F0EEE8;
+
+  /* Text */
+  --color-text: #1C1B18;
+  --color-text-secondary: #9C9890;
+  --color-text-placeholder: #B8B4AC;
+
+  /* Borders */
+  --color-border: #E6E4DE;
+  --color-border-hover: #D0CCC4;
+
+  /* User message bubbles */
+  --color-bubble-user: #2C2926;
+  --color-bubble-user-text: #F8F7F4;
+
+  /* Assistant message */
+  --color-bubble-assistant: #FFFFFF;
+  --color-bubble-assistant-text: #1C1B18;
+  --color-bubble-assistant-border: #E6E4DE;
+
+  /* Brand accent: Cinnamon — marketing, reveals, CTAs only */
+  --color-accent: #A06840;
+  --color-accent-light: #BC8058;
+  --color-accent-dark: #7E5030;
+  --color-accent-subtle: rgba(160, 104, 64, 0.07);
+  --color-accent-border: rgba(160, 104, 64, 0.15);
+
+  /* Semantic */
+  --color-error: #B54040;
+  --color-error-bg: #FDF2F2;
+  --color-error-border: #E8BCBC;
+  --color-error-text: #8C2D2D;
+
+  --color-success: #3D7A4A;
+  --color-success-bg: #F2F8F3;
+  --color-success-border: #BCE8C4;
+  --color-success-text: #2E5E38;
+
+  --color-warning: #A07830;
+  --color-warning-bg: #FDF8F0;
+  --color-warning-border: #E8D8B8;
+  --color-warning-text: #7A5C24;
+
+  --color-info: #4A6A8A;
+  --color-info-bg: #F0F4F8;
+  --color-info-border: #B8CCE0;
+  --color-info-text: #3A5470;
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows (minimal) */
+  --shadow-sm: 0 1px 2px rgba(28, 27, 24, 0.04);
+  --shadow-md: 0 2px 8px rgba(28, 27, 24, 0.06);
+  --shadow-lg: 0 4px 16px rgba(28, 27, 24, 0.08);
+  --shadow-focus: 0 0 0 2px #F8F7F4, 0 0 0 4px #A06840;
+
+  /* Animation */
+  --duration-fast: 100ms;
+  --duration-normal: 200ms;
+  --duration-slow: 400ms;
+  --duration-reveal: 600ms;
+  --ease-default: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ------------------------------------------------------------------ */
+/* Base styles                                                        */
+/* ------------------------------------------------------------------ */
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+ * Typography: Crimson Pro (display) + DM Sans (body) + DM Mono (data)
+ *
+ * Display font (Crimson Pro) is used ONLY for:
+ *   - The "attic" wordmark / logo (.wordmark class)
+ *   - Landing page hero headline (.font-display class)
+ *   - Reveal page stat numbers and section headers (.font-display class)
+ *   - Marketing page headlines (.font-display class)
+ *
+ * Body font (DM Sans) is used for EVERYTHING else:
+ *   - All in-product h1, h2, h3 headers
+ *   - All chat messages (user and assistant)
+ *   - Entity cards, chips, tags, labels
+ *   - Editorial asides (italic)
+ *   - Navigation, buttons, forms
+ *   - Settings, upload flow, processing page
+ */
+
+h1, h2, h3 {
+  font-family: var(--font-sans);
+  letter-spacing: -0.01em;
+}
+
+.font-display { font-family: var(--font-display); }
+.font-sans { font-family: var(--font-sans); }
+.font-mono { font-family: var(--font-mono); }
+
+/* Wordmark — Crimson Pro, the only persistent display font element */
+.wordmark {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+}
+
+/* Editorial aside — the agent's "knowing" voice (DM Sans italic, not Crimson) */
+.editorial {
+  font-family: var(--font-sans);
+  font-style: italic;
+  color: var(--color-text-secondary);
+}
+
+/* Links: underline style, no color (uses text color by default) */
+a {
+  color: inherit;
+  text-decoration-color: var(--color-border-hover);
+  text-underline-offset: 2px;
+  transition: text-decoration-color var(--duration-fast) var(--ease-default);
+}
+a:hover {
+  text-decoration-color: var(--color-text);
+}
+
+/* Accent links (for marketing / CTA contexts) */
+.link-accent {
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent-border);
+}
+.link-accent:hover {
+  text-decoration-color: var(--color-accent);
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-accent-subtle);
+  color: var(--color-text);
+}

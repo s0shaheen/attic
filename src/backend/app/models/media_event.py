@@ -166,6 +166,9 @@ class MediaEvent(Base):
     # Relationships
     user = relationship("User", back_populates="media_events")
     upload = relationship("Upload", back_populates="media_events")
+    processing_steps = relationship(
+        "ProcessingStep", back_populates="media_event", cascade="all, delete-orphan"
+    )
 
     __table_args__ = (
         UniqueConstraint(

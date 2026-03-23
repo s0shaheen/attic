@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
 
 @theme {
   --color-background: var(--bg);
@@ -22,35 +21,72 @@
 }
 
 :root {
-  --bg: oklch(1 0 0);
-  --fg: oklch(0.145 0 0);
-  --muted: oklch(0.965 0 0);
-  --muted-fg: oklch(0.556 0 0);
-  --card: oklch(1 0 0);
-  --card-fg: oklch(0.145 0 0);
-  --border: oklch(0.922 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-fg: oklch(0.985 0 0);
-  --accent: oklch(0.965 0 0);
-  --accent-fg: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --ring: oklch(0.708 0 0);
-}
+  /* Attic Parchment + Ink design system (from design-tokens.ts / BRAND.md) */
+  --color-parchment: #F8F7F4;
+  --color-white: #FFFFFF;
+  --color-ink: #1C1B18;
+  --color-soft-black: #2C2926;
+  --color-stone: #9C9890;
+  --color-border: #E6E4DE;
+  --color-border-hover: #D0CCC4;
+  --color-subtle: #F0EEE8;
 
-.dark {
-  --bg: oklch(0.145 0 0);
-  --fg: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-fg: oklch(0.708 0 0);
-  --card: oklch(0.205 0 0);
-  --card-fg: oklch(0.985 0 0);
-  --border: oklch(0.269 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-fg: oklch(0.205 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-fg: oklch(0.985 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --ring: oklch(0.556 0 0);
+  /* Cinnamon accent — restricted usage, see BRAND.md */
+  --color-cinnamon: #A06840;
+  --color-cinnamon-light: #BC8058;
+  --color-cinnamon-dark: #7E5030;
+  --color-cinnamon-subtle: rgba(160, 104, 64, 0.07);
+  --color-cinnamon-border: rgba(160, 104, 64, 0.15);
+
+  /* Semantic */
+  --color-error: #B54040;
+  --color-error-bg: #FDF2F2;
+  --color-error-border: #E8BCBC;
+  --color-error-text: #8C2D2D;
+  --color-success: #3D7A4A;
+  --color-success-bg: #F2F8F3;
+  --color-success-border: #BCE8C4;
+  --color-success-text: #2E5E38;
+  --color-warning: #A07830;
+  --color-warning-bg: #FDF8F0;
+  --color-warning-border: #E8D8B8;
+  --color-warning-text: #7A5C24;
+  --color-info: #4A6A8A;
+  --color-info-bg: #F0F4F8;
+  --color-info-border: #B8CCE0;
+  --color-info-text: #3A5470;
+
+  /* Type scale */
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-md: 15px;
+  --text-lg: 17px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 48px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Map to shadcn/tailwind theme vars */
+  --bg: var(--color-parchment);
+  --fg: var(--color-ink);
+  --muted: var(--color-subtle);
+  --muted-fg: var(--color-stone);
+  --card: var(--color-white);
+  --card-fg: var(--color-ink);
+  --border: var(--color-border);
+  --primary: var(--color-ink);
+  --primary-fg: var(--color-parchment);
+  --accent: var(--color-subtle);
+  --accent-fg: var(--color-ink);
+  --destructive: var(--color-error);
+  --ring: var(--color-cinnamon);
 }
 
 @layer base {
@@ -61,6 +97,6 @@
   body {
     background-color: var(--bg);
     color: var(--fg);
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: var(--font-sans, "DM Sans", system-ui, sans-serif);
   }
 }

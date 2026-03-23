@@ -105,19 +105,23 @@ Lambda environment variables are configured in the SAM template (`infra/template
 
 ## Local Development
 
-For local development with Supabase CLI and LocalStack:
+Default: Supabase Cloud (always on, no Docker needed for database).
+Optional: Local Supabase via `supabase start` for migration work or full resets.
 
 ```bash
-# Start local Supabase
-supabase start
+# Cloud (default) — values come from .env.master → setup-env.sh
+DATABASE_URL=postgresql+asyncpg://postgres.[PROJECT-REF]:[PASSWORD]@aws-0-us-east-1.pooler.supabase.com:6543/postgres
+SUPABASE_URL=https://[PROJECT-REF].supabase.co
+SUPABASE_SECRET_KEY=<from Supabase Dashboard → Settings → API>
+SUPABASE_PUBLISHABLE_KEY=<from Supabase Dashboard → Settings → API>
 
-# Use local connection string
-DATABASE_URL=postgresql+asyncpg://postgres:postgres@localhost:54322/postgres
-SUPABASE_URL=http://localhost:54321
-SUPABASE_SERVICE_KEY=<from supabase start output>
-SUPABASE_ANON_KEY=<from supabase start output>
+# Local Supabase (optional) — run `supabase start` first
+# DATABASE_URL=postgresql+asyncpg://postgres:postgres@localhost:54322/postgres
+# SUPABASE_URL=http://localhost:54321
+# SUPABASE_SECRET_KEY=<from supabase start output>
+# SUPABASE_PUBLISHABLE_KEY=<from supabase start output>
 
-# Use LocalStack for AWS
+# LocalStack for AWS (optional, requires Docker)
 AWS_ENDPOINT_URL=http://localhost:4566
 ```
 

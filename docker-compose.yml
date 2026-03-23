@@ -49,9 +49,9 @@ services:
     volumes:
       - "./src/backend:/app"
     environment:
-      # Supabase connection (via host machine)
-      - DATABASE_URL=postgresql+asyncpg://postgres:postgres@host.docker.internal:54322/postgres
-      - SUPABASE_URL=http://host.docker.internal:54321
+      # Supabase connection (cloud by default, falls back to local via Docker host)
+      - DATABASE_URL=${DATABASE_URL:-postgresql+asyncpg://postgres:postgres@host.docker.internal:54322/postgres}
+      - SUPABASE_URL=${SUPABASE_URL:-http://host.docker.internal:54321}
       - SUPABASE_PUBLISHABLE_KEY=${SUPABASE_PUBLISHABLE_KEY:-}
       - SUPABASE_SECRET_KEY=${SUPABASE_SECRET_KEY:-}
       - SUPABASE_JWT_SECRET=${SUPABASE_JWT_SECRET:-super-secret-jwt-token-with-at-least-32-characters-long}

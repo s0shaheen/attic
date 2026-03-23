@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Backend (FastAPI)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["app.main:app", "--port", "8000", "--reload"],
+      "cwd": "${workspaceFolder}/src/backend",
+      "envFile": "${workspaceFolder}/src/backend/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Classify One (Workbench)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/workbench/scripts/classify_batch.py",
+      "args": ["${workspaceFolder}/workbench/data/sample-videos.json", "--limit", "1"],
+      "envFile": "${workspaceFolder}/workbench/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run Evals",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/workbench/scripts/run_evals.py",
+      "args": ["--verbose"],
+      "envFile": "${workspaceFolder}/workbench/.env",
+      "console": "integratedTerminal"
+    }
+  ]
+}

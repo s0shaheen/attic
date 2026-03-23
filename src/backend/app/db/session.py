@@ -84,12 +84,19 @@ def _initialize_from_settings() -> None:
         settings = get_settings()
         url = _normalize_database_url(settings.database_url)
 
+        # Supabase transaction pooler (port 6543) uses PgBouncer which
+        # doesn't support prepared statements — disable statement caching
+        connect_args = {}
+        if "pooler.supabase.com" in url or ":6543/" in url:
+            connect_args["statement_cache_size"] = 0
+
         _engine = create_async_engine(
             url,
             pool_size=5,
             max_overflow=10,
             pool_pre_ping=True,
             pool_recycle=300,
+            connect_args=connect_args,
         )
         _session_factory = async_sessionmaker(
             _engine,

@@ -6,19 +6,21 @@ async engine. It imports all models to enable autogenerate support.
 
 import asyncio
 from logging.config import fileConfig
+from pathlib import Path
 
-from sqlalchemy import pool
+from dotenv import load_dotenv
+from sqlalchemy import String, pool
 from sqlalchemy.ext.asyncio import async_engine_from_config
 
 from alembic import context
 
-# Import the Base and all models for autogenerate support
-from app.db.base import Base
-from app.db.session import build_database_url
+# Load .env so DATABASE_URL is available in CLI context.
+# Must run before app.* imports which read env vars via pydantic-settings.
+load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
-# Import all models so they are registered with Base.metadata
-# This is required for autogenerate to detect model changes
-from app.models import (  # noqa: F401
+from app.db.base import Base  # noqa: E402
+from app.db.session import build_database_url  # noqa: E402
+from app.models import (  # noqa: E402, F401
     Conversation,
     CostModel,
     MediaEvent,
@@ -68,6 +70,7 @@ def run_migrations_offline() -> None:
         target_metadata=target_metadata,
         literal_binds=True,
         dialect_opts={"paramstyle": "named"},
+        version_num_type=String(128),
     )
 
     with context.begin_transaction():
@@ -76,7 +79,11 @@ def run_migrations_offline() -> None:
 
 def do_run_migrations(connection):
     """Run migrations with the given connection."""
-    context.configure(connection=connection, target_metadata=target_metadata)
+    context.configure(
+        connection=connection,
+        target_metadata=target_metadata,
+        version_num_type=String(128),
+    )
 
     with context.begin_transaction():
         context.run_migrations()
@@ -89,12 +96,20 @@ async def run_async_migrations() -> None:
     and associate a connection with the context.
     """
     configuration = config.get_section(config.config_ini_section, {})
-    configuration["sqlalchemy.url"] = get_url()
+    url = get_url()
+    configuration["sqlalchemy.url"] = url
+
+    # Supabase transaction pooler (port 6543) uses PgBouncer —
+    # disable prepared statement caching for asyncpg compatibility
+    connect_args = {}
+    if "pooler.supabase.com" in url or ":6543/" in url:
+        connect_args["statement_cache_size"] = 0
 
     connectable = async_engine_from_config(
         configuration,
         prefix="sqlalchemy.",
         poolclass=pool.NullPool,
+        connect_args=connect_args,
     )
 
     async with connectable.connect() as connection:

@@ -18,107 +18,6 @@ Never build infrastructure that doesn't directly improve one of the first three.
 
 ---
 
-## Issue Tracking (MANDATORY — read before any work)
-
-**Every PR MUST reference an issue with `Closes #N`. If no issue exists, create one first.**
-
-**TL;DR — 4 rules that keep tracking in sync automatically:**
-1. **Before writing code:** move the issue to the In Progress board column
-2. **Every PR:** include `Closes #N` in the body — this auto-closes the issue on merge
-3. **Specs from eng review:** paste the full spec into a GitHub issue comment (not a local file)
-4. **Session end:** verify all issues you touched have correct board column
-
-**Board:** [GitHub Project Board](https://github.com/users/s0shaheen/projects/2) — Backlog | Up Next | In Progress | Paused | Done
-
-**Quick filters:**
-```bash
-gh issue list --label ready                      # Ready to implement
-gh issue list --label p0-critical,p1-high         # Urgent items
-gh issue list --label needs-decision              # Waiting on founder
-```
-
-### Session Start Checks
-
-At the start of every session, run these checks:
-1. Read `CLAUDE.md` + `docs/CURRENT_PLAN.md`
-2. Install dependencies:
-   ```bash
-   cd src/frontend && npm install --silent && cd ../..
-   cd src/backend && uv sync --all-extras --quiet && cd ../..
-   ```
-3. Check for orphaned In Progress issues: are there issues in In Progress that don't match the current workspace's branch? If found, ask the user whether to move them to Paused or back to Up Next.
-4. Quick board health: `gh issue list --search "label:ready label:p0-critical label:p1-high" --state open` — flag anything urgent.
-
-### Sync Points
-
-| When this happens... | ...do this automatically |
-|---|---|
-| **You start working on an issue** | Move to In Progress column. Do this BEFORE writing any code. |
-| **You create a branch** | Name it `s0shaheen/issue-N-short-desc`. GitHub auto-links it. |
-| **You create a PR** | Include `Closes #N` in the PR body. Non-negotiable. |
-| **An eng review produces a spec** | Paste the full spec into an issue comment. Move issue to Up Next. |
-| **A CEO review defers an item** | Create issue with `deferred` label OR comment on existing issue. |
-| **Scope changes mid-implementation** | Comment on the issue with what changed and why. |
-| **You discover a blocker** | Comment on the issue. Add `blocked` label. |
-| **You discover a new task** | Create a new issue — do NOT silently expand current scope. Link with "Discovered while working on #N". |
-| **A decision is made** | Comment on the issue with the decision and rationale. |
-| **You finish a session** | Verify every issue you touched has correct board column. |
-
-### Before Creating Any Issue
-
-1. Search existing open issues: `gh issue list --search "KEYWORDS" --state open`
-2. If a match exists, classify the relationship:
-   - **Subset** → add as comment or checklist item on existing issue
-   - **Supersedes** → close old with comment linking to new
-   - **Conflicts** → present both to the user, ask which approach
-   - **Adjacent** → create new issue, note the relationship
-3. If no match, create the issue
-
-### Issue Template
-
-```markdown
-## What
-[One sentence — what changes]
-
-## Why
-[User-facing impact or technical necessity]
-
-## Acceptance Criteria
-- [ ] specific verifiable thing
-- [ ] specific verifiable thing
-- [ ] Tests pass
-
-## Files Touched
-[List files — use "NEW: path" for new files]
-
-## Not In Scope
-[Explicit boundaries]
-```
-
-### Labels (4 dimensions)
-
-- **Priority**: `p0-critical`, `p1-high`, `p2-medium`, `p3-low`, `p4-someday`
-- **Readiness**: `ready` (spec'd, unblocked), `needs-spec` (needs eng review), `needs-decision` (founder must choose), `needs-data` (requires production data)
-- **Autonomy**: `autonomous` (agent can implement without asking), `guided` (needs founder input during work), `founder-only` (only the founder can do this)
-- **Component**: `backend`, `frontend`, `agent`, `pipeline`, `infra`, `security`
-
-### Board Columns
-
-- **Backlog**: Ideas, deferred, `needs-spec`, `needs-decision`, `needs-data`
-- **Up Next**: `ready` — has spec or is simple enough, all decisions made, dependencies merged
-- **In Progress**: Currently being worked on
-- **Paused**: Work that was started but stopped — deprioritized or explicitly paused
-- **Done**: PR merged and closed
-
-### Context Handoff
-
-When ending a session:
-1. Verify every issue you touched has correct board column
-2. Note any blockers or decisions needed as issue comments
-3. The new session reads `CLAUDE.md` + `docs/CURRENT_PLAN.md` to resume
-
----
-
 ## Architecture
 
 ```
@@ -134,21 +33,6 @@ Browser (Next.js) ──SSE──► FastAPI ──► Agent Loop (Claude Haiku 
 SQS → Lambda: parse_export → apify_enrich → subtitle_fetch → embed
                (runs once per upload, 4 sequential steps)
 ```
-
-### Stack
-
-| Layer | Technologies |
-|-------|-------------|
-| **Auth** | Supabase Auth (Google OAuth + Email/Password) |
-| **Database** | Supabase PostgreSQL + pgvector, SQLAlchemy 2.0, Alembic |
-| **Backend** | Python 3.13, FastAPI |
-| **Frontend** | Next.js 14, TypeScript, Tailwind, shadcn/ui (rebuilding) |
-| **File Upload** | Uppy + Supabase Storage |
-| **Pipeline** | AWS SQS + single Lambda (4 steps: parse→apify→subtitle→embed) |
-| **Real-time** | Supabase Realtime |
-| **Notifications** | Resend (email) |
-| **Observability** | Sentry (errors), PostHog (analytics) |
-| **Hosting** | Vercel (frontend), Render (API) |
 
 ### LLM Stack
 
@@ -232,17 +116,13 @@ src/lambdas/pipeline/handler.py    — Unified pipeline Lambda
 
 ### Workbench (AI development lab)
 ```
-workbench/notebooks/01_explore_export.ipynb     — Load and explore raw TikTok export data
-workbench/notebooks/02_classification_lab.ipynb — Run classification, inspect 8 facets, compare prompts
-workbench/notebooks/03_agent_traces.ipynb       — Full tool-call traces from standalone agent loop
-workbench/notebooks/04_retrieval_quality.ipynb  — Precision/recall of query_items filtering
-workbench/notebooks/05_embedding_analysis.ipynb — Similarity matrix, t-SNE, cluster analysis
-workbench/scripts/classify_batch.py             — Batch classification with structured output
-workbench/scripts/run_evals.py                  — Golden set accuracy evaluation (per-facet)
-workbench/scripts/generate_test_data.py         — Synthetic test case generator via Claude
-workbench/scripts/seed_db.py                    — Database seeding for local dev
-workbench/data/golden-set.json                  — Hand-labeled ground truth
-workbench/data/sample-videos.json               — Curated diverse test set
+workbench/notebooks/               — Jupyter notebooks for exploration
+workbench/scripts/classify_batch.py — Batch classification
+workbench/scripts/run_evals.py     — Golden set accuracy evaluation
+workbench/scripts/generate_test_data.py — Synthetic test case generator
+workbench/scripts/seed_db.py       — Database seeding
+workbench/data/golden-set.json     — Hand-labeled ground truth
+workbench/data/sample-videos.json  — Curated diverse test set
 ```
 
 ### Brand & Frontend
@@ -259,12 +139,6 @@ src/frontend/src/app/layout.tsx    — Font loading (Crimson Pro, DM Sans, DM Mo
 .env.master.example                — Template (committed)
 scripts/setup-env.sh               — Generates all derived env files
 scripts/check-env.sh               — Validates env completeness
-```
-
-### Reference Docs
-```
-docs/CURRENT_PLAN.md               — Architecture decisions reference
-docs/CEO_PLAN_REVIEW_2026-03-14.md — Architecture decision record
 ```
 
 ---
@@ -284,11 +158,6 @@ Single secret source:
 ./scripts/setup-env.sh  # Creates src/backend/.env, src/frontend/.env.local, workbench/.env
 ```
 
-### Database
-
-Default: Supabase Cloud (always on, no Docker needed)
-Optional: Local Supabase via `supabase start` (for migration work or full resets)
-
 ### Primary IDE: VS Code + Claude Code
 
 Terminal layout:
@@ -304,18 +173,10 @@ Terminal layout:
 .venv/bin/python workbench/scripts/run_evals.py --verbose --save
 .venv/bin/python workbench/scripts/generate_test_data.py "cooking videos with emoji captions" --count 10
 
-# Database seeding (requires Supabase reachable)
-./scripts/seed-db.sh
-
-# Environment setup
-./scripts/setup-env.sh
-./scripts/check-env.sh
-
-# Full stack (Supabase Cloud is always on, no Docker needed for database)
+# Full stack (requires Supabase + Docker)
+supabase start
 ./scripts/dev-start.sh
 # Test account: test@attic.to / testpassword123
-# Supabase dashboard: https://supabase.com/dashboard
-# Optional: ./scripts/dev-start.sh --with-localstack  (for S3/SQS pipeline testing, requires Docker)
 
 # Backend only
 cd src/backend && ../../.venv/bin/uvicorn app.main:app --port 8000 --reload
@@ -409,13 +270,6 @@ cd src/backend && ../../.venv/bin/ruff check . && ../../.venv/bin/ruff format .
 - Scopes: `agent`, `frontend`, `pipeline`, `api`, `db`, `env`, `workbench`, `dx`, `docs`, `test`
 - PRs closing an issue: include `Closes #N` in body
 
-### Versioning
-
-- **VERSION is bumped at ship time only** — never in feature branches
-- Feature branches add changelog entries under `## [Unreleased]` in CHANGELOG.md
-- `/ship` moves Unreleased entries into a versioned section and bumps VERSION
-- This prevents merge conflicts when multiple branches ship in parallel
-
 ### Testing
 
 - Every public function must have tests
@@ -482,22 +336,6 @@ If you're writing product UI (not marketing/landing), **do not use Cinnamon**.
 
 ---
 
-## gstack
-
-Use the `/browse` skill from gstack for all web browsing. Never use `mcp__claude-in-chrome__*` tools.
-
-Available skills:
-- `/plan-ceo-review` — CEO-perspective plan review
-- `/plan-eng-review` — Engineering plan review
-- `/review` — Code review
-- `/ship` — Ship code
-- `/browse` — Web browsing (always use this for browsing)
-- `/qa` — QA testing
-- `/setup-browser-cookies` — Set up browser cookies
-- `/retro` — Retrospective
-
----
-
 ## Security Checklist
 
 Apply to every task:
@@ -520,6 +358,49 @@ Every implementation must satisfy:
 2. **Observability**: Structured logging with correlation IDs, cost tracking per tool call
 3. **Error handling**: Graceful degradation, user-visible error states, `AgentToolResult` for tools
 4. **Cost controls**: Per-user tool call limits (50/query, 200/hour), cost ceiling per user per day
+
+---
+
+## Issue Tracking
+
+Track work in GitHub Issues. Use `/issue "description"` command to create well-formed issues.
+
+### Rules
+
+- **Search before creating**: `gh issue list --search "KEYWORDS" --state open`
+- **One deliverable per issue**: If it has "and" connecting unrelated changes, split it
+- **Clear acceptance criteria**: Binary yes/no checkboxes
+- **Not a parking lot**: If it's vague, it's not an issue — it's a notebook session or a Claude chat conversation
+
+### Issue Template
+
+```markdown
+## What
+[One sentence — what changes]
+
+## Why
+[User-facing impact or technical necessity]
+
+## Acceptance Criteria
+- [ ] specific verifiable thing
+- [ ] specific verifiable thing
+- [ ] Tests pass
+
+## Files Touched
+[List files — use "NEW: path" for new files]
+
+## Not In Scope
+[Explicit boundaries]
+```
+
+### When you discover something during implementation
+
+| Situation | Action |
+|-----------|--------|
+| New task discovered | Create a new issue — do NOT silently expand current scope |
+| Blocker found | Comment on the issue, add context |
+| Decision needed | Comment on the issue, tag as needing founder input |
+| Finished | Verify the PR includes `Closes #N` |
 
 ---
 

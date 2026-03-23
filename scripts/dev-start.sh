@@ -2,14 +2,12 @@
 # Attic Local Development - Start All Services
 #
 # Usage:
-#   ./scripts/dev-start.sh
-#   ./scripts/dev-start.sh --skip-supabase  # Skip Supabase if already running
-#   ./scripts/dev-start.sh --build          # Force rebuild containers
+#   ./scripts/dev-start.sh                  # Backend + Frontend (default)
+#   ./scripts/dev-start.sh --with-localstack # Also start LocalStack (requires Docker)
+#   ./scripts/dev-start.sh --backend-only    # Skip frontend
 #
-# Services started:
-# - Supabase (PostgreSQL, Auth, Storage, Studio)
-# - LocalStack (S3, SQS, Step Functions, Lambda)
-# - Backend API (FastAPI with hot-reload)
+# Database: Supabase Cloud (always on, no startup needed)
+# Optional: LocalStack for S3/SQS pipeline testing (requires Docker)
 
 set -e
 
@@ -24,21 +22,22 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Parse arguments
-SKIP_SUPABASE=false
-BUILD_FLAG=""
+WITH_LOCALSTACK=false
+BACKEND_ONLY=false
 
 while [[ $# -gt 0 ]]; do
     case $1 in
-        --skip-supabase)
-            SKIP_SUPABASE=true
+        --with-localstack)
+            WITH_LOCALSTACK=true
             shift
             ;;
-        --build)
-            BUILD_FLAG="--build"
+        --backend-only)
+            BACKEND_ONLY=true
             shift
             ;;
         *)
             echo -e "${RED}Unknown option: $1${NC}"
+            echo "Usage: ./scripts/dev-start.sh [--with-localstack] [--backend-only]"
             exit 1
             ;;
     esac
@@ -47,77 +46,95 @@ done
 cd "$PROJECT_ROOT"
 
 echo -e "${BLUE}========================================${NC}"
-echo -e "${BLUE}  Attic Local Development Environment  ${NC}"
+echo -e "${BLUE}  Attic Development Environment        ${NC}"
 echo -e "${BLUE}========================================${NC}"
 echo ""
 
 # ---------- Prerequisites Check ----------
 echo -e "${YELLOW}Checking prerequisites...${NC}"
 
-if ! command -v docker &> /dev/null; then
-    echo -e "${RED}Error: Docker is not installed${NC}"
-    echo "Please install Docker Desktop: https://www.docker.com/products/docker-desktop"
+if [[ ! -f "src/backend/.env" ]]; then
+    echo -e "${RED}Error: src/backend/.env not found${NC}"
+    echo "Run: ./scripts/setup-env.sh"
     exit 1
 fi
 
-if ! docker info &> /dev/null; then
-    echo -e "${RED}Error: Docker daemon is not running${NC}"
-    echo "Please start Docker Desktop"
+if [[ ! -f "src/frontend/.env.local" ]]; then
+    echo -e "${RED}Error: src/frontend/.env.local not found${NC}"
+    echo "Run: ./scripts/setup-env.sh"
     exit 1
 fi
 
-if ! command -v supabase &> /dev/null; then
-    echo -e "${RED}Error: Supabase CLI is not installed${NC}"
-    echo "Please install: brew install supabase/tap/supabase"
-    exit 1
-fi
-
-echo -e "${GREEN}Prerequisites OK${NC}"
+echo -e "${GREEN}Env files OK${NC}"
 echo ""
 
-# ---------- Start Supabase ----------
-if [ "$SKIP_SUPABASE" = false ]; then
-    echo -e "${YELLOW}Starting Supabase...${NC}"
+# ---------- Check Supabase Connectivity ----------
+echo -e "${YELLOW}Checking Supabase connection...${NC}"
 
-    # Check if Supabase is already running
-    if supabase status 2>/dev/null | grep -q "API URL"; then
-        echo -e "${GREEN}Supabase is already running${NC}"
-    else
-        supabase start
-    fi
-    echo ""
+SUPABASE_URL=$(grep '^SUPABASE_URL=' src/backend/.env | cut -d= -f2- | tr -d '"')
+
+if [[ -z "$SUPABASE_URL" ]]; then
+    echo -e "${RED}Error: SUPABASE_URL not set in src/backend/.env${NC}"
+    exit 1
+fi
+
+# Use -s --max-time (not -f) — any HTTP response means reachable, even 401
+if curl -s --max-time 5 -o /dev/null -w "%{http_code}" "${SUPABASE_URL}/auth/v1/settings" -H "apikey: dummy" 2>/dev/null | grep -q "^[2-5]"; then
+    echo -e "${GREEN}Supabase reachable at ${SUPABASE_URL}${NC}"
 else
-    echo -e "${YELLOW}Skipping Supabase (--skip-supabase flag)${NC}"
+    echo -e "${YELLOW}WARNING: Cannot reach Supabase at ${SUPABASE_URL}${NC}"
+    if [[ "$SUPABASE_URL" == *"localhost"* ]]; then
+        echo "Local Supabase detected — run: supabase start"
+    else
+        echo "Check your internet connection and .env.master values"
+    fi
+fi
+echo ""
+
+# ---------- Run Migrations ----------
+echo -e "${YELLOW}Running database migrations...${NC}"
+cd "$PROJECT_ROOT/src/backend"
+../../.venv/bin/alembic upgrade head 2>&1 | tail -3
+cd "$PROJECT_ROOT"
+echo ""
+
+# ---------- Start LocalStack (optional) ----------
+if [ "$WITH_LOCALSTACK" = true ]; then
+    echo -e "${YELLOW}Starting LocalStack...${NC}"
+
+    if ! command -v docker &> /dev/null || ! docker info &> /dev/null 2>&1; then
+        echo -e "${YELLOW}WARNING: Docker not running — skipping LocalStack${NC}"
+        echo "Start Docker Desktop and re-run with --with-localstack"
+    else
+        docker compose up -d localstack
+
+        echo -n "  LocalStack: "
+        RETRIES=30
+        until curl -s http://localhost:4566/_localstack/health | grep -q '"s3": "running"' 2>/dev/null; do
+            RETRIES=$((RETRIES-1))
+            if [ $RETRIES -eq 0 ]; then
+                echo -e "${RED}TIMEOUT${NC}"
+                echo -e "${RED}LocalStack failed to start. Check: docker compose logs localstack${NC}"
+                break
+            fi
+            sleep 1
+        done
+        if [ $RETRIES -gt 0 ]; then
+            echo -e "${GREEN}OK${NC}"
+        fi
+    fi
     echo ""
 fi
 
-# ---------- Start Docker Services ----------
-echo -e "${YELLOW}Starting Docker services (LocalStack, Backend)...${NC}"
+# ---------- Start Backend ----------
+echo -e "${YELLOW}Starting backend...${NC}"
+cd "$PROJECT_ROOT/src/backend"
+../../.venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload &
+BACKEND_PID=$!
+cd "$PROJECT_ROOT"
 
-docker compose up -d $BUILD_FLAG
-
-echo ""
-
-# ---------- Wait for Services ----------
-echo -e "${YELLOW}Waiting for services to be healthy...${NC}"
-
-# Wait for LocalStack
-echo -n "  LocalStack: "
-RETRIES=30
-until curl -s http://localhost:4566/_localstack/health | grep -q '"s3": "running"' 2>/dev/null; do
-    RETRIES=$((RETRIES-1))
-    if [ $RETRIES -eq 0 ]; then
-        echo -e "${RED}TIMEOUT${NC}"
-        echo -e "${RED}LocalStack failed to start. Check logs: docker compose logs localstack${NC}"
-        exit 1
-    fi
-    sleep 1
-done
-echo -e "${GREEN}OK${NC}"
-
-# Wait for Backend
 echo -n "  Backend API: "
-RETRIES=30
+RETRIES=15
 until curl -s http://localhost:8000/health 2>/dev/null | grep -q '"status"' 2>/dev/null; do
     RETRIES=$((RETRIES-1))
     if [ $RETRIES -eq 0 ]; then
@@ -129,8 +146,17 @@ done
 if [ $RETRIES -gt 0 ]; then
     echo -e "${GREEN}OK${NC}"
 fi
-
 echo ""
+
+# ---------- Start Frontend ----------
+if [ "$BACKEND_ONLY" = false ]; then
+    echo -e "${YELLOW}Starting frontend...${NC}"
+    cd "$PROJECT_ROOT/src/frontend"
+    npm run dev &
+    FRONTEND_PID=$!
+    cd "$PROJECT_ROOT"
+    echo ""
+fi
 
 # ---------- Print Service URLs ----------
 echo -e "${GREEN}========================================${NC}"
@@ -138,26 +164,24 @@ echo -e "${GREEN}  Services Started Successfully!        ${NC}"
 echo -e "${GREEN}========================================${NC}"
 echo ""
 echo -e "${BLUE}Service URLs:${NC}"
-echo "  Frontend:         http://localhost:3000  (start with: cd src/frontend && npm run dev)"
 echo "  Backend API:      http://localhost:8000"
 echo "  API Docs:         http://localhost:8000/docs"
-echo "  Supabase Studio:  http://localhost:54323"
-echo "  Supabase API:     http://localhost:54321"
-echo "  Supabase DB:      postgresql://postgres:postgres@localhost:54322/postgres"
+if [ "$BACKEND_ONLY" = false ]; then
+echo "  Frontend:         http://localhost:3000"
+fi
+echo "  Supabase:         ${SUPABASE_URL} (cloud — always on)"
+echo "  Supabase Studio:  https://supabase.com/dashboard"
+if [ "$WITH_LOCALSTACK" = true ]; then
 echo "  LocalStack:       http://localhost:4566"
+fi
 echo ""
 echo -e "${BLUE}Useful Commands:${NC}"
-echo "  View logs:        docker compose logs -f"
-echo "  Backend logs:     docker compose logs -f backend"
-echo "  LocalStack logs:  docker compose logs -f localstack"
-echo "  Supabase logs:    supabase logs"
-echo "  Stop services:    ./scripts/dev-stop.sh"
-echo "  Reset data:       ./scripts/dev-reset.sh"
+echo "  Stop services:    Ctrl+C or kill backend/frontend PIDs"
+echo "  Seed data:        ./scripts/seed-db.sh"
+echo "  Run tests:        cd src/backend && ../../.venv/bin/pytest tests/ -x"
 echo ""
-echo -e "${BLUE}AWS LocalStack Commands:${NC}"
-echo "  List S3 buckets:  awslocal s3 ls"
-echo "  List SQS queues:  awslocal sqs list-queues"
+echo -e "${YELLOW}Test account: test@attic.to / testpassword123${NC}"
 echo ""
-echo -e "${YELLOW}Note: Start frontend separately:${NC}"
-echo "  cd src/frontend && npm run dev"
-echo ""
+
+# Wait for background processes
+wait

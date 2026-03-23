@@ -99,8 +99,8 @@ cd src/frontend && npm run dev
 | Frontend | http://localhost:3000 |
 | Backend API | http://localhost:8000 |
 | API Docs (Swagger) | http://localhost:8000/docs |
-| Supabase Studio | http://localhost:54323 |
-| LocalStack | http://localhost:4566 |
+| Supabase | Cloud (always on) — https://supabase.com/dashboard |
+| LocalStack | http://localhost:4566 (optional, requires Docker) |
 
 **Test login:** `test@attic.dev` / `testtest123` — pre-loaded with 10 media events (7 restaurant, 3 other).
 

@@ -1,6 +1,9 @@
 # Environment files
 env.json
 .env
+.env.*
+!.env.master.example
+!.env.example
 .env.local
 .env.*.local
 *.env
@@ -11,7 +14,6 @@ Thumbs.db
 
 # IDE
 .idea/
-.vscode/
 *.swp
 *.swo
 
@@ -45,3 +47,9 @@ tests/fixtures/tiktok-exports/real/
 
 # TypeScript build cache
 tsconfig.tsbuildinfo
+
+# Workbench
+workbench/.env
+workbench/data/my-export/
+workbench/evals/results/
+*.ipynb_checkpoints/
