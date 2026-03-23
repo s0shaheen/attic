@@ -22,4 +22,8 @@
     "**/.next": true,
     "**/workbench/evals/results": true,
     "**/workbench/data/my-export": true
-}}
+},
+  "jupyter.kernels.filter": [
+    { "path": "${workspaceFolder}/.venv/bin/python", "type": "pythonEnvironment" }
+  ]
+}
