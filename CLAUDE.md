@@ -241,7 +241,6 @@ workbench/experiments/01-apify-profiling/        — Data quality + Apify valida
 workbench/experiments/02-vision-analysis/        — Thumbnail vs video, prompt variants
 workbench/experiments/03-pipeline-v3/            — Two-pass pipeline, Tier 1, search, economics
 workbench/experiments/04-golden-set/             — Ground-truth evaluation infrastructure
-workbench/notebooks/                            — Interactive exploration (01-06)
 workbench/data/                                 — Shared raw inputs (favorites, Apify output)
 ```
 
