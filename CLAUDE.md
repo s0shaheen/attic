@@ -339,39 +339,28 @@ cd src/backend && ../../.venv/bin/ruff check . && ../../.venv/bin/ruff format .
 ### Daily workflow
 | Command | Purpose |
 |---------|---------|
-| `/status` | Project health dashboard — git, tests, lint, env, eval status |
-| `/branch "desc"` | Create branch from latest main with proper naming |
+| `/commit "desc"` | Smart commit — analyzes changes, splits into logical commits, pushes |
+| `/land "desc"` | Full ship — commit + test + push + PR with `Closes #N` |
+| `/review` | Layered code review — auto-detects backend, agent, frontend, DB layers |
+| `/wrapup` | Session handoff — conversation flow, changes, state, next steps |
+
+### Quality & testing
+| Command | Purpose |
+|---------|---------|
 | `/test` | Smart test runner — detects what changed, runs relevant tests |
-| `/preflight` | Full quality gate — lint, types, tests, secrets, env |
-| `/review` | Layered code review against project standards |
-| `/ship "desc"` | Commit + push + PR in one command |
-
-### Agent/AI development
-| Command | Purpose |
-|---------|---------|
-| `/review-agent` | Deep review of prompt, tool, ontology, retrieval changes |
 | `/eval` | Classification evals against golden set with per-facet accuracy |
-
-### Frontend
-| Command | Purpose |
-|---------|---------|
-| `/review-ui` | BRAND.md compliance — colors, typography, component patterns |
+| `/status` | Project health dashboard — git, tests, lint, env, eval status |
 
 ### Infrastructure
 | Command | Purpose |
 |---------|---------|
 | `/start` | Launch full local stack with health checks and seeded data |
 | `/resolve-conflicts` | Rebase on main with file-type-aware resolution |
-| `/deploy` | Production deployment checklist |
-
-### Project management
-| Command | Purpose |
-|---------|---------|
 | `/issue "desc"` | Create well-formed GitHub issue with quality gate |
 
 ### Typical session flow
 ```
-/status → /branch "improve-X" → work → /eval → /review-agent → /preflight → /ship "description"
+/status → work → /commit "save progress" → ... → /review → /land "description" → /wrapup
 ```
 
 ---
@@ -414,7 +403,7 @@ cd src/backend && ../../.venv/bin/ruff check . && ../../.venv/bin/ruff format .
 
 - **VERSION is bumped at ship time only** — never in feature branches
 - Feature branches add changelog entries under `## [Unreleased]` in CHANGELOG.md
-- `/ship` moves Unreleased entries into a versioned section and bumps VERSION
+- `/land` moves Unreleased entries into a versioned section and bumps VERSION
 - This prevents merge conflicts when multiple branches ship in parallel
 
 ### Testing
@@ -490,12 +479,11 @@ Use the `/browse` skill from gstack for all web browsing. Never use `mcp__claude
 Available skills:
 - `/plan-ceo-review` — CEO-perspective plan review
 - `/plan-eng-review` — Engineering plan review
-- `/review` — Code review
-- `/ship` — Ship code
+- `/ship` — gstack full ship workflow (VERSION bump, CHANGELOG, review dashboard)
 - `/browse` — Web browsing (always use this for browsing)
 - `/qa` — QA testing
+- `/investigate` — Systematic root-cause debugging
 - `/setup-browser-cookies` — Set up browser cookies
-- `/retro` — Retrospective
 
 ---
 

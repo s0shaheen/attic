@@ -66,16 +66,35 @@ Determine which layers are touched:
 
 ## Step 4: Agent/AI checks (if agent files changed)
 
+### Prompt change analysis
+If system prompt or ontology prompt changed:
+1. **Read full before and after** — a small change can shift meaning of surrounding instructions:
+   ```bash
+   git show HEAD:app/services/prompts.py > /tmp/prompt_before.py 2>/dev/null || echo "new file"
+   ```
+2. **Check for contradictions** — does the new instruction conflict with any existing one? (e.g., "Always classify before responding" vs "Prefer cheap tools first")
+3. **Check for ambiguity** — flag vague language: "Try to...", "When appropriate...", "Consider..." → **WARN**: define when/what
+4. **Regression risk** — does this change affect cases BEYOND the intended target? Name 2-3 query types that could be affected unintentionally.
+5. **Cost impact** — more tools per query, longer system prompt, new Gemini calls. Quantify: "This adds ~X tokens to every query"
+
 ### Ontology integrity
 - If `ontology.py` changed: verify `ONTOLOGY_V1` dict structure is intact — every facet has a list, no empty lists, no duplicate labels within a facet
 - If new labels added: check they don't overlap semantically with existing labels → **WARN** if ambiguous
 - If labels removed: check nothing references them in `prompts.py` or test fixtures → **BLOCK** if broken references
+- **Tier boundary check**: should new labels be tier-1 (drives collections/filters) or tier-2 (drives discovery)?
 
 ### Tool contract
 - Every tool function must have signature `async def tool_name(db, settings|user_id, ...) -> AgentToolResult`
 - Every tool must have a docstring explaining when the agent should use it
 - Every tool must cache results to DB before returning (check for `db.flush()` or equivalent)
 - If a tool's parameters changed: check if the tool definition in the agent's system prompt / tool schema matches → **BLOCK** if mismatch
+- Does the tool return enough data for the agent to write a good response? (caption, creator, thumbnail for items)
+- Are error messages user-friendly, not technical? ("Classification unavailable" not "Gemini API timeout")
+
+### Retrieval changes (if query_items or embedding search changed)
+- **Synonym coverage**: does the query handle common ways users refer to the same thing? ("cooking" → food topic + recipe genre; "funny" → funny affect + skit/meme genre)
+- **Precision vs recall**: for a chat product, err toward recall — better to show too much than miss the right thing
+- **Embedding threshold**: if cosine similarity threshold changed, sanity check both directions
 
 ### Gemini client
 - If prompt templates changed: verify JSON mode is still requested (`responseMimeType: "application/json"`)
@@ -106,6 +125,9 @@ Determine which layers are touched:
 - Font weight other than 400 or 500 on DM Sans → **BLOCK**: "DM Sans uses only 400 (regular) and 500 (medium)"
 - `text-transform: uppercase` on anything other than single-word labels → **WARN**
 - Missing `font-sans` class on product UI text element → **WARN**
+- Font size not in type scale (12, 13, 14, 15, 17, 20, 24, 30, 48 px) → **WARN**: "Use nearest token"
+- Line height: body 1.5, display headlines 1.25, compact UI 1.35
+- Letter spacing: Crimson Pro wordmark -0.03em, display headlines -0.02em, DM Sans headers -0.01em, body 0
 
 **Component patterns:**
 - Box shadow used on anything other than modal/popover → **WARN**: "Use borders, not shadows"

@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.12.1] - 2026-03-27
+
+### Changed
+- Rewrite README.md to reflect current architecture — 4-step SQS pipeline (was 10-step Step Functions), agent layer with 6 tools, multi-model LLM stack, 8-facet ontology, features-first structure with GitHub alerts
+- Restructure `.claude/commands/` — replace legacy MVP-era commands with streamlined workflow commands (commit, land, wrapup, review)
+- Update CLAUDE.md custom commands table to match current skill set
+
+### Removed
+- Legacy `.claude/agents/` (implementer, spec-validator, spec-writer, test-designer, tester) — superseded by gstack skills
+- Legacy `.claude/commands/` (ship, branch, deploy, preflight, generate-specs, generate-tests, implement-backlog, review-agent, review-ui, run-task-tests, validate-specs) — replaced by gstack `/ship`, `/review`, `/issue`, etc.
+
 ## [0.2.12.0] - 2026-03-16
 
 ### Added

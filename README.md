@@ -1,97 +1,55 @@
 # Attic
 
-> Personal analytics platform for TikTok data — understanding your digital footprint through AI-powered enrichment.
+> Personal content intelligence for your saved TikTok videos.
 
-Upload your TikTok data export, and Attic enriches each media item with metadata, visual analysis, transcription, and semantic tagging — turning raw platform data into searchable, structured insights.
+Upload your TikTok data export and Attic turns it into a searchable, classified library you can explore through natural conversation. Every video is classified across 8 semantic facets, embedded for similarity search, and made accessible through an agentic chat interface.
 
-## Architecture
+## Features
 
-```
-  Browser                    API                        AWS
- ┌─────────────────┐   ┌─────────────┐   ┌──────────────────────────────┐
- │                  │   │             │   │  Step Functions              │
- │  Next.js 16      │   │  FastAPI    │   │  ┌────────────────────────┐  │
- │  ├─ Auth (OAuth) ├──►│  ├─ Auth    ├──►│  │ 1. Parse Export        │  │
- │  ├─ Upload (Uppy)│   │  ├─ Upload  │   │  │ 2. Apify Enrich       │  │
- │  ├─ Library      │   │  ├─ Search  │   │  │ 3. Media Download     │  │
- │  └─ Search       │   │  └─ User    │   │  │ 4. Subtitle Fetch     │  │
- │                  │   │             │   │  │ 5. Whisper Transcribe  │  │
- └────────┬─────────┘   └──────┬──────┘   │  │ 6. Vision Analysis    │  │
-          │                    │           │  │ 7. Text Fusion        │  │
-          │   Supabase         │           │  │ 8. Embedding          │  │
-          │  ┌─────────────────┤           │  │ 9. Derived Fields     │  │
-          │  │ Auth (JWT)      │           │  │10. Search Index       │  │
-          ├─►│ Storage (Blobs) │           │  └────────────────────────┘  │
-          │  │ PostgreSQL +    │           │         │                    │
-          │  │   pgvector      │◄──────────┤  S3 (temp) │ SQS (DLQ)     │
-          │  │ Realtime (WS)   │           └──────────────────────────────┘
-          │  └─────────────────┘
-          │
-  Vercel (hosting)
-```
-
-## Tech Stack
-
-| Layer | Technologies |
-|-------|-------------|
-| **Frontend** | Next.js 16, TypeScript, Tailwind, shadcn/ui, TanStack Query, Uppy |
-| **Backend** | Python 3.13, FastAPI, SQLAlchemy 2.0, Pydantic |
-| **Database** | Supabase PostgreSQL + pgvector, Alembic migrations |
-| **Auth** | Supabase Auth (Google OAuth), JWT (HS256 + ES256) |
-| **Workflow** | AWS Step Functions, Lambda, SQS |
-| **AI/Enrichment** | Apify (metadata), OpenAI (vision, transcription, embeddings) |
-| **Observability** | Sentry (errors), PostHog (analytics) |
-| **Infrastructure** | Vercel, Render, AWS SAM, Docker Compose |
-
-## Status
-
-| Epic | Name | Progress |
-|------|------|----------|
-| 0 | Infrastructure & Foundation | 9/9 |
-| 1 | Authentication | 6/6 |
-| 2 | Upload & Consent | 8/8 |
-| 3 | Processing Pipeline | 0/15 |
-| 4 | Progress & Notifications | 0/5 |
-| 5 | Library View | 0/7 |
-| 6 | Search | 0/6 |
-| 7 | Detail View | 0/5 |
-| 8 | User Settings & Landing | 0/7 |
-| 9 | Production Readiness | 0/10 |
-
-**23/78 tasks complete.** Currently working on Epic 3 — the 10-step processing pipeline.
-
-See [docs/REPO_STATUS.md](docs/REPO_STATUS.md) for detailed implementation status.
+- **Agentic chat** — ask questions about your saved content in natural language and get specific, sourced answers
+- **8-facet classification** — every video is tagged across affect, topic, genre, intent, creator role, viewer orientation, presentation style, and provenance
+- **Semantic search** — find similar content using pgvector cosine similarity over 1536-dim embeddings
+- **Visual analysis** — Gemini Flash analyzes thumbnails with Google Search grounding for richer context
+- **Entity resolution** — automatically links mentions to Google Maps, Google Books, TMDB, and Spotify
+- **TikTok data import** — upload your data export ZIP and a 4-step pipeline handles the rest
+- **Real-time streaming** — agent responses stream over SSE as they're generated
 
 ## Getting Started
 
 ### Prerequisites
 
-- Docker Desktop 4.0+
-- Supabase CLI (`brew install supabase/tap/supabase`)
-- Node.js 20+
 - Python 3.13+ with [uv](https://docs.astral.sh/uv/)
+- Node.js 20+
+- Supabase CLI (`brew install supabase/tap/supabase`)
+- Docker Desktop (optional — only needed for LocalStack pipeline testing)
 
-### First-Time Setup
+### Setup
 
 ```bash
-./scripts/dev-setup.sh
+git clone https://github.com/s0shaheen/attic.git
+cd attic
+
+# Configure environment
+cp .env.master.example .env.master   # Fill in your API keys
+./scripts/setup-env.sh               # Generates derived .env files
+
+# Install dependencies
+cd src/backend && uv sync --all-extras && cd ../..
+cd src/frontend && npm install && cd ../..
+
+# Run database migrations
+cd src/backend && ../../.venv/bin/alembic upgrade head && cd ../..
 ```
 
-This handles everything automatically:
-1. Starts local Supabase (if not already running)
-2. Creates `.env` files with local Supabase keys (copies API keys from `~/Dev/attic` if available)
-3. Installs backend and frontend dependencies
-4. Runs database migrations
-5. Seeds test data (test user + 10 media events with embeddings)
-
-### Start Services
+### Running Locally
 
 ```bash
-# Start Supabase, LocalStack, and backend API
+# Full stack
 ./scripts/dev-start.sh
 
-# Start frontend (separate terminal)
-cd src/frontend && npm run dev
+# Or run services individually
+cd src/backend && ../../.venv/bin/uvicorn app.main:app --port 8000 --reload  # API
+cd src/frontend && npm run dev                                                # UI
 ```
 
 | Service | URL |
@@ -99,75 +57,151 @@ cd src/frontend && npm run dev
 | Frontend | http://localhost:3000 |
 | Backend API | http://localhost:8000 |
 | API Docs (Swagger) | http://localhost:8000/docs |
-| Supabase | Cloud (always on) — https://supabase.com/dashboard |
-| LocalStack | http://localhost:4566 (optional, requires Docker) |
 
-**Test login:** `test@attic.dev` / `testtest123` — pre-loaded with 10 media events (7 restaurant, 3 other).
+> [!TIP]
+> **Test login:** `test@attic.to` / `testpassword123` — pre-loaded with sample media events.
 
-### Other Dev Scripts
+> [!NOTE]
+> Supabase Cloud is always on — no Docker needed for the database. Pass `--with-localstack` to `dev-start.sh` if you need S3/SQS pipeline testing locally.
 
-| Script | What it does |
-|--------|--------------|
-| `./scripts/dev-stop.sh` | Stop all services |
-| `./scripts/dev-reset.sh` | Reset data to clean state |
-| `./scripts/dev-start.sh --skip-supabase` | Start without Supabase (if already running) |
+## Architecture
 
-See [docs/setup/](docs/setup/) for detailed guides on [local dev](docs/setup/local-dev.md), [AWS](docs/setup/aws.md), [Supabase](docs/setup/supabase.md), [environment variables](docs/setup/environment.md), [staging](docs/setup/staging.md), and [CI/CD](docs/setup/ci-cd.md).
+```
+Browser (Next.js 14) ──SSE──► FastAPI ──► Agent Loop (Claude Haiku 4.5)
+                                            ├─ query_items (SQLAlchemy)
+                                            ├─ classify (Gemini Flash)
+                                            ├─ analyze_visual (Gemini Flash + grounding)
+                                            ├─ search_similar (pgvector cosine)
+                                            ├─ get_stats (aggregate queries)
+                                            └─ resolve_entity (Maps/Books/TMDB/Spotify)
+                                          All results cached → media_events DB
+
+SQS → Lambda: parse_export → apify_enrich → subtitle_fetch → embed
+               (runs once per upload, 4 sequential steps)
+```
+
+### Tech Stack
+
+| Layer | Technologies |
+|-------|-------------|
+| **Frontend** | Next.js 14 (App Router), TypeScript, Tailwind, shadcn/ui, React 19, TanStack Query, Uppy |
+| **Backend** | Python 3.13, FastAPI, SQLAlchemy 2.0, Pydantic, async-first |
+| **Database** | Supabase PostgreSQL + pgvector, Alembic migrations |
+| **Auth** | Supabase Auth (Google OAuth + email/password) |
+| **Pipeline** | AWS SQS + single Lambda (4 steps) |
+| **Agent** | Claude Haiku 4.5 — manual Anthropic SDK tool loop (~50 lines) |
+| **Classification** | Gemini 2.0 Flash — 8-facet ontology, visual analysis, Google Search grounding |
+| **Embeddings** | OpenAI text-embedding-3-small (1536-dim, pgvector cosine search) |
+| **Entity Resolution** | Google Maps, Google Books, TMDB, Spotify (direct API wrappers) |
+| **Observability** | Sentry (errors), PostHog (analytics) |
+| **Hosting** | Vercel (frontend), Render (API) |
+
+### Agent & Classification
+
+The core product is the agent layer. A manual tool loop (~50 lines, Anthropic SDK) orchestrates 6 tools that query, classify, search, analyze, and resolve content. Tools return `AgentToolResult` objects — they never raise — and all results are cached inline via upsert.
+
+Each video is classified across 8 orthogonal facets:
+
+| Facet | Example Labels |
+|-------|---------------|
+| Affect | funny, wholesome, sad, nostalgic, satisfying |
+| Topic | food, fashion, comedy, technology, pets |
+| Genre | tutorial, vlog, skit, recipe, asmr, meme |
+| Communicative Intent | entertain, inform, persuade, sell, document |
+| Creator Role | professional, amateur, brand, influencer |
+| Viewer Orientation | passive_consumption, active_learning, shopping_research |
+| Presentation Style | talking_head, voiceover, text_overlay, cinematic |
+| Content Provenance | original, repost, duet, stitch, remix |
+
+Each facet has a validated **tier-1** vocabulary (drives collections and aggregation) and open **tier-2** micro-labels from Gemini (drives discovery).
+
+### Pipeline
+
+4-step async pipeline, SQS + single Lambda, runs once per upload:
+
+1. **Parse Export** — extract URLs from ZIP, create `media_event` rows
+2. **Apify Enrich** — fetch TikTok metadata (batched, 50/call)
+3. **Subtitle Fetch** — get subtitles from Apify data
+4. **Embedding** — fuse text + generate 1536-dim vectors (batched, 100/call)
+
+Every step is idempotent — safe under retries via upserts and deterministic IDs.
 
 ## Development
 
-```bash
-# Backend (from src/backend/)
-pytest tests/ -v                    # Run all tests
-ruff check . && ruff format .       # Lint + format
-alembic upgrade head                # Run migrations
-
-# Frontend (from src/frontend/)
-npm test                            # Run tests
-npm run lint                        # Lint
-npm run typecheck                   # Type check
-npm run build                       # Production build
-```
-
-## Testing
-
-60+ unit tests across backend and frontend, with synthetic TikTok export fixtures for deterministic testing.
+### Tests
 
 ```bash
-# Backend
-cd src/backend
-.venv/bin/python -m pytest -v       # 231 passing, 674 skipped (Epic 3+ stubs)
+# Backend (26 test files)
+cd src/backend && ../../.venv/bin/pytest tests/ -v --tb=short
 
 # Frontend
-cd src/frontend
-npm test
+cd src/frontend && npm run typecheck && npm run lint && npm run build
 ```
 
-Test fixtures at `tests/fixtures/tiktok-exports/` include synthetic user data (~13K lines each), edge case slices, and generation tools.
+### Lint
+
+```bash
+cd src/backend && ../../.venv/bin/ruff check . && ../../.venv/bin/ruff format .
+```
+
+### Workbench
+
+The [workbench/](workbench/) is an AI development lab for experimenting with classification, evaluation, and data quality — no infrastructure needed.
+
+```bash
+# Batch classification with structured output
+.venv/bin/python workbench/tools/classify_batch.py workbench/data/sample-videos.json --limit 5
+
+# Run evals against golden set (per-facet accuracy)
+.venv/bin/python workbench/tools/run_evals.py --verbose --save
+
+# Generate synthetic test data via Claude
+.venv/bin/python workbench/tools/generate_test_data.py "cooking videos with emoji captions" --count 10
+```
+
+## Project Structure
+
+```
+src/
+  backend/
+    app/
+      routers/        — chat (SSE), uploads, user
+      services/       — agent, tools, gemini, ontology, prompts, pipeline,
+                        entity resolvers, uploads, parser, storage
+      models/         — media_event, conversation, user, upload, enums
+      core/           — auth, config
+    alembic/          — database migrations
+    tests/            — unit + integration tests
+  frontend/
+    src/app/          — pages: landing, login, auth, upload, chat, settings
+    src/components/   — app-header, dev-banner, providers
+    src/lib/          — auth-context, sse, design-tokens, supabase clients
+  lambdas/
+    pipeline/         — SQS handler → pipeline.py
+workbench/
+  tools/              — classify_batch, run_evals, generate_test_data, seed_db
+  experiments/        — apify profiling, vision analysis, pipeline v3, golden set
+  notebooks/          — 6 Jupyter notebooks for interactive exploration
+scripts/              — dev-setup, dev-start, setup-env, check-env, seed-db
+docs/                 — architecture decisions, research sprint, setup guides
+```
 
 ## Documentation
 
 | Document | Description |
 |----------|-------------|
-| [PRD v1.3.0](docs/MVP/PRD/Attic_MVP_PRD_v1.3.0.md) | Product spec, data model, API contracts |
-| [Dev Guide v1.3.0](docs/MVP/tasks/Attic_MVP_Dev_Guide_v1.3.0.md) | Epic/task breakdown with status |
-| [Task Specs](docs/MVP/tasks/specs/) | 37 individual task specifications |
-| [ADRs](docs/MVP/ADR/) | Architecture decision records |
-| [Setup Guides](docs/setup/) | 7 guides (local dev, AWS, Supabase, env, staging, CI/CD, storage) |
+| [CLAUDE.md](CLAUDE.md) | Development reference — architecture, conventions, commands |
+| [Architecture Decisions](docs/CEO_PLAN_REVIEW_2026-03-14.md) | Hybrid agentic architecture rationale |
+| [Brand & Design System](docs/plans/claude-code-v0-design-files/BRAND.md) | Parchment + Ink visual identity |
+| [Research Sprint](docs/research-plan-v0/) | Sprint log, unit economics, prompt audit |
+| [Setup Guides](docs/setup/) | Local dev, AWS, Supabase, environment, production |
 
-## Processing Pipeline
+## Links
 
-10-step async pipeline orchestrated by AWS Step Functions:
+- Repository: https://github.com/s0shaheen/attic
+- Issue tracker: https://github.com/s0shaheen/attic/issues
+- Project board: https://github.com/users/s0shaheen/projects/2
 
-1. **Parse Export** — Extract URLs from ZIP, create `media_event` rows
-2. **Apify Enrich** — Fetch TikTok metadata (batched, 50/call)
-3. **Media Download** — Download video/images to S3 temp
-4. **Subtitle Fetch** — Get subtitles if available
-5. **Whisper Transcribe** — Transcribe via OpenAI if no subtitles
-6. **Vision Analysis** — GPT-4 Vision tagging (batched, 5 images/call)
-7. **Text Fusion** — Combine caption + hashtags + transcript + OCR + visual tags
-8. **Embedding** — Generate 1536-dim vectors (batched, 100/call)
-9. **Derived Fields** — Compute engagement rate, interaction hour, etc.
-10. **Search Index** — Update full-text (GIN) + vector (ivfflat) indexes
+## License
 
-Every Lambda function is idempotent — safe under retries via upserts and deterministic IDs.
+This is a private project. All rights reserved.
