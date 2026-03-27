@@ -1,0 +1,227 @@
+{
+  "item_id": "7204107976599375150",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:17:40.335243+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:10",
+        "visual_description": "Joe Gardner from Pixar's 'Soul' (in a stockbroker's body) has an existential realization in a busy office and begins celebrating his life.",
+        "audio_description": "Joe says, 'What am I doing with my life? I'm alive! I'm alive! Free yourself!'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Computer monitors",
+          "Stock tickers",
+          "Office chair"
+        ]
+      },
+      {
+        "time_range": "0:10-0:26",
+        "visual_description": "Frank and Dwayne from 'Little Miss Sunshine' stand on a pier looking out at the ocean during a serious conversation.",
+        "audio_description": "Frank discusses Marcel Proust, saying, 'He looks back and decides that all those years he suffered, those were the best years of his life, because they made him who he was.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Wooden pier",
+          "Ocean"
+        ]
+      },
+      {
+        "time_range": "0:26-0:37",
+        "visual_description": "Rocky Balboa delivers an intense, emotional speech to his son on a city street at night.",
+        "audio_description": "Rocky says, 'It ain't about how hard you hit. It's about how hard you can get hit and keep moving forward. How much you can take and keep moving forward. That's how winning is done!'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Red coat",
+          "Street lights"
+        ]
+      },
+      {
+        "time_range": "0:37-0:53",
+        "visual_description": "BoJack Horseman lies exhausted on the grass while a jogging monkey stops to give him advice.",
+        "audio_description": "The monkey says, 'It gets easier. Every day it gets a little easier. But you gotta do it every day. That's the hard part. But it does get easier.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Running gear",
+          "Headband"
+        ]
+      },
+      {
+        "time_range": "0:53-1:03",
+        "visual_description": "Animated scene from 'The Boy, the Mole, the Fox and the Horse' showing the boy and the mole sitting on a branch.",
+        "audio_description": "The mole asks, 'What do you want to be when you grow up?' The boy responds, 'Kind.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Tree branch"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a 'core' style cinematic compilation featuring poignant, philosophical clips from various movies and television shows. It weaves together scenes from 'Soul', 'Little Miss Sunshine', 'Rocky Balboa', 'BoJack Horseman', and 'The Boy, the Mole, the Fox and the Horse' to explore themes of existential purpose and resilience. The main takeaway is that while life involves suffering and hard work, these experiences define character, and persistence leads to growth and kindness.",
+    "people": [
+      {
+        "description": "Joe Gardner (in stockbroker body), a man in a suit having a breakthrough.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Joe Gardner"
+      },
+      {
+        "description": "Frank Ginsberg, a middle-aged man with a beard in a pink shirt.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Steve Carell"
+      },
+      {
+        "description": "Dwayne Hoover, a teenager with dark hair leaning on a pier.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Paul Dano"
+      },
+      {
+        "description": "Rocky Balboa, an aging boxer in a red jacket giving a motivational speech.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Sylvester Stallone"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Soul",
+        "display_name": "Soul (2020)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Pixar Animation Studios",
+        "confidence": 5
+      },
+      {
+        "name": "Little Miss Sunshine",
+        "display_name": "Little Miss Sunshine (2006)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Directed by Jonathan Dayton and Valerie Faris",
+        "confidence": 5
+      },
+      {
+        "name": "Rocky Balboa",
+        "display_name": "Rocky Balboa (2006)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Sixth installment of the Rocky franchise",
+        "confidence": 5
+      },
+      {
+        "name": "BoJack Horseman",
+        "display_name": "BoJack Horseman",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Netflix Original Series",
+        "confidence": 5
+      },
+      {
+        "name": "The Boy, the Mole, the Fox and the Horse",
+        "display_name": "The Boy, the Mole, the Fox and the Horse",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "2022 Short Film / Book by Charlie Mackesy",
+        "confidence": 5
+      },
+      {
+        "name": "Marcel Proust",
+        "display_name": "Marcel Proust",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "French novelist",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Suffering is a necessary part of personal growth and identity formation.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Success is defined by resilience and the ability to endure hardship rather than just giving hits.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Consistency is the key to making difficult tasks or life changes feel easier over time.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Being kind is a primary and noble life goal.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "The Lonely Tree \u2014 The Lonely Tree",
+      "metadata_song": "The Lonely Tree",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All movie and TV show clips are clearly identifiable and match the provided hashtags."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Reflective, melancholic, and ultimately inspiring with a focus on emotional depth.",
+    "topic_hints": [
+      "Mental Health",
+      "Philosophy",
+      "Personal Growth"
+    ],
+    "affect_hints": [
+      "Inspired",
+      "Melancholic",
+      "Hopeful"
+    ],
+    "genre_hints": [
+      "Corecore",
+      "Cinematic Edit",
+      "Motivational"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 7169,
+    "output_tokens": 1998,
+    "total_tokens": 9167,
+    "cost_usd": 0.002274,
+    "latency_ms": 23954,
+    "upload_ms": 6163
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

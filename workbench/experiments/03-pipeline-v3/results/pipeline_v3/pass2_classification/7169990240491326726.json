@@ -1,0 +1,80 @@
+{
+  "item_id": "7169990240491326726",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:42.301400+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "other",
+      "micro_labels": [
+        "philosophy",
+        "existentialism",
+        "alan watts",
+        "cinematic edit",
+        "cult cinema"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "cinematic montage",
+        "philosophical edit"
+      ],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "sad",
+        "tier": "dominant"
+      },
+      {
+        "label": "relaxing",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "voiceover",
+      "cinematic"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "provoke",
+      "confidence": 0.85
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "emotional_regulation",
+      "confidence": 0.8
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8665,
+    "output_tokens": 376,
+    "total_tokens": 9041,
+    "cost_usd": 0.001525,
+    "latency_ms": 7839,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 5
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "item_id": "7607885401025531149",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:02:04.614201+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "health",
+      "micro_labels": [
+        "smoothie recipe",
+        "suhoor",
+        "high protein",
+        "high fiber",
+        "avocado smoothie"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "recipe",
+      "micro_labels": [
+        "drink recipe",
+        "healthy cooking"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "relaxing",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "voiceover"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9858,
+    "output_tokens": 351,
+    "total_tokens": 10209,
+    "cost_usd": 0.001689,
+    "latency_ms": 6892,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 6
+  }
+}

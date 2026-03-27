@@ -1,0 +1,52 @@
+{
+  "item_id": "7420407468074880261",
+  "parsed_output": {
+    "summary": "This TikTok features high-energy basketball highlights of the player Jlew, showcasing his elite dribbling and scoring abilities in a streetball setting. The video uses on-screen text comparing his playstyle to the character Aomine Daiki from the anime Kuroko no Basket, emphasizing a 'villain' persona and high-level athleticism.",
+    "entities": [
+      {
+        "name": "Jlew",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Aomine Daiki",
+        "type": "cultural_reference",
+        "relevance": "primary"
+      },
+      {
+        "name": "Kuroko no Basket",
+        "type": "movie_or_show",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Kyrie Irving",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Streetball",
+        "type": "technique",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "sports",
+      "secondary": "movies_tv"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "inspiring",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "A basketball highlight edit featuring the player Jlew performing impressive streetball moves and dribbling. The video includes on-screen text 'Bro think he is aonime,' which is a reference to the character Aomine Daiki from the anime series Kuroko no Basket. The footage captures Jlew in a competitive indoor gym environment, with a scoreboard displaying a game between Jlew and DeAll. The edit is designed to be motivational and satisfying, drawing comparisons to the flashy playstyle of Kyrie Irving as noted in the hashtags. It showcases various athletic plays, including layups and ball-handling skills, framed within the 'villain' trope common in sports edits. This content is ideal for viewers interested in basketball mixtapes, anime-inspired sports content, and streetball culture. The video features high-intensity action and athletic motivation."
+  },
+  "metrics": {
+    "input_tokens": 4336,
+    "output_tokens": 508,
+    "total_tokens": 4844,
+    "cost_usd": 0.000955,
+    "latency_ms": 11044,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "item_id": "7585397803673718029",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:02:08.845273+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "fitness",
+      "micro_labels": [
+        "high protein snacks",
+        "gym bro culture",
+        "greek yogurt hack",
+        "protein recipes"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "recipe",
+      "micro_labels": [
+        "food hack"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      },
+      {
+        "label": "shocking",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "text_overlay",
+      "voiceover"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.8
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4268,
+    "output_tokens": 338,
+    "total_tokens": 4606,
+    "cost_usd": 0.000843,
+    "latency_ms": 8610,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 1
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "item_id": "7607660693373930766",
+  "parsed_output": {
+    "summary": "Ahmad Alzahabi (@thegoldenbalance) demonstrates his mother's authentic Fattoush recipe, a staple Levantine salad. The video highlights the assembly of fresh vegetables, crispy pita bread, and a signature dressing featuring pomegranate molasses.",
+    "entities": [
+      {
+        "name": "@thegoldenbalance",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Fattoush",
+        "type": "recipe",
+        "relevance": "primary"
+      },
+      {
+        "name": "Pomegranate molasses",
+        "type": "ingredient",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Pita chips",
+        "type": "ingredient",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Ramadan",
+        "type": "event",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "food",
+      "secondary": null
+    },
+    "genre": "recipe",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "wholesome"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this TikTok recipe video, creator Ahmad Alzahabi (@thegoldenbalance) shares his mother's Fattoush recipe as part of his #ramadanchronicles series. The video shows the step-by-step assembly of this classic Middle Eastern bread salad in a large wooden bowl. Key ingredients visible include chopped cucumbers, tomatoes, red peppers, and fresh greens, topped with crunchy toasted pita chips. Ahmad is seen drizzling a thick, dark syrup\u2014likely pomegranate molasses\u2014over the salad before tossing it. The content is informative and serves as a culinary guide for viewers looking to recreate traditional Levantine dishes at home. The video concludes with a taste test, emphasizing the fresh and satisfying nature of the dish. This is a high-quality food tutorial perfect for those searching for healthy salad recipes or Ramadan meal inspiration."
+  },
+  "metrics": {
+    "input_tokens": 4262,
+    "output_tokens": 473,
+    "total_tokens": 4735,
+    "cost_usd": 0.000923,
+    "latency_ms": 8824,
+    "keyframe_count": 3
+  }
+}

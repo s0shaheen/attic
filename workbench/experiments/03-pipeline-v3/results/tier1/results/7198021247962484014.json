@@ -1,0 +1,52 @@
+{
+  "item_id": "7198021247962484014",
+  "parsed_output": {
+    "summary": "Elijah Wallace shares reflective life advice in this clip, captioned with the hook 'I wish I understood this when I was younger.' The video features a split-screen conversation about self-presentation, social confidence, and personal growth.",
+    "entities": [
+      {
+        "name": "Elijah Wallace",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Henry Mancini",
+        "type": "artist",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Lujon",
+        "type": "song",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Twitch",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Instagram",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "other",
+      "secondary": "education"
+    },
+    "genre": "other",
+    "affect": {
+      "dominant": "inspiring",
+      "secondary": "informative"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "An inspirational TikTok clip by creator Elijah Wallace (@iamelijahwallace) set to the song 'Lujon' by Henry Mancini. The video features a split-screen view of two men in a video call, with Elijah on the right in a blue sweater and another man on the left in a grey patterned jacket and pearl necklace. Large on-screen text reads 'I wish I understood this when I was younger,' signaling a video about life lessons and personal growth. A live chat overlay on the left includes viewer comments such as 'And how you carry yourself' and 'And pay attention to how you dress!', suggesting the advice pertains to self-image and social perception. This is a motivational snippet likely saved for personal development or as a potential audio sound for other creators."
+  },
+  "metrics": {
+    "input_tokens": 4254,
+    "output_tokens": 467,
+    "total_tokens": 4721,
+    "cost_usd": 0.000918,
+    "latency_ms": 9556,
+    "keyframe_count": 3
+  }
+}

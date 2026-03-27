@@ -1,0 +1,208 @@
+{
+  "item_id": "7359266758949080362",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:04:13.143402+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Creator Michael Lin appears wearing three pairs of sunglasses stacked on his face, speaking directly to the camera.",
+        "audio_description": "Michael jokes about being temporarily blind before introducing the topic of open source contribution.",
+        "text_on_screen": "HOW TO CONTRIBUTE TO OPEN SOURCE SOFTWARE; so I'm temporarily blind right now",
+        "key_objects": [
+          "sunglasses"
+        ]
+      },
+      {
+        "time_range": "0:03-0:15",
+        "visual_description": "Michael uses a greenscreen to show the website goodfirstissues.com, pointing out specific project listings.",
+        "audio_description": "He introduces the website 'Good First Issues' as a resource for finding beginner-friendly projects.",
+        "text_on_screen": "HOW TO CONTRIBUTE TO OPEN SOURCE SOFTWARE; but here's how you contribute to open source; website called Good First Issues; and it has a ton of projects that have the good first issues; Describe and map in...; April 18, 2024 - 4 hours ago; documentation; enhancement; good first issue; git rizin; 2425 stars; rizinorg; 0 assignee; Shell; Dockerfile; C; Meson; Assembly; R; C++; Perl; Python; Java; Go to",
+        "key_objects": [
+          "goodfirstissues.com",
+          "rizin"
+        ]
+      },
+      {
+        "time_range": "0:15-0:37",
+        "visual_description": "Michael explains the nature of 'good first issues' while gesturing toward the website interface behind him.",
+        "audio_description": "He describes the tasks as basic bugs, such as changing return types or renaming variables, and mentions the pull request process.",
+        "text_on_screen": "and you just need to you know fix those small issues; and this is how I start an open source; all you have to do is they're very basic bugs; some of them are just like hey change this return type or something; or another one is just like hey rename this; and then after you get started on these good first issues um; once you finish them you got to do a pull request and you merge your code onto their code",
+        "key_objects": [
+          "goodfirstissues.com"
+        ]
+      },
+      {
+        "time_range": "0:37-0:51",
+        "visual_description": "Michael continues the walkthrough, emphasizing the abundance of projects available on the site.",
+        "audio_description": "He recommends the site for anyone struggling to start and mentions that GitHub also has these tags natively.",
+        "text_on_screen": "so it's a great way to get started open source; if you have any issues getting started with open source; definitely use good first issues; it always has a tag there's a ton of projects on here like these",
+        "key_objects": [
+          "GitHub"
+        ]
+      },
+      {
+        "time_range": "0:51-1:29",
+        "visual_description": "Michael concludes the video with advice on progression from small to large issues.",
+        "audio_description": "He explains that mastering the workflow of pull requests and minor changes makes tackling difficult issues much easier later on.",
+        "text_on_screen": "this is like a project here but there's like more if you scroll down and on; there's also good first issues on Github as well; so yeah definitely recommend using good first issues if you have if you just wanna get started open source; and then afterwards after you really understand open source and you've used it a ton; um you'll be able to you know contribute more to open source okay; so like once you understand the ins and outs of doing pole requests and changing values; and you know doing all this other stuff and you know do some minor bug changes; once you get to the full you know more difficult issues it'll be much easier; okay so that's how I get started open source follow for more content Michael and 2:50 and hope you like this video peace",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "In this tutorial, creator Michael Lin explains how beginners can start contributing to open-source software. He recommends using the website goodfirstissues.com, which aggregates projects specifically tagged for newcomers. He explains that these tasks usually involve simple bug fixes, like renaming variables or adjusting return types, which help users learn the pull request and merging workflow. The main takeaway is that starting with these small, manageable tasks builds the necessary foundation to eventually tackle more complex software engineering challenges in the open-source community.",
+    "people": [
+      {
+        "description": "Young Asian male wearing a light blue t-shirt and multiple pairs of sunglasses.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Michael Lin"
+      }
+    ],
+    "entities": [
+      {
+        "name": "goodfirstissues.com",
+        "display_name": "Good First Issues",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "GitHub",
+        "display_name": "GitHub",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "rizin",
+        "display_name": "Rizin",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Open source reverse engineering framework",
+        "confidence": 4
+      },
+      {
+        "name": "Open Source Software",
+        "display_name": "Open Source Software",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pull Request",
+        "display_name": "Pull Request",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Use goodfirstissues.com to find beginner-friendly entry points into open-source projects.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Start with minor tasks like renaming or fixing basic bugs to learn the contribution workflow.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Mastering the pull request process on small issues is a prerequisite for handling more difficult software engineering tasks.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Find a Project",
+          "details": "Visit goodfirstissues.com or search GitHub for the 'good first issue' tag."
+        },
+        {
+          "name": "Select a Task",
+          "details": "Look for basic bugs, documentation updates, or simple code changes like renaming variables."
+        },
+        {
+          "name": "Implement the Fix",
+          "details": "Modify the code to address the specific issue identified in the tag."
+        },
+        {
+          "name": "Submit a Pull Request",
+          "details": "Submit your changes via a pull request to merge your code into the main project repository."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound - Michael Lin",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video is a clear educational tutorial with high-quality audio and visual aids."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, energetic, and helpful.",
+    "topic_hints": [
+      "Software Engineering",
+      "Open Source",
+      "Career Development"
+    ],
+    "affect_hints": [
+      "Encouraging",
+      "Motivated",
+      "Educational"
+    ],
+    "genre_hints": [
+      "Tutorial",
+      "Tech Tip"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9545,
+    "output_tokens": 2136,
+    "total_tokens": 11681,
+    "cost_usd": 0.002713,
+    "latency_ms": 26714,
+    "upload_ms": 7744
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

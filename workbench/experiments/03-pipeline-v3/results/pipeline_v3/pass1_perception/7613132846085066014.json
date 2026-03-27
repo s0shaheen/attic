@@ -1,0 +1,250 @@
+{
+  "item_id": "7613132846085066014",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:20:24.535233+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:12",
+        "visual_description": "Senator Thom Tillis is shown speaking sternly during a congressional hearing. A text overlay identifies the scene.",
+        "audio_description": "Tillis expresses deep disappointment in Kristi Noem's leadership, suggesting she may be knowingly or unknowingly violating the law.",
+        "text_on_screen": "REPUBLICAN SENATOR TEARS INTO KRISTI NOEM",
+        "key_objects": [
+          "Microphone",
+          "Nameplate"
+        ]
+      },
+      {
+        "time_range": "0:12-0:18",
+        "visual_description": "Split screen showing Kristi Noem attempting to respond while Tillis continues to speak over her.",
+        "audio_description": "Noem mentions a $100,000 matter; Tillis refuses to yield his time, stating he will hold the clock until he finishes.",
+        "text_on_screen": "Hon. Kristi Noem",
+        "key_objects": [
+          "Microphone"
+        ]
+      },
+      {
+        "time_range": "0:18-0:30",
+        "visual_description": "Close-up of Tillis gesturing emphatically while speaking about leadership metrics.",
+        "audio_description": "Tillis argues that while some want high numbers (1,000 to 9,000 a day), quality of leadership is what truly matters, not quantity.",
+        "text_on_screen": "MR. TILLIS",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:30-0:47",
+        "visual_description": "Tillis continues his critique, looking directly at the camera/witness.",
+        "audio_description": "He calls Noem's leadership a 'disaster,' citing the detention of innocent American citizens and the influence of Stephen Miller.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:47-1:15",
+        "visual_description": "Tillis points his finger while discussing a specific law enforcement incident and calling for a resignation.",
+        "audio_description": "He mentions an investigation into 'Ms. Good and Mr. Pretty' being shot, accuses Noem of stonewalling, and demands her resignation.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:15-1:32",
+        "visual_description": "Tillis references a book, his tone becoming increasingly incredulous.",
+        "audio_description": "He brings up Noem's book and the passage where she describes killing her 14-month-old dog, Cricket, calling it a 'leadership lesson' about tough choices.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:32-1:56",
+        "visual_description": "Tillis concludes his statement by mentioning a goat and a comparison to Minneapolis.",
+        "audio_description": "He criticizes her for killing a goat for 'behaving badly' and compares these actions to events in Minneapolis. He then asks the audience not to applaud.",
+        "text_on_screen": "",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a comedic parody/dub of a congressional hearing where Senator Thom Tillis (voiced by a comedian) aggressively criticizes Governor Kristi Noem. The 'Senator' attacks her leadership as a 'disaster,' specifically citing her controversial admission in her memoir about killing her dog, Cricket, and a goat. The video uses real footage of Tillis and Noem but replaces the audio with a satirical script that calls for her resignation and mocks her 'tough choices' narrative.",
+    "people": [
+      {
+        "description": "Republican Senator from North Carolina, shown in hearing footage with a dubbed comedic voice.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Thom Tillis"
+      },
+      {
+        "description": "Governor of South Dakota, shown in a split-screen window listening to the critique.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Kristi Noem"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Thom Tillis",
+        "display_name": "Senator Thom Tillis",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "U.S. Senator from North Carolina",
+        "confidence": 5
+      },
+      {
+        "name": "Kristi Noem",
+        "display_name": "Governor Kristi Noem",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Governor of South Dakota",
+        "confidence": 5
+      },
+      {
+        "name": "Stephen Miller",
+        "display_name": "Stephen Miller",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "FBI",
+        "display_name": "Federal Bureau of Investigation",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "DOJ",
+        "display_name": "Department of Justice",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Minneapolis",
+        "display_name": "Minneapolis, Minnesota",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "No Going Back",
+        "display_name": "No Going Back (Book by Kristi Noem)",
+        "type": "book",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Memoir containing the dog/goat stories",
+        "confidence": 4
+      },
+      {
+        "name": "ICE",
+        "display_name": "U.S. Immigration and Customs Enforcement",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video parodies political hearings to criticize Kristi Noem's recent public controversies regarding animal cruelty.",
+        "source": "implied",
+        "confidence": 5
+      },
+      {
+        "statement": "The 'Senator' argues that killing a 14-month-old dog and a goat are examples of poor judgment rather than 'leadership lessons.'",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The content suggests that Noem's leadership has resulted in legal violations and the detention of American citizens.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Resignation",
+          "details": "The speaker explicitly calls for Kristi Noem's resignation based on her leadership failures."
+        },
+        {
+          "name": "Investigation",
+          "details": "Calls for the FBI, DOJ, and local law enforcement to investigate shooting incidents involving 'Ms. Good and Mr. Pretty'."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The audio is a comedic dub/parody. The names 'Ms. Good and Mr. Pretty' appear to be part of the satirical script rather than a reference to a widely known real-world shooting case involving Noem."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "static",
+      "editing_style": "split_screen"
+    },
+    "visual_mood": "Tense and confrontational, though the audio is satirical.",
+    "topic_hints": [
+      "Politics",
+      "Animal Rights",
+      "Congressional Hearings"
+    ],
+    "affect_hints": [
+      "Indignant",
+      "Judgmental",
+      "Amused"
+    ],
+    "genre_hints": [
+      "Political Parody",
+      "Dubbed Comedy"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 11813,
+    "output_tokens": 2241,
+    "total_tokens": 14054,
+    "cost_usd": 0.003117,
+    "latency_ms": 39070,
+    "upload_ms": 8081
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

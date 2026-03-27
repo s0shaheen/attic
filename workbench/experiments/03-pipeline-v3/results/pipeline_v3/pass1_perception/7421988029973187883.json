@@ -1,0 +1,177 @@
+{
+  "item_id": "7421988029973187883",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:18:45.384609+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Creator introduces the luxury of black sweaters in fall and the purpose of the shopping guide.",
+        "audio_description": "A black sweater in the fall is an absolute luxury, so here's some things that I look out for when I'm sweater shopping.",
+        "text_on_screen": "",
+        "key_objects": [
+          "black sweater",
+          "baggy jeans",
+          "glasses"
+        ]
+      },
+      {
+        "time_range": "0:05-0:22",
+        "visual_description": "Creator demonstrates how to check for proper shoulder framing by aligning the seam with the shoulder bone.",
+        "audio_description": "First, I want to look at the shoulders. Are my shoulders framed correctly? How you can actually check this is see where the shoulder seam lines up with your actual shoulder. You don't want it to be dropped shoulder... and you don't want it to be too tight.",
+        "text_on_screen": "",
+        "key_objects": [
+          "shoulder seam"
+        ]
+      },
+      {
+        "time_range": "0:22-0:39",
+        "visual_description": "Creator explains the importance of a balanced sleeve fit for a versatile 'office-to-bar' silhouette.",
+        "audio_description": "The next thing I'm looking out for is the tightness of the arms. I don't necessarily want like a super tight fit... but I don't want it to be super baggy either. What this allows is just like a more classic clean looking silhouette.",
+        "text_on_screen": "",
+        "key_objects": [
+          "sweater sleeves"
+        ]
+      },
+      {
+        "time_range": "0:39-0:56",
+        "visual_description": "Creator shows how a French tuck can correct the proportions of a sweater for shorter individuals.",
+        "audio_description": "The last thing I'm checking is whether or not it can be French tucked. See, I'm a shorter guy, I'm 5'9\", and what that means is most sweaters don't fall at my natural waistline. But by French tucking it just a little bit right there, it allows the sweater to kind of drape over my body in the correct way.",
+        "text_on_screen": "",
+        "key_objects": [
+          "waistline"
+        ]
+      }
+    ],
+    "overall_summary": "This video provides three essential tips for men shopping for classic, thin sweaters during the fall season. The creator, @rajn7673, emphasizes checking for proper shoulder seam alignment, ensuring a balanced arm fit that is neither too tight nor too baggy, and testing if the sweater can be French tucked. These tips are specifically designed to help shorter men (the creator is 5'9\") achieve a clean silhouette that transitions easily from the office to casual settings. He notes that these tips apply best to thinner fabrics, as heavy fabrics may not tuck well.",
+    "people": [
+      {
+        "description": "South Asian male with glasses, wearing a black crewneck sweater and light-wash baggy jeans.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Raj (@rajn7673)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "@rajn7673",
+        "display_name": "Raj",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": "5'9\" height",
+        "confidence": 5
+      },
+      {
+        "name": "French tuck",
+        "display_name": "French Tuck Technique",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Sweater",
+        "display_name": "Thin Classic Sweater",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Black crewneck",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The shoulder seam of a classic sweater should sit directly on top of the actual shoulder bone for proper framing.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "A versatile sweater should have a moderate arm fit\u2014not skin-tight and not baggy\u2014to maintain a clean silhouette.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "For shorter men, a French tuck helps adjust the sweater's hem to the natural waistline for better proportions.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Heavy fabrics are often unsuitable for French tucking as they can create awkward, angular shapes.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Shoulder Framing",
+          "details": "Ensure the seam lines up with the top of the actual shoulder; avoid dropped or overly tight seams."
+        },
+        {
+          "name": "Arm Fit",
+          "details": "Look for a balance between tight and baggy to ensure the sweater is appropriate for both office and casual wear."
+        },
+        {
+          "name": "French Tuck Compatibility",
+          "details": "Check if the fabric is thin enough to be tucked into the waistband to adjust the length to the natural waistline."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "original sound \u2014 @rajn7673",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The background music is a generic lo-fi beat typical of TikTok tutorials."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, casual, and stylish.",
+    "topic_hints": [
+      "Men's Fashion",
+      "Style Tips",
+      "Fall Wardrobe"
+    ],
+    "affect_hints": [
+      "Helpful",
+      "Confident",
+      "Practical"
+    ],
+    "genre_hints": [
+      "Fashion Tutorial",
+      "Style Guide"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6546,
+    "output_tokens": 1636,
+    "total_tokens": 8182,
+    "cost_usd": 0.001963,
+    "latency_ms": 23113,
+    "upload_ms": 5827
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

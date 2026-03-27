@@ -1,0 +1,52 @@
+{
+  "item_id": "7421401035601710367",
+  "parsed_output": {
+    "summary": "Left-handed golfer Justin Seymour (@justinseymourgolf) plays the 9th hole at Arrowhead South in Chicago. The video features his approach and a specific putt, captioned with 'Great putt there' and mixed emojis, suggesting a highlight or a humorous moment.",
+    "entities": [
+      {
+        "name": "Justin Seymour",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Arrowhead South",
+        "type": "place",
+        "relevance": "primary"
+      },
+      {
+        "name": "Chicago",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Golf swing",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Lefty",
+        "type": "trend_or_meme",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "sports",
+      "secondary": "travel"
+    },
+    "genre": "vlog",
+    "affect": {
+      "dominant": "satisfying",
+      "secondary": "funny"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "This TikTok video features creator Justin Seymour (@justinseymourgolf) playing the 9th hole at Arrowhead South golf course in Chicago. As a left-handed golfer, he is shown wearing a maroon patterned polo, grey shorts, and white golf shoes while navigating the green. The video includes on-screen text that says 'Great putt there' accompanied by a party popper and a crying emoji, indicating a notable or perhaps lucky shot. The footage captures the scenic clubhouse in the background and the well-manicured turf of the course. This content is perfect for users searching for Chicago golf course highlights, left-handed golf swing examples, or general golf lifestyle content. It serves as both a personal sports vlog and a course showcase for the Arrowhead South location."
+  },
+  "metrics": {
+    "input_tokens": 4286,
+    "output_tokens": 474,
+    "total_tokens": 4760,
+    "cost_usd": 0.000927,
+    "latency_ms": 7370,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "item_id": "7353404449689292037",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:19:04.314289+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Creator Bryce Kicks introduces the video topic while sitting on a couch.",
+        "audio_description": "Top 5 best $100 sneakers to buy this spring and summer.",
+        "text_on_screen": "Top 5 Best $100 Sneakers \ud83d\udc5f\nReplying to @Will new balance 530s still going strong",
+        "key_objects": [
+          "New York Mets hat",
+          "Cream cardigan"
+        ]
+      },
+      {
+        "time_range": "0:02-0:20",
+        "visual_description": "Montage of Adidas SL 72 sneakers, including vintage ads, Bob Marley wearing them, and modern styling.",
+        "audio_description": "First up is the Adidas SL 72. It has a minimal design on a slim silhouette, reminiscent of the Gazelle. It has history in sport, designed for the 1972 Olympics, and culture, worn by Bob Marley. Collabs with Wales Bonner and Sporty & Rich could make it take off.",
+        "text_on_screen": "5. Adidas SL 72\n$100",
+        "key_objects": [
+          "Adidas SL 72",
+          "Adidas Gazelle"
+        ]
+      },
+      {
+        "time_range": "0:20-0:32",
+        "visual_description": "Showcase of Nike P6000 sneakers in various colorways and on-foot shots.",
+        "audio_description": "Next is the Nike P6000. With the early 2000s runner trend in full swing, these look great on feet and are super comfortable. You can get this colorway for just an additional ten dollars.",
+        "text_on_screen": "4. Nike P6000\n$93 (on sale)\n123 purchased in the last 7 days\n$110",
+        "key_objects": [
+          "Nike P6000"
+        ]
+      },
+      {
+        "time_range": "0:32-0:47",
+        "visual_description": "Visuals of Nike Killshot 2 sneakers, lifestyle shots, and a comparison to the Adidas Samba.",
+        "audio_description": "The Nike Killshot 2 is definitely the move for casual wear. It's like the Nike version of the Adidas Samba and ten dollars cheaper. They were popular in the early 2010s with J.Crew exclusive colorways.",
+        "text_on_screen": "3. Nike Killshot 2\n$90\n182 purchased in the last 7 days\nSpring Sale: use code SPRING for 20% off",
+        "key_objects": [
+          "Nike Killshot 2",
+          "Adidas Samba"
+        ]
+      },
+      {
+        "time_range": "0:47-0:54",
+        "visual_description": "Creator highlights the New Balance 530 with product and lifestyle imagery.",
+        "audio_description": "Then there's the New Balance 530. This is hands down the best affordable New Balance sneaker to buy right now. This grey colorway can be dressed up or down.",
+        "text_on_screen": "2. New Balance 530\n$99.99",
+        "key_objects": [
+          "New Balance 530"
+        ]
+      },
+      {
+        "time_range": "0:54-1:04",
+        "visual_description": "Visuals of Asics Gel 1130 sneakers and a mention of a high-profile collaboration.",
+        "audio_description": "Similarly with Asics, everyone's favorite brand at the moment, is the 1130. You can get two super wearable colorways for only 100 bucks. It already has incredible collaborations like with HAL Studios.",
+        "text_on_screen": "Asics Gel 1130\n$100\nAct like you didn't see the Nike sock",
+        "key_objects": [
+          "Asics Gel 1130"
+        ]
+      },
+      {
+        "time_range": "1:04-1:13",
+        "visual_description": "The creator reveals the top pick, the Vans Knu Skool, showing it on-foot and on a retail site.",
+        "audio_description": "However, the most affordable shoe on this list and possibly the best is the Vans Knu Skool. For only 75 dollars, you're getting the classic Vans DNA with a 90s twist.",
+        "text_on_screen": "1. Vans Knu Skool\n$75",
+        "key_objects": [
+          "Vans Knu Skool"
+        ]
+      }
+    ],
+    "overall_summary": "Creator Bryce Kicks ranks the top five best sneakers available for under $100 for the Spring and Summer seasons. The list includes a mix of retro runners, casual classics, and trendy silhouettes from brands like Adidas, Nike, New Balance, Asics, and Vans. He highlights specific models like the Adidas SL 72 for its heritage, the Nike P6000 for its Y2K aesthetic, and the Vans Knu Skool as the best value option at $75. The video serves as a guide for sneaker enthusiasts looking for stylish yet budget-friendly footwear options.",
+    "people": [
+      {
+        "description": "Male creator wearing a New York Mets baseball cap and a cream-colored knit cardigan over a white t-shirt.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Bryce Kicks"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Adidas SL 72",
+        "display_name": "Adidas SL 72",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "$100",
+        "confidence": 5
+      },
+      {
+        "name": "Nike P6000",
+        "display_name": "Nike P-6000",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "$93 on sale, $110 retail",
+        "confidence": 5
+      },
+      {
+        "name": "Nike Killshot 2",
+        "display_name": "Nike Killshot 2 Leather",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "$90",
+        "confidence": 5
+      },
+      {
+        "name": "New Balance 530",
+        "display_name": "New Balance 530",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "$99.99",
+        "confidence": 5
+      },
+      {
+        "name": "Asics Gel 1130",
+        "display_name": "Asics Gel-1130",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "$100",
+        "confidence": 5
+      },
+      {
+        "name": "Vans Knu Skool",
+        "display_name": "Vans Knu Skool",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "$75",
+        "confidence": 5
+      },
+      {
+        "name": "Bob Marley",
+        "display_name": "Bob Marley",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Wales Bonner",
+        "display_name": "Wales Bonner",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Sporty & Rich",
+        "display_name": "Sporty & Rich",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "HAL Studios",
+        "display_name": "HAL Studios",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "J.Crew",
+        "display_name": "J.Crew",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "1972 Summer Olympics",
+        "display_name": "1972 Summer Olympics",
+        "type": "event",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The Adidas SL 72 is a strong alternative to the Gazelle and Samba models due to its slim silhouette and heritage.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The Nike P6000 is a top choice for those following the early 2000s runner trend.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The Vans Knu Skool offers the best value for money at $75, providing a 90s aesthetic.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "product_list",
+      "items": [
+        {
+          "name": "Vans Knu Skool",
+          "details": "Price: $75; Features: 90s twist on classic Vans DNA."
+        },
+        {
+          "name": "New Balance 530",
+          "details": "Price: $99.99; Features: Best affordable New Balance option."
+        },
+        {
+          "name": "Nike Killshot 2",
+          "details": "Price: $90; Features: Casual alternative to Adidas Samba; historically linked to J.Crew."
+        },
+        {
+          "name": "Nike P6000",
+          "details": "Price: ~$93 (on sale); Features: Early 2000s runner aesthetic, high comfort."
+        },
+        {
+          "name": "Asics Gel 1130",
+          "details": "Price: $100; Features: High popularity, notable collaborations like HAL Studios."
+        },
+        {
+          "name": "Adidas SL 72",
+          "details": "Price: $100; Features: Slim silhouette, 1972 Olympic heritage, worn by Bob Marley."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "That Couch Potato Again \u2014 Lofi Fruits Music",
+      "metadata_song": "That Couch Potato Again",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All products and prices were clearly identified from text overlays and audio."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, casual, and trendy with a clean aesthetic.",
+    "topic_hints": [
+      "Sneaker culture",
+      "Affordable fashion",
+      "Footwear trends"
+    ],
+    "affect_hints": [
+      "Helpful",
+      "Informed",
+      "Trendy"
+    ],
+    "genre_hints": [
+      "Product review",
+      "Shopping guide",
+      "Fashion advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8050,
+    "output_tokens": 3121,
+    "total_tokens": 11171,
+    "cost_usd": 0.00308,
+    "latency_ms": 38053,
+    "upload_ms": 7575
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

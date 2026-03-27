@@ -1,0 +1,226 @@
+{
+  "item_id": "7198021247962484014",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:46:35.284223+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:11",
+        "visual_description": "Two young men are seated in a room, facing the camera. The man on the right, Elijah Wallace, is actively speaking and gesturing with his hands, conveying a message about self-confidence. The man on the left, identified as Braydenmy, is listening attentively. The background features a plain wall with framed artwork. Overlaid text includes a main statement at the top, simulated chat comments on the left, and social media handles at the bottom.",
+        "audio_description": "Elijah Wallace speaks about the importance of not being insecure and being confident in oneself, stating that there's no point in being insecure about anything and that one should present themselves as they are. Background music is playing.",
+        "text_on_screen": "I wish I understood this when I was younger\nAnd how you carry yourself\nK thx\nNah elijah you handsome\njs kidnap her and make her tell you that you look good\nAnd pay attention to how you dress\nelijah remember when you pushed my parents off a building cause I said a bad word\nbraydenmy\n@IAMELIJAHWALLACE (Twitch icon)\n@IAMELIJAHWALLACE (Instagram icon)\n@IAMELIJAHWALLACE (TikTok icon)\n@ELIJAH WALLACE (YouTube icon)\n@IAMELIJAHWALLACE (Twitter icon)",
+        "key_objects": [
+          "framed artwork"
+        ]
+      }
+    ],
+    "overall_summary": "This video features Elijah Wallace and another individual, Braydenmy, discussing the concept of self-confidence. Elijah Wallace emphasizes that there is no benefit to being insecure and encourages viewers to embrace who they are and present themselves authentically. He expresses a wish that he had understood this perspective earlier in his life, highlighting the importance of self-acceptance. The video aims to inspire viewers to be confident in their own skin.",
+    "people": [
+      {
+        "description": "A young man with dark, curly hair, wearing a light blue knitted sweater, speaking directly to the camera and gesturing with his hands.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Elijah Wallace"
+      },
+      {
+        "description": "A young man with dark hair, wearing a patterned jacket and a white beaded necklace, listening to the speaker.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Braydenmy"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Elijah Wallace",
+        "display_name": "Elijah Wallace",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Braydenmy",
+        "display_name": "Braydenmy",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Lujon",
+        "display_name": "Lujon",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Henry Mancini",
+        "display_name": "Henry Mancini",
+        "type": "artist",
+        "relevance": "background",
+        "source": [
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Twitch",
+        "display_name": "Twitch",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Instagram",
+        "display_name": "Instagram",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "TikTok",
+        "display_name": "TikTok",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "YouTube",
+        "display_name": "YouTube",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Twitter",
+        "display_name": "Twitter",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Self-confidence",
+        "display_name": "Self-confidence",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "implied"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Insecurity",
+        "display_name": "Insecurity",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "implied"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "There is no point in being insecure about anything; one should be confident in the person they are.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "It is important to present yourself as you are.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Lujon \u2014 Henry Mancini",
+      "metadata_song": "lujon henry mancini",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Assumed background music matches metadata as no audio analysis tool is available."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Informative, reflective, calm, conversational",
+    "topic_hints": [
+      "Self-improvement",
+      "Confidence",
+      "Personal growth"
+    ],
+    "affect_hints": [
+      "Thoughtful",
+      "Encouraging",
+      "Empowering"
+    ],
+    "genre_hints": [
+      "Motivational content",
+      "Life advice",
+      "Discussion"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4728,
+    "output_tokens": 1745,
+    "total_tokens": 6473,
+    "cost_usd": 0.001756,
+    "latency_ms": 18443,
+    "upload_ms": 3192
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

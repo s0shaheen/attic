@@ -1,0 +1,72 @@
+{
+  "item_id": "7197625319606701358",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:45.472609+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "technology",
+      "micro_labels": [
+        "social media impact",
+        "Bo Burnham",
+        "Eighth Grade movie",
+        "Gen Z psychology",
+        "internet culture"
+      ],
+      "confidence": 0.92
+    },
+    "genre": {
+      "label": "interview",
+      "micro_labels": [
+        "panel discussion",
+        "film press tour"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "funny",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.88
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9442,
+    "output_tokens": 333,
+    "total_tokens": 9775,
+    "cost_usd": 0.001616,
+    "latency_ms": 17642,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 6
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "item_id": "7421988029973187883",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:49:38.033445+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:06",
+        "visual_description": "A man stands in a room with a clothing rack in the background, introducing the topic of sweater shopping tips.",
+        "audio_description": "The creator states that a black sweater in the fall is a luxury and he will share things he looks out for when sweater shopping.",
+        "text_on_screen": "",
+        "key_objects": [
+          "black sweater",
+          "light wash jeans",
+          "brown shoes",
+          "clothing rack"
+        ]
+      },
+      {
+        "time_range": "0:06-0:23",
+        "visual_description": "The man demonstrates how to check the shoulder fit of a sweater by pointing to his shoulder seam and explaining where it should align.",
+        "audio_description": "The creator explains to check the shoulders, ensuring the shoulder seam lines up with the actual shoulder, avoiding a drop shoulder or a seam that is too tight.",
+        "text_on_screen": "",
+        "key_objects": [
+          "black sweater"
+        ]
+      },
+      {
+        "time_range": "0:23-0:39",
+        "visual_description": "The man gestures to his arms, explaining the desired tightness for a classic sweater fit.",
+        "audio_description": "The creator discusses the tightness of the arms, advising against a super tight fit that shows every curvature, but also not too baggy, aiming for a classic, clean silhouette suitable for various occasions.",
+        "text_on_screen": "",
+        "key_objects": [
+          "black sweater"
+        ]
+      },
+      {
+        "time_range": "0:39-0:56",
+        "visual_description": "The man demonstrates a French tuck with his sweater, explaining its benefit for his height.",
+        "audio_description": "The creator checks if the sweater can be French-tucked, noting that as a shorter person (5'9\"), most sweaters don't fall at his natural waistline, and French tucking allows the sweater to drape correctly. He mentions not all sweaters can be French-tucked.",
+        "text_on_screen": "",
+        "key_objects": [
+          "black sweater",
+          "jeans"
+        ]
+      }
+    ],
+    "overall_summary": "This video offers practical tips for men's sweater shopping, specifically for thinner sweaters intended for a classic fit. The creator, @rajn7673, details three key aspects to consider: proper shoulder seam alignment, appropriate arm tightness that is neither too snug nor too baggy, and the ability to perform a French tuck. He emphasizes the French tuck's importance for shorter individuals to achieve a desirable drape and silhouette, making the sweater versatile for both casual and semi-formal settings.",
+    "people": [
+      {
+        "description": "A man with dark hair, a beard, and glasses, wearing a black long-sleeved sweater and light wash jeans. He is the creator and is speaking directly to the camera, demonstrating fashion tips.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@rajn7673"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Sweater",
+        "display_name": "Sweater (thin, black)",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jeans",
+        "display_name": "Jeans (light wash, wide leg)",
+        "type": "clothing",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "French tuck",
+        "display_name": "French tuck (styling technique)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "demonstration",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Shoulder fit",
+        "display_name": "Shoulder fit (sweater)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "demonstration"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Arm tightness",
+        "display_name": "Arm tightness (sweater)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "demonstration"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Fall fashion",
+        "display_name": "Fall fashion",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Menswear",
+        "display_name": "Men's Fashion",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "@rajn7673",
+        "display_name": "Rajn7673",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "For a classic sweater fit, the shoulder seam should align precisely with the top of your actual shoulder, avoiding both drop-shoulder and overly tight fits.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Sweater arms should not be excessively tight to show every curvature, nor too baggy, to maintain a clean and classic silhouette.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The ability to French tuck a sweater is important, especially for shorter individuals, as it allows the garment to drape correctly and create a more flattering silhouette.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Check shoulder fit",
+          "details": "Ensure shoulder seam aligns with the top of your actual shoulder; avoid drop shoulder or too tight."
+        },
+        {
+          "name": "Check arm tightness",
+          "details": "Arms should not be super tight or super baggy for a classic, clean silhouette."
+        },
+        {
+          "name": "Assess French tuck ability",
+          "details": "For shorter individuals, check if the sweater can be French-tucked to drape correctly over the body."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "All key information appears to be extracted accurately based on the video and provided metadata."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "informative",
+    "topic_hints": [
+      "Men's fashion",
+      "Sweater styling",
+      "Fashion tips"
+    ],
+    "affect_hints": [
+      "Informative",
+      "Helpful",
+      "Practical"
+    ],
+    "genre_hints": [
+      "Fashion tutorial",
+      "Style guide",
+      "How-to"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 18091,
+    "output_tokens": 1883,
+    "total_tokens": 19974,
+    "cost_usd": 0.003843,
+    "latency_ms": 21470,
+    "upload_ms": 5954
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

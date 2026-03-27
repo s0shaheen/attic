@@ -1,0 +1,177 @@
+{
+  "item_id": "7140937195505863938",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:08:14.695989+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "Creator poses on a bridge overlooking a canal in Amsterdam, turning to smile at the camera.",
+        "audio_description": "Upbeat, rhythmic hip-hop track begins playing.",
+        "text_on_screen": "two of my favourite cafes in amsterdam",
+        "key_objects": [
+          "canal",
+          "bridge",
+          "Adidas Samba sneakers",
+          "shoulder bag"
+        ]
+      },
+      {
+        "time_range": "0:04-0:09",
+        "visual_description": "Montage of Toki cafe featuring iced coffees, minimalist interior design with terrazzo tables, a stack of magazines, and syrup being poured over French toast.",
+        "audio_description": "Music continues: 'I wish I was a little bit taller, I wish I was a baller...'",
+        "text_on_screen": "toki",
+        "key_objects": [
+          "iced coffee",
+          "French toast",
+          "terrazzo table",
+          "magazines"
+        ]
+      },
+      {
+        "time_range": "0:09-0:13",
+        "visual_description": "Montage of Locals cafe showing the exterior storefront, a close-up of an iced latte, the clean white espresso machine, and a staff member preparing a drink.",
+        "audio_description": "Music continues with the chorus of 'I Wish'.",
+        "text_on_screen": "locals",
+        "key_objects": [
+          "espresso machine",
+          "iced latte",
+          "cafe storefront"
+        ]
+      }
+    ],
+    "overall_summary": "Creator Jacquie Alexander shares her top two cafe recommendations in Amsterdam: Toki and Locals. The video features aesthetic shots of the cafe interiors, their signature iced coffees, and food items like French toast. It serves as a quick travel guide for viewers looking for trendy and high-quality coffee spots in the city.",
+    "people": [
+      {
+        "description": "Young woman with brown hair in a long braid, wearing a black one-shoulder top and a multi-colored patterned skirt.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Jacquie Alexander"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Amsterdam",
+        "display_name": "Amsterdam, Netherlands",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Toki",
+        "display_name": "Toki Amsterdam",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Binnen Dommersstraat 15, 1013 HK Amsterdam",
+        "confidence": 5
+      },
+      {
+        "name": "Locals",
+        "display_name": "Locals Coffee",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Spuistraat 272, 1012 VW Amsterdam",
+        "confidence": 5
+      },
+      {
+        "name": "I Wish",
+        "display_name": "I Wish \u2014 Skee-Lo",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Adidas",
+        "display_name": "Adidas Samba",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Black and white colorway",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Toki and Locals are highly recommended cafes for coffee and food in Amsterdam.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Toki",
+          "details": "Known for minimalist aesthetic, terrazzo tables, and French toast."
+        },
+        {
+          "name": "Locals",
+          "details": "Specialty coffee shop with an all-day brunch menu."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "I Wish \u2014 Skee-Lo",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The cafes are clearly labeled and easily identifiable in Amsterdam."
+    },
+    "presentation_style": {
+      "primary_format": "compilation",
+      "camera_work": "handheld",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Aesthetic, bright, relaxed, and trendy.",
+    "topic_hints": [
+      "Travel",
+      "Coffee Culture",
+      "Amsterdam Guide"
+    ],
+    "affect_hints": [
+      "Inspired",
+      "Relaxed",
+      "Hungry"
+    ],
+    "genre_hints": [
+      "Travel Vlog",
+      "Recommendation"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2680,
+    "output_tokens": 1353,
+    "total_tokens": 4033,
+    "cost_usd": 0.001214,
+    "latency_ms": 18899,
+    "upload_ms": 5796
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

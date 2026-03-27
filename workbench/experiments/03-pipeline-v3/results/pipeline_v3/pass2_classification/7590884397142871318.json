@@ -1,0 +1,70 @@
+{
+  "item_id": "7590884397142871318",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:39.273552+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "technology",
+      "micro_labels": [
+        "movie recommendations",
+        "streaming services",
+        "nighttime routine",
+        "90-minute movies"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "vlog",
+      "micro_labels": [
+        "recommendation request"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "relaxing",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "text_overlay",
+      "raw_footage"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "connect",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4308,
+    "output_tokens": 323,
+    "total_tokens": 4631,
+    "cost_usd": 0.00084,
+    "latency_ms": 6060,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 1
+  }
+}

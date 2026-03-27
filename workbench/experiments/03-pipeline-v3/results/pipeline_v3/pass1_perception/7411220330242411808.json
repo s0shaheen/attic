@@ -1,0 +1,228 @@
+{
+  "item_id": "7411220330242411808",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:21:02.814572+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:22",
+        "visual_description": "Creator introduces a viral quote about startup culture while a YouTube video of Daniel Gross is overlaid in the background.",
+        "audio_description": "Creator says, 'Nobody wants to work for a tired idiot.' She explains this is one of her favorite quotes about startups and leadership from a Daniel Gross talk for Y Combinator.",
+        "text_on_screen": "Nobody wants to work for a tired idiot who is sleeping at the office.\nDaniel Gross \u2014 How to Win (Startups)\nY Combinator Investors\nNobody wants to work for a tired idiot\nTimeless talk by Daniel Gross",
+        "key_objects": [
+          "YouTube interface",
+          "Smartphone"
+        ]
+      },
+      {
+        "time_range": "0:22-0:31",
+        "visual_description": "Creator shows a clip of Daniel Gross speaking at a podium during a Y Combinator event.",
+        "audio_description": "Creator describes Daniel Gross as a well-known angel investor, incubator lead, and successful early-career founder.",
+        "text_on_screen": "Daniel Gross \u2014 How to Win (Startups)",
+        "key_objects": [
+          "Podium",
+          "Microphone"
+        ]
+      },
+      {
+        "time_range": "0:31-0:50",
+        "visual_description": "Creator explains the core philosophy of the 'How To Win' talk, emphasizing self-investment for leaders.",
+        "audio_description": "Creator discusses how leaders should ruthlessly invest in themselves to better serve their teams and companies.",
+        "text_on_screen": "How To Win",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:50-0:58",
+        "visual_description": "Creator points to a slide from the presentation comparing founders to professional athletes.",
+        "audio_description": "Creator explains that Gross likens startup founders to athletes who must maintain peak physical and mental condition.",
+        "text_on_screen": "1. You're an athlete.\n2. Startups are the Olympics.\n3. Novice athletes make repeated mistakes.",
+        "key_objects": [
+          "Presentation slide"
+        ]
+      },
+      {
+        "time_range": "0:58-1:20",
+        "visual_description": "Creator emphasizes the negative impact of burnout on leadership and team morale.",
+        "audio_description": "Creator explains that being a 'tired idiot' at 20% brain capacity is uninspiring to a team and counterproductive.",
+        "text_on_screen": "Nobody wants to work for a tired idiot who is sleeping at the office.",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:20-1:46",
+        "visual_description": "Creator describes the 'third party camera mode' technique for emotional regulation.",
+        "audio_description": "Creator explains the concept of looking at your own emotions and reactions from a detached, third-person perspective to make better decisions.",
+        "text_on_screen": "1. You're an athlete.\n2. Startups are the Olympics.\n3. Novice athletes make repeated mistakes.",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:46-2:02",
+        "visual_description": "Creator concludes with a recommendation and a personal shoutout.",
+        "audio_description": "Creator recommends the full talk for anyone in a position of responsibility and thanks her 'work husband' Viet for the recommendation.",
+        "text_on_screen": "1. You're an athlete.\n2. Startups are the Olympics.\n3. Novice athletes make repeated mistakes.",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "In this video, creator @pallipau discusses a timeless talk by Daniel Gross titled 'How to Win (Startups)' given at Y Combinator. The central theme is that leaders must prioritize their own health and sleep because 'nobody wants to work for a tired idiot' who operates at low capacity. Gross argues that founders should view themselves as professional athletes in the 'Olympics' of business, requiring peak performance. The video also highlights the 'third party camera mode' technique, which encourages leaders to objectively observe their own emotions to make better strategic decisions.",
+    "people": [
+      {
+        "description": "Blonde woman in a grey sweater, speaking directly to the camera.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "pallipau"
+      },
+      {
+        "description": "Speaker at a podium in a YouTube video overlay.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Daniel Gross"
+      },
+      {
+        "description": "Mentioned as the person who shared the talk with the creator.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Viet"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Daniel Gross",
+        "display_name": "Daniel Gross",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Angel investor, former Y Combinator partner, founder of Grep and Pioneer",
+        "confidence": 5
+      },
+      {
+        "name": "Y Combinator",
+        "display_name": "Y Combinator",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Startup accelerator",
+        "confidence": 5
+      },
+      {
+        "name": "How to Win (Startups)",
+        "display_name": "How to Win (Startups) \u2014 Daniel Gross",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Y Combinator talk",
+        "confidence": 5
+      },
+      {
+        "name": "YouTube",
+        "display_name": "YouTube",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Video hosting platform",
+        "confidence": 5
+      },
+      {
+        "name": "Third Party Camera Mode",
+        "display_name": "Third Party Camera Mode",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Mental framework for objective self-observation",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Leaders must prioritize sleep and health because working at low capacity is uninspiring to a team.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Startup founders should treat themselves like professional athletes competing in the Olympics.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Using 'third party camera mode' helps leaders detach from emotions to make more rational decisions.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Prioritize Sleep",
+          "details": "Avoid being a 'tired idiot' at the office; it's uninspiring and reduces brain capacity to 20%."
+        },
+        {
+          "name": "Adopt an Athlete Mindset",
+          "details": "View startups as the Olympics and yourself as the athlete who needs to be in peak condition."
+        },
+        {
+          "name": "Third Party Camera Mode",
+          "details": "Observe your reactions and emotions from a third-person perspective to maintain objectivity."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video is a commentary on a specific, well-documented talk by Daniel Gross."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Professional, informative, and encouraging startup advice.",
+    "topic_hints": [
+      "Startup Leadership",
+      "Burnout Prevention",
+      "Productivity Hacks"
+    ],
+    "affect_hints": [
+      "Motivated",
+      "Enlightened",
+      "Focused"
+    ],
+    "genre_hints": [
+      "TechTok",
+      "Career Advice",
+      "Educational"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 12350,
+    "output_tokens": 2177,
+    "total_tokens": 14527,
+    "cost_usd": 0.003159,
+    "latency_ms": 29289,
+    "upload_ms": 8244
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "item_id": "7388508347445660958",
+  "parsed_output": {
+    "summary": "Golf instructor Eric Cogorno demonstrates a specific drill designed to improve ball striking with a driver. This Part 1 tutorial is intended for golfers looking to refine their swing mechanics and is part of his Cogorno Golf coaching series.",
+    "entities": [
+      {
+        "name": "Eric Cogorno",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Cogorno Golf",
+        "type": "brand",
+        "relevance": "primary"
+      },
+      {
+        "name": "Golf Digest",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "PGA",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "LPGA",
+        "type": "brand",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "sports",
+      "secondary": "education"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this golf tutorial, instructor Eric Cogorno (@ericcogorno) shares a specific drill designed to improve driver performance, titled 'You Won't Believe How Good You Hit Your Driver With This Drill - PART 1'. The video features Cogorno at a driving range, likely in South Florida or the Lehigh Valley area, demonstrating swing mechanics with a driver. He uses training aids like alignment sticks and a ball basket to visualize the swing path. The content is highly informative, targeting golfers who want to improve their game through structured drills. Cogorno is a well-known instructor associated with Cogorno Golf and Golf Digest. On-screen text directs viewers to COGORNOGOLF.COM for more coaching. This video is ideal for those searching for golf swing tips, driver drills, or professional instruction from a PGA-level coach."
+  },
+  "metrics": {
+    "input_tokens": 4390,
+    "output_tokens": 469,
+    "total_tokens": 4859,
+    "cost_usd": 0.00094,
+    "latency_ms": 8235,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "item_id": "7615790682279644446",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:40.530167+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "health",
+      "secondary": "career",
+      "micro_labels": [
+        "mental wellness",
+        "capitalism critique",
+        "monetization of hobbies",
+        "hopecore",
+        "work-life balance"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "vlog",
+      "micro_labels": [
+        "social commentary",
+        "personal monologue",
+        "video essay"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "relaxing",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "sad",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "mixed"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 10297,
+    "output_tokens": 408,
+    "total_tokens": 10705,
+    "cost_usd": 0.001789,
+    "latency_ms": 15141,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 7
+  }
+}

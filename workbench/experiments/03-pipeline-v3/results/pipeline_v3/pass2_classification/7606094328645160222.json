@@ -1,0 +1,73 @@
+{
+  "item_id": "7606094328645160222",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:05.529673+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "career",
+      "secondary": "technology",
+      "micro_labels": [
+        "entrepreneurship",
+        "SaaS",
+        "build in public",
+        "startup challenge",
+        "vibecoding"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "vlog",
+      "micro_labels": [
+        "day in the life",
+        "challenge log",
+        "project update"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "document",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8704,
+    "output_tokens": 337,
+    "total_tokens": 9041,
+    "cost_usd": 0.001508,
+    "latency_ms": 10253,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 5
+  }
+}

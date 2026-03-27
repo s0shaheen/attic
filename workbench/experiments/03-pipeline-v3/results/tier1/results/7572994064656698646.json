@@ -1,0 +1,52 @@
+{
+  "item_id": "7572994064656698646",
+  "parsed_output": {
+    "summary": "This TikTok is a character edit of Scar from the 2003 anime Fullmetal Alchemist, highlighting his destructive power and intimidating design. It features scenes of Scar using his transmutation arm against Edward Elric, specifically showing Edward's damaged automail.",
+    "entities": [
+      {
+        "name": "Scar",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Edward Elric",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Fullmetal Alchemist (2003)",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Alchemy",
+        "type": "technique",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Automail",
+        "type": "product",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "art"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "nostalgic",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "An anime edit featuring Scar from the 2003 series Fullmetal Alchemist (FMA03). The video highlights Scar's 'tuff' persona, focusing on his tattooed right arm and the red glow of his deconstruction alchemy. Key frames show a confrontation with Edward Elric, where Edward's automail shoulder is exposed and broken. The edit captures the dark, moody atmosphere of the 2003 adaptation, including nighttime scenes and intense action sequences. This is a fan-made tribute to one of the series' primary antagonists, emphasizing his strength and the unique visual style of the early Bones studio production. Ideal for fans searching for FMA 03 nostalgia, Scar character highlights, or classic anime fight clips."
+  },
+  "metrics": {
+    "input_tokens": 4166,
+    "output_tokens": 474,
+    "total_tokens": 4640,
+    "cost_usd": 0.000909,
+    "latency_ms": 11044,
+    "keyframe_count": 3
+  }
+}

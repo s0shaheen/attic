@@ -1,0 +1,204 @@
+{
+  "item_id": "7402274475779034399",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:09:02.833696+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:06",
+        "visual_description": "Patty Oghoops demonstrates a weak, 'dying' left-hand dribble on an outdoor court to illustrate the problem.",
+        "audio_description": "If you have no left hand dribble, like the ball just keeps dying like that, do this four-step progression and by the end you'll have a left hand.",
+        "text_on_screen": "IF YOU HAVE NO LEFT HAND DRIBBLE LIKE THE BALL KEEPS DYING LIKE THAT DO THIS 4 STEP PROGRESSION AND BY THE END YOU'LL HAVE A LEFT HAND",
+        "key_objects": [
+          "basketball",
+          "basketball hoop"
+        ]
+      },
+      {
+        "time_range": "0:06-0:12",
+        "visual_description": "Creator performs forceful, low stationary dribbles with his left hand.",
+        "audio_description": "The first step of the progression: just get 100 pound dribbles in a row. Don't move on until you can get 100 in a row.",
+        "text_on_screen": "THE FIRST STEP OF THE PROGRESSION JUST GET 100 POUND DRIBBLES IN A ROW DON'T MOVE ON UNTIL YOU CAN GET 100 IN A ROW",
+        "key_objects": [
+          "basketball"
+        ]
+      },
+      {
+        "time_range": "0:12-0:17",
+        "visual_description": "Creator performs high-bounce dribbles that reach above his head level.",
+        "audio_description": "When that's too easy, do 100 in a row above your head.",
+        "text_on_screen": "WHEN THAT'S TOO EASY DO 100 IN A ROW ABOVE YOUR HEAD",
+        "key_objects": [
+          "basketball"
+        ]
+      },
+      {
+        "time_range": "0:17-0:22",
+        "visual_description": "Creator performs side-to-side 'windshield wiper' dribbles in front of his body.",
+        "audio_description": "And when that's too easy, get 100 in a row moving back and forth.",
+        "text_on_screen": "AND WHEN THAT'S TOO EASY GET 100 IN A ROW MOVING BACK AND FORTH",
+        "key_objects": [
+          "basketball"
+        ]
+      },
+      {
+        "time_range": "0:22-0:29",
+        "visual_description": "Creator dribbles while walking forward, then addresses the camera directly while holding the ball.",
+        "audio_description": "And then when that's too easy, start doing it on the move. You do that four-step progression, dribbling with your left hand will be pretty easy.",
+        "text_on_screen": "AND THEN WHEN THAT'S TOO EASY START DOING IT ON THE MOVE YOU DO THAT FOUR STEP PROGRESSION DRIBBLING WITH YOUR LEFT HAND WILL BE PRETTY EASY",
+        "key_objects": [
+          "basketball",
+          "Hollyland wireless microphone"
+        ]
+      }
+    ],
+    "overall_summary": "In this basketball tutorial, creator Patty Oghoops outlines a four-step progression designed to help beginners develop their non-dominant (left) hand dribbling. The routine emphasizes high-volume repetition, requiring 100 successful reps of each drill before advancing. The steps move from stationary pound dribbles to high dribbles, lateral 'windshield wiper' dribbles, and finally dribbling while in motion. The video serves as a practical guide for players looking to eliminate a common weakness in their ball-handling skills.",
+    "people": [
+      {
+        "description": "Young male athlete in a mint green t-shirt and grey shorts, demonstrating basketball drills.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Patty Oghoops"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Patty Oghoops",
+        "display_name": "Patty Oghoops",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pound Dribble",
+        "display_name": "Pound Dribbles",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "100 reps",
+        "confidence": 5
+      },
+      {
+        "name": "High Dribble",
+        "display_name": "High Dribbles (Above Head)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "100 reps",
+        "confidence": 5
+      },
+      {
+        "name": "Windshield Wiper Dribble",
+        "display_name": "Back and Forth Dribbles",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "100 reps",
+        "confidence": 5
+      },
+      {
+        "name": "Hollyland Lark M1",
+        "display_name": "Hollyland Wireless Microphone",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Clip-on lapel microphone",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Mastering the left hand requires high-volume repetition (100 reps per drill) to build muscle memory.",
+        "source": "audio",
+        "confidence": 5
+      },
+      {
+        "statement": "Dribbling skill should be built progressively: starting with stationary control before moving to dynamic movement.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "workout",
+      "items": [
+        {
+          "name": "Pound Dribbles",
+          "details": "100 reps in a row (stationary)"
+        },
+        {
+          "name": "High Dribbles",
+          "details": "100 reps in a row, bouncing the ball above head height"
+        },
+        {
+          "name": "Back and Forth Dribbles",
+          "details": "100 reps in a row (windshield wiper motion)"
+        },
+        {
+          "name": "Dribbling on the Move",
+          "details": "Practice the previous motions while walking or running"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Generic upbeat lo-fi hip hop beat",
+      "metadata_song": "original sound - Patty Oghoops",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "The background music is a generic rhythmic beat common in sports tutorials; no specific artist/title could be identified beyond the creator's original sound upload."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Energetic, instructional, and focused.",
+    "topic_hints": [
+      "Basketball Training",
+      "Ball Handling Drills",
+      "Athletic Development"
+    ],
+    "affect_hints": [
+      "Motivated",
+      "Determined",
+      "Encouraging"
+    ],
+    "genre_hints": [
+      "Sports Tutorial",
+      "Fitness Tip"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4130,
+    "output_tokens": 1825,
+    "total_tokens": 5955,
+    "cost_usd": 0.001715,
+    "latency_ms": 19914,
+    "upload_ms": 5823
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

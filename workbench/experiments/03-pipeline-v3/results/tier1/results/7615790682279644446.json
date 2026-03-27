@@ -1,0 +1,47 @@
+{
+  "item_id": "7615790682279644446",
+  "parsed_output": {
+    "summary": "Creator @shadydealing discusses the societal pressure to treat one's life as a curated brand and aesthetic under capitalism. The video encourages viewers to move away from performative living and find peace in simple, unrecorded moments like enjoying the rain.",
+    "entities": [
+      {
+        "name": "@shadydealing",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Capitalism",
+        "type": "cultural_reference",
+        "relevance": "primary"
+      },
+      {
+        "name": "Hopecore",
+        "type": "trend_or_meme",
+        "relevance": "primary"
+      },
+      {
+        "name": "Aesthetic",
+        "type": "cultural_reference",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "other",
+      "secondary": "health"
+    },
+    "genre": "pov",
+    "affect": {
+      "dominant": "inspiring",
+      "secondary": "relaxing"
+    },
+    "viewer_orientation": "emotional_regulation",
+    "embedding_text": "In this social commentary video, creator @shadydealing reflects on the modern pressure to treat one's life as a curated brand under the influence of capitalism. The speaker addresses the camera, noting that society has reached a point where individuals prioritize their 'aesthetic' over genuine experience. The video transitions from a talking-head format to atmospheric, calming shots of a digital clock, a flickering candle, and a park bench in the rain at night. It features on-screen text such as 'we've reached this really weird point in society and capitalism' and 'but as a brand. we curate our aesthetic.' This 'hopecore' content is designed for emotional regulation, using relaxing, spa-like music to encourage viewers to step away from performative living and simply 'enjoy life.' It serves as a philosophical reminder to find peace in unrecorded, authentic moments."
+  },
+  "metrics": {
+    "input_tokens": 4258,
+    "output_tokens": 459,
+    "total_tokens": 4717,
+    "cost_usd": 0.000914,
+    "latency_ms": 8909,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,516 @@
+{
+  "item_id": "7548620433705159966",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:59:35.571722+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "The creator, wearing a light blue cap, speaks while a phone screen displaying a Substack article titled '25 THINGS FOR FREELANCE CREATIVES' from 'ORANGE TREE STUDIO' is visible behind him. The article features an orange logo with '25' inside.",
+        "audio_description": "The creator introduces his Substack article, stating it's his greatest contribution to society.",
+        "text_on_screen": "5:06, ORANGE TREE STUDIO, 25 THINGS FOR FREELANCE CREATIVES, Business tools, hacks, mockups, tutorials, inspiration, and more., ORANGE TREE STUDIO, SEP 10, 2025, probably my greatest contribution to society was the Substack that I wrote today",
+        "key_objects": [
+          "phone",
+          "light blue cap",
+          "Substack article",
+          "Orange Tree Studio logo"
+        ]
+      },
+      {
+        "time_range": "0:04-0:29",
+        "visual_description": "The creator continues speaking as the phone screen scrolls through the Substack article, revealing various categories and listed resources for freelance creatives, including tools for inspiration, organization, YouTube channels, mockup sites, business tools, and portfolio project prompts.",
+        "audio_description": "The creator explains that the Substack is a list of 25 resources he wished he had when starting out, covering inspiration, organization, YouTube videos, mockup sites, business tools, and portfolio project prompts.",
+        "text_on_screen": "Stats, Assets, ORANGE TREE STUDIO, 25 THINGS FOR FREELANCE CREATIVES, Business tools, hacks, mockups, tutorials, inspiration, and more., ORANGE TREE STUDIO, TODAY AT 10:01 AM, This week I wanted to share a handful of resources I wish I had when I was starting out as a self-taught creative. All the resources right in front of you, in one place., You got no excuses now., Inspiration & Organization, 1. Cosmos \u2014 like Pinterest, but much better.. & more creative in my humble opinion, 2. Framer \u2014 next level templates for portfolios or websites, 3. Milanote \u2014 free, easy to build mood boards or briefs for projects / teams, 4. Internet Archive \u2014 good ol flickr. very unique old archives, 5. Notion \u2014 organize projects, clients, and inspiration all in one place., YouTube University, 6. The Futur \u2014 straight talk on design & business. How to actually make $$$, 7. EdgyKatrina \u2014 beginner friendly Adobe illustrator tutorials. I watched that poster tutorial at least 100 & the can mockup video is GREAT, 8. Orenmeetsworld \u2014 dude has seen behind the curtain & gives away all the sauce, 9. Jesse Nyberg \u2014 talented graphic designer showing process & valuable insights, 10. Tetragrammaton \u2014 my king, Rick Rubin, talking to the author that changed my life, Steven Pressfield, \u2713 Subscribed, Mockup Madness, 11. MockupWorld \u2014 free mockups to show off your designs in context, 12. Envato Elements \u2014 unlimited mockups for a monthly fee, 13. Bendito Mockups \u2014 very elite site, good freebies but mostly paid, 14. Moxi\u03cc Studio \u2014 need Adobe stock account, but 77 pages of mockups, 15. Mockup Maison \u2014 limited freebies, but very high quality paid mockups, Big Business, 16. Hello Bonsai \u2014 free, lawyer-reviewed templates and more, 17. Zoho \u2014 simple, professional invoicing & expense tracking that scales as your freelance business grows., 18. Loom \u2014 record quick video walkthroughs for clients(builds trust & saves time)., 19. Positioning Tip \u2014 \u201cI design brand identities for wellness founders\u201d > \u201cI do logos for everyone.\u201d, 20. Client Onboarding Tip \u2014 always send a welcome PDF (with process, timeline, payment info) to instantly look professional, Portfolio Project Prompts, 21. Design packaging for an unrealistic product., EX: \u201cCereal to make you taller\u201d or \u201cSparkling water for dogs.\u201d, 22. Take 3 random objects from your house and design a product label for them., 23. Design your own currency. $$$, 24. Pick a famous quote and design a typography-only Instagram post., 25. Design your own sticker pack., All that is left to do is, Save this one for later. Continue to keep coming back to it when you need it., Talk soon, CC, it is essentially just a list of 25 things I wish I had when I started, from inspiration and organisation to the YouTube videos I learned illustrator to the YouTubes I watch today, to how to be a studio owner and grow, um all the mock up sites that I use for clients, and even some business stuff like contracts invoicing, positioning tips and then at the end I give you some portfolio project prompts.",
+        "key_objects": [
+          "phone",
+          "Substack article",
+          "Cosmos",
+          "Framer",
+          "Milanote",
+          "Internet Archive",
+          "Notion",
+          "The Futur",
+          "EdgyKatrina",
+          "Orenmeetsworld",
+          "Jesse Nyberg",
+          "Tetragrammaton",
+          "Rick Rubin",
+          "Steven Pressfield",
+          "MockupWorld",
+          "Envato Elements",
+          "Bendito Mockups",
+          "Moxi\u03cc Studio",
+          "Mockup Maison",
+          "Hello Bonsai",
+          "Zoho",
+          "Loom"
+        ]
+      },
+      {
+        "time_range": "0:29-1:14",
+        "visual_description": "The creator is centered, speaking directly to the camera, with the '25 THINGS FOR FREELANCE CREATIVES' title and the Orange Tree Studio logo displayed behind him. He gestures with his hands while encouraging viewers to access his free Substack and subscribe for weekly content.",
+        "audio_description": "The creator reiterates that the Substack is free, encourages viewers to subscribe for weekly resources, lessons, and templates, and expresses his desire to help them succeed in their creative businesses.",
+        "text_on_screen": "25 THINGS FOR FREELANCE CREATIVES, ORANGE TREE STUDIO (logo), Orange Tree Studio, again that is on my Substack right now, it is free for all readers, you don't have to subscribe or pay or anything like that, that's probably a mistake to make that stuff free, I probably could be charging for it, but link is in the bio go to the Substack, save it and tap in and, there's really no excuse for you not to lock in and build your own creative business., so I just realised I said you don't have to subscribe, but please subscribe it still is free, but show some love hit the subscribe button, I'm gonna be posting a Substack weekly, I'm gonna be shooting for every Wednesday on resources lessons, templates um, you know whatever it is to possibly help you guys succeed, and yeah, that's all I got love you guys",
+        "key_objects": [
+          "man",
+          "Orange Tree Studio logo"
+        ]
+      }
+    ],
+    "overall_summary": "This video features a creator promoting his free Substack article titled '25 Things for Freelance Creatives' from Orange Tree Studio. The article provides a comprehensive list of resources, including inspiration and organization tools, YouTube channels for learning design and business, mockup sites, business management tools, and portfolio project prompts. The creator encourages viewers to access the free resource via the link in his bio and subscribe to his Substack for weekly content aimed at helping them build and grow their creative businesses.",
+    "people": [
+      {
+        "description": "A young man with short brown hair, wearing a dark shirt and a light blue baseball cap with white lettering. He speaks directly to the camera, gesturing with his hands.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "crsnscott"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Substack",
+        "display_name": "Substack",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Orange Tree Studio",
+        "display_name": "Orange Tree Studio",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "25 Things for Freelance Creatives",
+        "display_name": "25 Things for Freelance Creatives (Substack article)",
+        "type": "book",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Cosmos",
+        "display_name": "Cosmos (inspiration tool)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "like Pinterest, but much better.. & more creative in my humble opinion",
+        "confidence": 4
+      },
+      {
+        "name": "Framer",
+        "display_name": "Framer (templates for portfolios/websites)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "next level templates for portfolios or websites",
+        "confidence": 4
+      },
+      {
+        "name": "Milanote",
+        "display_name": "Milanote (mood boards/briefs)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "free, easy to build mood boards or briefs for projects / teams",
+        "confidence": 4
+      },
+      {
+        "name": "Internet Archive",
+        "display_name": "Internet Archive (old archives)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "good ol flickr. very unique old archives",
+        "confidence": 4
+      },
+      {
+        "name": "Notion",
+        "display_name": "Notion (organization tool)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "organize projects, clients, and inspiration all in one place.",
+        "confidence": 4
+      },
+      {
+        "name": "The Futur",
+        "display_name": "The Futur (design & business YouTube channel)",
+        "type": "podcast",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "straight talk on design & business. How to actually make $$$",
+        "confidence": 4
+      },
+      {
+        "name": "EdgyKatrina",
+        "display_name": "EdgyKatrina (Adobe Illustrator tutorials)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "beginner friendly Adobe illustrator tutorials. I watched that poster tutorial at least 100 & the can mockup video is GREAT",
+        "confidence": 4
+      },
+      {
+        "name": "Adobe Illustrator",
+        "display_name": "Adobe Illustrator",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Orenmeetsworld",
+        "display_name": "Orenmeetsworld (design insights)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "dude has seen behind the curtain & gives away all the sauce",
+        "confidence": 4
+      },
+      {
+        "name": "Jesse Nyberg",
+        "display_name": "Jesse Nyberg (graphic designer)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "talented graphic designer showing process & valuable insights",
+        "confidence": 4
+      },
+      {
+        "name": "Tetragrammaton",
+        "display_name": "Tetragrammaton (podcast/author)",
+        "type": "podcast",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "my king, Rick Rubin, talking to the author that changed my life, Steven Pressfield",
+        "confidence": 4
+      },
+      {
+        "name": "Rick Rubin",
+        "display_name": "Rick Rubin",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Steven Pressfield",
+        "display_name": "Steven Pressfield",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "MockupWorld",
+        "display_name": "MockupWorld (free mockups)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "free mockups to show off your designs in context",
+        "confidence": 4
+      },
+      {
+        "name": "Envato Elements",
+        "display_name": "Envato Elements (unlimited mockups)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "unlimited mockups for a monthly fee",
+        "confidence": 4
+      },
+      {
+        "name": "Bendito Mockups",
+        "display_name": "Bendito Mockups (elite mockups)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "very elite site, good freebies but mostly paid",
+        "confidence": 4
+      },
+      {
+        "name": "Moxi\u03cc Studio",
+        "display_name": "Moxi\u03cc Studio (mockups)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "need Adobe stock account, but 77 pages of mockups",
+        "confidence": 4
+      },
+      {
+        "name": "Mockup Maison",
+        "display_name": "Mockup Maison (high quality paid mockups)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "limited freebies, but very high quality paid mockups",
+        "confidence": 4
+      },
+      {
+        "name": "Hello Bonsai",
+        "display_name": "Hello Bonsai (lawyer-reviewed templates)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "free, lawyer-reviewed templates and more",
+        "confidence": 4
+      },
+      {
+        "name": "Zoho",
+        "display_name": "Zoho (invoicing & expense tracking)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "simple, professional invoicing & expense tracking that scales as your freelance business grows.",
+        "confidence": 4
+      },
+      {
+        "name": "Loom",
+        "display_name": "Loom (video walkthroughs for clients)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "record quick video walkthroughs for clients(builds trust & saves time).",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Freelance creatives can significantly improve their work and business by utilizing a curated list of resources for inspiration, organization, learning, mockups, and business management.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Effective positioning for a freelance creative involves specializing in a niche rather than offering generic services (e.g., 'I design brand identities for wellness founders' > 'I do logos for everyone').",
+        "source": "text_overlay",
+        "confidence": 4
+      },
+      {
+        "statement": "Professional client onboarding, including a welcome PDF with process and payment info, is crucial for freelance success.",
+        "source": "text_overlay",
+        "confidence": 4
+      },
+      {
+        "statement": "Practicing design skills with creative and unrealistic portfolio project prompts can help freelancers develop their abilities.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Cosmos",
+          "details": "Inspiration & Organization: like Pinterest, but much better.. & more creative in my humble opinion"
+        },
+        {
+          "name": "Framer",
+          "details": "Inspiration & Organization: next level templates for portfolios or websites"
+        },
+        {
+          "name": "Milanote",
+          "details": "Inspiration & Organization: free, easy to build mood boards or briefs for projects / teams"
+        },
+        {
+          "name": "Internet Archive",
+          "details": "Inspiration & Organization: good ol flickr. very unique old archives"
+        },
+        {
+          "name": "Notion",
+          "details": "Inspiration & Organization: organize projects, clients, and inspiration all in one place."
+        },
+        {
+          "name": "The Futur",
+          "details": "YouTube University: straight talk on design & business. How to actually make $$$"
+        },
+        {
+          "name": "EdgyKatrina",
+          "details": "YouTube University: beginner friendly Adobe illustrator tutorials. I watched that poster tutorial at least 100 & the can mockup video is GREAT"
+        },
+        {
+          "name": "Orenmeetsworld",
+          "details": "YouTube University: dude has seen behind the curtain & gives away all the sauce"
+        },
+        {
+          "name": "Jesse Nyberg",
+          "details": "YouTube University: talented graphic designer showing process & valuable insights"
+        },
+        {
+          "name": "Tetragrammaton",
+          "details": "YouTube University: my king, Rick Rubin, talking to the author that changed my life, Steven Pressfield"
+        },
+        {
+          "name": "MockupWorld",
+          "details": "Mockup Madness: free mockups to show off your designs in context"
+        },
+        {
+          "name": "Envato Elements",
+          "details": "Mockup Madness: unlimited mockups for a monthly fee"
+        },
+        {
+          "name": "Bendito Mockups",
+          "details": "Mockup Madness: very elite site, good freebies but mostly paid"
+        },
+        {
+          "name": "Moxi\u03cc Studio",
+          "details": "Mockup Madness: need Adobe stock account, but 77 pages of mockups"
+        },
+        {
+          "name": "Mockup Maison",
+          "details": "Mockup Madness: limited freebies, but very high quality paid mockups"
+        },
+        {
+          "name": "Hello Bonsai",
+          "details": "Big Business: free, lawyer-reviewed templates and more"
+        },
+        {
+          "name": "Zoho",
+          "details": "Big Business: simple, professional invoicing & expense tracking that scales as your freelance business grows."
+        },
+        {
+          "name": "Loom",
+          "details": "Big Business: record quick video walkthroughs for clients(builds trust & saves time)."
+        },
+        {
+          "name": "Positioning Tip",
+          "details": "Big Business: \u201cI design brand identities for wellness founders\u201d > \u201cI do logos for everyone.\u201d"
+        },
+        {
+          "name": "Client Onboarding Tip",
+          "details": "Big Business: always send a welcome PDF (with process, timeline, payment info) to instantly look professional"
+        },
+        {
+          "name": "Design packaging for an unrealistic product.",
+          "details": "Portfolio Project Prompt: EX: \u201cCereal to make you taller\u201d or \u201cSparkling water for dogs.\u201d"
+        },
+        {
+          "name": "Take 3 random objects from your house and design a product label for them.",
+          "details": "Portfolio Project Prompt"
+        },
+        {
+          "name": "Design your own currency.",
+          "details": "Portfolio Project Prompt: $$$"
+        },
+        {
+          "name": "Pick a famous quote and design a typography-only Instagram post.",
+          "details": "Portfolio Project Prompt"
+        },
+        {
+          "name": "Design your own sticker pack.",
+          "details": "Portfolio Project Prompt"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The audio is primarily speech, no background music identified. The metadata 'original sound' is accurate in that sense."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "informative, direct, enthusiastic",
+    "topic_hints": [
+      "freelance resources",
+      "creative business",
+      "design tools"
+    ],
+    "affect_hints": [
+      "helpful",
+      "motivational",
+      "informative"
+    ],
+    "genre_hints": [
+      "tutorial",
+      "educational",
+      "review"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 23328,
+    "output_tokens": 5263,
+    "total_tokens": 28591,
+    "cost_usd": 0.006657,
+    "latency_ms": 54529,
+    "upload_ms": 5612
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

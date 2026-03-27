@@ -1,0 +1,78 @@
+{
+  "item_id": "7350052611262811438",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:24:34.229974+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fitness",
+      "secondary": "education",
+      "micro_labels": [
+        "leg day",
+        "hypertrophy",
+        "workout routine",
+        "bodybuilding",
+        "exercise science"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "listicle",
+        "exercise guide",
+        "fitness tips"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "funny",
+        "tier": "secondary"
+      },
+      {
+        "label": "inspiring",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay",
+      "mixed"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.95
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 12030,
+    "output_tokens": 360,
+    "total_tokens": 12390,
+    "cost_usd": 0.002021,
+    "latency_ms": 8510,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 8
+  }
+}

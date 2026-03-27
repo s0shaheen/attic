@@ -1,0 +1,194 @@
+{
+  "item_id": "7399305923124055339",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:21:32.072994+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:13",
+        "visual_description": "Tyler Path demonstrates the difference between a 'weak' overhead press with poor form and a proper, powerful repetition.",
+        "audio_description": "Upbeat phonk music plays. Tyler begins his explanation of how to fix a weak overhead press.",
+        "text_on_screen": "Weak overhead press; INCOMING EXPLANATION",
+        "key_objects": [
+          "Barbell",
+          "Weight plates",
+          "Hammer Strength Power Rack"
+        ]
+      },
+      {
+        "time_range": "0:13-0:32",
+        "visual_description": "Creator demonstrates proper wrist and elbow alignment, showing how to stack the joints over the forearm.",
+        "audio_description": "Tyler explains that extended wrists are a common mistake and recommends a neutral, stacked position for better force transfer.",
+        "text_on_screen": "OKAY SO; IF YOUR OVERHEAD PRESS IS WEAK; THIS IS THE VIDEO FOR YOU; THERE'S A COUPLE KEY THINGS A LOT OF PEOPLE TEND TO MAKE THE MISTAKE OF; FIRST OFF IT'S THEIR WRIST, RIGHT?; YOU DON'T WANT YOUR WRIST TO BE EXTENDED LIKE THIS; INSTEAD YOU WANNA MAKE SURE THAT YOU'RE KEEPING A NEUTRAL WRIST; AND THE ELBOW JOINT AS WELL AS THE WRIST JOINT IS BOTH STACKED BY YOUR FOREARM; THIS IS GONNA ALLOW FOR THE BEST FORCE TRANSFER AS WELL AS NOT HURTING YOUR WRIST",
+        "key_objects": [
+          "Barbell"
+        ]
+      },
+      {
+        "time_range": "0:32-0:49",
+        "visual_description": "Creator demonstrates the 'head in the hole' technique, pushing his head forward as the bar clears his forehead.",
+        "audio_description": "Tyler explains that unlike a lat pulldown, the military press requires poking the head through at the top for better balance.",
+        "text_on_screen": "SO NOW WE'RE HERE; WHEN WE PRESS WE DON'T WANNA JUST STAY BACK HERE; WHEN WE FULLY EXTEND WE WANNA GET OUR HEAD INTO THE HOLE, OKAY?; SO UNLIKE ON A LAT PULLDOWN WHERE YOU WANNA STAY BACK HERE; IN THE CASE OF A MILITARY PRESS YOU WANNA POKE YOUR HEAD THROUGH THE HOLE; AND IT'S GONNA ALLOW FOR YOU TO MAINTAIN A BETTER CENTER OF BALANCE IN THIS MORE EXTENDED POSITION",
+        "key_objects": [
+          "Barbell"
+        ]
+      },
+      {
+        "time_range": "0:49-1:03",
+        "visual_description": "Creator shows full body tension, specifically highlighting the glutes and core during the press.",
+        "audio_description": "Tyler advises squeezing the glutes and bracing the core to turn the body into a singular, stable pressing platform.",
+        "text_on_screen": "LASTLY IS IN REGARDS TO THE REST OF OUR BODY; YOU WANNA SQUEEZE YOUR GLUTES; BRACE YOUR CORE SO SQUEEZE YOUR ABS A LITTLE BIT; SO THAT YOUR BODY IS ONE SINGULAR UNIT; SO YOU CAN ACTUALLY FOCUS ON JUST PRESSING FROM AS STABLE AS A PLATFORM AS POSSIBLE; GOOD LUCK",
+        "key_objects": [
+          "Barbell",
+          "Hammer Strength Rack"
+        ]
+      }
+    ],
+    "overall_summary": "Fitness creator Tyler Path provides three essential tips to improve the Overhead Press (OHP). He first emphasizes the importance of stacking the wrist and elbow joints over the forearm to optimize force transfer and prevent injury. Next, he demonstrates the 'head in the hole' technique, where the lifter pokes their head through the arms at the top of the movement for better balance. Finally, he explains that squeezing the glutes and bracing the core creates a stable, singular unit for a more effective press.",
+    "people": [
+      {
+        "description": "A fit male fitness creator with dark hair, wearing a black sleeveless tank top and green shorts.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Tyler Path"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Tyler Path",
+        "display_name": "Tyler Path",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Overhead Press",
+        "display_name": "Overhead Press (OHP)",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Barbell variation",
+        "confidence": 5
+      },
+      {
+        "name": "Military Press",
+        "display_name": "Military Press",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Hammer Strength",
+        "display_name": "Hammer Strength Power Rack",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Power rack equipment",
+        "confidence": 5
+      },
+      {
+        "name": "LITSAR PEKLA",
+        "display_name": "LITSAR PEKLA",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Maintain a neutral, stacked wrist and elbow position to maximize force transfer and avoid wrist pain.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Poke your head through the 'hole' created by your arms at the top of the press to maintain a better center of balance.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Squeeze your glutes and brace your core to create a stable, singular platform for the press.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Stacked Joints",
+          "details": "Keep wrist and elbow joints stacked vertically over the forearm; avoid extended wrists."
+        },
+        {
+          "name": "Head in the Hole",
+          "details": "Push the head forward through the arms once the bar clears the forehead for better balance."
+        },
+        {
+          "name": "Body Stability",
+          "details": "Squeeze glutes and brace core/abs to turn the body into a stable pressing unit."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "LITSAR PEKLA",
+      "metadata_song": "LITSAR PEKLA",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video also contains Spanish subtitles which are a direct translation of the English voiceover and text overlays."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative and focused",
+    "topic_hints": [
+      "Weightlifting technique",
+      "Shoulder workout",
+      "Gym tips"
+    ],
+    "affect_hints": [
+      "Educational",
+      "Motivating"
+    ],
+    "genre_hints": [
+      "Fitness Tutorial"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 7130,
+    "output_tokens": 1898,
+    "total_tokens": 9028,
+    "cost_usd": 0.002208,
+    "latency_ms": 29257,
+    "upload_ms": 6022
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

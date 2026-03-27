@@ -1,0 +1,76 @@
+{
+  "item_id": "7446429573132160289",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:24:05.971928+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "music",
+      "secondary": "education",
+      "micro_labels": [
+        "music production",
+        "sampling",
+        "beat making",
+        "youtube chopping",
+        "fl studio"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "producer pov",
+        "demonstration"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "funny",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "raw_footage",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4217,
+    "output_tokens": 346,
+    "total_tokens": 4563,
+    "cost_usd": 0.00084,
+    "latency_ms": 5394,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 1
+  }
+}

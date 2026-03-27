@@ -1,0 +1,344 @@
+{
+  "item_id": "7618645907722046742",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:48:02.107572+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "Peter Parker (Tom Holland) appears pensive and slightly distressed in a dimly lit indoor setting.",
+        "audio_description": "Melancholic, slowed-down synth-pop music begins.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:01-0:02",
+        "visual_description": "MJ (Zendaya) is seen arranging flowers in a kitchen, looking downcast.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "flowers",
+          "vase"
+        ]
+      },
+      {
+        "time_range": "0:02-0:03",
+        "visual_description": "Peter Parker (Tom Holland) looks over his shoulder at a party, appearing isolated amidst other people.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:03-0:04",
+        "visual_description": "MJ (Zendaya) and Ned Leeds (Jacob Batalon) share a tender moment, smiling at each other, with Ned gently touching MJ's hair.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:04-0:06",
+        "visual_description": "Peter Parker (Tom Holland) looks directly at the camera with a sad and reflective expression, with bokeh lights in the background.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:06-0:07",
+        "visual_description": "The screen is black with faint, blurry lights.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:07-0:08",
+        "visual_description": "A close-up shot of a tombstone reveals the inscription 'MAY PARKER' and the quote 'WHEN YOU HELP SOMEONE YOU HELP EVERYONE'.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": "MAY PARKER\nWHEN YOU HELP SOMEONE\nYOU HELP EVERYONE",
+        "key_objects": [
+          "tombstone"
+        ]
+      },
+      {
+        "time_range": "0:08-0:09",
+        "visual_description": "Peter Parker (Tom Holland) is shown in a hooded jacket, looking distressed and covering his mouth with his hand.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:09-0:10",
+        "visual_description": "Spider-Man (Tom Holland) in his suit faces MJ (Zendaya) on a rooftop overlooking a city skyline at night.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Spider-Man suit",
+          "city skyline"
+        ]
+      },
+      {
+        "time_range": "0:10-0:11",
+        "visual_description": "A close-up of Peter Parker's (Tom Holland) eye reflects the city lights.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:11-0:12",
+        "visual_description": "A close-up of the Spider-Man mask's eye lens appears damaged, with a red, liquid-like substance around it.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Spider-Man mask"
+        ]
+      },
+      {
+        "time_range": "0:12-0:13",
+        "visual_description": "Peter Parker (Tom Holland) is shown in a black tank top, looking focused or determined in profile.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:13-0:14",
+        "visual_description": "Spider-Man (Tom Holland) in his suit sits on a ledge, looking at a phone, with an inverted city skyline in the background.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Spider-Man suit",
+          "phone",
+          "city skyline"
+        ]
+      },
+      {
+        "time_range": "0:14-0:15",
+        "visual_description": "Peter Parker (Tom Holland) in a black t-shirt looks down, appearing pensive.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:15-0:16",
+        "visual_description": "Spider-Man (Tom Holland) in his suit is seen floating or falling horizontally over a city.",
+        "audio_description": "Melancholic, slowed-down synth-pop music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Spider-Man suit",
+          "city"
+        ]
+      },
+      {
+        "time_range": "0:16-0:18",
+        "visual_description": "The screen fades to black.",
+        "audio_description": "Melancholic, slowed-down synth-pop music fades out.",
+        "text_on_screen": null,
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a melancholic edit centered on Peter Parker, also known as Spider-Man, highlighting themes of loneliness and sacrifice from the movie *Spider-Man: No Way Home*. It features various emotional clips of Peter Parker (Tom Holland) and MJ (Zendaya), juxtaposing moments of connection with scenes of Peter's isolation and the tragic loss of Aunt May. The edit visually emphasizes Peter's burden as Spider-Man, showing him in both his civilian and superhero identities, often appearing pensive or distressed. The overall tone is somber, reflecting the emotional toll of his heroic journey.",
+    "people": [
+      {
+        "description": "Young adult male with brown curly hair, portraying Peter Parker/Spider-Man, appearing sad, pensive, and distressed.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Tom Holland"
+      },
+      {
+        "description": "Young adult female with long dark hair, portraying MJ, appearing sad and in moments of connection with Peter and Ned.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Zendaya"
+      },
+      {
+        "description": "Young adult male with dark hair, portraying Ned Leeds, shown in a brief moment of interaction with MJ.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jacob Batalon"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Peter Parker",
+        "display_name": "Peter Parker",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Spider-Man",
+        "display_name": "Spider-Man",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "MJ",
+        "display_name": "MJ",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Ned Leeds",
+        "display_name": "Ned Leeds",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Aunt May Parker",
+        "display_name": "Aunt May Parker",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Spider-Man: No Way Home",
+        "display_name": "Spider-Man: No Way Home",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "The Perfect Girl",
+        "display_name": "The Perfect Girl \u2014 Mareux (Slowed & Reverb)",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": "Slowed and Reverb version",
+        "confidence": 4
+      },
+      {
+        "name": "Mareux",
+        "display_name": "Mareux",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video conveys the profound loneliness and emotional burden experienced by Peter Parker as Spider-Man, particularly after the events of *Spider-Man: No Way Home*.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "The sacrifice and loss inherent in Peter Parker's heroic journey are highlighted, especially through the remembrance of Aunt May.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "The Perfect Girl \u2014 Mareux (Slowed & Reverb)",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific movie clips are confidently identified as primarily from Spider-Man: No Way Home. The song is a popular slowed/reverb version of 'The Perfect Girl' by Mareux, commonly used in such edits."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "heavy_effects"
+    },
+    "visual_mood": "Melancholic, somber, reflective, lonely, sad, emotional",
+    "topic_hints": [
+      "Spider-Man",
+      "Peter Parker's emotional journey",
+      "Loss and sacrifice"
+    ],
+    "affect_hints": [
+      "Sadness",
+      "Loneliness",
+      "Empathy",
+      "Reflection"
+    ],
+    "genre_hints": [
+      "Fan edit",
+      "Emotional montage",
+      "Movie clips"
+    ]
+  },
+  "grounding_sources": [
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoNMltJaKHXjMJ9EzcQwPHOGHBZ_ZQkTEajYs_qU7NyTCka-Dv4LLlz-fpqzB5KzLUG89rpCwNdlIMeIxTQ01AxrSBCHjVgEuy7MRrvoY_bWxTCrwqGVYq3SWeC3Ib4B2DLhvDXg==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpmTuUcb18F5npfq1IJX_oDk0FttcKPgmJlOAu6WoeHaaERSiCchV9quXcNxsngyXZzSWcFe8IqQ3o1BDOoRfPSkmHahRhEfR5FjHnnOc09Rhq2X7pPJ9i3TNEzGFvSs7eX0HV1A==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGG0rHJl-8OZnhbPuR5c1YA6ACm7lvbvj1t8TdScOi5_WhrpuB799Fwc1sQgbeU-XD3kxwxjsfJWPwSWGWyvvK_dbN7unlhwop5OwLZTISOOlwY2K7z3Bb3P6m5CKE94nwb61tmXw==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDQxX8lCeS7ekvlh_1k5W_3VurAZJz6A9tCtgE_M2Vr_VM6aHwyIW3_yYTf4ycPtYXdXY-4p0sSdaertLRWYntqmS8Cu4GBBVmiYb9g86QwsGm-2lX6CIbPNaq65TtsA7q_Oi_eSnlsDrWW-NdeaMzU-QCbeaZhz__V42kpMIOBKSGRL1FiPk0dxOlVbwS3J1aALSld58uWv9qLg==",
+      "title": "audio.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAmrEIQ9b5UGIQuJ36lpeSEPd4Ca_92J6zJSFTEzs8Gz2kGfUNhFWl3l1zhG8sAe4qiA6rKcIX_utZ03ihSSqf4gwcXlP2gMIjF6ZqJoKKvpSMgUDE8TA8eAZgPT9CaAH_6H--Zw==",
+      "title": "youtube.com"
+    }
+  ],
+  "metrics": {
+    "input_tokens": 7096,
+    "output_tokens": 2994,
+    "total_tokens": 10090,
+    "cost_usd": 0.002861,
+    "latency_ms": 28504,
+    "upload_ms": 5388
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

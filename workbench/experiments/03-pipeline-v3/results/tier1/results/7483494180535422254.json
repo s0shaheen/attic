@@ -1,0 +1,47 @@
+{
+  "item_id": "7483494180535422254",
+  "parsed_output": {
+    "summary": "Creator @abcbribri96 discusses the psychological impact of constant digital consumption and how technology's attempt to simulate memory affects human reflection. This video is a philosophical commentary designed to prompt viewers to evaluate their relationship with technology and the digital world.",
+    "entities": [
+      {
+        "name": "@abcbribri96",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Digital consumption",
+        "type": "trend_or_meme",
+        "relevance": "primary"
+      },
+      {
+        "name": "Memory simulation",
+        "type": "technique",
+        "relevance": "supporting"
+      },
+      {
+        "name": "TikTok",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "health"
+    },
+    "genre": "vlog",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this 49-second TikTok, creator @abcbribri96 provides a philosophical commentary on the impact of digital consumption on the human experience. Speaking directly to the camera from a room with a shoe collection in the background, she poses deep questions about the trade-off between continuous digital consumption and the act of stopping to reflect. The on-screen text asks, 'What happens to a life that is spent digitally and pushed to continuously consume versus stop and reflect?' and explores the consequences of technology being optimized to simulate real-life functions like memory. This video is a reflective vlog aimed at viewers interested in digital well-being, the psychology of social media, and the intersection of technology and human consciousness. It serves as a prompt for active learning and self-reflection regarding one's relationship with tech and the simulation of memories."
+  },
+  "metrics": {
+    "input_tokens": 4223,
+    "output_tokens": 456,
+    "total_tokens": 4679,
+    "cost_usd": 0.000907,
+    "latency_ms": 19064,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,831 @@
+{
+  "item_id": "7609068235853401366",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:53:19.731046+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "A man in a black beanie and white t-shirt sits at a table, looking thoughtful, holding a phone. A white tumbler with a gold straw is on the table.",
+        "audio_description": "I want to install openclaw and set up my personal AI assistant.",
+        "text_on_screen": "I want to install openclaw\nand set up my personal AI assistant.\nLinux server setup 2026",
+        "key_objects": [
+          "phone",
+          "tumbler",
+          "beanie"
+        ]
+      },
+      {
+        "time_range": "0:04-0:05",
+        "visual_description": "A man with a fake black beard and glasses, wearing a brown hoodie, stands in front of a white wall, holding a marker.",
+        "audio_description": "Just use a VPS.",
+        "text_on_screen": "Just use a VPS.",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "hoodie",
+          "marker"
+        ]
+      },
+      {
+        "time_range": "0:05-0:06",
+        "visual_description": "The man in the beanie looks at his phone, appearing to consider the suggestion.",
+        "audio_description": "Oh, I was just going to buy a Mac Mini.",
+        "text_on_screen": "buy a Mac Mini.",
+        "key_objects": [
+          "phone",
+          "tumbler"
+        ]
+      },
+      {
+        "time_range": "0:06-0:08",
+        "visual_description": "The man with the fake beard stands sternly, rejecting the idea of a Mac Mini.",
+        "audio_description": "No. You need to use a fresh Linux VPS.",
+        "text_on_screen": "No.\nYou need to use a fresh\nLinux VPS.",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "hoodie"
+        ]
+      },
+      {
+        "time_range": "0:08-0:11",
+        "visual_description": "A close-up of the man with the fake beard, looking to the side, as he explains the initial setup step.",
+        "audio_description": "Start by spinning up a server on your cloud.",
+        "text_on_screen": "start by spinning up a\nserver on your cloud",
+        "key_objects": [
+          "fake beard",
+          "glasses"
+        ]
+      },
+      {
+        "time_range": "0:11-0:15",
+        "visual_description": "The man with the fake beard gestures, emphasizing the immediate threat of attack.",
+        "audio_description": "Then immediately we're under attack. Yeah, SSH scans started 12 seconds ago.",
+        "text_on_screen": "Then immediately we're under\nattack.\nYeah, SSH scans started 12\nseconds ago.",
+        "key_objects": [
+          "fake beard",
+          "glasses"
+        ]
+      },
+      {
+        "time_range": "0:15-0:19",
+        "visual_description": "The man with the fake beard continues to explain the importance of securing the VPS.",
+        "audio_description": "Do not install anything before securing your VPS and root SSH access.",
+        "text_on_screen": "Do not install anything before\nsecuring your VPS and root\nSSH access.",
+        "key_objects": [
+          "fake beard",
+          "glasses"
+        ]
+      },
+      {
+        "time_range": "0:19-0:21",
+        "visual_description": "A hand writes 'apt update && apt upgrade -y' on a whiteboard.",
+        "audio_description": "with apt update && apt upgrade -y",
+        "text_on_screen": "with apt update && apt\nupgrade -y",
+        "key_objects": [
+          "hand",
+          "marker",
+          "whiteboard"
+        ]
+      },
+      {
+        "time_range": "0:21-0:23",
+        "visual_description": "The man in the beanie looks confused, questioning why these steps aren't default.",
+        "audio_description": "Why aren't these installed by default?",
+        "text_on_screen": "Why aren't these installed\nby default?",
+        "key_objects": [
+          "beanie",
+          "tumbler"
+        ]
+      },
+      {
+        "time_range": "0:23-0:26",
+        "visual_description": "The man with the fake beard explains the need to harden the SSH tunnel, with a terminal configuration overlaid.",
+        "audio_description": "No, we need to harden the SSH tunnel.",
+        "text_on_screen": "No, we need to harden the\nSSH tunnel.\n# /etc/ssh/sshd_config\nPort 2222\nProtocol 2\nPermitRootLogin no\nPasswordAuthentication no\nPubkeyAuthentication yes\nChallengeResponseAuthentication no\nUsePAM yes\nX11Forwarding no\nAllowUsers claw\nMaxAuthTries 3\nLoginGraceTime 30",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "terminal output"
+        ]
+      },
+      {
+        "time_range": "0:26-0:27",
+        "visual_description": "A hand writes 'gnupg' on a whiteboard.",
+        "audio_description": "gnupg",
+        "text_on_screen": "gnupg",
+        "key_objects": [
+          "hand",
+          "marker",
+          "whiteboard"
+        ]
+      },
+      {
+        "time_range": "0:27-0:29",
+        "visual_description": "The man with the fake beard declares the activation of the firewall, with a command overlaid.",
+        "audio_description": "Then we activate the firewall.",
+        "text_on_screen": "Then we\nACTIVATE THE FIREWALL\nsudo ufw enable",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "terminal command"
+        ]
+      },
+      {
+        "time_range": "0:29-0:31",
+        "visual_description": "The man with the fake beard explains leaving one port open, with a command overlaid.",
+        "audio_description": "But we leave one door open.",
+        "text_on_screen": "But we leave one door open. PORT: 2222.\nsudo ufw allow 2222/tcp",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "terminal command"
+        ]
+      },
+      {
+        "time_range": "0:31-0:33",
+        "visual_description": "A hand writes '2222' on a whiteboard.",
+        "audio_description": "Port 2222.",
+        "text_on_screen": "Port 2222.",
+        "key_objects": [
+          "hand",
+          "marker",
+          "whiteboard"
+        ]
+      },
+      {
+        "time_range": "0:33-0:34",
+        "visual_description": "The man in the beanie looks confused, questioning the port number.",
+        "audio_description": "Six, seven?",
+        "text_on_screen": "Six, seven?",
+        "key_objects": [
+          "beanie",
+          "tumbler"
+        ]
+      },
+      {
+        "time_range": "0:34-0:37",
+        "visual_description": "The man with the fake beard sternly corrects the port number.",
+        "audio_description": "No! The standard for arbitrary numbers is 2222.",
+        "text_on_screen": "No!\nThe standard for arbitrary\nnumbers is",
+        "key_objects": [
+          "fake beard",
+          "glasses"
+        ]
+      },
+      {
+        "time_range": "0:37-0:38",
+        "visual_description": "The man in the beanie looks at his phone, seemingly absorbing the information.",
+        "audio_description": "(no clear audio)",
+        "text_on_screen": "",
+        "key_objects": [
+          "phone",
+          "tumbler"
+        ]
+      },
+      {
+        "time_range": "0:38-0:40",
+        "visual_description": "The man with the fake beard explains autobanning IPs, with a command overlaid.",
+        "audio_description": "Then we autoban IPs that guess passwords.",
+        "text_on_screen": "Then we autoban IPs that\nguess passwords.\nAuto-bans IPs that guess passwords.\nsudo systemctl enable --now fail2ban",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "terminal command"
+        ]
+      },
+      {
+        "time_range": "0:40-0:42",
+        "visual_description": "The man in the beanie looks hopeful, asking if he's now secure.",
+        "audio_description": "And now I will not get hacked?",
+        "text_on_screen": "And now I will not get\nhacked?",
+        "key_objects": [
+          "beanie",
+          "tumbler"
+        ]
+      },
+      {
+        "time_range": "0:42-0:44",
+        "visual_description": "The man with the fake beard looks at a laptop, revealing he's actively attacking the server.",
+        "audio_description": "No, I'm attacking it right now.",
+        "text_on_screen": "No, I'm attacking it right now.",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "laptop"
+        ]
+      },
+      {
+        "time_range": "0:44-0:46",
+        "visual_description": "A hand writes on a whiteboard, as the man with the fake beard explains the lack of automatic security updates, with commands overlaid.",
+        "audio_description": "Because it didn't enable automatic security updates.",
+        "text_on_screen": "Because it didn't enable\nautomatic security updates.\nsudo apt install -y unattended-upgrades\nsudo dpkg-reconfigure unattended-upgrades",
+        "key_objects": [
+          "hand",
+          "marker",
+          "whiteboard",
+          "terminal command"
+        ]
+      },
+      {
+        "time_range": "0:46-0:49",
+        "visual_description": "The man with the fake beard looks to the side, announcing the next interesting part.",
+        "audio_description": "And now we get to the most interesting part.",
+        "text_on_screen": "And now we get to the most\ninteresting part.",
+        "key_objects": [
+          "fake beard",
+          "glasses"
+        ]
+      },
+      {
+        "time_range": "0:49-0:50",
+        "visual_description": "The man in the beanie looks excited, anticipating the OpenClaw installation.",
+        "audio_description": "Install openClaw",
+        "text_on_screen": "Install openClaw",
+        "key_objects": [
+          "beanie",
+          "tumbler"
+        ]
+      },
+      {
+        "time_range": "0:50-0:53",
+        "visual_description": "A hand writes on a whiteboard, as the man with the fake beard explains installing a private VPN mesh, with commands overlaid.",
+        "audio_description": "Installing a private VPN mesh.",
+        "text_on_screen": "Installing\nInstalling a private VPN mesh.\ncurl -fsSL https://tailscale.com/install.sh | sh\nsudo tailscale up",
+        "key_objects": [
+          "hand",
+          "marker",
+          "whiteboard",
+          "terminal command"
+        ]
+      },
+      {
+        "time_range": "0:53-0:55",
+        "visual_description": "The man with the fake beard looks to the side, stating the allowance of SSH.",
+        "audio_description": "Now we allow SSH.",
+        "text_on_screen": "Now we allow SSH.",
+        "key_objects": [
+          "fake beard",
+          "glasses"
+        ]
+      },
+      {
+        "time_range": "0:55-0:59",
+        "visual_description": "A hand writes on a whiteboard, explaining SSH access through the VPN mesh.",
+        "audio_description": "Only through port 2222 but packaged through our private VPN mesh.",
+        "text_on_screen": "Only through port 22 22\nBut packaged through our\nprivate VPN mesh.",
+        "key_objects": [
+          "hand",
+          "marker",
+          "whiteboard"
+        ]
+      },
+      {
+        "time_range": "0:59-1:03",
+        "visual_description": "The man with the fake beard explains disabling IPv6 and applying kernel settings, with commands overlaid.",
+        "audio_description": "So we disable IPv6 in UFW and apply kernel settings.",
+        "text_on_screen": "So we disable IPv6 in UFW\nand apply kernel settings.\nsudo sed -i 's/IPV6=yes/IPV6=no/' /etc/default/ufw\necho \"net.ipv6.conf.all.disable_ipv6=1\" | sudo tee -a /etc/sysctl.conf\nsudo sysctl -p\nsudo ufw reload",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "terminal command"
+        ]
+      },
+      {
+        "time_range": "1:03-1:04",
+        "visual_description": "A hand writes 'Reload. Verify.' on a whiteboard.",
+        "audio_description": "Reload. Verify.",
+        "text_on_screen": "Reload.\nVerify.",
+        "key_objects": [
+          "hand",
+          "marker",
+          "whiteboard"
+        ]
+      },
+      {
+        "time_range": "1:04-1:07",
+        "visual_description": "The man with the fake beard explains why the previous step failed, due to missing Git, with a command overlaid.",
+        "audio_description": "But this of course doesn't work because we didn't install git.",
+        "text_on_screen": "But this of course doesn't work\nbecause we didn't install git.\nsudo apt install -y git",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "terminal command"
+        ]
+      },
+      {
+        "time_range": "1:07-1:14",
+        "visual_description": "The man with the fake beard explains verifying the repository and managing dependencies, with a block of commands overlaid.",
+        "audio_description": "Now verify the repo isn't compromised by trusting 900 random NPM dependencies. We don't dump production apps into $HOME like crazy people.",
+        "text_on_screen": "Now verify the repo isn't\ncompromised\nand 900 random NPM dependencies.\n#MIGHT CHANGE WITH NEW APPLICATION\ncurl -fsSL https://get.pnpm.io/install.sh | sh\ngit clone https://github.com/openclaw/openclaw.\ncd openclaw\npnpm install\npnpm ui:build # auto-installs UI deps on first\npnpm build\npnpm openclaw onboard --install-daemon\n# Dev loop (auto-reload on TS changes)\npnpm gateway:watch\nWe don't dump production apps\ninto $HOME like crazy people.",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "terminal command block"
+        ]
+      },
+      {
+        "time_range": "1:14-1:17",
+        "visual_description": "A hand writes on a whiteboard, as the man with the fake beard explains fixing directory permissions, with commands overlaid.",
+        "audio_description": "Then we fix the directory's permissions.",
+        "text_on_screen": "Then we fix the directory's\npermissions.\nsudo mkdir -p /opt/openclaw\nsudo chown claw:claw /opt/openclaw\nsudo nano /etc/openclaw.env\nsudo chown root:claw /etc/openclaw.env\nsudo chmod 640 /etc/openclaw.env",
+        "key_objects": [
+          "hand",
+          "marker",
+          "whiteboard",
+          "terminal command block"
+        ]
+      },
+      {
+        "time_range": "1:17-1:18",
+        "visual_description": "The man in the beanie looks confused, asking why permissions are broken.",
+        "audio_description": "Why are they broken?",
+        "text_on_screen": "Why are they broken?",
+        "key_objects": [
+          "beanie"
+        ]
+      },
+      {
+        "time_range": "1:18-1:20",
+        "visual_description": "The man with the fake beard looks to the side, announcing the completion of the setup.",
+        "audio_description": "And now... We are done.",
+        "text_on_screen": "And now...\nWe are done.",
+        "key_objects": [
+          "fake beard",
+          "glasses"
+        ]
+      },
+      {
+        "time_range": "1:20-1:22",
+        "visual_description": "A hand writes on a whiteboard, explaining the configuration of the systemd service.",
+        "audio_description": "We configure the systemd service",
+        "text_on_screen": "We configure the systemd\nservice",
+        "key_objects": [
+          "hand",
+          "marker",
+          "whiteboard"
+        ]
+      },
+      {
+        "time_range": "1:22-1:25",
+        "visual_description": "The man with the fake beard looks to the side, discussing systemd as a controversial idea.",
+        "audio_description": "You know systemd is a controversial idea that hasn't been recognized widely",
+        "text_on_screen": "You know systemd is a\ncontroversial idea\nthat hasn't been recognized\nwidely",
+        "key_objects": [
+          "fake beard",
+          "glasses"
+        ]
+      },
+      {
+        "time_range": "1:25-1:26",
+        "visual_description": "The man in the beanie looks resigned.",
+        "audio_description": "Okay.",
+        "text_on_screen": "Okay.",
+        "key_objects": [
+          "beanie"
+        ]
+      },
+      {
+        "time_range": "1:26-1:28",
+        "visual_description": "The man with the fake beard explains logging everything, with a command overlaid.",
+        "audio_description": "Now make sure we're logging everything",
+        "text_on_screen": "Now make sure we're logging\neverything\nLog everything to observe runtime behavior.\nsudo journalctl -u openclaw -f",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "terminal command"
+        ]
+      },
+      {
+        "time_range": "1:28-1:32",
+        "visual_description": "The man with the fake beard explains running an application security audit, with a command overlaid.",
+        "audio_description": "And then... run your application security audit. If it has one.",
+        "text_on_screen": "And then...\nrun your application\nsecurity audit.\nIf it has one.\nopenclaw security audit --deep",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "terminal command"
+        ]
+      },
+      {
+        "time_range": "1:32-1:33",
+        "visual_description": "The man with the fake beard chuckles, expressing his enjoyment.",
+        "audio_description": "He he he. I love it.",
+        "text_on_screen": "He he he\nI love it.",
+        "key_objects": [
+          "fake beard",
+          "glasses"
+        ]
+      },
+      {
+        "time_range": "1:33-1:35",
+        "visual_description": "The man in the beanie looks confused, questioning if security was already done.",
+        "audio_description": "I thought we did security already?",
+        "text_on_screen": "I thought we did security\nalready?",
+        "key_objects": [
+          "beanie"
+        ]
+      },
+      {
+        "time_range": "1:35-1:41",
+        "visual_description": "The man with the fake beard explains the final secure setup, with no public SSH or web ports, and server reachable only via Tailscale, while a hand writes on a whiteboard.",
+        "audio_description": "No, no, no. And now you have the setup with no public SSH, no public web ports and server only reachable via tailscale.",
+        "text_on_screen": "No, no, no.\nAnd now you have the setup\nwith no public ssh,\nno public web ports\nand server only reachable\nvia tailscale.",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "hand",
+          "marker",
+          "whiteboard"
+        ]
+      },
+      {
+        "time_range": "1:41-1:43",
+        "visual_description": "The man with the fake beard looks to the side, proudly stating the uptime.",
+        "audio_description": "98.1% uptime.",
+        "text_on_screen": "98.1% uptime.",
+        "key_objects": [
+          "fake beard",
+          "glasses"
+        ]
+      },
+      {
+        "time_range": "1:43-1:45",
+        "visual_description": "The man in the beanie looks surprised, asking if this complex process was considered simple.",
+        "audio_description": "And this... was simple?",
+        "text_on_screen": "And this...\n...was simple?",
+        "key_objects": [
+          "beanie"
+        ]
+      },
+      {
+        "time_range": "1:45-1:49",
+        "visual_description": "The man with the fake beard stands in front of a whiteboard with a complex diagram, explaining that this was just the Ubuntu version and offering to show the Arch version.",
+        "audio_description": "Yes, this was the Ubuntu version. Now I can show you how you would do this on Arch, btw.",
+        "text_on_screen": "Yes, this was the Ubuntu version.\nNow I can show you how you would do this\non Arch, btw.",
+        "key_objects": [
+          "fake beard",
+          "glasses",
+          "whiteboard",
+          "diagram"
+        ]
+      },
+      {
+        "time_range": "1:49-1:51",
+        "visual_description": "The man in the beanie looks horrified, declining the offer.",
+        "audio_description": "No, no, no. Thank you.",
+        "text_on_screen": "No, no, no. Thank you.",
+        "key_objects": [
+          "beanie"
+        ]
+      },
+      {
+        "time_range": "1:51-1:52",
+        "visual_description": "The man in the beanie looks curious, asking about the VPS used.",
+        "audio_description": "What VPS are you running it on?",
+        "text_on_screen": "What VPS are you running it on?",
+        "key_objects": [
+          "beanie"
+        ]
+      },
+      {
+        "time_range": "1:52-1:54",
+        "visual_description": "The man with the fake beard casually reveals he's running it on an isolated Mac Mini.",
+        "audio_description": "Oh, I'm just running it on an isolated mac-mini.",
+        "text_on_screen": "Oh, I'm just running it on an\nisolated mac-mini.",
+        "key_objects": [
+          "fake beard",
+          "glasses"
+        ]
+      },
+      {
+        "time_range": "1:54-1:55",
+        "visual_description": "The man in the beanie looks utterly shocked.",
+        "audio_description": "What?",
+        "text_on_screen": "What?",
+        "key_objects": [
+          "beanie"
+        ]
+      },
+      {
+        "time_range": "1:55-1:59",
+        "visual_description": "The man in the beanie angrily demands a new agent, calling the current one a 'lying agent'.",
+        "audio_description": "Claude, give me a new agent! I don't like this agent! A lying agent.",
+        "text_on_screen": "Claude, give me a new agent!\nI don't like this agent!\nA lying agent.",
+        "key_objects": [
+          "beanie",
+          "tumbler"
+        ]
+      }
+    ],
+    "overall_summary": "This comedic skit satirizes the often overly complex and convoluted process of setting up and hardening a Linux server for a seemingly simple task, such as installing an AI assistant. The video features an 'expert' who guides a 'user' through numerous intricate security steps and command-line operations, only to reveal at the end that he himself uses a much simpler, less 'hardened' setup on a Mac Mini. It highlights the irony and potential for over-engineering in system administration and cybersecurity practices, contrasting theoretical best practices with practical, sometimes hypocritical, implementations.",
+    "people": [
+      {
+        "description": "A man with a black beanie and a goatee, wearing a white t-shirt. He plays the role of the user or client, initially seeking to install an AI assistant and becoming increasingly confused and frustrated by the complex instructions.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "A man with a fake black beard and glasses, wearing a brown hoodie. He plays the role of the 'expert' or 'agent', providing overly complex and rigorous instructions for Linux server hardening, ultimately revealing a hypocritical personal setup.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@paxncs"
+      }
+    ],
+    "entities": [
+      {
+        "name": "OpenClaw",
+        "display_name": "OpenClaw",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Linux",
+        "display_name": "Linux",
+        "type": "operating_system",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "VPS",
+        "display_name": "Virtual Private Server",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Mac Mini",
+        "display_name": "Mac Mini",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "SSH",
+        "display_name": "SSH (Secure Shell)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "apt",
+        "display_name": "apt (Advanced Package Tool)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "UFW",
+        "display_name": "UFW (Uncomplicated Firewall)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "GnuPG",
+        "display_name": "GnuPG",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Fail2ban",
+        "display_name": "Fail2ban",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Unattended-upgrades",
+        "display_name": "Unattended-upgrades",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Git",
+        "display_name": "Git",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "PNPM",
+        "display_name": "PNPM",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Tailscale",
+        "display_name": "Tailscale",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Systemd",
+        "display_name": "Systemd",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "IPv6",
+        "display_name": "IPv6",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Ubuntu",
+        "display_name": "Ubuntu",
+        "type": "operating_system",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Arch Linux",
+        "display_name": "Arch Linux",
+        "type": "operating_system",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Claude",
+        "display_name": "Claude (AI Assistant)",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Setting up a secure Linux server, especially for a personal AI assistant, can involve an overwhelming number of complex and seemingly contradictory steps.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "There is a satirical critique of over-engineering in cybersecurity and system administration, where 'best practices' can become excessively complicated and impractical.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "The video humorously highlights the hypocrisy of experts who advocate for complex security measures while using simpler, less 'hardened' setups themselves.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Linux Server Setup Steps (Satirical)",
+          "details": "Includes securing VPS and root SSH access, hardening SSH tunnel, activating firewall, autobanning IPs, enabling automatic security updates, installing OpenClaw, installing a private VPN mesh (Tailscale), allowing SSH only through the VPN mesh, disabling IPv6, applying kernel settings, installing Git, verifying repository, managing NPM dependencies, fixing directory permissions, configuring systemd service, and running an application security audit."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The 'Claude' entity is inferred as an AI assistant based on the final dialogue, not explicitly stated as a product name within the video's core content."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "humorous",
+    "topic_hints": [
+      "Linux server setup",
+      "cybersecurity",
+      "system administration",
+      "satire"
+    ],
+    "affect_hints": [
+      "frustration",
+      "confusion",
+      "humor",
+      "irony"
+    ],
+    "genre_hints": [
+      "skit",
+      "comedy",
+      "tutorial_parody"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 36861,
+    "output_tokens": 7897,
+    "total_tokens": 44758,
+    "cost_usd": 0.010267,
+    "latency_ms": 65768,
+    "upload_ms": 7873
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

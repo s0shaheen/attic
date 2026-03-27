@@ -1,0 +1,445 @@
+{
+  "item_id": "7353783225048763694",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:49:58.886531+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:08",
+        "visual_description": "The creator, a young man with a mustache and glasses, speaks directly to the camera in a close-up shot, responding to a comment.",
+        "audio_description": "The creator asks, \"What shirts would you recommend for someone upgrading their closet?\" and then adds a humorous, derogatory phrase about the target audience.",
+        "text_on_screen": "Replying to @Bird #greenscreen \nwhat shirts would you recommend for someone upgrading their closet",
+        "key_objects": [
+          "glasses",
+          "gold chain"
+        ]
+      },
+      {
+        "time_range": "0:08-0:10",
+        "visual_description": "A different young man, wearing a light blue baseball cap and a plaid shirt, is shown in a close-up, looking down with a somber expression. This appears to be a visual representation of the person the creator is addressing.",
+        "audio_description": "The creator continues speaking, describing negative traits of the target audience.",
+        "text_on_screen": "",
+        "key_objects": [
+          "baseball cap (MLB logo)",
+          "plaid shirt"
+        ]
+      },
+      {
+        "time_range": "0:10-0:15",
+        "visual_description": "The creator returns to a close-up shot, speaking directly to the camera, gesturing with his hand.",
+        "audio_description": "The creator lists reasons why someone might be struggling with their style, including hygiene and wearing \"Echo beater\" shoes, before stating he will recommend three shirts.",
+        "text_on_screen": "",
+        "key_objects": [
+          "glasses",
+          "gold chain"
+        ]
+      },
+      {
+        "time_range": "0:15-0:18",
+        "visual_description": "Two men stand outdoors on a paved area overlooking the ocean under a clear blue sky. The creator's face is overlaid in the bottom left corner.",
+        "audio_description": "The creator introduces the first shirt recommendation: a \"waffle knit thermal.\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "ocean",
+          "two men",
+          "creator's face overlay"
+        ]
+      },
+      {
+        "time_range": "0:18-0:27",
+        "visual_description": "A product image of a white waffle knit thermal shirt on a male model is displayed, with the creator's face overlaid. Website details and product information are visible.",
+        "audio_description": "The creator recommends the Uniqlo waffle knit thermal as a budget-friendly option, describing it as \"cheap as fuck\" but \"fairly average, above average maybe.\"",
+        "text_on_screen": "4.6 (See 56 reviews)\nPre-washed for a soft, airy texture. Classic crew neck.\nProduct ID: 466823\nColor: 01 OFF WHITE\nSize: MEN XXL\nHeight: 6'1\"/185cm Size: M\nwww.uniqlo.com",
+        "key_objects": [
+          "Uniqlo waffle knit thermal shirt",
+          "male model"
+        ]
+      },
+      {
+        "time_range": "0:27-0:36",
+        "visual_description": "A product image of a grey waffle knit thermal shirt with an \"Iron Heart\" brand tag is shown, with the creator's face overlaid. A website URL is visible.",
+        "audio_description": "The creator suggests the Iron Heart waffle knit thermal for those with a slightly higher budget, though he doesn't know the specific product number.",
+        "text_on_screen": "witheredfig.com\nIRON HEART",
+        "key_objects": [
+          "Iron Heart waffle knit thermal shirt"
+        ]
+      },
+      {
+        "time_range": "0:36-0:42",
+        "visual_description": "A product image of a light blue button-up shirt on a male model is displayed, with the creator's face overlaid. Brand and price information are visible.",
+        "audio_description": "The creator introduces the second shirt type: a button-up, specifically recommending a light blue color for a more casual look.",
+        "text_on_screen": "BUTTON-UP SHIRT\n$310\nacnestudios.com",
+        "key_objects": [
+          "Acne Studios button-up shirt",
+          "male model"
+        ]
+      },
+      {
+        "time_range": "0:42-0:49",
+        "visual_description": "A product image of a black short-sleeve button-up shirt with a textured pattern on a male model is shown, with the creator's face overlaid. A website URL is visible.",
+        "audio_description": "The creator strongly advises against \"lacy, fucking linen H&M Urban Outfitters shirts.\"",
+        "text_on_screen": "View products\nAdd to bag\nwww2.hm.com",
+        "key_objects": [
+          "H&M short-sleeve button-up shirt",
+          "male model"
+        ]
+      },
+      {
+        "time_range": "0:49-0:55",
+        "visual_description": "A product image of a light blue long-sleeve button-up shirt with a single chest pocket is displayed, with the creator's face overlaid. Website and category information are visible.",
+        "audio_description": "The creator recommends a Madewell button-up shirt for about $75, praising its quality and appearance.",
+        "text_on_screen": "Clothing > Shirts > Long Sleeve\nHOW TO STYLE IT\nmadewell.com - Private\nBEST SELLER",
+        "key_objects": [
+          "Madewell long-sleeve button-up shirt"
+        ]
+      },
+      {
+        "time_range": "0:55-1:04",
+        "visual_description": "A product image of a blue long-sleeve button-up shirt with a red and white floral pattern on a male model is shown, with the creator's face overlaid. Brand, product name, and price are visible.",
+        "audio_description": "The creator recommends a Bode floral shirt, calling it \"My grail\" and expressing his strong admiration for the brand's fit and style.",
+        "text_on_screen": "BODE\nShirts\nGeo Poppy Long Sleeve Shirt\n$530\nbode.com\nMy grail",
+        "key_objects": [
+          "Bode Geo Poppy Long Sleeve Shirt",
+          "male model"
+        ]
+      },
+      {
+        "time_range": "1:04-1:12",
+        "visual_description": "A young man in a black t-shirt sits at a restaurant table with a plate of steak and mashed potatoes. The creator's face is overlaid.",
+        "audio_description": "The creator introduces the third shirt type: a \"daily driver blank t-shirt,\" advising to have multiple to avoid wearing the same one daily.",
+        "text_on_screen": "",
+        "key_objects": [
+          "man in black t-shirt",
+          "steak",
+          "mashed potatoes",
+          "restaurant setting"
+        ]
+      },
+      {
+        "time_range": "1:12-1:27",
+        "visual_description": "An Instagram post is shown, featuring a man in a white t-shirt and white pants, with text overlays. The creator's face is overlaid.",
+        "audio_description": "The creator recommends the \"iongaf slut basic blank\" t-shirt, stating he is not sponsored but loves the shirt, noting its price is about $40.",
+        "text_on_screen": "iongaf\nSLUT BASIC\nBLANK\n1/4\nLiked by adamdegenerate and 2,493 others\niongaf.xyz iongaf is anti incest. plz support\nView all 40 comments\nSeptember 1, 2022",
+        "key_objects": [
+          "Iongaf t-shirt",
+          "Instagram post"
+        ]
+      }
+    ],
+    "overall_summary": "The creator humorously responds to a user's request for shirt recommendations to upgrade their closet, first listing undesirable traits to avoid. He then outlines three essential shirt categories: waffle knit thermals, button-up shirts, and blank t-shirts. For each category, he provides specific brand suggestions, ranging from affordable options like Uniqlo and Madewell to higher-end brands like Iron Heart and Bode, while also explicitly advising against certain styles from H&M and Urban Outfitters. The video serves as a concise guide for men looking to improve their wardrobe with versatile and stylish pieces.",
+    "people": [
+      {
+        "description": "A young man with dark, messy hair, a mustache, and glasses, wearing a grey hooded sweatshirt and a gold chain. He is the creator and speaker, providing fashion advice.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "A young man with dark hair, wearing a light blue baseball cap with an MLB logo and a plaid shirt. He appears briefly as a visual representation of the person the creator is addressing.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Two adult males standing outdoors by the ocean. One wears a cap and jacket, the other a white long-sleeve shirt.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A Black male model wearing a white waffle knit thermal shirt and green pants, posing for a product image.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A White male model with dark hair, wearing a light blue button-up shirt and black pants, posing for a product image.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A White male model with light brown hair, wearing a black short-sleeve button-up shirt and necklaces, posing for a product image.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A male model with dark hair, wearing a blue floral long-sleeve button-up shirt and black pants, with a watch, posing for a product image.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A young man with dark hair, wearing a black t-shirt, sitting at a restaurant table with a meal.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A male model wearing a white t-shirt, white pants, and a bandana on his head, featured in an Instagram post.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Uniqlo",
+        "display_name": "Uniqlo",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Waffle Knit Thermal",
+        "display_name": "Waffle Knit Thermal Shirt",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Pre-washed for a soft, airy texture. Classic crew neck. Product ID: 466823. Color: 01 OFF WHITE. Size: MEN XXL. Height: 6'1\"/185cm Size: M",
+        "confidence": 5
+      },
+      {
+        "name": "Iron Heart",
+        "display_name": "Iron Heart",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Button-up Shirt",
+        "display_name": "Button-up Shirt",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Light blue color preferred",
+        "confidence": 5
+      },
+      {
+        "name": "Acne Studios",
+        "display_name": "Acne Studios",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "$310",
+        "confidence": 5
+      },
+      {
+        "name": "H&M",
+        "display_name": "H&M",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Urban Outfitters",
+        "display_name": "Urban Outfitters",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Madewell",
+        "display_name": "Madewell",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Approx. $75",
+        "confidence": 5
+      },
+      {
+        "name": "Bode",
+        "display_name": "Bode",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Geo Poppy Long Sleeve Shirt",
+        "display_name": "Bode Geo Poppy Long Sleeve Shirt",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "$530",
+        "confidence": 5
+      },
+      {
+        "name": "T-shirt",
+        "display_name": "Blank T-shirt",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Daily driver",
+        "confidence": 5
+      },
+      {
+        "name": "Iongaf",
+        "display_name": "Iongaf",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Slut Basic Blank t-shirt, approx. $40",
+        "confidence": 5
+      },
+      {
+        "name": "As Time Goes By",
+        "display_name": "As Time Goes By",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "Jazz masterpiece, covered by a Jazz violinist",
+        "confidence": 5
+      },
+      {
+        "name": "MLB",
+        "display_name": "MLB",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "To upgrade your closet, focus on acquiring quality waffle knit thermals, versatile button-up shirts (preferably light blue), and a collection of blank t-shirts.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Avoid overly 'lacy' or 'linen' short-sleeve shirts from fast-fashion brands like H&M and Urban Outfitters.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Investing in slightly more expensive, high-quality basic shirts is worthwhile as they are considered the best for style and fit.",
+        "source": "voiceover, implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Waffle Knit Thermal",
+          "details": "Uniqlo (budget-friendly), Iron Heart (higher quality)"
+        },
+        {
+          "name": "Button-up Shirt",
+          "details": "Light blue color preferred. Madewell (approx. $75, quality), Acne Studios ($310), Bode Geo Poppy Long Sleeve Shirt ($530, 'grail')"
+        },
+        {
+          "name": "Blank T-shirt",
+          "details": "Daily driver, have multiple. Iongaf Slut Basic Blank (approx. $40)"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "As Time Goes By \u2014 Jazz Violin cover",
+      "metadata_song": "Jazz masterpiece \"As time goes by\" covered by a Jazz violinist by profession(962408)",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific model number for the Iron Heart shirt was not explicitly stated, only 'Iron Heart ones'. The exact price for the Uniqlo thermal was not given, only implied as 'cheap as fuck'."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, direct, humorous, casual, opinionated.",
+    "topic_hints": [
+      "Men's fashion",
+      "Clothing recommendations",
+      "Style advice",
+      "Wardrobe upgrade"
+    ],
+    "affect_hints": [
+      "Humorous",
+      "Confident",
+      "Helpful",
+      "Opinionated"
+    ],
+    "genre_hints": [
+      "Fashion advice",
+      "Product review",
+      "Style guide",
+      "Comedy"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 27160,
+    "output_tokens": 4352,
+    "total_tokens": 31512,
+    "cost_usd": 0.006685,
+    "latency_ms": 48612,
+    "upload_ms": 7678
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

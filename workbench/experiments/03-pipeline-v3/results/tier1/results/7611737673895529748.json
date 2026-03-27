@@ -1,0 +1,52 @@
+{
+  "item_id": "7611737673895529748",
+  "parsed_output": {
+    "summary": "This TikTok by @ashotmagazine explores 'cinematic parallels' in the Adult Swim series Smiling Friends. It specifically compares a scene of characters being vaporized into skeletons to a nearly identical sequence from Sam Raimi's Spider-Man (2002).",
+    "entities": [
+      {
+        "name": "Smiling Friends",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Spider-Man (2002)",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Sam Raimi",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Glep",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Adult Swim",
+        "type": "brand",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "art"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "This TikTok video by @ashotmagazine, titled 'Smiling Friends - Cinematic Parallels,' showcases visual homages within the Adult Swim animated series. The video features a side-by-side comparison between a scene in Smiling Friends where characters at a bus stop are vaporized into skeletons and the iconic balcony scene from Sam Raimi's Spider-Man (2002) involving the Green Goblin's pumpkin bombs. Key characters visible include Glep tied up in his purple wizard hat, Alan, and Charlie. On-screen text explicitly labels the sources as 'Smiling Friends (2020-2026)' and 'Spider-Man (2002) Dir. Sam Raimi.' This edit is designed for fans of film history, animation trivia, and the creative style of Zach Hadel and Michael Cusack, highlighting the show's tendency to reference classic cinema through its unique animation style."
+  },
+  "metrics": {
+    "input_tokens": 4251,
+    "output_tokens": 514,
+    "total_tokens": 4765,
+    "cost_usd": 0.000946,
+    "latency_ms": 10768,
+    "keyframe_count": 3
+  }
+}

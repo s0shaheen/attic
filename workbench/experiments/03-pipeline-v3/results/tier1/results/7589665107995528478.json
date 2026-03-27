@@ -1,0 +1,52 @@
+{
+  "item_id": "7589665107995528478",
+  "parsed_output": {
+    "summary": "A high school band performs a live instrumental cover of MF DOOM's 'Rapp Snitch Knishes' on a football field track at night. The video showcases the impressive musical talent of four students playing guitar, bass, drums, and keyboard for a crowd.",
+    "entities": [
+      {
+        "name": "MF DOOM",
+        "type": "artist",
+        "relevance": "primary"
+      },
+      {
+        "name": "Rapp Snitch Knishes",
+        "type": "song",
+        "relevance": "primary"
+      },
+      {
+        "name": "Yamaha",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Michael Mundt",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Brody Mundt",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "music",
+      "secondary": "other"
+    },
+    "genre": "other",
+    "affect": {
+      "dominant": "wholesome",
+      "secondary": "inspiring"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "This TikTok features a high school band performing a live instrumental cover of the iconic MF DOOM track 'Rapp Snitch Knishes'. The video, credited to Michael Mundt and Brody Mundt, shows four students\u2014a guitarist, bassist, drummer, and keyboardist\u2014playing on a running track next to a football field under stadium lights at night. The on-screen text explicitly states, 'High school band crushes MF Doom's Rapp Snitch Knishes'. The drummer is seen using a Yamaha kit, and the guitarist performs a solo while kneeling. This clip captures a high-energy, impressive musical performance by teenagers, making it a popular save for fans of MF DOOM, live music covers, and high school talent showcases. The setting includes bleachers filled with people in the background, emphasizing the live event atmosphere."
+  },
+  "metrics": {
+    "input_tokens": 4282,
+    "output_tokens": 486,
+    "total_tokens": 4768,
+    "cost_usd": 0.000934,
+    "latency_ms": 8542,
+    "keyframe_count": 3
+  }
+}

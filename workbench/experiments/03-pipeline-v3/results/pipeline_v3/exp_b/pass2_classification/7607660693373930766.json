@@ -1,0 +1,74 @@
+{
+  "item_id": "7607660693373930766",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:02:07.648773+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "health",
+      "micro_labels": [
+        "fattoush",
+        "middle eastern cuisine",
+        "salad recipe",
+        "ramadan recipes"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "recipe",
+      "micro_labels": [
+        "cooking demonstration"
+      ],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "wholesome",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "voiceover"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 14182,
+    "output_tokens": 338,
+    "total_tokens": 14520,
+    "cost_usd": 0.00233,
+    "latency_ms": 8550,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 10
+  }
+}

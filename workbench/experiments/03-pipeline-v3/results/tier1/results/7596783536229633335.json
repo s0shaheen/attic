@@ -1,0 +1,47 @@
+{
+  "item_id": "7596783536229633335",
+  "parsed_output": {
+    "summary": "Creator @codetourtiktok shares a 'high-agency playbook' specifically for software engineers and computer science professionals. The video provides career advice on how developers can take more initiative and ownership in their roles to increase their professional impact.",
+    "entities": [
+      {
+        "name": "@codetourtiktok",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Software Engineer",
+        "type": "career",
+        "relevance": "primary"
+      },
+      {
+        "name": "High Agency",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Computer Science",
+        "type": "science",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "career",
+      "secondary": "technology"
+    },
+    "genre": "vlog",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this video, creator @codetourtiktok presents part one of a career development series titled 'High-agency playbook for software engineers.' The video features a man with a beard wearing a brown corduroy jacket speaking directly to the camera in a home studio environment, with an electronic drum kit and microphone visible in the background. He explains the concept of 'high agency' within the context of software engineering and computer science, offering advice on how to be a more proactive and effective developer. The content is designed for tech professionals looking to improve their professional standing and problem-solving skills. Key on-screen text includes phrases like 'TOGETHER,' and 'SO WHERE DOES,' indicating a structured narrative about professional growth and taking initiative in a corporate or startup tech environment."
+  },
+  "metrics": {
+    "input_tokens": 4252,
+    "output_tokens": 427,
+    "total_tokens": 4679,
+    "cost_usd": 0.000894,
+    "latency_ms": 7598,
+    "keyframe_count": 3
+  }
+}

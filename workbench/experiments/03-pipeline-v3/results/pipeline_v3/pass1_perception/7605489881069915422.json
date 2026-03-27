@@ -1,0 +1,216 @@
+{
+  "item_id": "7605489881069915422",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:12:30.558073+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:17",
+        "visual_description": "Creator introduces a hypothetical product management interview scenario involving Uber metrics.",
+        "audio_description": "Pretend you're a product manager at Uber and you have to answer the question of why cancellations have been up 10% but rides have been down 15%. Here's my framework for how to do so in a very comprehensive way.",
+        "text_on_screen": "the PM debugging framework i SWEAR by\nPretend you're a product manager at Uber\npm at uber - cancels up 10%, rides down 15%\nwhy?? what's the solution?\n\"my\" as in the one ive learned from experts hahaa (ty dianna yau & exponent)",
+        "key_objects": [
+          "Uber",
+          "Rolling Stones t-shirt"
+        ]
+      },
+      {
+        "time_range": "0:17-0:32",
+        "visual_description": "Creator explains the first step of the framework: reiterating the problem and stating the mission.",
+        "audio_description": "It really begins with the overarching what even is happening. In this case, I would go ahead and say, I reiterate, cancellations are up 10%, rides are down 15%. It already sounds like there's some sort of mismatch. Maybe that has to do with the volume of trips that are being taken. But overall Uber's mission, they just want people to take trips and drivers to have income.",
+        "text_on_screen": "STEP 1) REITERATE & STATE MISSION",
+        "key_objects": [
+          "Uber"
+        ]
+      },
+      {
+        "time_range": "0:32-1:06",
+        "visual_description": "Creator details the second step: clarifying definitions and scope.",
+        "audio_description": "It's really, really important to clarify whose cancellations are these and what do we mean by rides? Are these just trips taken per day? Are they completed, or are they just requests that are being generated? Once you have those things clarified, you can also move into broadly questions about what's the time period on this? Is it sudden or has this been happening over a couple of months? Another question that you could ask is is there some sort of defect that's been happening on the app?",
+        "text_on_screen": "STEP 2) CLARIFY\n2a rn i'm just clarifying definitions from the question i was given!\nlet's pretend the answers to these are: 1. rider cancels 2. completed trips\n2b - broader clarifying questions about time period, scope, defects etc",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:06-1:45",
+        "visual_description": "Creator explains the third step: generating hypotheses for the observed data trends.",
+        "audio_description": "That's when it's time to move over to hypothesizing what problems could they be having that are driving cancellations up while also reducing trips. On a rider's end, this could mean things like seeing that the prices are too high whenever they're logging on to the app. They also might see that Lyft has a lower price than Uber does, and that's kind of dual-apping. So that's more external. Something else that could be just macroeconomic is that the weather conditions that day aren't very stable.",
+        "text_on_screen": "STEP 3. HYPOTHESIZINGGG\n3a separating out user groups & generating hypos from there. u could frame hypos as questions or statements, i usually ask for more data behind each (so i do qs)\n1. prices too high on uber\n2. prices or ETAs more appealing on lyft\n3. unstable weather led to bad pickup conditions",
+        "key_objects": [
+          "Lyft",
+          "Uber"
+        ]
+      },
+      {
+        "time_range": "1:45-1:54",
+        "visual_description": "Creator concludes the video by mentioning the final step and teasing a future video.",
+        "audio_description": "Now that you have your questions and your hypothesis, for an interview your interviewer would probably say something like, okay, let's go ahead and say that it had to do with prices being super, super high on the app. Now, how would you go about it? That's a whole separate question that we'll tackle in another video because it has to do with experimentation. But that is overall how I would think about a question like this.",
+        "text_on_screen": "step 4) experimentation which we can't cover in this vid ;(( but will super soon",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "The video provides a structured four-step framework for answering 'debugging' questions in product management interviews, using a hypothetical Uber case study. The creator explains how to handle a scenario where cancellations are up and rides are down by first reiterating the problem and company mission, then asking clarifying questions about definitions and scope. The third step involves generating hypotheses based on user groups and external factors like competition or weather, while the final step of experimentation is teased for a future video. The main takeaway is that following a logical structure makes complex analytical questions more manageable and professional.",
+    "people": [
+      {
+        "description": "Young woman with dark curly hair, wearing gold hoop earrings and a black Rolling Stones graphic t-shirt.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@yourstudentsupporter"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Uber",
+        "display_name": "Uber",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lyft",
+        "display_name": "Lyft",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Dianna Yau",
+        "display_name": "Dianna Yau",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "PM expert/mentor",
+        "confidence": 4
+      },
+      {
+        "name": "Exponent",
+        "display_name": "Exponent",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Interview prep platform",
+        "confidence": 4
+      },
+      {
+        "name": "Rolling Stones",
+        "display_name": "The Rolling Stones",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Graphic on t-shirt",
+        "confidence": 5
+      },
+      {
+        "name": "Product Management Debugging Framework",
+        "display_name": "PM Debugging Framework",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "4-step analytical process",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Use a structured framework (Reiterate, Clarify, Hypothesize, Experiment) to solve product metric anomalies in interviews.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Always clarify definitions (e.g., what constitutes a 'ride' or a 'cancel') before jumping into solutions.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Hypotheses should account for internal app defects, external competition (like Lyft), and macroeconomic factors (like weather).",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Step 1: Reiterate & State Mission",
+          "details": "Restate the problem metrics and align them with the company's core mission."
+        },
+        {
+          "name": "Step 2: Clarify",
+          "details": "Define terms (rider vs driver cancels), establish the time period (sudden vs gradual), and check for technical defects."
+        },
+        {
+          "name": "Step 3: Hypothesizing",
+          "details": "Generate potential reasons for the trend, such as high pricing, competitor ETAs, or weather conditions."
+        },
+        {
+          "name": "Step 4: Experimentation",
+          "details": "Design tests to validate the chosen hypothesis (to be covered in a future video)."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Yacht Club - Music For Your Soul",
+      "metadata_song": "Yacht Club",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Framework steps and scenario details are explicitly stated and transcribed."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, encouraging, and professional yet casual.",
+    "topic_hints": [
+      "Product Management",
+      "Interview Preparation",
+      "Data Analysis"
+    ],
+    "affect_hints": [
+      "Empowered",
+      "Focused",
+      "Prepared"
+    ],
+    "genre_hints": [
+      "Educational",
+      "Career Advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 11808,
+    "output_tokens": 2397,
+    "total_tokens": 14205,
+    "cost_usd": 0.003209,
+    "latency_ms": 36044,
+    "upload_ms": 10319
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "item_id": "7353783225048763694",
+  "parsed_output": {
+    "summary": "Creator @imontopwhen69ing recommends specific shirts for men looking to upgrade their wardrobe style. He highlights a textured black button-down from H&M and a white cropped 'Slut Basic Blank' tee from the brand iongaf.",
+    "entities": [
+      {
+        "name": "@imontopwhen69ing",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "H&M",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "iongaf",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Slut Basic Blank",
+        "type": "product",
+        "relevance": "supporting"
+      },
+      {
+        "name": "As time goes by",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "fashion",
+      "secondary": "other"
+    },
+    "genre": "other",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "funny"
+    },
+    "viewer_orientation": "shopping_research",
+    "embedding_text": "In this TikTok, creator @imontopwhen69ing responds to a viewer's request for shirt recommendations to upgrade their closet. Using the greenscreen effect, he showcases specific fashion pieces including a black textured short-sleeve button-down shirt from H&M and a white cropped t-shirt labeled 'Slut Basic Blank' from the brand iongaf (iongaf.xyz). The video starts with a humorous hook 'SHIRTS 4 LOSERS' and features a jazz violin cover of the song 'As time goes by.' This content is ideal for men looking for trendy, niche, or elevated basic clothing options beyond standard retail. It provides visual examples of how these shirts fit and where to purchase them, making it a valuable resource for personal style development and shopping research for brands like H&M and iongaf."
+  },
+  "metrics": {
+    "input_tokens": 4266,
+    "output_tokens": 490,
+    "total_tokens": 4756,
+    "cost_usd": 0.000934,
+    "latency_ms": 10788,
+    "keyframe_count": 3
+  }
+}

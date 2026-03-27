@@ -1,0 +1,52 @@
+{
+  "item_id": "7609068235853401366",
+  "parsed_output": {
+    "summary": "Creator @paxncs performs a comedic skit about the complexities of a 'Linux server setup 2026,' specifically attempting to install OpenClaw. The video features technical steps for Linux hardening, including disabling IPv6 via UFW, while satirizing the reliability of AI agents.",
+    "entities": [
+      {
+        "name": "OpenClaw",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "Linux",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "UFW",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      },
+      {
+        "name": "IPv6",
+        "type": "technique",
+        "relevance": "supporting"
+      },
+      {
+        "name": "@paxncs",
+        "type": "person",
+        "relevance": "primary"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "education"
+    },
+    "genre": "skit",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "funny"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "This TikTok by @paxncs is a technology-focused comedy skit titled 'Linux server setup 2026' that explores the future of system administration. The creator portrays a user trying to install a tool called OpenClaw while navigating the hurdles of Linux hardening. The video includes actual terminal commands for disabling IPv6 to secure a server, specifically using UFW (Uncomplicated Firewall). On-screen text displays specific bash commands such as 'sudo sed -i s/IPV6=yes/IPV6=no/ /etc/default/ufw', 'echo net.ipv6.conf.all.disable_ipv6 = 1', 'sudo sysctl -p', and 'sudo ufw reload'. The narrative involves a 'lying agent,' poking fun at the potential frustrations of using AI assistants for technical tasks. It is a mix of educational content for Linux users and relatable humor for the developer and sysadmin community."
+  },
+  "metrics": {
+    "input_tokens": 4232,
+    "output_tokens": 522,
+    "total_tokens": 4754,
+    "cost_usd": 0.000948,
+    "latency_ms": 12562,
+    "keyframe_count": 3
+  }
+}

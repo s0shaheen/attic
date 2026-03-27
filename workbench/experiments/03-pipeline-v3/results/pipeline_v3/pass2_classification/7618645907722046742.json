@@ -1,0 +1,73 @@
+{
+  "item_id": "7618645907722046742",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:57.367849+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "relationships",
+      "micro_labels": [
+        "Spider-Man",
+        "MCU",
+        "Peter Parker",
+        "Marvel Cinematic Universe",
+        "Spider-Man: No Way Home"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "sad edit",
+        "fan edit",
+        "cinematic edit"
+      ],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "sad",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "cinematic",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "emotional_regulation",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5400,
+    "output_tokens": 340,
+    "total_tokens": 5740,
+    "cost_usd": 0.001014,
+    "latency_ms": 6931,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 2
+  }
+}

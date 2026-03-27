@@ -1,0 +1,293 @@
+{
+  "item_id": "7607885401025531149",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:14:38.990521+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Ahmad Alzahabi introduces a green smoothie as his new favorite energy-boosting drink.",
+        "audio_description": "I have a new smoothie addiction that will give you energy all day. This is going to be my Suhoor the whole month.",
+        "text_on_screen": "",
+        "key_objects": [
+          "smoothie glass",
+          "metal straw"
+        ]
+      },
+      {
+        "time_range": "0:05-0:12",
+        "visual_description": "Close-up of three pitted Medjool dates on a white plate; Ahmad warns about checking for mold.",
+        "audio_description": "To start, you're going to pit three dates, ensuring there's no mold. I did not know how common that is. I bit into the wrong date once and it was absolutely miserable.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Medjool dates",
+          "white plate",
+          "blender cup"
+        ]
+      },
+      {
+        "time_range": "0:13-0:22",
+        "visual_description": "Ahmad slices a small avocado and scoops it into the blender cup, explaining its use in international drinks.",
+        "audio_description": "Now if you spend enough time overseas, you'll realize they put avocado in a lot of drinks. So this is currently my new fixation. I've been liking avocado versus banana because it has a little bit more healthy fats and fiber.",
+        "text_on_screen": "",
+        "key_objects": [
+          "avocado",
+          "chef knife",
+          "cutting board"
+        ]
+      },
+      {
+        "time_range": "0:23-0:30",
+        "visual_description": "Ahmad adds chia seeds, a scoop of vanilla protein powder, milk from a glass jar, and ice cubes to the blender.",
+        "audio_description": "I'm going to add a serving of chia seeds or flax seeds, a scoop of protein\u2014I'm doing vanilla\u2014and then we're going to add a cup of milk and last but not least, a couple ice cubes.",
+        "text_on_screen": "",
+        "key_objects": [
+          "chia seeds",
+          "vanilla protein powder",
+          "milk",
+          "ice cubes"
+        ]
+      },
+      {
+        "time_range": "0:31-0:39",
+        "visual_description": "Ahmad shakes the blender cup and discusses the high fiber and protein content.",
+        "audio_description": "Now all the details are going to be in the description. This is extremely nutritious. Roughly 30 grams of fiber and around 35 grams of protein.",
+        "text_on_screen": "",
+        "key_objects": [
+          "blender cup"
+        ]
+      },
+      {
+        "time_range": "0:40-0:41",
+        "visual_description": "Ahmad places the cup on a Ninja blender base and pulses it.",
+        "audio_description": "[Sound of blender running]",
+        "text_on_screen": "",
+        "key_objects": [
+          "Ninja blender"
+        ]
+      },
+      {
+        "time_range": "0:42-0:51",
+        "visual_description": "Ahmad drizzles honey along the inside of a clean glass jar.",
+        "audio_description": "Now this is not an extremely sweet drink. There is some sweetness from the dates, but I'm just going to drizzle a little bit of honey when I want to serve it because it's my drink. If it's too sweet, don't add the honey.",
+        "text_on_screen": "",
+        "key_objects": [
+          "honey bottle",
+          "glass jar"
+        ]
+      },
+      {
+        "time_range": "0:52-1:00",
+        "visual_description": "Ahmad pours the thick green smoothie into the honey-lined glass and takes a sip.",
+        "audio_description": "And now we just pour it in. Baby, she's a beaut. And as always, Bismillah. That's amazing. This is going to be my Suhoor the whole month. Don't get intimidated by the avocado, you're going to love it.",
+        "text_on_screen": "",
+        "key_objects": [
+          "smoothie",
+          "glass jar",
+          "straw"
+        ]
+      }
+    ],
+    "overall_summary": "Ahmad Alzahabi (@thegoldenbalance) demonstrates how to make a high-protein, high-fiber green smoothie designed for long-lasting energy, specifically mentioning it as a great option for Suhoor during Ramadan. The recipe features Medjool dates for sweetness, avocado for healthy fats and creaminess, vanilla protein powder, chia seeds, and milk. Ahmad emphasizes checking dates for mold and suggests drizzling honey in the glass for extra sweetness if desired. The video concludes with a taste test and a recommendation not to be intimidated by the use of avocado in a sweet drink.",
+    "people": [
+      {
+        "description": "Ahmad Alzahabi, a male creator with curly dark hair and a beard, wearing a black t-shirt and an Apple Watch.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Ahmad Alzahabi"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Ahmad Alzahabi",
+        "display_name": "Ahmad Alzahabi (@thegoldenbalance)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Medjool dates",
+        "display_name": "Medjool Dates",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": "3 pieces, pitted",
+        "confidence": 5
+      },
+      {
+        "name": "Avocado",
+        "display_name": "Small Avocado",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": "1 small avocado",
+        "confidence": 5
+      },
+      {
+        "name": "Chia seeds",
+        "display_name": "Chia Seeds",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": "2 tbsp",
+        "confidence": 5
+      },
+      {
+        "name": "Vanilla protein powder",
+        "display_name": "Vanilla Protein Powder",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": "1 scoop",
+        "confidence": 5
+      },
+      {
+        "name": "Ninja",
+        "display_name": "Ninja Blender",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Countertop blender",
+        "confidence": 5
+      },
+      {
+        "name": "Suhoor",
+        "display_name": "Suhoor",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Pre-dawn meal during Ramadan",
+        "confidence": 5
+      },
+      {
+        "name": "Honey",
+        "display_name": "Honey",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": "1 tsp or to taste",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Avocado is a superior smoothie base compared to banana for those seeking more healthy fats and fiber.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Always check Medjool dates for mold before consuming or blending them.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "This specific combination of ingredients provides high fiber (28g) and protein (37g) for sustained energy.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Medjool dates",
+          "details": "3 pieces, pitted (check for mold)"
+        },
+        {
+          "name": "Avocado",
+          "details": "1 small avocado"
+        },
+        {
+          "name": "Milk of choice",
+          "details": "2 cups"
+        },
+        {
+          "name": "Chia seeds",
+          "details": "2 tbsp (can substitute with flax seeds)"
+        },
+        {
+          "name": "Vanilla protein powder",
+          "details": "1 scoop"
+        },
+        {
+          "name": "Honey",
+          "details": "1 tsp (optional, for drizzling)"
+        },
+        {
+          "name": "Ice",
+          "details": "A few cubes"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Recipe measurements were cross-referenced between the audio and the provided caption metadata."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Energetic, informative, and clean kitchen aesthetic.",
+    "topic_hints": [
+      "Healthy Recipes",
+      "Ramadan Suhoor",
+      "High Protein Smoothies"
+    ],
+    "affect_hints": [
+      "Motivated",
+      "Hungry",
+      "Encouraged"
+    ],
+    "genre_hints": [
+      "Food TikTok",
+      "Fitness Nutrition"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6859,
+    "output_tokens": 2557,
+    "total_tokens": 9416,
+    "cost_usd": 0.002563,
+    "latency_ms": 23582,
+    "upload_ms": 6326
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

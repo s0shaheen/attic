@@ -1,0 +1,703 @@
+{
+  "item_id": "7577521318690688311",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:48:43.435809+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A hand presses the play button on a vintage cassette player, initiating the music.",
+        "audio_description": "Sound of a cassette player button being pressed, followed by a beat dropping.",
+        "text_on_screen": "TAPE 2 RECORD & PLAYBACK",
+        "key_objects": [
+          "cassette player"
+        ]
+      },
+      {
+        "time_range": "0:01-0:02",
+        "visual_description": "A man with a beard and sunglasses is shown in the driver's seat of a car.",
+        "audio_description": "Upbeat music with a driving rhythm begins.",
+        "text_on_screen": null,
+        "key_objects": [
+          "sunglasses",
+          "car interior"
+        ]
+      },
+      {
+        "time_range": "0:02-0:03",
+        "visual_description": "Jamie Foxx, as Bats, is seen wearing a red cap, sunglasses, and a red t-shirt with a 'King of Hearts' design.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "red cap",
+          "sunglasses",
+          "King of Hearts t-shirt"
+        ]
+      },
+      {
+        "time_range": "0:03-0:04",
+        "visual_description": "A hand stacks bundles of $100 bills on a table.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "stacks of money",
+          "$100 bills"
+        ]
+      },
+      {
+        "time_range": "0:04-0:05",
+        "visual_description": "Kevin Spacey, as Doc, speaks directly to the camera.",
+        "audio_description": "Doc says, \"That's my baby.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:05-0:07",
+        "visual_description": "A red Subaru WRX STI speeds away from a police car with flashing lights on a city street.",
+        "audio_description": "Music intensifies with car sounds.",
+        "text_on_screen": null,
+        "key_objects": [
+          "red Subaru WRX STI",
+          "police car"
+        ]
+      },
+      {
+        "time_range": "0:07-0:08",
+        "visual_description": "The red Subaru WRX STI performs a drift maneuver on a city street.",
+        "audio_description": "Tires screeching, music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "red Subaru WRX STI"
+        ]
+      },
+      {
+        "time_range": "0:08-0:09",
+        "visual_description": "Four characters, including Baby (Ansel Elgort) and Bats (Jamie Foxx), are seen inside a car, looking intense.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car interior",
+          "gun"
+        ]
+      },
+      {
+        "time_range": "0:09-0:10",
+        "visual_description": "A quick shot of a gun being loaded.",
+        "audio_description": "Sound of a gun being cocked, music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "gun"
+        ]
+      },
+      {
+        "time_range": "0:10-0:11",
+        "visual_description": "The four characters in the car are illuminated by a bright light from behind, suggesting an escape or explosion.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car interior"
+        ]
+      },
+      {
+        "time_range": "0:11-0:12",
+        "visual_description": "Two construction workers carry wooden planks down a city sidewalk.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "construction workers",
+          "wooden planks"
+        ]
+      },
+      {
+        "time_range": "0:12-0:13",
+        "visual_description": "Baby (Ansel Elgort) walks confidently down a city street, wearing sunglasses and earbuds.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "sunglasses",
+          "earbuds"
+        ]
+      },
+      {
+        "time_range": "0:13-0:14",
+        "visual_description": "A close-up of two pairs of feet, one in sneakers and the other in combat boots, sitting in a laundromat.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "sneakers",
+          "combat boots",
+          "laundromat"
+        ]
+      },
+      {
+        "time_range": "0:14-0:16",
+        "visual_description": "A black Chevrolet Avalanche drives on a highway, seen from inside and then from behind.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "black Chevrolet Avalanche"
+        ]
+      },
+      {
+        "time_range": "0:16-0:17",
+        "visual_description": "Baby (Ansel Elgort) runs and jumps onto a circular outdoor table.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "circular table"
+        ]
+      },
+      {
+        "time_range": "0:17-0:19",
+        "visual_description": "Baby (Ansel Elgort) moves quickly through a building, first on an escalator, then running through a doorway.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "escalator"
+        ]
+      },
+      {
+        "time_range": "0:19-0:21",
+        "visual_description": "Baby (Ansel Elgort) and Buddy (Jon Hamm, wearing a mask) are in a car. Buddy gestures while speaking.",
+        "audio_description": "Buddy says, \"Let's go. Wait, wait. I gotta start the song over.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "car interior",
+          "mask"
+        ]
+      },
+      {
+        "time_range": "0:21-0:22",
+        "visual_description": "A close-up of Baby's (Ansel Elgort's) sunglasses, reflecting a sunset.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "sunglasses"
+        ]
+      },
+      {
+        "time_range": "0:22-0:23",
+        "visual_description": "A quick, dark shot of a person in red moving.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:23-0:24",
+        "visual_description": "Darling (Eiza Gonz\u00e1lez) and Buddy (Jon Hamm) aim handguns.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "handguns"
+        ]
+      },
+      {
+        "time_range": "0:24-0:25",
+        "visual_description": "A car speedometer shows the needle around 80 mph.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car speedometer"
+        ]
+      },
+      {
+        "time_range": "0:25-0:27",
+        "visual_description": "The red Subaru WRX STI performs drifts and drives aggressively on city streets.",
+        "audio_description": "Tires screeching, music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "red Subaru WRX STI"
+        ]
+      },
+      {
+        "time_range": "0:27-0:28",
+        "visual_description": "A hand quickly shifts gears in a car.",
+        "audio_description": "Sound of gear shifting, music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car gear shifter"
+        ]
+      },
+      {
+        "time_range": "0:28-0:30",
+        "visual_description": "The red Subaru WRX STI executes a precise maneuver, possibly a J-turn, in a tight alleyway.",
+        "audio_description": "Tires screeching, music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "red Subaru WRX STI"
+        ]
+      },
+      {
+        "time_range": "0:30-0:31",
+        "visual_description": "Two red earbuds fall to the ground.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "earbuds"
+        ]
+      },
+      {
+        "time_range": "0:31-0:32",
+        "visual_description": "Baby (Ansel Elgort) smiles while wearing earbuds, next to Doc (Kevin Spacey).",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "earbuds"
+        ]
+      },
+      {
+        "time_range": "0:32-0:33",
+        "visual_description": "A finger presses a glowing 'START' button in a car.",
+        "audio_description": "Sound of a button press, music continues.",
+        "text_on_screen": "OFF START",
+        "key_objects": [
+          "car start button"
+        ]
+      },
+      {
+        "time_range": "0:33-0:34",
+        "visual_description": "A foot presses a car pedal labeled 'LOCK BRAKE SYSTEM'.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "LOCK BRAKE SYSTEM",
+        "key_objects": [
+          "car pedal"
+        ]
+      },
+      {
+        "time_range": "0:34-0:36",
+        "visual_description": "Car tires screech and smoke as the vehicle performs a sharp turn.",
+        "audio_description": "Tires screeching loudly, music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car tires"
+        ]
+      },
+      {
+        "time_range": "0:36-0:37",
+        "visual_description": "Buddy (Jon Hamm) punches someone in a dark, smoky environment.",
+        "audio_description": "Sound of a punch, music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:37-0:38",
+        "visual_description": "Darling (Eiza Gonz\u00e1lez) and Buddy (Jon Hamm) aim their handguns with determined expressions.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "handguns"
+        ]
+      },
+      {
+        "time_range": "0:38-0:39",
+        "visual_description": "A dark, quick shot, possibly inside a car.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:39-0:40",
+        "visual_description": "The four characters in the car, including Baby and Bats, look serious and focused.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car interior"
+        ]
+      },
+      {
+        "time_range": "0:40-0:41",
+        "visual_description": "A close-up of a spinning car wheel.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car wheel"
+        ]
+      },
+      {
+        "time_range": "0:41-0:42",
+        "visual_description": "Baby (Ansel Elgort) lowers his sunglasses, revealing his intense gaze.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "sunglasses"
+        ]
+      },
+      {
+        "time_range": "0:42-0:43",
+        "visual_description": "Buddy (Jon Hamm) looks out the car window, while Baby (Ansel Elgort) drives, wearing sunglasses.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "sunglasses",
+          "car interior"
+        ]
+      },
+      {
+        "time_range": "0:43-0:45",
+        "visual_description": "Baby (Ansel Elgort) drives, with police lights reflecting in his sunglasses.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "sunglasses",
+          "police lights reflection"
+        ]
+      },
+      {
+        "time_range": "0:45-0:46",
+        "visual_description": "The red Subaru WRX STI drifts around a corner in a city.",
+        "audio_description": "Tires screeching, music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "red Subaru WRX STI"
+        ]
+      },
+      {
+        "time_range": "0:46-0:47",
+        "visual_description": "The red Subaru WRX STI drives towards the camera with a police car in pursuit.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "red Subaru WRX STI",
+          "police car"
+        ]
+      },
+      {
+        "time_range": "0:47-0:48",
+        "visual_description": "A hand quickly shifts gears in a car.",
+        "audio_description": "Sound of gear shifting, music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car gear shifter"
+        ]
+      },
+      {
+        "time_range": "0:48-0:49",
+        "visual_description": "Baby (Ansel Elgort) drives with Buddy (Jon Hamm) in the passenger seat, and other crew members in the back.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car interior"
+        ]
+      },
+      {
+        "time_range": "0:49-0:51",
+        "visual_description": "The red Subaru WRX STI speeds through a tunnel, weaving between other cars.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "red Subaru WRX STI"
+        ]
+      },
+      {
+        "time_range": "0:51-0:52",
+        "visual_description": "Darling (Eiza Gonz\u00e1lez) and Buddy (Jon Hamm) look out the car window in a tunnel.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car interior"
+        ]
+      },
+      {
+        "time_range": "0:52-0:53",
+        "visual_description": "The red Subaru WRX STI continues to drive through the tunnel.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "red Subaru WRX STI"
+        ]
+      },
+      {
+        "time_range": "0:53-0:54",
+        "visual_description": "Baby (Ansel Elgort) drives, with Buddy (Jon Hamm) smiling in the passenger seat.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car interior"
+        ]
+      },
+      {
+        "time_range": "0:54-0:56",
+        "visual_description": "Three red cars, including the Subaru WRX STI, drive side-by-side in a tunnel.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "red cars",
+          "Subaru WRX STI"
+        ]
+      },
+      {
+        "time_range": "0:56-0:57",
+        "visual_description": "Baby (Ansel Elgort) drives, with Buddy (Jon Hamm) smiling in the passenger seat.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car interior"
+        ]
+      },
+      {
+        "time_range": "0:57-0:59",
+        "visual_description": "Red text 'BABY' appears on a black screen.",
+        "audio_description": "Music fades out with a final beat.",
+        "text_on_screen": "BABY",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a high-energy movie edit of iconic scenes from the film 'Baby Driver', set to a remixed version of the song 'Baby Driver' by Simon & Garfunkel. It showcases the protagonist, Baby, as a skilled getaway driver, blending intense car chases, character interactions, and moments of his personal life. The edit emphasizes the film's signature style of music-driven action and cinematic flair, highlighting the adrenaline-pumping sequences and the characters' roles in the heist crew.",
+    "people": [
+      {
+        "description": "Ansel Elgort as Baby, a young, skilled getaway driver who always listens to music. He is seen driving, walking, running, and interacting with other characters.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Ansel Elgort"
+      },
+      {
+        "description": "Jamie Foxx as Bats, a volatile and dangerous member of the heist crew. He is seen in the car and in action sequences.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jamie Foxx"
+      },
+      {
+        "description": "Kevin Spacey as Doc, the mastermind behind the heists. He is seen speaking and interacting with Baby.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Kevin Spacey"
+      },
+      {
+        "description": "Jon Hamm as Buddy, a member of the heist crew, often seen with his girlfriend Darling. He is seen driving, wearing a mask, punching, and aiming a gun.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Jon Hamm"
+      },
+      {
+        "description": "Eiza Gonz\u00e1lez as Darling, Buddy's girlfriend and a member of the heist crew. She is seen aiming a gun and in the car.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Eiza Gonz\u00e1lez"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Baby Driver",
+        "display_name": "Baby Driver (2017 film)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": "Directed by Edgar Wright",
+        "confidence": 5
+      },
+      {
+        "name": "Ansel Elgort",
+        "display_name": "Ansel Elgort (Actor)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "Plays 'Baby'",
+        "confidence": 5
+      },
+      {
+        "name": "Jamie Foxx",
+        "display_name": "Jamie Foxx (Actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "Plays 'Bats'",
+        "confidence": 5
+      },
+      {
+        "name": "Kevin Spacey",
+        "display_name": "Kevin Spacey (Actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": "Plays 'Doc'",
+        "confidence": 5
+      },
+      {
+        "name": "Jon Hamm",
+        "display_name": "Jon Hamm (Actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": "Plays 'Buddy'",
+        "confidence": 5
+      },
+      {
+        "name": "Eiza Gonz\u00e1lez",
+        "display_name": "Eiza Gonz\u00e1lez (Actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "Plays 'Darling'",
+        "confidence": 5
+      },
+      {
+        "name": "Baby Driver",
+        "display_name": "Baby Driver (Song by Simon & Garfunkel)",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": "Remixed/edited version",
+        "confidence": 4
+      },
+      {
+        "name": "Simon & Garfunkel",
+        "display_name": "Simon & Garfunkel (Artist)",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": [
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Subaru WRX STI",
+        "display_name": "Red Subaru WRX STI (Car)",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "Red, sedan",
+        "confidence": 4
+      },
+      {
+        "name": "Subaru",
+        "display_name": "Subaru (Car Brand)",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Chevrolet Avalanche",
+        "display_name": "Black Chevrolet Avalanche (Car)",
+        "type": "product",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "Black, pickup truck",
+        "confidence": 3
+      },
+      {
+        "name": "Sunglasses",
+        "display_name": "Sunglasses",
+        "type": "clothing",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Earbuds",
+        "display_name": "Earbuds",
+        "type": "product",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "White wired earbuds",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The movie 'Baby Driver' is characterized by its high-octane car chases and a soundtrack that is integral to the action and the protagonist's character.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "Baby is an exceptionally skilled driver whose actions are often synchronized with the music he listens to.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Baby Driver - Simon & Garfunkel (Remix/Edit)",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific remix/edit of 'Baby Driver' is not precisely identifiable without more context, but the original song and artist are clear."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "montage"
+    },
+    "visual_mood": "High-energy, intense, thrilling, stylish, cool, fast-paced",
+    "topic_hints": [
+      "Movie edits",
+      "Car chases",
+      "Action films"
+    ],
+    "affect_hints": [
+      "Excitement",
+      "Adrenaline",
+      "Coolness",
+      "Nostalgia"
+    ],
+    "genre_hints": [
+      "Movie mashup",
+      "Music video",
+      "Cinematic TikTok"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 18987,
+    "output_tokens": 6089,
+    "total_tokens": 25076,
+    "cost_usd": 0.006501,
+    "latency_ms": 45045,
+    "upload_ms": 5527
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "item_id": "7606429816224501006",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:49:52.847653+00:00",
+  "parsed_output": {
+    "_parse_error": true,
+    "_raw_text": "{\n  \"scene_timeline\": [\n    {\n      \"time_range\": \"0:00-0:01\",\n      \"visual_description\": \"A black screen is displayed.\",\n      \"audio_description\": \"A glitching, distorted sound effect is heard.\",\n      \"text_on_screen\": \"\",\n      \"key_objects\": []\n    },\n    {\n      \"time_range\": \"0:01-0:02\",\n      \"visual_description\": \"An inverted, blurry image of a person's face, possibly female, with wide eyes and an open mouth, is shown. The text 'AI' is overlaid in white.\",\n      \"audio_description\": \"The distorted sound continues, transitioning into a melancholic, slowed-down vocal track.\",\n      \"text_on_screen\": \"AI\",\n      \"key_objects\": []\n    },\n    {\n      \"time_range\": \"0:02-0:03\",\n      \"visual_description\": \"A black screen is displayed.\",\n      \"audio_description\": \"The melancholic vocal track continues.\",\n      \"text_on_screen\": \"\",\n      \"key_objects\": []\n    },\n    {\n      \"time_range\": \"0:03-0:04\",\n      \"visual_description\": \"A dark-skinned hand gently touches the illuminated Apple logo on a dark blue laptop or tablet.\",\n      \"audio_description\": \"The vocal track continues with the lyrics 'Touch me'.\",\n      \"text_on_screen\": \"\",\n      \"key_objects\": [\"Apple logo\", \"laptop or tablet\"]\n    },\n    {\n      \"time_range\": \"0:04-0:06\",\n      \"visual_description\": \"A light-skinned hand gently touches vibrant green grass.\",\n      \"audio_description\": \"The vocal track continues with the lyrics 'I was meant to be new'.\",\n      \"text_on_screen\": \"\",\n      \"key_objects\": [\"grass\"]\n    },\n    {\n      \"time_range\": \"0:06-0:07\",\n      \"visual_description\": \"A dark-skinned hand gently touches the illuminated Apple logo on a dark blue laptop or tablet again.\",\n      \"audio_description\": \"The vocal track continues with the lyrics 'I was meant to be new'.\",\n      \"text_on_screen\": \"\",\n      \"key_objects\": [\"Apple logo\", \"laptop or tablet\"]\n    },\n    {\n      \"time_range\": \"0:07-0:11\",\n      \"visual_description\": \"A split screen shows two individuals. On the left, a dark-skinne"
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 10012,
+    "output_tokens": 23596,
+    "total_tokens": 33608,
+    "cost_usd": 0.015659,
+    "latency_ms": 69410,
+    "upload_ms": 5531
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

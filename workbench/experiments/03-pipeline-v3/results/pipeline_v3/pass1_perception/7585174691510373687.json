@@ -1,0 +1,25 @@
+{
+  "item_id": "7585174691510373687",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:20:03.436056+00:00",
+  "parsed_output": {
+    "_parse_error": true,
+    "_raw_text": "[\n  {\n    \"scene_timeline\": [\n      {\n        \"time_range\": \"0:00-0:03\",\n        \"visual_description\": \"Close-up of the creator's hand fastening a silver, circular cufflink on a white dress shirt cuff.\",\n        \"audio_description\": \"A rhythmic hip-hop beat plays with lyrics: 'Okay, okay.'\",\n        \"text_on_screen\": \"none\",\n        \"key_objects\": [\"silver cufflink\", \"white dress shirt\"]\n      },\n      {\n        \"time_range\": \"0:03-0:05\",\n        \"visual_description\": \"Close-up of a silver wristwatch with a white face and Roman numerals on the creator's wrist.\",\n        \"audio_description\": \"The hip-hop beat continues.\",\n        \"text_on_screen\": \"none\",\n        \"key_objects\": [\"silver wristwatch\"]\n      },\n      {\n        \"time_range\": \"0:05-0:07\",\n        \"visual_description\": \"Close-up of a dark burgundy and blue paisley patterned necktie being adjusted.\",\n        \"audio_description\": \"The hip-hop beat continues.\",\n        \"text_on_screen\": \"none\",\n        \"key_objects\": [\"paisley necktie\"]\n      },\n      {\n        \"time_range\": \"0:07-0:10\",\n        \"visual_description\": \"The creator puts on a grey suit jacket over his white shirt and tie.\",\n        \"audio_description\": \"The hip-hop beat continues.\",\n        \"text_on_screen\": \"none\",\n        \"key_objects\": [\"grey suit jacket\"]\n      },\n      {\n        \"time_range\": \"0:10-0:20\",\n        \"visual_description\": \"Full-body shot of the creator in a complete grey suit, walking towards the camera in a living room setting and posing.\",\n        \"audio_description\": \"The hip-hop beat continues with lyrics: 'Yo, ayy, too much smoke coming like Canada...'\",\n        \"text_on_screen\": \"none\",\n        \"key_objects\": [\"grey suit\", \"living room furniture\"]\n      }\n    ],\n    \"overall_summary\": \"In this fashion-focused video, creator @angel5garcia_ showcases a formal outfit through a series of close-up shots of his accessories followed by a full-body reveal. He starts by highlighting his silver cufflinks, a silver wristwatch, and a"
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3251,
+    "output_tokens": 642,
+    "total_tokens": 3893,
+    "cost_usd": 0.000873,
+    "latency_ms": 87871,
+    "upload_ms": 5215
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

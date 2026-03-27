@@ -1,0 +1,52 @@
+{
+  "item_id": "7610573183774723341",
+  "parsed_output": {
+    "summary": "This TikTok is a cinematic edit of the 2024 coming-of-age film 'D\u00ecdi,' directed by Sean Wang. It highlights the emotional journey of a Taiwanese American teenager and his evolving appreciation for his mother, featuring scenes of adolescent rebellion and heartfelt reconciliation.",
+    "entities": [
+      {
+        "name": "D\u00ecdi",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Joan Chen",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Izaac Wang",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Sean Wang",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Asian American Cinema",
+        "type": "cultural_reference",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "relationships"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "nostalgic",
+      "secondary": "wholesome"
+    },
+    "viewer_orientation": "emotional_regulation",
+    "embedding_text": "A cinematic edit of the 2024 film 'D\u00ecdi' (directed by Sean Wang), focusing on the complex relationship between a Taiwanese American teenager and his mother. The video features scenes of the protagonist, played by Izaac Wang, skateboarding and running through a school parking lot with friends, contrasted with intimate, emotional moments at home. On-screen text captures a poignant line: 'I ran away, but you didn't even look for me.' The edit concludes with a touching scene of the boy and his mother, played by Joan Chen, sharing a hug in a dimly lit bedroom. This TikTok serves as a tribute to the 'coming of age' experience and the realization of parental sacrifice. It is categorized under Asian American cinema and movie edits, appealing to fans of indie films and emotional storytelling who want to reflect on family dynamics."
+  },
+  "metrics": {
+    "input_tokens": 4275,
+    "output_tokens": 500,
+    "total_tokens": 4775,
+    "cost_usd": 0.000941,
+    "latency_ms": 8404,
+    "keyframe_count": 3
+  }
+}

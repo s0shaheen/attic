@@ -1,0 +1,52 @@
+{
+  "item_id": "7599076298379644173",
+  "parsed_output": {
+    "summary": "Creator @etymologynerd critiques the business motivations behind Instagram's feature updates, specifically targeting Adam Mosseri's leadership. The video explains why features like the repost button and Snap Map clones are implemented to serve corporate interests rather than user experience.",
+    "entities": [
+      {
+        "name": "Adam Mosseri",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Instagram",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "Snap Map",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Snapchat",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      },
+      {
+        "name": "@etymologynerd",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "news"
+    },
+    "genre": "news_commentary",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this news commentary video, creator @etymologynerd discusses the cynical business motivations behind social media platform updates. He specifically calls out Adam Mosseri, the Head of Instagram, advising viewers not to trust the official narratives regarding new features. The video analyzes why Instagram added a repost button and its 'obvious rip-off' of the Snapchat Snap Map feature. The creator argues that these decisions are made solely to benefit business interests and increase user engagement through social pressure from 'someone you care about.' This content is ideal for users interested in social media trends, tech industry critiques, and the evolution of app features like reposting and location sharing. The video features on-screen text discussing the Instagram repost button and the imitation of Snap Map."
+  },
+  "metrics": {
+    "input_tokens": 4271,
+    "output_tokens": 474,
+    "total_tokens": 4745,
+    "cost_usd": 0.000925,
+    "latency_ms": 8553,
+    "keyframe_count": 3
+  }
+}

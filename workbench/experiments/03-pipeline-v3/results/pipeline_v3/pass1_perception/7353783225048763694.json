@@ -1,0 +1,242 @@
+{
+  "item_id": "7353783225048763694",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:07:14.833230+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:15",
+        "visual_description": "Creator addresses a user comment about closet upgrades while using a greenscreen effect.",
+        "audio_description": "Creator humorously rephrases the user's question and promises three shirt recommendations for men.",
+        "text_on_screen": "Reply to Bird's comment what shirts would you recommend for someone upgrading their closet",
+        "key_objects": [
+          "glasses",
+          "gold chain"
+        ]
+      },
+      {
+        "time_range": "0:15-0:35",
+        "visual_description": "Creator recommends waffle knit thermals, showing a budget option from Uniqlo and a premium option from Iron Heart.",
+        "audio_description": "Creator suggests the waffle knit thermal, recommending Uniqlo for those on a budget and Iron Heart for those with more to spend.",
+        "text_on_screen": "Color: 01 OFF WHITE; Product ID: 466823; witheredfig.com",
+        "key_objects": [
+          "Uniqlo Waffle Knit Thermal",
+          "Iron Heart Thermal Shirt"
+        ]
+      },
+      {
+        "time_range": "0:35-1:03",
+        "visual_description": "Creator discusses button-up shirts, showing options from Acne Studios, Madewell, and Bode while warning against H&M lace shirts.",
+        "audio_description": "Creator recommends light blue button-ups for a casual look. He specifically warns against lace/linen shirts from H&M or Urban Outfitters, suggesting Madewell or Bode instead.",
+        "text_on_screen": "BUTTON-UP SHIRT $310 acnestudios.com; View products Add to bag www2.hm.com; madewell.com BEST SELLER; bode.com Geo Poppy Long Sleeve Shirt $530; My grail",
+        "key_objects": [
+          "Acne Studios Button-up",
+          "H&M Lace Shirt",
+          "Madewell Button-up",
+          "Bode Geo Poppy Long Sleeve Shirt"
+        ]
+      },
+      {
+        "time_range": "1:03-1:27",
+        "visual_description": "Creator recommends a high-quality blank white t-shirt, showing himself wearing one and then the product page for iongaf.",
+        "audio_description": "Creator emphasizes the need for a 'daily driver' blank t-shirt, recommending the 'slut basic' blank from iongaf for about $40.",
+        "text_on_screen": "iongaf SLUT BASIC BLANK; iongaf.xyz iongaf is anti incest, plz support",
+        "key_objects": [
+          "iongaf Slut Basic Blank T-shirt"
+        ]
+      }
+    ],
+    "overall_summary": "In this video, creator @imontopwhen69ing provides three essential shirt recommendations for men looking to upgrade their wardrobe. He suggests starting with a waffle knit thermal, recommending Uniqlo for budget-conscious viewers and Iron Heart for a premium choice. Next, he advises getting a light blue button-up shirt, highlighting options from Madewell and Bode while specifically warning against cheap lace shirts from fast-fashion retailers like H&M. Finally, he recommends investing in a high-quality blank white t-shirt, specifically the 'Slut Basic' blank from the brand iongaf, as a versatile daily essential.",
+    "people": [
+      {
+        "description": "Young male with dark hair, a mustache, and glasses, wearing a grey hoodie and a gold chain.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Uniqlo",
+        "display_name": "Uniqlo",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Product ID: 466823",
+        "confidence": 5
+      },
+      {
+        "name": "Iron Heart",
+        "display_name": "Iron Heart",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Acne Studios",
+        "display_name": "Acne Studios",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "$310 button-up",
+        "confidence": 5
+      },
+      {
+        "name": "H&M",
+        "display_name": "H&M",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "lace/linen shirts",
+        "confidence": 5
+      },
+      {
+        "name": "Madewell",
+        "display_name": "Madewell",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "$75 button-up",
+        "confidence": 5
+      },
+      {
+        "name": "Bode",
+        "display_name": "Bode",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "$530 Geo Poppy Long Sleeve Shirt",
+        "confidence": 5
+      },
+      {
+        "name": "iongaf",
+        "display_name": "iongaf",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "$40 Slut Basic Blank",
+        "confidence": 5
+      },
+      {
+        "name": "As Time Goes By",
+        "display_name": "As Time Goes By",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "metadata",
+          "audio"
+        ],
+        "specifications": "Violin cover",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Waffle knit thermals are a versatile and essential closet upgrade.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Light blue button-up shirts are preferred for a casual, upgraded look.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Avoid purchasing low-quality lace or linen shirts from fast-fashion brands like H&M or Urban Outfitters.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "A high-quality blank white t-shirt is a necessary 'daily driver' for any wardrobe.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Waffle Knit Thermal",
+          "details": "Uniqlo (Budget, ID: 466823) or Iron Heart (Premium)"
+        },
+        {
+          "name": "Light Blue Button-up Shirt",
+          "details": "Acne Studios ($310), Madewell (~$75), or Bode ($530)"
+        },
+        {
+          "name": "Blank White T-shirt",
+          "details": "iongaf Slut Basic Blank (~$40)"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "As Time Goes By - Violin Cover",
+      "metadata_song": "Jazz masterpiece \"As time goes by\" covered by a Jazz violinist by profession(962408)",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": null
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Casual, informative, and slightly edgy/humorous.",
+    "topic_hints": [
+      "Men's Fashion",
+      "Wardrobe Essentials",
+      "Clothing Brands"
+    ],
+    "affect_hints": [
+      "Helpful",
+      "Opinionated",
+      "Sarcastic"
+    ],
+    "genre_hints": [
+      "Style Guide",
+      "Fashion Advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9228,
+    "output_tokens": 2140,
+    "total_tokens": 11368,
+    "cost_usd": 0.002668,
+    "latency_ms": 28932,
+    "upload_ms": 7761
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

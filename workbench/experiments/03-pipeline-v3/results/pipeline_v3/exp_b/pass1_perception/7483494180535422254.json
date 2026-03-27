@@ -1,0 +1,191 @@
+{
+  "item_id": "7483494180535422254",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:48:26.539507+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:49",
+        "visual_description": "A woman with long dark hair and a pink top speaks directly to the camera, standing in front of white shelves filled with shoes and accessories.",
+        "audio_description": "The creator discusses the implications of living a digitally-focused life, questioning how memories are formed and preserved when constantly consuming digital content rather than reflecting. She contrasts real-life memories with those formed through digital interactions, specifically mentioning breakups and fights.",
+        "text_on_screen": "What happens to a life that is spent digitally and pushed to continuously consume versus stop and reflect?\nWhat happens to tech when it is optimized for memories or meant to simulate real life, including things like memory?",
+        "key_objects": [
+          "shoes",
+          "shelves",
+          "accessories"
+        ]
+      }
+    ],
+    "overall_summary": "This video explores the impact of a digitally-driven life on memory and reflection. The creator poses questions about how continuous digital consumption affects our ability to form and preserve meaningful memories, especially when compared to real-life experiences. She highlights the ephemeral nature of digital interactions and expresses concern about the long-term implications for personal relationships and the recollection of one's life experiences.",
+    "people": [
+      {
+        "description": "A woman with long, dark brown hair, wearing a bright pink off-the-shoulder top, speaking directly to the camera with a thoughtful expression.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Digital life",
+        "display_name": "Digital life",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Memory",
+        "display_name": "Memory",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Reflection",
+        "display_name": "Reflection",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Continuous consumption",
+        "display_name": "Continuous consumption",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Internet",
+        "display_name": "Internet",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Relationships",
+        "display_name": "Relationships",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Breakups",
+        "display_name": "Breakups",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Text messages",
+        "display_name": "Text messages",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "A life spent digitally and continuously consuming may hinder the ability to stop and reflect, impacting memory formation and preservation.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Memories formed through digital interactions, such as text, may be less memorable or impactful than those from real-life experiences.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Technology optimized for simulating real life and memories raises questions about the authenticity and longevity of those memories.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The audio is primarily spoken commentary, not a song. 'original sound' metadata is accurate for this type of content."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Thoughtful, reflective, concerned",
+    "topic_hints": [
+      "Digital well-being",
+      "Memory",
+      "Technology's impact"
+    ],
+    "affect_hints": [
+      "Thoughtful",
+      "Concerned",
+      "Reflective"
+    ],
+    "genre_hints": [
+      "Personal reflection",
+      "Commentary",
+      "Vlog"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 15906,
+    "output_tokens": 1334,
+    "total_tokens": 17240,
+    "cost_usd": 0.003186,
+    "latency_ms": 18353,
+    "upload_ms": 5346
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "item_id": "7177724606508289281",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:22.787816+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "travel",
+      "secondary": "food",
+      "micro_labels": [
+        "Amsterdam",
+        "coffeeshops",
+        "cannabis tourism",
+        "travel guide",
+        "city recommendations"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "ranking",
+      "micro_labels": [
+        "travel tips",
+        "top 5 list"
+      ],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "relaxing",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "voiceover",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9848,
+    "output_tokens": 334,
+    "total_tokens": 10182,
+    "cost_usd": 0.001678,
+    "latency_ms": 7703,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 6
+  }
+}

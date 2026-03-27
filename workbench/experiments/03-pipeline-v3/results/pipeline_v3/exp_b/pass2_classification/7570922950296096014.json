@@ -1,0 +1,73 @@
+{
+  "item_id": "7570922950296096014",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:56.740383+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "health",
+      "secondary": "fitness",
+      "micro_labels": [
+        "psoas muscle",
+        "posture correction",
+        "pelvic rotation",
+        "human anatomy",
+        "corrective exercise"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "educational explainer",
+        "how-to"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "neutral",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "animation",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 1.0
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 22906,
+    "output_tokens": 334,
+    "total_tokens": 23240,
+    "cost_usd": 0.003636,
+    "latency_ms": 8695,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 18
+  }
+}

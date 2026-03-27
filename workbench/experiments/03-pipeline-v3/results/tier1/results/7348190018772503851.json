@@ -1,0 +1,52 @@
+{
+  "item_id": "7348190018772503851",
+  "parsed_output": {
+    "summary": "Creator @namedotcom showcases the highly creative 2022 web portfolio of software engineer Henry Heffernan. The video highlights the site's unique 3D interactive desk environment and retro OS-style interface as a source of design inspiration.",
+    "entities": [
+      {
+        "name": "Henry Heffernan",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Three.js",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Blender",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      },
+      {
+        "name": "React",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      },
+      {
+        "name": "@namedotcom",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "art"
+    },
+    "genre": "review",
+    "affect": {
+      "dominant": "inspiring",
+      "secondary": "informative"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "In this 34-second video, creator @namedotcom reviews the 'Henry Heffernan Portfolio Showcase 2022,' a standout example of creative web design and software engineering. The portfolio features an immersive 3D interactive workspace with a retro CRT monitor, desk, and chair. The technical breakdown visible on screen mentions the use of Three.js to render the scene, Blender for 3D assets, and React for the 2D OS interface. The creator walks through the 'about' section and the technical implementation, which uses an iframe and CSS transforms to create the illusion of three-dimensionality. This video is optimized for users searching for web development inspiration, creative portfolio examples, or advanced front-end engineering techniques involving 3D web environments."
+  },
+  "metrics": {
+    "input_tokens": 4256,
+    "output_tokens": 481,
+    "total_tokens": 4737,
+    "cost_usd": 0.000927,
+    "latency_ms": 9612,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "item_id": "7610198762388000013",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:15:11.963686+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Close-up of the Webflow editor interface showing the Navigator panel with website sections like 'section_home-hero' and 'section_home-about'.",
+        "audio_description": "A chill, rhythmic lo-fi hip-hop beat begins.",
+        "text_on_screen": "On this week's web projects: web development for a pilates studio\nNavigator\nBody\npage-wrapper\nnavigation\nsection_home-hero\nsection_home-about",
+        "key_objects": [
+          "Webflow",
+          "MacBook"
+        ]
+      },
+      {
+        "time_range": "0:02-0:04",
+        "visual_description": "The creator clicks the 'Publish to selected domains' button, followed by a checklist showing the publishing progress.",
+        "audio_description": "The lo-fi beat continues.",
+        "text_on_screen": "Publish to selected domains\nPublishing in progress...\nPreparing to publish\nOptimizing HTML, CSS, and JS files\nPackaging everything up\nDeploying to CDN",
+        "key_objects": [
+          "Webflow"
+        ]
+      },
+      {
+        "time_range": "0:04-0:14",
+        "visual_description": "A walkthrough of the live 'ALGN' pilates studio website, showing the classes page, equipment list, and various class types with a clean, minimalist aesthetic.",
+        "audio_description": "The lo-fi beat continues to the end.",
+        "text_on_screen": "ALGN\nCLASSES PRICING SHOP\nOur Classes\nREFORMER CADALLAC CHAIR LADDER BARREL HEATED MAT PRIVATE STUDIO\nREFORMER CLASS\nBOOK A CLASS\nFoundations\nSCLPT\nSCLPT CARDIO\nAAA\nRCVR\nBUILD YOUR BEST BODY",
+        "key_objects": [
+          "ALGN Website",
+          "MacBook"
+        ]
+      }
+    ],
+    "overall_summary": "Web developer Jocelyn Diaz showcases a recently completed project: a professional website for a pilates studio called ALGN. The video begins in the Webflow editor, demonstrating the site's structural organization before showing the publishing process. The final half of the video is a walkthrough of the live site, highlighting its minimalist design, class categories (Foundations, SCLPT, RCVR), and equipment lists. The video serves as a portfolio piece demonstrating high-end web design for the fitness industry.",
+    "people": [
+      {
+        "description": "Web developer interacting with a laptop",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Jocelyn Diaz"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Webflow",
+        "display_name": "Webflow",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "No-code web design and development platform",
+        "confidence": 5
+      },
+      {
+        "name": "ALGN",
+        "display_name": "ALGN Pilates Studio",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Pilates studio brand",
+        "confidence": 5
+      },
+      {
+        "name": "Jocelyn Diaz",
+        "display_name": "Jocelyn Diaz Design",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": "Web Developer",
+        "confidence": 5
+      },
+      {
+        "name": "MacBook",
+        "display_name": "Apple MacBook",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Majestic, Pt. 2",
+        "display_name": "Majestic, Pt. 2",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Webflow is a powerful tool for creating high-end, professional websites for fitness and wellness brands.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "A clean, minimalist UI/UX is effective for showcasing pilates and wellness services.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "product_list",
+      "items": [
+        {
+          "name": "Pilates Class Types",
+          "details": "Foundations, SCLPT, SCLPT CARDIO, AAA (Arms, Abs, At Precision and Pulse), RCVR (Slow, Stretch, Reset)"
+        },
+        {
+          "name": "Studio Equipment",
+          "details": "Reformer, Cadillac (spelled 'Cadallac' on site), Chair, Ladder, Barrel, Heated Mat"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Majestic, Pt. 2 \u2014 (Unknown Artist)",
+      "metadata_song": "Majestic, Pt. 2",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The website contains a typo ('Cadallac' instead of 'Cadillac') which is captured in the text extraction."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Professional, aesthetic, and calm with a focus on clean design.",
+    "topic_hints": [
+      "Web Development",
+      "Webflow Design",
+      "Pilates Studio Marketing"
+    ],
+    "affect_hints": [
+      "Productive",
+      "Inspired",
+      "Calm"
+    ],
+    "genre_hints": [
+      "Portfolio Showcase",
+      "Tech Demo"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2805,
+    "output_tokens": 1568,
+    "total_tokens": 4373,
+    "cost_usd": 0.001362,
+    "latency_ms": 19126,
+    "upload_ms": 3438
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

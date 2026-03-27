@@ -1,0 +1,42 @@
+{
+  "item_id": "7594324057001053470",
+  "parsed_output": {
+    "summary": "This TikTok features a young woman sharing or reacting to a clip of JD Vance speaking at a White House press briefing. It serves as a piece of political commentary or news sharing within a social media context.",
+    "entities": [
+      {
+        "name": "JD Vance",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "White House",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "American Flag",
+        "type": "cultural_reference",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "politics",
+      "secondary": "news"
+    },
+    "genre": "news_commentary",
+    "affect": {
+      "dominant": "neutral",
+      "secondary": "informative"
+    },
+    "viewer_orientation": "social_sharing",
+    "embedding_text": "A 46-second TikTok video created by @hot.latina.baddie that features a young woman in a dark hoodie sitting in front of an American flag, which then cuts to a clip of JD Vance. Vance is seen speaking at a podium in the White House Press Briefing room, with the official White House logo and the text 'The WHITE HOUSE Press Briefing' clearly visible on a screen behind him. The video is a typical example of political news commentary or reaction content found on social media. It is highly relevant for users searching for JD Vance clips, White House press briefings, or general political discourse on TikTok. The presence of the American flag and the formal briefing setting emphasizes the political nature of the content."
+  },
+  "metrics": {
+    "input_tokens": 4236,
+    "output_tokens": 384,
+    "total_tokens": 4620,
+    "cost_usd": 0.000866,
+    "latency_ms": 8755,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "item_id": "7188553977032740102",
+  "parsed_output": {
+    "summary": "This 'positivecore' edit features Kevin Garnett's iconic 'Anything is possible!' interview after the Boston Celtics won the 2008 NBA Championship. It is a motivational video designed to inspire viewers by capturing a raw, emotional moment of triumph in sports history.",
+    "entities": [
+      {
+        "name": "Kevin Garnett",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Boston Celtics",
+        "type": "brand",
+        "relevance": "primary"
+      },
+      {
+        "name": "2008 NBA Finals",
+        "type": "event",
+        "relevance": "primary"
+      },
+      {
+        "name": "ESPN",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "QKThr",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "sports",
+      "secondary": "other"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "inspiring",
+      "secondary": "nostalgic"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "A 68-second 'corecore' and 'positivecore' TikTok edit by @johnhorse featuring the legendary Kevin Garnett. The video centers on the emotional moment Garnett was interviewed by ESPN after the Boston Celtics won the 2008 NBA Championship. He is seen wearing his green Adidas Celtics jersey, shouting his famous catchphrase 'Anything is possible!' into the microphone. Set to the atmospheric song 'QKThr', the video uses this historic sports moment to provide motivation and emotional uplift. It captures the raw joy and intensity of the victory in a crowded arena with camera flashes and the ABC logo visible. This content is typical of the 'nichetok' aesthetic, focusing on nostalgic, high-emotion clips for inspiration. Users would search for this using terms like 'Kevin Garnett anything is possible', 'Celtics 2008 championship edit', or 'positivecore motivation'."
+  },
+  "metrics": {
+    "input_tokens": 4221,
+    "output_tokens": 500,
+    "total_tokens": 4721,
+    "cost_usd": 0.000933,
+    "latency_ms": 8389,
+    "keyframe_count": 3
+  }
+}

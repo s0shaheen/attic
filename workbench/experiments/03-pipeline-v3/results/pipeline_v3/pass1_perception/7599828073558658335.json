@@ -1,0 +1,190 @@
+{
+  "item_id": "7599828073558658335",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:05:54.705030+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:14",
+        "visual_description": "Kevin Von Erich sits with his two young sons outdoors; he is visibly emotional and crying as they comfort him.",
+        "audio_description": "Kevin: 'I'm sorry boys.' Son: 'It's okay dad, you can cry. Everyone cries.' Other son: 'Yeah, what are you talking about? You cry all the time.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "football",
+          "patterned shirt"
+        ]
+      },
+      {
+        "time_range": "0:14-0:19",
+        "visual_description": "A series of quick cuts showing a family portrait of the Von Erichs and Kevin running through a field at sunset.",
+        "audio_description": "Son: 'Do you think you know why you're sad?' Melancholic music begins to swell.",
+        "text_on_screen": "",
+        "key_objects": [
+          "framed photograph"
+        ]
+      },
+      {
+        "time_range": "0:19-0:27",
+        "visual_description": "Montage of the Von Erich brothers laughing, hugging, and eating together, contrasted with scenes of them in wrestling gear and locker rooms.",
+        "audio_description": "Kevin (voiceover): 'Well... I guess it's because I used to be a brother.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "wrestling robes",
+          "beer bottles",
+          "weights"
+        ]
+      },
+      {
+        "time_range": "0:27-0:34",
+        "visual_description": "Kevin reacts violently in a field, tackling and screaming at his father, Fritz Von Erich, while others watch in shock.",
+        "audio_description": "Kevin (screaming): 'I told you to look out for him! You just didn't take care of him!'",
+        "text_on_screen": "",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a poignant emotional edit of the 2023 film 'The Iron Claw,' focusing on the tragic story of the Von Erich wrestling family. It centers on Kevin Von Erich (played by Zac Efron) as he reflects on the loss of his brothers while being comforted by his children. The montage highlights the deep bond between the brothers and the devastating impact of the 'Von Erich curse' that left Kevin as the sole survivor.",
+    "people": [
+      {
+        "description": "Kevin Von Erich, muscular with shaggy hair, emotional and grieving",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Zac Efron"
+      },
+      {
+        "description": "Kerry Von Erich, athletic with long wavy hair",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jeremy Allen White"
+      },
+      {
+        "description": "David Von Erich, tall and athletic",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Harris Dickinson"
+      },
+      {
+        "description": "Mike Von Erich, younger brother with shaggy hair",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Stanley Simons"
+      },
+      {
+        "description": "Fritz Von Erich, the stern patriarch of the family",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Holt McCallany"
+      }
+    ],
+    "entities": [
+      {
+        "name": "The Iron Claw",
+        "display_name": "The Iron Claw (2023)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual"
+        ],
+        "specifications": "Directed by Sean Durkin",
+        "confidence": 5
+      },
+      {
+        "name": "Zac Efron",
+        "display_name": "Zac Efron",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Plays Kevin Von Erich",
+        "confidence": 5
+      },
+      {
+        "name": "Von Erich family",
+        "display_name": "The Von Erich Family",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Professional wrestling dynasty",
+        "confidence": 5
+      },
+      {
+        "name": "Jeremy Allen White",
+        "display_name": "Jeremy Allen White",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Plays Kerry Von Erich",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The film explores the profound grief and survivor's guilt experienced by Kevin Von Erich.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Brotherhood is the central emotional pillar of the Von Erich story.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Through (Remastered) \u2014 (Unknown Artist/Edit)",
+      "metadata_song": "through(Remastered)",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All major cast members and the film are correctly identified."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "cinematic",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Tragic, melancholic, and emotionally heavy with warm, nostalgic lighting.",
+    "topic_hints": [
+      "The Iron Claw movie",
+      "Von Erich family history",
+      "Grief and brotherhood"
+    ],
+    "affect_hints": [
+      "heartbroken",
+      "nostalgic",
+      "devastated",
+      "sympathetic"
+    ],
+    "genre_hints": [
+      "movie edit",
+      "cinematic tribute"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4487,
+    "output_tokens": 1505,
+    "total_tokens": 5992,
+    "cost_usd": 0.001576,
+    "latency_ms": 18942,
+    "upload_ms": 5411
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

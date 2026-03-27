@@ -1,0 +1,67 @@
+{
+  "item_id": "7439112671552769326",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:29.916510+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fitness",
+      "secondary": "education",
+      "micro_labels": [
+        "bodybuilding",
+        "shoulder training",
+        "hypertrophy science",
+        "workout programming"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "workout",
+      "micro_labels": [
+        "fitness tip",
+        "educational tutorial"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      }
+    ],
+    "presentation_style": [
+      "mixed",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.95
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5370,
+    "output_tokens": 298,
+    "total_tokens": 5668,
+    "cost_usd": 0.000984,
+    "latency_ms": 6196,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 2
+  }
+}

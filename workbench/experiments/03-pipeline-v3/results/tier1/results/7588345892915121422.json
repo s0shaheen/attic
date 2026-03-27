@@ -1,0 +1,52 @@
+{
+  "item_id": "7588345892915121422",
+  "parsed_output": {
+    "summary": "Creator @shepgold performs a blind reaction to the song 'Luv (sic) Grand Finale' by Nujabes featuring Shing02. The video captures his emotional and focused response to the track while sitting in a room covered in vibrant, hand-drawn abstract art.",
+    "entities": [
+      {
+        "name": "Nujabes",
+        "type": "artist",
+        "relevance": "primary"
+      },
+      {
+        "name": "Shing02",
+        "type": "artist",
+        "relevance": "primary"
+      },
+      {
+        "name": "Luv (sic) Grand Finale",
+        "type": "song",
+        "relevance": "primary"
+      },
+      {
+        "name": "@shepgold",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Hip Hop",
+        "type": "cultural_reference",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "music",
+      "secondary": "art"
+    },
+    "genre": "reaction",
+    "affect": {
+      "dominant": "nostalgic",
+      "secondary": "relaxing"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "In this TikTok, creator @shepgold does a blind reaction to the legendary track 'Luv (sic) Grand Finale' by Nujabes featuring Shing02. The creator is seen wearing a black beanie and headphones, deeply immersed in the music. The video is notable for its unique setting: a room where the walls and ceiling are completely covered in colorful, abstract, hand-painted faces and patterns. On-screen text explicitly names the song and artists. The background also features a shelf of vinyl records, several lava lamps, and a vintage-style amplifier. This video serves as a tribute to the lo-fi hip-hop pioneer Nujabes and is intended for fans of the 'Luv (sic)' series and jazz-hop. The atmosphere is nostalgic and appreciative, focusing on the emotional impact of the music's final chapter."
+  },
+  "metrics": {
+    "input_tokens": 4276,
+    "output_tokens": 500,
+    "total_tokens": 4776,
+    "cost_usd": 0.000941,
+    "latency_ms": 8294,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "item_id": "7575353456161049887",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:31.815782+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "art",
+      "micro_labels": [
+        "TouchDesigner",
+        "creative coding",
+        "light projection",
+        "generative art",
+        "particles"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": [
+        "creative showcase"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "screen_recording",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4259,
+    "output_tokens": 321,
+    "total_tokens": 4580,
+    "cost_usd": 0.000831,
+    "latency_ms": 7198,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 1
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "item_id": "7606094328645160222",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:06:16.319085+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:13",
+        "visual_description": "Drew Simic introduces his challenge of building six startups in six months while sitting in his home office.",
+        "audio_description": "Drew says: 'Here we go, I'm building six startups in six months. And honestly, it doesn't matter what will happen. Either these are gonna do well or they're gonna fail.'",
+        "text_on_screen": "Day 1 6 start ups in 6 months",
+        "key_objects": [
+          "MacBook",
+          "External Monitor",
+          "Apple Pencil",
+          "Standing Desk"
+        ]
+      },
+      {
+        "time_range": "0:13-0:20",
+        "visual_description": "Drew explains his current workload, balancing the challenge with his existing business.",
+        "audio_description": "Drew says: 'I'm gonna be doing all this while still running a full-time web agency. So, it's gonna be a lot of hours.'",
+        "text_on_screen": "Day 1 6 start ups in 6 months",
+        "key_objects": [
+          "Apple Pencil"
+        ]
+      },
+      {
+        "time_range": "0:20-0:53",
+        "visual_description": "Drew pitches his first software idea, 'Save Drop', explaining the problem of fragmented saved content.",
+        "audio_description": "Drew says: 'First software idea of the month: Save Drop. That's a working title. Essentially, you have an Instagram video you have to save, you have a TikTok video, you have a restaurant that your mom sent you off of Google... but not one unified app that connects everything. That's where my solution comes in.'",
+        "text_on_screen": "Day 1 6 start ups in 6 months",
+        "key_objects": [
+          "MacBook",
+          "Monitor with tree wallpaper"
+        ]
+      }
+    ],
+    "overall_summary": "Drew Simic announces a challenge to build six startups in six months while simultaneously running his full-time web agency. He introduces his first project, 'Save Drop,' which aims to solve the problem of fragmented content saving across different platforms like Instagram, TikTok, and Google. The video serves as a 'Day 1' log for his journey, emphasizing a 'build in public' approach where he accepts the possibility of failure as part of the process.",
+    "people": [
+      {
+        "description": "Young male creator with short brown hair, wearing a cream-colored button-down shirt and white earbuds.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Drew Simic"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Drew Simic",
+        "display_name": "Drew Simic (@drewsimic_)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Save Drop",
+        "display_name": "Save Drop (Working Title)",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Unified bookmarking and content saving app",
+        "confidence": 5
+      },
+      {
+        "name": "Instagram",
+        "display_name": "Instagram",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "TikTok",
+        "display_name": "TikTok",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Google",
+        "display_name": "Google",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Safari",
+        "display_name": "Safari Browser",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Apple Pencil",
+        "display_name": "Apple Pencil",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "2nd Generation",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Building multiple startups in a short timeframe is a strategy to test market viability quickly.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "There is a market gap for a unified application that consolidates saved content from various social and search platforms.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": null
+    },
+    "audio_identification": {
+      "actual_song": "Ethereal Glow \u2014 Unknown Artist",
+      "metadata_song": "Ethereal Glow",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The creator's name is confirmed via handle and common tech-influencer recognition. The app 'Save Drop' is explicitly named as a working title."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Ambitious, focused, and productive with warm indoor lighting.",
+    "topic_hints": [
+      "SaaS Development",
+      "Entrepreneurship",
+      "Vibe Coding"
+    ],
+    "affect_hints": [
+      "Motivated",
+      "Determined",
+      "Optimistic"
+    ],
+    "genre_hints": [
+      "Tech Vlog",
+      "Startup Journey"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6281,
+    "output_tokens": 1590,
+    "total_tokens": 7871,
+    "cost_usd": 0.001896,
+    "latency_ms": 21613,
+    "upload_ms": 5769
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "item_id": "7492402036210797846",
+  "parsed_output": {
+    "summary": "This TikTok is a 'corecore' cinematic edit featuring a montage of clips from various films and television shows, including The Sopranos, Gummo, and Phantom Thread. It captures a moody, existential atmosphere through high-quality cinematography and is intended for film enthusiasts and aesthetic inspiration.",
+    "entities": [
+      {
+        "name": "The Sopranos",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Gummo",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Phantom Thread",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "James Gandolfini",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Harmony Korine",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "art"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "nostalgic",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "This 23-second TikTok edit by @filmm_p4 is a 'filmcore' or 'corecore' montage that blends scenes from various iconic movies and TV shows to create an existential and surreal mood. Key visuals include AJ Soprano from The Sopranos in a kitchen setting, children riding BMX bikes in front of an industrial electrical substation from Harmony Korine's film Gummo, and a high-fashion dress fitting scene from Paul Thomas Anderson's Phantom Thread. The video is heavily tagged with cinematic references such as Blue Velvet, Paris, Texas, Boogie Nights, and Koyaanisqatsi. It serves as an aesthetic compilation for film lovers, focusing on cinematography and niche internet 'core' culture. The edit uses an original sound to tie together these disparate clips into a cohesive, nostalgic, and slightly surreal viewing experience designed for those who appreciate film history and visual storytelling."
+  },
+  "metrics": {
+    "input_tokens": 4345,
+    "output_tokens": 512,
+    "total_tokens": 4857,
+    "cost_usd": 0.000959,
+    "latency_ms": 11563,
+    "keyframe_count": 3
+  }
+}

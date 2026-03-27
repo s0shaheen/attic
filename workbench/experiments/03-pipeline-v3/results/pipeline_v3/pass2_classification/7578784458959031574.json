@@ -1,0 +1,76 @@
+{
+  "item_id": "7578784458959031574",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:05.178793+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "health",
+      "secondary": "other",
+      "micro_labels": [
+        "mental wellness",
+        "organization",
+        "minimalism",
+        "decluttering",
+        "productivity"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": [
+        "lifestyle tips",
+        "listicle"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "text_overlay",
+      "raw_footage"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4352,
+    "output_tokens": 347,
+    "total_tokens": 4699,
+    "cost_usd": 0.000861,
+    "latency_ms": 7635,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 1
+  }
+}

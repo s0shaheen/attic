@@ -1,0 +1,73 @@
+{
+  "item_id": "7594883819564436791",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:56.628598+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "health",
+      "secondary": "fitness",
+      "micro_labels": [
+        "hip mobility",
+        "low back pain",
+        "biomechanics",
+        "corrective exercise",
+        "human anatomy"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "educational explainer",
+        "mobility drill"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "animation",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "educator",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 22844,
+    "output_tokens": 334,
+    "total_tokens": 23178,
+    "cost_usd": 0.003627,
+    "latency_ms": 8631,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 18
+  }
+}

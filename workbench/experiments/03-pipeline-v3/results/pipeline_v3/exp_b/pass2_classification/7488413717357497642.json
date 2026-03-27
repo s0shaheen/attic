@@ -1,0 +1,72 @@
+{
+  "item_id": "7488413717357497642",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:40.872459+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "travel",
+      "micro_labels": [
+        "mediterranean food",
+        "chicago restaurants",
+        "falafel",
+        "kabobs",
+        "middle eastern cuisine"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "review",
+      "micro_labels": [
+        "restaurant showcase",
+        "food montage"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "text_overlay",
+      "raw_footage"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "sell",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "brand",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "shopping_research",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4253,
+    "output_tokens": 330,
+    "total_tokens": 4583,
+    "cost_usd": 0.000836,
+    "latency_ms": 5769,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 1
+  }
+}

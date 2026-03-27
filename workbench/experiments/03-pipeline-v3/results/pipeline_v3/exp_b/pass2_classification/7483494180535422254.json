@@ -1,0 +1,71 @@
+{
+  "item_id": "7483494180535422254",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:25.491053+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "health",
+      "micro_labels": [
+        "digital minimalism",
+        "psychology of technology",
+        "memory and reflection",
+        "digital consumption"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "vlog",
+      "micro_labels": [
+        "commentary",
+        "thought piece"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "neutral",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "provoke",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.8
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8573,
+    "output_tokens": 324,
+    "total_tokens": 8897,
+    "cost_usd": 0.00148,
+    "latency_ms": 11253,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 5
+  }
+}

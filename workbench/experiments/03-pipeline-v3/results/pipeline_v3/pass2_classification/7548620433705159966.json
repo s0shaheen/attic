@@ -1,0 +1,71 @@
+{
+  "item_id": "7548620433705159966",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:24:48.311710+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "career",
+      "secondary": "art",
+      "micro_labels": [
+        "freelancing",
+        "graphic design",
+        "creative business",
+        "productivity tools"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "compilation",
+      "micro_labels": [
+        "resource list",
+        "recommendations"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "screen_recording"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 10920,
+    "output_tokens": 319,
+    "total_tokens": 11239,
+    "cost_usd": 0.001829,
+    "latency_ms": 7708,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 7
+  }
+}

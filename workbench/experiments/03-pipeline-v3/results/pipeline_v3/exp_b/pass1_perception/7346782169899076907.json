@@ -1,0 +1,317 @@
+{
+  "item_id": "7346782169899076907",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:46:03.778709+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "The creator, a young man with a mustache and headphones, speaks directly to the camera, gesturing with his right hand.",
+        "audio_description": "The creator states that successful people have 'energizing hobbies'.",
+        "text_on_screen": "What all of my successful friends do for fun\neverybody that I know that successful at all has what I call energizing hobbies",
+        "key_objects": [
+          "headphones"
+        ]
+      },
+      {
+        "time_range": "0:04-0:09",
+        "visual_description": "The creator continues to speak to the camera, gesturing with his hands.",
+        "audio_description": "The creator asks the viewer to consider a 'normal week' for an 'average person'.",
+        "text_on_screen": "think about like what a normal week looks like for a very average person",
+        "key_objects": [
+          "headphones"
+        ]
+      },
+      {
+        "time_range": "0:09-0:15",
+        "visual_description": "The creator speaks to the camera, using hand gestures to emphasize his points.",
+        "audio_description": "The creator describes an average person's work week: working a disliked job, coming home to relax and forget about work.",
+        "text_on_screen": "they work their job that they don't like\nthey come home at night\nthey probably wanna just relax\nforget about their job\nget their mind off it",
+        "key_objects": [
+          "headphones"
+        ]
+      },
+      {
+        "time_range": "0:15-0:20",
+        "visual_description": "The creator continues speaking to the camera, gesturing.",
+        "audio_description": "The creator describes an average person's evening: watching Netflix, scrolling TikTok, and then sleeping.",
+        "text_on_screen": "so they watch Netflix\nthey scroll through TikTok for a few hours whatever\ngo to sleep",
+        "key_objects": [
+          "headphones"
+        ]
+      },
+      {
+        "time_range": "0:20-0:27",
+        "visual_description": "The creator speaks to the camera, using hand gestures.",
+        "audio_description": "The creator describes an average person's weekend, seeking escapism from work.",
+        "text_on_screen": "go to sleep then the weekend rolls around\nprobably kind of the same issue\nthey just wanna get away from work\nthey want escapism for lack of a better term",
+        "key_objects": [
+          "headphones"
+        ]
+      },
+      {
+        "time_range": "0:27-0:33",
+        "visual_description": "The creator speaks to the camera, gesturing and briefly covering his face with his hand.",
+        "audio_description": "The creator explains that average people go out, get drunk, and forget their unhappiness.",
+        "text_on_screen": "so they go out a couple nights\nthey get drunk\nthey forget about all the shit they're dealing with\nhow unhappy they are with their life",
+        "key_objects": [
+          "headphones"
+        ]
+      },
+      {
+        "time_range": "0:33-0:39",
+        "visual_description": "The creator speaks to the camera, pointing downwards with his finger.",
+        "audio_description": "The creator contrasts this with successful and happy individuals.",
+        "text_on_screen": "but everyone that I know that actually does super well that's really happy\nthat's very successful by my standard",
+        "key_objects": [
+          "headphones"
+        ]
+      },
+      {
+        "time_range": "0:39-0:45",
+        "visual_description": "The creator speaks to the camera, giving a thumbs-up gesture.",
+        "audio_description": "The creator describes successful people's hobbies, such as being part of a run club, instead of passive entertainment or drinking.",
+        "text_on_screen": "instead of spending all their time Netflix\ngoing out to brunch\ngetting drunk on the weekends they're doing things like being part of a run club",
+        "key_objects": [
+          "headphones"
+        ]
+      },
+      {
+        "time_range": "0:45-0:54",
+        "visual_description": "The creator speaks to the camera, gesturing with his hands.",
+        "audio_description": "The creator continues listing successful people's hobbies: working out with friends, playing sports, boxing, or jiu-jitsu.",
+        "text_on_screen": "getting drunk on the weekends they're doing things like being part of a run club\nor like working out with all their homie\nor they play sports for fun or they fight like boxing or jiu jitsu",
+        "key_objects": [
+          "headphones"
+        ]
+      },
+      {
+        "time_range": "0:54-1:05",
+        "visual_description": "The creator speaks to the camera, gesturing with his finger pointing upwards.",
+        "audio_description": "The creator describes creative hobbies of successful people: creating videos, writing books, or writing blog content.",
+        "text_on_screen": "the creative ones\ninstead of just sitting around watching videos all day scrolling through TikTok\nthey either create videos\nor they write books\nor they write content on their own blog",
+        "key_objects": [
+          "headphones"
+        ]
+      },
+      {
+        "time_range": "1:05-1:14",
+        "visual_description": "The creator speaks to the camera, gesturing with his hands.",
+        "audio_description": "The creator explains that these hobbies involve 'putting out good energy into the world' through content creation or physical activity with friends.",
+        "text_on_screen": "they choose all these hobbies where they're just like\nputting out good energy into the world\nwhether that's creating content or doing a bunch of physical\nactive stuff with friends",
+        "key_objects": [
+          "headphones"
+        ]
+      },
+      {
+        "time_range": "1:14-1:28",
+        "visual_description": "The creator speaks to the camera, gesturing with his hands.",
+        "audio_description": "The creator concludes by stating that while he doesn't know if these hobbies are directly correlated to career success, it certainly seems like it from his perspective.",
+        "text_on_screen": "and I don't know if they're like\ndirectly correlated\nlike these hobbies and ways you kinda burn off steam\nI don't know if it's directly correlated to your career\nand success in other areas of your life\nbut it certainly seems like it from my perspective",
+        "key_objects": [
+          "headphones"
+        ]
+      }
+    ],
+    "overall_summary": "This video discusses the difference in leisure activities between 'average' and 'successful' people. The creator argues that while average individuals seek escapism through passive entertainment like Netflix or TikTok, or by getting drunk, successful people engage in 'energizing hobbies'. These hobbies involve putting out good energy into the world, such as participating in run clubs, working out, playing sports, or engaging in creative pursuits like making videos, writing books, or blogging. The creator suggests that these active and creative hobbies may be correlated with overall success and happiness in life.",
+    "people": [
+      {
+        "description": "A young man with a mustache and short dark hair, wearing a black t-shirt and black over-ear headphones. He is the speaker and presenter of the video's advice.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@harrison.swales"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Netflix",
+        "display_name": "Netflix (streaming service)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "TikTok",
+        "display_name": "TikTok (social media app)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Run club",
+        "display_name": "Run club",
+        "type": "activity",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Boxing",
+        "display_name": "Boxing (sport)",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Jiu-jitsu",
+        "display_name": "Jiu-jitsu (martial art)",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Books",
+        "display_name": "Books",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Blog",
+        "display_name": "Blog (online content platform)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Successful and happy individuals engage in 'energizing hobbies' that involve active participation and putting good energy into the world, rather than passive consumption or escapism.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Energizing hobbies can include physical activities like run clubs, working out, playing sports, boxing, or jiu-jitsu, as well as creative endeavors such as creating videos, writing books, or blogging.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Engaging in these types of hobbies appears to be correlated with career success and overall happiness in life.",
+        "source": "voiceover",
+        "confidence": 3
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Run club",
+          "details": "Being part of a run club"
+        },
+        {
+          "name": "Working out with friends",
+          "details": "Engaging in physical activity with friends"
+        },
+        {
+          "name": "Playing sports",
+          "details": "Participating in sports for fun"
+        },
+        {
+          "name": "Boxing",
+          "details": "Fighting like boxing"
+        },
+        {
+          "name": "Jiu-jitsu",
+          "details": "Fighting like jiu-jitsu"
+        },
+        {
+          "name": "Creating videos",
+          "details": "Producing video content"
+        },
+        {
+          "name": "Writing books",
+          "details": "Authoring books"
+        },
+        {
+          "name": "Writing blog content",
+          "details": "Creating content for a personal blog"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "No background music to identify beyond the creator's spoken audio."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Informative, direct, motivational, casual",
+    "topic_hints": [
+      "Personal development",
+      "Productivity",
+      "Hobbies",
+      "Success",
+      "Lifestyle advice"
+    ],
+    "affect_hints": [
+      "Inspired",
+      "Thought-provoking",
+      "Motivated",
+      "Reflective"
+    ],
+    "genre_hints": [
+      "Self-help",
+      "Motivational content",
+      "Lifestyle advice",
+      "Talking head video"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 27427,
+    "output_tokens": 2973,
+    "total_tokens": 30400,
+    "cost_usd": 0.005898,
+    "latency_ms": 32469,
+    "upload_ms": 5773
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "item_id": "7348190018772503851",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:04:21.816729+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Creator introduces a website landing page for Henry Heffernan's 2022 portfolio showcase.",
+        "audio_description": "Creator says, 'People are so creative on the internet. I came across the coolest portfolio I've ever seen from this guy named Henry who's a software engineer.'",
+        "text_on_screen": "people are so creative on the internet; I came across the coolest portfolio I've ever seen; from this guy named Henry; who's a software engineer; Henry Heffernan Portfolio Showcase 2022; WARNING: This experience is best viewed on a desktop or laptop computer. Click start to begin; START",
+        "key_objects": [
+          "Website landing page",
+          "Start button"
+        ]
+      },
+      {
+        "time_range": "0:05-0:10",
+        "visual_description": "The website transitions into a 3D rendered office desk scene with a retro computer.",
+        "audio_description": "Creator explains, 'And when you go on his website, you see this like 3D desk scene.'",
+        "text_on_screen": "and when you go on his website; you see this like 3D desk scene",
+        "key_objects": [
+          "3D desk",
+          "Retro computer monitor",
+          "Office chair",
+          "Potted plant"
+        ]
+      },
+      {
+        "time_range": "0:10-0:20",
+        "visual_description": "The camera zooms into the computer monitor, revealing a Windows 95-style operating system interface.",
+        "audio_description": "Creator says, 'When you actually click on the desk, it zooms into the computer and that's where the content of the website is. That's where you can see his about section, his experiences, projects... it's his resume.'",
+        "text_on_screen": "when you actually click on the desk; it zooms into the computer; and that's where the content of the website is; that's where you can see his about section; his experiences projects; it's his resume; Henry Heffernan Software Engineer; ABOUT; EXPERIENCE; PROJECTS; CONTACT; Looking for my resume?",
+        "key_objects": [
+          "Retro OS interface",
+          "Resume sections"
+        ]
+      },
+      {
+        "time_range": "0:20-0:34",
+        "visual_description": "Creator demonstrates the 3D rotation of the desk environment and praises the design.",
+        "audio_description": "Creator says, 'I love how interactive this website is though. You can rotate the scene to see the whole rendered desk situation. It's such a smart way not only to show technical prowess but also really creative storytelling. Almost makes you wanna make a website yourself.'",
+        "text_on_screen": "I love how interactive this website is though; you can rotate the scene to see the whole rendered; desk situation; it's such a smart way; not only to show technical prowess; but also really creative storytelling; almost makes you wanna make a website yourself",
+        "key_objects": [
+          "3D rendered desk",
+          "Camera rotation UI"
+        ]
+      }
+    ],
+    "overall_summary": "The video features creator @namedotcom showcasing an exceptionally creative 3D interactive portfolio website by software engineer Henry Heffernan. The website uses a 3D office desk environment that users can rotate and interact with, zooming into a retro Windows-style computer interface to view resume details like experience and projects. The creator highlights the site as a perfect blend of technical skill and creative storytelling, serving as inspiration for web design.",
+    "people": [
+      {
+        "description": "Male creator with dark hair and a mustache, appearing in a small overlay while screen-recording.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@namedotcom"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Henry Heffernan",
+        "display_name": "Henry Heffernan",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Software Engineer",
+        "confidence": 5
+      },
+      {
+        "name": "henryheffernan.com",
+        "display_name": "Henry Heffernan Portfolio Showcase 2022",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "3D interactive portfolio website",
+        "confidence": 5
+      },
+      {
+        "name": "Windows 95/98",
+        "display_name": "Windows Retro UI",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "Visual style of the portfolio's internal OS",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Interactive 3D environments can significantly enhance a digital portfolio's impact and engagement.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Technical engineering skills are most effective when paired with creative storytelling.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Henry Heffernan Portfolio",
+          "details": "A 3D interactive portfolio showcase featuring a retro computer interface and navigable office environment."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Lo-fi chill background track",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "The background music is a generic lo-fi track used for atmosphere."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Inspiring, tech-focused, and appreciative.",
+    "topic_hints": [
+      "Web Design",
+      "Portfolio Inspiration",
+      "Software Engineering"
+    ],
+    "affect_hints": [
+      "Impressed",
+      "Inspired",
+      "Curious"
+    ],
+    "genre_hints": [
+      "Tech Showcase",
+      "Design Review"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4576,
+    "output_tokens": 1551,
+    "total_tokens": 6127,
+    "cost_usd": 0.001617,
+    "latency_ms": 22721,
+    "upload_ms": 5558
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

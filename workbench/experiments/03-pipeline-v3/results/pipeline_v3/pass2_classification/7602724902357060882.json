@@ -1,0 +1,72 @@
+{
+  "item_id": "7602724902357060882",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:24:26.481019+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fitness",
+      "secondary": "health",
+      "micro_labels": [
+        "scapular winging",
+        "mobility training",
+        "physical therapy",
+        "rehab journey",
+        "serratus anterior activation"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "before_after",
+        "progress update"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "voiceover",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 22953,
+    "output_tokens": 331,
+    "total_tokens": 23284,
+    "cost_usd": 0.003642,
+    "latency_ms": 6978,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 18
+  }
+}

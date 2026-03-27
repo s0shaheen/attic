@@ -1,0 +1,52 @@
+{
+  "item_id": "7607885401025531149",
+  "parsed_output": {
+    "summary": "Ahmad Alzahabi (@thegoldenbalance) shares a recipe for a high-fiber, high-protein green smoothie. The drink features Medjool dates, avocado, and chia seeds, designed as a nutrient-dense meal for two servings.",
+    "entities": [
+      {
+        "name": "@thegoldenbalance",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Medjool dates",
+        "type": "ingredient",
+        "relevance": "primary"
+      },
+      {
+        "name": "avocado",
+        "type": "ingredient",
+        "relevance": "primary"
+      },
+      {
+        "name": "chia seeds",
+        "type": "ingredient",
+        "relevance": "primary"
+      },
+      {
+        "name": "vanilla protein powder",
+        "type": "ingredient",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "food",
+      "secondary": "health"
+    },
+    "genre": "recipe",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "TikTok creator @thegoldenbalance (Ahmad Alzahabi) demonstrates how to make his 'New Favorite Smoothie,' a high-protein and high-fiber green drink. The recipe includes 3 pitted Medjool dates, 1 small avocado, 2 cups of milk, 2 tablespoons of chia seeds, 1 teaspoon of honey, and 1 scoop of vanilla protein powder. The video shows the ingredients being added to a blender cup and the final thick, creamy consistency as it's poured into a glass. With approximately 820 calories, 28g of fiber, and 37g of protein for two servings, this is presented as a healthy, filling option. The content is a straightforward recipe tutorial set in a kitchen, ideal for users looking for nutritious breakfast or snack ideas using healthy fats and natural sweeteners."
+  },
+  "metrics": {
+    "input_tokens": 4300,
+    "output_tokens": 482,
+    "total_tokens": 4782,
+    "cost_usd": 0.000934,
+    "latency_ms": 7005,
+    "keyframe_count": 3
+  }
+}

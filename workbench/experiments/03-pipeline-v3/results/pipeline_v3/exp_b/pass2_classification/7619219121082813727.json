@@ -1,0 +1,72 @@
+{
+  "item_id": "7619219121082813727",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:02:10.928565+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "health",
+      "micro_labels": [
+        "artificial intelligence",
+        "mental health",
+        "psychology of technology",
+        "AI agents",
+        "Claude Code"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "vlog",
+      "micro_labels": [
+        "walk and talk",
+        "commentary"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "funny",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 17427,
+    "output_tokens": 336,
+    "total_tokens": 17763,
+    "cost_usd": 0.002816,
+    "latency_ms": 8797,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 13
+  }
+}

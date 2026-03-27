@@ -1,0 +1,325 @@
+{
+  "item_id": "7408508364566596882",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:51:19.779562+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "The creator stands on a golf mat at a driving range at night, holding a golf club, then demonstrates a golf swing.",
+        "audio_description": "The creator states that if he just started golf, these are the three things he would work on first.",
+        "text_on_screen": "ADVICE IF I\nTHESE ARE THE\nTHREE THINGS THAT\nWORK ON",
+        "key_objects": [
+          "golf club",
+          "golf ball",
+          "golf mat"
+        ]
+      },
+      {
+        "time_range": "0:05-0:16",
+        "visual_description": "The creator stands holding a golf club, demonstrating how to hold the grip. An image overlay illustrates a 'Neutral Grip' with hand positions.",
+        "audio_description": "The creator explains the importance of holding the grip in the fingers and ensuring it's neutral, mentioning that YouTube has many videos on this topic. He advises against strong or weak grips as they make it harder later.",
+        "text_on_screen": "ONE GRIP\nSURE YOU'RE HOLDING\nIN YOUR FINGERS\nHEAPS OF YOUTUBE\nSO GO LOOK\nIT UP MAKE\nNeutral Grip\n2 Knuckles\nGolf Fixers\nNEUTRAL AS IT\nCAN BE\nSTRONGER IT IS\nOR THE WEAKER\nIT JUST MAKES\nIT HARDER LATER",
+        "key_objects": [
+          "golf club",
+          "golf glove",
+          "image of neutral grip"
+        ]
+      },
+      {
+        "time_range": "0:16-0:33",
+        "visual_description": "The creator stands holding a golf club, demonstrating correct and incorrect golf setup positions.",
+        "audio_description": "The creator discusses the importance of a proper setup, stating that one can instantly tell a golfer's skill level by their setup. He instructs to bend at the hips, have a slight flex in the knees, and let arms hang from the shoulders, contrasting this with poor setup examples.",
+        "text_on_screen": "NUMBER TWO IS\nSETUP WHEN SOMEONE\nIS ON THE\nFIRST TEE\nYOU CAN\nALMOST INSTANTLY KNOW\nIF THEY'RE GOOD\nAT GOLF OR NOT\nAGAIN THAT'S JUST\nTHEIR SETUP\nYOU WANNA BEND\nAT THE HIPS\nSLIGHT FLEX IN\nTHE KNEES\nARMS HANGING DOWN\nFROM YOUR SHOULDERS\nIF SOMEONE'S ADRESSING\nLIKE THIS OR\nADRESSING LIKE THIS\nYOU JUST INSTANTLY\nGONNA BE\nNOT AS GOOD",
+        "key_objects": [
+          "golf club",
+          "golf ball",
+          "golf mat"
+        ]
+      },
+      {
+        "time_range": "0:33-0:53",
+        "visual_description": "The creator stands holding a golf club, demonstrating proper and improper hip movement (swaying) during a golf swing. He explains the mechanics of hip movement and then performs a golf swing.",
+        "audio_description": "The creator identifies swaying as a 'killer' of the golf swing, explaining that if the hips move too much away from the address position, there isn't enough time to return them to the correct impact position. He advises ensuring the right hip moves back and around, not to the right.",
+        "text_on_screen": "NO. 3 IS\nSWAYING\nSWAYING IS SUCH\nA KILLER OF\nTHE GOLF SWING\nIMAGINE IF THIS\nIS YOUR ADDRESS\nAT IMPACT\nYOUR LEFT HIP\nHAS TO GET\nBACK OVER HERE\nTHE MORE YOU\nMOVE AWAY FROM\nIT\nTHE MORE YOUR\nLEFT HIP HAS\nTO MOVE ON\nTHE DOWNSWING\nNOT ENOUGH TIME\nMAKE SURE YOUR\nRIGHT HIP DOESN'T\nMOVE TO THE\nRIGHT\nGOES MORE BACK\nAND AROUND",
+        "key_objects": [
+          "golf club",
+          "golf ball",
+          "golf mat"
+        ]
+      },
+      {
+        "time_range": "0:53-0:57",
+        "visual_description": "The creator stands holding a golf club, then demonstrates an early extension movement.",
+        "audio_description": "The creator gives a special mention to early extension as a fourth point.",
+        "text_on_screen": "And a special mention to early extension. That's number four.",
+        "key_objects": [
+          "golf club",
+          "golf ball",
+          "golf mat"
+        ]
+      }
+    ],
+    "overall_summary": "This video offers crucial golf swing advice for beginners, highlighting three fundamental areas: grip, setup, and swaying, with an additional tip on early extension. The creator demonstrates how to achieve a neutral grip, maintain proper posture during setup by bending at the hips with slight knee flex and relaxed arms, and minimize hip sway during the backswing to ensure consistent impact. The core message emphasizes that mastering these foundational techniques early in one's golf journey can significantly enhance performance and prevent the development of detrimental habits.",
+    "people": [
+      {
+        "description": "A male creator, wearing a white baseball cap with a J.Lindeberg logo, a brown t-shirt, white sweatpants, and white Nike Air Force 1 sneakers. He demonstrates golf techniques and provides instructional voiceover.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Golf",
+        "display_name": "Golf",
+        "type": "sport",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Golf swing",
+        "display_name": "Golf Swing",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Grip",
+        "display_name": "Golf Grip",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": "neutral grip, holding in fingers",
+        "confidence": 5
+      },
+      {
+        "name": "Setup",
+        "display_name": "Golf Setup",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": "bend at hips, slight knee flex, arms hanging from shoulders",
+        "confidence": 5
+      },
+      {
+        "name": "Swaying",
+        "display_name": "Swaying (Golf)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": "avoid right hip moving to the right, move back and around",
+        "confidence": 5
+      },
+      {
+        "name": "Early Extension",
+        "display_name": "Early Extension (Golf)",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Golf club",
+        "display_name": "Golf Club",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Golf ball",
+        "display_name": "Golf Ball",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Golf mat",
+        "display_name": "Golf Mat",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "YouTube",
+        "display_name": "YouTube",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Nike Air Force 1",
+        "display_name": "Nike Air Force 1 Sneakers",
+        "type": "clothing",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "white",
+        "confidence": 4
+      },
+      {
+        "name": "J.Lindeberg",
+        "display_name": "J.Lindeberg",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "logo on cap",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "For new golfers, focus on grip, setup, and avoiding swaying first to save time and improve faster.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Hold the golf club grip in your fingers and ensure it is neutral to avoid future difficulties.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "A proper golf setup involves bending at the hips, a slight flex in the knees, and arms hanging naturally from the shoulders.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Swaying during the golf swing is detrimental because it prevents the left hip from returning to the correct impact position in time.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Ensure your right hip moves back and around, rather than to the right, during the backswing to prevent swaying.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Early extension is another common golf swing fault to be aware of and correct.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Grip",
+          "details": "Hold the club in your fingers, ensure a neutral grip. Avoid strong or weak grips."
+        },
+        {
+          "name": "Setup",
+          "details": "Bend at the hips, slight flex in the knees, arms hanging down from your shoulders."
+        },
+        {
+          "name": "Swaying",
+          "details": "Prevent your right hip from moving to the right; it should move back and around. This ensures the left hip can return to impact position."
+        },
+        {
+          "name": "Early Extension",
+          "details": "Avoid early extension (mentioned as a bonus point)."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Hundreds & Thousands",
+      "metadata_song": "Hundreds & Thousands",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The music is generic background music, which matches the metadata title 'Hundreds & Thousands' (likely a stock audio library name). Visual identification of shoe and cap brands is based on visible logos/styles."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Informative, instructional, focused, clear, calm",
+    "topic_hints": [
+      "Golf instruction",
+      "Golf swing mechanics",
+      "Golf tips for beginners"
+    ],
+    "affect_hints": [
+      "Educational",
+      "Helpful",
+      "Encouraging",
+      "Practical"
+    ],
+    "genre_hints": [
+      "Tutorial",
+      "Sports instruction",
+      "Educational"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 18410,
+    "output_tokens": 2929,
+    "total_tokens": 21339,
+    "cost_usd": 0.004519,
+    "latency_ms": 35651,
+    "upload_ms": 8124
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

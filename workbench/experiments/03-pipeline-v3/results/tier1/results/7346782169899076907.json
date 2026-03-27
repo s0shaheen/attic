@@ -1,0 +1,37 @@
+{
+  "item_id": "7346782169899076907",
+  "parsed_output": {
+    "summary": "Harrison Swales (@harrison.swales) discusses the lifestyle habits of his successful friends, contrasting weekend drinking with productive social activities. He specifically highlights joining a run club as a common trait among high-achievers to encourage viewers to audit their social circles.",
+    "entities": [
+      {
+        "name": "Harrison Swales",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Run club",
+        "type": "trend_or_meme",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "career",
+      "secondary": "health"
+    },
+    "genre": "vlog",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "inspiring"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "In this TikTok, creator Harrison Swales (@harrison.swales) shares observations on the habits of his successful friends to provide lifestyle and career advice. He contrasts the common habit of getting drunk on weekends with more productive and healthy social activities, specifically mentioning joining a run club. The video aligns with his profile's theme of achieving financial freedom and travel. On-screen text includes 'What all of my successful friends do for fun' and 'getting drunk on the weekends they're doing things like being part of a run club.' This talking-head style vlog is optimized for users searching for motivational content, social circle auditing, and habits of successful entrepreneurs or digital nomads."
+  },
+  "metrics": {
+    "input_tokens": 4239,
+    "output_tokens": 354,
+    "total_tokens": 4593,
+    "cost_usd": 0.000848,
+    "latency_ms": 9090,
+    "keyframe_count": 3
+  }
+}

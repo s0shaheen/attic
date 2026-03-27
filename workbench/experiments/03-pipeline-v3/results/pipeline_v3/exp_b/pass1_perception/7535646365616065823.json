@@ -1,0 +1,503 @@
+{
+  "item_id": "7535646365616065823",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:47:23.150144+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Animated comic book style characters of the Fantastic Four are displayed, with Mr. Fantastic stretching his arm and Invisible Woman appearing. The scene transitions between different members of the team.",
+        "audio_description": "A male voice announces, \"The Fantastic Four.\"",
+        "text_on_screen": "The Fantastic 4",
+        "key_objects": [
+          "Fantastic Four characters",
+          "Mr. Fantastic",
+          "Invisible Woman",
+          "Human Torch",
+          "The Thing"
+        ]
+      },
+      {
+        "time_range": "0:03-0:04",
+        "visual_description": "Draymond Green, wearing a Golden State Warriors jersey, is shown in a dynamic pose.",
+        "audio_description": "A male voice announces, \"The Fantastic Four.\"",
+        "text_on_screen": "The Fantastic 4",
+        "key_objects": [
+          "Draymond Green",
+          "Golden State Warriors jersey"
+        ]
+      },
+      {
+        "time_range": "0:04-0:05",
+        "visual_description": "A blurry, fast-paced shot of a basketball crowd and players in motion.",
+        "audio_description": "Sound effects and crowd noise.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:05-0:06",
+        "visual_description": "LeBron James, wearing a white Cleveland Cavaliers jersey with the number 23, is shown looking intently.",
+        "audio_description": "Sound effects.",
+        "text_on_screen": null,
+        "key_objects": [
+          "LeBron James",
+          "Cleveland Cavaliers jersey"
+        ]
+      },
+      {
+        "time_range": "0:06-0:08",
+        "visual_description": "A close-up of LeBron James's face, followed by a profile shot of him in a jersey.",
+        "audio_description": "A male voiceover states, \"But I am above all, a reasonable man.\"",
+        "text_on_screen": "But\nBut I am above all\nA reasonable man",
+        "key_objects": [
+          "LeBron James"
+        ]
+      },
+      {
+        "time_range": "0:08-0:09",
+        "visual_description": "An animated depiction of Dr. Doom is shown.",
+        "audio_description": "Dr. Doom's voice states, \"Thus I have granted your leaders one week to surrender to the rule of Doom.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Dr. Doom"
+        ]
+      },
+      {
+        "time_range": "0:09-0:10",
+        "visual_description": "Blurry, fast-paced shots of a basketball game and crowd.",
+        "audio_description": "Dr. Doom's voice continues, \"Thus I have granted your leaders one week to surrender to the rule of Doom.\"",
+        "text_on_screen": "granted your leaders",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:10-0:11",
+        "visual_description": "LeBron James walks away in a red Cleveland Cavaliers jersey with 'JAMES 23' on the back, in a hallway featuring a large Cavaliers 'C' logo.",
+        "audio_description": "Dr. Doom's voice continues, \"Thus I have granted your leaders one week to surrender to the rule of Doom.\"",
+        "text_on_screen": "one week to",
+        "key_objects": [
+          "LeBron James",
+          "Cleveland Cavaliers jersey",
+          "Cleveland Cavaliers logo"
+        ]
+      },
+      {
+        "time_range": "0:11-0:13",
+        "visual_description": "LeBron James walks onto a basketball court, holding a jersey.",
+        "audio_description": "Dr. Doom's voice continues, \"surrender to the rule of Doom.\"",
+        "text_on_screen": "surrender to the",
+        "key_objects": [
+          "LeBron James",
+          "Cleveland Cavaliers jersey"
+        ]
+      },
+      {
+        "time_range": "0:13-0:14",
+        "visual_description": "Close-up shots of LeBron James's face, looking serious.",
+        "audio_description": "Dr. Doom's voice states, \"rule of doom.\"",
+        "text_on_screen": "rule of doom",
+        "key_objects": [
+          "LeBron James"
+        ]
+      },
+      {
+        "time_range": "0:14-0:15",
+        "visual_description": "Blurry, fast-paced shots of LeBron James playing basketball.",
+        "audio_description": "Dr. Doom's voice states, \"Or suffer total annihilation.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "LeBron James"
+        ]
+      },
+      {
+        "time_range": "0:15-0:16",
+        "visual_description": "LeBron James in a Cleveland Cavaliers jersey, looking intense.",
+        "audio_description": "Dr. Doom's voice continues, \"Or suffer total annihilation.\"",
+        "text_on_screen": "total",
+        "key_objects": [
+          "LeBron James",
+          "Cleveland Cavaliers jersey"
+        ]
+      },
+      {
+        "time_range": "0:16-0:18",
+        "visual_description": "LeBron James in a Cleveland Cavaliers jersey, yelling and celebrating on the court amidst a cheering crowd.",
+        "audio_description": "Dr. Doom's voice states, \"annihilation.\"",
+        "text_on_screen": "annihilation",
+        "key_objects": [
+          "LeBron James",
+          "Cleveland Cavaliers jersey"
+        ]
+      },
+      {
+        "time_range": "0:18-0:21",
+        "visual_description": "LeBron James shoots a basketball, followed by a powerful dunk.",
+        "audio_description": "Basketball sounds and crowd noise.",
+        "text_on_screen": null,
+        "key_objects": [
+          "LeBron James",
+          "basketball",
+          "basketball hoop"
+        ]
+      },
+      {
+        "time_range": "0:21-0:25",
+        "visual_description": "A fast-paced montage of LeBron James performing various basketball actions, including dunking and shooting, with dynamic visual effects.",
+        "audio_description": "Basketball sounds and crowd noise.",
+        "text_on_screen": null,
+        "key_objects": [
+          "LeBron James",
+          "basketball",
+          "basketball hoop"
+        ]
+      },
+      {
+        "time_range": "0:25-0:27",
+        "visual_description": "LeBron James walks onto the court, raising his arm, then a close-up of him in a red Adidas jacket.",
+        "audio_description": "Crowd noise.",
+        "text_on_screen": null,
+        "key_objects": [
+          "LeBron James",
+          "Adidas jacket"
+        ]
+      },
+      {
+        "time_range": "0:27-0:29",
+        "visual_description": "LeBron James plays defense against Stephen Curry and Andre Iguodala during a basketball game.",
+        "audio_description": "Basketball sounds and crowd noise.",
+        "text_on_screen": null,
+        "key_objects": [
+          "LeBron James",
+          "Stephen Curry",
+          "Andre Iguodala",
+          "basketball"
+        ]
+      },
+      {
+        "time_range": "0:29-0:30",
+        "visual_description": "LeBron James executes a dunk.",
+        "audio_description": "Basketball sounds and crowd noise.",
+        "text_on_screen": null,
+        "key_objects": [
+          "LeBron James",
+          "basketball",
+          "basketball hoop"
+        ]
+      },
+      {
+        "time_range": "0:30-0:31",
+        "visual_description": "Cleveland Cavaliers coaches and staff celebrate enthusiastically.",
+        "audio_description": "Crowd cheering.",
+        "text_on_screen": "ALL IN\n2016\nFinals",
+        "key_objects": [
+          "Cleveland Cavaliers staff"
+        ]
+      },
+      {
+        "time_range": "0:31-0:33",
+        "visual_description": "LeBron James celebrates with the NBA Championship trophy, wearing an 'NBA CHAMPS' hat, surrounded by cheering teammates and fans.",
+        "audio_description": "Crowd cheering.",
+        "text_on_screen": "NBA CHAMPS\n2016",
+        "key_objects": [
+          "LeBron James",
+          "NBA Championship trophy",
+          "NBA Champs hat"
+        ]
+      },
+      {
+        "time_range": "0:33-0:33",
+        "visual_description": "A black screen with the white text 'ZLK'.",
+        "audio_description": "Audio fades out.",
+        "text_on_screen": "ZLK",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is an NBA edit featuring LeBron James, set to an audio clip of Dr. Doom from the 1994 Fantastic Four animated series. It juxtaposes Dr. Doom's declaration of power and ultimatum with intense highlights of LeBron James playing for the Cleveland Cavaliers, including dunks, shots, and his celebration with the 2016 NBA Championship trophy. The edit suggests LeBron James's formidable presence and dominance in the league, likening his impact to Dr. Doom's overwhelming authority and the idea of a 'Fantastic Four' of basketball talent.",
+    "people": [
+      {
+        "description": "Prominent NBA basketball player, shown in various game highlights and celebration moments.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "LeBron James"
+      },
+      {
+        "description": "NBA basketball player, briefly shown in a Golden State Warriors jersey.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Draymond Green"
+      },
+      {
+        "description": "NBA basketball player, briefly shown playing defense against LeBron James.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Stephen Curry"
+      },
+      {
+        "description": "NBA basketball player, briefly shown playing defense against LeBron James.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Andre Iguodala"
+      },
+      {
+        "description": "Animated comic book character, Mr. Fantastic, member of the Fantastic Four.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Mr. Fantastic"
+      },
+      {
+        "description": "Animated comic book character, Invisible Woman, member of the Fantastic Four.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Invisible Woman"
+      },
+      {
+        "description": "Animated comic book character, Human Torch, member of the Fantastic Four.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Human Torch"
+      },
+      {
+        "description": "Animated comic book character, The Thing, member of the Fantastic Four.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "The Thing"
+      },
+      {
+        "description": "Animated comic book villain, Dr. Doom, whose voiceover is used in the video.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Dr. Doom"
+      }
+    ],
+    "entities": [
+      {
+        "name": "LeBron James",
+        "display_name": "LeBron James",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "NBA player, number 23, Cleveland Cavaliers, 2016 NBA Champion",
+        "confidence": 5
+      },
+      {
+        "name": "Fantastic Four",
+        "display_name": "Fantastic Four",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "1994 animated series, Marvel Comics characters",
+        "confidence": 5
+      },
+      {
+        "name": "Dr. Doom",
+        "display_name": "Dr. Doom",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Villain from Fantastic Four, voiceover from 1994 animated series",
+        "confidence": 5
+      },
+      {
+        "name": "Cleveland Cavaliers",
+        "display_name": "Cleveland Cavaliers",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "NBA team, jerseys, logos, 2016 NBA Champions",
+        "confidence": 5
+      },
+      {
+        "name": "Golden State Warriors",
+        "display_name": "Golden State Warriors",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "NBA team, jersey worn by Draymond Green",
+        "confidence": 4
+      },
+      {
+        "name": "NBA",
+        "display_name": "NBA (National Basketball Association)",
+        "type": "event",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Professional basketball league, NBA Championship",
+        "confidence": 5
+      },
+      {
+        "name": "2016 NBA Finals",
+        "display_name": "2016 NBA Finals",
+        "type": "event",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Basketball championship series",
+        "confidence": 5
+      },
+      {
+        "name": "Draymond Green",
+        "display_name": "Draymond Green",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "NBA player, Golden State Warriors",
+        "confidence": 4
+      },
+      {
+        "name": "Stephen Curry",
+        "display_name": "Stephen Curry",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "NBA player, Golden State Warriors",
+        "confidence": 4
+      },
+      {
+        "name": "Andre Iguodala",
+        "display_name": "Andre Iguodala",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "NBA player, Golden State Warriors",
+        "confidence": 4
+      },
+      {
+        "name": "Adidas",
+        "display_name": "Adidas",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Sportswear brand, logo on jacket",
+        "confidence": 3
+      },
+      {
+        "name": "State Farm",
+        "display_name": "State Farm",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Insurance company, arena signage",
+        "confidence": 3
+      },
+      {
+        "name": "Budweiser",
+        "display_name": "Budweiser",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Beer brand, arena signage",
+        "confidence": 3
+      },
+      {
+        "name": "Bona",
+        "display_name": "Bona",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Floor care brand, arena signage",
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "LeBron James's dominance and impact in the NBA can be likened to the overwhelming power and authority of a formidable comic book villain like Dr. Doom.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "The video highlights LeBron James's journey and triumph with the Cleveland Cavaliers, particularly their 2016 NBA Championship.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": false,
+      "notes": "The background music is a generic hip-hop/trap beat and could not be identified as a specific song. The Dr. Doom voiceover is from the 1994 Fantastic Four animated series."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "heavy_effects"
+    },
+    "visual_mood": "Intense, powerful, triumphant, dramatic, nostalgic (for comic elements)",
+    "topic_hints": [
+      "NBA basketball",
+      "LeBron James highlights",
+      "Fantastic Four cultural reference"
+    ],
+    "affect_hints": [
+      "Excitement",
+      "Awe",
+      "Inspiration",
+      "Nostalgia"
+    ],
+    "genre_hints": [
+      "Sports edit",
+      "Fandom content",
+      "Cultural mashup"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 11519,
+    "output_tokens": 4244,
+    "total_tokens": 15763,
+    "cost_usd": 0.004274,
+    "latency_ms": 36840,
+    "upload_ms": 5751
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

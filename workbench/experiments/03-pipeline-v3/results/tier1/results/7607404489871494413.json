@@ -1,0 +1,52 @@
+{
+  "item_id": "7607404489871494413",
+  "parsed_output": {
+    "summary": "Tiffany (@tiffanysopenbook) provides a 'Product Manager 101' guide on how to conduct a design review for a new feature release. The video captures a real, unglamourized 9:00 AM meeting between a PM and designer, highlighting the importance of differing perspectives on usability versus customer experience.",
+    "entities": [
+      {
+        "name": "Tiffany",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Product Manager",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Product Design",
+        "type": "technique",
+        "relevance": "supporting"
+      },
+      {
+        "name": "MacBook",
+        "type": "product",
+        "relevance": "supporting"
+      },
+      {
+        "name": "TikTok",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "career",
+      "secondary": "technology"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this 'Product Manager 101' video, creator Tiffany (@tiffanysopenbook) provides a behind-the-scenes look at a real design review meeting for a new feature release. Filmed at 9:00 AM, the video offers an unglamourized perspective on the collaboration between a product manager and a designer. Tiffany outlines a 10-step process for reviewing designs, emphasizing that it is healthy for PMs and designers to disagree. She explains that while designers focus on usability and product consistency, PMs prioritize the use case and the overall customer experience. The content includes on-screen text labels for 'steps 1-10' and concludes with 'step 10: goodbyes!!' This career-focused tutorial is ideal for aspiring product managers looking for practical advice on driving productive stakeholder meetings and navigating the iterative design process."
+  },
+  "metrics": {
+    "input_tokens": 4365,
+    "output_tokens": 508,
+    "total_tokens": 4873,
+    "cost_usd": 0.00096,
+    "latency_ms": 7652,
+    "keyframe_count": 3
+  }
+}

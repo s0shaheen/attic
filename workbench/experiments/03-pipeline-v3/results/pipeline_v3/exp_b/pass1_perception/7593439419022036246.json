@@ -1,0 +1,403 @@
+{
+  "item_id": "7593439419022036246",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:54:16.444275+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Israeli Prime Minister Binyamin Netanyahu is shown in a close-up, wearing a suit and red tie, with a yellow ribbon pin and an Israeli flag pin. The Economist logo is visible in the top left corner.",
+        "audio_description": "An interviewer's voice is heard discussing ways to put pressure on Hamas and the importance of the world's press reporting on events.",
+        "text_on_screen": "Netanyahu on why journalists can't enter Gaza without the IDF, of putting",
+        "key_objects": [
+          "Binyamin Netanyahu",
+          "yellow ribbon pin",
+          "Israeli flag pin",
+          "The Economist logo"
+        ]
+      },
+      {
+        "time_range": "0:03-0:10",
+        "visual_description": "Edward Carr, Deputy Editor of The Economist, is shown in a suit and blue tie, speaking and gesturing.",
+        "audio_description": "Edward Carr asks Netanyahu why international journalists are not allowed into Gaza independently.",
+        "text_on_screen": "Edward Carr Deputy editor The Economist, press to report, and to give body, about what they're doing, Why don't you allow",
+        "key_objects": [
+          "Edward Carr",
+          "The Economist logo"
+        ]
+      },
+      {
+        "time_range": "0:10-0:14",
+        "visual_description": "Binyamin Netanyahu is shown in a close-up, speaking.",
+        "audio_description": "Netanyahu states that he believes they do allow journalists, and could do more, and probably should.",
+        "text_on_screen": "Binyamin Netanyahu Israeli prime minister, I think we do,, and we probably should",
+        "key_objects": [
+          "Binyamin Netanyahu"
+        ]
+      },
+      {
+        "time_range": "0:14-0:16",
+        "visual_description": "Edward Carr is shown speaking.",
+        "audio_description": "Edward Carr clarifies that journalists are not allowed in without being with the IDF.",
+        "text_on_screen": "being with the IDF",
+        "key_objects": [
+          "Edward Carr"
+        ]
+      },
+      {
+        "time_range": "0:16-0:26",
+        "visual_description": "Binyamin Netanyahu is shown in a close-up, speaking.",
+        "audio_description": "Netanyahu responds that being with the IDF is not an uncommon practice and states that Israel does not want journalists killed, acknowledging some have been tragically killed due to crossfire.",
+        "text_on_screen": "Yeah, not an, first of all, any journalists killed, tragically killed, crossfire",
+        "key_objects": [
+          "Binyamin Netanyahu"
+        ]
+      },
+      {
+        "time_range": "0:26-0:31",
+        "visual_description": "Zanny Minton Beddoes, Editor-in-chief of The Economist, is shown in a red blazer, speaking and gesturing.",
+        "audio_description": "Zanny Minton Beddoes asks if Netanyahu can definitively state that international press will be allowed in without the IDF.",
+        "text_on_screen": "Zanny Minton Beddoes Editor-in-chief The Economist, say definitively, in without the IDF?",
+        "key_objects": [
+          "Zanny Minton Beddoes",
+          "The Economist logo"
+        ]
+      },
+      {
+        "time_range": "0:31-0:37",
+        "visual_description": "Binyamin Netanyahu is shown in a close-up, speaking.",
+        "audio_description": "Netanyahu clarifies he didn't say 'without the IDF' but suggests more journalists could be present, emphasizing the small size of Gaza.",
+        "text_on_screen": "without the IDF, more numbers, It's so small, you can't really...",
+        "key_objects": [
+          "Binyamin Netanyahu"
+        ]
+      },
+      {
+        "time_range": "0:37-0:47",
+        "visual_description": "Zanny Minton Beddoes is shown speaking and gesturing.",
+        "audio_description": "Zanny Minton Beddoes states she has been to Gaza with the IDF and reiterates that allowing independent press access is crucial to changing the perception of Gaza.",
+        "text_on_screen": "I've been there, with the IDF, It is small,, independently, the perception of Gaza",
+        "key_objects": [
+          "Zanny Minton Beddoes"
+        ]
+      },
+      {
+        "time_range": "0:47-0:49",
+        "visual_description": "Binyamin Netanyahu is shown in a close-up, speaking.",
+        "audio_description": "Netanyahu states that Gaza is a warzone.",
+        "text_on_screen": "It's a warzone",
+        "key_objects": [
+          "Binyamin Netanyahu"
+        ]
+      },
+      {
+        "time_range": "0:49-0:51",
+        "visual_description": "Zanny Minton Beddoes is shown speaking and gesturing.",
+        "audio_description": "Zanny Minton Beddoes refutes Netanyahu's claim, stating there is a ceasefire in place.",
+        "text_on_screen": "There's a ceasefire",
+        "key_objects": [
+          "Zanny Minton Beddoes"
+        ]
+      },
+      {
+        "time_range": "0:51-0:54",
+        "visual_description": "Binyamin Netanyahu is shown in a close-up, speaking.",
+        "audio_description": "Netanyahu insists it's still a warzone and mentions recent rocket fire.",
+        "text_on_screen": "But it's still a warzone, We just had",
+        "key_objects": [
+          "Binyamin Netanyahu"
+        ]
+      },
+      {
+        "time_range": "0:54-0:57",
+        "visual_description": "Zanny Minton Beddoes is shown speaking.",
+        "audio_description": "Zanny Minton Beddoes expresses her suspicion that the restriction on press access is to hide something.",
+        "text_on_screen": "It's hard for me, let the press in",
+        "key_objects": [
+          "Zanny Minton Beddoes"
+        ]
+      },
+      {
+        "time_range": "0:57-1:15",
+        "visual_description": "Binyamin Netanyahu is shown in a close-up, speaking.",
+        "audio_description": "Netanyahu denies hiding anything, emphasizing the danger in Gaza with recent rocket and sniper fire. He states he doesn't want any journalists harmed.",
+        "text_on_screen": "No, it's not, But it's dangerous, this now, today, We had rocket fire, A few days ago, we had sniper fire, That's yesterday, actually, I wouldn't be so, I want to see is, any of you",
+        "key_objects": [
+          "Binyamin Netanyahu"
+        ]
+      },
+      {
+        "time_range": "1:15-1:22",
+        "visual_description": "Zanny Minton Beddoes is shown speaking.",
+        "audio_description": "Zanny Minton Beddoes highlights the large number of journalists killed in Gaza, questioning Netanyahu's concern for lives.",
+        "text_on_screen": "a huge number, So I don't think it's, not concerned",
+        "key_objects": [
+          "Zanny Minton Beddoes"
+        ]
+      },
+      {
+        "time_range": "1:22-1:36",
+        "visual_description": "Binyamin Netanyahu is shown in a close-up, speaking.",
+        "audio_description": "Netanyahu asserts that Israel does not target, kill, jail, or execute journalists, contrasting this with actions by Hamas and other regimes.",
+        "text_on_screen": "because we didn't, target them, We don't, jail them either, And we certainly don't, as Hamas is doing, that are criticising, But I think that,",
+        "key_objects": [
+          "Binyamin Netanyahu"
+        ]
+      },
+      {
+        "time_range": "1:36-1:43",
+        "visual_description": "Zanny Minton Beddoes is shown speaking.",
+        "audio_description": "Zanny Minton Beddoes states that nothing can be hidden and encourages discovering the truth about trucks held up by Hamas.",
+        "text_on_screen": "hide anything, In fact,, the number of trucks",
+        "key_objects": [
+          "Zanny Minton Beddoes"
+        ]
+      },
+      {
+        "time_range": "1:43-1:52",
+        "visual_description": "Zanny Minton Beddoes speaks, then the video cuts back to Binyamin Netanyahu.",
+        "audio_description": "Zanny Minton Beddoes offers to go to Gaza independently if allowed, having previously gone with the IDF. Netanyahu says he will consider her offer.",
+        "text_on_screen": "the minute, I will go back to Gaza, I will go independently, you let people in, I'll consider your offer",
+        "key_objects": [
+          "Zanny Minton Beddoes",
+          "Binyamin Netanyahu"
+        ]
+      },
+      {
+        "time_range": "1:52-1:59",
+        "visual_description": "The screen transitions to black with white text, then displays 'The Economist Insider' logo.",
+        "audio_description": "Background music plays.",
+        "text_on_screen": "Watch the full episode at economist.com/insider, The Economist Insider",
+        "key_objects": [
+          "The Economist logo"
+        ]
+      }
+    ],
+    "overall_summary": "This video features an interview with Israeli Prime Minister Binyamin Netanyahu by The Economist, discussing the access of international journalists to Gaza. Netanyahu states that Gaza is a warzone and that journalists have been tragically killed in crossfire, denying that the IDF targets journalists. The interviewer, Zanny Minton Beddoes, challenges his stance, arguing that independent press access is crucial and that restricting it suggests something to hide. Netanyahu counters by mentioning recent rocket and sniper fire and accusing Hamas of holding up aid trucks and executing journalists.",
+    "people": [
+      {
+        "description": "An older man with gray hair, wearing a black suit, white shirt, and red tie, with a yellow ribbon pin and an Israeli flag pin. He is the Israeli Prime Minister, speaking in an interview.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Binyamin Netanyahu"
+      },
+      {
+        "description": "A man with short brown hair and a beard, wearing a dark blue suit, white shirt, and blue tie. He is the Deputy Editor of The Economist, interviewing Netanyahu.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Edward Carr"
+      },
+      {
+        "description": "A woman with blonde, wavy hair, wearing a red blazer and a gold necklace with a pendant. She is the Editor-in-chief of The Economist, interviewing Netanyahu.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Zanny Minton Beddoes"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Gaza",
+        "display_name": "Gaza",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Israel Defence Forces",
+        "display_name": "Israel Defence Forces (IDF)",
+        "type": "organization",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Hamas",
+        "display_name": "Hamas",
+        "type": "organization",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Economist",
+        "display_name": "The Economist",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Binyamin Netanyahu",
+        "display_name": "Binyamin Netanyahu",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Israeli Prime Minister",
+        "confidence": 5
+      },
+      {
+        "name": "Edward Carr",
+        "display_name": "Edward Carr",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Deputy Editor of The Economist",
+        "confidence": 5
+      },
+      {
+        "name": "Zanny Minton Beddoes",
+        "display_name": "Zanny Minton Beddoes",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Editor-in-chief of The Economist",
+        "confidence": 5
+      },
+      {
+        "name": "Journalists",
+        "display_name": "Journalists",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Rocket fire",
+        "display_name": "Rocket fire",
+        "type": "event",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Sniper fire",
+        "display_name": "Sniper fire",
+        "type": "event",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Ceasefire",
+        "display_name": "Ceasefire",
+        "type": "event",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Journalists' access to Gaza is restricted because it is a warzone, and the Israel Defence Forces (IDF) do not target journalists.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Restricting independent press access to Gaza suggests that there is something to hide.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "original sound - The Economist",
+      "metadata_song": "original sound - The Economist",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "All key entities and dialogue appear to be captured accurately."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "serious",
+    "topic_hints": [
+      "politics",
+      "journalism",
+      "conflict",
+      "Gaza",
+      "Israel"
+    ],
+    "affect_hints": [
+      "informative",
+      "serious",
+      "confrontational",
+      "tense"
+    ],
+    "genre_hints": [
+      "news",
+      "interview",
+      "political commentary"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 36657,
+    "output_tokens": 3771,
+    "total_tokens": 40428,
+    "cost_usd": 0.007761,
+    "latency_ms": 38104,
+    "upload_ms": 8398
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

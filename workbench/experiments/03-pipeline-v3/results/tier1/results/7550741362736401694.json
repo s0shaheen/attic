@@ -1,0 +1,52 @@
+{
+  "item_id": "7550741362736401694",
+  "parsed_output": {
+    "summary": "DJ @gualabeatz performs his 'Fell In Love' Guala Bootleg remix of Nav at a club in Los Angeles. The video captures the high-energy EDM atmosphere with a unique top-down view of the DJ booth featuring glowing 'LA' signage.",
+    "entities": [
+      {
+        "name": "@gualabeatz",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Nav",
+        "type": "artist",
+        "relevance": "primary"
+      },
+      {
+        "name": "Fell In Love",
+        "type": "song",
+        "relevance": "primary"
+      },
+      {
+        "name": "Los Angeles",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "KETTAMA",
+        "type": "artist",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "music",
+      "secondary": "other"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "satisfying",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "A high-energy 25-second TikTok by creator @gualabeatz featuring a live EDM performance in Los Angeles. The video showcases a 'Guala Bootleg' remix of the song 'Fell In Love' by the artist Nav. Key visual elements include the DJ performing behind a professional deck setup under blue and purple club lighting, with a notable top-down camera angle showing the letters 'LA' glowing brightly on the front of the DJ booth. The crowd is seen with hands raised, reacting to the music drop. The caption indicates the remix is available on SoundCloud. This video is a music edit intended for fans of Nav, KETTAMA, and electronic dance music culture, specifically highlighting the nightlife scene in LA."
+  },
+  "metrics": {
+    "input_tokens": 4166,
+    "output_tokens": 464,
+    "total_tokens": 4630,
+    "cost_usd": 0.000903,
+    "latency_ms": 11618,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "item_id": "7270614848789024046",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:50:44.127536+00:00",
+  "parsed_output": {
+    "_parse_error": true,
+    "_raw_text": "{\n  \"scene_timeline\": [\n    {\n      \"time_range\": \"0:00-0:01\",\n      \"visual_description\": \"A street scene in Amsterdam with a tram passing by, showcasing typical Dutch architecture.\",\n      \"audio_description\": \"The creator states they experienced severe cramps upon arriving in Amsterdam.\",\n      \"text_on_screen\": \"COFFEESHOPS I VISITED IN AMSTERDAM\",\n      \"key_objects\": [\"Tram\", \"Buildings\", \"Street\"]\n    },\n    {\n      \"time_range\": \"0:01-0:09\",\n      \"visual_description\": \"The exterior of 'Het Ballonnetje' coffeeshop, followed by interior shots revealing a cozy atmosphere with wooden tables, chairs, and vintage-style wall decor.\",\n      \"audio_description\": \"The creator mentions this coffeeshop was conveniently located near their hotel and had a 'cool little vibe'. They do not attempt to pronounce its name.\",\n      \"text_on_screen\": \"Het Ballonnetje\",\n      \"key_objects\": [\"Mercedes-Benz EQS\", \"Coffeeshop exterior\", \"Wooden tables\", \"Chairs\", \"Vintage posters\"]\n    },\n    {\n      \"time_range\": \"0:09-0:22\",\n      \"visual_description\": \"The exterior of 'African Black Star' coffeeshop at night, followed by interior views featuring African-themed artwork, wooden slatted walls, comfortable seating, and a large television displaying music videos.\",\n      \"audio_description\": \"The creator explains they visited 'African Black Star' because it is one of the few Black-owned coffeeshops in Amsterdam, emphasizing support for their community. They note Burna Boy was playing and the shop was unpopulated, allowing for relaxation.\",\n      \"text_on_screen\": \"African Black Star\",\n      \"key_objects\": [\"African art\", \"Wooden paneling\", \"Television\", \"Dyson Pure Cool Link\"]\n    },\n    {\n      \"time_range\": \"0:22-0:40\",\n      \"visual_description\": \"The exterior of 'Prix D'Ami Coffeeshop' on a narrow street, followed by interior shots showcasing vibrant neon lighting, a counter, display cases filled with merchandise, stairs, and a lounge area with more neon signs.\",\n      \"audio_des"
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 13356,
+    "output_tokens": 2156,
+    "total_tokens": 15512,
+    "cost_usd": 0.003297,
+    "latency_ms": 26074,
+    "upload_ms": 5468
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

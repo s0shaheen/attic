@@ -53,3 +53,22 @@ workbench/.env
 workbench/data/my-export/
 workbench/evals/results/
 *.ipynb_checkpoints/
+
+# Workbench media (regenerable, ~2.3GB total)
+workbench/**/media/
+workbench/experiments/03-pipeline-v3/results/pipeline_v3_media/
+workbench/experiments/03-pipeline-v3/results/tier1_e2e_media/
+
+# Workbench experiment results (large/generated)
+workbench/experiments/01-apify-profiling/results/apify_raw_samples/
+workbench/experiments/01-apify-profiling/results/profiler_plots/
+workbench/experiments/02-vision-analysis/results/vision_v2/
+workbench/experiments/02-vision-analysis/results/vision_analysis_samples/results/
+
+# Misc generated
+log.csv
+project_history.csv
+.claude/worktrees/
+
+# Large regenerable search index
+workbench/experiments/03-pipeline-v3/results/search_index.json

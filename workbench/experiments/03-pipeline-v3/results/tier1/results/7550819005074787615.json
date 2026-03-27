@@ -1,0 +1,52 @@
+{
+  "item_id": "7550819005074787615",
+  "parsed_output": {
+    "summary": "DJ @djbchung performs a creative mashup that blends the iconic lo-fi production of Nujabes with the rap verses of Lil Yachty and Tee Grizzley. This video serves as a musical demonstration of how different hip-hop subgenres can be mixed together using a DJ controller.",
+    "entities": [
+      {
+        "name": "Lil Yachty",
+        "type": "artist",
+        "relevance": "primary"
+      },
+      {
+        "name": "Nujabes",
+        "type": "artist",
+        "relevance": "primary"
+      },
+      {
+        "name": "Tee Grizzley",
+        "type": "artist",
+        "relevance": "primary"
+      },
+      {
+        "name": "Washington Commanders",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Jayden Daniels",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "music",
+      "secondary": "other"
+    },
+    "genre": "other",
+    "affect": {
+      "dominant": "satisfying",
+      "secondary": "informative"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "This TikTok features creator @djbchung performing a live DJ mashup that combines the soulful, lo-fi beats of Nujabes with the modern rap flows of Lil Yachty and Tee Grizzley. The video showcases the DJ's technical skill as he operates a professional DJ controller to blend the tracks seamlessly. On-screen text identifies the artists involved: 'Nujabes X Lil Yachty, Tee Grizzley.' In the background, two Washington Commanders jerseys are displayed on the wall, including a Terry McLaurin jersey and a Jayden Daniels jersey. This video is a great reference for music fans interested in creative remixes, hip-hop production, and DJ techniques. It highlights the contrast between chill, jazzy instrumentals and high-energy rap vocals, making it a popular save for those looking for new music combinations or DJ inspiration."
+  },
+  "metrics": {
+    "input_tokens": 4282,
+    "output_tokens": 491,
+    "total_tokens": 4773,
+    "cost_usd": 0.000937,
+    "latency_ms": 12517,
+    "keyframe_count": 3
+  }
+}

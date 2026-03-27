@@ -1,0 +1,52 @@
+{
+  "item_id": "7345594874315509000",
+  "parsed_output": {
+    "summary": "Creator @marcusnevin shares a brief travel vlog from Strasbourg, France, highlighting a solo morning with espresso and a visit to the historic cathedral. He frames the simple, aesthetic experience of European city exploration as the 'Peak Male Experience.'",
+    "entities": [
+      {
+        "name": "@marcusnevin",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Strasbourg Cathedral",
+        "type": "place",
+        "relevance": "primary"
+      },
+      {
+        "name": "Strasbourg",
+        "type": "place",
+        "relevance": "primary"
+      },
+      {
+        "name": "Espresso",
+        "type": "recipe",
+        "relevance": "supporting"
+      },
+      {
+        "name": "I Love You",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "travel",
+      "secondary": "other"
+    },
+    "genre": "vlog",
+    "affect": {
+      "dominant": "relaxing",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "A short, aesthetic travel vlog by @marcusnevin capturing a solo trip to Strasbourg, France. The video begins with a close-up of an espresso served at an outdoor cafe on a cobblestone street, then pans to the massive, ornate red sandstone facade of the Strasbourg Cathedral (Cath\u00e9drale Notre-Dame de Strasbourg). The creator, Marcus Nevin, appears in a selfie wearing a grey beanie and white hoodie, enjoying the atmosphere. The on-screen text 'Peak Male Experience' suggests a focus on solo travel and simple pleasures. Set to the song 'I Love You,' the video serves as travel inspiration for European city breaks, showcasing historic architecture and the relaxed pace of French cafe culture. It is a perfect reference for someone searching for Strasbourg travel clips or solo male travel aesthetics."
+  },
+  "metrics": {
+    "input_tokens": 4221,
+    "output_tokens": 473,
+    "total_tokens": 4694,
+    "cost_usd": 0.000917,
+    "latency_ms": 7627,
+    "keyframe_count": 3
+  }
+}

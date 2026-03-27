@@ -1,0 +1,438 @@
+{
+  "item_id": "7611737673895529748",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:18:26.258743+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:09",
+        "visual_description": "Split screen comparing a scene from Smiling Friends where Charlie attempts an exorcism on Glep to the original scene in The Exorcist.",
+        "audio_description": "Charlie says, 'I think he's possessed, man... my uncle taught me exactly what to do.' Then both scenes shout, 'The power of Christ compels you!'",
+        "text_on_screen": "Smiling Friends (2020-2026)\nThe Exorcist (1973)\nDir. William Friedkin",
+        "key_objects": [
+          "Crucifix",
+          "Bed"
+        ]
+      },
+      {
+        "time_range": "0:09-0:12",
+        "visual_description": "Comparison of Glep training with weights to Rocky Balboa's training montage in Rocky II.",
+        "audio_description": "Rhythmic percussive music starts.",
+        "text_on_screen": "Rocky II (1979)\nDir. Sylvester Stallone",
+        "key_objects": [
+          "Dumbbells",
+          "Boxing ring"
+        ]
+      },
+      {
+        "time_range": "0:12-0:13",
+        "visual_description": "Mr. Boss looking in a mirror compared to Norman Osborn in Spider-Man.",
+        "audio_description": "Mr. Boss: 'You deserve nothing.'",
+        "text_on_screen": "Spider-Man (2002)\nDir. Sam Raimi",
+        "key_objects": [
+          "Mirror"
+        ]
+      },
+      {
+        "time_range": "0:13-0:15",
+        "visual_description": "Mr. Boss at a desk compared to a gruesome scene from Event Horizon.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Event Horizon (1997)\nDir. Paul W.S. Anderson",
+        "key_objects": [
+          "Desk"
+        ]
+      },
+      {
+        "time_range": "0:15-0:18",
+        "visual_description": "Glep in a war zone compared to the beach landing in Saving Private Ryan.",
+        "audio_description": "Explosion sounds.",
+        "text_on_screen": "(Censored for TikTok)\nSaving Private Ryan (1998)\nDir. Steven Spielberg",
+        "key_objects": [
+          "Helmet",
+          "Barbed wire"
+        ]
+      },
+      {
+        "time_range": "0:18-0:21",
+        "visual_description": "A green pumpkin bomb exploding into skeletons in Smiling Friends and Spider-Man.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Spider-Man (2002)\nDir. Sam Raimi",
+        "key_objects": [
+          "Pumpkin bomb",
+          "Skeleton"
+        ]
+      },
+      {
+        "time_range": "0:21-0:22",
+        "visual_description": "Charlie riding a falling bomb compared to the iconic scene in Dr. Strangelove.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Dr. Strangelove (1964)\nDir. Stanley Kubrick",
+        "key_objects": [
+          "Nuclear bomb",
+          "Cowboy hat"
+        ]
+      },
+      {
+        "time_range": "0:22-0:24",
+        "visual_description": "A pink character pointing and screaming compared to the ending of Invasion of the Body Snatchers.",
+        "audio_description": "High-pitched screeching sound.",
+        "text_on_screen": "Invasion of the Body Snatchers (1978)\nDir. Philip Kaufman",
+        "key_objects": [
+          "Pizza slice"
+        ]
+      },
+      {
+        "time_range": "0:24-0:25",
+        "visual_description": "Glep inside a giant mouth compared to a scene from Return to Oz.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Return to Oz (1985)\nDir. Walter Murch",
+        "key_objects": [
+          "Giant mouth"
+        ]
+      },
+      {
+        "time_range": "0:25-0:28",
+        "visual_description": "Glep pulling his own face off in a mirror compared to the bathroom scene in Poltergeist.",
+        "audio_description": "Glep and the actor both scream: 'What the fuck?!'",
+        "text_on_screen": "(Censored for TikTok)\nPoltergeist (1982)\nDir. Tobe Hooper",
+        "key_objects": [
+          "Sink",
+          "Mirror"
+        ]
+      },
+      {
+        "time_range": "0:28-0:29",
+        "visual_description": "Blue characters on monkey bars compared to the training camp in Full Metal Jacket.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Full Metal Jacket (1987)\nDir. Stanley Kubrick",
+        "key_objects": [
+          "Monkey bars"
+        ]
+      },
+      {
+        "time_range": "0:29-0:33",
+        "visual_description": "Pim riding a creature's head compared to King Kong fighting a dinosaur.",
+        "audio_description": "Roaring sounds.",
+        "text_on_screen": "King Kong (2005)\nDir. Peter Jackson",
+        "key_objects": [
+          "Dinosaur",
+          "Creature"
+        ]
+      },
+      {
+        "time_range": "0:33-0:35",
+        "visual_description": "Old Pim and Charlie holding hands in bed compared to the ending of Bicentennial Man.",
+        "audio_description": "Music slows down.",
+        "text_on_screen": "Bicentennial Man (1999)\nDir. Chris Columbus",
+        "key_objects": [
+          "Hospital bed"
+        ]
+      },
+      {
+        "time_range": "0:35-0:39",
+        "visual_description": "The Smiling Friends cast dancing on a stage compared to the dance scene in A Charlie Brown Christmas.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "A Charlie Brown Christmas (1965)\nDir. Bill Melendez",
+        "key_objects": [
+          "Stage",
+          "Musical instruments"
+        ]
+      },
+      {
+        "time_range": "0:39-0:41",
+        "visual_description": "Alan asks Charlie about Glep, who is still taped to the table from the first scene.",
+        "audio_description": "Alan: 'What's wrong with Glep?'",
+        "text_on_screen": "Smiling Friends (2020-2026)",
+        "key_objects": [
+          "Duct tape"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a compilation of 'cinematic parallels' between the animated series Smiling Friends and various classic films. It uses a split-screen format to show how specific scenes in the show directly reference or parody famous moments from movies like The Exorcist, Spider-Man, and Saving Private Ryan. The edit highlights the show's deep roots in pop culture and its tendency to use iconic film imagery for comedic effect. The main takeaway is a showcase of the creators' extensive film knowledge and the visual homages present throughout the series.",
+    "people": [
+      {
+        "description": "Yellow, large-nosed main character of Smiling Friends",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Charlie Dompler"
+      },
+      {
+        "description": "Small, green, wizard-hat-wearing character",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Glep"
+      },
+      {
+        "description": "Pink, optimistic main character with one large eye",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Pim Pimling"
+      },
+      {
+        "description": "The eccentric, elderly owner of Smiling Friends Inc.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Mr. Boss"
+      },
+      {
+        "description": "Red, tall, cynical employee of Smiling Friends",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Alan"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Smiling Friends",
+        "display_name": "Smiling Friends",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Adult Swim animated series",
+        "confidence": 5
+      },
+      {
+        "name": "The Exorcist",
+        "display_name": "The Exorcist (1973)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by William Friedkin",
+        "confidence": 5
+      },
+      {
+        "name": "Rocky II",
+        "display_name": "Rocky II (1979)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Sylvester Stallone",
+        "confidence": 5
+      },
+      {
+        "name": "Spider-Man",
+        "display_name": "Spider-Man (2002)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Sam Raimi",
+        "confidence": 5
+      },
+      {
+        "name": "Event Horizon",
+        "display_name": "Event Horizon (1997)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Paul W.S. Anderson",
+        "confidence": 5
+      },
+      {
+        "name": "Saving Private Ryan",
+        "display_name": "Saving Private Ryan (1998)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Steven Spielberg",
+        "confidence": 5
+      },
+      {
+        "name": "Dr. Strangelove",
+        "display_name": "Dr. Strangelove (1964)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Stanley Kubrick",
+        "confidence": 5
+      },
+      {
+        "name": "Invasion of the Body Snatchers",
+        "display_name": "Invasion of the Body Snatchers (1978)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Philip Kaufman",
+        "confidence": 5
+      },
+      {
+        "name": "Return to Oz",
+        "display_name": "Return to Oz (1985)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Walter Murch",
+        "confidence": 5
+      },
+      {
+        "name": "Poltergeist",
+        "display_name": "Poltergeist (1982)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Tobe Hooper",
+        "confidence": 5
+      },
+      {
+        "name": "Full Metal Jacket",
+        "display_name": "Full Metal Jacket (1987)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Stanley Kubrick",
+        "confidence": 5
+      },
+      {
+        "name": "King Kong",
+        "display_name": "King Kong (2005)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Peter Jackson",
+        "confidence": 5
+      },
+      {
+        "name": "Bicentennial Man",
+        "display_name": "Bicentennial Man (1999)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Chris Columbus",
+        "confidence": 5
+      },
+      {
+        "name": "A Charlie Brown Christmas",
+        "display_name": "A Charlie Brown Christmas (1965)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Bill Melendez",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Smiling Friends frequently utilizes direct visual homages and parodies of iconic scenes from classic cinema.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "The Exorcist (1973)",
+          "details": "Referenced in the Glep possession scene."
+        },
+        {
+          "name": "Rocky II (1979)",
+          "details": "Referenced in Glep's training montage."
+        },
+        {
+          "name": "Spider-Man (2002)",
+          "details": "Referenced in Mr. Boss's mirror scene and the pumpkin bomb explosion."
+        },
+        {
+          "name": "Saving Private Ryan (1998)",
+          "details": "Referenced in the war flashback scene."
+        },
+        {
+          "name": "Dr. Strangelove (1964)",
+          "details": "Referenced by Charlie riding the bomb."
+        },
+        {
+          "name": "A Charlie Brown Christmas (1965)",
+          "details": "Referenced in the group dance scene."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "One \u2014 Harry Nilsson (Remix/Edit)",
+      "metadata_song": "sonido original",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All movies and directors were explicitly labeled in the video."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "split_screen",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Analytical and nostalgic, highlighting the intersection of modern animation and classic film history.",
+    "topic_hints": [
+      "Smiling Friends",
+      "Film History",
+      "Cinematic Parallels"
+    ],
+    "affect_hints": [
+      "Amused",
+      "Nostalgic",
+      "Impressed"
+    ],
+    "genre_hints": [
+      "Comparison Edit",
+      "Pop Culture Analysis"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5191,
+    "output_tokens": 3748,
+    "total_tokens": 8939,
+    "cost_usd": 0.003027,
+    "latency_ms": 32788,
+    "upload_ms": 5253
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "item_id": "7360789982048668974",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:17:38.904791+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:12",
+        "visual_description": "Paul Atreides holds up his father's ducal signet ring in a dimly lit space, looking solemn and determined.",
+        "audio_description": "Paul: 'This is my father's ducal signet.' Dramatic, low-frequency cinematic score.",
+        "text_on_screen": "THIS IS MY FATHER'S DUCAL SIGNET",
+        "key_objects": [
+          "Ducal Signet Ring"
+        ]
+      },
+      {
+        "time_range": "0:12-0:28",
+        "visual_description": "Paul addresses a massive crowd of Fremen, shouting with intense authority. Intercut shots of the crowd and Chani's focused expression.",
+        "audio_description": "Paul: 'I am Paul Muad'Dib Atreides, Duke of Arrakis! The hand of God be my witness, I am the voice from the outer world! I will lead you to paradise!' Crowd chants: 'Lisan al-Gaib!'",
+        "text_on_screen": "I AM PAUL MUAD'DIB ATREIDES DUKE OF ARRAKIS, THE HAND OF GOD BE MY WITNESS, I AM THE VOICE FROM THE OUTER WORLD, I WILL LEAD YOU TO PARADISE, LISAN AL-GAIB",
+        "key_objects": [
+          "Fremen crowd"
+        ]
+      },
+      {
+        "time_range": "0:28-0:40",
+        "visual_description": "Transition to a high-energy music edit. Close-ups of Paul's spice-blue eyes and his face covered in sand. Feyd-Rautha is introduced.",
+        "audio_description": "Paul: 'May thy knife chip and shatter.' Kendrick Lamar's 'Like That' verse begins playing.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "Crysknife"
+        ]
+      },
+      {
+        "time_range": "0:40-0:52",
+        "visual_description": "Fast-paced montage of the duel between Paul and Feyd-Rautha. Chani is shown reloading a heavy weapon in the desert.",
+        "audio_description": "Sound of blades clashing and heavy machinery reloading. Kendrick Lamar: 'I could tie Z's in this bitch, drop like flies in this bitch.'",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "Dueling knives",
+          "Fremen weapon"
+        ]
+      },
+      {
+        "time_range": "0:52-1:02",
+        "visual_description": "Paul stands triumphantly before his army. Stylized silhouettes of Paul against a bright orange sunset. Final logo animation.",
+        "audio_description": "Music continues with heavy bass. Crowd cheering in the background.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "Fremen army"
+        ]
+      }
+    ],
+    "overall_summary": "This is a cinematic fan edit of the film 'Dune: Part Two' focusing on the transformation of Paul Atreides into the Fremen messiah. It begins with Paul's powerful speech where he claims his title as Duke of Arrakis and the Lisan al-Gaib, then transitions into a high-energy action montage set to Kendrick Lamar. The video highlights key moments including his duel with Feyd-Rautha and his leadership of the Fremen forces.",
+    "people": [
+      {
+        "description": "Paul Atreides, the protagonist, seen leading the Fremen and dueling.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Timoth\u00e9e Chalamet"
+      },
+      {
+        "description": "Feyd-Rautha Harkonnen, the antagonist seen dueling Paul.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Austin Butler"
+      },
+      {
+        "description": "Chani, a Fremen warrior and Paul's companion.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Zendaya"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Dune: Part Two",
+        "display_name": "Dune: Part Two (2024)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Paul Atreides",
+        "display_name": "Paul Atreides",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Muad'Dib, Lisan al-Gaib",
+        "confidence": 5
+      },
+      {
+        "name": "Arrakis",
+        "display_name": "Arrakis",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Desert planet",
+        "confidence": 5
+      },
+      {
+        "name": "Like That",
+        "display_name": "Like That \u2014 Future, Metro Boomin, Kendrick Lamar",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Kendrick Lamar verse",
+        "confidence": 5
+      },
+      {
+        "name": "Lisan al-Gaib",
+        "display_name": "Lisan al-Gaib",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "The Voice from the Outer World",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Paul Atreides has fully embraced his role as the messianic leader of the Fremen to reclaim his family's honor.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Like That \u2014 Future, Metro Boomin, & Kendrick Lamar",
+      "metadata_song": "original sound - _pukatz_",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The audio is a specific edit of Kendrick Lamar's verse from 'Like That'."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "heavy_effects"
+    },
+    "visual_mood": "Epic, intense, and powerful with high-contrast lighting and fast-paced rhythmic editing.",
+    "topic_hints": [
+      "Dune: Part Two",
+      "Paul Atreides",
+      "Cinematic Edit"
+    ],
+    "affect_hints": [
+      "Empowered",
+      "Hyped",
+      "Awe-struck"
+    ],
+    "genre_hints": [
+      "Fan Edit",
+      "Movie Montage"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 7005,
+    "output_tokens": 1814,
+    "total_tokens": 8819,
+    "cost_usd": 0.002139,
+    "latency_ms": 22524,
+    "upload_ms": 5753
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "item_id": "7599828073558658335",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:48:08.184803+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:13",
+        "visual_description": "Kevin Von Erich, portrayed by Zac Efron, is visibly distressed and crying, being comforted by his younger brothers, Mike and Chris Von Erich, in an outdoor setting.",
+        "audio_description": "Kevin says, \"I'm sorry, boys.\" One brother replies, \"It's okay, Dad. You can cry. Everyone cries.\" Another brother adds, \"Yeah, what are you talking about? You cry all the time.\" Kevin sniffs. A brother asks, \"Do you think you know why you're sad?\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "football"
+        ]
+      },
+      {
+        "time_range": "0:13-0:14",
+        "visual_description": "A framed family photograph of the Von Erich family, including Fritz, Doris, and their sons.",
+        "audio_description": "Audio continues from previous scene.",
+        "text_on_screen": null,
+        "key_objects": [
+          "framed photograph"
+        ]
+      },
+      {
+        "time_range": "0:14-0:15",
+        "visual_description": "Kevin Von Erich is shown running intensely through a grassy field during sunset.",
+        "audio_description": "Melancholic instrumental music begins.",
+        "text_on_screen": null,
+        "key_objects": [
+          "field",
+          "trees"
+        ]
+      },
+      {
+        "time_range": "0:15-0:16",
+        "visual_description": "Three Von Erich brothers (Kevin, Kerry, and David) are seen in a car, appearing somber.",
+        "audio_description": "Instrumental music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car"
+        ]
+      },
+      {
+        "time_range": "0:16-0:17",
+        "visual_description": "Three Von Erich brothers are relaxing and smiling while floating in inner tubes on a river.",
+        "audio_description": "Instrumental music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "inner tubes",
+          "cans",
+          "cooler",
+          "river"
+        ]
+      },
+      {
+        "time_range": "0:17-0:18",
+        "visual_description": "A couple is embracing at a table in a diner, with a Texas flag visible in the background.",
+        "audio_description": "Instrumental music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "diner",
+          "tables",
+          "chairs",
+          "Texas flag",
+          "bottles"
+        ]
+      },
+      {
+        "time_range": "0:18-0:19",
+        "visual_description": "Kerry Von Erich, portrayed by Jeremy Allen White, looks contemplatively out of a bus window.",
+        "audio_description": "Instrumental music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "bus window"
+        ]
+      },
+      {
+        "time_range": "0:19-0:20",
+        "visual_description": "David Von Erich, portrayed by Harris Dickinson, looks contemplatively out of a bus window.",
+        "audio_description": "Instrumental music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "bus window"
+        ]
+      },
+      {
+        "time_range": "0:20-0:21",
+        "visual_description": "Three Von Erich brothers share a warm embrace outdoors.",
+        "audio_description": "Instrumental music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "trees"
+        ]
+      },
+      {
+        "time_range": "0:21-0:22",
+        "visual_description": "The Von Erich family, including Fritz, Doris, and their sons, gathers around an outdoor table for a meal.",
+        "audio_description": "Instrumental music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "dining table",
+          "food",
+          "beer bottles"
+        ]
+      },
+      {
+        "time_range": "0:22-0:23",
+        "visual_description": "David Von Erich, shirtless, looks back over his shoulder with a serious expression.",
+        "audio_description": "Instrumental music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:23-0:24",
+        "visual_description": "Kevin and Kerry Von Erich walk together in wrestling robes, appearing focused.",
+        "audio_description": "Instrumental music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "wrestling robes"
+        ]
+      },
+      {
+        "time_range": "0:24-0:25",
+        "visual_description": "Fritz Von Erich speaks to his sons (Kevin, Kerry, and David) in a locker room, who are dressed in wrestling attire.",
+        "audio_description": "Instrumental music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "locker room",
+          "wrestling attire"
+        ]
+      },
+      {
+        "time_range": "0:25-0:26",
+        "visual_description": "Fritz Von Erich and three of his sons sit on a porch at night, drinking beer.",
+        "audio_description": "Instrumental music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "porch",
+          "beer bottles"
+        ]
+      },
+      {
+        "time_range": "0:26-0:29",
+        "visual_description": "Kevin Von Erich runs through a field, appearing distraught and yelling.",
+        "audio_description": "Kevin's voiceover: \"Well, I guess it's because I used to be a brother.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "tree",
+          "field"
+        ]
+      },
+      {
+        "time_range": "0:29-0:31",
+        "visual_description": "Kevin Von Erich is shown in a struggle, pinning another man to the ground in a wrestling hold.",
+        "audio_description": "Kevin's voiceover: \"And I told you to look out for him! Take care of him!\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "dirt ground"
+        ]
+      },
+      {
+        "time_range": "0:31-0:34",
+        "visual_description": "The screen is black.",
+        "audio_description": "Instrumental music fades out.",
+        "text_on_screen": null,
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is an emotional montage from the movie \"The Iron Claw,\" depicting the tragic journey of the Von Erich wrestling family. It intersperses moments of brotherly camaraderie and family life with scenes of profound sadness and struggle. The narrative is underscored by Kevin Von Erich's poignant voiceover, reflecting on his identity and the heavy burden of loss within his family, making it a powerful tribute to their story.",
+    "people": [
+      {
+        "description": "Zac Efron portrays Kevin Von Erich, a central figure in the Von Erich wrestling family, shown crying, running, and wrestling. He is the primary speaker in the voiceover.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Zac Efron (Kevin Von Erich)"
+      },
+      {
+        "description": "Jeremy Allen White portrays Kerry Von Erich, one of the Von Erich brothers, seen in various family and wrestling-related scenes.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jeremy Allen White (Kerry Von Erich)"
+      },
+      {
+        "description": "Harris Dickinson portrays David Von Erich, another of the Von Erich brothers, featured in family gatherings and contemplative moments.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Harris Dickinson (David Von Erich)"
+      },
+      {
+        "description": "Holt McCallany portrays Fritz Von Erich, the patriarch of the Von Erich family and a former wrestler, seen in family photos and interactions with his sons.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Holt McCallany (Fritz Von Erich)"
+      },
+      {
+        "description": "Maura Tierney portrays Doris Von Erich, the mother of the Von Erich brothers, seen in family photos and at a family meal.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Maura Tierney (Doris Von Erich)"
+      },
+      {
+        "description": "Stanley Simons portrays Mike Von Erich, a younger brother, seen comforting Kevin and speaking.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Stanley Simons (Mike Von Erich)"
+      },
+      {
+        "description": "Brady Pierce portrays Chris Von Erich, a younger brother, seen comforting Kevin and speaking.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Brady Pierce (Chris Von Erich)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "The Iron Claw",
+        "display_name": "The Iron Claw (2023 movie)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Kevin Von Erich",
+        "display_name": "Kevin Von Erich",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Zac Efron",
+        "display_name": "Zac Efron (actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Kerry Von Erich",
+        "display_name": "Kerry Von Erich",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Jeremy Allen White",
+        "display_name": "Jeremy Allen White (actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "David Von Erich",
+        "display_name": "David Von Erich",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Harris Dickinson",
+        "display_name": "Harris Dickinson (actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Mike Von Erich",
+        "display_name": "Mike Von Erich",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Stanley Simons",
+        "display_name": "Stanley Simons (actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Chris Von Erich",
+        "display_name": "Chris Von Erich",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Fritz Von Erich",
+        "display_name": "Fritz Von Erich",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Holt McCallany",
+        "display_name": "Holt McCallany (actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Doris Von Erich",
+        "display_name": "Doris Von Erich",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Maura Tierney",
+        "display_name": "Maura Tierney (actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Von Erich family",
+        "display_name": "Von Erich family (wrestling dynasty)",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Professional Wrestling",
+        "display_name": "Professional Wrestling",
+        "type": "sport",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "through(Remastered)",
+        "display_name": "through (Remastered)",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video powerfully conveys the profound emotional toll and tragic losses experienced by the Von Erich family.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "It highlights the deep bond between the Von Erich brothers and the enduring pain of their collective and individual struggles.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "Kevin Von Erich's voiceover expresses a heavy burden of responsibility and regret, emphasizing the lasting impact of family tragedy.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "through(Remastered)",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": false,
+      "notes": "Actual song playing could not be definitively identified and compared to metadata without audio recognition tools. Character identification for younger brothers (Mike and Chris) is inferred from movie context and dialogue, not explicitly stated in the video itself."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "cinematic",
+      "editing_style": "montage"
+    },
+    "visual_mood": "melancholic, somber, nostalgic, emotional, dramatic",
+    "topic_hints": [
+      "Von Erich family",
+      "wrestling tragedy",
+      "brotherly bond"
+    ],
+    "affect_hints": [
+      "sadness",
+      "regret",
+      "nostalgia",
+      "empathy"
+    ],
+    "genre_hints": [
+      "movie clip",
+      "tribute",
+      "emotional edit"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 11505,
+    "output_tokens": 3941,
+    "total_tokens": 15446,
+    "cost_usd": 0.00409,
+    "latency_ms": 39196,
+    "upload_ms": 5534
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

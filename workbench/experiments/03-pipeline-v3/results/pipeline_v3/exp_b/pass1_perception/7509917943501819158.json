@@ -1,0 +1,160 @@
+{
+  "item_id": "7509917943501819158",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:50:05.147759+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:09",
+        "visual_description": "The creator stands in a room, showcasing a casual yet refined outfit consisting of a polo shirt and chino pants. They subtly adjust their posture, place hands in pockets, and shift weight, emphasizing the fit and the slight sheen of the fabric.",
+        "audio_description": "Upbeat hip-hop music plays throughout the video.",
+        "text_on_screen": "when clothes are a little shiny :",
+        "key_objects": [
+          "polo shirt",
+          "chino pants",
+          "watch"
+        ]
+      }
+    ],
+    "overall_summary": "This video showcases a men's casual outfit featuring a grey/taupe polo shirt and light beige chino pants. The creator highlights the subtle 'shine' of the clothes, suggesting it adds to the overall style. The video demonstrates a simple, put-together look, emphasizing the texture and fit of the garments. It serves as style inspiration for a minimalist aesthetic.",
+    "people": [
+      {
+        "description": "A man with a muscular build, wearing a short-sleeved polo shirt and chino pants, showcasing an outfit. He has short dark hair (not fully visible).",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Polo shirt",
+        "display_name": "Polo shirt (grey/taupe, short-sleeved, knitted texture)",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Chino pants",
+        "display_name": "Chino pants (light beige/khaki, relaxed fit)",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Watch",
+        "display_name": "Silver-toned wristwatch",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "National Stripper Anthem",
+        "display_name": "National Stripper Anthem",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "DJ D0MCAB",
+        "display_name": "DJ D0MCAB",
+        "type": "artist",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "A subtle shine on clothing can elevate a simple outfit.",
+        "source": "text_overlay",
+        "confidence": 4
+      },
+      {
+        "statement": "Chino pants and polo shirts can create a stylish and simple look.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Polo shirt outfit",
+          "details": "Grey/taupe short-sleeved polo shirt paired with light beige chino pants."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "National Stripper Anthem \u2014 DJ D0MCAB",
+      "metadata_song": "national stripper anthem by dj d0mcab",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Specific brand of watch and clothing items are not identifiable from visuals alone."
+    },
+    "presentation_style": {
+      "primary_format": "outfit_showcase",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Stylish, confident, clean, relaxed",
+    "topic_hints": [
+      "men's fashion",
+      "style inspiration",
+      "casual outfits"
+    ],
+    "affect_hints": [
+      "inspired",
+      "confident",
+      "relaxed"
+    ],
+    "genre_hints": [
+      "fashion content",
+      "style guide",
+      "outfit video"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4194,
+    "output_tokens": 1137,
+    "total_tokens": 5331,
+    "cost_usd": 0.001311,
+    "latency_ms": 12471,
+    "upload_ms": 3426
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

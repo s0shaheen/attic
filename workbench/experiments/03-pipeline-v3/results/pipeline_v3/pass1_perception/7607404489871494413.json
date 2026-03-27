@@ -1,0 +1,286 @@
+{
+  "item_id": "7607404489871494413",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:20:56.258644+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "Tiffany sits at her laptop, starting a virtual meeting with casual small talk.",
+        "audio_description": "Tiffany asks if someone is all packed for their trip; a male voice responds 'Nope'. Another voice shouts 'Tiffany!' playfully.",
+        "text_on_screen": "product manager 101\nhow to review the designs for a new feature\n(steps 1-10)\nmoments from a real design review for a new feature release with product and design stakeholders\nstep 1: start off with friendly conversation (we are all friends)",
+        "key_objects": [
+          "Laptop",
+          "Ring"
+        ]
+      },
+      {
+        "time_range": "0:04-0:10",
+        "visual_description": "Tiffany transitions the meeting into the official agenda, looking at her screen.",
+        "audio_description": "Tiffany thanks everyone for joining on a Friday and asks for updates from the last conversation.",
+        "text_on_screen": "step 2: ask for updates from the last conversation / the initial designs after a PRD readout",
+        "key_objects": [
+          "Laptop"
+        ]
+      },
+      {
+        "time_range": "0:10-0:15",
+        "visual_description": "Tiffany listens intently, resting her chin on her hand as the designer speaks.",
+        "audio_description": "A male voice says, 'Let me share... I've gone ahead and made some changes.'",
+        "text_on_screen": "step 3: give time for designer to walk though any changes",
+        "key_objects": [
+          "Laptop"
+        ]
+      },
+      {
+        "time_range": "0:15-0:22",
+        "visual_description": "Tiffany continues to listen and nod as the designer explains design choices.",
+        "audio_description": "The designer discusses a change in the UI and asks if it makes sense; Tiffany agrees.",
+        "text_on_screen": "step 4: designer q&a where product answers any questions on intent of a feature or unclear asks",
+        "key_objects": [
+          "Laptop"
+        ]
+      },
+      {
+        "time_range": "0:22-0:25",
+        "visual_description": "Tiffany points at her screen and asks a specific question about the UI elements.",
+        "audio_description": "Tiffany asks, 'And then are those X's then...?'",
+        "text_on_screen": "step 5: product q&a make sure to ask questions on design intent; it is ok to be nitpicky to ensure that the feature design fits with customer use case",
+        "key_objects": [
+          "Laptop"
+        ]
+      },
+      {
+        "time_range": "0:25-0:32",
+        "visual_description": "Tiffany listens to the designer's explanation of the intent behind the UI choice.",
+        "audio_description": "The designer explains the intent; Tiffany acknowledges it but notes her preference.",
+        "text_on_screen": "note: it is ok to disagree! remember that design and product think differently. design focuses on usability, product consistency, etc. PMs focus on use case and customer overall experience of the feature",
+        "key_objects": [
+          "Laptop"
+        ]
+      },
+      {
+        "time_range": "0:32-0:35",
+        "visual_description": "Tiffany types on her laptop while continuing the discussion.",
+        "audio_description": "Indistinct meeting chatter about design iterations.",
+        "text_on_screen": "step 6: continue discussions product manager x design meetings take a while because new, less defined features requires thoughtful back and forth",
+        "key_objects": [
+          "Laptop"
+        ]
+      },
+      {
+        "time_range": "0:35-0:39",
+        "visual_description": "Tiffany types notes into her laptop, defining the next steps.",
+        "audio_description": "Tiffany mentions adding a description for what the metrics mean.",
+        "text_on_screen": "step 7: after agreeing on a change, define clear asks for the designer to update for the next meeting",
+        "key_objects": [
+          "Laptop"
+        ]
+      },
+      {
+        "time_range": "0:39-0:42",
+        "visual_description": "Tiffany asks a clarifying question about the user flow.",
+        "audio_description": "Tiffany asks, 'What's the difference between when we choose to do an informational or...?'",
+        "text_on_screen": "step 8: ask any clarifying questions",
+        "key_objects": [
+          "Laptop"
+        ]
+      },
+      {
+        "time_range": "0:42-0:58",
+        "visual_description": "Tiffany summarizes the action items and explains the engineering impact.",
+        "audio_description": "Tiffany explains that certain designs need to be in the prototype to inform engineering on where data needs to live.",
+        "text_on_screen": "step 9: run-through on action items explain why we need certain pieces by certain timeline so that all stakeholders are aligned",
+        "key_objects": [
+          "Laptop"
+        ]
+      },
+      {
+        "time_range": "0:58-1:01",
+        "visual_description": "Tiffany waves goodbye to the camera/meeting participants and closes the session.",
+        "audio_description": "Tiffany says, 'Okay, see you guys in two weeks. Bye!'",
+        "text_on_screen": "step 10: goodbyes!!",
+        "key_objects": [
+          "Laptop"
+        ]
+      }
+    ],
+    "overall_summary": "This video provides a 'Product Manager 101' guide on how to conduct a design review for a new feature, featuring real footage from a meeting between creator Tiffany and her design team. Tiffany outlines a 10-step process that begins with friendly rapport and moves through designer walkthroughs, mutual Q&A sessions, and defining clear action items. She emphasizes that PMs and designers often have different perspectives\u2014usability versus customer use case\u2014and that disagreement is a healthy part of the iterative process. The video concludes with the importance of aligning on timelines to inform engineering requirements, showing the end-to-end flow of a professional tech meeting.",
+    "people": [
+      {
+        "description": "Asian female with long dark hair, wearing a white t-shirt over a grey long-sleeve shirt, acting as a Product Manager.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Tiffany (@tiffanysopenbook)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Tiffany",
+        "display_name": "Tiffany (@tiffanysopenbook)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Product Manager",
+        "display_name": "Product Manager (PM)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Role",
+        "confidence": 5
+      },
+      {
+        "name": "Product Designer",
+        "display_name": "Product Designer",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Role",
+        "confidence": 5
+      },
+      {
+        "name": "PRD",
+        "display_name": "Product Requirements Document (PRD)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Engineering",
+        "display_name": "Engineering Team",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Stakeholders",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Design reviews for large features are iterative and require thoughtful back-and-forth over several weeks.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "It is healthy for PMs and Designers to disagree because they prioritize different aspects: PMs focus on customer use cases while Designers focus on usability and consistency.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Effective meetings must end with clear action items and an explanation of how design choices impact engineering timelines.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Step 1: Friendly Conversation",
+          "details": "Start with small talk to build rapport with the team."
+        },
+        {
+          "name": "Step 2: Ask for Updates",
+          "details": "Check in on progress since the last meeting or PRD readout."
+        },
+        {
+          "name": "Step 3: Designer Walkthrough",
+          "details": "Allow the designer time to present any changes or new iterations."
+        },
+        {
+          "name": "Step 4: Designer Q&A",
+          "details": "Product Manager answers designer's questions regarding feature intent."
+        },
+        {
+          "name": "Step 5: Product Q&A",
+          "details": "PM asks nitpicky questions to ensure design fits customer use cases."
+        },
+        {
+          "name": "Step 6: Continue Discussions",
+          "details": "Acknowledge that complex features require lengthy, thoughtful debate."
+        },
+        {
+          "name": "Step 7: Define Clear Asks",
+          "details": "Agree on specific changes for the designer to update for the next session."
+        },
+        {
+          "name": "Step 8: Clarifying Questions",
+          "details": "Ask about specific UI/UX logic or differences in flow."
+        },
+        {
+          "name": "Step 9: Action Item Run-through",
+          "details": "Align stakeholders on why certain pieces are needed for engineering."
+        },
+        {
+          "name": "Step 10: Goodbyes",
+          "details": "Formally end the meeting."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound - tiffany | product manager",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video is a direct educational vlog with clear text overlays for every step."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Professional, educational, and authentic; the lighting is natural indoor light and the tone is focused yet friendly.",
+    "topic_hints": [
+      "Product Management",
+      "UI/UX Design",
+      "Tech Career Advice"
+    ],
+    "affect_hints": [
+      "Productive",
+      "Informative",
+      "Relatable"
+    ],
+    "genre_hints": [
+      "Educational",
+      "Career Vlog"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 7004,
+    "output_tokens": 2690,
+    "total_tokens": 9694,
+    "cost_usd": 0.002665,
+    "latency_ms": 27126,
+    "upload_ms": 5452
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

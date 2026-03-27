@@ -1,0 +1,180 @@
+{
+  "item_id": "7345594874315509000",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:08:09.940059+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Close-up of a cafe table featuring an espresso cup, a spoon, and a tin of ZYN nicotine pouches.",
+        "audio_description": "Slowed, atmospheric pop music with heavy bass and reverb.",
+        "text_on_screen": "Peak Male Experience",
+        "key_objects": [
+          "Espresso cup",
+          "ZYN Spearmint tin",
+          "Ashtray",
+          "Cafe table"
+        ]
+      },
+      {
+        "time_range": "0:02-0:04",
+        "visual_description": "The camera pans up from the table to reveal the massive, detailed facade of the Strasbourg Cathedral.",
+        "audio_description": "Music continues with dramatic vocals: 'I love you, I love you, I told you I do...'",
+        "text_on_screen": "Peak Male Experience",
+        "key_objects": [
+          "Strasbourg Cathedral",
+          "Gothic architecture"
+        ]
+      },
+      {
+        "time_range": "0:04-0:08",
+        "visual_description": "The creator films himself in a selfie-style shot, nodding and making a satisfied expression while sitting at the cafe.",
+        "audio_description": "Music continues: '...it's all I've ever felt, I've never felt so...'",
+        "text_on_screen": "Peak Male Experience",
+        "key_objects": [
+          "Grey beanie",
+          "White hoodie",
+          "Black jacket"
+        ]
+      }
+    ],
+    "overall_summary": "The video captures a man enjoying what he labels the 'Peak Male Experience' at an outdoor cafe in Strasbourg, France. The scene consists of a simple espresso, a tin of ZYN nicotine pouches, and a breathtaking view of the Strasbourg Cathedral. The creator uses a popular aesthetic audio to emphasize a sense of contentment and appreciation for the European lifestyle and atmosphere.",
+    "people": [
+      {
+        "description": "Young man with a mustache, wearing a grey beanie and a white hoodie under a black jacket.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Marcus Nevin"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Strasbourg Cathedral",
+        "display_name": "Strasbourg Cathedral (Cath\u00e9drale Notre-Dame de Strasbourg)",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Gothic architecture, located in Strasbourg, France",
+        "confidence": 5
+      },
+      {
+        "name": "ZYN Spearmint 6mg",
+        "display_name": "ZYN Spearmint Nicotine Pouches (6mg)",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Spearmint flavor, 6mg strength",
+        "confidence": 5
+      },
+      {
+        "name": "Woodkid",
+        "display_name": "Woodkid",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "I Love You",
+        "display_name": "I Love You - Woodkid",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "Slowed + Reverb version",
+        "confidence": 5
+      },
+      {
+        "name": "Strasbourg",
+        "display_name": "Strasbourg, France",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The combination of caffeine, nicotine, and a historic European view represents an ideal state of male relaxation.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Espresso",
+          "details": "Served at an outdoor cafe"
+        },
+        {
+          "name": "ZYN Spearmint",
+          "details": "6mg nicotine pouches"
+        },
+        {
+          "name": "Strasbourg Cathedral View",
+          "details": "Iconic Gothic landmark in France"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "I Love You \u2014 Woodkid",
+      "metadata_song": "I Love You",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The location and products are clearly visible and identifiable."
+    },
+    "presentation_style": {
+      "primary_format": "pov",
+      "camera_work": "panning",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Relaxed, aesthetic, and appreciative of historic architecture.",
+    "topic_hints": [
+      "Travel",
+      "European Cafe Culture",
+      "Lifestyle"
+    ],
+    "affect_hints": [
+      "Content",
+      "Satisfied",
+      "Peaceful"
+    ],
+    "genre_hints": [
+      "Aesthetic edit",
+      "Travel vlog"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2151,
+    "output_tokens": 1299,
+    "total_tokens": 3450,
+    "cost_usd": 0.001102,
+    "latency_ms": 15587,
+    "upload_ms": 3332
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

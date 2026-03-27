@@ -1,0 +1,52 @@
+{
+  "item_id": "7597634334664805646",
+  "parsed_output": {
+    "summary": "Creator @cookingforgains demonstrates how to make 10 servings of high-protein Cheesy Beef Alfredo Bowls for meal prep. The video provides specific nutritional macros and step-by-step instructions using lean ground beef, protein pasta, and frozen vegetables.",
+    "entities": [
+      {
+        "name": "@cookingforgains",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Cheesy beef Alfredo bowls",
+        "type": "recipe",
+        "relevance": "primary"
+      },
+      {
+        "name": "96/4 lean ground beef",
+        "type": "ingredient",
+        "relevance": "supporting"
+      },
+      {
+        "name": "protein pasta",
+        "type": "ingredient",
+        "relevance": "supporting"
+      },
+      {
+        "name": "CFG",
+        "type": "brand",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "food",
+      "secondary": "health"
+    },
+    "genre": "recipe",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "Creator @cookingforgains demonstrates a high-protein meal prep recipe for Cheesy Beef Alfredo Bowls, designed to make 10 servings. The video provides a detailed breakdown of macros: 481 calories, 46g protein, 15g fats, and 40g carbs per bowl. The cooking process involves browning 3 lbs of 96/4 lean ground beef seasoned with garlic, onion powder, salt, and pepper. The creator then adds 30 ounces of frozen peas and carrots to the meat before mixing in a box of boiled protein pasta. The video features the creator in a kitchen using large electric skillets to manage the bulk preparation. This tutorial is ideal for viewers searching for macro-friendly meal prep ideas, high-protein pasta recipes, or fitness-oriented cooking content. The final shot shows ten identical meal prep containers lined up on a counter."
+  },
+  "metrics": {
+    "input_tokens": 4402,
+    "output_tokens": 502,
+    "total_tokens": 4904,
+    "cost_usd": 0.000962,
+    "latency_ms": 8760,
+    "keyframe_count": 3
+  }
+}

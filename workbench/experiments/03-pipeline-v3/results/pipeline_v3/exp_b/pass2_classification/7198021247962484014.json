@@ -1,0 +1,75 @@
+{
+  "item_id": "7198021247962484014",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:03.415148+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "health",
+      "secondary": "fashion",
+      "micro_labels": [
+        "self-confidence",
+        "mental wellness",
+        "self-improvement",
+        "personal growth"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": [
+        "stream clip",
+        "advice video"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      },
+      {
+        "label": "wholesome",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4231,
+    "output_tokens": 346,
+    "total_tokens": 4577,
+    "cost_usd": 0.000842,
+    "latency_ms": 8130,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 1
+  }
+}

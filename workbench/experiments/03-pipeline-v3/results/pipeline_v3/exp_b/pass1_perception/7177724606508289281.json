@@ -1,0 +1,463 @@
+{
+  "item_id": "7177724606508289281",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:50:46.418037+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "The creator, a woman with blonde hair, speaks directly to the camera indoors, introducing her top 5 favorite coffeeshops in Amsterdam.",
+        "audio_description": "The creator states, \"These are my top five favorite coffee shops in Amsterdam.\"",
+        "text_on_screen": "My top 5 favourite Coffeeshops In Amsterdam\nThese are my top 5 favourite coffee shops in Amsterdam",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:02-0:04",
+        "visual_description": "An exterior shot of Abraxas Coffeeshop on a narrow street in Amsterdam, showing its distinctive sign and brick buildings.",
+        "audio_description": "The creator identifies, \"Number one is Abraxas coffee shop.\"",
+        "text_on_screen": "1. Abraxas\nJonge Roelensteeg 12-14\nNumber one is Abraxas coffee shop",
+        "key_objects": [
+          "Abraxas Coffeeshop sign"
+        ]
+      },
+      {
+        "time_range": "0:04-0:06",
+        "visual_description": "The interior of Abraxas Coffeeshop is shown, featuring wooden tables, chairs, and decorative lighting with autumn-themed elements.",
+        "audio_description": "The creator comments, \"Not only is the fit out super cool.\"",
+        "text_on_screen": "Not only is the fit out super cool",
+        "key_objects": [
+          "wooden table",
+          "decorative lighting"
+        ]
+      },
+      {
+        "time_range": "0:06-0:10",
+        "visual_description": "A close-up of a hot chocolate with cocoa powder and a wooden stirrer, placed next to a brown paper bag containing a muffin, against a mosaic wall.",
+        "audio_description": "The creator states, \"they also do the best hot chocolates and muffins in all of Amsterdam.\"",
+        "text_on_screen": "they also do the best hot chocolates and muffins in all of Amsterdam",
+        "key_objects": [
+          "hot chocolate",
+          "muffin",
+          "paper bag"
+        ]
+      },
+      {
+        "time_range": "0:10-0:12",
+        "visual_description": "The bar area of Abraxas Coffeeshop is displayed, featuring a wooden counter with bottles and the name 'ABRAXAS' visible.",
+        "audio_description": "The creator remarks, \"The vibes are on point.\"",
+        "text_on_screen": "The vibes are on point",
+        "key_objects": [
+          "bar counter",
+          "bottles",
+          "ABRAXAS sign"
+        ]
+      },
+      {
+        "time_range": "0:12-0:14",
+        "visual_description": "The creator is outdoors on an Amsterdam street, speaking to the camera with buildings and a white van in the background.",
+        "audio_description": "The creator mentions, \"It's located in the heart of the Red Light District.\"",
+        "text_on_screen": "It's located in the heart of the red light district",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:14-0:17",
+        "visual_description": "An exterior view of Cannacenter Best Friends Oud Zuid, a brick building with a dark storefront, with cars parked on the street and tram tracks visible.",
+        "audio_description": "The creator introduces, \"Number two is Cannacenter best friends in Oud Zuid.\"",
+        "text_on_screen": "2. Cannacenter Best Friends Oud Zuid\nAmstelveenseweg 61\nNumber 2 is Cannacenter best friends in Oud Zuid",
+        "key_objects": [
+          "Cannacenter Best Friends Oud Zuid storefront",
+          "cars",
+          "tram tracks"
+        ]
+      },
+      {
+        "time_range": "0:17-0:20",
+        "visual_description": "A wide shot of a park road lined with trees, some displaying autumn foliage, with people cycling in the distance.",
+        "audio_description": "The creator states, \"It's located near the south entrance of Vondelpark.\"",
+        "text_on_screen": "It's located near the south entrance of Vondelpark",
+        "key_objects": [
+          "trees",
+          "park road",
+          "bicycles"
+        ]
+      },
+      {
+        "time_range": "0:20-0:24",
+        "visual_description": "Another exterior shot of Cannacenter Best Friends Oud Zuid, similar to the previous one, highlighting the storefront and parked cars.",
+        "audio_description": "The creator explains, \"This place only does takeaway but in terms of quality and price it's the best.\"",
+        "text_on_screen": "This place only does takeaway but in terms of quality and price it's the best",
+        "key_objects": [
+          "Cannacenter Best Friends Oud Zuid storefront"
+        ]
+      },
+      {
+        "time_range": "0:24-0:27",
+        "visual_description": "The exterior of Original Dampkring Coffeeshop, featuring an ornate wooden facade, stained-glass windows, and a bicycle parked outside.",
+        "audio_description": "The creator introduces, \"Number three is Dampkring coffee shop.\"",
+        "text_on_screen": "3. Original Dampkring Coffeeshop\nHandboogstraat 29\nNumber 3 is Dampkring coffee shop",
+        "key_objects": [
+          "Original Dampkring Coffeeshop facade",
+          "stained-glass windows",
+          "bicycle"
+        ]
+      },
+      {
+        "time_range": "0:27-0:29",
+        "visual_description": "A close-up of the entrance to Original Dampkring Coffeeshop, showing the 'De Dampkring Coffeeshop' sign above the door.",
+        "audio_description": "The creator describes it as, \"It's such a vibey hangout spot.\"",
+        "text_on_screen": "It's such a vibey hangout spot",
+        "key_objects": [
+          "De Dampkring Coffeeshop sign"
+        ]
+      },
+      {
+        "time_range": "0:29-0:33",
+        "visual_description": "The creator is back on an Amsterdam street, speaking to the camera, with buildings forming a narrow alleyway in the background.",
+        "audio_description": "The creator states, \"the perfect place to get out of the cold. It's also located in the heart of Amsterdam.\"",
+        "text_on_screen": "the perfect place to get out of the cold\nIt's also located in the heart of Amsterdam",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:33-0:36",
+        "visual_description": "The exterior of Boerejongens Coffeeshop, a white building with large wooden-framed windows adorned with Christmas garlands.",
+        "audio_description": "The creator introduces, \"Number four is Boerejongens coffee shop.\"",
+        "text_on_screen": "4. Boerejongens Coffeeshop\nUtrechtsestraat 21\nNumber 4 is Boerejongens coffee shop",
+        "key_objects": [
+          "Boerejongens Coffeeshop facade",
+          "Christmas garlands"
+        ]
+      },
+      {
+        "time_range": "0:36-0:40",
+        "visual_description": "A view through the window of Boerejongens Coffeeshop, showing staff members behind a counter, with Christmas decorations on the window frame.",
+        "audio_description": "The creator describes it as, \"This is a five-star coffee shop where the staff wear the cutest little outfits with bow ties.\"",
+        "text_on_screen": "This is a 5 star coffee shop\nwhere the staff wear the cutest little outfits with bow ties",
+        "key_objects": [
+          "staff",
+          "bow ties",
+          "Christmas garlands"
+        ]
+      },
+      {
+        "time_range": "0:40-0:42",
+        "visual_description": "The creator is outdoors, speaking to the camera, with the Boerejongens Coffeeshop visible in the background.",
+        "audio_description": "The creator states, \"It's located right near Rembrandt Square.\"",
+        "text_on_screen": "It's located right near Rembrandt Square",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:42-0:45",
+        "visual_description": "The exterior of Boerejongens Coffeeshop West at night, brightly lit with numerous small lights and festive Christmas decorations.",
+        "audio_description": "The creator introduces, \"Number five is Boerejongens West.\"",
+        "text_on_screen": "5. Boerejongens Coffeeshop West\nBaarsjesweg 239\nNumber 5 is Boerejongens West",
+        "key_objects": [
+          "Boerejongens Coffeeshop West facade",
+          "Christmas lights"
+        ]
+      },
+      {
+        "time_range": "0:45-0:49",
+        "visual_description": "Interior shots of Boerejongens West, showcasing a tall Christmas tree with pink and gold ornaments, a wooden display case, and window decorations with hanging lights.",
+        "audio_description": "The creator describes it as, \"It is the prettiest coffee shop. It has such a cute and cozy vibe.\"",
+        "text_on_screen": "It is the prettiest coffee shop\nIt has such a cute and cozy vibe",
+        "key_objects": [
+          "Christmas tree",
+          "pink ornaments",
+          "gold ornaments",
+          "wooden display case",
+          "hanging lights"
+        ]
+      },
+      {
+        "time_range": "0:49-0:53",
+        "visual_description": "The creator is outdoors at night, holding up a pack of pink rolling papers.",
+        "audio_description": "The creator exclaims, \"They just gave Joyce and I pink rolling papers the service, hoenstly.\"",
+        "text_on_screen": "They just gave Joyce and I pink rolling papers the service, hoenstly",
+        "key_objects": [
+          "pink rolling papers (JOYCE brand)"
+        ]
+      },
+      {
+        "time_range": "0:53-0:59",
+        "visual_description": "A montage of exterior shots of the various coffeeshops previously featured in the video.",
+        "audio_description": "The creator encourages viewers, \"Save this video and add these coffee shops to your Amsterdam to do list and don't forget to follow me for more travel tips.\"",
+        "text_on_screen": "Save this video and add these coffee shops to your Amsterdam to do list\nAnd don\u2019t forget to follow me for more travel tips",
+        "key_objects": [
+          "Abraxas Coffeeshop",
+          "Cannacenter Best Friends Oud Zuid",
+          "Original Dampkring Coffeeshop",
+          "Boerejongens Coffeeshop",
+          "Boerejongens Coffeeshop West"
+        ]
+      }
+    ],
+    "overall_summary": "This video presents a curated list of the creator's top 5 favorite coffeeshops in Amsterdam, providing their names, addresses, and key features. It highlights each location's unique atmosphere, offerings like hot chocolates and muffins, and specific details such as staff attire or takeaway options. The creator also provides geographical context for each coffeeshop, making it a useful guide for tourists or locals looking for recommendations in Amsterdam.",
+    "people": [
+      {
+        "description": "A woman with blonde hair, wearing a black top and a black puffer jacket, speaking directly to the camera and presenting her recommendations.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@amzdicko"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Abraxas Coffeeshop",
+        "display_name": "Abraxas Coffeeshop",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Address: Jonge Roelensteeg 12-14, Amsterdam; Known for: cool fit-out, best hot chocolates and muffins, vibey, located in Red Light District",
+        "confidence": 5
+      },
+      {
+        "name": "Cannacenter Best Friends Oud Zuid",
+        "display_name": "Cannacenter Best Friends Oud Zuid",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Address: Amstelveenseweg 61, Amsterdam; Known for: takeaway only, best quality and price, located near south entrance of Vondelpark",
+        "confidence": 5
+      },
+      {
+        "name": "Original Dampkring Coffeeshop",
+        "display_name": "Original Dampkring Coffeeshop",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Address: Handboogstraat 29, Amsterdam; Known for: vibey hangout spot, good place to get out of the cold, located in the heart of Amsterdam",
+        "confidence": 5
+      },
+      {
+        "name": "Boerejongens Coffeeshop",
+        "display_name": "Boerejongens Coffeeshop (Utrechtsestraat)",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Address: Utrechtsestraat 21, Amsterdam; Known for: 5-star, staff wear cute outfits with bow ties, located near Rembrandt Square",
+        "confidence": 5
+      },
+      {
+        "name": "Boerejongens Coffeeshop West",
+        "display_name": "Boerejongens Coffeeshop West",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Address: Baarsjesweg 239, Amsterdam; Known for: prettiest coffeeshop, cute and cozy vibe",
+        "confidence": 5
+      },
+      {
+        "name": "Amsterdam",
+        "display_name": "Amsterdam",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Red Light District",
+        "display_name": "Red Light District, Amsterdam",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Vondelpark",
+        "display_name": "Vondelpark, Amsterdam",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "South entrance",
+        "confidence": 4
+      },
+      {
+        "name": "Rembrandt Square",
+        "display_name": "Rembrandt Square, Amsterdam",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Hot chocolate",
+        "display_name": "Hot chocolate",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Best in Amsterdam (according to creator)",
+        "confidence": 4
+      },
+      {
+        "name": "Muffin",
+        "display_name": "Muffin",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Best in Amsterdam (according to creator)",
+        "confidence": 4
+      },
+      {
+        "name": "Pink rolling papers",
+        "display_name": "Pink rolling papers (JOYCE brand)",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Brand: JOYCE",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Abraxas Coffeeshop has a cool fit-out and offers the best hot chocolates and muffins in Amsterdam.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Cannacenter Best Friends Oud Zuid is the best for takeaway in terms of quality and price.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Original Dampkring Coffeeshop is a vibey hangout spot and a perfect place to escape the cold.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Boerejongens Coffeeshop is a 5-star establishment with staff wearing cute outfits and bow ties.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Boerejongens Coffeeshop West is the prettiest coffeeshop with a cute and cozy vibe.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "These five coffeeshops should be added to an Amsterdam to-do list for travel tips.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Abraxas Coffeeshop",
+          "details": "Jonge Roelensteeg 12-14, Amsterdam. Known for cool fit-out, best hot chocolates and muffins, vibey, located in Red Light District."
+        },
+        {
+          "name": "Cannacenter Best Friends Oud Zuid",
+          "details": "Amstelveenseweg 61, Amsterdam. Takeaway only, best quality and price, located near the south entrance of Vondelpark."
+        },
+        {
+          "name": "Original Dampkring Coffeeshop",
+          "details": "Handboogstraat 29, Amsterdam. Vibey hangout spot, perfect to get out of the cold, located in the heart of Amsterdam."
+        },
+        {
+          "name": "Boerejongens Coffeeshop",
+          "details": "Utrechtsestraat 21, Amsterdam. 5-star coffeeshop, staff wear cute outfits with bow ties, located near Rembrandt Square."
+        },
+        {
+          "name": "Boerejongens Coffeeshop West",
+          "details": "Baarsjesweg 239, Amsterdam. Prettiest coffeeshop, cute and cozy vibe."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The text overlay 'hoenstly' was transcribed verbatim, preserving the likely typo."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "informative, enthusiastic, festive (due to Christmas decorations)",
+    "topic_hints": [
+      "Amsterdam travel",
+      "coffeeshop guide",
+      "local recommendations"
+    ],
+    "affect_hints": [
+      "helpful",
+      "excited",
+      "friendly"
+    ],
+    "genre_hints": [
+      "travel vlog",
+      "recommendation list",
+      "guide"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 19289,
+    "output_tokens": 4739,
+    "total_tokens": 24028,
+    "cost_usd": 0.005737,
+    "latency_ms": 41268,
+    "upload_ms": 6122
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "item_id": "7590447176166247710",
+  "parsed_output": {
+    "summary": "AI expert @rajistics explains the concept of 'semantic collapse' in RAG (Retrieval-Augmented Generation) systems and whether high-dimensional embeddings actually fail at scale. The video breaks down how contrastive learning works to group similar data points and separate different ones, providing a reality check on recent claims that RAG is fundamentally broken.",
+    "entities": [
+      {
+        "name": "@rajistics",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "RAG (Retrieval-Augmented Generation)",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Semantic Collapse",
+        "type": "trend_or_meme",
+        "relevance": "primary"
+      },
+      {
+        "name": "Contrastive Learning",
+        "type": "technique",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Field Museum",
+        "type": "place",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "education"
+    },
+    "genre": "news_commentary",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this 79-second video, creator @rajistics addresses the viral claim that RAG (Retrieval-Augmented Generation) is broken due to 'semantic collapse.' Filmed in front of a museum backdrop (Field Museum), the video uses diagrams to explain how contrastive learning works in feature spaces by pulling similar items together and pushing different items apart. It features a graph titled 'Real or AI Slop? Semantic Collapse in RAG Systems' which shows a decline in precision as scale increases from 1K to 100K. The content is designed for developers and AI enthusiasts looking to understand the nuances of vector embeddings, high-dimensional distance compression, and the practical reality of building production-grade RAG systems versus theoretical failures. The creator references his own blog and long-form videos for deeper context on embedding models."
+  },
+  "metrics": {
+    "input_tokens": 4285,
+    "output_tokens": 512,
+    "total_tokens": 4797,
+    "cost_usd": 0.00095,
+    "latency_ms": 8871,
+    "keyframe_count": 3
+  }
+}

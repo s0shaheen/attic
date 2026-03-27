@@ -1,0 +1,52 @@
+{
+  "item_id": "7590563268759014687",
+  "parsed_output": {
+    "summary": "This TikTok is a high-energy sports edit celebrating New York Knicks star Jalen Brunson. It features a clip of NY State Assembly member Zohran Mamdani praising the player, followed by a 'mixtape' of basketball highlights from the NBA Cup.",
+    "entities": [
+      {
+        "name": "Jalen Brunson",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "New York Knicks",
+        "type": "brand",
+        "relevance": "primary"
+      },
+      {
+        "name": "Zohran Mamdani",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "NBA Cup",
+        "type": "event",
+        "relevance": "supporting"
+      },
+      {
+        "name": "All Caps",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "sports",
+      "secondary": "politics"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "inspiring",
+      "secondary": "wholesome"
+    },
+    "viewer_orientation": "social_sharing",
+    "embedding_text": "A 40-second TikTok sports edit or 'mixtape' dedicated to New York Knicks point guard Jalen Brunson. The video opens with a clip of New York State Assembly member Zohran Mamdani speaking at a podium, whom the creator refers to as 'my mayor' in the caption. The footage then transitions into a fast-paced compilation of Brunson's basketball highlights, including on-court action from the NBA Cup Semifinals. Brunson is seen wearing his iconic number 11 jersey in both home white and away blue colors. The video is set to the song 'All Caps' by MF DOOM, emphasizing a gritty New York City aesthetic. This content is a tribute to Brunson's leadership and performance, likely saved by Knicks fans and those interested in NYC sports culture and local political figures."
+  },
+  "metrics": {
+    "input_tokens": 4294,
+    "output_tokens": 490,
+    "total_tokens": 4784,
+    "cost_usd": 0.000938,
+    "latency_ms": 10073,
+    "keyframe_count": 3
+  }
+}

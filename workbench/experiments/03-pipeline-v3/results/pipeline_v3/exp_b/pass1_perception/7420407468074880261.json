@@ -1,0 +1,334 @@
+{
+  "item_id": "7420407468074880261",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:51:45.090999+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Two male basketball players engage in a one-on-one game on an indoor court. One player, identified as DeAllen, executes a crossover dribble and scores a layup against Jlew.",
+        "audio_description": "Upbeat music plays with a male voice speaking in the background, possibly commentary or encouragement, followed by a swish sound effect.",
+        "text_on_screen": "JLEW 0-1 DeAllen\nBro think he is aonime",
+        "key_objects": [
+          "basketball",
+          "basketball hoop",
+          "indoor basketball court",
+          "scoreboard"
+        ]
+      },
+      {
+        "time_range": "0:05-0:11",
+        "visual_description": "Another one-on-one basketball match indoors. A player in red pants performs a series of dribble moves, causing his defender to fall, and then scores a basket.",
+        "audio_description": "The same upbeat music continues, with a swish sound effect after the shot.",
+        "text_on_screen": "Bro think he is aonime",
+        "key_objects": [
+          "basketball",
+          "basketball hoop",
+          "indoor basketball court",
+          "spectators"
+        ]
+      },
+      {
+        "time_range": "0:11-0:17",
+        "visual_description": "An indoor one-on-one basketball game featuring a player in a white shirt and black pants dribbling skillfully and scoring a jump shot.",
+        "audio_description": "The music continues, with a swish sound effect.",
+        "text_on_screen": "Bro think he is aonime",
+        "key_objects": [
+          "basketball",
+          "basketball hoop",
+          "indoor basketball court",
+          "scoreboard",
+          "team logo (eagle)"
+        ]
+      },
+      {
+        "time_range": "0:17-0:24",
+        "visual_description": "An outdoor one-on-one basketball game. A player in black pants and a black shirt dribbles past his defender and scores a basket.",
+        "audio_description": "The music continues, with a swish sound effect.",
+        "text_on_screen": "FRIGA 11-9 Jacksonville\nBro think he is aonime",
+        "key_objects": [
+          "basketball",
+          "outdoor basketball court",
+          "basketball hoop",
+          "trees"
+        ]
+      },
+      {
+        "time_range": "0:24-0:34",
+        "visual_description": "An indoor one-on-one basketball game. A player in a white shirt and black pants demonstrates advanced dribbling techniques and scores a jump shot.",
+        "audio_description": "The music continues, with a swish sound effect.",
+        "text_on_screen": "Bro think he is aonime",
+        "key_objects": [
+          "basketball",
+          "basketball hoop",
+          "indoor basketball court",
+          "scoreboard",
+          "team logo (eagle)"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a compilation of streetball highlights, showcasing various players demonstrating exceptional dribbling skills and scoring against defenders in one-on-one matchups. The clips feature both indoor and outdoor basketball courts, with several instances of defenders being 'broken' or falling due to the offensive player's moves. The recurring text overlay 'Bro think he is aonime' suggests a comparison to Aomine Daiki from Kuroko's Basketball, known for his unconventional and highly skilled streetball style.",
+    "people": [
+      {
+        "description": "Male basketball player, wearing a black shirt and grey shorts, dribbling the ball. Identified as Jlew in the text overlay.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jlew"
+      },
+      {
+        "description": "Male basketball player, wearing a black Nike shirt and black shorts, defending against Jlew and then scoring. Identified as DeAllen in the text overlay.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "DeAllen"
+      },
+      {
+        "description": "Male basketball player, wearing red pants and a white shirt, demonstrating advanced dribbling and scoring, causing his defender to fall.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Male basketball player, wearing a white shirt and black pants, dribbling and scoring a jump shot.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Male basketball player, shirtless, wearing black shorts, defending in an outdoor game. Identified as Friga in the text overlay.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Friga"
+      },
+      {
+        "description": "Male basketball player, wearing black pants and a black shirt, dribbling and scoring in an outdoor game. Identified as Jacksonville in the text overlay.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jacksonville"
+      },
+      {
+        "description": "Various male spectators and other players observing the games.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Jlew",
+        "display_name": "Jlew (Basketball Player)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "DeAllen",
+        "display_name": "DeAllen (Basketball Player)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Friga",
+        "display_name": "Friga (Basketball Player)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jacksonville",
+        "display_name": "Jacksonville (Basketball Player)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Kyrie Irving",
+        "display_name": "Kyrie Irving (NBA Player)",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Aomine Daiki",
+        "display_name": "Aomine Daiki (Kuroko's Basketball Character)",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": "Character from the anime/manga series Kuroko's Basketball, known for his streetball style; 'aonime' is a common misspelling.",
+        "confidence": 4
+      },
+      {
+        "name": "Kuroko's Basketball",
+        "display_name": "Kuroko's Basketball (Anime/Manga Series)",
+        "type": "movie_or_show",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Streetball",
+        "display_name": "Streetball (Basketball Style)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Dribbling",
+        "display_name": "Dribbling (Basketball Skill)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Basketball",
+        "display_name": "Basketball (Sport)",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Nike",
+        "display_name": "Nike (Sportswear Brand)",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "I'm With You",
+        "display_name": "I'm With You (Song by Avril Lavigne)",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Avril Lavigne",
+        "display_name": "Avril Lavigne (Artist)",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video showcases impressive streetball skills, particularly advanced dribbling techniques that can 'break' a defender's ankles.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "The players' style is compared to Aomine Daiki from Kuroko's Basketball, implying a high level of unconventional and effective basketball prowess.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "I'm With You \u2014 Avril Lavigne",
+      "metadata_song": "som original - Just_Levrone",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The metadata song 'som original - Just_Levrone' does not match the actual audio, which is 'I'm With You' by Avril Lavigne. 'Aonime' and 'kiyrieirving' are misspellings in the metadata/text overlay, corrected to Aomine Daiki and Kyrie Irving respectively for entity extraction."
+    },
+    "presentation_style": {
+      "primary_format": "compilation",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "energetic",
+    "topic_hints": [
+      "basketball highlights",
+      "streetball skills",
+      "dribbling techniques"
+    ],
+    "affect_hints": [
+      "excitement",
+      "awe",
+      "inspiration",
+      "admiration"
+    ],
+    "genre_hints": [
+      "sports",
+      "highlight reel",
+      "compilation"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 11884,
+    "output_tokens": 2671,
+    "total_tokens": 14555,
+    "cost_usd": 0.003385,
+    "latency_ms": 25309,
+    "upload_ms": 5748
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "item_id": "7609437403643661581",
+  "parsed_output": {
+    "summary": "Creator @trytwin.so demonstrates CLAWDbot, an AI agent that automates restaurant reservations using voice technology. The video discusses the tool's impact on the dining industry and references a setup guide created to help users navigate its technical requirements.",
+    "entities": [
+      {
+        "name": "CLAWDbot",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "@trytwin.so",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Rooney @Rooneeyk",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Google Docs",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Everything In Its Right Place",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "food"
+    },
+    "genre": "news_commentary",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "shocking"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this TikTok, creator @trytwin.so discusses the future of AI automation with CLAWDbot, a specialized AI agent designed to book restaurant tables via voice. Using a greenscreen effect, the creator reacts to a tweet from Rooney (@Rooneeyk) that questions the complexity of setting up the bot. The video highlights how AI is transforming dining services and mentions a Google Doc guide intended to simplify the 'nerdy' setup process for new users. The content is framed as a 'breaking the internet' moment for AI agents. Key visual elements include the creator speaking into a small lapel microphone while explaining the utility of automation in the hospitality sector, set to the song Everything In Its Right Place by Radiohead."
+  },
+  "metrics": {
+    "input_tokens": 4291,
+    "output_tokens": 473,
+    "total_tokens": 4764,
+    "cost_usd": 0.000927,
+    "latency_ms": 8392,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "item_id": "7579241142424800567",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:02:10.029602+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": null,
+      "micro_labels": [
+        "chicken shawarma",
+        "middle eastern cuisine",
+        "wrap recipes",
+        "homemade takeout"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "recipe",
+      "micro_labels": [
+        "cooking tutorial",
+        "food prep"
+      ],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "text_overlay",
+      "cinematic"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5337,
+    "output_tokens": 319,
+    "total_tokens": 5656,
+    "cost_usd": 0.000992,
+    "latency_ms": 8115,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 2
+  }
+}

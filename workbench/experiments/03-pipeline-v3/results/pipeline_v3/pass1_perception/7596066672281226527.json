@@ -1,0 +1,177 @@
+{
+  "item_id": "7596066672281226527",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:10.362376+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:13",
+        "visual_description": "Creator demonstrates using Claude Cowork to automate the renaming of generic screenshot files on a laptop.",
+        "audio_description": "Creator explains she is testing Claude Cowork to rename screenshots that currently have random character names.",
+        "text_on_screen": "Using Claude Cowork to rename screenshots with meaningful names\nhelp me rename my screenshots on my desktop with relevant names not random characters",
+        "key_objects": [
+          "MacBook",
+          "Claude Cowork interface"
+        ]
+      },
+      {
+        "time_range": "0:13-0:19",
+        "visual_description": "Close-up of the Claude interface showing a 'Progress' sidebar with a checklist of tasks being performed by the AI.",
+        "audio_description": "Creator highlights the progress checklist feature that shows what's been done and what's next.",
+        "text_on_screen": "Progress\n1. Analyze Desktop screenshots and generate descriptive names\n2. Analyzing Screenshots folder images\n3. Show proposed renames and get user approval\n4. Rename all approved files",
+        "key_objects": [
+          "Claude UI",
+          "Progress Sidebar"
+        ]
+      },
+      {
+        "time_range": "0:19-0:30",
+        "visual_description": "The screen displays a table comparing 'Current Name' (timestamps) with 'Proposed Name' (descriptive titles).",
+        "audio_description": "Creator reviews the list of proposed names, notes they look great, and prepares to approve the changes.",
+        "text_on_screen": "Desktop Screenshots (8 files)\nCurrent Name: Screenshot 2026-01-08 at 10.45.35 PM.png\nProposed Name: Bamboo-Accents-Wholesale-Preview-Mode.png\nProposed Name: Shopping-Cart-Icon-3-items.png\nProposed Name: Google-Analytics-Dashboard-Jan-2026.png\nProposed Name: Burning-Man-Playground-Arrival-Lineup.png",
+        "key_objects": [
+          "Claude UI",
+          "File list table"
+        ]
+      }
+    ],
+    "overall_summary": "This video demonstrates how to use 'Claude Cowork' to automatically rename screenshots with descriptive, meaningful filenames. The creator shows the process of prompting the AI, which then scans the desktop and screenshot folders, analyzes the image content, and generates a table of proposed names for user approval. The main takeaway is that this tool significantly simplifies digital organization by replacing generic timestamps with context-aware titles.",
+    "people": [
+      {
+        "description": "Female creator demonstrating software on her laptop; only hands and voice are present.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Claude",
+        "display_name": "Claude AI",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Claude Cowork",
+        "display_name": "Claude Cowork",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Model: Opus 4.5",
+        "confidence": 5
+      },
+      {
+        "name": "Google Analytics",
+        "display_name": "Google Analytics",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Mentioned in a proposed filename",
+        "confidence": 4
+      },
+      {
+        "name": "Burning Man",
+        "display_name": "Burning Man",
+        "type": "event",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Mentioned in a proposed filename",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Claude Cowork can analyze image content to generate descriptive filenames for screenshots.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "The tool provides a transparent workflow with progress tracking and a final approval step before modifying files.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Prompting",
+          "details": "Ask Claude to rename screenshots on the desktop with relevant names."
+        },
+        {
+          "name": "Analysis",
+          "details": "Claude scans the Desktop and Screenshots folders and analyzes image content."
+        },
+        {
+          "name": "Review",
+          "details": "Check the generated table comparing current names to proposed descriptive names."
+        },
+        {
+          "name": "Approval",
+          "details": "Approve the list to trigger the batch renaming process."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Unidentifiable ambient lo-fi track",
+      "metadata_song": "original sound \u2014 @spreadaioli",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The UI clearly shows 'Opus 4.5' as the model being used."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Productive and efficient",
+    "topic_hints": [
+      "AI Productivity Tools",
+      "File Organization",
+      "Claude AI Features"
+    ],
+    "affect_hints": [
+      "Helpful",
+      "Impressed",
+      "Organized"
+    ],
+    "genre_hints": [
+      "Tech Tutorial",
+      "Life Hack"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4148,
+    "output_tokens": 1527,
+    "total_tokens": 5675,
+    "cost_usd": 0.001538,
+    "latency_ms": 20341,
+    "upload_ms": 5678
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

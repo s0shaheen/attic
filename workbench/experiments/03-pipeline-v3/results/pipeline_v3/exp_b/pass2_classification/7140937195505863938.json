@@ -1,0 +1,76 @@
+{
+  "item_id": "7140937195505863938",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:51.546356+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "travel",
+      "micro_labels": [
+        "cafe recommendations",
+        "Amsterdam travel",
+        "coffee shops",
+        "brunch spots"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "compilation",
+      "micro_labels": [
+        "aesthetic montage",
+        "travel guide",
+        "recommendation list"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "relaxing",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "text_overlay",
+      "cinematic"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4231,
+    "output_tokens": 350,
+    "total_tokens": 4581,
+    "cost_usd": 0.000845,
+    "latency_ms": 8463,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 1
+  }
+}

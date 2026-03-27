@@ -1,0 +1,211 @@
+{
+  "item_id": "7599076298379644173",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:06:45.899943+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "Creator speaks directly to the camera, gesturing as icons for Instagram's repost button, visible likes, and location map appear above him.",
+        "audio_description": "The creator explains that Instagram added features like the repost button and visible likes because they are desperate to appear as if real people still use the platform.",
+        "text_on_screen": "The reason Instagram added a repost button and visible likes on reels and a location map is because they're desperate to make it look like their platform still has real people on it",
+        "key_objects": [
+          "Instagram icons",
+          "Repost button icon",
+          "Location map icon"
+        ]
+      },
+      {
+        "time_range": "0:07-0:16",
+        "visual_description": "Creator continues his explanation; a screenshot of a Forbes article citation appears briefly.",
+        "audio_description": "He notes that users originally joined for connection, but the platform randomized feeds and filled them with 'slop,' citing a Forbes claim that 70% of posts are AI-generated.",
+        "text_on_screen": "I mean, if you think about it we all came to Instagram to connect with our friends, but then they randomized our feeds and crammed slop down our throats, and now, according to Forbes, 70% of all social media posts are AI generated. Drenik, Gary. 'The Secret to Profitability in Gen AI Lies in Customer Centricity.' Forbes. April 1, 2025.",
+        "key_objects": [
+          "Forbes article screenshot"
+        ]
+      },
+      {
+        "time_range": "0:16-0:30",
+        "visual_description": "Creator discusses user disillusionment; screenshots of BBC and academic citations appear.",
+        "audio_description": "He argues that users are disappointed by the lack of human connection, leading to a 'legitimacy crisis' for Instagram.",
+        "text_on_screen": "That's making us increasingly disillusioned with the platform as we continue to go on there to find human connection and yet are consistently disappointed. As a result, fewer people are posting online, and Instagram is facing a legitimacy crisis where they need ways to convince you that they are still a form of 'social media' between you and your friends. Kas, Kelly. 'Why Did Our Friends Stop Posting on Social Media?' BBC. July 23, 2025. Alori, Gilad, and Sebasti\u00e1n Gual. 'From a Network to a Desktop: The Legitimacy of Social Media.' Stan. Tech. L. Rev. 26 (2022): 42.",
+        "key_objects": [
+          "BBC article screenshot",
+          "Academic paper citation"
+        ]
+      },
+      {
+        "time_range": "0:30-0:47",
+        "visual_description": "Creator explains the 'insidious' nature of the repost feature; another academic citation appears.",
+        "audio_description": "He claims the repost button is meant to trick users into thinking algorithmic content has been validated by their friends, creating a false sense of social interaction.",
+        "text_on_screen": "And the rip-off of the Snap Map is obvious, But the repost and visible like features are far more insidious because they're meant to give the impression that your algorithmically recommended content has somehow been validated by real people you know. It feels more okay to consume slop if you see that your friends have signed off on it, because that creates the illusion that you're still having a social interaction, even though you're really not. Castelo, Itzar, Michael Etter, and Finn Arup Nielsen. 'Strategies of legitimacy through social media: The networked strategy.' Journal of Management Studies 53.3 (2016): 402-432.",
+        "key_objects": [
+          "Academic paper citation"
+        ]
+      },
+      {
+        "time_range": "0:47-1:02",
+        "visual_description": "Creator concludes with a warning about the loss of authentic posts.",
+        "audio_description": "He defines the term 'discursive legitimation' and reminds the viewer that every reposted video replaces a real post from someone they actually care about.",
+        "text_on_screen": "This is a technique called 'discursive legitimation,' and social media platforms appear more legitimate the more they seem like neutral institutions connecting networks of people together, rather than intermediaries affecting everything we see. But just remember that every time you see a reposted video is one time you're not seeing a real post by someone you care about",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "In this video, creator @etymologynerd provides a critical analysis of Instagram's recent feature updates, such as the repost button and visible likes. He argues that these features are 'insidious' attempts at 'discursive legitimation,' designed to mask a decline in genuine user interaction and the rise of AI-generated content. By showing that friends have 'liked' or 'reposted' algorithmic content, the platform creates a false illusion of social connection. The main takeaway is that these features serve the platform's business interests by making 'slop' content feel more acceptable, ultimately displacing authentic posts from a user's actual social circle.",
+    "people": [
+      {
+        "description": "A man with brown hair, glasses, and a mustache wearing a dark blue sweatshirt with a crest.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@etymologynerd"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Instagram",
+        "display_name": "Instagram",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Adam Mosseri",
+        "display_name": "Adam Mosseri",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": "Head of Instagram",
+        "confidence": 5
+      },
+      {
+        "name": "Forbes",
+        "display_name": "Forbes",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "BBC",
+        "display_name": "BBC",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Snapchat",
+        "display_name": "Snapchat",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Referenced via 'Snap Map'",
+        "confidence": 4
+      },
+      {
+        "name": "Gary Drenik",
+        "display_name": "Gary Drenik",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Forbes contributor",
+        "confidence": 5
+      },
+      {
+        "name": "Discursive Legitimation",
+        "display_name": "Discursive Legitimation",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Sociological/Management concept",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Instagram uses features like reposts and visible likes to create a false sense of social validation for algorithmically recommended content.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Social media platforms are facing a 'legitimacy crisis' due to the prevalence of AI-generated content and declining user posts.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Every reposted video in a feed replaces an authentic post from a real friend.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "The Lamp \u2014 Tommy Guerrero",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The citations used in the video include future dates (2025), suggesting the creator is using them as a rhetorical device or speculative commentary on current trends."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Analytical and slightly cynical with a focus on media criticism.",
+    "topic_hints": [
+      "Social Media Trends",
+      "Digital Sociology",
+      "Algorithmic Criticism"
+    ],
+    "affect_hints": [
+      "Skeptical",
+      "Informed",
+      "Disillusioned"
+    ],
+    "genre_hints": [
+      "Video Essay",
+      "Social Commentary"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 7008,
+    "output_tokens": 2176,
+    "total_tokens": 9184,
+    "cost_usd": 0.002357,
+    "latency_ms": 29579,
+    "upload_ms": 5911
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

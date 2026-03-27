@@ -1,0 +1,553 @@
+{
+  "item_id": "7372950624696159530",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:56:22.494267+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "A car drives up a circular driveway towards a grand, classical-style building with a fountain in the foreground. The building is light-colored with columns and a red-tiled roof.",
+        "audio_description": "The creator introduces the RH Restaurant in Indianapolis, describing it as a gorgeous house on a beautiful property.",
+        "text_on_screen": "The RH Restaurant\n\ud83d\udccd Indianapolis",
+        "key_objects": [
+          "RH Restaurant building",
+          "fountain",
+          "trees",
+          "car"
+        ]
+      },
+      {
+        "time_range": "0:07-0:10",
+        "visual_description": "The camera pans across the exterior of the building, showcasing manicured hedges and a statue in a courtyard area.",
+        "audio_description": "The creator continues to describe the property as gorgeous and beautiful.",
+        "text_on_screen": "",
+        "key_objects": [
+          "RH Restaurant building",
+          "manicured hedges",
+          "statue",
+          "patio umbrella"
+        ]
+      },
+      {
+        "time_range": "0:10-0:13",
+        "visual_description": "An interior shot of a large, elegant dining room with high arched ceilings, numerous tables and chairs, and a striking multi-tiered chandelier hanging from the ceiling.",
+        "audio_description": "The creator identifies this as the main dining room and praises the food and views.",
+        "text_on_screen": "",
+        "key_objects": [
+          "dining room",
+          "tables",
+          "chairs",
+          "chandelier",
+          "mirrors"
+        ]
+      },
+      {
+        "time_range": "0:13-0:14",
+        "visual_description": "A close-up shot of a menu displaying various food items and prices, next to a silver fork and a white napkin.",
+        "audio_description": "The creator mentions the food was 'so good'.",
+        "text_on_screen": "CHARRED RIBEYE STEAK\nPETITE FILET MIGNON\nBOILED SALMON\nROTISSERIE CHICKEN\nTRUFFLE FRIES\nSWEET POTATO FRIES\nFRENCH FRIES\nCHARRED HEIRLOOM BROCCOLINI\nCHARRED BABY PEPPERS\nCARAMELIZED BANANA SPLIT\nBUTTERSCOTCH BR\u00dbL\u00c9E\nAMERICAN BIRTHDAY CAKE",
+        "key_objects": [
+          "menu",
+          "fork",
+          "napkin"
+        ]
+      },
+      {
+        "time_range": "0:14-0:21",
+        "visual_description": "Exterior views from a patio overlooking a large lake surrounded by lush green trees under a cloudy sky. The patio features stone balustrades and comfortable outdoor seating.",
+        "audio_description": "The creator describes the views as absolutely stunning and suggests walking on the patio after dinner to check out the furniture.",
+        "text_on_screen": "",
+        "key_objects": [
+          "lake",
+          "trees",
+          "patio",
+          "balustrade",
+          "outdoor furniture",
+          "statue"
+        ]
+      },
+      {
+        "time_range": "0:21-0:23",
+        "visual_description": "An interior shot looking out through tall, dark-framed glass doors onto the patio and the lake beyond.",
+        "audio_description": "The creator suggests sitting out on the patio after dinner.",
+        "text_on_screen": "EXIT",
+        "key_objects": [
+          "glass doors",
+          "patio",
+          "lake"
+        ]
+      },
+      {
+        "time_range": "0:23-0:26",
+        "visual_description": "An exterior shot of the grand building from the patio, showing multiple levels of outdoor seating, including sofas and chairs around a fire pit.",
+        "audio_description": "The creator mentions bringing drinks to the patio.",
+        "text_on_screen": "",
+        "key_objects": [
+          "RH Restaurant building",
+          "patio",
+          "outdoor sofas",
+          "outdoor chairs",
+          "fire pit table"
+        ]
+      },
+      {
+        "time_range": "0:26-0:28",
+        "visual_description": "The creator, @arabellajensenn, takes a mirror selfie in a hallway, holding a glass of ros\u00e9 wine. She is wearing a white one-shoulder dress.",
+        "audio_description": "The creator expresses enjoyment about being able to take drinks throughout the house.",
+        "text_on_screen": "",
+        "key_objects": [
+          "creator",
+          "mirror",
+          "wine glass",
+          "white dress"
+        ]
+      },
+      {
+        "time_range": "0:28-0:31",
+        "visual_description": "A long, arched hallway with terracotta-colored tiled floors, white walls, ornate chandeliers, framed artwork, and classical busts on pedestals.",
+        "audio_description": "The creator continues to describe viewing the rooms with a drink in hand.",
+        "text_on_screen": "",
+        "key_objects": [
+          "hallway",
+          "chandeliers",
+          "artwork",
+          "sculptures",
+          "busts"
+        ]
+      },
+      {
+        "time_range": "0:31-0:32",
+        "visual_description": "A bedroom display featuring a four-poster bed with neutral bedding, bedside tables, lamps, and a crystal chandelier.",
+        "audio_description": "The creator states that all the furniture is Restoration Hardware and can be purchased there.",
+        "text_on_screen": "",
+        "key_objects": [
+          "four-poster bed",
+          "bedding",
+          "bedside tables",
+          "lamps",
+          "chandelier"
+        ]
+      },
+      {
+        "time_range": "0:32-0:34",
+        "visual_description": "The creator walks up a grand staircase with light-colored steps and a dark metal railing.",
+        "audio_description": "The creator continues to mention that the furniture is Restoration Hardware and available for purchase.",
+        "text_on_screen": "",
+        "key_objects": [
+          "creator",
+          "staircase",
+          "railing"
+        ]
+      },
+      {
+        "time_range": "0:34-0:35",
+        "visual_description": "A view from the top of the staircase, looking down into a lower level with a large chandelier visible through an archway.",
+        "audio_description": "The creator continues to describe the furniture.",
+        "text_on_screen": "",
+        "key_objects": [
+          "chandelier",
+          "archway",
+          "balcony railing"
+        ]
+      },
+      {
+        "time_range": "0:35-0:37",
+        "visual_description": "A long, narrow hallway with dark wooden floors, white walls, framed artwork, and multiple ornate chandeliers.",
+        "audio_description": "The creator describes the rooms as well-decorated and beautifully done.",
+        "text_on_screen": "",
+        "key_objects": [
+          "hallway",
+          "artwork",
+          "chandeliers"
+        ]
+      },
+      {
+        "time_range": "0:37-0:39",
+        "visual_description": "A living room display with a large white sofa, a glass coffee table, two floor lamps, and a modern chandelier. Framed artwork adorns one wall.",
+        "audio_description": "The creator reiterates that the rooms are beautifully done everywhere.",
+        "text_on_screen": "",
+        "key_objects": [
+          "sofa",
+          "coffee table",
+          "chandelier",
+          "floor lamps",
+          "artwork"
+        ]
+      },
+      {
+        "time_range": "0:39-0:42",
+        "visual_description": "A 'Wine Bar' area with staff serving customers. The bar is white with shelves of wine bottles and glasses, and large chandeliers overhead.",
+        "audio_description": "The creator points out a 'cute little wine bar' where you can buy wine to drink throughout the rooms.",
+        "text_on_screen": "WINE BAR",
+        "key_objects": [
+          "wine bar",
+          "staff",
+          "customers",
+          "wine bottles",
+          "wine glasses",
+          "chandeliers"
+        ]
+      },
+      {
+        "time_range": "0:42-0:43",
+        "visual_description": "An interior shot of a room with a window offering a view of the lake and trees outside.",
+        "audio_description": "The creator mentions taking wine to drink throughout the rooms.",
+        "text_on_screen": "",
+        "key_objects": [
+          "window",
+          "lake",
+          "trees",
+          "lamp"
+        ]
+      },
+      {
+        "time_range": "0:43-0:44",
+        "visual_description": "A view from the top of the staircase, looking down into a lower level with a large chandelier visible through an archway.",
+        "audio_description": "The creator continues to describe the experience of viewing the rooms.",
+        "text_on_screen": "",
+        "key_objects": [
+          "chandelier",
+          "archway",
+          "balcony railing"
+        ]
+      },
+      {
+        "time_range": "0:44-0:46",
+        "visual_description": "A living room display with a large white sectional sofa, a dark coffee table, and a large, circular chandelier with many lights.",
+        "audio_description": "The creator emphasizes how pretty the views from the rooms are.",
+        "text_on_screen": "",
+        "key_objects": [
+          "sectional sofa",
+          "coffee table",
+          "chandelier",
+          "bookshelves"
+        ]
+      },
+      {
+        "time_range": "0:46-0:48",
+        "visual_description": "A bedroom display with a four-poster bed, and two people standing in the room, one holding a drink.",
+        "audio_description": "The creator reiterates that the views for the rooms were 'so, so pretty'.",
+        "text_on_screen": "",
+        "key_objects": [
+          "four-poster bed",
+          "people",
+          "drink"
+        ]
+      },
+      {
+        "time_range": "0:48-0:50",
+        "visual_description": "The creator walks through a living room display with a large white sectional sofa, a dark coffee table, and a large, circular chandelier.",
+        "audio_description": "The creator continues to praise the views.",
+        "text_on_screen": "",
+        "key_objects": [
+          "creator",
+          "sectional sofa",
+          "coffee table",
+          "chandelier"
+        ]
+      },
+      {
+        "time_range": "0:50-0:53",
+        "visual_description": "An exterior shot of the circular driveway with a fountain, surrounded by trees, under a cloudy sky. A black SUV drives away.",
+        "audio_description": "The creator strongly recommends checking out the place if you are in the Indy area.",
+        "text_on_screen": "",
+        "key_objects": [
+          "circular driveway",
+          "fountain",
+          "trees",
+          "black SUV"
+        ]
+      }
+    ],
+    "overall_summary": "This video provides a tour of the RH Restaurant in Indianapolis, highlighting its luxurious ambiance and unique concept. The creator showcases the grand exterior, the elegant main dining room, and the stunning patio views overlooking a lake. Beyond dining, the video emphasizes that the entire property functions as a Restoration Hardware showroom, where all the beautifully decorated furniture and decor are available for purchase. The creator also notes the convenience of being able to carry drinks throughout the various display rooms and outdoor areas, making it a comprehensive experience for both dining and home decor enthusiasts. The main takeaway is a strong recommendation to visit this establishment if in the Indianapolis area.",
+    "people": [
+      {
+        "description": "Young woman with long dark hair, wearing a white one-shoulder dress, holding a drink. She is the creator of the video, providing voiceover narration and appearing in a mirror selfie and walking through rooms.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "arabellajensenn"
+      },
+      {
+        "description": "Various patrons and staff members are seen in the dining room, wine bar, and display rooms, interacting and moving around the space.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "RH Restaurant",
+        "display_name": "The RH Restaurant",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "caption",
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Indianapolis",
+        "display_name": "Indianapolis, Indiana",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "caption"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Restoration Hardware",
+        "display_name": "Restoration Hardware (RH)",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "SABOR A MI (Versi\u00f3n Piano)",
+        "display_name": "SABOR A MI (Versi\u00f3n Piano)",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Charred Ribeye Steak",
+        "display_name": "Charred Ribeye Steak",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Petite Filet Mignon",
+        "display_name": "Petite Filet Mignon",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Boiled Salmon",
+        "display_name": "Boiled Salmon",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Rotisserie Chicken",
+        "display_name": "Rotisserie Chicken",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Truffle Fries",
+        "display_name": "Truffle Fries",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Sweet Potato Fries",
+        "display_name": "Sweet Potato Fries",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "French Fries",
+        "display_name": "French Fries",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Charred Heirloom Broccolini",
+        "display_name": "Charred Heirloom Broccolini",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Charred Baby Peppers",
+        "display_name": "Charred Baby Peppers",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Caramelized Banana Split",
+        "display_name": "Caramelized Banana Split",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Butterscotch Br\u00fbl\u00e9e",
+        "display_name": "Butterscotch Br\u00fbl\u00e9e",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "American Birthday Cake",
+        "display_name": "American Birthday Cake",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Wine Bar",
+        "display_name": "Wine Bar",
+        "type": "restaurant",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The RH Restaurant in Indianapolis offers a unique luxury dining and home decor shopping experience, with stunning views and the ability to explore the entire property with drinks.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "All furniture and decor displayed at the RH Restaurant is from Restoration Hardware and available for purchase.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The RH Restaurant in Indianapolis is a must-visit destination for those in the area.",
+        "source": "voiceover",
+        "implied": true,
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "RH Restaurant",
+          "details": "Luxury dining and Restoration Hardware showroom in Indianapolis with stunning views and a wine bar."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "SABOR A MI (Versi\u00f3n Piano)",
+      "metadata_song": "SABOR A MI (Versi\u00f3n Piano)",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific artist for 'SABOR A MI (Versi\u00f3n Piano)' is not provided in the metadata or audio, so it's listed generically."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "handheld",
+      "editing_style": "montage"
+    },
+    "visual_mood": "luxurious, elegant, inviting, grand, serene",
+    "topic_hints": [
+      "luxury dining",
+      "home decor",
+      "travel recommendations"
+    ],
+    "affect_hints": [
+      "impressed",
+      "aspirational",
+      "relaxed",
+      "excited"
+    ],
+    "genre_hints": [
+      "restaurant review",
+      "travel vlog",
+      "home tour",
+      "lifestyle"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 17425,
+    "output_tokens": 4561,
+    "total_tokens": 21986,
+    "cost_usd": 0.00535,
+    "latency_ms": 32994,
+    "upload_ms": 5689
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

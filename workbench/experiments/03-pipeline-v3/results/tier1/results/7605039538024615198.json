@@ -1,0 +1,52 @@
+{
+  "item_id": "7605039538024615198",
+  "parsed_output": {
+    "summary": "This TikTok highlights Lardon, a restaurant in Chicago's Logan Square neighborhood that was recently recognized in the Michelin Guide 2026 for its sandwiches. The creator showcases the shop's house-made meats and salumi, recommending it as a mandatory stop for foodies in the city.",
+    "entities": [
+      {
+        "name": "Lardon",
+        "type": "restaurant",
+        "relevance": "primary"
+      },
+      {
+        "name": "Michelin Guide 2026",
+        "type": "event",
+        "relevance": "primary"
+      },
+      {
+        "name": "Logan Square",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Chicago",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "@realtorchicago773",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "food",
+      "secondary": "travel"
+    },
+    "genre": "review",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "A restaurant review of Lardon in Chicago's Logan Square, which was recently featured on the Michelin Guide 2026 Must-Try Sandwiches list. The video, created by @realtorchicago773, shows the exterior of the building with its iconic red 'LARDON' entryway and a pig-shaped sign. Inside, the footage highlights a professional salumi display case filled with various house-made cured meats and a neon 'SALUMI' sign. The creator is seen eating a large sandwich featuring fresh avocado and artisanal bread. This content is a recommendation for anyone searching for the best sandwiches in Chicago, Michelin-recognized casual dining, or food spots in Logan Square. It emphasizes high-quality technique and house-made ingredients over 'fluff,' positioning Lardon as a mandatory destination for local food enthusiasts."
+  },
+  "metrics": {
+    "input_tokens": 4388,
+    "output_tokens": 497,
+    "total_tokens": 4885,
+    "cost_usd": 0.000956,
+    "latency_ms": 7626,
+    "keyframe_count": 3
+  }
+}

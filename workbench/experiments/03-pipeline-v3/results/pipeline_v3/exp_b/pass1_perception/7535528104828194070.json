@@ -1,0 +1,283 @@
+{
+  "item_id": "7535528104828194070",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:52:27.092870+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Animated figures with a sun-like head and a blue creature are shown in a stylized, colorful setting.",
+        "audio_description": "The creator introduces the film, stating it's not what it looks like.",
+        "text_on_screen": "okay... I promise this is not what it looks like",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "A large, grey, rock-like animated figure is depicted, followed by a yellow figure lifting a dark mass.",
+        "audio_description": "The creator claims it's one of the greatest animated films many haven't seen.",
+        "text_on_screen": "this is one of the greatest ANIMATED FILMS you probably haven't seen.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:06-0:09",
+        "visual_description": "A black screen with large yellow text 'DAY 3' is displayed.",
+        "audio_description": "The creator explains this is day three of sharing obscure 80s animated films.",
+        "text_on_screen": "DAY 3 This is day three of sharing 80s ANIMATION some of the weirdest,",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:09-0:13",
+        "visual_description": "Scenes from the animated film show a sad-looking girl with long white hair, followed by a close-up of a menacing owl-like creature with glowing orange eyes.",
+        "audio_description": "The creator continues describing the films as obscure and traumatic animated films from the 1980s.",
+        "text_on_screen": "most obscure, and downright traumatic animated films from the 1980s.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:13-0:18",
+        "visual_description": "A yellow figure floats above a blue mountain with a black swan below, then a yellow figure with a sun-like head stands against a dark background with a moon.",
+        "audio_description": "The creator introduces today's film as visually striking.",
+        "text_on_screen": "And today's film is easily one of the most visually striking films I have ever seen.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:18-0:22",
+        "visual_description": "A movie poster for 'Son of the White Mare' is shown, featuring a white horse with a glowing orange center against a blue, star-filled background.",
+        "audio_description": "The creator identifies the film as 'The Son of the White Mare' by Marcell Jankovics.",
+        "text_on_screen": "SON OF THE WHITE MARE This is Marcell Jankovics' \u201cThe Son of the White Mare\u201d",
+        "key_objects": [
+          "movie poster",
+          "Son of the White Mare"
+        ]
+      },
+      {
+        "time_range": "0:22-0:27",
+        "visual_description": "Abstract animated sequences depict a red mass rising, blue and green geometric shapes forming a crumbling kingdom, and a blue creature with black lightning-like elements.",
+        "audio_description": "The plot begins with three dragons rising from the underworld to destroy a kingdom.",
+        "text_on_screen": "Three dragons rise from the underworld, destroy a kingdom, and drag its heroes into the darkness.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:27-0:33",
+        "visual_description": "Abstract animation shows flames, then a white mare giving birth to a yellow, sun-headed boy.",
+        "audio_description": "The narrative introduces hope, with a white mare giving birth to a god-like boy.",
+        "text_on_screen": "But there is hope. Somewhere in the wilderness, a white mare gives birth with the strength of a god.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:33-0:41",
+        "visual_description": "A horse-like figure with hands, the yellow boy looking determined, the boy fighting a purple creature, and the boy pulling a kingdom from the brink are shown.",
+        "audio_description": "The boy learns of the kingdom's fate and embarks on a journey to the underworld to rescue his brothers and restore the kingdom.",
+        "text_on_screen": "When he learns what's happened to the kingdom, he sets off on a journey into the underworld, to rescue his brothers and to pull a fallen kingdom back from the brink.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:41-0:44",
+        "visual_description": "The yellow, sun-headed boy figure stands holding a large blue and purple geometric object.",
+        "audio_description": "The creator acknowledges the plot sounds like a typical hero's journey.",
+        "text_on_screen": "I know, I know, that just sounds like a typical hero's journey.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:44-0:49",
+        "visual_description": "A rock-like monster with glowing red cracks, the yellow boy figure with a sword, and abstract, colorful shapes are displayed.",
+        "audio_description": "The creator promises the film is unlike anything else.",
+        "text_on_screen": "But I promise this film is unlike anything else you will ever see.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:49-0:54",
+        "visual_description": "A purple horse-like creature with antlers, small glowing stars, and the yellow boy figure embracing a blue creature are shown.",
+        "audio_description": "The creator praises the bold and unique art style, noting the lack of similar animated films today.",
+        "text_on_screen": "The art style is just so bold and out there. Like you really don't see animated films like this anymore.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:54-0:58",
+        "visual_description": "The yellow boy figure walks on a green and blue mountain, then falls through a blue sky.",
+        "audio_description": "The creator highlights the lack of outlines in the illustrations as a favorite choice.",
+        "text_on_screen": "And one of my favorite choices is the lack of outlines in the illustrations.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:58-1:03",
+        "visual_description": "The yellow boy figure stands with a sword, then embraces a light blue female figure.",
+        "audio_description": "The creator explains Jankovics' intention for the characters to feel integrated with the environment.",
+        "text_on_screen": "So Jankovics did this because he didn't want the characters to feel like they were sitting on top of the world.",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:03-1:06",
+        "visual_description": "Abstract blue and black shapes with a central circular element are shown.",
+        "audio_description": "The creator reiterates that the director wanted the characters to feel part of the environment.",
+        "text_on_screen": "He wanted them to feel as if they're part of the environment.",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:06-1:11",
+        "visual_description": "A red and purple background with a black triangle changing to blue, then the yellow boy figure carrying a light blue female figure.",
+        "audio_description": "The creator describes the psychedelic effect and its reflection of the story's emotional core.",
+        "text_on_screen": "Yeah, the effect is deeply psychedelic. But I also feel like it reflects the emotional core of the story.",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:11-1:15",
+        "visual_description": "The yellow boy figure walks, then stands in water with blue birds flying around him.",
+        "audio_description": "The creator emphasizes that in this world, nothing is isolated, with no hard separation between earth and sky.",
+        "text_on_screen": "Because in this world, nothing is isolated. There's no hard separation between the earth and the sky.",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:15-1:20",
+        "visual_description": "A purple and blue mountain landscape with water, then the yellow boy figure with a sword against a red, fiery background.",
+        "audio_description": "The creator continues the theme of non-separation, mentioning the hero and the mountains.",
+        "text_on_screen": "Between the hero and the mountains.",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:20-1:25",
+        "visual_description": "The yellow boy figure is held by a blue horse-like creature, then walks away into a red and purple landscape.",
+        "audio_description": "The creator concludes by stating there's no separation between self and myth.",
+        "text_on_screen": "Between self... and myth.",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a review and recommendation for the 1981 Hungarian animated film \"Son of the White Mare\" by Marcell Jankovics. The creator describes the film's plot, involving dragons destroying a kingdom and a hero born of a white mare who journeys to the underworld to rescue his brothers and restore the kingdom. The video highlights the film's unique, bold, and psychedelic art style, noting the lack of outlines to integrate characters with their environment, and suggests this reflects the story's emotional core where nothing is isolated.",
+    "people": [
+      {
+        "description": "Male voice, reviewing an animated film.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Son of the White Mare",
+        "display_name": "Son of the White Mare (1981 film)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "1981 Hungarian animated film",
+        "confidence": 5
+      },
+      {
+        "name": "Marcell Jankovics",
+        "display_name": "Marcell Jankovics",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Director of Son of the White Mare",
+        "confidence": 4
+      },
+      {
+        "name": "Through Music (SpeedUp)",
+        "display_name": "Through Music (SpeedUp)",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "1980s",
+        "display_name": "1980s",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "Time period of animated films being discussed",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "\"Son of the White Mare\" is one of the greatest animated films from the 1980s that many people probably haven't seen.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The film's art style is bold, unique, and deeply psychedelic, characterized by a lack of outlines to integrate characters with their environment.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The visual style reflects the emotional core of the story, where nothing is isolated, and there's no hard separation between elements like earth and sky, or self and myth.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Son of the White Mare",
+          "details": "1981 Hungarian animated film by Marcell Jankovics"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Through Music (SpeedUp)",
+      "metadata_song": "Through Music (SpeedUp)",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific artist for 'Through Music (SpeedUp)' is not provided in the metadata or audio, but the style matches the sped-up trend."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "transitions",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Psychedelic, fantastical, epic, mysterious, vibrant, artistic",
+    "topic_hints": [
+      "Film review",
+      "Animated movies",
+      "80s cinema",
+      "Mythology",
+      "Art style analysis"
+    ],
+    "affect_hints": [
+      "Intrigue",
+      "Wonder",
+      "Appreciation",
+      "Curiosity",
+      "Awe"
+    ],
+    "genre_hints": [
+      "Film review",
+      "Animation analysis",
+      "Movie recommendation",
+      "Educational content"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 26622,
+    "output_tokens": 3370,
+    "total_tokens": 29992,
+    "cost_usd": 0.006015,
+    "latency_ms": 32198,
+    "upload_ms": 5945
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

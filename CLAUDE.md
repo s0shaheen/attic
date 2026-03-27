@@ -232,17 +232,17 @@ src/lambdas/pipeline/handler.py    — Unified pipeline Lambda
 
 ### Workbench (AI development lab)
 ```
-workbench/notebooks/01_explore_export.ipynb     — Load and explore raw TikTok export data
-workbench/notebooks/02_classification_lab.ipynb — Run classification, inspect 8 facets, compare prompts
-workbench/notebooks/03_agent_traces.ipynb       — Full tool-call traces from standalone agent loop
-workbench/notebooks/04_retrieval_quality.ipynb  — Precision/recall of query_items filtering
-workbench/notebooks/05_embedding_analysis.ipynb — Similarity matrix, t-SNE, cluster analysis
-workbench/scripts/classify_batch.py             — Batch classification with structured output
-workbench/scripts/run_evals.py                  — Golden set accuracy evaluation (per-facet)
-workbench/scripts/generate_test_data.py         — Synthetic test case generator via Claude
-workbench/scripts/seed_db.py                    — Database seeding for local dev
-workbench/data/golden-set.json                  — Hand-labeled ground truth
-workbench/data/sample-videos.json               — Curated diverse test set
+workbench/README.md                             — Experiment index + cumulative learnings
+workbench/tools/classify_batch.py               — Batch classification with structured output
+workbench/tools/run_evals.py                    — Golden set accuracy evaluation (per-facet)
+workbench/tools/generate_test_data.py           — Synthetic test case generator via Claude
+workbench/tools/seed_db.py                      — Database seeding for local dev
+workbench/experiments/01-apify-profiling/        — Data quality + Apify validation
+workbench/experiments/02-vision-analysis/        — Thumbnail vs video, prompt variants
+workbench/experiments/03-pipeline-v3/            — Two-pass pipeline, Tier 1, search, economics
+workbench/experiments/04-golden-set/             — Ground-truth evaluation infrastructure
+workbench/notebooks/                            — Interactive exploration (01-06)
+workbench/data/                                 — Shared raw inputs (favorites, Apify output)
 ```
 
 ### Brand & Frontend
@@ -301,9 +301,9 @@ Terminal layout:
 
 ```bash
 # Workbench (no infrastructure needed)
-.venv/bin/python workbench/scripts/classify_batch.py workbench/data/sample-videos.json --limit 5
-.venv/bin/python workbench/scripts/run_evals.py --verbose --save
-.venv/bin/python workbench/scripts/generate_test_data.py "cooking videos with emoji captions" --count 10
+.venv/bin/python workbench/tools/classify_batch.py workbench/data/sample-videos.json --limit 5
+.venv/bin/python workbench/tools/run_evals.py --verbose --save
+.venv/bin/python workbench/tools/generate_test_data.py "cooking videos with emoji captions" --count 10
 
 # Database seeding (requires Supabase reachable)
 ./scripts/seed-db.sh

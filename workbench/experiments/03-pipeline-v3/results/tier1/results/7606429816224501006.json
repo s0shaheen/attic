@@ -1,0 +1,37 @@
+{
+  "item_id": "7606429816224501006",
+  "parsed_output": {
+    "summary": "This TikTok features creator Abram Shaffer in a minimalist, high-contrast portrait style, looking directly into the camera with a stoic expression. The video uses the on-screen text 'are you real?' to create a moody, existential atmosphere, likely saved for its striking visual aesthetic.",
+    "entities": [
+      {
+        "name": "Abram Shaffer",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "are you real?",
+        "type": "trend_or_meme",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "art",
+      "secondary": "other"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "neutral",
+      "secondary": "shocking"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "A short, artistic TikTok by creator @abramshaffer featuring a minimalist and moody aesthetic. The video shows a close-up portrait of a pale, thin man with dark hair against a plain, light background. He looks directly at the camera with a stoic expression while touching his neck. The video begins and ends with a black screen, with the final frame displaying the text 'are you real?'. This content is likely saved for its striking visual style, lighting, and uncanny valley or high-fashion editorial feel. It functions as a brief character study or aesthetic mood board piece. The music is an original sound, contributing to the atmospheric and existential tone of the question posed in the caption and on-screen text. It captures a specific minimalist vibe that viewers might use for creative inspiration in photography or videography."
+  },
+  "metrics": {
+    "input_tokens": 4171,
+    "output_tokens": 389,
+    "total_tokens": 4560,
+    "cost_usd": 0.000859,
+    "latency_ms": 10134,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "item_id": "7575353456161049887",
+  "parsed_output": {
+    "summary": "Creator @3.27wx demonstrates a real-time particle light projection effect built in the software TouchDesigner. The video shows the software's node-based interface reacting to the creator's physical movements to generate glowing blue and white digital visuals.",
+    "entities": [
+      {
+        "name": "TouchDesigner",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "@3.27wx",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "@keitlyn",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Pitch the Baby",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "art"
+    },
+    "genre": "other",
+    "affect": {
+      "dominant": "satisfying",
+      "secondary": "informative"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "A 9-second TikTok by @3.27wx showcasing a creative coding project in TouchDesigner. The video features a live visual effect where digital particles are projected onto the creator's hand and body in real-time. The screen captures the TouchDesigner workspace, showing a complex network of nodes and wires from the project file 'light projection.toe' overlaid on a webcam feed. As the creator moves, bright blue and white light particles trail and react to their motion, demonstrating a 'live visuals' setup. The video is inspired by @keitlyn and set to the song 'Pitch the Baby'. This is a prime example of interactive art and motion graphics, likely saved by users interested in VJing, creative technology, or learning how to use TouchDesigner for particle systems and light projection."
+  },
+  "metrics": {
+    "input_tokens": 4193,
+    "output_tokens": 446,
+    "total_tokens": 4639,
+    "cost_usd": 0.000897,
+    "latency_ms": 8769,
+    "keyframe_count": 3
+  }
+}

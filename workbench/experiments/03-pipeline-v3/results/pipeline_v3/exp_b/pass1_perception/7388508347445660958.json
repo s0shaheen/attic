@@ -1,0 +1,555 @@
+{
+  "item_id": "7388508347445660958",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:51:38.835951+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "The creator, Eric Cogorno, stands on a golf course driving range, preparing to swing a golf driver. A golf ball is teed up in front of him.",
+        "audio_description": "The best drivers of the ball that I see are able to get the club into approach the ball from low and inside.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee",
+          "golf basket"
+        ]
+      },
+      {
+        "time_range": "0:01-0:05",
+        "visual_description": "A split screen shows Eric Cogorno on the left demonstrating a golf swing, contrasted with a professional golfer on the right also demonstrating a golf swing.",
+        "audio_description": "...from low and inside.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee"
+        ]
+      },
+      {
+        "time_range": "0:05-0:11",
+        "visual_description": "The split screen continues, showing two different professional golfers demonstrating their golf swings with a driver.",
+        "audio_description": "That allows them to hit the center of the face, hit the ball the highest, the farthest, the straightest.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee"
+        ]
+      },
+      {
+        "time_range": "0:11-0:15",
+        "visual_description": "Eric Cogorno is back on the driving range, addressing the golf ball with his driver.",
+        "audio_description": "Okay. But the question is, okay, I want to get the club from low and inside.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee",
+          "golf basket"
+        ]
+      },
+      {
+        "time_range": "0:15-0:18",
+        "visual_description": "Eric Cogorno looks directly at the camera, explaining the next steps. A 'Don Law Golf Academy' flag is visible in the background.",
+        "audio_description": "How do I do it? And there's three little steps I like to follow.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf glove",
+          "microphone",
+          "Don Law Golf Academy flag"
+        ]
+      },
+      {
+        "time_range": "0:18-0:25",
+        "visual_description": "Eric Cogorno demonstrates a golf drill using only his lead arm, swinging the driver to show arm rotation and club face movement.",
+        "audio_description": "The first part is to learn how to swing your arms freely through the ball to get the club face closed.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee",
+          "golf glove"
+        ]
+      },
+      {
+        "time_range": "0:25-0:30",
+        "visual_description": "Eric Cogorno speaks to the camera, then returns to demonstrating the lead arm golf drill.",
+        "audio_description": "And how I like to do that here, if you grab the club with your lead arm only, and start off with little half swings, this is what I did.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee",
+          "golf glove"
+        ]
+      },
+      {
+        "time_range": "0:30-0:35",
+        "visual_description": "Eric Cogorno speaks to the camera, gesturing with his hand as he explains his past practice routine.",
+        "audio_description": "I'm, you know, 13, 14, 15 years old in Pennsylvania in my garage doing this in the wintertime over and over.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf glove",
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:35-0:55",
+        "visual_description": "Eric Cogorno demonstrates the lead arm golf drill, focusing on allowing the club's toe to pass the heel and finishing at a 45-degree angle.",
+        "audio_description": "Let your arm rotate with your lead arm to the point where what you're trying to do through impact with this, you can have some folding of the arm. I want you to allow the toe to pass the heel ever so slightly in the follow through to the point where it's on about a 45-degree angle.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee",
+          "golf glove"
+        ]
+      },
+      {
+        "time_range": "0:55-1:06",
+        "visual_description": "Eric Cogorno continues demonstrating the lead arm drill, explaining how the club face position changes with actual ball impact.",
+        "audio_description": "Now, because there's no impact with the ball, that might look like it's a little bit closed to you. But once I actually impact the ball, that same feel will put me basically square toe on top of the heel.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee",
+          "golf glove"
+        ]
+      },
+      {
+        "time_range": "1:06-1:13",
+        "visual_description": "A split screen shows Eric Cogorno demonstrating the lead arm drill, emphasizing relaxed arm movement and the toe passing the heel.",
+        "audio_description": "So lead arm only, natural, just relaxed here, okay, not tension with the arms. Let the toe pass the heel.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee",
+          "golf glove"
+        ]
+      },
+      {
+        "time_range": "1:13-1:22",
+        "visual_description": "Eric Cogorno demonstrates the lead arm drill, with an orange vertical line overlaid on screen to illustrate keeping his head behind the golf ball.",
+        "audio_description": "Now, what I'm trying to do this, notice what's going on with my body motion. Is my head going forward with it or is it staying back? My head staying back.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee",
+          "golf glove",
+          "orange vertical line (graphic)"
+        ]
+      },
+      {
+        "time_range": "1:22-1:35",
+        "visual_description": "Eric Cogorno continues the lead arm drill, with the orange vertical line, emphasizing head staying back and the arm extending away.",
+        "audio_description": "So the first thing I want you to do is learn lead arm rotation with your head staying back. If there was a line up through the golf ball, my head stays back behind it. My arm is extending away.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee",
+          "golf glove",
+          "orange vertical line (graphic)"
+        ]
+      },
+      {
+        "time_range": "1:35-1:48",
+        "visual_description": "Eric Cogorno demonstrates the lead arm drill, showing the club re-hinging and the club face rotating naturally along an overlaid orange plane line.",
+        "audio_description": "Now notice I'm allowing the club to re-hinge up. I'm not keeping it straight out. I'm allowing it to re-hinge up, and I'm allowing the club face to naturally rotate right up the plane line with the toe in front of the heel.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee",
+          "golf glove",
+          "orange line (graphic)"
+        ]
+      },
+      {
+        "time_range": "1:48-2:03",
+        "visual_description": "Eric Cogorno demonstrates the lead arm drill again, with the orange vertical line, reiterating the importance of keeping the head back.",
+        "audio_description": "Now, once I'm doing a couple reps with lead arm only, when I'm with this student I was doing, I was literally holding his head back, saying, go ahead, right, like let your arm rotate, it's okay. Let the butt of the club go away from you. Head stays back. Let it re-hinge, natural rotation.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee",
+          "golf glove",
+          "orange vertical line (graphic)"
+        ]
+      },
+      {
+        "time_range": "2:03-2:15",
+        "visual_description": "Eric Cogorno demonstrates the drill using both arms, with the orange vertical line for head position and an orange circle highlighting his lead shoulder, emphasizing keeping the head back and shoulder down.",
+        "audio_description": "Step two of this is add your right arm to it and still feel the same things. Now again, note what I'm doing here. Where's my head? My head stays back and my shoulder stays where? Down.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee",
+          "golf glove",
+          "orange vertical line (graphic)",
+          "orange circle (graphic)"
+        ]
+      },
+      {
+        "time_range": "2:15-2:31",
+        "visual_description": "Eric Cogorno speaks to the camera, then demonstrates the two-arm drill, summarizing the key elements of keeping the head back and shoulder down for better driver shots.",
+        "audio_description": "If there's like one thing you could do with your driver, if you hit weak fades to the right, is learning how to let your arm swing freely through impact while keeping your head back and your shoulder down.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee",
+          "golf glove",
+          "orange vertical line (graphic)",
+          "orange circle (graphic)"
+        ]
+      },
+      {
+        "time_range": "2:31-2:36",
+        "visual_description": "A split screen shows Eric Cogorno demonstrating a full golf swing with a driver, highlighting the head staying back and shoulder staying down.",
+        "audio_description": "Keeping your head back and your shoulder down.",
+        "text_on_screen": "Become A Better Golfer Right Now \ud83d\ude80 COGORNOGOLF.COM",
+        "key_objects": [
+          "golf club (driver)",
+          "golf ball",
+          "golf tee"
+        ]
+      }
+    ],
+    "overall_summary": "This video, presented by golf instructor Eric Cogorno, provides a drill to improve driver shots, specifically addressing weak fades to the right. Cogorno explains that the best drivers approach the ball from low and inside, allowing for solid contact and optimal trajectory. He demonstrates a two-step drill focusing on lead arm rotation, ensuring the club face closes and the toe passes the heel, while crucially emphasizing keeping the head back and the lead shoulder down through impact. The main takeaway is that mastering these body and arm movements will lead to straighter, higher, and farther drives.",
+    "people": [
+      {
+        "description": "Male golf instructor, wearing a green polo shirt, grey shorts, a grey 'Municipal' cap, and a white golf glove. He demonstrates golf swings and explains techniques.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Eric Cogorno"
+      },
+      {
+        "description": "Professional golfer, seen in split-screen comparisons, demonstrating a golf swing.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Eric Cogorno",
+        "display_name": "Eric Cogorno",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Golf Digest",
+        "display_name": "Golf Digest",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Don Law Golf Academy",
+        "display_name": "Don Law Golf Academy",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Municipal",
+        "display_name": "Municipal (Hat Brand)",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Cap",
+        "confidence": 4
+      },
+      {
+        "name": "Srixon",
+        "display_name": "Srixon (Golf Bag Brand)",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Golf bag",
+        "confidence": 3
+      },
+      {
+        "name": "Driver",
+        "display_name": "Golf Driver",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Golf Swing",
+        "display_name": "Golf Swing Technique",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lead Arm Rotation",
+        "display_name": "Lead Arm Rotation (Golf Technique)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Head Back",
+        "display_name": "Head Back (Golf Technique)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Shoulder Down",
+        "display_name": "Shoulder Down (Golf Technique)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Club Face Closure",
+        "display_name": "Club Face Closure (Golf Technique)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Toe Pass Heel",
+        "display_name": "Toe Passing Heel (Golf Technique)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Inspire",
+        "display_name": "Inspire",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Pennsylvania",
+        "display_name": "Pennsylvania",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "South Florida",
+        "display_name": "South Florida",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Bethlehem",
+        "display_name": "Bethlehem",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Lehigh Valley",
+        "display_name": "Lehigh Valley",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Boca Raton",
+        "display_name": "Boca Raton",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "LPGA",
+        "display_name": "LPGA (Ladies Professional Golf Association)",
+        "type": "event",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "PGA",
+        "display_name": "PGA (Professional Golfers' Association)",
+        "type": "event",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "To hit a golf driver highest, farthest, and straightest, the club should approach the ball from a low and inside path.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "A key drill for improving driver shots involves learning to swing the lead arm freely through impact, allowing the club's toe to pass the heel, while keeping the head back and the lead shoulder down.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Maintaining a 'head back' and 'shoulder down' position through impact is crucial for correcting weak fades to the right with a driver.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Lead Arm Only Drill",
+          "details": "Focus on free arm rotation, allowing the club face to close (toe passes heel), keeping the head behind the ball, and letting the club re-hinge naturally in the follow-through."
+        },
+        {
+          "name": "Two-Arm Drill",
+          "details": "Add the trail arm while maintaining the same sensations and focus points as the lead arm only drill: head back and lead shoulder down through impact."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Inspire",
+      "metadata_song": "Inspire",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Audio identification relies solely on metadata as direct audio analysis is not possible. Confidence for some background entities (places from hashtags) is inferred."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static|split_screen",
+      "editing_style": "minimal|jump_cuts"
+    },
+    "visual_mood": "instructive, clear, focused, energetic",
+    "topic_hints": [
+      "golf instruction",
+      "driver swing",
+      "golf tips"
+    ],
+    "affect_hints": [
+      "informative",
+      "helpful",
+      "motivating"
+    ],
+    "genre_hints": [
+      "sports tutorial",
+      "educational",
+      "how-to"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 47344,
+    "output_tokens": 5071,
+    "total_tokens": 52415,
+    "cost_usd": 0.010144,
+    "latency_ms": 52416,
+    "upload_ms": 9957
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

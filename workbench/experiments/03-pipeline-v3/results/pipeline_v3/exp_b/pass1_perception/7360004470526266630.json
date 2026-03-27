@@ -1,0 +1,609 @@
+{
+  "item_id": "7360004470526266630",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:45:13.102154+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "An older woman, Michael Scott's mother, is seen in a car, expressing concern.",
+        "audio_description": "Woman: \"Honey, you don't seem like your normal self.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:03-0:04",
+        "visual_description": "Michael Scott, dressed in a suit, responds from within a vehicle, appearing somber.",
+        "audio_description": "Michael: \"Well, I'm going through a little bit of a rough patch.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:04-0:06",
+        "visual_description": "A person is lying on the grass at night, looking up at the sky, conveying a sense of solitude.",
+        "audio_description": "Michael (voiceover): \"Whole year actually.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "grass"
+        ]
+      },
+      {
+        "time_range": "0:06-0:10",
+        "visual_description": "Michael Scott continues to speak from the vehicle, reflecting on his past year.",
+        "audio_description": "Michael: \"I bought a video camera last year, and I was looking at the tapes...\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:10-0:13",
+        "visual_description": "Michael Scott is shown in a contemplative pose, resting his chin on his hands, looking down.",
+        "audio_description": "Michael (voiceover): \"...and there were only like 12 minutes that I felt was worth taping.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:13-0:15",
+        "visual_description": "Michael Scott in the vehicle, reiterating his previous statement.",
+        "audio_description": "Michael: \"The whole year.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:15-0:17",
+        "visual_description": "Michael Scott walks through the Dunder Mifflin office, smiling, followed by various employees holding plates, suggesting a celebration.",
+        "audio_description": "Michael (voiceover): \"What do you want to be when you grow up?\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "plates"
+        ]
+      },
+      {
+        "time_range": "0:17-0:26",
+        "visual_description": "A young Michael Scott interacts with a puppet, then speaks directly, expressing his childhood desire for many friends.",
+        "audio_description": "Young Michael: \"I want to be married and have a hundred kids so I can have a hundred friends, and no one can say no to being my friend.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "puppet"
+        ]
+      },
+      {
+        "time_range": "0:26-0:28",
+        "visual_description": "Various Dunder Mifflin employees, including Ryan, Pam, and Dwight, are seen in the office.",
+        "audio_description": "Radiohead's 'Let Down' begins to play softly.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:28-0:30",
+        "visual_description": "A young Black woman looks up inquisitively, followed by Michael Scott looking down, appearing hesitant.",
+        "audio_description": "Young woman: \"Did you get married?\" Michael: \"Uh, no.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:30-0:32",
+        "visual_description": "A young blonde girl asks a question, looking up at Michael.",
+        "audio_description": "Young girl: \"Do you have any kids?\" Michael: \"Uh, nope.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:32-0:36",
+        "visual_description": "Michael Scott is shown, then the young girl, who looks thoughtful after his response.",
+        "audio_description": "Young girl: \"So you didn't get to be what you wanted to be?\" Michael: \"I guess not.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:36-0:43",
+        "visual_description": "Michael Scott looks directly at the camera with a sad expression, then looks away, conveying deep loneliness.",
+        "audio_description": "Michael: \"I am crying, and nobody can hear me because I am terribly, terribly, terribly alone.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:43-0:45",
+        "visual_description": "Dwight Schrute looks down, appearing confused or concerned.",
+        "audio_description": "Dwight: \"It's really sad that your dog ran away, but why did you keep me from going to the park?\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:45-0:49",
+        "visual_description": "Michael Scott and Toby Flenderson are seated in a room with a vending machine; Michael is holding playing cards.",
+        "audio_description": "Michael: \"I was afraid I would find a new park playing with another kid.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "vending machine",
+          "playing cards"
+        ]
+      },
+      {
+        "time_range": "0:49-0:51",
+        "visual_description": "Michael Scott is sitting alone on a chair in a snowy playground, looking dejected.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "playground equipment",
+          "snow",
+          "chair"
+        ]
+      },
+      {
+        "time_range": "0:51-0:53",
+        "visual_description": "Toby Flenderson looks down, asking a question.",
+        "audio_description": "Toby: \"Why?\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:53-0:56",
+        "visual_description": "Michael Scott holds playing cards, explaining his fear of being replaced.",
+        "audio_description": "Michael: \"I guess that's why I thought he ran away in the first place, to find a kid he liked better.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "playing cards"
+        ]
+      },
+      {
+        "time_range": "0:56-0:58",
+        "visual_description": "Office workers clap, and Michael Scott smiles sadly, his eyes welling up.",
+        "audio_description": "Voiceover: \"It's very important for you to be liked, isn't it?\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:58-1:01",
+        "visual_description": "Michael Scott looks down, then up, with a pained expression.",
+        "audio_description": "Michael: \"Why am I so sad?\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "1:01-1:02",
+        "visual_description": "Stanley Hudson holds a megaphone, with Dwight Schrute and Pam Beesly standing nearby, looking up.",
+        "audio_description": "Stanley (with megaphone): \"Michael, you're a very brave man.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "megaphone"
+        ]
+      },
+      {
+        "time_range": "1:02-1:05",
+        "visual_description": "Michael Scott stands on the roof of the Dunder Mifflin building, looking out.",
+        "audio_description": "Stanley (with megaphone): \"I mean, it takes courage just to get out of bed every single day.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Dunder Mifflin building"
+        ]
+      },
+      {
+        "time_range": "1:05-1:08",
+        "visual_description": "Michael Scott, wearing a red shirt and blue hoodie, looks down with a determined expression.",
+        "audio_description": "Michael: \"I'm braver than you.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "red t-shirt",
+          "blue hoodie"
+        ]
+      },
+      {
+        "time_range": "1:08-1:11",
+        "visual_description": "Stanley, Pam, and Jim look up as Stanley shouts through the megaphone.",
+        "audio_description": "Stanley: \"You brave heart, man!\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "megaphone"
+        ]
+      },
+      {
+        "time_range": "1:11-1:13",
+        "visual_description": "Michael Scott and Dwight Schrute are seen in a dramatic, almost wrestling embrace in the dark.",
+        "audio_description": "Michael: \"I brave heart.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "1:13-1:17",
+        "visual_description": "Michael Scott runs in a charity race, wearing a blue t-shirt with a number '1' bib, surrounded by clapping people.",
+        "audio_description": "Music continues, with lyrics \"Where you are.\"",
+        "text_on_screen": "Rabies Awareness Fun Run, 1",
+        "key_objects": [
+          "race bib",
+          "blue t-shirt"
+        ]
+      },
+      {
+        "time_range": "1:17-1:18",
+        "visual_description": "Michael Scott looks down, then up, with a sense of acceptance.",
+        "audio_description": "Michael: \"I am.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "1:18-1:19",
+        "visual_description": "Michael Scott and Jim Halpert share a laugh, sitting together.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "1:19-1:20",
+        "visual_description": "Michael Scott and Stanley Hudson laugh while eating together.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "1:20-1:22",
+        "visual_description": "Michael Scott looks at Pam Beesly's artwork with admiration.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "artwork"
+        ]
+      },
+      {
+        "time_range": "1:22-1:23",
+        "visual_description": "Pam Beesly embraces Michael Scott warmly.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "1:23-1:24",
+        "visual_description": "Jim Halpert looks at Michael with a heartfelt expression.",
+        "audio_description": "Jim: \"I can tell you what a great boss you turned out to be.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "1:24-1:26",
+        "visual_description": "Michael Scott is shown with tears in his eyes, smiling, deeply moved.",
+        "audio_description": "Music continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "1:26-1:28",
+        "visual_description": "Michael Scott speaks to Jim Halpert in a dimly lit setting, offering encouragement.",
+        "audio_description": "Michael: \"Never, ever, ever give up.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "1:28-1:30",
+        "visual_description": "Jim Halpert smiles, affirming Michael's impact.",
+        "audio_description": "Jim: \"Best boss I ever had.\"",
+        "text_on_screen": null,
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a poignant fan edit of Michael Scott from 'The Office,' set to Radiohead's 'Let Down.' It contrasts Michael's childhood dreams of having many friends with his adult feelings of loneliness and inadequacy, as expressed in various scenes from the show. The edit then transitions to moments of Michael's growth and the genuine affection he receives from his Dunder Mifflin colleagues, particularly Jim and Pam, culminating in a message of perseverance and the affirmation that he became a great boss. It highlights Michael's emotional journey and the underlying sadness and eventual fulfillment of his character.",
+    "people": [
+      {
+        "description": "Michael Scott, a middle-aged white man, initially appears sad and reflective, then determined, and finally tearfully happy. He is the central figure, speaking and reacting to others.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Michael Scott"
+      },
+      {
+        "description": "Jim Halpert, a young adult white man, is seen as a supportive colleague, laughing with Michael and offering heartfelt praise.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Jim Halpert"
+      },
+      {
+        "description": "Pam Beesly, a young adult white woman, is shown as a supportive colleague, hugging Michael and looking at his artwork.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Pam Beesly"
+      },
+      {
+        "description": "Dwight Schrute, a middle-aged white man, appears contemplative and later in a dramatic interaction with Michael.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Dwight Schrute"
+      },
+      {
+        "description": "Stanley Hudson, an older Black man, uses a megaphone to encourage Michael.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Stanley Hudson"
+      },
+      {
+        "description": "Toby Flenderson, a middle-aged white man, is seen sitting with Michael and asking a question.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Toby Flenderson"
+      },
+      {
+        "description": "Ryan Howard, a young adult white man, is seen among the office employees.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Ryan Howard"
+      },
+      {
+        "description": "Phyllis Lapin-Vance, a middle-aged white woman, is seen among the office employees.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Phyllis Lapin-Vance"
+      },
+      {
+        "description": "An older white woman, Michael Scott's mother, expresses concern for him.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Michael Scott's Mother"
+      },
+      {
+        "description": "A young white boy, representing young Michael Scott, expresses his childhood dreams.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Young Michael Scott"
+      },
+      {
+        "description": "A young Black woman, asking Michael a question.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "A young blonde girl, asking Michael a question.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "The Office",
+        "display_name": "The Office (US TV Series)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Michael Scott",
+        "display_name": "Michael Scott (Character from The Office)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Steve Carell",
+        "display_name": "Steve Carell (Actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Radiohead",
+        "display_name": "Radiohead (Band)",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Let Down",
+        "display_name": "Let Down (Song by Radiohead)",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jim Halpert",
+        "display_name": "Jim Halpert (Character from The Office)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pam Beesly",
+        "display_name": "Pam Beesly (Character from The Office)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Dwight Schrute",
+        "display_name": "Dwight Schrute (Character from The Office)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Stanley Hudson",
+        "display_name": "Stanley Hudson (Character from The Office)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Toby Flenderson",
+        "display_name": "Toby Flenderson (Character from The Office)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Ryan Howard",
+        "display_name": "Ryan Howard (Character from The Office)",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Phyllis Lapin-Vance",
+        "display_name": "Phyllis Lapin-Vance (Character from The Office)",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Braveheart",
+        "display_name": "Braveheart (Cultural Reference)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Dunder Mifflin",
+        "display_name": "Dunder Mifflin (Fictional Company)",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Michael Scott's deep-seated desire for friendship and acceptance often led to feelings of loneliness and inadequacy.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Despite his flaws and struggles, Michael Scott eventually found genuine connection and became a beloved figure to his colleagues.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "The video conveys a message of perseverance and the importance of not giving up on oneself or one's dreams, even when facing profound sadness.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Let Down \u2014 Radiohead",
+      "metadata_song": "sonido original",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The metadata song 'sonido original' is generic, but the actual song 'Let Down' by Radiohead is clearly identifiable and matches the hashtag."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "montage"
+    },
+    "visual_mood": "melancholy, reflective, hopeful, emotional, nostalgic",
+    "topic_hints": [
+      "The Office",
+      "Michael Scott's character arc",
+      "loneliness and friendship"
+    ],
+    "affect_hints": [
+      "sadness",
+      "empathy",
+      "hope",
+      "nostalgia",
+      "inspiration"
+    ],
+    "genre_hints": [
+      "fan edit",
+      "tribute",
+      "emotional montage",
+      "character study"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 28996,
+    "output_tokens": 5662,
+    "total_tokens": 34658,
+    "cost_usd": 0.007747,
+    "latency_ms": 43554,
+    "upload_ms": 7878
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

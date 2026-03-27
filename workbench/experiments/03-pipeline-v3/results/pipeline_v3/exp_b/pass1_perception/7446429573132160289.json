@@ -1,0 +1,209 @@
+{
+  "item_id": "7446429573132160289",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:54:41.308787+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:13",
+        "visual_description": "A person, identified as the creator, sits at a desk in a music studio setting, actively typing on a laptop. The laptop screen displays a YouTube video of a live musical performance. Various music production equipment, including headphones and a USB hub, are visible on the desk and shelves behind the creator.",
+        "audio_description": "A soul/disco track is playing, specifically 'Shame' by Evelyn 'Champagne' King. The creator is manipulating the audio in real-time by repeatedly triggering short segments of the song, creating a 'chopping' effect.",
+        "text_on_screen": "TF IS BRO DOING",
+        "key_objects": [
+          "Laptop",
+          "Headphones",
+          "USB Hub",
+          "Music production equipment",
+          "YouTube video player"
+        ]
+      }
+    ],
+    "overall_summary": "This video features a music producer, @finley.mp3, demonstrating a technique of 'chopping' or sampling audio directly from a YouTube video using music production software, likely FL Studio. The creator is seen manipulating a live performance video of Evelyn 'Champagne' King's 'Shame' on their laptop, creating rhythmic cuts and loops. The video highlights a common practice in beat-making and sampling, prompting a humorous question about the unusual method.",
+    "people": [
+      {
+        "description": "A young man with curly brown hair, wearing a blue and white patterned sweater, sitting at a desk and interacting with a laptop.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "FL Studio",
+        "display_name": "FL Studio",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "hashtags",
+          "caption",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "YouTube",
+        "display_name": "YouTube",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "caption"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Evelyn 'Champagne' King",
+        "display_name": "Evelyn 'Champagne' King",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Shame",
+        "display_name": "Shame",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Music Production",
+        "display_name": "Music Production",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "hashtags",
+          "caption",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Sampling",
+        "display_name": "Sampling (Music Production)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "hashtags",
+          "caption",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Laptop",
+        "display_name": "Laptop",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Headphones",
+        "display_name": "Headphones",
+        "type": "product",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "USB Hub",
+        "display_name": "USB Hub",
+        "type": "product",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video demonstrates a method of 'chopping' or sampling audio from a YouTube video for music production.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "The creator is using a live performance video of Evelyn 'Champagne' King's 'Shame' as source material for sampling.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Audio Chopping/Sampling",
+          "details": "Utilizing a YouTube video as a source for audio samples within a digital audio workstation (implied FL Studio)."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Shame \u2014 Evelyn 'Champagne' King",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific model of laptop, headphones, and USB hub are not identifiable from the video."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Informative, curious, focused, energetic (due to music)",
+    "topic_hints": [
+      "Music Production",
+      "Audio Sampling",
+      "FL Studio"
+    ],
+    "affect_hints": [
+      "Curiosity",
+      "Engagement",
+      "Amusement"
+    ],
+    "genre_hints": [
+      "Tutorial",
+      "Demonstration",
+      "Music Content"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5612,
+    "output_tokens": 1489,
+    "total_tokens": 7101,
+    "cost_usd": 0.001735,
+    "latency_ms": 15552,
+    "upload_ms": 3452
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

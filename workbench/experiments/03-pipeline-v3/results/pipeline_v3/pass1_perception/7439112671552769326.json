@@ -1,0 +1,206 @@
+{
+  "item_id": "7439112671552769326",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:06:55.954575+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "Jeff Nippard stands shirtless in a gym, with his front deltoids highlighted by a red overlay to emphasize the muscle group.",
+        "audio_description": "Up first, front delts.",
+        "text_on_screen": "UP FIRST FRONT DELTS",
+        "key_objects": [
+          "Gym equipment"
+        ]
+      },
+      {
+        "time_range": "0:01-0:08",
+        "visual_description": "Jeff demonstrates cable chest flyes and pushups on weight plates, showing how front delts are engaged during chest movements.",
+        "audio_description": "Now, a very common mistake here is actually giving the front delts too much volume since they already get a lot of stimulation from any chest work in your program.",
+        "text_on_screen": "A VERY COMMON MISTAKE HERE IS ACTUALLY GIVING THE FRONT DELTS TOO MUCH VOLUME SINCE THEY ALREADY GET A LOT OF STIMULATION FROM ANY CHEST WORK IN YOUR PROGRAM",
+        "key_objects": [
+          "Cable machine",
+          "Weight plates",
+          "Rise tank top"
+        ]
+      },
+      {
+        "time_range": "0:08-0:18",
+        "visual_description": "A graphic of a German scientific study is shown, followed by a diagram comparing front and side delt size increases in bodybuilders.",
+        "audio_description": "In fact, this German study from the 1990s found that bodybuilders have five times the front delt size as non-lifters, but only three times the side delt size as non-lifters.",
+        "text_on_screen": "THIS GERMAN STUDY FROM THE 1990S FOUND THAT BODYBUILDERS HAVE 5X THE FRONT DELT SIZE AS NONLIFTERS BUT ONLY 3X THE SIDE DELT SIZE AS NONLIFTERS",
+        "key_objects": [
+          "Scientific study document",
+          "Anatomical diagram"
+        ]
+      },
+      {
+        "time_range": "0:18-0:23",
+        "visual_description": "Jeff, now wearing a pink hoodie, kneels in the gym and speaks to an off-camera individual about shoulder training priorities.",
+        "audio_description": "So they often are overemphasized. Would you agree with that? Like side and rear are more important from a bodybuilding standpoint?",
+        "text_on_screen": "SO THEY OFTEN ARE OVEREMPHASIZED WOULD YOU AGREE WITH THAT LIKE SIDE AND REAR ARE MORE IMPORTANT FROM A BODYBUILDING STANDPOINT",
+        "key_objects": [
+          "Dumbbell rack",
+          "Gym interior"
+        ]
+      }
+    ],
+    "overall_summary": "Fitness expert Jeff Nippard explains why direct front deltoid training is often unnecessary and leads to overtraining. He argues that because front delts are heavily involved in all chest pressing and fly movements, they already receive sufficient stimulation. Citing a 1990s German study, he highlights that bodybuilders naturally develop much larger front delts than side delts, suggesting that lifters should instead prioritize side and rear deltoid isolation for better shoulder symmetry.",
+    "people": [
+      {
+        "description": "Jeff Nippard, a well-known natural bodybuilder and fitness educator with a beard and athletic build.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Jeff Nippard"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Jeff Nippard",
+        "display_name": "Jeff Nippard",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Front Deltoids",
+        "display_name": "Front Deltoids",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Anterior deltoid muscle",
+        "confidence": 5
+      },
+      {
+        "name": "Cable Chest Fly",
+        "display_name": "Cable Chest Fly",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pushup",
+        "display_name": "Pushup",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Performed on weight plates",
+        "confidence": 5
+      },
+      {
+        "name": "Rise",
+        "display_name": "Rise Apparel",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Tank top worn by creator",
+        "confidence": 4
+      },
+      {
+        "name": "Sonographische Befunde an Schultergelenken von Bodybuildern",
+        "display_name": "German Bodybuilding Shoulder Study (1991)",
+        "type": "book",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Study by J. M. Michel et al. comparing muscle size",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Front deltoids are frequently overtrained because they are secondary movers in almost all chest exercises.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Bodybuilders typically have five times the front delt size of non-lifters, but only three times the side delt size, indicating a developmental imbalance.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Side and rear deltoid training should be prioritized over front deltoid training for optimal bodybuilding aesthetics.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Front Delt Volume Management",
+          "details": "Reduce direct front delt isolation if your program already includes heavy chest pressing or flyes."
+        },
+        {
+          "name": "Shoulder Priority",
+          "details": "Focus training volume on side and rear deltoids to match the disproportionate growth of the front delts."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video is a clear educational snippet from Jeff Nippard's long-form content. The study mentioned is a real peer-reviewed paper from 1991."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, scientific, and professional gym atmosphere.",
+    "topic_hints": [
+      "Shoulder Training",
+      "Hypertrophy Science",
+      "Workout Programming"
+    ],
+    "affect_hints": [
+      "Informed",
+      "Analytical",
+      "Motivated"
+    ],
+    "genre_hints": [
+      "Fitness Tutorial",
+      "Educational Gym Content"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3722,
+    "output_tokens": 1874,
+    "total_tokens": 5596,
+    "cost_usd": 0.001683,
+    "latency_ms": 23381,
+    "upload_ms": 5664
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

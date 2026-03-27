@@ -1,0 +1,76 @@
+{
+  "item_id": "7609437403643661581",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:07.191373+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "food",
+      "micro_labels": [
+        "AI agents",
+        "automation",
+        "Clawd bot",
+        "restaurant reservations",
+        "AI security"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "review",
+      "micro_labels": [
+        "tech explainer",
+        "product recommendation"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "shocking",
+        "tier": "secondary"
+      },
+      {
+        "label": "funny",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "screen_recording"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "brand",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.8
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 14208,
+    "output_tokens": 349,
+    "total_tokens": 14557,
+    "cost_usd": 0.002341,
+    "latency_ms": 8111,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 10
+  }
+}

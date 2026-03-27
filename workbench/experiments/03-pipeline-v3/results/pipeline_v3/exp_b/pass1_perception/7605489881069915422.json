@@ -1,0 +1,273 @@
+{
+  "item_id": "7605489881069915422",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:55:38.874355+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "The creator, a young woman with long dark hair, looks directly at the camera and speaks, gesturing with her hands.",
+        "audio_description": "The creator introduces the topic of a PM debugging framework.",
+        "text_on_screen": "the PM debugging framework i SWEAR by",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:01-0:08",
+        "visual_description": "The creator continues to speak and gesture, setting up a hypothetical product management scenario.",
+        "audio_description": "The creator presents a scenario: cancellations are up 10% and rides are down 15% for Uber, asking 'why?' and 'what's the solution?'",
+        "text_on_screen": "Pretend you're a product manager at Uber\npm at uber - cancels up 10%, rides down 15%\nwhy?? what's the solution?",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:08-0:12",
+        "visual_description": "The creator explains that she will share her framework.",
+        "audio_description": "The creator states she will share her framework for a comprehensive approach.",
+        "text_on_screen": "\u201cmy\u201d as in the one ive learned from experts hahaa (ty dianna yau & exponent)",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:12-0:16",
+        "visual_description": "The creator continues to speak, gesturing to emphasize her points.",
+        "audio_description": "The creator explains that the process begins with understanding what is happening.",
+        "text_on_screen": "Here's my framework for how to do so in a very comprehensive way.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:16-0:27",
+        "visual_description": "The creator introduces the first step of the framework, using hand gestures to illustrate her points.",
+        "audio_description": "The creator explains Step 1: Reiterate and State Mission, reiterating the problem of increased cancellations and decreased rides, noting a mismatch.",
+        "text_on_screen": "STEP 1) REITERATE & STATE MISSION",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:27-0:32",
+        "visual_description": "The creator continues to discuss the mission of the company in the hypothetical scenario.",
+        "audio_description": "The creator states Uber's mission is for people to take trips and drivers to have income.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:32-0:37",
+        "visual_description": "The creator introduces the second step of the framework, using a flat hand gesture.",
+        "audio_description": "The creator introduces Step 2: Clarify, emphasizing the importance of clarifying whose cancellations and what 'rides' mean.",
+        "text_on_screen": "STEP 2) CLARIFY",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:37-0:43",
+        "visual_description": "The creator gives examples of clarifying questions, using her fingers to count points.",
+        "audio_description": "The creator asks clarifying questions about whether 'rides' are trips taken per day, completed trips, or just requests.",
+        "text_on_screen": "2a rn i'm just clarifying definitions from the question i was given!\nlet's pretend the answers to these are: 1. rider cancels 2. completed trips\nAre these just trips taken per day? Are they completed, or are they just requests that are being generated?",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:43-0:52",
+        "visual_description": "The creator continues to explain clarifying questions, using open hand gestures.",
+        "audio_description": "The creator suggests asking broader clarifying questions about the time period, such as if the issue is sudden or ongoing for months.",
+        "text_on_screen": "2b - broader clarifying questions about time period, scope, defects etc\nIs it sudden or has this been happening over a couple of months?",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:52-1:03",
+        "visual_description": "The creator discusses asking about defects in the app.",
+        "audio_description": "The creator suggests asking if there's a defect in the app, which would indicate an internal engineering problem Uber needs to fix.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:03-1:14",
+        "visual_description": "The creator introduces the third step of the framework, using expansive hand gestures.",
+        "audio_description": "The creator introduces Step 3: Hypothesizing, focusing on what problems could be driving cancellations up and reducing trips.",
+        "text_on_screen": "STEP 3. HYPOTHESIZINGGG",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:14-1:29",
+        "visual_description": "The creator lists examples of hypotheses, with text appearing on screen.",
+        "audio_description": "The creator provides examples of hypotheses, such as high Uber prices, more appealing prices or ETAs on Lyft, or unstable weather conditions leading to bad pickup conditions.",
+        "text_on_screen": "3a separating out user groups & generating hypos from there. u could frame hypos as questions or statements, i usually ask for more data behind each (so i do qs)\n1. prices too high on uber\n2. prices or ETAs more appealing on lyft\n3. unstable weather led to bad pickup conditions",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:29-1:47",
+        "visual_description": "The creator explains that the next step, experimentation, will be covered in a future video.",
+        "audio_description": "The creator mentions that for an interview, the interviewer might provide a specific hypothesis (e.g., high prices) and ask how to proceed, which involves experimentation, a topic for another video.",
+        "text_on_screen": "step 4) experimentation which we can't cover in this vid ;(( but will super soon",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:47-1:55",
+        "visual_description": "The creator concludes the video, smiling and gesturing.",
+        "audio_description": "The creator summarizes that this is her overall approach to such questions in interviews or real-life situations.",
+        "text_on_screen": "",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video presents a four-step framework for debugging tough product management situations, particularly useful for PM interviews. The creator, @yourstudentsupporter, outlines the process starting with reiterating the problem and mission, then clarifying definitions and scope, and finally hypothesizing potential causes. She uses a hypothetical Uber scenario (cancellations up, rides down) to illustrate the first three steps, providing examples of clarifying questions and hypotheses. The fourth step, experimentation, is mentioned as a topic for a future video, emphasizing a structured approach to problem-solving in product management.",
+    "people": [
+      {
+        "description": "A young woman with long, dark, wavy hair and bangs, wearing a black t-shirt with a pink 'Rolling Stones' logo and gold hoop earrings. She speaks directly to the camera, using expressive hand gestures.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Product Management",
+        "display_name": "Product Management (PM)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Uber",
+        "display_name": "Uber",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lyft",
+        "display_name": "Lyft",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Dianna Yau",
+        "display_name": "Dianna Yau",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Exponent",
+        "display_name": "Exponent",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Yacht Club",
+        "display_name": "Yacht Club",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "A structured framework can help solve tough product management situations and interview questions.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The framework involves reiterating the problem and mission, clarifying definitions and scope, and hypothesizing potential causes.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Experimentation is the crucial next step after forming hypotheses to address product issues.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Step 1: Reiterate & State Mission",
+          "details": "Understand what is happening and the overarching mission."
+        },
+        {
+          "name": "Step 2: Clarify",
+          "details": "Clarify definitions (e.g., whose cancellations, what 'rides' mean), time period, scope, and check for defects in the app."
+        },
+        {
+          "name": "Step 3: Hypothesize",
+          "details": "Generate hypotheses about problems driving the observed changes, considering internal and external factors like pricing, competition, and macroeconomic conditions."
+        },
+        {
+          "name": "Step 4: Experimentation",
+          "details": "Design experiments to test hypotheses (to be covered in a separate video)."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Yacht Club",
+      "metadata_song": "Yacht Club",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific artist for 'Yacht Club' is not provided in metadata or discernible from audio alone, but the song title matches."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "informative, educational, direct, friendly",
+    "topic_hints": [
+      "product management",
+      "interview tips",
+      "career advice"
+    ],
+    "affect_hints": [
+      "helpful",
+      "educational",
+      "empowering"
+    ],
+    "genre_hints": [
+      "tutorial",
+      "educational",
+      "career advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 35520,
+    "output_tokens": 2909,
+    "total_tokens": 38429,
+    "cost_usd": 0.007073,
+    "latency_ms": 36542,
+    "upload_ms": 9885
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

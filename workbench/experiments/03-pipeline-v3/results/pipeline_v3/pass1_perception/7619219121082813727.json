@@ -1,0 +1,188 @@
+{
+  "item_id": "7619219121082813727",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:19.984835+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:14",
+        "visual_description": "Creator rides a bike or scooter through the streets of San Francisco while speaking directly to the camera, at one point reacting to swallowing a bug.",
+        "audio_description": "Creator introduces the concept of 'AI brain fry' and mentions he is in San Francisco, the home of AI. He interrupts himself to say he just ate a bug.",
+        "text_on_screen": "\"AI brain fry\" is just half the story; \"AI brain fry\" is just the beginning of what AI is going to do to our brains; I'm riding through San Francisco right now; the home of AI; where so many people are experiencing this brain fry; AI brain fry I just ate a bug",
+        "key_objects": [
+          "Glasses",
+          "San Francisco streetscape"
+        ]
+      },
+      {
+        "time_range": "0:14-0:30",
+        "visual_description": "Creator continues riding, explaining the technical definition of the term 'brain fry' in the context of AI development.",
+        "audio_description": "He explains that 'brain fry' is a researcher-coined term for the mental exhaustion of supervising AI agents, specifically mentioning Claude Code.",
+        "text_on_screen": "brain fry is a term that researchers recently coined; to describe that feeling of like buzzing mental exhaustion; mental taxation that comes from supervising agents; when you're using AI; so when you're using things like Claude Code",
+        "key_objects": [
+          "Claude Code"
+        ]
+      },
+      {
+        "time_range": "0:30-1:18",
+        "visual_description": "Creator discusses the psychological implications of AI speed while passing various urban buildings in San Francisco.",
+        "audio_description": "He argues that the speed of AI agents removes the space for human contemplation and critical thinking about what is being built and why.",
+        "text_on_screen": "and I think that this is just the beginning; of what AI is gonna do to our psychology; to our lived experience; we're just starting to see what it's like; when these machines that are so powerful; can do so much so quickly; how enticing it is to try and let them do as much as possible quickly; but what happens then is there's not really any space for contemplation; and thinking about do I actually want this agent to go do this thing in this way; you're so excited by the almost giddy exhilaration; that these things these machines these agents can move so fast; that you don't take the time to sit down; put a pen to paper; put your fingers to your computer keypad; and actually think about [what] do I want to build and why; why does this thing matter; why does this thing need to be in the world in this particular way",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:18-1:45",
+        "visual_description": "Creator expresses concern about the future of human thought as he continues his ride.",
+        "audio_description": "He warns that if humans are constantly pulled by the speed of AI agents without thinking, they will stop forming their own independent opinions.",
+        "text_on_screen": "and I think that this dynamic really is gonna shape the coming decades; and centuries if we make it that far; because if we start to spend all of our lives and time; being pulled by the intense speed of these agents; and not thinking we're going to stop forming our own; thought out opinions; and I think that's a really concerning future",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:45-2:09",
+        "visual_description": "Creator stops or slows down to pitch his news app, Particle, and concludes the video.",
+        "audio_description": "He introduces Particle, an app designed to help users think critically by showing multiple sources for news stories, and signs off with 'stay human'.",
+        "text_on_screen": "this is a shameless plug; but I'm building a news app called Particle; that helps you take the space to think critically; to form your own opinions; by showing you a bunch of different sources; about the same news story; the more we can take a beat to gather information; to form our own opinions to think; the better off we'll be; that's all for me follow along for more of these ideas; peace and stay human",
+        "key_objects": [
+          "Particle app"
+        ]
+      }
+    ],
+    "overall_summary": "Ben Elias Moe discusses the phenomenon of 'AI brain fry,' which he defines as the mental exhaustion resulting from supervising high-speed AI agents like Claude Code. He argues that the extreme efficiency of AI tools can entice users to bypass critical contemplation, potentially leading to a future where humans stop forming independent, well-thought-out opinions. To address this, he promotes his news app, Particle, which encourages critical thinking by aggregating multiple sources for the same story. The video serves as both a philosophical commentary on the psychological impact of AI and a product pitch for a tool designed to preserve human agency.",
+    "people": [
+      {
+        "description": "A man with glasses and brown hair, wearing a light blue button-down shirt, riding through an urban environment.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Ben Elias Moe"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Claude Code",
+        "display_name": "Claude Code",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "AI coding agent by Anthropic",
+        "confidence": 5
+      },
+      {
+        "name": "Particle",
+        "display_name": "Particle News App",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "News aggregation app focused on multi-perspective critical thinking",
+        "confidence": 5
+      },
+      {
+        "name": "San Francisco",
+        "display_name": "San Francisco, CA",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "AI brain fry",
+        "display_name": "AI Brain Fry",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Term for mental exhaustion from supervising AI agents",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "AI brain fry is a state of mental exhaustion caused by the constant supervision of AI agents.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The speed and power of AI tools can discourage users from taking the time for deep contemplation and critical thinking.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Constant reliance on AI speed risks the loss of independent, well-formed human opinions.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Using tools that provide multiple perspectives on news can help maintain critical thinking skills.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Particle",
+          "details": "A news app that shows multiple sources for the same story to help users form their own opinions and think critically."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video contains no background music, only the creator's voice and ambient city noise."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "selfie",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Urban, energetic, and intellectually concerned.",
+    "topic_hints": [
+      "Artificial Intelligence",
+      "Psychology",
+      "Critical Thinking"
+    ],
+    "affect_hints": [
+      "Reflective",
+      "Concerned",
+      "Motivated"
+    ],
+    "genre_hints": [
+      "Tech Commentary",
+      "Product Pitch"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 13049,
+    "output_tokens": 2114,
+    "total_tokens": 15163,
+    "cost_usd": 0.003226,
+    "latency_ms": 44273,
+    "upload_ms": 14543
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

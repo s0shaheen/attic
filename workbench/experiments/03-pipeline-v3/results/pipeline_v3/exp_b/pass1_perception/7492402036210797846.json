@@ -1,0 +1,950 @@
+{
+  "item_id": "7492402036210797846",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:47:28.986783+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A young man, A.J. Soprano, sits at a kitchen counter, looking up with a slightly troubled expression.",
+        "audio_description": "A woman's voice says, \"You could have killed those girls.\"",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:01-0:02",
+        "visual_description": "Carmela and Tony Soprano stand in a doorway, looking concerned and angry.",
+        "audio_description": "A.J. Soprano's voice responds, \"That would have been interesting.\"",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:02-0:03",
+        "visual_description": "A.J. Soprano looks directly at the camera with a defiant expression.",
+        "audio_description": "",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:03-0:05",
+        "visual_description": "Carmela and Tony Soprano react with shock and disbelief.",
+        "audio_description": "Carmela Soprano asks, \"What? What did you just say?\"",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:05-0:07",
+        "visual_description": "Dennis Hopper as Tom Ripley in 'The American Friend' looks off-screen with a pensive expression, a small cut visible on his forehead.",
+        "audio_description": "A.J. Soprano's voice states, \"Death just shows the ultimate absurdity of life.\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "Dennis Hopper"
+        ]
+      },
+      {
+        "time_range": "0:07-0:08",
+        "visual_description": "Travis Henderson (Harry Dean Stanton) from 'Paris, Texas' sits in a desolate desert landscape surrounded by police cars.",
+        "audio_description": "Tony Soprano's voice asks, \"What is this?\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "Harry Dean Stanton",
+          "police cars"
+        ]
+      },
+      {
+        "time_range": "0:08-0:09",
+        "visual_description": "An explosion creates a large cloud of fire and smoke against a blue sky, likely from 'Koyaanisqatsi'.",
+        "audio_description": "",
+        "text_on_screen": "",
+        "key_objects": [
+          "explosion"
+        ]
+      },
+      {
+        "time_range": "0:09-0:10",
+        "visual_description": "Dirk Diggler (Mark Wahlberg) from 'Boogie Nights' dances in a dimly lit club with neon blue lights.",
+        "audio_description": "",
+        "text_on_screen": "",
+        "key_objects": [
+          "Mark Wahlberg",
+          "neon lights"
+        ]
+      },
+      {
+        "time_range": "0:10-0:11",
+        "visual_description": "Two children ride bicycles on a paved path next to a chain-link fence and power lines, a scene from 'Gummo'.",
+        "audio_description": "Tony Soprano's voice says, \"Are you trying to get me to lose my temper because I'm about to put you through that goddamn window?\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "bicycles",
+          "children",
+          "power lines"
+        ]
+      },
+      {
+        "time_range": "0:11-0:12",
+        "visual_description": "Dean Stockwell as Ben in 'Blue Velvet' mimes singing into a light bulb on a stage, with another man standing nearby.",
+        "audio_description": "",
+        "text_on_screen": "",
+        "key_objects": [
+          "Dean Stockwell",
+          "light bulb"
+        ]
+      },
+      {
+        "time_range": "0:12-0:14",
+        "visual_description": "Tony Soprano points aggressively while Carmela Soprano stands in the background with her arms crossed.",
+        "audio_description": "",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:14-0:15",
+        "visual_description": "A.J. Soprano looks up, seemingly contemplating the previous statement.",
+        "audio_description": "A.J. Soprano's voice says, \"See? That's what I mean.\"",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:15-0:16",
+        "visual_description": "Robert Pattinson as Connie Nikas from 'Good Time' runs out of a doorway in a red jacket.",
+        "audio_description": "",
+        "text_on_screen": "",
+        "key_objects": [
+          "Robert Pattinson",
+          "red jacket"
+        ]
+      },
+      {
+        "time_range": "0:16-0:17",
+        "visual_description": "Travis Henderson (Harry Dean Stanton) from 'Paris, Texas' walks along a waterfront with a large sailboat in the background.",
+        "audio_description": "A.J. Soprano's voice states, \"Life is absurd.\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "Harry Dean Stanton",
+          "sailboat"
+        ]
+      },
+      {
+        "time_range": "0:17-0:18",
+        "visual_description": "A man with a serious expression sits in front of a control panel with green lights, likely from 'Koyaanisqatsi'.",
+        "audio_description": "Carmela Soprano's voice exclaims, \"Don't say that! God forgive you!\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "control panel"
+        ]
+      },
+      {
+        "time_range": "0:18-0:19",
+        "visual_description": "A man wearing a 'BUS AND BOAT SIGHTSEEING' hat looks forward, a scene from 'Blue Velvet'.",
+        "audio_description": "",
+        "text_on_screen": "BUS AND BOAT SIGHTSEEING",
+        "key_objects": [
+          "hat"
+        ]
+      },
+      {
+        "time_range": "0:19-0:20",
+        "visual_description": "A man with a beard and glasses looks intently, possibly from 'Blue Velvet'.",
+        "audio_description": "",
+        "text_on_screen": "",
+        "key_objects": [
+          "glasses",
+          "beard"
+        ]
+      },
+      {
+        "time_range": "0:20-0:21",
+        "visual_description": "A young Black man looks directly at the camera with a neutral expression, possibly from 'Good Time'.",
+        "audio_description": "A.J. Soprano's voice concludes, \"There is no God.\"",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:21-0:22",
+        "visual_description": "Reynolds Woodcock (Daniel Day-Lewis) watches Alma Elson (Vicky Krieps) during a dress fitting, with another woman adjusting the dress, from 'Phantom Thread'.",
+        "audio_description": "",
+        "text_on_screen": "",
+        "key_objects": [
+          "Daniel Day-Lewis",
+          "Vicky Krieps",
+          "dress"
+        ]
+      },
+      {
+        "time_range": "0:22-0:23",
+        "visual_description": "Carmela and Tony Soprano stand together, both looking exasperated.",
+        "audio_description": "",
+        "text_on_screen": "@filmm_p4",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a cinematic edit exploring themes of existentialism and the absurdity of life, primarily through dialogue from A.J. Soprano in 'The Sopranos' and juxtaposed with clips from various acclaimed films. The dialogue highlights A.J.'s philosophical musings on death, purpose, and the existence of God, which are met with concern and anger by his parents. The accompanying film clips, ranging from dramatic to surreal, visually reinforce these existential themes and create a mood of introspection and unease. The video serves as a compilation of 'niche' film moments that resonate with the philosophical concepts discussed.",
+    "people": [
+      {
+        "description": "A young man with dark hair, wearing a black t-shirt, appearing troubled and later defiant, identified as A.J. Soprano.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "A.J. Soprano"
+      },
+      {
+        "description": "A middle-aged woman with blonde hair, wearing a patterned top, appearing concerned and angry, identified as Carmela Soprano.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Carmela Soprano"
+      },
+      {
+        "description": "A middle-aged man with dark, receding hair, wearing a polo shirt, appearing angry and exasperated, identified as Tony Soprano.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Tony Soprano"
+      },
+      {
+        "description": "A man with dark, curly hair and a mustache, with a cut on his forehead, identified as Dennis Hopper as Tom Ripley.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Dennis Hopper"
+      },
+      {
+        "description": "A man with long, curly hair, sitting in a desert, identified as Harry Dean Stanton as Travis Henderson.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Harry Dean Stanton"
+      },
+      {
+        "description": "A man with dark hair, dancing in a club, identified as Mark Wahlberg as Dirk Diggler.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Mark Wahlberg"
+      },
+      {
+        "description": "Two young children riding bicycles.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A man with dark hair, miming singing into a light bulb, identified as Dean Stockwell as Ben.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Dean Stockwell"
+      },
+      {
+        "description": "A man with dark hair, wearing a red jacket, running from a building, identified as Robert Pattinson as Connie Nikas.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Robert Pattinson"
+      },
+      {
+        "description": "A man with dark hair, sitting in front of a control panel.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "An older man wearing a 'BUS AND BOAT SIGHTSEEING' hat.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A man with a beard and glasses.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A young Black man looking at the camera.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A man with dark hair, observing a woman in a dress, identified as Daniel Day-Lewis as Reynolds Woodcock.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Daniel Day-Lewis"
+      },
+      {
+        "description": "A woman in a dress being adjusted, identified as Vicky Krieps as Alma Elson.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Vicky Krieps"
+      }
+    ],
+    "entities": [
+      {
+        "name": "The Sopranos",
+        "display_name": "The Sopranos",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "A.J. Soprano",
+        "display_name": "A.J. Soprano",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Carmela Soprano",
+        "display_name": "Carmela Soprano",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Tony Soprano",
+        "display_name": "Tony Soprano",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "The American Friend",
+        "display_name": "The American Friend",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Dennis Hopper",
+        "display_name": "Dennis Hopper",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Tom Ripley",
+        "display_name": "Tom Ripley (character from The American Friend)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Paris, Texas",
+        "display_name": "Paris, Texas",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Harry Dean Stanton",
+        "display_name": "Harry Dean Stanton",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Travis Henderson",
+        "display_name": "Travis Henderson (character from Paris, Texas)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Koyaanisqatsi",
+        "display_name": "Koyaanisqatsi",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Boogie Nights",
+        "display_name": "Boogie Nights",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Mark Wahlberg",
+        "display_name": "Mark Wahlberg",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Dirk Diggler",
+        "display_name": "Dirk Diggler (character from Boogie Nights)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Gummo",
+        "display_name": "Gummo",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Blue Velvet",
+        "display_name": "Blue Velvet",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Dean Stockwell",
+        "display_name": "Dean Stockwell",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Good Time",
+        "display_name": "Good Time",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Robert Pattinson",
+        "display_name": "Robert Pattinson",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Connie Nikas",
+        "display_name": "Connie Nikas (character from Good Time)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Phantom Thread",
+        "display_name": "Phantom Thread",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Daniel Day-Lewis",
+        "display_name": "Daniel Day-Lewis",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Vicky Krieps",
+        "display_name": "Vicky Krieps",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Reynolds Woodcock",
+        "display_name": "Reynolds Woodcock (character from Phantom Thread)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Alma Elson",
+        "display_name": "Alma Elson (character from Phantom Thread)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Existentialism",
+        "display_name": "Existentialism",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Surrealism",
+        "display_name": "Surrealism",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Cinematography",
+        "display_name": "Cinematography",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Paul Thomas Anderson",
+        "display_name": "Paul Thomas Anderson (PTA)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Harmony Korine",
+        "display_name": "Harmony Korine",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "David Lynch",
+        "display_name": "David Lynch",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Wim Wenders",
+        "display_name": "Wim Wenders",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Life is absurd, and death highlights this ultimate absurdity, leading to questions about the existence of God and the purpose of being.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "The Sopranos",
+          "details": "TV Show"
+        },
+        {
+          "name": "Phantom Thread",
+          "details": "Film"
+        },
+        {
+          "name": "The American Friend",
+          "details": "Film"
+        },
+        {
+          "name": "Inherent Vice",
+          "details": "Film"
+        },
+        {
+          "name": "Soy Cuba",
+          "details": "Film"
+        },
+        {
+          "name": "Boogie Nights",
+          "details": "Film"
+        },
+        {
+          "name": "Gummo",
+          "details": "Film"
+        },
+        {
+          "name": "Blue Velvet",
+          "details": "Film"
+        },
+        {
+          "name": "Good Time",
+          "details": "Film"
+        },
+        {
+          "name": "Koyaanisqatsi",
+          "details": "Film"
+        },
+        {
+          "name": "Paris, Texas",
+          "details": "Film"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The audio is dialogue from The Sopranos, not a song. All film clips and associated actors/directors from hashtags have been identified with high confidence."
+    },
+    "presentation_style": {
+      "primary_format": "compilation",
+      "camera_work": "static|panning|transitions",
+      "editing_style": "montage"
+    },
+    "visual_mood": "melancholy, introspective, surreal, thought-provoking, unsettling",
+    "topic_hints": [
+      "existentialism",
+      "film analysis",
+      "cinematic themes"
+    ],
+    "affect_hints": [
+      "thoughtful",
+      "somber",
+      "confused",
+      "defiant"
+    ],
+    "genre_hints": [
+      "film edit",
+      "philosophical commentary",
+      "niche culture"
+    ]
+  },
+  "grounding_sources": [
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvr3oPwZcNt4_Z2vicWHmg58HXhGO6HTpKGZUsQyjppOZwqCHzUDYmKdYyOY7ElwMBblYbYnBgVppuGbC7T1dI5WgFjelmR-xcau2_LQOxBdPLdYJqMbaptZOxZClSv-Hys1PGJm57-b0IXqFG0NNi3PgRGPaQ_l_EaO6Lhsf-NeVfyV5z9a5vqWjx_ZJ9a8_mUTBp6eSSFQ8CqJGFgO_me3eL-oPTRJLie5Eb4jL8i9psag==",
+      "title": "themoviegourmet.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsdXpZsQl1BiDlfLu6CiGYxENey0073fHtCUdnT0WomDBcIy2cUPJFQeu2szIzYPyiwcoXcKzrxOyqxIxejWLDW3gqbucOO2A_8r64uMwZnf9mLqU1X6DnmTkkv0bZKDi7ADUyww==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHl8_enHR7IaJPek8dSPqrTepynpJZfOQyeZ01RjwPwoaXH8SFZwGE33rAZSK2tCvqYupbnpQe2LllPFLF5qo_V1LaK0esLUyKO1fFokTFxA-8xG-wODolsBjIQFBuR9wFfV2IwaMkAuc4tE38r5OTL6gk5_-qwieffGq6tAR6ygya7U_6bHxrgGjOFPO11j9Bs2EyGYcWsPQ==",
+      "title": "reddit.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWGYcHijKVyWKar6f4QbJjazbznwCHPjtpDtWXrkX-vHBnVXJDawR0f80vaD3juPj9ZC80AOS-nhRRNRBrZ-FrxsiGu9y1zifWOiN3-quW8XCrPM0vJk5MuAZsb58oowoAoJj2VA==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGx_IXYdjR43qvFxu0l2GpwtYrTOoa-VLKP5F-hpvFyHAE9QvhnTaffrRKvcgCTB7NXxxD3GYXtwl6fICzHpDQqidomZem5ZnZfzeCKsSYBbu0JqzPOAJiMpmgO1s_g5Op3odRJmw==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXdLfyQ2aytSZC-R43HBGBMMuR_Wk1XRpkPW7GCFII9NO_d0R7TnMBS0lXrJQfo8kArYXeuJmEPGuXVYQ4ZGSqPQJq5MJkmUTu4as-Z1asLqxMlBQ18_jmXybSirynZGtjxWHe7vfhsW6TIFffc1W8ZXG666IPHvZ-jyNUpfy7rpotVjLn3J2d1KCnKED6pdAwCqXE9QZQElSbVmwj_kWKzLccs1i6FQEQ7nkaSyDbiMNx",
+      "title": "tpr.org"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxa40YqaVkf-f2TAQaEHEiLCsI3JsBLAlak0vuABII5lGYVb0GuwoM5gz2Zh7SAY79twzcQADXzIH8cwEx4Py_n7zksdOwipf6IcEBGQ_eWmpI5d5Mvuuc0s6Xda0FPt6jKcNzhw==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYj7XUlZ_EufN6C-SghossMRCfTT1L9lK2yL6IuzTFq3DIqMst6AyYnxyFAgvzxRyh4deMR4MMRi-cPlv2rY_7ZIAdUK8YKZhM8IxYyEIWXcbnUya_RrUC3ami",
+      "title": "imcdb.org"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeKDPXCcZ92dyC4-uyvSA4mlq54gEzY79T_BhsD9GOWu3QUrFDlUjPGBObkIGLvYujsdvxCPOksz_OEzNdWlkGnQkMZe-lqAznJN6e7Q71aLmmoFdP-WjDgeILyUYekCqMXs8yHQ==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFs2r7rl8r53M_05YXul0RBOzaNKgTD_i73sBThAHphpiC8kDhDY8_ZPvzSZ-l107zYpZ3mLiD_iS1TwyVZRrr7tj6R1dZQE5d6FJ55uEo32U46cCmyQgSVAappDoR4NQMG9ebvVg==",
+      "title": "wikipedia.org"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFruhyYVXGTzPrEKKRg8SI7X7BEpYwmeFbLTYiIHnTl6aTkM1YQJzacKlTEH-mGqQoZ0R57a4XsaVUAjb5NryR7ox5K5JNCCfUAjUeohhdEHOShvN18nurUaXX2JMopVtQvfDBxz-wqkngDQVi4qsF3ssLj",
+      "title": "ethanomo.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_VXZgBgTS5MkqR4qQpruK1S37QHcr6k81yrnILMujhShBF9O1GDE0g5YKJaoE_T6mRSCCVBcVLFB9tMu1CCga1cROKpri43g8DnlwUg0OM9DTBw9LxoWr_Um9yVpDmG2ZfUc3bQ==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHP3aZAn-htrbM1sLH0uPCpbMWlJLz3kpT6aWsY3AGlDLFmFb5k8i1ULj6qd21Z_ULwq8UrVaqLl2ci6mjbZfn7L_zV1CWVEyuZTECqs4KPGX0MCnkme8926I39D6-hfgWeWICoM2ma6VQZjp55rStt49rYDV77K91_wFkLrGbPNeRSnG8fTLmkx5NKTAGGo3SPaSAZzOHjHEJk",
+      "title": "reddit.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_jWUS9thEkzTYVhyzl-PBvuH_e8zPz3GJ3xQjhazvTNrBweBosbbUHQ5tEe-3__kj3aKJ2cHc8tJHq6_GJY4N_rbCToYzNudyuZpuJC_hhZBgP_OJjfV9s3kLqi89hgsxvNTryRjhkW5H37YlJa22x8JAnXkmPamiSo08mVf9GRVJgwstJIJrrSPF1ywl",
+      "title": "reddit.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG13vtfqaxtJz5P5_4jWD_ybGGwiOPRNGgLjcgqYSchKyYZj7863xNjinoKrYZCvWmNbQFbwLNu7jLNq0_GajztkxwtBJZH9JpgRiW_5SLnikuEdU5npGXD_dYYjRW1RxsVVpARkQ==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbdAOd2D17e-PGeuhPYfe-zCenMCWipj9xi6HAghs6jkf9EdLBuv0pU0Y2UFLSsyms73dTrDFJe1g3RdwaAn3oWIkyO0ZyItlZNILVg1TtSZUSo5UBZn3DpKza5Q4VOYXMu38kaA==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGa7V_5dc7nwqktGl6gGjgN0gIKb9VjAW5uFcaBTQ5dopGb1PtPBwUJuYp8qK2FqboHua8NaP_R-snseAQeAcydAD3xassrmh52jCtmT5DAWLVdk_PxCkyMn9_Gr1d1nQnQE9kG8RB1zg_3MGMz2azf0JXk98djv1BM-49o01-QK98Z-KaRIjLxfvCe-IZWjTfxnOfZTvp5pg8=",
+      "title": "reddit.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnpDZhPsopKqGOasXBT2RoD3Yi9RS5O1HBKDq4xbztFMMw-l-Ra9eisLPhK6MZ1QmtTjxLzHdVchupO5RH90ROzlzsbiNoHBTOLhSdcbhmCnF4dK2UxfisOvdI6S8JLnhe7lr1RA==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhHLCvO9PmzZbU-LViwMRPu-iTLETlbTauqA-uDlMoa_zz9nlYXgEiBG6Nj_wh4bPkfLDmjhG8hD611FUCHuzzQDLVhbNvDj9Zr7XPLN0IZYDk8RRZoCtNvoig2P_8p_W1OYTt3A==",
+      "title": "wikipedia.org"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGU3zysxFvZi9i1o0arsLhYWru_HffPgJdjbH702woOMOBVHTk0OKtz78ikZzIuXIlnH6ixlZkCNKv9yPRznyq9-e3bb2ll8rmYWyeC_J-62P4WjZsEkU629Dt4ZVX3lHpDQI1UP2atiY2x",
+      "title": "endev42.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2HiPjZ9bdgJovCtDDR8ZvjrzQz67LR4qgjCiZHyg3qFtiA9SoLtwaseNjqZlnLOh5DiACuOa584ehb92l91M9uNttYd_FOM9YUsOSo3RJVeFgDTxxYlpqg7NEYCWvPJGq3ajDNtChZzf7Cc3yWD0LBDscae-uXmiQYcl009EVhd7A6tn5T8OqyenkWkEyH5-hkgS57jUYhhwAEDLcn4F_QRvICzZTqQzgrozqBOrvEMw=",
+      "title": "filmobsessive.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF634Cr6GIkphLyHhKZ9dOEziR-STtCV-UrW4r0TKVlgF4DHp0zf625-2z9jSxG2zHY_E-18mM01lZus-Ou0G_FurzDZewCji7MUW2IsC4n-ZAxRvu195I9bp5wRCO3JGj6FX6wLTnv2IhhAdV7nvdMSYnUn9gfBC9hAJSIFajRwrE9ASA7j3c9k_KAOQ==",
+      "title": "thelatestpictureshow.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXGAndDuheU2kie1yOylq37WrWIVfYMyObUTJfAhm31G-4CW1Bz4Cb_4o9zoPywQuIL06xNpCh_G3FpO4_z7B3HtCx0oj4kD_zrbF-gIy-hUm6UJuZHJ832ARHx7jYLOZ2rsZgtlzQ9zAXYZQKvU_iAafSsy89K0WTl_VNqoZcTvsQ-8llb3-ubEyX0J6XLv1Brofn-4Pc8Yo=",
+      "title": "reddit.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4YQxbcyPDzVVhg30hSbZmMu2q81BkLdkhgNh9l4HcOkgbet-Icv5ds6W7d5TG_CFptAfpDON_gwfigmIgj3xGHD_XsgqJJl0XKD7zeTLiuACNxLJr3Q9uGpsFTJUMwlP9M5m9",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEu1gMFDAOnqYVnV_0-O_yoS4CzeGqaIC1xb6SpsXF6mpEB5RutlvFksXkIFb8PZK73v7h--6qnlCKjUz3B85kydc-zF3xIZkaWtjgIuK9dCM517uvA2TvD9QN-k8iIfaKFxJdV52AqwrfPrHzCZ1eZBOg37MqXXj3jQV6T4HGRR8o=",
+      "title": "expressjackets.co.uk"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFt6z1LOgppYpPJ0JlaJHXh4_D0hcT34SB0GP73zqazH39T7T08WdWqS-oary0ghlcoFzq3OmxLuCW_e8roapBmbdI2QaDRgf-YMmAUxEbLHhL7pmDn7A1IlFxSMLW_8cSdRDmGhb_rNSoo_m9Ry2f8Dw6-jkkhpVdQT6iwhUHKQ34ywy4WBx3cRThmi2v-j1xI9JQvdC3IRGUD",
+      "title": "newamericanjackets.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGiKdPxJpRGTKkjLXdEUiDCnJMpX_50Q3RIElTInDsjbdyEiLQ99Ts_kZOy07KpQEFC-JbqtGptaHJJcfCJcClaqxNUB5UxMoJjz5aajoECJCyDFnCWilDKaFqrMbbAcFXcT9CUVRPL6OGcXCTl8NREbHtNa3ehuddAH1c-buzYMxPVGncpQ2xWGwIo4NqZdVk=",
+      "title": "reddit.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwxqpUrFWaChIsDREs_e6sptXNmNFhPYQI7lFZMd8h2U71CQaYLAvuuDCW2Svm6d2nb-z-l5yJdA_8zYb9tia3xjnu6ah1rrA62ErrqUcWAhJLra2o6_p1zD-TKJecKj-oRcOsODcNEj56dHxe6N1Ypl_T8yD-WkiQuFiKwcnOHkoQFetqe_Cl2f8=",
+      "title": "theamericanoutfit.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQEPoyYAMNvCTEdxloZGP1LLzrkHWyNlqO6c6b833ITzXcDB6mFoTOBU4MjvMysyMjHYrMl2m6vwxoH74_UN-Bf4-xYoMP4nW02rHokpaSTzpG3d5139M7_JluJq2VJZd6pJCoQQ==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMnqNC_EyIGFN6fmuNj39JheFlBuEsdovozLDUJMbIKCO6htl-ocOOyYGiBZQqY-TBBtQj6nZJC4ZGwjGA81Iv02IMiU2X6YcPpZOY5se1WYF73kzhAhGh8q3Vy53uUIei9KV5yw==",
+      "title": "wikipedia.org"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyWyeklMZ1tMctRKDktvunwo5qS4slq0d99sS5wklRkQTNXN_FoMRdoBukCMKIrj0LotTlHsDBs9CjtPCFb5Jr2Bvf6rkALeQAcArTPJv1Ui_nT3hVwAERkP5clKK_PrsGgnidmO1jLFOzjHKlHONBycby-uUg7drh39gpGq8FlUpNjGGZhh6fENiXkw==",
+      "title": "bet.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmKP-ea0LFNtkvAVYaIzbgaF623CwEni7sJh4SjBJv2q92hCCk62qckV-lyHEOD3TsU07pI-ECiRUk_ocH6e5u65NT4YkTmrTkortLvODHzjkgg0tWKBQJixo3Nl4PuBYoow==",
+      "title": "wikipedia.org"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9ol05pZ2egY_2PJL3S4PeDJQ1751nqqW3xwJ8KSJzgUOoeDNgCpZwB5JgMzVZkuWm4TtQNooFX7AKe2yvJnlENuxDTEyQePYDTY0oQF348BfNmJcbwOi92g4i74edreoVXA23JQ==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEK49rNjDZA9Cg5Q8ATCBYuxggyhy_hEigC6BuDFbcq4S8FPmBcbAhmsTuHFCQhBvNFt1y_xBEuwFo1rm75-OAxpr_NHvL2CrcwOt0oe_GJx886BLaSfrh2RZHo2vA72Qjhsm5Tsi7eEXj7Rh5SfI-XzPPsSkeiNDuOi4fJ1mkbtsK4kPircstq5mSQnoPk1q_ajTWsTosN260sxBPUA==",
+      "title": "apple.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxH1VcJV6Of7aUgXVu0Nliz0RQhqA9EAmZAN9bdyxfsRXnPdgZm9Ahk3S8xMzoWcj2kCeiMT-70Moqea4PrX7CqS9Pbo17l3JdzkD62CdnEIAZNS1v8XE8c1xd37SFuLLLrepzg_guoS2FZ7kQWtCJy9G2D-kxH_cmyloP7TrFyBwhEPyw4KznTSGQqDwqi5FF87Jc9tU-Yw==",
+      "title": "vulture.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7jl7iefRz_mN-yq_0bn787qChsaDNBw3MWK8Z_Sy9U3sFxfuEyoix1NTcKVQMVjzNVvKIcXw5ffzgYRB5JQ6wv5XJ5D1j6lAlHS41rDSganH6PzzQvPnZG2Td395GXM0M5dkK9A==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKLzydxKjJ6LVgMccmoPuX7gIJKzQrWdx5CQPstYRv07DBkowlFH6TC5Xc18VC20LoxHdQF_EuAz63EPpk8zDk-6ZIQQpzeyYg3jgfH79vs4s4w81WRtOlswMzeMlxgTweXSy82IJUs_yzdfBtugAapYvOdc3rjLOmw8O1LtAP4MfB5HgUL8RdEPEFFCJdovMq93cs088EthPynglt",
+      "title": "wmagazine.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWptVGEtQkyBMQDBcA4J1LKSMxFDjbAtlG0m7E5Ab7MlPTfAFKs_xbwQSSMUbTH-W3Gdpm7BChZHnjiAZ_zAPhqSnm-5Pu1S-XKDagXo51CCiYaJmQ_d_2oAlrfQvV3PaYz38v0Q==",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS9Z3un6CpcqeyBU8_JGwg3ISWurBX6CzbQNSe9FIhT8U28oepDdJpp8v1pgXO_craHZHHcgfFYsr-APVTISCJME2HYnwFQF1ArytOLZNCbZUVf2blMfCgAXiRN4o3zOEmCXwuGmvJHzyX9W6HbJezy5NAWhpU3ypqU_Q2j7VIhbS-rQ==",
+      "title": "elle.com"
+    }
+  ],
+  "metrics": {
+    "input_tokens": 8762,
+    "output_tokens": 6183,
+    "total_tokens": 14945,
+    "cost_usd": 0.005024,
+    "latency_ms": 43022,
+    "upload_ms": 5537
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

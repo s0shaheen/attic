@@ -1,0 +1,161 @@
+{
+  "item_id": "7575353456161049887",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:18:35.563733+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "The creator sits in front of a computer monitor displaying the TouchDesigner node-based programming interface.",
+        "audio_description": "The ethereal, high-pitched vocals of 'Pitch the Baby' by Cocteau Twins begin playing.",
+        "text_on_screen": "FILE EDIT VIEW FORUM TUTORIALS",
+        "key_objects": [
+          "Computer monitor",
+          "TouchDesigner interface"
+        ]
+      },
+      {
+        "time_range": "0:02-0:07",
+        "visual_description": "The creator holds up a smartphone to the camera. A bright blue and white particle projection appears to emit from the phone, swirling in the air as an interactive visual effect.",
+        "audio_description": "The music continues with its rhythmic, dream-pop beat and layered vocals.",
+        "text_on_screen": "realtime: ON 59.97 fps",
+        "key_objects": [
+          "Smartphone",
+          "Particle system projection"
+        ]
+      },
+      {
+        "time_range": "0:07-0:09",
+        "visual_description": "The creator lowers the phone, and the particle effect dissipates, leaving the creator looking at the camera.",
+        "audio_description": "The song continues as the video loops.",
+        "text_on_screen": "",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "In this short technical demonstration, creator @3.27wx showcases an interactive light projection created using the visual programming language TouchDesigner. By holding a smartphone up to the camera, the software triggers a dynamic, glowing particle system that appears to flow directly from the device. The video highlights the potential for real-time interactive art and live visuals, citing @keitlyn as an inspiration for the project.",
+    "people": [
+      {
+        "description": "Young male creator with dark hair, wearing a black t-shirt, demonstrating his software project.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "3.27wx"
+      }
+    ],
+    "entities": [
+      {
+        "name": "TouchDesigner",
+        "display_name": "Derivative TouchDesigner",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Node-based visual programming language",
+        "confidence": 5
+      },
+      {
+        "name": "Cocteau Twins",
+        "display_name": "Cocteau Twins",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pitch the Baby",
+        "display_name": "Pitch the Baby - Cocteau Twins",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "From the album Heaven or Las Vegas",
+        "confidence": 5
+      },
+      {
+        "name": "keitlyn",
+        "display_name": "@keitlyn",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Inspiration credit (ib)",
+        "confidence": 4
+      },
+      {
+        "name": "Particle System",
+        "display_name": "Particle System",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Generative visual effect",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "TouchDesigner can be used to create real-time, interactive light projections that respond to physical objects.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Pitch the Baby \u2014 Cocteau Twins",
+      "metadata_song": "Pitch the Baby",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The software interface and song are clearly identifiable."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Technological, ethereal, and creative with a calm, focused energy.",
+    "topic_hints": [
+      "Creative Coding",
+      "Generative Art",
+      "Interactive Design"
+    ],
+    "affect_hints": [
+      "Inspired",
+      "Intrigued",
+      "Calm"
+    ],
+    "genre_hints": [
+      "Tech Demo",
+      "Creative Showcase"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2278,
+    "output_tokens": 1258,
+    "total_tokens": 3536,
+    "cost_usd": 0.001097,
+    "latency_ms": 16574,
+    "upload_ms": 3371
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

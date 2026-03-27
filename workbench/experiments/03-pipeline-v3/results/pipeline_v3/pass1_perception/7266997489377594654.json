@@ -1,0 +1,189 @@
+{
+  "item_id": "7266997489377594654",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:04:08.530763+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:08",
+        "visual_description": "Bryce sits on a couch with friends and expresses his frustration with the current social gathering's gender balance.",
+        "audio_description": "Bryce says, 'Yo, it's chill you guys are back and shit, but fuck this ratio.'",
+        "text_on_screen": "Real Bros Of Simi Valley\nInvalid Ratio \ud83e\udd28\ud83e\udd73",
+        "key_objects": [
+          "beer can",
+          "couch",
+          "string lights"
+        ]
+      },
+      {
+        "time_range": "0:08-0:17",
+        "visual_description": "Bryce breaks down the math of the group, pointing out there are four men and only three women.",
+        "audio_description": "Bryce: 'Four dudes, three chicks. Like that's gay as fuck. Sorry Whit.' Whitney responds, 'What?'",
+        "text_on_screen": "Real Bros Of Simi Valley\nInvalid Ratio \ud83e\udd28\ud83e\udd73",
+        "key_objects": [
+          "beer can"
+        ]
+      },
+      {
+        "time_range": "0:17-0:27",
+        "visual_description": "Bryce continues his rant, insulting Whitney by stating he won't sleep with her again to fix the vibe.",
+        "audio_description": "Bryce: 'I mean, you guys are all wifed up, and I'm not gonna fuck you again, no offense.' Wade tells him to chill.",
+        "text_on_screen": "Real Bros Of Simi Valley\nInvalid Ratio \ud83e\udd28\ud83e\udd73",
+        "key_objects": [
+          "beer can"
+        ]
+      },
+      {
+        "time_range": "0:27-0:37",
+        "visual_description": "Tessa offers to invite a female coworker to fix the ratio, which immediately changes Bryce's mood to excitement.",
+        "audio_description": "Tessa: 'It's fine, I'll just text a girl from work.' Bryce: 'Suit, for real? I think that's fucking awesome.'",
+        "text_on_screen": "Real Bros Of Simi Valley\nInvalid Ratio \ud83e\udd28\ud83e\udd73",
+        "key_objects": [
+          "smartphone",
+          "beer can"
+        ]
+      }
+    ],
+    "overall_summary": "In this clip from 'The Real Bros of Simi Valley,' Bryce (Jimmy Tatro) expresses his intense dissatisfaction with the 'ratio' of men to women at their hangout. He complains that having four men and three women is unacceptable and makes offensive remarks to his friends, including his ex-girlfriend Whitney. The tension is only resolved when Tessa offers to invite another girl from work, satisfying Bryce's obsession with social 'ratios.'",
+    "people": [
+      {
+        "description": "Bryce, wearing a plaid shirt and backwards hat, complaining about the group dynamic",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Jimmy Tatro"
+      },
+      {
+        "description": "Wade, sitting on the opposite couch in a black shirt and hat",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Cody Ko"
+      },
+      {
+        "description": "Whitney, a blonde woman sitting next to Bryce",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Monette Moio"
+      },
+      {
+        "description": "Tessa, a redhead woman sitting next to Wade",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Colleen Donovan"
+      }
+    ],
+    "entities": [
+      {
+        "name": "The Real Bros of Simi Valley",
+        "display_name": "The Real Bros of Simi Valley",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jimmy Tatro",
+        "display_name": "Jimmy Tatro",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Actor and Creator",
+        "confidence": 5
+      },
+      {
+        "name": "Cody Ko",
+        "display_name": "Cody Ko",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Actor and YouTuber",
+        "confidence": 5
+      },
+      {
+        "name": "Simi Valley",
+        "display_name": "Simi Valley, California",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Ratio",
+        "display_name": "Gender Ratio Slang",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "The social concept of male-to-female balance at parties",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video satirizes the toxic and superficial 'bro' obsession with maintaining a specific gender ratio at social gatherings.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Real Bros of Simi Valley Score \u2014 Original Composition",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Identified the specific actors and show based on visual recognition and text overlay."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Awkward, tense, and satirical comedy.",
+    "topic_hints": [
+      "Bro Culture",
+      "Social Dynamics",
+      "Satire"
+    ],
+    "affect_hints": [
+      "Amused",
+      "Awkward",
+      "Annoyed"
+    ],
+    "genre_hints": [
+      "Comedy Skit",
+      "TV Show Clip"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4867,
+    "output_tokens": 1634,
+    "total_tokens": 6501,
+    "cost_usd": 0.00171,
+    "latency_ms": 21837,
+    "upload_ms": 5878
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

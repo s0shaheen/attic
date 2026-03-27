@@ -1,0 +1,190 @@
+{
+  "item_id": "7535528104828194070",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:09:36.421654+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "Provocative and surreal clips from an animated film showing a sun-like figure and a large grey creature.",
+        "audio_description": "Creator promises the film is better than it looks and is a hidden gem.",
+        "text_on_screen": "okay... I promise this is not what it looks like this is actually one of the greatest ANIMATED FILMS you probably haven't seen",
+        "key_objects": [
+          "Animated characters"
+        ]
+      },
+      {
+        "time_range": "0:07-0:14",
+        "visual_description": "Title card for a series about 80s animation followed by clips of a girl and an owl.",
+        "audio_description": "This is day three of sharing some of the weirdest, most obscure, and downright traumatic animated films from the 1980s.",
+        "text_on_screen": "DAY 3 80s ANIMATION",
+        "key_objects": [
+          "Owl character",
+          "Girl character"
+        ]
+      },
+      {
+        "time_range": "0:14-0:22",
+        "visual_description": "Title card for the specific film 'Son of the White Mare' with stylized horse art.",
+        "audio_description": "And today's film is easily one of the most visually striking films I have ever seen. This is Marcell Jankovics' 'The Son of the White Mare'.",
+        "text_on_screen": "SON OF THE WHITE MARE This is Marcell Jankovics' 'The Son of the White Mare'",
+        "key_objects": [
+          "Film poster/title card"
+        ]
+      },
+      {
+        "time_range": "0:22-0:42",
+        "visual_description": "Montage of scenes showing dragons, a destroyed kingdom, and the birth of a hero from a horse.",
+        "audio_description": "Narrator explains the plot: three dragons destroy a kingdom, a white mare gives birth to a powerful boy who journeys to the underworld to save his brothers.",
+        "text_on_screen": "Three dragons rise from the underworld, destroy a kingdom, and drag its heroes into the darkness. But there is hope. Somewhere in the wilderness, a white mare gives birth to a boy with the strength of a god. When he learns what's happened to the kingdom, he sets off on a journey into the underworld. to rescue his brothers and to pull a fallen kingdom back from the brink.",
+        "key_objects": [
+          "Dragons",
+          "White Mare",
+          "Hero character"
+        ]
+      },
+      {
+        "time_range": "0:42-1:06",
+        "visual_description": "Clips highlighting the unique art style, specifically the lack of black outlines on characters.",
+        "audio_description": "Narrator acknowledges it sounds like a typical hero's journey but emphasizes the bold art style and the lack of outlines in illustrations.",
+        "text_on_screen": "I know, I know, that just sounds like a typical hero's journey. But I promise this film is unlike anything else you will ever see. The art style is just so bold and out there. you really don't see animated films like this anymore. And one of my favorite choices is the lack of outlines in the illustrations. So Jankovics did this because he didn't want the characters to feel like they were sitting on top of the world. He wanted them to feel as if they're part of the environment.",
+        "key_objects": [
+          "Animated environments",
+          "Stylized characters"
+        ]
+      },
+      {
+        "time_range": "1:06-1:25",
+        "visual_description": "Final montage of psychedelic and interconnected visuals of the hero and nature.",
+        "audio_description": "Narrator describes the effect as psychedelic and reflecting a world where nothing is isolated, blending hero, nature, and myth.",
+        "text_on_screen": "yeah, the effect is deeply psychedelic. But I also feel like it reflects the emotional core of the story. Because in this world, nothing is isolated. there's no hard separation between the earth and the sky. Between the hero and the mountains. Between self... and myth.",
+        "key_objects": [
+          "Hero character",
+          "Mountains",
+          "Sky"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a recommendation and brief analysis of the 1981 Hungarian animated film 'Son of the White Mare' (Feh\u00e9rl\u00f3fia), directed by Marcell Jankovics. The creator highlights it as part of a series on obscure and visually striking 80s animation. The video summarizes the plot\u2014a hero born of a horse who journeys to the underworld to defeat dragons\u2014but focuses primarily on the film's unique, psychedelic art style. The main takeaway is that the film's lack of character outlines creates a sense of total immersion and interconnectedness between the characters and their environment.",
+    "people": [
+      {
+        "description": "Male voiceover narrator providing film analysis",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@itsjustcinema"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Son of the White Mare",
+        "display_name": "Son of the White Mare (Feh\u00e9rl\u00f3fia)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "1981 Hungarian animated feature film",
+        "confidence": 5
+      },
+      {
+        "name": "Marcell Jankovics",
+        "display_name": "Marcell Jankovics",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Director",
+        "confidence": 5
+      },
+      {
+        "name": "Through Music (SpeedUp)",
+        "display_name": "Through Music (SpeedUp)",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Son of the White Mare is one of the most visually striking and unique animated films ever made.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The film's lack of character outlines is a deliberate choice to make characters feel like an integrated part of their environment.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The animation style creates a psychedelic effect that reflects the thematic interconnectedness of the story.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Son of the White Mare",
+          "details": "1981 animated film directed by Marcell Jankovics; noted for its psychedelic art style and lack of outlines."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Through Music (SpeedUp) \u2014 Unknown Artist",
+      "metadata_song": "Through Music (SpeedUp)",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The film and director are clearly identified. The audio matches the metadata provided."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Psychedelic, surreal, artistic, and epic.",
+    "topic_hints": [
+      "80s Animation",
+      "Film History",
+      "Surrealist Cinema"
+    ],
+    "affect_hints": [
+      "Awe",
+      "Intrigue",
+      "Mesmerized"
+    ],
+    "genre_hints": [
+      "Movie Review",
+      "Video Essay",
+      "Recommendation"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9093,
+    "output_tokens": 1993,
+    "total_tokens": 11086,
+    "cost_usd": 0.00256,
+    "latency_ms": 31867,
+    "upload_ms": 7881
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

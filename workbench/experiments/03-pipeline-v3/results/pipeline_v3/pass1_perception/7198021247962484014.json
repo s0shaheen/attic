@@ -1,0 +1,164 @@
+{
+  "item_id": "7198021247962484014",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:17:53.469436+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:11",
+        "visual_description": "Creator reflects on his past self using a split-screen comparison while delivering a motivational speech about self-acceptance.",
+        "audio_description": "There's no point of being insecure about anything basically is the point. Like you can only present yourself as you are. So you might as well be confident in the person that you are.",
+        "text_on_screen": "I wish I understood this when I was younger\n@IAMELIJAHWALLACE\n@IAMELIJAHWALLACE\n@ELIJAHWALLACE5\n@ELIJAHWALLACE",
+        "key_objects": [
+          "blue sweater",
+          "headband",
+          "webcam setup"
+        ]
+      }
+    ],
+    "overall_summary": "In this short motivational clip, creator Elijah Wallace shares a realization about self-confidence. Using a split-screen to show his younger self alongside his current self, he argues that insecurity is ultimately pointless. His main takeaway is that since you can only ever be yourself, you should embrace that identity with confidence rather than fear.",
+    "people": [
+      {
+        "description": "Black male with short hair, wearing a blue sweater, speaking directly to the camera.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Elijah Wallace"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Elijah Wallace",
+        "display_name": "Elijah Wallace",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lujon",
+        "display_name": "Lujon by Henry Mancini",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Henry Mancini",
+        "display_name": "Henry Mancini",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Instagram",
+        "display_name": "Instagram",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Twitch",
+        "display_name": "Twitch",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "YouTube",
+        "display_name": "YouTube",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Insecurity is a waste of time because you can only ever present yourself as you truly are.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Choosing confidence is more logical than being insecure since your identity is fixed.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Lujon \u2014 Henry Mancini",
+      "metadata_song": "lujon henry mancini",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": null
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "split_screen"
+    },
+    "visual_mood": "Reflective, calm, and encouraging with a nostalgic touch due to the split-screen comparison.",
+    "topic_hints": [
+      "Self-confidence",
+      "Personal growth",
+      "Mental health"
+    ],
+    "affect_hints": [
+      "Empowered",
+      "Reflective",
+      "Inspired"
+    ],
+    "genre_hints": [
+      "Motivational",
+      "Advice",
+      "Personal reflection"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2449,
+    "output_tokens": 1185,
+    "total_tokens": 3634,
+    "cost_usd": 0.001078,
+    "latency_ms": 14563,
+    "upload_ms": 3115
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

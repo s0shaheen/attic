@@ -1,0 +1,244 @@
+{
+  "item_id": "7619219121082813727",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:58:44.111852+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "The creator, @beneliasmoe, walks outdoors in a city setting, looking directly at the camera and speaking. Buildings and overhead wires are visible in the background under a clear sky.",
+        "audio_description": "\u201cAI brain fry\u201d is just the beginning of what AI is going to do to our brains.",
+        "text_on_screen": "\u201cAI brain fry\u201d is just half the story\n\u201cAI brain fry\u201d is just the beginning of what AI",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:04-0:11",
+        "visual_description": "The creator continues walking and talking to the camera, with city buildings and a street visible behind him. The lighting suggests late afternoon sun.",
+        "audio_description": "I'm riding through San Francisco right now, the home of AI, where so many people are experiencing this AI brain fry.",
+        "text_on_screen": "I'm riding through San Francisco right now\nthe home of AI\nwhere so many people are experiencing this brain fry",
+        "key_objects": [
+          "San Francisco street",
+          "city buildings"
+        ]
+      },
+      {
+        "time_range": "0:11-0:14",
+        "visual_description": "The creator reacts with a surprised expression, looking upwards, as if something flew into his mouth.",
+        "audio_description": "AI brain fry I just ate a bug.",
+        "text_on_screen": "AI brain fry I just ate a bug",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:14-0:29",
+        "visual_description": "The creator resumes walking and explaining, with the city environment in the background.",
+        "audio_description": "Um, AI brain fry is a term that researchers recently coined to describe that feeling of like buzzing, mental exhaustion, mental taxation that comes from supervising agents when you're using AI. So when you're using things like Claude Code...",
+        "text_on_screen": "um AI\nbrain fry is a term that researchers recently coined\nto describe that feeling of\nlike buzzing\nmental exhaustion\nmental taxation\nthat comes from supervising agents\nwhen you're using AI\nso when you're using things like Claude Code",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:29-0:38",
+        "visual_description": "The creator continues his discussion while walking through the city, emphasizing his points with gestures.",
+        "audio_description": "...and I think that this is just the beginning of what AI is going to do to our psychology, to our lived experience.",
+        "text_on_screen": "and I think that this\nis just the beginning\nof what AI is gonna do to our psychology\nto our lived experience",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:38-0:48",
+        "visual_description": "The creator continues walking and talking, with tall city buildings in the background.",
+        "audio_description": "We're just starting to see what it's like when these machines that are so powerful can do so much so quickly. How enticing it is to try and let them do as much as possible quickly.",
+        "text_on_screen": "we're just starting to see what it's like\nwhen these machines that are so powerful\ncan do so much so quickly\nhow enticing it is\nto try and let them\ndo as much as possible quickly",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:48-0:56",
+        "visual_description": "The creator continues his monologue, walking past more city architecture.",
+        "audio_description": "But what happens then is there's not really any space for contemplation and thinking about, do I actually want this agent to go do this thing in this way?",
+        "text_on_screen": "but what happens then is\nthere's not really any space for contemplation\nand thinking about\ndo I actually want this agent to go\ndo this thing in this way",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:56-1:18",
+        "visual_description": "The creator continues walking and speaking, with a tram passing in the background. The sun casts a warm glow on the buildings.",
+        "audio_description": "You're so excited by the almost giddy exhilaration that these things, these machines, these agents can move so fast that you don't take the time to sit down, put a pen to paper, put your fingers to your computer keypad, and actually think about, what do I want to build and why? Why does this thing matter? Why does this thing need to be in the world in this particular way?",
+        "text_on_screen": "you're so excited by\nthe almost giddy exhilaration\nthat these things these machines\nthese agents can move so fast\nthat you don't take\nthe time to sit down\nput a pen to paper\nput your fingers to your computer keypad\nand actually think about [what] do I want to build and why\nwhy does this thing matter\nwhy does this thing need to be in the world\nin this particular way",
+        "key_objects": [
+          "tram"
+        ]
+      },
+      {
+        "time_range": "1:18-1:45",
+        "visual_description": "The creator continues walking and talking, with city buildings and a clear sky in the background.",
+        "audio_description": "And I think that this dynamic really is going to shape the coming decades and centuries if we make it that far, because if we start to spend all of our lives and time being pulled by the intense speed of these agents and not thinking, we're going to stop forming our own thought out opinions. And I think that's a really concerning future.",
+        "text_on_screen": "and I think that this dynamic really\nis gonna shape the coming decades\nand centuries if we make it that far\nbecause if we start to\nspend all of our lives and time\nbeing pulled by the intense speed of these agents\nand not thinking\nwe're going to stop forming our own\nthought out opinions\nand I think that's a really concerning future",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:45-2:05",
+        "visual_description": "The creator continues his monologue, walking past a 'Franklin Page' sign and other city elements.",
+        "audio_description": "This is a shameless plug, but I'm building a news app called Particle that helps you take the space to think critically, to form your own opinions by showing you a bunch of different sources about the same news story. The more we can take a beat to gather information, to form our own opinions, to think, the better off we'll be.",
+        "text_on_screen": "this is a shameless plug\nbut I'm building a news app called Particle\nthat helps you take the space to think critically\nto form your own opinions\nby showing you a bunch of different sources\nabout the same news story\nthe more we can\ntake a beat to gather information\nto form our own opinions to think",
+        "key_objects": [
+          "Franklin Page sign",
+          "Particle (app)"
+        ]
+      },
+      {
+        "time_range": "2:05-2:09",
+        "visual_description": "The creator concludes his video, smiling at the camera, with a 'Campfire' sign and palm trees in the background.",
+        "audio_description": "That's all for me. Follow along for more of these ideas. Peace and stay human.",
+        "text_on_screen": "the better off we'll be\nthat's all for me\nfollow along for more of these ideas\npeace and stay human",
+        "key_objects": [
+          "Campfire sign",
+          "palm trees"
+        ]
+      }
+    ],
+    "overall_summary": "The creator, @beneliasmoe, discusses the concept of 'AI brain fry,' a term describing mental exhaustion from supervising AI agents. He argues that the rapid speed and enticing nature of AI can lead to a lack of critical thinking and contemplation, potentially shaping human psychology for decades. To counter this, he introduces his news app, Particle, which aims to help users form their own well-thought-out opinions by presenting multiple sources for news stories. The video emphasizes the importance of taking time to gather information and think critically in an AI-driven world.",
+    "people": [
+      {
+        "description": "A man with dark hair and glasses, wearing a light blue button-down shirt, walking and speaking directly to the camera.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@beneliasmoe"
+      }
+    ],
+    "entities": [
+      {
+        "name": "AI brain fry",
+        "display_name": "AI brain fry",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "San Francisco",
+        "display_name": "San Francisco",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "AI",
+        "display_name": "Artificial Intelligence",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Claude Code",
+        "display_name": "Claude Code",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Particle",
+        "display_name": "Particle (news app)",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "news app",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "AI brain fry is a term describing mental exhaustion and taxation from supervising AI agents.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The speed and enticing nature of AI can lead to a lack of contemplation and critical thinking, potentially shaping human psychology negatively.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "It is crucial to take time to gather information and form independent, thought-out opinions to mitigate the negative impacts of AI on our lived experience.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The Particle news app aims to help users think critically and form their own opinions by providing diverse sources for news stories.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "original sound",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "All major entities and concepts mentioned in the audio and text overlays have been extracted. The audio is the creator's original speech."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Informative, conversational, slightly concerned, bright, urban",
+    "topic_hints": [
+      "AI impact on psychology",
+      "Critical thinking",
+      "Information consumption"
+    ],
+    "affect_hints": [
+      "Concern",
+      "Thought-provoking",
+      "Informative"
+    ],
+    "genre_hints": [
+      "Educational",
+      "Commentary",
+      "Tech review"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 39853,
+    "output_tokens": 2972,
+    "total_tokens": 42825,
+    "cost_usd": 0.007761,
+    "latency_ms": 37073,
+    "upload_ms": 10234
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

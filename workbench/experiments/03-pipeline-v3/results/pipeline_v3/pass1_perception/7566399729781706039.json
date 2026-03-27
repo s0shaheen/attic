@@ -1,0 +1,227 @@
+{
+  "item_id": "7566399729781706039",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:08.246732+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:23",
+        "visual_description": "Pete, a software agency owner, speaks directly to the camera in a home office setting. He introduces himself and mentions building a social network using Claude Code.",
+        "audio_description": "Pete introduces himself as an agency owner in NYC and claims he built a dream social network in six weeks using Claude Code.",
+        "text_on_screen": "5 simple ways to 10x your output with Claude Code\nif you're a startup founder\nyou should 100% use claude code to build your product\nI'm gonna give you five tips that got claude working like a 10x engineer\nI'm Pete I own a software development agency in New York City\nand we work with startups and Fortune 500 companies\nto bring their products to market\nin the last six weeks, all by myself,\nin my spare time I built my dream social network using claude code\nand people can't believe I did nearly everything with AI\nand here's how I did it",
+        "key_objects": [
+          "Microphone",
+          "Computer monitor",
+          "Claude Code interface"
+        ]
+      },
+      {
+        "time_range": "0:23-0:32",
+        "visual_description": "Pete explains the first tip while a code snippet for a workflow requirement is overlaid on the screen.",
+        "audio_description": "Pete advises users to auto-update the claude.md file to ensure perfect context for every session.",
+        "text_on_screen": "No. 1 get Claude to auto update your claude.md file\n## Workflow Requirements\n- Update CLAUDE.md before every git commit\nadd this line\nat the top now every new claude session will start with perfect context",
+        "key_objects": [
+          "claude.md file"
+        ]
+      },
+      {
+        "time_range": "0:32-0:45",
+        "visual_description": "Pete discusses the second tip, emphasizing the importance of the clear command.",
+        "audio_description": "Pete explains that the clear command resets context, saves tokens, and removes legacy junk.",
+        "text_on_screen": "No. 2 use the clear command for fresh starts\nit resets context it saves tokens\nit dumps legacy junk from your context window\nI typically call clear when approaching the context limit\nrather than letting my session compact",
+        "key_objects": [
+          "Claude Code CLI"
+        ]
+      },
+      {
+        "time_range": "0:45-1:00",
+        "visual_description": "Pete explains the third tip regarding session compaction and its effect on quality.",
+        "audio_description": "Pete warns against working too long in a compacted session as quality degrades after 1-2 compactions.",
+        "text_on_screen": "so number three speaking of compact\ndon't work too long in a compacted session\nI'd say like one or two compacts max\nso the compact command summarizes history\nand then creates a new context window with that summary\nand I've just found that after too many compacts in a row\nthe quality starts to degrade",
+        "key_objects": [
+          "Claude Code CLI"
+        ]
+      },
+      {
+        "time_range": "1:00-1:12",
+        "visual_description": "Pete demonstrates the ultrathink feature, showing a terminal window with a rainbow-colored progress bar.",
+        "audio_description": "Pete suggests using ultrathink for complex problems to force deeper analysis.",
+        "text_on_screen": "No. 4 always keep thinking mode on and use Ultrathink in your text\nwhenever you need Claude to think really hard about something\n> Did you know about ultrathink?\nit'll show up as a little rainbow\nthis forces Claude to deeply analyze your problem\ndelivering better results",
+        "key_objects": [
+          "Terminal",
+          "Ultrathink rainbow UI"
+        ]
+      },
+      {
+        "time_range": "1:12-1:27",
+        "visual_description": "Pete concludes with the fifth tip, showing another code snippet for planning mode.",
+        "audio_description": "Pete recommends using planning mode for new features and forcing Claude to ask clarifying questions via the claude.md file.",
+        "text_on_screen": "and No. 5 use planning mode for new features and refactors\nso planning mode outlines every step and sometimes ask clarifying questions\nso to force it to ask clarifying questions\n## Workflow Requirements\n- Always ask clarifying questions in planning mode\nadd this to your claude.md file\nit'll help catch assumptions you missed\nand prevent errors before claude starts building",
+        "key_objects": [
+          "claude.md file"
+        ]
+      }
+    ],
+    "overall_summary": "Pete, a software agency owner, provides five actionable tips to optimize output when using Claude Code, Anthropic's CLI tool for AI-assisted coding. He shares how he built a social network in six weeks by leveraging specific commands and configuration files. The tips include auto-updating the claude.md file for context, using the clear command to save tokens, limiting session compactions, utilizing the 'ultrathink' mode for complex tasks, and forcing clarifying questions in planning mode. The video serves as a tutorial for startup founders and developers looking to increase their efficiency with AI coding tools.",
+    "people": [
+      {
+        "description": "A man with dark hair wearing a brown sweatshirt, identifying as a software agency owner.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Pete (@zerotopete)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Claude Code",
+        "display_name": "Claude Code",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Anthropic CLI tool",
+        "confidence": 5
+      },
+      {
+        "name": "claude.md",
+        "display_name": "claude.md configuration file",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Markdown configuration file for Claude Code context",
+        "confidence": 5
+      },
+      {
+        "name": "ultrathink",
+        "display_name": "Claude Code Ultrathink Mode",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Deep analysis mode with rainbow UI indicator",
+        "confidence": 5
+      },
+      {
+        "name": "Everything In Its Right Place",
+        "display_name": "Everything In Its Right Place - Radiohead",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Auto-updating the claude.md file before every git commit ensures every new session starts with perfect context.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Using the 'clear' command is superior to letting sessions 'compact' because it resets context and saves tokens more effectively.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Output quality degrades after more than two session compactions; fresh starts are better for complex work.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The 'ultrathink' command forces the AI to perform a deeper analysis of the problem for higher-quality results.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Forcing clarifying questions in planning mode via the claude.md file prevents errors and catches missed assumptions.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Auto-update claude.md",
+          "details": "Add 'Update CLAUDE.md before every git commit' to the Workflow Requirements section of the file."
+        },
+        {
+          "name": "Use the clear command",
+          "details": "Call 'clear' when approaching context limits to reset context, save tokens, and dump legacy junk."
+        },
+        {
+          "name": "Limit compacted sessions",
+          "details": "Avoid working in sessions that have been compacted more than once or twice to prevent quality degradation."
+        },
+        {
+          "name": "Enable Ultrathink",
+          "details": "Keep thinking mode on and use the 'ultrathink' command for complex problems."
+        },
+        {
+          "name": "Optimize Planning Mode",
+          "details": "Add 'Always ask clarifying questions in planning mode' to the claude.md file to catch assumptions."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Everything In Its Right Place \u2014 Radiohead",
+      "metadata_song": "Everything In Its Right Place",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Verbatim transcription of code snippets and tips provided."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Professional, technical, and focused.",
+    "topic_hints": [
+      "AI Coding Tools",
+      "Software Engineering",
+      "Startup Productivity"
+    ],
+    "affect_hints": [
+      "Informed",
+      "Empowered",
+      "Efficient"
+    ],
+    "genre_hints": [
+      "Tech Tutorial",
+      "Developer Tips"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9258,
+    "output_tokens": 2477,
+    "total_tokens": 11735,
+    "cost_usd": 0.002875,
+    "latency_ms": 28590,
+    "upload_ms": 5625
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

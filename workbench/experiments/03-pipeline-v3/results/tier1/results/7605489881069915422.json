@@ -1,0 +1,52 @@
+{
+  "item_id": "7605489881069915422",
+  "parsed_output": {
+    "summary": "Creator @yourstudentsupporter shares a structured 'PM debugging framework' designed to help candidates navigate difficult product management interview questions and real-world technical issues. The video uses a hypothetical scenario of being a product manager at Uber to demonstrate how to ask relevant questions and identify if a problem is due to internal engineering or external factors.",
+    "entities": [
+      {
+        "name": "@yourstudentsupporter",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Uber",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Product Management",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Rolling Stones",
+        "type": "clothing",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Yacht Club",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "career",
+      "secondary": "technology"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this 114-second career advice video, creator @yourstudentsupporter explains a specific PM debugging framework for product management interviews and real-life tech roles. Wearing a black Rolling Stones t-shirt, she walks through a structured approach to solving 'the hardest questions' by using an intuitive method to identify the root cause of product issues. She uses a specific example, asking the viewer to 'Pretend you're a product manager at Uber,' to illustrate how to determine if a problem is related to internal engineering or other factors. The content is aimed at tech professionals and students looking for interview tips and career advice. Key phrases include 'the PM debugging framework i SWEAR by' and 'structure to follow.' This tutorial is highly relevant for those searching for product management interview prep, tech career tips, or frameworks for troubleshooting product metrics and technical bugs."
+  },
+  "metrics": {
+    "input_tokens": 4366,
+    "output_tokens": 498,
+    "total_tokens": 4864,
+    "cost_usd": 0.000954,
+    "latency_ms": 8438,
+    "keyframe_count": 3
+  }
+}

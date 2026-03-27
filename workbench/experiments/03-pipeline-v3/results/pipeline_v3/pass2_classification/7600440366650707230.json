@@ -1,0 +1,79 @@
+{
+  "item_id": "7600440366650707230",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:50.028529+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "politics",
+      "micro_labels": [
+        "robotics",
+        "homelessness",
+        "urban life",
+        "social inequality",
+        "automation"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": [
+        "social commentary"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "sad",
+        "tier": "dominant"
+      },
+      {
+        "label": "shocking",
+        "tier": "secondary"
+      },
+      {
+        "label": "angry",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "raw_footage",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "provoke",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4221,
+    "output_tokens": 365,
+    "total_tokens": 4586,
+    "cost_usd": 0.000852,
+    "latency_ms": 6253,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 1
+  }
+}

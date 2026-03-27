@@ -1,0 +1,73 @@
+{
+  "item_id": "7411220330242411808",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:41.470908+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "career",
+      "secondary": "technology",
+      "micro_labels": [
+        "startups",
+        "entrepreneurship",
+        "leadership",
+        "productivity",
+        "venture capital",
+        "y combinator"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": [
+        "educational summary",
+        "content commentary"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 16281,
+    "output_tokens": 331,
+    "total_tokens": 16612,
+    "cost_usd": 0.002641,
+    "latency_ms": 10187,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 12
+  }
+}

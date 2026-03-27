@@ -1,0 +1,71 @@
+{
+  "item_id": "7421988029973187883",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:15.083844+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fashion",
+      "secondary": "education",
+      "micro_labels": [
+        "menswear",
+        "sweater fit",
+        "shopping tips",
+        "short men fashion",
+        "french tuck"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "style guide",
+        "how-to"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9809,
+    "output_tokens": 321,
+    "total_tokens": 10130,
+    "cost_usd": 0.001664,
+    "latency_ms": 6521,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 6
+  }
+}

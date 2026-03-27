@@ -1,0 +1,76 @@
+{
+  "item_id": "7270614848789024046",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:48.058453+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "travel",
+      "secondary": "other",
+      "micro_labels": [
+        "Amsterdam",
+        "coffeeshops",
+        "cannabis culture",
+        "Black-owned businesses",
+        "solo travel"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "vlog",
+      "micro_labels": [
+        "travel vlog",
+        "recommendations"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "relaxing",
+        "tier": "secondary"
+      },
+      {
+        "label": "funny",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "voiceover",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 7057,
+    "output_tokens": 352,
+    "total_tokens": 7409,
+    "cost_usd": 0.00127,
+    "latency_ms": 7527,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 4
+  }
+}

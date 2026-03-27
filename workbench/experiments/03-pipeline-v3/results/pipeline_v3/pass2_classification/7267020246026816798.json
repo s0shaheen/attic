@@ -1,0 +1,75 @@
+{
+  "item_id": "7267020246026816798",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:27.829023+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "comedy",
+      "secondary": "movies_tv",
+      "micro_labels": [
+        "mockumentary",
+        "bro culture parody",
+        "Jimmy Tatro",
+        "Real Bros of Simi Valley"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "skit",
+      "micro_labels": [
+        "tv clip",
+        "scripted comedy"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "cringe",
+        "tier": "secondary"
+      },
+      {
+        "label": "shocking",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "cinematic",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 1.0
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.95
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8823,
+    "output_tokens": 351,
+    "total_tokens": 9174,
+    "cost_usd": 0.001534,
+    "latency_ms": 7841,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 5
+  }
+}

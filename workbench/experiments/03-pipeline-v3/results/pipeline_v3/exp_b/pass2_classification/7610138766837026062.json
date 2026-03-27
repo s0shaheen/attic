@@ -1,0 +1,72 @@
+{
+  "item_id": "7610138766837026062",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:43.396308+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "career",
+      "secondary": "technology",
+      "micro_labels": [
+        "networking",
+        "professional outreach",
+        "cold emailing",
+        "linkedin tips",
+        "tech industry"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "advice",
+        "tips and tricks",
+        "educational"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 21794,
+    "output_tokens": 321,
+    "total_tokens": 22115,
+    "cost_usd": 0.003462,
+    "latency_ms": 9469,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 17
+  }
+}

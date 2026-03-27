@@ -1,0 +1,153 @@
+{
+  "item_id": "7618645907722046742",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:06:00.948834+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "Peter Parker stands alone at a party, watching MJ interact with Flash Thompson. He looks visibly saddened and isolated from the group.",
+        "audio_description": "A slowed-down, melancholic version of Akon's 'Lonely' begins to play.",
+        "text_on_screen": "",
+        "key_objects": [
+          "party decorations",
+          "drinks",
+          "flowers"
+        ]
+      },
+      {
+        "time_range": "0:07-0:18",
+        "visual_description": "A rapid-fire montage of emotional scenes: Aunt May's tombstone, Peter crying in the rain, Spider-Man looking at MJ, and Peter falling through the sky.",
+        "audio_description": "The music swells with a heavy, rhythmic beat while maintaining the somber tone.",
+        "text_on_screen": "MAY PARKER - WHEN YOU HELP SOMEONE YOU HELP EVERYONE",
+        "key_objects": [
+          "tombstone",
+          "Spider-Man suit",
+          "smartphone"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a cinematic 'sad edit' focusing on the loneliness and personal sacrifices of Peter Parker (Spider-Man) within the Marvel Cinematic Universe. It contrasts a scene of him feeling like an outsider at a social gathering with a montage of his most tragic moments, including the death of Aunt May and his eventual isolation. The main takeaway is the emotional weight and solitude that comes with his secret identity and hero's journey.",
+    "people": [
+      {
+        "description": "Peter Parker / Spider-Man, looking sad and isolated",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Tom Holland"
+      },
+      {
+        "description": "MJ, Peter's love interest, seen at a party and in a memory",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Zendaya"
+      },
+      {
+        "description": "Flash Thompson, seen talking to MJ at the party",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Tony Revolori"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Peter Parker",
+        "display_name": "Peter Parker (Spider-Man)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "MCU version",
+        "confidence": 5
+      },
+      {
+        "name": "Spider-Man: No Way Home",
+        "display_name": "Spider-Man: No Way Home",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "2021 film",
+        "confidence": 5
+      },
+      {
+        "name": "Lonely",
+        "display_name": "Lonely - Akon",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Slowed + Reverb version",
+        "confidence": 5
+      },
+      {
+        "name": "Marvel Cinematic Universe",
+        "display_name": "MCU",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Peter Parker's life is characterized by profound loneliness and the burden of sacrifice.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Lonely \u2014 Akon (Slowed & Reverb)",
+      "metadata_song": "original sound - blurr.cc6",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The edit uses footage primarily from Spider-Man: No Way Home."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "heavy_effects"
+    },
+    "visual_mood": "Melancholic, somber, and emotionally heavy.",
+    "topic_hints": [
+      "Spider-Man",
+      "Marvel",
+      "Character Study"
+    ],
+    "affect_hints": [
+      "lonely",
+      "heartbroken",
+      "nostalgic"
+    ],
+    "genre_hints": [
+      "fan edit",
+      "cinematic"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3153,
+    "output_tokens": 1114,
+    "total_tokens": 4267,
+    "cost_usd": 0.001141,
+    "latency_ms": 15243,
+    "upload_ms": 3233
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

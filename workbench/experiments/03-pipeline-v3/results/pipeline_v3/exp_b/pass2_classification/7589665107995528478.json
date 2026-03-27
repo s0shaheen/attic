@@ -1,0 +1,79 @@
+{
+  "item_id": "7589665107995528478",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:33.380773+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "music",
+      "secondary": null,
+      "micro_labels": [
+        "MF Doom",
+        "Rapp Snitch Knishes",
+        "high school band",
+        "live cover",
+        "hip-hop cover"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": [
+        "live performance"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "satisfying",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      },
+      {
+        "label": "wholesome",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "raw_footage",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "brand",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 18600,
+    "output_tokens": 373,
+    "total_tokens": 18973,
+    "cost_usd": 0.003014,
+    "latency_ms": 16467,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 14
+  }
+}

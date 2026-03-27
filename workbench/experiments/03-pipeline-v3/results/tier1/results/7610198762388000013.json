@@ -1,0 +1,52 @@
+{
+  "item_id": "7610198762388000013",
+  "parsed_output": {
+    "summary": "Web designer Jocelyn Diaz (@jocelyndiazdesign) showcases a project for a pilates studio called ALGN. The video highlights the site's layout and design within the Webflow interface, featuring sections for reformer classes and branding like 'Build Your Best Body'.",
+    "entities": [
+      {
+        "name": "Webflow",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "ALGN",
+        "type": "brand",
+        "relevance": "primary"
+      },
+      {
+        "name": "Jocelyn Diaz",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Majestic, Pt. 2",
+        "type": "song",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Pilates",
+        "type": "exercise",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "career"
+    },
+    "genre": "vlog",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "A TikTok by @jocelyndiazdesign documenting a web development project for a pilates studio named ALGN. The video shows the creator working inside the Webflow designer interface, specifically navigating the 'page-wrapper' and various home sections like 'section_home-classes' and 'section_home-hero'. The website design for ALGN features a dark green and white color palette with sections for 'Our Classes' including Reformer, Hot Mat Pilates, and Private Classes. Specific class names visible on screen include SCLPT, SCLPT CARDIO, AAA (Arms, Abs, Ass), ADVNC, and RCVR. Large hero text reads 'BUILD YOUR BEST BODY' over an image of a pilates instructor. This content serves as a portfolio showcase for web designers and developers using Webflow for client work in the fitness and wellness industry."
+  },
+  "metrics": {
+    "input_tokens": 4273,
+    "output_tokens": 497,
+    "total_tokens": 4770,
+    "cost_usd": 0.000939,
+    "latency_ms": 7563,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "item_id": "7593439419022036246",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:20:29.130751+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:11",
+        "visual_description": "Close-up of Binyamin Netanyahu speaking, followed by a shot of Edward Carr holding a tablet and asking a question.",
+        "audio_description": "Edward Carr asks Netanyahu why international journalists are not allowed to enter Gaza independently to report on the situation.",
+        "text_on_screen": "Netanyahu on why journalists can't enter Gaza without the IDF\nEdward Carr\nDeputy editor\nThe Economist",
+        "key_objects": [
+          "tablet",
+          "yellow ribbon pin",
+          "Israeli flag pin"
+        ]
+      },
+      {
+        "time_range": "0:11-0:27",
+        "visual_description": "Netanyahu responds to the question, emphasizing safety concerns.",
+        "audio_description": "Netanyahu states that while they could do more, it is common practice to have journalists accompany the IDF to avoid them being killed in crossfire.",
+        "text_on_screen": "Binyamin Netanyahu\nIsraeli prime minister",
+        "key_objects": [
+          "yellow ribbon pin",
+          "Israeli flag pin"
+        ]
+      },
+      {
+        "time_range": "0:27-0:38",
+        "visual_description": "Zanny Minton Beddoes asks a follow-up question; Netanyahu responds with a dismissive gesture.",
+        "audio_description": "Zanny Minton Beddoes asks if Netanyahu will definitively allow independent press. Netanyahu responds that they can increase numbers but implies the area is too small for independent movement.",
+        "text_on_screen": "Zanny Minton Beddoes\nEditor-in-chief\nThe Economist",
+        "key_objects": [
+          "tablet",
+          "jewelry"
+        ]
+      },
+      {
+        "time_range": "0:38-0:53",
+        "visual_description": "Zanny Minton Beddoes argues for the importance of independent perception; Netanyahu interrupts.",
+        "audio_description": "Zanny argues that independent access is crucial for changing the perception of Gaza. Netanyahu interrupts to state, 'It's a warzone.' Zanny points out there is currently a ceasefire.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:53-1:16",
+        "visual_description": "Zanny Minton Beddoes challenges Netanyahu's motives; Netanyahu lists recent attacks.",
+        "audio_description": "Zanny suggests the restrictions imply Israel has something to hide. Netanyahu denies this, citing recent rocket and sniper fire as proof of the danger to journalists.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:16-1:43",
+        "visual_description": "Zanny Minton Beddoes cites journalist casualties; Netanyahu defends the IDF's conduct.",
+        "audio_description": "Zanny notes the high number of journalists killed. Netanyahu insists the IDF does not target, jail, or execute journalists, unlike Hamas. He mentions Hamas holding up aid trucks.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:43-1:59",
+        "visual_description": "Zanny Minton Beddoes makes a personal offer; final outro screen with website link.",
+        "audio_description": "Zanny offers to go back to Gaza independently the minute it's allowed. Netanyahu says he will consider the offer. Outro music plays.",
+        "text_on_screen": "Watch the full episode at economist.com/insider\nThe Economist Insider",
+        "key_objects": [
+          "The Economist logo"
+        ]
+      }
+    ],
+    "overall_summary": "In this interview segment from The Economist, editors Zanny Minton Beddoes and Edward Carr confront Israeli Prime Minister Binyamin Netanyahu regarding the lack of independent media access to the Gaza Strip. Netanyahu defends the policy of requiring journalists to be embedded with the IDF, citing the extreme dangers of a 'warzone' and recent instances of rocket and sniper fire. The editors push back, suggesting the restrictions are intended to hide the reality on the ground and pointing to the high number of journalists already killed in the conflict. Netanyahu concludes by denying that the IDF targets the press and contrasts their actions with those of Hamas.",
+    "people": [
+      {
+        "description": "Israeli Prime Minister, wearing a dark suit, red tie, and a yellow ribbon pin signifying solidarity with hostages.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Binyamin Netanyahu"
+      },
+      {
+        "description": "Editor-in-chief of The Economist, wearing a bright red blazer and gold jewelry.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Zanny Minton Beddoes"
+      },
+      {
+        "description": "Deputy editor of The Economist, wearing a blue suit and tie.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Edward Carr"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Binyamin Netanyahu",
+        "display_name": "Binyamin Netanyahu",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Israeli Prime Minister",
+        "confidence": 5
+      },
+      {
+        "name": "Zanny Minton Beddoes",
+        "display_name": "Zanny Minton Beddoes",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Editor-in-chief of The Economist",
+        "confidence": 5
+      },
+      {
+        "name": "Edward Carr",
+        "display_name": "Edward Carr",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Deputy editor of The Economist",
+        "confidence": 5
+      },
+      {
+        "name": "The Economist",
+        "display_name": "The Economist",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Gaza Strip",
+        "display_name": "Gaza",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Israel Defence Forces",
+        "display_name": "IDF",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Israeli military",
+        "confidence": 5
+      },
+      {
+        "name": "Hamas",
+        "display_name": "Hamas",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Netanyahu justifies the restriction on independent journalists in Gaza by claiming it is for their own safety in an active warzone.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The Economist editors argue that independent reporting is necessary for transparency and to change global perceptions of the conflict.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Netanyahu explicitly denies that the IDF targets journalists, attributing deaths to crossfire.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound - The Economist",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All speakers and organizations are clearly identified via text overlays and audio."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Serious, confrontational, and journalistic.",
+    "topic_hints": [
+      "Israel-Hamas War",
+      "Press Freedom",
+      "Geopolitics"
+    ],
+    "affect_hints": [
+      "tense",
+      "skeptical",
+      "defensive"
+    ],
+    "genre_hints": [
+      "news interview",
+      "political commentary"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 12113,
+    "output_tokens": 2088,
+    "total_tokens": 14201,
+    "cost_usd": 0.00307,
+    "latency_ms": 29675,
+    "upload_ms": 5822
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

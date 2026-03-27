@@ -1,0 +1,52 @@
+{
+  "item_id": "7600440366650707230",
+  "parsed_output": {
+    "summary": "A Serve Robotics delivery robot named 'Akira' navigates a Miami sidewalk, passing a person lying on the ground. The video highlights the stark juxtaposition between high-tech automation and urban poverty near Optica Futura Opticians.",
+    "entities": [
+      {
+        "name": "Serve Robotics",
+        "type": "brand",
+        "relevance": "primary"
+      },
+      {
+        "name": "Miami",
+        "type": "place",
+        "relevance": "primary"
+      },
+      {
+        "name": "Billy Corben",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Radiohead",
+        "type": "artist",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Optica Futura Opticians",
+        "type": "place",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "news",
+      "secondary": "technology"
+    },
+    "genre": "news_commentary",
+    "affect": {
+      "dominant": "shocking",
+      "secondary": "sad"
+    },
+    "viewer_orientation": "social_sharing",
+    "embedding_text": "A TikTok video filmed in Miami featuring a Serve Robotics autonomous delivery bot named Akira. The robot, which has glowing circular eyes and a screen displaying 'Akira is on delivery,' is seen traveling down a sunny sidewalk. In a moment of sharp social commentary, the high-tech bot maneuvers past a person lying on the pavement in front of the Optica Futura Opticians storefront. The video is captioned 'how meta' and tagged with Miami commentator Billy Corben. The background music is 'Everything In Its Right Place' by Radiohead, which adds to the dystopian atmosphere of the scene. This video is often saved or shared as a critique of urban inequality and the rapid rise of robotics in public spaces where basic human needs remain unmet."
+  },
+  "metrics": {
+    "input_tokens": 4246,
+    "output_tokens": 457,
+    "total_tokens": 4703,
+    "cost_usd": 0.000911,
+    "latency_ms": 7644,
+    "keyframe_count": 3
+  }
+}

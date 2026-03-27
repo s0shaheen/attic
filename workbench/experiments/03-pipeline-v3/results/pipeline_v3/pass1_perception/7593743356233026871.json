@@ -1,0 +1,189 @@
+{
+  "item_id": "7593743356233026871",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:11:24.917943+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:24",
+        "visual_description": "Tim Dillon sits at a podcast desk, wearing a navy hoodie and a baseball cap, speaking into a professional microphone.",
+        "audio_description": "Tim Dillon describes the 'best case scenario' in America as working at a Lowe's in an outlet mall 45 minutes from home.",
+        "text_on_screen": "Best case scenario in America",
+        "key_objects": [
+          "Microphone",
+          "Headphones",
+          "Water bottle",
+          "Mug",
+          "Desk"
+        ]
+      },
+      {
+        "time_range": "0:24-0:48",
+        "visual_description": "Tim continues his monologue, using hand gestures to emphasize his points about social life and relationships.",
+        "audio_description": "He talks about going to Yard House with coworkers for chicken nachos and dating a woman who is a smoker with strict boundaries.",
+        "text_on_screen": "Best case scenario in America",
+        "key_objects": [
+          "Microphone",
+          "Headphones"
+        ]
+      },
+      {
+        "time_range": "0:48-1:09",
+        "visual_description": "Tim leans forward, his tone becoming more intense as he compares this life to global suffering.",
+        "audio_description": "He mentions having a daughter who pities you rather than hating you and contrasts this mundane life with 'bleeding out in the Gaza Strip.'",
+        "text_on_screen": "Best case scenario in America",
+        "key_objects": [
+          "Microphone"
+        ]
+      },
+      {
+        "time_range": "1:09-1:44",
+        "visual_description": "Tim describes a final scenario of contentment followed by a sudden accident, ending the clip with a finger pointed upward.",
+        "audio_description": "He describes a 'perfect' death: receiving a loving call from his daughter and a date, then being hit by a teenage driver and dying with a smile. He calls this the 'American win.'",
+        "text_on_screen": "Best case scenario in America",
+        "key_objects": [
+          "Microphone"
+        ]
+      }
+    ],
+    "overall_summary": "Comedian Tim Dillon delivers a cynical and satirical monologue about the realistic 'best case scenario' for an average American life. He argues that true success is a mundane existence involving a stable job at Lowe's, occasional outings to Yard House, and functional but distant relationships. The rant concludes with a dark twist, suggesting that dying suddenly in a car accident while feeling momentarily content is the ultimate 'American win.'",
+    "people": [
+      {
+        "description": "A man in a navy blue hoodie and baseball cap, sitting in a podcast studio.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Tim Dillon"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Tim Dillon",
+        "display_name": "Tim Dillon",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lowe's",
+        "display_name": "Lowe's Home Improvement",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Yard House",
+        "display_name": "Yard House Restaurant",
+        "type": "restaurant",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Gaza Strip",
+        "display_name": "Gaza Strip",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "America",
+        "display_name": "United States of America",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Solas \u2014 Jamie Duffy",
+        "display_name": "Solas by Jamie Duffy",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The peak of American life is mundane stability and low-conflict relationships rather than extraordinary wealth or fame.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "A sudden, painless death following a moment of personal contentment is portrayed as the ultimate mercy and success.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Solas \u2014 Jamie Duffy",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The background music is the popular melancholic piano track 'Solas' by Jamie Duffy, frequently used for deep or cynical monologues."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Melancholic, cynical, and darkly humorous with a reflective atmosphere.",
+    "topic_hints": [
+      "American Dream",
+      "Satire",
+      "Life Perspective"
+    ],
+    "affect_hints": [
+      "Cynical",
+      "Reflective",
+      "Amused"
+    ],
+    "genre_hints": [
+      "Podcast clip",
+      "Comedy rant"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 14381,
+    "output_tokens": 1537,
+    "total_tokens": 15918,
+    "cost_usd": 0.003079,
+    "latency_ms": 35619,
+    "upload_ms": 7637
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

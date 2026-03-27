@@ -1,0 +1,69 @@
+{
+  "item_id": "7585174691510373687",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:21.622767+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fashion",
+      "secondary": null,
+      "micro_labels": [
+        "menswear",
+        "formal wear",
+        "suit styling",
+        "accessories"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "outfit_showcase",
+      "micro_labels": [
+        "get ready with me style"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "satisfying",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "cinematic"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.85
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4845,
+    "output_tokens": 317,
+    "total_tokens": 5162,
+    "cost_usd": 0.000917,
+    "latency_ms": 6811,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 2
+  }
+}

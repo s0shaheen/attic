@@ -1,0 +1,52 @@
+{
+  "item_id": "7579241142424800567",
+  "parsed_output": {
+    "summary": "This TikTok by @aflavorfulbite demonstrates how to make a crispy chicken shawarma wrap at home. The video shows the process of marinating chicken, assembling the wrap, and toasting it in a pan for a crunchy finish, served with fries and garlic sauce.",
+    "entities": [
+      {
+        "name": "Chicken Shawarma",
+        "type": "recipe",
+        "relevance": "primary"
+      },
+      {
+        "name": "@aflavorfulbite",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Garlic sauce",
+        "type": "ingredient",
+        "relevance": "supporting"
+      },
+      {
+        "name": "French fries",
+        "type": "recipe",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Pyrex",
+        "type": "brand",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "food",
+      "secondary": null
+    },
+    "genre": "recipe",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "A cooking tutorial by @aflavorfulbite showing the preparation of a crispy chicken shawarma wrap. The video begins with a shot of the finished meal: two golden-brown wraps served on a white plate with a side of french fries and a bowl of white garlic sauce, likely toum. The process includes showing raw chicken pieces coated in a reddish-brown spice marinade being handled with tongs on a Pyrex glass baking dish. The final steps show the assembled wrap being toasted in a frying pan with a spatula to achieve a crispy, charred exterior. The on-screen text reads 'crispy chicken shawarma'. This video is ideal for viewers looking for easy dinner recipes, Middle Eastern inspired street food at home, or techniques for getting a perfectly crunchy texture on a chicken wrap. The creator directs users to their website for the full recipe details."
+  },
+  "metrics": {
+    "input_tokens": 4275,
+    "output_tokens": 482,
+    "total_tokens": 4757,
+    "cost_usd": 0.00093,
+    "latency_ms": 9675,
+    "keyframe_count": 3
+  }
+}

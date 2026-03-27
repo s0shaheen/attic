@@ -1,0 +1,328 @@
+{
+  "item_id": "7420825477981523243",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:10:36.325407+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:47",
+        "visual_description": "Creator lies in bed, speaking directly to the camera in a selfie-style talking head format.",
+        "audio_description": "Creator states that OpenAI is already in decline, noting that even an Uber driver asked him about their talent threshold.",
+        "text_on_screen": "Replying to @_daniloc what's the leadership talent threshold beneath which OpenAI loses the juice? are they approaching it soon?\nAs someone who spent three years at OpenAI, they are already in decline.",
+        "key_objects": [
+          "Smartphone"
+        ]
+      },
+      {
+        "time_range": "0:47-1:37",
+        "visual_description": "Creator continues his commentary, using hand gestures to emphasize points about AI scaling.",
+        "audio_description": "He explains the founding premise of OpenAI based on the Google paper 'Attention is All You Need' and the scaling of GPT-3 and GPT-4.",
+        "text_on_screen": "As someone who spent three years at OpenAI, they are already in decline.",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:37-2:46",
+        "visual_description": "Creator remains in the same position, discussing the competitive landscape of AI models.",
+        "audio_description": "He argues that foundation models are the world's fastest depreciating assets and that Meta's Llama 3 is already better than GPT-4.",
+        "text_on_screen": "As someone who spent three years at OpenAI, they are already in decline.",
+        "key_objects": []
+      },
+      {
+        "time_range": "2:46-3:52",
+        "visual_description": "Creator discusses the movement of key personnel in the AI industry.",
+        "audio_description": "He details how top talent like Andrej Karpathy left Tesla for OpenAI and then left OpenAI, leading to a loss of progress at both companies.",
+        "text_on_screen": "As someone who spent three years at OpenAI, they are already in decline.",
+        "key_objects": []
+      },
+      {
+        "time_range": "3:52-5:05",
+        "visual_description": "Creator shifts focus to the technical future of AI beyond simple scaling.",
+        "audio_description": "He discusses the work of Yann LeCun at Meta, focusing on complex classifiers and topologies rather than just scaling data.",
+        "text_on_screen": "As someone who spent three years at OpenAI, they are already in decline.",
+        "key_objects": []
+      },
+      {
+        "time_range": "5:05-6:18",
+        "visual_description": "Creator explains the concept of AI agents and tooling.",
+        "audio_description": "He explains that the next step for AI is 'tooling' and 'agents' (like o1 and AutoGPT), which don't necessarily require OpenAI's proprietary models.",
+        "text_on_screen": "As someone who spent three years at OpenAI, they are already in decline.",
+        "key_objects": []
+      },
+      {
+        "time_range": "6:18-6:45",
+        "visual_description": "Creator concludes with a summary of which companies are currently winning the AI race.",
+        "audio_description": "He advises viewers to bet on Meta, Nvidia, and Microsoft, but specifically not on OpenAI or Google.",
+        "text_on_screen": "As someone who spent three years at OpenAI, they are already in decline.",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "In this video, former OpenAI employee CJ Trowbridge argues that OpenAI has already entered a period of decline. He bases this claim on the massive talent drain from the company, specifically citing the departure of key figures like Andrej Karpathy. Trowbridge explains that the era of simply scaling LLMs is ending, and the technology is becoming a rapidly depreciating commodity, with Meta's open-source Llama models already outperforming GPT-4. He concludes that the future of AI lies in 'tooling' and 'agents' rather than foundation models, suggesting that investors should look toward Meta, Nvidia, and Microsoft instead of OpenAI or Google.",
+    "people": [
+      {
+        "description": "Man with a beard, lying in bed, speaking as an industry insider.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "CJ Trowbridge (@cjtrowbridge)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "OpenAI",
+        "display_name": "OpenAI",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Tesla",
+        "display_name": "Tesla",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Andrej Karpathy",
+        "display_name": "Andrej Karpathy",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Former Head of AI at Tesla and OpenAI researcher",
+        "confidence": 5
+      },
+      {
+        "name": "Google",
+        "display_name": "Google",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Attention is All You Need",
+        "display_name": "Attention is All You Need (Paper)",
+        "type": "other",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "2017 research paper by Google researchers",
+        "confidence": 5
+      },
+      {
+        "name": "GPT-3",
+        "display_name": "GPT-3",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "OpenAI Large Language Model",
+        "confidence": 5
+      },
+      {
+        "name": "GPT-4",
+        "display_name": "GPT-4",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "OpenAI Large Language Model",
+        "confidence": 5
+      },
+      {
+        "name": "Meta",
+        "display_name": "Meta (Facebook)",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Llama 3",
+        "display_name": "Llama 3",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Meta's open-source LLM",
+        "confidence": 5
+      },
+      {
+        "name": "Anthropic",
+        "display_name": "Anthropic",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "AI safety and research company",
+        "confidence": 5
+      },
+      {
+        "name": "Yann LeCun",
+        "display_name": "Yann LeCun",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Chief AI Scientist at Meta",
+        "confidence": 5
+      },
+      {
+        "name": "Nvidia",
+        "display_name": "Nvidia",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Microsoft",
+        "display_name": "Microsoft",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "o1",
+        "display_name": "OpenAI o1",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "OpenAI reasoning model",
+        "confidence": 4
+      },
+      {
+        "name": "AutoGPT",
+        "display_name": "AutoGPT",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Autonomous AI agent tool",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "OpenAI is in decline because the majority of its founding and top-tier technical talent has left the company.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Foundation AI models are rapidly depreciating assets because competitors can quickly replicate and improve upon them for less cost.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Meta's strategy of releasing high-quality open-source models like Llama 3 is effectively commoditizing the AI market and hurting proprietary providers like OpenAI.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The next frontier of AI is 'tooling' and 'agents' (integration and action) rather than just larger language models.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Investors should prioritize Meta, Nvidia, and Microsoft over OpenAI and Google in the current AI landscape.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Meta",
+          "details": "Winning through open-source Llama ecosystem and advanced research by Yann LeCun."
+        },
+        {
+          "name": "Nvidia",
+          "details": "Primary hardware provider for the AI boom."
+        },
+        {
+          "name": "Microsoft",
+          "details": "Strategic partner with exclusive rights to OpenAI tech for a limited time, but avoided long-term equity traps."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The creator provides a very detailed and specific insider perspective on the AI industry."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Casual, intimate, yet intellectually serious and slightly cynical.",
+    "topic_hints": [
+      "Artificial Intelligence",
+      "Tech Industry News",
+      "Business Strategy"
+    ],
+    "affect_hints": [
+      "Informed",
+      "Skeptical",
+      "Authoritative"
+    ],
+    "genre_hints": [
+      "Tech Commentary",
+      "Business Analysis"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 37576,
+    "output_tokens": 2905,
+    "total_tokens": 40481,
+    "cost_usd": 0.007379,
+    "latency_ms": 52421,
+    "upload_ms": 19287
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

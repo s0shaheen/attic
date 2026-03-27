@@ -1,0 +1,212 @@
+{
+  "item_id": "7606094300937473310",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:11:09.044322+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:12",
+        "visual_description": "Split screen: top shows a viral interview clip of a young boy; bottom shows Daniel Lubetzky watching and reacting. The interviewer asks if Pakistan should be destroyed.",
+        "audio_description": "Interviewer asks in Hindi/Urdu if Pakistan should be destroyed. The boy, Muhammad Kaif, says no.",
+        "text_on_screen": "A Muslim Indian teen is asked about Pakistan\u2014his answer goes viral. Source: Unfiltered. LONG LIVE PAKISTAN? ZINDABAD. AREN'T YOU ASHAMED? PAKISTAN SHOULDN'T BE DESTROYED? WHAT? IT SHOULDN'T BE. A Simple Lesson Against Division",
+        "key_objects": [
+          "Microphone",
+          "Smartphone"
+        ]
+      },
+      {
+        "time_range": "0:12-0:21",
+        "visual_description": "The boy identifies himself to the interviewer while Daniel Lubetzky listens intently.",
+        "audio_description": "The boy states his name is Muhammad Kaif and he is from Bihar.",
+        "text_on_screen": "WHAT'S YOUR NAME? KAIF. FULL NAME? MUHAMMAD KAIF. FROM BIHAR.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:21-0:37",
+        "visual_description": "The interviewer aggressively questions the boy's loyalty to India. The boy remains calm and questions the interviewer's motives.",
+        "audio_description": "Interviewer asks if he is ashamed to support Pakistan while living in India. Kaif asks the interviewer if he is ashamed for spreading division.",
+        "text_on_screen": "AREN'T YOU EVEN A LITTLE ASHAMED THAT, DESPITE LIVING IN INDIA, YOU'RE SUPPORTING PAKISTAN? WHY SHOULDN'T PAKISTAN BE DESTROYED? OH, SO YOU'RE MAKING THE NEWS AREN'T YOU ASHAMED ABOUT IT? AND SPREADING IT EVERYWHERE? ABOUT HINDUS AND MUSLIMS",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:37-0:55",
+        "visual_description": "Kaif explains his philosophy of humanity over nationalism to the crowd.",
+        "audio_description": "Kaif explains that there are humans, Muslims, and Hindus in both countries and everyone has a right to live.",
+        "text_on_screen": "WHY SHOULD WE SUPPORT INDIA? FIRST ANSWER THIS, THEN I'LL SAY SOMETHING. THERE ARE PEOPLE OVER THERE TOO, HERE TOO, MUSLIMS THERE TOO, HINDUS HERE TOO. EVERYONE IS HUMAN. THEN WHY KILL EVERYONE? TELL ME! TELL ME WHY IT SHOULD BE DESTROYED? EVERYONE HAS A RIGHT TO LIVE",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:55-1:09",
+        "visual_description": "The interviewer challenges the boy's identity as an Indian. The boy firmly asserts his nationality.",
+        "audio_description": "Interviewer asks if he supports Pakistan and if he is Indian. Kaif says 'Yes I do' (support their right to live) and 'I am Indian'.",
+        "text_on_screen": "DO YOU SUPPORT PAKISTAN? IF YOU GO THERE AND SOMEONE KILLS YOU THEN THE JOB DONE? YES I DO! YOU ARE NOT AN INDIAN? I AM INDIAN. YOU'RE SAYING DESTROY THAT COUNTRY, BUT EVERYWHERE PEOPLE LIVE",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:09-1:33",
+        "visual_description": "Daniel Lubetzky speaks directly to the camera, praising the boy's message.",
+        "audio_description": "Daniel says: 'This kid is amazing. I mean, he is an example to all of us of how we need to not allow the media or social media or anything to divide us vs them, and instead have a little bit more ability to think with and with a little bit more sophistication and understand that things are a little more complex and you can love both peoples and be proud to be a human above all.'",
+        "text_on_screen": "This kid is amazing I mean he is an example to all of us of how we need to not allow the media or social media or anything to divide us vs them and instead have a little bit more ability to think with and with a little bit more sophistication and understand that things are a little more complex and you can love both peoples and be proud to be a human above all",
+        "key_objects": [
+          "Bookshelf",
+          "Trophy",
+          "Globe"
+        ]
+      }
+    ],
+    "overall_summary": "In this video, Daniel Lubetzky reacts to a viral interview of a young Indian Muslim boy named Muhammad Kaif. During the interview, an aggressive reporter tries to bait Kaif into expressing hatred for Pakistan and questioning his loyalty to India. Kaif remains remarkably calm and articulate, arguing that because there are human beings, Hindus, and Muslims in both nations, everyone deserves the right to live and thrive. Lubetzky praises the boy as an example of resisting 'us vs. them' narratives pushed by the media, advocating for a more sophisticated worldview that prioritizes shared humanity over divisive nationalism.",
+    "people": [
+      {
+        "description": "Middle-aged man with dark hair, wearing a black polo shirt, reacting to a video on his phone.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Daniel Lubetzky"
+      },
+      {
+        "description": "Young Indian teenager wearing a grey and black jacket, being interviewed in a crowd.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Muhammad Kaif"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Daniel Lubetzky",
+        "display_name": "Daniel Lubetzky",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual"
+        ],
+        "specifications": "Founder of KIND Snacks",
+        "confidence": 5
+      },
+      {
+        "name": "Muhammad Kaif",
+        "display_name": "Muhammad Kaif",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Teenager from Bihar, India",
+        "confidence": 5
+      },
+      {
+        "name": "India",
+        "display_name": "India",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pakistan",
+        "display_name": "Pakistan",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Bihar",
+        "display_name": "Bihar, India",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Unfiltered",
+        "display_name": "Unfiltered (Media Source)",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "We should not allow media or social media to divide us into 'us vs. them' narratives.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "It is possible to be a proud citizen of your country while also wishing well for your neighbors.",
+        "source": "implied",
+        "confidence": 5
+      },
+      {
+        "statement": "Every human being has a right to live, regardless of their nationality or religion.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "original sound \u2014 Daniel Lubetzky",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video is a reaction format where the primary entities and locations are explicitly named in the dialogue and text overlays."
+    },
+    "presentation_style": {
+      "primary_format": "reaction",
+      "camera_work": "static",
+      "editing_style": "split_screen"
+    },
+    "visual_mood": "Serious, inspiring, and reflective.",
+    "topic_hints": [
+      "Social Unity",
+      "Media Literacy",
+      "Peace and Diplomacy"
+    ],
+    "affect_hints": [
+      "Inspired",
+      "Hopeful",
+      "Thoughtful"
+    ],
+    "genre_hints": [
+      "Social Commentary",
+      "Reaction Video"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9848,
+    "output_tokens": 2241,
+    "total_tokens": 12089,
+    "cost_usd": 0.002822,
+    "latency_ms": 35926,
+    "upload_ms": 8336
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

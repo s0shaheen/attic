@@ -1,0 +1,52 @@
+{
+  "item_id": "7594883819564436791",
+  "parsed_output": {
+    "summary": "Conor Harris explains biomechanical issues with hip and glute function using 3D anatomical models to illustrate muscle engagement. He demonstrates corrective exercises, including foam rolling with a j/fit roller and side-lying mobility drills, to help viewers improve movement patterns and relieve tension.",
+    "entities": [
+      {
+        "name": "Conor Harris",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "j/fit",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Foam Rolling",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Hip Mobility",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Corrective Exercise",
+        "type": "technique",
+        "relevance": "primary"
+      }
+    ],
+    "topic": {
+      "primary": "fitness",
+      "secondary": "health"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "A fitness tutorial by Conor Harris (@conor_harris_) focusing on hip mobility and biomechanics. The video uses a 3D anatomical skeleton to illustrate muscle engagement in the glutes and legs during movement, contrasting common mistakes with proper form. Conor demonstrates specific corrective exercises in a gym, including foam rolling the hip using a blue j/fit foam roller and a side-lying mobility drill with a pillow. The video includes on-screen text like 'MOST PEOPLE,' 'ROLL UP,' and 'STARTING' to guide the viewer through the instructional steps. This is a high-value resource for anyone researching how to fix tight hips, improve squat mechanics, or understand functional anatomy for better physical health and corrective movement."
+  },
+  "metrics": {
+    "input_tokens": 4223,
+    "output_tokens": 462,
+    "total_tokens": 4685,
+    "cost_usd": 0.000911,
+    "latency_ms": 10981,
+    "keyframe_count": 3
+  }
+}

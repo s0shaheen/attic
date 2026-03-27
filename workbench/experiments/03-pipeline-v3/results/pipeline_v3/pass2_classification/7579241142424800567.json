@@ -1,0 +1,74 @@
+{
+  "item_id": "7579241142424800567",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:24:40.267973+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "education",
+      "micro_labels": [
+        "chicken shawarma",
+        "middle eastern cuisine",
+        "home cooking",
+        "recipe tutorial"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "recipe",
+      "micro_labels": [
+        "cooking demonstration"
+      ],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "relaxing",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "text_overlay",
+      "cinematic"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5364,
+    "output_tokens": 337,
+    "total_tokens": 5701,
+    "cost_usd": 0.001007,
+    "latency_ms": 5182,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 2
+  }
+}

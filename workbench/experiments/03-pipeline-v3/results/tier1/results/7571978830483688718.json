@@ -1,0 +1,52 @@
+{
+  "item_id": "7571978830483688718",
+  "parsed_output": {
+    "summary": "@zerotopete demonstrates how to use the \"Skills\" feature in Claude Code to automate repetitive startup tasks, specifically showing how to generate an investor update. This tutorial is designed for founders and builders looking to increase productivity through AI-driven workflows.",
+    "entities": [
+      {
+        "name": "Claude Code",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "@zerotopete",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Claude",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Everything In Its Right Place",
+        "type": "song",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Investor Update Template",
+        "type": "technique",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "career"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this TikTok video, creator @zerotopete provides a tutorial on how to use the 'Skills' feature within Claude Code to significantly speed up workflow for startup founders and builders. The video features a step-by-step explanation of how to automate tasks like generating an investor update. On-screen text includes 'How to use Skills in Claude Code to work 10x faster' and displays a detailed 'Investor Update Template' with sections for Product & Engineering, Writing Tips (be concise, be honest), and Formatting Best Practices. Pete explains that these skills allow the AI to handle repetitive documentation tasks. The background music is 'Everything In Its Right Place'. This is a high-value resource for entrepreneurs looking to integrate AI coding tools and automation into their daily operations to increase productivity."
+  },
+  "metrics": {
+    "input_tokens": 4271,
+    "output_tokens": 474,
+    "total_tokens": 4745,
+    "cost_usd": 0.000925,
+    "latency_ms": 9079,
+    "keyframe_count": 3
+  }
+}

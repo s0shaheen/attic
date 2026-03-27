@@ -1,0 +1,76 @@
+{
+  "item_id": "7588345892915121422",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:41.283417+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "music",
+      "secondary": null,
+      "micro_labels": [
+        "hip-hop",
+        "Nujabes",
+        "music reaction",
+        "lo-fi hip hop",
+        "song review"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "reaction",
+      "micro_labels": [
+        "blind reaction",
+        "music commentary"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "relaxing",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 16382,
+    "output_tokens": 353,
+    "total_tokens": 16735,
+    "cost_usd": 0.002669,
+    "latency_ms": 23156,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 12
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "item_id": "7511499452830534942",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:24:32.812192+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fitness",
+      "secondary": "education",
+      "micro_labels": [
+        "chest fly",
+        "exercise technique",
+        "bodybuilding",
+        "gym tips"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "before_after",
+        "workout"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay",
+      "mixed"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 1.0
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.95
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5340,
+    "output_tokens": 301,
+    "total_tokens": 5641,
+    "cost_usd": 0.000982,
+    "latency_ms": 7657,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 2
+  }
+}

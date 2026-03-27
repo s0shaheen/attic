@@ -1,0 +1,207 @@
+{
+  "item_id": "7590474761973599509",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:21:36.064340+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:12",
+        "visual_description": "The creator presents the finished medium-rare ribeye steak topped with mushroom sauce alongside a cheesy baked potato. They cut into the steak and use the potato skin as a taco shell to scoop up the sauce.",
+        "audio_description": "Upbeat hip-hop music plays throughout the video.",
+        "text_on_screen": "",
+        "key_objects": [
+          "ribeye steak",
+          "mushroom sauce",
+          "cheesy baked potato",
+          "fork"
+        ]
+      },
+      {
+        "time_range": "0:13-0:15",
+        "visual_description": "A tray of raw ingredients is shown, followed by a whole potato being placed into a Ninja air fryer.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "45:00",
+        "key_objects": [
+          "raw ribeye",
+          "mushrooms",
+          "shallots",
+          "chives",
+          "potato",
+          "Ninja Air Fryer"
+        ]
+      },
+      {
+        "time_range": "0:16-0:33",
+        "visual_description": "The creator sears the ribeye in a stainless steel pan, adding butter, garlic cloves, and rosemary to baste the meat.",
+        "audio_description": "Sizzling sounds are audible over the music.",
+        "text_on_screen": "",
+        "key_objects": [
+          "stainless steel pan",
+          "ribeye steak",
+          "butter",
+          "garlic",
+          "rosemary"
+        ]
+      },
+      {
+        "time_range": "0:34-0:50",
+        "visual_description": "The mushroom sauce is prepared by saut\u00e9ing shallots and sliced mushrooms, then adding garlic, black pepper, salt, butter, heavy cream, and chopped parsley.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "BLACK PEPPER",
+        "key_objects": [
+          "mushrooms",
+          "shallots",
+          "heavy cream",
+          "parsley",
+          "butter"
+        ]
+      },
+      {
+        "time_range": "0:51-1:00",
+        "visual_description": "The baked potato is sliced open, mashed with butter and pepper, topped with cheese, and briefly returned to the air fryer before final plating.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "baked potato",
+          "cheese",
+          "butter",
+          "mushroom sauce",
+          "steak"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a fast-paced cooking tutorial for a medium-rare ribeye steak served with a rich mushroom cream sauce and a cheesy baked potato. The creator demonstrates air-frying the potato for a crispy skin, pan-searing and basting the steak with aromatics, and preparing a homemade mushroom sauce from scratch. The final presentation shows the potato skin being used as a 'taco' to hold the steak and sauce, emphasizing a decadent and comforting meal.",
+    "people": [
+      {
+        "description": "The creator's hands are visible throughout the video as they prepare and plate the food.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "@2akm1"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Ribeye Steak",
+        "display_name": "Medium-Rare Ribeye",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Medium-rare doneness",
+        "confidence": 5
+      },
+      {
+        "name": "Ninja Air Fryer",
+        "display_name": "Ninja Air Fryer",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Used at 200c for 45 minutes",
+        "confidence": 4
+      },
+      {
+        "name": "Secret - 21 Savage",
+        "display_name": "Secret by 21 Savage",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Heavy Cream",
+        "display_name": "Heavy Cream",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Used for mushroom sauce",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Air frying a potato at 200c for 45 minutes creates a skin crispy enough to be used as a taco shell.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Basting steak with butter, garlic, and rosemary in a pan is the preferred method for achieving a high-quality sear and flavor.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Air Fried Baked Potato",
+          "details": "Oil and heavily salt the outside; air fry at 200c for 45 minutes uncovered. Mash inside with butter, pepper, and cheese."
+        },
+        {
+          "name": "Mushroom Sauce",
+          "details": "250g mushrooms, 1/2 shallot, 2 cloves garlic, 2 tbsp butter, heavy cream (to cover), salt, black pepper, handful of parsley."
+        },
+        {
+          "name": "Ribeye Steak",
+          "details": "Pan-seared and basted with butter, garlic, and rosemary until medium-rare."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Secret \u2014 21 Savage",
+      "metadata_song": "Secret",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Recipe details were explicitly provided in the caption and visually confirmed."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "overhead",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Satisfying, warm, and indulgent with a focus on food textures.",
+    "topic_hints": [
+      "Cooking",
+      "Steak Recipe",
+      "Air Fryer Hacks"
+    ],
+    "affect_hints": [
+      "Hungry",
+      "Satisfied",
+      "Inspired"
+    ],
+    "genre_hints": [
+      "Food TikTok",
+      "Recipe Tutorial"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6919,
+    "output_tokens": 1737,
+    "total_tokens": 8656,
+    "cost_usd": 0.00208,
+    "latency_ms": 21242,
+    "upload_ms": 6321
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

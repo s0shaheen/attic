@@ -1,0 +1,52 @@
+{
+  "item_id": "7535528104828194070",
+  "parsed_output": {
+    "summary": "This TikTok by @itsjustcinema recommends the 1981 Hungarian animated film 'Son of the White Mare' (Feh\u00e9rl\u00f3fia), highlighting its unique and psychedelic visual style. It is intended for film enthusiasts looking for striking, cult-classic animation from the 1980s.",
+    "entities": [
+      {
+        "name": "Son of the White Mare",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Feh\u00e9rl\u00f3fia",
+        "type": "movie_or_show",
+        "relevance": "supporting"
+      },
+      {
+        "name": "@itsjustcinema",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Through Music (SpeedUp)",
+        "type": "song",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Marcell Jankovics",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "art"
+    },
+    "genre": "review",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "This TikTok video from @itsjustcinema provides a recommendation for the 1981 Hungarian animated film 'Son of the White Mare' (also known as Feh\u00e9rl\u00f3fia). The video features clips of the movie's incredibly striking and psychedelic animation style, characterized by vibrant neon colors, fluid geometric shapes, and a unique mythic aesthetic. The creator describes it as one of the most visually impressive animated films ever made. The keyframes show a muscular golden protagonist with flowing white hair against surreal purple and red backgrounds, at one point lifting a massive purple geometric pillar. This content is perfect for fans of cult cinema, 80s animation, and experimental art styles. Users searching for 'trippy movies,' 'best animated films of the 80s,' or 'Son of the White Mare review' will find this video highly relevant for their watchlist."
+  },
+  "metrics": {
+    "input_tokens": 4318,
+    "output_tokens": 517,
+    "total_tokens": 4835,
+    "cost_usd": 0.000958,
+    "latency_ms": 9414,
+    "keyframe_count": 3
+  }
+}

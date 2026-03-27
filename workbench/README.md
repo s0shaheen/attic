@@ -1,44 +1,97 @@
-# Attic Workbench
+# Workbench — Attic AI Development Lab
 
-Fast iteration on Attic's intelligence layer without running the full stack. Notebooks for exploration, scripts for automated evals.
+Research and experimentation environment for Attic's classification, vision analysis, and retrieval pipeline.
 
-## Setup
+## Experiment Progression
 
-1. Ensure `.venv` exists at repo root with workbench deps installed (see `docs/plans/env_setup_26-03-19/00-SETUP-OVERVIEW.md`)
-2. Run `./scripts/setup-env.sh` to generate `workbench/.env` from `.env.master`
-3. Select the **Attic** Jupyter kernel in VS Code (installed via `ipykernel install --user --name attic`)
+| # | Experiment | Date | Question | Key Finding |
+|---|-----------|------|----------|-------------|
+| 01 | [Apify Profiling](experiments/01-apify-profiling/) | 2026-03-24 | Can Apify reliably enrich TikTok exports? | 86% match, $0.014/item, 24% slideshows (2.4x expected) |
+| 02 | [Vision Analysis](experiments/02-vision-analysis/) | 2026-03-24 | Does full video beat thumbnails? | Video wins 12/15, but entity extraction fails 51% — #1 gap |
+| 03 | [Pipeline v3](experiments/03-pipeline-v3/) | 2026-03-26 | Production pipeline + grounding + economics? | Grounding useless, Tier 1 = 83% accuracy at $0.0009/item, $0.019/item total |
+| 04 | [Golden Set](experiments/04-golden-set/) | 2026-03-25 | Ground-truth evaluation infrastructure | 106-item set built, annotation UI ready, labels pending |
 
-## Notebooks
+## Cumulative Learnings
 
-| Notebook | Purpose |
-|----------|---------|
-| `01_explore_export.ipynb` | Load and explore a raw TikTok data export — counts, date ranges, frequency |
-| `02_classification_lab.ipynb` | Run classification on videos, inspect all 8 facets, compare prompt versions |
-| `03_agent_traces.ipynb` | Send queries to a standalone agent loop, see full tool-call traces |
-| `04_retrieval_quality.ipynb` | Evaluate query_items filtering and semantic search precision/recall |
-| `05_embedding_analysis.ipynb` | Sanity-check embedding space — similarity matrix, t-SNE, cluster analysis |
+### What works
+- Full video via Gemini File API (not thumbnails, not keyframes)
+- Single comprehensive perception prompt (multi-pass not worth 3x cost)
+- `gemini-3-flash-preview` without grounding (cheapest, fastest, cleanest)
+- Two-tier architecture: Tier 1 (keyframes, instant) + Tier 2 (full video, on-demand)
+- "informative" affect label (captures 62% of saved content feeling)
+- Entity-first agent responses ("here are your shoe recs" not "TikTok metadata")
+- Enriched embeddings for semantic search
 
-## Scripts
+### What doesn't work
+- Thumbnail-only analysis (zero named entities)
+- Google Search grounding for TikTok content (5% trigger rate, adds noise)
+- "inspiring" as default affect (was 45%, model doesn't understand the distinction)
+- FFmpeg keyframe extraction for prompt variant testing (0 frames with TikTok codec)
+- Text-only classification for low-text items (12% topic agreement)
 
-| Script | Usage |
-|--------|-------|
-| `classify_batch.py` | `python workbench/scripts/classify_batch.py workbench/data/sample-videos.json --limit 5` |
-| `run_evals.py` | `python workbench/scripts/run_evals.py --verbose --save` |
-| `generate_test_data.py` | `python workbench/scripts/generate_test_data.py "cooking videos" --count 10` |
-| `seed_db.py` | `python workbench/scripts/seed_db.py` (requires `supabase start`) |
+### Open problems
+- Entity extraction quality (51% scored Poor in human eval)
+- Comedy/satire/meme classification (model doesn't get irony)
+- Carousel per-slide entity extraction (skips slide-by-slide breakdown)
+- Parse errors on long videos (11% truncation at 8K output tokens)
+- Apify video download is 84% of pipeline wall-clock time
 
-All scripts use `.venv/bin/python` from repo root.
+## Directory Structure
 
-## Data
+```
+workbench/
+  tools/                           Reusable scripts (not experiment-specific)
+    classify_batch.py              Batch classification runner
+    run_evals.py                   Golden set evaluation (per-facet accuracy)
+    generate_test_data.py          Synthetic test data via Claude
+    seed_db.py                     Database seeding for local dev
+    gather_history.py              Project timeline builder
 
-| Path | Contents | Committed? |
-|------|----------|------------|
-| `data/sample-videos.json` | Curated diverse test set for classification | Yes (starts empty) |
-| `data/golden-set.json` | Hand-labeled ground truth for eval accuracy | Yes (starts empty) |
-| `data/my-export/` | Your real TikTok export (place unzipped JSON here) | No (gitignored) |
-| `evals/results/` | Timestamped eval output JSON files | No (gitignored) |
-| `evals/prompts/` | Prompt versions under test (Python files) | Yes |
+  experiments/
+    01-apify-profiling/            Day 1: data quality + Apify validation
+    02-vision-analysis/            Day 2: thumbnail vs video, prompt variants, human eval
+    03-pipeline-v3/                Day 3: two-pass pipeline, Tier 1, search, economics
+    04-golden-set/                 Cross-cutting: evaluation infrastructure
 
-## Environment
+  data/                            Shared raw inputs (not experiment output)
+    tiktok_favorites.json          Raw TikTok favorites export
+    apify_all_favorites.json       Full Apify enrichment (394 items)
+    my-export/                     Anonymized TikTok data export
+    golden-set.json                Golden set (placeholder)
+    sample-videos.json             Sample videos (placeholder)
 
-`workbench/.env` is auto-generated by `scripts/setup-env.sh` — never edit directly. It contains only AI keys (Gemini, OpenAI, Anthropic, Apify).
+  notebooks/                       Interactive exploration
+    01_explore_export.ipynb        Load and explore raw export data
+    02_classification_lab.ipynb    Test classification, compare prompts
+    03_agent_traces.ipynb          Full tool-call traces from agent loop
+    04_retrieval_quality.ipynb     Precision/recall of query filtering
+    05_embedding_analysis.ipynb    Similarity matrix, t-SNE, clusters
+
+  .env                             Workbench secrets (generated by scripts/setup-env.sh)
+```
+
+Each experiment directory contains:
+- `README.md` — hypothesis, method, parameters, results, learnings
+- Scripts that ran the experiment
+- `results/` — output data (media files gitignored)
+
+## Sprint Documentation
+
+Full sprint log and reference docs: [`docs/research-plan-v0/`](../docs/research-plan-v0/)
+- `SPRINT_LOG.md` — Daily progress with detailed findings
+- `UNIT_ECONOMICS.md` — Cost model and pricing analysis
+- `03-25-2026_prompt_audit_and_redesign.md` — Prompt audit + production redesign spec
+- `crash_course.md` — Original research plan
+
+## Quick Start
+
+```bash
+# Setup (from repo root)
+./scripts/setup-env.sh
+
+# Run classification eval against golden set
+.venv/bin/python workbench/tools/run_evals.py --verbose
+
+# Run a specific experiment (see each experiment's README for details)
+.venv/bin/python workbench/experiments/03-pipeline-v3/run_tier1.py
+```

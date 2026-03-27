@@ -1,0 +1,52 @@
+{
+  "item_id": "7408508364566596882",
+  "parsed_output": {
+    "summary": "Creator @bay_jark shares essential advice for beginner golfers, focusing on the foundational elements of a swing. He emphasizes starting with a neutral grip and a proper setup to avoid developing bad habits that are difficult to correct later.",
+    "entities": [
+      {
+        "name": "@bay_jark",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Nike Air Force 1",
+        "type": "clothing",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Neutral Grip",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Golf Setup",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Hundreds & Thousands",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "sports",
+      "secondary": "education"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": null
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this TikTok tutorial, creator @bay_jark provides foundational golf advice for beginners at a night-time driving range. Wearing a brown t-shirt, white pants, a white cap, and Nike Air Force 1 sneakers, he demonstrates the proper way to approach the ball. The video, titled 'If i just started golf. Part 1', focuses on two critical elements: the grip and the setup. He advises viewers to start with a neutral grip, explaining that changing it later is difficult. He also highlights the importance of a standard setup to ensure a consistent swing. The content is designed for active learning, helping new players avoid common mistakes on the first tee. On-screen text includes the phrase 'IF SOMEONE'S ADRESSING' as he explains the mechanics of the golf swing and the importance of a neutral grip."
+  },
+  "metrics": {
+    "input_tokens": 4367,
+    "output_tokens": 478,
+    "total_tokens": 4845,
+    "cost_usd": 0.000942,
+    "latency_ms": 8050,
+    "keyframe_count": 3
+  }
+}

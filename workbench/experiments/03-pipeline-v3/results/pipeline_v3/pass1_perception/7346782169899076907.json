@@ -1,0 +1,235 @@
+{
+  "item_id": "7346782169899076907",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:17:49.050477+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "Creator introduces the concept of 'energizing hobbies' while wearing black over-ear headphones.",
+        "audio_description": "Everybody that I know that's successful at all has what I call energizing hobbies.",
+        "text_on_screen": "What all of my successful friends do for fun",
+        "key_objects": [
+          "headphones"
+        ]
+      },
+      {
+        "time_range": "0:04-0:20",
+        "visual_description": "Creator describes the routine of an average person working a job they dislike.",
+        "audio_description": "Think about what a normal week looks like for a very average person. They work their job they don't like, they come home at night, they probably want to just relax, forget about their job, get their mind off it, so they watch Netflix, they scroll through TikTok for a few hours, whatever, go to sleep.",
+        "text_on_screen": "think about like what a normal week looks like for a very average person\nthey work their job that they don't like\nthey come home at night\nthey probably wanna just relax\nforget about their job\nget their mind off it\nso they watch Netflix\nthey scroll through TikTok for a few hours whatever\ngo to sleep",
+        "key_objects": [
+          "Netflix",
+          "TikTok"
+        ]
+      },
+      {
+        "time_range": "0:20-0:33",
+        "visual_description": "Creator discusses the weekend habits of average people seeking escapism.",
+        "audio_description": "Then the weekend rolls around, probably kind of the same issue. They just want to get away from work, they want escapism for lack of a better term, so they go out a couple nights, they get drunk, they forget about all the shit they're dealing with, how unhappy they are with their life.",
+        "text_on_screen": "then the weekend rolls around\nprobably kind of the same issue\nthey just wanna get away from work\nthey want escapism for lack of a better term\nso they go out a couple nights\nthey get drunk\nthey forget about all the shit they're dealing with\nhow unhappy they are with their life",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:33-0:45",
+        "visual_description": "Creator contrasts average habits with those of successful, happy individuals.",
+        "audio_description": "But everyone that I know that actually does super well, that's really happy, that's very successful by my standard, instead of spending all their time Netflix, going out to brunch, getting drunk on the weekends...",
+        "text_on_screen": "but everyone that I know that actually does super well that's really happy\nthat's very successful by my standard\ninstead of spending all their time Netflix\ngoing out to brunch\ngetting drunk on the weekends",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:45-0:54",
+        "visual_description": "Creator lists active physical hobbies like run clubs and martial arts.",
+        "audio_description": "...they're doing things like being part of a run club or like working out with all their homies, or they play sports for fun, or they fight like boxing or Jiu-Jitsu.",
+        "text_on_screen": "they're doing things like being part of a run club\nor like working out with all their homies\nor they play sports for fun\nor they fight like boxing or jiu jitsu",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:54-1:05",
+        "visual_description": "Creator lists creative hobbies like video production and writing.",
+        "audio_description": "The creative ones, instead of just sitting around watching videos all day scrolling through TikTok, they either create videos or they write books or they write content on their own blog.",
+        "text_on_screen": "the creative ones\ninstead of just sitting around watching videos all day scrolling through TikTok\nthey either create videos\nor they write books\nor they write content on their own blog",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:05-1:27",
+        "visual_description": "Creator concludes by linking these hobbies to career success and positive energy.",
+        "audio_description": "They choose all these hobbies where they're just like putting out good energy into the world, whether that's creating content or doing a bunch of physical active stuff with friends. And I don't know if they're like directly correlated, like these hobbies and ways you kind of burn off steam, I don't know if it's directly correlated to your career and success in other areas of your life, but it certainly seems like it from my perspective.",
+        "text_on_screen": "they choose all these hobbies where they're just like\nputting out good energy into the world\nwhether that's creating content or doing a bunch of physical\nactive stuff with friends\nand I don't know if they're like\ndirectly correlated\nlike these hobbies and ways you kinda burn off steam\nI don't know if it's directly correlated to your career\nand success in other areas of your life\nbut it certainly seems like it from my perspective",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "Harrison Swales explains the concept of 'energizing hobbies' and how they differentiate successful people from the average person. He argues that while most people use their free time for passive escapism like Netflix, TikTok, and drinking to forget their work-life unhappiness, successful people engage in active or creative pursuits. These include run clubs, martial arts, writing, and content creation, which he believes correlate with career success by putting positive energy into the world. The video serves as a motivational call to replace passive consumption with active contribution.",
+    "people": [
+      {
+        "description": "Young man with a mustache and short hair, wearing black over-ear headphones and a black t-shirt.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Harrison Swales"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Harrison Swales",
+        "display_name": "Harrison Swales",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Netflix",
+        "display_name": "Netflix",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "TikTok",
+        "display_name": "TikTok",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Run Club",
+        "display_name": "Run Club",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Boxing",
+        "display_name": "Boxing",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jiu-Jitsu",
+        "display_name": "Jiu-Jitsu",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Successful people engage in 'energizing hobbies' that involve active participation or creation rather than passive consumption.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Passive leisure activities like Netflix and drinking are often forms of escapism used to cope with an unhappy work life.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "There is a strong perceived correlation between active, creative hobbies and professional/personal success.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Run Club",
+          "details": "Joining a community-based running group"
+        },
+        {
+          "name": "Working out with friends",
+          "details": "Social physical activity"
+        },
+        {
+          "name": "Combat Sports",
+          "details": "Boxing or Jiu-Jitsu"
+        },
+        {
+          "name": "Content Creation",
+          "details": "Creating videos for social media"
+        },
+        {
+          "name": "Writing",
+          "details": "Writing books or maintaining a personal blog"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound - Harrison Swales",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": 5,
+      "notes": "The video is a clear talking-head style advice vlog with no background music."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "selfie",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Motivational, direct, and reflective.",
+    "topic_hints": [
+      "Personal Development",
+      "Success Habits",
+      "Lifestyle Design"
+    ],
+    "affect_hints": [
+      "Motivated",
+      "Introspective",
+      "Empowered"
+    ],
+    "genre_hints": [
+      "Self-help",
+      "Vlog",
+      "Advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9270,
+    "output_tokens": 2533,
+    "total_tokens": 11803,
+    "cost_usd": 0.00291,
+    "latency_ms": 32669,
+    "upload_ms": 8274
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

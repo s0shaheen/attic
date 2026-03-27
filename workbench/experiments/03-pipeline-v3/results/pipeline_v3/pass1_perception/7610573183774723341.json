@@ -1,0 +1,180 @@
+{
+  "item_id": "7610573183774723341",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:09:16.681553+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "A scene from the movie D\u00ecdi where an older brother scolds the protagonist, Wang Wang, for his disrespectful behavior toward their mother.",
+        "audio_description": "Older brother: 'Don't talk to your mom like that. She wasn't even being annoying. Like what were you even doing? Damn, this kid's kinda wack.' Wang Wang: 'Yeah.'",
+        "text_on_screen": "Don't talk to your mom like that. she wasn't even being annoying. like what were you even doing? Damn, this kid's kinda wack. Yeah.",
+        "key_objects": [
+          "hoodie",
+          "bedroom furniture"
+        ]
+      },
+      {
+        "time_range": "0:08-0:15",
+        "visual_description": "A fast-paced montage showing Wang Wang's teenage life, including skateboarding with friends, running through a neighborhood, and sitting in a car at night.",
+        "audio_description": "Indie folk music begins playing. Wang Wang: 'Are you ashamed of me? I ran away, but you didn't even look for me.'",
+        "text_on_screen": "DIDI, Are you ashamed of me? I ran away, but you didn't even look for me.",
+        "key_objects": [
+          "skateboard",
+          "car",
+          "backpack"
+        ]
+      },
+      {
+        "time_range": "0:16-0:28",
+        "visual_description": "Emotional scenes of Wang Wang and his mother, Chungsing, including a close-up of her speaking to him and them hugging on a bed. Wang Wang is also seen looking in a mirror and sitting on a playground at dusk.",
+        "audio_description": "Mother (in Mandarin): 'How could I be ashamed of you? I am so proud of you.' Music continues with lyrics: 'Sitting in the back seat of my car / With my arms around my guitar / From the roof of the world / Nothing around just the trees and the ground'",
+        "text_on_screen": "How could I be ashamed of you? \u6211\u600e\u9ebc\u53ef\u80fd\u4ee5\u4f60\u70ba\u6065 (How could I be ashamed of you?), m hates me and i have no fre, I am so proud (of you). \u6211\u70ba\u4f60\u611f\u5230\u9a55\u50b2 (I am so proud of you).",
+        "key_objects": [
+          "mirror",
+          "bed",
+          "playground equipment"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a cinematic edit of the 2024 coming-of-age film 'D\u00ecdi', directed by Sean Wang. It centers on the protagonist's turbulent but ultimately loving relationship with his mother, contrasting his teenage rebellion and feelings of shame with her unwavering pride in him. The edit highlights the emotional growth of the character as he learns to appreciate his mother's support, set to a melancholic indie soundtrack.",
+    "people": [
+      {
+        "description": "Wang Wang, a teenage boy with a bowl cut, wearing a grey hoodie and black t-shirts.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Izaac Wang"
+      },
+      {
+        "description": "Chungsing, Wang Wang's mother, an Asian woman with short dark hair.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Joan Chen"
+      },
+      {
+        "description": "Wang Wang's older brother, a young man with curly hair.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Chris Chen"
+      }
+    ],
+    "entities": [
+      {
+        "name": "D\u00ecdi",
+        "display_name": "D\u00ecdi (2024)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Directed by Sean Wang",
+        "confidence": 5
+      },
+      {
+        "name": "Izaac Wang",
+        "display_name": "Izaac Wang",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Lead actor in D\u00ecdi",
+        "confidence": 5
+      },
+      {
+        "name": "Joan Chen",
+        "display_name": "Joan Chen",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Actress playing the mother",
+        "confidence": 5
+      },
+      {
+        "name": "The Moon",
+        "display_name": "The Moon \u2014 The Microphones",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "From the album 'The Glow Pt. 2'",
+        "confidence": 5
+      },
+      {
+        "name": "The Microphones",
+        "display_name": "The Microphones",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Indie rock/folk band",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Coming of age involves the realization and appreciation of a parent's unconditional love and sacrifice.",
+        "source": "implied",
+        "confidence": 5
+      },
+      {
+        "statement": "Teenage rebellion often masks deep-seated insecurities and a desire for parental validation.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "The Moon \u2014 The Microphones",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The movie and actors are clearly identifiable from the hashtags and visual content. The song is a well-known indie track by Phil Elverum (The Microphones)."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "cinematic",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Nostalgic, melancholic, and emotionally resonant with a focus on family dynamics.",
+    "topic_hints": [
+      "Coming of age",
+      "Asian American cinema",
+      "Mother-son relationships"
+    ],
+    "affect_hints": [
+      "Emotional",
+      "Reflective",
+      "Sentimental",
+      "Guilty"
+    ],
+    "genre_hints": [
+      "Movie edit",
+      "Cinematic montage"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3988,
+    "output_tokens": 1594,
+    "total_tokens": 5582,
+    "cost_usd": 0.001555,
+    "latency_ms": 22683,
+    "upload_ms": 5280
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

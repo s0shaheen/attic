@@ -1,0 +1,52 @@
+{
+  "item_id": "7603405187213970718",
+  "parsed_output": {
+    "summary": "Artist Cody Sabol performs a high-speed painting challenge on stage, creating a portrait of Andrew Garfield's Spider-Man in just 7 minutes. The video captures the transformation from a blank black canvas to a finished piece set to the epic Spider-Man theme music.",
+    "entities": [
+      {
+        "name": "Cody Sabol",
+        "type": "artist",
+        "relevance": "primary"
+      },
+      {
+        "name": "Andrew Garfield",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Spider-Man",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Spider-Man: No Way Home",
+        "type": "movie_or_show",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Marvel",
+        "type": "brand",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "art",
+      "secondary": "movies_tv"
+    },
+    "genre": "timelapse",
+    "affect": {
+      "dominant": "satisfying",
+      "secondary": "inspiring"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "Artist Cody Sabol (@codysabolart) performs a speed painting challenge on stage, completing a detailed portrait of Andrew Garfield's Spider-Man in just 7 minutes. The video shows the creative process from a blank black canvas to a finished, vibrant painting featuring bold red, white, and blue accents. Set to the 'Spider-Man Theme - Epic Version' from the No Way Home trailer, the performance is a high-speed art demonstration. On-screen text reads 'Painting Andrew Garfield Spider-Man in 7 minutes!!'. The artist is seen wearing a green jacket and paint-splattered pants while working on a large easel in front of blue stage curtains. This content is ideal for fans of Marvel, Spider-Man, and speed painting techniques looking for artistic inspiration or entertainment."
+  },
+  "metrics": {
+    "input_tokens": 4265,
+    "output_tokens": 491,
+    "total_tokens": 4756,
+    "cost_usd": 0.000934,
+    "latency_ms": 7207,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "generated_at": "2026-03-24T06:00:09.350534+00:00",
+  "summary": {
+    "urls_submitted": 903,
+    "apify_items_returned": 903,
+    "matched_to_export": 777,
+    "unmatched_deleted_or_unavailable": 126,
+    "match_rate": 0.8605,
+    "extra_apify_items": 126
+  },
+  "fill_rates": {
+    "caption_text": {
+      "filled": 752,
+      "total": 777,
+      "rate": 0.9678
+    },
+    "hashtags": {
+      "filled": 642,
+      "total": 777,
+      "rate": 0.8263
+    },
+    "creator": {
+      "filled": 777,
+      "total": 777,
+      "rate": 1.0
+    },
+    "video_meta": {
+      "filled": 777,
+      "total": 777,
+      "rate": 1.0
+    },
+    "music": {
+      "filled": 777,
+      "total": 777,
+      "rate": 1.0
+    },
+    "play_count": {
+      "filled": 777,
+      "total": 777,
+      "rate": 1.0
+    },
+    "like_count": {
+      "filled": 777,
+      "total": 777,
+      "rate": 1.0
+    },
+    "comment_count": {
+      "filled": 777,
+      "total": 777,
+      "rate": 1.0
+    },
+    "share_count": {
+      "filled": 777,
+      "total": 777,
+      "rate": 1.0
+    },
+    "collect_count": {
+      "filled": 777,
+      "total": 777,
+      "rate": 1.0
+    },
+    "web_url": {
+      "filled": 777,
+      "total": 777,
+      "rate": 1.0
+    },
+    "create_time": {
+      "filled": 777,
+      "total": 777,
+      "rate": 1.0
+    },
+    "mentions": {
+      "filled": 81,
+      "total": 777,
+      "rate": 0.1042
+    },
+    "is_ad": {
+      "filled": 777,
+      "total": 777,
+      "rate": 1.0
+    },
+    "location": {
+      "filled": 777,
+      "total": 777,
+      "rate": 1.0
+    },
+    "effects": {
+      "filled": 47,
+      "total": 777,
+      "rate": 0.0605
+    },
+    "text_language": {
+      "filled": 777,
+      "total": 777,
+      "rate": 1.0
+    }
+  },
+  "caption_analysis": {
+    "total": 777,
+    "empty": 25,
+    "empty_pct": 0.0322,
+    "emoji_only": 2,
+    "emoji_only_pct": 0.0026,
+    "length_mean": 167.2,
+    "length_median": 102.0,
+    "length_p25": 54.0,
+    "length_p75": 186.0,
+    "length_p95": 526.4,
+    "length_max": 3118
+  },
+  "hashtag_analysis": {
+    "items_with_hashtags": 642,
+    "items_with_hashtags_pct": 0.8263,
+    "count_mean": 5.8,
+    "count_median": 5.0,
+    "count_max": 119
+  },
+  "media_types": {
+    "video": 591,
+    "image": 0,
+    "slideshow": 186
+  },
+  "thumbnail_availability": {
+    "available": 777,
+    "total": 777,
+    "rate": 1.0,
+    "field_path": "videoMeta.coverUrl"
+  },
+  "video_url_availability": {
+    "available": 777,
+    "total": 777,
+    "rate": 1.0,
+    "field_path": "videoMeta.downloadAddr / mediaUrls[]"
+  },
+  "slideshow_details": {
+    "total_slideshows": 186,
+    "with_image_links": 186,
+    "image_count_examples": [
+      6,
+      8,
+      8,
+      8,
+      4,
+      5,
+      11,
+      11,
+      8,
+      16
+    ]
+  },
+  "subtitle_availability": {
+    "available": 422,
+    "total": 777,
+    "rate": 0.5431,
+    "sources": {
+      "ASR": 330,
+      "MT": 162,
+      "LC": 64,
+      "MU": 10
+    },
+    "field_path": "videoMeta.subtitleLinks[].downloadLink"
+  },
+  "engagement_stats": {
+    "play_count_mean": 2440948,
+    "play_count_median": 633900,
+    "play_count_max": 90900000,
+    "like_count_mean": 287541,
+    "like_count_median": 53300
+  },
+  "video_duration": {
+    "items_with_duration": 591,
+    "mean_s": 76.5,
+    "median_s": 56.0,
+    "p95_s": 243.5,
+    "max_s": 600
+  },
+  "unmatched": {
+    "count": 126,
+    "total_submitted": 903,
+    "rate": 0.1395,
+    "sample_urls": [
+      "https://www.tiktokv.com/share/video/7550745008303836430/",
+      "https://www.tiktokv.com/share/video/7547075025560505630/",
+      "https://www.tiktokv.com/share/video/7544874343797460238/",
+      "https://www.tiktokv.com/share/video/7526932927683284232/",
+      "https://www.tiktokv.com/share/video/7542677760683150606/",
+      "https://www.tiktokv.com/share/video/7540315172674489608/",
+      "https://www.tiktokv.com/share/video/7540046285735316758/",
+      "https://www.tiktokv.com/share/video/7539797989158554898/",
+      "https://www.tiktokv.com/share/video/7538841701448682760/",
+      "https://www.tiktokv.com/share/video/7533151792415198519/"
+    ],
+    "date_range": {
+      "oldest": "2021-04-17 21:41:25",
+      "newest": "2025-09-17 03:24:02"
+    }
+  },
+  "apify_runs": [
+    {
+      "run_id": "6ZCi93aXofUFBOIzM",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 109.2,
+      "urls_submitted": 50,
+      "usage_usd": 0.632,
+      "started_at": "2026-03-24T05:54:31.330Z",
+      "finished_at": "2026-03-24T05:56:16.011Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "0gfQZs8bx1q1XaDl9",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 109.3,
+      "urls_submitted": 50,
+      "usage_usd": 0.595,
+      "started_at": "2026-03-24T05:54:31.332Z",
+      "finished_at": "2026-03-24T05:56:18.668Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "mCdSJPmsDVb66zATe",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 114.2,
+      "urls_submitted": 50,
+      "usage_usd": 0.643,
+      "started_at": "2026-03-24T05:54:31.321Z",
+      "finished_at": "2026-03-24T05:56:25.003Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "jERmY2hCjvQV6L89H",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 115.4,
+      "urls_submitted": 50,
+      "usage_usd": 0.609,
+      "started_at": "2026-03-24T05:54:32.356Z",
+      "finished_at": "2026-03-24T05:56:25.764Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "sTTVXEqAgt6cjbDCL",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 130.1,
+      "urls_submitted": 50,
+      "usage_usd": 0.626,
+      "started_at": "2026-03-24T05:54:31.323Z",
+      "finished_at": "2026-03-24T05:56:36.686Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "nE4WgGhmSOPyF7JOq",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 135.2,
+      "urls_submitted": 50,
+      "usage_usd": 0.636,
+      "started_at": "2026-03-24T05:54:31.328Z",
+      "finished_at": "2026-03-24T05:56:42.223Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "pM9c5DOdMPbUjYWHy",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 141.2,
+      "urls_submitted": 50,
+      "usage_usd": 0.5980000000000001,
+      "started_at": "2026-03-24T05:54:32.366Z",
+      "finished_at": "2026-03-24T05:56:51.150Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "NHWINRzsgL46r9uON",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 103.9,
+      "urls_submitted": 50,
+      "usage_usd": 0.65,
+      "started_at": "2026-03-24T05:56:20.640Z",
+      "finished_at": "2026-03-24T05:58:03.544Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "9fqt7mQ6WS8rVTGSA",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 104.1,
+      "urls_submitted": 50,
+      "usage_usd": 0.626,
+      "started_at": "2026-03-24T05:56:20.621Z",
+      "finished_at": "2026-03-24T05:58:03.489Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "KnAEZ6x6lmOY06hYe",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 104.0,
+      "urls_submitted": 50,
+      "usage_usd": 0.61,
+      "started_at": "2026-03-24T05:56:26.913Z",
+      "finished_at": "2026-03-24T05:58:09.680Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "hsWbIQaJiMmQYgwVS",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 105.9,
+      "urls_submitted": 50,
+      "usage_usd": 0.5349999999999999,
+      "started_at": "2026-03-24T05:56:25.714Z",
+      "finished_at": "2026-03-24T05:58:06.513Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "VDzYP2aj3mfF3EESc",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 93.7,
+      "urls_submitted": 50,
+      "usage_usd": 0.556,
+      "started_at": "2026-03-24T05:56:41.530Z",
+      "finished_at": "2026-03-24T05:58:13.284Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "2lhf3858oVqvy5tzI",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 104.0,
+      "urls_submitted": 50,
+      "usage_usd": 0.587,
+      "started_at": "2026-03-24T05:56:46.634Z",
+      "finished_at": "2026-03-24T05:58:25.491Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "6esd9bZfYyGLczGmi",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 15.7,
+      "urls_submitted": 3,
+      "usage_usd": 0.010000000000000002,
+      "started_at": "2026-03-24T05:58:15.287Z",
+      "finished_at": "2026-03-24T05:58:26.463Z",
+      "items_returned": 3
+    },
+    {
+      "run_id": "UtTqeVNxGWnLg6wtg",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 135.0,
+      "urls_submitted": 50,
+      "usage_usd": 0.615,
+      "started_at": "2026-03-24T05:56:52.810Z",
+      "finished_at": "2026-03-24T05:59:02.180Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "qICOMdXJT2EemCpNz",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 93.8,
+      "urls_submitted": 50,
+      "usage_usd": 0.514,
+      "started_at": "2026-03-24T05:58:11.706Z",
+      "finished_at": "2026-03-24T05:59:43.729Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "64mI2Z23qcQ9VaNvB",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 109.0,
+      "urls_submitted": 50,
+      "usage_usd": 0.599,
+      "started_at": "2026-03-24T05:58:11.046Z",
+      "finished_at": "2026-03-24T05:59:55.110Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "hjKrs74MgyRyv28WA",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 119.2,
+      "urls_submitted": 50,
+      "usage_usd": 0.5800000000000001,
+      "started_at": "2026-03-24T05:58:04.862Z",
+      "finished_at": "2026-03-24T06:00:03.606Z",
+      "items_returned": 50
+    },
+    {
+      "run_id": "UnCxv3UGEO6bsfIo4",
+      "status": "SUCCEEDED",
+      "wall_clock_s": 124.6,
+      "urls_submitted": 50,
+      "usage_usd": 0.573,
+      "started_at": "2026-03-24T05:58:04.723Z",
+      "finished_at": "2026-03-24T06:00:05.338Z",
+      "items_returned": 50
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "item_id": "7345594874315509000",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:50:46.500832+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A close-up shot of an espresso cup with a spoon and sugar packet on a small, round outdoor cafe table. The background shows a blurred cobblestone street and distant buildings, suggesting a European city setting.",
+        "audio_description": "Music with a male vocalist begins, singing 'I love you, I love you, I told you I do, it's all I've ever felt, I've never felt...'",
+        "text_on_screen": "Peak Male Experience",
+        "key_objects": [
+          "espresso cup",
+          "spoon",
+          "sugar packet",
+          "outdoor cafe table"
+        ]
+      },
+      {
+        "time_range": "0:01-0:02",
+        "visual_description": "The scene remains at the cafe table, but now a can of VELO Fresh Mint nicotine pouches, an ashtray, and a smartphone are also visible on the table.",
+        "audio_description": "Music continues with the male vocalist.",
+        "text_on_screen": "Peak Male Experience",
+        "key_objects": [
+          "espresso cup",
+          "spoon",
+          "sugar packet",
+          "outdoor cafe table",
+          "VELO Fresh Mint nicotine pouches",
+          "ashtray",
+          "smartphone"
+        ]
+      },
+      {
+        "time_range": "0:02-0:04",
+        "visual_description": "A grand, ornate Gothic cathedral, likely the Strasbourg Cathedral, is shown from a low angle, emphasizing its towering architecture. People are walking in the foreground.",
+        "audio_description": "Music continues with the male vocalist.",
+        "text_on_screen": "Peak Male Experience",
+        "key_objects": [
+          "Strasbourg Cathedral",
+          "people"
+        ]
+      },
+      {
+        "time_range": "0:04-0:05",
+        "visual_description": "The view returns to the outdoor cafe table, showing the cobblestone street and buildings in the background from a slightly different angle.",
+        "audio_description": "Music continues with the male vocalist.",
+        "text_on_screen": "Peak Male Experience",
+        "key_objects": [
+          "outdoor cafe table",
+          "cobblestone street"
+        ]
+      },
+      {
+        "time_range": "0:05-0:08",
+        "visual_description": "The creator, @marcusnevin, appears in a close-up selfie shot, wearing a grey beanie and a white hoodie. He makes a 'pouty' facial expression and then looks around, with urban buildings in the background.",
+        "audio_description": "Music continues with the male vocalist.",
+        "text_on_screen": "Peak Male Experience",
+        "key_objects": [
+          "grey beanie",
+          "white hoodie"
+        ]
+      }
+    ],
+    "overall_summary": "This video, titled 'Peak Male Experience,' showcases a series of scenes that the creator associates with a particular masculine ideal or simple pleasures. It begins with an outdoor cafe setting featuring espresso and nicotine pouches, transitions to a majestic view of the Strasbourg Cathedral, and concludes with a selfie of the creator. The video uses the song 'I Love You' by The Neighbourhood to set a reflective and somewhat melancholic mood, suggesting a personal interpretation of a 'peak male experience' that combines quiet contemplation, simple indulgences, and appreciation for grand architecture.",
+    "people": [
+      {
+        "description": "A young man with a mustache, wearing a grey beanie, a white hoodie, and a dark jacket. He is the creator of the video and appears in a selfie shot.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "@marcusnevin"
+      }
+    ],
+    "entities": [
+      {
+        "name": "I Love You",
+        "display_name": "I Love You",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "The Neighbourhood",
+        "display_name": "The Neighbourhood",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "VELO Fresh Mint",
+        "display_name": "VELO Fresh Mint nicotine pouches",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Espresso",
+        "display_name": "Espresso",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Strasbourg Cathedral",
+        "display_name": "Strasbourg Cathedral",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "@marcusnevin",
+        "display_name": "Marcus Nevin",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video presents a personal interpretation of a 'Peak Male Experience,' combining simple pleasures like coffee and nicotine pouches with an appreciation for grand architecture and a moment of self-reflection.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "I Love You \u2014 The Neighbourhood",
+      "metadata_song": "I Love You",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Strasbourg Cathedral is an inference based on architectural style and common European city settings for such content, but highly probable."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "static|handheld|panning|selfie",
+      "editing_style": "minimal|jump_cuts"
+    },
+    "visual_mood": "calm, reflective, contemplative, slightly melancholic",
+    "topic_hints": [
+      "lifestyle",
+      "travel",
+      "masculinity",
+      "personal reflection"
+    ],
+    "affect_hints": [
+      "calm",
+      "thoughtful",
+      "nostalgic",
+      "peaceful"
+    ],
+    "genre_hints": [
+      "aesthetic",
+      "vlog",
+      "mood video"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3809,
+    "output_tokens": 1624,
+    "total_tokens": 5433,
+    "cost_usd": 0.001546,
+    "latency_ms": 17920,
+    "upload_ms": 3419
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

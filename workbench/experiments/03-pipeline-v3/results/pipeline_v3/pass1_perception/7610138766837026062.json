@@ -1,0 +1,185 @@
+{
+  "item_id": "7610138766837026062",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:12:42.055801+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:11",
+        "visual_description": "Creator sits on a couch in a living room, speaking directly to the camera. He is wearing a grey t-shirt with a vintage-style graphic.",
+        "audio_description": "Creator introduces the topic: the three biggest mistakes people make when networking or reaching out to strangers, based on his experience receiving many requests.",
+        "text_on_screen": "",
+        "key_objects": [
+          "bookshelves",
+          "television",
+          "couch"
+        ]
+      },
+      {
+        "time_range": "0:11-0:32",
+        "visual_description": "Creator continues speaking, using hand gestures to emphasize points about vague outreach.",
+        "audio_description": "Mistake #1: Not giving a clear reason for the reach-out. He advises being specific about what you need and why that specific person is the right one to help, rather than being vague.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:32-1:11",
+        "visual_description": "Creator explains the importance of showing prior effort before asking for help.",
+        "audio_description": "Mistake #2: Asking for help or referrals without showing you've done the work yourself. He suggests coming with progress, a built product, or customer feedback rather than just an idea.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:11-2:28",
+        "visual_description": "Creator discusses the psychological aspect of networking and the need for personalization.",
+        "audio_description": "Mistake #3: Telling someone they are just one of many networking calls. He emphasizes that people want to feel special and uniquely chosen, not like a number in a mass outreach campaign.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "2:28-2:52",
+        "visual_description": "Creator concludes the video with a final piece of advice on building relationships.",
+        "audio_description": "Conclusion: It is the sender's job to make it easy for the recipient to help. This involves providing context and aiming to build a real relationship rather than a transactional one.",
+        "text_on_screen": "",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "In this video, tech professional Evis Drenova outlines the three most common mistakes people make when networking or reaching out to strangers via email, TikTok, or LinkedIn. He argues that vague requests, asking for help without showing prior effort, and failing to personalize outreach are the primary reasons people get ignored. The main takeaway is that successful networking requires specificity, demonstrated initiative, and making the recipient feel uniquely qualified to help. By providing clear context and showing respect for the recipient's time, individuals can significantly increase their chances of receiving assistance and building meaningful professional relationships.",
+    "people": [
+      {
+        "description": "A man with short dark hair, wearing a grey t-shirt with a 'Sell Your Soul' graphic, sitting in a living room.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Evis Drenova"
+      }
+    ],
+    "entities": [
+      {
+        "name": "TikTok",
+        "display_name": "TikTok",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "LinkedIn",
+        "display_name": "LinkedIn",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Y Combinator",
+        "display_name": "YC (Y Combinator)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Startup accelerator",
+        "confidence": 5
+      },
+      {
+        "name": "Networking",
+        "display_name": "Networking",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Be highly specific about why you are reaching out and why that person is the right contact.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Show that you have already put in significant effort or made progress before asking for a referral or help.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Personalize your outreach to make the recipient feel special and uniquely chosen, rather than just another name on a list.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Mistake 1: Lack of Specificity",
+          "details": "Avoid vague requests like 'let's get to know each other.' Instead, state exactly what you need and why you chose them."
+        },
+        {
+          "name": "Mistake 2: Asking for the 'Easy Answer'",
+          "details": "Don't ask for help if you haven't tried to solve the problem yourself. Show progress, a prototype, or customer feedback first."
+        },
+        {
+          "name": "Mistake 3: Treating People as a Number",
+          "details": "Never tell a contact they are just one of many calls you're making. Personalize the reach-out to highlight their specific value."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video is a clear instructional talking head. All entities and takeaways are explicitly stated."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, professional, and direct with a casual home setting.",
+    "topic_hints": [
+      "Networking",
+      "Career Advice",
+      "Professional Communication"
+    ],
+    "affect_hints": [
+      "Informed",
+      "Professional",
+      "Encouraged"
+    ],
+    "genre_hints": [
+      "Advice",
+      "Tutorial",
+      "TechTok"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 16777,
+    "output_tokens": 1702,
+    "total_tokens": 18479,
+    "cost_usd": 0.003538,
+    "latency_ms": 33972,
+    "upload_ms": 12604
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

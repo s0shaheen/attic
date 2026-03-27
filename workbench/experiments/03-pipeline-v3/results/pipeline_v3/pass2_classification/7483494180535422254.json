@@ -1,0 +1,76 @@
+{
+  "item_id": "7483494180535422254",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:06.431776+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "health",
+      "micro_labels": [
+        "digital minimalism",
+        "philosophy of technology",
+        "memory formation",
+        "social media impact"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "vlog",
+      "micro_labels": [
+        "thought piece",
+        "monologue",
+        "personal reflection"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "neutral",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "provoke",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.8
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8494,
+    "output_tokens": 354,
+    "total_tokens": 8848,
+    "cost_usd": 0.001486,
+    "latency_ms": 10263,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 5
+  }
+}

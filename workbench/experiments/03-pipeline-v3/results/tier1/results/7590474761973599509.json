@@ -1,0 +1,52 @@
+{
+  "item_id": "7590474761973599509",
+  "parsed_output": {
+    "summary": "Creator @2akm1 shares a step-by-step recipe for a medium-rare ribeye steak topped with a rich, creamy mushroom sauce and served alongside a cheesy air-fried baked potato. This video is a high-value save for home cooks looking to master steak basting techniques and easy air fryer side dishes.",
+    "entities": [
+      {
+        "name": "Ribeye steak",
+        "type": "ingredient",
+        "relevance": "primary"
+      },
+      {
+        "name": "Mushroom sauce",
+        "type": "recipe",
+        "relevance": "primary"
+      },
+      {
+        "name": "Air fryer",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Cheesy baked potato",
+        "type": "recipe",
+        "relevance": "primary"
+      },
+      {
+        "name": "@2akm1",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "food",
+      "secondary": null
+    },
+    "genre": "recipe",
+    "affect": {
+      "dominant": "satisfying",
+      "secondary": "informative"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this food tutorial, creator @2akm1 prepares a gourmet home meal consisting of a medium-rare ribeye steak, a creamy mushroom sauce, and a cheesy air-fried baked potato. The video demonstrates the steak searing process in a pan with butter, garlic cloves, and a fresh rosemary sprig for basting. The accompanying mushroom sauce is made using 250 grams of mushrooms, shallots, garlic, butter, and heavy cream, finished with fresh parsley. The baked potato is seasoned with oil and heavy salt before being cooked in an air fryer at 200c for 45 minutes, then topped with melted cheese and chives. This recipe video is perfect for users searching for steak dinner inspiration, air fryer side dishes, or a step-by-step guide to making a rich mushroom cream sauce for beef. The final presentation shows the sauce being poured over the sliced steak next to the loaded potato."
+  },
+  "metrics": {
+    "input_tokens": 4361,
+    "output_tokens": 520,
+    "total_tokens": 4881,
+    "cost_usd": 0.000966,
+    "latency_ms": 8593,
+    "keyframe_count": 3
+  }
+}

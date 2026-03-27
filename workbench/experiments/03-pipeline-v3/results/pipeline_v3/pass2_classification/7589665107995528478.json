@@ -1,0 +1,75 @@
+{
+  "item_id": "7589665107995528478",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:24:07.558527+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "music",
+      "secondary": null,
+      "micro_labels": [
+        "hip-hop cover",
+        "instrumental performance",
+        "high school band",
+        "MF DOOM tribute"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": [
+        "live performance",
+        "musical cover"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "wholesome",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "raw_footage",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 18586,
+    "output_tokens": 353,
+    "total_tokens": 18939,
+    "cost_usd": 0.003,
+    "latency_ms": 9447,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 14
+  }
+}

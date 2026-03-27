@@ -1,0 +1,230 @@
+{
+  "item_id": "7605039538024615198",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:21:35.709630+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "The creator walks into Lardon through a distinctive red entryway booth on a Chicago sidewalk.",
+        "audio_description": "Okay guys, you'll see me here walking into Lardon.",
+        "text_on_screen": "LARDON, NEW WINTER HOURS, MONDAY - TUESDAY 8AM - 3:30PM, WEDNESDAY - SATURDAY 8AM - 10PM, SUNDAY 8AM - 4PM",
+        "key_objects": [
+          "Lardon entrance",
+          "winter hours sign"
+        ]
+      },
+      {
+        "time_range": "0:03-0:07",
+        "visual_description": "Interior pan of the restaurant showing rustic wood ceilings and a custom mural of farm animals and charcuterie.",
+        "audio_description": "It's a charcuterie and cheese board shop, but I like to call it a sandwich shop.",
+        "text_on_screen": "LARDON",
+        "key_objects": [
+          "mural",
+          "wood ceiling"
+        ]
+      },
+      {
+        "time_range": "0:07-0:12",
+        "visual_description": "View of the ordering counter and the busy dining area with patrons.",
+        "audio_description": "Their Italiano sandwich was ranked in the top seven sandwiches you must try in all of America.",
+        "text_on_screen": "ORDER TAKE-OUT AT COUNTER, PLEASE SEE HOST TO DINE IN, #LARDONCHICAGO",
+        "key_objects": [
+          "ordering counter",
+          "take-out sign"
+        ]
+      },
+      {
+        "time_range": "0:12-0:15",
+        "visual_description": "Kitchen staff in 'Fernet-Branca' shirts prepare sandwiches behind the counter.",
+        "audio_description": "According to the Michelin Guide that was published just last month.",
+        "text_on_screen": "SANDWICHES & SALADS, The Hotel California, The Finocchiona, The Frenchy, The Italiano, The Cubano, The Reuben, The Caprese, The Veggie",
+        "key_objects": [
+          "menu board",
+          "kitchen staff"
+        ]
+      },
+      {
+        "time_range": "0:15-0:18",
+        "visual_description": "Close-up of the salumi aging room with various cured meats hanging behind glass.",
+        "audio_description": "As you see here, smoked and cured meats done in-house.",
+        "text_on_screen": "SALUMI, CAFE BAR",
+        "key_objects": [
+          "hanging meats",
+          "salumi case"
+        ]
+      },
+      {
+        "time_range": "0:18-0:21",
+        "visual_description": "Close-up of 'The Hotel California' sandwich served with house-made chips and pickles.",
+        "audio_description": "Now my reaction to the Hotel California, right? Priceless.",
+        "text_on_screen": "",
+        "key_objects": [
+          "The Hotel California sandwich",
+          "potato chips",
+          "pickles"
+        ]
+      },
+      {
+        "time_range": "0:21-0:31",
+        "visual_description": "The creator takes a large bite of the sandwich and reacts with visible satisfaction.",
+        "audio_description": "Clean ingredients, stacked sandwich, can't beat it guys. Go check it out.",
+        "text_on_screen": "",
+        "key_objects": [
+          "sandwich"
+        ]
+      }
+    ],
+    "overall_summary": "Chicago-based creator @realtorchicago773 visits Lardon, a charcuterie and sandwich shop in Logan Square recently recognized by the Michelin Guide. The video highlights the restaurant's in-house meat curing process and its ranking among the best sandwich spots in the country. The creator specifically recommends 'The Hotel California' sandwich, showcasing its quality and size before giving a glowing review.",
+    "people": [
+      {
+        "description": "Male creator with glasses, a goatee, wearing a brown jacket over a grey hoodie.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@realtorchicago773"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Lardon",
+        "display_name": "Lardon Chicago",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Logan Square, Chicago",
+        "confidence": 5
+      },
+      {
+        "name": "Michelin Guide",
+        "display_name": "Michelin Guide 2026",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "Must-Try Sandwiches list",
+        "confidence": 5
+      },
+      {
+        "name": "The Hotel California",
+        "display_name": "The Hotel California Sandwich",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "House-cured meats, stacked sandwich",
+        "confidence": 5
+      },
+      {
+        "name": "Logan Square",
+        "display_name": "Logan Square, Chicago",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Fernet-Branca",
+        "display_name": "Fernet-Branca",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Apparel worn by staff",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Lardon is a Michelin-recognized destination for high-quality sandwiches in Chicago.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The restaurant cures and smokes all of its meats in-house for superior quality.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The 'Hotel California' is a standout menu item worth trying.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Lardon",
+          "details": "Charcuterie and sandwich shop in Logan Square, Chicago; Michelin Guide recognized."
+        },
+        {
+          "name": "The Hotel California",
+          "details": "Signature stacked sandwich featuring house-cured meats."
+        },
+        {
+          "name": "The Italiano",
+          "details": "Ranked in the top 7 sandwiches in America by Michelin Guide."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Upbeat Instrumental Jazz/Lo-fi Track",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All restaurant details and sandwich names were clearly visible or audible."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "panning",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Warm, rustic, and appetizing with a focus on food quality.",
+    "topic_hints": [
+      "Chicago Food Scene",
+      "Michelin Guide Recommendations",
+      "Artisanal Sandwiches"
+    ],
+    "affect_hints": [
+      "Hungry",
+      "Impressed",
+      "Informed"
+    ],
+    "genre_hints": [
+      "Restaurant Review",
+      "Foodie Guide"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4433,
+    "output_tokens": 1876,
+    "total_tokens": 6309,
+    "cost_usd": 0.001791,
+    "latency_ms": 39449,
+    "upload_ms": 6005
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

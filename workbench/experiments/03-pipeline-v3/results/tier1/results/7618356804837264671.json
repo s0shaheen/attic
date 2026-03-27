@@ -1,0 +1,52 @@
+{
+  "item_id": "7618356804837264671",
+  "parsed_output": {
+    "summary": "This TikTok features a cinematic compilation of Tom Holland as Peter Parker from the Marvel Cinematic Universe. It specifically showcases the 'Brand New Day' ending sequence from Spider-Man: No Way Home, featuring the new homemade red and blue suit.",
+    "entities": [
+      {
+        "name": "Spider-Man",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Tom Holland",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Marvel Cinematic Universe",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Spider-Man: No Way Home",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "New York City",
+        "type": "place",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "other"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "nostalgic",
+      "secondary": "inspiring"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "A cinematic fan edit featuring Tom Holland as Peter Parker in the Marvel Cinematic Universe. The video focuses on the 'Brand New Day' sequence from the conclusion of Spider-Man: No Way Home. Key frames show Peter Parker on a New York City rooftop with his mask pulled up, looking somber yet determined, before transitioning to shots of him swinging through the city in his new, bright red and blue homemade superhero suit. The footage includes a black van driving past urban graffiti and Spider-Man leaping over snowy rooftops. This clip is a tribute to the character's fresh start in the MCU, capturing the bittersweet and hopeful tone of the movie's ending. It is optimized for fans searching for Spider-Man movie clips, Tom Holland edits, or No Way Home ending scenes."
+  },
+  "metrics": {
+    "input_tokens": 4223,
+    "output_tokens": 479,
+    "total_tokens": 4702,
+    "cost_usd": 0.000921,
+    "latency_ms": 7338,
+    "keyframe_count": 3
+  }
+}

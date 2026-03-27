@@ -1,0 +1,213 @@
+{
+  "item_id": "7402274475779034399",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:51:54.893441+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:06",
+        "visual_description": "The creator, a young man, stands on an outdoor basketball court and demonstrates a weak left-hand dribble, showing how the ball 'dies'. He then addresses the camera, introducing a solution.",
+        "audio_description": "The creator explains that if someone has no left-hand dribble and the ball keeps dying, they should follow a four-step progression to improve.",
+        "text_on_screen": "HAVE, DRIBBLE, KEEPS, THAT, PROGRESSION, END",
+        "key_objects": [
+          "basketball",
+          "basketball hoop"
+        ]
+      },
+      {
+        "time_range": "0:06-0:13",
+        "visual_description": "The creator demonstrates the first step of the progression, performing low, controlled left-hand dribbles while stationary in a crouched stance.",
+        "audio_description": "The creator instructs viewers to perform 100 'pound dribbles' in a row and not to move on until they can achieve this.",
+        "text_on_screen": "PROGRESSION, 100, DRIBLES, DON'T, GET, ROW",
+        "key_objects": [
+          "basketball"
+        ]
+      },
+      {
+        "time_range": "0:13-0:18",
+        "visual_description": "The creator demonstrates the second step, performing left-hand dribbles above his head while standing stationary.",
+        "audio_description": "The creator advises that once the first step is easy, the next step is to do 100 dribbles in a row above the head.",
+        "text_on_screen": "EASY, 100, ABOVE, HEAD",
+        "key_objects": [
+          "basketball"
+        ]
+      },
+      {
+        "time_range": "0:18-0:22",
+        "visual_description": "The creator demonstrates the third step, performing left-hand dribbles while moving his body back and forth in a lateral motion.",
+        "audio_description": "The creator states that when the previous step becomes easy, the next is to perform 100 dribbles in a row while moving back and forth.",
+        "text_on_screen": "100, AND, FORTH",
+        "key_objects": [
+          "basketball"
+        ]
+      },
+      {
+        "time_range": "0:22-0:26",
+        "visual_description": "The creator demonstrates the fourth step, performing left-hand dribbles while walking forward on the court.",
+        "audio_description": "The creator instructs that once the previous step is easy, the final step is to start dribbling on the move.",
+        "text_on_screen": "EASY, IT, ON, MOVE",
+        "key_objects": [
+          "basketball"
+        ]
+      },
+      {
+        "time_range": "0:26-0:29",
+        "visual_description": "The creator stands holding the basketball, looking directly at the camera, and concludes the tutorial.",
+        "audio_description": "The creator concludes by stating that completing the four-step progression will make dribbling with the left hand easy.",
+        "text_on_screen": "FOUR, DRIBBLING, WILL",
+        "key_objects": [
+          "basketball"
+        ]
+      }
+    ],
+    "overall_summary": "This video provides a 4-step tutorial for beginners to improve their left-hand basketball dribbling skills. The creator demonstrates each step, starting with stationary 'pound dribbles' and progressing to dribbling above the head, moving back and forth, and finally dribbling on the move. The main point is that by following this progression, users can significantly enhance their left-hand dribble.",
+    "people": [
+      {
+        "description": "A young man with brown, curly hair, wearing a light green t-shirt and grey athletic shorts, demonstrating basketball dribbling techniques.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Basketball",
+        "display_name": "Basketball",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Left-hand dribble",
+        "display_name": "Left-hand Dribble",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata",
+          "caption"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Dribbling",
+        "display_name": "Dribbling",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata",
+          "caption"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Nike",
+        "display_name": "Nike",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Ralph Lauren",
+        "display_name": "Ralph Lauren",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "A four-step dribbling progression can effectively improve a beginner's left-hand basketball dribble.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Step 1: Pound Dribbles",
+          "details": "Perform 100 low, controlled left-hand dribbles while stationary."
+        },
+        {
+          "name": "Step 2: Above Head Dribbles",
+          "details": "Perform 100 left-hand dribbles above your head while stationary."
+        },
+        {
+          "name": "Step 3: Back and Forth Dribbles",
+          "details": "Perform 100 left-hand dribbles while moving your body back and forth laterally."
+        },
+        {
+          "name": "Step 4: Dribbling on the Move",
+          "details": "Practice left-hand dribbling while walking or moving forward."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The 'original sound' metadata does not refer to a specific song, and no background music is present, only the creator's voice and basketball dribbling sounds."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "informative, energetic, instructional",
+    "topic_hints": [
+      "basketball training",
+      "dribbling skills",
+      "sports tutorial"
+    ],
+    "affect_hints": [
+      "informative",
+      "motivating",
+      "helpful"
+    ],
+    "genre_hints": [
+      "sports instruction",
+      "how-to",
+      "fitness tutorial"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 10342,
+    "output_tokens": 1792,
+    "total_tokens": 12134,
+    "cost_usd": 0.002626,
+    "latency_ms": 23343,
+    "upload_ms": 5824
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

@@ -1,0 +1,736 @@
+{
+  "item_id": "7607891082247998733",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:57:59.283305+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A close-up shot showcases a perfectly assembled homemade Chick-fil-A style chicken sandwich, accompanied by waffle fries, a small bowl of dipping sauce, and a glass of lemonade with ice, all presented on a metal tray.",
+        "audio_description": "Upbeat, instrumental background music plays.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Chicken sandwich",
+          "Waffle fries",
+          "Dipping sauce",
+          "Lemonade",
+          "Ice",
+          "Metal tray"
+        ]
+      },
+      {
+        "time_range": "0:01-0:04",
+        "visual_description": "The creator, a young man wearing an apron, stands in a kitchen holding the tray with the meal. He introduces the video, then takes a bite of the sandwich and sips the lemonade.",
+        "audio_description": "The creator says, \"Let's make homemade Chick-fil-A.\" Upbeat, instrumental background music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Creator",
+          "Apron",
+          "Kitchen",
+          "Chicken sandwich",
+          "Waffle fries",
+          "Dipping sauce",
+          "Lemonade",
+          "Metal tray"
+        ]
+      },
+      {
+        "time_range": "0:04-0:09",
+        "visual_description": "Hands punch down risen dough in a metal bowl, then use a dough scraper to divide it into four portions on a wooden cutting board. The portions are then shaped into round buns and placed on a baking sheet, covered with a red and white striped towel.",
+        "audio_description": "Upbeat, instrumental background music continues with sounds of dough being worked.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Dough",
+          "Metal bowl",
+          "Dough scraper",
+          "Wooden cutting board",
+          "Baking sheet",
+          "Parchment paper",
+          "Towel"
+        ]
+      },
+      {
+        "time_range": "0:09-0:12",
+        "visual_description": "Hands brush the risen dough buns with an egg wash. After baking, the golden-brown buns are shown and then brushed with melted butter.",
+        "audio_description": "Upbeat, instrumental background music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Dough buns",
+          "Egg wash",
+          "Brush",
+          "Baked buns",
+          "Melted butter"
+        ]
+      },
+      {
+        "time_range": "0:12-0:19",
+        "visual_description": "Hands slice a cucumber into thin rounds on a wooden cutting board. The slices are then placed into a glass jar with fresh dill. A clear liquid (brine) is poured into the jar, which is then sealed with a lid and shaken.",
+        "audio_description": "Upbeat, instrumental background music continues with sounds of slicing and liquid pouring.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Cucumber",
+          "Knife",
+          "Wooden cutting board",
+          "Glass jar",
+          "Dill",
+          "Brine",
+          "Lid"
+        ]
+      },
+      {
+        "time_range": "0:19-0:23",
+        "visual_description": "Hands add grated cheese, white sugar, and various spices (paprika, garlic powder, cayenne, white pepper, onion powder) to a metal bowl containing buttermilk. The ingredients are then whisked together.",
+        "audio_description": "Upbeat, instrumental background music continues with sounds of ingredients being added and mixed.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Grated cheese",
+          "Sugar",
+          "Paprika",
+          "Garlic powder",
+          "Cayenne pepper",
+          "White pepper",
+          "Onion powder",
+          "Metal bowl",
+          "Buttermilk",
+          "Whisk"
+        ]
+      },
+      {
+        "time_range": "0:23-0:25",
+        "visual_description": "A gloved hand places boneless, skinless chicken thighs into the prepared brine mixture in the metal bowl. The bowl is then covered with plastic wrap.",
+        "audio_description": "Upbeat, instrumental background music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Chicken thighs",
+          "Brine",
+          "Metal bowl",
+          "Plastic wrap"
+        ]
+      },
+      {
+        "time_range": "0:25-0:29",
+        "visual_description": "Hands use a mandoline to slice a potato into waffle-cut shapes. The waffle-cut potatoes are then placed into a clear glass bowl, and ice and water are added, followed by mixing.",
+        "audio_description": "Upbeat, instrumental background music continues with sounds of slicing and water.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Potato",
+          "Mandoline",
+          "Waffle-cut potatoes",
+          "Clear glass bowl",
+          "Ice",
+          "Water"
+        ]
+      },
+      {
+        "time_range": "0:29-0:33",
+        "visual_description": "A hand pours clear liquid (vinegar) into a pot of boiling water. Waffle fries are placed into the boiling water using a metal spider strainer, then removed and arranged on a wire rack to drain.",
+        "audio_description": "Upbeat, instrumental background music continues with sounds of boiling water and draining.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Vinegar",
+          "Pot",
+          "Boiling water",
+          "Waffle fries",
+          "Spider strainer",
+          "Wire rack"
+        ]
+      },
+      {
+        "time_range": "0:33-0:35",
+        "visual_description": "Waffle fries are deep-fried in a pan of hot oil until golden brown, then removed with a spider strainer.",
+        "audio_description": "Upbeat, instrumental background music continues with sounds of frying.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Waffle fries",
+          "Frying pan",
+          "Hot oil",
+          "Spider strainer"
+        ]
+      },
+      {
+        "time_range": "0:35-0:39",
+        "visual_description": "Hands hold an empty white bowl, then add all-purpose flour, potato starch, paprika, garlic powder, onion powder, and MSG to it. A whisk mixes the dry dredge ingredients together.",
+        "audio_description": "Upbeat, instrumental background music continues with sounds of ingredients being added and mixed.",
+        "text_on_screen": "",
+        "key_objects": [
+          "White bowl",
+          "All-purpose flour",
+          "Potato starch",
+          "Paprika",
+          "Garlic powder",
+          "Onion powder",
+          "MSG",
+          "Whisk"
+        ]
+      },
+      {
+        "time_range": "0:39-0:42",
+        "visual_description": "A gloved hand takes a chicken thigh from the brine, coats it thoroughly in the dry dredge, then returns it to the brine, and finally coats it again in the dry dredge for a double breading.",
+        "audio_description": "Upbeat, instrumental background music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Chicken thigh",
+          "Brine",
+          "Dry dredge",
+          "Gloved hand"
+        ]
+      },
+      {
+        "time_range": "0:42-0:46",
+        "visual_description": "A gloved hand uses tongs to place the breaded chicken thigh into a pan of hot oil for deep frying. The chicken fries, turning golden brown, and is flipped with tongs before being removed from the oil.",
+        "audio_description": "Upbeat, instrumental background music continues with sounds of frying.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Breaded chicken thigh",
+          "Tongs",
+          "Frying pan",
+          "Hot oil"
+        ]
+      },
+      {
+        "time_range": "0:46-0:47",
+        "visual_description": "Waffle fries are placed back into the hot oil for a second fry, then removed with a spider strainer.",
+        "audio_description": "Upbeat, instrumental background music continues with sounds of frying.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Waffle fries",
+          "Hot oil",
+          "Spider strainer"
+        ]
+      },
+      {
+        "time_range": "0:47-0:51",
+        "visual_description": "Hands hold an empty clear glass bowl, then add mayonnaise, barbecue sauce, honey, yellow mustard, kosher salt, black pepper, and lemon juice to it. A white spatula mixes the sauce ingredients together.",
+        "audio_description": "Upbeat, instrumental background music continues with sounds of ingredients being added and mixed.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Clear glass bowl",
+          "Mayonnaise",
+          "Barbecue sauce",
+          "Honey",
+          "Yellow mustard",
+          "Kosher salt",
+          "Black pepper",
+          "Lemon juice",
+          "Spatula"
+        ]
+      },
+      {
+        "time_range": "0:51-0:54",
+        "visual_description": "A toasted brioche bun is shown. The bottom bun is spread with the homemade Chick-fil-A sauce, followed by lettuce and tomato slices. The fried chicken thigh is placed on top of the vegetables, then a slice of cheese, and finally the top bun completes the sandwich.",
+        "audio_description": "Upbeat, instrumental background music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Toasted brioche bun",
+          "Chick-fil-A sauce",
+          "Lettuce",
+          "Tomato slices",
+          "Fried chicken thigh",
+          "Cheese slice"
+        ]
+      },
+      {
+        "time_range": "0:54-0:59",
+        "visual_description": "The assembled chicken sandwich, waffle fries, and a small bowl of sauce are displayed on the metal tray. Lemonade is poured into a glass with ice, and a red and white striped straw is added, completing the homemade Chick-fil-A meal.",
+        "audio_description": "Upbeat, instrumental background music continues with sounds of pouring liquid.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Chicken sandwich",
+          "Waffle fries",
+          "Dipping sauce",
+          "Metal tray",
+          "Lemonade",
+          "Glass",
+          "Ice",
+          "Straw"
+        ]
+      }
+    ],
+    "overall_summary": "This video provides a comprehensive tutorial on how to make a homemade Chick-fil-A style meal, including a fried chicken sandwich, waffle fries, and the signature sauce. The creator demonstrates each step, from preparing the brioche buns and brining the chicken to making homemade pickles, double-frying the waffle fries, and assembling the final sandwich. The main point is to guide viewers through creating a complete, delicious Chick-fil-A inspired meal from scratch.",
+    "people": [
+      {
+        "description": "A young man with light brown hair, wearing a white t-shirt and a dark denim apron. He is the creator of the content, demonstrating cooking techniques.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@cooking_with.kian"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Chick-fil-A",
+        "display_name": "Chick-fil-A",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "caption",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Homemade Chick-fil-A",
+        "display_name": "Homemade Chick-fil-A Meal",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "caption",
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Chick-fil-A Sauce",
+        "display_name": "Chick-fil-A Sauce",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "\u00bd cup mayonnaise, 3 Tbsp barbecue sauce, 2 Tbsp honey, 2 Tbsp yellow mustard, \u00bd Tsp kosher salt, \u00bd black pepper, \u00bd a lemon juiced",
+        "confidence": 5
+      },
+      {
+        "name": "Chicken Brine",
+        "display_name": "Chicken Brine",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "4 boneless skinless chicken thighs, 1 cup buttermilk, 1 cup pickle juice, 1 Tbsp paprika, 1 \u00bd Tbsp garlic powder, 1 tsp cayenne, 1 tsp white pepper, 1 tsp onion powder, 1 Tbsp kosher salt",
+        "confidence": 5
+      },
+      {
+        "name": "Dry Dredge",
+        "display_name": "Dry Dredge",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "2 cups all purpose flour, \u00bd cup potato starch, 1 Tbsp paprika, 1 Tbsp garlic powder, 1 tsp onion powder, 1 tsp MSG (optional)",
+        "confidence": 5
+      },
+      {
+        "name": "Mayonnaise",
+        "display_name": "Mayonnaise",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "\u00bd cup",
+        "confidence": 5
+      },
+      {
+        "name": "Barbecue Sauce",
+        "display_name": "Barbecue Sauce",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "3 Tbsp",
+        "confidence": 5
+      },
+      {
+        "name": "Honey",
+        "display_name": "Honey",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "2 Tbsp",
+        "confidence": 5
+      },
+      {
+        "name": "Yellow Mustard",
+        "display_name": "Yellow Mustard",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "2 Tbsp",
+        "confidence": 5
+      },
+      {
+        "name": "Kosher Salt",
+        "display_name": "Kosher Salt",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "\u00bd Tsp (sauce), 1 Tbsp (brine)",
+        "confidence": 5
+      },
+      {
+        "name": "Black Pepper",
+        "display_name": "Black Pepper",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "\u00bd Tsp",
+        "confidence": 5
+      },
+      {
+        "name": "Lemon",
+        "display_name": "Lemon",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "\u00bd a lemon juiced",
+        "confidence": 5
+      },
+      {
+        "name": "Boneless Skinless Chicken Thighs",
+        "display_name": "Boneless Skinless Chicken Thighs",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "4",
+        "confidence": 5
+      },
+      {
+        "name": "Buttermilk",
+        "display_name": "Buttermilk",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "1 cup",
+        "confidence": 5
+      },
+      {
+        "name": "Pickle Juice",
+        "display_name": "Pickle Juice",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "1 cup",
+        "confidence": 5
+      },
+      {
+        "name": "Paprika",
+        "display_name": "Paprika",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "1 Tbsp (brine), 1 Tbsp (dredge)",
+        "confidence": 5
+      },
+      {
+        "name": "Garlic Powder",
+        "display_name": "Garlic Powder",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "1 \u00bd Tbsp (brine), 1 Tbsp (dredge)",
+        "confidence": 5
+      },
+      {
+        "name": "Cayenne Pepper",
+        "display_name": "Cayenne Pepper",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "1 tsp",
+        "confidence": 5
+      },
+      {
+        "name": "White Pepper",
+        "display_name": "White Pepper",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "1 tsp",
+        "confidence": 5
+      },
+      {
+        "name": "Onion Powder",
+        "display_name": "Onion Powder",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "1 tsp (brine), 1 tsp (dredge)",
+        "confidence": 5
+      },
+      {
+        "name": "All-Purpose Flour",
+        "display_name": "All-Purpose Flour",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "2 cups",
+        "confidence": 5
+      },
+      {
+        "name": "Potato Starch",
+        "display_name": "Potato Starch",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "\u00bd cup",
+        "confidence": 5
+      },
+      {
+        "name": "MSG",
+        "display_name": "MSG",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "caption",
+          "visual"
+        ],
+        "specifications": "optional",
+        "confidence": 5
+      },
+      {
+        "name": "Cucumber",
+        "display_name": "Cucumber",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Dill",
+        "display_name": "Dill",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Potatoes",
+        "display_name": "Potatoes",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Waffle Fries",
+        "display_name": "Waffle Fries",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Brioche Bun",
+        "display_name": "Brioche Bun",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Lettuce",
+        "display_name": "Lettuce",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Tomato",
+        "display_name": "Tomato",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Cheese",
+        "display_name": "Cheese Slice",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Lemonade",
+        "display_name": "Lemonade",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Mandoline",
+        "display_name": "Mandoline Slicer",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Spider Strainer",
+        "display_name": "Spider Strainer",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "You can make a complete homemade Chick-fil-A style meal, including the sandwich, waffle fries, and sauce, from scratch.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "The video provides detailed recipes for Chick-fil-A sauce, chicken brine, and dry dredge for frying chicken.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Chick-fil-A Sauce",
+          "details": "\u00bd cup mayonnaise, 3 Tbsp barbecue sauce, 2 Tbsp honey, 2 Tbsp yellow mustard, \u00bd Tsp kosher salt, \u00bd black pepper, \u00bd a lemon juiced"
+        },
+        {
+          "name": "Chicken Brine",
+          "details": "4 boneless skinless chicken thighs, 1 cup buttermilk, 1 cup pickle juice, 1 Tbsp paprika, 1 \u00bd Tbsp garlic powder, 1 tsp cayenne, 1 tsp white pepper, 1 tsp onion powder, 1 Tbsp kosher salt"
+        },
+        {
+          "name": "Dry Dredge",
+          "details": "2 cups all purpose flour, \u00bd cup potato starch, 1 Tbsp paprika, 1 Tbsp garlic powder, 1 tsp onion powder, 1 tsp MSG (optional)"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The background music is generic and not a recognizable song, aligning with 'original sound' metadata."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static|overhead",
+      "editing_style": "jump_cuts|montage"
+    },
+    "visual_mood": "Informative, engaging, satisfying, appetizing, energetic",
+    "topic_hints": [
+      "Cooking",
+      "Recipe",
+      "Fast food remake"
+    ],
+    "affect_hints": [
+      "Inspired",
+      "Hungry",
+      "Satisfied",
+      "Motivated"
+    ],
+    "genre_hints": [
+      "Cooking tutorial",
+      "Food hack",
+      "Recipe video"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 19299,
+    "output_tokens": 6267,
+    "total_tokens": 25566,
+    "cost_usd": 0.006655,
+    "latency_ms": 47605,
+    "upload_ms": 5871
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "item_id": "7602724902357060882",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:13:42.383503+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:13",
+        "visual_description": "Creator displays his back progress across three dates (Dec 29, Jan 6, Feb 4) while performing arm raises to show scapular movement.",
+        "audio_description": "Creator introduces part 3 of his scapular winging self-healing journey and mentions incorporating feedback from part 2.",
+        "text_on_screen": "Scapular winging update Part 3\nDec 29\nJan 6\nFeb 4 (3 weeks into rehab)",
+        "key_objects": [
+          "Berserk Brand of Sacrifice tattoo"
+        ]
+      },
+      {
+        "time_range": "0:13-0:39",
+        "visual_description": "Creator demonstrates the difference between chest breathing and diaphragmatic breathing while shirtless.",
+        "audio_description": "Explains that the serratus anterior is connected to the ribs and helps them expand when the diaphragm is properly activated.",
+        "text_on_screen": "Chest Breathing\nDiaphragmatic Breathing",
+        "key_objects": [
+          "Berserk Brand of Sacrifice tattoo"
+        ]
+      },
+      {
+        "time_range": "0:39-1:23",
+        "visual_description": "Creator performs a doorway stretch, focusing on deep breathing and pushing into full protraction.",
+        "audio_description": "Describes the breathing pattern: inhale at the start, exhale through the bottom, hold, inhale again, and push back into protraction.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Door frame"
+        ]
+      },
+      {
+        "time_range": "1:23-2:16",
+        "visual_description": "Creator uses a foam roller against a wall to perform overhead extensions, showing two different distances from the wall.",
+        "audio_description": "Discusses how wall extensions change the line of gravity compared to floor versions, making protraction secondary to overhead extension.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Foam roller"
+        ]
+      },
+      {
+        "time_range": "2:16-2:57",
+        "visual_description": "Creator lies prone on the floor performing T and Y raises, highlighting where his scapula 'disconnects'.",
+        "audio_description": "Explains using these exercises to target lower traps and track range of motion improvements without using compensatory muscles.",
+        "text_on_screen": "*Trying as hard as I can to raise it without using compensatory muscles*\nHere it raises but scap disconnects",
+        "key_objects": [
+          "Carpeted floor"
+        ]
+      }
+    ],
+    "overall_summary": "This video is the third installment of a personal rehab journey to correct scapular winging. The creator demonstrates several new techniques suggested by his audience, including diaphragmatic breathing, doorway stretches, and foam roller wall extensions. He emphasizes the importance of filming oneself to catch subtle movement discrepancies and focuses on activating the serratus anterior and lower traps. The video serves as both a progress update and a tutorial for others dealing with similar mobility issues.",
+    "people": [
+      {
+        "description": "A young man with medium-length brown hair and a 'Brand of Sacrifice' tattoo on his right chest, demonstrating physical therapy exercises.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "j.movement.rs"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Scapular Winging",
+        "display_name": "Scapular Winging",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Diaphragmatic Breathing",
+        "display_name": "Diaphragmatic Breathing",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Serratus Anterior",
+        "display_name": "Serratus Anterior Muscle",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Doorway Stretch",
+        "display_name": "Doorway Stretch",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Foam Roller Wall Extensions",
+        "display_name": "Foam Roller Wall Extensions",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": "Performed against a wall",
+        "confidence": 5
+      },
+      {
+        "name": "Prone T Raises",
+        "display_name": "Prone T Raises",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": "Targets lower traps",
+        "confidence": 5
+      },
+      {
+        "name": "Prone Y Raises",
+        "display_name": "Prone Y Raises",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": "Targets lower traps",
+        "confidence": 5
+      },
+      {
+        "name": "Berserk Brand of Sacrifice",
+        "display_name": "Berserk Brand of Sacrifice Tattoo",
+        "type": "cultural_reference",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Right chest tattoo",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Diaphragmatic breathing is crucial for scapular rehab because the serratus anterior helps the ribs expand during proper inhalation.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Filming your exercises is essential to identify subtle movement discrepancies and asymmetries that you cannot feel.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Performing foam roller extensions against a wall shifts the focus more heavily onto overhead extension compared to floor variations.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "workout",
+      "items": [
+        {
+          "name": "Diaphragmatic Breathing",
+          "details": "Focus on belly expansion rather than chest rising to assist rib expansion."
+        },
+        {
+          "name": "Doorway Stretch with Breathing",
+          "details": "Inhale at start, exhale through movement, hold at bottom, inhale, then push back to full protraction."
+        },
+        {
+          "name": "Serratus Foam Roller Wall Movement",
+          "details": "Roll foam roller up the wall; distance from wall adjusts focus on protraction vs. overhead extension."
+        },
+        {
+          "name": "Prone T and Y Raises",
+          "details": "Lying face down, lift arms in T and Y shapes to target lower traps without using compensatory muscles."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Unknown Lo-Fi Hip Hop Beat",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "The music is a generic lo-fi beat common on TikTok; specific track name is not identifiable from audio alone."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Educational, focused, and clinical yet personal.",
+    "topic_hints": [
+      "Physical Therapy",
+      "Shoulder Mobility",
+      "Corrective Exercise"
+    ],
+    "affect_hints": [
+      "Determined",
+      "Informative",
+      "Encouraging"
+    ],
+    "genre_hints": [
+      "Fitness Journey",
+      "Educational Tutorial"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 17211,
+    "output_tokens": 2110,
+    "total_tokens": 19321,
+    "cost_usd": 0.003848,
+    "latency_ms": 34507,
+    "upload_ms": 10344
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

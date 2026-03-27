@@ -1,0 +1,376 @@
+{
+  "item_id": "7488413717357497642",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:55:46.739933+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "An exterior shot of the Falafel & Grill restaurant, showcasing its storefront, signage, and promotional posters on the windows.",
+        "audio_description": "Upbeat, instrumental Middle Eastern-style music plays.",
+        "text_on_screen": "I always drive by that place I wonder what's inside?",
+        "key_objects": [
+          "Falafel & Grill restaurant",
+          "signage",
+          "food posters"
+        ]
+      },
+      {
+        "time_range": "0:01-0:02",
+        "visual_description": "An overhead view of a table laden with various Mediterranean dishes, including a large plate of yellow rice with chicken or meat, falafel, salads, and a drink.",
+        "audio_description": "Upbeat, instrumental Middle Eastern-style music continues.",
+        "text_on_screen": "What's inside",
+        "key_objects": [
+          "yellow rice",
+          "chicken/meat dish",
+          "falafel",
+          "salad",
+          "drink",
+          "gyro/shawarma wrap"
+        ]
+      },
+      {
+        "time_range": "0:02-0:03",
+        "visual_description": "A man is shown sitting at the table, eating soup, surrounded by a spread of Mediterranean food.",
+        "audio_description": "Upbeat, instrumental Middle Eastern-style music continues.",
+        "text_on_screen": "What's inside:",
+        "key_objects": [
+          "man",
+          "soup",
+          "falafel",
+          "chicken/meat dish",
+          "salad",
+          "drink"
+        ]
+      },
+      {
+        "time_range": "0:03-0:04",
+        "visual_description": "A woman is sitting at the table, holding up a drink, with various Mediterranean dishes including pita bread and hummus in front of her.",
+        "audio_description": "Upbeat, instrumental Middle Eastern-style music continues.",
+        "text_on_screen": "What's inside:",
+        "key_objects": [
+          "woman",
+          "drink",
+          "pita bread",
+          "hummus",
+          "chicken/meat dish",
+          "salad"
+        ]
+      },
+      {
+        "time_range": "0:04-0:05",
+        "visual_description": "The woman is seen pushing a tray with a large plate of chicken/meat and rice towards the camera, with the restaurant interior visible in the background.",
+        "audio_description": "Upbeat, instrumental Middle Eastern-style music continues.",
+        "text_on_screen": "What's inside:",
+        "key_objects": [
+          "woman",
+          "chicken/meat dish",
+          "rice",
+          "restaurant interior"
+        ]
+      },
+      {
+        "time_range": "0:05-0:06",
+        "visual_description": "Another overhead shot highlighting plates of falafel with sauce and beef kabobs with yellow rice and red onions.",
+        "audio_description": "Upbeat, instrumental Middle Eastern-style music continues.",
+        "text_on_screen": "What's inside:",
+        "key_objects": [
+          "falafel",
+          "sauce",
+          "beef kabobs",
+          "yellow rice",
+          "red onions"
+        ]
+      },
+      {
+        "time_range": "0:06-0:06",
+        "visual_description": "The woman is shown eating from a plate of chicken/meat and salad, with the full spread of food around her.",
+        "audio_description": "Upbeat, instrumental Middle Eastern-style music continues.",
+        "text_on_screen": "What's inside:",
+        "key_objects": [
+          "woman",
+          "chicken/meat dish",
+          "salad",
+          "various Mediterranean dishes"
+        ]
+      }
+    ],
+    "overall_summary": "This video showcases the interior and diverse menu offerings of Falafel & Grill, a Mediterranean restaurant. It begins with an exterior shot, posing the question of what's inside, then transitions to a vibrant display of various dishes like falafel, kabobs, salads, and rice. The video features two individuals enjoying the food, inviting viewers to experience the 'delicious flavors' themselves. It serves as a visual advertisement encouraging potential customers to visit the establishment.",
+    "people": [
+      {
+        "description": "A young man with short brown hair, wearing a black long-sleeved shirt, seen eating soup and other dishes.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A young woman with long wavy blonde hair, wearing a black long-sleeved shirt and necklaces, seen presenting a drink and eating various dishes.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Falafel & Grill",
+        "display_name": "Falafel & Grill",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata",
+          "caption",
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Mediterranean food",
+        "display_name": "Mediterranean Food",
+        "type": "cuisine",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "caption",
+          "hashtags",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Falafel",
+        "display_name": "Falafel",
+        "type": "dish",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Hummus",
+        "display_name": "Hummus",
+        "type": "dish",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Salad",
+        "display_name": "Salad (Greek Salad)",
+        "type": "dish",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Kabobs",
+        "display_name": "Kabobs (Chicken Kabob, Beef Kabobs)",
+        "type": "dish",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Shawarma",
+        "display_name": "Shawarma (Chicken Shawarma)",
+        "type": "dish",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Chicago",
+        "display_name": "Chicago",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lebanon",
+        "display_name": "Lebanon (A Taste of Lebanon)",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Vegan options",
+        "display_name": "Vegan Options",
+        "type": "technique",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Gluten Free options",
+        "display_name": "Gluten Free Options",
+        "type": "technique",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Pita bread",
+        "display_name": "Pita Bread",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Yellow rice",
+        "display_name": "Yellow Rice",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Soup",
+        "display_name": "Soup",
+        "type": "dish",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Falafel & Grill offers a variety of delicious Mediterranean dishes that are worth trying.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "The restaurant provides fresh, healthy, vegan, and gluten-free options.",
+        "source": "visual",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Falafel",
+          "details": "Fried chickpea patties, served with sauce."
+        },
+        {
+          "name": "Kabobs",
+          "details": "Grilled meat skewers, including chicken and beef, often served with rice and onions."
+        },
+        {
+          "name": "Shawarma",
+          "details": "Shaved meat, typically chicken, served in a wrap or plate."
+        },
+        {
+          "name": "Hummus",
+          "details": "Chickpea dip."
+        },
+        {
+          "name": "Salad",
+          "details": "Fresh vegetable salads, including Greek salad."
+        },
+        {
+          "name": "Rice",
+          "details": "Yellow seasoned rice."
+        },
+        {
+          "name": "Pita Bread",
+          "details": "Flatbread."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": false,
+      "notes": "The 'original sound' is instrumental Middle Eastern music, but a specific song title is not identifiable without further tools. The confidence for audio identified is false because a specific song title could not be determined, only the genre/style."
+    },
+    "presentation_style": {
+      "primary_format": "showcase",
+      "camera_work": "static|overhead|panning",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "inviting, appetizing, vibrant, friendly",
+    "topic_hints": [
+      "Mediterranean cuisine",
+      "restaurant review",
+      "food showcase"
+    ],
+    "affect_hints": [
+      "hungry",
+      "curious",
+      "satisfied",
+      "welcomed"
+    ],
+    "genre_hints": [
+      "food review",
+      "restaurant advertisement",
+      "vlog"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3596,
+    "output_tokens": 2682,
+    "total_tokens": 6278,
+    "cost_usd": 0.002149,
+    "latency_ms": 22012,
+    "upload_ms": 3315
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

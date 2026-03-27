@@ -1,0 +1,699 @@
+{
+  "item_id": "7188553977032740102",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:46:45.961799+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:10",
+        "visual_description": "Matthew McConaughey delivers an acceptance speech at an awards ceremony, standing at a podium in a white tuxedo, with Jennifer Lawrence and another woman standing behind him. The background features a wall with circular, illuminated elements.",
+        "audio_description": "Matthew McConaughey speaks about a person asking him who his hero is, and his eventual answer being himself in 10 years.",
+        "text_on_screen": null,
+        "key_objects": [
+          "microphone",
+          "podium",
+          "Academy Awards stage design"
+        ]
+      },
+      {
+        "time_range": "0:10-0:14",
+        "visual_description": "Michael B. Jordan, portraying Adonis Creed, runs and shadowboxes intensely on a city street, wearing a grey hooded sweatshirt and a black beanie.",
+        "audio_description": "Matthew McConaughey's speech continues, emphasizing self-improvement.",
+        "text_on_screen": null,
+        "key_objects": [
+          "grey hoodie",
+          "black beanie",
+          "Jordan logo"
+        ]
+      },
+      {
+        "time_range": "0:14-0:15",
+        "visual_description": "Matt Damon, as Will Hunting, writes complex mathematical equations and diagrams on a large chalkboard in a school hallway.",
+        "audio_description": "Matthew McConaughey's speech continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "chalkboard",
+          "chalk"
+        ]
+      },
+      {
+        "time_range": "0:15-0:19",
+        "visual_description": "Steve Jobs, dressed in a black turtleneck and jeans, stands on a stage presenting the original iPod in 2001 to a large audience. A large screen behind him displays '2001' and then an image of the iPod.",
+        "audio_description": "Steve Jobs asks, 'What is it you want to contribute? What's the movie that we have never seen?'",
+        "text_on_screen": "2001",
+        "key_objects": [
+          "iPod",
+          "Apple logo",
+          "microphone",
+          "stage",
+          "projector screen"
+        ]
+      },
+      {
+        "time_range": "0:19-0:22",
+        "visual_description": "Ryan Gosling and Emma Stone, as Sebastian and Mia from *La La Land*, sit thoughtfully in a dimly lit movie theater, watching a film.",
+        "audio_description": "Steve Jobs continues, 'Because you haven't made it.'",
+        "text_on_screen": null,
+        "key_objects": [
+          "movie theater seats"
+        ]
+      },
+      {
+        "time_range": "0:22-0:25",
+        "visual_description": "A man with blonde hair meticulously works on a detailed model with a tool. This is followed by an overhead shot of several people in a workshop collaborating on a large, intricate model or prop.",
+        "audio_description": "Steve Jobs concludes, 'And make that movie.'",
+        "text_on_screen": null,
+        "key_objects": [
+          "model",
+          "tools",
+          "workshop"
+        ]
+      },
+      {
+        "time_range": "0:25-0:30",
+        "visual_description": "Lionel Messi and the Argentina national football team celebrate their FIFA World Cup victory, holding the golden trophy aloft and cheering amidst falling confetti. They are wearing their light blue and white striped jerseys.",
+        "audio_description": "Instrumental music plays.",
+        "text_on_screen": null,
+        "key_objects": [
+          "FIFA World Cup trophy",
+          "Argentina national football team jerseys",
+          "confetti"
+        ]
+      },
+      {
+        "time_range": "0:30-0:37",
+        "visual_description": "Kevin Garnett, wearing a green Boston Celtics shirt and a cap, is interviewed on a basketball court after winning the NBA championship. Confetti falls around him and the celebrating crowd.",
+        "audio_description": "Kevin Garnett exclaims, 'Anything is possible! Anything is possible!'",
+        "text_on_screen": "ESPN",
+        "key_objects": [
+          "NBA championship trophy (implied)",
+          "Boston Celtics jersey",
+          "ESPN microphone",
+          "confetti"
+        ]
+      },
+      {
+        "time_range": "0:37-0:40",
+        "visual_description": "Two mountain climbers, dressed in bright orange and blue winter gear with oxygen masks, ascend a steep, snow-covered mountain peak under a clear blue sky, with vast mountain ranges in the background.",
+        "audio_description": "John F. Kennedy's voice asks, 'Why climb the highest mountain?'",
+        "text_on_screen": null,
+        "key_objects": [
+          "mountain climbing gear",
+          "oxygen masks",
+          "snowy mountain peak"
+        ]
+      },
+      {
+        "time_range": "0:40-0:43",
+        "visual_description": "Vintage black and white footage shows a large seaplane with multiple engines taking off from the water, creating a spray.",
+        "audio_description": "John F. Kennedy's voice asks, 'Why fly the Atlantic?'",
+        "text_on_screen": null,
+        "key_objects": [
+          "seaplane"
+        ]
+      },
+      {
+        "time_range": "0:43-0:48",
+        "visual_description": "John F. Kennedy delivers his iconic 'We choose to go to the Moon' speech at Rice University, standing at a podium with the Presidential Seal, addressing a large outdoor crowd.",
+        "audio_description": "John F. Kennedy states, 'We choose to go to the Moon. We choose to go to the Moon.'",
+        "text_on_screen": null,
+        "key_objects": [
+          "Presidential Seal",
+          "podium",
+          "American flag"
+        ]
+      },
+      {
+        "time_range": "0:48-0:52",
+        "visual_description": "A large, multi-stage rocket, likely the Saturn V, launches from a launchpad, emitting a powerful fiery exhaust and ascending into a cloudy sky.",
+        "audio_description": "John F. Kennedy's speech continues, 'We choose to go to the Moon.'",
+        "text_on_screen": "sonicbomb.com",
+        "key_objects": [
+          "rocket",
+          "launchpad",
+          "smoke",
+          "fire"
+        ]
+      },
+      {
+        "time_range": "0:52-0:57",
+        "visual_description": "NASA mission control staff, wearing blue shirts, celebrate enthusiastically in a control room, hugging and high-fiving, with multiple computer screens and an American flag visible.",
+        "audio_description": "John F. Kennedy's speech continues, 'We choose to go to the Moon in this decade and do the other things.'",
+        "text_on_screen": "IDG",
+        "key_objects": [
+          "NASA mission control room",
+          "computer monitors",
+          "American flag",
+          "NASA Jet Propulsion Laboratory logo"
+        ]
+      },
+      {
+        "time_range": "0:57-1:01",
+        "visual_description": "Black and white footage shows an astronaut descending a ladder from the lunar module onto the surface of the Moon.",
+        "audio_description": "John F. Kennedy's speech continues, 'Not because they are easy.'",
+        "text_on_screen": null,
+        "key_objects": [
+          "astronaut",
+          "lunar module",
+          "Moon surface"
+        ]
+      },
+      {
+        "time_range": "1:01-1:05",
+        "visual_description": "John F. Kennedy delivers his 'We choose to go to the Moon' speech again, gesturing emphatically.",
+        "audio_description": "John F. Kennedy concludes, 'But because they are hard.'",
+        "text_on_screen": null,
+        "key_objects": [
+          "Presidential Seal",
+          "podium",
+          "American flag"
+        ]
+      },
+      {
+        "time_range": "1:05-1:08",
+        "visual_description": "The screen is black.",
+        "audio_description": "The instrumental music fades out.",
+        "text_on_screen": null,
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a motivational compilation featuring iconic speeches and moments of human achievement. It intercuts clips of Matthew McConaughey, Steve Jobs, Kevin Garnett, and John F. Kennedy delivering powerful messages about self-belief, ambition, and overcoming challenges. Visuals include scenes from movies like *Creed* and *Good Will Hunting*, the launch of the iPod, the Argentina World Cup victory, NBA Finals celebrations, mountain climbing, and the Apollo Moon landing, all illustrating the pursuit and accomplishment of difficult goals. The main point is to inspire viewers to set high aspirations and persevere, as anything is possible if one is willing to work for it.",
+    "people": [
+      {
+        "description": "Actor, delivering an Oscar acceptance speech about his hero being himself in 10 years.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Matthew McConaughey"
+      },
+      {
+        "description": "Actress, standing behind Matthew McConaughey during his speech.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jennifer Lawrence"
+      },
+      {
+        "description": "Actor, portraying Adonis Creed, running and shadowboxing.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Michael B. Jordan"
+      },
+      {
+        "description": "Actor, portraying Will Hunting, writing complex equations on a chalkboard.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Matt Damon"
+      },
+      {
+        "description": "Co-founder of Apple, presenting the iPod on stage.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Steve Jobs"
+      },
+      {
+        "description": "Actor, portraying Sebastian, sitting thoughtfully in a movie theater.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Ryan Gosling"
+      },
+      {
+        "description": "Actress, portraying Mia, sitting thoughtfully in a movie theater.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Emma Stone"
+      },
+      {
+        "description": "Professional footballer, celebrating the FIFA World Cup victory with his team.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Lionel Messi"
+      },
+      {
+        "description": "Professional basketball player, celebrating an NBA championship and giving an emotional interview.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Kevin Garnett"
+      },
+      {
+        "description": "Former U.S. President, delivering his 'We choose to go to the Moon' speech.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "John F. Kennedy"
+      },
+      {
+        "description": "Astronaut, descending a ladder onto the lunar surface.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Neil Armstrong or Buzz Aldrin"
+      },
+      {
+        "description": "Various individuals, celebrating in a NASA mission control room.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Various individuals, working on a model in a workshop.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Two individuals, climbing a snowy mountain.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Matthew McConaughey",
+        "display_name": "Matthew McConaughey",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jennifer Lawrence",
+        "display_name": "Jennifer Lawrence",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Academy Awards",
+        "display_name": "Academy Awards (Oscars)",
+        "type": "event",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "2014 acceptance speech",
+        "confidence": 4
+      },
+      {
+        "name": "Michael B. Jordan",
+        "display_name": "Michael B. Jordan",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Adonis Creed",
+        "display_name": "Adonis Creed (character)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "from the movie Creed",
+        "confidence": 4
+      },
+      {
+        "name": "Creed",
+        "display_name": "Creed (movie)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Matt Damon",
+        "display_name": "Matt Damon",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Will Hunting",
+        "display_name": "Will Hunting (character)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "from the movie Good Will Hunting",
+        "confidence": 4
+      },
+      {
+        "name": "Good Will Hunting",
+        "display_name": "Good Will Hunting (movie)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Steve Jobs",
+        "display_name": "Steve Jobs",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Apple",
+        "display_name": "Apple (brand)",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "iPod",
+        "display_name": "iPod (product)",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "original model, introduced 2001",
+        "confidence": 5
+      },
+      {
+        "name": "Ryan Gosling",
+        "display_name": "Ryan Gosling",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Emma Stone",
+        "display_name": "Emma Stone",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "La La Land",
+        "display_name": "La La Land (movie)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Lionel Messi",
+        "display_name": "Lionel Messi",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Argentina national football team",
+        "display_name": "Argentina National Football Team",
+        "type": "team",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "FIFA World Cup",
+        "display_name": "FIFA World Cup",
+        "type": "event",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "victory celebration",
+        "confidence": 5
+      },
+      {
+        "name": "Kevin Garnett",
+        "display_name": "Kevin Garnett",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Boston Celtics",
+        "display_name": "Boston Celtics (NBA team)",
+        "type": "team",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "NBA Finals",
+        "display_name": "NBA Finals",
+        "type": "event",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "championship celebration",
+        "confidence": 4
+      },
+      {
+        "name": "John F. Kennedy",
+        "display_name": "John F. Kennedy (JFK)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Rice University",
+        "display_name": "Rice University",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "inferred"
+        ],
+        "specifications": "location of 'We choose to go to the Moon' speech",
+        "confidence": 3
+      },
+      {
+        "name": "Saturn V",
+        "display_name": "Saturn V (rocket)",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "NASA",
+        "display_name": "NASA (National Aeronautics and Space Administration)",
+        "type": "organization",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jet Propulsion Laboratory",
+        "display_name": "Jet Propulsion Laboratory (JPL)",
+        "type": "organization",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Moon landing",
+        "display_name": "Moon Landing (Apollo 11)",
+        "type": "event",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "corecore",
+        "display_name": "Corecore (TikTok trend)",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "positivecore",
+        "display_name": "Positivecore (TikTok trend)",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "nichetok",
+        "display_name": "Nichetok (TikTok trend)",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "CapCut",
+        "display_name": "CapCut (video editing app)",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Your hero should be yourself in the future, providing a goal for continuous self-improvement.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Individuals have unique contributions to make to the world, like an unmade movie, and should strive to create them.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Anything is possible through dedication and effort.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Humanity chooses to undertake difficult challenges, like going to the Moon, not because they are easy, but because they are hard, pushing the boundaries of what is possible.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Unidentifiable emotional instrumental track (does not match metadata)",
+      "metadata_song": "QKThr",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": false,
+      "notes": "The background instrumental music could not be identified beyond being a generic emotional track. The metadata song 'QKThr' by Aphex Twin does not match the audio in the video."
+    },
+    "presentation_style": {
+      "primary_format": "compilation",
+      "camera_work": "transitions",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Inspirational, epic, determined, triumphant, reflective",
+    "topic_hints": [
+      "motivation",
+      "achievement",
+      "perseverance",
+      "human endeavor"
+    ],
+    "affect_hints": [
+      "inspired",
+      "hopeful",
+      "determined",
+      "awe",
+      "emotional"
+    ],
+    "genre_hints": [
+      "motivational edit",
+      "corecore",
+      "inspirational compilation",
+      "niche content"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 21576,
+    "output_tokens": 5513,
+    "total_tokens": 27089,
+    "cost_usd": 0.006544,
+    "latency_ms": 42181,
+    "upload_ms": 5478
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

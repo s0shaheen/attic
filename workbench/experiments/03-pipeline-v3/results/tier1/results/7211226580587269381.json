@@ -1,0 +1,52 @@
+{
+  "item_id": "7211226580587269381",
+  "parsed_output": {
+    "summary": "Creator @outwithnaz recommends 'Coffeeshop Amsterdam' located at Haarlemmerstraat 44 as a must-visit spot. The video specifically highlights their red velvet edible, which the creator rates a 10/10.",
+    "entities": [
+      {
+        "name": "Coffeeshop Amsterdam",
+        "type": "place",
+        "relevance": "primary"
+      },
+      {
+        "name": "Amsterdam",
+        "type": "place",
+        "relevance": "primary"
+      },
+      {
+        "name": "Red Velvet Edible",
+        "type": "product",
+        "relevance": "primary"
+      },
+      {
+        "name": "Haarlemmerstraat",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "@outwithnaz",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "travel",
+      "secondary": "food"
+    },
+    "genre": "review",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "A travel recommendation video by @outwithnaz showcasing 'Coffeeshop Amsterdam' located at Haarlemmerstraat 44, 1013 ES. The video features the exterior of the shop, which displays 'dampkring' and 'coffeeshop amsterdam' signage. The creator specifically highlights their red velvet edible, rating it a '10/10' and calling it 'incredible'. On-screen text explicitly identifies the location as the 'Best coffeeshop in AMSTERDAM' and provides the full street address. The footage includes shots of the street, the shop's storefront, and a close-up of a product tube with 'XXX' branding. This content is perfect for travelers researching 'things to do in dam' or looking for specific edible recommendations in the Netherlands. The video uses the song 'Best Time' and includes hashtags like #amsterdamcoffeeshop and #outwithnaz."
+  },
+  "metrics": {
+    "input_tokens": 4297,
+    "output_tokens": 502,
+    "total_tokens": 4799,
+    "cost_usd": 0.000946,
+    "latency_ms": 11452,
+    "keyframe_count": 3
+  }
+}

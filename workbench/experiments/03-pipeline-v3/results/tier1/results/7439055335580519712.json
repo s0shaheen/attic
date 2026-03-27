@@ -1,0 +1,47 @@
+{
+  "item_id": "7439055335580519712",
+  "parsed_output": {
+    "summary": "Creator @whatinthechef demonstrates a 30-minute One Pot Spicy Creamy Rigatoni Pasta recipe. The video highlights how to make a rich, flavorful meal suitable for small families or meal prepping for one person.",
+    "entities": [
+      {
+        "name": "@whatinthechef",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Napolina Rigatoni",
+        "type": "ingredient",
+        "relevance": "primary"
+      },
+      {
+        "name": "Spicy Creamy Rigatoni",
+        "type": "recipe",
+        "relevance": "primary"
+      },
+      {
+        "name": "One Pot",
+        "type": "technique",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "food",
+      "secondary": "education"
+    },
+    "genre": "recipe",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "In this TikTok, creator @whatinthechef shares a tutorial for a One Pot Spicy Creamy Rigatoni Pasta that can be completed in just 30 minutes. The video shows the creator using Napolina Rigatoni pasta, which is cooked directly in a large silver pan with a thick, creamy orange sauce. The creator emphasizes that this recipe is perfect for small families or for individuals who want to meal prep and eat the same dish three times. On-screen text humorously notes, 'POV: you just cooked up absolute dr*gs in a pan,' referring to how delicious the meal is. The final dish is shown garnished with fresh green herbs and red pepper flakes. This video is a great reference for anyone searching for quick weeknight dinner ideas, one-pot pasta recipes, or spicy Italian-inspired comfort food."
+  },
+  "metrics": {
+    "input_tokens": 4310,
+    "output_tokens": 453,
+    "total_tokens": 4763,
+    "cost_usd": 0.000918,
+    "latency_ms": 8016,
+    "keyframe_count": 3
+  }
+}

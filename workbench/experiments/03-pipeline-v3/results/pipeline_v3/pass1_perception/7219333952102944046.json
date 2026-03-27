@@ -1,0 +1,319 @@
+{
+  "item_id": "7219333952102944046",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:04:42.373709+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Rich Piana leans against a beach wall at sunset, speaking directly to the camera.",
+        "audio_description": "Rich Piana: 'The more you put in, the more you get out.'",
+        "text_on_screen": "The more you put in, the more you get out.",
+        "key_objects": [
+          "beach",
+          "sunset",
+          "watch"
+        ]
+      },
+      {
+        "time_range": "0:02-0:06",
+        "visual_description": "David Goggins in a studio interview setting, looking intense.",
+        "audio_description": "David Goggins: 'Get back to fucking work. It's time to get back to work.'",
+        "text_on_screen": "MOTIVATEDGT GET BACK TO WORK",
+        "key_objects": [
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:06-0:14",
+        "visual_description": "Black and white footage of Jocko Willink speaking into a podcast microphone.",
+        "audio_description": "Jocko Willink: 'The best way to contend with problems, with issues, with adversity, is action. Is by taking action.'",
+        "text_on_screen": "The best way to contend with problems with issues with adversity is action. Is by taking action.",
+        "key_objects": [
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:14-0:20",
+        "visual_description": "Greg Plitt sitting on a stage during a presentation, gesturing with his hands.",
+        "audio_description": "Greg Plitt: 'From that day forward, I made a promise that I will give it everything I got. That way I'm a winner no matter what.'",
+        "text_on_screen": "REPONE.DE I will give it everything I got.",
+        "key_objects": [
+          "chair",
+          "table"
+        ]
+      },
+      {
+        "time_range": "0:20-0:23",
+        "visual_description": "David Choe wearing headphones on the Joe Rogan Experience podcast set.",
+        "audio_description": "David Choe: 'You must fucking suffer. You must suffer.'",
+        "text_on_screen": "THE JOE ROGAN EXPERIENCE You must suffer.",
+        "key_objects": [
+          "headphones",
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:23-0:30",
+        "visual_description": "David Goggins speaking in front of an American flag background.",
+        "audio_description": "David Goggins: 'This sucks, I'm drowning, I'm miserable, I'm suffering, I'm broken, but I'm not going anywhere.'",
+        "text_on_screen": "I'm not going anywhere.",
+        "key_objects": [
+          "American flag"
+        ]
+      },
+      {
+        "time_range": "0:30-0:36",
+        "visual_description": "Close up of Greg Plitt speaking passionately during his seminar.",
+        "audio_description": "Greg Plitt: 'The only difference between most of you and me... is I wanted it more. I wanted it more.'",
+        "text_on_screen": "I wanted it more.",
+        "key_objects": [
+          "suspenders"
+        ]
+      },
+      {
+        "time_range": "0:36-0:45",
+        "visual_description": "David Goggins continues his interview, emphasizing the rarity of greatness.",
+        "audio_description": "David Goggins: 'It's so easy to be great nowadays my friend because most people are weak. Most people don't want to go that extra mile... because it sucks.'",
+        "text_on_screen": "Most people are weak.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:45-0:50",
+        "visual_description": "Joey Diaz speaking on the Joe Rogan Experience podcast.",
+        "audio_description": "Joey Diaz: 'You can turn anything in life into something if you just keep showing up.'",
+        "text_on_screen": "THE JOE ROGAN EXPERIENCE If you just keep showing up.",
+        "key_objects": [
+          "water bottle"
+        ]
+      },
+      {
+        "time_range": "0:50-0:55",
+        "visual_description": "Kobe Bryant speaking into a microphone at a public event.",
+        "audio_description": "Kobe Bryant: 'One foot in front of the other. One step at a time. Next thing you know, you're at the top of the mountain.'",
+        "text_on_screen": "One step at a time.",
+        "key_objects": [
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:55-1:03",
+        "visual_description": "Final close-up of David Goggins discussing the choice to keep moving.",
+        "audio_description": "David Goggins: 'A lot of people can take one more step but they choose not to. I don't know if you can take two steps. You gotta answer that question after you take the first step.'",
+        "text_on_screen": "Take the first step.",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a motivational compilation (hopecore) featuring clips from various high-achievers and public figures discussing mental toughness and perseverance. It includes insights from David Goggins, Jocko Willink, Kobe Bryant, and others, all centered on the theme that success requires suffering, action, and the willingness to keep going when others quit. The main takeaway is that greatness is accessible to those who 'want it more' and are willing to take the first step despite adversity. The edit uses a cinematic, somber yet inspiring tone to encourage viewers to get back to work.",
+    "people": [
+      {
+        "description": "Bodybuilder and entrepreneur known for his '5%er' philosophy.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Rich Piana"
+      },
+      {
+        "description": "Former Navy SEAL and ultramarathon runner known for extreme discipline.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "David Goggins"
+      },
+      {
+        "description": "Retired Navy SEAL officer and author of Extreme Ownership.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Jocko Willink"
+      },
+      {
+        "description": "Fitness model and motivational speaker.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Greg Plitt"
+      },
+      {
+        "description": "Artist and podcast guest.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "David Choe"
+      },
+      {
+        "description": "Comedian and frequent guest on the Joe Rogan Experience.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Joey Diaz"
+      },
+      {
+        "description": "NBA legend known for the 'Mamba Mentality'.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Kobe Bryant"
+      }
+    ],
+    "entities": [
+      {
+        "name": "David Goggins",
+        "display_name": "David Goggins",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Kobe Bryant",
+        "display_name": "Kobe Bryant",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jocko Willink",
+        "display_name": "Jocko Willink",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Rich Piana",
+        "display_name": "Rich Piana",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Greg Plitt",
+        "display_name": "Greg Plitt",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "The Joe Rogan Experience",
+        "display_name": "The Joe Rogan Experience",
+        "type": "podcast",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "So Long",
+        "display_name": "So Long",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The best way to deal with adversity and problems is through immediate action.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Greatness is easier to achieve today because most people lack the discipline to go the extra mile.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Success is built one step at a time; the most important thing is to keep showing up and take the first step.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Action",
+          "details": "The primary tool for contending with adversity."
+        },
+        {
+          "name": "Suffering",
+          "details": "An inevitable and necessary part of the growth process."
+        },
+        {
+          "name": "Persistence",
+          "details": "Taking one step at a time until the goal is reached."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "So Long \u2014 (Slowed/Reverb Ambient Mix)",
+      "metadata_song": "So Long",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All speakers are highly recognizable public figures in the fitness and motivational space."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Intense, gritty, and somber yet deeply motivating; uses high-contrast and black-and-white filters.",
+    "topic_hints": [
+      "Motivation",
+      "Mental Toughness",
+      "Discipline"
+    ],
+    "affect_hints": [
+      "Determined",
+      "Inspired",
+      "Focused"
+    ],
+    "genre_hints": [
+      "Hopecore",
+      "Motivation Edit",
+      "Corecore"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 7078,
+    "output_tokens": 2773,
+    "total_tokens": 9851,
+    "cost_usd": 0.002726,
+    "latency_ms": 29228,
+    "upload_ms": 5631
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

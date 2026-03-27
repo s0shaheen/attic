@@ -1,0 +1,244 @@
+{
+  "item_id": "7140937195505863938",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:51:02.045878+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "The creator stands on a bridge overlooking a canal in Amsterdam, turning to face the camera and smiling. The sky is a soft pink and orange, indicating either sunrise or sunset.",
+        "audio_description": "Upbeat hip-hop music plays.",
+        "text_on_screen": "two of my favourite cafes in amsterdam",
+        "key_objects": [
+          "canal",
+          "bridge",
+          "buildings",
+          "trees"
+        ]
+      },
+      {
+        "time_range": "0:04-0:09",
+        "visual_description": "Various shots inside Toki cafe, including two iced coffees on a wooden counter, a person working on a laptop by a window, the cafe's interior with a terrazzo table and floral arrangements, and a stack of 'The Surfer's Journal' magazines. French toast with syrup is poured onto a plate.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "toki",
+        "key_objects": [
+          "iced coffee",
+          "French toast",
+          "magazines",
+          "terrazzo table",
+          "flowers",
+          "laptop",
+          "phone"
+        ]
+      },
+      {
+        "time_range": "0:09-0:13",
+        "visual_description": "Exterior shot of Locals cafe with outdoor seating, followed by a close-up of an iced coffee being held. The video then shows the interior of Locals cafe, featuring a modern espresso machine and a barista preparing a drink.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "locals",
+        "key_objects": [
+          "iced coffee",
+          "espresso machine",
+          "cafe exterior",
+          "cafe interior"
+        ]
+      }
+    ],
+    "overall_summary": "This video showcases two favorite cafes in Amsterdam, Toki and Locals. It begins with the creator on an Amsterdam bridge, then transitions to various scenes inside Toki, highlighting its ambiance, food, and drinks. The video concludes by featuring Locals cafe, showing its exterior, interior, and an iced coffee preparation, recommending both spots for coffee and brunch in the city.",
+    "people": [
+      {
+        "description": "A young woman with brown hair in a braid, wearing a one-shoulder top and a patterned skirt, standing on a bridge. She is the creator of the video.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Jacquie Alexander"
+      },
+      {
+        "description": "Various patrons in both cafes, some working on laptops, others enjoying drinks and food.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A barista preparing a drink in Locals cafe.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Amsterdam",
+        "display_name": "Amsterdam",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "caption"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Toki",
+        "display_name": "Toki",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Cafe in Amsterdam",
+        "confidence": 5
+      },
+      {
+        "name": "Locals",
+        "display_name": "Locals",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Cafe in Amsterdam",
+        "confidence": 5
+      },
+      {
+        "name": "Iced Coffee",
+        "display_name": "Iced Coffee",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "French Toast",
+        "display_name": "French Toast",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Surfer's Journal",
+        "display_name": "The Surfer's Journal",
+        "type": "publication",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "I Wish",
+        "display_name": "I Wish \u2014 Skee-Lo",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Skee-Lo",
+        "display_name": "Skee-Lo",
+        "type": "artist",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jacquie Alexander",
+        "display_name": "Jacquie Alexander",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Toki and Locals are two highly recommended cafes in Amsterdam for coffee and brunch.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Toki",
+          "details": "Cafe in Amsterdam, serving coffee, French toast, and other items."
+        },
+        {
+          "name": "Locals",
+          "details": "Cafe in Amsterdam, specializing in specialty coffee and all-day brunch."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "I Wish \u2014 Skee-Lo",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Confidence for specific menu items beyond iced coffee and French toast is lower as they are not explicitly named or clearly visible."
+    },
+    "presentation_style": {
+      "primary_format": "recommendation_list",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Bright, inviting, relaxed, and aesthetic, with a focus on urban charm and cafe culture.",
+    "topic_hints": [
+      "Amsterdam cafes",
+      "coffee shops",
+      "brunch spots"
+    ],
+    "affect_hints": [
+      "Inspired",
+      "Curious",
+      "Relaxed",
+      "Hungry"
+    ],
+    "genre_hints": [
+      "Travel vlog",
+      "Cafe review",
+      "Recommendation"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5594,
+    "output_tokens": 1737,
+    "total_tokens": 7331,
+    "cost_usd": 0.001881,
+    "latency_ms": 18097,
+    "upload_ms": 5637
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

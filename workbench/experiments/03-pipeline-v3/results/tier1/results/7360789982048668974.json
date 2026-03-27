@@ -1,0 +1,52 @@
+{
+  "item_id": "7360789982048668974",
+  "parsed_output": {
+    "summary": "This TikTok is a cinematic fan edit of Paul Atreides from the movie Dune: Part Two. It highlights his transformation into the messianic figure known as the Lisan al-Gaib, featuring dramatic shots of him in a Fremen stillsuit and wielding a crysknife.",
+    "entities": [
+      {
+        "name": "Paul Atreides",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Dune: Part Two",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Timoth\u00e9e Chalamet",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Lisan al-Gaib",
+        "type": "cultural_reference",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Crysknife",
+        "type": "cultural_reference",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": null
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "inspiring",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "This TikTok is a cinematic fan edit of Paul Atreides from the film Dune: Part Two, specifically focusing on his role as the Lisan al-Gaib. The video, created by @_pukatz_, showcases high-contrast, moody visuals of Timoth\u00e9e Chalamet in character. Key scenes captured in the frames include Paul looking down in his Fremen stillsuit and a silhouette of him walking with a crysknife against a dark, reddish background. The edit is designed to be epic and atmospheric, appealing to fans of the Dune franchise and the 'edit' subculture on TikTok. It uses the caption 'LISAN Al-GAIB' to reference the prophecy surrounding the character. The watermark 'PUKATZ' is visible on screen. This content is ideal for users searching for Dune movie montages, Paul Atreides character studies, or high-quality cinematic TikTok edits."
+  },
+  "metrics": {
+    "input_tokens": 4146,
+    "output_tokens": 521,
+    "total_tokens": 4667,
+    "cost_usd": 0.000935,
+    "latency_ms": 10880,
+    "keyframe_count": 3
+  }
+}

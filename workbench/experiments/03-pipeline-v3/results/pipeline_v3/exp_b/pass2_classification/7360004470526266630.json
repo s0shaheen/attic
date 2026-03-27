@@ -1,0 +1,75 @@
+{
+  "item_id": "7360004470526266630",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:59:42.990768+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "relationships",
+      "micro_labels": [
+        "The Office",
+        "Michael Scott",
+        "character study",
+        "loneliness"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "fan edit",
+        "tribute"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "sad",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "wholesome",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "cinematic",
+      "voiceover"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "anonymous",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "emotional_regulation",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 13215,
+    "output_tokens": 344,
+    "total_tokens": 13559,
+    "cost_usd": 0.002189,
+    "latency_ms": 7414,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 9
+  }
+}

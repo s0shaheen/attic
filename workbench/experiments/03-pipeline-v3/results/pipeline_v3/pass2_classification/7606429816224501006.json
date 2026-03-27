@@ -1,0 +1,79 @@
+{
+  "item_id": "7606429816224501006",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:15.003254+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "other",
+      "micro_labels": [
+        "artificial intelligence",
+        "deepfakes",
+        "philosophy of technology",
+        "digital reality"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": [
+        "cinematic essay",
+        "visual commentary"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "shocking",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "scary",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "cinematic",
+      "voiceover"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "provoke",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.8
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6377,
+    "output_tokens": 369,
+    "total_tokens": 6746,
+    "cost_usd": 0.001178,
+    "latency_ms": 9822,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 3
+  }
+}

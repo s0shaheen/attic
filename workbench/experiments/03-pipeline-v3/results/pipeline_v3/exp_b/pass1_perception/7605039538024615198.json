@@ -1,0 +1,302 @@
+{
+  "item_id": "7605039538024615198",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:56:26.653563+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "A man with grey hair and glasses, wearing a brown jacket and grey hoodie, walks towards a red, enclosed entrance of a brick building.",
+        "audio_description": "The creator states he is walking into Lardon.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Lardon restaurant entrance"
+        ]
+      },
+      {
+        "time_range": "0:02-0:04",
+        "visual_description": "A close-up shot of the red entrance door with the restaurant's name and a sign displaying winter hours.",
+        "audio_description": "The creator describes Lardon as a charcuterie and cheese board shop, but refers to it as a sandwich shop.",
+        "text_on_screen": "LARDON\nNEW WINTER HOURS\nMONDAY - TUESDAY\n8AM - 3:30PM\nWEDNESDAY - SATURDAY\n8AM - 8PM\nSUNDAY\n8AM - 3PM",
+        "key_objects": [
+          "Lardon sign",
+          "winter hours sign"
+        ]
+      },
+      {
+        "time_range": "0:04-0:07",
+        "visual_description": "An interior shot of the restaurant, showcasing a wooden ceiling, decorative wall panels with farm scenes, and a counter area with staff.",
+        "audio_description": "The creator mentions Lardon's Italiano sandwich was ranked in the top seven sandwiches in America by the Michelin Guide.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Lardon interior",
+          "wall art",
+          "counter"
+        ]
+      },
+      {
+        "time_range": "0:07-0:12",
+        "visual_description": "The creator walks past a sign, then the camera pans across the restaurant, showing customers seated and staff behind the counter.",
+        "audio_description": "The creator continues to discuss the Michelin Guide ranking.",
+        "text_on_screen": "ORDER TAKE-OUT\nPLEASE SEE HOST\nDINE IN\n#LARDONCHICAGO",
+        "key_objects": [
+          "Order sign",
+          "restaurant interior",
+          "customers",
+          "staff"
+        ]
+      },
+      {
+        "time_range": "0:12-0:15",
+        "visual_description": "Two staff members are visible behind a counter, actively preparing food.",
+        "audio_description": null,
+        "text_on_screen": null,
+        "key_objects": [
+          "kitchen counter",
+          "food preparation",
+          "Fernweh-Brand shirt"
+        ]
+      },
+      {
+        "time_range": "0:15-0:19",
+        "visual_description": "A glass display case filled with various cured meats and sausages hanging, with a 'SALUMI' sign reflected.",
+        "audio_description": "The creator highlights the house-made smoked and cured meats.",
+        "text_on_screen": null,
+        "key_objects": [
+          "cured meats",
+          "display case",
+          "Salumi sign"
+        ]
+      },
+      {
+        "time_range": "0:19-0:21",
+        "visual_description": "A close-up of a sandwich, cut in half, served with potato chips and pickles on a white plate on a wooden table.",
+        "audio_description": "The creator expresses his positive reaction to the 'Hotel California' sandwich, calling it 'priceless'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "sandwich",
+          "potato chips",
+          "pickles"
+        ]
+      },
+      {
+        "time_range": "0:21-0:31",
+        "visual_description": "The creator takes a bite of the sandwich, chews, and expresses satisfaction with the food.",
+        "audio_description": "The creator praises the 'clean ingredients' and 'stacked sandwich', encouraging viewers to try it.",
+        "text_on_screen": null,
+        "key_objects": [
+          "man",
+          "sandwich"
+        ]
+      }
+    ],
+    "overall_summary": "This video showcases Lardon, a Chicago restaurant, which has received Michelin recognition for its sandwiches. The creator visits the establishment, highlighting its charcuterie and cheese board offerings, specifically mentioning the 'Italiano' sandwich's high ranking by the Michelin Guide. The video features the restaurant's interior, house-made cured meats, and concludes with the creator enjoying and praising a 'Hotel California' sandwich, emphasizing its quality and recommending it to viewers.",
+    "people": [
+      {
+        "description": "A man with grey hair and glasses, wearing a brown jacket and grey hoodie, who provides voiceover narration and is seen eating a sandwich.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Lardon",
+        "display_name": "Lardon (Restaurant)",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Chicago",
+        "display_name": "Chicago",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Michelin Guide",
+        "display_name": "Michelin Guide",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "2026 Must-Try Sandwiches list",
+        "confidence": 5
+      },
+      {
+        "name": "Italiano sandwich",
+        "display_name": "Italiano Sandwich",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Ranked in top seven sandwiches in America by Michelin Guide",
+        "confidence": 4
+      },
+      {
+        "name": "Logan Square",
+        "display_name": "Logan Square, Chicago",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Charcuterie",
+        "display_name": "Charcuterie",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Cheese board",
+        "display_name": "Cheese Board",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Cured meats",
+        "display_name": "Cured Meats",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "House-made, smoked",
+        "confidence": 4
+      },
+      {
+        "name": "Hotel California sandwich",
+        "display_name": "Hotel California Sandwich",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Fernweh-Brand",
+        "display_name": "Fernweh-Brand",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Logo on staff shirt",
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Lardon in Chicago has received Michelin recognition for its sandwiches.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The Italiano sandwich at Lardon is ranked among the top sandwiches to try in America.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Lardon offers high-quality, house-made cured meats and delicious, 'stacked' sandwiches.",
+        "source": "voiceover|demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Lardon",
+          "details": "Michelin-recognized restaurant in Logan Square, Chicago, known for its sandwiches and house-made charcuterie."
+        },
+        {
+          "name": "Italiano Sandwich",
+          "details": "One of the top seven must-try sandwiches in America according to the Michelin Guide."
+        },
+        {
+          "name": "Hotel California Sandwich",
+          "details": "A 'priceless' and 'stacked' sandwich with 'clean ingredients' at Lardon."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": false,
+      "notes": "The background music is generic and not a specific identifiable song. 'Hotel California' is mentioned as a sandwich name, not a song."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "handheld|panning",
+      "editing_style": "jump_cuts|montage"
+    },
+    "visual_mood": "informative, appetizing, casual, inviting",
+    "topic_hints": [
+      "food review",
+      "restaurant recommendation",
+      "Chicago food scene"
+    ],
+    "affect_hints": [
+      "excitement",
+      "satisfaction",
+      "curiosity"
+    ],
+    "genre_hints": [
+      "food vlog",
+      "travel guide",
+      "review"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 11056,
+    "output_tokens": 2376,
+    "total_tokens": 13432,
+    "cost_usd": 0.003084,
+    "latency_ms": 25662,
+    "upload_ms": 5503
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

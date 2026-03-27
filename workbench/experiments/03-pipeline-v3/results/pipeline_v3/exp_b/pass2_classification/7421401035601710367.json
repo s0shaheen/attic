@@ -1,0 +1,77 @@
+{
+  "item_id": "7421401035601710367",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:58.169142+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "sports",
+      "secondary": "education",
+      "micro_labels": [
+        "golf",
+        "golf swing",
+        "course strategy",
+        "club selection",
+        "lefty golf"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "vlog",
+      "micro_labels": [
+        "golf vlog",
+        "play-through",
+        "course diary"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "voiceover",
+      "raw_footage"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 10850,
+    "output_tokens": 356,
+    "total_tokens": 11206,
+    "cost_usd": 0.001841,
+    "latency_ms": 9961,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 7
+  }
+}

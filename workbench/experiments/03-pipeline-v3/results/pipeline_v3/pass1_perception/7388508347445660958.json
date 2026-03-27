@@ -1,0 +1,207 @@
+{
+  "item_id": "7388508347445660958",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:19:14.766545+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:15",
+        "visual_description": "Eric Cogorno introduces the concept of hitting a driver from 'low and inside' with a split-screen comparison to a professional golfer's swing.",
+        "audio_description": "Eric explains that the best drivers approach the ball from low and inside to hit the center of the face for maximum distance and accuracy.",
+        "text_on_screen": "Become a Better Golfer Right Now COGORNOGOLF.COM",
+        "key_objects": [
+          "Driver",
+          "Golf ball",
+          "Golf tee"
+        ]
+      },
+      {
+        "time_range": "0:15-0:55",
+        "visual_description": "Eric demonstrates a one-handed swing using only his lead arm, focusing on rotating the clubface closed through impact.",
+        "audio_description": "Eric describes Step 1: swinging the lead arm freely to close the clubface, allowing the toe to pass the heel at a 45-degree angle.",
+        "text_on_screen": "Become a Better Golfer Right Now COGORNOGOLF.COM",
+        "key_objects": [
+          "Driver",
+          "Golf glove"
+        ]
+      },
+      {
+        "time_range": "0:55-1:14",
+        "visual_description": "Close-up of the clubface orientation at the end of the lead-arm-only swing.",
+        "audio_description": "He explains that while the club looks closed without a ball, the same feel results in a square face at actual impact.",
+        "text_on_screen": "Become a Better Golfer Right Now COGORNOGOLF.COM",
+        "key_objects": [
+          "Driver"
+        ]
+      },
+      {
+        "time_range": "1:14-2:02",
+        "visual_description": "Eric repeats the lead-arm drill while a vertical orange line is overlaid to show his head position relative to the ball.",
+        "audio_description": "Eric emphasizes keeping the head back behind the ball and allowing the club to re-hinge naturally up the plane line.",
+        "text_on_screen": "Become a Better Golfer Right Now COGORNOGOLF.COM",
+        "key_objects": [
+          "Driver",
+          "Don Law Golf Academy sign"
+        ]
+      },
+      {
+        "time_range": "2:02-2:36",
+        "visual_description": "Eric adds his right arm to the swing, maintaining the head-back position and keeping his lead shoulder down, concluding with a full drive.",
+        "audio_description": "Step 2: Add the right arm while keeping the head back and the shoulder down to fix weak fades to the right.",
+        "text_on_screen": "Become a Better Golfer Right Now COGORNOGOLF.COM",
+        "key_objects": [
+          "Driver",
+          "Srixon golf bag"
+        ]
+      }
+    ],
+    "overall_summary": "In this golf tutorial, instructor Eric Cogorno demonstrates a two-step drill designed to improve driver impact and eliminate weak fades. He first teaches a lead-arm-only rotation to ensure the clubface closes properly through the hitting zone. The second step involves adding the trailing arm while focusing on keeping the head behind the ball and the lead shoulder down. The main takeaway is that a free arm swing combined with stable head positioning leads to longer, straighter drives.",
+    "people": [
+      {
+        "description": "Male golf instructor wearing a green polo shirt, grey shorts, and a grey 'Municipal' brand hat.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Eric Cogorno"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Eric Cogorno",
+        "display_name": "Eric Cogorno",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "text_overlay"
+        ],
+        "specifications": "Golf Instructor",
+        "confidence": 5
+      },
+      {
+        "name": "Don Law Golf Academy",
+        "display_name": "Don Law Golf Academy",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Boca Raton, Florida",
+        "confidence": 5
+      },
+      {
+        "name": "Municipal",
+        "display_name": "Municipal Clothing",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Apparel brand on creator's hat",
+        "confidence": 4
+      },
+      {
+        "name": "Srixon",
+        "display_name": "Srixon",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Golf equipment brand on bag",
+        "confidence": 4
+      },
+      {
+        "name": "Driver Swing Drill",
+        "display_name": "Driver Swing Drill",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": "Lead arm rotation and head stability",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "To hit better drives, the club should approach the ball from low and inside.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Practicing with the lead arm only helps feel the proper rotation of the clubface to prevent open-face fades.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Keeping the head behind the ball and the lead shoulder down through impact is critical for power and accuracy.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Step 1: Lead Arm Rotation",
+          "details": "Swing with the lead arm only. Allow the arm to rotate so the toe of the club passes the heel through impact, finishing at a 45-degree angle."
+        },
+        {
+          "name": "Head Positioning",
+          "details": "Ensure the head stays back behind the ball (or a vertical line from the ball) throughout the swing."
+        },
+        {
+          "name": "Step 2: Full Grip Integration",
+          "details": "Add the right arm to the club. Maintain the feeling of the lead arm rotation while keeping the head back and the lead shoulder down."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Inspire - Unknown Artist",
+      "metadata_song": "Inspire",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Creator and location are clearly identified through visual cues and metadata."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, bright, and professional outdoor setting.",
+    "topic_hints": [
+      "Golf swing mechanics",
+      "Driver distance tips",
+      "Golf drills"
+    ],
+    "affect_hints": [
+      "Focused",
+      "Encouraging",
+      "Educational"
+    ],
+    "genre_hints": [
+      "Sports Tutorial",
+      "Instructional Video"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 15406,
+    "output_tokens": 1770,
+    "total_tokens": 17176,
+    "cost_usd": 0.003373,
+    "latency_ms": 29380,
+    "upload_ms": 10081
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

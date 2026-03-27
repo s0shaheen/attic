@@ -1,0 +1,228 @@
+{
+  "item_id": "7594883819564436791",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:13:47.401200+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:13",
+        "visual_description": "Anatomical animation of a skeleton squatting, highlighting the relationship between hip mobility and lower back compensation.",
+        "audio_description": "Conor Harris explains that when hips lack mobility, the lower back compensates, leading to pain.",
+        "text_on_screen": "MOST PEOPLE, THE HIPS, THE LOW BACK, COMPENSATION, FACTORS",
+        "key_objects": [
+          "Anatomical skeleton model"
+        ]
+      },
+      {
+        "time_range": "0:13-0:27",
+        "visual_description": "Conor Harris holds a pelvic model while animations show the femur rotating within the hip socket.",
+        "audio_description": "He defines the two main types of hip mobility: external rotation (femur sliding forward) and internal rotation (femur sliding back).",
+        "text_on_screen": "EXTERNAL ROTATION, INTERNAL ROTATION",
+        "key_objects": [
+          "Pelvic bone model"
+        ]
+      },
+      {
+        "time_range": "0:27-0:49",
+        "visual_description": "Animation showing a 'sway back' posture where the lower back rounds due to lack of external rotation.",
+        "audio_description": "He explains that a lack of external rotation causes the lower back to round excessively to tip the pelvis back.",
+        "text_on_screen": "EXCESSIVELY ROUND, #4 Sway back",
+        "key_objects": [
+          "Anatomical animation"
+        ]
+      },
+      {
+        "time_range": "0:49-1:13",
+        "visual_description": "Animation showing a 'hyper-lordotic' posture with an anterior pelvic tilt due to lack of internal rotation.",
+        "audio_description": "He explains that a lack of internal rotation causes the pelvis to tip forward (anterior pelvic tilt), arching the lower back.",
+        "text_on_screen": "#2 Hyper-lordotic, ANTERIOR PELVIC TILT",
+        "key_objects": [
+          "Anatomical animation"
+        ]
+      },
+      {
+        "time_range": "1:13-2:07",
+        "visual_description": "Conor demonstrates an exercise using a foam roller on his hip while lying on his side.",
+        "audio_description": "Instructions for the internal rotation exercise: place foam roller on the hip, stack feet, and slowly roll the trunk back while opening the top knee.",
+        "text_on_screen": "TWO SIMPLE EXERCISES, FOAM ROLLER, SLOWLY ROLL",
+        "key_objects": [
+          "Foam roller",
+          "Gym floor mat"
+        ]
+      },
+      {
+        "time_range": "2:07-2:58",
+        "visual_description": "Conor demonstrates a floor-based breathing exercise for external rotation.",
+        "audio_description": "Instructions for the external rotation exercise: lie on side with a pillow, hook the top foot under the bottom, inhale to open the body back, and exhale to return.",
+        "text_on_screen": "TEST AND RETEST, EXTERNAL ROTATION, INHALE, EXHALE",
+        "key_objects": [
+          "Pillow",
+          "Gym floor mat"
+        ]
+      }
+    ],
+    "overall_summary": "Conor Harris explains the biomechanical link between limited hip mobility and lower back pain, specifically focusing on internal and external rotation. He demonstrates how the lower back compensates by either rounding or arching when these hip movements are restricted. The video concludes with two corrective exercises: a foam roller technique to improve internal rotation and a side-lying breathing exercise to restore external rotation.",
+    "people": [
+      {
+        "description": "Fitness and rehabilitation specialist demonstrating exercises and explaining anatomy.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Conor Harris"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Conor Harris",
+        "display_name": "Conor Harris",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Anatomy Standard",
+        "display_name": "Anatomy Standard",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Anatomical animation provider",
+        "confidence": 5
+      },
+      {
+        "name": "Internal Rotation",
+        "display_name": "Hip Internal Rotation",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Femur sliding back in the hip socket",
+        "confidence": 5
+      },
+      {
+        "name": "External Rotation",
+        "display_name": "Hip External Rotation",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Femur sliding forward in the hip socket",
+        "confidence": 5
+      },
+      {
+        "name": "Anterior Pelvic Tilt",
+        "display_name": "Anterior Pelvic Tilt",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Pelvis tipping forward",
+        "confidence": 5
+      },
+      {
+        "name": "Foam Roller",
+        "display_name": "Foam Roller",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Used for hip mobility exercise",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Lower back pain is often a compensation for a lack of hip mobility.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "A lack of hip external rotation leads to a rounded lower back (sway back posture).",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "A lack of hip internal rotation leads to an arched lower back and anterior pelvic tilt.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Restoring genuine hip rotation space through specific exercises can alleviate compensatory back pain.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Internal Rotation Foam Roller Exercise",
+          "details": "Lie on side with foam roller under the hip. Stack feet. Slowly roll trunk back while opening the top knee. Move at 1 inch per second."
+        },
+        {
+          "name": "External Rotation Breathing Exercise",
+          "details": "Lie on side with a pillow under head. Bottom leg bent, top foot hooked under bottom foot. Inhale through nose while opening body to the back. Exhale and return slowly."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Ambient background music \u2014 Unidentified",
+      "metadata_song": "original sound - Conor Harris",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The creator is a well-known biomechanics specialist. Anatomical terms are used precisely."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Educational, clinical, and informative.",
+    "topic_hints": [
+      "Physical Therapy",
+      "Hip Mobility",
+      "Back Pain Relief"
+    ],
+    "affect_hints": [
+      "Informative",
+      "Empowering",
+      "Serious"
+    ],
+    "genre_hints": [
+      "Educational Tutorial",
+      "Fitness Advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 17282,
+    "output_tokens": 2022,
+    "total_tokens": 19304,
+    "cost_usd": 0.003805,
+    "latency_ms": 36726,
+    "upload_ms": 12888
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

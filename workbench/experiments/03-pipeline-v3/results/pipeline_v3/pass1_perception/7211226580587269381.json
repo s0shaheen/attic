@@ -1,0 +1,237 @@
+{
+  "item_id": "7211226580587269381",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:07:55.795671+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Exterior shot of the Coffeeshop Amsterdam building and its illuminated sign with the 'XXX' logo.",
+        "audio_description": "Upbeat hip-hop music begins.",
+        "text_on_screen": "Best coffeeshop in AMSTERDAM",
+        "key_objects": [
+          "Coffeeshop Amsterdam sign",
+          "building facade"
+        ]
+      },
+      {
+        "time_range": "0:02-0:09",
+        "visual_description": "Interior montage showing the service counter with staff, exposed brick walls, and a multi-level seating area with stairs.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Best coffeeshop in AMSTERDAM",
+        "key_objects": [
+          "service counter",
+          "monitors",
+          "exposed brick wall",
+          "stairs"
+        ]
+      },
+      {
+        "time_range": "0:09-0:14",
+        "visual_description": "Close-up of a hand stirring a hot beverage topped with a large amount of whipped cream and cocoa powder.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Best coffeeshop in AMSTERDAM",
+        "key_objects": [
+          "hot drink",
+          "whipped cream",
+          "stirring stick"
+        ]
+      },
+      {
+        "time_range": "0:14-0:16",
+        "visual_description": "Close-up of a pre-rolled joint held in a hand, featuring the gold 'XXX' Amsterdam logo.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Best coffeeshop in AMSTERDAM",
+        "key_objects": [
+          "pre-rolled joint",
+          "XXX logo"
+        ]
+      },
+      {
+        "time_range": "0:16-0:19",
+        "visual_description": "Atmospheric shot of smoke drifting through the air near indoor plants and the staircase.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Best coffeeshop in AMSTERDAM",
+        "key_objects": [
+          "smoke",
+          "indoor plant"
+        ]
+      },
+      {
+        "time_range": "0:19-0:23",
+        "visual_description": "Close-up of a glass display case containing various 'spacetry' edibles, including a red velvet bar.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "edibles spacetry \u20ac10,-",
+        "key_objects": [
+          "edibles",
+          "display case",
+          "price tag"
+        ]
+      },
+      {
+        "time_range": "0:23-0:29",
+        "visual_description": "Exterior street view of the Haarlemmerstraat area, showing the shop's location and surrounding buildings.",
+        "audio_description": "Music fades out.",
+        "text_on_screen": "Coffeeshop Amsterdam Haarlemmerstraat 44, 1013 ES \ud83d\udccd",
+        "key_objects": [
+          "street",
+          "buildings",
+          "Popeye coffeeshop"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a travel recommendation for 'Coffeeshop Amsterdam' in Amsterdam. The creator showcases the shop's modern interior, friendly staff, and product offerings, including a whipped cream-topped hot drink and pre-rolled joints. A major highlight is the 'spacetry' edibles, specifically the red velvet version which the creator rates 10/10. The video provides the exact address on Haarlemmerstraat for viewers looking to visit.",
+    "people": [
+      {
+        "description": "Creator's hand with manicured nails, stirring a drink and holding a joint.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "outwithnaz"
+      },
+      {
+        "description": "Male staff members behind the counter wearing black hoodies.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Coffeeshop Amsterdam",
+        "display_name": "Coffeeshop Amsterdam",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Haarlemmerstraat 44, 1013 ES",
+        "confidence": 5
+      },
+      {
+        "name": "Amsterdam",
+        "display_name": "Amsterdam, Netherlands",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Red Velvet Edible",
+        "display_name": "Red Velvet Spacetry Edible",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "\u20ac10",
+        "confidence": 5
+      },
+      {
+        "name": "Spacetry",
+        "display_name": "Spacetry Edibles",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Best Time",
+        "display_name": "Best Time by Sage the Gemini",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Coffeeshop Amsterdam is the best coffeeshop in the city.",
+        "source": "text_overlay",
+        "confidence": 4
+      },
+      {
+        "statement": "The red velvet edible at this location is a 10/10 must-try.",
+        "source": "metadata",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Coffeeshop Amsterdam",
+          "details": "Located at Haarlemmerstraat 44, 1013 ES"
+        },
+        {
+          "name": "Red Velvet Edible",
+          "details": "Rated 10/10, priced at \u20ac10"
+        },
+        {
+          "name": "Spacetry Edibles",
+          "details": "Various flavors available for \u20ac10"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Best Time \u2014 Sage the Gemini",
+      "metadata_song": "Best Time",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The location and product details are explicitly stated in the video and caption."
+    },
+    "presentation_style": {
+      "primary_format": "cinematic",
+      "camera_work": "handheld",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Relaxed, urban, and inviting with a focus on aesthetic product shots.",
+    "topic_hints": [
+      "Amsterdam Travel",
+      "Cannabis Culture",
+      "Coffeeshop Recommendations"
+    ],
+    "affect_hints": [
+      "Relaxed",
+      "Satisfied",
+      "Curious"
+    ],
+    "genre_hints": [
+      "Travel Guide",
+      "Product Review"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4092,
+    "output_tokens": 1941,
+    "total_tokens": 6033,
+    "cost_usd": 0.001778,
+    "latency_ms": 24711,
+    "upload_ms": 7399
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

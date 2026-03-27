@@ -1,0 +1,52 @@
+{
+  "item_id": "7585397803673718029",
+  "parsed_output": {
+    "summary": "Creator @w.gutwa demonstrates a high-protein snack hack by spreading Oikos Triple Zero Vanilla yogurt on a flatbread and topping it with cinnamon. The video captures the 'gym bro' struggle of satisfying a sweet tooth while prioritizing protein intake.",
+    "entities": [
+      {
+        "name": "Oikos Triple Zero",
+        "type": "brand",
+        "relevance": "primary"
+      },
+      {
+        "name": "Chapati",
+        "type": "ingredient",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Cinnamon",
+        "type": "ingredient",
+        "relevance": "supporting"
+      },
+      {
+        "name": "@w.gutwa",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Gymbro",
+        "type": "trend_or_meme",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "food",
+      "secondary": "health"
+    },
+    "genre": "recipe",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "funny"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "In this 10-second TikTok, creator @w.gutwa shares a quick high-protein snack hack designed to satisfy sweet cravings for those in the fitness community. The video shows the process of spreading Oikos Triple Zero Vanilla Greek yogurt onto a flatbread, which appears to be a chapati or paratha, laid out on a paper towel. The creator then sprinkles ground cinnamon over the yogurt layer before rolling the bread into a wrap and eating it. On-screen text humorously notes, 'gym bros will eat ANYTHING just to get their protein in' and 'I'm craving sum sweet.' This content serves as a simple recipe for viewers looking for low-calorie dessert alternatives that help meet daily protein goals. It highlights the use of Oikos yogurt as a versatile ingredient in 'gymtok' nutrition culture."
+  },
+  "metrics": {
+    "input_tokens": 4267,
+    "output_tokens": 480,
+    "total_tokens": 4747,
+    "cost_usd": 0.000928,
+    "latency_ms": 9436,
+    "keyframe_count": 3
+  }
+}

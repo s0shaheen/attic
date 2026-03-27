@@ -1,0 +1,149 @@
+{
+  "item_id": "7588345892915121422",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:11:36.282791+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:58",
+        "visual_description": "Creator sits in a room covered in vibrant, hand-painted art, wearing headphones and listening intently to music while nodding his head.",
+        "audio_description": "The song 'Luv (sic) Grand Finale' plays, featuring a melodic, jazzy hip-hop beat with strings and rapping by Shing02.",
+        "text_on_screen": "Luv sic Grand finale Nujabes Shing 02",
+        "key_objects": [
+          "Audio-Technica ATH-M50x headphones",
+          "Lava lamps",
+          "Vinyl records",
+          "Hand-painted wall art",
+          "Hand-painted ceiling tiles"
+        ]
+      },
+      {
+        "time_range": "0:59-2:01",
+        "visual_description": "Creator speaks directly to the camera, using hand gestures to illustrate the 'levels' of the music's soundscape.",
+        "audio_description": "Creator discusses his reaction, noting that the rapping feels secondary to the 'vibe' and 'soundscape' of the strings, which he believes was a calculated artistic choice.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Audio-Technica ATH-M50x headphones"
+        ]
+      }
+    ],
+    "overall_summary": "In this video, creator @shepgold performs a blind reaction to 'Luv (sic) Grand Finale' by Nujabes featuring Shing02. He spends the first half of the video listening intently to the track, visibly enjoying the jazzy, atmospheric production. In the second half, he provides a brief analysis, praising the song's unique mix where the vocals are intentionally layered behind the instrumentation to prioritize the overall 'soundscape' and 'vibe.' He concludes that the track is a perfect continuation of the Nujabes legacy.",
+    "people": [
+      {
+        "description": "Male with a beard and black beanie, wearing a grey thermal shirt, sitting in a highly decorated artistic room.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@shepgold"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Nujabes",
+        "display_name": "Nujabes",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Shing02",
+        "display_name": "Shing02",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Luv (sic) Grand Finale",
+        "display_name": "Luv (sic) Grand Finale (feat. Shing02)",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Audio-Technica ATH-M50x",
+        "display_name": "Audio-Technica ATH-M50x Headphones",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Professional Studio Monitor Headphones",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "In 'Luv (sic) Grand Finale,' the rapping is mixed to be secondary to the atmospheric soundscape, which enhances the overall 'vibe.'",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": null
+    },
+    "audio_identification": {
+      "actual_song": "Luv (sic) Grand Finale \u2014 Nujabes feat. Shing02",
+      "metadata_song": "Luv (sic) Grand Finale (feat. Shing02)",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The song and artists are explicitly stated in text and audio."
+    },
+    "presentation_style": {
+      "primary_format": "reaction",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Chill, artistic, and appreciative; the room's dense, colorful art creates a unique, creative atmosphere.",
+    "topic_hints": [
+      "Nujabes",
+      "Hip-hop music review",
+      "Soundscape analysis"
+    ],
+    "affect_hints": [
+      "Relaxed",
+      "Thoughtful",
+      "Impressed"
+    ],
+    "genre_hints": [
+      "Blind reaction",
+      "Music TikTok"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 12333,
+    "output_tokens": 1263,
+    "total_tokens": 13596,
+    "cost_usd": 0.002608,
+    "latency_ms": 27237,
+    "upload_ms": 10756
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

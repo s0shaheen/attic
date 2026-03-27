@@ -1,0 +1,376 @@
+{
+  "item_id": "7348190018772503851",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:45:40.433137+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "A man speaks directly to the camera while a browser window is displayed above him. The browser shows a black screen with a retro-style terminal interface, presenting a 'Henry Heffernan Portfolio Showcase 2022' with a warning about desktop viewing and a 'START' button.",
+        "audio_description": "The man states that people are creative on the internet and he found the coolest portfolio he's ever seen.",
+        "text_on_screen": "people are so creative on the internet\nI came across the coolest portfolio I've ever seen\nHenry Heffernan - Portfolio 2022\nhenryheffernan.vercel.app\nRelaunch to update\nHenry Heffernan Portfolio Showcase 2022\nWARNING: This experience is best viewed on a desktop or laptop computer.\nClick start to begin\nSTART",
+        "key_objects": [
+          "browser window",
+          "computer screen",
+          "mouse cursor"
+        ]
+      },
+      {
+        "time_range": "0:04-0:07",
+        "visual_description": "The man continues to speak as the browser window transitions to a 3D rendered scene of a minimalist office desk with a vintage computer, chair, and plant. The mouse cursor hovers over the desk.",
+        "audio_description": "The man identifies the portfolio creator as Henry, a software engineer.",
+        "text_on_screen": "from this guy named Henry\nwho's a software engineer\nClick anywher",
+        "key_objects": [
+          "browser window",
+          "3D rendered desk",
+          "vintage computer",
+          "office chair",
+          "potted plant",
+          "mouse cursor"
+        ]
+      },
+      {
+        "time_range": "0:07-0:10",
+        "visual_description": "The man explains that clicking on the desk zooms into the computer screen, which now displays the portfolio's main page with 'Henry Heffernan Software Engineer' and navigation links like 'ABOUT', 'EXPERIENCE', 'PROJECTS', and 'CONTACT'.",
+        "audio_description": "The man describes the website as a 3D desk scene and explains that clicking on the desk zooms into the computer.",
+        "text_on_screen": "Henry Heffernan\nSoftware Engineer\nand when you go on his website\nyou see this like 3D desk scene\nHenry Heffernan\nSoftware Engineer\nABOUT\nEXPERIENCE\nPROJECTS\nCONTACT",
+        "key_objects": [
+          "browser window",
+          "vintage computer screen",
+          "mouse cursor",
+          "desk"
+        ]
+      },
+      {
+        "time_range": "0:10-0:12",
+        "visual_description": "The computer screen within the browser shows the 'ABOUT' section of the portfolio, featuring text about Henry Heffernan and two small images, one of a child and one of a young man.",
+        "audio_description": "The man explains that the computer screen shows the content of the website.",
+        "text_on_screen": "when you actually click on the desk\nHenry Heffernan\nShowcase '22\nABOUT\nEXPERIENCE\nPROJECTS\nCONTACT\nAbout Me\nLooking for my resume?\nMy Hobbies",
+        "key_objects": [
+          "browser window",
+          "vintage computer screen",
+          "mouse cursor"
+        ]
+      },
+      {
+        "time_range": "0:12-0:14",
+        "visual_description": "The computer screen displays the 'EXPERIENCE' section, detailing job roles and responsibilities, including 'Frontend Engineer' at 'Hover' and 'Team Lead & Engineer' at 'BrACS'.",
+        "audio_description": "The man states that the website content includes the about section, experiences, and projects.",
+        "text_on_screen": "it zooms into the computer\nHenry Heffernan\nShowcase '22\nABOUT\nEXPERIENCE\nPROJECTS\nCONTACT\nLooking for my resume?\nHover\nFrontend Engineer\nBrACS\nTeam Lead & Engineer",
+        "key_objects": [
+          "browser window",
+          "vintage computer screen",
+          "mouse cursor"
+        ]
+      },
+      {
+        "time_range": "0:14-0:16",
+        "visual_description": "The computer screen shows the 'Projects & Hobbies' section, categorized into 'Software Projects', 'Music', and 'Art Endeavors'.",
+        "audio_description": "The man continues to describe the website's content, mentioning projects.",
+        "text_on_screen": "and that's where the content of the website is\nHenry Heffernan\nShowcase '22\nHOME\nABOUT\nEXPERIENCE\nPROJECTS\nSOFTWARE\nMUSIC\nART\nCONTACT\nProjects\n& Hobbies\nSoftware\nMusic\nArt Endeavors",
+        "key_objects": [
+          "browser window",
+          "vintage computer screen",
+          "mouse cursor"
+        ]
+      },
+      {
+        "time_range": "0:16-0:18",
+        "visual_description": "The computer screen displays the 'Software Projects' section, showing a project called 'Gunttatchment Saga The Sequel' with a screenshot of a pixelated game.",
+        "audio_description": "The man points out the 'about' section, experiences, and projects.",
+        "text_on_screen": "that's where you can see his about section\nHenry Heffernan\nShowcase '22\nHOME\nABOUT\nEXPERIENCE\nPROJECTS\nSOFTWARE\nMUSIC\nART\nCONTACT\nSoftware\nProjects\nhenryheffernan.com\nvercel.app\ngithub.io\nGunttatchment Saga The Sequel",
+        "key_objects": [
+          "browser window",
+          "vintage computer screen",
+          "mouse cursor",
+          "pixelated game screenshot"
+        ]
+      },
+      {
+        "time_range": "0:18-0:20",
+        "visual_description": "The computer screen shows the 'CONTACT' section, which includes a form for name, email, company, and message, along with icons for LinkedIn and Twitter.",
+        "audio_description": "The man concludes that the website is essentially Henry's resume.",
+        "text_on_screen": "his experiences projects\nHenry Heffernan\nShowcase '22\nHOME\nABOUT\nEXPERIENCE\nPROJECTS\nSOFTWARE\nMUSIC\nART\nCONTACT\nContact\nYour Name:\nEmail:\nCompany (optional):\nMessage:\nSend Message\nAll messages get forwarded straight to my personal email\n* required\nit's his resume",
+        "key_objects": [
+          "browser window",
+          "vintage computer screen",
+          "mouse cursor",
+          "LinkedIn icon",
+          "Twitter icon"
+        ]
+      },
+      {
+        "time_range": "0:20-0:34",
+        "visual_description": "The man expresses his appreciation for the website's interactivity as the browser window returns to the full 3D desk scene. The scene then rotates, showing the desk from various angles, highlighting its rendered details.",
+        "audio_description": "The man praises the website's interactivity, noting that the scene can be rotated to view the entire rendered desk. He calls it a smart way to show technical prowess and creative storytelling, suggesting it inspires others to create their own websites.",
+        "text_on_screen": "I love how interactive this website is though\nyou can rotate the scene to see the whole rendered\ndesk situation\nit's such a smart way\nnot only to show technical prowess\nbut also really creative storytelling\nalmost makes you wanna make a website yourself",
+        "key_objects": [
+          "browser window",
+          "3D rendered desk",
+          "vintage computer",
+          "office chair",
+          "potted plant",
+          "books",
+          "coffee mug",
+          "mouse",
+          "keyboard",
+          "printer",
+          "papers",
+          "mouse cursor"
+        ]
+      }
+    ],
+    "overall_summary": "This video showcases an exceptionally creative and interactive online portfolio created by a software engineer named Henry Heffernan. The portfolio is presented as a 3D rendered desk scene within a browser, where users can click on the vintage computer to access different sections like 'About', 'Experience', 'Projects', and 'Contact'. The creator highlights the website's innovative design, which allows users to rotate the entire 3D desk environment, demonstrating both technical skill and creative storytelling. The video aims to inspire viewers with this unique approach to online portfolios.",
+    "people": [
+      {
+        "description": "A man with dark hair and a mustache, wearing a grey t-shirt, speaking directly to the camera and reacting to the website being shown.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "The creator of the interactive portfolio website, a software engineer.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Henry Heffernan"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Henry Heffernan",
+        "display_name": "Henry Heffernan",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Henry Heffernan Portfolio Showcase 2022",
+        "display_name": "Henry Heffernan Portfolio Showcase 2022",
+        "type": "website",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Interactive 3D desk scene, retro terminal interface",
+        "confidence": 5
+      },
+      {
+        "name": "Software Engineer",
+        "display_name": "Software Engineer",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "3D Desk Scene",
+        "display_name": "3D Desk Scene",
+        "type": "visual_element",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Interactive, rotatable",
+        "confidence": 5
+      },
+      {
+        "name": "Vintage Computer",
+        "display_name": "Vintage Computer",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Office Desk",
+        "display_name": "Office Desk",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Office Chair",
+        "display_name": "Office Chair",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Potted Plant",
+        "display_name": "Potted Plant",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Hover",
+        "display_name": "Hover",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Employer listed in experience section",
+        "confidence": 3
+      },
+      {
+        "name": "BrACS",
+        "display_name": "BrACS",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Employer listed in experience section",
+        "confidence": 3
+      },
+      {
+        "name": "Gunttatchment Saga The Sequel",
+        "display_name": "Gunttatchment Saga The Sequel",
+        "type": "game",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Software project listed on portfolio",
+        "confidence": 3
+      },
+      {
+        "name": "Vercel",
+        "display_name": "Vercel",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": "Hosting platform, URL: henryheffernan.vercel.app",
+        "confidence": 4
+      },
+      {
+        "name": "GitHub",
+        "display_name": "GitHub",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": "Code repository, link: github.io",
+        "confidence": 3
+      },
+      {
+        "name": "LinkedIn",
+        "display_name": "LinkedIn",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Social media icon on contact page",
+        "confidence": 4
+      },
+      {
+        "name": "Twitter",
+        "display_name": "Twitter",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Social media icon on contact page",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Creative and interactive portfolio websites, like Henry Heffernan's, are a smart way to showcase both technical prowess and storytelling abilities.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "An engaging and interactive website design can inspire others to create their own unique online presence.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "original sound",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The TikTok creator's name is not provided in the video or metadata."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Informative, appreciative, inspiring, clean",
+    "topic_hints": [
+      "Web Design",
+      "Portfolio Showcase",
+      "Software Engineering"
+    ],
+    "affect_hints": [
+      "Impressed",
+      "Inspired",
+      "Curious"
+    ],
+    "genre_hints": [
+      "Review",
+      "Showcase",
+      "Educational"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 11810,
+    "output_tokens": 3615,
+    "total_tokens": 15425,
+    "cost_usd": 0.003941,
+    "latency_ms": 24872,
+    "upload_ms": 5273
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

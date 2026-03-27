@@ -1,0 +1,79 @@
+{
+  "item_id": "7169990240491326726",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:04.718450+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "other",
+      "secondary": "movies_tv",
+      "micro_labels": [
+        "philosophy",
+        "existentialism",
+        "cosmic perspective",
+        "alan watts"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "corecore",
+        "cinematic montage"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "relaxing",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "sad",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "voiceover",
+      "cinematic"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.85
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8643,
+    "output_tokens": 369,
+    "total_tokens": 9012,
+    "cost_usd": 0.001518,
+    "latency_ms": 15474,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 5
+  }
+}

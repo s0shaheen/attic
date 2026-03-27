@@ -1,0 +1,72 @@
+{
+  "item_id": "7607404489871494413",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:33.925850+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "career",
+      "secondary": "technology",
+      "micro_labels": [
+        "product management",
+        "design review",
+        "software development",
+        "workplace dynamics"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "how-to guide",
+        "professional development",
+        "educational"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "neutral",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9805,
+    "output_tokens": 326,
+    "total_tokens": 10131,
+    "cost_usd": 0.001666,
+    "latency_ms": 7772,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 6
+  }
+}

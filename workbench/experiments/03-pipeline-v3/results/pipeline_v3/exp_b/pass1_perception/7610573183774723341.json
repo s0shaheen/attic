@@ -1,0 +1,317 @@
+{
+  "item_id": "7610573183774723341",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:52:13.961411+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A young man with dark hair, wearing a light-colored t-shirt, is speaking in a room with curtains in the background.",
+        "audio_description": "A male voice says, \"Don't talk to your mom like that.\"",
+        "text_on_screen": "Don't talk to your mom like that.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:01-0:06",
+        "visual_description": "A young Asian boy in a grey UCSD hoodie looks directly at the camera with a serious expression. Multiple smaller video frames are overlaid, showing him in different contexts, including hooded and with other boys.",
+        "audio_description": "A male voice says, \"She wasn't even being annoying, like what were you even doing? Damn, this kid's kinda wack.\"",
+        "text_on_screen": "she wasn't even being annoying, like what were you even doing? Damn, this kid's kinda wack.",
+        "key_objects": [
+          "UCSD hoodie"
+        ]
+      },
+      {
+        "time_range": "0:06-0:08",
+        "visual_description": "The same boy in the grey UCSD hoodie is shown. A stylized green title card with the word \"DIDI\" and a peace sign replacing the 'I's appears over him.",
+        "audio_description": "A male voice says, \"Yeah, kinda wack.\"",
+        "text_on_screen": "DIDI, Yeah, kinda wack.",
+        "key_objects": [
+          "UCSD hoodie"
+        ]
+      },
+      {
+        "time_range": "0:08-0:09",
+        "visual_description": "The boy is in a car at night, looking out the window, illuminated by streetlights.",
+        "audio_description": "Music begins to play.",
+        "text_on_screen": "",
+        "key_objects": [
+          "car interior"
+        ]
+      },
+      {
+        "time_range": "0:09-0:10",
+        "visual_description": "The boy is in the back seat of a car, wearing a black t-shirt and a seatbelt, looking somber.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "car interior",
+          "seatbelt"
+        ]
+      },
+      {
+        "time_range": "0:10-0:11",
+        "visual_description": "A close-up of the boy in the car, looking angry and frustrated, making a fist.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "car interior"
+        ]
+      },
+      {
+        "time_range": "0:11-0:12",
+        "visual_description": "The boy and a woman (presumably his mother) are in the front seats of a car, looking at each other.",
+        "audio_description": "A male voice asks, \"Are you ashamed of me?\" over the music.",
+        "text_on_screen": "Are you ashamed of me?",
+        "key_objects": [
+          "car interior"
+        ]
+      },
+      {
+        "time_range": "0:12-0:13",
+        "visual_description": "The boy, wearing a black t-shirt with a green logo, runs across a parking lot carrying a skateboard and backpack, with other boys around him.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "skateboard",
+          "backpack"
+        ]
+      },
+      {
+        "time_range": "0:13-0:15",
+        "visual_description": "The boy is running away from someone, looking back with a pained expression, outside a house.",
+        "audio_description": "A male voice says, \"I ran away, but you didn't even look for me.\" over the music.",
+        "text_on_screen": "I ran away, but you didn't even look for me.",
+        "key_objects": [
+          "house exterior"
+        ]
+      },
+      {
+        "time_range": "0:15-0:17",
+        "visual_description": "The boy, wearing a black Emerica t-shirt, stands outside, looking down.",
+        "audio_description": "A female voice asks, \"How could I be ashamed of you?\" over the music.",
+        "text_on_screen": "How could I be ashamed of you?",
+        "key_objects": [
+          "Emerica t-shirt"
+        ]
+      },
+      {
+        "time_range": "0:17-0:18",
+        "visual_description": "The boy in a dark hoodie, looking down, resting his head on his hand.",
+        "audio_description": "A female voice speaks in Mandarin, \"\u6211\u600e\u9ebc\u53ef\u80fd ashamed \u4f60\u5462\" (W\u01d2 z\u011bnme k\u011bn\u00e9ng ashamed n\u01d0 ne), meaning \"How could I be ashamed of you?\" over the music.",
+        "text_on_screen": "How could I be ashamed of you?",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:18-0:19",
+        "visual_description": "A computer screen shows a text editor with text being typed.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Mom hates me and i have no fre, How could I be ashamed of you?",
+        "key_objects": [
+          "computer screen"
+        ]
+      },
+      {
+        "time_range": "0:19-0:20",
+        "visual_description": "The boy in a light grey hoodie, looking down with his eyes closed.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:20-0:22",
+        "visual_description": "The boy in a dark hoodie, looking at his reflection in a mirror.",
+        "audio_description": "A female voice says, \"I am so proud (of you).\" over the music.",
+        "text_on_screen": "I am so proud (of you).",
+        "key_objects": [
+          "mirror"
+        ]
+      },
+      {
+        "time_range": "0:22-0:23",
+        "visual_description": "The boy in a dark hoodie, looking up with a hopeful expression.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "I am so proud (of you).",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:23-0:25",
+        "visual_description": "A close-up of hands gripping metal bars, with a sunset visible in the background.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "metal bars"
+        ]
+      },
+      {
+        "time_range": "0:25-0:28",
+        "visual_description": "A woman (presumably his mother) is hugging the boy on a bed in a dimly lit room.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "bed"
+        ]
+      }
+    ],
+    "overall_summary": "This video is an emotional edit from the film \"D\u00ecdi (\u5f1f\u5f1f)\", focusing on the complex relationship between a young Asian boy and his mother during his coming-of-age. It depicts moments of teenage angst, misunderstanding, and perceived shame, contrasted with a mother's unwavering love and pride. The video's central theme revolves around the journey of a son learning to appreciate his mother, despite the challenges of growing up and finding his own identity.",
+    "people": [
+      {
+        "description": "A young Asian boy, the main protagonist, appears throughout the video. He is seen in various emotional states, from defiant and frustrated to somber and reflective, often wearing hoodies or t-shirts. He is navigating his teenage years and his relationship with his mother.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "An Asian woman, appearing briefly as the boy's mother. She is seen in the car with him and hugging him, conveying love and concern.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "A young man with dark hair, seen speaking at the beginning of the video, possibly a friend or older brother figure to the protagonist.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "Other young boys, seen briefly in the background during the skateboarding scene, likely peers or friends of the protagonist.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "D\u00ecdi (\u5f1f\u5f1f)",
+        "display_name": "D\u00ecdi (\u5f1f\u5f1f) (2024 film)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Release year 2024",
+        "confidence": 5
+      },
+      {
+        "name": "Sitting in the Backseat",
+        "display_name": "Sitting in the Backseat \u2014 The Boy Least Likely To",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Boy Least Likely To",
+        "display_name": "The Boy Least Likely To",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": [
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "UCSD",
+        "display_name": "University of California San Diego",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Emerica",
+        "display_name": "Emerica",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video explores the complex and often challenging relationship between a son and his mother during his coming-of-age.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "It highlights themes of misunderstanding, perceived shame, and ultimately, a mother's unconditional love and pride for her child.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "A key aspect of growing up is learning to appreciate and understand one's parents, particularly the sacrifices and love of a mother.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Sitting in the Backseat \u2014 The Boy Least Likely To",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The movie 'D\u00ecdi (\u5f1f\u5f1f)' is inferred from hashtags and title card, and confirmed by external search. The song is identified by lyrics match."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Melancholy, reflective, emotional, poignant, ultimately hopeful.",
+    "topic_hints": [
+      "coming of age",
+      "mother-son relationship",
+      "teenage struggles",
+      "Asian cinema",
+      "family dynamics"
+    ],
+    "affect_hints": [
+      "reflective",
+      "sad",
+      "empathetic",
+      "hopeful",
+      "nostalgic",
+      "understanding"
+    ],
+    "genre_hints": [
+      "drama",
+      "coming-of-age",
+      "emotional edit",
+      "film clip"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9764,
+    "output_tokens": 2995,
+    "total_tokens": 12759,
+    "cost_usd": 0.003262,
+    "latency_ms": 35124,
+    "upload_ms": 5732
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

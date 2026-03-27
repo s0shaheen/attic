@@ -1,0 +1,52 @@
+{
+  "item_id": "7607891082247998733",
+  "parsed_output": {
+    "summary": "This TikTok by @cooking_with.kian provides a comprehensive tutorial for making a homemade version of the Chick-fil-A chicken sandwich, including the signature sauce and waffle fries. It is a high-value save for home cooks looking to replicate fast-food favorites with specific instructions for the brine, dredge, and sauce.",
+    "entities": [
+      {
+        "name": "Chick-fil-A",
+        "type": "brand",
+        "relevance": "primary"
+      },
+      {
+        "name": "Chick-fil-A sauce",
+        "type": "recipe",
+        "relevance": "primary"
+      },
+      {
+        "name": "@cooking_with.kian",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "pickle juice",
+        "type": "ingredient",
+        "relevance": "supporting"
+      },
+      {
+        "name": "potato starch",
+        "type": "ingredient",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "food",
+      "secondary": "diy"
+    },
+    "genre": "recipe",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "This cooking tutorial by @cooking_with.kian demonstrates how to make a homemade Chick-fil-A chicken sandwich from scratch. The video covers three main components: the signature Chick-fil-A sauce made with mayonnaise, barbecue sauce, honey, and yellow mustard; a chicken brine using boneless skinless chicken thighs, buttermilk, and pickle juice; and a dry dredge consisting of all-purpose flour, potato starch, and spices like paprika, garlic powder, and MSG. The visual content shows the preparation of the chicken, the assembly of the sandwich on a toasted bun with lettuce and tomato, and a side of crispy waffle fries and lemonade. This recipe is perfect for users searching for 'Chick-fil-A copycat recipe', 'homemade fried chicken sandwich', or 'how to make Chick-fil-A sauce at home'. The final presentation on a metal tray mimics the restaurant experience, making it a great reference for foodies and home chefs."
+  },
+  "metrics": {
+    "input_tokens": 4371,
+    "output_tokens": 527,
+    "total_tokens": 4898,
+    "cost_usd": 0.000972,
+    "latency_ms": 6935,
+    "keyframe_count": 3
+  }
+}

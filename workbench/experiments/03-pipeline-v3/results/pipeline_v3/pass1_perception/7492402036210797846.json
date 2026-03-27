@@ -1,0 +1,237 @@
+{
+  "item_id": "7492402036210797846",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:18:00.845104+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "AJ Soprano sits at a kitchen counter while Carmela and Tony Soprano stand in the doorway, visibly upset and yelling at him.",
+        "audio_description": "Carmela: 'You could have killed those girls!' AJ: 'That would have been interesting.' Carmela: 'What? What did you just say?'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Kitchen counter",
+          "Wall clock"
+        ]
+      },
+      {
+        "time_range": "0:04-0:12",
+        "visual_description": "A rapid montage of cinematic clips: a man with a mustache looking out over a city, a rocket explosion, a crowded neon-lit dance floor, two boys riding bikes past an industrial site, and a man in a white suit performing in a dimly lit room.",
+        "audio_description": "AJ (voiceover): 'Death just shows the ultimate absurdity of life.' Tony: 'Are you trying to get me to lose my temper? Because I'm about to put you through that goddamn window!'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Rocket",
+          "Bicycles",
+          "Neon lights"
+        ]
+      },
+      {
+        "time_range": "0:12-0:18",
+        "visual_description": "More film clips: a man running through a glass door, a man walking along a pier with a ship in the background, and a man in a green uniform looking through a window.",
+        "audio_description": "AJ: 'See? That's what I mean. Life is absurd.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Ship",
+          "Glass door"
+        ]
+      },
+      {
+        "time_range": "0:18-0:23",
+        "visual_description": "Clips of various people looking directly at the camera with somber expressions, followed by a scene of a woman being fitted for a dress. Ends on Tony and Carmela's shocked faces.",
+        "audio_description": "Carmela: 'Don't say that! God forgive you!' AJ: 'There is no God.'",
+        "text_on_screen": "@filmm_p4",
+        "key_objects": [
+          "Dress",
+          "Sightseeing hat"
+        ]
+      }
+    ],
+    "overall_summary": "This is a 'corecore' style edit that juxtaposes a famous existential argument from The Sopranos with various clips from cult and arthouse cinema. The video centers on AJ Soprano's nihilistic phase, where he argues with his parents about the 'absurdity of life' and the non-existence of God. The cinematic montage serves to visually represent the themes of existentialism, isolation, and the surreal nature of reality mentioned in the dialogue.",
+    "people": [
+      {
+        "description": "AJ Soprano, a teenager with short dark hair wearing a black t-shirt, expressing nihilistic views.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Robert Iler"
+      },
+      {
+        "description": "Tony Soprano, a middle-aged man in a maroon polo shirt, reacting with anger.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "James Gandolfini"
+      },
+      {
+        "description": "Carmela Soprano, a woman with blonde hair in a patterned grey shirt, reacting with shock and religious concern.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Edie Falco"
+      }
+    ],
+    "entities": [
+      {
+        "name": "The Sopranos",
+        "display_name": "The Sopranos",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata"
+        ],
+        "specifications": "HBO TV Series",
+        "confidence": 5
+      },
+      {
+        "name": "Phantom Thread",
+        "display_name": "Phantom Thread",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Directed by Paul Thomas Anderson",
+        "confidence": 5
+      },
+      {
+        "name": "The American Friend",
+        "display_name": "The American Friend",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Directed by Wim Wenders",
+        "confidence": 5
+      },
+      {
+        "name": "Koyaanisqatsi",
+        "display_name": "Koyaanisqatsi",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Directed by Godfrey Reggio",
+        "confidence": 5
+      },
+      {
+        "name": "Gummo",
+        "display_name": "Gummo",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Directed by Harmony Korine",
+        "confidence": 5
+      },
+      {
+        "name": "Blue Velvet",
+        "display_name": "Blue Velvet",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Directed by David Lynch",
+        "confidence": 5
+      },
+      {
+        "name": "Paris, Texas",
+        "display_name": "Paris, Texas",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Directed by Wim Wenders",
+        "confidence": 5
+      },
+      {
+        "name": "Good Time",
+        "display_name": "Good Time",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Directed by Safdie Brothers",
+        "confidence": 5
+      },
+      {
+        "name": "Boogie Nights",
+        "display_name": "Boogie Nights",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Directed by Paul Thomas Anderson",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video explores the philosophy of existentialism and the 'absurd' through the lens of AJ Soprano's character arc.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "The Perfect Girl (Slowed) \u2014 Mareux",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All films mentioned in hashtags were visually confirmed in the montage."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Existential, melancholic, pensive, and surreal.",
+    "topic_hints": [
+      "Existentialism",
+      "Cinema",
+      "The Sopranos"
+    ],
+    "affect_hints": [
+      "Nihilistic",
+      "Contemplative",
+      "Shocked"
+    ],
+    "genre_hints": [
+      "Corecore",
+      "Film Edit",
+      "Nichetok"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3792,
+    "output_tokens": 1868,
+    "total_tokens": 5660,
+    "cost_usd": 0.00169,
+    "latency_ms": 21369,
+    "upload_ms": 3220
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "item_id": "7408508364566596882",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:08:39.566734+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Creator stands at a nighttime driving range and performs a full golf swing with a driver.",
+        "audio_description": "If I just started golf, these are the three things that you need to work on first.",
+        "text_on_screen": "ADVICE IF I JUST STARTED GOLF; THESE ARE THE THREE THINGS THAT YOU NEED TO WORK ON FIRST",
+        "key_objects": [
+          "golf club",
+          "golf ball",
+          "driving range mat"
+        ]
+      },
+      {
+        "time_range": "0:05-0:16",
+        "visual_description": "Creator demonstrates the proper finger placement for a golf grip and displays a diagram of a neutral grip.",
+        "audio_description": "One, grip. You gotta make sure you're holding the grip in your fingers. Heaps of YouTube videos on this, so go look it up. Make sure your grip is as neutral as it can be. The stronger it is or the weaker it is, it just makes it harder later.",
+        "text_on_screen": "ONE GRIP; HEAPS OF YOUTUBE VIDEOS ON THIS; SO GO LOOK IT UP MAKE SURE YOUR GRIP IS AS NEUTRAL AS IT CAN BE; IT JUST MAKES IT HARDER LATER",
+        "key_objects": [
+          "golf club",
+          "grip diagram"
+        ]
+      },
+      {
+        "time_range": "0:16-0:33",
+        "visual_description": "Creator demonstrates the correct setup posture versus common mistakes like standing too upright or hunching.",
+        "audio_description": "Number two is setup. When someone is on the first tee, you can almost instantly know if they're good at golf or not. Again, that's just by looking at their setup. You wanna bend at the hips, slight flex in the knees, arms hanging down from your shoulders. You know, if someone's addressing like this or addressing like this, you just instantly know that they're gonna be not as good.",
+        "text_on_screen": "NUMBER TWO IS SETUP; WHEN SOMEONE IS ON THE FIRST TEE YOU CAN ALMOST INSTANTLY KNOW IF THEY'RE GOOD AT GOLF OR NOT; AGAIN THAT'S JUST BY LOOKING AT THEIR SETUP; YOU WANNA BEND AT THE HIPS; SLIGHT FLEX IN THE KNEES; ARMS HANGING DOWN FROM YOUR SHOULDERS; YOU JUST INSTANTLY KNOW THAT THEY'RE GONNA BE NOT AS GOOD",
+        "key_objects": [
+          "golf club"
+        ]
+      },
+      {
+        "time_range": "0:33-0:53",
+        "visual_description": "Creator explains the concept of swaying by showing how the right hip should rotate back rather than sliding laterally.",
+        "audio_description": "Number three is swaying. Swaying is such a killer of the golf swing because if you imagine, if this is your address, at impact your left hip has to get back over here. The more you move away from it, the more your left hip has to move on the downswing, and there's just not enough time. Make sure your right hip doesn't move to the right, goes more back and around.",
+        "text_on_screen": "NO. 3 IS SWAYING; SWAYING IS SUCH A KILLER OF THE GOLF SWING; THE MORE YOUR LEFT HIP HAS TO MOVE ON THE DOWNSWING; NOT ENOUGH TIME; MAKE SURE YOUR RIGHT HIP DOESN'T MOVE TO THE RIGHT; GOES MORE BACK AND AROUND",
+        "key_objects": [
+          "golf club"
+        ]
+      },
+      {
+        "time_range": "0:53-0:57",
+        "visual_description": "Creator performs another swing and mentions a bonus tip.",
+        "audio_description": "And a special mention to early extension. That's number four.",
+        "text_on_screen": "EARLY EXTENSION",
+        "key_objects": [
+          "golf club"
+        ]
+      }
+    ],
+    "overall_summary": "In this tutorial, creator @bay_jark shares the three most important fundamentals for beginner golfers to master early. He emphasizes starting with a neutral grip held in the fingers, establishing a proper setup posture (bending at hips, flexed knees, hanging arms), and avoiding 'swaying' by rotating the hips instead of sliding them laterally. The video concludes with a brief mention of 'early extension' as a fourth critical area to watch. The main goal is to build a solid foundation to avoid difficult-to-fix habits later in one's golf journey.",
+    "people": [
+      {
+        "description": "Male creator wearing a brown t-shirt, white pants, and a white golf cap, providing golf instruction.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@bay_jark"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Golf",
+        "display_name": "Golf",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Neutral Grip",
+        "display_name": "Neutral Golf Grip",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": "holding the club in the fingers",
+        "confidence": 5
+      },
+      {
+        "name": "Golf Setup",
+        "display_name": "Golf Setup Posture",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": "bend at hips, flexed knees, hanging arms",
+        "confidence": 5
+      },
+      {
+        "name": "Swaying",
+        "display_name": "Swaying (Golf Swing Flaw)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": "lateral hip movement vs rotation",
+        "confidence": 5
+      },
+      {
+        "name": "Early Extension",
+        "display_name": "Early Extension",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Hundreds & Thousands",
+        "display_name": "Hundreds & Thousands",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Beginners should start with a neutral grip because changing a strong or weak grip later is difficult.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "A golfer's skill level can often be identified just by their setup posture.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Swaying (sliding the hips) is a major swing killer; the right hip should rotate back and around during the backswing.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Grip",
+          "details": "Hold the club in your fingers and maintain a neutral grip position."
+        },
+        {
+          "name": "Setup",
+          "details": "Bend at the hips, keep a slight flex in the knees, and let arms hang naturally from the shoulders."
+        },
+        {
+          "name": "Swaying",
+          "details": "Avoid lateral movement; ensure the right hip rotates back and around during the swing."
+        },
+        {
+          "name": "Early Extension",
+          "details": "Mentioned as a fourth critical area to address for swing improvement."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Hundreds & Thousands",
+      "metadata_song": "Hundreds & Thousands",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All text and techniques were clearly identified and transcribed."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative and focused, set at a quiet nighttime driving range.",
+    "topic_hints": [
+      "Golf fundamentals",
+      "Sports coaching",
+      "Swing mechanics"
+    ],
+    "affect_hints": [
+      "Educational",
+      "Encouraging",
+      "Direct"
+    ],
+    "genre_hints": [
+      "Tutorial",
+      "Sports Advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6648,
+    "output_tokens": 2244,
+    "total_tokens": 8892,
+    "cost_usd": 0.002344,
+    "latency_ms": 29624,
+    "upload_ms": 5788
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

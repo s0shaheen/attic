@@ -1,0 +1,71 @@
+{
+  "item_id": "7550741362736401694",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:35.099837+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "music",
+      "secondary": "other",
+      "micro_labels": [
+        "EDM",
+        "DJ performance",
+        "remix",
+        "nightlife",
+        "clubbing"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": [
+        "performance clip"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "satisfying",
+        "tier": "dominant"
+      },
+      {
+        "label": "neutral",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "text_overlay",
+      "raw_footage"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6391,
+    "output_tokens": 319,
+    "total_tokens": 6710,
+    "cost_usd": 0.00115,
+    "latency_ms": 9146,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 3
+  }
+}

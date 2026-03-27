@@ -1,0 +1,590 @@
+{
+  "item_id": "7590474761973599509",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:58:07.036986+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "A perfectly plated meal is shown, featuring a medium-rare ribeye steak generously covered in mushroom sauce, alongside a cheesy baked potato. The creator uses a fork to lift a slice of steak, highlighting its pink, medium-rare interior.",
+        "audio_description": "Upbeat hip-hop music plays.",
+        "text_on_screen": "",
+        "key_objects": [
+          "ribeye steak",
+          "mushroom sauce",
+          "baked potato",
+          "cheese",
+          "chives",
+          "fork",
+          "plate"
+        ]
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "The creator uses a fork to scoop out a portion of the cheesy baked potato, demonstrating its soft interior and melted cheese pull.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "baked potato",
+          "cheese",
+          "fork",
+          "plate"
+        ]
+      },
+      {
+        "time_range": "0:06-0:10",
+        "visual_description": "The creator takes a piece of the crispy potato skin, fills it with a slice of steak and mushroom sauce, presenting it as a 'potato skin taco'.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "potato skin",
+          "ribeye steak",
+          "mushroom sauce",
+          "hand"
+        ]
+      },
+      {
+        "time_range": "0:10-0:12",
+        "visual_description": "The creator adds more mushroom sauce from a pan onto the plated steak.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "mushroom sauce",
+          "pan",
+          "plate",
+          "ribeye steak"
+        ]
+      },
+      {
+        "time_range": "0:12-0:13",
+        "visual_description": "An overhead shot displays all the raw ingredients neatly arranged on a metal tray, including a ribeye steak, mushrooms, a potato, shallots, and chives.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "ribeye steak",
+          "mushrooms",
+          "potato",
+          "shallots",
+          "chives",
+          "metal tray"
+        ]
+      },
+      {
+        "time_range": "0:13-0:15",
+        "visual_description": "The creator oils and salts a potato before placing it into an air fryer, which displays a timer set to 45:00.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "45:00",
+        "key_objects": [
+          "potato",
+          "oil",
+          "salt",
+          "air fryer",
+          "hand"
+        ]
+      },
+      {
+        "time_range": "0:15-0:24",
+        "visual_description": "The creator adds oil to a hot pan on an induction stovetop, then carefully places a raw ribeye steak into the pan to begin searing.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "pan",
+          "oil",
+          "ribeye steak",
+          "induction stovetop",
+          "hand"
+        ]
+      },
+      {
+        "time_range": "0:24-0:33",
+        "visual_description": "The creator flips the steak, revealing a seared crust. Butter, rosemary sprigs, and garlic cloves are added to the pan, and the steak is basted with the melted butter and aromatics.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "ribeye steak",
+          "pan",
+          "spatula",
+          "butter",
+          "rosemary",
+          "garlic",
+          "spoon"
+        ]
+      },
+      {
+        "time_range": "0:33-0:38",
+        "visual_description": "The creator saut\u00e9s finely diced shallots and sliced mushrooms in a pan until they begin to brown.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "pan",
+          "shallots",
+          "mushrooms",
+          "knife",
+          "cutting board"
+        ]
+      },
+      {
+        "time_range": "0:38-0:42",
+        "visual_description": "Minced garlic, black pepper, and salt are added to the saut\u00e9ed mushrooms and shallots in the pan.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "PEPPER",
+        "key_objects": [
+          "pan",
+          "mushrooms",
+          "shallots",
+          "garlic",
+          "black pepper grinder",
+          "salt shaker"
+        ]
+      },
+      {
+        "time_range": "0:42-0:50",
+        "visual_description": "Butter and heavy cream are added to the mushroom mixture, which is then stirred until it thickens into a creamy sauce. Fresh chopped parsley and more black pepper are added for seasoning.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "pan",
+          "mushrooms",
+          "butter",
+          "heavy cream",
+          "parsley",
+          "black pepper grinder",
+          "knife"
+        ]
+      },
+      {
+        "time_range": "0:50-0:57",
+        "visual_description": "The baked potato is cut open, and butter, black pepper, salt, and slices of cheese are added to its fluffy interior. The potato is then placed back into the air fryer.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "baked potato",
+          "butter",
+          "black pepper grinder",
+          "salt shaker",
+          "cheese slices",
+          "fork",
+          "cutting board",
+          "air fryer"
+        ]
+      },
+      {
+        "time_range": "0:57-1:00",
+        "visual_description": "The final dish is presented on a plate, showcasing the medium-rare ribeye steak with mushroom sauce and the golden-brown, cheesy baked potato, garnished with chives.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "ribeye steak",
+          "mushroom sauce",
+          "baked potato",
+          "cheese",
+          "chives",
+          "plate"
+        ]
+      }
+    ],
+    "overall_summary": "This video demonstrates how to prepare a gourmet meal featuring a medium-rare ribeye steak with a creamy mushroom sauce and a cheesy air-fried baked potato. The creator provides step-by-step instructions for cooking both the steak and the mushroom sauce, as well as preparing the potato. A creative serving suggestion is also shown, where the potato skin is used as a 'taco' shell for the steak and sauce, offering a unique way to enjoy the components of the dish.",
+    "people": [
+      {
+        "description": "The creator, a person with light skin and masculine hands, demonstrates cooking techniques for steak, mushroom sauce, and a baked potato. They are actively involved in all cooking steps and plating.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "@2akm1"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Ribeye Steak",
+        "display_name": "Medium-Rare Ribeye Steak",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "caption",
+          "inferred"
+        ],
+        "specifications": "medium-rare doneness",
+        "confidence": 5
+      },
+      {
+        "name": "Mushroom Sauce",
+        "display_name": "Creamy Mushroom Sauce",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "caption",
+          "inferred"
+        ],
+        "specifications": "made with mushrooms, shallots, garlic, butter, heavy cream, salt, black pepper, parsley",
+        "confidence": 5
+      },
+      {
+        "name": "Cheesy Baked Potato",
+        "display_name": "Cheesy Air-Fried Baked Potato",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "caption",
+          "inferred"
+        ],
+        "specifications": "air fried at 200c for 45 minutes, with cheese, butter, salt, pepper",
+        "confidence": 5
+      },
+      {
+        "name": "Potato Skin Taco",
+        "display_name": "Potato Skin Taco",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "caption",
+          "inferred"
+        ],
+        "specifications": "using potato skin as a 'taco' for steak and sauce",
+        "confidence": 4
+      },
+      {
+        "name": "Ribeye Steak",
+        "display_name": "Ribeye Steak",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "caption",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Mushrooms",
+        "display_name": "Mushrooms",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "caption",
+          "metadata"
+        ],
+        "specifications": "250 grams",
+        "confidence": 5
+      },
+      {
+        "name": "Shallot",
+        "display_name": "Shallot",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "caption",
+          "metadata"
+        ],
+        "specifications": "1/2 shallot",
+        "confidence": 5
+      },
+      {
+        "name": "Garlic",
+        "display_name": "Garlic",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "caption",
+          "metadata"
+        ],
+        "specifications": "2 cloves",
+        "confidence": 5
+      },
+      {
+        "name": "Butter",
+        "display_name": "Butter",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "caption",
+          "metadata"
+        ],
+        "specifications": "2 tablespoons (for sauce), additional for steak and potato",
+        "confidence": 5
+      },
+      {
+        "name": "Heavy Cream",
+        "display_name": "Heavy Cream",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "caption",
+          "metadata"
+        ],
+        "specifications": "amount to cover mushrooms",
+        "confidence": 5
+      },
+      {
+        "name": "Salt",
+        "display_name": "Salt",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "caption",
+          "metadata"
+        ],
+        "specifications": "heavily salt outside of potato, to taste for sauce",
+        "confidence": 5
+      },
+      {
+        "name": "Black Pepper",
+        "display_name": "Black Pepper",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "caption",
+          "metadata"
+        ],
+        "specifications": "to taste",
+        "confidence": 5
+      },
+      {
+        "name": "Parsley",
+        "display_name": "Parsley",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "caption",
+          "metadata"
+        ],
+        "specifications": "a handful",
+        "confidence": 5
+      },
+      {
+        "name": "Potato",
+        "display_name": "Potato",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "caption",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Oil",
+        "display_name": "Oil",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "caption",
+          "metadata"
+        ],
+        "specifications": "for potato and pan-searing",
+        "confidence": 5
+      },
+      {
+        "name": "Cheese",
+        "display_name": "Cheese",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "caption",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Rosemary",
+        "display_name": "Rosemary",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Chives",
+        "display_name": "Chives",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Air Fryer",
+        "display_name": "Air Fryer",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "caption"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pan",
+        "display_name": "Frying Pan",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Knife",
+        "display_name": "Chef's Knife",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Fork",
+        "display_name": "Fork",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "rainbow iridescent finish",
+        "confidence": 4
+      },
+      {
+        "name": "Indesit",
+        "display_name": "Indesit Induction Stovetop",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Secrets",
+        "display_name": "Secrets by The Weeknd",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "The Weeknd",
+        "display_name": "The Weeknd",
+        "type": "artist",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "You can create a delicious and visually appealing meal featuring medium-rare ribeye steak, creamy mushroom sauce, and a cheesy baked potato.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "The skin of a baked potato can be creatively repurposed as a 'taco' shell for other ingredients.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "Air frying is an effective method for achieving a crispy-skinned baked potato.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Air Fried Baked Potato",
+          "details": "Get your potato, oil it up, and heavily salt the outside. Place it into the air fryer set at 200c for 45 minutes uncovered. After baking, cut open, add butter, salt, pepper, and cheese slices, then return to air fryer briefly to melt cheese."
+        },
+        {
+          "name": "Mushroom Sauce",
+          "details": "Ingredients: 1 packet of mushroom (250 grams), 1/2 shallot, 2 cloves of garlic, 2 tablespoons of butter, heavy cream (to cover mushrooms), salt and black pepper, a handful of parsley. Instructions: Saut\u00e9 shallots and mushrooms. Add garlic, salt, and pepper. Add butter and heavy cream, simmer until thickened. Stir in chopped parsley."
+        },
+        {
+          "name": "Medium-Rare Ribeye Steak",
+          "details": "Season and sear ribeye steak in a hot pan. Flip, then add butter, rosemary, and garlic. Baste the steak with the melted butter and aromatics until desired doneness (medium-rare shown)."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Secrets \u2014 The Weeknd",
+      "metadata_song": "Secret",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The metadata song 'Secret' is very close to the actual song 'Secrets' by The Weeknd, likely a shortened title or a remix/sped-up version."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "overhead|static|handheld",
+      "editing_style": "jump_cuts|minimal"
+    },
+    "visual_mood": "Appetizing, instructional, satisfying, high-energy due to quick cuts and music.",
+    "topic_hints": [
+      "Cooking",
+      "Steak Recipe",
+      "Home Cooking"
+    ],
+    "affect_hints": [
+      "Hungry",
+      "Inspired",
+      "Satisfied"
+    ],
+    "genre_hints": [
+      "Cooking Tutorial",
+      "Food Porn",
+      "Recipe Video"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 19290,
+    "output_tokens": 4585,
+    "total_tokens": 23875,
+    "cost_usd": 0.005645,
+    "latency_ms": 34088,
+    "upload_ms": 5562
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

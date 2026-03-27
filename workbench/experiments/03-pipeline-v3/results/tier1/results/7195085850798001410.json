@@ -1,0 +1,52 @@
+{
+  "item_id": "7195085850798001410",
+  "parsed_output": {
+    "summary": "This 'hopecore' compilation features triumphant moments from actress Julia Roberts, NBA champion Stephen Curry, and basketball star Luka Don\u010di\u0107. Users would save this for emotional uplift and motivation, as it pairs these high-achievement clips with Frank Sinatra's 'My Way.'",
+    "entities": [
+      {
+        "name": "Julia Roberts",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Stephen Curry",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Luka Don\u010di\u0107",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Frank Sinatra",
+        "type": "artist",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Golden State Warriors",
+        "type": "brand",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "other",
+      "secondary": "sports"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "inspiring",
+      "secondary": "nostalgic"
+    },
+    "viewer_orientation": "emotional_regulation",
+    "embedding_text": "A 48-second 'hopecore' and 'corecore' compilation edit by @2ceeblok that features a series of inspiring and triumphant clips from sports and entertainment. The video includes Julia Roberts at an awards ceremony, Golden State Warriors' Stephen Curry celebrating an NBA championship in the locker room with goggles and a cigar, and Luka Don\u010di\u0107 of the Dallas Mavericks in action on the court. The montage is set to the 2008 remastered version of 'My Way' by Frank Sinatra, creating a nostalgic and uplifting atmosphere. This type of content is designed for emotional regulation, providing a 'hopeful' outlook through a collection of high-achievement moments. It is a classic example of the 'hopetok' trend, focusing on human resilience and the joy of success. Key visual elements include the Michelob Ultra branding in the Warriors' locker room and Don\u010di\u0107's number 77 jersey."
+  },
+  "metrics": {
+    "input_tokens": 4260,
+    "output_tokens": 502,
+    "total_tokens": 4762,
+    "cost_usd": 0.00094,
+    "latency_ms": 12233,
+    "keyframe_count": 3
+  }
+}

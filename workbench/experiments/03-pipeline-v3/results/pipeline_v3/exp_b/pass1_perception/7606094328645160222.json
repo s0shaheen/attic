@@ -1,0 +1,221 @@
+{
+  "item_id": "7606094328645160222",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:48:27.724925+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:20",
+        "visual_description": "The creator, a young man, stands in a room with blinds and a computer monitor in the background, speaking directly to the camera. He gestures with a pen as he introduces his challenge.",
+        "audio_description": "The creator announces his goal to build six startups in six months, acknowledging the high likelihood of failure but expressing optimism that things can only improve from there. He also mentions he will be doing this while running a full-time web agency.",
+        "text_on_screen": "Day 1\n6 start ups in 6 months\nhere we go I'm building six startups in six months\nand honestly it doesn't matter what will happen\neither these are gonna do well or they're gonna fail\nmy hope is they do well you know that's why I'm showing to everybody\nso I'm expecting they will fail so it can only go up from here\nI'm gonna be doing all this while still running a full time web agency\nso it's gonna be a lot of hours",
+        "key_objects": [
+          "laptop",
+          "computer monitor",
+          "AirPods",
+          "pen"
+        ]
+      },
+      {
+        "time_range": "0:20-0:53",
+        "visual_description": "The creator continues to speak to the camera, explaining his first software idea. He uses hand gestures to emphasize points about saving content from various platforms.",
+        "audio_description": "The creator introduces his first software idea, 'Save Drop,' which aims to be a unified app for saving content from different sources like Instagram, TikTok, and Google, addressing the current fragmentation of saving mechanisms.",
+        "text_on_screen": "first software idea of the month\nsave drop that's a working title\num essentially you have an Instagram video you have to save\nyou have a TikTok video\nyou have a restaurant that your mom sent you off of google\nand you want to save it what do you do with all these right\nwe have bookmarks on safari\nwe have arcade or we have a collections on instagram\nall these different places to save things\nbut not one unified app that connects everything\nthat's where my solution comes in\nso it's going to you know share click the app saves it and that's basically the gist of it\nso that is idea number one",
+        "key_objects": [
+          "laptop",
+          "computer monitor",
+          "AirPods",
+          "pen"
+        ]
+      }
+    ],
+    "overall_summary": "This video marks 'Day 1' of the creator's ambitious journey to build six startups in six months, all while managing a full-time web agency. He expresses a realistic expectation of failure but maintains an optimistic outlook. The creator then introduces his first software idea, tentatively named 'Save Drop,' which aims to solve the problem of fragmented content saving across various platforms like Instagram, TikTok, and Google by providing a single, unified application for users to store all their saved items.",
+    "people": [
+      {
+        "description": "A young man with short brown hair, wearing a light-colored button-up shirt and white AirPods. He is enthusiastic and articulate, speaking directly to the camera.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@drewsimic_"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Save Drop",
+        "display_name": "Save Drop (Software Idea)",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "A unified app for saving content from various platforms like Instagram, TikTok, and Google.",
+        "confidence": 5
+      },
+      {
+        "name": "Instagram",
+        "display_name": "Instagram",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "TikTok",
+        "display_name": "TikTok",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Google",
+        "display_name": "Google",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Safari",
+        "display_name": "Safari",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Ethereal Glow",
+        "display_name": "Ethereal Glow",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "SaaS",
+        "display_name": "SaaS (Software as a Service)",
+        "type": "technique",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Startup",
+        "display_name": "Startup",
+        "type": "trend_or_meme",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Vibecoding",
+        "display_name": "Vibecoding",
+        "type": "trend_or_meme",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The creator is embarking on an ambitious journey to launch six startups in six months, embracing the high probability of failure as a stepping stone for growth.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "There is a need for a unified application to save and organize content from various online platforms, as current methods are fragmented and inefficient.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Building 6 Startups in 6 Months",
+          "details": "Day 1 of the journey, while also running a full-time web agency."
+        },
+        {
+          "name": "Save Drop App Idea",
+          "details": "A unified app to save content from Instagram, TikTok, Google, and other platforms, addressing the issue of scattered bookmarks and collections."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Ethereal Glow",
+      "metadata_song": "Ethereal Glow",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "All key entities and audio were clearly identifiable from the video and metadata."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Determined, enthusiastic, informative, focused",
+    "topic_hints": [
+      "Entrepreneurship",
+      "Software Development",
+      "Productivity"
+    ],
+    "affect_hints": [
+      "Motivating",
+      "Inspiring",
+      "Informative"
+    ],
+    "genre_hints": [
+      "Entrepreneurial Journey",
+      "Tech Explanation",
+      "Personal Vlog"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 17435,
+    "output_tokens": 1937,
+    "total_tokens": 19372,
+    "cost_usd": 0.003777,
+    "latency_ms": 25615,
+    "upload_ms": 8024
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

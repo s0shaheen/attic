@@ -1,0 +1,183 @@
+{
+  "item_id": "7589665107995528478",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:20:33.523285+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:15",
+        "visual_description": "A four-piece high school band performs on a track field at night in front of bleachers. The guitarist begins the iconic riff of 'Rapp Snitch Knishes'.",
+        "audio_description": "The opening guitar melody of MF DOOM's 'Rapp Snitch Knishes' begins, accompanied by drums and bass.",
+        "text_on_screen": "High school band crushes MF Doom's \u201cRapp Snitch Knishes\u201d",
+        "key_objects": [
+          "Electric guitar",
+          "Bass guitar",
+          "Yamaha drum kit",
+          "Keyboard",
+          "Amplifiers",
+          "Microphones"
+        ]
+      },
+      {
+        "time_range": "0:15-1:10",
+        "visual_description": "The band continues the instrumental cover with the guitarist playing the lead melody. The drummer and bassist maintain a steady hip-hop groove.",
+        "audio_description": "Instrumental performance of the song's main loop with live drum fills and bass accents.",
+        "text_on_screen": "High school band crushes MF Doom's \u201cRapp Snitch Knishes\u201d",
+        "key_objects": [
+          "Fender-style guitar",
+          "Yamaha drums"
+        ]
+      },
+      {
+        "time_range": "1:10-2:00",
+        "visual_description": "The guitarist becomes more expressive, leaning into the solo sections. The crowd in the background can be seen watching from the stands.",
+        "audio_description": "The music builds in intensity; the guitarist adds more flair to the performance. Background cheering is audible.",
+        "text_on_screen": "High school band crushes MF Doom's \u201cRapp Snitch Knishes\u201d",
+        "key_objects": [
+          "Guitar pedals"
+        ]
+      },
+      {
+        "time_range": "2:00-2:20",
+        "visual_description": "The band reaches the climax of the song and finishes the performance. The guitarist looks toward the other members to coordinate the ending.",
+        "audio_description": "The song concludes with a final sustained note and loud cheering and whistling from the audience.",
+        "text_on_screen": "High school band crushes MF Doom's \u201cRapp Snitch Knishes\u201d",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "A talented four-piece high school band performs a live, instrumental cover of MF DOOM's 'Rapp Snitch Knishes' on a school track field at night. The band, consisting of a lead guitarist, bassist, drummer, and keyboardist, delivers a technically impressive and faithful rendition of the hip-hop classic. The performance is met with enthusiastic cheers from the audience in the bleachers. The video serves as a tribute to the late rapper's musical influence on younger generations.",
+    "people": [
+      {
+        "description": "Lead guitarist, young male in a grey shirt and jeans, playing the main melody.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Drummer, young male with long curly hair, playing a Yamaha kit.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Bassist, young male in a black t-shirt, providing the rhythm section.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Keyboardist, young male in a blue patterned shirt, adding melodic layers.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "MF DOOM",
+        "display_name": "MF DOOM",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Rapp Snitch Knishes",
+        "display_name": "Rapp Snitch Knishes",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "audio"
+        ],
+        "specifications": "from the album MM..FOOD",
+        "confidence": 5
+      },
+      {
+        "name": "Yamaha",
+        "display_name": "Yamaha Drums",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Drum kit",
+        "confidence": 4
+      },
+      {
+        "name": "Spin",
+        "display_name": "Spin Magazine",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": "Media outlet",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "High school musicians are capable of performing complex hip-hop arrangements with high technical proficiency.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "MF DOOM's musical legacy continues to resonate with and inspire younger generations of musicians.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Rapp Snitch Knishes \u2014 MF DOOM",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The song is a very recognizable instrumental cover of the MF DOOM track mentioned in the text overlay."
+    },
+    "presentation_style": {
+      "primary_format": "other",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Energetic, impressive, and nostalgic for hip-hop fans.",
+    "topic_hints": [
+      "Live Music",
+      "MF DOOM",
+      "High School Band"
+    ],
+    "affect_hints": [
+      "Impressed",
+      "Nostalgic",
+      "Hyped"
+    ],
+    "genre_hints": [
+      "Music Performance",
+      "Cover Video"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 13962,
+    "output_tokens": 1591,
+    "total_tokens": 15553,
+    "cost_usd": 0.003049,
+    "latency_ms": 30085,
+    "upload_ms": 8132
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

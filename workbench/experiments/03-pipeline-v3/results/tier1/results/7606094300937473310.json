@@ -1,0 +1,52 @@
+{
+  "item_id": "7606094300937473310",
+  "parsed_output": {
+    "summary": "Daniel Lubetzky reacts to a viral video of Muhammad Kaif, a Muslim Indian teenager who refuses to be baited into divisive rhetoric about Pakistan by an interviewer. The video highlights Kaif's message of unity and national pride without hatred for neighbors, serving as a lesson against social division.",
+    "entities": [
+      {
+        "name": "Muhammad Kaif",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Daniel Lubetzky",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "India",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Pakistan",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Do the KIND Thing",
+        "type": "book",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "news",
+      "secondary": "politics"
+    },
+    "genre": "news_commentary",
+    "affect": {
+      "dominant": "inspiring",
+      "secondary": "wholesome"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "Daniel Lubetzky (@daniellubetzky) provides a news commentary on a viral interview featuring Muhammad Kaif, a Muslim teenager living in India. In the original clip, an interviewer attempts to provoke Kaif with divisive questions about whether Pakistan should be destroyed or if he is ashamed to live in India. Kaif refuses to engage in 'us vs. them' rhetoric, instead expressing pride in his Indian citizenship while wishing well for his neighbors. Lubetzky uses this as 'A Simple Lesson Against Division,' emphasizing the importance of being 'a human above all.' The video is a split-screen reaction where Lubetzky watches the footage on his phone. On the shelf behind him, his book 'Do the KIND Thing' and various KIND snack products are visible. This content is an example of the #beabuilder movement, promoting unity over religious or nationalistic conflict."
+  },
+  "metrics": {
+    "input_tokens": 4352,
+    "output_tokens": 502,
+    "total_tokens": 4854,
+    "cost_usd": 0.000954,
+    "latency_ms": 7953,
+    "keyframe_count": 3
+  }
+}

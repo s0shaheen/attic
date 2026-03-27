@@ -1,0 +1,76 @@
+{
+  "item_id": "7211226580587269381",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:48.206477+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "travel",
+      "secondary": "food",
+      "micro_labels": [
+        "Amsterdam",
+        "coffeeshop culture",
+        "cannabis",
+        "edibles",
+        "travel recommendation"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "review",
+      "micro_labels": [
+        "travel vlog",
+        "place recommendation"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "relaxing",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "text_overlay",
+      "cinematic"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6476,
+    "output_tokens": 348,
+    "total_tokens": 6824,
+    "cost_usd": 0.00118,
+    "latency_ms": 7858,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 3
+  }
+}

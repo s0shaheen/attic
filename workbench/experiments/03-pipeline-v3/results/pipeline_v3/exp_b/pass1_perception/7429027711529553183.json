@@ -1,0 +1,585 @@
+{
+  "item_id": "7429027711529553183",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:52:35.209286+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A young man with curly brown hair, wearing a dark blue shirt, speaks directly into a black Rode microphone.",
+        "audio_description": "The creator introduces the concept of 'movies to meditate to'.",
+        "text_on_screen": "Movies to Meditate To",
+        "key_objects": [
+          "Rode microphone"
+        ]
+      },
+      {
+        "time_range": "0:01-0:02",
+        "visual_description": "A clip from 'It's a Wonderful Life' shows James Stewart looking contemplative.",
+        "audio_description": "The creator continues speaking about a film that 'slipped under the cracks'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "James Stewart"
+        ]
+      },
+      {
+        "time_range": "0:02-0:03",
+        "visual_description": "The creator is shown again, speaking into the microphone.",
+        "audio_description": "The creator describes the film as one of the 'most beautiful films to come out in the past decade'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Rode microphone"
+        ]
+      },
+      {
+        "time_range": "0:03-0:05",
+        "visual_description": "A clip from 'Inception' shows two silhouetted figures falling through a square tunnel, with briefcases floating around them.",
+        "audio_description": "The creator states that 'no one ever talks about this film'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "briefcases"
+        ]
+      },
+      {
+        "time_range": "0:05-0:06",
+        "visual_description": "A silhouetted figure stands against a white background, raising one hand.",
+        "audio_description": "The creator explains that it's okay that the film isn't widely discussed.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:06-0:07",
+        "visual_description": "A close-up of Emma Stone's face, appearing tearful, with a green background.",
+        "audio_description": "The creator describes the film as a 'gem of storytelling'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Emma Stone"
+        ]
+      },
+      {
+        "time_range": "0:07-0:08",
+        "visual_description": "A close-up of Ryan Gosling's face, looking upwards with a pensive expression.",
+        "audio_description": "The creator praises the film's cinematography, noting 'every frame is shot in this gorgeous natural light'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Ryan Gosling"
+        ]
+      },
+      {
+        "time_range": "0:08-0:10",
+        "visual_description": "The creator is shown again, speaking into the microphone.",
+        "audio_description": "The creator reiterates that 'no one ever, ever talks about this film'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Rode microphone"
+        ]
+      },
+      {
+        "time_range": "0:10-0:11",
+        "visual_description": "A shot from behind a person's head, looking up at a wooden beam, with blurred greenery in the background.",
+        "audio_description": "The creator continues to discuss the film's underrated status.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:11-0:13",
+        "visual_description": "A close-up of Ryan Gosling with blonde hair, a cigarette in his mouth, and a tear-like tattoo on his face, looking upwards.",
+        "audio_description": "The creator states that the film 'remains a gem of storytelling'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Ryan Gosling",
+          "cigarette"
+        ]
+      },
+      {
+        "time_range": "0:13-0:14",
+        "visual_description": "The creator is shown again, speaking into the microphone.",
+        "audio_description": "The creator emphasizes the film's visual quality.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Rode microphone"
+        ]
+      },
+      {
+        "time_range": "0:14-0:15",
+        "visual_description": "A close-up of Matthew McConaughey with curly hair and a beard, looking weathered.",
+        "audio_description": "The creator describes the film as 'addicting to observe'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Matthew McConaughey"
+        ]
+      },
+      {
+        "time_range": "0:15-0:16",
+        "visual_description": "Emma Stone is shown with her eyes closed, bathed in red light, wearing a necklace.",
+        "audio_description": "The creator calls the film a 'meditation of sight and sound'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Emma Stone",
+          "necklace"
+        ]
+      },
+      {
+        "time_range": "0:16-0:18",
+        "visual_description": "Rosamund Pike, wearing a patterned dress and a wide-brimmed hat, looks distressed in a desert landscape.",
+        "audio_description": "The creator praises the acting as 'intoxicating'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Rosamund Pike",
+          "hat"
+        ]
+      },
+      {
+        "time_range": "0:18-0:19",
+        "visual_description": "Rosamund Pike and Christian Bale sit in a grassy field, looking up at the sky.",
+        "audio_description": "The creator highlights a 'prime Christian Bale' performance.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Rosamund Pike",
+          "Christian Bale"
+        ]
+      },
+      {
+        "time_range": "0:19-0:20",
+        "visual_description": "Silhouettes of people on horseback ride across a ridge against a sunset backdrop.",
+        "audio_description": "The creator describes Christian Bale's character as a 'damaged yet inherently good human being'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "horses"
+        ]
+      },
+      {
+        "time_range": "0:20-0:21",
+        "visual_description": "Christian Bale, in military attire, rides a horse and looks down with a pensive expression.",
+        "audio_description": "The creator explains the character is 'ruminating on the fragility of life'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Christian Bale",
+          "horse"
+        ]
+      },
+      {
+        "time_range": "0:21-0:23",
+        "visual_description": "A person on horseback rides through a misty forest.",
+        "audio_description": "The creator mentions 'the inevitability of death and the burden of past sins'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "horse"
+        ]
+      },
+      {
+        "time_range": "0:23-0:25",
+        "visual_description": "A close-up of a man's face, wet with rain or tears, looking upwards with a beard.",
+        "audio_description": "The creator describes the acting as 'intoxicating'.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:25-0:26",
+        "visual_description": "The creator is shown again, speaking into the microphone.",
+        "audio_description": "The creator reiterates the quality of Christian Bale's performance.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Rode microphone"
+        ]
+      },
+      {
+        "time_range": "0:26-0:27",
+        "visual_description": "Christian Bale, with a mustache and beard, looks down with a somber expression.",
+        "audio_description": "The creator describes Christian Bale's character.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Christian Bale"
+        ]
+      },
+      {
+        "time_range": "0:27-0:30",
+        "visual_description": "Christian Bale screams upwards, his face contorted in anguish, against a cloudy sky.",
+        "audio_description": "The creator continues to describe the character's internal struggles.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Christian Bale"
+        ]
+      },
+      {
+        "time_range": "0:30-0:33",
+        "visual_description": "Christian Bale looks down, appearing deeply distressed, with a beard and mustache.",
+        "audio_description": "The creator talks about the character ruminating on life, death, and past sins.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Christian Bale"
+        ]
+      },
+      {
+        "time_range": "0:33-0:34",
+        "visual_description": "The creator is shown again, speaking into the microphone.",
+        "audio_description": "The creator encourages viewers to 'gradually open your heart' while watching.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Rode microphone"
+        ]
+      },
+      {
+        "time_range": "0:34-0:36",
+        "visual_description": "A man with dark skin and a beard lies in bed, crying, with tears visible on his face.",
+        "audio_description": "The creator suggests the film offers a 'quiet remedy for the soul'.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:36-0:38",
+        "visual_description": "Christian Bale, in military attire, looks directly at the camera with a solemn expression.",
+        "audio_description": "The creator continues to describe the film's healing qualities.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Christian Bale"
+        ]
+      },
+      {
+        "time_range": "0:38-0:41",
+        "visual_description": "Christian Bale stands in a vast, golden field with snow-capped mountains in the background, looking around.",
+        "audio_description": "The creator encourages viewers to open their hearts and find remedy for the soul.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Christian Bale",
+          "mountains"
+        ]
+      },
+      {
+        "time_range": "0:41-0:42",
+        "visual_description": "The creator is shown again, speaking into the microphone.",
+        "audio_description": "The creator reiterates the film's ability to heal.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Rode microphone"
+        ]
+      },
+      {
+        "time_range": "0:42-0:43",
+        "visual_description": "Christian Bale looks down, his face showing deep emotion.",
+        "audio_description": "The creator continues speaking.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Christian Bale"
+        ]
+      },
+      {
+        "time_range": "0:43-0:44",
+        "visual_description": "A silhouette of a person stands on a hill, looking out at a mountain range during sunset.",
+        "audio_description": "The creator concludes his recommendation.",
+        "text_on_screen": null,
+        "key_objects": [
+          "mountains"
+        ]
+      },
+      {
+        "time_range": "0:44-0:46",
+        "visual_description": "The creator is shown again, speaking into the microphone.",
+        "audio_description": "The creator concludes by saying the film offers a 'quiet remedy for the soul'.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Rode microphone"
+        ]
+      },
+      {
+        "time_range": "0:46-0:49",
+        "visual_description": "A silhouette of a person stands in a vast, arid landscape under a cloudy sky, looking away. The title of the movie appears.",
+        "audio_description": "A female voice whispers 'Sometimes I need the finality of death'.",
+        "text_on_screen": "H O S T I L E S",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:49-0:50",
+        "visual_description": "The text 'H O S T I L E S' remains on screen over the landscape.",
+        "audio_description": "The female voice continues to whisper.",
+        "text_on_screen": "H O S T I L E S",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video features a content creator recommending the film 'Hostiles' as a movie for meditation and healing. He highlights its overlooked status, beautiful cinematography, and intoxicating performances, particularly by Christian Bale. The creator describes the film as a 'gem of storytelling' that explores themes of life's fragility, the inevitability of death, and the burden of past sins, ultimately offering a 'quiet remedy for the soul'. Interspersed with the creator's commentary are clips from 'Hostiles' and other notable films like 'It's a Wonderful Life', 'Inception', 'La La Land', 'The Place Beyond the Pines', and 'Interstellar'.",
+    "people": [
+      {
+        "description": "A young man with curly brown hair, wearing a dark blue collared shirt, speaking into a microphone. He is the host and recommender.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@parr.ott"
+      },
+      {
+        "description": "An older white male actor with wavy brown hair, wearing a suit and tie, appearing in a black and white film clip.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "James Stewart"
+      },
+      {
+        "description": "A white female actor with reddish-blonde hair, appearing tearful and later with eyes closed under red lighting.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Emma Stone"
+      },
+      {
+        "description": "A white male actor with light brown hair and a beard, appearing pensive and later with a cigarette and tear tattoo.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Ryan Gosling"
+      },
+      {
+        "description": "A white male actor with long, curly brown hair and a beard, appearing weathered.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Matthew McConaughey"
+      },
+      {
+        "description": "A white female actor with blonde hair, wearing a patterned dress and a wide-brimmed hat, appearing distressed and later sitting in a field.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Rosamund Pike"
+      },
+      {
+        "description": "A white male actor with dark hair, a mustache, and a beard, appearing in military attire, distressed, screaming, and contemplative in various outdoor settings.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Christian Bale"
+      },
+      {
+        "description": "A Black male actor with a beard, lying in bed and crying.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Hostiles",
+        "display_name": "Hostiles (2017 film)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "It's a Wonderful Life",
+        "display_name": "It's a Wonderful Life (1946 film)",
+        "type": "movie_or_show",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Inception",
+        "display_name": "Inception (2010 film)",
+        "type": "movie_or_show",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "La La Land",
+        "display_name": "La La Land (2016 film)",
+        "type": "movie_or_show",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Place Beyond the Pines",
+        "display_name": "The Place Beyond the Pines (2012 film)",
+        "type": "movie_or_show",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Interstellar",
+        "display_name": "Interstellar (2014 film)",
+        "type": "movie_or_show",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "James Stewart",
+        "display_name": "James Stewart",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Emma Stone",
+        "display_name": "Emma Stone",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Ryan Gosling",
+        "display_name": "Ryan Gosling",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Matthew McConaughey",
+        "display_name": "Matthew McConaughey",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Rosamund Pike",
+        "display_name": "Rosamund Pike",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Christian Bale",
+        "display_name": "Christian Bale",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Rode",
+        "display_name": "Rode (microphone brand)",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The film 'Hostiles' is an underrated cinematic gem that offers a meditative and healing experience for the soul.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "'Hostiles' features intoxicating acting, particularly by Christian Bale, and stunning natural cinematography.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The movie 'Hostiles' explores profound themes of life's fragility, the inevitability of death, and the burden of past sins.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Hostiles",
+          "details": "Recommended for meditation and healing, praised for its storytelling, cinematography, and Christian Bale's performance."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": false,
+      "notes": "The background music is ambient and subtle, making specific song identification difficult. The other movie clips are inferred based on recognizable actors and scenes, but not explicitly named by the creator beyond 'Hostiles'."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Reflective, melancholic, dramatic, serene, contemplative",
+    "topic_hints": [
+      "Film recommendation",
+      "Film analysis",
+      "Existential themes"
+    ],
+    "affect_hints": [
+      "Thought-provoking",
+      "Emotional",
+      "Calming",
+      "Somber",
+      "Inspiring"
+    ],
+    "genre_hints": [
+      "Film review",
+      "Recommendation",
+      "Personal reflection"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 16207,
+    "output_tokens": 5316,
+    "total_tokens": 21523,
+    "cost_usd": 0.005621,
+    "latency_ms": 39682,
+    "upload_ms": 7599
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

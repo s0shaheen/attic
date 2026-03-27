@@ -1,0 +1,447 @@
+{
+  "item_id": "7176414425530764586",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:46:51.552441+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:09",
+        "visual_description": "A man with long blonde hair and a beard, wearing a colorful floral shirt and headphones, is seated in a podcast studio, speaking into a microphone. Dark curtains are visible in the background.",
+        "audio_description": "A man speaks, saying, \"I don't get nervous. Like these things like I'm I'm able to just uh almost disassociate. Like whatever. Just go into any situation.\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "microphone",
+          "headphones",
+          "floral shirt"
+        ]
+      },
+      {
+        "time_range": "0:09-0:14",
+        "visual_description": "A dark, close-up shot of a man's head, looking down, appearing distressed or crying. The lighting is dim with a yellowish-green tint.",
+        "audio_description": "Melancholic, distorted instrumental music with a slow, heavy beat begins.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:14-0:19",
+        "visual_description": "An animated scene from Family Guy shows Meg Griffin sitting on a purple couch, expressing distress to Brian Griffin, who is also seated on the couch.",
+        "audio_description": "Meg Griffin says, \"Why don't I just kill myself?\" Brian Griffin responds, \"Oh, that's...\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "Meg Griffin",
+          "Brian Griffin",
+          "purple couch"
+        ]
+      },
+      {
+        "time_range": "0:19-0:23",
+        "visual_description": "A young boy in a black cap and a brown jacket looks up at a woman's legs and feet, clad in dark pants and red and white shoes, walking away from him on a stone wall. Green grass is in the background.",
+        "audio_description": "The melancholic instrumental music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "stone wall"
+        ]
+      },
+      {
+        "time_range": "0:23-0:31",
+        "visual_description": "A close-up of the young boy, wearing a black beret and a green coat, crying with tears visible on his face, while holding onto a green pole or object.",
+        "audio_description": "The melancholic instrumental music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "green pole"
+        ]
+      },
+      {
+        "time_range": "0:31-0:36",
+        "visual_description": "Two people, a man and a woman, are seen from behind, sitting on folding chairs in a dimly lit room, watching the previous scene of the crying boy on a television screen.",
+        "audio_description": "The melancholic instrumental music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "television",
+          "folding chairs",
+          "window blinds"
+        ]
+      },
+      {
+        "time_range": "0:36-0:41",
+        "visual_description": "The man and woman continue watching television. The screen now displays an Arby's commercial featuring images of various sandwiches and the Arby's logo. The man and woman reach out and hold hands.",
+        "audio_description": "The melancholic instrumental music continues.",
+        "text_on_screen": "Arby's, SMOKEHOUSE, Brisket, Crispy Onion Straws, Cheddar Cheese, BBQ Sauce",
+        "key_objects": [
+          "television",
+          "Arby's logo",
+          "Arby's sandwiches"
+        ]
+      },
+      {
+        "time_range": "0:41-0:51",
+        "visual_description": "Rapid cuts show a man in a suit falling, struggling, and being attacked in a dark, green-lit environment, suggesting a violent fight scene.",
+        "audio_description": "The melancholic instrumental music continues, accompanied by sounds of struggle and muffled shouting, including \"Fucking kill me! Fucking kill me!\"",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:51-1:02",
+        "visual_description": "A man, likely Ryan Gosling's character from the movie Drive, is driving a car at night in the rain, looking serious and intense. Another man is visible in the passenger seat.",
+        "audio_description": "The melancholic instrumental music continues. Dialogue: \"You would have died right now, how would you feel about your life?\" \"I don't know, I wouldn't feel anything good about my life.\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "car interior",
+          "steering wheel"
+        ]
+      },
+      {
+        "time_range": "1:02-1:08",
+        "visual_description": "A close-up of a man, likely Robert De Niro's character from the movie Taxi Driver, smiling slightly with a thoughtful or troubled expression.",
+        "audio_description": "The melancholic instrumental music continues. Dialogue: \"You got some bad ideas in my head, I just...\"",
+        "text_on_screen": "",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a \"corecore\" edit, characterized by rapid, often jarring cuts of seemingly unrelated media clips, set to melancholic music, to evoke a sense of existential dread or societal critique. It features clips from a podcast with Bobby Lee, a dramatic film scene of a man crying, an animated clip from Family Guy, a child crying, a couple watching an Arby's commercial, a violent fight scene, a scene from a movie with a man driving in the rain (likely Drive), and a close-up of Robert De Niro (likely from Taxi Driver). The video's main point is to create a disorienting and emotionally charged experience, reflecting on themes of despair, consumerism, and the human condition through fragmented media.",
+    "people": [
+      {
+        "description": "A man with long blonde hair and a beard, wearing a colorful floral shirt and headphones, speaking into a microphone.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Bobby Lee"
+      },
+      {
+        "description": "An animated female character with brown hair and a pink hat, sitting on a couch, appearing distressed.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Meg Griffin"
+      },
+      {
+        "description": "An animated white dog character, sitting on a couch, listening.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Brian Griffin"
+      },
+      {
+        "description": "A young boy in a black cap/beret and a green/brown jacket, crying.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A man seen from behind, sitting on a folding chair, watching TV, holding hands with a woman.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A woman seen from behind, sitting on a folding chair, watching TV, holding hands with a man.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A man in a suit, engaged in a violent struggle.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "A man with short dark hair, driving a car at night in the rain, looking intense.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Ryan Gosling"
+      },
+      {
+        "description": "A man with dark hair, in a car, in the passenger seat.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A man with dark hair, smiling slightly with a thoughtful or troubled expression.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Robert De Niro"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Bobby Lee",
+        "display_name": "Bobby Lee",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Joe Rogan Experience",
+        "display_name": "The Joe Rogan Experience podcast",
+        "type": "podcast",
+        "relevance": "supporting",
+        "source": [
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Family Guy",
+        "display_name": "Family Guy",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Meg Griffin",
+        "display_name": "Meg Griffin from Family Guy",
+        "type": "character",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Brian Griffin",
+        "display_name": "Brian Griffin from Family Guy",
+        "type": "character",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Arby's",
+        "display_name": "Arby's",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Arby's Smokehouse",
+        "display_name": "Arby's Smokehouse Sandwich",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Brisket",
+        "display_name": "Brisket",
+        "type": "ingredient",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Crispy Onion Straws",
+        "display_name": "Crispy Onion Straws",
+        "type": "ingredient",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Cheddar Cheese",
+        "display_name": "Cheddar Cheese",
+        "type": "ingredient",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "BBQ Sauce",
+        "display_name": "BBQ Sauce",
+        "type": "ingredient",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Drive",
+        "display_name": "Drive (2011 film)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Ryan Gosling",
+        "display_name": "Ryan Gosling",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Taxi Driver",
+        "display_name": "Taxi Driver (1976 film)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Robert De Niro",
+        "display_name": "Robert De Niro",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Corecore",
+        "display_name": "Corecore",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Nichetok",
+        "display_name": "Nichetok",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pinkcore",
+        "display_name": "Pinkcore",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video explores themes of despair, anxiety, and the overwhelming nature of modern existence, juxtaposing personal struggle with pop culture and consumerism.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "The fragmented media and melancholic music create a disorienting and emotionally charged experience, suggesting a sense of nihilism or emotional numbness.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "It's Just a Burning Memory \u2014 The Caretaker",
+      "metadata_song": "original sound - petscoop 2",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Specific movie scenes for the crying boy, fighting man, and couple watching TV are not explicitly identified, but their emotional context is clear. The actual song identification is a strong inference based on the audio characteristics and common usage in 'corecore' edits, as it differs from the provided metadata."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "static|handheld|transitions",
+      "editing_style": "jump_cuts|heavy_effects"
+    },
+    "visual_mood": "dark, melancholic, unsettling, anxious, despairing, cynical",
+    "topic_hints": [
+      "existentialism",
+      "mental health",
+      "media consumption",
+      "societal critique"
+    ],
+    "affect_hints": [
+      "sadness",
+      "anxiety",
+      "hopelessness",
+      "confusion",
+      "detachment"
+    ],
+    "genre_hints": [
+      "corecore",
+      "internet aesthetic",
+      "social commentary",
+      "experimental video"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 21555,
+    "output_tokens": 3762,
+    "total_tokens": 25317,
+    "cost_usd": 0.00549,
+    "latency_ms": 36809,
+    "upload_ms": 6120
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

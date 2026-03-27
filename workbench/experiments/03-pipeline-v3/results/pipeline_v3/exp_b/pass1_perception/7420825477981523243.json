@@ -1,0 +1,305 @@
+{
+  "item_id": "7420825477981523243",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:53:38.338257+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-6:46",
+        "visual_description": "A man with a beard and short dark hair, wearing a black t-shirt, lies on a pillow and speaks directly to the camera. He occasionally uses hand gestures to emphasize his points. The lighting is dim with purple hues.",
+        "audio_description": "The creator discusses the decline of OpenAI, citing the departure of key talent like Andrej Karpathy and the commoditization of large language models. He mentions the 'Attention Is All You Need' paper, GPT-3, GPT-4, and Llama 3, arguing that open-source alternatives are already superior. He also talks about the shift in AI focus to 'tooling' and 'agents' and advises against investing in OpenAI, suggesting Facebook (Meta) and Nvidia instead.",
+        "text_on_screen": "Replying to @_daniloc what's the leadership talent threshold beneath which OpenAI loses the juice? are they approaching it soon?, As someone who spent three years at OpenAI, they are already in decline.",
+        "key_objects": [
+          "pillow"
+        ]
+      }
+    ],
+    "overall_summary": "The creator argues that OpenAI is already in decline, primarily due to the departure of crucial talent like Andrej Karpathy, who was foundational to their early success with transformer models. He contends that the core technology of large language models (LLMs) has become commoditized, with open-source alternatives like Llama 3 now surpassing OpenAI's offerings in performance and accessibility. The video suggests that the next frontier in AI is 'tooling' and 'agents,' an area where OpenAI lacks a unique advantage. He advises against investing in OpenAI, believing their time is over, and instead recommends companies like Facebook (Meta) and Nvidia.",
+    "people": [
+      {
+        "description": "A man with a beard and short dark hair, wearing a black t-shirt, lying on a pillow and speaking directly to the camera. He is the creator of the video and is expressing his opinions on OpenAI.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "OpenAI",
+        "display_name": "OpenAI",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Andrej Karpathy",
+        "display_name": "Andrej Karpathy",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Head of AI at Tesla, co-founder of OpenAI",
+        "confidence": 5
+      },
+      {
+        "name": "Tesla",
+        "display_name": "Tesla",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Google",
+        "display_name": "Google",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Attention Is All You Need",
+        "display_name": "Attention Is All You Need (research paper)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "GPT-3",
+        "display_name": "GPT-3",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "GPT-4",
+        "display_name": "GPT-4",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Facebook",
+        "display_name": "Facebook (Meta)",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Llama 3",
+        "display_name": "Llama 3",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Microsoft",
+        "display_name": "Microsoft",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Sam Altman",
+        "display_name": "Sam Altman",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "GitHub",
+        "display_name": "GitHub",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Yann LeCun",
+        "display_name": "Yann LeCun",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "AutoGPT",
+        "display_name": "AutoGPT",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Nvidia",
+        "display_name": "Nvidia",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Foundation Models",
+        "display_name": "Foundation Models",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Tooling",
+        "display_name": "AI Tooling",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Agents",
+        "display_name": "AI Agents",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "OpenAI is already in decline due to a loss of key talent and the commoditization of large language models.",
+        "source": "voiceover|text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "The future of AI innovation lies in 'tooling' and 'agents' rather than simply building larger foundation models.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Open-source alternatives and competitors are already surpassing OpenAI's offerings in terms of performance and cost-effectiveness.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Investing in companies like Facebook (Meta) and Nvidia is a better bet for AI than OpenAI.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The creator's name is not provided in the video or metadata."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static|selfie",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "informative",
+    "topic_hints": [
+      "AI industry analysis",
+      "OpenAI's future",
+      "Large Language Models",
+      "AI talent and innovation"
+    ],
+    "affect_hints": [
+      "critical",
+      "analytical",
+      "confident",
+      "cautionary"
+    ],
+    "genre_hints": [
+      "tech commentary",
+      "opinion",
+      "analysis",
+      "educational"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 121242,
+    "output_tokens": 2197,
+    "total_tokens": 123439,
+    "cost_usd": 0.019505,
+    "latency_ms": 55606,
+    "upload_ms": 16970
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

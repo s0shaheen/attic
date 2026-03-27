@@ -1,0 +1,210 @@
+{
+  "item_id": "7603405187213970718",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:06:37.082250+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Cody Sabol begins a speed painting on a large black canvas on a stage, starting with broad red strokes for Spider-Man's head and torso.",
+        "audio_description": "Epic orchestral version of the Spider-Man theme music begins.",
+        "text_on_screen": "Painting Andrew Garfield Spider-Man in 7 minutes\u203c\ufe0f",
+        "key_objects": [
+          "canvas",
+          "easel",
+          "paint",
+          "brushes"
+        ]
+      },
+      {
+        "time_range": "0:05-0:10",
+        "visual_description": "The artist continues layering red paint and gives a quick thumbs-up to the camera while working rapidly.",
+        "audio_description": "The music builds in intensity with cinematic percussion.",
+        "text_on_screen": "Painted LIVE at a middle school\u203c\ufe0f",
+        "key_objects": [
+          "paint palette"
+        ]
+      },
+      {
+        "time_range": "0:10-0:15",
+        "visual_description": "Cody adds white paint for the iconic large eyes of the Spider-Man mask and begins defining the suit's black webbing.",
+        "audio_description": "High-energy orchestral music continues.",
+        "text_on_screen": "Because I had to teach these kids who the best Spider-Man is\u203c\ufe0f",
+        "key_objects": [
+          "white paint"
+        ]
+      },
+      {
+        "time_range": "0:15-0:22",
+        "visual_description": "The artist adds blue highlights and background elements to the portrait, refining the muscular structure of the character.",
+        "audio_description": "The music reaches a crescendo.",
+        "text_on_screen": "Also, shout out to 8th grader Levi who filmed this on my iPhone.",
+        "key_objects": [
+          "iPhone",
+          "blue paint"
+        ]
+      },
+      {
+        "time_range": "0:22-0:30",
+        "visual_description": "Final details are added to the background and suit texture with rapid, expressive movements.",
+        "audio_description": "The orchestral theme continues.",
+        "text_on_screen": "Who should I paint next\u2049\ufe0f",
+        "key_objects": [
+          "canvas"
+        ]
+      },
+      {
+        "time_range": "0:30-0:38",
+        "visual_description": "Cody finishes the painting, steps back to reveal the completed Andrew Garfield Spider-Man portrait, and takes a bow.",
+        "audio_description": "The music concludes with a final dramatic note.",
+        "text_on_screen": "Who should I paint next\u2049\ufe0f",
+        "key_objects": [
+          "finished painting"
+        ]
+      }
+    ],
+    "overall_summary": "Artist Cody Sabol performs a high-speed live painting of Andrew Garfield's Spider-Man on a stage at a middle school. The video is a time-lapse of a 7-minute performance where he uses vibrant red, blue, and white paint on a black canvas to create a dynamic portrait. He claims Andrew Garfield is the 'best Spider-Man' and concludes the video by asking his audience for suggestions on who to paint next.",
+    "people": [
+      {
+        "description": "Professional artist wearing a green jacket and paint-splattered pants.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Cody Sabol"
+      },
+      {
+        "description": "The person filming the video.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Levi"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Andrew Garfield",
+        "display_name": "Andrew Garfield",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Spider-Man",
+        "display_name": "Spider-Man",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "The Amazing Spider-Man version",
+        "confidence": 5
+      },
+      {
+        "name": "Cody Sabol",
+        "display_name": "Cody Sabol",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": "Artist",
+        "confidence": 5
+      },
+      {
+        "name": "iPhone",
+        "display_name": "Apple iPhone",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Spider-Man Theme - Epic Version",
+        "display_name": "Spider-Man Theme - Epic Version (from \"No Way Home Trailer\")",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Andrew Garfield is the best version of Spider-Man.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "A detailed portrait can be completed in approximately 7 minutes through speed painting techniques.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Speed Painting Process",
+          "details": "Start with a black canvas, block in primary colors (red), add highlights (white), define outlines (black), and finish with background/accent colors (blue)."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Spider-Man Theme - Epic Version (from \"No Way Home Trailer\")",
+      "metadata_song": "Spider-Man Theme - Epic Version (from \"No Way Home Trailer\")",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The creator and subject are clearly identified in the text and metadata."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Energetic, impressive, and inspiring.",
+    "topic_hints": [
+      "Speed painting",
+      "Marvel Cinematic Universe",
+      "Live performance art"
+    ],
+    "affect_hints": [
+      "Amazed",
+      "Excited",
+      "Nostalgic"
+    ],
+    "genre_hints": [
+      "Art TikTok",
+      "Speed Painting",
+      "Fan Art"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4944,
+    "output_tokens": 1652,
+    "total_tokens": 6596,
+    "cost_usd": 0.001733,
+    "latency_ms": 19205,
+    "upload_ms": 5636
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

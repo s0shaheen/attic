@@ -1,0 +1,52 @@
+{
+  "item_id": "7535646365616065823",
+  "parsed_output": {
+    "summary": "A high-energy sports edit comparing NBA legend LeBron James to the Fantastic Four. It features iconic footage of his 2016 championship run with the Cleveland Cavaliers, including him holding the Larry O'Brien Trophy.",
+    "entities": [
+      {
+        "name": "LeBron James",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Cleveland Cavaliers",
+        "type": "brand",
+        "relevance": "primary"
+      },
+      {
+        "name": "Fantastic Four",
+        "type": "movie_or_show",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Larry O'Brien Championship Trophy",
+        "type": "product",
+        "relevance": "supporting"
+      },
+      {
+        "name": "NBA",
+        "type": "brand",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "sports",
+      "secondary": "movies_tv"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "inspiring",
+      "secondary": "nostalgic"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "This TikTok is a cinematic NBA edit by @zleek_0 that draws a parallel between the Marvel superhero team, the Fantastic Four, and basketball superstar LeBron James. The video opens with a comic-book style illustration of Mr. Fantastic, Invisible Woman, Human Torch, and The Thing before transitioning to high-intensity highlights of LeBron James during his tenure with the Cleveland Cavaliers. Key visual moments include LeBron in his black and gold #23 Cavs jersey screaming in celebration and an emotional close-up of him wearing an 'NBA CHAMPS' hat while clutching the Larry O'Brien Championship Trophy. The content is designed for fans of basketball history and sports montages, emphasizing LeBron's 'superhero' status in the league and the nostalgia of the 2016 NBA Finals victory."
+  },
+  "metrics": {
+    "input_tokens": 4266,
+    "output_tokens": 471,
+    "total_tokens": 4737,
+    "cost_usd": 0.000923,
+    "latency_ms": 7271,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "item_id": "7600440366650707230",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:13.413826+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "news",
+      "micro_labels": [
+        "robotics",
+        "homelessness",
+        "urban life",
+        "social commentary",
+        "miami"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": [
+        "observational footage"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "shocking",
+        "tier": "dominant"
+      },
+      {
+        "label": "sad",
+        "tier": "secondary"
+      },
+      {
+        "label": "funny",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "raw_footage"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "provoke",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.8
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4230,
+    "output_tokens": 338,
+    "total_tokens": 4568,
+    "cost_usd": 0.000837,
+    "latency_ms": 6221,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 1
+  }
+}

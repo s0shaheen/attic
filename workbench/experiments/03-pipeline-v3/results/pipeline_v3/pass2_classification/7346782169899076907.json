@@ -1,0 +1,71 @@
+{
+  "item_id": "7346782169899076907",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:39.545987+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "career",
+      "secondary": "health",
+      "micro_labels": [
+        "success habits",
+        "productivity",
+        "lifestyle design",
+        "personal development"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "vlog",
+      "micro_labels": [
+        "advice",
+        "motivational"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.8
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 12955,
+    "output_tokens": 319,
+    "total_tokens": 13274,
+    "cost_usd": 0.002135,
+    "latency_ms": 11865,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 9
+  }
+}

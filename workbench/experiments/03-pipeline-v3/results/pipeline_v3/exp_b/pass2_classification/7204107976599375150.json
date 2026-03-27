@@ -1,0 +1,81 @@
+{
+  "item_id": "7204107976599375150",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:59:57.353046+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "health",
+      "secondary": "movies_tv",
+      "micro_labels": [
+        "mental health",
+        "resilience",
+        "motivation",
+        "life advice",
+        "stoicism"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "core",
+        "motivational edit",
+        "cinematic compilation"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "sad",
+        "tier": "secondary"
+      },
+      {
+        "label": "wholesome",
+        "tier": "minor"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "mixed",
+      "voiceover"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9874,
+    "output_tokens": 379,
+    "total_tokens": 10253,
+    "cost_usd": 0.001708,
+    "latency_ms": 9239,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 6
+  }
+}

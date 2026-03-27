@@ -1,0 +1,69 @@
+{
+  "item_id": "7585174691510373687",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:40.346201+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fashion",
+      "secondary": null,
+      "micro_labels": [
+        "men's fashion",
+        "formal wear",
+        "suit styling",
+        "accessories"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "outfit_showcase",
+      "micro_labels": [
+        "styling reel"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "satisfying",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "cinematic"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5355,
+    "output_tokens": 309,
+    "total_tokens": 5664,
+    "cost_usd": 0.000989,
+    "latency_ms": 6665,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 2
+  }
+}

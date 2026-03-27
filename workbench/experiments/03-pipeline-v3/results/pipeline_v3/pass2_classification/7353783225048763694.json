@@ -1,0 +1,72 @@
+{
+  "item_id": "7353783225048763694",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:18.158259+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fashion",
+      "secondary": "education",
+      "micro_labels": [
+        "men's style",
+        "wardrobe essentials",
+        "clothing recommendations",
+        "streetwear",
+        "minimalist fashion"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "ranking",
+      "micro_labels": [
+        "top 3 list",
+        "product recommendations"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "funny",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 1.0
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "shopping_research",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 13064,
+    "output_tokens": 328,
+    "total_tokens": 13392,
+    "cost_usd": 0.002156,
+    "latency_ms": 11725,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 9
+  }
+}

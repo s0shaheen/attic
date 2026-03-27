@@ -1,0 +1,72 @@
+{
+  "item_id": "7590447176166247710",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:15.995957+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "education",
+      "micro_labels": [
+        "artificial intelligence",
+        "machine learning",
+        "RAG",
+        "data science",
+        "embeddings"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": [
+        "explainer",
+        "debunking"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "neutral",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "educator",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.95
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 11914,
+    "output_tokens": 326,
+    "total_tokens": 12240,
+    "cost_usd": 0.001983,
+    "latency_ms": 10602,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 8
+  }
+}

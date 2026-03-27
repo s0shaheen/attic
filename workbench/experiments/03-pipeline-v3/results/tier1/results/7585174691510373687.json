@@ -1,0 +1,52 @@
+{
+  "item_id": "7585174691510373687",
+  "parsed_output": {
+    "summary": "Creator @angel5garcia_ showcases a sharp formal outfit, specifically highlighting a pair of unique roulette wheel cufflinks and a red and blue paisley tie. The video serves as men's fashion inspiration for elevating a standard grey suit with detailed accessories.",
+    "entities": [
+      {
+        "name": "@angel5garcia_",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Roulette wheel cufflinks",
+        "type": "clothing",
+        "relevance": "primary"
+      },
+      {
+        "name": "Paisley tie",
+        "type": "clothing",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Grey suit",
+        "type": "clothing",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Dress watch",
+        "type": "clothing",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "fashion",
+      "secondary": null
+    },
+    "genre": "outfit_showcase",
+    "affect": {
+      "dominant": "satisfying",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "In this 20-second fashion clip, creator @angel5garcia_ presents a sophisticated formal look. The video begins with a close-up of a white French cuff dress shirt featuring highly detailed novelty cufflinks that look like miniature, functional roulette wheels. It then transitions to a close-up of a red, blue, and grey paisley patterned tie being adjusted under a grey suit jacket. Finally, the creator is shown in a full-body shot walking through a modern kitchen and living area, displaying the complete ensemble including the grey suit, white shirt, and black dress shoes. This outfit showcase is designed for users looking for men's formal wear inspiration and unique accessory ideas like the roulette cufflinks to add personality to a classic suit."
+  },
+  "metrics": {
+    "input_tokens": 4255,
+    "output_tokens": 461,
+    "total_tokens": 4716,
+    "cost_usd": 0.000915,
+    "latency_ms": 7377,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "item_id": "7551350607177714975",
+  "parsed_output": {
+    "summary": "A man named Benny performs an energetic and humorous dance or lip-sync routine in a kitchen. The video features creator @chronic222 showing off high energy and expressive facial expressions while moving in front of dark grey cabinets.",
+    "entities": [
+      {
+        "name": "@chronic222",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Benny",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Keurig",
+        "type": "product",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "comedy",
+      "secondary": "dance"
+    },
+    "genre": "meme",
+    "affect": {
+      "dominant": "funny",
+      "secondary": "wholesome"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "A 16-second TikTok video by @chronic222 featuring a man named Benny dancing energetically in a kitchen. The man wears a grey t-shirt and displays very expressive facial movements, singing or shouting along to an original sound. The background shows a modern kitchen with dark grey cabinets, a white Keurig-style coffee maker, and a sink area. This is a high-energy, humorous clip likely saved for its funny performance and relatable 'having fun at home' vibe. The caption simply reads 'It's Benny,' suggesting a recurring character or a personal introduction to the creator's audience."
+  },
+  "metrics": {
+    "input_tokens": 4228,
+    "output_tokens": 365,
+    "total_tokens": 4593,
+    "cost_usd": 0.000853,
+    "latency_ms": 6647,
+    "keyframe_count": 3
+  }
+}

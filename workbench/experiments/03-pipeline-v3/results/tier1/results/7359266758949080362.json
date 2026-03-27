@@ -1,0 +1,52 @@
+{
+  "item_id": "7359266758949080362",
+  "parsed_output": {
+    "summary": "Michael Lin (@michaellin251) provides a tutorial on how to start contributing to open source software projects. He specifically recommends using the website goodfirstissues.com to find beginner-friendly tasks labeled as 'good first issue' to build a programming portfolio.",
+    "entities": [
+      {
+        "name": "Michael Lin",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "goodfirstissues.com",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "GitHub",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      },
+      {
+        "name": "UC Berkeley",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Open Source Software",
+        "type": "technique",
+        "relevance": "primary"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "career"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": null
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this TikTok, creator Michael Lin (@michaellin251) explains how to contribute to open source software by finding 'good first issues'. He specifically recommends the website goodfirstissues.com as a resource for beginner programmers and software developers to find manageable tasks. Using a greenscreen effect, he walks through the site's interface, showing how to filter by tags like 'documentation' and 'enhancement' as well as programming languages like Shell, C, and Assembly. The video is a career-focused tutorial aimed at helping developers build their portfolios and gain experience in the tech industry. Michael is wearing a light blue UC Berkeley t-shirt while presenting this educational content, which is designed to help software engineers navigate the often-intimidating world of open source contributions."
+  },
+  "metrics": {
+    "input_tokens": 4337,
+    "output_tokens": 479,
+    "total_tokens": 4816,
+    "cost_usd": 0.000938,
+    "latency_ms": 9324,
+    "keyframe_count": 3
+  }
+}

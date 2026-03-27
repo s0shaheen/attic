@@ -1,0 +1,75 @@
+{
+  "item_id": "7594324057001053470",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:21.826209+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "politics",
+      "secondary": "news",
+      "micro_labels": [
+        "social commentary",
+        "immigration policy",
+        "community ethics",
+        "dehumanization"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "political edit",
+        "social commentary video"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "angry",
+        "tier": "dominant"
+      },
+      {
+        "label": "sad",
+        "tier": "secondary"
+      },
+      {
+        "label": "shocking",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "mixed",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "remix",
+      "confidence": 0.85
+    },
+    "communicative_intent": {
+      "label": "provoke",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "activist",
+      "confidence": 0.75
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.8
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8658,
+    "output_tokens": 344,
+    "total_tokens": 9002,
+    "cost_usd": 0.001505,
+    "latency_ms": 10148,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 5
+  }
+}

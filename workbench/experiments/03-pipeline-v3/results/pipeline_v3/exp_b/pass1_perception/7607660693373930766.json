@@ -1,0 +1,774 @@
+{
+  "item_id": "7607660693373930766",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:58:41.040234+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "A man in a black t-shirt holds a large wooden bowl filled with a salad and pours a dark dressing from a white pitcher over it. He then points to the salad.",
+        "audio_description": "The creator introduces his mom's fattoush recipe, stating it's a top-tier salad.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "fattoush salad",
+          "white pitcher",
+          "dressing"
+        ]
+      },
+      {
+        "time_range": "0:04-0:07",
+        "visual_description": "The creator tastes a spoonful of the salad, expressing enjoyment.",
+        "audio_description": "The creator makes an 'mmm' sound and says the salad is 'packing flavor'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden spoon",
+          "fattoush salad"
+        ]
+      },
+      {
+        "time_range": "0:07-0:12",
+        "visual_description": "The creator's hands are shown on a wooden cutting board, preparing romaine lettuce by slicing it into thin strips and then dicing it.",
+        "audio_description": "The creator explains he's starting with romaine lettuce and his mom likes it in thinner strips and thin slices.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "romaine lettuce",
+          "cutting board",
+          "chef's knife",
+          "Apple Watch Ultra"
+        ]
+      },
+      {
+        "time_range": "0:12-0:14",
+        "visual_description": "The creator adds the chopped romaine lettuce to the large wooden serving bowl.",
+        "audio_description": "The creator instructs to transfer the romaine into the serving bowl.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "romaine lettuce"
+        ]
+      },
+      {
+        "time_range": "0:14-0:17",
+        "visual_description": "The creator holds a mandoline slicer in one hand and three small red radishes in the other, talking to the camera.",
+        "audio_description": "The creator states that his favorite vegetable in fattoush is radish.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "mandoline slicer",
+          "radishes"
+        ]
+      },
+      {
+        "time_range": "0:17-0:21",
+        "visual_description": "The creator's hands are shown thinly slicing radishes with a mandoline and then julienning them with a knife on a wooden cutting board.",
+        "audio_description": "The creator explains he likes to thin slice radishes with a mandoline and then make 'really thin matchsticks'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "radishes",
+          "mandoline slicer",
+          "chef's knife",
+          "cutting board",
+          "Apple Watch Ultra"
+        ]
+      },
+      {
+        "time_range": "0:21-0:23",
+        "visual_description": "The creator sprinkles the julienned radishes over the romaine lettuce in the wooden bowl.",
+        "audio_description": "The creator says he likes to 'sprinkle them all over'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "romaine lettuce",
+          "radishes"
+        ]
+      },
+      {
+        "time_range": "0:23-0:25",
+        "visual_description": "The creator holds two Persian cucumbers in each hand, showing them to the camera.",
+        "audio_description": "The creator emphasizes the need to use 'Persian style cucumbers'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "Persian cucumbers"
+        ]
+      },
+      {
+        "time_range": "0:25-0:29",
+        "visual_description": "The creator's hands are shown slicing a Persian cucumber in half lengthwise and then into small half-moon pieces on a wooden cutting board.",
+        "audio_description": "The creator instructs to slice the cucumber in half and then make 'cute tiny half coins'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "Persian cucumber",
+          "chef's knife",
+          "cutting board",
+          "Apple Watch Ultra"
+        ]
+      },
+      {
+        "time_range": "0:29-0:34",
+        "visual_description": "The creator adds the sliced cucumbers to the salad bowl, then gestures over the bowl while talking.",
+        "audio_description": "The creator explains that this salad is good because it's not 'lettuce dominant' and has 'so much textures'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "salad",
+          "Persian cucumbers"
+        ]
+      },
+      {
+        "time_range": "0:34-0:40",
+        "visual_description": "The creator's hands are shown deseeding and chopping a red bell pepper into small cubes on a wooden cutting board.",
+        "audio_description": "The creator introduces red bell pepper for 'some color' and suggests keeping them 'slightly larger'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "red bell pepper",
+          "chef's knife",
+          "cutting board",
+          "Apple Watch Ultra"
+        ]
+      },
+      {
+        "time_range": "0:40-0:42",
+        "visual_description": "The creator adds the chopped red bell pepper to the salad bowl.",
+        "audio_description": "The creator asks if he's the only one who finds 'therapy in cutting vegetables'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "salad",
+          "red bell pepper"
+        ]
+      },
+      {
+        "time_range": "0:42-0:45",
+        "visual_description": "The creator's hands are shown slicing cherry tomatoes in half on a wooden cutting board.",
+        "audio_description": "The creator instructs to slice cherry tomatoes in half.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "cherry tomatoes",
+          "chef's knife",
+          "cutting board",
+          "Apple Watch Ultra"
+        ]
+      },
+      {
+        "time_range": "0:45-0:48",
+        "visual_description": "The creator adds the halved cherry tomatoes to the salad bowl.",
+        "audio_description": "The creator explains he's adding tomatoes on top of firmer vegetables so the lettuce doesn't get soggy.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "salad",
+          "cherry tomatoes"
+        ]
+      },
+      {
+        "time_range": "0:48-0:51",
+        "visual_description": "The creator sprinkles chopped green onions over the salad in the wooden bowl.",
+        "audio_description": "The creator states he's adding green onion and that red onion can be used.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "salad",
+          "green onions"
+        ]
+      },
+      {
+        "time_range": "0:51-0:54",
+        "visual_description": "The creator gestures with his hands while talking to the camera.",
+        "audio_description": "The creator explains his family finds red onion 'way too strong'.",
+        "text_on_screen": "null",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:54-0:58",
+        "visual_description": "The creator's hands are shown picking mint leaves off stems and then chopping them on a wooden cutting board.",
+        "audio_description": "The creator states that fattoush isn't fattoush without fresh mint and instructs to roll it up and slice through it.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "fresh mint",
+          "cutting board",
+          "chef's knife",
+          "Apple Watch Ultra"
+        ]
+      },
+      {
+        "time_range": "0:58-1:00",
+        "visual_description": "The creator adds the chopped mint to the salad bowl.",
+        "audio_description": "null",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "salad",
+          "fresh mint"
+        ]
+      },
+      {
+        "time_range": "1:00-1:02",
+        "visual_description": "The creator adds chopped fresh parsley to the salad bowl.",
+        "audio_description": "The creator states that fresh chopped parsley is needed.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "salad",
+          "fresh parsley"
+        ]
+      },
+      {
+        "time_range": "1:02-1:04",
+        "visual_description": "The creator's hands are shown squeezing lemon juice into a small measuring cup with a citrus reamer.",
+        "audio_description": "The creator says 'the fun begins' and mentions 'freshly squeezed lemon juice'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "citrus reamer",
+          "measuring cup",
+          "lemon juice"
+        ]
+      },
+      {
+        "time_range": "1:04-1:06",
+        "visual_description": "The creator pours olive oil from a dark bottle into the measuring cup containing lemon juice.",
+        "audio_description": "The creator instructs to add 'three parts really good olive oil'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "olive oil bottle",
+          "measuring cup",
+          "olive oil",
+          "lemon juice"
+        ]
+      },
+      {
+        "time_range": "1:06-1:08",
+        "visual_description": "The creator sprinkles sumac into the measuring cup with the dressing ingredients.",
+        "audio_description": "The creator adds a 'healthy palm full of sumac'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "measuring cup",
+          "dressing",
+          "sumac"
+        ]
+      },
+      {
+        "time_range": "1:08-1:10",
+        "visual_description": "The creator grates garlic using a microplane into the dressing mixture.",
+        "audio_description": "The creator instructs to grate in 'some heartburn so essentially melts'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "microplane grater",
+          "garlic",
+          "dressing"
+        ]
+      },
+      {
+        "time_range": "1:10-1:12",
+        "visual_description": "The creator sprinkles salt into the dressing mixture.",
+        "audio_description": "The creator states 'we need a hefty pinch of salt'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "salt",
+          "dressing"
+        ]
+      },
+      {
+        "time_range": "1:12-1:14",
+        "visual_description": "The creator pours pomegranate molasses from a bottle into the dressing mixture.",
+        "audio_description": "The creator adds 'some pomegranate molasses'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "pomegranate molasses bottle",
+          "pomegranate molasses",
+          "dressing"
+        ]
+      },
+      {
+        "time_range": "1:14-1:15",
+        "visual_description": "The creator places a lid on a small glass jar containing the prepared dressing.",
+        "audio_description": "The creator suggests throwing the dressing in a jar to use all week.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "glass jar",
+          "dressing"
+        ]
+      },
+      {
+        "time_range": "1:15-1:17",
+        "visual_description": "The creator holds up a round pita bread, then quickly cuts it with a knife.",
+        "audio_description": "The creator says 'officially the best part' and that 'fresh pita' is needed.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "pita bread",
+          "chef's knife"
+        ]
+      },
+      {
+        "time_range": "1:17-1:19",
+        "visual_description": "The creator's hands are shown cutting pita bread into thin strips and then small squares on a wooden cutting board.",
+        "audio_description": "The creator instructs to 'thin strip them and cube them'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "pita bread",
+          "chef's knife",
+          "cutting board",
+          "Apple Watch Ultra"
+        ]
+      },
+      {
+        "time_range": "1:19-1:21",
+        "visual_description": "The creator adds the cubed pita bread to a pan with hot olive oil, where it begins to fry.",
+        "audio_description": "The creator instructs to 'fry them in really hot olive oil'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "frying pan",
+          "olive oil",
+          "pita bread cubes"
+        ]
+      },
+      {
+        "time_range": "1:21-1:24",
+        "visual_description": "The creator sprinkles za'atar from a small jar over the frying pita bread.",
+        "audio_description": "The creator mentions his mom 'recently hitting them with some za'atar'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "frying pan",
+          "pita bread chips",
+          "za'atar jar",
+          "za'atar"
+        ]
+      },
+      {
+        "time_range": "1:24-1:26",
+        "visual_description": "The creator pours the prepared dressing from a jar over the salad in the wooden bowl.",
+        "audio_description": "The creator instructs to 'dress it all up when you're ready to eat'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "salad",
+          "dressing jar",
+          "dressing"
+        ]
+      },
+      {
+        "time_range": "1:26-1:28",
+        "visual_description": "The creator uses two wooden salad servers to gently toss the salad in the bowl.",
+        "audio_description": "The creator says 'gentle toss'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "salad",
+          "wooden salad servers"
+        ]
+      },
+      {
+        "time_range": "1:28-1:29",
+        "visual_description": "The creator adds the fried pita chips to the tossed salad.",
+        "audio_description": "The creator instructs to 'finish with your crispy chips'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "salad",
+          "pita chips"
+        ]
+      },
+      {
+        "time_range": "1:29-1:31",
+        "visual_description": "The creator sprinkles dried mint from a small container over the finished salad.",
+        "audio_description": "The creator adds 'lots of dried mint'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "salad",
+          "dried mint container",
+          "dried mint"
+        ]
+      },
+      {
+        "time_range": "1:31-1:33",
+        "visual_description": "The creator drizzles pomegranate molasses from a white pitcher over the finished salad.",
+        "audio_description": "The creator adds 'finally some pomegranate molasses'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden bowl",
+          "salad",
+          "white pitcher",
+          "pomegranate molasses"
+        ]
+      },
+      {
+        "time_range": "1:33-1:35",
+        "visual_description": "The creator tastes a spoonful of the finished fattoush salad, expressing satisfaction.",
+        "audio_description": "The creator says 'and as always, bismillah'.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "wooden spoon",
+          "fattoush salad"
+        ]
+      }
+    ],
+    "overall_summary": "This video demonstrates how to make a traditional Middle Eastern Fattoush salad, based on the creator's mom's recipe. The creator meticulously prepares and chops various fresh vegetables like romaine lettuce, radishes, Persian cucumbers, red bell pepper, cherry tomatoes, green onions, mint, and parsley. He then creates a flavorful dressing with lemon juice, olive oil, sumac, garlic, salt, and pomegranate molasses. Finally, he fries pita bread to create crispy chips, assembles the salad, and garnishes it with dried mint and an extra drizzle of pomegranate molasses, highlighting the salad's rich textures and flavors.",
+    "people": [
+      {
+        "description": "A young man with dark curly hair and a beard, wearing a black t-shirt. He is the host and demonstrator of the recipe.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@thegoldenbalance"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Fattoush",
+        "display_name": "Fattoush Salad",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "caption",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Romaine Lettuce",
+        "display_name": "Romaine Lettuce",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Radish",
+        "display_name": "Radish",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Persian Cucumber",
+        "display_name": "Persian Cucumber",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Red Bell Pepper",
+        "display_name": "Red Bell Pepper",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Cherry Tomato",
+        "display_name": "Cherry Tomato",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Green Onion",
+        "display_name": "Green Onion",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Fresh Mint",
+        "display_name": "Fresh Mint",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Fresh Parsley",
+        "display_name": "Fresh Parsley",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lemon Juice",
+        "display_name": "Freshly Squeezed Lemon Juice",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Olive Oil",
+        "display_name": "Olive Oil",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Sumac",
+        "display_name": "Sumac",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Garlic",
+        "display_name": "Garlic",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Salt",
+        "display_name": "Salt",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pomegranate Molasses",
+        "display_name": "Pomegranate Molasses",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pita Bread",
+        "display_name": "Pita Bread",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Za'atar",
+        "display_name": "Za'atar",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Dried Mint",
+        "display_name": "Dried Mint",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Mandoline Slicer",
+        "display_name": "Mandoline Slicer",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Microplane Grater",
+        "display_name": "Microplane Grater",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Apple Watch Ultra",
+        "display_name": "Apple Watch Ultra",
+        "type": "product",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Ramadan Chronicles",
+        "display_name": "Ramadan Chronicles",
+        "type": "cultural_reference",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Fattoush is a top-tier salad that is not lettuce-dominant and offers a variety of textures.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Using Persian-style cucumbers is essential for this Fattoush recipe.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Adding tomatoes on top of firmer vegetables helps prevent the lettuce from becoming soggy.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Red onion can be too strong for some in Fattoush, making green onion a preferred alternative.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Fattoush is incomplete without fresh mint.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The dressing can be prepared in advance and stored in a jar for convenience.",
+        "source": "voiceover",
+        "confidence": 3
+      },
+      {
+        "statement": "Frying pita bread and seasoning it with za'atar adds a crucial crispy element to the salad.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Fattoush Salad",
+          "details": "Ingredients: Romaine lettuce, radishes, Persian cucumbers, red bell pepper, cherry tomatoes, green onions, fresh mint, fresh parsley, pita bread, olive oil, za'atar, dried mint, pomegranate molasses. Dressing: Freshly squeezed lemon juice, olive oil, sumac, garlic, salt, pomegranate molasses."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific brand of mandoline, microplane, and olive oil are not identifiable. The exact measurements for the dressing ingredients are not explicitly stated, only ratios (1 part lemon juice, 3 parts olive oil) and descriptive amounts (healthy palm full, hefty pinch)."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static|overhead",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, engaging, enthusiastic, clean, bright",
+    "topic_hints": [
+      "cooking",
+      "recipe",
+      "Middle Eastern cuisine",
+      "salad"
+    ],
+    "affect_hints": [
+      "informative",
+      "appetizing",
+      "satisfying",
+      "helpful"
+    ],
+    "genre_hints": [
+      "cooking tutorial",
+      "food preparation",
+      "recipe demonstration"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 29516,
+    "output_tokens": 6838,
+    "total_tokens": 36354,
+    "cost_usd": 0.00853,
+    "latency_ms": 45255,
+    "upload_ms": 9598
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

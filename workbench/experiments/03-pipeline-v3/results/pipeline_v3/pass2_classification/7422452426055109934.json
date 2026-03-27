@@ -1,0 +1,70 @@
+{
+  "item_id": "7422452426055109934",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:32.518123+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "sports",
+      "secondary": null,
+      "micro_labels": [
+        "basketball",
+        "ball handling",
+        "AAU basketball",
+        "sports highlights"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "sports highlight"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "satisfying",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "raw_footage",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.8
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4293,
+    "output_tokens": 313,
+    "total_tokens": 4606,
+    "cost_usd": 0.000832,
+    "latency_ms": 5791,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 1
+  }
+}

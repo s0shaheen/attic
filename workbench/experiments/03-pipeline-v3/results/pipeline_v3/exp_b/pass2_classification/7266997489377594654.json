@@ -1,0 +1,75 @@
+{
+  "item_id": "7266997489377594654",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:59:41.356724+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "comedy",
+      "secondary": "relationships",
+      "micro_labels": [
+        "real bros of simi valley",
+        "bro culture",
+        "satire",
+        "social dynamics"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "skit",
+      "micro_labels": [
+        "mockumentary",
+        "tv clip"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "cringe",
+        "tier": "secondary"
+      },
+      {
+        "label": "shocking",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "text_overlay",
+      "raw_footage"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 7655,
+    "output_tokens": 349,
+    "total_tokens": 8004,
+    "cost_usd": 0.001358,
+    "latency_ms": 5778,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 4
+  }
+}

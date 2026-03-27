@@ -1,0 +1,237 @@
+{
+  "item_id": "7606429816224501006",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:18:41.751741+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "The word 'AI' is overlaid on a distorted, upside-down human face with glowing eyes.",
+        "audio_description": "Distorted, bass-heavy synth music begins.",
+        "text_on_screen": "AI",
+        "key_objects": [
+          "distorted face"
+        ]
+      },
+      {
+        "time_range": "0:02-0:07",
+        "visual_description": "A hand touches the Apple logo on a laptop, then transitions to a hand brushing through real green grass.",
+        "audio_description": "Voiceover: 'I was meant to be new.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Apple MacBook",
+          "grass"
+        ]
+      },
+      {
+        "time_range": "0:07-0:11",
+        "visual_description": "Split-screen showing two different individuals placing their hands over their hearts/chests.",
+        "audio_description": "Voiceover: 'I could crawl.'",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:11-0:14",
+        "visual_description": "A rapid montage of four different faces, including one that appears to be a red, liquid-metal humanoid.",
+        "audio_description": "Voiceover: 'I was meant to be beautiful.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "AI-generated faces"
+        ]
+      },
+      {
+        "time_range": "0:14-0:17",
+        "visual_description": "An elderly woman looks off-camera, followed by a shot of the creator with digital tracking lines overlaid on his face.",
+        "audio_description": "Voiceover: 'We used to say that seeing is believing and that's no longer the case.'",
+        "text_on_screen": "is seeing believing?",
+        "key_objects": [
+          "glasses"
+        ]
+      },
+      {
+        "time_range": "0:17-0:21",
+        "visual_description": "Split-screen: the creator at a professional editing desk vs. a man in 'ICE' tactical gear waving a hand to block a camera.",
+        "audio_description": "Music continues with melodic vocals.",
+        "text_on_screen": "",
+        "key_objects": [
+          "computer monitors",
+          "camera tripod",
+          "ICE tactical vest"
+        ]
+      },
+      {
+        "time_range": "0:21-0:26",
+        "visual_description": "Split-screen: hands typing on a keyboard vs. Donald Trump walking with an aide, followed by a priest in a church as a ghostly figure of an old man appears behind him.",
+        "audio_description": "Music swells.",
+        "text_on_screen": "",
+        "key_objects": [
+          "keyboard",
+          "Donald Trump",
+          "priest",
+          "church interior"
+        ]
+      },
+      {
+        "time_range": "0:26-0:29",
+        "visual_description": "A black screen with small white text asking a philosophical question.",
+        "audio_description": "Music fades out.",
+        "text_on_screen": "are you real?",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a cinematic and thought-provoking commentary on the blurring lines between reality and artificial intelligence. Through a series of split-screens and montages, the creator contrasts physical sensations like touching grass with digital interfaces and AI-generated imagery. The central message, reinforced by both voiceover and text, is that visual evidence can no longer be trusted as absolute truth in the age of deepfakes and advanced AI generation.",
+    "people": [
+      {
+        "description": "The creator, a young man with glasses, shown working at a computer and with digital tracking overlays.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Abram Shaffer"
+      },
+      {
+        "description": "Former US President walking in a suit.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Donald Trump"
+      },
+      {
+        "description": "A man wearing a black beanie and a green tactical vest labeled 'ICE' and 'POLICE'.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Artificial Intelligence",
+        "display_name": "AI",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Apple",
+        "display_name": "Apple",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "MacBook laptop",
+        "confidence": 5
+      },
+      {
+        "name": "Donald Trump",
+        "display_name": "Donald Trump",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Deepfake",
+        "display_name": "Deepfake Technology",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "inferred",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "I Was Meant to Be New",
+        "display_name": "I Was Meant to Be New - Abram Shaffer",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "U.S. Immigration and Customs Enforcement",
+        "display_name": "ICE",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Tactical gear",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The traditional adage 'seeing is believing' is no longer valid due to the capabilities of AI.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "AI is rapidly integrating into and distorting our perception of the physical world.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "I Was Meant to Be New \u2014 Abram Shaffer",
+      "metadata_song": "original sound - Abram Shaffer",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The song is the creator's own original music which matches the lyrical content and metadata."
+    },
+    "presentation_style": {
+      "primary_format": "cinematic",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Eerie, philosophical, and slightly unsettling.",
+    "topic_hints": [
+      "AI Ethics",
+      "Digital Reality",
+      "Deepfakes"
+    ],
+    "affect_hints": [
+      "Uncertainty",
+      "Curiosity",
+      "Dread"
+    ],
+    "genre_hints": [
+      "Cinematic Edit",
+      "Social Commentary"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4025,
+    "output_tokens": 1965,
+    "total_tokens": 5990,
+    "cost_usd": 0.001783,
+    "latency_ms": 23416,
+    "upload_ms": 5579
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

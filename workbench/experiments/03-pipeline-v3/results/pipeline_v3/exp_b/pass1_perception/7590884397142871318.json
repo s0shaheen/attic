@@ -1,0 +1,232 @@
+{
+  "item_id": "7590884397142871318",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:51:59.199149+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A person, the creator, is lying in bed, wearing white over-ear headphones, looking intently at something off-screen.",
+        "audio_description": "Melancholic instrumental music plays.",
+        "text_on_screen": "Can anyone recommend a good 1.5 hour movie to watch before bed?",
+        "key_objects": [
+          "Apple AirPods Max headphones",
+          "bed",
+          "pillow"
+        ]
+      },
+      {
+        "time_range": "0:01-0:05",
+        "visual_description": "The creator's hand is seen interacting with the trackpad of a MacBook laptop, which displays the HBO Max streaming service interface with various movie and show titles.",
+        "audio_description": "Melancholic instrumental music continues to play.",
+        "text_on_screen": "Can anyone recommend a good 1.5 hour movie to watch before bed?",
+        "key_objects": [
+          "MacBook laptop",
+          "HBO Max streaming service interface",
+          "Apple AirPods Max headphones"
+        ]
+      }
+    ],
+    "overall_summary": "The video features the creator, @alekseme, lying in bed wearing headphones, then showing their laptop screen displaying HBO Max. The creator is seeking recommendations for a good 1.5-hour movie to watch before bed, as indicated by the overlaid text. The video visually presents the context of their movie-watching dilemma, inviting viewers to offer suggestions.",
+    "people": [
+      {
+        "description": "A young adult with dark hair, wearing a dark grey hooded garment and white over-ear headphones, lying in bed and later interacting with a laptop.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Apple AirPods Max",
+        "display_name": "Apple AirPods Max headphones",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "MacBook",
+        "display_name": "MacBook laptop",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "HBO Max",
+        "display_name": "HBO Max streaming service",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Harry Potter series",
+        "display_name": "Harry Potter movie series",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Hobbit series",
+        "display_name": "The Hobbit movie series",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Covenant",
+        "display_name": "The Covenant (movie)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Tomorrow War",
+        "display_name": "The Tomorrow War (movie)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Pitt",
+        "display_name": "The Pitt (movie/show)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "The Great Gatsby",
+        "display_name": "The Great Gatsby (movie)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "The Wizard of Oz",
+        "display_name": "The Wizard of Oz (movie)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Derry Girls",
+        "display_name": "Derry Girls (show)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Friday the 13th",
+        "display_name": "Friday the 13th (movie)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The creator is looking for movie recommendations, specifically a 1.5-hour film to watch before bed.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "sonido original",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": false,
+      "notes": "The 'sonido original' audio is a generic instrumental track and cannot be specifically identified without more context or a Shazam-like tool. Movie titles from HBO Max are inferred from visible thumbnails."
+    },
+    "presentation_style": {
+      "primary_format": "text_overlay",
+      "camera_work": "static|handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "calm|relaxed|seeking",
+    "topic_hints": [
+      "movie recommendations",
+      "streaming",
+      "bedtime routine"
+    ],
+    "affect_hints": [
+      "curious",
+      "relaxed",
+      "contemplative"
+    ],
+    "genre_hints": [
+      "request",
+      "lifestyle",
+      "entertainment"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2990,
+    "output_tokens": 1627,
+    "total_tokens": 4617,
+    "cost_usd": 0.001425,
+    "latency_ms": 14106,
+    "upload_ms": 3683
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

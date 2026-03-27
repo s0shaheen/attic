@@ -1,0 +1,72 @@
+{
+  "item_id": "7420407468074880261",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:37.227959+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "sports",
+      "secondary": "movies_tv",
+      "micro_labels": [
+        "streetball",
+        "basketball highlights",
+        "Kuroko no Basket",
+        "Aomine Daiki",
+        "dribbling skills"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "sports montage",
+        "anime-style edit"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "dominant"
+      }
+    ],
+    "presentation_style": [
+      "text_overlay",
+      "voiceover"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.85
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.8
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6556,
+    "output_tokens": 337,
+    "total_tokens": 6893,
+    "cost_usd": 0.001186,
+    "latency_ms": 7680,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 3
+  }
+}

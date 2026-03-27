@@ -1,0 +1,230 @@
+{
+  "item_id": "7220058231463365934",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:09:11.748129+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Creator stands on a basketball court under the hoop, gesturing to the camera to introduce the tutorial.",
+        "audio_description": "Upbeat hip-hop music begins; creator is silent but energetic.",
+        "text_on_screen": "5 Easy Moves That Will Always Work \ud83c\udf92\ud83c\udfc0",
+        "key_objects": [
+          "basketball",
+          "basketball hoop",
+          "scoreboard"
+        ]
+      },
+      {
+        "time_range": "0:02-0:06",
+        "visual_description": "Creator demonstrates the 'In N Out' dribble move while moving toward the camera.",
+        "audio_description": "Squeaking of sneakers on the court and the rhythmic bounce of the basketball.",
+        "text_on_screen": "1. In N Out \u2705",
+        "key_objects": [
+          "basketball"
+        ]
+      },
+      {
+        "time_range": "0:06-0:11",
+        "visual_description": "Creator performs the 'Delay Thru' move, showing a change of pace and a between-the-legs dribble.",
+        "audio_description": "Music continues: 'God made me for this man it's my year'.",
+        "text_on_screen": "2. Delay Thru \ud83e\udd76",
+        "key_objects": [
+          "basketball"
+        ]
+      },
+      {
+        "time_range": "0:11-0:16",
+        "visual_description": "Creator demonstrates the 'Push Cross' move, pushing the ball forward into a crossover.",
+        "audio_description": "Creator says 'Let's go, let's go' in the background audio.",
+        "text_on_screen": "3. Push Cross \ud83d\udca8",
+        "key_objects": [
+          "basketball"
+        ]
+      },
+      {
+        "time_range": "0:16-0:20",
+        "visual_description": "Creator executes the 'Quick Split Thru' move, splitting his feet while dribbling between his legs.",
+        "audio_description": "Music continues with the chorus: 'This my year, this my year'.",
+        "text_on_screen": "4. Quick Split Thru \ud83d\ude2e\u200d\ud83d\udca8",
+        "key_objects": [
+          "basketball"
+        ]
+      },
+      {
+        "time_range": "0:20-0:25",
+        "visual_description": "Creator demonstrates the 'Cross Jab' move, using a jab step to sell a drive before crossing over.",
+        "audio_description": "Music fades out as the creator finishes the move and walks off-screen.",
+        "text_on_screen": "5. Cross Jab \ud83d\ude24",
+        "key_objects": [
+          "basketball"
+        ]
+      }
+    ],
+    "overall_summary": "In this short basketball tutorial, creator @db3workouts demonstrates five fundamental yet highly effective dribbling moves designed to beat defenders. The video showcases the In N Out, Delay Thru, Push Cross, Quick Split Thru, and Cross Jab in a clear, step-by-step visual format on an indoor court. Each move is performed with high intensity to show how it looks in a game-like scenario. The takeaway is a set of reliable ball-handling techniques that players of all levels can use to improve their offensive game.",
+    "people": [
+      {
+        "description": "Male basketball trainer wearing a blue t-shirt, black athletic shorts, and white basketball shoes.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "db3workouts"
+      }
+    ],
+    "entities": [
+      {
+        "name": "In N Out",
+        "display_name": "In 'N' Out Dribble",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Delay Thru",
+        "display_name": "Delay Between-the-Legs",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Push Cross",
+        "display_name": "Push Crossover",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Quick Split Thru",
+        "display_name": "Quick Split Between-the-Legs",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Cross Jab",
+        "display_name": "Crossover Jab Step",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lecrae",
+        "display_name": "Lecrae",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Simple, fundamental dribbling moves are often more effective than complex ones for beating defenders.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Mastering change of pace and footwork (like splits and jabs) is essential for effective ball handling.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "In N Out",
+          "details": "A fake crossover move where the ball is brought inward and then quickly pushed back out to the same side."
+        },
+        {
+          "name": "Delay Thru",
+          "details": "A change-of-pace move involving a hesitation before dribbling between the legs."
+        },
+        {
+          "name": "Push Cross",
+          "details": "An aggressive crossover where the ball is pushed forward and across the body to gain ground."
+        },
+        {
+          "name": "Quick Split Thru",
+          "details": "A rapid between-the-legs move performed while the feet are in a split stance to explode past a defender."
+        },
+        {
+          "name": "Cross Jab",
+          "details": "Combining a crossover with a sharp jab step in the opposite direction to freeze the defender."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "This Is My Year \u2014 Lecrae",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The moves are explicitly labeled on screen. The song is clearly Lecrae's 'This Is My Year'."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "High-energy, athletic, and instructional with bright gym lighting.",
+    "topic_hints": [
+      "Basketball Training",
+      "Dribbling Drills",
+      "Sports Skills"
+    ],
+    "affect_hints": [
+      "Motivated",
+      "Focused",
+      "Confident"
+    ],
+    "genre_hints": [
+      "Sports Tutorial",
+      "Fitness Demo"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3787,
+    "output_tokens": 1850,
+    "total_tokens": 5637,
+    "cost_usd": 0.001678,
+    "latency_ms": 19126,
+    "upload_ms": 5862
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

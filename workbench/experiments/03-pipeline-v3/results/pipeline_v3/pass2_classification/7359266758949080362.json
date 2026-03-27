@@ -1,0 +1,72 @@
+{
+  "item_id": "7359266758949080362",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:27.679086+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "education",
+      "micro_labels": [
+        "open source software",
+        "coding",
+        "software engineering",
+        "github",
+        "programming"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "how-to",
+        "tech walkthrough"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "funny",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 13006,
+    "output_tokens": 325,
+    "total_tokens": 13331,
+    "cost_usd": 0.002146,
+    "latency_ms": 7689,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 9
+  }
+}

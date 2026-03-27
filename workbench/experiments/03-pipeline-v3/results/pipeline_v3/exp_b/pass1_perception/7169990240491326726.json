@@ -1,0 +1,512 @@
+{
+  "item_id": "7169990240491326726",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:46:46.307438+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:16",
+        "visual_description": "An older man places his hand on a younger man's shoulder as they both gaze at a vast, undulating green landscape under a pale sky, suggesting a moment of contemplation or guidance.",
+        "audio_description": "A male voice (Alan Watts) asks, \"Do you know how long you've been here?\" The younger man replies, \"No.\" The voice continues, \"Weeks. Months. Do you know why you're here?\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "green landscape",
+          "trees"
+        ]
+      },
+      {
+        "time_range": "0:16-0:19",
+        "visual_description": "A close-up shot of a man's face, partially obscured by water splashing onto him, conveying a sense of struggle or cleansing.",
+        "audio_description": "The male voice (Alan Watts) states, \"Man is a little jug that lives on an unimportant rock ball...\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "water"
+        ]
+      },
+      {
+        "time_range": "0:19-0:22",
+        "visual_description": "A man in a suit and hat sits in a car, looking intently forward with a serious expression, suggesting deep thought or anticipation.",
+        "audio_description": "...that revolves about an insignificant star on the outer edges of one of the smaller galaxies.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "car"
+        ]
+      },
+      {
+        "time_range": "0:22-0:24",
+        "visual_description": "Black and white footage shows a man and a woman elegantly dancing together in a room, evoking a classic, joyful era.",
+        "audio_description": null,
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:24-0:27",
+        "visual_description": "A close-up on a man's eyes, framed by aviator-style glasses, conveying a sense of intensity or observation.",
+        "audio_description": null,
+        "text_on_screen": null,
+        "key_objects": [
+          "aviator glasses"
+        ]
+      },
+      {
+        "time_range": "0:27-0:30",
+        "visual_description": "Black and white footage depicts a man and a dog sitting by a puddle in a rural setting, with a rustic house in the background, suggesting a quiet, perhaps melancholic, moment.",
+        "audio_description": null,
+        "text_on_screen": null,
+        "key_objects": [
+          "puddle",
+          "dog",
+          "house"
+        ]
+      },
+      {
+        "time_range": "0:30-0:32",
+        "visual_description": "A woman's face is reflected in a broken mirror, with a hand holding the fragmented piece, symbolizing introspection or a fractured reality.",
+        "audio_description": null,
+        "text_on_screen": null,
+        "key_objects": [
+          "broken mirror"
+        ]
+      },
+      {
+        "time_range": "0:32-0:35",
+        "visual_description": "A silhouette of a person stands on a balcony against a futuristic cityscape with glowing neon signs, one of which prominently displays Japanese text and the phrases \"EVERYTHING YOU WANT TO HEAR\" and \"EVERYTHING YOU WANT TO SEE.\"",
+        "audio_description": "The male voice (Alan Watts) continues, \"I am absolutely amazed to discover myself on this rock ball, rotating around a central spherical fire.\"",
+        "text_on_screen": "JOI (Japanese text), EVERYTHING YOU WANT TO HEAR, EVERYTHING YOU WANT TO SEE",
+        "key_objects": [
+          "neon sign",
+          "futuristic city"
+        ]
+      },
+      {
+        "time_range": "0:35-0:38",
+        "visual_description": "A robotic hand with multiple sensors gently touches a woman's nose, illustrating a moment of interaction between technology and humanity.",
+        "audio_description": null,
+        "text_on_screen": null,
+        "key_objects": [
+          "robotic hand"
+        ]
+      },
+      {
+        "time_range": "0:38-0:40",
+        "visual_description": "A man in a tuxedo makes expressive hand gestures while surrounded by a dark audience of faceless mannequins also in tuxedos, creating a surreal and theatrical atmosphere.",
+        "audio_description": null,
+        "text_on_screen": null,
+        "key_objects": [
+          "mannequins"
+        ]
+      },
+      {
+        "time_range": "0:40-0:43",
+        "visual_description": "A woman with short, wet hair blows a large pink bubblegum bubble against a vibrant red background, presenting a striking and somewhat playful image.",
+        "audio_description": "The male voice (Alan Watts) concludes, \"And the more I look at things, I cannot get rid of the feeling that existence is quite weird.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "bubblegum"
+        ]
+      },
+      {
+        "time_range": "0:43-0:45",
+        "visual_description": "A man in a car looks out the window with a somber or contemplative expression, suggesting internal reflection.",
+        "audio_description": null,
+        "text_on_screen": null,
+        "key_objects": [
+          "car"
+        ]
+      },
+      {
+        "time_range": "0:45-0:47",
+        "visual_description": "A man with long hair, wearing a dark robe and beads, laughs intensely with his mouth wide open, conveying a sense of unbridled emotion.",
+        "audio_description": "A distressed male voice exclaims, \"I don't want this anymore! I want to call it off!\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "beads"
+        ]
+      },
+      {
+        "time_range": "0:47-0:51",
+        "visual_description": "A person in a winter coat with a fur-lined hood is seen from behind, looking out into a dark, snowy, or foggy landscape, emphasizing isolation and an uncertain future.",
+        "audio_description": "The distressed male voice continues, \"I don't want this anymore! I want to call it off!\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "winter coat",
+          "fur-lined hood",
+          "snowy landscape"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a philosophical montage that combines various iconic and evocative film clips with a voiceover by Alan Watts, exploring themes of existence, self-discovery, and the nature of reality. It transitions between scenes of natural beauty, human interaction, technological interfaces, and moments of intense emotion, creating a contemplative and somewhat melancholic mood. The video's main point is to provoke thought about one's place in the universe and the inherent strangeness of existence, culminating in a desperate plea to escape an overwhelming reality.",
+    "people": [
+      {
+        "description": "Older man, grey hair, black shirt, speaking in a philosophical tone via voiceover.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Alan Watts"
+      },
+      {
+        "description": "Older man, grey hair, black jacket, seen from the side, placing hand on younger man's shoulder.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Brad Pitt"
+      },
+      {
+        "description": "Younger man, brown hair, blue shirt, seen from behind and side, looking at the landscape.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Sean Penn"
+      },
+      {
+        "description": "Man with dark hair and beard, water splashing on his face.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Man in a suit and hat, dark hair, blue eyes, looking serious while in a car.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Alain Delon"
+      },
+      {
+        "description": "Man in a suit, dancing with a woman in black and white footage.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Fred Astaire"
+      },
+      {
+        "description": "Woman in a white dress, dancing with a man in black and white footage.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Ginger Rogers"
+      },
+      {
+        "description": "Man with blue eyes behind aviator glasses, seen in a close-up.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Ryan Gosling"
+      },
+      {
+        "description": "Man in black and white footage, sitting by a puddle with a dog.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Woman with dark hair, reflected in a broken mirror.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Brigitte Bardot"
+      },
+      {
+        "description": "Silhouette of a person standing on a balcony in a futuristic city.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Ryan Gosling"
+      },
+      {
+        "description": "Woman with dark curly hair, interacting with a robotic hand.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Man in a tuxedo, making hand gestures in a dark room.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Woman with short, wet hair, blowing a bubblegum bubble.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Man with dark curly hair, wearing a white shirt and suit jacket, looking contemplative in a car.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Man with long hair, dark robe, and beads, laughing intensely.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Person in a winter coat with a fur-lined hood, seen from behind.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Distressed male voice, exclaiming a desire to stop something.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Jim Carrey"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Alan Watts",
+        "display_name": "Alan Watts (Philosopher)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "The Tree of Life",
+        "display_name": "The Tree of Life (2011 film)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "Year: 2011",
+        "confidence": 4
+      },
+      {
+        "name": "Brad Pitt",
+        "display_name": "Brad Pitt (Actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Sean Penn",
+        "display_name": "Sean Penn (Actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Le Samoura\u00ef",
+        "display_name": "Le Samoura\u00ef (1967 film)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "Year: 1967",
+        "confidence": 4
+      },
+      {
+        "name": "Alain Delon",
+        "display_name": "Alain Delon (Actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Fred Astaire",
+        "display_name": "Fred Astaire (Dancer/Actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Ginger Rogers",
+        "display_name": "Ginger Rogers (Dancer/Actress)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Blade Runner 2049",
+        "display_name": "Blade Runner 2049 (2017 film)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": "Year: 2017",
+        "confidence": 5
+      },
+      {
+        "name": "Ryan Gosling",
+        "display_name": "Ryan Gosling (Actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Le M\u00e9pris",
+        "display_name": "Le M\u00e9pris (1963 film)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "Year: 1963",
+        "confidence": 4
+      },
+      {
+        "name": "Brigitte Bardot",
+        "display_name": "Brigitte Bardot (Actress)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Ludovico Einaudi",
+        "display_name": "Ludovico Einaudi (Composer)",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": [
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Experience",
+        "display_name": "Experience (Song by Ludovico Einaudi)",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Truman Show",
+        "display_name": "The Truman Show (1998 film)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": "Year: 1998",
+        "confidence": 4
+      },
+      {
+        "name": "Jim Carrey",
+        "display_name": "Jim Carrey (Actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Existence is a peculiar and often overwhelming experience, prompting deep questions about one's purpose and place in the vast universe.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Humans are insignificant beings on a small planet, yet capable of profound self-awareness and questioning their reality.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "There is a desire to escape or 'call off' the perceived reality when it becomes too much to bear.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Experience \u2014 Ludovico Einaudi",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Some visual clips are from well-known films, but exact identification of every actor in every brief clip is challenging without more context. The specific Alan Watts speech segments are identified, and the background music is a strong inference based on common usage."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "static|transitions",
+      "editing_style": "montage|jump_cuts"
+    },
+    "visual_mood": "melancholic, contemplative, philosophical, surreal, dramatic",
+    "topic_hints": [
+      "philosophy",
+      "existence",
+      "human condition"
+    ],
+    "affect_hints": [
+      "thoughtful",
+      "introspective",
+      "somber",
+      "questioning",
+      "overwhelmed"
+    ],
+    "genre_hints": [
+      "philosophical edit",
+      "cinematic montage",
+      "existential reflection"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 16816,
+    "output_tokens": 4384,
+    "total_tokens": 21200,
+    "cost_usd": 0.005153,
+    "latency_ms": 39777,
+    "upload_ms": 5368
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

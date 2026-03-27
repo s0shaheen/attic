@@ -1,0 +1,142 @@
+{
+  "item_id": "7551350607177714975",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:11:17.998822+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:16",
+        "visual_description": "The creator performs an energetic lip-sync and dance routine in a kitchen. He moves dynamically toward and away from the camera, emphasizing the lyrics with hand gestures and facial expressions.",
+        "audio_description": "A rap song plays with the lyrics: 'I think they all overrated. I think they all are outdated. I'm independent but they think that I'm signed to Shady because my jewelry look like I made it. Just got a house, I need a brand new Mercedes. We kicking ass like the Bates. I'm on a grind, I link with the plugs that I met one more time if these labels don't pay me.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Grey kitchen cabinets",
+          "Keurig coffee maker",
+          "Kitchen sink",
+          "Grey t-shirt"
+        ]
+      }
+    ],
+    "overall_summary": "The video features creator @chronic222 performing a high-energy lip-sync to Benny the Butcher's verse from the song 'Johnny P's Caddy'. Filmed in a kitchen with green walls and grey cabinets, the creator uses expressive movements and hand gestures to match the intensity of the rap lyrics. The video serves as a casual musical performance piece showcasing the creator's appreciation for the track.",
+    "people": [
+      {
+        "description": "White male with short brown hair, wearing a grey t-shirt, performing a lip-sync.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@chronic222"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Benny the Butcher",
+        "display_name": "Benny the Butcher",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Johnny P's Caddy",
+        "display_name": "Johnny P's Caddy \u2014 Benny the Butcher & J. Cole",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Mercedes-Benz",
+        "display_name": "Mercedes-Benz",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Shady Records",
+        "display_name": "Shady Records",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Mentioned in lyrics regarding independence",
+        "confidence": 5
+      },
+      {
+        "name": "The Bates",
+        "display_name": "The Bates",
+        "type": "cultural_reference",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Likely a reference to the Bates family or Norman Bates",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The creator is a fan of Benny the Butcher and enjoys performing his verses.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Johnny P's Caddy \u2014 Benny the Butcher & J. Cole",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The song is clearly identifiable from the lyrics and the caption 'It's Benny'."
+    },
+    "presentation_style": {
+      "primary_format": "lip_sync",
+      "camera_work": "handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Energetic, confident, and casual.",
+    "topic_hints": [
+      "Rap Music",
+      "Hip Hop Culture",
+      "Lip-syncing"
+    ],
+    "affect_hints": [
+      "Confident",
+      "Hyped",
+      "Casual"
+    ],
+    "genre_hints": [
+      "Performance",
+      "Music Video"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2863,
+    "output_tokens": 1117,
+    "total_tokens": 3980,
+    "cost_usd": 0.0011,
+    "latency_ms": 19156,
+    "upload_ms": 5685
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

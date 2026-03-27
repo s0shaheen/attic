@@ -1,0 +1,52 @@
+{
+  "item_id": "7420041708190174472",
+  "parsed_output": {
+    "summary": "Creator @bay_jark provides technical golf swing advice specifically for self-taught players, focusing on hand positioning and 'underrated drills.' The video, filmed at a night-time driving range, explains how to return hands to the center after the backswing to improve consistency.",
+    "entities": [
+      {
+        "name": "@bay_jark",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Nike",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Moncler",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Golf swing",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Roxanne - Instrumental",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "sports",
+      "secondary": "education"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this golf tutorial TikTok, creator @bay_jark shares his 'Learnings as a self taught golfer' with a focus on hand mechanics. Filmed at a driving range at night, the video features the creator wearing a Nike cap and a Moncler puffer vest while demonstrating specific swing techniques. The primary lesson centers on hand positioning, specifically addressing how the hands move during the backswing and the importance of how they return to the center. On-screen text highlights 'HANDS GET IN' and 'UNDERRATED DRILLS,' making it a valuable resource for players looking to refine their form without professional coaching. The video is set to an instrumental version of 'Roxanne' and is tagged with #golf and #golfswing. It serves as a practical guide for active learners seeking to improve their game through specific, repeatable drills and conceptual swing thoughts."
+  },
+  "metrics": {
+    "input_tokens": 4288,
+    "output_tokens": 490,
+    "total_tokens": 4778,
+    "cost_usd": 0.000937,
+    "latency_ms": 12565,
+    "keyframe_count": 3
+  }
+}

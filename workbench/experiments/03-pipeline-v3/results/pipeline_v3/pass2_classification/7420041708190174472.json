@@ -1,0 +1,71 @@
+{
+  "item_id": "7420041708190174472",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:33.211831+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "sports",
+      "secondary": "education",
+      "micro_labels": [
+        "golf",
+        "golf swing",
+        "golf tips",
+        "sports technique"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "how-to",
+        "sports drill"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9758,
+    "output_tokens": 321,
+    "total_tokens": 10079,
+    "cost_usd": 0.001656,
+    "latency_ms": 8429,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 6
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "item_id": "7197625319606701358",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:46:06.528682+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Bo Burnham, a man with light brown hair, sits on a stool, holding a microphone and gesturing with both hands. He wears a light beige turtleneck and dark pants. The background is a blue and green panel with text.",
+        "audio_description": "Bo Burnham states that kids are walking through something.",
+        "text_on_screen": "kids are like walking through this like",
+        "key_objects": [
+          "microphone",
+          "stool"
+        ]
+      },
+      {
+        "time_range": "0:02-0:05",
+        "visual_description": "The scene continues with Bo Burnham speaking and gesturing, but the video has a glitching, pixelated effect applied.",
+        "audio_description": "Bo Burnham describes a 'meta virtual reality world'.",
+        "text_on_screen": "meta virtual reality world",
+        "key_objects": [
+          "microphone",
+          "stool"
+        ]
+      },
+      {
+        "time_range": "0:05-0:08",
+        "visual_description": "Bo Burnham continues to speak and gesture, emphasizing his points with hand movements. The glitch effect is gone.",
+        "audio_description": "Bo Burnham clarifies that kids don't think the world in their phone is real.",
+        "text_on_screen": "it's not that they think the world in their phone is real",
+        "key_objects": [
+          "microphone",
+          "stool"
+        ]
+      },
+      {
+        "time_range": "0:08-0:11",
+        "visual_description": "Bo Burnham speaks into the microphone, using expressive hand gestures to illustrate his point.",
+        "audio_description": "Bo Burnham states that kids think the real world is virtual.",
+        "text_on_screen": "they think the world in the real world is virtual",
+        "key_objects": [
+          "microphone",
+          "stool"
+        ]
+      },
+      {
+        "time_range": "0:11-0:15",
+        "visual_description": "Bo Burnham continues his address, gesturing with his hands as he speaks.",
+        "audio_description": "Bo Burnham explains that the real world is seen as 'a thing to be seen'.",
+        "text_on_screen": "and that this is actually just like a thing to be seen",
+        "key_objects": [
+          "microphone",
+          "stool"
+        ]
+      },
+      {
+        "time_range": "0:15-0:19",
+        "visual_description": "Bo Burnham speaks and gestures, explaining his perspective on performance and capture.",
+        "audio_description": "Bo Burnham states that everything he does is a performance that can be captured and looked back on.",
+        "text_on_screen": "and everything I'm doing is actually a performance that can be captured and looked back on at any moment",
+        "key_objects": [
+          "microphone",
+          "stool"
+        ]
+      },
+      {
+        "time_range": "0:19-0:24",
+        "visual_description": "Bo Burnham continues to speak into the microphone, using hand gestures to convey his thoughts on planning moments.",
+        "audio_description": "Bo Burnham contrasts living moments with planning moments to look back on them.",
+        "text_on_screen": "and I'm not just living moments I'm planning moments to look back on them",
+        "key_objects": [
+          "microphone",
+          "stool"
+        ]
+      },
+      {
+        "time_range": "0:24-0:26",
+        "visual_description": "A close-up shot of Bo Burnham as he speaks, holding the microphone near his face.",
+        "audio_description": "Bo Burnham describes the situation as 'very very strange'.",
+        "text_on_screen": "it's very very strange",
+        "key_objects": [
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:26-0:28",
+        "visual_description": "A close-up shot of Bo Burnham speaking, emphasizing his words with facial expressions.",
+        "audio_description": "Bo Burnham states that content creators are wrestling with difficult questions.",
+        "text_on_screen": "these content creators are wrestling with these difficult questions",
+        "key_objects": [
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:28-0:32",
+        "visual_description": "A wider shot shows Bo Burnham on a panel with two women, all seated on stools. Bo Burnham is speaking and gesturing. The background features large text including 'EIGHTH GRADE' and 'Self-Es in the Social'.",
+        "audio_description": "Bo Burnham refers to a 'weird meta' situation.",
+        "text_on_screen": "these content creators are wrestling with these difficult questions",
+        "key_objects": [
+          "microphone",
+          "stool",
+          "panelists"
+        ]
+      },
+      {
+        "time_range": "0:32-0:36",
+        "visual_description": "A close-up of Bo Burnham speaking into the microphone, with a serious expression.",
+        "audio_description": "Bo Burnham describes being online as a 'hellscape'.",
+        "text_on_screen": "like hellscape that it is to be online",
+        "key_objects": [
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:36-0:40",
+        "visual_description": "The wider panel shot returns, with Bo Burnham speaking and gesturing. The other panelists listen.",
+        "audio_description": "Bo Burnham states that the situation is weird and complicated, and kids know and sense it.",
+        "text_on_screen": "it's weird it's weird and it's complicated",
+        "key_objects": [
+          "microphone",
+          "stool",
+          "panelists"
+        ]
+      },
+      {
+        "time_range": "0:40-0:46",
+        "visual_description": "A close-up of Bo Burnham speaking, touching his face as he explains his point.",
+        "audio_description": "Bo Burnham explains that kids' memes are ironic, detached, and self-referential, and '12 layers deep'.",
+        "text_on_screen": "that's why their memes are all ironic and detached and self referential",
+        "key_objects": [
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:46-0:51",
+        "visual_description": "The wider panel shot shows Bo Burnham speaking, gesturing with his hands. The other panelists are attentive.",
+        "audio_description": "Bo Burnham states that 'truth is completely dead' to kids, and they question culture and leadership.",
+        "text_on_screen": "this truth is completely dead to them and they know it",
+        "key_objects": [
+          "microphone",
+          "stool",
+          "panelists"
+        ]
+      },
+      {
+        "time_range": "0:51-0:57",
+        "visual_description": "Bo Burnham continues speaking on the panel, using hand gestures to emphasize his points about commercials.",
+        "audio_description": "Bo Burnham mentions Coca-Cola commercials winking and smiling, and kids' reaction of 'forget it'.",
+        "text_on_screen": "they look at like Coca Cola commercials that are winking at them and smiling",
+        "key_objects": [
+          "microphone",
+          "stool",
+          "panelists"
+        ]
+      },
+      {
+        "time_range": "0:57-1:01",
+        "visual_description": "The panel shot remains, with Bo Burnham concluding his thoughts.",
+        "audio_description": "Bo Burnham expresses uncertainty about what will happen next.",
+        "text_on_screen": "so like I have no idea what's gonna happen",
+        "key_objects": [
+          "microphone",
+          "stool",
+          "panelists"
+        ]
+      }
+    ],
+    "overall_summary": "This video features comedian Bo Burnham speaking on a panel, discussing the profound effects of social media and the virtual world on developing minds, particularly children. He argues that kids perceive the real world as virtual and their actions as performances to be captured and reviewed, rather than lived experiences. Burnham highlights the complexity and 'hellscape' nature of being online, suggesting that children's ironic and self-referential memes reflect their understanding that traditional truths and cultural narratives are 'dead' to them. He concludes by expressing uncertainty about the future implications of this phenomenon.",
+    "people": [
+      {
+        "description": "A man with light brown hair, wearing a light beige turtleneck and dark pants, sitting on a stool. He is the primary speaker, holding a microphone and gesturing expressively.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Bo Burnham"
+      },
+      {
+        "description": "A woman with long dark hair, wearing a black long-sleeved top and dark pants, sitting on a stool to Bo Burnham's left, holding a microphone. She is listening.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A woman wearing a purple dress, sitting on a stool to Bo Burnham's right. She is listening.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Bo Burnham",
+        "display_name": "Bo Burnham",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Social Media",
+        "display_name": "Social Media",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata",
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Virtual Reality",
+        "display_name": "Virtual Reality",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Eighth Grade",
+        "display_name": "Eighth Grade (film)",
+        "type": "movie_or_show",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Indiewire",
+        "display_name": "Indiewire",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Coca-Cola",
+        "display_name": "Coca-Cola",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "President",
+        "display_name": "President",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Children growing up with social media perceive the real world as virtual and their lives as performances to be captured and reviewed.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The online environment is a 'weird meta hellscape' that content creators and children are grappling with.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Children's ironic and self-referential memes are a reflection of their understanding that traditional truths and cultural narratives are no longer valid.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The future implications of social media's impact on developing minds are uncertain.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "No background music detected, only speech. 'Original sound' metadata accurately reflects this."
+    },
+    "presentation_style": {
+      "primary_format": "panel_discussion",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "serious",
+    "topic_hints": [
+      "Social media effects",
+      "Youth and technology",
+      "Modern culture commentary"
+    ],
+    "affect_hints": [
+      "Thought-provoking",
+      "Concerned",
+      "Analytical"
+    ],
+    "genre_hints": [
+      "Educational",
+      "Commentary",
+      "Interview"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 19499,
+    "output_tokens": 3141,
+    "total_tokens": 22640,
+    "cost_usd": 0.004809,
+    "latency_ms": 33978,
+    "upload_ms": 5493
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

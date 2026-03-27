@@ -1,0 +1,302 @@
+{
+  "item_id": "7609437403643661581",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:52:42.729541+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:10",
+        "visual_description": "A woman with long dark hair speaks directly to the camera, holding a small black device. A partially visible screen in the background displays text, likely a document or social media post.",
+        "audio_description": "The woman introduces an 'insane Clawd bot use case' where someone asked it to make a restaurant reservation on Resy or OpenTable.",
+        "text_on_screen": "Rooney @Rooneeyk - 55m Would anyone need this? Considering the fact that you literally have to be a nerd to set clawdbot up.. so i called my nerd friend to make a google doc with every question i had on my mind whilst trying to set it all up. CLAWDBot is breaking the internet \ud83d\udc94\ud83d\ude2e\u200d\ud83d\udca8\ud83d\udca9",
+        "key_objects": [
+          "small black device",
+          "laptop screen"
+        ]
+      },
+      {
+        "time_range": "0:10-0:30",
+        "visual_description": "The woman continues to explain, gesturing with the small device in her hand. The background remains consistent.",
+        "audio_description": "She explains that the Clawd bot received only one command, confirmed a 7 PM reservation, and then, despite no original availability on Resy, the bot built its own voice agent using 11 Labs, created a custom voice, called the restaurant, and negotiated a table using random names.",
+        "text_on_screen": "Rooney @Rooneeyk - 55m Would anyone need this? Considering the fact that you literally have to be a nerd to set clawdbot up.. so i called my nerd friend to make a google doc with every question i had on my mind whilst trying to set it all up. CLAWDBot is breaking the internet \ud83d\udc94\ud83d\ude2e\u200d\ud83d\udca8\ud83d\udca9",
+        "key_objects": [
+          "small black device",
+          "laptop screen"
+        ]
+      },
+      {
+        "time_range": "0:30-0:50",
+        "visual_description": "The woman expresses her amazement and discusses the broader implications of AI agents, still holding the device.",
+        "audio_description": "She emphasizes the 'insane' and 'crazy' nature of the bot's ability to secure a reservation when none were available. She notes that people are using these bots to negotiate various things, from car payments to house down payments, finding these stories 'super interesting and incredible'.",
+        "text_on_screen": "Rooney @Rooneeyk - 55m Would anyone need this? Considering the fact that you literally have to be a nerd to set clawdbot up.. so i called my nerd friend to make a google doc with every question i had on my mind whilst trying to set it all up. CLAWDBot is breaking the internet \ud83d\udc94\ud83d\ude2e\u200d\ud83d\udca8\ud83d\udca9",
+        "key_objects": [
+          "small black device",
+          "laptop screen"
+        ]
+      },
+      {
+        "time_range": "0:50-1:09",
+        "visual_description": "The woman continues her explanation, highlighting both the benefits and potential risks of such AI. She then introduces 'Twin'.",
+        "audio_description": "She warns that while powerful, it's a 'security nightmare', comparing it to a brilliant intern who might accidentally commit fraud. She then recommends 'Twin' for stable, cheaper, and fully finished AI autonomy, stating it allows users to enter prompts like ChatGPT.",
+        "text_on_screen": "Rooney @Rooneeyk - 55m Would anyone need this? Considering the fact that you literally have to be a nerd to set clawdbot up.. so i called my nerd friend to make a google doc with every question i had on my mind whilst trying to set it all up. CLAWDBot is breaking the internet \ud83d\udc94\ud83d\ude2e\u200d\ud83d\udca8\ud83d\udca9",
+        "key_objects": [
+          "small black device",
+          "laptop screen"
+        ]
+      },
+      {
+        "time_range": "1:09-1:12",
+        "visual_description": "A close-up shot of a laptop screen shows a web browser with the URL 'twin.so' in the address bar.",
+        "audio_description": "The woman instructs viewers to go to 'twin.so'.",
+        "text_on_screen": "Twin - The AI company builder twin.so",
+        "key_objects": [
+          "laptop",
+          "web browser"
+        ]
+      },
+      {
+        "time_range": "1:12-1:24",
+        "visual_description": "The laptop screen displays the Twin.so interface, where a user types a prompt for a restaurant reservation. The AI responds with information about the restaurant and booking options.",
+        "audio_description": "She demonstrates typing a reservation request for 'Cipriani at 7 pm tonight' into the Twin.so interface, explaining that it works like ChatGPT and sends an agent to attempt the reservation through booking sites.",
+        "text_on_screen": "What will you build? make me a reservation at cipriani at 7 pm tonight Opus 4.6 Brainstorm ideas No Tasks Launch your first agent task in the chat New agent make me a reservation at cipriani at 7 pm tonight check what this agent is set up for and what capabilities are directly make a restaurant reservation for you \u2014 there's no integration with OpenTable, Resy, or Cipriani's booking platforms. Here's what I'd suggest instead: Cipriani Downtown (376 West Broadway): Call (212) 343-0999 or book via OpenTable / Resy \u2014 they usually require reservations through those platforms. Cipriani 42nd Street (110 E 42nd St): Call (212) 973-0999 Which Cipriani location are you looking for? I could set up an agent to open a browser and attempt the reservation through their booking site, but honestly calling them or using the Resy/OpenTable app directly will be faster and more reliable for a same-day 7pm reservation. Send a message Opus 4.6",
+        "key_objects": [
+          "laptop",
+          "Twin.so interface"
+        ]
+      },
+      {
+        "time_range": "1:24-1:31",
+        "visual_description": "The laptop screen shows the Twin.so interface confirming a reservation attempt for Cipriani Downtown, with a prompt for the reservation name and number of people.",
+        "audio_description": "The woman states she made a reservation for herself and four people at Cipriani Downtown, highlighting the simplicity of typing a prompt like with ChatGPT.",
+        "text_on_screen": "Cipriani Reservation Booker Name updated Let me try to get this done for you through the browser. So it's Saturday, February 21st \u2014 you're looking for a 7 PM reservation tonight at Cipriani Downtown (376 West Broadway). Before I launch this, a couple quick things: 1. The browser agent will need to navigate a booking platform (likely OpenTable or Resy, or Cipriani's own site). It can get you to the reservation confirmation step, but it may need your name and phone number to complete the booking. 2. Same-day Saturday at 7 PM at Cipriani is tough \u2014 there's a real chance nothing's available. Want me to go ahead and try? I'll need: What name should the reservation be under? And for how many people? anisha 4 ppl Opus 4.6",
+        "key_objects": [
+          "laptop",
+          "Twin.so interface"
+        ]
+      },
+      {
+        "time_range": "1:31-1:39",
+        "visual_description": "The woman is back on camera, holding the small black device, smiling excitedly.",
+        "audio_description": "She excitedly reveals she has a reservation for 7 PM tonight, calling it 'unheard of' for same-day Cipriani, and jokingly assures viewers she's not doing anything illegal.",
+        "text_on_screen": "None",
+        "key_objects": [
+          "small black device"
+        ]
+      }
+    ],
+    "overall_summary": "This video explores the advanced capabilities of AI agents in automating real-world tasks, specifically focusing on restaurant reservations. The creator recounts an instance where 'CLAWDbot' successfully secured a table at a fully booked restaurant by creating a custom voice agent and negotiating. She then demonstrates 'Twin.so', an AI platform that allows users to easily prompt an agent to make reservations, showcasing its potential for various negotiation tasks. The video highlights the impressive autonomy of these AI tools while also briefly touching upon potential security implications.",
+    "people": [
+      {
+        "description": "A young woman with long dark hair, wearing a black top, speaking directly to the camera and demonstrating an AI tool.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Anisha"
+      }
+    ],
+    "entities": [
+      {
+        "name": "CLAWDbot",
+        "display_name": "CLAWDbot",
+        "type": "ai_agent",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Twin.so",
+        "display_name": "Twin - The AI company builder",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Resy",
+        "display_name": "Resy",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Restaurant reservation platform",
+        "confidence": 4
+      },
+      {
+        "name": "OpenTable",
+        "display_name": "OpenTable",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Restaurant reservation platform",
+        "confidence": 4
+      },
+      {
+        "name": "11 Labs",
+        "display_name": "11 Labs",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "AI voice generation platform",
+        "confidence": 4
+      },
+      {
+        "name": "ChatGPT",
+        "display_name": "ChatGPT",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "AI chatbot",
+        "confidence": 4
+      },
+      {
+        "name": "Cipriani",
+        "display_name": "Cipriani",
+        "type": "restaurant",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Cipriani Downtown",
+        "display_name": "Cipriani Downtown",
+        "type": "restaurant",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "376 West Broadway",
+        "confidence": 5
+      },
+      {
+        "name": "Cipriani 42nd Street",
+        "display_name": "Cipriani 42nd Street",
+        "type": "restaurant",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "110 E 42nd St",
+        "confidence": 5
+      },
+      {
+        "name": "Google Doc",
+        "display_name": "Google Doc",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Anisha",
+        "display_name": "Anisha",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Name used for reservation",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "AI agents like CLAWDbot can autonomously negotiate and secure services, such as restaurant reservations, even when traditional booking methods show no availability.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "AI bots are being developed to negotiate various financial transactions, including car payments and house down payments.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "While powerful, the advanced autonomy of AI agents raises significant security concerns.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Platforms like Twin.so offer a user-friendly and stable way to build and deploy AI agents for various tasks.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "Everything In Its Right Place",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": false,
+      "notes": "No background music is audibly present in the video, despite the provided music metadata."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Energetic, enthusiastic, informative, amazed",
+    "topic_hints": [
+      "AI technology",
+      "Automation",
+      "Restaurant booking"
+    ],
+    "affect_hints": [
+      "Excitement",
+      "Surprise",
+      "Curiosity",
+      "Concern"
+    ],
+    "genre_hints": [
+      "Tech review",
+      "AI demonstration",
+      "Informative video"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 31020,
+    "output_tokens": 3345,
+    "total_tokens": 34365,
+    "cost_usd": 0.00666,
+    "latency_ms": 43529,
+    "upload_ms": 7947
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

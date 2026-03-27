@@ -1,0 +1,73 @@
+{
+  "item_id": "7605039538024615198",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:24:25.152607+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "real_estate",
+      "micro_labels": [
+        "Chicago restaurants",
+        "Logan Square",
+        "Michelin Guide",
+        "sandwiches",
+        "charcuterie",
+        "local guide"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "review",
+      "micro_labels": [
+        "restaurant recommendation",
+        "food review"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "voiceover",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6636,
+    "output_tokens": 333,
+    "total_tokens": 6969,
+    "cost_usd": 0.001195,
+    "latency_ms": 8093,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 3
+  }
+}

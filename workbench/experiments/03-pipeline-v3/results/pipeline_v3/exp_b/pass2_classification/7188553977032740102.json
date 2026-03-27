@@ -1,0 +1,78 @@
+{
+  "item_id": "7188553977032740102",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:00.779736+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "career",
+      "secondary": "movies_tv",
+      "micro_labels": [
+        "motivation",
+        "hopecore",
+        "positivecore",
+        "personal growth",
+        "success",
+        "achievement"
+      ],
+      "confidence": 0.85
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "montage",
+        "hopecore",
+        "corecore"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "wholesome",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "voiceover",
+      "cinematic"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 10695,
+    "output_tokens": 364,
+    "total_tokens": 11059,
+    "cost_usd": 0.001823,
+    "latency_ms": 12587,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 7
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "item_id": "7177724606508289281",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:19:11.399776+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Creator speaks directly to the camera in a talking-head style introduction.",
+        "audio_description": "These are my top 5 favourite coffee shops in Amsterdam.",
+        "text_on_screen": "My top 5 favourite Coffeeshops In Amsterdam",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:02-0:14",
+        "visual_description": "Exterior and interior shots of Abraxas coffeeshop, including a close-up of a hot chocolate and a muffin.",
+        "audio_description": "Number one is Abraxas coffee shop. Not only is the fit out super cool, they also do the best hot chocolates and muffins in all of Amsterdam. The vibes are on point. It's located in the heart of the red light district.",
+        "text_on_screen": "1. Abraxas Jonge Roelensteeg 12-14",
+        "key_objects": [
+          "Abraxas",
+          "Hot chocolate",
+          "Muffin"
+        ]
+      },
+      {
+        "time_range": "0:14-0:24",
+        "visual_description": "Exterior of Cannacenter Best Friends Oud Zuid and a shot of the nearby Vondelpark.",
+        "audio_description": "Number two is Cannacenter best friends in Oud Zuid. It's located near the south entrance of Vondelpark. This place only does takeaway but in terms of quality and price it's the best.",
+        "text_on_screen": "2. Cannacenter Best Friends Oud Zuid Amstelveenseweg 61",
+        "key_objects": [
+          "Cannacenter Best Friends Oud Zuid",
+          "Vondelpark"
+        ]
+      },
+      {
+        "time_range": "0:24-0:33",
+        "visual_description": "Exterior of Original Dampkring Coffeeshop with the creator pointing to the sign.",
+        "audio_description": "Number three is Dampkring coffee shop. It's such a vibey hangout spot, the perfect place to get out of the cold. It's also located in the heart of Amsterdam.",
+        "text_on_screen": "3. Original Dampkring Coffeeshop Handboogstraat 29",
+        "key_objects": [
+          "Original Dampkring Coffeeshop"
+        ]
+      },
+      {
+        "time_range": "0:33-0:42",
+        "visual_description": "Exterior of Boerejongens Coffeeshop and a glimpse of the staff inside wearing formal attire.",
+        "audio_description": "Number four is Boerejongens coffee shop. This is a 5 star coffee shop where the staff wear the cutest little outfits with bow ties. It's located right near Rembrandt Square.",
+        "text_on_screen": "4. Boerejongens Coffeeshop Utrechtsestraat 21",
+        "key_objects": [
+          "Boerejongens Coffeeshop",
+          "Rembrandt Square"
+        ]
+      },
+      {
+        "time_range": "0:42-0:54",
+        "visual_description": "Exterior and interior of Boerejongens Coffeeshop West, featuring Christmas decorations and the creator holding pink rolling papers.",
+        "audio_description": "Number five is Boerejongens West. It is the prettiest coffee shop. It has such a cute and cozy vibe. They just gave Joyce and I pink rolling papers. The service, honestly.",
+        "text_on_screen": "5. Boerejongens Coffeeshop West Baarsjesweg 239",
+        "key_objects": [
+          "Boerejongens Coffeeshop West",
+          "Pink rolling papers"
+        ]
+      },
+      {
+        "time_range": "0:54-0:59",
+        "visual_description": "Quick montage of the featured coffeeshops as the creator concludes.",
+        "audio_description": "Save this video and add these coffee shops to your Amsterdam to do list and don't forget to follow me for more travel tips.",
+        "text_on_screen": "Save this video and add these coffee shops to your Amsterdam to do list And don't forget to follow me for more travel tips",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "Travel creator @amzdicko shares her top 5 favorite coffeeshops in Amsterdam, providing names, addresses, and specific reasons for each recommendation. The list includes Abraxas for its hot chocolate, Cannacenter for value, Dampkring for the atmosphere, and two Boerejongens locations for their high-end service and aesthetics. The video serves as a practical guide for tourists looking to explore Amsterdam's cannabis culture beyond the most generic options.",
+    "people": [
+      {
+        "description": "Blonde woman, travel influencer, providing recommendations.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@amzdicko"
+      },
+      {
+        "description": "Friend of the creator, mentioned as receiving pink rolling papers.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Joyce"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Abraxas",
+        "display_name": "Abraxas Coffeeshop",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Jonge Roelensteeg 12-14",
+        "confidence": 5
+      },
+      {
+        "name": "Cannacenter Best Friends Oud Zuid",
+        "display_name": "Cannacenter Best Friends Oud Zuid",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Amstelveenseweg 61",
+        "confidence": 5
+      },
+      {
+        "name": "Original Dampkring Coffeeshop",
+        "display_name": "Original Dampkring Coffeeshop",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Handboogstraat 29",
+        "confidence": 5
+      },
+      {
+        "name": "Boerejongens Coffeeshop",
+        "display_name": "Boerejongens Coffeeshop Center",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Utrechtsestraat 21",
+        "confidence": 5
+      },
+      {
+        "name": "Boerejongens Coffeeshop West",
+        "display_name": "Boerejongens Coffeeshop West",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Baarsjesweg 239",
+        "confidence": 5
+      },
+      {
+        "name": "Amsterdam",
+        "display_name": "Amsterdam, Netherlands",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Vondelpark",
+        "display_name": "Vondelpark",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Red Light District",
+        "display_name": "Red Light District",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Rembrandt Square",
+        "display_name": "Rembrandt Square",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Abraxas is recommended for its unique interior and high-quality hot chocolate and muffins.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Cannacenter Best Friends Oud Zuid offers the best quality and price for takeaway cannabis.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Boerejongens provides a '5-star' experience with professional service and upscale aesthetics.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Abraxas",
+          "details": "Address: Jonge Roelensteeg 12-14. Known for: Best hot chocolate and muffins, cool interior, Red Light District location."
+        },
+        {
+          "name": "Cannacenter Best Friends Oud Zuid",
+          "details": "Address: Amstelveenseweg 61. Known for: Best quality and price, takeaway only, near Vondelpark."
+        },
+        {
+          "name": "Original Dampkring Coffeeshop",
+          "details": "Address: Handboogstraat 29. Known for: Vibey hangout spot, central location."
+        },
+        {
+          "name": "Boerejongens Coffeeshop",
+          "details": "Address: Utrechtsestraat 21. Known for: 5-star rating, staff in bow ties, near Rembrandt Square."
+        },
+        {
+          "name": "Boerejongens Coffeeshop West",
+          "details": "Address: Baarsjesweg 239. Known for: Prettiest shop, cozy vibe, excellent service."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Chill Lo-Fi Hip Hop Beat (Unidentified)",
+      "metadata_song": "original sound - amzdicko",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "The background music is a generic lo-fi track common on TikTok; the specific title is not identifiable but the metadata is correctly attributed to the creator's voiceover."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Warm, inviting, and informative with a focus on cozy interiors and city streetscapes.",
+    "topic_hints": [
+      "Amsterdam Travel",
+      "Coffeeshop Recommendations",
+      "Cannabis Tourism"
+    ],
+    "affect_hints": [
+      "Helpful",
+      "Enthusiastic",
+      "Relaxed"
+    ],
+    "genre_hints": [
+      "Travel Guide",
+      "Top 5 List"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6899,
+    "output_tokens": 2791,
+    "total_tokens": 9690,
+    "cost_usd": 0.002709,
+    "latency_ms": 29646,
+    "upload_ms": 8357
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

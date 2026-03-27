@@ -1,0 +1,47 @@
+{
+  "item_id": "7618645907722046742",
+  "parsed_output": {
+    "summary": "This TikTok is a cinematic fan edit featuring Tom Holland as Peter Parker from the Spider-Man film franchise. It focuses on themes of isolation and sadness, likely utilizing footage from Spider-Man: No Way Home to highlight the character's emotional struggles.",
+    "entities": [
+      {
+        "name": "Tom Holland",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Peter Parker",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Spider-Man",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Marvel Cinematic Universe",
+        "type": "cultural_reference",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "other"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "sad",
+      "secondary": "nostalgic"
+    },
+    "viewer_orientation": "emotional_regulation",
+    "embedding_text": "This 18-second TikTok is a somber fan edit of Tom Holland's portrayal of Peter Parker in the Spider-Man movies. The video, captioned 'lonely', features high-quality clips of the character looking distressed, including a close-up of him in a dark hoodie with a hand over his mouth and a shot of him looking startled in a dimly lit room. Created by @blurr.cc6, the edit uses a melancholic original sound to emphasize the character's loneliness and emotional burden, likely referencing the events of Spider-Man: No Way Home. It is a prime example of a 'sad edit' or 'character study' popular in the Marvel fandom. Users might search for this using terms like 'Peter Parker sad edit', 'Tom Holland lonely TikTok', or 'Spider-Man emotional cinematic edit' to find moody content related to the MCU."
+  },
+  "metrics": {
+    "input_tokens": 4230,
+    "output_tokens": 465,
+    "total_tokens": 4695,
+    "cost_usd": 0.000914,
+    "latency_ms": 10178,
+    "keyframe_count": 3
+  }
+}

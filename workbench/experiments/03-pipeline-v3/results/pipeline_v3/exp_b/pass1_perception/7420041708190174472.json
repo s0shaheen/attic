@@ -1,0 +1,25 @@
+{
+  "item_id": "7420041708190174472",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:51:17.257961+00:00",
+  "parsed_output": {
+    "_parse_error": true,
+    "_raw_text": "{\n  \"scene_timeline\": [\n    {\n      \"time_range\": \"0:00-0:02\",\n      \"visual_description\": \"The creator, a male golfer, stands on a golf mat at a driving range at night, preparing for a swing and then executing a full golf swing.\",\n      \"audio_description\": \"Sound of a golf swing, instrumental music playing.\",\n      \"text_on_screen\": \"LEARNINGS AS A SELF TAUGHT GOLFER\",\n      \"key_objects\": [\"golf club\", \"golf ball\", \"golf mat\"]\n    },\n    {\n      \"time_range\": \"0:02-0:05\",\n      \"visual_description\": \"The creator demonstrates the top of the backswing and the follow-through of a golf swing, facing away from the camera.\",\n      \"audio_description\": \"The creator begins speaking, instrumental music continues.\",\n      \"text_on_screen\": \"THIS IS HOW I THINK ABOUT THE HANDS IN THE GOLF SWING\",\n      \"key_objects\": [\"golf club\"]\n    },\n    {\n      \"time_range\": \"0:05-0:13\",\n      \"visual_description\": \"The creator demonstrates the correct technique of keeping the hands in front of the chest throughout the golf swing.\",\n      \"audio_description\": \"The creator explains the importance of keeping hands in front of the chest, instrumental music continues.\",\n      \"text_on_screen\": \"THE HANDS IS TO TRY AND KEEP THEM GENERALLY FRONT OF YOUR CHEST AS MUCH AS YOU CAN. JUST KEEPING YOUR HANDS IN FRONT OF THE CHEST RELEASES THE GOLF CLUB\",\n      \"key_objects\": [\"golf club\"]\n    },\n    {\n      \"time_range\": \"0:13-0:22\",\n      \"visual_description\": \"The creator demonstrates an incorrect downswing where the arms trail the chest, leading to a problematic swing path.\",\n      \"audio_description\": \"The creator explains how the swing develops problems when hands get too far from the middle of the chest on the downswing, instrumental music continues.\",\n      \"text_on_screen\": \"YOUR SWING STARTS TO HAVE PROBLEMS THE FURTHER YOUR HANDS GET FROM THE MIDDLE OF THE CHEST ON THE DOWNSWING. MORE YOUR ARMS TRAIL YOUR CHEST\",\n      \"key_objects\": [\"golf club\"]\n    },\n    {\n      \"time_range\": \"0:22-0"
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 18331,
+    "output_tokens": 2702,
+    "total_tokens": 21033,
+    "cost_usd": 0.004371,
+    "latency_ms": 30755,
+    "upload_ms": 7919
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

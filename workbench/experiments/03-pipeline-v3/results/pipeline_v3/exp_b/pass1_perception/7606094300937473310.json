@@ -1,0 +1,258 @@
+{
+  "item_id": "7606094300937473310",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:54:17.229589+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-1:09",
+        "visual_description": "A split-screen displays a young Indian Muslim teen, Muhammad Kaif, being interviewed in a crowd on the top panel, while Daniel Lubetzky reacts to the video on the bottom panel. Muhammad Kaif maintains a calm and composed demeanor despite facing provocative questions from the interviewer.",
+        "audio_description": "An interviewer repeatedly asks Muhammad Kaif if he is ashamed to support Pakistan while living in India and why Pakistan shouldn't be destroyed. Muhammad Kaif articulates that everyone has a right to live and that people exist on both sides of the border, emphasizing humanity over nationalistic division.",
+        "text_on_screen": "Source: Infeed, A Muslim Indian teen is asked about Pakistan\u2014his answer goes viral., LONG LIVE PAKISTAN?, ZINDABAD, AREN'T YOU ASHAMED?, WHY SHOULD I BE ASHAMED?, PAKISTAN SHOULDN'T BE DESTROYED?, WHAT?, IT SHOULDN'T BE, LONG LIVE INDIA YES OR NO?, LONG LIVE PAKISTAN YES OR NO?, YES!, LONG LIVE EVERYONE IN THEIR OWN SPACE!, WHAT'S YOUR NAME?, YOU TOO LONG LIVE IN YOUR PLACE, WHAT'S YOUR NAME?, KAIF, FULL NAME?, MUHAMMAD KAIF, I'M FROM BIHAR, FROM BIHAR, AREN'T YOU EVEN A LITTLE ASHAMED, THAT, DESPITE LIVING IN INDIA, YOU'RE SUPPORTING PAKISTAN?, WHY SHOULDN'T PAKISTAN BE DESTROYED?, OH, SO YOU'RE MAKING THE NEWS, AREN'T YOU ASHAMED ABOUT IT?, YES?, AREN'T YOU ASHAMED, MAKING NEWS, AND SPREADING IT EVERYWHERE?, ABOUT HINDUS AND MUSLIMS, WHY SHOULD WE SUPPORT INDIA?, FIRST ANSWER THIS, THEN I'LL SAY SOMETHING, YOU WERE ASKING, THERE ARE PEOPLE OVER THERE TOO,, HERE TOO,, MUSLIMS THERE TOO,, HINDUS HERE TOO, EVERYONE IS HUMAN, THEN WHY KILL EVERYONE? TELL ME!, TELL ME WHY IT SHOULD BE DESTROYED?, EVERYONE HAS A RIGHT TO LIVE, EVERYONE HAS THAT RIGHT, THEN WHY DESTROY THEM?, DO YOU SUPPORT PAKISTAN?, IF YOU GO THERE AND SOMEONE KILLS YOU THEN THE JOB DONE?, DO YOU SUPPORT PAKISTAN?, YES I DO!, YOU ARE NOT AN INDIAN?, I AM INDIAN, YOU'RE SAYING DESTROY THAT COUNTRY,, DESTROY THAT COUNTRY, BUT EVERYWHERE PEOPLE LIVE, I JUST WANT TO KNOW ONE SMALL THING, A Simple Lesson Against Division",
+        "key_objects": [
+          "Microphone",
+          "Nike hoodie",
+          "Jordan logo"
+        ]
+      },
+      {
+        "time_range": "1:09-1:34",
+        "visual_description": "Daniel Lubetzky, the video creator, is shown in an office setting with bookshelves behind him, speaking directly to the camera while holding his phone.",
+        "audio_description": "Daniel Lubetzky praises Muhammad Kaif's response, highlighting him as an example for not allowing media to divide people into 'us vs. them,' and advocating for more sophisticated thinking and being proud to be human above all.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Phone",
+          "Bookshelves",
+          "Framed pictures",
+          "Globe"
+        ]
+      }
+    ],
+    "overall_summary": "This video presents a powerful message against division, featuring a split-screen format. The top portion showcases an interview with Muhammad Kaif, a young Muslim Indian teen, who gracefully deflects an interviewer's attempts to create animosity between India and Pakistan. He articulates a message of universal humanity and the right to live for all. The bottom portion features Daniel Lubetzky, the video's creator, reacting to Kaif's wisdom, emphasizing the importance of resisting media-driven polarization and embracing a more nuanced, human-centric perspective.",
+    "people": [
+      {
+        "description": "Young Indian Muslim teen, wearing a blue and grey jacket over a white shirt with a Nike logo. He is being interviewed and speaks calmly and thoughtfully.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Muhammad Kaif"
+      },
+      {
+        "description": "Middle-aged man, wearing a black polo shirt, sitting in an office, holding a phone. He is the creator of the video and provides commentary.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Daniel Lubetzky"
+      },
+      {
+        "description": "Unseen male voice, asking provocative questions to Muhammad Kaif.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "Several young men are visible behind Muhammad Kaif, observing the interview.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "India",
+        "display_name": "India",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pakistan",
+        "display_name": "Pakistan",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Muhammad Kaif",
+        "display_name": "Muhammad Kaif",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Daniel Lubetzky",
+        "display_name": "Daniel Lubetzky",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Bihar",
+        "display_name": "Bihar, India",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Nike",
+        "display_name": "Nike",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Jordan",
+        "display_name": "Jordan",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Islam",
+        "display_name": "Islam",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Hinduism",
+        "display_name": "Hinduism",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "One can be proud to be an Indian citizen and simultaneously wish well to neighboring countries like Pakistan, demonstrating a broader sense of humanity.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "Media and social media should not be allowed to create division and an 'us vs. them' mentality among people.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Everyone has a fundamental right to live, and no one should be targeted for destruction based on nationality or religion.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "It is crucial to approach complex issues with sophistication and understanding, recognizing that reality is often more nuanced than simple binaries.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "People should strive to love all peoples and prioritize being proud to be human above all other identities.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The 'original sound' metadata accurately reflects that there is no specific music track, only speech and ambient sounds."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "split_screen"
+    },
+    "visual_mood": "Serious, thoughtful, inspiring, hopeful, calm, reflective",
+    "topic_hints": [
+      "India-Pakistan relations",
+      "Religious tolerance",
+      "Media literacy",
+      "Unity and division"
+    ],
+    "affect_hints": [
+      "Inspired",
+      "Hopeful",
+      "Thoughtful",
+      "Challenged",
+      "Proud"
+    ],
+    "genre_hints": [
+      "News commentary",
+      "Social commentary",
+      "Interview",
+      "Inspirational content"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 29015,
+    "output_tokens": 2448,
+    "total_tokens": 31463,
+    "cost_usd": 0.005821,
+    "latency_ms": 40110,
+    "upload_ms": 8818
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

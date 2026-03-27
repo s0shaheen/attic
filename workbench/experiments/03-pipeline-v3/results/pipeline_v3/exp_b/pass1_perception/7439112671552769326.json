@@ -1,0 +1,268 @@
+{
+  "item_id": "7439112671552769326",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:49:10.272243+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "The creator, a muscular man, flexes his chest and shoulders, with red highlights appearing on his front deltoids to emphasize them.",
+        "audio_description": "The creator states, \"Up first, front delts.\"",
+        "text_on_screen": "UP FIRST FRONT DELTS",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:01-0:06",
+        "visual_description": "The creator demonstrates a cable front raise exercise, then shows a common mistake by performing the movement with excessive volume, indicating overtraining.",
+        "audio_description": "The creator explains that a common mistake is giving front delts too much volume, as they already receive significant stimulation from chest work.",
+        "text_on_screen": "A VERY COMMON MISTAKE HERE IS ACTUALLY GIVING THE FRONT DELTS TOO MUCH VOLUME SINCE THEY ALREADY GET A LOT OF STIMULATION FROM ANY CHEST WORK IN YOUR PROGRAM.",
+        "key_objects": [
+          "Cable machine",
+          "Weight plates"
+        ]
+      },
+      {
+        "time_range": "0:06-0:08",
+        "visual_description": "The creator performs push-ups with his hands elevated on weight plates, demonstrating a chest exercise.",
+        "audio_description": "The audio continues from the previous scene, emphasizing stimulation from chest work.",
+        "text_on_screen": "OF STIMULATION FROM ANY CHEST WORK IN YOUR PROGRAM.",
+        "key_objects": [
+          "Weight plates"
+        ]
+      },
+      {
+        "time_range": "0:08-0:10",
+        "visual_description": "The creator continues performing push-ups, then a digital overlay of a scientific study abstract appears on screen.",
+        "audio_description": "The creator introduces a German study from the 1990s.",
+        "text_on_screen": "THIS GERMAN STUDY FROM",
+        "key_objects": [
+          "Scientific paper abstract"
+        ]
+      },
+      {
+        "time_range": "0:10-0:18",
+        "visual_description": "A close-up of the scientific paper abstract is shown, followed by an anatomical diagram of a skeleton with deltoid muscles highlighted, illustrating the size comparison between front and side deltoids.",
+        "audio_description": "The creator cites the German study, stating that bodybuilders have five times the front delt size but only three times the side delt size compared to non-lifters.",
+        "text_on_screen": "THE 19 NINETIES FOUND THAT BODYBUILDERS HAVE 5X TIMES THE FRONT DELT SIZE AS NONLIFTERS BUT ONLY 3X THE SIDE DELT SIZE AS NONLIFTERS.",
+        "key_objects": [
+          "Scientific paper abstract",
+          "Anatomical diagram"
+        ]
+      },
+      {
+        "time_range": "0:18-0:23",
+        "visual_description": "The creator, wearing a hoodie, speaks directly to someone off-camera in a gym setting, gesturing with his hands.",
+        "audio_description": "The creator concludes that front delts are often overemphasized and asks if the listener agrees that side and rear delts are more important from a bodybuilding standpoint.",
+        "text_on_screen": "SO THEY OFTEN ARE OVEREMPHASIZED. WOULD YOU AGREE WITH THAT? Like side and rear are more important from a bodybuilding standpoint.",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video addresses the common mistake of overtraining front deltoids. The creator explains that front delts receive ample stimulation from chest workouts, making additional direct front delt work often unnecessary. He supports this claim by referencing a 1990s German study that found bodybuilders have disproportionately larger front delts compared to their side delts. The video concludes by suggesting that focusing on side and rear deltoids is more crucial for achieving a balanced and aesthetic physique in bodybuilding.",
+    "people": [
+      {
+        "description": "A muscular male with blonde/light brown hair and a beard, wearing a tank top and later a hoodie. He demonstrates exercises and speaks directly to the camera.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Front Deltoids",
+        "display_name": "Front Deltoids (Front Delts)",
+        "type": "body_part",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Shoulder Workout",
+        "display_name": "Shoulder Workout",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Chest Work",
+        "display_name": "Chest Work",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Cable Front Raise",
+        "display_name": "Cable Front Raise",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Push-ups",
+        "display_name": "Push-ups",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Sonographische Befunde an Schultergelenken von Bodybuildern",
+        "display_name": "German Study: Sonographische Befunde an Schultergelenken von Bodybuildern (Ultrasound evaluation of the shoulder joints in bodybuilders)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Published in: Sport und Medizin (1991)",
+        "confidence": 4
+      },
+      {
+        "name": "Bodybuilding",
+        "display_name": "Bodybuilding",
+        "type": "activity",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "audio",
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Side Deltoids",
+        "display_name": "Side Deltoids (Side Delts)",
+        "type": "body_part",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Rear Deltoids",
+        "display_name": "Rear Deltoids (Rear Delts)",
+        "type": "body_part",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "RISE",
+        "display_name": "RISE",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Front deltoids are often overemphasized in training programs.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Front deltoids receive sufficient stimulation from chest workouts, reducing the need for excessive direct training.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "For a balanced bodybuilding physique, side and rear deltoids are more important to focus on than front deltoids.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "No background music, only speech."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static|transitions",
+      "editing_style": "jump_cuts|text_overlay"
+    },
+    "visual_mood": "informative",
+    "topic_hints": [
+      "Shoulder training",
+      "Workout myths",
+      "Bodybuilding science"
+    ],
+    "affect_hints": [
+      "Informative",
+      "Educational",
+      "Practical"
+    ],
+    "genre_hints": [
+      "Fitness tutorial",
+      "Educational content",
+      "Workout advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8695,
+    "output_tokens": 2359,
+    "total_tokens": 11054,
+    "cost_usd": 0.00272,
+    "latency_ms": 26363,
+    "upload_ms": 5314
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

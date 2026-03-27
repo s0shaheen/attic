@@ -1,0 +1,203 @@
+{
+  "item_id": "7267020246026816798",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:17:39.473398+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:11",
+        "visual_description": "Bryce sits in a lawn chair, staring intensely at Xander's baby who is sitting on a couch wearing a Backwoods hat.",
+        "audio_description": "Bryce asks why the baby is looking at him and asks if he has a 'staring problem.'",
+        "text_on_screen": "Bryce Tries To Fight Xanders Baby \ud83e\udd28\ud83e\udd2f\nReal Bros Of Simi Valley Season 2",
+        "key_objects": [
+          "Beanie",
+          "SLIME t-shirt",
+          "Backwoods hat",
+          "Flannel shirt"
+        ]
+      },
+      {
+        "time_range": "0:11-0:18",
+        "visual_description": "Bryce stands up aggressively, shouting at Xander while his friends try to hold him back from the baby.",
+        "audio_description": "Bryce yells, 'Yo Xan, get ur boy dawg!' and 'What's good, dog?'",
+        "text_on_screen": "Bryce Tries To Fight Xanders Baby \ud83e\udd28\ud83e\udd2f\nReal Bros Of Simi Valley Season 2",
+        "key_objects": [
+          "Camo shorts",
+          "Sunglasses"
+        ]
+      },
+      {
+        "time_range": "0:18-0:36",
+        "visual_description": "Bryce and Xander argue face-to-face while the rest of the group watches in disbelief.",
+        "audio_description": "Bryce claims the baby is 'dogging' him and wants to 'throw baby hands.' Xander tries to explain the baby is just chilling.",
+        "text_on_screen": "Bryce Tries To Fight Xanders Baby \ud83e\udd28\ud83e\udd2f\nReal Bros Of Simi Valley Season 2",
+        "key_objects": [
+          "Patio umbrella",
+          "Party decorations"
+        ]
+      },
+      {
+        "time_range": "0:36-0:47",
+        "visual_description": "Bryce lunges toward the baby again, is restrained, and then points to his shirt, mocking the baby's literacy.",
+        "audio_description": "Bryce says, 'I'm about to fight your kid right now.' He then asks the baby, 'Can you read yet? Check it out, read that.'",
+        "text_on_screen": "Bryce Tries To Fight Xanders Baby \ud83e\udd28\ud83e\udd2f\nReal Bros Of Simi Valley Season 2",
+        "key_objects": [
+          "SLIME logo"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a comedic clip from the mockumentary series 'Real Bros of Simi Valley' featuring the character Bryce getting into a heated confrontation with an infant. Bryce perceives the baby's neutral stare as a sign of disrespect and a challenge to a physical fight. Despite his friends' attempts to de-escalate, Bryce continues to threaten the child and mock his inability to read. The scene parodies hyper-masculine 'bro' culture and the absurdity of fragile egos.",
+    "people": [
+      {
+        "description": "Man in a brown beanie and black 'SLIME' t-shirt, acting aggressively toward a baby.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Bryce (Jimmy Tatro)"
+      },
+      {
+        "description": "Man in a grey shirt and backwards hat, defending his baby.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Xander (Nick Colletti)"
+      },
+      {
+        "description": "Man in a tank top and sunglasses holding the baby.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Wade (Cody Ko)"
+      },
+      {
+        "description": "Man in a plaid shirt and grey hat watching the argument.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Duncan (Matt Getty)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Real Bros of Simi Valley",
+        "display_name": "Real Bros of Simi Valley",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Season 2",
+        "confidence": 5
+      },
+      {
+        "name": "Jimmy Tatro",
+        "display_name": "Jimmy Tatro",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Nick Colletti",
+        "display_name": "Nick Colletti",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Cody Ko",
+        "display_name": "Cody Ko",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "SLIME",
+        "display_name": "SLIME Clothing",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "T-shirt worn by Bryce",
+        "confidence": 4
+      },
+      {
+        "name": "Backwoods",
+        "display_name": "Backwoods",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Hat worn by the baby",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The scene satirizes fragile masculinity and 'bro' culture by showing a grown man feeling physically threatened by an infant's stare.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": null
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Characters and show are clearly identified from the visual and text overlay."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Aggressive yet comedic, bright outdoor lighting, high-energy conflict.",
+    "topic_hints": [
+      "Comedy Skit",
+      "Bro Culture",
+      "Mockumentary"
+    ],
+    "affect_hints": [
+      "Amused",
+      "Confused",
+      "Energetic"
+    ],
+    "genre_hints": [
+      "TV Show Clip",
+      "Comedy"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5796,
+    "output_tokens": 1772,
+    "total_tokens": 7568,
+    "cost_usd": 0.001933,
+    "latency_ms": 23093,
+    "upload_ms": 5711
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

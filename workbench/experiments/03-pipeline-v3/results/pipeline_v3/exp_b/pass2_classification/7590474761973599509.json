@@ -1,0 +1,72 @@
+{
+  "item_id": "7590474761973599509",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:02:04.895285+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": null,
+      "micro_labels": [
+        "ribeye steak",
+        "mushroom sauce",
+        "air fryer recipes",
+        "baked potato",
+        "steak cooking"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "recipe",
+      "micro_labels": [
+        "cooking tutorial",
+        "food demonstration"
+      ],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "cinematic",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9924,
+    "output_tokens": 325,
+    "total_tokens": 10249,
+    "cost_usd": 0.001684,
+    "latency_ms": 8154,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 6
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "item_id": "7585397803673718029",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:21:50.019530+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "The creator spreads a thick layer of Oikos Pro yogurt onto a large flour tortilla using a spoon.",
+        "audio_description": "A viral meme audio plays: 'Oh my god bro, hell naw man, what the fuck man...'",
+        "text_on_screen": "\"I'm craving sum sweet\" gym bros will eat ANYTHING just to get their protein in \ud83d\ude02\ud83d\ude2d",
+        "key_objects": [
+          "Oikos Pro Yogurt",
+          "Tortilla",
+          "Spoon"
+        ]
+      },
+      {
+        "time_range": "0:03-0:05",
+        "visual_description": "Close-up of the creator sprinkling a generous amount of ground cinnamon over the yogurt-covered tortilla.",
+        "audio_description": "The meme audio continues with exaggerated groaning and shouting.",
+        "text_on_screen": "\"I'm craving sum sweet\" gym bros will eat ANYTHING just to get their protein in \ud83d\ude02\ud83d\ude2d",
+        "key_objects": [
+          "Cinnamon shaker",
+          "Tortilla"
+        ]
+      },
+      {
+        "time_range": "0:05-0:07",
+        "visual_description": "The creator rolls the tortilla tightly into a wrap/burrito shape.",
+        "audio_description": "The meme audio continues: 'Get yo ass home boy...'",
+        "text_on_screen": "\"I'm craving sum sweet\" gym bros will eat ANYTHING just to get their protein in \ud83d\ude02\ud83d\ude2d",
+        "key_objects": [
+          "Tortilla wrap"
+        ]
+      },
+      {
+        "time_range": "0:07-0:10",
+        "visual_description": "The creator takes a large bite of the yogurt wrap and looks directly into the camera while chewing.",
+        "audio_description": "The meme audio concludes with distorted shouting.",
+        "text_on_screen": "\"I'm craving sum sweet\" gym bros will eat ANYTHING just to get their protein in \ud83d\ude02\ud83d\ude2d",
+        "key_objects": [
+          "Tortilla wrap"
+        ]
+      }
+    ],
+    "overall_summary": "The video features a fitness creator preparing a quick, high-protein snack to satisfy a sweet craving. He spreads Oikos Pro yogurt onto a tortilla, seasons it with cinnamon, and rolls it up into a wrap. The content uses a popular 'hell naw' meme audio to humorously acknowledge the unconventional and sometimes unappetizing food combinations 'gym bros' consume to meet their daily protein goals.",
+    "people": [
+      {
+        "description": "A Black male creator wearing a black jacket and a black beanie, preparing and eating a protein snack.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "w.gutwa"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Oikos",
+        "display_name": "Oikos",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Oikos Pro Yogurt",
+        "display_name": "Oikos Pro High Protein Yogurt",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "20g protein variety",
+        "confidence": 5
+      },
+      {
+        "name": "Gymbro",
+        "display_name": "Gym Bro Culture",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Cinnamon",
+        "display_name": "Ground Cinnamon",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Fitness enthusiasts often prioritize protein content over traditional culinary appeal when satisfying cravings.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Protein Yogurt Wrap",
+          "details": "1 flour tortilla, 1 container of Oikos Pro yogurt, topped with ground cinnamon and rolled."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Oh My God Bro Hell Naw (Meme Audio) \u2014 Unknown Artist",
+      "metadata_song": "original sound - w.gutwa",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The Oikos branding is clearly visible. The audio is a very common TikTok meme sound."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Humorous, casual, and slightly chaotic due to the audio choice.",
+    "topic_hints": [
+      "Fitness Nutrition",
+      "High Protein Snacks",
+      "Gym Culture"
+    ],
+    "affect_hints": [
+      "Amused",
+      "Relatable",
+      "Skeptical"
+    ],
+    "genre_hints": [
+      "GymTok",
+      "Food Hack"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2375,
+    "output_tokens": 1383,
+    "total_tokens": 3758,
+    "cost_usd": 0.001186,
+    "latency_ms": 17944,
+    "upload_ms": 5400
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

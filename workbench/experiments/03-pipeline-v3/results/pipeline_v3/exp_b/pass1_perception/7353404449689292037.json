@@ -1,0 +1,451 @@
+{
+  "item_id": "7353404449689292037",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:50:18.051028+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "The creator, @brycekicks, sits on a couch, directly addressing the camera. A text overlay introduces the video's topic, and a comment bubble is visible on screen.",
+        "audio_description": "The creator introduces a list of the top 5 best affordable sneakers for spring and summer.",
+        "text_on_screen": "Top 5 Best $100 Sneakers \ud83d\udc5f, Replying to @Will new balance 530s still going strong",
+        "key_objects": [
+          "Creator",
+          "New York Mets baseball cap"
+        ]
+      },
+      {
+        "time_range": "0:03-0:20",
+        "visual_description": "Various images of the Adidas SL 72 sneakers are shown, including product shots in blue and green, lifestyle shots of people wearing them, vintage advertisements, and a close-up of a shoe tongue featuring Bob Marley.",
+        "audio_description": "The creator discusses the Adidas SL 72 as the fifth pick, highlighting its minimal design, slim silhouette, resemblance to the Adidas Gazelle, history in the 1972 Olympics, and cultural significance through Bob Marley. He also mentions collaborations with Wales Bonner and potential future collaborations with Sporty & Rich.",
+        "text_on_screen": "5. Adidas SL 72, $100, SL72- voted one of the 25 best-designed products by Fortune, SL 72 & 76 reborn for the ultimate in cushioned traction, adidas Bob Marley Endorsed By, Sporty & Rich",
+        "key_objects": [
+          "Adidas SL 72 sneakers",
+          "Adidas brand",
+          "Bob Marley",
+          "Wales Bonner",
+          "Sporty & Rich"
+        ]
+      },
+      {
+        "time_range": "0:20-0:32",
+        "visual_description": "The Nike P6000 sneaker is presented through a hand holding the shoe, lifestyle shots of individuals wearing it, and a product page displaying different colorways and pricing information.",
+        "audio_description": "The creator introduces the Nike P6000 as the fourth pick, noting its alignment with the early 2000s runner trend, comfort, and availability in various colorways. He mentions a sale price and a slightly higher regular price.",
+        "text_on_screen": "4. Nike P6000, $93 (on sale), 123 purchased in the last 7 days, Nike P-6000, Shoes, $110, Highly Rated",
+        "key_objects": [
+          "Nike P6000 sneakers",
+          "Nike brand"
+        ]
+      },
+      {
+        "time_range": "0:32-0:47",
+        "visual_description": "Images of the Nike Killshot 2 Leather are displayed, showing people wearing the shoes in different casual outfits, followed by a product page with pricing and sale details.",
+        "audio_description": "The creator presents the Nike Killshot 2 as the third choice, comparing it to the Adidas Samba and noting its lower price. He recalls its popularity in the early 2010s, including J.Crew exclusive colorways, and mentions the concurrent trend of wearing Sperry's.",
+        "text_on_screen": "3. Nike Killshot 2, $90, 182 purchased in the last 7 days, Nike Killshot 2 Leather, Shoes, $90, Spring Sale: use code SPRING for 20% off, Highly Rated",
+        "key_objects": [
+          "Nike Killshot 2 Leather sneakers",
+          "Nike brand",
+          "J.Crew",
+          "Sperry's"
+        ]
+      },
+      {
+        "time_range": "0:47-0:55",
+        "visual_description": "The New Balance 530 is shown through lifestyle shots of people wearing the sneakers and a New Balance product page detailing the shoe's specifications and price.",
+        "audio_description": "The creator introduces the New Balance 530 as the second pick, calling it the best affordable New Balance sneaker currently available and emphasizing its versatility.",
+        "text_on_screen": "2. New Balance 530, $99.99, Men / Shoes / Lifestyle, Unisex, 530, 4.2 (93), $99.99, Excluded from promotions, Color: Raincloud with shadow grey and silver metallic",
+        "key_objects": [
+          "New Balance 530 sneakers",
+          "New Balance brand"
+        ]
+      },
+      {
+        "time_range": "0:55-1:04",
+        "visual_description": "The Asics Gel 1130 is featured with close-up shots of the shoe on foot and product images of different colorways. The creator is visible in an inset.",
+        "audio_description": "The creator discusses the Asics Gel 1130, noting Asics' current popularity. He highlights two wearable colorways available for under $100 and mentions collaborations, such as with Hall Studios.",
+        "text_on_screen": "Asics Gel 1130, Act like you don't see the Nike socks, $100",
+        "key_objects": [
+          "Asics Gel 1130 sneakers",
+          "Asics brand",
+          "Hall Studios"
+        ]
+      },
+      {
+        "time_range": "1:04-1:13",
+        "visual_description": "The Vans Knu Skool is presented with a full-body shot of someone wearing the shoes, followed by a Foot Locker product page showing the shoe and its price.",
+        "audio_description": "The creator introduces the Vans Knu Skool as the most affordable and potentially best shoe on the list, describing it as having classic Vans DNA with a 90s twist. He then asks viewers for their own suggestions and encourages them to follow for more content.",
+        "text_on_screen": "1. Vans Knu Skool, $75, Foot Locker, vans knu, $75.00",
+        "key_objects": [
+          "Vans Knu Skool sneakers",
+          "Vans brand",
+          "Foot Locker"
+        ]
+      }
+    ],
+    "overall_summary": "This video, created by @brycekicks, presents a ranked list of the top five best affordable sneakers for spring and summer, all priced around $100 or less. The creator showcases each shoe, including the Adidas SL 72, Nike P6000, Nike Killshot 2, New Balance 530, Asics Gel 1130, and Vans Knu Skool, discussing their style, history, comfort, and versatility. The video aims to provide viewers with budget-friendly sneaker recommendations that are currently trending or offer timeless appeal for various fashion preferences.",
+    "people": [
+      {
+        "description": "A young man with short dark hair and a beard, wearing a white collared cardigan over a white t-shirt and a navy blue New York Mets baseball cap. He is the host and speaker of the video.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@brycekicks"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Adidas SL 72",
+        "display_name": "Adidas SL 72",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "$100, minimal design, slim silhouette, designed for 1972 Olympics, famously worn by Bob Marley, collaborations with Wales Bonner, potential collaborations with Sporty & Rich",
+        "confidence": 5
+      },
+      {
+        "name": "Nike P6000",
+        "display_name": "Nike P6000",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "$93 (on sale), $110 (regular), early 2000s runner trend, comfortable, wide range of colors",
+        "confidence": 5
+      },
+      {
+        "name": "Nike Killshot 2 Leather",
+        "display_name": "Nike Killshot 2 Leather",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "$90, casual, similar to Adidas Samba, popular in early 2010s, J.Crew exclusive colorways",
+        "confidence": 5
+      },
+      {
+        "name": "New Balance 530",
+        "display_name": "New Balance 530",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "$99.99, best affordable New Balance sneaker, versatile, Color: Raincloud with shadow grey and silver metallic",
+        "confidence": 5
+      },
+      {
+        "name": "Asics Gel 1130",
+        "display_name": "Asics Gel 1130",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "$100, popular, two super wearable colorways, collaborations with Hall Studios",
+        "confidence": 5
+      },
+      {
+        "name": "Vans Knu Skool",
+        "display_name": "Vans Knu Skool",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "$75, most affordable, classic Vans DNA with a 90s twist",
+        "confidence": 5
+      },
+      {
+        "name": "Adidas",
+        "display_name": "Adidas",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Nike",
+        "display_name": "Nike",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "New Balance",
+        "display_name": "New Balance",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Asics",
+        "display_name": "Asics",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Vans",
+        "display_name": "Vans",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Bob Marley",
+        "display_name": "Bob Marley",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Musician, famously wore Adidas SL 72",
+        "confidence": 5
+      },
+      {
+        "name": "Wales Bonner",
+        "display_name": "Wales Bonner",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Collaborated with Adidas on SL 72",
+        "confidence": 4
+      },
+      {
+        "name": "Sporty & Rich",
+        "display_name": "Sporty & Rich",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Potential collaborator with Adidas on SL 72",
+        "confidence": 4
+      },
+      {
+        "name": "J.Crew",
+        "display_name": "J.Crew",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Released exclusive colorways of Nike Killshot 2",
+        "confidence": 4
+      },
+      {
+        "name": "Sperry's",
+        "display_name": "Sperry's",
+        "type": "clothing",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Popular shoe brand during early 2010s, mentioned in context of Nike Killshot 2 popularity",
+        "confidence": 4
+      },
+      {
+        "name": "Hall Studios",
+        "display_name": "Hall Studios",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Collaborated with Asics on Gel 1130",
+        "confidence": 4
+      },
+      {
+        "name": "New York Mets",
+        "display_name": "New York Mets",
+        "type": "cultural_reference",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Baseball team, logo on creator's cap",
+        "confidence": 5
+      },
+      {
+        "name": "Foot Locker",
+        "display_name": "Foot Locker",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Retailer shown for Vans Knu Skool",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The Adidas SL 72 offers a minimal design with a rich history in sports and culture, making it a stylish and affordable option.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The Nike P6000 is a comfortable and fashionable choice that aligns with the popular early 2000s runner trend.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The Nike Killshot 2 is a versatile casual sneaker, comparable to the Adidas Samba, and was a popular choice in the early 2010s.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The New Balance 530 is the best affordable New Balance sneaker currently available, offering great versatility for various outfits.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The Asics Gel 1130 is a highly popular and wearable sneaker, available in versatile colorways and featuring notable collaborations.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The Vans Knu Skool provides classic Vans aesthetics with a 90s twist at a highly affordable price point.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "ranking",
+      "items": [
+        {
+          "name": "Vans Knu Skool",
+          "details": "$75"
+        },
+        {
+          "name": "Nike Killshot 2 Leather",
+          "details": "$90"
+        },
+        {
+          "name": "Nike P6000",
+          "details": "$93 (on sale)"
+        },
+        {
+          "name": "New Balance 530",
+          "details": "$99.99"
+        },
+        {
+          "name": "Adidas SL 72",
+          "details": "$100"
+        },
+        {
+          "name": "Asics Gel 1130",
+          "details": "$100"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "That Couch Potato Again",
+      "metadata_song": "That Couch Potato Again",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": ""
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, engaging, casual, enthusiastic",
+    "topic_hints": [
+      "sneakers",
+      "mens fashion",
+      "affordable fashion",
+      "shoe recommendations",
+      "streetwear"
+    ],
+    "affect_hints": [
+      "informative",
+      "helpful",
+      "enthusiastic",
+      "confident"
+    ],
+    "genre_hints": [
+      "product review",
+      "listicle",
+      "fashion advice",
+      "style guide"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 23102,
+    "output_tokens": 4086,
+    "total_tokens": 27188,
+    "cost_usd": 0.005917,
+    "latency_ms": 40015,
+    "upload_ms": 7529
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

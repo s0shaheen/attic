@@ -1,0 +1,270 @@
+{
+  "item_id": "7606077954380123405",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:20:33.523214+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:48",
+        "visual_description": "Joe Tustin stands at a podium in a warehouse-style venue, presenting a slide titled 'The Physics of AI Economics'.",
+        "audio_description": "Joe introduces the topic of AI token economics, mentioning the recent release of Opus 4.6 and its 'fast mode' pricing.",
+        "text_on_screen": "The Economics of Tokens Joe Tustin; THE PHYSICS OF AI ECONOMICS How to Choose Your Infrastructure Joe Tustin tt: @joetustin_",
+        "key_objects": [
+          "Projector screen",
+          "Podium",
+          "Laptop"
+        ]
+      },
+      {
+        "time_range": "0:48-1:38",
+        "visual_description": "Slide changes to 'YOU ARE NOT BUYING WORDS', showing a diagram of a GPU.",
+        "audio_description": "Joe explains that buying tokens is actually renting GPU time. He notes the high capital expense of running models like DeepSeek 3.0 or 5.3 on private infrastructure.",
+        "text_on_screen": "YOU ARE NOT BUYING WORDS. You are renting a slice of time on a GPU.",
+        "key_objects": [
+          "GPU diagram",
+          "DeepSeek"
+        ]
+      },
+      {
+        "time_range": "1:38-2:22",
+        "visual_description": "Slide titled 'A token is not a word' explains parallel vs. sequential processing.",
+        "audio_description": "Joe details why input tokens are cheaper (parallel processing) while output tokens are expensive (sequential processing). He mentions NVIDIA H100/H200 and Google TPUs.",
+        "text_on_screen": "A token is not a word. It is a unit of compute time on a GPU. Stop budgeting for text. Start budgeting for GPU seconds. The Physics of Inference: Parallel Processing vs Sequential Processing",
+        "key_objects": [
+          "NVIDIA H100",
+          "NVIDIA H200",
+          "Google TPUs"
+        ]
+      },
+      {
+        "time_range": "2:22-3:28",
+        "visual_description": "Slide titled 'The Three Economic Models' compares Pay per Token, Pay for Time, and Pay for Infrastructure.",
+        "audio_description": "Joe breaks down the pros and cons of API usage, subscriptions, and self-hosting, noting that subscriptions offer arbitrage opportunities for power users.",
+        "text_on_screen": "The Three Economic Models: 1. Pay per Token (API), 2. Pay for Time (Subscription), 3. Pay for Infrastructure (Self-hosting)",
+        "key_objects": [
+          "Anthropic",
+          "OpenAI"
+        ]
+      },
+      {
+        "time_range": "3:28-3:53",
+        "visual_description": "Slide shows 'THE ARBITRAGE ZONE' graph for subscriptions.",
+        "audio_description": "Joe explains the 'sweet spot' where a user consumes more value than the subscription cost, but warns that providers like Anthropic may ban users for building products on top of consumer subscriptions.",
+        "text_on_screen": "SUBSCRIPTION: THE POWER OF ARBITRAGE. THE ARBITRAGE ZONE. Subscription Fee ($100/mo)",
+        "key_objects": [
+          "Claude"
+        ]
+      },
+      {
+        "time_range": "3:53-5:06",
+        "visual_description": "Slide titled 'THE PRODUCT MANAGER'S PROBLEM' shows revenue vs. cost graphs.",
+        "audio_description": "Joe discusses how AI features change SaaS economics from flat compute costs to variable costs that scale with usage, potentially making power users unprofitable.",
+        "text_on_screen": "THE PRODUCT MANAGER'S PROBLEM. Traditional SaaS vs AI features. High Margin Zone. Power User AI Cost ($11.25)",
+        "key_objects": [
+          "SaaS"
+        ]
+      },
+      {
+        "time_range": "5:06-5:47",
+        "visual_description": "Slide titled 'The Adoption Multiplier' shows an exponential cost curve.",
+        "audio_description": "Joe explains that as users move from 'trying' to 'relying' on AI, costs skyrocket. He suggests caching and orchestration as mitigation strategies.",
+        "text_on_screen": "The Adoption Multiplier: Success is an expensive problem. The Cost Gap: Driven by Adoption + Intensity.",
+        "key_objects": [
+          "Caching",
+          "Orchestration"
+        ]
+      },
+      {
+        "time_range": "5:47-6:33",
+        "visual_description": "Final slides cover the 'Utilization Trap', 'Decision Framework', and 'Architecture Selector'.",
+        "audio_description": "Joe concludes by explaining the risks of self-hosting (utilization trap) and provides a framework for choosing infrastructure based on usage shape and quality needs. He notes that this analysis has a 6-month shelf life.",
+        "text_on_screen": "The Utilization Trap. THE HIDDEN VARIABLE: TIME. The Decision Framework: A Sequence. ARCHITECTURE SELECTOR. THE SHELF LIFE OF THIS ANALYSIS.",
+        "key_objects": [
+          "Decision Framework",
+          "Architecture Selector"
+        ]
+      }
+    ],
+    "overall_summary": "Joe Tustin delivers a technical presentation on the economics of AI tokens, arguing that businesses must view tokens as units of GPU compute time rather than just text. He compares three economic models\u2014API, subscription, and self-hosting\u2014highlighting the 'arbitrage zone' of subscriptions and the 'utilization trap' of owning hardware. The main takeaway is that AI features introduce variable costs that can make a product a victim of its own success if not managed through a strategic infrastructure framework. He emphasizes that input tokens are cheaper due to parallel processing, while output tokens are expensive because they are sequential.",
+    "people": [
+      {
+        "description": "A bald man with a white beard wearing a light-colored button-down shirt, presenting technical slides.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Joe Tustin"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Anthropic",
+        "display_name": "Anthropic",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "OpenAI",
+        "display_name": "OpenAI",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Claude",
+        "display_name": "Claude AI",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Opus 4.6 mentioned",
+        "confidence": 5
+      },
+      {
+        "name": "DeepSeek",
+        "display_name": "DeepSeek",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Models 3.0 and 5.3",
+        "confidence": 4
+      },
+      {
+        "name": "NVIDIA H100",
+        "display_name": "NVIDIA H100 GPU",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Approx. $30,000 per unit",
+        "confidence": 5
+      },
+      {
+        "name": "Google TPU",
+        "display_name": "Google TPU",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Modal",
+        "display_name": "Modal",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "GPU renting infrastructure",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "A token is a unit of compute time on a GPU, not just a word.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Input tokens are cheaper because they can be processed in parallel; output tokens are expensive because they must be generated sequentially.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "AI features introduce variable COGS (Cost of Goods Sold) that can make power users unprofitable under flat-rate subscription models.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Success in AI adoption creates a 'cost gap' where expenses scale exponentially with user reliance.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Self-hosting GPUs leads to a 'utilization trap' where you pay for capacity you aren't using.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "API / Pay per Token",
+          "details": "Best for spiky or unpredictable usage, early-stage development, and when frontier quality is needed."
+        },
+        {
+          "name": "Subscription / Pay for Time",
+          "details": "Best for team productivity and power users who can take advantage of arbitrage, though risky for building products."
+        },
+        {
+          "name": "Self-hosting / Pay for Infrastructure",
+          "details": "Best for high-volume, consistent workloads where utilization can be kept high (above 25-40%)."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Ambient Lo-fi Background Track \u2014 Unidentified",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "The background music is generic ambient lo-fi and does not match a specific popular song. All technical entities and slide text were captured accurately."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Professional, educational, and analytical with a technical, industrial setting.",
+    "topic_hints": [
+      "AI Infrastructure",
+      "Token Economics",
+      "GPU Computing"
+    ],
+    "affect_hints": [
+      "Informed",
+      "Strategic",
+      "Cautionary"
+    ],
+    "genre_hints": [
+      "Educational Presentation",
+      "Tech Talk"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 57802,
+    "output_tokens": 2711,
+    "total_tokens": 60513,
+    "cost_usd": 0.010297,
+    "latency_ms": 57876,
+    "upload_ms": 29959
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

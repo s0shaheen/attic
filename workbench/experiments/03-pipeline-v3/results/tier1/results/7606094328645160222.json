@@ -1,0 +1,52 @@
+{
+  "item_id": "7606094328645160222",
+  "parsed_output": {
+    "summary": "Drew Simic (@drewsimic_) announces a challenge to build six SaaS startups in six months. In this 'Day 1' video, he introduces his first project idea which focuses on a tool for saving Instagram videos.",
+    "entities": [
+      {
+        "name": "Drew Simic",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Instagram",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      },
+      {
+        "name": "SaaS",
+        "type": "trend_or_meme",
+        "relevance": "primary"
+      },
+      {
+        "name": "MacBook",
+        "type": "product",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Ethereal Glow",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "career",
+      "secondary": "technology"
+    },
+    "genre": "vlog",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "inspiring"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "Drew Simic (@drewsimic_) kicks off an ambitious challenge to build six startups in six months, specifically focusing on SaaS (Software as a Service) products. In this Day 1 vlog, he introduces his first startup idea centered around a tool to help users save Instagram videos more effectively. The video shows Drew at his standing desk with a MacBook and a large monitor displaying a red tree wallpaper. He uses the hashtags #saas, #startup, and #vibecoding to describe his development process. This content is ideal for aspiring entrepreneurs, software developers, and those interested in the 'build in public' movement. The background music is 'Ethereal Glow'. He discusses the specific pain point of needing to reference social media content and how his first project aims to solve it through code."
+  },
+  "metrics": {
+    "input_tokens": 4276,
+    "output_tokens": 474,
+    "total_tokens": 4750,
+    "cost_usd": 0.000926,
+    "latency_ms": 8161,
+    "keyframe_count": 3
+  }
+}

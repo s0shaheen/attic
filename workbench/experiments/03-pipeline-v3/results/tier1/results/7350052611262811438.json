@@ -1,0 +1,52 @@
+{
+  "item_id": "7350052611262811438",
+  "parsed_output": {
+    "summary": "Fitness creator @jpgcoaching shares a \"bare minimum\" leg day routine designed for people who dislike training legs but want effective results. He outlines a streamlined list of essential movements including deep squats, hinges, and leg curls to cover all major lower body muscle groups.",
+    "entities": [
+      {
+        "name": "@jpgcoaching",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Squat",
+        "type": "exercise",
+        "relevance": "primary"
+      },
+      {
+        "name": "RDL",
+        "type": "exercise",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Leg Extension",
+        "type": "exercise",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Calf Raise",
+        "type": "exercise",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "fitness",
+      "secondary": "health"
+    },
+    "genre": "workout",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this fitness video, creator @jpgcoaching shares a streamlined leg day routine titled \"The Bare Minimum\" for those who hate training legs. The video features on-screen text listing essential exercises to hit all major lower body muscle groups efficiently. The recommended routine includes deep squats to maximize knee bend, leg extensions, hinge movements such as RDLs (Romanian Deadlifts), SLDLs, or Good Mornings, leg curls, and calf raises. He also mentions optional exercises like glute bridges, abductions (kickbacks), and adductions for extra volume. This content is ideal for gym-goers looking for a high-impact, low-complexity workout plan that covers the glutes, quads, hamstrings, and calves without spending hours in the gym. The creator uses a POV format to address common gym frustrations while providing actionable coaching advice."
+  },
+  "metrics": {
+    "input_tokens": 4298,
+    "output_tokens": 486,
+    "total_tokens": 4784,
+    "cost_usd": 0.000936,
+    "latency_ms": 6608,
+    "keyframe_count": 3
+  }
+}

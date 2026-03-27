@@ -1,0 +1,203 @@
+{
+  "item_id": "7596783536229633335",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:12:20.810170+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-1:17",
+        "visual_description": "Creator speaks directly to the camera in a home office setting, discussing the shift in software engineering due to AI.",
+        "audio_description": "The rules of the software engineering game have fundamentally changed. We're now watching AI-resistant software developers with 15 years of experience get laughably outpaced by interns using Claude and Cursor.",
+        "text_on_screen": "THE RULES OF GAME HAVE FUNDAMENTALLY CHANGED. WE'RE NOW WATCHING A.I. RESISTANT SOFTWARE DEVELOPERS WITH 15 YEARS OF EXPERIENCE GET LAUGHABLY OUTPACED BY INTERNS USING CLAUDE AND CURSOR. High-agency playbook for SWEs pt. 1",
+        "key_objects": [
+          "Microphone",
+          "Monitor",
+          "Drum kit"
+        ]
+      },
+      {
+        "time_range": "1:17-3:22",
+        "visual_description": "Creator explains 'Truth Number One' regarding AI as a mirror for existing skills and the importance of vision.",
+        "audio_description": "Truth number one: AI is a mirror, not a threat. AI is only ever as good as the data it's trained on... AI has exposed what actually mattered all along: vision and taste.",
+        "text_on_screen": "TRUTH NUMBER ONE. A.I. IS A MIRROR. NOT A THREAT. VISION AND TASTE IS. SYNTAX WASN'T THE VALUABLE PART. ARCHITECTURAL THINKING IS.",
+        "key_objects": [
+          "Wall art"
+        ]
+      },
+      {
+        "time_range": "3:22-5:46",
+        "visual_description": "Creator introduces 'Truth Number Two' using an analogy from the show 'Culinary Class Wars'.",
+        "audio_description": "Truth number two: the race is already happening and you are losing. He describes a scene from Culinary Class Wars where professional chefs (White Spoons) immediately grab the best ingredients while amateurs (Black Spoons) waste time planning.",
+        "text_on_screen": "TRUTH NO. 2. THE RACE IS ALREADY HAPPENING AND YOU ARE LOSING. CULINARY CLASS WAR. WHITE SPOONS. BLACK SPOONS. WHAT'S MORE IMPORTANT THAN A GREAT CHEF? GREAT INGREDIENTS.",
+        "key_objects": []
+      },
+      {
+        "time_range": "5:46-7:54",
+        "visual_description": "Creator concludes with 'Truth Number Three' about personal agency and the difference between instruction followers and problem solvers.",
+        "audio_description": "Truth number three: your value isn't your skills, it's your agency. He defines high agency as treating problems like experiments and iterating until finding a solution.",
+        "text_on_screen": "TRUTH NUMBER THREE. YOUR VALUE ISN'T YOUR SKILLS. IT'S YOUR AGENCY. CAMP 1. CAMP 2. WE'RE COOKED. HIGH AGENCY PEOPLE DON'T CARE IF THE TOOLS CHANGE.",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "The video presents a 'High-agency playbook' for software engineers navigating the rise of AI. The creator argues that the industry has shifted from a purely technical skills game to one defined by direction, taste, and momentum. He outlines three core truths: AI acts as a mirror that commoditizes syntax while highlighting the value of architectural thinking; the race to leverage AI is already underway, favoring those who act quickly; and an engineer's true value lies in their 'agency'\u2014the ability to solve problems independently rather than just following instructions. The main takeaway is that engineers must embrace AI as a collaborator and focus on high-level outcomes to remain irreplaceable.",
+    "people": [
+      {
+        "description": "A man with short blonde hair and a beard, wearing a brown corduroy shirt over a dark button-down.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Claude",
+        "display_name": "Claude AI",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Large Language Model",
+        "confidence": 5
+      },
+      {
+        "name": "Cursor",
+        "display_name": "Cursor Code Editor",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "AI-powered IDE",
+        "confidence": 5
+      },
+      {
+        "name": "Midjourney",
+        "display_name": "Midjourney",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "AI Image Generator",
+        "confidence": 5
+      },
+      {
+        "name": "Culinary Class Wars",
+        "display_name": "Culinary Class Wars",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Korean cooking competition show",
+        "confidence": 5
+      },
+      {
+        "name": "React",
+        "display_name": "React",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "JavaScript library for building user interfaces",
+        "confidence": 5
+      },
+      {
+        "name": "GPT-5",
+        "display_name": "GPT-5",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Future OpenAI model iteration",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Software engineering is no longer just a skills game; it is now a race of direction, taste, and momentum.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "AI commoditizes technical syntax, making architectural thinking and vision the primary differentiators for developers.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "High agency\u2014the ability to see and solve problems through iteration without waiting for instructions\u2014is the most critical career skill in the AI era.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Truth #1: AI is a Mirror",
+          "details": "AI commoditizes syntax and technical execution, exposing that vision, taste, and architectural thinking were the true values all along."
+        },
+        {
+          "name": "Truth #2: The Race is Happening",
+          "details": "While some debate the ethics or future of AI, high-agency individuals are already using it to build and ship products, securing the 'best ingredients' of the new economy."
+        },
+        {
+          "name": "Truth #3: Value is Agency",
+          "details": "Career security comes from being a problem solver who iterates and moves toward outcomes, rather than an instruction follower waiting for the market to stabilize."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "sonido original",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The creator's speech is very clear and aligns perfectly with the text overlays."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Serious, intellectual, and motivating with a focus on career strategy.",
+    "topic_hints": [
+      "Software Engineering",
+      "Artificial Intelligence",
+      "Career Development"
+    ],
+    "affect_hints": [
+      "Focused",
+      "Urgent",
+      "Empowered"
+    ],
+    "genre_hints": [
+      "Educational",
+      "Professional Advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 43730,
+    "output_tokens": 2046,
+    "total_tokens": 45776,
+    "cost_usd": 0.007787,
+    "latency_ms": 43596,
+    "upload_ms": 20471
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

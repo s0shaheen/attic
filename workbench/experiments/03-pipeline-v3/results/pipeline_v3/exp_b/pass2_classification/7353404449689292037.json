@@ -1,0 +1,71 @@
+{
+  "item_id": "7353404449689292037",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:38.616924+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fashion",
+      "secondary": "education",
+      "micro_labels": [
+        "sneakers",
+        "streetwear",
+        "affordable fashion",
+        "footwear trends"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "ranking",
+      "micro_labels": [
+        "top 5 list",
+        "product recommendations"
+      ],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "neutral",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "slideshow"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "shopping_research",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 10935,
+    "output_tokens": 321,
+    "total_tokens": 11256,
+    "cost_usd": 0.001833,
+    "latency_ms": 6913,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 7
+  }
+}

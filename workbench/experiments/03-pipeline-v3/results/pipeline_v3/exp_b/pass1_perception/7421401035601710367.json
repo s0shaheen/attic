@@ -1,0 +1,291 @@
+{
+  "item_id": "7421401035601710367",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:51:31.549795+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:25",
+        "visual_description": "The creator, Justin Seymour, stands on the tee box of the 9th hole at a golf course, preparing for his drive. He holds a golf club and gestures as he speaks, with a golf ball teed up in front of him. The background shows a lush green fairway under a clear sky at dusk.",
+        "audio_description": "The creator talks about the 9th hole having sentimental value from high school matches and discusses his club selection, opting for a 3-wood over a driver to avoid a 300-yard water hazard.",
+        "text_on_screen": "",
+        "key_objects": [
+          "golf club",
+          "golf ball",
+          "golf tee",
+          "golf course",
+          "Wilson hat"
+        ]
+      },
+      {
+        "time_range": "0:25-0:31",
+        "visual_description": "Justin executes a powerful golf swing with his 3-wood, sending the golf ball flying down the fairway. An animated yellow line traces the trajectory of the ball.",
+        "audio_description": "Sound of a golf swing and the ball being hit.",
+        "text_on_screen": "",
+        "key_objects": [
+          "golf club",
+          "golf ball"
+        ]
+      },
+      {
+        "time_range": "0:31-0:43",
+        "visual_description": "Justin is now on the fairway, closer to the green, assessing his next shot. He holds a different golf club and looks towards the hole, with a large clubhouse visible in the background.",
+        "audio_description": "The creator discusses the distance to the middle pin (105 yards) and his plan to use a 52-degree wedge with a three-quarter swing.",
+        "text_on_screen": "",
+        "key_objects": [
+          "golf club",
+          "golf ball",
+          "golf course",
+          "clubhouse"
+        ]
+      },
+      {
+        "time_range": "0:43-0:53",
+        "visual_description": "Justin performs a controlled golf swing with his 52-degree wedge. An animated yellow line again shows the ball's flight path, landing near the hole.",
+        "audio_description": "Sound of a golf swing and the ball being hit. The creator comments that the shot was 'just a little bit' off but 'not so bad'.",
+        "text_on_screen": "",
+        "key_objects": [
+          "golf club",
+          "golf ball"
+        ]
+      },
+      {
+        "time_range": "0:53-1:06",
+        "visual_description": "On the green, Justin carefully lines up a putt. He is bent over, focused on the golf ball and the hole, holding a putter.",
+        "audio_description": "The creator describes the putt as downhill and left-to-right, emphasizing the need for good pace. Sound of the putter hitting the ball.",
+        "text_on_screen": "",
+        "key_objects": [
+          "putter",
+          "golf ball",
+          "golf hole"
+        ]
+      },
+      {
+        "time_range": "1:06-1:10",
+        "visual_description": "The golf ball rolls past the hole, and Justin bends down to retrieve it. The background shows the golf course and distant lights.",
+        "audio_description": "Sound of the ball rolling past the hole. The creator sighs in slight disappointment.",
+        "text_on_screen": "Great putt there \ud83e\udd73\ud83d\ude2d",
+        "key_objects": [
+          "golf ball",
+          "golf hole"
+        ]
+      }
+    ],
+    "overall_summary": "This video features golfer Justin Seymour playing the 9th hole at Arrowhead South, a course that holds sentimental value from his high school golf matches. He demonstrates strategic club selection by choosing a 3-wood for his tee shot to avoid a 300-yard water hazard. Justin then executes a precise 105-yard approach shot to the green with a 52-degree wedge. Despite a well-played approach, his final putt narrowly misses the hole, concluding his round with a positive attitude.",
+    "people": [
+      {
+        "description": "Young male with blonde curly hair, wearing a white baseball cap, a maroon polo shirt with a subtle pattern, grey shorts, and white golf shoes. He is the creator of the video, demonstrating golf techniques and providing commentary.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Justin Seymour"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Arrowhead South",
+        "display_name": "Arrowhead South Golf Course",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "caption",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Golf",
+        "display_name": "Golf",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "caption",
+          "hashtags",
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Golf swing",
+        "display_name": "Golf Swing",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "hashtags",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Golf life",
+        "display_name": "Golf Life",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": [
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Athlete",
+        "display_name": "Athlete",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Sports",
+        "display_name": "Sports",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Lefty",
+        "display_name": "Lefty Golfer",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Chicago",
+        "display_name": "Chicago",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "3-wood",
+        "display_name": "3-wood Golf Club",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "52-degree wedge",
+        "display_name": "52-degree Wedge Golf Club",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Putter",
+        "display_name": "Putter Golf Club",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Wilson",
+        "display_name": "Wilson",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Strategic club selection is crucial in golf to navigate course hazards and optimize shot placement.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "Even with good approach shots, putting requires precision and can be challenging.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "original sound",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "All spoken dialogue and key objects identified. Confidence in specific golf club models is based on creator's verbal identification."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "calm",
+    "topic_hints": [
+      "golf",
+      "sports",
+      "golf instruction",
+      "personal reflection"
+    ],
+    "affect_hints": [
+      "focused",
+      "determined",
+      "slightly disappointed",
+      "relaxed"
+    ],
+    "genre_hints": [
+      "sports vlog",
+      "golf tutorial",
+      "personal narrative"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 22460,
+    "output_tokens": 2219,
+    "total_tokens": 24679,
+    "cost_usd": 0.0047,
+    "latency_ms": 29502,
+    "upload_ms": 5541
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

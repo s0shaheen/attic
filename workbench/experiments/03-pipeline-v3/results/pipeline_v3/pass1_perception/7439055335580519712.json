@@ -1,0 +1,255 @@
+{
+  "item_id": "7439055335580519712",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:14:21.074778+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "Creator tastes a forkful of creamy rigatoni pasta from a large pan and reacts with satisfaction.",
+        "audio_description": "Yo, if you're lazy, just watch this man. It's gonna change your life.",
+        "text_on_screen": "POV: you just cooked up absolute dr*gs in a pan",
+        "key_objects": [
+          "Rigatoni pasta",
+          "Stainless steel pan",
+          "Apron"
+        ]
+      },
+      {
+        "time_range": "0:07-0:13",
+        "visual_description": "Creator adds vegetable oil, diced shallots, and minced garlic to a hot pan and saut\u00e9s them until soft.",
+        "audio_description": "A splash of vegetable oil, some diced shallots, a bunch of garlic. And the onions have to look like this.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Vegetable oil",
+          "Shallots",
+          "Garlic"
+        ]
+      },
+      {
+        "time_range": "0:13-0:20",
+        "visual_description": "Creator pours a carton of tomato passata into the pan and seasons it with salt and black pepper.",
+        "audio_description": "Passata. A good pinch of salt, a bunch of black pepper.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Napolina Tomato Passata",
+          "Salt",
+          "Black pepper"
+        ]
+      },
+      {
+        "time_range": "0:20-0:26",
+        "visual_description": "Creator adds dried spices, oregano, and fresh basil leaves to the sauce, accidentally dropping some basil.",
+        "audio_description": "A few spices, oregano, and then\u2014whoa! Flipping\u2014I just washed it, man. Fresh basil. Stir this through.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Oregano",
+          "Fresh basil",
+          "Spices"
+        ]
+      },
+      {
+        "time_range": "0:26-0:31",
+        "visual_description": "Creator pours vegetable stock into the pan and increases the heat to bring the liquid to a simmer.",
+        "audio_description": "Some vegetable stock. And then crank up the heat and bring it up to heat. Thermodynamics, isn't it?",
+        "text_on_screen": "",
+        "key_objects": [
+          "Vegetable stock"
+        ]
+      },
+      {
+        "time_range": "0:31-0:42",
+        "visual_description": "Creator shows a box of Napolina Rigatoni, pours 400g into the simmering sauce, and adds more salt.",
+        "audio_description": "Some rigatoni pasta. Now Napolina, I don't even understand why the hell you don't even sponsor me at this point, man. We're in a relationship you don't even know about it. 400 grams. Sprinkle of salt.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Napolina Rigatoni pasta"
+        ]
+      },
+      {
+        "time_range": "0:42-0:54",
+        "visual_description": "Creator adds several large dollops of mascarpone cheese to the cooked pasta and stirs it in to create a creamy sauce.",
+        "audio_description": "Turn the heat off. Mascarpone. Like this. Screw it, a bit more. Oh, that wasn't intentional, that one. Oh my gosh, this looks good, man. Absolute drugs.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Mascarpone cheese"
+        ]
+      },
+      {
+        "time_range": "0:54-1:12",
+        "visual_description": "Creator finishes the dish with lemon juice, grated parmesan (accidentally grating his finger), chili flakes, lemon zest, and more fresh basil.",
+        "audio_description": "Okay, heat off. Add a touch of lemon. Oh my lord. Half my finger inside this pan right now. Extra chili flakes on top, lemon zest, some fresh basil. This is it.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Lemon",
+          "Parmesan cheese",
+          "Microplane grater",
+          "Chili flakes"
+        ]
+      }
+    ],
+    "overall_summary": "Creator @whatinthechef demonstrates how to make a 'One Pot Spicy Creamy Rigatoni Pasta' in approximately 30 minutes. The video follows a step-by-step process starting with saut\u00e9ing shallots and garlic, followed by simmering a sauce of passata, vegetable stock, and various spices. The dry rigatoni is cooked directly in the sauce before being finished with mascarpone cheese, parmesan, lemon, and fresh basil. The creator emphasizes that this recipe is ideal for 'lazy' cooks or those looking for a simple meal prep option that yields multiple servings.",
+    "people": [
+      {
+        "description": "A male cook wearing a black hoodie and a custom black apron with white text.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@whatinthechef"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Napolina",
+        "display_name": "Napolina",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Pasta and tomato product brand",
+        "confidence": 5
+      },
+      {
+        "name": "Rigatoni",
+        "display_name": "Rigatoni Pasta",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata"
+        ],
+        "specifications": "400g used",
+        "confidence": 5
+      },
+      {
+        "name": "Mascarpone",
+        "display_name": "Mascarpone Cheese",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Tomato Passata",
+        "display_name": "Tomato Passata",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "500g carton",
+        "confidence": 5
+      },
+      {
+        "name": "Parmesan",
+        "display_name": "Parmesan Cheese",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Grated over the top",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Cooking pasta directly in the sauce (one-pot method) is a time-saving technique that results in a more flavorful dish.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Adding mascarpone cheese at the end creates a rich, creamy texture without needing heavy cream.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "Fresh lemon juice and zest provide a necessary acidic balance to a heavy, creamy pasta sauce.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "One Pot Spicy Creamy Rigatoni",
+          "details": "Ingredients: Vegetable oil, diced shallots, minced garlic, 500g tomato passata, salt, black pepper, dried oregano, paprika, garlic powder, fresh basil, vegetable stock, 400g rigatoni pasta, mascarpone cheese, lemon (juice and zest), parmesan cheese, chili flakes."
+        },
+        {
+          "name": "Step 1: Aromatics",
+          "details": "Saut\u00e9 diced shallots and garlic in vegetable oil until softened."
+        },
+        {
+          "name": "Step 2: Sauce Base",
+          "details": "Add passata, salt, pepper, oregano, paprika, garlic powder, and fresh basil. Stir in vegetable stock."
+        },
+        {
+          "name": "Step 3: Cook Pasta",
+          "details": "Bring sauce to a simmer, add 400g dry rigatoni, and cook until pasta is tender."
+        },
+        {
+          "name": "Step 4: Creamy Finish",
+          "details": "Turn off heat. Stir in mascarpone cheese until fully incorporated."
+        },
+        {
+          "name": "Step 5: Garnish",
+          "details": "Finish with lemon juice, grated parmesan, chili flakes, lemon zest, and fresh basil."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound - whatinthechef",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All ingredients and brands were clearly identified through visual and audio cues. No background music was present."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Energetic, humorous, and appetizing with warm kitchen lighting.",
+    "topic_hints": [
+      "One-pot meals",
+      "Pasta recipes",
+      "Quick dinners"
+    ],
+    "affect_hints": [
+      "Hungry",
+      "Amused",
+      "Inspired"
+    ],
+    "genre_hints": [
+      "Cooking TikTok",
+      "Recipe tutorial"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 7931,
+    "output_tokens": 2434,
+    "total_tokens": 10365,
+    "cost_usd": 0.00265,
+    "latency_ms": 33672,
+    "upload_ms": 8048
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "item_id": "7267020246026816798",
+  "parsed_output": {
+    "summary": "A comedic clip from the mockumentary series 'The Real Bros of Simi Valley' Season 2. The scene features Bryce (played by Getter) getting into a ridiculous confrontation where he attempts to fight Xander's (Jimmy Tatro) baby during a backyard hangout.",
+    "entities": [
+      {
+        "name": "The Real Bros of Simi Valley",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Jimmy Tatro",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Getter",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Bryce",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Xander",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "comedy",
+      "secondary": "movies_tv"
+    },
+    "genre": "skit",
+    "affect": {
+      "dominant": "funny",
+      "secondary": "cringe"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "This TikTok features a hilarious scene from Season 2 of the mockumentary series 'The Real Bros of Simi Valley'. In the clip, the character Bryce, played by DJ and producer Getter, wearing a navy 'SLIME' t-shirt and orange beanie, gets into a heated argument with Xander, played by Jimmy Tatro. The absurd conflict centers on Bryce trying to fight Xander's baby at a backyard kickback. The video captures the signature 'bro' dialogue and awkward social dynamics of the show. On-screen text reads 'Bryce Tries To Fight Xanders Baby' and 'Real Bros Of Simi Valley Season 2'. It is a classic example of the show's satirical humor, featuring characters like Xander in his Fox Racing hat and shocked reactions from the female characters in the background."
+  },
+  "metrics": {
+    "input_tokens": 4321,
+    "output_tokens": 493,
+    "total_tokens": 4814,
+    "cost_usd": 0.000944,
+    "latency_ms": 8072,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "item_id": "7570922950296096014",
+  "parsed_output": {
+    "summary": "Conor Harris (@conor_harris_) demonstrates a corrective exercise using a foam roller and wall support to address muscle imbalances in the pelvis and lower back. The video uses an anatomical skeleton model to highlight the psoas and iliacus muscles before showing the 'drag down' technique in a 90/90 position.",
+    "entities": [
+      {
+        "name": "Conor Harris",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Foam roller",
+        "type": "product",
+        "relevance": "primary"
+      },
+      {
+        "name": "90/90 Wall Lift",
+        "type": "exercise",
+        "relevance": "primary"
+      },
+      {
+        "name": "Pelvic Tilt",
+        "type": "technique",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Psoas",
+        "type": "technique",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "fitness",
+      "secondary": "health"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "This fitness tutorial by Conor Harris (@conor_harris_) focuses on corrective exercises for the pelvis and lower back. The video features an anatomical model highlighting deep hip flexors like the psoas and iliacus. Conor demonstrates a 90/90 wall-supported exercise where he lies on his back with a blue foam roller between his knees. He instructs the viewer to perform a 'drag down' motion with their heels against the wall or a block to engage the hamstrings and reposition the pelvis. This video is ideal for users searching for physical therapy drills, hip flexor relief, or postural correction techniques. It provides structured teaching on how to manage common musculoskeletal issues through specific, controlled movements and on-screen cues like 'most people', 'in between', and 'drag down'."
+  },
+  "metrics": {
+    "input_tokens": 4223,
+    "output_tokens": 494,
+    "total_tokens": 4717,
+    "cost_usd": 0.00093,
+    "latency_ms": 10171,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "item_id": "7422452426055109934",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:08:52.617789+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "A basketball player with long curly hair brings the ball up the court during an indoor game.",
+        "audio_description": "Upbeat hip-hop music begins playing with a heavy bass line.",
+        "text_on_screen": "Bag work \ud83e\udd2e",
+        "key_objects": [
+          "basketball",
+          "basketball hoop",
+          "Stephen Curry mural"
+        ]
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "The player executes a rapid series of dribbling moves, including a crossover and a behind-the-back dribble, to bypass a defender.",
+        "audio_description": "The music continues; background noise of the gym and sneakers squeaking is audible.",
+        "text_on_screen": "Bag work \ud83e\udd2e",
+        "key_objects": [
+          "basketball"
+        ]
+      },
+      {
+        "time_range": "0:06-0:08",
+        "visual_description": "The player finishes the play with a successful layup as the camera follows his movement toward the basket.",
+        "audio_description": "The song 'Finesse' continues through the end of the clip.",
+        "text_on_screen": "Bag work \ud83e\udd2e",
+        "key_objects": [
+          "basketball hoop"
+        ]
+      }
+    ],
+    "overall_summary": "This short highlight video features basketball creator @christianyawpp demonstrating his dribbling skills during an AAU-style game. He uses a combination of a crossover and a behind-the-back move to effectively 'shake' his defender before finishing with a layup. The video is set in a Life Time gym featuring a prominent Stephen Curry mural in the background. The main takeaway is a showcase of high-level ball-handling skills, referred to in basketball slang as 'bag work.'",
+    "people": [
+      {
+        "description": "Young male basketball player with long curly hair wearing a black jersey and shorts.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Christian Yaw"
+      },
+      {
+        "description": "Opposing player attempting to defend the drive.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Referee standing on the sideline watching the play.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Stephen Curry",
+        "display_name": "Stephen Curry",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Featured on a large mural in the gym",
+        "confidence": 5
+      },
+      {
+        "name": "Life Time",
+        "display_name": "Life Time Fitness",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Gym facility branding",
+        "confidence": 5
+      },
+      {
+        "name": "SC30 Select Camp",
+        "display_name": "SC30 Select Camp",
+        "type": "event",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Stephen Curry's elite basketball camp branding",
+        "confidence": 5
+      },
+      {
+        "name": "Finesse",
+        "display_name": "Finesse \u2014 Koncept P, willnosleep & avonosleep",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "AAU Basketball",
+        "display_name": "AAU Basketball",
+        "type": "event",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": "Amateur Athletic Union",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The creator possesses advanced ball-handling skills ('bag') capable of beating defenders in a game setting.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Finesse \u2014 Koncept P, willnosleep & avonosleep",
+      "metadata_song": "Finesse (feat. Koncept P, willnosleep & avonosleep)",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The location is a Life Time gym, specifically one that hosts SC30 events based on the mural."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "High-energy, athletic, and competitive.",
+    "topic_hints": [
+      "Basketball skills",
+      "AAU highlights",
+      "Ball handling"
+    ],
+    "affect_hints": [
+      "Impressed",
+      "Hyped",
+      "Energetic"
+    ],
+    "genre_hints": [
+      "Sports highlight",
+      "Hoop tape"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2195,
+    "output_tokens": 1281,
+    "total_tokens": 3476,
+    "cost_usd": 0.001098,
+    "latency_ms": 13049,
+    "upload_ms": 3186
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "item_id": "7618645907722046742",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:43.081758+00:00",
+  "parsed_output": {
+    "_parse_error": true,
+    "_raw_text": "{\n  \"topic\": {\n    \"primary\": \"movies_tv\",\n    \"secondary\": \"relationships\",\n    \"micro_labels\": [\n      \"Spider-Man\",\n      \"Peter Parker\",\n      \"Marvel Cinematic Universe\",\n      \"Spider-Man: No Way Home\"\n    ],\n    \"confidence\": 0.95\n  },\n  \"genre\": {\n    \"label\": \"edit\",\n    \"micro_labels\": [\n      \"fan edit\",\n      \"character study\",\n      \"vibe edit\"\n    ],\n    \"confidence\": 0.98\n  },\n  \"affect\": [\n    {\n      \"label\": \"sad\",\n      \"tier\": \"dominant\"\n    },\n    {\n      \"label\": \"nostalgic\",\n      \"tier\": \"secondary\"\n    }\n  ],\n  \"presentation_style\": [\n    \"cinematic\"\n  ],\n  \"content_provenance\": {\n    \"label\": \"remix\",\n    \"confidence\": 0.9\n  },\n  \"communicative_intent\": {\n    \"label\": \"entertain\",\n    \"confidence\": 0.85\n  },\n  \"creator_role\": {\n    \"label\": \"artist\",\n    \"confidence\": 0.8\n  },\n  \"viewer_orientation\": {\n    \"label\": \"emotional_regulation\","
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5436,
+    "output_tokens": 315,
+    "total_tokens": 5751,
+    "cost_usd": 0.001004,
+    "latency_ms": 35241,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 2
+  }
+}

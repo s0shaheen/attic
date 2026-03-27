@@ -1,0 +1,47 @@
+{
+  "item_id": "7619219121082813727",
+  "parsed_output": {
+    "summary": "Ben Elias Moe discusses the phenomenon of 'AI brain fry,' suggesting that the mental fatigue from using AI tools like Claude Code is only part of a larger cognitive shift. He encourages viewers to take breaks and maintain their humanity as technology becomes more integrated into daily life.",
+    "entities": [
+      {
+        "name": "Ben Elias Moe",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Claude Code",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "AI brain fry",
+        "type": "trend_or_meme",
+        "relevance": "primary"
+      },
+      {
+        "name": "Campfire",
+        "type": "brand",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "health"
+    },
+    "genre": "news_commentary",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this vlog-style commentary, creator Ben Elias Moe (@beneliasmoe) explores the concept of 'AI brain fry,' a term describing the cognitive exhaustion caused by intensive use of artificial intelligence. He specifically references Claude Code in the hashtags, suggesting the video addresses the mental load of AI-assisted programming or high-speed workflows. Walking through a city, Moe argues that the current fatigue is only the beginning and emphasizes the need for users to 'stay human' and take time to 'sit down' and disconnect. The video features on-screen text including ''AI brain fry' is just half the story' and 'peace and stay human.' A physical advertisement for the finance brand Campfire is visible in the background. This video is a primary resource for anyone researching AI burnout, developer mental health, or the long-term psychological effects of LLM integration and rapid technological advancement."
+  },
+  "metrics": {
+    "input_tokens": 4274,
+    "output_tokens": 467,
+    "total_tokens": 4741,
+    "cost_usd": 0.000921,
+    "latency_ms": 11101,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "item_id": "7354561231413431595",
+  "parsed_output": {
+    "summary": "@codetourtiktok provides a concise 'Machine learning 101' tutorial for software developers and computer science students. He demonstrates building a simple neural network in Google Colab using TensorFlow and Keras to solve a linear regression problem.",
+    "entities": [
+      {
+        "name": "@codetourtiktok",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "TensorFlow",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "Keras",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "Google Colab",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Python",
+        "type": "technique",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "education"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "A 4-minute machine learning tutorial by @codetourtiktok titled 'Machine learning 101' aimed at software and computer science enthusiasts. The video features a screen recording of a Google Colab notebook (Untitled0.ipynb) where the creator writes Python code to build a simple neural network. Key code shown includes importing tensorflow as tf, using keras.layers.Dense, and defining a Sequential model with one unit. The demonstration uses a small dataset (X=[0,1,2,3,4], Y=[-1,1,3,5,7]) to train the model to recognize the pattern Y=2X-1. The viewer sees the training process through 500 epochs and a final prediction for X=10 that yields 18.98. This educational video is ideal for beginners looking to understand the basic mechanics of how models learn from data and make predictions using the sgd optimizer and mean squared error loss."
+  },
+  "metrics": {
+    "input_tokens": 4250,
+    "output_tokens": 514,
+    "total_tokens": 4764,
+    "cost_usd": 0.000946,
+    "latency_ms": 12823,
+    "keyframe_count": 3
+  }
+}

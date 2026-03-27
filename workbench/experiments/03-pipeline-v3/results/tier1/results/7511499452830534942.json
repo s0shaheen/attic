@@ -1,0 +1,52 @@
+{
+  "item_id": "7511499452830534942",
+  "parsed_output": {
+    "summary": "Fitness creator Sebastian Burka (@sebastianburka) shares a technical tip for 'reshaping the axial skeleton' by adjusting lifting form. He demonstrates the correct technique on an Atlantis chest fly machine, explaining that he stopped arching and retracting to focus on expansion.",
+    "entities": [
+      {
+        "name": "Sebastian Burka",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Atlantis",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Chest Fly",
+        "type": "exercise",
+        "relevance": "primary"
+      },
+      {
+        "name": "Phonky Tribu",
+        "type": "song",
+        "relevance": "supporting"
+      },
+      {
+        "name": "New York Yankees",
+        "type": "brand",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "fitness",
+      "secondary": "health"
+    },
+    "genre": "workout",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this 16-second fitness TikTok, creator @sebastianburka shares a pivotal tip for 'reshaping the axial skeleton brick by brick.' The video features him speaking from his car and demonstrating an exercise on an Atlantis chest fly machine in a gym setting. He is seen wearing a grey tank top and a New York Yankees baseball cap. The core advice provided through on-screen text is to 'stop arching' and 'stop retracting' during movements, instead focusing on 'expansion' to achieve better structural results. This content is aimed at gym-goers looking for technical lifting advice to improve their posture and muscle engagement. The video is set to the track 'Phonky Tribu' and serves as a concise tutorial on optimizing chest training form for structural body changes."
+  },
+  "metrics": {
+    "input_tokens": 4234,
+    "output_tokens": 473,
+    "total_tokens": 4707,
+    "cost_usd": 0.000919,
+    "latency_ms": 9243,
+    "keyframe_count": 3
+  }
+}

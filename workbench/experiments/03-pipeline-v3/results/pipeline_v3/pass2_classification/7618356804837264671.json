@@ -1,0 +1,78 @@
+{
+  "item_id": "7618356804837264671",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:52.852493+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "music",
+      "micro_labels": [
+        "Spider-Man",
+        "MCU",
+        "Marvel Cinematic Universe",
+        "The Punisher",
+        "Fan Edit",
+        "Tom Holland"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "Fan Edit",
+        "Cinematic Edit",
+        "Music Video Edit"
+      ],
+      "confidence": 0.98
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "cinematic",
+      "voiceover"
+    ],
+    "content_provenance": {
+      "label": "remix",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5408,
+    "output_tokens": 368,
+    "total_tokens": 5776,
+    "cost_usd": 0.001032,
+    "latency_ms": 7502,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 2
+  }
+}

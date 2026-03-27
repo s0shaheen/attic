@@ -1,0 +1,150 @@
+{
+  "item_id": "7578784458959031574",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:18:22.269640+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:08",
+        "visual_description": "The creator is seen in a selfie-style shot at a gym, likely on an elliptical or treadmill, looking into the camera and then down at her feet while a list of decluttering advice is displayed as a text overlay.",
+        "audio_description": "The chorus of 'Nothin' on You' by B.o.B featuring Bruno Mars plays.",
+        "text_on_screen": "feng shui is real.\ndelete photos. delete \napps. give some clothes \naway. delete numbers. \nmake your phone display \nneater. organise your \nseasonings. organise your \nclothes. organise your life \nso you can think clearer.",
+        "key_objects": [
+          "Carhartt cap",
+          "Gym equipment",
+          "Black t-shirt"
+        ]
+      }
+    ],
+    "overall_summary": "In this short lifestyle video, creator @theyorkshiregingerone shares a list of actionable decluttering tips under the umbrella of 'feng shui.' While filmed at a gym, the content focuses on digital and physical organization, such as deleting unused apps and photos, donating clothes, and organizing household items. The central message is that simplifying your external environment leads to greater mental clarity and a more organized life.",
+    "people": [
+      {
+        "description": "A woman with reddish hair wearing a brown Carhartt cap and a black t-shirt, appearing to be exercising at a gym.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "@theyorkshiregingerone"
+      }
+    ],
+    "entities": [
+      {
+        "name": "@theyorkshiregingerone",
+        "display_name": "The Yorkshire Ginger One",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Carhartt",
+        "display_name": "Carhartt",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Brown logo cap",
+        "confidence": 5
+      },
+      {
+        "name": "Feng Shui",
+        "display_name": "Feng Shui",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Nothin' on You",
+        "display_name": "Nothin' on You \u2014 B.o.B feat. Bruno Mars",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "External organization and decluttering (both digital and physical) are essential for mental clarity.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Small tasks like deleting old photos or organizing seasonings contribute to a more peaceful life.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Digital Declutter",
+          "details": "Delete photos, delete apps, delete phone numbers, and neaten the phone display."
+        },
+        {
+          "name": "Physical Declutter",
+          "details": "Give clothes away and organize your seasonings and clothes."
+        },
+        {
+          "name": "Goal",
+          "details": "Organize your life so you can think clearer."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Nothin' on You \u2014 B.o.B feat. Bruno Mars",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The song is a very well-known pop/rap track from 2010."
+    },
+    "presentation_style": {
+      "primary_format": "text_overlay",
+      "camera_work": "selfie",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Productive and focused, set in a casual gym environment.",
+    "topic_hints": [
+      "Organization",
+      "Mental Health",
+      "Minimalism"
+    ],
+    "affect_hints": [
+      "Motivated",
+      "Calm",
+      "Determined"
+    ],
+    "genre_hints": [
+      "Lifestyle advice",
+      "Self-improvement"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2250,
+    "output_tokens": 1206,
+    "total_tokens": 3456,
+    "cost_usd": 0.001061,
+    "latency_ms": 14668,
+    "upload_ms": 3182
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

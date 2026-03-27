@@ -1,0 +1,192 @@
+{
+  "item_id": "7618356804837264671",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:05:35.761267+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "Spider-Man puts on his mask and swings through the New York City skyline during the day.",
+        "audio_description": "Upbeat pop-rock music begins playing with the lyrics 'I'm counting the steps...'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Spider-Man suit",
+          "NYC Skyscrapers"
+        ]
+      },
+      {
+        "time_range": "0:04-0:06",
+        "visual_description": "Extreme close-up of Peter Parker's eye reflecting the city lights.",
+        "audio_description": "Voiceover: 'Spiders have three life cycles.'",
+        "text_on_screen": "SPIDERS HAVE THREE LIFE CYCLES",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:06-0:11",
+        "visual_description": "Fast-paced montage of Spider-Man fighting, Peter Parker looking distressed in a dark room, and a quiet moment with MJ on a rooftop.",
+        "audio_description": "Music continues: '...brand new day'",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:11-0:13",
+        "visual_description": "Spider-Man swings through the city carrying a man in a suit.",
+        "audio_description": "Voiceover: 'Rebirth.'",
+        "text_on_screen": "REBIRTH",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:13-0:16",
+        "visual_description": "Frank Castle (The Punisher) is shown driving a van with a stern, focused expression.",
+        "audio_description": "Music swells and then cuts.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Van",
+          "Frank Castle"
+        ]
+      }
+    ],
+    "overall_summary": "This is a cinematic fan edit focusing on the evolution and 'rebirth' of Tom Holland's Spider-Man in the MCU. The video uses a voiceover about spider life cycles to frame Peter Parker's journey, transitioning from his established hero persona to a new, potentially grittier chapter. It concludes with a brief appearance by Jon Bernthal's Punisher, hinting at a crossover or a shift in tone for future stories.",
+    "people": [
+      {
+        "description": "Peter Parker / Spider-Man, the main protagonist shown in costume and as a civilian.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Tom Holland"
+      },
+      {
+        "description": "MJ, Peter's love interest, seen in a brief rooftop scene.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Zendaya"
+      },
+      {
+        "description": "Frank Castle / The Punisher, seen driving a vehicle at the end.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jon Bernthal"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Spider-Man",
+        "display_name": "Spider-Man (MCU)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "The Punisher",
+        "display_name": "The Punisher (Frank Castle)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Brand New Day",
+        "display_name": "Spider-Man: Brand New Day",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "audio"
+        ],
+        "specifications": "Comic book story arc reference",
+        "confidence": 4
+      },
+      {
+        "name": "Sting",
+        "display_name": "Sting",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Brand New Day",
+        "display_name": "Brand New Day - Sting",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The MCU Spider-Man is undergoing a thematic 'rebirth' or transition into a new era.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "There is a suggested thematic or narrative link between Spider-Man and The Punisher in this fan-conceived arc.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Brand New Day \u2014 Sting",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The song is clearly 'Brand New Day' by Sting, which matches the 'Brand New Day' theme in the caption."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Cinematic, intense, and transformative with a mix of high-action and somber character moments.",
+    "topic_hints": [
+      "Marvel Cinematic Universe",
+      "Spider-Man Fan Edits",
+      "Superhero Cinema"
+    ],
+    "affect_hints": [
+      "Excited",
+      "Nostalgic",
+      "Anticipatory"
+    ],
+    "genre_hints": [
+      "Fan Edit",
+      "Movie Montage"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2882,
+    "output_tokens": 1582,
+    "total_tokens": 4464,
+    "cost_usd": 0.001381,
+    "latency_ms": 18585,
+    "upload_ms": 3417
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

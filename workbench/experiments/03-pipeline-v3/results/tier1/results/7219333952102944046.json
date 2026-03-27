@@ -1,0 +1,52 @@
+{
+  "item_id": "7219333952102944046",
+  "parsed_output": {
+    "summary": "This TikTok is a 'hopecore' compilation featuring motivational clips from fitness icons and public figures like Rich Piana and David Goggins. It is designed to provide emotional uplift and mental toughness advice through a series of edited interview snippets and raw monologues.",
+    "entities": [
+      {
+        "name": "Rich Piana",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "David Goggins",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "So Long",
+        "type": "song",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Love It Kill It",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "basedcolt",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "health",
+      "secondary": "other"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "inspiring",
+      "secondary": "wholesome"
+    },
+    "viewer_orientation": "emotional_regulation",
+    "embedding_text": "A hopecore and hopeposting compilation edit by @basedcolt featuring motivational speakers and fitness icons. The video includes a clip of bodybuilder Rich Piana wearing a black Love It Kill It hoodie on a beach at sunset, speaking about life philosophy and perseverance. It also features an interview segment with David Goggins, the retired Navy SEAL known for his 'stay hard' mentality and extreme endurance feats, discussing mental toughness. Another segment shows a man in a white shirt and colorful suspenders in a professional setting. Set to the song 'So Long,' this 63-second video is designed for inspiration and mental health support, typical of the coretok trend. It serves as a montage of advice on perseverance and finding hope, making it a popular save for users seeking emotional regulation or a morning motivation boost."
+  },
+  "metrics": {
+    "input_tokens": 4256,
+    "output_tokens": 480,
+    "total_tokens": 4736,
+    "cost_usd": 0.000926,
+    "latency_ms": 8341,
+    "keyframe_count": 3
+  }
+}

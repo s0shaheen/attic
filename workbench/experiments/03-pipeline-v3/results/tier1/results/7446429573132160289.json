@@ -1,0 +1,52 @@
+{
+  "item_id": "7446429573132160289",
+  "parsed_output": {
+    "summary": "Music producer @finley.mp3 demonstrates a 'YouTube chopping' technique, sampling audio directly from a video of Carl Carlton performing 'Everlasting Love' on Soul Train. The video showcases a workflow for music production using FL Studio to flip classic soul tracks into new beats.",
+    "entities": [
+      {
+        "name": "FL Studio",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "Carl Carlton",
+        "type": "artist",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Soul Train",
+        "type": "movie_or_show",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Everlasting Love",
+        "type": "song",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Sampling",
+        "type": "technique",
+        "relevance": "primary"
+      }
+    ],
+    "topic": {
+      "primary": "music",
+      "secondary": "technology"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this music production TikTok, creator @finley.mp3 demonstrates a sampling technique referred to as 'YouTube chopping.' The video features a producer in a blue fuzzy sweater sitting at a desk with a laptop, where they are sampling audio directly from a YouTube video. The source material is a performance of 'Everlasting Love' by Carl Carlton on the classic television show Soul Train, which is clearly visible on the laptop screen. The creator uses FL Studio, as indicated by the hashtags, to manipulate the audio in real-time. The desk setup includes studio headphones, an audio interface, and various production tools. On-screen text humorously asks 'TF IS BRO DOING,' highlighting the rapid nature of the sampling process. This video serves as a quick tutorial or inspiration for beatmakers and music producers looking for new ways to find and flip samples for their tracks."
+  },
+  "metrics": {
+    "input_tokens": 4253,
+    "output_tokens": 494,
+    "total_tokens": 4747,
+    "cost_usd": 0.000934,
+    "latency_ms": 9822,
+    "keyframe_count": 3
+  }
+}

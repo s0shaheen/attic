@@ -1,0 +1,375 @@
+{
+  "item_id": "7594324057001053470",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:54:10.295420+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:16",
+        "visual_description": "A young woman, the creator, speaks directly to the camera in a dimly lit room, expressing concern. Behind her, an American flag and a red and white striped flag are visible on the wall.",
+        "audio_description": "The creator speaks about her neighbor who has been missing for two months, whose car is still in the parking lot, and whose family cannot be contacted. She asks, 'Do you know where your neighbor is?'",
+        "text_on_screen": "THERE'S A GIRL\nTHAT LIVES IN THE APARTMENT\nDIRECTLY ACROSS THE WAY FROM ME\nI HAVE NOT SEEN HER IN TWO MONTHS\nNOBODY HAS\nHER CAR IS STILL IN THE PARKING LOT\nHER FAMILY, NOBODY CAN GET IN CONTACT WITH THEM\nI HAVE NO IDEA WHERE MY NEIGHBOR IS\nDO YOU KNOW WHERE YOUR NEIGHBOR IS?",
+        "key_objects": [
+          "American flag",
+          "red and white striped flag"
+        ]
+      },
+      {
+        "time_range": "0:16-0:19",
+        "visual_description": "A static grey background displays a biblical quote.",
+        "audio_description": "A melancholic, slowed-down instrumental piano melody begins to play.",
+        "text_on_screen": "\u2018YOU SHALL LOVE YOUR NEIGHBOR AS YOURSELF.\u2019\nMATTHEW 22:39",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:19-0:22",
+        "visual_description": "Andrew Bates, the White House Deputy Press Secretary, stands at a podium with the White House seal and an American flag in the background, speaking to an audience.",
+        "audio_description": "Andrew Bates states, \"Because this was an attack on federal law enforcement.\"",
+        "text_on_screen": "The WHITE HOUSE\nPress B\nThursday, J",
+        "key_objects": [
+          "Andrew Bates",
+          "White House podium",
+          "American flag"
+        ]
+      },
+      {
+        "time_range": "0:22-0:26",
+        "visual_description": "A large crowd of people are seen protesting outdoors, holding various signs, some of which are critical of ICE and political figures. The scene is from a street with buildings in the background.",
+        "audio_description": "Andrew Bates continues, \"This was an attack on law and order. This was an attack on the American people.\"",
+        "text_on_screen": "THE AMERICAN PEOPLE",
+        "key_objects": [
+          "protest signs",
+          "flags"
+        ]
+      },
+      {
+        "time_range": "0:26-0:29",
+        "visual_description": "A static grey background displays a statement about neighbors.",
+        "audio_description": "The instrumental music continues.",
+        "text_on_screen": "WE HAVE FORGOTTEN WHO OUR NEIGHBORS ARE",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:29-0:35",
+        "visual_description": "Donald Trump speaks at a podium, flanked by several men in law enforcement uniforms, with American flags in the background.",
+        "audio_description": "Donald Trump says, \"The Democrats say, 'Please don't call them animals, they're humans.' I said, 'No, they're not humans, they're not animals, they're animals.'\"",
+        "text_on_screen": "TEXT TRUMP TO 88022\nSTOP BIDEN'S BORDER BLOOD BATH\nGRAND RAPIDS, MICHIGAN\n2024\n\u201cTHEY\u2019RE NOT HUMANS\nTHEY\u2019RE ANIMALS",
+        "key_objects": [
+          "Donald Trump",
+          "podium",
+          "American flags",
+          "law enforcement uniforms"
+        ]
+      },
+      {
+        "time_range": "0:35-0:38",
+        "visual_description": "A large crowd of people protests outdoors, holding signs. The scene includes a red brick building and trees.",
+        "audio_description": "The instrumental music continues.",
+        "text_on_screen": "ALL ANIMALS ARE EQUAL\nPeter Zay/Anadolu Agency via Getty Images\nCharlotte, North Carolina",
+        "key_objects": [
+          "protest signs"
+        ]
+      },
+      {
+        "time_range": "0:38-0:41",
+        "visual_description": "Donald Trump and Jeffrey Epstein are seen interacting and talking in what appears to be a social gathering. Another man is visible to the left.",
+        "audio_description": "The instrumental music continues.",
+        "text_on_screen": "1992\nNBC\nBUT SOME MORE EQUAL THAN OTHERS",
+        "key_objects": [
+          "Donald Trump",
+          "Jeffrey Epstein"
+        ]
+      },
+      {
+        "time_range": "0:41-0:46",
+        "visual_description": "An overhead shot shows a large crowd of people protesting on a street, with a police car visible amidst the crowd. The music fades out.",
+        "audio_description": "The instrumental music continues and then fades out.",
+        "text_on_screen": "Alameda St",
+        "key_objects": [
+          "police car",
+          "street sign"
+        ]
+      }
+    ],
+    "overall_summary": "The video begins with a young woman expressing deep concern over her neighbor's unexplained two-month disappearance, highlighting a perceived lack of community awareness. It then transitions into a rapid montage of political clips and protest scenes, juxtaposing a biblical quote about loving one's neighbor with political rhetoric that dehumanizes certain groups. The video critiques a societal loss of empathy and connection, particularly within the political landscape, suggesting a hypocrisy where some are deemed \"more equal than others\" despite calls for universal love and equality. The creator uses this juxtaposition to provoke thought on how modern society treats its \"neighbors.\"",
+    "people": [
+      {
+        "description": "Young woman with dark hair, wearing a dark zip-up hoodie, speaking directly to the camera with a concerned expression.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@cele2t3"
+      },
+      {
+        "description": "Man with a beard, wearing a dark suit and red tie, speaking at a White House press briefing.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Andrew Bates"
+      },
+      {
+        "description": "Former US President, speaking at a podium, wearing a blue suit and red tie, surrounded by law enforcement personnel.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Donald Trump"
+      },
+      {
+        "description": "Convicted sex offender, seen interacting with Donald Trump in an older clip.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jeffrey Epstein"
+      }
+    ],
+    "entities": [
+      {
+        "name": "@cele2t3",
+        "display_name": "TikTok Creator @cele2t3",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Another Love",
+        "display_name": "Another Love \u2014 Tom Odell (slowed instrumental)",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": "slowed instrumental version",
+        "confidence": 4
+      },
+      {
+        "name": "Tom Odell",
+        "display_name": "Tom Odell",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Matthew 22:39",
+        "display_name": "Matthew 22:39 (Biblical verse)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Andrew Bates",
+        "display_name": "Andrew Bates, White House Deputy Press Secretary",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "White House",
+        "display_name": "The White House",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Donald Trump",
+        "display_name": "Donald Trump, Former US President",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jeffrey Epstein",
+        "display_name": "Jeffrey Epstein",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Grand Rapids, Michigan",
+        "display_name": "Grand Rapids, Michigan",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Charlotte, North Carolina",
+        "display_name": "Charlotte, North Carolina",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Alameda St",
+        "display_name": "Alameda Street",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "NBC",
+        "display_name": "NBC (Television Network)",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Getty Images",
+        "display_name": "Getty Images (Stock Photo Agency)",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Anadolu Agency",
+        "display_name": "Anadolu Agency (News Agency)",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "ICE",
+        "display_name": "U.S. Immigration and Customs Enforcement (implied by protest signs)",
+        "type": "organization",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Society has lost its sense of community and empathy, leading to a lack of awareness and concern for one's neighbors.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Political rhetoric often dehumanizes groups of people, contradicting fundamental principles of love and equality.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "There is a hypocrisy in claiming universal equality while simultaneously treating certain individuals or groups as inferior.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Another Love \u2014 Tom Odell (slowed instrumental)",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific context of all protest signs and the exact dates of all political clips are not fully detailed, but key figures and messages are identified."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head|montage|text_overlay|social_commentary",
+      "camera_work": "static|various",
+      "editing_style": "jump_cuts|text_overlays|music_overlay"
+    },
+    "visual_mood": "Somber, serious, reflective, critical, urgent, thought-provoking.",
+    "topic_hints": [
+      "community",
+      "politics",
+      "social commentary",
+      "empathy",
+      "dehumanization",
+      "morality"
+    ],
+    "affect_hints": [
+      "concern",
+      "sadness",
+      "anger",
+      "reflection",
+      "urgency",
+      "disillusionment"
+    ],
+    "genre_hints": [
+      "social commentary",
+      "political commentary",
+      "personal reflection",
+      "montage",
+      "activism"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 15035,
+    "output_tokens": 3218,
+    "total_tokens": 18253,
+    "cost_usd": 0.004186,
+    "latency_ms": 33355,
+    "upload_ms": 6159
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

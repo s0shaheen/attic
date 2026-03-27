@@ -1,0 +1,197 @@
+{
+  "item_id": "7572994064656698646",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:05:49.980359+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Scar stands in an Ishvalan camp at night; a bright flash occurs followed by a severed arm falling through the air.",
+        "audio_description": "A rap song begins with the lyrics: 'Matter fact ain't tellin' n***a shit...'",
+        "text_on_screen": "",
+        "key_objects": [
+          "severed arm",
+          "tents"
+        ]
+      },
+      {
+        "time_range": "0:04-0:07",
+        "visual_description": "Close-up of Scar's face and him grabbing a soldier's head; he is sweating and looks intense.",
+        "audio_description": "Lyrics: 'Who are these n***as? I think they all overrated...'",
+        "text_on_screen": "OVER",
+        "key_objects": [
+          "Scar's tattooed arm"
+        ]
+      },
+      {
+        "time_range": "0:08-0:12",
+        "visual_description": "Scar attacks a soldier on a motorcycle and uses red alchemical energy to shatter a stone wall.",
+        "audio_description": "Lyrics: 'I think they all are outdated. I'm independent...'",
+        "text_on_screen": "11",
+        "key_objects": [
+          "motorcycle",
+          "stone wall"
+        ]
+      },
+      {
+        "time_range": "0:13-0:16",
+        "visual_description": "Scar impales a soldier and destroys Edward Elric's automail arm as Edward looks on in shock.",
+        "audio_description": "Lyrics: '...just got a house, I need a brand new Mercedes.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "automail arm",
+          "military uniform"
+        ]
+      },
+      {
+        "time_range": "0:17-0:20",
+        "visual_description": "Scar uses his right hand to crack the pavement with alchemy and walks away into the night.",
+        "audio_description": "Beat continues as the lyrics mention 'labels don't pay me.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "pavement",
+          "Scar's cloak"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a high-energy fan edit of the character Scar from the 2003 anime series Fullmetal Alchemist. It showcases his lethal combat skills and the destructive power of his right arm, which he uses to deconstruct objects and people through alchemy. The edit highlights his intensity and the fear he strikes into his opponents, including the protagonist Edward Elric, whose automail arm is seen being destroyed. The main takeaway is a tribute to Scar's formidable and 'tough' nature as an anti-hero.",
+    "people": [
+      {
+        "description": "Scar, an Ishvalan survivor with a large X-shaped scar on his forehead and a heavily tattooed right arm.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Scar"
+      },
+      {
+        "description": "Edward Elric, a young alchemist with blonde hair and a red coat, seen in a state of shock.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Edward Elric"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Scar",
+        "display_name": "Scar (Fullmetal Alchemist)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Edward Elric",
+        "display_name": "Edward Elric",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Fullmetal Alchemist (2003)",
+        "display_name": "Fullmetal Alchemist (2003 Anime)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "2003 adaptation",
+        "confidence": 5
+      },
+      {
+        "name": "Overrated",
+        "display_name": "Overrated \u2014 Blxst",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Alchemy",
+        "display_name": "Deconstruction Alchemy",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Scar's right arm technique",
+        "confidence": 5
+      },
+      {
+        "name": "Automail",
+        "display_name": "Automail Prosthetics",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Edward Elric's mechanical arm",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Scar is portrayed as an exceptionally powerful and intimidating force within the Fullmetal Alchemist 2003 series.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Overrated \u2014 Blxst",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The visual style and hashtags confirm this is specifically the 2003 version of Fullmetal Alchemist."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "heavy_effects"
+    },
+    "visual_mood": "Gritty, intense, and powerful with dark lighting and fast-paced action.",
+    "topic_hints": [
+      "Fullmetal Alchemist",
+      "Anime Character Edit",
+      "Action Animation"
+    ],
+    "affect_hints": [
+      "Intimidated",
+      "Hyped",
+      "Impressed"
+    ],
+    "genre_hints": [
+      "Anime Edit",
+      "AMV (Anime Music Video)"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3264,
+    "output_tokens": 1657,
+    "total_tokens": 4921,
+    "cost_usd": 0.001484,
+    "latency_ms": 22103,
+    "upload_ms": 3236
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

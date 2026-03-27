@@ -1,0 +1,52 @@
+{
+  "item_id": "7488413717357497642",
+  "parsed_output": {
+    "summary": "This TikTok showcases Falafel & Grill, a Mediterranean restaurant in Chicago specializing in Lebanese cuisine. It features a variety of popular dishes like falafel, hummus, and chicken kabobs to encourage viewers to visit for dinner.",
+    "entities": [
+      {
+        "name": "Falafel & Grill",
+        "type": "restaurant",
+        "relevance": "primary"
+      },
+      {
+        "name": "Chicago",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Falafel",
+        "type": "ingredient",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Chicken Kabob",
+        "type": "ingredient",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Hummus",
+        "type": "ingredient",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "food",
+      "secondary": "travel"
+    },
+    "genre": "vlog",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "This 6-second TikTok from creator @falafelngrill highlights the Mediterranean restaurant Falafel & Grill, located in Chicago. The video begins with an exterior shot of the storefront at 1317, which features a sign reading 'A Taste of Lebanon' and lists specialties like hummus, salad, and kabobs. The creator uses the hook 'I always drive by that place I wonder what's inside?' before revealing a vibrant spread of food. On-screen, a woman presents two colorful drinks while the table is filled with pita bread, Greek salad, and hummus. Close-up shots feature crispy falafel with a side of sauce and a large plate of grilled chicken kabobs served over seasoned yellow rice with sliced red onions. This video serves as a visual menu and recommendation for Chicago foodies looking for authentic Mediterranean flavors and dinner inspiration."
+  },
+  "metrics": {
+    "input_tokens": 4303,
+    "output_tokens": 475,
+    "total_tokens": 4778,
+    "cost_usd": 0.00093,
+    "latency_ms": 9191,
+    "keyframe_count": 3
+  }
+}

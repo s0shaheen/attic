@@ -1,0 +1,531 @@
+{
+  "item_id": "7597634334664805646",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:56:30.639383+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "A muscular man in a black tank top stands in a kitchen, holding two blocks of ground beef. Two large cooking pans are on the counter, one red with boiling water and steam, and one mint green empty.",
+        "audio_description": "The creator states, \"Stop blaming your metabolism. You're just eating like trash.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Ground beef",
+          "Red cooking pan",
+          "Mint green cooking pan"
+        ]
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "The man places the ground beef into the mint green pan and then seasons it with salt, pepper, garlic powder, and onion powder from shakers.",
+        "audio_description": "The creator instructs, \"3 pounds of beef in the pan. Salt and pepper, garlic powder, onion powder.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Ground beef",
+          "Salt shaker",
+          "Pepper shaker",
+          "Garlic powder shaker",
+          "Onion powder shaker",
+          "Mint green cooking pan"
+        ]
+      },
+      {
+        "time_range": "0:06-0:08",
+        "visual_description": "The man holds up a yellow box of Barilla Protein+ Rotini pasta, then pours the pasta into the red pan containing boiling water.",
+        "audio_description": "The creator says, \"One box of protein pasta.\"",
+        "text_on_screen": "Barilla Protein+ Rotini",
+        "key_objects": [
+          "Barilla Protein+ Rotini pasta box",
+          "Red cooking pan",
+          "Pasta"
+        ]
+      },
+      {
+        "time_range": "0:08-0:10",
+        "visual_description": "The man uses a meat chopper tool to break up the ground beef in the mint green pan, then places lids on both the red and mint green pans.",
+        "audio_description": "The creator instructs, \"Mix this up and let both these cook.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Meat chopper",
+          "Mint green cooking pan",
+          "Red cooking pan",
+          "Pan lids"
+        ]
+      },
+      {
+        "time_range": "0:10-0:14",
+        "visual_description": "The man holds two bags of Garden Duo frozen peas and carrots, then pours their contents into the mint green pan with the cooked ground beef.",
+        "audio_description": "The creator states, \"Your beef is halfway done, we're going to go with 15 ounces of peas and carrots.\"",
+        "text_on_screen": "Garden Duo Mixed Vegetables Peas & Carrots",
+        "key_objects": [
+          "Garden Duo frozen peas and carrots bags",
+          "Mint green cooking pan",
+          "Cooked ground beef"
+        ]
+      },
+      {
+        "time_range": "0:14-0:16",
+        "visual_description": "The man stirs the peas and carrots into the beef mixture with the meat chopper, then covers the mint green pan with a lid.",
+        "audio_description": "The creator says, \"Mix this into the meat. We're going with a cover for the rest of the cook.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Meat chopper",
+          "Mint green cooking pan",
+          "Pan lid"
+        ]
+      },
+      {
+        "time_range": "0:16-0:19",
+        "visual_description": "The man lifts the red pan, now containing cooked pasta, and pours the pasta into the mint green pan with the beef and vegetable mixture.",
+        "audio_description": "The creator states, \"Your beef's done, go ahead and add your pasta in.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Cooked pasta",
+          "Red cooking pan",
+          "Mint green cooking pan",
+          "Beef and vegetable mixture"
+        ]
+      },
+      {
+        "time_range": "0:19-0:23",
+        "visual_description": "The man pours a jar of red pasta sauce into the mixture, then adds a small amount of water to the empty jar and pours that into the pan as well.",
+        "audio_description": "The creator instructs, \"Red sauce, one entire can. A little bit of water, mix this up. We're getting it all.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Red pasta sauce jar",
+          "Water"
+        ]
+      },
+      {
+        "time_range": "0:23-0:28",
+        "visual_description": "The man holds up a jar of Classico Creamy Alfredo sauce, spoons one cup into the mixture, then holds up a bag of Kraft Creamy Melt Triple Cheddar cheese and pours the entire bag into the pan.",
+        "audio_description": "The creator says, \"Classico Alfredo, one cup. Cream cheese, triple cheddar, one entire bag.\"",
+        "text_on_screen": "Classico Creamy Alfredo, Kraft Creamy Melt Triple Cheddar",
+        "key_objects": [
+          "Classico Creamy Alfredo sauce jar",
+          "Measuring cup",
+          "Kraft Creamy Melt Triple Cheddar cheese bag"
+        ]
+      },
+      {
+        "time_range": "0:28-0:36",
+        "visual_description": "The man stirs the entire mixture in the mint green pan with a wooden spoon, then looks directly at the camera and speaks.",
+        "audio_description": "The creator explains, \"I did use store-bought Alfredo. What's the big deal? You're eating fast food all the time. When are you going to lock in? This is 90% clean, 10% dirty. That Alfredo sauce is the only dirty thing about this meal.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Wooden spoon",
+          "Mint green cooking pan",
+          "Finished meal"
+        ]
+      },
+      {
+        "time_range": "0:36-0:40",
+        "visual_description": "A close-up shot shows the man scooping the finished Cheesy Beef Alfredo Bowl mixture into a light brown meal prep container with a wooden spoon.",
+        "audio_description": "The creator describes the meal as, \"Extremely tasty, high protein. This is going to help you lock in.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Meal prep container",
+          "Wooden spoon",
+          "Finished meal"
+        ]
+      },
+      {
+        "time_range": "0:40-0:45",
+        "visual_description": "The man stands behind a table displaying ten filled meal prep containers, all containing the Cheesy Beef Alfredo Bowls, and addresses the camera.",
+        "audio_description": "The creator asks, \"When are you going to stop saving my meals and actually start making them to benefit your life?\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "10 meal prep containers",
+          "Finished meal"
+        ]
+      }
+    ],
+    "overall_summary": "This video, created by @cookingforgains, provides a step-by-step tutorial for making \"Cheesy Beef Alfredo Bowls\" as a macro-friendly meal prep option. The creator demonstrates cooking ground beef, protein pasta, and combining them with frozen peas and carrots, red sauce, Alfredo sauce, and triple cheddar cheese. The recipe yields 10 high-protein meals, designed to be a healthier alternative to fast food and encourage users to actively prepare their own nutritious meals.",
+    "people": [
+      {
+        "description": "A muscular man with short dark hair, wearing a black tank top with a 'CFG' logo and a gold chain. He is the creator, demonstrating the cooking process and speaking directly to the camera.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@cookingforgains"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Cheesy Beef Alfredo Bowls",
+        "display_name": "Cheesy Beef Alfredo Bowls",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Ground Beef",
+        "display_name": "Ground Beef (96/4)",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata"
+        ],
+        "specifications": "3 lbs, 96/4 lean/fat ratio",
+        "confidence": 5
+      },
+      {
+        "name": "Garlic",
+        "display_name": "Garlic",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "7g",
+        "confidence": 4
+      },
+      {
+        "name": "Onion Powder",
+        "display_name": "Onion Powder",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "6g",
+        "confidence": 4
+      },
+      {
+        "name": "Salt",
+        "display_name": "Salt",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "6g",
+        "confidence": 4
+      },
+      {
+        "name": "Pepper",
+        "display_name": "Pepper",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "5g",
+        "confidence": 4
+      },
+      {
+        "name": "Frozen Peas and Carrots",
+        "display_name": "Frozen Peas and Carrots",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata"
+        ],
+        "specifications": "30 ounces",
+        "confidence": 5
+      },
+      {
+        "name": "Garden Duo",
+        "display_name": "Garden Duo",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_on_screen"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Barilla Protein+ Rotini",
+        "display_name": "Barilla Protein+ Rotini",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_on_screen"
+        ],
+        "specifications": "1 box",
+        "confidence": 5
+      },
+      {
+        "name": "Protein Pasta",
+        "display_name": "Protein Pasta",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata"
+        ],
+        "specifications": "1 box, rotini shape",
+        "confidence": 5
+      },
+      {
+        "name": "Red Pasta Sauce",
+        "display_name": "Red Pasta Sauce",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "1 jar/can",
+        "confidence": 4
+      },
+      {
+        "name": "Alfredo Sauce",
+        "display_name": "Alfredo Sauce",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "1 cup",
+        "confidence": 5
+      },
+      {
+        "name": "Classico",
+        "display_name": "Classico",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_on_screen"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Classico Creamy Alfredo",
+        "display_name": "Classico Creamy Alfredo",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_on_screen"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Triple Cheddar Cheese",
+        "display_name": "Triple Cheddar Cheese",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "1 bag, creamy melt",
+        "confidence": 5
+      },
+      {
+        "name": "Kraft",
+        "display_name": "Kraft",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_on_screen"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Kraft Creamy Melt Triple Cheddar",
+        "display_name": "Kraft Creamy Melt Triple Cheddar",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_on_screen"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Meat Chopper",
+        "display_name": "Meat Chopper",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Cooking Pan",
+        "display_name": "Cooking Pan (Red)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Cooking Pan",
+        "display_name": "Cooking Pan (Mint Green)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Meal Prep Containers",
+        "display_name": "Meal Prep Containers",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Meal Prep",
+        "display_name": "Meal Prep",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Macro-friendly",
+        "display_name": "Macro-friendly",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "High Protein",
+        "display_name": "High Protein",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Focus on preparing healthy meals like this recipe to improve your diet rather than blaming your metabolism or relying on unhealthy fast food.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "This Cheesy Beef Alfredo Bowl recipe is a tasty, high-protein, and macro-friendly option for meal prepping that can help you stay on track with your fitness goals.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "It's acceptable to incorporate some store-bought convenience items, like Alfredo sauce, into an otherwise clean meal prep to make it more accessible.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Cheesy Beef Alfredo Bowls",
+          "details": "Makes 10 meal preps"
+        },
+        {
+          "name": "Macros per meal prep",
+          "details": "481 calories, 46g protein, 15g fats, 40g carbs"
+        },
+        {
+          "name": "Step 1: Cook Beef and Veggies",
+          "details": "Cook 3 lbs 96/4 beef with 7g garlic, 6g onion powder, 6g salt, 5g pepper. Cook beef halfway through, then add 30 ounces frozen peas and carrots. Continue cooking until beef is fully cooked."
+        },
+        {
+          "name": "Step 2: Boil Pasta",
+          "details": "Boil one box of protein pasta (e.g., Barilla Protein+ Rotini)."
+        },
+        {
+          "name": "Step 3: Combine Ingredients",
+          "details": "Once beef and veggies are cooked, add in the boiled pasta. Stir in one entire jar of red sauce, 1 cup Classico Creamy Alfredo sauce, and one entire bag of Kraft Creamy Melt Triple Cheddar cheese. Mix thoroughly."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The audio states '15 ounces of peas and carrots' but the caption and recipe metadata specify '30 ounces'. The caption was prioritized for the structured recipe. The audio also refers to 'cream cheese, triple cheddar' while the visual clearly shows 'Kraft Creamy Melt Triple Cheddar', which was used for the product name."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Energetic, informative, practical, straightforward",
+    "topic_hints": [
+      "Cooking",
+      "Meal Preparation",
+      "Fitness Nutrition"
+    ],
+    "affect_hints": [
+      "Motivating",
+      "Encouraging",
+      "Helpful"
+    ],
+    "genre_hints": [
+      "Cooking Tutorial",
+      "Fitness Content",
+      "Recipe Video"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 14905,
+    "output_tokens": 4734,
+    "total_tokens": 19639,
+    "cost_usd": 0.005076,
+    "latency_ms": 40972,
+    "upload_ms": 5579
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

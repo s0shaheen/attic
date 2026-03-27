@@ -1,0 +1,78 @@
+{
+  "item_id": "7188553977032740102",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:41.541205+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "science",
+      "micro_labels": [
+        "motivation",
+        "human achievement",
+        "corecore",
+        "JFK",
+        "moon landing",
+        "cinematic history"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "montage",
+        "motivational edit",
+        "positivecore"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "voiceover",
+      "cinematic"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.85
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 10718,
+    "output_tokens": 364,
+    "total_tokens": 11082,
+    "cost_usd": 0.001826,
+    "latency_ms": 11484,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 7
+  }
+}

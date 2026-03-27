@@ -1,0 +1,236 @@
+{
+  "item_id": "7169990240491326726",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:04:59.354243+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:16",
+        "visual_description": "Scene from 'The Giver' (2014) where an older man (The Giver) stands with his hand on a young man's (Jonas) shoulder, looking out over a vast, unnaturally green hilly landscape.",
+        "audio_description": "Dialogue: 'Do you know how long you've been here?' 'No.' 'Weeks? Months? Do you know why you're here?'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Landscape",
+          "The Giver",
+          "Jonas"
+        ]
+      },
+      {
+        "time_range": "0:16-0:31",
+        "visual_description": "A rapid montage of cinematic shots: water splashing on a man's face (Stalker), Alain Delon in a car (Le Samoura\u00ef), a couple dancing in black and white (The Artist), Patrick Bateman's intense gaze (American Psycho), and Brigitte Bardot looking through a hole (Contempt).",
+        "audio_description": "Alan Watts voiceover: 'Man is a little germ that lives on an unimportant rock ball that revolves about an insignificant star on the outer edges of one of the smaller galaxies.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Film clips",
+          "Alain Delon",
+          "Christian Bale",
+          "Brigitte Bardot"
+        ]
+      },
+      {
+        "time_range": "0:31-0:47",
+        "visual_description": "Montage continues: K looking at a giant hologram (Blade Runner 2049), a robot hand touching a face, Marcello Mastroianni in a crowd of faceless men (8 1/2), a girl blowing a bubble (Submarine), and a man laughing hysterically.",
+        "audio_description": "Alan Watts voiceover: 'I am absolutely amazed to discover myself on this rock ball rotating around a spherical fire. And the more I look at things, I cannot get rid of the feeling that existence is quite weird.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Hologram",
+          "Robot hand",
+          "Bubble gum"
+        ]
+      },
+      {
+        "time_range": "0:47-0:51",
+        "visual_description": "Final scene from 'Eternal Sunshine of the Spotless Mind' (2004) showing Joel Barish from behind, shouting into the snowy void.",
+        "audio_description": "Joel shouts: 'I don't want this anymore! I want to call it off!'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Snow",
+          "Joel Barish"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a philosophical cinematic edit exploring the absurdity and wonder of human existence. It features a voiceover by philosopher Alan Watts describing humanity as 'germs' on a 'rock ball' in an insignificant galaxy, paired with iconic, melancholic, and surreal clips from various cult and classic films. The video concludes with a desperate plea from 'Eternal Sunshine of the Spotless Mind,' highlighting the tension between the vastness of the universe and the intensity of human emotion.",
+    "people": [
+      {
+        "description": "Jeff Bridges as The Giver, an elderly man in a black robe.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Jeff Bridges"
+      },
+      {
+        "description": "Brenton Thwaites as Jonas, a young man in a blue shirt.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Brenton Thwaites"
+      },
+      {
+        "description": "Jim Carrey as Joel Barish, wearing a winter coat in the snow.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Jim Carrey"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Alan Watts",
+        "display_name": "Alan Watts",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Philosopher and speaker",
+        "confidence": 5
+      },
+      {
+        "name": "The Giver",
+        "display_name": "The Giver (2014)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Directed by Phillip Noyce",
+        "confidence": 5
+      },
+      {
+        "name": "Eternal Sunshine of the Spotless Mind",
+        "display_name": "Eternal Sunshine of the Spotless Mind (2004)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Directed by Michel Gondry",
+        "confidence": 5
+      },
+      {
+        "name": "Blade Runner 2049",
+        "display_name": "Blade Runner 2049 (2017)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Directed by Denis Villeneuve",
+        "confidence": 5
+      },
+      {
+        "name": "American Psycho",
+        "display_name": "American Psycho (2000)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Directed by Mary Harron",
+        "confidence": 5
+      },
+      {
+        "name": "Stalker",
+        "display_name": "Stalker (1979)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Directed by Andrei Tarkovsky",
+        "confidence": 5
+      },
+      {
+        "name": "8 1/2",
+        "display_name": "8\u00bd (1963)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Directed by Federico Fellini",
+        "confidence": 5
+      },
+      {
+        "name": "Le Samoura\u00ef",
+        "display_name": "Le Samoura\u00ef (1967)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Directed by Jean-Pierre Melville",
+        "confidence": 5
+      },
+      {
+        "name": "Solitude (Felsmann + Tiley Reinterpretation)",
+        "display_name": "Solitude \u2014 M83",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Slowed and reverb version",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Human existence is a bizarre, small occurrence within a vast and indifferent universe.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The feeling of 'weirdness' or existential dread is a natural response to contemplating our place in the cosmos.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Solitude (Felsmann + Tiley Reinterpretation) \u2014 M83",
+      "metadata_song": "original sound - highenquiries",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All major film clips and the Alan Watts voiceover were successfully identified."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Existential, melancholic, surreal, and awe-inspiring.",
+    "topic_hints": [
+      "Existentialism",
+      "Philosophy",
+      "Cinema"
+    ],
+    "affect_hints": [
+      "Smallness",
+      "Wonder",
+      "Melancholy",
+      "Desperation"
+    ],
+    "genre_hints": [
+      "Corecore",
+      "Cinematic Edit",
+      "Philosophical TikTok"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6083,
+    "output_tokens": 2013,
+    "total_tokens": 8096,
+    "cost_usd": 0.00212,
+    "latency_ms": 25797,
+    "upload_ms": 5611
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

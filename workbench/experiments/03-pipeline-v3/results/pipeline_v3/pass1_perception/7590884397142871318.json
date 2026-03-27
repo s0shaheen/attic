@@ -1,0 +1,208 @@
+{
+  "item_id": "7590884397142871318",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:09:22.040753+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Creator @alekseme is lying in bed, wearing silver over-ear headphones, looking directly at the camera with a neutral expression.",
+        "audio_description": "A slowed-down, atmospheric indie instrumental track plays.",
+        "text_on_screen": "Can anyone recommend a good 1.5 hour movie to watch before bed?",
+        "key_objects": [
+          "Apple AirPods Max",
+          "Pillow",
+          "Blanket"
+        ]
+      },
+      {
+        "time_range": "0:02-0:05",
+        "visual_description": "Camera pans down to show a MacBook screen displaying the Max (formerly HBO Max) streaming interface. The cursor scrolls through various movie titles.",
+        "audio_description": "The atmospheric music continues.",
+        "text_on_screen": "Can anyone recommend a good 1.5 hour movie to watch before bed?",
+        "key_objects": [
+          "Apple MacBook",
+          "Max Streaming App",
+          "Movie Posters"
+        ]
+      }
+    ],
+    "overall_summary": "In this short video, creator @alekseme asks his audience for movie recommendations that are approximately 90 minutes long to watch before going to sleep. He is shown lying in bed wearing AirPods Max while scrolling through the Max streaming service on his laptop. The video highlights the common struggle of choosing a film from a large library like the Harry Potter collection or various horror titles shown on screen.",
+    "people": [
+      {
+        "description": "Young man with dark hair, wearing silver AirPods Max and a grey sweater/blanket, lying in bed.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "@alekseme"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Max",
+        "display_name": "Max (Streaming Service)",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Web browser interface",
+        "confidence": 5
+      },
+      {
+        "name": "AirPods Max",
+        "display_name": "Apple AirPods Max",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Silver/Space Gray colorway",
+        "confidence": 5
+      },
+      {
+        "name": "Harry Potter",
+        "display_name": "Harry Potter Film Series",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Multiple titles visible including Sorcerer's Stone and Chamber of Secrets",
+        "confidence": 5
+      },
+      {
+        "name": "The Conjuring",
+        "display_name": "The Conjuring",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Friday the 13th",
+        "display_name": "Friday the 13th",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "The Great Gatsby",
+        "display_name": "The Great Gatsby",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "2013 version",
+        "confidence": 5
+      },
+      {
+        "name": "The Wizard of Oz",
+        "display_name": "The Wizard of Oz",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "MacBook",
+        "display_name": "Apple MacBook",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Laptop with Touch Bar",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The creator is seeking short (90-minute) movie recommendations specifically for nighttime viewing.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Harry Potter and the Sorcerer's Stone",
+          "details": "Visible on Max interface"
+        },
+        {
+          "name": "The Conjuring",
+          "details": "Visible on Max interface"
+        },
+        {
+          "name": "Friday the 13th",
+          "details": "Visible on Max interface"
+        },
+        {
+          "name": "The Great Gatsby",
+          "details": "Visible on Max interface"
+        },
+        {
+          "name": "The Wizard of Oz",
+          "details": "Visible on Max interface"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Young (Slowed + Reverb) \u2014 Vacations",
+      "metadata_song": "sonido original",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The movies on the screen are clearly identifiable from the Max UI."
+    },
+    "presentation_style": {
+      "primary_format": "pov",
+      "camera_work": "handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Cozy, relaxed, and slightly melancholic due to the lighting and music.",
+    "topic_hints": [
+      "Movie recommendations",
+      "Streaming services",
+      "Night routine"
+    ],
+    "affect_hints": [
+      "Relaxed",
+      "Indecisive",
+      "Cozy"
+    ],
+    "genre_hints": [
+      "Lifestyle",
+      "Cinephile TikTok"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 1940,
+    "output_tokens": 1575,
+    "total_tokens": 3515,
+    "cost_usd": 0.001236,
+    "latency_ms": 19203,
+    "upload_ms": 5334
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

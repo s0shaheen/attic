@@ -1,0 +1,184 @@
+{
+  "item_id": "7589665107995528478",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:54:51.306169+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-2:20",
+        "visual_description": "A high school band performs live on a track field at night, with a football stadium and spectators in the background. The band consists of a keyboardist, a guitarist/vocalist, a drummer, and a bassist, all actively playing their instruments.",
+        "audio_description": "A live instrumental performance of MF Doom's 'Rapp Snitch Knishes'. The guitarist/vocalist occasionally sings or hums along with the melody.",
+        "text_on_screen": "High school band crushes MF Doom's \"Rapp Snitch Knishes\"",
+        "key_objects": [
+          "electric guitar",
+          "electric bass",
+          "drum kit",
+          "keyboard",
+          "microphones",
+          "guitar amplifiers",
+          "Yamaha drum kit",
+          "Fender amplifier"
+        ]
+      }
+    ],
+    "overall_summary": "This video showcases a high school band performing a live cover of MF Doom's iconic song \"Rapp Snitch Knishes\" on a track field at night. The four-member band, comprising a keyboardist, guitarist/vocalist, drummer, and bassist, delivers an energetic and skilled instrumental rendition of the hip-hop track. The performance takes place in front of a crowd in a football stadium, highlighting the band's talent and unique interpretation of the song.",
+    "people": [
+      {
+        "description": "Young male, wearing a patterned short-sleeve shirt, playing a keyboard.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Young male, wearing a grey short-sleeve shirt, playing an electric guitar and singing/humming into a microphone.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "Young male, with curly hair, wearing a dark t-shirt, playing a drum kit.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Young male, wearing a dark t-shirt and headphones, playing an electric bass.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "MF Doom",
+        "display_name": "MF Doom",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Rapp Snitch Knishes",
+        "display_name": "Rapp Snitch Knishes",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Yamaha",
+        "display_name": "Yamaha",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "drum kit",
+        "confidence": 4
+      },
+      {
+        "name": "Fender",
+        "display_name": "Fender",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "guitar amplifier",
+        "confidence": 3
+      },
+      {
+        "name": "High School",
+        "display_name": "High School",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Football Field",
+        "display_name": "Football Field",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "A high school band can deliver a highly skilled and enjoyable live cover performance of a complex hip-hop track like MF Doom's 'Rapp Snitch Knishes'.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Rapp Snitch Knishes \u2014 MF Doom (instrumental cover)",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Specific band members are not named in the video or metadata, only their roles. The audio is a live cover, not the original track, despite metadata stating 'original sound'."
+    },
+    "presentation_style": {
+      "primary_format": "live_music",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Energetic, enthusiastic, celebratory, live performance atmosphere.",
+    "topic_hints": [
+      "live music",
+      "high school band",
+      "MF Doom",
+      "hip-hop cover"
+    ],
+    "affect_hints": [
+      "excited",
+      "impressed",
+      "appreciative",
+      "nostalgic"
+    ],
+    "genre_hints": [
+      "music performance",
+      "cover song",
+      "live event"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 42810,
+    "output_tokens": 1426,
+    "total_tokens": 44236,
+    "cost_usd": 0.007277,
+    "latency_ms": 34860,
+    "upload_ms": 10422
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

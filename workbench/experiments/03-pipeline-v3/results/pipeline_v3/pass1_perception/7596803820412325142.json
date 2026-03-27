@@ -1,0 +1,217 @@
+{
+  "item_id": "7596803820412325142",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:14:12.999812+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "Overhead shot of chilli oil and chopped spring onions being added to a frying pan.",
+        "audio_description": "Sizzling sound of oil in a pan with soft, melodic background music.",
+        "text_on_screen": "a doctor's favourite lunch\nChilli oil",
+        "key_objects": [
+          "frying pan",
+          "chilli oil",
+          "spring onions"
+        ]
+      },
+      {
+        "time_range": "0:01-0:03",
+        "visual_description": "Whisked eggs are poured into the pan over the oil and onions.",
+        "audio_description": "Sizzling continues.",
+        "text_on_screen": "a doctor's favourite lunch\nEggs",
+        "key_objects": [
+          "whisked eggs"
+        ]
+      },
+      {
+        "time_range": "0:03-0:04",
+        "visual_description": "A sesame seed bagel half is placed face down onto the cooking eggs.",
+        "audio_description": "Soft instrumental music.",
+        "text_on_screen": "a doctor's favourite lunch\nBagel",
+        "key_objects": [
+          "sesame bagel"
+        ]
+      },
+      {
+        "time_range": "0:04-0:09",
+        "visual_description": "The bagel and egg are flipped; mashed avocado, tomato slices, and mozzarella are added before folding the egg over.",
+        "audio_description": "Soft instrumental music.",
+        "text_on_screen": "a doctor's favourite lunch",
+        "key_objects": [
+          "mashed avocado",
+          "tomato slices",
+          "mozzarella cheese"
+        ]
+      },
+      {
+        "time_range": "0:09-0:13",
+        "visual_description": "The bagel sandwich is closed, sliced in half, and pulled apart to reveal a cheese pull.",
+        "audio_description": "Soft instrumental music.",
+        "text_on_screen": "a doctor's favourite lunch",
+        "key_objects": [
+          "finished bagel sandwich",
+          "plate"
+        ]
+      }
+    ],
+    "overall_summary": "This video features @doctorbowl demonstrating a viral 'one-pan' bagel lunch recipe. The process involves frying eggs with chilli oil and spring onions, pressing a bagel into the eggs, and then filling it with avocado, tomato, and mozzarella. The final result is a toasted, cheesy breakfast-style sandwich presented as a healthy and easy meal option.",
+    "people": [
+      {
+        "description": "Creator's hands performing the cooking steps.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "@doctorbowl"
+      }
+    ],
+    "entities": [
+      {
+        "name": "@doctorbowl",
+        "display_name": "Doctor Bowl",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Chilli Oil",
+        "display_name": "Chilli Oil",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "1 tsp",
+        "confidence": 5
+      },
+      {
+        "name": "Bagel",
+        "display_name": "Sesame Bagel",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "1 bagel",
+        "confidence": 5
+      },
+      {
+        "name": "Eggs",
+        "display_name": "Whisked Eggs",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "2 eggs, seasoned with salt and pepper",
+        "confidence": 5
+      },
+      {
+        "name": "Avocado",
+        "display_name": "Mashed Avocado",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "1/2 avocado",
+        "confidence": 5
+      },
+      {
+        "name": "Mozzarella",
+        "display_name": "Mozzarella Cheese",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Small handful",
+        "confidence": 5
+      },
+      {
+        "name": "Echoes",
+        "display_name": "Echoes",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The 'viral' bagel egg sandwich technique is a highly recommended, easy, and tasty lunch option.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Ingredients",
+          "details": "1 tsp chilli oil, 1 spring onion (chopped), 1 bagel, 2 eggs (whisked and seasoned), 1/2 avocado (mashed), 2 slices of tomato, small handful of mozzarella."
+        },
+        {
+          "name": "Method",
+          "details": "1. Drizzle chilli oil in a pan over medium heat. 2. Add spring onions and cook for 1 minute. 3. Add whisked eggs and place bagel face down. 4. Cook for 3-4 minutes. 5. Flip, add fillings (avocado, tomato, cheese), fold, and serve."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Echoes - (Artist Unclear)",
+      "metadata_song": "Echoes",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Recipe details were fully extracted from the caption and visual demonstration."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "overhead",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Bright, clean, and appetizing.",
+    "topic_hints": [
+      "Healthy Recipes",
+      "Lunch Ideas",
+      "Viral Food Trends"
+    ],
+    "affect_hints": [
+      "Satisfied",
+      "Hungry",
+      "Productive"
+    ],
+    "genre_hints": [
+      "Food TikTok",
+      "Recipe Tutorial"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2761,
+    "output_tokens": 1735,
+    "total_tokens": 4496,
+    "cost_usd": 0.001455,
+    "latency_ms": 19847,
+    "upload_ms": 5483
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

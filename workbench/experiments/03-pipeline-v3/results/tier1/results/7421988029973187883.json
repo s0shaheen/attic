@@ -1,0 +1,52 @@
+{
+  "item_id": "7421988029973187883",
+  "parsed_output": {
+    "summary": "Creator @rajn7673 provides essential tips for men's sweater shopping for the fall season, specifically focusing on thinner sweaters for a classic fit. He explains styling techniques like the French tuck and warns about how heavy fabrics can create awkward shapes.",
+    "entities": [
+      {
+        "name": "@rajn7673",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "French tuck",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Sweaters",
+        "type": "clothing",
+        "relevance": "primary"
+      },
+      {
+        "name": "Fall",
+        "type": "event",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Men's fashion",
+        "type": "trend_or_meme",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "fashion",
+      "secondary": null
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "shopping_research",
+    "embedding_text": "In this men's fashion tutorial, creator @rajn7673 offers practical advice for shopping for sweaters this fall. The video specifically targets thinner sweaters intended for a classic fit rather than oversized styles. A key takeaway is the discussion of the French tuck technique; the creator explains that while it works for lighter materials, heavier fabrics can result in an unflattering angular shape. The visual features the creator standing in a room with a clothing rack, wearing a black crewneck sweater, light-wash denim jeans, and brown leather boots. This content is ideal for anyone doing shopping research for autumn wardrobe essentials or looking to improve their styling techniques. The hashtags #mensfashion and #fashiontips highlight its focus on style education for a male audience."
+  },
+  "metrics": {
+    "input_tokens": 4342,
+    "output_tokens": 464,
+    "total_tokens": 4806,
+    "cost_usd": 0.00093,
+    "latency_ms": 7282,
+    "keyframe_count": 3
+  }
+}

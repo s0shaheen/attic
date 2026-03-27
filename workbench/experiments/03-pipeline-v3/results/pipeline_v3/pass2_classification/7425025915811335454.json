@@ -1,0 +1,74 @@
+{
+  "item_id": "7425025915811335454",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:24:18.803994+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": null,
+      "micro_labels": [
+        "grilled cheese",
+        "tomato soup",
+        "gourmet cooking",
+        "comfort food"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "recipe",
+      "micro_labels": [
+        "cooking demonstration"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "funny",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "cinematic",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6459,
+    "output_tokens": 337,
+    "total_tokens": 6796,
+    "cost_usd": 0.001171,
+    "latency_ms": 5525,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 3
+  }
+}

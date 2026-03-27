@@ -1,0 +1,200 @@
+{
+  "item_id": "7577521318690688311",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:18:18.988343+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "A finger presses play on a vintage cassette deck; quick cuts introduce the heist crew and the iconic red Subaru Impreza WRX.",
+        "audio_description": "Doc (Kevin Spacey) says, 'That's my baby' over a building drum beat.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Cassette deck",
+          "Subaru Impreza WRX",
+          "Stacks of cash"
+        ]
+      },
+      {
+        "time_range": "0:05-0:20",
+        "visual_description": "A rhythmic montage of Baby driving, walking through the city with headphones, and the crew preparing for a job.",
+        "audio_description": "Upbeat indie rock music begins; sounds of car engines and tires screeching.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Headphones",
+          "Sunglasses",
+          "Guns"
+        ]
+      },
+      {
+        "time_range": "0:20-0:22",
+        "visual_description": "Baby stops the car and looks at his passenger, resetting his music.",
+        "audio_description": "Baby (Ansel Elgort) says, 'Wait wait wait, I gotta start the song over.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Sunglasses"
+        ]
+      },
+      {
+        "time_range": "0:22-0:56",
+        "visual_description": "High-speed chase sequences, gunfights, and character close-ups perfectly synced to the beat of the song.",
+        "audio_description": "Song 'Pictures' by The Greeting Committee plays loudly.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Police cars",
+          "Glock pistols",
+          "Steering wheel"
+        ]
+      },
+      {
+        "time_range": "0:56-0:59",
+        "visual_description": "Final shots of Baby driving into a tunnel followed by a title card.",
+        "audio_description": "Music reaches a crescendo and cuts out.",
+        "text_on_screen": "BABY",
+        "key_objects": [
+          "Title card"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a high-energy fan edit of the 2017 film 'Baby Driver,' directed by Edgar Wright. It features a rhythmic montage of the film's most iconic driving stunts, heist preparations, and character moments, all meticulously synced to the song 'Pictures' by The Greeting Committee. The edit highlights the movie's signature blend of music and action, focusing on the protagonist Baby's reliance on his soundtrack to perform high-stakes getaway driving.",
+    "people": [
+      {
+        "description": "Young getaway driver with sunglasses and headphones",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Ansel Elgort (Baby)"
+      },
+      {
+        "description": "Heist mastermind with glasses",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Kevin Spacey (Doc)"
+      },
+      {
+        "description": "Intimidating heist crew member with a beard",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jon Bernthal (Griff)"
+      },
+      {
+        "description": "Aggressive heist crew member in a red shirt",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jamie Foxx (Bats)"
+      },
+      {
+        "description": "Suave heist crew member in a suit",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jon Hamm (Buddy)"
+      },
+      {
+        "description": "Stylish female heist crew member",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Eiza Gonz\u00e1lez (Darling)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Baby Driver",
+        "display_name": "Baby Driver (2017)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Directed by Edgar Wright",
+        "confidence": 5
+      },
+      {
+        "name": "Pictures",
+        "display_name": "Pictures - The Greeting Committee",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Album: This Is It",
+        "confidence": 5
+      },
+      {
+        "name": "Subaru Impreza WRX",
+        "display_name": "2006 Subaru Impreza WRX",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Red color, modified for stunts",
+        "confidence": 5
+      },
+      {
+        "name": "The Greeting Committee",
+        "display_name": "The Greeting Committee",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Baby Driver is a film defined by the perfect synchronization of action and music.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Pictures \u2014 The Greeting Committee",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The song is definitely 'Pictures' by The Greeting Committee, which is a popular choice for indie-style movie edits."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "montage"
+    },
+    "visual_mood": "High-octane, rhythmic, cool, and cinematic.",
+    "topic_hints": [
+      "Movie Edits",
+      "Cinematography",
+      "Action Cinema"
+    ],
+    "affect_hints": [
+      "Excited",
+      "Nostalgic",
+      "Energized"
+    ],
+    "genre_hints": [
+      "Movie Mashup",
+      "Cinematic Edit"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6821,
+    "output_tokens": 1557,
+    "total_tokens": 8378,
+    "cost_usd": 0.001957,
+    "latency_ms": 18141,
+    "upload_ms": 5909
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

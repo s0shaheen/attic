@@ -1,0 +1,52 @@
+{
+  "item_id": "7590884397142871318",
+  "parsed_output": {
+    "summary": "Creator @alekseme asks his audience for recommendations for a 1.5-hour movie to watch before bed. He is shown wearing silver Apple AirPods Max while scrolling through the HBO Max interface on a laptop, featuring titles like The Hobbit and Harry Potter.",
+    "entities": [
+      {
+        "name": "@alekseme",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Apple AirPods Max",
+        "type": "product",
+        "relevance": "primary"
+      },
+      {
+        "name": "HBO Max",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "The Hobbit",
+        "type": "movie_or_show",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Harry Potter",
+        "type": "movie_or_show",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "technology"
+    },
+    "genre": "pov",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "social_sharing",
+    "embedding_text": "In this TikTok video, creator @alekseme is seen lying in bed wearing silver Apple AirPods Max headphones, looking for something to watch. On-screen text asks, 'Can anyone recommend a good 1.5 hour movie to watch before bed?' The camera pans to his MacBook screen showing the HBO Max interface with various movie tiles. Visible titles include The Hobbit (Hobbiten), Harry Potter, The Conjuring, The Tomorrow War, The Covenant, The Great Gatsby, and The Wizard of Oz. The interface is in a Scandinavian language, likely Danish or Norwegian, showing categories like Hjem, Serier, and Film. This content is a call for engagement within the #filmtok and #movietok communities, specifically seeking short film suggestions that fit a 90-minute window for late-night viewing."
+  },
+  "metrics": {
+    "input_tokens": 4286,
+    "output_tokens": 491,
+    "total_tokens": 4777,
+    "cost_usd": 0.000937,
+    "latency_ms": 7233,
+    "keyframe_count": 3
+  }
+}

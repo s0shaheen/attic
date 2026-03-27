@@ -1,0 +1,278 @@
+{
+  "item_id": "7211226580587269381",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:50:43.947093+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "The video opens with an exterior shot of a multi-story brick building housing a coffeeshop at street level, with people walking past on the sidewalk.",
+        "audio_description": "Upbeat hip-hop music plays.",
+        "text_on_screen": "Best coffeeshop in AMSTERDAM",
+        "key_objects": [
+          "Coffeeshop Amsterdam building",
+          "people"
+        ]
+      },
+      {
+        "time_range": "0:01-0:06",
+        "visual_description": "The camera moves inside the coffeeshop, showcasing the interior with a counter where staff members are present, and shelves displaying various products against a brick wall.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "Coffeeshop Amsterdam",
+        "key_objects": [
+          "Coffeeshop Amsterdam sign",
+          "staff",
+          "products on shelves",
+          "counter"
+        ]
+      },
+      {
+        "time_range": "0:06-0:09",
+        "visual_description": "The interior view shifts to a seating area with tables and chairs, a prominent brick wall, and a modern metal staircase leading to an upper level.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "upstairs",
+        "key_objects": [
+          "seating area",
+          "staircase",
+          "brick wall"
+        ]
+      },
+      {
+        "time_range": "0:09-0:14",
+        "visual_description": "A close-up shot features a glass mug filled with a hot drink, topped with whipped cream and cocoa powder, being stirred with a stick that has a chocolate ball on it.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "hot drink",
+          "whipped cream",
+          "chocolate ball",
+          "spoon"
+        ]
+      },
+      {
+        "time_range": "0:14-0:16",
+        "visual_description": "A hand holds a brown, cylindrical package with the 'XXX' logo, which is a symbol associated with Amsterdam, and 'Coffeeshop Amsterdam' branding.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Coffeeshop Amsterdam branded packaging",
+          "XXX logo"
+        ]
+      },
+      {
+        "time_range": "0:16-0:19",
+        "visual_description": "The camera shows the metal staircase and the brick wall again, with some plants and a visible haze or smoke, suggesting a designated smoking area.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "staircase",
+          "brick wall",
+          "plants",
+          "smoke/vapor"
+        ]
+      },
+      {
+        "time_range": "0:19-0:23",
+        "visual_description": "A display case showcases various edibles, including a distinct red velvet cake and other chocolate bars. A price tag is visible.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "edibles spacetry \u20ac10,-",
+        "key_objects": [
+          "display case",
+          "red velvet edible",
+          "chocolate edibles",
+          "price tag"
+        ]
+      },
+      {
+        "time_range": "0:23-0:29",
+        "visual_description": "The video concludes with an exterior shot of the street, showing the Coffeeshop Amsterdam building and other surrounding architecture, with the coffeeshop's address overlaid.",
+        "audio_description": "Upbeat hip-hop music continues.",
+        "text_on_screen": "Coffeeshop Amsterdam Haarlemmerstraat 44, 1013 ES \ud83d\udccd",
+        "key_objects": [
+          "Coffeeshop Amsterdam building",
+          "street",
+          "other buildings"
+        ]
+      }
+    ],
+    "overall_summary": "This video provides a visual tour and recommendation for Coffeeshop Amsterdam, located at Haarlemmerstraat 44. It showcases the inviting exterior and interior ambiance, including a cozy seating area and a unique staircase. The video highlights some of the coffeeshop's offerings, such as a hot drink and various edibles, with a particular emphasis on a red velvet edible that the creator found 'incredible'. The main point is to present Coffeeshop Amsterdam as a must-visit destination for those exploring Amsterdam.",
+    "people": [
+      {
+        "description": "The creator, @outwithnaz, is implied by the caption to be visiting and reviewing the coffeeshop. They are not visually identified in the video, but their hand is seen holding a drink and a product.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Several staff members are seen behind the counter, assisting customers.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Various customers are seen inside and outside the coffeeshop, enjoying the space.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Coffeeshop Amsterdam",
+        "display_name": "Coffeeshop Amsterdam (Haarlemmerstraat 44, 1013 ES)",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Address: Haarlemmerstraat 44, 1013 ES, Amsterdam",
+        "confidence": 5
+      },
+      {
+        "name": "Amsterdam",
+        "display_name": "Amsterdam",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Red Velvet Edible",
+        "display_name": "Red Velvet Edible",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": "Price: \u20ac10",
+        "confidence": 4
+      },
+      {
+        "name": "Edibles",
+        "display_name": "Edibles",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Good Time",
+        "display_name": "Good Time",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Artist: Lil Wayne ft. Paris Hilton",
+        "confidence": 4
+      },
+      {
+        "name": "Lil Wayne",
+        "display_name": "Lil Wayne",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Paris Hilton",
+        "display_name": "Paris Hilton",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Coffeeshop Amsterdam is a highly recommended and must-visit location in Amsterdam.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "The red velvet edible at Coffeeshop Amsterdam is an exceptional product.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Coffeeshop Amsterdam",
+          "details": "Address: Haarlemmerstraat 44, 1013 ES, Amsterdam. Features a cozy interior, friendly staff, and a variety of edibles including a highly-rated red velvet edible."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Good Time \u2014 Lil Wayne ft. Paris Hilton",
+      "metadata_song": "Best Time",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific type of hot drink shown (coffee or hot chocolate) is not explicitly stated or identifiable beyond a generic 'hot drink'."
+    },
+    "presentation_style": {
+      "primary_format": "cinematic",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Lively, inviting, cozy, urban, exciting",
+    "topic_hints": [
+      "Amsterdam travel",
+      "coffeeshop review",
+      "edibles experience"
+    ],
+    "affect_hints": [
+      "Excited",
+      "curious",
+      "satisfied",
+      "relaxed"
+    ],
+    "genre_hints": [
+      "Travel vlog",
+      "review",
+      "recommendation"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 10081,
+    "output_tokens": 2444,
+    "total_tokens": 12525,
+    "cost_usd": 0.002979,
+    "latency_ms": 27738,
+    "upload_ms": 5521
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

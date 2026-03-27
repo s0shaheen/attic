@@ -1,0 +1,52 @@
+{
+  "item_id": "7613132846085066014",
+  "parsed_output": {
+    "summary": "Republican Senator Thom Tillis is seen criticizing South Dakota Governor Kristi Noem during a congressional hearing. The video highlights internal Republican party friction regarding immigration policy and ICE. Users would save this to track political developments or share a notable moment of intra-party conflict.",
+    "entities": [
+      {
+        "name": "Thom Tillis",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Kristi Noem",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "ICE",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "US Congress",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Republican Party",
+        "type": "brand",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "politics",
+      "secondary": "news"
+    },
+    "genre": "news_commentary",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "shocking"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "A news commentary video from @therecount featuring Republican Senator Thom Tillis during a congressional hearing. The video is titled 'REPUBLICAN SENATOR TEARS INTO KRISTI NOEM' and shows Tillis criticizing South Dakota Governor Kristi Noem, likely regarding her comments or actions related to ICE (Immigration and Customs Enforcement). Tillis is seen in a blue suit and gold tie, speaking firmly from his seat behind a nameplate that reads 'MR. TILLIS'. The captions include phrases like 'We expect exceptional' and 'Please don't do that for me.' This clip captures a moment of internal GOP tension and political debate within the halls of Congress. It is a relevant piece of media for those following US politics, immigration policy, and the interactions between federal legislators and state governors."
+  },
+  "metrics": {
+    "input_tokens": 4275,
+    "output_tokens": 474,
+    "total_tokens": 4749,
+    "cost_usd": 0.000926,
+    "latency_ms": 9844,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "item_id": "7603405187213970718",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:08.560676+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "art",
+      "secondary": "movies_tv",
+      "micro_labels": [
+        "speed painting",
+        "Spider-Man",
+        "Andrew Garfield",
+        "live performance",
+        "fan art"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "timelapse",
+      "micro_labels": [
+        "speed painting",
+        "performance art"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "satisfying",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "text_overlay",
+      "raw_footage"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 7603,
+    "output_tokens": 355,
+    "total_tokens": 7958,
+    "cost_usd": 0.001353,
+    "latency_ms": 7908,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 4
+  }
+}

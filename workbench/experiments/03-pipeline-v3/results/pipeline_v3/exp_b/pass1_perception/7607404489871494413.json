@@ -1,0 +1,350 @@
+{
+  "item_id": "7607404489871494413",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:55:16.089898+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "A young Asian woman, the creator, sits at a desk in front of a laptop, looking at the screen and smiling while engaging in a virtual meeting. Text overlays introduce the video's topic and the first step of the design review process.",
+        "audio_description": "The creator greets participants and asks about their trip, followed by laughter and a thank you for joining on a Friday.",
+        "text_on_screen": "product manager 101 how to review the designs for a new feature (steps 1-10)\nmoments from a real design review for a new feature release with product and design stakeholders\nstep 1: start off with friendly conversation (we are all friends)",
+        "key_objects": [
+          "laptop",
+          "desk",
+          "floor lamp",
+          "poster"
+        ]
+      },
+      {
+        "time_range": "0:05-0:11",
+        "visual_description": "The creator continues to look at her laptop screen, listening intently and then speaking. Text overlays describe the second step of the design review.",
+        "audio_description": "The creator states she was hoping to check in and asks for updates from the last conversation.",
+        "text_on_screen": "step 2: ask for updates from the last conversation / the initial designs after a PRD readout",
+        "key_objects": [
+          "laptop"
+        ]
+      },
+      {
+        "time_range": "0:11-0:16",
+        "visual_description": "The creator listens attentively, resting her chin on her hand, as if processing information. Text overlays describe the third step.",
+        "audio_description": "Unclear murmuring, likely a designer speaking.",
+        "text_on_screen": "step 3: give time for designer to walk though any changes",
+        "key_objects": [
+          "laptop"
+        ]
+      },
+      {
+        "time_range": "0:16-0:22",
+        "visual_description": "The creator maintains a thoughtful expression, with her hand still on her chin, listening to the discussion. Text overlays describe the fourth step.",
+        "audio_description": "Unclear murmuring, likely a designer speaking, followed by the creator saying, \"I agree.\"",
+        "text_on_screen": "step 4: designer q&a where product answers any questions on intent of a feature or unclear asks",
+        "key_objects": [
+          "laptop"
+        ]
+      },
+      {
+        "time_range": "0:22-0:28",
+        "visual_description": "The creator speaks, then listens with a hand on her chin, showing engagement in the conversation. Text overlays describe the fifth step and provide a note on product and design perspectives.",
+        "audio_description": "The creator asks a clarifying question about 'X's, and then acknowledges the response with 'Okay.'",
+        "text_on_screen": "step 5: product q&a make sure to ask questions on design intent! it is ok to be nitpicky to ensure that the feature design fits with customer use case\nnote: it is ok to disagree! remember that design and product think differently. design focuses on usability, product consistency, etc. PMs focus on use case and customer overall experience of the feature",
+        "key_objects": [
+          "laptop"
+        ]
+      },
+      {
+        "time_range": "0:28-0:35",
+        "visual_description": "The creator listens, then looks down at her laptop, appearing focused on the screen. Text overlays describe the sixth step, emphasizing the iterative nature of meetings.",
+        "audio_description": "Unclear murmuring, indicating ongoing discussion.",
+        "text_on_screen": "step 6: continue discussions product manager x design meetings take a while because new, less defined features requires thoughtful back-and-forth",
+        "key_objects": [
+          "laptop"
+        ]
+      },
+      {
+        "time_range": "0:35-0:39",
+        "visual_description": "The creator types on her laptop while listening, then rests her head on her hand. Text overlays describe the seventh step.",
+        "audio_description": "A voice states, \"And I'll go ahead and make those updates,\" followed by the creator mentioning \"description for what the metrics mean.\"",
+        "text_on_screen": "step 7: after agreeing on a change, define clear asks for the designer to update for the next meeting",
+        "key_objects": [
+          "laptop"
+        ]
+      },
+      {
+        "time_range": "0:39-0:43",
+        "visual_description": "The creator speaks, gesturing with her hands, actively participating in the discussion. Text overlays describe the eighth step.",
+        "audio_description": "The creator asks, \"What's the difference between when we choose to do an informational or if the...\"",
+        "text_on_screen": "step 8: ask any clarifying questions",
+        "key_objects": [
+          "laptop"
+        ]
+      },
+      {
+        "time_range": "0:43-0:57",
+        "visual_description": "The creator continues to speak and gesture, explaining points to her colleagues. Text overlays describe the ninth step, focusing on action items and alignment.",
+        "audio_description": "The creator discusses what they are working on next week, designs being added to the prototype, and how certain information will inform engineering about data placement.",
+        "text_on_screen": "step 9: run-through on action items explain why we need certain pieces by certain timeline so that all stakeholders are aligned",
+        "key_objects": [
+          "laptop"
+        ]
+      },
+      {
+        "time_range": "0:57-1:01",
+        "visual_description": "The creator smiles and waves goodbye to her colleagues, concluding the meeting. Text overlays describe the final step.",
+        "audio_description": "The creator says, \"Okay,\" and then, \"See you guys in two weeks.\"",
+        "text_on_screen": "step 10: goodbyes!!",
+        "key_objects": [
+          "laptop"
+        ]
+      }
+    ],
+    "overall_summary": "This video, created by @tiffanysopenbook, offers a 10-step guide for product managers on how to conduct an effective design review for a new feature. It captures \"unglamourized\" moments from a real product manager and designer team discussion, emphasizing the iterative and collaborative nature of product development. The creator highlights the importance of fostering friendly conversation, asking detailed questions about design intent, and ensuring all stakeholders are aligned on customer use cases and timelines. The video serves as a practical tutorial for product managers aiming to improve their meeting productivity and design review skills.",
+    "people": [
+      {
+        "description": "A young Asian woman with long dark hair, wearing a white t-shirt over a grey long-sleeve shirt, sitting at a desk and interacting with a laptop. She is actively participating in and leading a virtual meeting.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Tiffany (implied by audio at 0:03)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Product Management",
+        "display_name": "Product Management",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "text_overlay",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Product Manager",
+        "display_name": "Product Manager",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "text_overlay",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Product Design",
+        "display_name": "Product Design",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "text_overlay",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Designer",
+        "display_name": "Designer",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "text_overlay",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Product Development",
+        "display_name": "Product Development",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Design Review",
+        "display_name": "Design Review Meeting",
+        "type": "event",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "New Feature Release",
+        "display_name": "New Feature Release",
+        "type": "event",
+        "relevance": "primary",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "PRD Readout",
+        "display_name": "Product Requirements Document (PRD) Readout",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "MacBook Pro",
+        "display_name": "Apple MacBook Pro Laptop",
+        "type": "product",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Little Shop of Horrors",
+        "display_name": "Little Shop of Horrors (Poster)",
+        "type": "movie_or_show",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Effective design reviews for new features require a structured, iterative approach involving friendly conversation, clear communication, and alignment between product managers and designers.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "Product managers should be nitpicky and ask questions about design intent to ensure the feature design aligns with customer use cases and overall experience.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Design and product roles have different focuses: design prioritizes usability and consistency, while product prioritizes customer use case and overall experience.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "New and less defined features necessitate longer, more thoughtful discussions in product manager and design meetings.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Step 1: Start off with friendly conversation",
+          "details": "Foster a friendly atmosphere, as all team members are colleagues."
+        },
+        {
+          "name": "Step 2: Ask for updates from the last conversation / the initial designs after a PRD readout",
+          "details": "Check in on progress and initial designs."
+        },
+        {
+          "name": "Step 3: Give time for designer to walk though any changes",
+          "details": "Allow the designer to present their updates and rationale."
+        },
+        {
+          "name": "Step 4: Designer Q&A",
+          "details": "Product answers any questions on the intent of a feature or unclear asks from the designer."
+        },
+        {
+          "name": "Step 5: Product Q&A",
+          "details": "Product asks questions on design intent, being nitpicky to ensure the feature design fits customer use cases. Remember that design focuses on usability/consistency, PMs on use case/overall customer experience."
+        },
+        {
+          "name": "Step 6: Continue discussions",
+          "details": "Product manager and design meetings take a while for new, less defined features, requiring thoughtful back-and-forth."
+        },
+        {
+          "name": "Step 7: After agreeing on a change, define clear asks for the designer to update for the next meeting",
+          "details": "Provide actionable feedback for subsequent iterations."
+        },
+        {
+          "name": "Step 8: Ask any clarifying questions",
+          "details": "Ensure full understanding of all aspects of the design and feature."
+        },
+        {
+          "name": "Step 9: Run-through on action items",
+          "details": "Explain why certain pieces are needed by a specific timeline to ensure all stakeholders are aligned."
+        },
+        {
+          "name": "Step 10: Goodbyes!!",
+          "details": "Conclude the meeting."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific model of the laptop is an inference based on visual cues. The 'Tiffany' identification is based on someone calling her name in the audio."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "informative, professional, authentic, focused, casual",
+    "topic_hints": [
+      "Product Management",
+      "Product Design",
+      "Design Review Process",
+      "Professional Development"
+    ],
+    "affect_hints": [
+      "Informative",
+      "Helpful",
+      "Educational",
+      "Engaging"
+    ],
+    "genre_hints": [
+      "Tutorial",
+      "Behind-the-scenes",
+      "Educational content",
+      "Professional advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 19588,
+    "output_tokens": 3325,
+    "total_tokens": 22913,
+    "cost_usd": 0.004933,
+    "latency_ms": 32892,
+    "upload_ms": 5684
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

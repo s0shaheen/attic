@@ -1,0 +1,224 @@
+{
+  "item_id": "7575353456161049887",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:49:16.561356+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A person is seated in front of a computer screen displaying the TouchDesigner software interface, with a white fan visible in the lower left of the frame.",
+        "audio_description": "Upbeat electronic music plays.",
+        "text_on_screen": "PANE LAYOUT, TUTORIALS, FPS: 18, Realtime 19:09:57 Load project: light projection.toe loaded successfully., TimeCode 00:00:06:43",
+        "key_objects": [
+          "computer screen",
+          "TouchDesigner software",
+          "fan"
+        ]
+      },
+      {
+        "time_range": "0:01-0:08",
+        "visual_description": "The person holds up a smartphone, from which a dynamic light projection of white and blue particles emanates, projecting onto the wall behind them and interacting with their head. The TouchDesigner interface remains visible in the foreground.",
+        "audio_description": "Upbeat electronic music continues.",
+        "text_on_screen": "PANE LAYOUT, TUTORIALS, FPS: 18, Realtime 19:09:57 Load project: light projection.toe loaded successfully., TimeCode 00:00:06:43",
+        "key_objects": [
+          "smartphone",
+          "light projection",
+          "particles",
+          "TouchDesigner software"
+        ]
+      },
+      {
+        "time_range": "0:08-0:09",
+        "visual_description": "The light projection fades, and the person lowers the smartphone, returning to the initial pose in front of the computer screen.",
+        "audio_description": "Upbeat electronic music continues.",
+        "text_on_screen": "PANE LAYOUT, TUTORIALS, FPS: 18, Realtime 19:09:57 Load project: light projection.toe loaded successfully., TimeCode 00:00:06:43",
+        "key_objects": [
+          "smartphone",
+          "TouchDesigner software"
+        ]
+      }
+    ],
+    "overall_summary": "This video demonstrates a creative light projection effect created using TouchDesigner software. The creator showcases how a smartphone can be used as a source to project dynamic, particle-like visuals onto a wall, which interact with their own movements. The video highlights the capabilities of TouchDesigner for generating interactive and live visual art, offering a glimpse into real-time graphics programming.",
+    "people": [
+      {
+        "description": "A young person with dark hair, wearing a black t-shirt, sitting in front of a computer and demonstrating a light projection effect.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "TouchDesigner",
+        "display_name": "TouchDesigner",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Light Projection",
+        "display_name": "Light Projection",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Particles",
+        "display_name": "Particles",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Live Visuals",
+        "display_name": "Live Visuals",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Smartphone",
+        "display_name": "Smartphone",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "@3.27wx",
+        "display_name": "@3.27wx",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "@keitlyn",
+        "display_name": "@keitlyn",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Pitch the Baby",
+        "display_name": "Pitch the Baby \u2014 Cocteau Twins",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Cocteau Twins",
+        "display_name": "Cocteau Twins",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "TouchDesigner can be utilized to create interactive and dynamic light projections.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "Smartphones can serve as a tool for projecting live visuals in creative setups.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "Pitch the Baby",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": false,
+      "notes": "The actual song playing in the video does not match the metadata song 'Pitch the Baby' by Cocteau Twins. The actual song is an unidentified upbeat electronic track. The specific model of the smartphone used for projection is not identifiable."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "creative, experimental, technical, intriguing, calm",
+    "topic_hints": [
+      "Generative art",
+      "Live visuals",
+      "TouchDesigner"
+    ],
+    "affect_hints": [
+      "Curiosity",
+      "Wonder",
+      "Inspiration"
+    ],
+    "genre_hints": [
+      "Tech demo",
+      "Art showcase",
+      "Creative tutorial"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4152,
+    "output_tokens": 1711,
+    "total_tokens": 5863,
+    "cost_usd": 0.001649,
+    "latency_ms": 21735,
+    "upload_ms": 3289
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

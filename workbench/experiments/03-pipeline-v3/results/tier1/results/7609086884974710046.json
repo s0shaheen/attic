@@ -1,0 +1,52 @@
+{
+  "item_id": "7609086884974710046",
+  "parsed_output": {
+    "summary": "This TikTok is a cinematic fan edit of Christopher Nolan's The Dark Knight trilogy, featuring emotional highlights of Alfred Pennyworth and Batman. It serves as a tribute to the film series, often regarded by fans as the greatest movie trilogy of all time.",
+    "entities": [
+      {
+        "name": "The Dark Knight Trilogy",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Batman",
+        "type": "cultural_reference",
+        "relevance": "primary"
+      },
+      {
+        "name": "Michael Caine",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Alfred Pennyworth",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Batpod",
+        "type": "product",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": null
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "nostalgic",
+      "secondary": "inspiring"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "A cinematic fan edit of Christopher Nolan's The Dark Knight trilogy, celebrating it as the 'Best Trilogy OAT' (Of All Time). The video features emotional and action-packed sequences, including a close-up of Michael Caine as Alfred Pennyworth looking somber and Batman riding the Batpod motorcycle through a dark urban tunnel. On-screen text overlays the footage with the phrase 'IT'S ALL THAT'S LEFT,' contributing to a nostalgic and dramatic atmosphere. Created by @.chayose, this 31-second edit captures the essence of the DC superhero films, focusing on character depth and the iconic visuals of Gotham City. It is a high-quality movie montage designed for fans of the Batman franchise, Christian Bale, and epic cinema storytelling. The edit uses an original sound to enhance the mood of the clips from Batman Begins, The Dark Knight, and The Dark Knight Rises."
+  },
+  "metrics": {
+    "input_tokens": 4155,
+    "output_tokens": 502,
+    "total_tokens": 4657,
+    "cost_usd": 0.000924,
+    "latency_ms": 10125,
+    "keyframe_count": 3
+  }
+}

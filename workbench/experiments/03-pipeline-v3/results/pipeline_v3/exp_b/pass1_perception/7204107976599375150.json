@@ -1,0 +1,459 @@
+{
+  "item_id": "7204107976599375150",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:46:14.742230+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "An animated stockbroker character from 'Inside Out' sits at a desk surrounded by computer screens displaying stock market data, initially appearing sad and then suddenly ecstatic.",
+        "audio_description": "A male voice asks, \"What am I doing with my life?\" followed by an excited shout, \"I'm alive! I'm alive! Free yourself!\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "computer monitors",
+          "stock market data",
+          "desk",
+          "phone",
+          "sticky notes",
+          "water bottle"
+        ]
+      },
+      {
+        "time_range": "0:05-0:10",
+        "visual_description": "The animated stockbroker character jumps up from his chair, throwing his arms in the air in an ecstatic celebration, then looks around wildly.",
+        "audio_description": "The excited shouts continue, \"I'm alive! I'm alive! Free yourself!\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "computer monitors",
+          "stock market data"
+        ]
+      },
+      {
+        "time_range": "0:10-0:26",
+        "visual_description": "Steve Carell as Frank Hoover and Paul Dano as Dwayne Hoover from 'Little Miss Sunshine' stand on a pier overlooking the ocean. Dwayne leans on the railing looking dejected, while Frank looks at him with a thoughtful expression. A town is visible in the background.",
+        "audio_description": "A male voice says, \"He gets something out of his life. And he looks back and decides that all those years he suffered, those were the best years of his life. Because they made him who he was. All the years he was happy, you know, total waste. Didn't learn a thing.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "pier",
+          "ocean",
+          "town"
+        ]
+      },
+      {
+        "time_range": "0:26-0:37",
+        "visual_description": "Sylvester Stallone as Rocky Balboa, wearing a red jacket and a black 'EMPSE' t-shirt, delivers an impassioned speech in a dimly lit street setting.",
+        "audio_description": "Rocky Balboa says, \"But it ain't about how hard you hit. It's about how hard you can get hit and keep moving forward. How much you can take and keep moving forward. That's how winning is done!\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "street lights"
+        ]
+      },
+      {
+        "time_range": "0:37-0:42",
+        "visual_description": "BoJack Horseman, an animated horse character, is shown from the chest up, wearing a green and white headband and an orange and white shirt. He initially looks tired, then his eyes widen.",
+        "audio_description": "BoJack Horseman says, \"It gets easier.\" Another voice (Mr. Peanutbutter) asks, \"Huh?\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "BoJack Horseman character"
+        ]
+      },
+      {
+        "time_range": "0:42-0:44",
+        "visual_description": "Cuddlywhiskers, an animated monkey character with a white beard and pink face, is shown against a bright sky, speaking and smiling.",
+        "audio_description": "Cuddlywhiskers says, \"Every day it gets a little easier.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Cuddlywhiskers character"
+        ]
+      },
+      {
+        "time_range": "0:44-0:46",
+        "visual_description": "BoJack Horseman is shown again, his eyes widening as he listens.",
+        "audio_description": "BoJack Horseman says, \"Yeah?\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "BoJack Horseman character"
+        ]
+      },
+      {
+        "time_range": "0:46-0:52",
+        "visual_description": "Cuddlywhiskers is shown again, speaking with a thoughtful expression.",
+        "audio_description": "Cuddlywhiskers says, \"But you gotta do it every day. That's the hard part. But it does get easier.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Cuddlywhiskers character"
+        ]
+      },
+      {
+        "time_range": "0:52-0:53",
+        "visual_description": "BoJack Horseman is shown again, his eyes widening in response.",
+        "audio_description": "BoJack Horseman says, \"Huh?\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "BoJack Horseman character"
+        ]
+      },
+      {
+        "time_range": "0:53-1:03",
+        "visual_description": "An animated young boy, Christopher Robin, sits with his back to the camera next to a small piglet-like character, Piglet, against a bright blue sky. Christopher Robin looks down thoughtfully.",
+        "audio_description": "Winnie the Pooh asks, \"What do you want to be when you grow up?\" Christopher Robin replies, \"Kind.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Christopher Robin character",
+          "Piglet character"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a compilation of motivational and introspective quotes from popular movies and TV shows, including 'Inside Out,' 'Little Miss Sunshine,' 'Rocky Balboa,' 'BoJack Horseman,' and 'Winnie the Pooh.' It explores themes of resilience, finding meaning in past struggles, and the continuous effort required to overcome challenges. The compilation emphasizes that while life's difficulties may ease over time, consistent dedication is key, culminating in a powerful message about the importance of kindness.",
+    "people": [
+      {
+        "description": "Animated male character, stockbroker, wearing a suit and tie, initially sad then ecstatic.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "Male, light skin, dark hair, beard, wearing a light pink collared shirt, standing on a pier.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Steve Carell"
+      },
+      {
+        "description": "Male, light skin, dark hair, wearing a white t-shirt, leaning on a pier railing, appearing dejected.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Paul Dano"
+      },
+      {
+        "description": "Male, dark hair, wearing a red jacket over a black t-shirt, speaking intensely in a street setting.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Sylvester Stallone"
+      },
+      {
+        "description": "Animated horse character, brown with a white muzzle, wearing a green and white headband and an orange and white shirt, expressing various emotions.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "BoJack Horseman"
+      },
+      {
+        "description": "Animated monkey character, grey fur, pink face, white beard, wearing a headband, speaking with wisdom.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Cuddlywhiskers"
+      },
+      {
+        "description": "Animated young boy with blonde hair, wearing a yellow jacket, sitting with his back to the camera.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Christopher Robin"
+      },
+      {
+        "description": "Animated piglet-like character, small, partially visible next to Christopher Robin.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Piglet"
+      },
+      {
+        "description": "Voiceover, male, speaking to Christopher Robin.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Winnie the Pooh"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Inside Out",
+        "display_name": "Inside Out (movie)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Little Miss Sunshine",
+        "display_name": "Little Miss Sunshine (movie)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Rocky Balboa",
+        "display_name": "Rocky Balboa (movie)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "BoJack Horseman",
+        "display_name": "BoJack Horseman (TV show)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Winnie the Pooh",
+        "display_name": "Winnie the Pooh (franchise)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Steve Carell",
+        "display_name": "Steve Carell (actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Frank Hoover",
+        "display_name": "Frank Hoover (character from Little Miss Sunshine)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Paul Dano",
+        "display_name": "Paul Dano (actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Dwayne Hoover",
+        "display_name": "Dwayne Hoover (character from Little Miss Sunshine)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Sylvester Stallone",
+        "display_name": "Sylvester Stallone (actor)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Rocky Balboa",
+        "display_name": "Rocky Balboa (character from Rocky Balboa)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "BoJack Horseman",
+        "display_name": "BoJack Horseman (character from BoJack Horseman)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Cuddlywhiskers",
+        "display_name": "Cuddlywhiskers (character from BoJack Horseman)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Christopher Robin",
+        "display_name": "Christopher Robin (character from Winnie the Pooh)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Piglet",
+        "display_name": "Piglet (character from Winnie the Pooh)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Lonely Tree",
+        "display_name": "The Lonely Tree (song)",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Jack Dempsey",
+        "display_name": "Jack Dempsey (boxer, implied by 'EMPSE' shirt)",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Suffering and challenges are integral to personal growth and self-realization, shaping who a person becomes.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "True strength and winning are defined by one's ability to endure hardship and continuously move forward despite setbacks.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Life's difficulties gradually become easier with consistent effort, but the daily commitment to that effort is the hardest part.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The ultimate aspiration in life should be to be kind.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "The Lonely Tree (instrumental background music)",
+      "metadata_song": "The Lonely Tree",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific artist for 'The Lonely Tree' is not identified, but the general instrumental mood matches the metadata."
+    },
+    "presentation_style": {
+      "primary_format": "compilation",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "reflective, melancholic, inspiring, determined, hopeful",
+    "topic_hints": [
+      "motivation",
+      "personal growth",
+      "resilience"
+    ],
+    "affect_hints": [
+      "inspired",
+      "thoughtful",
+      "hopeful",
+      "determined",
+      "empathetic"
+    ],
+    "genre_hints": [
+      "inspirational",
+      "motivational",
+      "cinematic_edit",
+      "quote_compilation"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 20161,
+    "output_tokens": 3794,
+    "total_tokens": 23955,
+    "cost_usd": 0.005301,
+    "latency_ms": 34231,
+    "upload_ms": 5757
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

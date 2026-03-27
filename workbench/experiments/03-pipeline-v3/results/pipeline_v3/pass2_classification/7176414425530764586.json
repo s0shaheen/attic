@@ -1,0 +1,80 @@
+{
+  "item_id": "7176414425530764586",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:48.719401+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "health",
+      "micro_labels": [
+        "corecore",
+        "existential dread",
+        "disassociation",
+        "modern alienation",
+        "film montage"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "montage",
+        "nichetok"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "sad",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "shocking",
+        "tier": "minor"
+      },
+      {
+        "label": "funny",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "mixed",
+      "cinematic"
+    ],
+    "content_provenance": {
+      "label": "remix",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "provoke",
+      "confidence": 0.85
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "emotional_regulation",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 10735,
+    "output_tokens": 374,
+    "total_tokens": 11109,
+    "cost_usd": 0.001835,
+    "latency_ms": 9419,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 7
+  }
+}

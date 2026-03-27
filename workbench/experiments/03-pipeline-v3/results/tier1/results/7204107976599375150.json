@@ -1,0 +1,52 @@
+{
+  "item_id": "7204107976599375150",
+  "parsed_output": {
+    "summary": "This TikTok is a 'hopecore' edit featuring a compilation of motivational and emotional clips from popular media to encourage resilience and hope. It includes Sylvester Stallone's iconic speech from Rocky Balboa, references to Bojack Horseman, and illustrations from The Boy, the Mole, the Fox and the Horse.",
+    "entities": [
+      {
+        "name": "Rocky Balboa",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Sylvester Stallone",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "The Boy, the Mole, the Fox and the Horse",
+        "type": "book",
+        "relevance": "primary"
+      },
+      {
+        "name": "Bojack Horseman",
+        "type": "movie_or_show",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Little Miss Sunshine",
+        "type": "movie_or_show",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "health"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "inspiring",
+      "secondary": "nostalgic"
+    },
+    "viewer_orientation": "emotional_regulation",
+    "embedding_text": "A 63-second motivational 'hopecore' edit by @tiertime titled 'It Gets Easier,' set to the melancholic yet hopeful track 'The Lonely Tree.' The video serves as a compilation of poignant moments from film and literature, focusing on themes of resilience, purpose, and mental wellbeing. Key segments include Sylvester Stallone as Rocky Balboa delivering his famous monologue about enduring life's hits, and the gentle illustrations from Charlie Mackesy's The Boy, the Mole, the Fox and the Horse. The metadata also references Bojack Horseman and Little Miss Sunshine, suggesting a narrative arc from suffering to realization. This video is a popular example of the 'core' trend on TikTok, designed to provide comfort and inspiration to viewers. It is ideal for those searching for motivational movie speeches, emotional 'core' content, or mental health affirmations."
+  },
+  "metrics": {
+    "input_tokens": 4348,
+    "output_tokens": 524,
+    "total_tokens": 4872,
+    "cost_usd": 0.000967,
+    "latency_ms": 11540,
+    "keyframe_count": 3
+  }
+}

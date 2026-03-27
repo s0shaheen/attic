@@ -1,0 +1,42 @@
+{
+  "item_id": "7420825477981523243",
+  "parsed_output": {
+    "summary": "Former OpenAI employee CJ Trowbridge discusses the company's internal leadership and talent threshold. He claims that based on his three-year tenure at the organization, OpenAI has already entered a state of decline.",
+    "entities": [
+      {
+        "name": "OpenAI",
+        "type": "brand",
+        "relevance": "primary"
+      },
+      {
+        "name": "CJ Trowbridge",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Artificial Intelligence",
+        "type": "trend_or_meme",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "career"
+    },
+    "genre": "news_commentary",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "shocking"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this 405-second TikTok video, creator CJ Trowbridge (@cjtrowbridge) provides an insider's perspective on the current state of OpenAI. Responding to a viewer's question about the 'leadership talent threshold' beneath which the company might lose its edge, Trowbridge asserts that OpenAI is already in decline, citing his own three-year experience working there. The video is a talking-head style commentary where the creator speaks directly to the camera while lying down. The on-screen text transcribes the prompt from user @_daniloc: 'what's the leadership talent threshold beneath which OpenAI loses the juice? are they approaching it soon?'. This content is highly relevant for users researching tech industry trends, corporate culture at major AI labs, and the long-term viability of OpenAI as a market leader."
+  },
+  "metrics": {
+    "input_tokens": 4243,
+    "output_tokens": 413,
+    "total_tokens": 4656,
+    "cost_usd": 0.000884,
+    "latency_ms": 11265,
+    "keyframe_count": 3
+  }
+}

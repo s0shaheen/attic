@@ -1,0 +1,517 @@
+{
+  "item_id": "7609086884974710046",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:47:58.388693+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Alfred Pennyworth, an elderly man with white hair, looks directly at the viewer with a somber expression.",
+        "audio_description": "Dramatic orchestral music begins.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "Bruce Wayne, a man with dark hair, smiles subtly while looking off-camera.",
+        "audio_description": "Dramatic orchestral music continues.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:06-0:07",
+        "visual_description": "Batman stands silhouetted on a rooftop, overlooking the sprawling, dark Gotham City skyline.",
+        "audio_description": "Dramatic orchestral music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Batman",
+          "Gotham City skyline"
+        ]
+      },
+      {
+        "time_range": "0:07-0:08",
+        "visual_description": "An aerial view captures the vastness of Gotham City, featuring a prominent bridge and numerous skyscrapers.",
+        "audio_description": "Alfred's voiceover: \"You have a name to my name.\"",
+        "text_on_screen": "YOU HAVE",
+        "key_objects": [
+          "Gotham City",
+          "bridge",
+          "skyscrapers"
+        ]
+      },
+      {
+        "time_range": "0:08-0:09",
+        "visual_description": "A close-up shot reveals a faint bat symbol etched into a snowy or icy surface.",
+        "audio_description": "Bruce Wayne's voiceover: \"I don't care about my name.\"",
+        "text_on_screen": "I DON'T",
+        "key_objects": [
+          "Bat-Signal (symbol)"
+        ]
+      },
+      {
+        "time_range": "0:09-0:10",
+        "visual_description": "The iconic Bat-Signal projects its emblem onto a cloudy night sky.",
+        "audio_description": "Bruce Wayne's voiceover: \"I don't care about my name.\"",
+        "text_on_screen": "ABOUT MY",
+        "key_objects": [
+          "Bat-Signal"
+        ]
+      },
+      {
+        "time_range": "0:10-0:11",
+        "visual_description": "Batman stands amidst the wreckage and flames of a destroyed structure.",
+        "audio_description": "Alfred's voiceover: \"It's not just your name, sir.\"",
+        "text_on_screen": "IT'S NOT",
+        "key_objects": [
+          "Batman",
+          "rubble",
+          "fire"
+        ]
+      },
+      {
+        "time_range": "0:11-0:12",
+        "visual_description": "The Joker, with his signature unsettling makeup, leans out of a police car window, smirking.",
+        "audio_description": "Alfred's voiceover: \"It's not just your name, sir.\"",
+        "text_on_screen": "IT'S NOT JUST YOUR NAME SIR.",
+        "key_objects": [
+          "The Joker",
+          "police car"
+        ]
+      },
+      {
+        "time_range": "0:12-0:13",
+        "visual_description": "A man wearing a menacing clown mask walks forward.",
+        "audio_description": "Alfred's voiceover: \"It's your father's name.\"",
+        "text_on_screen": "IT'S",
+        "key_objects": [
+          "clown mask"
+        ]
+      },
+      {
+        "time_range": "0:13-0:14",
+        "visual_description": "Alfred Pennyworth sits at a modern kitchen counter, intently reading a letter.",
+        "audio_description": "Alfred's voiceover: \"It's your father's name.\"",
+        "text_on_screen": "IT'S YOUR FATHER'S NAME.",
+        "key_objects": [
+          "Alfred Pennyworth",
+          "letter"
+        ]
+      },
+      {
+        "time_range": "0:14-0:15",
+        "visual_description": "The Batpod, a high-tech motorcycle, speeds through a dark tunnel.",
+        "audio_description": "Alfred's voiceover: \"It's all that's left of him.\"",
+        "text_on_screen": "IT'S ALL THAT'S LEFT.",
+        "key_objects": [
+          "Batpod"
+        ]
+      },
+      {
+        "time_range": "0:15-0:16",
+        "visual_description": "An establishing shot of the imposing Wayne Enterprises building in the city.",
+        "audio_description": "Alfred's voiceover: \"It's all that's left of him.\"",
+        "text_on_screen": "WAYNE",
+        "key_objects": [
+          "Wayne Enterprises building"
+        ]
+      },
+      {
+        "time_range": "0:16-0:17",
+        "visual_description": "Batman holds a damaged piece of his cowl or helmet, looking at it reflectively.",
+        "audio_description": "Alfred's voiceover: \"Don't destroy it.\"",
+        "text_on_screen": "DON'T DESTROY",
+        "key_objects": [
+          "Batman",
+          "Batman's cowl"
+        ]
+      },
+      {
+        "time_range": "0:17-0:18",
+        "visual_description": "Bruce Wayne stands before his complete Batman suit, displayed in a secure case.",
+        "audio_description": "Alfred's voiceover: \"The city needs Bruce Wayne.\"",
+        "text_on_screen": "THE CITY",
+        "key_objects": [
+          "Batman suit",
+          "Bruce Wayne"
+        ]
+      },
+      {
+        "time_range": "0:18-0:19",
+        "visual_description": "A close-up shows Batman's gloved hand holding a sharp Batarang.",
+        "audio_description": "Alfred's voiceover: \"The city needs Bruce Wayne.\"",
+        "text_on_screen": "BRUCE",
+        "key_objects": [
+          "Batarang"
+        ]
+      },
+      {
+        "time_range": "0:19-0:20",
+        "visual_description": "The Joker, confined in a jail cell, claps his hands together with a sinister expression.",
+        "audio_description": "Alfred's voiceover: \"Your resources, your knowledge.\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "The Joker",
+          "jail cell"
+        ]
+      },
+      {
+        "time_range": "0:20-0:21",
+        "visual_description": "Batman flies the Batwing over the illuminated Gotham City at night.",
+        "audio_description": "Alfred's voiceover: \"Your resources, your knowledge.\"",
+        "text_on_screen": "YOU'RE RESOURCES",
+        "key_objects": [
+          "Batman",
+          "Batwing",
+          "Gotham City"
+        ]
+      },
+      {
+        "time_range": "0:21-0:22",
+        "visual_description": "Catwoman, in her full suit and mask, looks intently with a determined expression.",
+        "audio_description": "Alfred's voiceover: \"It doesn't need your body.\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "Catwoman"
+        ]
+      },
+      {
+        "time_range": "0:22-0:23",
+        "visual_description": "The Joker, dressed as a nurse, walks casually away from a burning hospital building.",
+        "audio_description": "Alfred's voiceover: \"It doesn't need your body.\"",
+        "text_on_screen": "NEED",
+        "key_objects": [
+          "The Joker",
+          "hospital",
+          "fire"
+        ]
+      },
+      {
+        "time_range": "0:23-0:24",
+        "visual_description": "A dark, imposing statue or suit of Batman stands in a dimly lit interior.",
+        "audio_description": "Alfred's voiceover: \"You see, only one end to your journey.\"",
+        "text_on_screen": "YOU",
+        "key_objects": [
+          "Batman suit/statue"
+        ]
+      },
+      {
+        "time_range": "0:24-0:25",
+        "visual_description": "An aerial shot of Gotham City at dusk, with smoke rising from various locations, indicating chaos.",
+        "audio_description": "Alfred's voiceover: \"You see, only one end to your journey.\"",
+        "text_on_screen": "ONLY ONE",
+        "key_objects": [
+          "Gotham City",
+          "bridge",
+          "smoke"
+        ]
+      },
+      {
+        "time_range": "0:25-0:26",
+        "visual_description": "Commissioner Gordon looks up at the Bat-Signal projected onto the night sky.",
+        "audio_description": "Alfred's voiceover: \"You see, only one end to your journey.\"",
+        "text_on_screen": "TO YOUR JOURNEY.",
+        "key_objects": [
+          "Commissioner Gordon",
+          "Bat-Signal"
+        ]
+      },
+      {
+        "time_range": "0:26-0:31",
+        "visual_description": "Alfred Pennyworth looks down with a heavy heart, then raises his gaze with a sorrowful expression.",
+        "audio_description": "Alfred's voiceover: \"Leaving.\"",
+        "text_on_screen": "LEAVING.",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a cinematic edit celebrating Christopher Nolan's 'The Dark Knight Trilogy,' featuring iconic scenes and characters. It uses a voiceover from Alfred Pennyworth, reflecting on Bruce Wayne's identity, legacy, and the sacrifices he makes for Gotham City. The edit highlights key emotional and action sequences, emphasizing the trilogy's themes of heroism, responsibility, and the personal cost of being Batman. The creator's caption positions it as 'The Best Trilogy OAT,' suggesting a strong recommendation and appreciation for the films.",
+    "people": [
+      {
+        "description": "Elderly man with white hair, Alfred Pennyworth, Bruce Wayne's loyal butler and confidant.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Michael Caine (as Alfred Pennyworth)"
+      },
+      {
+        "description": "Man with dark hair, Bruce Wayne, the billionaire philanthropist and masked vigilante Batman.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Christian Bale (as Bruce Wayne/Batman)"
+      },
+      {
+        "description": "Man with disheveled green hair and smeared clown makeup, The Joker, a psychopathic anarchist.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Heath Ledger (as The Joker)"
+      },
+      {
+        "description": "Woman in a black catsuit and mask, Selina Kyle, also known as Catwoman, a skilled cat burglar.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Anne Hathaway (as Selina Kyle/Catwoman)"
+      },
+      {
+        "description": "Man with glasses and a mustache, Commissioner James Gordon, a high-ranking officer in the Gotham City Police Department.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Gary Oldman (as Commissioner James Gordon)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "The Dark Knight Trilogy",
+        "display_name": "The Dark Knight Trilogy",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata",
+          "inferred"
+        ],
+        "specifications": "Includes Batman Begins, The Dark Knight, The Dark Knight Rises",
+        "confidence": 5
+      },
+      {
+        "name": "Batman Begins",
+        "display_name": "Batman Begins",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Dark Knight",
+        "display_name": "The Dark Knight",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Dark Knight Rises",
+        "display_name": "The Dark Knight Rises",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Alfred Pennyworth",
+        "display_name": "Alfred Pennyworth",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Portrayed by Michael Caine",
+        "confidence": 5
+      },
+      {
+        "name": "Bruce Wayne",
+        "display_name": "Bruce Wayne",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Portrayed by Christian Bale",
+        "confidence": 5
+      },
+      {
+        "name": "Batman",
+        "display_name": "Batman",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata"
+        ],
+        "specifications": "Portrayed by Christian Bale",
+        "confidence": 5
+      },
+      {
+        "name": "The Joker",
+        "display_name": "The Joker",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Portrayed by Heath Ledger",
+        "confidence": 5
+      },
+      {
+        "name": "Selina Kyle",
+        "display_name": "Selina Kyle (Catwoman)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Portrayed by Anne Hathaway",
+        "confidence": 5
+      },
+      {
+        "name": "James Gordon",
+        "display_name": "Commissioner James Gordon",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Portrayed by Gary Oldman",
+        "confidence": 5
+      },
+      {
+        "name": "Gotham City",
+        "display_name": "Gotham City",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Bat-Signal",
+        "display_name": "Bat-Signal",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Batpod",
+        "display_name": "Batpod",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Batwing",
+        "display_name": "Batwing",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Wayne Enterprises",
+        "display_name": "Wayne Enterprises",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Batarang",
+        "display_name": "Batarang",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The Dark Knight Trilogy is considered the best movie trilogy of all time, highlighting themes of identity, sacrifice, and the enduring legacy of heroism.",
+        "source": "voiceover|text_overlay|implied",
+        "confidence": 4
+      },
+      {
+        "statement": "Alfred Pennyworth's perspective underscores the profound personal cost and burden of Bruce Wayne's commitment to being Batman.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "ranking",
+      "items": [
+        {
+          "name": "The Dark Knight Trilogy",
+          "details": "Ranked as 'The Best Trilogy OAT' (Of All Time)"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Original Score/Dialogue from The Dark Knight Trilogy",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The specific track name for the orchestral score is not identified, but it is confirmed to be original score from the films."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Dramatic, serious, epic, reflective, intense, melancholic",
+    "topic_hints": [
+      "Batman movies",
+      "movie trilogies",
+      "superhero films"
+    ],
+    "affect_hints": [
+      "Awe",
+      "Nostalgia",
+      "Admiration",
+      "Sadness"
+    ],
+    "genre_hints": [
+      "Movie edit",
+      "Fan tribute",
+      "Cinematic compilation"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 10637,
+    "output_tokens": 4387,
+    "total_tokens": 15024,
+    "cost_usd": 0.004228,
+    "latency_ms": 35237,
+    "upload_ms": 5265
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

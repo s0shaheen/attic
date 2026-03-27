@@ -1,0 +1,81 @@
+{
+  "item_id": "7606094300937473310",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:22.631180+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "politics",
+      "secondary": "education",
+      "micro_labels": [
+        "India-Pakistan relations",
+        "social division",
+        "humanity",
+        "media polarization",
+        "empathy"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "reaction",
+      "micro_labels": [
+        "commentary",
+        "split-screen"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "wholesome",
+        "tier": "secondary"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      },
+      {
+        "label": "angry",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay",
+      "mixed"
+    ],
+    "content_provenance": {
+      "label": "duet",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.8
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 13165,
+    "output_tokens": 380,
+    "total_tokens": 13545,
+    "cost_usd": 0.002203,
+    "latency_ms": 9215,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 9
+  }
+}

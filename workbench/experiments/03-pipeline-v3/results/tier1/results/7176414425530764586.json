@@ -1,0 +1,52 @@
+{
+  "item_id": "7176414425530764586",
+  "parsed_output": {
+    "summary": "This TikTok is a 'corecore' or 'nichetok' style edit featuring a melancholic compilation of pop culture clips. It includes David Choe on the Joe Rogan Experience, Jesse Pinkman and Jane from Breaking Bad, and Robert De Niro in Taxi Driver, all set to an atmospheric soundtrack.",
+    "entities": [
+      {
+        "name": "David Choe",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Breaking Bad",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Taxi Driver",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "The Joe Rogan Experience",
+        "type": "podcast",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Robert De Niro",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "other"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "nostalgic",
+      "secondary": "sad"
+    },
+    "viewer_orientation": "emotional_regulation",
+    "embedding_text": "A 68-second 'corecore' and 'nichetok' aesthetic edit by @sleightedhead titled 'feel better.' The video is a melancholic compilation of existential and atmospheric clips from popular media. It features artist David Choe speaking on The Joe Rogan Experience podcast, the iconic scene of Jesse Pinkman and Jane Margolis sitting in lawn chairs from Breaking Bad, and Robert De Niro as Travis Bickle in the film Taxi Driver. This pinkcore content is designed to evoke a specific mood of loneliness and reflection, utilizing the 'original sound - petscoop 2' audio. Users typically save this type of content for emotional regulation or as part of a digital mood board. The video uses high-contrast cinematic imagery to explore themes of the human condition and modern isolation."
+  },
+  "metrics": {
+    "input_tokens": 4207,
+    "output_tokens": 495,
+    "total_tokens": 4702,
+    "cost_usd": 0.000928,
+    "latency_ms": 8560,
+    "keyframe_count": 3
+  }
+}

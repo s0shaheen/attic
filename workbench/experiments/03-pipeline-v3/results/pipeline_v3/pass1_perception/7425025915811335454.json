@@ -1,0 +1,233 @@
+{
+  "item_id": "7425025915811335454",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:21:04.347420+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Joshua Erabu holds a red bell pepper and addresses the camera, challenging the idea that grilled cheese is boring.",
+        "audio_description": "Watch this. (Music starts: FE!N by Travis Scott)",
+        "text_on_screen": "\"grilled cheese is boring\"",
+        "key_objects": [
+          "red bell pepper"
+        ]
+      },
+      {
+        "time_range": "0:02-0:06",
+        "visual_description": "A montage of preparing vegetables: tossing a pepper, seasoning tomatoes, onions, and garlic on a baking sheet with salt and olive oil.",
+        "audio_description": "14 inches I'm sitting on the blitz",
+        "text_on_screen": "",
+        "key_objects": [
+          "cherry tomatoes",
+          "onions",
+          "garlic",
+          "olive oil",
+          "baking sheet"
+        ]
+      },
+      {
+        "time_range": "0:06-0:10",
+        "visual_description": "Joshua places the tray in the oven, then blends the roasted vegetables with fresh basil in an Oster blender.",
+        "audio_description": "This goes in the oven. You say we ops but you stay on my...",
+        "text_on_screen": "",
+        "key_objects": [
+          "oven",
+          "Oster blender",
+          "fresh basil"
+        ]
+      },
+      {
+        "time_range": "0:10-0:13",
+        "visual_description": "The blended soup is poured into a pan to simmer. Joshua mimes a shooting motion with a pepper slice.",
+        "audio_description": "My shooter a rapper I sent him a hit.",
+        "text_on_screen": "rapper, him",
+        "key_objects": [
+          "stainless steel pan",
+          "silicone spatula"
+        ]
+      },
+      {
+        "time_range": "0:13-0:18",
+        "visual_description": "Joshua opens a bag of Pepperidge Farm sourdough bread and grills a slice in a Lodge skillet with multiple layers of cheese.",
+        "audio_description": "They be on Twitter like when he gon miss? Say I fell off but I fell in this bitch.",
+        "text_on_screen": "miss?",
+        "key_objects": [
+          "Pepperidge Farm Farmhouse Sourdough",
+          "Lodge cast iron skillet",
+          "sliced cheese",
+          "shredded cheese"
+        ]
+      },
+      {
+        "time_range": "0:18-0:22",
+        "visual_description": "The grilled cheese is flipped, sliced diagonally, and pulled apart to reveal a long cheese pull.",
+        "audio_description": "Fuck your white flag I ain't tell them shit. I play it cool and hand brody the flick.",
+        "text_on_screen": "",
+        "key_objects": [
+          "chef's knife",
+          "grilled cheese sandwich"
+        ]
+      },
+      {
+        "time_range": "0:22-0:26",
+        "visual_description": "Joshua grates cheese into the soup, garnishes it with cream and basil, then dips the sandwich and takes a bite.",
+        "audio_description": "Got your stool just to show you I'm rich. Now you can't drop no new music and shit. Oh baby!",
+        "text_on_screen": "",
+        "key_objects": [
+          "microplane",
+          "heavy cream",
+          "wooden cutting board"
+        ]
+      }
+    ],
+    "overall_summary": "Joshua Erabu demonstrates how to elevate the classic grilled cheese and tomato soup combo from 'boring' to gourmet. He roasts fresh tomatoes, onions, peppers, and garlic before blending them into a rich soup garnished with cream and basil. For the sandwich, he uses Pepperidge Farm sourdough and a blend of cheeses toasted in a cast iron skillet. The video features high-energy editing synced to Travis Scott's 'FE!N' and concludes with a satisfying taste test.",
+    "people": [
+      {
+        "description": "Black male with glasses wearing a black t-shirt, acting as the chef and host.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Joshua Erabu"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Joshua Erabu",
+        "display_name": "Joshua Erabu",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pepperidge Farm Farmhouse Sourdough",
+        "display_name": "Pepperidge Farm Farmhouse Sourdough Bread",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Sourdough variety",
+        "confidence": 5
+      },
+      {
+        "name": "Lodge",
+        "display_name": "Lodge Cast Iron Skillet",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Cast iron skillet",
+        "confidence": 5
+      },
+      {
+        "name": "Oster",
+        "display_name": "Oster Blender",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Countertop blender",
+        "confidence": 5
+      },
+      {
+        "name": "FE!N",
+        "display_name": "FE!N \u2014 Travis Scott ft. Playboi Carti",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Kenny Song",
+        "display_name": "Kenny Song",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": "Inspiration for the video",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Roasting fresh vegetables instead of using canned soup significantly elevates a tomato soup and grilled cheese meal.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Using high-quality sourdough bread and multiple cheese types creates a superior grilled cheese texture and flavor.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Roasted Tomato Soup",
+          "details": "Roasted red bell peppers, cherry tomatoes, onions, and garlic seasoned with salt and olive oil, blended with fresh basil and finished with heavy cream."
+        },
+        {
+          "name": "Elevated Grilled Cheese",
+          "details": "Pepperidge Farm Farmhouse Sourdough bread toasted in a cast iron skillet with a blend of sliced and shredded cheeses."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "FE!N \u2014 Travis Scott ft. Playboi Carti",
+      "metadata_song": "Food",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Brands like Pepperidge Farm and Lodge are clearly visible. The song is a very popular track by Travis Scott."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "transitions",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Energetic, appetizing, and modern.",
+    "topic_hints": [
+      "Home Cooking",
+      "Comfort Food Recipes",
+      "Gourmet Sandwiches"
+    ],
+    "affect_hints": [
+      "Hungry",
+      "Inspired",
+      "Satisfied"
+    ],
+    "genre_hints": [
+      "FoodTok",
+      "Cooking Tutorial"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3855,
+    "output_tokens": 2012,
+    "total_tokens": 5867,
+    "cost_usd": 0.001785,
+    "latency_ms": 24169,
+    "upload_ms": 5466
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

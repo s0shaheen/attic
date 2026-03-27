@@ -1,0 +1,52 @@
+{
+  "item_id": "7606077954380123405",
+  "parsed_output": {
+    "summary": "Joe Tustin (@joetustin_) presents a talk titled 'The Physics of AI Economics' focusing on the hidden costs of scaling AI infrastructure. He explains the 'Adoption Multiplier' and how token-based costs can escalate from $1,350 to over $30,000 as users transition from testing to relying on a product.",
+    "entities": [
+      {
+        "name": "Joe Tustin",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "AI Infrastructure",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Token Economics",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "The Adoption Multiplier",
+        "type": "trend_or_meme",
+        "relevance": "supporting"
+      },
+      {
+        "name": "The Physics of AI Economics",
+        "type": "trend_or_meme",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "finance"
+    },
+    "genre": "other",
+    "affect": {
+      "dominant": "informative",
+      "secondary": null
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this presentation, Joe Tustin (@joetustin_) breaks down the business decisions and infrastructure requirements for building AI without going broke. Titled 'The Physics of AI Economics: How to Choose Your Infrastructure,' the video explores 'The Economics of Tokens' and the financial risks of the 'Adoption Multiplier.' Tustin uses a graph to illustrate 'The Cost Gap,' showing how a monthly cost of $1,350 can balloon to $30,600 within a year as users move from 'trying' to 'relying' on an AI tool (increasing from 2 to 8 invocations per day). The video includes technical schematics of hardware and advice for founders on managing token-based expenses. This is a high-value resource for developers and tech entrepreneurs looking to understand the unit economics of AI products and infrastructure scaling."
+  },
+  "metrics": {
+    "input_tokens": 4253,
+    "output_tokens": 516,
+    "total_tokens": 4769,
+    "cost_usd": 0.000948,
+    "latency_ms": 8158,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "item_id": "7606077954380123405",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:53:37.115356+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:48",
+        "visual_description": "A man, identified as Joe Tustin, stands at a podium in front of a projector screen, giving a presentation to an audience. The screen displays a title slide.",
+        "audio_description": "Joe Tustin discusses the economics of tokens, specifically for AI and LLM infrastructure, mentioning GPUs, scaling usage from users and features. He refers to Opus 4.6 and its fast mode, noting the cost of $235 per million tokens, and how this signals value in AI and accelerating system optimization.",
+        "text_on_screen": "The Economics of Tokens\nJoe Tustin\nTHE PHYSICS OF AI ECONOMICS\nHow to Choose Your Infrastructure\nJoe Tustin\ntt: @joetustin_",
+        "key_objects": [
+          "Joe Tustin",
+          "podium",
+          "projector screen",
+          "laptop",
+          "plants",
+          "audience"
+        ]
+      },
+      {
+        "time_range": "0:48-1:37",
+        "visual_description": "Joe Tustin continues his presentation, with the projector screen now showing a slide titled 'YOU ARE NOT BUYING WORDS' and a diagram illustrating GPU architecture and pricing models.",
+        "audio_description": "Joe Tustin explains that when buying tokens, you're not buying words but renting a GPU, which he describes as a 'thirty thousand dollar heater' doing computation. He discusses the capital expense of running models on your own infrastructure, needing 'eight of them, ten of them, twelve of them', versus paying API providers like Anthropic or OpenAI for tokens at a much lower cost.",
+        "text_on_screen": "YOU ARE NOT BUYING WORDS.\nYou are renting a slice of time on a GPU.\nStop budgeting for text. Start budgeting for GPU seconds.\nPLAN\nSTARTER\nWords\nFEATURES\nFig 1.0: PRICING X-RAY\nCOMPUTE\n(GPU seconds)",
+        "key_objects": [
+          "Joe Tustin",
+          "podium",
+          "projector screen",
+          "diagram of GPU architecture",
+          "pricing table"
+        ]
+      },
+      {
+        "time_range": "1:37-2:21",
+        "visual_description": "Joe Tustin is still presenting, and the slide now focuses on 'The Physics of Inference', showing a diagram of parallel and sequential processing for input and output tokens.",
+        "audio_description": "Joe Tustin clarifies that a token is a unit of compute time on a GPU, not a word. He explains the difference in pricing mechanisms for input and output tokens, noting that input is cheaper due to parallel processing, while output is sequential. He mentions H100 and H200 GPUs dominating the market, with Google TPUs being an exception not sold in the market.",
+        "text_on_screen": "A token is not a word.\nIt is a unit of compute time on a GPU.\nStop budgeting for text. Start budgeting for GPU seconds.\nINPUT\n(Prompt)\nParallel Processing\nSequential Processing\nThe model reads\nevery word at once.\nFast. Cheap.\nThe model generates one token\nat a time. Each depends on the last.\nSlow. Expensive.\nFig 1.1: THE PHYSICS OF INFERENCE",
+        "key_objects": [
+          "Joe Tustin",
+          "podium",
+          "projector screen",
+          "diagram of parallel and sequential processing"
+        ]
+      },
+      {
+        "time_range": "2:21-3:53",
+        "visual_description": "Joe Tustin presents a table titled 'The Three Economic Models' comparing 'Pay per Token (API)' and 'Pay for Time (Subscription)' for AI services.",
+        "audio_description": "Joe Tustin discusses choosing a provider based on risk profile, outlining three economic models: pay per token (API), pay for time (subscription), and paying for your own infrastructure. He highlights the 'arbitrage opportunity' of subscriptions for power users, noting that he personally consumed over $800 in tokens in a month. He explains that subscriptions are ideal for power users who consume more than the subscription cost, but building products on top of them can lead to being banned by providers like Anthropic.",
+        "text_on_screen": "You aren't just choosing a provider.\nYou are choosing a risk profile.\nThe Three Economic Models\n1. Pay per Token (API)\n2. Pay for Time\n(Subscription)\nEconomics\nVariable Cost\nFixed Cost (Arbitrage)\nRisk\nZero ops, perfect\nprice exposure\nUtilization risk\n(Use it or lose it)\nIdeal For\nStartups, Spiky usage,\nExperimentation\nPower users, individual\nproductivity\nKey Insight\nNo volume discount.\n1M calls cost exactly\n1,000x of 1 call.\nKey Insight: Real-world\ndata shows heavy users\nextract $720+ value for a\n$100 subscription.\nSUBSCRIPTION: THE POWER USER'S ARBITRAGE ZONE\nCOST / VALUE\nSubscription Fee ($100/mo)\nVOLUME\nMath: 45 hours of Sonnet =\n$750+ value for $100 cost.\nFig 1.2: BREAK-EVEN ANALYSIS",
+        "key_objects": [
+          "Joe Tustin",
+          "podium",
+          "projector screen",
+          "table comparing economic models",
+          "graph of cost/value vs. volume"
+        ]
+      },
+      {
+        "time_range": "3:53-5:06",
+        "visual_description": "The slide is titled 'THE PRODUCT MANAGER'S PROBLEM' and shows a graph comparing 'TRADITIONAL SAAS' with a linear cost/revenue model and 'AI has variable COGS' with a steeper cost curve.",
+        "audio_description": "Joe Tustin explains the product manager's problem with AI features, contrasting traditional SaaS with its flat marginal cost to AI's variable cost of goods sold (COGS). He states that AI features introduce variable COGS to fixed-price SaaS, leading to a 'crisis' where power users can incur significant costs beyond their subscription price.",
+        "text_on_screen": "THE PRODUCT MANAGER'S PROBLEM\nTraditional SaaS has near-zero marginal cost.\nAI has variable COGS ($0.01 - $0.50 per click).\nTRADITIONAL SAAS\nREVENUE\nHIGH MARGIN ZONE\nCOGS\nCOST / REVENUE ($)\nVOLUME / TIME\n110x cost difference between GPT-40-mini ($0.01) and\nClaude Opus ($0.075) for the exact same query.\nModel selection is a margin decision.\nTHE PRODUCT MANAGER'S CRISIS\nAI features introduce variable COGS to fixed-price SaaS.\nUser Type\nFrequency\nLight User (Occasional)\n1 invocation/day\nModerate User (Daily)\n3 invocations/day\nPower User (Workflow Embedded)\n25 invocations/day\nSaaS Subscription Price: $20.00\nPower User AI Cost ($11.25)\nA single power user can cost 50%+ of your revenue.",
+        "key_objects": [
+          "Joe Tustin",
+          "podium",
+          "projector screen",
+          "graphs comparing SaaS models",
+          "table of user types and frequencies"
+        ]
+      },
+      {
+        "time_range": "5:06-6:37",
+        "visual_description": "The slide is titled 'The Adoption Multiplier: Success is your most expensive problem.' and shows a graph illustrating cost over time, with a 'Cost Gap' driven by adoption and intensity.",
+        "audio_description": "Joe Tustin discusses the 'adoption multiplier' where success becomes an expensive problem. He explains that as users increase their usage, costs escalate, leading to a 'utilization trap' for self-hosting GPUs. He illustrates hardware level waste with a bar chart and an hourly utilization graph, emphasizing that you pay for capacity you aren't using. He mentions needing to generate hundreds of millions of tokens for synthetic data problems, highlighting the cost of idle engineers waiting for GPU computation.",
+        "text_on_screen": "The Adoption Multiplier: Success is your most expensive problem.\nMonth 1 Cost: $1,350\nMonth 12 Cost: $20,600\n(Same user count, higher intensity)\nThe Cost Gap: Driven by Adoption +\nIntensity. Users don't just join; they move\nfrom 'playing' to 'relying' (2 invocations/day\n\u2192 8 invocations/day).\nMonth 1\nMonth 3\nMonth 6\nMonth 9\nMonth 12\nFig 1.3: ADOPTION MULTIPLIER\nThe Utilization Trap\nYou are paying for capacity you aren't using.\nHardware Level Waste (MFU)\nH100 GPU\n100%\nOverhead /\nInefficiency\nUseful Compute\n60%\n40%\n20%\n0%\nYou pay for peak theoretical FLOPS,\nnot for 100% actual MFU.\nUtilization determines whether self-hosting is viable.\nOrchestration\n0:00\n4:00\n8:00\n12:00\n16:00\n20:00\n24:00",
+        "key_objects": [
+          "Joe Tustin",
+          "podium",
+          "projector screen",
+          "graph of cost over time",
+          "bar chart of hardware waste",
+          "graph of GPU utilization"
+        ]
+      },
+      {
+        "time_range": "6:37-8:40",
+        "visual_description": "The slide is titled 'THE HIDDEN VARIABLE: TIME' and shows a diagram of a water tank with pipes and valves, representing total quota, rate limits, and contention.",
+        "audio_description": "Joe Tustin introduces 'time to result' as a hidden variable, explaining rate limits and tiers for APIs. He uses a water tank analogy to illustrate total quota and rate limits. He then presents 'The Decision Framework: A repeatable process for infrastructure decisions', outlining steps: Token Footprint, Hard Constraints, Timeline, and Throughput. He emphasizes understanding token cost per feature, considering industry constraints (finance, healthcare), timelines (need it now vs. later), and throughput (scaling and parallelization).",
+        "text_on_screen": "THE HIDDEN VARIABLE: TIME\nTOTAL\nQUOTA\n(400M)\nRATE LIMIT\n(Tier 1)\nRATE\nLIMIT\n(Tier 2)\nCONTENTION\nFig 1.4: THE HIDDEN VARIABLE: TIME\nTHE DECISION FRAMEWORK: A Sec\nA repeatable process for infrastructure decisions.\n1. Token\nFootprint\n(How much does it cost\nin tokens?)\n2. Hard\nConstraints\n(Need it now\nvs. later)\n3. Timeline\n(Need it now\nvs. later)\n4. Throughput\n(Rate limits\n& concurrency)\nFig 1.5: THE DECISION FRAMEWORK",
+        "key_objects": [
+          "Joe Tustin",
+          "podium",
+          "projector screen",
+          "water tank diagram",
+          "decision framework diagram"
+        ]
+      },
+      {
+        "time_range": "8:40-10:34",
+        "visual_description": "The slide is titled 'ARCHITECTURE SELECTOR' and presents a table matching 'USAGE SHAPE' with 'RECOMMENDATION' for different AI infrastructure approaches. The final slide is titled 'THE SHELF LIFE OF THIS ANALYSIS' with a warning about the rapid changes in the industry.",
+        "audio_description": "Joe Tustin discusses the 'Architecture Selector', recommending API routing for 'spiky/unpredictable' usage, self-hosting for 'high volume/consistent' usage, and subscriptions for 'team productivity'. He notes that 'Need Frontier Quality' requires APIs due to the cutting-edge models. He concludes by emphasizing 'The Shelf Life of This Analysis', stating that everything he's presented will likely be wrong in six months due to the rapid pace of change in the AI industry. He reiterates the importance of understanding the physics (heat, time, utilization) which remain eternal, and thanks the audience.",
+        "text_on_screen": "ARCHITECTURE SELECTOR\nUSAGE SHAPE\nSpiky / Unpredictable\nHigh Volume / Consistent\nTeam Productivity\nNeed Frontier Quality\nRECOMMENDATION\nAPI\nSelf-Host\nSubscription\nAPI\nTHE SHELF LIFE OF THIS ANALYSIS\nGPU prices drop. Models improve.\nBut the physics (Heat, Time,\nUtilization) remain eternal.\n\u26a0\ufe0f Every number in this deck\nwill be wrong in 6 months.\n[END OF TRANSMISSION]",
+        "key_objects": [
+          "Joe Tustin",
+          "podium",
+          "projector screen",
+          "architecture selector table",
+          "shelf life of analysis slide"
+        ]
+      }
+    ],
+    "overall_summary": "Joe Tustin presents on the economics of tokens and AI infrastructure, explaining that tokens represent compute time on GPUs rather than words. He discusses various pricing models, including pay-per-token APIs, subscriptions, and self-hosting, highlighting the benefits and risks of each. Tustin emphasizes the 'product manager's problem' where variable AI costs can impact fixed-price SaaS, and the 'utilization trap' of self-hosting. He concludes with a decision framework for choosing infrastructure and a warning about the rapid obsolescence of specific metrics in the fast-evolving AI landscape, while the underlying physics remain constant.",
+    "people": [
+      {
+        "description": "Male presenter, wearing a light-colored jacket over a dark shirt, standing at a podium and gesturing while speaking.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Joe Tustin"
+      }
+    ],
+    "entities": [
+      {
+        "name": "AI",
+        "display_name": "Artificial Intelligence",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "LLM",
+        "display_name": "Large Language Model",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "GPU",
+        "display_name": "Graphics Processing Unit",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Opus 4.6",
+        "display_name": "Opus 4.6 (AI model)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Fast Mode",
+        "display_name": "Fast Mode (Opus 4.6 feature)",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Anthropic",
+        "display_name": "Anthropic (AI company)",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "OpenAI",
+        "display_name": "OpenAI (AI company)",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Google TPUs",
+        "display_name": "Google Tensor Processing Units",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "H100 GPU",
+        "display_name": "NVIDIA H100 GPU",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "H200 GPU",
+        "display_name": "NVIDIA H200 GPU",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "SaaS",
+        "display_name": "Software as a Service",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "GPT-40-mini",
+        "display_name": "GPT-40-mini (AI model)",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Claude Opus",
+        "display_name": "Claude Opus (AI model)",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Sonnet",
+        "display_name": "Sonnet (AI model)",
+        "type": "app_or_tool",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The economics of AI tokens are crucial for infrastructure decisions, as tokens represent compute time on GPUs, not just words.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Choosing between pay-per-token APIs, subscriptions, or self-hosting AI infrastructure depends on usage patterns, cost, and risk profile.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "AI features introduce variable costs into traditional fixed-price SaaS models, creating a 'product manager's crisis' where high user adoption can lead to significantly increased expenses.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Self-hosting AI infrastructure presents a 'utilization trap' where significant capital expenditure on GPUs can lead to waste if not fully utilized, and idle engineering time adds to costs.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The AI industry is evolving so rapidly that specific metrics and pricing models become outdated within six months, but the underlying physics of heat, time, and utilization remain constant.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Pay per Token (API)",
+          "details": "Economics: Variable Cost; Risk: Zero ops, perfect price exposure; Ideal For: Startups, Spiky usage, Experimentation; Key Insight: No volume discount. 1M calls cost exactly 1,000x of 1 call."
+        },
+        {
+          "name": "Pay for Time (Subscription)",
+          "details": "Economics: Fixed Cost (Arbitrage); Risk: Utilization risk (Use it or lose it); Ideal For: Power users, individual productivity; Key Insight: Real-world data shows heavy users extract $720+ value for a $100 subscription."
+        },
+        {
+          "name": "Self-Hosting Infrastructure",
+          "details": "Involves purchasing or renting GPUs by the hour. Requires significant capital expense and carries utilization risk. Suitable for high volume and consistent usage."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The audio is a spoken presentation, not music, so 'original sound' is accurate in that sense, but there's no specific song to identify."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "informative, professional, serious",
+    "topic_hints": [
+      "AI economics",
+      "Cloud infrastructure",
+      "GPU utilization",
+      "Business strategy"
+    ],
+    "affect_hints": [
+      "educational",
+      "analytical",
+      "thought-provoking",
+      "cautionary"
+    ],
+    "genre_hints": [
+      "lecture",
+      "presentation",
+      "educational content",
+      "business analysis"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 188217,
+    "output_tokens": 4958,
+    "total_tokens": 193175,
+    "cost_usd": 0.031207,
+    "latency_ms": 70021,
+    "upload_ms": 21457
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

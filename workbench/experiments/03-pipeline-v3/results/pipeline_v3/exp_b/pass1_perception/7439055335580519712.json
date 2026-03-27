@@ -1,0 +1,479 @@
+{
+  "item_id": "7439055335580519712",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:57:37.721757+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "The creator serves a portion of the cooked rigatoni pasta into a white bowl and then tastes it, reacting positively.",
+        "audio_description": "The creator makes a satisfied sound after tasting the pasta.",
+        "text_on_screen": "POV: you just cooked up absolute dr*gs in a pan",
+        "key_objects": [
+          "Rigatoni pasta",
+          "Pan",
+          "White bowl",
+          "Fork"
+        ]
+      },
+      {
+        "time_range": "0:03-0:07",
+        "visual_description": "The creator stands in front of an empty pan, holding a spatula like a microphone, and introduces the recipe.",
+        "audio_description": "The creator says, \"Yo. If you're lazy, just watch this, man. It's gonna change your life.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Pan",
+          "Spatula"
+        ]
+      },
+      {
+        "time_range": "0:07-0:13",
+        "visual_description": "The creator adds vegetable oil to the pan, followed by diced shallots and minced garlic, then stirs them as they saut\u00e9.",
+        "audio_description": "The creator says, \"Splash of vegetable oil, diced shallot, a bunch of garlic. And the onions start to look like this.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Vegetable oil",
+          "Shallots",
+          "Garlic",
+          "Pan",
+          "Spatula"
+        ]
+      },
+      {
+        "time_range": "0:13-0:19",
+        "visual_description": "The creator pours passata into the pan, then adds a pinch of salt, black pepper, and other spices, including oregano.",
+        "audio_description": "The creator says, \"Passata. A good pinch of salt, a bunch of black pepper, a few spices, oregano.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Passata",
+          "Salt shaker",
+          "Pepper grinder",
+          "Spice shaker",
+          "Pan"
+        ]
+      },
+      {
+        "time_range": "0:19-0:26",
+        "visual_description": "The creator adds fresh basil to the sauce and stirs it.",
+        "audio_description": "The creator says, \"And then, whoa! Flipping, I just washed it, man. Fresh basil. Stir this through.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Fresh basil",
+          "Pan",
+          "Spatula"
+        ]
+      },
+      {
+        "time_range": "0:26-0:31",
+        "visual_description": "The creator pours vegetable stock into the pan and then increases the heat to bring the mixture to a boil.",
+        "audio_description": "The creator says, \"Vegetable stock. Crank up the heat and bring it up to heat.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Vegetable stock",
+          "Measuring jug",
+          "Pan"
+        ]
+      },
+      {
+        "time_range": "0:31-0:38",
+        "visual_description": "The creator holds up a box of Napolina Rigatoni pasta, talking about the brand.",
+        "audio_description": "The creator says, \"Time to add the main ingredient. Some rigatoni pasta. Now Napolina, I don't even understand why the hell you don't even sponsor me at this point, man. We're in a relationship you don't even know about it.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Napolina Rigatoni pasta box"
+        ]
+      },
+      {
+        "time_range": "0:38-0:42",
+        "visual_description": "The creator pours 400 grams of rigatoni pasta into the pan and sprinkles more salt.",
+        "audio_description": "The creator says, \"400 grams. Sprinkle of salt.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Rigatoni pasta",
+          "Pan",
+          "Salt shaker"
+        ]
+      },
+      {
+        "time_range": "0:42-0:55",
+        "visual_description": "The creator turns off the heat, adds several spoonfuls of mascarpone cheese to the pasta, and then stirs it until creamy.",
+        "audio_description": "The creator says, \"Turn the heat off. Mascarpone. Like this. Screw it. Bit more. Oh, that was, that wasn't intentional that one. Oh my gosh, this looks good, man. Absolute drugs.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Mascarpone cheese",
+          "Spoon",
+          "Pan",
+          "Rigatoni pasta"
+        ]
+      },
+      {
+        "time_range": "0:55-1:05",
+        "visual_description": "The creator squeezes lemon juice into the pasta, then grates Parmesan cheese over it, and tastes some of the grated cheese, reacting with surprise.",
+        "audio_description": "The creator says, \"Okay, heat off. A touch of lemon. Oh my lord. Half my finger inside this pan right now.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Lemon",
+          "Parmesan cheese",
+          "Grater",
+          "Pan",
+          "Rigatoni pasta"
+        ]
+      },
+      {
+        "time_range": "1:05-1:12",
+        "visual_description": "The creator adds extra chili flakes, lemon zest, and fresh basil as a final garnish to the pasta, then lifts the pan to present the finished dish.",
+        "audio_description": "The creator says, \"Extra chili flakes on top. Lemon zest. Some fresh basil. This is it.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Chili flakes",
+          "Lemon zest",
+          "Fresh basil",
+          "Pan",
+          "Rigatoni pasta"
+        ]
+      }
+    ],
+    "overall_summary": "This video demonstrates how to make a one-pot spicy creamy rigatoni pasta in 30 minutes, ideal for a small family or meal prepping. The creator, @whatinthechef, guides viewers through adding ingredients like shallots, garlic, passata, spices, vegetable stock, rigatoni, and mascarpone cheese. The dish is finished with lemon, Parmesan, chili flakes, and fresh basil, resulting in a rich and flavorful meal. The full recipe is available for purchase on the creator's website.",
+    "people": [
+      {
+        "description": "A male chef with a beard, wearing a black hoodie and a black apron, demonstrating a cooking recipe.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "One Pot Spicy Creamy Rigatoni Pasta",
+        "display_name": "One Pot Spicy Creamy Rigatoni Pasta",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "caption",
+          "audio",
+          "visual"
+        ],
+        "specifications": "Done in 30 minutes",
+        "confidence": 5
+      },
+      {
+        "name": "Rigatoni",
+        "display_name": "Rigatoni Pasta",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "caption",
+          "audio",
+          "visual"
+        ],
+        "specifications": "400 grams, Napolina brand",
+        "confidence": 5
+      },
+      {
+        "name": "Vegetable Oil",
+        "display_name": "Vegetable Oil",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Shallots",
+        "display_name": "Diced Shallots",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": "Diced",
+        "confidence": 4
+      },
+      {
+        "name": "Garlic",
+        "display_name": "Garlic",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Passata",
+        "display_name": "Passata",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Salt",
+        "display_name": "Salt",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Black Pepper",
+        "display_name": "Black Pepper",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Oregano",
+        "display_name": "Oregano",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Fresh Basil",
+        "display_name": "Fresh Basil",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Vegetable Stock",
+        "display_name": "Vegetable Stock",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Mascarpone Cheese",
+        "display_name": "Mascarpone Cheese",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Lemon",
+        "display_name": "Lemon",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Parmesan Cheese",
+        "display_name": "Parmesan Cheese",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Chili Flakes",
+        "display_name": "Chili Flakes",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Napolina",
+        "display_name": "Napolina",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "whatinthechef",
+        "display_name": "@whatinthechef",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "This recipe provides a quick and easy way to make a delicious one-pot spicy creamy rigatoni pasta in 30 minutes.",
+        "source": "voiceover|implied",
+        "confidence": 4
+      },
+      {
+        "statement": "The dish is suitable for cooking for a small family or for individuals who want to cook once and have multiple meals.",
+        "source": "caption",
+        "confidence": 5
+      },
+      {
+        "statement": "The full recipe is available for individual purchase on the creator's website.",
+        "source": "caption",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Vegetable Oil",
+          "details": "Splash"
+        },
+        {
+          "name": "Shallots",
+          "details": "Diced"
+        },
+        {
+          "name": "Garlic",
+          "details": "A bunch"
+        },
+        {
+          "name": "Passata",
+          "details": null
+        },
+        {
+          "name": "Salt",
+          "details": "Pinch"
+        },
+        {
+          "name": "Black Pepper",
+          "details": "A bunch"
+        },
+        {
+          "name": "Spices",
+          "details": "Few, including Oregano"
+        },
+        {
+          "name": "Fresh Basil",
+          "details": null
+        },
+        {
+          "name": "Vegetable Stock",
+          "details": null
+        },
+        {
+          "name": "Rigatoni Pasta",
+          "details": "400 grams"
+        },
+        {
+          "name": "Mascarpone Cheese",
+          "details": "Several spoonfuls"
+        },
+        {
+          "name": "Lemon",
+          "details": "A touch (juice and zest)"
+        },
+        {
+          "name": "Parmesan Cheese",
+          "details": "Grated"
+        },
+        {
+          "name": "Chili Flakes",
+          "details": "Extra, for topping"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The creator's apron has text, but it's partially obscured and difficult to transcribe fully and accurately. The audio is primarily the creator's voice and cooking sounds, with no discernible background music."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Energetic, instructional, enthusiastic, humorous",
+    "topic_hints": [
+      "Cooking",
+      "Pasta recipe",
+      "One-pot meal"
+    ],
+    "affect_hints": [
+      "Hungry",
+      "Inspired",
+      "Amused",
+      "Satisfied"
+    ],
+    "genre_hints": [
+      "Cooking tutorial",
+      "Recipe video",
+      "Food vlog"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 22779,
+    "output_tokens": 3896,
+    "total_tokens": 26675,
+    "cost_usd": 0.005754,
+    "latency_ms": 29330,
+    "upload_ms": 5585
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

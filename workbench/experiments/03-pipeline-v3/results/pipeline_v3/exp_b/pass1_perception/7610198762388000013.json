@@ -1,0 +1,277 @@
+{
+  "item_id": "7610198762388000013",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:58:57.325103+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "A laptop screen displays the Webflow interface, showing the hierarchical structure of a website project in the 'Navigator' panel on the left and a visual preview of the website on the right. The website preview features images of individuals engaged in Pilates exercises.",
+        "audio_description": "Upbeat, instrumental background music plays.",
+        "text_on_screen": "On this week's web projects: web development for a pilates studio",
+        "key_objects": [
+          "MacBook laptop",
+          "Webflow interface",
+          "Pilates studio website design"
+        ]
+      },
+      {
+        "time_range": "0:02-0:03",
+        "visual_description": "A close-up shot of the Webflow interface shows a mouse cursor hovering over and clicking a 'Publish to selected domains' button.",
+        "audio_description": "Upbeat, instrumental background music continues.",
+        "text_on_screen": "Publish to selected domains",
+        "key_objects": [
+          "Webflow interface",
+          "mouse cursor"
+        ]
+      },
+      {
+        "time_range": "0:03-0:04",
+        "visual_description": "The Webflow interface displays a 'Publishing in progress...' dialog box with a list of completed steps indicated by green checkmarks: 'Preparing to publish', 'Optimizing HTML, CSS, and JS files', 'Packaging everything up', and 'Deploying to CDN'.",
+        "audio_description": "Upbeat, instrumental background music continues.",
+        "text_on_screen": "Publishing in progress...\nPreparing to publish\nOptimizing HTML, CSS, and JS files\nPackaging everything up\nDeploying to CDN",
+        "key_objects": [
+          "Webflow interface"
+        ]
+      },
+      {
+        "time_range": "0:04-0:07",
+        "visual_description": "The laptop screen now shows the live Pilates studio website, 'ALGN', open in a web browser. The 'Our Classes' section is visible, showcasing various Pilates classes with corresponding images of people performing exercises on reformers.",
+        "audio_description": "Upbeat, instrumental background music continues.",
+        "text_on_screen": "On this week's web projects: web development for a pilates studio",
+        "key_objects": [
+          "MacBook laptop",
+          "ALGN website",
+          "Pilates reformer"
+        ]
+      },
+      {
+        "time_range": "0:07-0:10",
+        "visual_description": "A close-up of the 'ALGN' website displays a woman in a Pilates pose. Overlaid text lists different Pilates equipment and services offered by the studio.",
+        "audio_description": "Upbeat, instrumental background music continues.",
+        "text_on_screen": "REFORMER\nCADALLAC\nCHAIR\nLADDER\nBARREL\nHEATED MAT\nPRIVATE STUDIO\nOn this week's web projects: web development for a pilates studio",
+        "key_objects": [
+          "ALGN website",
+          "Pilates equipment"
+        ]
+      },
+      {
+        "time_range": "0:10-0:14",
+        "visual_description": "The laptop screen scrolls through different sections of the 'ALGN' website, showing more class descriptions and images. The final view features a large text overlay 'BUILD YOUR BEST BODY' over an image of a woman in a Pilates plank pose.",
+        "audio_description": "Upbeat, instrumental background music continues.",
+        "text_on_screen": "On this week's web projects: web development for a pilates studio\nBUILD YOUR BEST BODY",
+        "key_objects": [
+          "MacBook laptop",
+          "ALGN website"
+        ]
+      }
+    ],
+    "overall_summary": "This video showcases the web development process for a new Pilates studio website named ALGN, built using Webflow. It begins by demonstrating the website's structure within the Webflow design interface and proceeds to illustrate the publishing steps. The video concludes by displaying the fully launched website, highlighting its class offerings, various Pilates equipment, and overall professional design, effectively presenting the creator's web development capabilities.",
+    "people": [
+      {
+        "description": "The creator, @jocelyndiazdesign, is seen operating the MacBook laptop, demonstrating the web development process.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Jocelyn Diaz"
+      },
+      {
+        "description": "Multiple individuals are featured in the website's imagery, demonstrating various Pilates exercises and poses on different equipment.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Webflow",
+        "display_name": "Webflow",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "ALGN",
+        "display_name": "ALGN Pilates Studio",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Pilates",
+        "display_name": "Pilates",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Reformer",
+        "display_name": "Pilates Reformer",
+        "type": "exercise_equipment",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Cadillac",
+        "display_name": "Pilates Cadillac",
+        "type": "exercise_equipment",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Chair",
+        "display_name": "Pilates Chair",
+        "type": "exercise_equipment",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Ladder",
+        "display_name": "Pilates Ladder",
+        "type": "exercise_equipment",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Barrel",
+        "display_name": "Pilates Barrel",
+        "type": "exercise_equipment",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Heated Mat",
+        "display_name": "Heated Mat",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Private Studio",
+        "display_name": "Private Pilates Studio",
+        "type": "service",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Majestic, Pt. 2",
+        "display_name": "Majestic, Pt. 2",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Webflow is an effective and efficient platform for developing professional websites, particularly for fitness businesses like Pilates studios.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "The creator possesses strong web development and design skills, showcased through the creation of a functional and aesthetically pleasing website.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Majestic, Pt. 2",
+      "metadata_song": "Majestic, Pt. 2",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Specific models in the Pilates images are not identifiable by name."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Professional, informative, productive, modern, clean.",
+    "topic_hints": [
+      "Web development",
+      "Webflow",
+      "Pilates studio website design"
+    ],
+    "affect_hints": [
+      "Informative",
+      "Inspiring",
+      "Professional",
+      "Efficient"
+    ],
+    "genre_hints": [
+      "Tutorial",
+      "Demonstration",
+      "Portfolio Showcase"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5927,
+    "output_tokens": 2235,
+    "total_tokens": 8162,
+    "cost_usd": 0.00223,
+    "latency_ms": 21510,
+    "upload_ms": 3548
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

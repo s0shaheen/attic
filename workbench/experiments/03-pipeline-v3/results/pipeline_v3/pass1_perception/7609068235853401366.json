@@ -1,0 +1,300 @@
+{
+  "item_id": "7609068235853401366",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:10:08.744873+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:11",
+        "visual_description": "The creator expresses a desire to install OpenClaw; a bearded 'AI agent' character insists on using a fresh Linux VPS.",
+        "audio_description": "I want to install openclaw and set up my personal AI assistant. Just use a VPS. Oh, I was just gonna buy a Mac Mini. No. You need to use a fresh Linux VPS.",
+        "text_on_screen": "I want to install openclaw; Linux server setup 2026; Just use a VPS.; No. You need to use a fresh Linux VPS.; start by spinning up a server on your cloud",
+        "key_objects": [
+          "Tommy Hilfiger beanie",
+          "Tumbler with straw",
+          "Smartphone"
+        ]
+      },
+      {
+        "time_range": "0:11-0:24",
+        "visual_description": "The agent warns of immediate SSH attacks and instructs the creator to perform basic system updates.",
+        "audio_description": "Then immediately we're under attack. Yeah, SSH scans started 12 seconds ago. Do not install anything before securing your VPS and root SSH access. with apt update && apt upgrade -y",
+        "text_on_screen": "Then immediately we're under attack.; Yeah, SSH scans started 12 seconds ago.; Do not install anything before securing your VPS and root SSH access.; with apt update && apt upgrade -y; sudo apt update && sudo apt upgrade -y; Why aren't these installed by default?",
+        "key_objects": [
+          "Whiteboard",
+          "Marker"
+        ]
+      },
+      {
+        "time_range": "0:24-0:38",
+        "visual_description": "The agent explains hardening the SSH tunnel and configuring the UFW firewall on port 2222.",
+        "audio_description": "No, we need to harden the SSH tunnel. Then we ACTIVATE THE FIREWALL. But we leave one door open. PORT: 2222. The standard for arbitrary numbers is 2222.",
+        "text_on_screen": "No, we need to harden the SSH tunnel.; # /etc/ssh/sshd_config Port 2222 Protocol 2 PermitRootLogin no PasswordAuthentication no PubKeyAuthentication yes ChallengeResponseAuthentication no UsePAM yes X11Forwarding no AllowUsers claw MaxAuthTries 3 LoginGraceTime 30; gnupg; ACTIVATE THE FIREWALL; Then we activate the firewall.; sudo ufw enable; But we leave one door open. PORT: 2222.; sudo ufw allow 2222/tcp; Port 2222.; The standard for arbitrary numbers is 2222",
+        "key_objects": [
+          "Whiteboard"
+        ]
+      },
+      {
+        "time_range": "0:38-0:51",
+        "visual_description": "The agent details setting up fail2ban and enabling automatic security updates.",
+        "audio_description": "Then we autoban IPs that guess passwords. And now I will not get hacked? No, I'm attacking it right now. Because it didn't enable automatic security updates.",
+        "text_on_screen": "Then we autoban IPs that guess passwords.; Auto-bans IPs that guess passwords.; sudo systemctl enable --now fail2ban; And now I will not get hacked?; No, I'm attacking it right now.; Because it didn't enable automatic security updates.; sudo apt install -y unattended-upgrades; sudo dpkg-reconfigure unattended-upgrades",
+        "key_objects": [
+          "Laptop"
+        ]
+      },
+      {
+        "time_range": "0:51-1:04",
+        "visual_description": "The agent instructs on installing Tailscale for a private VPN mesh and disabling IPv6.",
+        "audio_description": "And then we install a private VPN mesh. Now we allow SSH. Only through port 22 22 but packaged through our private VPN mesh. So we disable IPv6 in UFW and apply kernel settings.",
+        "text_on_screen": "Installing a private VPN mesh.; curl -fsSL https://tailscale.com/install.sh | sh; sudo tailscale up; Now we allow SSH.; Only through port 22 22; But packaged through our private VPN mesh.; So we disable IPv6 in UFW and apply kernel settings.; sudo sed -i 's/IPV6=yes/IPV6=no/' /etc/default/ufw; echo \"net.ipv6.conf.all.disable_ipv6 = 1\" | sudo tee -a /etc/sysctl.conf; sudo sysctl -p; sudo ufw reload",
+        "key_objects": [
+          "Whiteboard"
+        ]
+      },
+      {
+        "time_range": "1:04-1:19",
+        "visual_description": "The agent installs git, clones the OpenClaw repository, and manages NPM dependencies.",
+        "audio_description": "But this of course doesn't work because we didn't install git. Now verify the repo isn't compromised and 900 random NPM dependencies. We don't dump production apps into HOME like crazy people. Then we fix the directory's permissions.",
+        "text_on_screen": "because we didn't install git.; sudo apt install -y git; Now verify the repo isn't compromised and 900 random NPM dependencies.; #MIGHT CHANGE WITH NEW APPLICATION; curl -fsSL https://get.pnpm.io/install.sh | sh; git clone https://github.com/openclaw/openclaw.git; cd openclaw; pnpm install; pnpm ui:build; pnpm build; pnpm openclaw onboard --install-daemon; pnpm gateway:watch; We don't dump production apps into $HOME like crazy people.; Then we fix the directory's permissions.; sudo mkdir -p /opt/openclaw; sudo chown claw:claw /opt/openclaw; sudo nano /etc/openclaw.env; sudo chown root:claw /etc/openclaw.env; sudo chmod 640 /etc/openclaw.env",
+        "key_objects": [
+          "Whiteboard"
+        ]
+      },
+      {
+        "time_range": "1:19-1:35",
+        "visual_description": "The agent configures the systemd service and runs a deep security audit.",
+        "audio_description": "We configure the systemd service. You know systemd is a controversial idea that hasn't been recognized widely. Now make sure we're logging everything and then run your application security audit. If it has one.",
+        "text_on_screen": "We configure the systemd service; You know systemd is a controversial idea that hasn't been recognized widely; Log everything to observe runtime behavior.; sudo journalctl -u openclaw -f; openclaw security audit --deep",
+        "key_objects": [
+          "Whiteboard"
+        ]
+      },
+      {
+        "time_range": "1:35-1:59",
+        "visual_description": "The creator discovers the agent is using a Mac Mini; the creator angrily calls for a new agent from Claude.",
+        "audio_description": "And now you have the setup with no public ssh, no public web ports and server only reachable via tailscale. 98.1% uptime. And this was simple? Yes, this was the Ubuntu version. Now I can show you how you would do this on Arch, btw. What VPS are you running it on? Oh, I'm just running it on an isolated mac-mini. What? Claude, give me a new agent! I don't like this agent! A lying agent.",
+        "text_on_screen": "with no public ssh,; no public web ports; and server only reachable via tailscale.; 98.1% uptime.; Yes, this was the Ubuntu version.; Now I can show you how you would do this on Arch, btw.; Claude, give me a new agent!; I don't like this agent!; A lying agent.",
+        "key_objects": [
+          "Whiteboard with complex diagram",
+          "Mac Mini (implied)"
+        ]
+      }
+    ],
+    "overall_summary": "In this comedic tech skit, creator @paxncs plays both a user wanting to install the OpenClaw AI assistant and a 'hardcore' AI agent providing server setup advice. The agent insists on a complex Linux hardening process involving SSH port changes, UFW firewalls, fail2ban, Tailscale VPN meshes, and specific directory permissions. After the creator completes the grueling setup, the agent reveals it is actually running on a simple, isolated Mac Mini. The video satirizes the complexity of Linux security while providing a legitimate checklist of best practices for server hardening.",
+    "people": [
+      {
+        "description": "Young man in a white t-shirt and black Tommy Hilfiger beanie, playing the role of the user.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "paxncs"
+      },
+      {
+        "description": "The same man wearing a large fake black beard and glasses, playing the role of a hardcore Linux AI agent.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "AI Agent"
+      }
+    ],
+    "entities": [
+      {
+        "name": "OpenClaw",
+        "display_name": "OpenClaw AI Assistant",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Personal AI assistant",
+        "confidence": 5
+      },
+      {
+        "name": "Linux",
+        "display_name": "Linux Operating System",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Ubuntu and Arch versions mentioned",
+        "confidence": 5
+      },
+      {
+        "name": "Tailscale",
+        "display_name": "Tailscale VPN",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Used for private VPN mesh",
+        "confidence": 5
+      },
+      {
+        "name": "Mac Mini",
+        "display_name": "Apple Mac Mini",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Isolated hardware",
+        "confidence": 5
+      },
+      {
+        "name": "Claude",
+        "display_name": "Claude AI (Anthropic)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "AI model provider",
+        "confidence": 5
+      },
+      {
+        "name": "fail2ban",
+        "display_name": "fail2ban",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Intrusion prevention software",
+        "confidence": 5
+      },
+      {
+        "name": "UFW",
+        "display_name": "Uncomplicated Firewall (UFW)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Firewall management tool",
+        "confidence": 5
+      },
+      {
+        "name": "Tommy Hilfiger",
+        "display_name": "Tommy Hilfiger",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Beanie logo",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Proper Linux server hardening requires multiple layers of security, including SSH configuration, firewalls, and private VPNs.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "AI agents may provide overly complex advice that they do not follow themselves (hypocrisy in AI personas).",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "Using a private VPN mesh like Tailscale is a superior alternative to exposing SSH or web ports to the public internet.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Initial Update",
+          "details": "sudo apt update && sudo apt upgrade -y"
+        },
+        {
+          "name": "SSH Hardening",
+          "details": "Change port to 2222, disable root login, disable password authentication in /etc/ssh/sshd_config"
+        },
+        {
+          "name": "Firewall Setup",
+          "details": "Enable UFW and allow only port 2222/tcp"
+        },
+        {
+          "name": "Intrusion Prevention",
+          "details": "Enable fail2ban to auto-ban IPs guessing passwords"
+        },
+        {
+          "name": "Automatic Updates",
+          "details": "Install and configure unattended-upgrades"
+        },
+        {
+          "name": "VPN Mesh",
+          "details": "Install Tailscale and route SSH traffic through the private mesh"
+        },
+        {
+          "name": "IPv6 Disabling",
+          "details": "Disable IPv6 in UFW and kernel settings for reduced attack surface"
+        },
+        {
+          "name": "Application Deployment",
+          "details": "Clone repo via git, install dependencies via pnpm, and set up systemd service"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The background music is a generic fast-paced electronic track common in tech tutorials; no specific artist identified. All terminal commands and text overlays were transcribed."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, fast-paced, and satirical.",
+    "topic_hints": [
+      "Linux Security",
+      "Server Hardening",
+      "AI Agents"
+    ],
+    "affect_hints": [
+      "Amused",
+      "Frustrated",
+      "Tech-savvy"
+    ],
+    "genre_hints": [
+      "Tech Skit",
+      "Educational Tutorial"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 12116,
+    "output_tokens": 3447,
+    "total_tokens": 15563,
+    "cost_usd": 0.003886,
+    "latency_ms": 46702,
+    "upload_ms": 7611
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

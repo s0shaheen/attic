@@ -1,0 +1,207 @@
+{
+  "item_id": "7609086884974710046",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:18:07.599777+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "Close-up shots of Alfred Pennyworth and Bruce Wayne acknowledging each other from across a cafe in Florence, Italy.",
+        "audio_description": "Ambient cafe noise and the beginning of a melancholic, slowed-down song.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Coffee cup",
+          "Sunglasses"
+        ]
+      },
+      {
+        "time_range": "0:07-0:15",
+        "visual_description": "Fast-paced montage of Batman on rooftops, the Bat-Signal, and the Joker in various iconic scenes.",
+        "audio_description": "Alfred's voiceover: 'You have a name... I don't care about my name. It's not just your name sir, it's your father's.'",
+        "text_on_screen": "YOU HAVE A NAME I DON'T CARE ABOUT MY NAME IT'S NOT JUST YOUR NAME SIR... IT'S YOUR FATHER'S",
+        "key_objects": [
+          "Bat-Signal",
+          "Batman Suit",
+          "Police Car"
+        ]
+      },
+      {
+        "time_range": "0:15-0:25",
+        "visual_description": "Scenes showing the Wayne Tower, the Batmobile, Catwoman on the Batpod, and the Joker walking away from a hospital explosion.",
+        "audio_description": "Alfred's voiceover continues: 'It's all that's left of him. Don't destroy it. The city needs Bruce Wayne. Your resources, your knowledge. It doesn't need your body.'",
+        "text_on_screen": "IT'S ALL THAT'S LEFT OF HIM. DON'T DESTROY IT. THE CITY NEEDS BRUCE WAYNE. YOUR RESOURCES YOUR KNOWLEDGE. IT DOESN'T NEED YOUR BODY.",
+        "key_objects": [
+          "Wayne Tower",
+          "Batmobile",
+          "Batpod",
+          "Nurse outfit"
+        ]
+      },
+      {
+        "time_range": "0:25-0:31",
+        "visual_description": "Wide shots of Gotham City in flames, Commissioner Gordon by the Bat-Signal, and a final return to Alfred in the cafe.",
+        "audio_description": "Alfred's voiceover concludes: 'You see only one end to your journey. Leaving.'",
+        "text_on_screen": "YOU SEE ONLY ONE END TO YOUR JOURNEY. LEAVING.",
+        "key_objects": [
+          "Gotham City Skyline",
+          "Bat-Signal"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a cinematic fan edit of Christopher Nolan's 'The Dark Knight' trilogy, specifically focusing on the relationship and dialogue between Bruce Wayne and Alfred Pennyworth. It uses a melancholic, slowed-down soundtrack to highlight the emotional weight of Bruce's sacrifice and Alfred's hope for his retirement. The edit features iconic imagery of Batman, the Joker, and Catwoman, culminating in the final scene of 'The Dark Knight Rises' where Alfred sees Bruce living a normal life.",
+    "people": [
+      {
+        "description": "Alfred Pennyworth, Bruce Wayne's loyal butler and mentor.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Michael Caine"
+      },
+      {
+        "description": "Bruce Wayne / Batman, the protagonist of the trilogy.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Christian Bale"
+      },
+      {
+        "description": "The Joker, the primary antagonist of The Dark Knight.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Heath Ledger"
+      },
+      {
+        "description": "Selina Kyle / Catwoman, an anti-heroine.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Anne Hathaway"
+      },
+      {
+        "description": "James Gordon, the police commissioner of Gotham.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Gary Oldman"
+      }
+    ],
+    "entities": [
+      {
+        "name": "The Dark Knight Trilogy",
+        "display_name": "The Dark Knight Trilogy",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual"
+        ],
+        "specifications": "Directed by Christopher Nolan",
+        "confidence": 5
+      },
+      {
+        "name": "Batman",
+        "display_name": "Batman / Bruce Wayne",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "DC Comics character",
+        "confidence": 5
+      },
+      {
+        "name": "The Joker",
+        "display_name": "The Joker",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Played by Heath Ledger",
+        "confidence": 5
+      },
+      {
+        "name": "Gotham City",
+        "display_name": "Gotham City",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Fictional city",
+        "confidence": 5
+      },
+      {
+        "name": "The Night We Met",
+        "display_name": "The Night We Met (Slowed) - Lord Huron",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Slowed/Reverb version",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The Dark Knight trilogy is considered one of the best movie trilogies of all time.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "The core conflict of the trilogy is the tension between Bruce Wayne's duty as Batman and Alfred's desire for him to have a life of his own.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": null
+    },
+    "audio_identification": {
+      "actual_song": "The Night We Met (Slowed & Reverb) \u2014 Lord Huron",
+      "metadata_song": "original sound - .chayose",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The audio is a very popular slowed version of the Lord Huron song often used in edits."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "heavy_effects"
+    },
+    "visual_mood": "Melancholic, epic, nostalgic, and somber with high-contrast lighting.",
+    "topic_hints": [
+      "Batman",
+      "Cinema",
+      "Superhero Movies"
+    ],
+    "affect_hints": [
+      "Nostalgic",
+      "Sad",
+      "Inspired"
+    ],
+    "genre_hints": [
+      "Movie Edit",
+      "Fan Content"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4231,
+    "output_tokens": 1728,
+    "total_tokens": 5959,
+    "cost_usd": 0.001671,
+    "latency_ms": 18547,
+    "upload_ms": 5495
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

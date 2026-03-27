@@ -1,0 +1,52 @@
+{
+  "item_id": "7439112671552769326",
+  "parsed_output": {
+    "summary": "This TikTok provides a science-based guide on training front deltoids effectively while avoiding overtraining. The creator references the scientific study 'Sonographische Befunde an Schultergelenken von Bodybuildern' to debunk common bodybuilding myths and optimize shoulder development.",
+    "entities": [
+      {
+        "name": "Front Deltoids",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Sonographische Befunde an Schultergelenken von Bodybuildern",
+        "type": "book",
+        "relevance": "primary"
+      },
+      {
+        "name": "Shoulder Workout",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Bodybuilding",
+        "type": "technique",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Gym",
+        "type": "place",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "fitness",
+      "secondary": "health"
+    },
+    "genre": "workout",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "A science-based fitness tutorial focused on maximizing front deltoid development while preventing overtraining. The video features a fitness expert explaining shoulder anatomy and workout optimization. He cites a specific scientific publication, 'Sonographische Befunde an Schultergelenken von Bodybuildern' by Jerosch, J., to support his claims about bodybuilding and shoulder health. The creator is shown in a gym environment, both shirtless to demonstrate muscle engagement and in a pink hoodie while providing educational commentary. The content debunks common gym myths regarding front delt isolation and emphasizes practical tips for upper body strength. This video is ideal for viewers searching for evidence-based shoulder workouts, front delt exercises, and bodybuilding science. On-screen text includes 'UP FIRST', 'THAT BODYBUILDERS HAVE 5', and 'ARE MORE IMPORTANT FROM', highlighting key points of the discussion."
+  },
+  "metrics": {
+    "input_tokens": 4387,
+    "output_tokens": 498,
+    "total_tokens": 4885,
+    "cost_usd": 0.000957,
+    "latency_ms": 15439,
+    "keyframe_count": 3
+  }
+}

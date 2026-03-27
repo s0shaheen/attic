@@ -1,0 +1,206 @@
+{
+  "item_id": "7588345892915121422",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:54:43.941534+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:59",
+        "visual_description": "A man with a beard and a black beanie is seated, wearing headphones, and subtly reacting to the music playing. The background is a room adorned with numerous colorful, abstract paintings on the walls and ceiling, along with shelves holding records and several lava lamps.",
+        "audio_description": "Instrumental hip-hop music with a male rapper is playing. The lyrics are clearly audible.",
+        "text_on_screen": "Luv sic\nGrand finale\nNujabes\nShing 02",
+        "key_objects": [
+          "headphones",
+          "black beanie",
+          "lava lamps",
+          "records",
+          "abstract artwork"
+        ]
+      },
+      {
+        "time_range": "0:59-2:01",
+        "visual_description": "The man removes his headphones and directly addresses the camera, using expressive hand gestures to emphasize his points while discussing the music.",
+        "audio_description": "The man speaks, stating the song is 'Luv sic Grand Finale featuring Shing02, Nujabes.' He explains that the rapping feels secondary to the 'strings and the vibe,' highlighting the 'soundscape' as the primary focus of attention.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "headphones",
+          "black beanie",
+          "lava lamps",
+          "records",
+          "abstract artwork"
+        ]
+      }
+    ],
+    "overall_summary": "This video features creator @shepgold blind reacting to the song \"Luv (sic) Grand Finale (feat. Shing02)\" by Nujabes. Initially, he listens intently with headphones, subtly nodding to the beat. After the song plays, he shares his thoughts, expressing surprise at the presence of rapping and emphasizing that for this particular track, the instrumental soundscape and overall vibe are more prominent than the lyrical content, which he finds to be a unique and enjoyable aspect of the song.",
+    "people": [
+      {
+        "description": "A man with a beard and a black beanie, wearing a grey henley shirt and patterned pants. He is the creator of the video, reacting to music and providing commentary.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "null"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Nujabes",
+        "display_name": "Nujabes",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata",
+          "hashtags"
+        ],
+        "specifications": "null",
+        "confidence": 5
+      },
+      {
+        "name": "Shing02",
+        "display_name": "Shing02",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "null",
+        "confidence": 5
+      },
+      {
+        "name": "Luv (sic) Grand Finale",
+        "display_name": "Luv (sic) Grand Finale",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "null",
+        "confidence": 5
+      },
+      {
+        "name": "Hip-hop",
+        "display_name": "Hip-hop",
+        "type": "genre",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "hashtags"
+        ],
+        "specifications": "null",
+        "confidence": 4
+      },
+      {
+        "name": "Headphones",
+        "display_name": "Headphones",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Over-ear, black",
+        "confidence": 4
+      },
+      {
+        "name": "Lava Lamp",
+        "display_name": "Lava Lamp",
+        "type": "product",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Multiple colors (purple, orange, green)",
+        "confidence": 4
+      },
+      {
+        "name": "Vinyl Records",
+        "display_name": "Vinyl Records",
+        "type": "product",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Collection on shelf",
+        "confidence": 3
+      },
+      {
+        "name": "Abstract Art",
+        "display_name": "Abstract Art",
+        "type": "cultural_reference",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Colorful, varied styles, covering walls and ceiling",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The instrumental soundscape and overall vibe of \"Luv (sic) Grand Finale\" are the primary focus, with the rapping serving a secondary, complementary role.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The song \"Luv (sic) Grand Finale\" is a fitting conclusion or continuation of a story, despite the unexpected inclusion of rapping.",
+        "source": "voiceover",
+        "confidence": 3
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Luv (sic) Grand Finale (feat. Shing02) \u2014 Nujabes",
+      "metadata_song": "Luv (sic) Grand Finale (feat. Shing02)",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "All key entities and audio are confidently identified. Visual details are descriptive."
+    },
+    "presentation_style": {
+      "primary_format": "reaction",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Engaged, thoughtful, artistic, casual",
+    "topic_hints": [
+      "Music reaction",
+      "Hip-hop music",
+      "Music analysis"
+    ],
+    "affect_hints": [
+      "Engaged",
+      "Thoughtful",
+      "Appreciative",
+      "Surprised"
+    ],
+    "genre_hints": [
+      "Reaction",
+      "Music review",
+      "Commentary"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 37495,
+    "output_tokens": 1540,
+    "total_tokens": 39035,
+    "cost_usd": 0.006548,
+    "latency_ms": 26710,
+    "upload_ms": 10404
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

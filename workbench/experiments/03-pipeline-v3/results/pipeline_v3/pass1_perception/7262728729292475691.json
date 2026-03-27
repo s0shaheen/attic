@@ -1,0 +1,243 @@
+{
+  "item_id": "7262728729292475691",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:07:47.106945+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:06",
+        "visual_description": "Creator @treedfl speaks directly to the camera in a kitchen setting, introducing his minimal travel shoe rotation.",
+        "audio_description": "I've been traveling around Europe for a month now with only 3 pairs of shoes so here is my minimal tested summer shoe rotation for a trip through Europe",
+        "text_on_screen": "I've been traveling around Europe for a month now with only 3 pairs of shoes\nso here is my minimal tested summer shoe rotation for a trip through Europe",
+        "key_objects": [
+          "Lavalier microphone",
+          "Apple Watch"
+        ]
+      },
+      {
+        "time_range": "0:07-0:22",
+        "visual_description": "Creator holds up a pair of white Adidas Samba sneakers, pointing out the colors and the sole.",
+        "audio_description": "number one the daily driver is the Adidas Samba neutral colors are critical if you're trying to travel with minimal stuff I think these are perfect they have a bit of white gray and black so they go with pretty much anything they're also very comfy for walking all day I got the actual like football version of these not like the casual ones and they have more arch support which is great",
+        "text_on_screen": "number one the daily driver is the Adidas Samba\nneutral colors are critical if you're trying to travel with minimal stuff\nI think these are perfect they have a bit of white gray and black so they go with pretty much anything\nthey're also very comfy for walking all day\nI got the actual like football version of these not like the casual ones and they have more arch support which is great",
+        "key_objects": [
+          "Adidas Samba sneakers"
+        ]
+      },
+      {
+        "time_range": "0:23-0:32",
+        "visual_description": "Creator displays a pair of black leather Birkenstock Boston clogs, showing the cork footbed.",
+        "audio_description": "next up the Birkenstock Boston I started my trip on a couple different Greek islands so these are my beach shoes the black leather also makes them somewhat loafer adjacent so I've worn them for some nicer occasions and it's gone well",
+        "text_on_screen": "next up the Birkenstock Boston\nI started my trip on a couple different Greek islands so these are my beach shoes\nthe black leather also makes them somewhat loafer adjacent so I've worn them for some nicer occasions and it's gone well",
+        "key_objects": [
+          "Birkenstock Boston clogs"
+        ]
+      },
+      {
+        "time_range": "0:33-0:46",
+        "visual_description": "Creator shows a pair of well-worn Nike Pegasus 39 running shoes with green laces.",
+        "audio_description": "lastly and critically as an athlete I have my running shoes these are the Nike Pegasus 39 they're my go-to running shoe and I think this colorway is great because they look good with casual outfits too as you can see they're a little bit dirty I've worn them hiking I've worn them for long walking days anything that's very active they're perfect",
+        "text_on_screen": "lastly and critically as an athlete I have my running shoes\nthese are the Nike Pegasus 39 they're my go-to running shoe\nand I think this colorway is great because they look good with casual outfits too\nas you can see they're a little bit dirty I've worn them hiking I've worn them for long walking days anything that's very active they're perfect",
+        "key_objects": [
+          "Nike Pegasus 39 running shoes"
+        ]
+      },
+      {
+        "time_range": "0:47-1:01",
+        "visual_description": "Creator summarizes the three shoe archetypes and signs off.",
+        "audio_description": "of course other specific shoes will work and it depends on exactly where you're going but I think having the archetypes of a stylish walking sneaker a loafer esque shoe that could also maybe do beach stuff and an athletic shoe is a perfect rotation I hope that helps if you're traveling this summer and as always have a great day",
+        "text_on_screen": "of course other specific shoes will work and it depends on exactly where you're going\nbut I think having the archetypes of a stylish walking sneaker a loafer esque shoe that could also maybe do beach stuff and an athletic shoe is a perfect rotation\nI hope that helps if you're traveling this summer and as always have a great day",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "Creator @treedfl shares his minimal three-shoe rotation for a month-long summer trip through Europe. He recommends a versatile walking sneaker like the Adidas Samba, a multi-purpose slide like the Birkenstock Boston for beach and semi-formal wear, and a dedicated athletic shoe like the Nike Pegasus 39 for hiking and exercise. The main takeaway is that choosing neutral colors and specific 'archetypes' of footwear allows for maximum utility with minimal luggage space.",
+    "people": [
+      {
+        "description": "Young male creator with short brown hair and a tattoo on his left arm, wearing a black t-shirt and a silver necklace.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@treedfl"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Adidas Samba",
+        "display_name": "Adidas Samba (Football Version)",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Football version for better arch support; white/gray/black colorway",
+        "confidence": 5
+      },
+      {
+        "name": "Birkenstock Boston",
+        "display_name": "Birkenstock Boston Clogs",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Black leather; cork footbed",
+        "confidence": 5
+      },
+      {
+        "name": "Nike Pegasus 39",
+        "display_name": "Nike Air Zoom Pegasus 39",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Cream/tan colorway with green laces",
+        "confidence": 5
+      },
+      {
+        "name": "Adidas",
+        "display_name": "Adidas",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Birkenstock",
+        "display_name": "Birkenstock",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Nike",
+        "display_name": "Nike",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Europe",
+        "display_name": "Europe",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Greek Islands",
+        "display_name": "Greek Islands",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Neutral colors are critical for traveling with minimal luggage as they match almost any outfit.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The 'football' version of the Adidas Samba is recommended over the casual version for travel due to superior arch support.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "A perfect travel shoe rotation consists of three archetypes: a stylish walking sneaker, a versatile slide/loafer, and an athletic shoe.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Daily Driver: Adidas Samba",
+          "details": "Football version for arch support; neutral colors (white, gray, black) for versatility."
+        },
+        {
+          "name": "Beach/Nice Occasions: Birkenstock Boston",
+          "details": "Black leather version; serves as a beach shoe and a 'loafer-adjacent' option for nicer events."
+        },
+        {
+          "name": "Active/Running: Nike Pegasus 39",
+          "details": "Used for hiking, long walking days, and athletic activities; colorway chosen to still look good with casual outfits."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Unknown Lo-fi Jazz Guitar Instrumental",
+      "metadata_song": "Guitar Jazz instrumental",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Specific shoe models and brands were clearly stated and shown."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, practical, and relaxed.",
+    "topic_hints": [
+      "Travel Essentials",
+      "Men's Fashion",
+      "Minimalist Packing"
+    ],
+    "affect_hints": [
+      "Helpful",
+      "Organized",
+      "Practical"
+    ],
+    "genre_hints": [
+      "Travel Tips",
+      "Fashion Advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6900,
+    "output_tokens": 2530,
+    "total_tokens": 9430,
+    "cost_usd": 0.002553,
+    "latency_ms": 29253,
+    "upload_ms": 8042
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

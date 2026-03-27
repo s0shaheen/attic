@@ -1,0 +1,52 @@
+{
+  "item_id": "7425025915811335454",
+  "parsed_output": {
+    "summary": "Joshua Erabu demonstrates how to elevate a classic grilled cheese and tomato soup combo, challenging the notion that the dish is boring. He uses Pepperidge Farm Farmhouse Sourdough bread to create a gourmet version inspired by creator Kenny Song.",
+    "entities": [
+      {
+        "name": "Joshua Erabu",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Pepperidge Farm Farmhouse Sourdough",
+        "type": "product",
+        "relevance": "primary"
+      },
+      {
+        "name": "Kenny Song",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Grilled cheese",
+        "type": "recipe",
+        "relevance": "primary"
+      },
+      {
+        "name": "Tomato soup",
+        "type": "recipe",
+        "relevance": "primary"
+      }
+    ],
+    "topic": {
+      "primary": "food",
+      "secondary": null
+    },
+    "genre": "recipe",
+    "affect": {
+      "dominant": "satisfying",
+      "secondary": "informative"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "In this 26-second TikTok, creator Joshua Erabu (@joshuaerabu) prepares a gourmet grilled cheese and tomato soup meal. The video opens with Joshua holding a red bell pepper and on-screen text that reads \"'grilled cheese is boring'\", setting the stage for an elevated recipe. He specifically uses Pepperidge Farm Farmhouse Sourdough bread to build the sandwich. The final shots feature a perfectly toasted, melted cheese sandwich being dipped into a creamy bowl of tomato soup garnished with greens. Inspired by Kenny Song, this food video is shot with high production value, focusing on the textures of the bread and the dip. It is an ideal reference for users looking for comfort food inspiration, lunch recipes, or sourdough sandwich ideas."
+  },
+  "metrics": {
+    "input_tokens": 4248,
+    "output_tokens": 460,
+    "total_tokens": 4708,
+    "cost_usd": 0.000913,
+    "latency_ms": 7118,
+    "keyframe_count": 3
+  }
+}

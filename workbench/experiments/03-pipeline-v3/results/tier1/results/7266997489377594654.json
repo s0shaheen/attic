@@ -1,0 +1,52 @@
+{
+  "item_id": "7266997489377594654",
+  "parsed_output": {
+    "summary": "A comedy skit from the satirical series 'The Real Bros of Simi Valley' where characters discuss an 'invalid ratio' of guys to girls at a hangout. It parodies Southern California 'bro' culture and the obsession with social dynamics at parties.",
+    "entities": [
+      {
+        "name": "The Real Bros of Simi Valley",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Jimmy Tatro",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Ratio",
+        "type": "trend_or_meme",
+        "relevance": "primary"
+      },
+      {
+        "name": "Simi Valley",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Beer",
+        "type": "product",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "comedy",
+      "secondary": "relationships"
+    },
+    "genre": "skit",
+    "affect": {
+      "dominant": "funny",
+      "secondary": "cringe"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "This TikTok features a comedy skit from the popular satirical series 'The Real Bros of Simi Valley,' created by and starring Jimmy Tatro. The video centers on the 'bro' culture trope of the 'ratio'\u2014the numerical balance of men to women at a social gathering. Characters are seen lounging on a couch in a living room, wearing plaid shirts and backward hats, while drinking from blue beer cans. The dialogue and on-screen text, which reads 'Invalid Ratio' and 'Real Bros Of Simi Valley,' highlight the characters' comedic distress over a 'horrible ratio' at their hangout. This content is a prime example of the show's parody of Southern California suburban life and social hierarchies. It is ideal for fans of the show or users searching for 'bro' culture memes, Jimmy Tatro clips, or funny videos about party social dynamics and the 'ratio' meme."
+  },
+  "metrics": {
+    "input_tokens": 4221,
+    "output_tokens": 502,
+    "total_tokens": 4723,
+    "cost_usd": 0.000934,
+    "latency_ms": 9258,
+    "keyframe_count": 3
+  }
+}

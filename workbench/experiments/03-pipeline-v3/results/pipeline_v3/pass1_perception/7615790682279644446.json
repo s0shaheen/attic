@@ -1,0 +1,221 @@
+{
+  "item_id": "7615790682279644446",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:07:17.851604+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "Creator speaks directly to the camera in a dimly lit room with a pegboard and microphone visible.",
+        "audio_description": "we've reached this really weird point in society and capitalism where you aren't actually allowed to just have a hobby anymore",
+        "text_on_screen": "we've reached this really weird point in society and capitalism where you aren't actually allowed to just have a hobby anymore",
+        "key_objects": [
+          "Microphone",
+          "Headphones",
+          "Pegboard",
+          "Glasses"
+        ]
+      },
+      {
+        "time_range": "0:07-0:11",
+        "visual_description": "A framed oil painting of a small cottage in a dark, moody field.",
+        "audio_description": "if you like drawing people are asking when are you gonna start an art page when are you gonna sell your art",
+        "text_on_screen": "if you like drawing people are asking when are you gonna start an art page when are you gonna sell your art",
+        "key_objects": [
+          "Oil painting",
+          "Picture frame"
+        ]
+      },
+      {
+        "time_range": "0:11-0:16",
+        "visual_description": "A computer screen displaying blocks of C++ source code and a command prompt.",
+        "audio_description": "if you know how to build a pc or write code you're expected to turn it into a startup",
+        "text_on_screen": "if you know how to build a pc or write code you're expected to turn it into a startup",
+        "key_objects": [
+          "Computer monitor",
+          "C++ code"
+        ]
+      },
+      {
+        "time_range": "0:16-0:29",
+        "visual_description": "Cinematic shots of rainy city streets at night with glowing traffic lights and wet pavement.",
+        "audio_description": "we've completely internalized the idea that our value is entirely tied to our productivity capital has bled so deeply into our psychology that we look at our own free time as wasted real estate",
+        "text_on_screen": "we've completely internalized the idea that our value is entirely tied to our productivity capital has bled so deeply into our psychology that we look at our own free time as wasted real estate",
+        "key_objects": [
+          "Traffic lights",
+          "Street lamps",
+          "Rain"
+        ]
+      },
+      {
+        "time_range": "0:29-0:36",
+        "visual_description": "Stylized silhouettes of people followed by a close-up of a digital clock, a candle, and a plant in a dark room.",
+        "audio_description": "we end up viewing ourselves not even as human beings but as a brand we curate our aesthetic",
+        "text_on_screen": "we end up viewing ourselves not even as human beings but as a brand we curate our aesthetic",
+        "key_objects": [
+          "Digital clock",
+          "Candle",
+          "Potted plant"
+        ]
+      },
+      {
+        "time_range": "0:36-0:43",
+        "visual_description": "A train station platform at dusk with commuters waiting and a train approaching.",
+        "audio_description": "we network instead of making friends we optimize our daily routine to squeeze out an extra ten percent of efficiency but what are we actually optimizing for",
+        "text_on_screen": "we network instead of making friends we optimize our daily routine to squeeze out an extra ten percent of efficiency but what are we actually optimizing for",
+        "key_objects": [
+          "Train station",
+          "Railway tracks"
+        ]
+      },
+      {
+        "time_range": "0:43-0:54",
+        "visual_description": "A person sitting on a train looking out the window, followed by a shot of the empty train interior moving through a city.",
+        "audio_description": "we're sprinting on a treadmill that someone else plugged in when every single part of your identity is something that can be monetized pitched and sold",
+        "text_on_screen": "we're sprinting on a treadmill that someone else plugged in when every single part of your identity is something that can be monetized pitched and sold",
+        "key_objects": [
+          "Train interior",
+          "Subway seats"
+        ]
+      },
+      {
+        "time_range": "0:54-1:06",
+        "visual_description": "An open book on a table with a candle and coffee, followed by a rainy street scene and a wet park bench.",
+        "audio_description": "eventually you lose the ability to just exist you don't have to monetize your joy it's perfectly fine to do something simply because you like doing it and let it end there",
+        "text_on_screen": "eventually you lose the ability to just exist you don't have to monetize your joy it's perfectly fine to do something simply because you like doing it and let it end there",
+        "key_objects": [
+          "Book",
+          "Coffee cup",
+          "Park bench",
+          "Bus"
+        ]
+      }
+    ],
+    "overall_summary": "The video is a philosophical commentary on the modern pressure to monetize every personal hobby and interest. The creator argues that capitalism has led individuals to internalize productivity as their primary source of value, turning hobbies into potential 'startups' and personal identities into 'brands.' Using a series of moody, cinematic visuals of rainy streets and quiet domestic moments, the video encourages viewers to reclaim their joy by doing things simply because they like them, without the need for profit or public validation. The main takeaway is a reminder that it is okay to 'just exist' and enjoy life without constant optimization.",
+    "people": [
+      {
+        "description": "A young man with glasses and curly hair, speaking directly to the camera and providing the voiceover.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@shadydealing"
+      }
+    ],
+    "entities": [
+      {
+        "name": "@shadydealing",
+        "display_name": "shadydealing",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Capitalism",
+        "display_name": "Capitalism",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Economic system discussed as a psychological influence",
+        "confidence": 5
+      },
+      {
+        "name": "Hopecore",
+        "display_name": "Hopecore",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": "A TikTok aesthetic focused on sincerity and hope",
+        "confidence": 5
+      },
+      {
+        "name": "snowfall \u2014 \u00d8neheart & reidenshi",
+        "display_name": "snowfall \u2014 \u00d8neheart & reidenshi",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Slowed and reverb version",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Modern society pressures individuals to monetize their hobbies and turn their identities into brands.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Internalizing productivity as the only measure of value leads to viewing free time as 'wasted real estate.'",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "It is perfectly acceptable and healthy to engage in activities purely for enjoyment without seeking to profit from them.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": null
+    },
+    "audio_identification": {
+      "actual_song": "snowfall \u2014 \u00d8neheart & reidenshi",
+      "metadata_song": "Healing, healing, relaxation, spa, sleep",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The background music is the iconic 'snowfall' track commonly used in hopecore edits, despite the generic metadata."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Melancholic, reflective, and cozy with a focus on rainy, nighttime aesthetics and quiet urban scenes.",
+    "topic_hints": [
+      "Capitalism and Mental Health",
+      "The Monetization of Hobbies",
+      "Work-Life Balance"
+    ],
+    "affect_hints": [
+      "Reflective",
+      "Validated",
+      "Calm",
+      "Melancholic"
+    ],
+    "genre_hints": [
+      "Hopecore",
+      "Video Essay",
+      "Motivational"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 7350,
+    "output_tokens": 2110,
+    "total_tokens": 9460,
+    "cost_usd": 0.002368,
+    "latency_ms": 36838,
+    "upload_ms": 7844
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

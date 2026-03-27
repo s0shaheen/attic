@@ -1,0 +1,76 @@
+{
+  "item_id": "7593439419022036246",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:25.952298+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "politics",
+      "secondary": "news",
+      "micro_labels": [
+        "Israel-Hamas war",
+        "Gaza",
+        "press freedom",
+        "Binyamin Netanyahu",
+        "journalism safety"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "interview",
+      "micro_labels": [
+        "political interview",
+        "news clip"
+      ],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "neutral",
+        "tier": "secondary"
+      },
+      {
+        "label": "angry",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "journalist",
+      "confidence": 1.0
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 16385,
+    "output_tokens": 352,
+    "total_tokens": 16737,
+    "cost_usd": 0.002669,
+    "latency_ms": 9954,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 12
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "item_id": "7575353456161049887",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:23:10.652469+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "art",
+      "micro_labels": [
+        "TouchDesigner",
+        "creative coding",
+        "generative art",
+        "interactive visuals",
+        "particle systems"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": [
+        "technical demonstration",
+        "project showcase"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "satisfying",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      },
+      {
+        "label": "relaxing",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "screen_recording",
+      "raw_footage"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "document",
+      "confidence": 0.85
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 4234,
+    "output_tokens": 350,
+    "total_tokens": 4584,
+    "cost_usd": 0.000845,
+    "latency_ms": 5122,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 1
+  }
+}

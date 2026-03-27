@@ -1,0 +1,52 @@
+{
+  "item_id": "7566399729781706039",
+  "parsed_output": {
+    "summary": "Creator @zerotopete shares actionable tips for developers and founders to optimize their workflow using Claude Code. The video covers simple methods to improve AI output and mentions advanced techniques like git worktrees and auto-updating PRDs.",
+    "entities": [
+      {
+        "name": "Claude Code",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "@zerotopete",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Git worktrees",
+        "type": "technique",
+        "relevance": "supporting"
+      },
+      {
+        "name": "PRDs",
+        "type": "technique",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Everything In Its Right Place",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "career"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this TikTok video, creator @zerotopete provides a tutorial on how to 10x productivity using Claude Code, an AI tool for software development. The video features on-screen text such as '5 simple ways to 10x your output with Claude Code' and discusses techniques to prevent errors before the AI starts building. Pete mentions specific advanced workflows to be covered in future videos, including git worktrees, skills, and auto-updating PRDs (Product Requirement Documents). The creator is seen speaking into a microphone in a home office setting with a computer monitor displaying code in the background. This content is aimed at founders, entrepreneurs, and developers looking to optimize their AI-assisted coding workflows and session management."
+  },
+  "metrics": {
+    "input_tokens": 4305,
+    "output_tokens": 459,
+    "total_tokens": 4764,
+    "cost_usd": 0.000921,
+    "latency_ms": 8152,
+    "keyframe_count": 3
+  }
+}

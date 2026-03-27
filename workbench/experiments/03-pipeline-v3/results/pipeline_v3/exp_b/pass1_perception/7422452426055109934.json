@@ -1,0 +1,204 @@
+{
+  "item_id": "7422452426055109934",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:51:31.728411+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:08",
+        "visual_description": "Young male basketball players are actively engaged in a practice or game on a wooden court, dribbling and moving around. A referee stands near the foreground. In the background, large screens display images of Stephen Curry and the SC Select Camp logo.",
+        "audio_description": "Upbeat hip-hop music plays with a prominent beat. Sounds of basketball dribbling and squeaking shoes are audible. Lyrics include \"You not the concept\" and \"Oh my god.\"",
+        "text_on_screen": "Bag work \ud83e\udd22",
+        "key_objects": [
+          "basketball court",
+          "basketball hoop",
+          "basketball",
+          "large display screens"
+        ]
+      }
+    ],
+    "overall_summary": "This video captures a dynamic basketball practice or game featuring young male players on a court. A referee is present, and large screens in the background display images of Stephen Curry, suggesting a high-level training environment like a select camp. The overlaid text 'Bag work \ud83e\udd22' combined with the intense on-court action and the accompanying music implies a challenging and rigorous training session. The video highlights the effort and intensity involved in basketball skill development.",
+    "people": [
+      {
+        "description": "Multiple young male athletes, wearing basketball attire, actively playing basketball on the court.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A male referee, wearing a black and white striped shirt and black shorts, observing the game.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Stephen Curry, depicted in two large images on screens in the background, one showing him in a black tank top with a basketball, and another showing him in a Golden State Warriors uniform dribbling.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Stephen Curry"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Basketball",
+        "display_name": "Basketball",
+        "type": "game",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "AAU",
+        "display_name": "AAU Basketball",
+        "type": "event",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Stephen Curry",
+        "display_name": "Stephen Curry",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "SC Select Camp",
+        "display_name": "SC Select Camp",
+        "type": "event",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Lifetime Fitness",
+        "display_name": "Lifetime Fitness",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Finesse",
+        "display_name": "Finesse (feat. Koncept P, willnosleep & avonosleep)",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Koncept P",
+        "display_name": "Koncept P",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "willnosleep",
+        "display_name": "willnosleep",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "avonosleep",
+        "display_name": "avonosleep",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Basketball training, especially 'bag work,' can be physically demanding and intense.",
+        "source": "text_overlay|demonstration|implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Finesse \u2014 Koncept P, willnosleep & avonosleep",
+      "metadata_song": "Finesse (feat. Koncept P, willnosleep & avonosleep)",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific location of the Lifetime Fitness gym is not identifiable from the video."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Energetic, focused, intense, competitive",
+    "topic_hints": [
+      "basketball training",
+      "AAU basketball",
+      "sports performance"
+    ],
+    "affect_hints": [
+      "motivation",
+      "intensity",
+      "exhaustion (implied by emoji)"
+    ],
+    "genre_hints": [
+      "sports highlight",
+      "training montage"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3860,
+    "output_tokens": 1434,
+    "total_tokens": 5294,
+    "cost_usd": 0.001439,
+    "latency_ms": 14469,
+    "upload_ms": 3403
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

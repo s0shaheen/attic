@@ -1,0 +1,796 @@
+{
+  "item_id": "7611737673895529748",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:48:31.352128+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "An animated character, Glep, is shown tied up on a surface, wearing a purple wizard hat and blue restraints.",
+        "audio_description": "Sound of a character groaning and struggling.",
+        "text_on_screen": "Smiling Friends (2020-2026)",
+        "key_objects": [
+          "Glep",
+          "purple wizard hat",
+          "blue restraints"
+        ]
+      },
+      {
+        "time_range": "0:01-0:05",
+        "visual_description": "Pim, a yellow animated character with a large nose and a cowboy hat, stands next to the tied-up Glep, gesturing with his hands.",
+        "audio_description": "Pim says, \"I think he's possessed, man, but don't worry, my uncle taught me exactly what to do in a situation like this.\"",
+        "text_on_screen": "I think he's possessed, man\nbut don't worry,\nmy uncle taught me\nin a situation like this.\nSmiling Friends (2020-2026)",
+        "key_objects": [
+          "Pim",
+          "Glep",
+          "cowboy hat"
+        ]
+      },
+      {
+        "time_range": "0:05-0:06",
+        "visual_description": "Pim holds a wooden cross towards Glep, who is still tied up, as Pim's mouth is wide open.",
+        "audio_description": "Pim shouts, \"The power of Christ compels you!\"",
+        "text_on_screen": "The power of Christ compels you!\nSmiling Friends (2020-2026)",
+        "key_objects": [
+          "Pim",
+          "Glep",
+          "wooden cross"
+        ]
+      },
+      {
+        "time_range": "0:06-0:09",
+        "visual_description": "A split screen shows Pim performing an exorcism on Glep in the top frame, and a scene from 'The Exorcist' with Regan MacNeil levitating and being exorcised in the bottom frame.",
+        "audio_description": "Pim shouts, \"The power of Christ compels you!\" followed by the same line from 'The Exorcist'.",
+        "text_on_screen": "The power of Christ compels you!\nThe Exorcist (1973)\nDir. William Friedkin",
+        "key_objects": [
+          "Pim",
+          "Glep",
+          "Regan MacNeil",
+          "Father Damien Karras",
+          "Father Lankester Merrin",
+          "wooden cross"
+        ]
+      },
+      {
+        "time_range": "0:09-0:12",
+        "visual_description": "A split screen shows a muscular blue animated character lifting dumbbells with Pim observing in the top frame, and Sylvester Stallone as Rocky Balboa lifting dumbbells in 'Rocky II' in the bottom frame.",
+        "audio_description": "Grinding and grunting sounds, followed by a boxing bell.",
+        "text_on_screen": "Rocky II (1970)\nDir. Sylvester Stallone",
+        "key_objects": [
+          "Pim",
+          "blue muscular character",
+          "dumbbells",
+          "Rocky Balboa",
+          "Sylvester Stallone"
+        ]
+      },
+      {
+        "time_range": "0:12-0:13",
+        "visual_description": "A split screen shows an animated character with white hair looking at a reflection of a grumpy old man in a mirror in the top frame, and Willem Dafoe as Norman Osborn looking at his reflection in 'Spider-Man' in the bottom frame.",
+        "audio_description": "A voice says, \"You deserve nothing.\"",
+        "text_on_screen": "You deserve nothing.\nSpider-Man (2002)\nDir. Sam Raimi",
+        "key_objects": [
+          "animated character",
+          "mirror",
+          "Norman Osborn",
+          "Willem Dafoe"
+        ]
+      },
+      {
+        "time_range": "0:13-0:15",
+        "visual_description": "A split screen shows an animated character with bleeding eyes slumped over a desk in the top frame, and a character with bloody eyes in a chair from 'Event Horizon' in the bottom frame.",
+        "audio_description": "Distorted, eerie sounds.",
+        "text_on_screen": "Event Horizon (1997)\nDir. Paul W.S. Anderson",
+        "key_objects": [
+          "animated character",
+          "desk",
+          "character with bloody eyes"
+        ]
+      },
+      {
+        "time_range": "0:15-0:19",
+        "visual_description": "A split screen shows a red-toned, blurry animated scene with explosions in the top frame, and soldiers in a battle scene from 'Saving Private Ryan' in the bottom frame, with some parts censored.",
+        "audio_description": "Explosion sounds and gunfire.",
+        "text_on_screen": "(Censored for TikTok)\nSaving Private Ryan (1998)\nDir. Steven Spielberg",
+        "key_objects": [
+          "soldiers",
+          "explosions"
+        ]
+      },
+      {
+        "time_range": "0:19-0:20",
+        "visual_description": "A split screen shows animated characters on a street with a glowing, spinning bomb in the foreground in the top frame, and a glowing bomb on a street from 'Spider-Man' in the bottom frame.",
+        "audio_description": "Whirring and explosion sounds.",
+        "text_on_screen": "Spider-Man (2002)\nDir. Sam Raimi",
+        "key_objects": [
+          "animated characters",
+          "glowing bomb",
+          "street"
+        ]
+      },
+      {
+        "time_range": "0:20-0:21",
+        "visual_description": "A split screen shows animated characters dissolving into dust on a street in the top frame, and people dissolving into dust in a scene from 'Spider-Man' in the bottom frame.",
+        "audio_description": "Sound of crumbling and wind.",
+        "text_on_screen": "Spider-Man (2002)\nDir. Sam Raimi",
+        "key_objects": [
+          "animated characters",
+          "dissolving people"
+        ]
+      },
+      {
+        "time_range": "0:21-0:22",
+        "visual_description": "A split screen shows an animated character riding a bomb over a landscape in the top frame, and Major T.J. 'King' Kong riding a bomb in 'Dr. Strangelove' in the bottom frame.",
+        "audio_description": "Whooshing sound of a falling bomb.",
+        "text_on_screen": "Dr. Strangelove (1964)\nDir. Stanley Kubrick",
+        "key_objects": [
+          "animated character",
+          "bomb",
+          "Major T.J. 'King' Kong",
+          "cowboy hat"
+        ]
+      },
+      {
+        "time_range": "0:22-0:24",
+        "visual_description": "A split screen shows a pink animated character holding a lasso and a slice of cheese, surrounded by other pink figures, in the top frame, and a man with a horrified expression pointing in 'Invasion of the Body Snatchers' in the bottom frame.",
+        "audio_description": "Screaming and a loud, distorted sound.",
+        "text_on_screen": "Invasion of the Body Snatchers (1978)\nDir. Philip Kaufman",
+        "key_objects": [
+          "pink animated character",
+          "lasso",
+          "cheese",
+          "man pointing"
+        ]
+      },
+      {
+        "time_range": "0:24-0:25",
+        "visual_description": "A split screen shows an animated character being pulled into a large, dark mouth in the top frame, and a rocky, monstrous landscape from 'Return to Oz' in the bottom frame.",
+        "audio_description": "Growling and screaming sounds.",
+        "text_on_screen": "Return to Oz (1985)\nDir. Walter Murch",
+        "key_objects": [
+          "animated character",
+          "large mouth",
+          "rocky landscape"
+        ]
+      },
+      {
+        "time_range": "0:25-0:28",
+        "visual_description": "A split screen shows an animated character looking horrified in a red-lit room in the top frame, and a pixelated, censored scene from 'Poltergeist' in the bottom frame.",
+        "audio_description": "A character says, \"What the fuck?!\" repeatedly.",
+        "text_on_screen": "(Censored for TikTok)\nWhat the fuck?!\nPoltergeist (1982)\nDir. Tobe Hooper",
+        "key_objects": [
+          "animated character",
+          "red room",
+          "pixelated scene"
+        ]
+      },
+      {
+        "time_range": "0:28-0:29",
+        "visual_description": "A split screen shows an animated character with teeth falling out in a red-lit room in the top frame, and a pixelated, censored scene with teeth and blood from 'Poltergeist' in the bottom frame.",
+        "audio_description": "A character says, \"What the fuck?!\" repeatedly, with squishing sounds.",
+        "text_on_screen": "(Censored for TikTok)\nWhat the fuck?!\nPoltergeist (1982)\nDir. Tobe Hooper",
+        "key_objects": [
+          "animated character",
+          "teeth",
+          "blood"
+        ]
+      },
+      {
+        "time_range": "0:29-0:30",
+        "visual_description": "A split screen shows multiple muscular blue animated characters on monkey bars with Pim observing in the top frame, and soldiers on monkey bars in 'Full Metal Jacket' in the bottom frame.",
+        "audio_description": "Military chanting and grunting sounds.",
+        "text_on_screen": "Full Metal Jacket (1987)\nDir. Stanley Kubrick",
+        "key_objects": [
+          "Pim",
+          "blue muscular characters",
+          "monkey bars",
+          "soldiers"
+        ]
+      },
+      {
+        "time_range": "0:30-0:33",
+        "visual_description": "A split screen shows a purple animated character pulling apart a white creature in the top frame, and King Kong pulling apart a dinosaur in 'King Kong' in the bottom frame.",
+        "audio_description": "Roaring and tearing sounds.",
+        "text_on_screen": "King Kong (2005)\nDir. Peter Jackson",
+        "key_objects": [
+          "purple animated character",
+          "white creature",
+          "King Kong",
+          "dinosaur"
+        ]
+      },
+      {
+        "time_range": "0:33-0:35",
+        "visual_description": "A split screen shows two elderly animated characters holding hands in the top frame, and two elderly people lying on beds holding hands in 'Bicentennial Man' in the bottom frame.",
+        "audio_description": "Soft, melancholic music.",
+        "text_on_screen": "Bicentennial Man (1999)\nDir. Chris Columbus",
+        "key_objects": [
+          "elderly animated characters",
+          "elderly people"
+        ]
+      },
+      {
+        "time_range": "0:35-0:39",
+        "visual_description": "A split screen shows several animated characters on a stage with a large, sad-looking head in the background in the top frame, and the Peanuts characters dancing on a stage in 'A Charlie Brown Christmas' in the bottom frame.",
+        "audio_description": "Jazz music, similar to the 'Peanuts' soundtrack.",
+        "text_on_screen": "A Charlie Brown Christmas (1965)\nDir. Bill Melendez",
+        "key_objects": [
+          "animated characters",
+          "Peanuts characters",
+          "stage",
+          "double bass",
+          "Snoopy"
+        ]
+      },
+      {
+        "time_range": "0:39-0:40",
+        "visual_description": "Two animated characters, one red and one yellow (Pim), are shown talking to each other.",
+        "audio_description": "A character asks, \"What's wrong with Glep?\"",
+        "text_on_screen": "What's wrong with Glep?\nSmiling Friends (2020-2026)",
+        "key_objects": [
+          "Pim",
+          "red animated character"
+        ]
+      },
+      {
+        "time_range": "0:40-0:41",
+        "visual_description": "Glep is shown tied up again, similar to the beginning of the video.",
+        "audio_description": "Sound of a character groaning and struggling.",
+        "text_on_screen": "Smiling Friends (2020-2026)",
+        "key_objects": [
+          "Glep",
+          "purple wizard hat",
+          "blue restraints"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a compilation showcasing cinematic parallels between scenes from the animated series 'Smiling Friends' and various live-action films. It presents split-screen comparisons, highlighting visual and thematic similarities in moments of horror, action, drama, and comedy. The video demonstrates how 'Smiling Friends' draws inspiration from or coincidentally mirrors iconic movie scenes, ranging from 'The Exorcist' and 'Rocky II' to 'Spider-Man' and 'A Charlie Brown Christmas'.",
+    "people": [
+      {
+        "description": "Yellow animated character with a large nose and a cowboy hat, often seen reacting or participating in the scenes.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Pim"
+      },
+      {
+        "description": "Small, white animated character with a purple wizard hat and blue restraints, often depicted as a victim or in distress.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Glep"
+      },
+      {
+        "description": "Green animated character with a wide smile and a cowboy hat, seen riding a bomb.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Alan"
+      },
+      {
+        "description": "Red animated character with a long, worm-like body, seen talking to Pim.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Charlie"
+      },
+      {
+        "description": "Animated character with white hair and a grumpy expression, seen in a mirror reflection.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Mr. Boss"
+      },
+      {
+        "description": "Animated character with large, round eyes and a purple body, seen pulling apart a white creature.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Animated character with a large, sad, grey head, seen in the background of a stage scene.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Actress portraying Regan MacNeil, levitating during an exorcism scene.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Linda Blair"
+      },
+      {
+        "description": "Actor portraying Father Damien Karras, participating in an exorcism.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jason Miller"
+      },
+      {
+        "description": "Actor portraying Father Lankester Merrin, participating in an exorcism.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Max von Sydow"
+      },
+      {
+        "description": "Actor portraying Rocky Balboa, exercising with dumbbells.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Sylvester Stallone"
+      },
+      {
+        "description": "Actor portraying Norman Osborn, looking at his reflection.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Willem Dafoe"
+      },
+      {
+        "description": "Actor portraying Major T.J. 'King' Kong, riding a bomb.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Slim Pickens"
+      },
+      {
+        "description": "Actor portraying a character with a horrified expression, pointing.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Donald Sutherland"
+      },
+      {
+        "description": "Fictional character, a giant gorilla, pulling apart a dinosaur.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "King Kong"
+      },
+      {
+        "description": "Fictional character, a beagle, playing a guitar.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Snoopy"
+      },
+      {
+        "description": "Fictional character, a young boy, dancing.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Charlie Brown"
+      },
+      {
+        "description": "Fictional character, a young girl, dancing.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Lucy van Pelt"
+      },
+      {
+        "description": "Fictional character, a young boy, dancing.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Linus van Pelt"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Smiling Friends",
+        "display_name": "Smiling Friends (Animated Series)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "2020-2026",
+        "confidence": 5
+      },
+      {
+        "name": "The Exorcist",
+        "display_name": "The Exorcist (1973)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Dir. William Friedkin",
+        "confidence": 5
+      },
+      {
+        "name": "Rocky II",
+        "display_name": "Rocky II (1970)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Dir. Sylvester Stallone",
+        "confidence": 5
+      },
+      {
+        "name": "Spider-Man",
+        "display_name": "Spider-Man (2002)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Dir. Sam Raimi",
+        "confidence": 5
+      },
+      {
+        "name": "Event Horizon",
+        "display_name": "Event Horizon (1997)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Dir. Paul W.S. Anderson",
+        "confidence": 5
+      },
+      {
+        "name": "Saving Private Ryan",
+        "display_name": "Saving Private Ryan (1998)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Dir. Steven Spielberg",
+        "confidence": 5
+      },
+      {
+        "name": "Dr. Strangelove",
+        "display_name": "Dr. Strangelove (1964)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Dir. Stanley Kubrick",
+        "confidence": 5
+      },
+      {
+        "name": "Invasion of the Body Snatchers",
+        "display_name": "Invasion of the Body Snatchers (1978)",
+        "type": "movie_or_relevance",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Dir. Philip Kaufman",
+        "confidence": 5
+      },
+      {
+        "name": "Return to Oz",
+        "display_name": "Return to Oz (1985)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Dir. Walter Murch",
+        "confidence": 5
+      },
+      {
+        "name": "Poltergeist",
+        "display_name": "Poltergeist (1982)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Dir. Tobe Hooper",
+        "confidence": 5
+      },
+      {
+        "name": "Full Metal Jacket",
+        "display_name": "Full Metal Jacket (1987)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Dir. Stanley Kubrick",
+        "confidence": 5
+      },
+      {
+        "name": "King Kong",
+        "display_name": "King Kong (2005)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Dir. Peter Jackson",
+        "confidence": 5
+      },
+      {
+        "name": "Bicentennial Man",
+        "display_name": "Bicentennial Man (1999)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Dir. Chris Columbus",
+        "confidence": 5
+      },
+      {
+        "name": "A Charlie Brown Christmas",
+        "display_name": "A Charlie Brown Christmas (1965)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Dir. Bill Melendez",
+        "confidence": 5
+      },
+      {
+        "name": "Pim",
+        "display_name": "Pim (Smiling Friends character)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Glep",
+        "display_name": "Glep (Smiling Friends character)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Alan",
+        "display_name": "Alan (Smiling Friends character)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Charlie",
+        "display_name": "Charlie (Smiling Friends character)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Mr. Boss",
+        "display_name": "Mr. Boss (Smiling Friends character)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Regan MacNeil",
+        "display_name": "Regan MacNeil (The Exorcist character)",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Rocky Balboa",
+        "display_name": "Rocky Balboa (Rocky II character)",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Norman Osborn",
+        "display_name": "Norman Osborn (Spider-Man character)",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Major T.J. 'King' Kong",
+        "display_name": "Major T.J. 'King' Kong (Dr. Strangelove character)",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Peanuts characters",
+        "display_name": "Peanuts characters (A Charlie Brown Christmas)",
+        "type": "cultural_reference",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The animated series 'Smiling Friends' contains numerous visual and thematic parallels to iconic scenes from various live-action films, spanning multiple genres.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "The video highlights the comedic and often dark humor of 'Smiling Friends' by juxtaposing its animation with serious or dramatic moments from classic cinema.",
+        "source": "implied",
+        "confidence": 3
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "The Exorcist",
+          "details": "Dir. William Friedkin (1973)"
+        },
+        {
+          "name": "Rocky II",
+          "details": "Dir. Sylvester Stallone (1970)"
+        },
+        {
+          "name": "Spider-Man",
+          "details": "Dir. Sam Raimi (2002)"
+        },
+        {
+          "name": "Event Horizon",
+          "details": "Dir. Paul W.S. Anderson (1997)"
+        },
+        {
+          "name": "Saving Private Ryan",
+          "details": "Dir. Steven Spielberg (1998)"
+        },
+        {
+          "name": "Dr. Strangelove",
+          "details": "Dir. Stanley Kubrick (1964)"
+        },
+        {
+          "name": "Invasion of the Body Snatchers",
+          "details": "Dir. Philip Kaufman (1978)"
+        },
+        {
+          "name": "Return to Oz",
+          "details": "Dir. Walter Murch (1985)"
+        },
+        {
+          "name": "Poltergeist",
+          "details": "Dir. Tobe Hooper (1982)"
+        },
+        {
+          "name": "Full Metal Jacket",
+          "details": "Dir. Stanley Kubrick (1987)"
+        },
+        {
+          "name": "King Kong",
+          "details": "Dir. Peter Jackson (2005)"
+        },
+        {
+          "name": "Bicentennial Man",
+          "details": "Dir. Chris Columbus (1999)"
+        },
+        {
+          "name": "A Charlie Brown Christmas",
+          "details": "Dir. Bill Melendez (1965)"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "sonido original",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": false,
+      "notes": "The 'actual_song' is null because the audio is a compilation of dialogue and sound effects from the various movie clips, not a single identifiable song. The metadata 'sonido original' accurately reflects this."
+    },
+    "presentation_style": {
+      "primary_format": "compilation",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "humorous, dark, surreal, nostalgic, intense",
+    "topic_hints": [
+      "animation",
+      "film analysis",
+      "cinematic parallels",
+      "comedy",
+      "horror",
+      "action"
+    ],
+    "affect_hints": [
+      "amused",
+      "surprised",
+      "nostalgic",
+      "disturbed",
+      "impressed"
+    ],
+    "genre_hints": [
+      "animation",
+      "comedy",
+      "film analysis",
+      "compilation",
+      "meme"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 13870,
+    "output_tokens": 6999,
+    "total_tokens": 20869,
+    "cost_usd": 0.00628,
+    "latency_ms": 38915,
+    "upload_ms": 5662
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

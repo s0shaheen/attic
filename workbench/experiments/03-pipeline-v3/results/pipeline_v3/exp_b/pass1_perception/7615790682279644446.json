@@ -1,0 +1,25 @@
+{
+  "item_id": "7615790682279644446",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:49:52.674743+00:00",
+  "parsed_output": {
+    "_parse_error": true,
+    "_raw_text": "{\n  \"scene_timeline\": [\n    {\n      \"time_range\": \"0:00-0:07\",\n      \"visual_description\": \"The creator, a young man with curly hair and glasses, sits in a chair in a room, speaking directly to the camera. A bed is visible to his left, and a white door and a white pegboard with headphones and glasses are on the wall behind him.\",\n      \"audio_description\": \"The creator discusses how society and capitalism have reached a point where people are not allowed to simply have a hobby.\",\n      \"text_on_screen\": \"we've reached this really weird point in society and capitalism where you aren't actually allowed to just have a hobby anymore\",\n      \"key_objects\": [\"microphone\", \"glasses\", \"headphones\", \"pegboard\", \"bed\"]\n    },\n    {\n      \"time_range\": \"0:07-0:12\",\n      \"visual_description\": \"A close-up of a dark, somber oil painting depicting a rustic house in a field under a cloudy sky, framed in dark wood. The style is reminiscent of early Van Gogh.\",\n      \"audio_description\": \"The creator continues, stating that if someone likes drawing, people immediately ask when they will start an art page or sell their art.\",\n      \"text_on_screen\": \"if you like drawing people are asking when are you gonna start an art page when are you gonna sell your art\",\n      \"key_objects\": [\"oil painting\", \"wooden frame\"]\n    },\n    {\n      \"time_range\": \"0:12-0:17\",\n      \"visual_description\": \"Multiple overlapping 'Command Prompt' windows are displayed on a black background, showing lines of programming code, likely C++.\",\n      \"audio_description\": \"The creator explains that if you know how to build a PC or write code, you're expected to turn it into a startup.\",\n      \"text_on_screen\": \"if you know how to build a pc or write code you're expected to turn it into a startup\",\n      \"key_objects\": [\"computer code\", \"Command Prompt windows\"]\n    },\n    {\n      \"time_range\": \"0:17-0:22\",\n      \"visual_description\": \"A wide shot of a dark, wet city street at night. Red traffic lights reflect on th"
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 20957,
+    "output_tokens": 4211,
+    "total_tokens": 25168,
+    "cost_usd": 0.00567,
+    "latency_ms": 44221,
+    "upload_ms": 5673
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

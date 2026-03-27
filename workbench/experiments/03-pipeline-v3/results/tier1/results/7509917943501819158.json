@@ -1,0 +1,52 @@
+{
+  "item_id": "7509917943501819158",
+  "parsed_output": {
+    "summary": "Creator @athrgt showcases a minimalist men's outfit featuring a taupe polo shirt paired with beige chinos that have a subtle sheen. The video highlights how fabrics with a slight luster can elevate a simple style, completed with white sneakers and a silver watch.",
+    "entities": [
+      {
+        "name": "@athrgt",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Polo shirt",
+        "type": "clothing",
+        "relevance": "primary"
+      },
+      {
+        "name": "Chinos",
+        "type": "clothing",
+        "relevance": "primary"
+      },
+      {
+        "name": "White sneakers",
+        "type": "clothing",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Silver watch",
+        "type": "clothing",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "fashion",
+      "secondary": null
+    },
+    "genre": "outfit_showcase",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "In this TikTok, creator @athrgt presents a men's fashion look centered on the aesthetic of 'shiny' fabrics. The video features a short-sleeved taupe knit polo shirt tucked into light beige chino trousers that possess a subtle luster. On-screen text reads 'when clothes are a little shiny :', emphasizing the texture of the garments. The creator completes the minimalist ensemble with a silver watch on a jubilee-style bracelet and clean white low-top sneakers. This 9-second outfit showcase is set to the track 'national stripper anthem' by dj d0mcab and serves as style inspiration for simple, elevated casual wear. It is ideal for users searching for polo shirt outfit ideas, chino styling, or minimalist men's wardrobe inspiration."
+  },
+  "metrics": {
+    "input_tokens": 4310,
+    "output_tokens": 465,
+    "total_tokens": 4775,
+    "cost_usd": 0.000925,
+    "latency_ms": 6776,
+    "keyframe_count": 3
+  }
+}

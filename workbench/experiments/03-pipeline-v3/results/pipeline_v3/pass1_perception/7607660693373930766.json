@@ -1,0 +1,288 @@
+{
+  "item_id": "7607660693373930766",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:14:52.835836+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "Ahmad Alzahabi introduces his mother's Fattoush recipe while pouring pomegranate molasses over a large wooden bowl of salad.",
+        "audio_description": "Let me show you how to make my mom's Fattoush recipe. This is top-tier salad and it's not number two.",
+        "text_on_screen": "My Mom\u2019s Fattoush Recipe \ud83e\udee3",
+        "key_objects": [
+          "wooden bowl",
+          "pomegranate molasses",
+          "white pitcher"
+        ]
+      },
+      {
+        "time_range": "0:07-0:14",
+        "visual_description": "Creator demonstrates cutting Romaine lettuce into thin strips and adding them to the bowl.",
+        "audio_description": "To start I got my Romaine lettuce. My mom likes to just kind of turn them into thinner strips and then just make nice thin slices.",
+        "text_on_screen": "Romaine Lettuce",
+        "key_objects": [
+          "Romaine lettuce",
+          "chef's knife",
+          "cutting board"
+        ]
+      },
+      {
+        "time_range": "0:14-0:23",
+        "visual_description": "Creator uses a mandolin to slice radishes, then cuts them into matchsticks before sprinkling them over the lettuce.",
+        "audio_description": "And my favorite vegetable in Fattoush is actually the radish. But I like to thin slice them with a mandolin and then just get really thin matchsticks.",
+        "text_on_screen": "Radish",
+        "key_objects": [
+          "radish",
+          "mandolin slicer"
+        ]
+      },
+      {
+        "time_range": "0:23-0:34",
+        "visual_description": "Creator slices Persian cucumbers into half-moons and adds them to the salad.",
+        "audio_description": "Next you have to use these Persian style cucumbers. Just slice this bad boy in half and then you want to get these cute tiny half coins.",
+        "text_on_screen": "Persian Cucumbers",
+        "key_objects": [
+          "Persian cucumbers"
+        ]
+      },
+      {
+        "time_range": "0:34-0:43",
+        "visual_description": "Creator chops a red bell pepper into small pieces and discusses the therapeutic nature of cutting vegetables.",
+        "audio_description": "To introduce some color we're gonna need some bell pepper. You can keep them slightly large here so they can compete with the rest of the ingredients. Also am I the only one that finds therapy in cutting vegetables?",
+        "text_on_screen": "Red Bell Pepper",
+        "key_objects": [
+          "red bell pepper"
+        ]
+      },
+      {
+        "time_range": "0:43-0:48",
+        "visual_description": "Creator halves cherry tomatoes and places them on top of the firmer vegetables.",
+        "audio_description": "For the cherry tomatoes you can just slice them in half and I'm gonna throw them on top of the firmer vegetables so they don't turn the lettuce soggy.",
+        "text_on_screen": "Cherry Tomatoes",
+        "key_objects": [
+          "cherry tomatoes"
+        ]
+      },
+      {
+        "time_range": "0:48-0:54",
+        "visual_description": "Creator adds chopped green onions, explaining why his family avoids red onions in this dish.",
+        "audio_description": "I'm adding green onion. You can add red onion but my family just feels like the red onion is way too strong.",
+        "text_on_screen": "Green Onion",
+        "key_objects": [
+          "green onions"
+        ]
+      },
+      {
+        "time_range": "0:54-1:02",
+        "visual_description": "Creator finely chops fresh mint and parsley and adds them to the bowl.",
+        "audio_description": "Now last but not least the salad isn't Fattoush without some fresh mint. You kind of just want to roll it up and slice through it. Along with our mint we need some fresh chopped parsley.",
+        "text_on_screen": "Fresh Mint, Fresh Parsley",
+        "key_objects": [
+          "fresh mint",
+          "fresh parsley"
+        ]
+      },
+      {
+        "time_range": "1:02-1:16",
+        "visual_description": "Creator prepares the dressing by mixing lemon juice, olive oil, sumac, grated garlic, salt, and pomegranate molasses in a jar.",
+        "audio_description": "And now the fun begins. To one part freshly squeezed lemon juice you'll do three parts really good olive oil. A very healthy palmful of sumac. You want to grate in some heartburn so it essentially melts. And then we need a hefty pinch of salt. And last but not least some pomegranate molasses.",
+        "text_on_screen": "1 part lemon juice, 3 parts olive oil, Sumac, Garlic, Salt, Pomegranate Molasses",
+        "key_objects": [
+          "lemon juicer",
+          "measuring jar",
+          "sumac",
+          "garlic",
+          "pomegranate molasses"
+        ]
+      },
+      {
+        "time_range": "1:16-1:25",
+        "visual_description": "Creator cuts pita bread into squares and fries them in olive oil, finishing with a sprinkle of za'atar.",
+        "audio_description": "Officially the best part: we're gonna need some fresh pita. You also want to thin strip them and cube them and then just fry them in really hot olive oil. And then when they're almost done my mom has been recently hitting them with some za'atar.",
+        "text_on_screen": "Pita Bread, Za'atar",
+        "key_objects": [
+          "pita bread",
+          "frying pan",
+          "za'atar"
+        ]
+      },
+      {
+        "time_range": "1:25-1:35",
+        "visual_description": "Creator pours the dressing over the salad, tosses it, adds the pita chips, dried mint, and a final drizzle of pomegranate molasses before tasting.",
+        "audio_description": "Dress it all up when you're ready to eat. Gentle toss. And then finish with your crispy chips. Lots of dried mint. And then finally some pomegranate molasses. And as always, Bismillah.",
+        "text_on_screen": "Dried Mint",
+        "key_objects": [
+          "wooden salad tongs",
+          "dried mint"
+        ]
+      }
+    ],
+    "overall_summary": "Ahmad Alzahabi (@thegoldenbalance) demonstrates how to make his mother's authentic Fattoush recipe. The video provides a step-by-step guide on prepping the vegetables, including Romaine lettuce, radishes, Persian cucumbers, and bell peppers with specific cutting techniques. He then shows how to make a traditional dressing and homemade za'atar-seasoned pita chips. The video concludes with the assembly of the salad, emphasizing the importance of fresh herbs and pomegranate molasses for the signature flavor.",
+    "people": [
+      {
+        "description": "Ahmad Alzahabi, a male creator with dark curly hair and a beard, wearing a black t-shirt and an Apple Watch.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Ahmad Alzahabi"
+      }
+    ],
+    "entities": [
+      {
+        "name": "@thegoldenbalance",
+        "display_name": "Ahmad Alzahabi",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Fattoush",
+        "display_name": "Fattoush Salad",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Levantine bread salad",
+        "confidence": 5
+      },
+      {
+        "name": "Pomegranate Molasses",
+        "display_name": "Pomegranate Molasses",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "used in dressing and as a garnish",
+        "confidence": 5
+      },
+      {
+        "name": "Sumac",
+        "display_name": "Sumac",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "tangy Middle Eastern spice",
+        "confidence": 5
+      },
+      {
+        "name": "Za'atar",
+        "display_name": "Za'atar",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "spice blend used on pita chips",
+        "confidence": 5
+      },
+      {
+        "name": "Apple Watch Ultra",
+        "display_name": "Apple Watch Ultra",
+        "type": "product",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "worn on creator's left wrist",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Fattoush is considered a 'top-tier' salad, especially when made with specific traditional techniques.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Precise vegetable cutting (like matchstick radishes and half-moon cucumbers) contributes to the texture and quality of the salad.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "Layering tomatoes on top of firmer vegetables prevents the lettuce from becoming soggy.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Salad Base",
+          "details": "Romaine lettuce (thin strips), Radishes (matchsticks), Persian cucumbers (half-moons), Red bell pepper (chopped), Cherry tomatoes (halved), Green onions (chopped), Fresh mint (finely chopped), Fresh parsley (finely chopped)."
+        },
+        {
+          "name": "Dressing",
+          "details": "1 part lemon juice, 3 parts olive oil, palmful of sumac, grated garlic, pinch of salt, pomegranate molasses."
+        },
+        {
+          "name": "Pita Chips",
+          "details": "Pita bread cut into squares, fried in olive oil, seasoned with za'atar."
+        },
+        {
+          "name": "Garnish",
+          "details": "Dried mint and extra pomegranate molasses."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Ya Rayah (Instrumental) \u2014 Dahmane El Harrachi (Style)",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The music is a common upbeat Arabic instrumental track frequently used in Middle Eastern cooking videos."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "overhead",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Bright, energetic, and appetizing with a focus on fresh ingredients.",
+    "topic_hints": [
+      "Middle Eastern Cooking",
+      "Healthy Recipes",
+      "Ramadan Traditions"
+    ],
+    "affect_hints": [
+      "Hungry",
+      "Inspired",
+      "Nostalgic"
+    ],
+    "genre_hints": [
+      "Cooking Tutorial",
+      "Food Vlogger"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9935,
+    "output_tokens": 2739,
+    "total_tokens": 12674,
+    "cost_usd": 0.003134,
+    "latency_ms": 34656,
+    "upload_ms": 7807
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

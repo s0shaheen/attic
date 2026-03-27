@@ -1,0 +1,209 @@
+{
+  "item_id": "7578784458959031574",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:48:43.908207+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:08",
+        "visual_description": "A woman wearing a baseball cap and a t-shirt is seen from a slightly low angle, appearing to be on an exercise bike in a gym setting. She looks towards the camera, occasionally smiling and nodding slightly.",
+        "audio_description": "Upbeat R&B/hip-hop music plays throughout the video with a male vocalist singing 'nothing on you'.",
+        "text_on_screen": "feng shui is real.\ndelete photos. delete\napps. give some clothes\naway. delete numbers.\nmake your phone display\nneater. organise your\nseasonings. organise your\nclothes. organise your life\nso you can think clearer.",
+        "key_objects": [
+          "exercise bike",
+          "baseball cap",
+          "AirPods"
+        ]
+      }
+    ],
+    "overall_summary": "This video features a woman on an exercise bike in a gym, sharing advice related to Feng Shui principles. Overlaid text encourages viewers to declutter various aspects of their digital and physical lives, such as deleting photos and apps, giving away clothes, and organizing seasonings and clothes. The main point is that organizing one's life according to these principles can lead to clearer thinking. The video is set to an upbeat R&B song.",
+    "people": [
+      {
+        "description": "A woman with a brown baseball cap, dark t-shirt, and AirPods, appearing to be exercising in a gym. She is looking at the camera and smiling.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Feng Shui",
+        "display_name": "Feng Shui",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "caption",
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Carhartt",
+        "display_name": "Carhartt",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Logo visible on baseball cap",
+        "confidence": 4
+      },
+      {
+        "name": "AirPods",
+        "display_name": "Apple AirPods",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "exercise bike",
+        "display_name": "Exercise Bike",
+        "type": "product",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Nothing On You",
+        "display_name": "Nothing On You \u2014 B.o.B ft. Bruno Mars",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "B.o.B",
+        "display_name": "B.o.B",
+        "type": "artist",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Bruno Mars",
+        "display_name": "Bruno Mars",
+        "type": "artist",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Feng Shui is a real and effective practice for improving one's life.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Decluttering and organizing various aspects of your life, both digital and physical, can lead to clearer thinking.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Delete photos",
+          "details": "Digital decluttering"
+        },
+        {
+          "name": "Delete apps",
+          "details": "Digital decluttering"
+        },
+        {
+          "name": "Give some clothes away",
+          "details": "Physical decluttering"
+        },
+        {
+          "name": "Delete numbers",
+          "details": "Digital decluttering"
+        },
+        {
+          "name": "Make your phone display neater",
+          "details": "Digital organization"
+        },
+        {
+          "name": "Organise your seasonings",
+          "details": "Physical organization"
+        },
+        {
+          "name": "Organise your clothes",
+          "details": "Physical organization"
+        },
+        {
+          "name": "Organise your life",
+          "details": "Overall life organization for clearer thinking"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Nothing On You \u2014 B.o.B ft. Bruno Mars",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The creator's specific name beyond the handle is not provided, so 'identified_as' is null for the person."
+    },
+    "presentation_style": {
+      "primary_format": "text_overlay",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Positive, encouraging, active, motivational",
+    "topic_hints": [
+      "Feng Shui",
+      "Decluttering",
+      "Organization"
+    ],
+    "affect_hints": [
+      "Motivating",
+      "Inspiring",
+      "Calming"
+    ],
+    "genre_hints": [
+      "Self-improvement",
+      "Lifestyle advice",
+      "Tips and tricks"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3908,
+    "output_tokens": 1578,
+    "total_tokens": 5486,
+    "cost_usd": 0.001533,
+    "latency_ms": 16182,
+    "upload_ms": 3093
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

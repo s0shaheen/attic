@@ -1,0 +1,262 @@
+{
+  "item_id": "7188553977032740102",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:05:02.747949+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:10",
+        "visual_description": "Matthew McConaughey delivers his Best Actor acceptance speech at the 86th Academy Awards.",
+        "audio_description": "McConaughey recounts a story about being asked who his hero is and answering, 'It's me in 10 years.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Oscar statuette",
+          "Microphone"
+        ]
+      },
+      {
+        "time_range": "0:11-0:15",
+        "visual_description": "Montage of Michael B. Jordan as Adonis Creed training in a hoodie and Matt Damon as Will Hunting solving a complex equation on a chalkboard.",
+        "audio_description": "Ambient music begins. Sound of chalk on a board.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Chalkboard",
+          "Jordan/Nike hoodie"
+        ]
+      },
+      {
+        "time_range": "0:16-0:19",
+        "visual_description": "Steve Jobs stands on stage in front of a large screen showing the original iPod.",
+        "audio_description": "Jobs asks, 'What is it you want to contribute?'",
+        "text_on_screen": "2001",
+        "key_objects": [
+          "iPod",
+          "Projector screen"
+        ]
+      },
+      {
+        "time_range": "0:20-0:25",
+        "visual_description": "Ryan Gosling and Emma Stone in a movie theater; cut to behind-the-scenes footage of Star Wars model makers building a Star Destroyer.",
+        "audio_description": "Voiceover continues: 'What's the movie that we have never seen because you haven't made it?'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Star Destroyer model",
+          "Cinema seats"
+        ]
+      },
+      {
+        "time_range": "0:26-0:35",
+        "visual_description": "Lionel Messi celebrates with the World Cup trophy; Kevin Garnett screams in celebration after winning the NBA Finals.",
+        "audio_description": "Kevin Garnett shouts, 'Anything is possible! Anything is possible!'",
+        "text_on_screen": "ESPN, abc",
+        "key_objects": [
+          "FIFA World Cup Trophy",
+          "NBA Championship hat",
+          "Celtics jersey"
+        ]
+      },
+      {
+        "time_range": "0:36-0:43",
+        "visual_description": "Mountain climbers on a snowy peak; historical footage of a massive Dornier Do X flying boat on water.",
+        "audio_description": "JFK voiceover: 'They may well ask, why climb the highest mountain? Why, 35 years ago, fly the Atlantic?'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Climbing gear",
+          "Seaplane"
+        ]
+      },
+      {
+        "time_range": "0:44-1:08",
+        "visual_description": "John F. Kennedy delivers his 'Moon Speech' at Rice University; intercut with Apollo 11 rocket launch, NASA mission control celebrating, and moon landing footage.",
+        "audio_description": "JFK: 'We choose to go to the moon... not because they are easy, but because they are hard.'",
+        "text_on_screen": "sonicbomb.com, IDG",
+        "key_objects": [
+          "Saturn V rocket",
+          "American flag",
+          "Lunar lander"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a motivational 'corecore' style edit that compiles iconic moments of human achievement, cinematic excellence, and historical milestones. It begins with Matthew McConaughey's philosophy on personal growth and transitions into a montage featuring Steve Jobs, Lionel Messi, and Kevin Garnett. The final half focuses on John F. Kennedy's 'Moon Speech,' emphasizing that humanity pursues difficult goals specifically because they are challenging, serving as an anthem for ambition and perseverance.",
+    "people": [
+      {
+        "description": "Actor in a white tuxedo giving an Oscar speech",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Matthew McConaughey"
+      },
+      {
+        "description": "US President giving a speech at a podium",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "John F. Kennedy"
+      },
+      {
+        "description": "Apple CEO introducing the iPod",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Steve Jobs"
+      },
+      {
+        "description": "Professional footballer holding the World Cup trophy",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Lionel Messi"
+      },
+      {
+        "description": "NBA player celebrating a championship",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Kevin Garnett"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Matthew McConaughey",
+        "display_name": "Matthew McConaughey",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "86th Academy Awards",
+        "confidence": 5
+      },
+      {
+        "name": "John F. Kennedy",
+        "display_name": "John F. Kennedy",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Rice University Moon Speech, 1962",
+        "confidence": 5
+      },
+      {
+        "name": "iPod",
+        "display_name": "Apple iPod (1st Generation)",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Released 2001",
+        "confidence": 5
+      },
+      {
+        "name": "Lionel Messi",
+        "display_name": "Lionel Messi",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "2022 FIFA World Cup Winner",
+        "confidence": 5
+      },
+      {
+        "name": "Apollo 11",
+        "display_name": "Apollo 11 Mission",
+        "type": "event",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Moon landing, 1969",
+        "confidence": 5
+      },
+      {
+        "name": "QKThr",
+        "display_name": "QKThr - Aphex Twin",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "audio"
+        ],
+        "specifications": "from the album Drukqs",
+        "confidence": 5
+      },
+      {
+        "name": "Star Wars",
+        "display_name": "Star Wars",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Original trilogy model making",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Personal growth is a lifelong journey where your 'hero' is always a future version of yourself.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Humanity's greatest achievements come from choosing to do things not because they are easy, but because they are hard.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Anything is possible through dedication, whether in sports, technology, or exploration.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "QKThr \u2014 Aphex Twin",
+      "metadata_song": "QKThr",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All major historical and pop culture figures were identified with high certainty."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Inspiring, nostalgic, and grand; uses historical and cinematic triumphs to create an emotional sense of awe.",
+    "topic_hints": [
+      "Motivation",
+      "Human History",
+      "Ambition"
+    ],
+    "affect_hints": [
+      "Inspired",
+      "Determined",
+      "Nostalgic"
+    ],
+    "genre_hints": [
+      "Corecore",
+      "Positivecore",
+      "Motivational Edit"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 7548,
+    "output_tokens": 2105,
+    "total_tokens": 9653,
+    "cost_usd": 0.002395,
+    "latency_ms": 31682,
+    "upload_ms": 8119
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

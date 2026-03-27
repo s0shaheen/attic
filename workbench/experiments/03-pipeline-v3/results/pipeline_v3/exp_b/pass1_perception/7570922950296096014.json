@@ -1,0 +1,502 @@
+{
+  "item_id": "7570922950296096014",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:57:24.308505+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "An animated human skeletal and muscular system is shown, highlighting the psoas muscle in yellow and other muscles in blue and grey. A red arrow points to the psoas muscle.",
+        "audio_description": "Most people don't realize just how impactful their psoas muscle can be on creating and keeping someone in an imbalanced and asymmetrical posture.",
+        "text_on_screen": "DON'T REALIZE\nIMPACTFUL\nMUSCLE",
+        "key_objects": [
+          "animated human skeleton",
+          "psoas muscle"
+        ]
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "The creator stands shirtless, facing the camera, with an animated human pelvis overlaid on his lower torso. A dashed red line indicates an asymmetrical hip alignment.",
+        "audio_description": "...imbalanced and asymmetrical posture.",
+        "text_on_screen": "SOMEONE\nIMBALANCED\nASYMMETRICAL",
+        "key_objects": [
+          "creator",
+          "animated human pelvis"
+        ]
+      },
+      {
+        "time_range": "0:06-0:10",
+        "visual_description": "The creator stands next to a full human skeleton model. The psoas muscles are highlighted in orange on the skeleton's lumbar spine and femur.",
+        "audio_description": "Now most people think of the psoas as the primary hip flexor muscle.",
+        "text_on_screen": "NOW MOST\nOF THE PSOAS\nPRIMARY",
+        "key_objects": [
+          "creator",
+          "human skeleton model",
+          "psoas muscle"
+        ]
+      },
+      {
+        "time_range": "0:10-0:18",
+        "visual_description": "The creator explains the psoas muscle's role in pelvic and lumbar spine rotation using the skeleton model. A red curved arrow illustrates the rotation of the pelvis and lumbar spine.",
+        "audio_description": "And while that is true, it can also have a significant role on the rotation and turning of the pelvis and lumbar spine.",
+        "text_on_screen": "MUSCLE\nTHAT IS TRUE\nSIGNIFICANT\nROLE ON\nTHE ROTATION\nAND TURNING\nOF THE PELVIS\nSPINE",
+        "key_objects": [
+          "creator",
+          "human skeleton model"
+        ]
+      },
+      {
+        "time_range": "0:18-0:26",
+        "visual_description": "The creator demonstrates the psoas muscle's attachment points on the skeleton model using a red resistance band, showing it attaching from the lumbar spine to the femur.",
+        "audio_description": "To understand how, we need to understand the attachment sites of the psoas. Attaches on the side of our lumbar spine, it runs down and attaches on the inside portion of our femur or thigh bone.",
+        "text_on_screen": "TO UNDERSTAND\nUNDERSTAND\nSITES OF THE\nPSOAS\nTHE SIDE\nSPINE\nAND ATTACHES\nPORTION",
+        "key_objects": [
+          "creator",
+          "human skeleton model",
+          "resistance band"
+        ]
+      },
+      {
+        "time_range": "0:26-0:35",
+        "visual_description": "The creator pulls the resistance band on the skeleton model to simulate psoas contraction, demonstrating how it turns the lumbar spine and pelvis. A red curved arrow shows the rotation.",
+        "audio_description": "Now if I were to pull these two attachment sites closer together, which would represent a muscular contraction of the psoas, that's going to turn my lumbar spine towards the other side.",
+        "text_on_screen": "OR THIGH\nI WERE TO\nATTACHMENT\nOF THE PSOAS\nGOING TO TURN\nMY LUMBAR\nSPINE TOWARDS\nSIDE",
+        "key_objects": [
+          "creator",
+          "human skeleton model",
+          "resistance band"
+        ]
+      },
+      {
+        "time_range": "0:35-0:43",
+        "visual_description": "The creator explains how a rotated and hiked-up pelvis is often caused by a tighter psoas on the opposite side, gesturing to the skeleton model. A red curved arrow indicates pelvic rotation.",
+        "audio_description": "So typically people that have a pelvis that's rotated towards one side and usually also hiked up on that side, have a psoas that's tighter on the opposite side.",
+        "text_on_screen": "THAT HAVE\nROTATED\nONE SIDE\nALSO HIKED UP\nON THAT SIDE\nTHAT'S\nTIGHTER ON\nSIDE",
+        "key_objects": [
+          "creator",
+          "human skeleton model"
+        ]
+      },
+      {
+        "time_range": "0:43-0:50",
+        "visual_description": "The creator stands shirtless with an animated pelvis overlaid, showing a pelvis rotated towards the right side, indicating an imbalance.",
+        "audio_description": "For example, if I have a pelvis that's constantly rotated towards the right side, creating an imbalance...",
+        "text_on_screen": "FOR EXAMPLE\nPELVIS THAT'S\nROTATED\nRIGHT SIDE\nCREATING AN",
+        "key_objects": [
+          "creator",
+          "animated human pelvis"
+        ]
+      },
+      {
+        "time_range": "0:50-0:56",
+        "visual_description": "The creator points to the left psoas muscle on the skeleton model, explaining that a tight left psoas can cause the pelvis to turn to the right. A red curved arrow shows the right pelvic rotation.",
+        "audio_description": "...then I likely have a psoas that's tighter on the left side because that is creating that turn to the right.",
+        "text_on_screen": "THEN I LIKELY\nHAVE A PSOAS\nTHAT'S\nTHE LEFT SIDE\nBECAUSE THAT\nIS CREATING\nTO THE RIGHT",
+        "key_objects": [
+          "creator",
+          "human skeleton model"
+        ]
+      },
+      {
+        "time_range": "0:56-1:05",
+        "visual_description": "The creator demonstrates on the skeleton model how pelvic rotation also causes the pelvis to come forward into hip flexion. A red arrow shows the forward movement of the pelvis.",
+        "audio_description": "As the pelvis turns towards the other side, you're also going to see the pelvis come forward on that side into a position of hip flexion, which is also what the psoas does.",
+        "text_on_screen": "AS THE PELVIS\nTURNS TOWARDS\nSIDE, YOU'RE\nTHE PELVIS\nCOME FORWARD\nINTO\nHIP FLEXION\nWHICH IS ALSO\nPSOAS DOES",
+        "key_objects": [
+          "creator",
+          "human skeleton model"
+        ]
+      },
+      {
+        "time_range": "1:05-1:14",
+        "visual_description": "The creator outlines the two-part solution for pelvic imbalance, gesturing to the skeleton model. A red curved arrow indicates the desired backward rotation of the pelvis.",
+        "audio_description": "So the solution is two things. First, we want to help pull the pelvis back on the side of the tighter psoas, but we also want to create a better ability to turn our pelvis towards that side.",
+        "text_on_screen": "THE SOLUTION\nTWO THINGS\nHELP PULL\nBACK ON\nTIGHTER\nWE ALSO WANT\nA BETTER\nTO TURN\nOUR PELVIS\nTHAT SIDE",
+        "key_objects": [
+          "creator",
+          "human skeleton model"
+        ]
+      },
+      {
+        "time_range": "1:14-1:24",
+        "visual_description": "The creator kneels next to the skeleton model, demonstrating how hamstrings can pull the pelvis back using a resistance band. A red arrow shows the backward pull on the pelvis.",
+        "audio_description": "The hamstring is going to be key players here because they help pull the pelvis back on that side, and by nature of the pelvis being pulled back, it can create better space to turn towards that side.",
+        "text_on_screen": "THE HAMSTRINGS\nTO BE KEY\nBECAUSE\nPULL THE\nPELVIS BACK\nAND BY NATURE\nPULLED BACK\nBETTER SPACE\nTOWARDS THAT SIDE",
+        "key_objects": [
+          "creator",
+          "human skeleton model",
+          "resistance band"
+        ]
+      },
+      {
+        "time_range": "1:24-1:37",
+        "visual_description": "The creator lies on his back with his feet flat against a white wall, knees and hips bent at 90 degrees. A blue foam roller is placed between his mid-to-upper thighs. An animated diagram of a foot highlights three contact points.",
+        "audio_description": "Lay on your back with your feet on the wall and get a 90-degree bend at both your knees and your hips. Place a foam roller in between your mid to upper thighs. What you want to do is feel these three points of contact gently on the wall on both feet, but focus mostly on your heels.",
+        "text_on_screen": "LAY ON\nON THE WALL\nYOUR KNEES\nPLACE\nIN BETWEEN\nYOUR MID\nWHAT YOU WANT\nIS FEEL THESE\nOF CONTACT\nGENTLY ON\nON BOTH FEET\nMOSTLY ON\nHEELS",
+        "key_objects": [
+          "creator",
+          "white wall",
+          "blue foam roller"
+        ]
+      },
+      {
+        "time_range": "1:37-1:50",
+        "visual_description": "The creator demonstrates activating hamstrings by dragging heels down the wall, which lifts the tailbone and flattens the lower back. A red arrow shows the downward drag of the heels, and another red arrow shows the tailbone lifting.",
+        "audio_description": "First, we're going to activate our hamstrings to rotate the pelvis back. So we're going to drag down on the wall with our heels, keeping our whole foot flat. And we're going to have our tailbone lift off of the ground because we're dragging down on the heels.",
+        "text_on_screen": "FIRST\nHAMSTRINGS\nTHE PELVIS\nSO WE'RE\nGOING TO DRAG\nON THE WALL\nHEELS\nWHOLE FOOT\nAND WE'RE\nHAVE OUR\nTAILBONE LIFT\nBECAUSE\nDRAGGING DOWN\nON THE HEELS",
+        "key_objects": [
+          "creator",
+          "white wall",
+          "blue foam roller"
+        ]
+      },
+      {
+        "time_range": "1:50-2:02",
+        "visual_description": "The creator reiterates that the dragging motion, not pushing, is key to lifting the tailbone and flattening the lower back. A red arrow emphasizes the downward dragging motion.",
+        "audio_description": "The act of dragging down is what's going to lift our tailbone off of the ground, flatten out our low back. We're not trying to just push into the wall and get our hips up. It's the act of dragging down.",
+        "text_on_screen": "THE ACT OF\nIS WHAT'S\nGOING TO LIFT\nTHE GROUND\nFLATTEN OUT OUR LOW\nWE'RE NOT\nTO JUST\nPUSH INTO THE WALL\nHIPS UP\nTHE ACT OF\nDRAGGING",
+        "key_objects": [
+          "creator",
+          "white wall",
+          "blue foam roller"
+        ]
+      },
+      {
+        "time_range": "2:02-2:10",
+        "visual_description": "The creator explains that the low back should be flat and hamstrings gently engaged before proceeding to the next step.",
+        "audio_description": "Now, at this point again, your low back is flat and relaxed, and your hamstrings are just gently engaged. Now what you're going to do is to get that pelvis to rotate back on one side...",
+        "text_on_screen": "NOW, AT THIS\nYOUR LOW\nAND RELAXED\nARE JUST\nENGAGED\nNOW WHAT\nTO DO\nTHAT PELVIS\nBACK ON",
+        "key_objects": [
+          "creator",
+          "white wall",
+          "blue foam roller"
+        ]
+      },
+      {
+        "time_range": "2:10-2:24",
+        "visual_description": "The creator demonstrates the second part of the exercise: gently dragging down on the foam roller with one knee while pushing the other knee towards the ceiling. Red arrows show the opposing forces and the resulting hip rotation.",
+        "audio_description": "...is you're just going to gently drag down on the foam roller with one knee as you gently push the other knee towards the ceiling. It's going to turn your hips towards that side and activate more hamstring on that side, and a little bit of inner thigh on that same side as well.",
+        "text_on_screen": "IS YOU'RE\nTO GENTLY\nDRAG DOWN\nON THE FOAM\nWITH ONE KNEE\nGENTLY PUSH\nTHE OTHER\nTHE CEILING\nYOUR HIPS\nTHAT SIDE\nAND ACTIVATE\nON THAT SIDE\nOF INNER\nSAME SIDE",
+        "key_objects": [
+          "creator",
+          "white wall",
+          "blue foam roller"
+        ]
+      },
+      {
+        "time_range": "2:24-2:39",
+        "visual_description": "The creator explains the muscle activation (hamstring and inner thigh adductor) and the gentle nature of the rotational movement, emphasizing maintaining a flat foot on both sides.",
+        "audio_description": "So now you should have your hamstring and inner thigh adductor muscle working on the side you are rotating towards. It's just a gentle turn, it's not aggressive at all. Maybe just a three out of ten, two out of ten effort. Check in with yourself and make sure your whole foot is flat on both sides still, if you have more pressure on that side you're turning towards.",
+        "text_on_screen": "SO NOW\nHAMSTRING\nTHIGH\nMUSCLE\nTHE SIDE\nTOWARDS\nGENTLE TURN\nAGGRESSIVE\nMAYBE JUST A\nOF TEN, TWO\nCHECK IN\nIS FLAT\nSTILL\nON THAT SIDE\nTOWARDS",
+        "key_objects": [
+          "creator",
+          "white wall",
+          "blue foam roller"
+        ]
+      },
+      {
+        "time_range": "2:39-2:52",
+        "visual_description": "The creator instructs on breathing techniques (long, relaxed breaths) and holding the position for 2 sets of 5-10 breath cycles, ensuring neck relaxation and chin pointing passively at the ceiling.",
+        "audio_description": "Now take long, relaxed breaths, in through your nose, out through your mouth in this position, making sure that your neck is relaxed, your chin still is passively pointing at the ceiling. You're going to hold this for about two sets of five to ten breath cycles.",
+        "text_on_screen": "LONG\nRELAXED\nNOSE, OUT\nIN THIS\nPOSITION\nYOUR NECK\nAND YOUR CHIN IS\nPASSIVELY\nCEILING\nHOLD THIS FOR\nABOUT 2\nTO 10\nCYCLES",
+        "key_objects": [
+          "creator",
+          "white wall",
+          "blue foam roller"
+        ]
+      },
+      {
+        "time_range": "2:52-3:00",
+        "visual_description": "The creator demonstrates a modification for the exercise, suggesting placing a mat or similar object underneath the heels for better traction, as long as the entire foot remains flat.",
+        "audio_description": "And some people may benefit from placing something underneath their heels, as long as their whole foot can stay flat, that'll give them something to drag down into.",
+        "text_on_screen": "BENEFIT\nUNDERNEATH\nAS LONG\nCAN STAY\nTHAT'LL\nDRAG DOWN\nINTO",
+        "key_objects": [
+          "creator",
+          "white wall",
+          "blue foam roller",
+          "black mat"
+        ]
+      }
+    ],
+    "overall_summary": "This video explains how the psoas muscle can contribute to imbalanced and asymmetrical posture, specifically focusing on its role in pelvic rotation and hip flexion. The creator uses animated anatomical models and a skeleton to illustrate the psoas's attachment points and its effect on the lumbar spine and pelvis. He then demonstrates a two-part exercise using a foam roller and a wall to help correct pelvic rotation by activating the hamstrings and inner thigh adductors, promoting better pelvic alignment and stability. The exercise involves dragging heels down a wall to flatten the lower back, followed by a gentle rotational movement of the hips using the foam roller.",
+    "people": [
+      {
+        "description": "A muscular man with short brown hair, wearing a dark grey t-shirt and black shorts. He is the presenter and demonstrator of the exercises and anatomical explanations.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Conor Harris"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Psoas muscle",
+        "display_name": "Psoas Muscle",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pelvis",
+        "display_name": "Pelvis",
+        "type": "body_part",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lumbar spine",
+        "display_name": "Lumbar Spine",
+        "type": "body_part",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Femur",
+        "display_name": "Femur (Thigh Bone)",
+        "type": "body_part",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Hamstrings",
+        "display_name": "Hamstrings",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Inner thigh adductor muscles",
+        "display_name": "Inner Thigh Adductor Muscles",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Hip flexion",
+        "display_name": "Hip Flexion",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Pelvic rotation",
+        "display_name": "Pelvic Rotation",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Foam roller",
+        "display_name": "Foam Roller",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Wall",
+        "display_name": "Wall",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Resistance band",
+        "display_name": "Resistance Band",
+        "type": "product",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "red",
+        "confidence": 3
+      },
+      {
+        "name": "Human skeleton model",
+        "display_name": "Human Skeleton Model",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Wall-supported hamstring activation",
+        "display_name": "Wall-Supported Hamstring Activation",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "demonstration",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "2 sets of 5-10 breath cycles",
+        "confidence": 5
+      },
+      {
+        "name": "Pelvic rotation exercise",
+        "display_name": "Pelvic Rotation Exercise (with foam roller)",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "demonstration",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "gentle turn, 2-3 out of 10 effort",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The psoas muscle is not only a primary hip flexor but also plays a significant role in the rotation and turning of the pelvis and lumbar spine, contributing to postural imbalances.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "A tight psoas on one side can cause the pelvis to rotate towards the opposite side and come forward into hip flexion.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "To correct pelvic rotation and imbalance, it's important to pull the pelvis back on the side of the tighter psoas and improve the ability to turn the pelvis towards that side.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Activating the hamstrings by dragging heels down a wall can help rotate the pelvis backward and flatten the lower back.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Gently dragging down on a foam roller with one knee while pushing the other knee towards the ceiling can help turn the hips and activate hamstrings and inner thigh adductors on the rotating side.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Wall-Supported Hamstring Activation",
+          "details": "Lay on back with feet on wall, knees and hips at 90 degrees. Place foam roller between mid-to-upper thighs. Feel three points of contact on feet, focusing on heels. Drag heels down the wall to lift tailbone and flatten lower back. Hold for 2 sets of 5-10 breath cycles."
+        },
+        {
+          "name": "Pelvic Rotation Exercise",
+          "details": "From the hamstring activation position, gently drag down on the foam roller with one knee while gently pushing the other knee towards the ceiling. This turns the hips and activates hamstrings and inner thigh adductors on the rotating side. Perform with a gentle 2-3 out of 10 effort. Maintain flat feet and relaxed neck. Hold for 2 sets of 5-10 breath cycles."
+        },
+        {
+          "name": "Modification for Heel Traction",
+          "details": "Place a mat or similar object underneath heels to provide something to drag down into, ensuring the whole foot stays flat."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The creator's name is inferred from the handle @conor_harris_."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static|panning",
+      "editing_style": "minimal|text_overlays"
+    },
+    "visual_mood": "informative|educational|clear|focused",
+    "topic_hints": [
+      "anatomy",
+      "posture correction",
+      "psoas muscle",
+      "hamstrings",
+      "pelvic alignment"
+    ],
+    "affect_hints": [
+      "educational",
+      "helpful",
+      "empowering"
+    ],
+    "genre_hints": [
+      "fitness tutorial",
+      "health education",
+      "anatomy lesson"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 54551,
+    "output_tokens": 5857,
+    "total_tokens": 60408,
+    "cost_usd": 0.011697,
+    "latency_ms": 53668,
+    "upload_ms": 8080
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

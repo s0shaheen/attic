@@ -1,0 +1,252 @@
+{
+  "item_id": "7603405187213970718",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:48:54.825031+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "The creator, Cody Sabol, begins a speed painting on a large black canvas, rapidly applying red and orange paint to form the initial shapes of a figure.",
+        "audio_description": "Upbeat, epic orchestral music with a heroic theme plays.",
+        "text_on_screen": "Painting Andrew Garfield Spider-Man in 7 Minutes\u203c\ufe0f",
+        "key_objects": [
+          "black canvas",
+          "easel",
+          "paint bottles",
+          "stage",
+          "blue curtain"
+        ]
+      },
+      {
+        "time_range": "0:05-0:08",
+        "visual_description": "The creator continues to build the red and orange form on the canvas, then briefly turns to the camera and gives a thumbs up.",
+        "audio_description": "The epic orchestral music continues.",
+        "text_on_screen": "Painted LIVE at a middle school\u203c\ufe0f",
+        "key_objects": [
+          "black canvas",
+          "easel",
+          "paint bottles",
+          "stage",
+          "blue curtain"
+        ]
+      },
+      {
+        "time_range": "0:08-0:13",
+        "visual_description": "The creator starts to define the head and mask of Spider-Man by adding white and blue paint to the emerging figure.",
+        "audio_description": "The epic orchestral music continues.",
+        "text_on_screen": "Because I had to teach these kids who the best Spider-Man is\u203c\ufe0f",
+        "key_objects": [
+          "black canvas",
+          "easel",
+          "paint bottles",
+          "stage",
+          "blue curtain"
+        ]
+      },
+      {
+        "time_range": "0:13-0:20",
+        "visual_description": "The creator refines the details of the Spider-Man suit, focusing on the red and black areas and the character's hand.",
+        "audio_description": "The epic orchestral music continues.",
+        "text_on_screen": "Also, shout out to 8th grader Levi who filmed this on my iPhone.",
+        "key_objects": [
+          "black canvas",
+          "easel",
+          "paint bottles",
+          "stage",
+          "blue curtain"
+        ]
+      },
+      {
+        "time_range": "0:20-0:27",
+        "visual_description": "The creator adds more blue paint to the background around Spider-Man's head and shoulders, and sharpens the white eye lenses on the mask.",
+        "audio_description": "The epic orchestral music continues.",
+        "text_on_screen": "Who should I paint next\u2049\ufe0f",
+        "key_objects": [
+          "black canvas",
+          "easel",
+          "paint bottles",
+          "stage",
+          "blue curtain"
+        ]
+      },
+      {
+        "time_range": "0:27-0:32",
+        "visual_description": "The creator applies the final details to the Spider-Man painting, including the web lines on the suit, and steps back to observe the completed artwork.",
+        "audio_description": "The epic orchestral music continues to build in intensity.",
+        "text_on_screen": null,
+        "key_objects": [
+          "black canvas",
+          "easel",
+          "paint bottles",
+          "stage",
+          "blue curtain"
+        ]
+      },
+      {
+        "time_range": "0:32-0:38",
+        "visual_description": "The creator dramatically throws yellow paint onto the finished canvas, then bows to an unseen audience, revealing the completed Andrew Garfield Spider-Man portrait.",
+        "audio_description": "The epic orchestral music reaches a crescendo and then fades out.",
+        "text_on_screen": null,
+        "key_objects": [
+          "black canvas",
+          "easel",
+          "paint bottles",
+          "stage",
+          "blue curtain",
+          "yellow paint"
+        ]
+      }
+    ],
+    "overall_summary": "This video showcases artist Cody Sabol (codysabolart) performing a live speed painting of Andrew Garfield's Spider-Man in just 7 minutes. The artist, on a stage in a middle school, rapidly transforms a black canvas into a vibrant portrait of the superhero, using bold strokes and splashes of color. The video highlights the artist's skill and his playful assertion that Andrew Garfield is the 'best Spider-Man,' concluding with a dramatic final paint throw and a bow to the audience.",
+    "people": [
+      {
+        "description": "Male artist, wearing a khaki jacket and paint-splattered pants, actively painting on a large canvas. He is the creator of the video.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Cody Sabol"
+      },
+      {
+        "description": "An 8th-grade student who filmed the video on the creator's iPhone. Not visible in the video.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Levi"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Andrew Garfield",
+        "display_name": "Andrew Garfield",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Spider-Man",
+        "display_name": "Spider-Man",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "iPhone",
+        "display_name": "iPhone",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "middle school",
+        "display_name": "Middle School",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Spider-Man Theme - Epic Version (from \"No Way Home Trailer\")",
+        "display_name": "Spider-Man Theme - Epic Version (from \"No Way Home Trailer\")",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The creator can paint a detailed portrait of Andrew Garfield's Spider-Man in a very short amount of time (7 minutes).",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "The creator believes Andrew Garfield is the best Spider-Man.",
+        "source": "text_overlay",
+        "confidence": 4
+      },
+      {
+        "statement": "The creator performs live art demonstrations, engaging with students.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Spider-Man Theme - Epic Version (from \"No Way Home Trailer\")",
+      "metadata_song": "Spider-Man Theme - Epic Version (from \"No Way Home Trailer\")",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "All key entities and audio were clearly identifiable from the video and metadata."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Energetic, inspiring, engaging, dynamic",
+    "topic_hints": [
+      "art",
+      "painting",
+      "speed painting",
+      "Spider-Man",
+      "Andrew Garfield",
+      "live performance"
+    ],
+    "affect_hints": [
+      "excitement",
+      "awe",
+      "inspiration",
+      "entertainment"
+    ],
+    "genre_hints": [
+      "art tutorial",
+      "performance art",
+      "fan art",
+      "entertainment"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 12999,
+    "output_tokens": 1938,
+    "total_tokens": 14937,
+    "cost_usd": 0.003113,
+    "latency_ms": 23471,
+    "upload_ms": 5535
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "item_id": "7596066672281226527",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:24:47.077921+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "career",
+      "micro_labels": [
+        "AI",
+        "Claude AI",
+        "productivity",
+        "automation",
+        "file management",
+        "software"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "how-to",
+        "software demo"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "screen_recording",
+      "voiceover"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6414,
+    "output_tokens": 327,
+    "total_tokens": 6741,
+    "cost_usd": 0.001158,
+    "latency_ms": 5356,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "item_id": "7606077954380123405",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:18.124638+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "finance",
+      "micro_labels": [
+        "AI economics",
+        "LLM infrastructure",
+        "GPU compute",
+        "token pricing",
+        "SaaS business models"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": [
+        "presentation",
+        "lecture",
+        "tech talk"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "neutral",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "slideshow"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 72332,
+    "output_tokens": 330,
+    "total_tokens": 72662,
+    "cost_usd": 0.011048,
+    "latency_ms": 14182,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 63
+  }
+}

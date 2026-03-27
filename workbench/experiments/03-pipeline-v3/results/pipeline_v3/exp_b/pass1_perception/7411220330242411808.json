@@ -1,0 +1,304 @@
+{
+  "item_id": "7411220330242411808",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:55:24.725348+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:22",
+        "visual_description": "The creator, @pallipau, is a talking head, gesturing with her hands. Behind her, a YouTube video interface is visible, displaying the title 'Daniel Gross - How to Win (Startups)'.",
+        "audio_description": "The creator introduces a quote from Daniel Gross's talk: 'Nobody wants to work for a tired idiot who is sleeping at the office.' She states it's one of her favorite quotes for startups and founders, noting the talk was for Y Combinator years ago.",
+        "text_on_screen": "Nobody wants to work for a tired idiot who is sleeping at the office.\nTimeless talk by Daniel Gross\nDaniel Gross - How to Win (Startups)\n#entrepreneur #win #startups\nAbbonieren (Subscribe)\nTeilen (Share)\nSpeichern (Save)",
+        "key_objects": [
+          "ring"
+        ]
+      },
+      {
+        "time_range": "0:22-0:31",
+        "visual_description": "The creator continues as a talking head. An inset video shows Daniel Gross speaking at a podium with a microphone.",
+        "audio_description": "The creator describes Daniel Gross as a well-known angel investor who now runs his own incubator and was a successful founder early in his career.",
+        "text_on_screen": "stakes.",
+        "key_objects": [
+          "microphone",
+          "podium"
+        ]
+      },
+      {
+        "time_range": "0:31-0:50",
+        "visual_description": "The creator is a talking head against a black background, gesturing to emphasize her points.",
+        "audio_description": "The creator explains that in his 'How To Win' talk, Daniel Gross discusses how startup founders (and any type of leader) should ruthlessly invest in themselves to effectively serve their team and company.",
+        "text_on_screen": "How To Win",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:50-1:20",
+        "visual_description": "The creator is a talking head, gesturing. The background again shows the YouTube video interface with the talk title and additional overlaid text.",
+        "audio_description": "The creator explains that Gross likens startup founders to athletes who need to take care of themselves. She reiterates the quote about not wanting to work for a tired idiot, emphasizing that it's uninspiring to work with someone operating at low brain capacity.",
+        "text_on_screen": "1. You're an athlete.\n2. Startups are the Olympics.\n3. Novice athletes make repeated mistakes.\nDaniel Gross - How to Win (Startups)\nKommentare 1 (Comments 1)\nthis dude read Atomic Habits",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:20-1:55",
+        "visual_description": "The creator is a talking head, gesturing with her hands, with the YouTube interface and overlaid text still visible in the background.",
+        "audio_description": "The creator mentions another piece of advice from Gross: to try to be in 'third-party camera mode' as often as possible, detaching from emotions to objectively assess situations and determine what is and isn't working.",
+        "text_on_screen": "1. You're an athlete.\n2. Startups are the Olympics.\n3. Novice athletes make repeated mistakes.\nDaniel Gross - How to Win (Startups)",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:55-2:02",
+        "visual_description": "The creator is a talking head, smiling and looking directly at the camera.",
+        "audio_description": "The creator recommends listening to the entire talk for anyone in a position of responsibility looking to improve their performance. She also thanks her 'work husband Viet' for showing her the talk.",
+        "text_on_screen": "1. You're an athlete.\n2. Startups are the Olympics.\n3. Novice athletes make repeated mistakes.\nDaniel Gross - How to Win (Startups)",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video provides insights into leadership and self-optimization for startup founders, drawing from Daniel Gross's 'How to Win (Startups)' talk. The creator emphasizes Gross's core message that 'Nobody wants to work for a tired idiot,' advocating for ruthless self-investment and self-care, likening founders to athletes. She also highlights Gross's advice to adopt a 'third-party camera mode' to detach from emotions and make objective decisions. The video serves as a recommendation for the full talk, encouraging leaders to improve their performance by prioritizing their well-being and objective analysis.",
+    "people": [
+      {
+        "description": "A woman with blonde hair, wearing a light grey knitted quarter-zip sweater, speaking directly to the camera and gesturing with her hands.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@pallipau"
+      },
+      {
+        "description": "A young man with short brown hair, wearing a brown collared shirt, speaking into a microphone at a podium in an inset video.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Daniel Gross"
+      },
+      {
+        "description": "Mentioned by the creator as her 'work husband' who introduced her to the talk.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Viet"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Daniel Gross",
+        "display_name": "Daniel Gross (Angel Investor, Founder)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "How to Win (Startups)",
+        "display_name": "How to Win (Startups) talk by Daniel Gross",
+        "type": "talk",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Y Combinator",
+        "display_name": "Y Combinator",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Startups",
+        "display_name": "Startups",
+        "type": "concept",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Angel Investor",
+        "display_name": "Angel Investor",
+        "type": "role",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Founder",
+        "display_name": "Founder",
+        "type": "role",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Athlete",
+        "display_name": "Athlete",
+        "type": "concept",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Olympics",
+        "display_name": "Olympics",
+        "type": "event",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Viet",
+        "display_name": "Viet",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Nobody wants to work for a tired idiot who is sleeping at the office.",
+        "display_name": "Quote: Nobody wants to work for a tired idiot who is sleeping at the office.",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Third-party camera mode",
+        "display_name": "Third-party camera mode (decision-making technique)",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Leaders, especially startup founders, should ruthlessly invest in themselves to be effective and serve their teams and companies better.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Being a tired and unproductive leader is uninspiring and detrimental to a team's morale and performance.",
+        "source": "voiceover|text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Startup founders should treat themselves like athletes, prioritizing self-care and well-being to maintain peak performance.",
+        "source": "voiceover|text_overlay",
+        "confidence": 4
+      },
+      {
+        "statement": "Adopting a 'third-party camera mode' allows leaders to detach from emotions and objectively analyze situations for better decision-making.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Ruthless self-investment",
+          "details": "Invest in yourself as a leader to better serve your team and company."
+        },
+        {
+          "name": "Avoid being a 'tired idiot'",
+          "details": "Don't be uninspiring by working at low brain capacity; prioritize rest and effectiveness."
+        },
+        {
+          "name": "Treat yourself as an athlete",
+          "details": "Take care of yourself as if you were a successful athlete, focusing on well-being and performance."
+        },
+        {
+          "name": "Use 'third-party camera mode'",
+          "details": "Detach from emotions and view situations objectively to make better decisions."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The 'original sound' metadata is accurate as the audio is primarily the creator's voice without identifiable background music."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Informative, direct, encouraging",
+    "topic_hints": [
+      "Leadership",
+      "Startups",
+      "Self-improvement",
+      "Productivity",
+      "Entrepreneurship",
+      "Sleep"
+    ],
+    "affect_hints": [
+      "Informative",
+      "Motivational",
+      "Direct",
+      "Encouraging"
+    ],
+    "genre_hints": [
+      "Educational",
+      "Advice",
+      "Commentary",
+      "Business"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 37492,
+    "output_tokens": 2771,
+    "total_tokens": 40263,
+    "cost_usd": 0.007286,
+    "latency_ms": 33417,
+    "upload_ms": 7796
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

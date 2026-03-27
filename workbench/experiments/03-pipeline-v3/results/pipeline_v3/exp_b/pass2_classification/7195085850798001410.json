@@ -1,0 +1,79 @@
+{
+  "item_id": "7195085850798001410",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:07.399715+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "sports",
+      "secondary": "movies_tv",
+      "micro_labels": [
+        "winning moments",
+        "hopecore",
+        "perseverance",
+        "success",
+        "nba",
+        "olympics"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "compilation",
+        "montage",
+        "fan edit"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "wholesome",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "voiceover",
+      "text_overlay",
+      "mixed"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8665,
+    "output_tokens": 373,
+    "total_tokens": 9038,
+    "cost_usd": 0.001524,
+    "latency_ms": 10045,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 5
+  }
+}

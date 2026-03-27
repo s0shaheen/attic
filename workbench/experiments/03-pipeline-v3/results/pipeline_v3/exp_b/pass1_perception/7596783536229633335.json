@@ -1,0 +1,25 @@
+{
+  "item_id": "7596783536229633335",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:55:49.497657+00:00",
+  "parsed_output": {
+    "_parse_error": true,
+    "_raw_text": "{\n  \"scene_timeline\": [\n    {\n      \"time_range\": \"0:00-7:56\",\n      \"visual_description\": \"A man with short hair and a beard, wearing a brown corduroy jacket over a plaid shirt, sits in a room with white walls. He speaks directly to the camera, gesturing with his hands. Behind him, various items are visible, including a red microphone, a drum set, and framed artwork, notably one with a mushroom illustration.\",\n      \"audio_description\": \"The speaker discusses how the software engineering landscape has changed, with AI-resistant developers being outpaced by interns using AI tools. He explains that success now hinges on 'direction, taste, and momentum' rather than just skills. He shares his personal transition from teaching coding due to concerns about its future relevance. He then outlines three truths: AI is a mirror, not a threat, exposing that vision, taste, and architectural thinking are more valuable than technical skills; the race is already happening, and those who wait are losing, using a cooking show analogy to illustrate the importance of proactive action; and finally, that an individual's value lies in their agency, not their skills. He defines high agency as proactively solving problems and adapting to change, rather than waiting for instructions, emphasizing that high-agency individuals are irreplaceable.\",\n      \"text_on_screen\": \"THE RULES OF, THE SOFTWARE ENGINEERING, GAME HAVE FUNDAMENTALLY CHANGED., WE'RE NOW WATCHING, A.I. RESISTANT, SOFTWARE DEVELOPERS WITH, 15 YEARS OF EXPERIENCE, GET LAUGHABLY OUTPACED, BY INTERNS USING, CLAUDE AND CURSOR., NOT THAT THE INTERN IS SMARTER,, THE INTERN JUST, UNDERSTANDS SOMETHING THAT THE SENIOR DEV DOESN'T., WE'RE NOT IN A PURELY SKILLS, GAME ANYMORE., WE ARE IN A DIRECTION, TASTE, AND MOMENTUM RACE., AND MOST PEOPLE, ARE RUNNING IN, THE WRONG DIRECTION., SO IF YOU ARE A DEVELOPER,, IF YOU'RE A, A DESIGNER,, IF YOU'RE ANYONE, LIVING WITH ABSTRACT, REASONING AND TECHNICAL SKILLS,, YOU HAVE UNDOUBTEDLY, FELT THIS."
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 141606,
+    "output_tokens": 4575,
+    "total_tokens": 146181,
+    "cost_usd": 0.023986,
+    "latency_ms": 65554,
+    "upload_ms": 23539
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

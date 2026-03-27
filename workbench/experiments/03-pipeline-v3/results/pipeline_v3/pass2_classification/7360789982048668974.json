@@ -1,0 +1,72 @@
+{
+  "item_id": "7360789982048668974",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:27.678775+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "music",
+      "micro_labels": [
+        "Dune: Part Two",
+        "Paul Atreides",
+        "Lisan al-Gaib",
+        "Fan Edit",
+        "Kendrick Lamar"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "cinematic edit",
+        "audio edit"
+      ],
+      "confidence": 0.98
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "cinematic",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "remix",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9619,
+    "output_tokens": 340,
+    "total_tokens": 9959,
+    "cost_usd": 0.001647,
+    "latency_ms": 7690,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 6
+  }
+}

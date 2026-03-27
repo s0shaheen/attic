@@ -1,0 +1,281 @@
+{
+  "item_id": "7618356804837264671",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:47:15.163883+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Spider-Man, in his red and blue suit, stands on a rooftop overlooking a city skyline, then pulls his mask down to cover his face.",
+        "audio_description": "A melancholic, slowed-down song plays. A male voiceover states, \"Spiders have three life cycles.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Spider-Man suit",
+          "New York City skyline"
+        ]
+      },
+      {
+        "time_range": "0:02-0:03",
+        "visual_description": "Spider-Man runs across a rooftop with the city in the background.",
+        "audio_description": "The melancholic song continues with the male voiceover.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Spider-Man suit",
+          "rooftop"
+        ]
+      },
+      {
+        "time_range": "0:03-0:05",
+        "visual_description": "Spider-Man leaps off a building and begins to swing through the urban landscape.",
+        "audio_description": "The melancholic song continues with the male voiceover.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Spider-Man suit",
+          "city buildings"
+        ]
+      },
+      {
+        "time_range": "0:05-0:06",
+        "visual_description": "A close-up shot of a human eye, reflecting city lights, suggesting Peter Parker's perspective.",
+        "audio_description": "The melancholic song continues with the male voiceover.",
+        "text_on_screen": null,
+        "key_objects": [
+          "human eye"
+        ]
+      },
+      {
+        "time_range": "0:06-0:08",
+        "visual_description": "Spider-Man stands on a rooftop, extending his arm as if shooting a web.",
+        "audio_description": "The melancholic song continues with the male voiceover.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Spider-Man suit"
+        ]
+      },
+      {
+        "time_range": "0:08-0:09",
+        "visual_description": "Spider-Man is seen swinging through the sky, high above the city.",
+        "audio_description": "The melancholic song continues with the male voiceover.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Spider-Man suit"
+        ]
+      },
+      {
+        "time_range": "0:09-0:10",
+        "visual_description": "Peter Parker, unmasked, looks distressed in a dimly lit environment.",
+        "audio_description": "The melancholic song continues with the male voiceover.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Peter Parker"
+        ]
+      },
+      {
+        "time_range": "0:10-0:11",
+        "visual_description": "Spider-Man and MJ stand facing each other on a rooftop at night, with the illuminated city skyline behind them.",
+        "audio_description": "The melancholic song continues with the male voiceover.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Spider-Man suit",
+          "MJ",
+          "New York City skyline"
+        ]
+      },
+      {
+        "time_range": "0:11-0:13",
+        "visual_description": "Spider-Man swings through the city while carrying MJ.",
+        "audio_description": "The melancholic song continues. The male voiceover states, \"Rebirth.\"",
+        "text_on_screen": null,
+        "key_objects": [
+          "Spider-Man suit",
+          "MJ",
+          "city buildings"
+        ]
+      },
+      {
+        "time_range": "0:13-0:14",
+        "visual_description": "A black screen.",
+        "audio_description": "The melancholic song continues.",
+        "text_on_screen": null,
+        "key_objects": []
+      },
+      {
+        "time_range": "0:14-0:16",
+        "visual_description": "A man with a stern expression is seen driving a car, looking forward intently.",
+        "audio_description": "The melancholic song continues.",
+        "text_on_screen": null,
+        "key_objects": [
+          "car"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a fan edit featuring clips of Spider-Man (Peter Parker, portrayed by Tom Holland) and MJ (portrayed by Zendaya) from the Marvel Cinematic Universe films. It showcases Spider-Man swinging through New York City, moments of Peter Parker unmasked, and emotional interactions with MJ. The edit is set to a melancholic, slowed-down song and includes a voiceover about spiders having three life cycles and rebirth, suggesting a thematic exploration of Peter Parker's journey and potential transformations. The final clip of a man driving a car appears to be an unrelated, dramatic visual used for aesthetic effect.",
+    "people": [
+      {
+        "description": "Peter Parker / Spider-Man, a young man in a red and blue superhero suit, also seen unmasked looking distressed.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Tom Holland"
+      },
+      {
+        "description": "MJ, a young woman with dark hair, seen interacting with Spider-Man.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Zendaya"
+      },
+      {
+        "description": "A man with a stern expression driving a car.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Spider-Man",
+        "display_name": "Spider-Man (Marvel Comics character)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Peter Parker",
+        "display_name": "Peter Parker (Tom Holland)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "MJ",
+        "display_name": "MJ (Zendaya)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Marvel Cinematic Universe",
+        "display_name": "Marvel Cinematic Universe (MCU)",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "New York City",
+        "display_name": "New York City",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Perfect Girl",
+        "display_name": "The Perfect Girl by Mareux",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Brand New Day",
+        "display_name": "Spider-Man: Brand New Day (comic storyline)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video explores the emotional journey and potential 'rebirth' of Spider-Man/Peter Parker, highlighting his struggles and relationships.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "The Perfect Girl \u2014 Mareux",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The source of the male voiceover 'Spiders have three life cycles. Rebirth.' is not definitively identified but appears to be a philosophical statement rather than a direct movie quote. The final clip of the man driving is likely from an unrelated film."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "montage"
+    },
+    "visual_mood": "melancholic, dramatic, reflective, intense",
+    "topic_hints": [
+      "Spider-Man",
+      "Marvel Cinematic Universe",
+      "superheroes",
+      "emotional journey"
+    ],
+    "affect_hints": [
+      "sadness",
+      "reflection",
+      "drama",
+      "intensity",
+      "hope"
+    ],
+    "genre_hints": [
+      "fan edit",
+      "superhero",
+      "drama",
+      "cinematic"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6196,
+    "output_tokens": 2242,
+    "total_tokens": 8438,
+    "cost_usd": 0.002275,
+    "latency_ms": 23609,
+    "upload_ms": 5313
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

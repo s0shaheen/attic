@@ -1,0 +1,52 @@
+{
+  "item_id": "7602724902357060882",
+  "parsed_output": {
+    "summary": "Creator @j.movement.rs shares Part 3 of his scapular winging rehabilitation journey, documenting his progress as of December 29. He demonstrates specific corrective movements including foam roller wall extensions, prone T raises, and Y raises to improve scapular mobility.",
+    "entities": [
+      {
+        "name": "@j.movement.rs",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Foam roller",
+        "type": "product",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Prone T raises",
+        "type": "exercise",
+        "relevance": "primary"
+      },
+      {
+        "name": "Y raises",
+        "type": "exercise",
+        "relevance": "primary"
+      },
+      {
+        "name": "Diaphragmatic breathing",
+        "type": "technique",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "fitness",
+      "secondary": "health"
+    },
+    "genre": "workout",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "inspiring"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this fitness and health video, creator @j.movement.rs shares an update on his scapular winging rehab journey, specifically Part 3 dated December 29. The video serves as a tutorial for those looking to improve scapular mobility and fix winging shoulder blades through physical therapy exercises. Key movements demonstrated include foam roller extensions performed against a wall and prone T and Y raises to strengthen the back and shoulder stabilizers. The creator also mentions incorporating diaphragmatic breathing into the routine based on community suggestions. On-screen text identifies the video as 'Scapular winging update Part 3'. The footage shows the creator shirtless from behind to clearly display the movement of the shoulder blades and the visible progress of his rehabilitation. This content is highly relevant for users searching for shoulder rehab, mobility training, or scapular stability workouts."
+  },
+  "metrics": {
+    "input_tokens": 4330,
+    "output_tokens": 487,
+    "total_tokens": 4817,
+    "cost_usd": 0.000942,
+    "latency_ms": 7762,
+    "keyframe_count": 3
+  }
+}

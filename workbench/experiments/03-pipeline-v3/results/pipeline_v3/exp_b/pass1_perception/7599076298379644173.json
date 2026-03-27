@@ -1,0 +1,379 @@
+{
+  "item_id": "7599076298379644173",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:49:08.451667+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "The creator, a man with glasses and a beard, speaks directly to the camera, explaining Instagram's new features. Overlaid text and graphical representations of Instagram features (repost, visible likes, location map) appear on screen.",
+        "audio_description": "The creator states that Instagram added a repost button, visible likes on Reels, and a location map because they are desperate to make the platform appear to have real people on it.",
+        "text_on_screen": "The reason Instagram added a repost button\nI love this vibe\nand visible likes on reels\nand a location map\nto make it look like their platform still has real people on it",
+        "key_objects": [
+          "Instagram app interface elements"
+        ]
+      },
+      {
+        "time_range": "0:07-0:16",
+        "visual_description": "The creator continues to speak to the camera, gesturing with his hands. A citation for a Forbes article appears on screen, supporting his claims about AI-generated content.",
+        "audio_description": "The creator explains that users initially joined Instagram to connect with friends, but randomized feeds and 'slop' were introduced. He cites Forbes, stating that 70% of social media posts are now AI-generated.",
+        "text_on_screen": "I mean,\nwe all came to Instagram\nto connect with our friends,\nbut then they randomized our feeds\nand crammed slop down our throats,\nand now, according to Forbes,\n70% of all social media posts are AI generated\nDrenik, Gary. \u201cThe Secret to Profitability in Gen AI Lies in Customer Centricity.\u201d Forbes. April 1, 2025.",
+        "key_objects": [
+          "Forbes article citation"
+        ]
+      },
+      {
+        "time_range": "0:16-0:22",
+        "visual_description": "The creator maintains eye contact with the camera, expressing concern and disappointment through his facial expressions and gestures.",
+        "audio_description": "He elaborates that this situation is causing increasing disillusionment among users who seek human connection on the platform but are consistently disappointed.",
+        "text_on_screen": "That's making us\nincreasingly disillusioned with the platform\nto go on there\nto find human connection\nand yet are consistently disappointed",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:22-0:30",
+        "visual_description": "The creator continues to speak, with two more academic citations appearing on screen, reinforcing his argument about Instagram's legitimacy crisis.",
+        "audio_description": "The creator states that fewer people are posting online, leading to Instagram facing a 'legitimacy crisis' where they need to convince users they are still a form of 'social media' for friends.",
+        "text_on_screen": "As a result,\nfewer people are posting online,\nand Instagram is facing a legitimacy crisis\nwhere they need ways to convince you\nthat they are still a form of \"social media\"\nbetween you and your friends\nKay, Katty. \u201cWhy Did Our Friends Stop Posting on Social Media?\u201d BBC. July 23, 2025.\nCite\nAbiri, Gilad, and Sebasti\u00e1n Guidi. \u201cFrom a Network to a Dilemma: The Legitimacy of Social Media.\u201d Stem. Tech. L. Rev. 58 (2026): 62.",
+        "key_objects": [
+          "BBC article citation",
+          "Academic article citation"
+        ]
+      },
+      {
+        "time_range": "0:30-0:40",
+        "visual_description": "The creator uses hand gestures to emphasize his points while discussing the manipulative nature of Instagram's features.",
+        "audio_description": "He calls the Snap Map rip-off obvious, but describes the repost and visible like features as 'insidious' because they create the impression that algorithmically recommended content is validated by real people you know.",
+        "text_on_screen": "And the rip-off of the Snap Map is obvious,\nBut the repost and visible like features\nare far more insidious\nbecause they're meant to give the impression\nthat your algorithmically recommended content\nhas somehow been validated\nby real people you know",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:40-0:47",
+        "visual_description": "The creator continues his explanation, with another academic citation appearing on screen.",
+        "audio_description": "He explains that this makes it feel more acceptable to consume 'slop' if friends appear to have endorsed it, creating an illusion of social interaction that isn't real.",
+        "text_on_screen": "It feels more okay to consume slop\nif you see that your friends have signed off on it,\nbecause that creates the illusion\nthat you're still having a social interaction,\neven though you're really not\nCastell\u00f3, Itziar, Michael Etter, and Finn Arup Nielsen. \u201cStrategizing Legitimacy: How social media platforms gain legitimacy.\u201d Journal of management studies 53.3 (2016): 402-432.",
+        "key_objects": [
+          "Academic article citation"
+        ]
+      },
+      {
+        "time_range": "0:47-1:02",
+        "visual_description": "The creator concludes his argument, maintaining a direct address to the viewer.",
+        "audio_description": "He introduces the technique of 'discursive legitimation,' where social media platforms appear more legitimate by presenting themselves as neutral connectors rather than intermediaries. He warns that every reposted video means one less real post from someone you care about.",
+        "text_on_screen": "This is a technique called \"discursive legitimation,\"\nand social media platforms\nappear more legitimate\nlike neutral institutions\nconnecting networks of people together,\nrather than intermediaries\naffecting everything we see\nBut just remember that\nevery time you see a reposted video\nis one time you're not seeing a real post\nby someone you care about",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video critically analyzes Instagram's recent feature additions, such as the repost button, visible likes on Reels, and a location map, arguing they are a desperate attempt to mask a decline in genuine user engagement. The creator explains that Instagram's shift from connecting friends to prioritizing algorithmic content and AI-generated posts has led to user disillusionment and a 'legitimacy crisis'. He introduces the concept of 'discursive legitimation,' where platforms create an illusion of social interaction and neutrality to maintain their perceived value, ultimately warning that these features displace authentic content from real connections.",
+    "people": [
+      {
+        "description": "A man with glasses and a beard, wearing a dark blue sweatshirt with a yellow emblem, speaking directly to the camera in an informative and critical tone.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Instagram",
+        "display_name": "Instagram (Social Media Platform)",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Adam Mosseri",
+        "display_name": "Adam Mosseri (Head of Instagram)",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Forbes",
+        "display_name": "Forbes (Business Magazine)",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "BBC",
+        "display_name": "BBC (British Broadcasting Corporation)",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Snap Map",
+        "display_name": "Snap Map (Snapchat Feature)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "AI",
+        "display_name": "Artificial Intelligence",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Drenik, Gary",
+        "display_name": "Gary Drenik",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Secret to Profitability in Gen AI Lies in Customer Centricity",
+        "display_name": "Article: The Secret to Profitability in Gen AI Lies in Customer Centricity",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Published in Forbes, April 1, 2025",
+        "confidence": 4
+      },
+      {
+        "name": "Kay, Katty",
+        "display_name": "Katty Kay",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Why Did Our Friends Stop Posting on Social Media?",
+        "display_name": "Article: Why Did Our Friends Stop Posting on Social Media?",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Published by BBC, July 23, 2025",
+        "confidence": 4
+      },
+      {
+        "name": "Abiri, Gilad",
+        "display_name": "Gilad Abiri",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Sebasti\u00e1n Guidi",
+        "display_name": "Sebasti\u00e1n Guidi",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "From a Network to a Dilemma: The Legitimacy of Social Media",
+        "display_name": "Article: From a Network to a Dilemma: The Legitimacy of Social Media",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Published in Stem. Tech. L. Rev. 58 (2026): 62",
+        "confidence": 4
+      },
+      {
+        "name": "Stem. Tech. L. Rev.",
+        "display_name": "Stem. Tech. L. Rev. (Academic Journal)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Academic Journal",
+        "confidence": 4
+      },
+      {
+        "name": "Castell\u00f3, Itziar",
+        "display_name": "Itziar Castell\u00f3",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Michael Etter",
+        "display_name": "Michael Etter",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Finn Arup Nielsen",
+        "display_name": "Finn Arup Nielsen",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Strategizing Legitimacy: How social media platforms gain legitimacy",
+        "display_name": "Article: Strategizing Legitimacy: How social media platforms gain legitimacy",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Published in Journal of management studies 53.3 (2016): 402-432",
+        "confidence": 4
+      },
+      {
+        "name": "Journal of management studies",
+        "display_name": "Journal of management studies (Academic Journal)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Academic Journal",
+        "confidence": 4
+      },
+      {
+        "name": "discursive legitimation",
+        "display_name": "Discursive Legitimation (Sociological Technique)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Instagram's new features like the repost button, visible likes, and location map are a desperate attempt to create the illusion of real user activity and social connection on a platform facing declining genuine engagement.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Social media platforms, including Instagram, are experiencing a 'legitimacy crisis' due to the prevalence of algorithmic feeds and AI-generated content, leading to user disillusionment.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The technique of 'discursive legitimation' is employed by social media platforms to appear as neutral institutions connecting people, rather than intermediaries controlling content, thereby maintaining their perceived legitimacy.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Every reposted video on Instagram signifies a missed opportunity to see genuine content from people a user cares about, further eroding authentic social interaction.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Article titles were categorized as 'cultural_reference' as 'publication_title' was not an available type. Academic journals were also categorized as 'cultural_reference'."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Informative, critical, serious, analytical",
+    "topic_hints": [
+      "social media analysis",
+      "Instagram features",
+      "digital culture",
+      "AI in social media"
+    ],
+    "affect_hints": [
+      "critical",
+      "disillusioned",
+      "informative",
+      "skeptical"
+    ],
+    "genre_hints": [
+      "educational",
+      "commentary",
+      "tech analysis"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 19789,
+    "output_tokens": 3784,
+    "total_tokens": 23573,
+    "cost_usd": 0.005239,
+    "latency_ms": 41910,
+    "upload_ms": 5670
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "item_id": "7577521318690688311",
+  "parsed_output": {
+    "summary": "A high-energy fan edit of the movie Baby Driver featuring the iconic red Subaru WRX and cassette tape motifs. It is a cinematic montage of driving stunts and rhythmic cuts set to music, likely saved by fans of the film or those looking for editing inspiration.",
+    "entities": [
+      {
+        "name": "Baby Driver",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Subaru WRX",
+        "type": "product",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Edgar Wright",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Cassette Tape",
+        "type": "product",
+        "relevance": "supporting"
+      },
+      {
+        "name": "itsdunn",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "music"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "nostalgic",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "This TikTok is a high-energy cinematic edit of the 2017 film Baby Driver, created by @itsdunn. The video features a montage of iconic scenes, including the red Subaru WRX performing high-speed drifts and stunts in urban settings. A central theme is the protagonist's use of music, shown through close-ups of vintage cassette tapes and a portable player. The edit uses rhythmic cuts synced to an upbeat soundtrack, capturing the signature style of director Edgar Wright. On-screen text displays the word 'BABY' in bold red letters. This content is ideal for fans of movie mashups, automotive action, and highly stylized film montages. It serves as both entertainment and inspiration for video editors looking to replicate the film's unique visual and auditory blending."
+  },
+  "metrics": {
+    "input_tokens": 4354,
+    "output_tokens": 481,
+    "total_tokens": 4835,
+    "cost_usd": 0.000942,
+    "latency_ms": 14800,
+    "keyframe_count": 3
+  }
+}

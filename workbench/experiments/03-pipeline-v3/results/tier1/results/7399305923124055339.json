@@ -1,0 +1,52 @@
+{
+  "item_id": "7399305923124055339",
+  "parsed_output": {
+    "summary": "Tyler Path (@tylerpath) shares three essential tips to improve a weak overhead press (OHP) and avoid wrist injuries. He demonstrates proper barbell technique, focusing on joint alignment, head positioning, and core engagement while training in a gym.",
+    "entities": [
+      {
+        "name": "Tyler Path",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Overhead Press",
+        "type": "exercise",
+        "relevance": "primary"
+      },
+      {
+        "name": "New Balance 550",
+        "type": "product",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Hammer Strength",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Barbell",
+        "type": "product",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "fitness",
+      "secondary": "health"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": null
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this fitness tutorial, creator Tyler Path (@tylerpath) explains how to fix a weak overhead press (OHP) by focusing on three technical improvements. First, he emphasizes maintaining a stacked wrist and elbow to prevent wrist pain. Second, he demonstrates following through with the head 'in the hole' at the top of the rep. Third, he advises squeezing the glutes to maintain a tight core and stable platform. Tyler is filmed in a gym using a barbell and a Hammer Strength power rack, wearing green shorts and New Balance 550 sneakers. The video includes English and Spanish on-screen text like 'Weak overhead press' and 'Hurting your wrist' (lastimarte la mu\u00f1eca). This content is a practical guide for bodybuilders and gym-goers looking to optimize their shoulder pressing mechanics and safety."
+  },
+  "metrics": {
+    "input_tokens": 4307,
+    "output_tokens": 475,
+    "total_tokens": 4782,
+    "cost_usd": 0.000931,
+    "latency_ms": 10191,
+    "keyframe_count": 3
+  }
+}

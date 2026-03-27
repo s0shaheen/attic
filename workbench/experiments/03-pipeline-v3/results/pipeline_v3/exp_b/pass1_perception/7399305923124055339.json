@@ -1,0 +1,353 @@
+{
+  "item_id": "7399305923124055339",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:56:49.308838+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "The creator demonstrates an overhead press with a barbell inside a power rack, exhibiting a 'weak' form.",
+        "audio_description": "Dramatic instrumental music plays.",
+        "text_on_screen": "Weak overhead press",
+        "key_objects": [
+          "barbell",
+          "weight plates",
+          "power rack",
+          "gym equipment"
+        ]
+      },
+      {
+        "time_range": "0:01-0:04",
+        "visual_description": "A close-up shot of the creator holding the barbell at shoulder height, then looking at the camera.",
+        "audio_description": "Dramatic instrumental music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "barbell"
+        ]
+      },
+      {
+        "time_range": "0:04-0:07",
+        "visual_description": "The creator performs an overhead press, highlighting the 'weak' form with extended wrists and the head not moving through the hole.",
+        "audio_description": "Dramatic instrumental music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "barbell",
+          "weight plates",
+          "power rack"
+        ]
+      },
+      {
+        "time_range": "0:07-0:12",
+        "visual_description": "The creator performs another repetition of the overhead press, continuing to demonstrate the 'weak' form.",
+        "audio_description": "Dramatic instrumental music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "barbell",
+          "weight plates",
+          "power rack"
+        ]
+      },
+      {
+        "time_range": "0:12-0:13",
+        "visual_description": "The creator holds the barbell overhead at the end of a repetition.",
+        "audio_description": "Dramatic instrumental music continues.",
+        "text_on_screen": "INCOMING EXPLANATION",
+        "key_objects": [
+          "barbell",
+          "weight plates",
+          "power rack"
+        ]
+      },
+      {
+        "time_range": "0:13-0:16",
+        "visual_description": "The creator stands in front of the power rack, then turns to face the camera and begins to speak.",
+        "audio_description": "The creator says: \"Okay, so if your overhead press is weak, this is the video for you.\"",
+        "text_on_screen": "OKAY SO\nOVERHEAD PRESS\nFOR YOU\nDE ACUERDO, SI TU PRESI\u00d3N A\u00c9REA ES D\u00c9BIL\nESTE ES EL VIDEO PARA TI",
+        "key_objects": [
+          "power rack"
+        ]
+      },
+      {
+        "time_range": "0:16-0:20",
+        "visual_description": "The creator holds the barbell at shoulder height, preparing to demonstrate wrist position.",
+        "audio_description": "The creator says: \"There's a couple key things that a lot of people tend to make the mistake of. First off, it's their wrist, right?\"",
+        "text_on_screen": "THINGS A\nTHE MISTAKE OF\nFIRST OFF IT'S THEIR\nWRIST RIGHT\nHAY UN PAR DE COSAS CLAVE DE LAS QUE MUCHA GENTE TIENDE A COMETER EL ERROR\nEN PRIMER LUGAR, ES SU MU\u00d1ECA, \u00bfVERDAD?",
+        "key_objects": [
+          "barbell"
+        ]
+      },
+      {
+        "time_range": "0:20-0:28",
+        "visual_description": "The creator demonstrates the incorrect extended wrist position, then corrects it to a neutral wrist position, emphasizing proper alignment of the elbow and wrist joints with the forearm.",
+        "audio_description": "The creator says: \"You don't want your wrist to be extended like this. Instead, you want to make sure that you're keeping a neutral wrist and the elbow joint as well as the wrist joint is both stacked by your forearm.\"",
+        "text_on_screen": "WRIST TO BE EXTENDED\nINSTEAD YOU\nSURE THAT\nA NEUTRAL WRIST\nAND THE ELBOW JOINT\nWRIST JOINT\nSTACKED BY\nYOUR FOREARM\nNO QUIERES QUE TU MU\u00d1ECA SE EXTIENDA AS\u00cd\nEN CAMBIO, QUIERES ASEGURARTE DE MANTENER UNA MU\u00d1ECA NEUTRAL.\nY LA ARTICULACI\u00d3N DEL CODO\nAS\u00cd COMO LA ARTICULACI\u00d3N DE LA MU\u00d1ECA EST\u00c1 APILADA POR SU ANTEBRAZO",
+        "key_objects": [
+          "barbell"
+        ]
+      },
+      {
+        "time_range": "0:28-0:32",
+        "visual_description": "The creator holds the barbell at shoulder height, explaining the benefits of proper wrist and elbow alignment.",
+        "audio_description": "The creator says: \"It's going to allow for the best force transfer as well as not hurting your wrist.\"",
+        "text_on_screen": "THE BEST FORCE TRANSFER\nAS WELL\nHURTING YOUR WRIST\nESTO PERMITIR\u00c1 LA MEJOR TRANSFERENCIA DE FUERZA.\nADEM\u00c1S DE NO LASTIMARTE LA MU\u00d1ECA",
+        "key_objects": [
+          "barbell"
+        ]
+      },
+      {
+        "time_range": "0:32-0:38",
+        "visual_description": "The creator demonstrates the overhead press, first showing the error of staying too far back, then correcting it by pushing the head 'into the hole' at full extension.",
+        "audio_description": "The creator says: \"So now we're here. When we press, we don't want to just stay back here when we fully extend. We want to get our head into the hole, okay?\"",
+        "text_on_screen": "SO NOW WE'RE HERE\nWHEN WE PRESS\nWE DON'T WANNA JUST\nWHEN WE FULLY EXTEND\nWE WANNA GET OUR\nHEAD INTO THE HOLE\nAS\u00cd QUE AHORA ESTAMOS AQU\u00cd CUANDO PRESIONAMOS\nNO QUEREMOS QUEDARNOS AQU\u00cd ATR\u00c1S POR COMPLETO, QUEREMOS METER LA CABEZA EN EL AGUJERO, \u00bfDE ACUERDO?",
+        "key_objects": [
+          "barbell"
+        ]
+      },
+      {
+        "time_range": "0:38-0:48",
+        "visual_description": "The creator illustrates the difference between a lat pulldown (where you stay back) and a military press (where you push your head through the hole) for better balance.",
+        "audio_description": "The creator says: \"So unlike on a lat pull down where you want to stay back here, in the case of a military press, you want to poke your head through the hole and it's going to allow for you to maintain a better center of balance in this more extended position.\"",
+        "text_on_screen": "SO UNLIKE\nHERE\nPRESS\nYOU WANNA\nHEAD THROUGH THE HOLE\nAND IT'S GONNA ALLOW\nA BETTER\nBALANCE\nPOSITION\nTAN DIFERENTE EN UN LAT PULL DOWN DONDE QUIERES QUEDARTE AQU\u00cd\nEN CASO DE PRENSA MILITAR, \u00bfQUIERES METER SU CABEZA POR EL AGUJERO?\nY TE PERMITIR\u00c1 MANTENER UN MEJOR CENTRO DE EQUILIBRIO\nEN ESTA POSICI\u00d3N M\u00c1S EXTENDIDA",
+        "key_objects": [
+          "barbell"
+        ]
+      },
+      {
+        "time_range": "0:48-0:55",
+        "visual_description": "The creator holds the barbell at shoulder height, then demonstrates squeezing glutes and bracing the core for stability.",
+        "audio_description": "The creator says: \"Lastly, in regards to the rest of our body, you want to squeeze your glutes, brace your core, so squeeze your abs a little bit.\"",
+        "text_on_screen": "TO THE\nYOU WANNA\nGLUTES\nBRACE YOUR\nLITTLE BIT\n\u00daLTIMAS COSAS CON RESPECTO AL RESTO DE NUESTRO CUERPO\n\u00bfQUIERES APRETAR TUS GL\u00daTEOS?\nAPOYA TU N\u00daCLEO, AS\u00cd QUE APRIETA UN POCO TUS ABDOMINALES.",
+        "key_objects": [
+          "barbell"
+        ]
+      },
+      {
+        "time_range": "0:55-1:03",
+        "visual_description": "The creator performs an overhead press with proper form, emphasizing the body acting as a singular, stable unit.",
+        "audio_description": "The creator says: \"So that your body is one singular unit so you can actually focus on just pressing from as stable as a platform as possible. Good luck.\"",
+        "text_on_screen": "SO THAT\nIS ONE\nSINGULAR UNIT\nSO YOU CAN ACTUALLY\nFOCUS ON JUST\nPRESSING FROM\nAS STABLE\nPOSSIBLE GOOD\nPARA QUE TU CUERPO SEA UNA UNIDAD SINGULAR\nPARA QUE PUEDAS CONCENTRARTE SOLO EN\nPRESIONANDO DESDE UNA PLATAFORMA LO M\u00c1S ESTABLE POSIBLE, BUENA SUERTE",
+        "key_objects": [
+          "barbell"
+        ]
+      }
+    ],
+    "overall_summary": "This video provides a tutorial on how to improve a 'weak' overhead press by focusing on three key form adjustments. The creator, @tylerpath, first demonstrates common mistakes before explaining how to maintain a neutral and stacked wrist and elbow joint for optimal force transfer and injury prevention. He then advises pushing the head 'through the hole' at the top of the press to enhance balance. Finally, the video emphasizes the importance of squeezing the glutes and bracing the core to create a stable, singular unit for a more effective and powerful press.",
+    "people": [
+      {
+        "description": "A young man with dark hair, wearing a dark sleeveless top and green shorts, demonstrating exercises and providing instructions in a gym setting.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@tylerpath"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Overhead Press",
+        "display_name": "Overhead Press",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "caption"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Barbell",
+        "display_name": "Barbell",
+        "type": "equipment",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Power Rack",
+        "display_name": "Power Rack",
+        "type": "equipment",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Hammer Strength",
+        "display_name": "Hammer Strength",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Wrist Position",
+        "display_name": "Wrist Position (neutral, stacked)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Elbow Joint",
+        "display_name": "Elbow Joint (stacked)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Head Through The Hole",
+        "display_name": "Head Through The Hole (overhead press technique)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Glute Squeeze",
+        "display_name": "Glute Squeeze (for stability)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Core Brace",
+        "display_name": "Core Brace (for stability)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lat Pulldown",
+        "display_name": "Lat Pulldown (contrasted exercise)",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "To improve your overhead press, ensure your wrist is neutral and your elbow and wrist joints are stacked by your forearm for optimal force transfer and to prevent injury.",
+        "source": "voiceover|text_overlay|demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "When performing an overhead press, push your head 'into the hole' at full extension to maintain a better center of balance.",
+        "source": "voiceover|text_overlay|demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Squeeze your glutes and brace your core to create a singular, stable unit with your body, allowing for a more effective overhead press from a stable platform.",
+        "source": "voiceover|text_overlay|demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Wrist and Elbow Alignment",
+          "details": "Maintain a neutral wrist and ensure the elbow and wrist joints are stacked by your forearm for optimal force transfer and to avoid injury."
+        },
+        {
+          "name": "Head Position",
+          "details": "Push your head 'through the hole' when fully extending the barbell overhead to improve balance."
+        },
+        {
+          "name": "Core and Glute Engagement",
+          "details": "Squeeze your glutes and brace your core to create a stable, singular unit with your body for a more stable press."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "LITSAR PEKLA",
+      "metadata_song": "LITSAR PEKLA",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Audio identification is based on metadata and general sound, not a direct audio fingerprint match."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "instructive, focused, energetic",
+    "topic_hints": [
+      "fitness",
+      "weightlifting",
+      "overhead press",
+      "strength training",
+      "form correction"
+    ],
+    "affect_hints": [
+      "informative",
+      "helpful",
+      "motivational"
+    ],
+    "genre_hints": [
+      "tutorial",
+      "fitness instruction",
+      "gym tips"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 20121,
+    "output_tokens": 3717,
+    "total_tokens": 23838,
+    "cost_usd": 0.005248,
+    "latency_ms": 35179,
+    "upload_ms": 5689
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

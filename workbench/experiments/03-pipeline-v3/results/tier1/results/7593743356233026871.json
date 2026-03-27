@@ -1,0 +1,52 @@
+{
+  "item_id": "7593743356233026871",
+  "parsed_output": {
+    "summary": "Comedian Tim Dillon delivers a cynical and energetic rant about the state of modern life and the 'best case scenario' for living in America. This clip from The Tim Dillon Show is a typical example of his social commentary, likely saved by fans for its dark humor and relatable frustrations regarding American culture.",
+    "entities": [
+      {
+        "name": "Tim Dillon",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "The Tim Dillon Show",
+        "type": "podcast",
+        "relevance": "primary"
+      },
+      {
+        "name": "Evian",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Los Angeles",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "United States",
+        "type": "place",
+        "relevance": "primary"
+      }
+    ],
+    "topic": {
+      "primary": "comedy",
+      "secondary": "news"
+    },
+    "genre": "news_commentary",
+    "affect": {
+      "dominant": "funny",
+      "secondary": "angry"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "This TikTok video features a 144-second clip of comedian Tim Dillon performing a signature rant on his podcast, The Tim Dillon Show. Seated at a white desk with a professional microphone and an Evian water bottle, Dillon wears a black hoodie and a baseball cap while gesturing emphatically. The background is a scenic nighttime view of the Los Angeles city lights. On-screen text overlays the video with the title 'Best case scenario in America.' The content is a piece of news commentary and comedy, where Dillon critiques American society with his characteristic loud and cynical delivery. This video is ideal for fans of stand-up comedy, social satire, and podcast highlights who enjoy Dillon's flow state rants about politics, culture, and the economy. It captures the essence of his comedic style and social critique."
+  },
+  "metrics": {
+    "input_tokens": 4269,
+    "output_tokens": 482,
+    "total_tokens": 4751,
+    "cost_usd": 0.00093,
+    "latency_ms": 9320,
+    "keyframe_count": 3
+  }
+}

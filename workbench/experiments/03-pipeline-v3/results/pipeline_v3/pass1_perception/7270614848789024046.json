@@ -1,0 +1,216 @@
+{
+  "item_id": "7270614848789024046",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:08:12.846884+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:09",
+        "visual_description": "A tram passes by in Amsterdam followed by interior shots of Het Ballonnetje coffeeshop, showing wooden tables and vintage-style wall decor.",
+        "audio_description": "Creator explains she arrived in Amsterdam with severe period cramps and sought relief at a coffeeshop near her hotel.",
+        "text_on_screen": "COFFEESHOPS I VISITED IN AMSTERDAM; Het Ballonnetje; 4 Centraal Station",
+        "key_objects": [
+          "Amsterdam Tram",
+          "Het Ballonnetje signage",
+          "vintage wall art"
+        ]
+      },
+      {
+        "time_range": "0:09-0:21",
+        "visual_description": "Interior of African Black Star coffeeshop featuring African-themed artwork, a green plant wall with a TV, and Bob Marley portraits.",
+        "audio_description": "Creator highlights African Black Star as a black-owned business where she enjoyed the music and the quiet atmosphere.",
+        "text_on_screen": "African Black Star",
+        "key_objects": [
+          "Bob Marley portrait",
+          "African art",
+          "Burna Boy music video on TV"
+        ]
+      },
+      {
+        "time_range": "0:21-0:40",
+        "visual_description": "Tour of Prix D'Ami coffeeshop showing neon signs, a large colorful LED ceiling fixture, and merchandise display cases.",
+        "audio_description": "Creator critiques Prix D'Ami for its popularity and 'trippy' aesthetic but notes poor customer service regarding being charged for a lighter. She concludes that none of the shops helped her cramps.",
+        "text_on_screen": "Prix D'Ami; the Pot Head Dream; Lose my mind and Find my Soul; Phone Charger; TOILETS",
+        "key_objects": [
+          "LED spider light fixture",
+          "neon signs",
+          "merchandise display case",
+          "lighter"
+        ]
+      }
+    ],
+    "overall_summary": "The creator documents her visits to three specific coffeeshops in Amsterdam while attempting to find relief for severe period cramps. She reviews Het Ballonnetje for its convenience, African Black Star for its black-owned status and relaxing vibe, and Prix D'Ami for its trippy aesthetic and popular status. Despite the visits, she concludes with a humorous but painful takeaway that the cannabis did not alleviate her physical suffering.",
+    "people": [
+      {
+        "description": "Black female creator providing a voiceover review of her travel experience.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@internationalnae"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Amsterdam",
+        "display_name": "Amsterdam, Netherlands",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Het Ballonnetje",
+        "display_name": "Het Ballonnetje Coffeeshop",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "African Black Star",
+        "display_name": "African Black Star Coffeeshop",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Black-owned",
+        "confidence": 5
+      },
+      {
+        "name": "Prix D'Ami",
+        "display_name": "Prix D'Ami Coffeeshop",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Burna Boy",
+        "display_name": "Burna Boy",
+        "type": "artist",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Oscar Proud",
+        "display_name": "Oscar Proud from The Proud Family",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Reference to rubbing ankles together",
+        "confidence": 5
+      },
+      {
+        "name": "D'evils",
+        "display_name": "D'evils by SiR",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "African Black Star is a recommended black-owned coffeeshop in Amsterdam for those seeking a relaxed environment.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Prix D'Ami is visually impressive but may have poor customer service policies, such as charging for lighters.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Cannabis from Amsterdam coffeeshops was ineffective at relieving the creator's severe period cramps.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Het Ballonnetje",
+          "details": "Conveniently located near hotels; classic vibe."
+        },
+        {
+          "name": "African Black Star",
+          "details": "Black-owned; plays Burna Boy; unpopulated and relaxing."
+        },
+        {
+          "name": "Prix D'Ami",
+          "details": "Popular; trippy LED lights and neon signs; poor service (charges for lighters)."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "D'evils \u2014 SiR",
+      "metadata_song": "D'evils",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All locations and cultural references were clearly stated or visible."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "handheld",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Chill and urban with a shift to vibrant, trippy neon aesthetics toward the end.",
+    "topic_hints": [
+      "Amsterdam Travel",
+      "Cannabis Culture",
+      "Period Pain Management"
+    ],
+    "affect_hints": [
+      "Informative",
+      "Relaxed",
+      "Humorous frustration"
+    ],
+    "genre_hints": [
+      "Travel Vlog",
+      "Review"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5108,
+    "output_tokens": 1761,
+    "total_tokens": 6869,
+    "cost_usd": 0.001823,
+    "latency_ms": 25739,
+    "upload_ms": 5559
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

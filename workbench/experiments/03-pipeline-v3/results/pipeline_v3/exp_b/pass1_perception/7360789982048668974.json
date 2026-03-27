@@ -1,0 +1,579 @@
+{
+  "item_id": "7360789982048668974",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:45:15.559717+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Paul Atreides, portrayed by Timoth\u00e9e Chalamet, is shown in a dark, dramatic setting, looking down intently before slowly raising his gaze. He is wearing a dark, hooded garment and appears to be handling a small object.",
+        "audio_description": "Dramatic, suspenseful music with a low hum. Paul Atreides speaks, though the words are not yet fully clear.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "ring"
+        ]
+      },
+      {
+        "time_range": "0:03-0:05",
+        "visual_description": "Paul Atreides holds up a ring, his eyes glowing blue, as he looks upwards with a determined expression.",
+        "audio_description": "Paul Atreides states, \"This is my father's ducal signet.\"",
+        "text_on_screen": "THIS IS\nPUKATZ",
+        "key_objects": [
+          "ring"
+        ]
+      },
+      {
+        "time_range": "0:05-0:06",
+        "visual_description": "A close-up shot of Duke Leto Atreides, with a stern and weathered face, looking directly at the viewer.",
+        "audio_description": "Paul Atreides' voiceover continues, \"This is my father's ducal signet.\"",
+        "text_on_screen": "THIS IS MY FATHER'S DUCAL SIGNET\nPUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:06-0:08",
+        "visual_description": "Paul Atreides is again seen holding up the ring, his blue eyes prominent, as he looks up with a sense of destiny.",
+        "audio_description": "Paul Atreides' voiceover continues, \"This is my father's ducal signet.\"",
+        "text_on_screen": "THIS IS MY FATHER'S DUCAL SIGNET\nPUKATZ",
+        "key_objects": [
+          "ring"
+        ]
+      },
+      {
+        "time_range": "0:08-0:10",
+        "visual_description": "A close-up on Paul Atreides' gloved hand as he carefully places the ducal signet ring onto his finger.",
+        "audio_description": "Paul Atreides' voiceover continues.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "ring"
+        ]
+      },
+      {
+        "time_range": "0:10-0:11",
+        "visual_description": "A close-up of Chani's face, partially obscured by chains and a veil, revealing her striking blue eyes.",
+        "audio_description": "Paul Atreides' voiceover continues.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:11-0:15",
+        "visual_description": "Paul Atreides stands in a spotlight, shouting with intensity, his blue eyes glowing, as he declares his identity and title.",
+        "audio_description": "Paul Atreides shouts, \"I am Paul Muad'Dib Atreides, Duke of Arrakis!\"",
+        "text_on_screen": "I AM PAUL MUAD'DIB ATREIDES\nDUKE OF ARRAKIS\nPUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:15-0:16",
+        "visual_description": "A quick cut back to a close-up of Chani's face, her blue eyes piercing.",
+        "audio_description": "Paul Atreides' voiceover continues.",
+        "text_on_screen": "I AM PAUL MUAD'DIB ATREIDES\nDUKE OF ARRAKIS\nPUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:16-0:19",
+        "visual_description": "Paul Atreides raises his arm dramatically, looking upwards as he makes a solemn declaration.",
+        "audio_description": "Paul Atreides declares, \"The hand of God be my witness!\"",
+        "text_on_screen": "THE HAND OF GOD BE MY WITNESS\nPUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:19-0:21",
+        "visual_description": "Paul Atreides, still with his arm raised, continues to shout, embodying a powerful figure.",
+        "audio_description": "Paul Atreides proclaims, \"I am the voice from the outer world!\"",
+        "text_on_screen": "I AM THE VOICE FROM THE OUTER WORLD\nPUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:21-0:22",
+        "visual_description": "Paul Atreides shouts the prophetic title, his face illuminated.",
+        "audio_description": "Paul Atreides shouts, \"Lisan al-Gaib!\"",
+        "text_on_screen": "LISAN AL-GAIB\nPUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:22-0:23",
+        "visual_description": "Stilgar walks through a large crowd of Fremen, all cloaked, looking towards a bright light.",
+        "audio_description": "Paul Atreides' voiceover continues, \"I will lead you to...\"",
+        "text_on_screen": "I WILL LEAD YOU TO\nPUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:23-0:25",
+        "visual_description": "Paul Atreides points emphatically, his face intense and eyes glowing blue, as he speaks of paradise.",
+        "audio_description": "Paul Atreides declares, \"Paradise!\"",
+        "text_on_screen": "PARADISE\nPUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:25-0:28",
+        "visual_description": "Paul Atreides stands tall, then kneels, as the crowd around him whispers his prophetic name.",
+        "audio_description": "The crowd whispers, \"Lisan al-Gaib.\"",
+        "text_on_screen": "LISAN AL-GAIB\nPUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:28-0:30",
+        "visual_description": "Paul Atreides looks directly at the camera, his blue eyes intense, with a slight smirk. The lighting is dark and moody.",
+        "audio_description": "A rap song begins with the lyrics: \"I could drop ties in this bitch.\"",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:30-0:31",
+        "visual_description": "Paul Atreides, in a stillsuit, walks purposefully with a crysknife in hand, in a dark, confined space.",
+        "audio_description": "The rap song continues with the lyrics: \"Drop like flies in this bitch.\"",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "crysknife",
+          "stillsuit"
+        ]
+      },
+      {
+        "time_range": "0:31-0:32",
+        "visual_description": "Paul Atreides, in a stillsuit, walks across a vast, bright desert landscape.",
+        "audio_description": "The rap song continues with the lyrics: \"I cut ties in this bitch.\"",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "stillsuit"
+        ]
+      },
+      {
+        "time_range": "0:32-0:33",
+        "visual_description": "A silhouetted shot of Paul Atreides raising his arm to a massive, cheering crowd.",
+        "audio_description": "The rap song continues with the lyrics: \"I'll cut ties in your face.\"",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:33-0:34",
+        "visual_description": "A close-up of Paul Atreides' blue eyes, partially obscured by his stillsuit mask.",
+        "audio_description": "The rap song continues with the lyrics: \"Yeah.\"",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "stillsuit mask"
+        ]
+      },
+      {
+        "time_range": "0:34-0:35",
+        "visual_description": "A close-up of a gloved hand holding a crysknife.",
+        "audio_description": "A voiceover from the movie states: \"May thy knife chip and shatter.\"",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "crysknife"
+        ]
+      },
+      {
+        "time_range": "0:35-0:37",
+        "visual_description": "Paul Atreides looks intensely at the camera, with blood on his face, in a dark setting.",
+        "audio_description": "The voiceover from the movie continues: \"May thy knife chip and shatter.\"",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:37-0:39",
+        "visual_description": "Paul Atreides' intense gaze, then a crysknife is brought into view.",
+        "audio_description": "The voiceover from the movie continues: \"May thy knife chip and shatter.\"",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "crysknife"
+        ]
+      },
+      {
+        "time_range": "0:39-0:40",
+        "visual_description": "Feyd-Rautha Harkonnen, bald and pale, smiles menacingly at the camera.",
+        "audio_description": "The voiceover from the movie continues: \"May thy knife chip and shatter.\"",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:40-0:42",
+        "visual_description": "Feyd-Rautha and Paul Atreides confront each other, then engage in a close-quarters fight.",
+        "audio_description": "Sounds of combat and the rap song continue.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:42-0:44",
+        "visual_description": "Silhouetted figures of Paul Atreides and Feyd-Rautha fighting against a bright, orange background.",
+        "audio_description": "Sounds of combat and the rap song continue.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:44-0:45",
+        "visual_description": "Paul Atreides, in a stillsuit, aims a weapon, his blue eyes visible through the mask.",
+        "audio_description": "A character shouts, \"Reload!\"",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "stillsuit",
+          "weapon"
+        ]
+      },
+      {
+        "time_range": "0:45-0:47",
+        "visual_description": "Paul Atreides looks intensely at the camera, blood on his face, followed by a quick shot of him running across a desert.",
+        "audio_description": "The rap song continues.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:47-0:48",
+        "visual_description": "Paul Atreides stands silhouetted against a bright, hazy sky, his cape flowing.",
+        "audio_description": "The rap song continues.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:48-0:49",
+        "visual_description": "A silhouetted Paul Atreides performs a fighting stance with a knife.",
+        "audio_description": "The rap song continues.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "knife"
+        ]
+      },
+      {
+        "time_range": "0:49-0:50",
+        "visual_description": "A close-up of Paul Atreides' profile, silhouetted against a bright background.",
+        "audio_description": "The rap song continues.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:50-0:51",
+        "visual_description": "Paul Atreides stands in front of a crowd, holding a crysknife, looking powerful.",
+        "audio_description": "The rap song continues.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "crysknife"
+        ]
+      },
+      {
+        "time_range": "0:51-0:52",
+        "visual_description": "Paul Atreides walks alone in a vast desert, silhouetted.",
+        "audio_description": "The rap song continues.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:52-0:53",
+        "visual_description": "The text 'PUKATZ' appears prominently on a light background.",
+        "audio_description": "The rap song continues.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:53-0:54",
+        "visual_description": "A person in a red stillsuit with their face covered, standing in a dark, dusty environment.",
+        "audio_description": "The rap song continues.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": [
+          "stillsuit"
+        ]
+      },
+      {
+        "time_range": "0:54-0:56",
+        "visual_description": "Paul Atreides kneels, silhouetted against a bright, orange light, then stands up.",
+        "audio_description": "The rap song continues.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:56-1:02",
+        "visual_description": "The text 'PUKATZ' appears on a black screen, glowing white.",
+        "audio_description": "The rap song fades out.",
+        "text_on_screen": "PUKATZ",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a fast-paced, dramatic edit featuring scenes from the *Dune* films, primarily focusing on Paul Atreides' transformation and rise to power. It intercuts key dialogue from the movie, such as Paul declaring himself \"Lisan al-Gaib\" and \"Duke of Arrakis,\" with intense action sequences and close-ups of characters like Chani and Feyd-Rautha. The edit is set to a modern rap track, creating a powerful and intense mood that highlights Paul's journey and the epic scale of the *Dune* universe. It aims to evoke a sense of destiny, conflict, and the emergence of a formidable leader.",
+    "people": [
+      {
+        "description": "Young man with curly brown hair and striking blue eyes, initially appearing contemplative, then increasingly powerful and determined. He is the central protagonist, Paul Atreides.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Timoth\u00e9e Chalamet (as Paul Atreides)"
+      },
+      {
+        "description": "Older man with a beard, looking stern and wise. He is Duke Leto Atreides, Paul's father.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Oscar Isaac (as Duke Leto Atreides)"
+      },
+      {
+        "description": "Young woman with dark hair and piercing blue eyes, shown with chains on her face and later in a stillsuit. She is Chani.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Zendaya (as Chani)"
+      },
+      {
+        "description": "Man with a bald head and pale skin, smiling menacingly. He is Feyd-Rautha Harkonnen.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Austin Butler (as Feyd-Rautha Harkonnen)"
+      },
+      {
+        "description": "Man with a beard, walking through a crowd of cloaked figures. He is Stilgar.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Javier Bardem (as Stilgar)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Dune",
+        "display_name": "Dune (Movie Franchise)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Paul Atreides",
+        "display_name": "Paul Atreides",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lisan al-Gaib",
+        "display_name": "Lisan al-Gaib (Prophetic Title from Dune)",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Arrakis",
+        "display_name": "Arrakis (Planet from Dune)",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Ducal Signet Ring",
+        "display_name": "Ducal Signet Ring (House Atreides)",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Crysknife",
+        "display_name": "Crysknife (Fremen Weapon from Dune)",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Stillsuit",
+        "display_name": "Stillsuit (Fremen Garment from Dune)",
+        "type": "clothing",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "House Atreides",
+        "display_name": "House Atreides (Noble House from Dune)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Fremen",
+        "display_name": "Fremen (People of Arrakis from Dune)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Yeat",
+        "display_name": "Yeat (Artist)",
+        "type": "artist",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "If We Being R\u00ebal",
+        "display_name": "If We Being R\u00ebal (Song by Yeat)",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Timoth\u00e9e Chalamet",
+        "display_name": "Timoth\u00e9e Chalamet",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Zendaya",
+        "display_name": "Zendaya",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Austin Butler",
+        "display_name": "Austin Butler",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Oscar Isaac",
+        "display_name": "Oscar Isaac",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Javier Bardem",
+        "display_name": "Javier Bardem",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Paul Atreides embraces his destiny as the Lisan al-Gaib and Duke of Arrakis, leading the Fremen to a new future.",
+        "source": "voiceover|demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "The video highlights the intense and epic nature of Paul Atreides' journey and the conflicts within the Dune universe.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "If We Being R\u00ebal \u2014 Yeat",
+      "metadata_song": "null",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific movie from the Dune franchise (Dune: Part One or Dune: Part Two) is not explicitly stated in the video, but scenes from both appear to be used. Identified actors based on their roles in the Dune films."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "heavy_effects"
+    },
+    "visual_mood": "Epic, intense, powerful, dramatic, dark, determined, triumphant",
+    "topic_hints": [
+      "Dune movie",
+      "Paul Atreides",
+      "Science Fiction"
+    ],
+    "affect_hints": [
+      "Awe",
+      "Excitement",
+      "Inspiration",
+      "Intensity"
+    ],
+    "genre_hints": [
+      "Movie Edit",
+      "Fan Edit",
+      "Action",
+      "Sci-Fi"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 19797,
+    "output_tokens": 5896,
+    "total_tokens": 25693,
+    "cost_usd": 0.006507,
+    "latency_ms": 46011,
+    "upload_ms": 5973
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "item_id": "7220058231463365934",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:51:55.525894+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "The creator, @db3workouts, stands on a basketball court holding a basketball, introducing the video's content.",
+        "audio_description": "Music playing with lyrics: \"Yeah, tell them boys that ain't nothing I can't do. It's my year. It's my year.\"",
+        "text_on_screen": "5 Easy Moves That Will Always Work \ud83c\udf92\ud83c\udfc0",
+        "key_objects": [
+          "basketball",
+          "basketball court",
+          "basketball hoop"
+        ]
+      },
+      {
+        "time_range": "0:02-0:06",
+        "visual_description": "The creator demonstrates the 'In N Out' dribbling move, dribbling the basketball from one side of his body to the other while moving forward.",
+        "audio_description": "Music playing with lyrics: \"Look, God made me for this man, it's my year. Ain't no more games going for the care.\"",
+        "text_on_screen": "1. In N Out \u2705",
+        "key_objects": [
+          "basketball",
+          "basketball court",
+          "Air Jordan sneakers"
+        ]
+      },
+      {
+        "time_range": "0:06-0:11",
+        "visual_description": "The creator demonstrates the 'Delay Thru' dribbling move, dribbling the basketball between his legs with a slight hesitation.",
+        "audio_description": "Music playing with lyrics: \"Working for this way before a deal. Cause this my year. This my year.\"",
+        "text_on_screen": "2. Delay Thru \ud83e\udd76",
+        "key_objects": [
+          "basketball",
+          "basketball court",
+          "Air Jordan sneakers"
+        ]
+      },
+      {
+        "time_range": "0:11-0:16",
+        "visual_description": "The creator demonstrates the 'Push Cross' dribbling move, pushing the basketball across his body with a quick crossover.",
+        "audio_description": "Music playing with lyrics: \"Look, God made me for this man, it's my year. Ain't no more games going for the care.\"",
+        "text_on_screen": "3. Push Cross \ud83d\udca8",
+        "key_objects": [
+          "basketball",
+          "basketball court",
+          "Air Jordan sneakers"
+        ]
+      },
+      {
+        "time_range": "0:16-0:20",
+        "visual_description": "The creator demonstrates the 'Quick Split Thru' dribbling move, quickly splitting the basketball between his legs.",
+        "audio_description": "Music playing with lyrics: \"Working for this way before a deal. Cause this my year. This my year.\"",
+        "text_on_screen": "4. Quick Split Thru \ud83d\ude29",
+        "key_objects": [
+          "basketball",
+          "basketball court",
+          "Air Jordan sneakers"
+        ]
+      },
+      {
+        "time_range": "0:20-0:25",
+        "visual_description": "The creator demonstrates the 'Cross Jab' dribbling move, combining a crossover dribble with a jab step.",
+        "audio_description": "Music playing with lyrics: \"Look, God made me for this man, it's my year. Ain't no more games going for the care.\"",
+        "text_on_screen": "5. Cross Jab \ud83e\udd2f",
+        "key_objects": [
+          "basketball",
+          "basketball court",
+          "Air Jordan sneakers"
+        ]
+      }
+    ],
+    "overall_summary": "This video presents five simple yet effective basketball dribbling moves designed to help players improve their ball-handling skills. The creator, @db3workouts, demonstrates each move clearly on a basketball court, with overlaid text identifying each technique. The tutorial covers the 'In N Out', 'Delay Thru', 'Push Cross', 'Quick Split Thru', and 'Cross Jab' moves, providing practical tips for basketball players looking to enhance their game.",
+    "people": [
+      {
+        "description": "A male athlete with a beard, wearing a blue t-shirt, black pants, and white sneakers, demonstrating basketball dribbling moves.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "db3workouts",
+        "display_name": "@db3workouts",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "In N Out",
+        "display_name": "In N Out (Basketball Dribbling Move)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "demonstration"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Delay Thru",
+        "display_name": "Delay Thru (Basketball Dribbling Move)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "demonstration"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Push Cross",
+        "display_name": "Push Cross (Basketball Dribbling Move)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "demonstration"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Quick Split Thru",
+        "display_name": "Quick Split Thru (Basketball Dribbling Move)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "demonstration"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Cross Jab",
+        "display_name": "Cross Jab (Basketball Dribbling Move)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "demonstration"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Basketball",
+        "display_name": "Basketball",
+        "type": "game",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata",
+          "hashtags"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Air Jordan",
+        "display_name": "Air Jordan Sneakers",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "My Year",
+        "display_name": "My Year by Aaron Cole",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Aaron Cole",
+        "display_name": "Aaron Cole (Artist)",
+        "type": "artist",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "There are 5 simple and highly effective basketball dribbling moves that players can use to improve their game.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "In N Out",
+          "details": "Basketball dribbling move"
+        },
+        {
+          "name": "Delay Thru",
+          "details": "Basketball dribbling move"
+        },
+        {
+          "name": "Push Cross",
+          "details": "Basketball dribbling move"
+        },
+        {
+          "name": "Quick Split Thru",
+          "details": "Basketball dribbling move"
+        },
+        {
+          "name": "Cross Jab",
+          "details": "Basketball dribbling move"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "My Year \u2014 Aaron Cole",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The metadata for the music is 'original sound', which is generic, but the actual song playing was identified through lyric search."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "energetic, instructional, focused",
+    "topic_hints": [
+      "basketball training",
+      "dribbling drills",
+      "basketball skills"
+    ],
+    "affect_hints": [
+      "motivational",
+      "informative",
+      "empowering"
+    ],
+    "genre_hints": [
+      "sports tutorial",
+      "fitness instruction",
+      "educational"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9165,
+    "output_tokens": 2230,
+    "total_tokens": 11395,
+    "cost_usd": 0.002713,
+    "latency_ms": 23796,
+    "upload_ms": 5815
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

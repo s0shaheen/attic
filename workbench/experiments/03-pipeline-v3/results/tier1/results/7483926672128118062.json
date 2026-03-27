@@ -1,0 +1,52 @@
+{
+  "item_id": "7483926672128118062",
+  "parsed_output": {
+    "summary": "Isabelle Banez recommends Lawrence Fish Market in Chicago's Albany Park neighborhood for affordable, high-quality takeout sushi platters. The video highlights the restaurant's long-standing reputation and notes that it is a cash-only establishment approved by a Michelin-star chef.",
+    "entities": [
+      {
+        "name": "Lawrence Fish Market",
+        "type": "restaurant",
+        "relevance": "primary"
+      },
+      {
+        "name": "Chicago",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Albany Park",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Isabelle Banez",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Champagne Coast",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "food",
+      "secondary": "travel"
+    },
+    "genre": "review",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "This TikTok by @isabellebanez features a recommendation for Lawrence Fish Market, a popular takeout sushi spot located at 3920 W. Lawrence in the Albany Park neighborhood of Chicago. The creator showcases large, affordable sushi platters filled with salmon nigiri, shrimp, tuna, and various rolls, mentioning they are perfect for birthdays. On-screen text notes that the restaurant is \"approved by my cousin who's a chef at a Michelin star restaurant in Chicago.\" The video emphasizes that the shop is cash-only and has been a personal favorite of the creator since childhood. The visuals focus on the storefront and the impressive variety of fresh fish in the party platters. This is a great reference for anyone looking for high-quality, budget-friendly sushi recommendations in the Chicago area."
+  },
+  "metrics": {
+    "input_tokens": 4290,
+    "output_tokens": 477,
+    "total_tokens": 4767,
+    "cost_usd": 0.00093,
+    "latency_ms": 7851,
+    "keyframe_count": 3
+  }
+}

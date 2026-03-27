@@ -1,0 +1,77 @@
+{
+  "item_id": "7618356804837264671",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:08.947493+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "art",
+      "micro_labels": [
+        "Spider-Man",
+        "MCU",
+        "Peter Parker",
+        "Tom Holland",
+        "Zendaya",
+        "Fan Edit"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "fan edit",
+        "cinematic montage"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "sad",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "voiceover",
+      "cinematic"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5384,
+    "output_tokens": 359,
+    "total_tokens": 5743,
+    "cost_usd": 0.001023,
+    "latency_ms": 5679,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 2
+  }
+}

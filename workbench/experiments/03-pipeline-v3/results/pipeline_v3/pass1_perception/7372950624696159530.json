@@ -1,0 +1,239 @@
+{
+  "item_id": "7372950624696159530",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:21:14.821168+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:10",
+        "visual_description": "Cinematic exterior shots of the RH Indianapolis estate, featuring a grand mansion facade and a large circular fountain.",
+        "audio_description": "Creator invites viewers to join her at the new Restoration Hardware restaurant in Indianapolis, describing the property as a gorgeous house.",
+        "text_on_screen": "The RH Restaurant\n\ud83d\udccd Indianapolis",
+        "key_objects": [
+          "RH Indianapolis building",
+          "Fountain",
+          "DeHaan Estate"
+        ]
+      },
+      {
+        "time_range": "0:10-0:14",
+        "visual_description": "Interior view of the main dining room with high vaulted ceilings, numerous crystal chandeliers, and white upholstered seating.",
+        "audio_description": "Creator identifies this as the main dining room.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Chandeliers",
+          "Dining tables",
+          "Sofas"
+        ]
+      },
+      {
+        "time_range": "0:14-0:15",
+        "visual_description": "Close-up shot of the RH restaurant menu and a silver fork on a white napkin.",
+        "audio_description": "Creator mentions the food was very good.",
+        "text_on_screen": "CHARRED RIBEYE STEAK, PETITE FILET MIGNON, BROILED SALMON, ROTISSERIE CHICKEN, TRUFFLE FRIES, SWEET POTATO FRIES, FRENCH FRIES, CHARRED HEIRLOOM BROCCOLINI, CHARRED BABY PEPPERS, CARAMELIZED BANANA SPLIT, BUTTERSCOTCH BRULEE, RH BIRTHDAY CAKE",
+        "key_objects": [
+          "Menu",
+          "Fork"
+        ]
+      },
+      {
+        "time_range": "0:15-0:26",
+        "visual_description": "Panning shots of the outdoor patio overlooking a large lake, showing stone balustrades and luxury outdoor lounge furniture.",
+        "audio_description": "Creator highlights the stunning views and the ability to walk on the patio with drinks after dinner.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Lake",
+          "Patio furniture",
+          "Fire pit"
+        ]
+      },
+      {
+        "time_range": "0:26-0:28",
+        "visual_description": "Creator takes a mirror selfie in a white dress while holding a glass of wine.",
+        "audio_description": "Creator expresses appreciation for being able to carry drinks throughout the house.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Wine glass",
+          "Mirror"
+        ]
+      },
+      {
+        "time_range": "0:28-0:39",
+        "visual_description": "Montage of various showroom rooms including hallways with sculptures, a bedroom with a canopy bed, and a living room with a large white sectional.",
+        "audio_description": "Creator explains that all furniture is Restoration Hardware and available for purchase, noting the beautiful decor.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Canopy bed",
+          "Sectional sofa",
+          "Sculptures",
+          "Art pieces"
+        ]
+      },
+      {
+        "time_range": "0:39-0:42",
+        "visual_description": "Shot of the internal wine bar area where staff are serving customers.",
+        "audio_description": "Creator mentions the wine bar where guests can buy drinks to take into the showrooms.",
+        "text_on_screen": "WINE BAR",
+        "key_objects": [
+          "Wine bar",
+          "Wine bottles"
+        ]
+      },
+      {
+        "time_range": "0:42-0:53",
+        "visual_description": "Final shots of the showroom interiors and the exterior fountain as the sun sets.",
+        "audio_description": "Creator reiterates how pretty the views are and gives a final recommendation to visit.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Fountain",
+          "Showroom furniture"
+        ]
+      }
+    ],
+    "overall_summary": "Creator @arabellajensenn provides a tour of the RH (Restoration Hardware) restaurant and gallery located at the former DeHaan Estate in Indianapolis. The video showcases the luxurious main dining room, the extensive outdoor patio with lake views, and the various furniture showrooms throughout the mansion. A key highlight mentioned is the ability to purchase wine at the internal bar and carry it while browsing the furniture collections. The creator highly recommends the location as a 'must-see' destination for dining and design inspiration in Indiana.",
+    "people": [
+      {
+        "description": "Young woman with brown hair wearing a white one-shoulder dress, acting as the tour guide and reviewer.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Arabella Jensen"
+      }
+    ],
+    "entities": [
+      {
+        "name": "RH Indianapolis",
+        "display_name": "RH Indianapolis, The Gallery at the DeHaan Estate",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Located in Indianapolis, Indiana",
+        "confidence": 5
+      },
+      {
+        "name": "Restoration Hardware",
+        "display_name": "Restoration Hardware (RH)",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Indianapolis",
+        "display_name": "Indianapolis, Indiana",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "SABOR A MI (Versi\u00f3n Piano)",
+        "display_name": "Sabor a Mi (Piano Version)",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The RH restaurant in Indianapolis is a top-tier destination for both dining and home decor inspiration.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Guests are encouraged to explore the furniture showrooms with a drink in hand from the on-site wine bar.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The property offers exceptional views of a lake from its outdoor patio area.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "RH Indianapolis Dining Room",
+          "details": "High-end dining experience with luxury decor."
+        },
+        {
+          "name": "RH Furniture Gallery",
+          "details": "Multi-room showroom where all furniture is available for purchase."
+        },
+        {
+          "name": "RH Wine Bar",
+          "details": "Internal bar allowing guests to carry drinks throughout the estate."
+        },
+        {
+          "name": "Outdoor Patio",
+          "details": "Features fire pits and views of the surrounding lake."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Sabor a Mi (Piano Version)",
+      "metadata_song": "SABOR A MI (Versi\u00f3n Piano)",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": null
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "panning",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Elegant, sophisticated, and serene with a focus on luxury architecture and interior design.",
+    "topic_hints": [
+      "Interior Design",
+      "Luxury Dining",
+      "Indianapolis Travel"
+    ],
+    "affect_hints": [
+      "Inspired",
+      "Relaxed",
+      "Impressed"
+    ],
+    "genre_hints": [
+      "Travel Vlog",
+      "Restaurant Review",
+      "Home Decor Tour"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6280,
+    "output_tokens": 2091,
+    "total_tokens": 8371,
+    "cost_usd": 0.002197,
+    "latency_ms": 24913,
+    "upload_ms": 5646
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

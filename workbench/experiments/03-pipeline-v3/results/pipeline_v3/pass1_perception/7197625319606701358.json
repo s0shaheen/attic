@@ -1,0 +1,179 @@
+{
+  "item_id": "7197625319606701358",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:04:31.063635+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:26",
+        "visual_description": "Bo Burnham sits on a panel, using expansive hand gestures to describe the psychological shift in how children perceive reality.",
+        "audio_description": "Bo explains that kids don't think their phones are real; they think the real world is virtual and that life is a performance to be captured.",
+        "text_on_screen": "kids are like walking through this like meta virtual reality world it's not that they think the world in their phone is real they think the world in the real world is virtual and that this is actually just like a thing to be seen and everything I'm doing is actually a performance that can be captured and looked back on at any moment and I'm not just living moments I'm planning moments to look back on them it's very very strange",
+        "key_objects": [
+          "microphone",
+          "chair",
+          "IndieWire logo"
+        ]
+      },
+      {
+        "time_range": "0:27-0:45",
+        "visual_description": "The camera cuts between close-ups of Bo and wider shots of the panel, including actress Elsie Fisher.",
+        "audio_description": "Bo discusses the 'hellscape' of the internet and how it forces content creators and children into a state of irony and detachment.",
+        "text_on_screen": "these content creators are wrestling with these difficult questions of the sort of weird meta like hellscape that it is to be online it's weird it's weird and it's complicated and the kids know it and they sense it that's why their memes are all ironic and detached and self-referential in 12 layers deep",
+        "key_objects": [
+          "microphone",
+          "Eighth Grade movie poster"
+        ]
+      },
+      {
+        "time_range": "0:46-1:01",
+        "visual_description": "Bo concludes his point with a shrug, expressing uncertainty about the future of a generation that has lost faith in 'truth'.",
+        "audio_description": "Bo notes that kids are skeptical of the presidency and corporate marketing like Coca-Cola because they see through the performance.",
+        "text_on_screen": "this truth is completely dead to them and they know it they look at the President they look at a culture they go what the hell is this they look at like Coca Cola commercials that are winking at them and smiling and they go like forget it you know so like I have no idea what's gonna happen",
+        "key_objects": [
+          "microphone"
+        ]
+      }
+    ],
+    "overall_summary": "In this clip from a panel for his film 'Eighth Grade', Bo Burnham provides a cynical yet insightful analysis of how social media has fundamentally altered the childhood experience. He argues that for younger generations, the real world has become a 'virtual' stage where every moment is a performance to be captured and reviewed later. This constant surveillance leads to a culture of irony, detachment, and a deep-seated skepticism toward traditional institutions and corporate branding.",
+    "people": [
+      {
+        "description": "A man in a beige turtleneck and brown pants, speaking passionately into a microphone.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Bo Burnham"
+      },
+      {
+        "description": "A young woman sitting next to Bo on the panel, listening intently.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Elsie Fisher"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Bo Burnham",
+        "display_name": "Bo Burnham",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Elsie Fisher",
+        "display_name": "Elsie Fisher",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Lead actress in Eighth Grade",
+        "confidence": 5
+      },
+      {
+        "name": "Eighth Grade",
+        "display_name": "Eighth Grade (2018)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Bo Burnham",
+        "confidence": 5
+      },
+      {
+        "name": "IndieWire",
+        "display_name": "IndieWire",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Film industry news site",
+        "confidence": 5
+      },
+      {
+        "name": "Coca-Cola",
+        "display_name": "Coca-Cola",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Social media has turned real life into a performance for children, where they plan moments to be looked back on rather than simply living them.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Gen Z uses irony and detachment as a psychological defense against the 'hellscape' of the internet.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Traditional marketing and political authority have lost credibility with younger generations who view everything as a disingenuous performance.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Slowed and Reverb Melancholic Piano \u2014 Unidentified",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "The background music is a common TikTok 'sad' edit sound, likely a slowed version of a popular indie or classical track, but not explicitly named in metadata."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Serious, intellectual, and slightly melancholic due to the blue lighting and slowed background music.",
+    "topic_hints": [
+      "Social Media Impact",
+      "Child Psychology",
+      "Gen Z Culture"
+    ],
+    "affect_hints": [
+      "Concerned",
+      "Reflective",
+      "Cynical"
+    ],
+    "genre_hints": [
+      "Social Commentary",
+      "Interview Clip",
+      "Celebrity Insight"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6920,
+    "output_tokens": 1597,
+    "total_tokens": 8517,
+    "cost_usd": 0.001996,
+    "latency_ms": 22532,
+    "upload_ms": 5663
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

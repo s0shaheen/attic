@@ -1,0 +1,240 @@
+{
+  "item_id": "7590447176166247710",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:10:12.752182+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:10",
+        "visual_description": "Rajiv Shah stands in front of a green-screened tweet by Alex Prompter claiming RAG is broken due to 'Semantic Collapse'.",
+        "audio_description": "Rajiv sarcastically introduces the claim that RAG is dead and embeddings aren't working because of semantic collapse.",
+        "text_on_screen": "OH NO, RAG IS DEAD AND EMBEDDINGS AREN'T WORKING! Alex Prompter @alex_prompter RAG is broken and nobody's talking about it. Stanford just exposed the fatal flaw killing every 'AI that reads your docs' product. It's called 'Semantic Collapse', and it happens the moment your knowledge base hits critical mass. Here's the brutal math (and why your RAG system is already dying): Semantic Collapse in RAG Systems",
+        "key_objects": [
+          "Tweet screenshot",
+          "Semantic Collapse graph"
+        ]
+      },
+      {
+        "time_range": "0:10-0:21",
+        "visual_description": "Creator displays a diagram comparing low-dimensional space (2D) to high-dimensional space (100D) to explain distance compression.",
+        "audio_description": "He explains the theory: in high dimensions, distances compress and everything gets closer together, known as the curse of dimensionality.",
+        "text_on_screen": "How high dimensions affect distance. Core Idea: At high dimensions distances do compress in high dimensions.",
+        "key_objects": [
+          "Dimensionality diagram"
+        ]
+      },
+      {
+        "time_range": "0:21-0:38",
+        "visual_description": "Creator shows a diagram illustrating how relative ordering is preserved even when absolute distances are small.",
+        "audio_description": "He debunks the claim by stating that RAG relies on relative ordering (which item is more similar), not raw distance, which is how models are trained.",
+        "text_on_screen": "Semantic Collapse. How high dimensions affect neighbor ranking. Core Idea: Relative distances are preserved even when they all look similar.",
+        "key_objects": [
+          "Neighbor ranking diagram"
+        ]
+      },
+      {
+        "time_range": "0:38-0:48",
+        "visual_description": "A diagram of contrastive learning shows how cats, cars, and dogs are clustered and separated in feature space.",
+        "audio_description": "He explains contrastive learning: models are explicitly trained to rank positives ahead of negatives, focusing on ordering over geometry.",
+        "text_on_screen": "How Contrastive Learning Works in Feature Spaces. 1. Initial Random Embedding. 2. Pull Similar Items Together. 3. Push Different Items Apart.",
+        "key_objects": [
+          "Contrastive learning diagram"
+        ]
+      },
+      {
+        "time_range": "0:48-0:58",
+        "visual_description": "A flowchart shows a data pipeline where a 'Collapse Claim' would break the entire system.",
+        "audio_description": "He argues that if the 'semantic collapse' theory were true, all modern machine learning, including gradient descent and language models, would fail.",
+        "text_on_screen": "If distant concentration actually killed the signal, modern ML would not function. Data -> Embeddings -> Training -> Predictions.",
+        "key_objects": [
+          "ML pipeline flowchart"
+        ]
+      },
+      {
+        "time_range": "0:58-1:11",
+        "visual_description": "Creator displays complex RAG architecture diagrams involving metadata filters and re-rankers.",
+        "audio_description": "He points out that real-world RAG systems are multi-stage pipelines using metadata, hybrid retrieval, and re-rankers, not just simple embeddings.",
+        "text_on_screen": "Real RAG systems are multi-stage and already handle noisy similarity. The Contextual AI's RAG architecture.",
+        "key_objects": [
+          "RAG architecture diagram"
+        ]
+      },
+      {
+        "time_range": "1:11-1:19",
+        "visual_description": "Creator returns to the original tweet, labeling it as 'AI Slop' and urging viewers to think critically.",
+        "audio_description": "He concludes by calling the viral post 'AI slop' and says it makes social media unusable.",
+        "text_on_screen": "Real or AI Slop? Semantic Collapse in RAG Systems",
+        "key_objects": [
+          "Tweet screenshot"
+        ]
+      }
+    ],
+    "overall_summary": "Rajiv Shah (@rajistics) debunks a viral social media claim that Retrieval-Augmented Generation (RAG) is fundamentally broken due to 'semantic collapse' in high-dimensional spaces. He explains that while absolute distances do compress in high dimensions (the curse of dimensionality), RAG systems rely on relative ordering and contrastive learning, which preserves the necessary signal for accurate retrieval. He further notes that production-grade RAG systems are complex, multi-stage pipelines that use metadata and re-rankers, dismissing the viral 'Stanford' claim as misleading 'AI slop'.",
+    "people": [
+      {
+        "description": "Man with a beard and glasses wearing a black and grey hoodie, acting as a technical explainer.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Rajiv Shah"
+      }
+    ],
+    "entities": [
+      {
+        "name": "RAG",
+        "display_name": "Retrieval-Augmented Generation (RAG)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Semantic Collapse",
+        "display_name": "Semantic Collapse",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "A claim regarding embedding distance compression in high dimensions",
+        "confidence": 5
+      },
+      {
+        "name": "Rajiv Shah",
+        "display_name": "Rajiv Shah (@rajistics)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Alex Prompter",
+        "display_name": "Alex Prompter",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Twitter/X user",
+        "confidence": 4
+      },
+      {
+        "name": "Stanford",
+        "display_name": "Stanford University",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Mentioned as the source of the 'exposure' in the tweet",
+        "confidence": 4
+      },
+      {
+        "name": "Contrastive Learning",
+        "display_name": "Contrastive Learning",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Contextual AI",
+        "display_name": "Contextual AI",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Source of the RAG architecture diagram",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The claim that RAG is broken by 'semantic collapse' is incorrect because retrieval depends on relative ordering, not absolute distance.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Machine learning models are specifically trained using contrastive learning to maintain the ranking of similar items even in high dimensions.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Real-world RAG systems are multi-stage pipelines that incorporate metadata filters and re-rankers, making them robust against simple embedding noise.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Verify AI Claims",
+          "details": "Check if viral claims about AI failures (like 'semantic collapse') account for how models are actually trained (e.g., contrastive learning)."
+        },
+        {
+          "name": "Understand RAG Architecture",
+          "details": "Recognize that production RAG is a system involving ingestion, metadata filtering, hybrid retrieval, and re-ranking."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The background music is generic stock audio. All technical concepts and entities were clearly identified from the visual aids and speech."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative and skeptical",
+    "topic_hints": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Data Science"
+    ],
+    "affect_hints": [
+      "Informed",
+      "Skeptical",
+      "Clarifying"
+    ],
+    "genre_hints": [
+      "Tech Explainer",
+      "Debunking"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8603,
+    "output_tokens": 2272,
+    "total_tokens": 10875,
+    "cost_usd": 0.002654,
+    "latency_ms": 36329,
+    "upload_ms": 8221
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

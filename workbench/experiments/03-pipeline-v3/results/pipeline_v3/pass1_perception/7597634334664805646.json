@@ -1,0 +1,250 @@
+{
+  "item_id": "7597634334664805646",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:13:07.874756+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Creator stands in a kitchen holding two packages of ground beef, addressing the camera directly.",
+        "audio_description": "Stop blaming your metabolism, you're just eating like trash. 3 lbs of beef in the pan.",
+        "text_on_screen": "Stop blaming your metabolism",
+        "key_objects": [
+          "Ground beef"
+        ]
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "Creator adds the beef to a large electric skillet and seasons it with various spices.",
+        "audio_description": "Salt and pepper, garlic powder, onion powder.",
+        "text_on_screen": "3 lbs beef in the pan\nSalt and pepper\nGarlic powder\nOnion powder",
+        "key_objects": [
+          "Electric skillet",
+          "Seasoning bottles"
+        ]
+      },
+      {
+        "time_range": "0:06-0:11",
+        "visual_description": "Creator shows a box of Barilla Protein+ pasta and pours it into a separate boiling pot, then breaks up the meat in the skillet.",
+        "audio_description": "One box of protein pasta. Mix this up and let both these cook.",
+        "text_on_screen": "1 box of protein pasta\nMix this up",
+        "key_objects": [
+          "Barilla Protein+ Rotini",
+          "Meat masher tool"
+        ]
+      },
+      {
+        "time_range": "0:11-0:17",
+        "visual_description": "Creator holds two bags of frozen peas and carrots, adds them to the meat, and covers the skillet.",
+        "audio_description": "Your beef is halfway done, we're going with 15 ounces of peas and carrots. Mix this into the meat, we're going with a cover for the rest of the cook.",
+        "text_on_screen": "15 oz of peas and carrots\nMix this into the meat",
+        "key_objects": [
+          "Garden Duo Peas and Carrots"
+        ]
+      },
+      {
+        "time_range": "0:17-0:28",
+        "visual_description": "Creator pours the cooked pasta into the skillet, followed by red sauce, water, Alfredo sauce, and shredded cheese.",
+        "audio_description": "Your beef's done, go ahead and add your pasta in. Red sauce, one entire can. A little bit of water to mix this up. Classico Alfredo, one cup. Cream cheese triple cheddar, one entire bag.",
+        "text_on_screen": "Add your pasta in\nRed sauce\n1 entire can\nClassico Alfredo\n1 cup\nCream cheese triple cheddar\n1 entire bag",
+        "key_objects": [
+          "Classico Pasta Sauce",
+          "Classico Alfredo Sauce",
+          "Kraft Cream Cheese Creamy Melt Triple Cheddar"
+        ]
+      },
+      {
+        "time_range": "0:28-0:36",
+        "visual_description": "Creator stirs the large mixture in the skillet while explaining his philosophy on store-bought ingredients.",
+        "audio_description": "I did use store-bought Alfredo, what's the big deal? You're eating fast food all the time. This is 90% clean, 10% dirty.",
+        "text_on_screen": "I did use store bought alfredo\n90% clean 10% dirty",
+        "key_objects": [
+          "Electric skillet"
+        ]
+      },
+      {
+        "time_range": "0:36-0:45",
+        "visual_description": "Close-up of the meal being scooped into containers, followed by a shot of 10 prepared meal prep bowls.",
+        "audio_description": "Extremely tasty, high protein. This is going to help you lock in. When are you going to stop saving my meals and actually start making them to benefit your life?",
+        "text_on_screen": "Extremely tasty\nHigh protein\nWhen are you going to stop saving my meals and actually start making them",
+        "key_objects": [
+          "Meal prep containers"
+        ]
+      }
+    ],
+    "overall_summary": "Creator @cookingforgains demonstrates how to make 'Cheesy Beef Alfredo Bowls,' a high-protein meal prep recipe that yields 10 servings. He combines 3 lbs of lean ground beef with frozen vegetables, protein-enriched pasta, and a mix of red and Alfredo sauces topped with cheddar cheese. The video emphasizes that using convenient store-bought sauces is a valid strategy for maintaining a healthy diet compared to eating fast food. The final result provides 46g of protein per serving, and the creator challenges viewers to stop just saving his videos and start cooking them.",
+    "people": [
+      {
+        "description": "Muscular male fitness creator in a black tank top, wearing a gold chain and watch.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@cookingforgains"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Barilla Protein+ Rotini",
+        "display_name": "Barilla Protein+ Pasta",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "1 box",
+        "confidence": 5
+      },
+      {
+        "name": "Classico Pasta Sauce",
+        "display_name": "Classico Red Sauce",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "1 entire jar",
+        "confidence": 5
+      },
+      {
+        "name": "Classico Alfredo Sauce",
+        "display_name": "Classico Alfredo Sauce",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "1 cup",
+        "confidence": 5
+      },
+      {
+        "name": "Kraft Cream Cheese Creamy Melt Triple Cheddar",
+        "display_name": "Kraft Creamy Melt Triple Cheddar Cheese",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "1 entire bag",
+        "confidence": 5
+      },
+      {
+        "name": "96/4 Ground Beef",
+        "display_name": "96/4 Lean Ground Beef",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "3 lbs",
+        "confidence": 5
+      },
+      {
+        "name": "Garden Duo Peas and Carrots",
+        "display_name": "Frozen Peas and Carrots",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "30 oz total (two 15 oz bags)",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "High-protein meal prepping is a more effective strategy for health than blaming one's metabolism.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Using store-bought sauces is acceptable (the '90% clean, 10% dirty' rule) if it prevents you from eating fast food.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Viewers should transition from passively saving recipes to actively preparing them to see life benefits.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Cheesy Beef Alfredo Bowls",
+          "details": "Yields 10 servings; 481 calories, 46g protein, 15g fats, 40g carbs per serving."
+        },
+        {
+          "name": "Ingredients",
+          "details": "3 lbs 96/4 ground beef, 7g garlic powder, 6g onion powder, 6g salt, 5g pepper, 30 oz frozen peas and carrots, 1 box protein pasta, 1 jar red pasta sauce, 1 cup Alfredo sauce, 1 bag shredded triple cheddar cheese."
+        },
+        {
+          "name": "Step 1",
+          "details": "Brown 3 lbs of beef with garlic powder, onion powder, salt, and pepper. When halfway cooked, add 30 oz of frozen peas and carrots. Cook until beef is done."
+        },
+        {
+          "name": "Step 2",
+          "details": "Boil one box of protein pasta separately."
+        },
+        {
+          "name": "Step 3",
+          "details": "Combine cooked pasta with the beef and veggie mixture. Add red sauce, a splash of water, 1 cup of Alfredo sauce, and the entire bag of cheese. Mix thoroughly."
+        },
+        {
+          "name": "Step 4",
+          "details": "Portion into 10 meal prep containers."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "original sound \u2014 @cookingforgains",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All ingredients and brands were clearly visible or stated. Nutritional info taken directly from caption."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "High-energy, motivational, and practical.",
+    "topic_hints": [
+      "Meal Prep",
+      "High Protein Recipes",
+      "Fitness Nutrition"
+    ],
+    "affect_hints": [
+      "Motivated",
+      "Productive",
+      "Disciplined"
+    ],
+    "genre_hints": [
+      "Fitness TikTok",
+      "Cooking Tutorial"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5621,
+    "output_tokens": 2500,
+    "total_tokens": 8121,
+    "cost_usd": 0.002343,
+    "latency_ms": 25817,
+    "upload_ms": 5471
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

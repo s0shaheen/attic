@@ -1,0 +1,47 @@
+{
+  "item_id": "7262728729292475691",
+  "parsed_output": {
+    "summary": "Creator @treedfl recommends three essential shoes for men's summer travel, drawing from his experience spending a month in Europe with a minimal footwear collection. He specifically showcases the Birkenstock Boston clog as a versatile choice suitable for both casual walking and slightly more formal events.",
+    "entities": [
+      {
+        "name": "@treedfl",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Birkenstock Boston",
+        "type": "clothing",
+        "relevance": "primary"
+      },
+      {
+        "name": "Europe",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Guitar Jazz instrumental",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "fashion",
+      "secondary": "travel"
+    },
+    "genre": "ranking",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "shopping_research",
+    "embedding_text": "In this men's fashion and travel video, creator @treedfl recommends three essential shoes for summer travel based on his month-long trip across Europe. He emphasizes the importance of versatility and comfort when packing light for international trips. A key highlight in the video is the Birkenstock Boston clog in a dark suede finish, which he demonstrates can be dressed up for nicer occasions or worn casually for daily sightseeing. The video features on-screen text stating, 'I've been traveling around Europe for a month now with only 3 pairs of shoes.' This content is ideal for viewers looking for minimalist packing tips, European summer outfit inspiration, or specific footwear reviews like the Birkenstock Boston for long-term travel. The background music is a relaxing Guitar Jazz instrumental, and the creator provides direct advice to the camera."
+  },
+  "metrics": {
+    "input_tokens": 4257,
+    "output_tokens": 444,
+    "total_tokens": 4701,
+    "cost_usd": 0.000905,
+    "latency_ms": 7766,
+    "keyframe_count": 3
+  }
+}

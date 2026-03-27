@@ -1,0 +1,52 @@
+{
+  "item_id": "7422452426055109934",
+  "parsed_output": {
+    "summary": "This TikTok features highlights from an AAU basketball game, specifically showcasing a player's offensive skill set or 'bag work.' It captures the fast-paced environment of youth competitive sports, set against a backdrop featuring a Stephen Curry mural.",
+    "entities": [
+      {
+        "name": "Stephen Curry",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "SC Select Camp",
+        "type": "event",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Life Time",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "AAU Basketball",
+        "type": "trend_or_meme",
+        "relevance": "primary"
+      },
+      {
+        "name": "@christianyawpp",
+        "type": "person",
+        "relevance": "primary"
+      }
+    ],
+    "topic": {
+      "primary": "sports",
+      "secondary": null
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "satisfying",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "This 8-second TikTok video by @christianyawpp showcases high-level basketball skills, referred to in the on-screen text as 'Bag work \ud83e\udd2e'. The footage captures an AAU basketball game or scrimmage taking place in an indoor gym. A prominent mural of Stephen Curry for the SC Select Camp is visible on the back wall, along with a Life Time Fitness logo. The video features young athletes in black and white jerseys competing on a polished wood court, with a referee monitoring the play. The creator uses the song 'Finesse' by Koncept P to set a high-energy tone. This clip is a classic example of 'hooper' content, highlighting offensive maneuvers and athletic talent in a competitive youth sports setting. It is likely saved by basketball enthusiasts looking for highlight reels or inspiration for their own game."
+  },
+  "metrics": {
+    "input_tokens": 4271,
+    "output_tokens": 477,
+    "total_tokens": 4748,
+    "cost_usd": 0.000927,
+    "latency_ms": 11099,
+    "keyframe_count": 3
+  }
+}

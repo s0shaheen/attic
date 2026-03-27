@@ -1,0 +1,274 @@
+{
+  "item_id": "7354561231413431595",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:04:00.731566+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:41",
+        "visual_description": "Creator introduces a basic machine learning problem: recognizing a pattern between two sequences of numbers (X and Y).",
+        "audio_description": "Creator explains the goal is to train a model to find the relationship between X and Y, which is y = 2x - 1.",
+        "text_on_screen": "Machine learning 101; Let's train a machine learning model; X = [0, 1, 2, 3, 4]; Y = [-1, 1, 3, 5, 7]; AI and machine learning for coders; Python + CHILL?; Y = 2X - 1",
+        "key_objects": [
+          "AI and Machine Learning for Coders book"
+        ]
+      },
+      {
+        "time_range": "0:41-1:04",
+        "visual_description": "Screen recording shows a Google Colab notebook. Creator imports TensorFlow and Keras.",
+        "audio_description": "Creator recommends Google Colab for its pre-configured backend and introduces the Keras library within TensorFlow.",
+        "text_on_screen": "Untitled0.ipynb; import tensorflow as tf; from tensorflow.keras import Sequential; from tensorflow.keras.layers import Dense",
+        "key_objects": [
+          "Google Colab",
+          "TensorFlow",
+          "Keras"
+        ]
+      },
+      {
+        "time_range": "1:04-2:08",
+        "visual_description": "Creator explains the 'Sequential' model and 'Dense' layers using a neural network diagram.",
+        "audio_description": "Explanation of how layers of neurons process data and pass it forward. For this simple problem, only one layer with one neuron is needed.",
+        "text_on_screen": "model = Sequential([]); Dense(units=1, input_shape=[1])",
+        "key_objects": [
+          "Neural network diagram"
+        ]
+      },
+      {
+        "time_range": "2:08-3:18",
+        "visual_description": "Creator shows the compilation step, defining the optimizer and loss function.",
+        "audio_description": "Explanation of the optimizer (SGD) making guesses and the loss function (Mean Squared Error) measuring accuracy to tweak weights and biases.",
+        "text_on_screen": "model.compile(optimizer='sgd', loss='mean_squared_error'); Y = 10X + 10; weight; bias",
+        "key_objects": [
+          "Code editor"
+        ]
+      },
+      {
+        "time_range": "3:18-4:00",
+        "visual_description": "Creator formats data into NumPy arrays and starts the training process for 500 epochs.",
+        "audio_description": "Explanation of epochs as the number of times the model refines its guesses. The loss value is shown decreasing significantly.",
+        "text_on_screen": "import numpy as np; xs = np.array([-1.0, 0.0, 1.0, 2.0, 3.0, 4.0], dtype=float); ys = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float); model.fit(xs, ys, epochs=500); Epoch 500/500 - loss: 4.1138e-05",
+        "key_objects": [
+          "NumPy"
+        ]
+      },
+      {
+        "time_range": "4:00-4:54",
+        "visual_description": "Creator uses the trained model to predict the Y value for X=10.",
+        "audio_description": "The model predicts a value close to 19. Creator explains the slight discrepancy is due to the randomized initial guess and remaining loss.",
+        "text_on_screen": "print(model.predict([10.0])); [[18.981289]]; Y = 2X - 1; Y = 2(10) - 1; Y = 20 - 1; Y = 19",
+        "key_objects": [
+          "Prediction output"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a 4-minute crash course on training a basic machine learning model using TensorFlow and Keras in Google Colab. The creator demonstrates the process by teaching a model to recognize the linear relationship y = 2x - 1 from a small set of numbers. He walks through defining a sequential model with a single dense layer, compiling it with an SGD optimizer and mean squared error loss function, and training it over 500 epochs. The video concludes by showing the model successfully predicting a value for a new input, illustrating how machine learning discovers mathematical rules from data.",
+    "people": [
+      {
+        "description": "Male creator with short hair and a beard, appearing in a circular talking-head overlay.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "TensorFlow",
+        "display_name": "TensorFlow",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Keras",
+        "display_name": "Keras",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Google Colab",
+        "display_name": "Google Colab",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "NumPy",
+        "display_name": "NumPy",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Python",
+        "display_name": "Python",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "AI and Machine Learning for Coders",
+        "display_name": "AI and Machine Learning for Coders by Laurence Moroney",
+        "type": "book",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Stochastic Gradient Descent",
+        "display_name": "SGD Optimizer",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Mean Squared Error",
+        "display_name": "Mean Squared Error (MSE) Loss Function",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Machine learning allows a computer to figure out the relationship between data points (X and Y) through iterative guessing and error measurement.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "A basic neural network can be constructed using a Sequential model with Dense layers in TensorFlow/Keras.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Training involves an optimizer to make guesses and a loss function to measure accuracy, refining weights and biases over multiple epochs.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Environment Setup",
+          "details": "Open a new session in Google Colab to handle backend processes."
+        },
+        {
+          "name": "Import Libraries",
+          "details": "Import tensorflow, Sequential, and Dense from keras.layers."
+        },
+        {
+          "name": "Define Model",
+          "details": "Create a Sequential model with one Dense layer (units=1, input_shape=[1])."
+        },
+        {
+          "name": "Compile Model",
+          "details": "Use 'sgd' as the optimizer and 'mean_squared_error' as the loss function."
+        },
+        {
+          "name": "Prepare Data",
+          "details": "Format input (xs) and output (ys) values into NumPy arrays."
+        },
+        {
+          "name": "Train Model",
+          "details": "Use model.fit with the data and set epochs to 500."
+        },
+        {
+          "name": "Predict",
+          "details": "Use model.predict with a new value to see the calculated result."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Chill Lo-Fi Hip Hop Beat \u2014 Unidentified Artist",
+      "metadata_song": "sonido original",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": 3,
+      "notes": "The background music is a generic lo-fi track common in tech tutorials. All technical entities and code snippets were clearly visible and explained."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Educational, technical, and focused with a calm, instructional tone.",
+    "topic_hints": [
+      "Machine Learning",
+      "TensorFlow",
+      "Software Engineering"
+    ],
+    "affect_hints": [
+      "Empowered",
+      "Focused",
+      "Intellectual"
+    ],
+    "genre_hints": [
+      "Educational TikTok",
+      "Tech Tutorial",
+      "Coding Demo"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 27627,
+    "output_tokens": 2483,
+    "total_tokens": 30110,
+    "cost_usd": 0.005634,
+    "latency_ms": 35319,
+    "upload_ms": 12449
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

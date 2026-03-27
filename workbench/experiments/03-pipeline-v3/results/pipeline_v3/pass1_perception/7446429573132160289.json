@@ -1,0 +1,153 @@
+{
+  "item_id": "7446429573132160289",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:20:40.176573+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:13",
+        "visual_description": "Creator demonstrates a 'YouTube chopping' technique by rhythmically tapping laptop keys to trigger specific segments of a live performance video.",
+        "audio_description": "The song 'Stop! In the Name of Love' is heard being chopped and looped rhythmically as the creator hits keys.",
+        "text_on_screen": "TF IS BRO DOING",
+        "key_objects": [
+          "Laptop",
+          "Audio Interface",
+          "Studio Monitors",
+          "YouTube interface",
+          "External USB Hub"
+        ]
+      }
+    ],
+    "overall_summary": "In this short video, music producer @finley.mp3 demonstrates a creative sampling technique referred to as 'YouTube chopping.' By using his laptop keyboard to trigger specific timestamps in a YouTube video of The Supremes, he creates a rhythmic loop in real-time. The video serves as a demonstration of a quick, hardware-free method for music production and beat-making.",
+    "people": [
+      {
+        "description": "Young male with curly hair wearing a blue fuzzy sweater, focused on his laptop.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "finley.mp3"
+      }
+    ],
+    "entities": [
+      {
+        "name": "The Supremes",
+        "display_name": "The Supremes",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Stop! In the Name of Love",
+        "display_name": "Stop! In the Name of Love - The Supremes",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "FL Studio",
+        "display_name": "FL Studio DAW",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "YouTube",
+        "display_name": "YouTube",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Sampling",
+        "display_name": "Music Sampling Technique",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "Chopping",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "You can use a laptop keyboard to 'chop' and sample audio directly from YouTube videos for music production.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "YouTube Chopping",
+          "details": "Using keyboard shortcuts or mapped keys to jump to specific timestamps in a video to create a rhythmic sample loop."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Stop! In the Name of Love \u2014 The Supremes",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The song being sampled is a very famous Motown track, easily identifiable."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Focused and rhythmic",
+    "topic_hints": [
+      "Music Production",
+      "Sampling Techniques",
+      "Beat Making"
+    ],
+    "affect_hints": [
+      "Creative",
+      "Impressed",
+      "Energetic"
+    ],
+    "genre_hints": [
+      "Music Tutorial",
+      "Producer POV"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2696,
+    "output_tokens": 1086,
+    "total_tokens": 3782,
+    "cost_usd": 0.001056,
+    "latency_ms": 15639,
+    "upload_ms": 3378
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

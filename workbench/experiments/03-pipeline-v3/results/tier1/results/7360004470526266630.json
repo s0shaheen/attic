@@ -1,0 +1,52 @@
+{
+  "item_id": "7360004470526266630",
+  "parsed_output": {
+    "summary": "A melancholic fan edit of The Office featuring Michael Scott and Toby Flenderson playing cards in the breakroom. The video uses the song 'Let Down' by Radiohead to create a somber, reflective atmosphere around Michael's character.",
+    "entities": [
+      {
+        "name": "Michael Scott",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Toby Flenderson",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "The Office",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Radiohead",
+        "type": "artist",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Let Down",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "music"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "sad",
+      "secondary": "nostalgic"
+    },
+    "viewer_orientation": "emotional_regulation",
+    "embedding_text": "A melancholic 92-second fan edit of the sitcom The Office, specifically focusing on a somber scene between Michael Scott, played by Steve Carell, and Toby Flenderson, played by Paul Lieberstein. The two characters are shown sitting in the Dunder Mifflin breakroom playing a quiet game of cards. The edit is set to the song Let Down by Radiohead, emphasizing themes of loneliness and disappointment. This video is a character-focused edit rather than a comedy clip, intended for fans who enjoy the more dramatic or emotional moments of the series. Key hashtags include #michaelscottedit, #theofficeedit, and #radiohead. The visual style is dark and cinematic, typical of 'sad' character edits on TikTok."
+  },
+  "metrics": {
+    "input_tokens": 4332,
+    "output_tokens": 466,
+    "total_tokens": 4798,
+    "cost_usd": 0.000929,
+    "latency_ms": 6986,
+    "keyframe_count": 3
+  }
+}

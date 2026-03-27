@@ -1,0 +1,47 @@
+{
+  "item_id": "7177724606508289281",
+  "parsed_output": {
+    "summary": "Travel creator @amzdicko shares a curated list of her top five favorite coffeeshops in Amsterdam. The video serves as a travel guide for tourists, highlighting specific locations like Cannacenter Best Friends Oud Zuid as must-visit spots.",
+    "entities": [
+      {
+        "name": "Amsterdam",
+        "type": "place",
+        "relevance": "primary"
+      },
+      {
+        "name": "Cannacenter Best Friends Oud Zuid",
+        "type": "place",
+        "relevance": "primary"
+      },
+      {
+        "name": "@amzdicko",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Netherlands",
+        "type": "place",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "travel",
+      "secondary": "other"
+    },
+    "genre": "ranking",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "In this travel recommendation TikTok, creator @amzdicko lists her top 5 favorite coffeeshops in Amsterdam, Netherlands. The video is a guide for tourists looking for the best cannabis cafes in the city, featuring on-screen text like 'My top 5 favourite Coffeeshops In Amsterdam' and 'the perfect place to get out of the cold.' One of the primary locations shown is the exterior of Cannacenter Best Friends Oud Zuid, a brick-faced shop in the Oud Zuid neighborhood. This ranking-style vlog is designed for travelers planning an Amsterdam itinerary and looking for specific 'things to do' and local travel tips. The creator encourages viewers to save the video for their future trip and follow for more Amsterdam recommendations and travel guides."
+  },
+  "metrics": {
+    "input_tokens": 4360,
+    "output_tokens": 427,
+    "total_tokens": 4787,
+    "cost_usd": 0.00091,
+    "latency_ms": 7724,
+    "keyframe_count": 3
+  }
+}

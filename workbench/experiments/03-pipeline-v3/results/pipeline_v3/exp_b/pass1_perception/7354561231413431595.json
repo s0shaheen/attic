@@ -1,0 +1,445 @@
+{
+  "item_id": "7354561231413431595",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:45:32.548992+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "A black screen displays the title 'Machine learning 101'. The creator's face is visible in a circular overlay at the bottom of the screen.",
+        "audio_description": "The creator introduces the topic of training a machine learning model, starting with basic pattern recognition.",
+        "text_on_screen": "Machine learning 101",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:04-0:11",
+        "visual_description": "The screen shows two arrays of numbers, X and Y, representing input and output values. The creator's face remains in the circular overlay.",
+        "audio_description": "The creator mentions that the example is from the book 'AI and machine learning for coders'.",
+        "text_on_screen": "X = [0, 1, 2, 3, 4]\nY = [-1, 1, 3, 5, 7]",
+        "key_objects": [
+          "X array",
+          "Y array"
+        ]
+      },
+      {
+        "time_range": "0:11-0:17",
+        "visual_description": "Text appears indicating the use of TensorFlow. A snake graphic with a speech bubble 'python + chill?' is also displayed.",
+        "audio_description": "The creator explains that they will train a model using TensorFlow to recognize a pattern between the two sequences of numbers.",
+        "text_on_screen": "AI and machine learning for coders\nWe train a model using TensorFlow\npython + chill?",
+        "key_objects": [
+          "TensorFlow logo (implied by text)",
+          "Python logo (implied by snake graphic)"
+        ]
+      },
+      {
+        "time_range": "0:17-0:28",
+        "visual_description": "The X and Y arrays are shown again. A red box highlights the X value of 2 and the Y value of 3.",
+        "audio_description": "The creator states the task is to train a model to find the relationship between X and Y values, revealing the actual relationship is Y = 2X - 1.",
+        "text_on_screen": "X = [0, 1, 2, 3, 4]\nY = [-1, 1, 3, 5, 7]",
+        "key_objects": [
+          "X array",
+          "Y array"
+        ]
+      },
+      {
+        "time_range": "0:28-0:42",
+        "visual_description": "The equation Y = 2X - 1 is displayed, followed by an example calculation: 3 = 2(2) - 1. The red box remains around X=2 and Y=3.",
+        "audio_description": "The creator elaborates on the relationship, explaining that the Y value is two times the X value minus one, and the goal is for the computer to discover this on its own.",
+        "text_on_screen": "Y = 2X - 1\n3 = 2(2) - 1",
+        "key_objects": [
+          "Mathematical equation"
+        ]
+      },
+      {
+        "time_range": "0:42-0:55",
+        "visual_description": "A screen recording of a Google Colab notebook interface is shown, initially blank.",
+        "audio_description": "The creator suggests using Google Colab as the easiest way to get started with TensorFlow, as it automatically sets up the backend processes.",
+        "text_on_screen": "Untitled0.ipynb",
+        "key_objects": [
+          "Google Colab interface"
+        ]
+      },
+      {
+        "time_range": "0:55-1:13",
+        "visual_description": "The Google Colab screen now displays Python code importing TensorFlow, Sequential, and Dense layers.",
+        "audio_description": "The creator explains that they will use the Keras library within TensorFlow and will create a model by stacking layers sequentially using the Sequential API.",
+        "text_on_screen": "import tensorflow as tf\nfrom tensorflow.keras import Sequential\nfrom tensorflow.keras.layers import Dense\nmodel = Sequential([])",
+        "key_objects": [
+          "Python code",
+          "Google Colab interface"
+        ]
+      },
+      {
+        "time_range": "1:13-1:33",
+        "visual_description": "An animated diagram illustrates two layers of neurons, with arrows showing data flow from one layer to the next. The code snippet is still visible at the top.",
+        "audio_description": "The creator describes how each layer of neurons in a deep learning model takes in data, makes guesses, and feeds the data to the next layer.",
+        "text_on_screen": "import tensorflow as tf\nfrom tensorflow.keras import Sequential\nfrom tensorflow.keras.layers import Dense\nmodel = Sequential([])",
+        "key_objects": [
+          "Neural network diagram",
+          "Python code"
+        ]
+      },
+      {
+        "time_range": "1:33-2:09",
+        "visual_description": "The code `Dense(units=1, input_shape=[1])` is added to the model. A red box highlights `units=1` and then `input_shape=[1]`. The diagram now shows a single neuron.",
+        "audio_description": "The creator explains that for this simple model, only one layer with one neuron is needed, using the Dense API. They clarify that 'dense' means each neuron connects to every other neuron in the next layer, and the input shape needs to be specified.",
+        "text_on_screen": "import tensorflow as tf\nfrom tensorflow.keras import Sequential\nfrom tensorflow.keras.layers import Dense\nmodel = Sequential([Dense(units=1, input_shape=[1])])",
+        "key_objects": [
+          "Python code",
+          "Neural network diagram (single neuron)"
+        ]
+      },
+      {
+        "time_range": "2:09-2:42",
+        "visual_description": "The code `model.compile(optimizer='sgd', loss='mean_squared_error')` is added. Red boxes highlight `optimizer='sgd'` and `loss='mean_squared_error'`. The X and Y arrays are also displayed.",
+        "audio_description": "The creator explains that the optimizer ('sgd') makes guesses about the relationship between X and Y, and the loss function ('mean_squared_error') measures how good or bad those guesses are. They mention these are pre-built components.",
+        "text_on_screen": "import tensorflow as tf\nfrom tensorflow.keras import Sequential\nfrom tensorflow.keras.layers import Dense\nmodel = Sequential([Dense(units=1, input_shape=[1])])\nmodel.compile(\n    optimizer='sgd',\n    loss='mean_squared_error'\n)\nX = [0, 1, 2, 3, 4]\nY = [-1, 1, 3, 5, 7]",
+        "key_objects": [
+          "Python code",
+          "X array",
+          "Y array"
+        ]
+      },
+      {
+        "time_range": "2:42-3:18",
+        "visual_description": "The X and Y arrays are shown, and an example guess equation `Y = 10X + 10` is displayed. Red boxes highlight '10X' and '10' in the equation.",
+        "audio_description": "The creator uses an analogy of pre-built JavaScript libraries to explain using pre-built optimizer and loss functions. They describe how the computer makes a guess (e.g., Y=10X+10) and tweaks parameters like weight and bias to refine it.",
+        "text_on_screen": "X = [0, 1, 2, 3, 4]\nY = [-1, 1, 3, 5, 7]\nY = 10X + 10",
+        "key_objects": [
+          "Mathematical equation",
+          "X array",
+          "Y array"
+        ]
+      },
+      {
+        "time_range": "3:18-3:41",
+        "visual_description": "Python code for defining `xs` and `ys` using `np.array` and then training the model with `model.fit(xs, ys, epochs=500)` is shown. A red box highlights `epochs=500`.",
+        "audio_description": "The creator explains how to format X and Y values into NumPy arrays and then pass them to the model for training. They define 'epochs' as the number of times the optimizer and loss function refine their guesses.",
+        "text_on_screen": "import numpy as np\nimport tensorflow as tf\nfrom tensorflow.keras import Sequential\nfrom tensorflow.keras.layers import Dense\nmodel = Sequential([Dense(units=1, input_shape=[1])])\nmodel.compile(\n    optimizer='sgd',\n    loss='mean_squared_error'\n)\nxs = np.array([-1.0, 0.0, 1.0, 2.0, 3.0, 4.0], dtype=float)\nys = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float)\nmodel.fit(xs, ys, epochs=500)",
+        "key_objects": [
+          "Python code",
+          "NumPy arrays"
+        ]
+      },
+      {
+        "time_range": "3:41-4:00",
+        "visual_description": "Console output showing the training progress over 500 epochs, with decreasing loss values.",
+        "audio_description": "The creator highlights that after 500 epochs, the loss has become extremely small, indicating that the machine has learned the relationship between X and Y.",
+        "text_on_screen": "Epoch 489/500 - 0s 9ms/step - loss: 5.1688e-05\nEpoch 490/500 - 0s 9ms/step - loss: 5.0626e-05\nEpoch 491/500 ==============================] - 0s 5ms/step - loss: 4.9587e-05\nEpoch 492/500 ==============================] - 0s 9ms/step - loss: 4.8568e-05\nEpoch 493/500 ==============================] - 0s 6ms/step - loss: 4.7570e-05\nEpoch 494/500 ==============================] - 0s 5ms/step - loss: 4.6593e-05\nEpoch 495/500 ==============================] - 0s 5ms/step - loss: 4.5636e-05\nEpoch 496/500 ==============================] - 0s 6ms/step - loss: 4.4698e-05\nEpoch 497/500 ==============================] - 0s 9ms/step - loss: 4.3780e-05\nEpoch 498/500 ==============================] - 0s 5ms/step - loss: 4.2881e-05\nEpoch 499/500 ==============================] - 0s 5ms/step - loss: 4.2001e-05\nEpoch 500/500 ==============================] - 0s 9ms/step - loss: 4.1138e-05",
+        "key_objects": [
+          "Console output",
+          "Loss values"
+        ]
+      },
+      {
+        "time_range": "4:00-4:12",
+        "visual_description": "The code `print(model.predict([10.0]))` is added to the Colab notebook. A red box highlights `[10.0]` as the new X value.",
+        "audio_description": "The creator demonstrates how to use the trained model to predict a new Y value for a given X input (10.0).",
+        "text_on_screen": "import numpy as np\nimport tensorflow as tf\nfrom tensorflow.keras import Sequential\nfrom tensorflow.keras.layers import Dense\nmodel = Sequential([Dense(units=1, input_shape=[1])])\nmodel.compile(\n    optimizer='sgd',\n    loss='mean_squared_error'\n)\nxs = np.array([-1.0, 0.0, 1.0, 2.0, 3.0, 4.0], dtype=float)\nys = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float)\nmodel.fit(xs, ys, epochs=500)\nprint(model.predict([10.0]))",
+        "key_objects": [
+          "Python code"
+        ]
+      },
+      {
+        "time_range": "4:12-4:55",
+        "visual_description": "The console output shows the prediction `[[18.981289]]`. The original formula `Y = 2X - 1` is displayed with the calculation `Y = 2(10) - 1 = 20 - 1` resulting in `Y = 19`.",
+        "audio_description": "The creator shows the model's prediction for X=10, which is close to 19. They explain that the slight variation is due to the randomized initial guess and the small remaining loss, but it's very close to the expected value from the formula.",
+        "text_on_screen": "[[18.981289]]\nY = 2X - 1\nY = 2(10) - 1\nY = 20 - 1",
+        "key_objects": [
+          "Console output",
+          "Mathematical equation",
+          "Prediction result"
+        ]
+      }
+    ],
+    "overall_summary": "This video provides a concise tutorial on training a basic machine learning model using TensorFlow and Keras to discover a linear relationship between input (X) and output (Y) values. The creator demonstrates how to set up a sequential model with a single dense layer, define an optimizer and a mean squared error loss function, and train the model over 500 epochs. The video concludes by showing how the trained model can accurately predict new Y values based on unseen X inputs, illustrating the core concept of machine learning in identifying underlying data patterns.",
+    "people": [
+      {
+        "description": "A male creator, likely in his 20s or 30s, with short brown hair and a light-colored shirt, speaking directly to the camera and demonstrating coding concepts.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Machine Learning",
+        "display_name": "Machine Learning",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "caption"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "TensorFlow",
+        "display_name": "TensorFlow",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Keras",
+        "display_name": "Keras",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Google Colab",
+        "display_name": "Google Colab",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Python",
+        "display_name": "Python",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "AI and Machine Learning for Coders",
+        "display_name": "AI and Machine Learning for Coders",
+        "type": "book",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Sequential",
+        "display_name": "Sequential Model (Keras)",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Dense",
+        "display_name": "Dense Layer (Keras)",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "units=1, input_shape=[1]",
+        "confidence": 5
+      },
+      {
+        "name": "SGD",
+        "display_name": "Stochastic Gradient Descent (Optimizer)",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Mean Squared Error",
+        "display_name": "Mean Squared Error (Loss Function)",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "NumPy",
+        "display_name": "NumPy",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Neural Network",
+        "display_name": "Neural Network",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Epochs",
+        "display_name": "Epochs (Machine Learning Training)",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "500",
+        "confidence": 5
+      },
+      {
+        "name": "Weight and Bias",
+        "display_name": "Weight and Bias (Neural Network Parameters)",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Machine learning models can be trained to recognize patterns in data, even simple linear relationships.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "TensorFlow and Keras provide a straightforward way to build and train neural networks, abstracting complex mathematical details.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "A sequential model with a dense layer, an optimizer, and a loss function are fundamental components for building a basic neural network.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Training a model involves iteratively refining its guesses (epochs) to minimize the loss, ultimately learning the underlying data relationship.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Set up Google Colab",
+          "details": "Open a new session in Google Colab for automatic backend setup."
+        },
+        {
+          "name": "Import Libraries",
+          "details": "Import TensorFlow, Sequential, and Dense layers from Keras."
+        },
+        {
+          "name": "Create Sequential Model",
+          "details": "Initialize a Sequential model."
+        },
+        {
+          "name": "Add Dense Layer",
+          "details": "Add a Dense layer with 1 unit and an input shape of [1]."
+        },
+        {
+          "name": "Compile Model",
+          "details": "Compile the model using 'sgd' as the optimizer and 'mean_squared_error' as the loss function."
+        },
+        {
+          "name": "Prepare Data",
+          "details": "Format X and Y values into NumPy arrays (e.g., xs = np.array([-1.0, 0.0, ...]), ys = np.array([-3.0, -1.0, ...])). "
+        },
+        {
+          "name": "Train Model",
+          "details": "Fit the model to the data using `model.fit(xs, ys, epochs=500)`."
+        },
+        {
+          "name": "Make Prediction",
+          "details": "Use `model.predict([new_x_value])` to get a prediction from the trained model."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "sonido original",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The 'sonido original' metadata is interpreted as the creator's voice, as no distinct background music is present. Confidence for Python is an inference from 'python + chill?' graphic."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, educational, clear, focused",
+    "topic_hints": [
+      "Machine Learning Tutorial",
+      "TensorFlow Keras",
+      "Neural Network Basics",
+      "Python Programming"
+    ],
+    "affect_hints": [
+      "Educational",
+      "Informative",
+      "Clear",
+      "Helpful"
+    ],
+    "genre_hints": [
+      "Educational Content",
+      "Tech Tutorial",
+      "Programming Guide"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 88209,
+    "output_tokens": 5509,
+    "total_tokens": 93718,
+    "cost_usd": 0.016537,
+    "latency_ms": 63001,
+    "upload_ms": 14019
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

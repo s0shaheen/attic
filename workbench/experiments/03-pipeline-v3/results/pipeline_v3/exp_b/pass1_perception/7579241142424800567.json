@@ -1,0 +1,351 @@
+{
+  "item_id": "7579241142424800567",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:58:35.812798+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Two crispy chicken shawarma wraps, partially wrapped in parchment paper, are presented on a white plate alongside french fries and a small bowl of white dipping sauce. A hand picks up one wrap, revealing the chicken and pickle filling.",
+        "audio_description": "Crisp crunching sound as the shawarma wrap is handled.",
+        "text_on_screen": "crispy chicken shawarma \u2728",
+        "key_objects": [
+          "chicken shawarma wraps",
+          "french fries",
+          "white dipping sauce",
+          "parchment paper",
+          "white plate"
+        ]
+      },
+      {
+        "time_range": "0:05-0:06",
+        "visual_description": "A spoon adds a dollop of white sauce onto the open end of the crispy chicken shawarma wrap.",
+        "audio_description": "No distinct audio.",
+        "text_on_screen": "crispy chicken shawarma \u2728",
+        "key_objects": [
+          "chicken shawarma wrap",
+          "white dipping sauce",
+          "spoon"
+        ]
+      },
+      {
+        "time_range": "0:06-0:10",
+        "visual_description": "Raw chicken strips are placed in a glass bowl. White yogurt or cream, red paste (likely tomato or chili paste), oil, and various powdered spices are added. The ingredients are then mixed thoroughly to marinate the chicken.",
+        "audio_description": "Pouring liquid, clinking of spoon, mixing sounds.",
+        "text_on_screen": null,
+        "key_objects": [
+          "raw chicken strips",
+          "glass bowl",
+          "yogurt",
+          "red paste",
+          "cooking oil",
+          "spices"
+        ]
+      },
+      {
+        "time_range": "0:10-0:13",
+        "visual_description": "The marinated chicken strips are spread evenly onto a metal baking sheet.",
+        "audio_description": "Clinking of tongs, chicken being spread.",
+        "text_on_screen": null,
+        "key_objects": [
+          "marinated chicken",
+          "metal baking sheet",
+          "tongs",
+          "Nordic Ware baking sheet"
+        ]
+      },
+      {
+        "time_range": "0:13-0:17",
+        "visual_description": "Cooking oil is poured into a white bowl, followed by a red powdered spice. The mixture is then whisked until well combined, forming a reddish oil glaze.",
+        "audio_description": "Pouring liquid, whisking sound.",
+        "text_on_screen": null,
+        "key_objects": [
+          "cooking oil",
+          "white bowl",
+          "red powdered spice",
+          "whisk"
+        ]
+      },
+      {
+        "time_range": "0:17-0:22",
+        "visual_description": "Two flatbreads are shown. White sauce is spread onto one, followed by cooked chicken and pickle spears. The flatbread is then carefully rolled into a wrap.",
+        "audio_description": "Spreading sound, rolling sound.",
+        "text_on_screen": null,
+        "key_objects": [
+          "flatbreads",
+          "white sauce",
+          "cooked chicken",
+          "pickle spears",
+          "wooden cutting board"
+        ]
+      },
+      {
+        "time_range": "0:22-0:24",
+        "visual_description": "The assembled shawarma wrap is brushed with the red oil glaze and then placed in a hot frying pan. It is flipped to show the golden-brown, crispy exterior.",
+        "audio_description": "Sizzling sound, brushing sound.",
+        "text_on_screen": null,
+        "key_objects": [
+          "shawarma wrap",
+          "red oil glaze",
+          "brush",
+          "frying pan",
+          "spatula"
+        ]
+      }
+    ],
+    "overall_summary": "This video provides a tutorial on how to prepare crispy chicken shawarma wraps at home. It showcases the process from marinating raw chicken with yogurt, paste, and spices, to baking the chicken, and then assembling the wraps with a white sauce and pickles. The final step involves brushing the wraps with a spiced oil and pan-frying them to achieve a delicious, crispy exterior. The video highlights the ease and deliciousness of this homemade shawarma.",
+    "people": [
+      {
+        "description": "A person's hands are shown preparing and assembling the food, demonstrating the recipe steps.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Crispy Chicken Shawarma Wrap",
+        "display_name": "Crispy Chicken Shawarma Wrap",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Chicken Strips",
+        "display_name": "Chicken Strips",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "raw, cut into strips",
+        "confidence": 4
+      },
+      {
+        "name": "Yogurt",
+        "display_name": "Yogurt",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "white, creamy, used in marinade",
+        "confidence": 3
+      },
+      {
+        "name": "Tomato Paste",
+        "display_name": "Tomato Paste or Chili Paste",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "red, thick paste, used in marinade",
+        "confidence": 3
+      },
+      {
+        "name": "Cooking Oil",
+        "display_name": "Cooking Oil",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Spices",
+        "display_name": "Powdered Spices",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "various colors (red, brown, green), used in marinade and oil glaze",
+        "confidence": 3
+      },
+      {
+        "name": "Flatbread",
+        "display_name": "Flatbread or Tortilla",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "round, white",
+        "confidence": 4
+      },
+      {
+        "name": "Pickle Spears",
+        "display_name": "Pickle Spears",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "green, sliced lengthwise",
+        "confidence": 4
+      },
+      {
+        "name": "White Dipping Sauce",
+        "display_name": "White Dipping Sauce (e.g., Garlic Sauce, Yogurt Sauce)",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "creamy, white",
+        "confidence": 3
+      },
+      {
+        "name": "French Fries",
+        "display_name": "French Fries",
+        "type": "ingredient",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Nordic Ware",
+        "display_name": "Nordic Ware",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "baking sheet",
+        "confidence": 4
+      },
+      {
+        "name": "Marinating",
+        "display_name": "Marinating Technique",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Baking",
+        "display_name": "Baking Technique",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Pan-frying",
+        "display_name": "Pan-frying Technique",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "for crisping the wrap",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "This video provides an easy and delicious recipe for making crispy chicken shawarma wraps at home.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "The key to crispy shawarma wraps involves pan-frying them after assembly, optionally brushed with a spiced oil.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Chicken Marinade",
+          "details": "Raw chicken strips, yogurt/cream, red paste, cooking oil, various powdered spices."
+        },
+        {
+          "name": "Spiced Oil Glaze",
+          "details": "Cooking oil, red powdered spice (e.g., paprika)."
+        },
+        {
+          "name": "Shawarma Assembly",
+          "details": "Flatbread, white sauce, cooked marinated chicken, pickle spears."
+        },
+        {
+          "name": "Cooking Method",
+          "details": "Bake marinated chicken, pan-fry assembled wraps until crispy."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Unidentifiable instrumental track (generic upbeat background music)",
+      "metadata_song": "sonido original",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Specific names for all spices and the exact type of white sauce (e.g., garlic sauce, tahini yogurt sauce) are not explicitly stated or visually identifiable with certainty."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static|overhead|close_ups",
+      "editing_style": "jump_cuts|montage"
+    },
+    "visual_mood": "appetizing|instructional|satisfying|warm",
+    "topic_hints": [
+      "cooking",
+      "chicken recipes",
+      "Middle Eastern food",
+      "wraps"
+    ],
+    "affect_hints": [
+      "hungry",
+      "inspired",
+      "satisfied",
+      "curious"
+    ],
+    "genre_hints": [
+      "cooking tutorial",
+      "food preparation",
+      "recipe video"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8878,
+    "output_tokens": 2623,
+    "total_tokens": 11501,
+    "cost_usd": 0.002906,
+    "latency_ms": 30653,
+    "upload_ms": 5854
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

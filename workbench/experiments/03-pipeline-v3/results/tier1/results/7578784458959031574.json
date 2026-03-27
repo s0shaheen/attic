@@ -1,0 +1,52 @@
+{
+  "item_id": "7578784458959031574",
+  "parsed_output": {
+    "summary": "Creator @theyorkshiregingerone shares a list of decluttering and organization tips to achieve mental clarity, framing the practice as a form of 'feng shui.' The video features the creator exercising in a gym while on-screen text advises viewers to delete old apps, organize seasonings, and donate clothes to help them 'think clearer.'",
+    "entities": [
+      {
+        "name": "@theyorkshiregingerone",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Feng Shui",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Smartphone",
+        "type": "product",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Seasonings",
+        "type": "ingredient",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Clothing",
+        "type": "clothing",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "health",
+      "secondary": "fitness"
+    },
+    "genre": "other",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "inspiring"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "In this 8-second TikTok, creator @theyorkshiregingerone shares a motivational list of decluttering tips to achieve mental clarity, asserting that 'feng shui is real.' While exercising in a gym, she uses on-screen text to encourage viewers to delete photos, delete apps, give clothes away, and delete phone numbers. She also suggests making phone displays neater and organizing seasonings and clothes. The video emphasizes that organizing one's life allows for clearer thinking. Key hashtags include #fengshui, #fengshuitips, and #fengshuilifestyle. This content is ideal for users looking for minimalist lifestyle inspiration, digital decluttering advice, or mental health tips related to environmental organization. The creator is seen wearing a brown baseball cap and a black t-shirt while working out on a stationary bike or elliptical machine."
+  },
+  "metrics": {
+    "input_tokens": 4319,
+    "output_tokens": 496,
+    "total_tokens": 4815,
+    "cost_usd": 0.000945,
+    "latency_ms": 9513,
+    "keyframe_count": 3
+  }
+}

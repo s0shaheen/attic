@@ -1,0 +1,403 @@
+{
+  "item_id": "7219333952102944046",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:46:16.838604+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "A man with dark hair and a beard, wearing a black hoodie, leans against a wall on a beach at sunset. A volleyball net is visible in the background.",
+        "audio_description": "A man's voice states, \"The more you put in, the more you get out.\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "volleyball net"
+        ]
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "David Goggins, a bald man, is shown in a close-up, speaking intensely into a microphone.",
+        "audio_description": "David Goggins says, \"Get back to fucking work. It's time to get back to work.\"",
+        "text_on_screen": "MOTIVATEDDGT, GET, WORK, IT'S, TO",
+        "key_objects": [
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:06-0:14",
+        "visual_description": "Jocko Willink, a bald man, is shown in a black and white close-up, speaking into a microphone with a serious expression.",
+        "audio_description": "Jocko Willink states, \"The best way to contend with problems, with issues, with adversity is action. Is by taking action.\"",
+        "text_on_screen": "The best way to contend with problems, with issues, with adversity, is action., Is by taking action.",
+        "key_objects": [
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:14-0:20",
+        "visual_description": "A man with blonde hair, wearing a white shirt, tie, and colorful suspenders, sits on a chair on a stage, gesturing with his hands. Posters with people exercising are in the background, along with a table holding a water bottle and shoes.",
+        "audio_description": "A man's voice says, \"From that day forward, I made a promise that I will give it everything I got. That way I'm a winner no matter what.\"",
+        "text_on_screen": "BODYJAM, LASS DICH MITREISSEN VON DER MUSIK (German for 'LET YOURSELF BE CARRIED AWAY BY THE MUSIC'), REPONE.DE",
+        "key_objects": [
+          "water bottle",
+          "shoes",
+          "lapel microphone"
+        ]
+      },
+      {
+        "time_range": "0:20-0:23",
+        "visual_description": "Steve Aoki, a man with long blonde hair and a beard, wearing headphones and a floral shirt, speaks into a microphone.",
+        "audio_description": "Steve Aoki says, \"You must fucking suffer. You must suffer.\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "headphones",
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:23-0:30",
+        "visual_description": "David Goggins is shown in a close-up, speaking with intense hand gestures. A blurred American flag is in the background.",
+        "audio_description": "David Goggins says, \"It sucks. I'm drowning, I'm miserable, I'm suffering, I'm broken, but I'm not going anywhere.\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "American flag (blurred)"
+        ]
+      },
+      {
+        "time_range": "0:30-0:36",
+        "visual_description": "The man with blonde hair, white shirt, tie, and colorful suspenders is again shown sitting on a chair on a stage, speaking.",
+        "audio_description": "The man states, \"The only difference between most of you and me, the only difference between me and you is I wanted it more. I wanted it more.\"",
+        "text_on_screen": "EPONE.DE",
+        "key_objects": [
+          "lapel microphone"
+        ]
+      },
+      {
+        "time_range": "0:36-0:45",
+        "visual_description": "David Goggins is shown in a close-up, speaking into a microphone.",
+        "audio_description": "David Goggins says, \"It's so easy to be great nowadays, my friend, because most people are weak. Most people don't want to go to that extra mile. Most people don't want to find that extra because it sucks.\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:45-0:50",
+        "visual_description": "Nick Diaz, a man with short hair, wearing headphones and a grey t-shirt, speaks into a microphone. \"THE JOE ROGAN EXPERIENCE\" is visible in the bottom right.",
+        "audio_description": "Nick Diaz says, \"You could turn anything in life into something if you just keep showing up.\"",
+        "text_on_screen": "THE JOE ROGAN EXPERIENCE",
+        "key_objects": [
+          "headphones",
+          "microphone",
+          "water bottles"
+        ]
+      },
+      {
+        "time_range": "0:50-0:55",
+        "visual_description": "Kobe Bryant, a bald man, wearing a black t-shirt with gold text, speaks into a microphone.",
+        "audio_description": "Kobe Bryant says, \"One foot in front of the other, one step at a time. Next thing you know, you're at the top of the mountain.\"",
+        "text_on_screen": "FOREVER LEGEND",
+        "key_objects": [
+          "microphone"
+        ]
+      },
+      {
+        "time_range": "0:55-1:03",
+        "visual_description": "David Goggins is shown in a close-up, speaking into a microphone.",
+        "audio_description": "David Goggins says, \"A lot of people can take one more step and they choose not to. I don't know if you can take two steps. You gotta answer that question after you take the first step.\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "microphone"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a motivational compilation featuring various public figures delivering powerful messages about perseverance, hard work, and overcoming adversity. Speakers like David Goggins, Jocko Willink, Steve Aoki, Nick Diaz, and Kobe Bryant emphasize the importance of consistent effort, taking action, and pushing through discomfort to achieve greatness. The central theme revolves around the idea that success comes from a relentless pursuit of goals, even when it's difficult, and that many people fail because they are unwilling to put in the extra mile. The video aims to inspire viewers to keep showing up and taking action, one step at a time.",
+    "people": [
+      {
+        "description": "A man with dark hair and a beard, wearing a black hoodie, leaning against a wall on a beach.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "Bald man, speaking intensely and expressively, delivering motivational speeches.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "David Goggins"
+      },
+      {
+        "description": "Bald man, speaking into a microphone, delivering a motivational message in a black and white segment.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Jocko Willink"
+      },
+      {
+        "description": "A man with blonde hair, wearing a white shirt, tie, and colorful suspenders, sitting on a chair on a stage, speaking.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "Man with long blonde hair and a beard, wearing headphones and a floral shirt, speaking into a microphone.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Steve Aoki"
+      },
+      {
+        "description": "Man with short hair, wearing headphones and a grey t-shirt, speaking into a microphone.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Nick Diaz"
+      },
+      {
+        "description": "Bald man, wearing a black t-shirt with gold text, speaking into a microphone.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Kobe Bryant"
+      }
+    ],
+    "entities": [
+      {
+        "name": "David Goggins",
+        "display_name": "David Goggins",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jocko Willink",
+        "display_name": "Jocko Willink",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Steve Aoki",
+        "display_name": "Steve Aoki",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Kobe Bryant",
+        "display_name": "Kobe Bryant",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Nick Diaz",
+        "display_name": "Nick Diaz",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "BODYJAM",
+        "display_name": "BODYJAM (fitness program)",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "REPONE.DE",
+        "display_name": "REPONE.DE (website)",
+        "type": "website",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "The Joe Rogan Experience",
+        "display_name": "The Joe Rogan Experience (podcast)",
+        "type": "podcast",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "So Long",
+        "display_name": "So Long",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Hopecore",
+        "display_name": "Hopecore",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Coretok",
+        "display_name": "Coretok",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Hopeposting",
+        "display_name": "Hopeposting",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Inspiration",
+        "display_name": "Inspiration",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The amount of effort invested directly correlates with the results achieved.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Action is the most effective way to address and overcome problems, issues, and adversity.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "A commitment to giving maximum effort ensures a winning mindset, regardless of external outcomes.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Suffering and enduring hardship are integral to personal growth and achieving goals.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Despite feeling broken or miserable, one must persist and refuse to give up.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Achieving greatness is accessible because many individuals are unwilling to exert extra effort or go beyond what is comfortable.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Consistent effort, taking one step at a time, can transform any situation and lead to reaching significant goals.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "So Long",
+      "metadata_song": "So Long",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific artist for 'So Long' and its exact match to the background music could not be independently verified without external audio analysis tools. The man in suspenders is not a widely recognized celebrity, so his name is not included."
+    },
+    "presentation_style": {
+      "primary_format": "compilation",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "serious, intense, determined, inspiring, reflective",
+    "topic_hints": [
+      "motivation",
+      "self-improvement",
+      "perseverance"
+    ],
+    "affect_hints": [
+      "inspired",
+      "determined",
+      "challenged",
+      "hopeful"
+    ],
+    "genre_hints": [
+      "motivational speech",
+      "inspirational content",
+      "self-help"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 20070,
+    "output_tokens": 3604,
+    "total_tokens": 23674,
+    "cost_usd": 0.005173,
+    "latency_ms": 36404,
+    "upload_ms": 5519
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

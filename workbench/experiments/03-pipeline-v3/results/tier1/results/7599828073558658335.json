@@ -1,0 +1,52 @@
+{
+  "item_id": "7599828073558658335",
+  "parsed_output": {
+    "summary": "This TikTok is a movie edit of the 2023 biographical drama 'The Iron Claw', featuring Zac Efron as Kevin Von Erich. It highlights the emotional final scene where Kevin cries while watching his children play, reflecting on the tragic loss of his brothers.",
+    "entities": [
+      {
+        "name": "The Iron Claw",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Zac Efron",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Jeremy Allen White",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Kevin Von Erich",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "A24",
+        "type": "brand",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "other"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "sad",
+      "secondary": "inspiring"
+    },
+    "viewer_orientation": "passive_consumption",
+    "embedding_text": "A movie edit from the 2023 A24 film The Iron Claw starring Zac Efron as Kevin Von Erich. The video features the poignant ending scene where Kevin sits on the grass, crying while watching his two young sons play football, reflecting on the loss of his brothers and the weight of the Von Erich family legacy. The clip highlights Zac Efron's physical transformation and acclaimed emotional acting performance. It includes a brief shot of Jeremy Allen White as Kerry Von Erich. This content is typical for fans of biographical dramas, professional wrestling history, and cinematic edits. The music is a somber, remastered track that enhances the melancholic mood of the scene. Users might search for this using terms like 'Iron Claw ending scene', 'Zac Efron crying movie clip', or 'Von Erich family movie edit'."
+  },
+  "metrics": {
+    "input_tokens": 4138,
+    "output_tokens": 486,
+    "total_tokens": 4624,
+    "cost_usd": 0.000912,
+    "latency_ms": 7987,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "item_id": "7420041708190174472",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:19:35.645833+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Creator performs a full golf swing at a driving range at night to introduce the topic.",
+        "audio_description": "Creator introduces the topic: 'This is how I think about the hands in the golf swing.'",
+        "text_on_screen": "LEARNINGS AS A SELF TAUGHT GOLFER",
+        "key_objects": [
+          "golf club",
+          "golf ball",
+          "driving range"
+        ]
+      },
+      {
+        "time_range": "0:05-0:13",
+        "visual_description": "Creator demonstrates the ideal 'hands in front of chest' position at address and during the swing.",
+        "audio_description": "Creator explains the goal is to keep hands generally in front of the chest.",
+        "text_on_screen": "I THINK ABOUT THE HANDS IN THE GOLF SWING\nIS TO TRY AND KEEP THEM GENERALLY FRONT OF YOUR CHEST AS MUCH AS YOU CAN",
+        "key_objects": [
+          "golf club"
+        ]
+      },
+      {
+        "time_range": "0:13-0:38",
+        "visual_description": "Creator illustrates swing flaws caused by hands trailing or leading the chest too much, such as flipping and chicken winging.",
+        "audio_description": "Creator describes how trailing arms lead to flipping and timing issues, while leading arms cause power loss and the 'chicken wing' flaw.",
+        "text_on_screen": "YOUR SWING STARTS TO HAVE PROBLEMS\nTHE FURTHER YOUR HANDS GET FROM THE MIDDLE OF THE CHEST\nON THE DOWNSWING\nMORE YOUR ARMS TRAIL YOUR CHEST\nMORE YOU END UP HAVING TO FLIP AT IT\nTO TRY AND GET YOUR HANDS TO CATCH UP\nAND THAT JUST MAKES YOU RELY ON TIMING\nTHE MORE YOUR HANDS GET IN FRONT OF YOUR CHEST\nTHE MORE YOU HAVE TO TRY AND HOLD OFF THE FACE\nTO KEEP IT SQUARE\nAND YOU LOSE A LOT OF POWER\nAND YOU END UP WITH THE CHICKEN WING THIS WAY",
+        "key_objects": [
+          "golf club"
+        ]
+      },
+      {
+        "time_range": "0:38-0:57",
+        "visual_description": "Creator demonstrates a corrective drill using armpit connection and punch shots to improve swing synchronization.",
+        "audio_description": "Creator explains the armpit tuck drill and its benefits for compression and preventing casting.",
+        "text_on_screen": "GOOD WAY TO FIX EITHER IS\nYOU TUCK IN YOUR ARMPITS\nAND YOU KEEP YOUR ARMS CONNECTED TO YOUR BODY\nYOU PUT LIKE A TOWEL BENEATH BOTH YOUR ARMPITS AS WELL\nAND JUST HIT PUNCH SHOTS\nAND NOT ONLY HELPS YOUR SWING\nBUT IT HELPS COMPRESSION\nSTOPS YOU FROM CASTING\nIT'S PROBABLY ONE OF THE BEST AND UNDERRATED DRILLS",
+        "key_objects": [
+          "golf club",
+          "golf ball"
+        ]
+      }
+    ],
+    "overall_summary": "This video features creator @bay_jark sharing a fundamental tip for improving a golf swing, specifically focusing on hand positioning relative to the chest. He explains that keeping the hands centered in front of the chest throughout the swing prevents common issues like 'flipping' or 'chicken winging' which lead to timing and power loss. To practice this, he demonstrates a drill where the golfer keeps their armpits tucked (or uses a towel for feedback) while hitting punch shots to ensure the arms and body move in sync. The main takeaway is that maintaining body-arm connection is crucial for consistent compression and preventing casting.",
+    "people": [
+      {
+        "description": "Male golfer wearing a Nike hat, black puffer vest, and baggy grey pants, demonstrating swing techniques.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@bay_jark"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Nike",
+        "display_name": "Nike",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Hat worn by creator",
+        "confidence": 5
+      },
+      {
+        "name": "Golf Swing",
+        "display_name": "Golf Swing",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Punch Shot",
+        "display_name": "Punch Shot",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Short, controlled golf shot used for drills",
+        "confidence": 5
+      },
+      {
+        "name": "Roxanne",
+        "display_name": "Roxanne by Arizona Zervas",
+        "type": "song",
+        "relevance": "background",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "Instrumental version",
+        "confidence": 5
+      },
+      {
+        "name": "Chicken Wing",
+        "display_name": "Chicken Wing (Golf Flaw)",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "A common swing error where the lead elbow bends outward",
+        "confidence": 5
+      },
+      {
+        "name": "Casting",
+        "display_name": "Casting (Golf Flaw)",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Releasing the club head too early in the downswing",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Keep hands centered in front of the chest during the golf swing for better consistency and synchronization.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Arms trailing the chest forces a 'flip' at the ball, making the swing rely too much on timing.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Hands getting too far ahead of the chest leads to power loss and a 'chicken wing' follow-through.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Practicing punch shots with tucked armpits (or a towel) improves compression and prevents casting.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Armpit Connection Drill",
+          "details": "Tuck armpits in tightly or place a towel beneath both armpits to keep arms connected to the body. Practice hitting punch shots to maintain this connection throughout the swing."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Roxanne (Instrumental) \u2014 Arizona Zervas",
+      "metadata_song": "Roxanne - Instrumental",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": null
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Focused, instructional, nighttime",
+    "topic_hints": [
+      "Golf",
+      "Sports",
+      "Skill Development"
+    ],
+    "affect_hints": [
+      "Informative",
+      "Disciplined",
+      "Helpful"
+    ],
+    "genre_hints": [
+      "Tutorial",
+      "Sports Tip"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6574,
+    "output_tokens": 1882,
+    "total_tokens": 8456,
+    "cost_usd": 0.002115,
+    "latency_ms": 31330,
+    "upload_ms": 5382
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

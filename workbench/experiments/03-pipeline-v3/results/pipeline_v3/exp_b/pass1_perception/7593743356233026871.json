@@ -1,0 +1,153 @@
+{
+  "item_id": "7593743356233026871",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:54:25.755120+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-2:25",
+        "visual_description": "A man, Tim Dillon, is seated at a white desk with a microphone in front of him, speaking directly to the camera. He wears a dark hoodie and a baseball cap. On the desk, there is a bottle of water and a mug. The background features a blurred cityscape at night, illuminated by numerous lights.",
+        "audio_description": "Tim Dillon delivers a comedic rant about the 'best case scenario in America,' describing a mundane life working at Lowe's, a distant relationship with his daughter, and dating a smoker. He concludes with a dark, cynical scenario of dying in a car crash, unmourned by his acquaintances.",
+        "text_on_screen": "Best case scenario in America, AVERAGE, BEST, COUNTRY, A, LOWES, OUTLET, 45, FROM, DAUGHTER, ABSOLUTELY, HATE, YOU, AND, FRIENDS, FEW, FRIENDS, DON'T, MUCH, DID, GOT, WENT, HOUSE, THAT, BUT, GOT, FUN, IT, ENOUGH, YOU, WHO, SOMEONE, LIVE, NEVER, BOUNDARIES, IMMEDIATELY, LITTLE, YOU, NOW, COLD, OFF, SMOKES, PLANS, STOPPING, BEST, COUNTRY, AVERAGE, PART, YOU'RE, DIVORCED, DATE, SMOKER, ON, SAYS, UP, DAUGHTER, COMPLETELY, PITIES, LITTLE, YOU'RE, BLEEDING, THE, STRIP, IF, LUCKY, ONE, DAY, YOU, DRIVING, ALONE, MINUTES, LOWE'S, YOUR, YOU, SHE, SAY, FOR, BUT, BACK, I, DAD, WILL, YOU, THANK, YOU, WILL, DOWN, SMOKER, DATING, WILL, CALL, SHE'LL, AROUND, THAT'S, GETS, YOU'LL, DOWN, TO, KNOW, NOT, AND, TEENAGE, COMING, NEVER, TEENAGE, COMING, SMILE, DAUGHTER, SOMEWHAT, SEX, WHORE, YOU'LL, SEE, DRIVER, COMING, THE, SMACK, AND, GLASS, OF, WILL, BUT, NICE, YOU, GOOD, THEY'LL, AT, CALL, WON'T, YOU, RING, AND, YOU, CALL, THEY'LL, THOSE, NIGHTS, THAT'S, WIN",
+        "key_objects": [
+          "microphone",
+          "water bottle",
+          "mug"
+        ]
+      }
+    ],
+    "overall_summary": "Tim Dillon presents a darkly humorous and cynical view of the 'best case scenario' for an average person in America. He describes a life characterized by working a mediocre job at a big box store, having a daughter who pities you, and dating a woman with clear boundaries and a smoking habit. The monologue culminates in a grim hypothetical death in a car crash, where the individual's last thoughts are of their unfulfilling relationships, and no one will call to check on them. The video uses overlaid text to highlight key phrases of his rant.",
+    "people": [
+      {
+        "description": "A man with a round face, wearing a dark hoodie and a baseball cap, speaking into a microphone.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Tim Dillon"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Tim Dillon",
+        "display_name": "Tim Dillon",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lowe's",
+        "display_name": "Lowe's",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "America",
+        "display_name": "America",
+        "type": "place",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Gaza Strip",
+        "display_name": "Gaza Strip",
+        "type": "place",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Yard House",
+        "display_name": "Yard House",
+        "type": "restaurant",
+        "relevance": "background",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The 'best case scenario' for an average American is a life of mundane work, strained family relationships, and ultimately, a lonely, unmourned death.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "American life, even at its 'best,' is characterized by mediocrity, isolation, and a lack of genuine connection.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The 'original sound' is Tim Dillon speaking, not music. All text overlays were transcribed."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "cynical, darkly humorous, somber, stark",
+    "topic_hints": [
+      "social commentary",
+      "American life",
+      "dark comedy"
+    ],
+    "affect_hints": [
+      "cynicism",
+      "resignation",
+      "amusement",
+      "melancholy"
+    ],
+    "genre_hints": [
+      "stand-up comedy clip",
+      "podcast clip",
+      "rant"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 44273,
+    "output_tokens": 1485,
+    "total_tokens": 45758,
+    "cost_usd": 0.007532,
+    "latency_ms": 27139,
+    "upload_ms": 5948
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

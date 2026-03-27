@@ -1,0 +1,202 @@
+{
+  "item_id": "7511499452830534942",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:13:50.666559+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "Creator Sebastian Burka sits in his car, looking directly at the camera to introduce a fitness tip.",
+        "audio_description": "Upbeat, rhythmic phonk music begins playing.",
+        "text_on_screen": "The number one thing I did to fix this",
+        "key_objects": [
+          "Car interior"
+        ]
+      },
+      {
+        "time_range": "0:01-0:03",
+        "visual_description": "Split-screen comparison of two chest fly techniques. The top shows a 'before' with an arched back; the bottom shows an 'after' with a flatter back.",
+        "audio_description": "The phonk music continues with a steady beat.",
+        "text_on_screen": "The number one thing I did to fix this",
+        "key_objects": [
+          "Chest fly machine",
+          "Gym equipment"
+        ]
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "Creator demonstrates the 'incorrect' technique on a Parabody machine, showing significant back arching and shoulder blade retraction.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Parabody chest fly machine"
+        ]
+      },
+      {
+        "time_range": "0:06-0:12",
+        "visual_description": "Creator demonstrates the 'correct' technique on an Atlantis machine, maintaining a more neutral spine and focusing on reaching forward.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Atlantis chest fly machine",
+          "New York Yankees hat"
+        ]
+      },
+      {
+        "time_range": "0:12-0:16",
+        "visual_description": "Creator returns to the car shot, nodding as the key takeaways are listed on screen.",
+        "audio_description": "Music fades out.",
+        "text_on_screen": "Stopped arching\nStopped retracting\nFocused on expansion",
+        "key_objects": [
+          "Car interior"
+        ]
+      }
+    ],
+    "overall_summary": "Sebastian Burka shares a critical technique adjustment for the chest fly exercise to improve muscle engagement and posture. He compares his old form, which involved excessive back arching and shoulder blade retraction, with his new form that focuses on ribcage expansion and a neutral spine. The video serves as a quick tutorial for gym-goers looking to optimize their chest workouts by avoiding common mechanical errors.",
+    "people": [
+      {
+        "description": "A bearded man in fitness attire (tank top, gym shorts, baseball cap) demonstrating exercise form.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Sebastian Burka"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Sebastian Burka",
+        "display_name": "Sebastian Burka",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Chest Fly",
+        "display_name": "Chest Fly Exercise",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Machine-based",
+        "confidence": 5
+      },
+      {
+        "name": "Atlantis",
+        "display_name": "Atlantis Strength Equipment",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Chest fly/rear delt machine",
+        "confidence": 5
+      },
+      {
+        "name": "Parabody",
+        "display_name": "Parabody Gym Equipment",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Cable machine",
+        "confidence": 4
+      },
+      {
+        "name": "Phonky Tribu",
+        "display_name": "Phonky Tribu - Funk Tribu",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "To improve chest fly form, stop arching the lower back excessively against the seat.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Avoid over-retracting the shoulder blades during the movement.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Focus on ribcage expansion to better target the pectoral muscles.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Form Correction 1",
+          "details": "Stop arching the back during the fly."
+        },
+        {
+          "name": "Form Correction 2",
+          "details": "Stop retracting the scapula (shoulder blades) excessively."
+        },
+        {
+          "name": "Form Correction 3",
+          "details": "Focus on ribcage expansion throughout the set."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Phonky Tribu \u2014 Funk Tribu",
+      "metadata_song": "Phonky Tribu",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": null
+    },
+    "presentation_style": {
+      "primary_format": "before_after",
+      "camera_work": "static",
+      "editing_style": "split_screen"
+    },
+    "visual_mood": "Educational, focused, and disciplined.",
+    "topic_hints": [
+      "Fitness",
+      "Bodybuilding",
+      "Weightlifting Technique"
+    ],
+    "affect_hints": [
+      "Determined",
+      "Informative",
+      "Empowered"
+    ],
+    "genre_hints": [
+      "GymTok",
+      "Fitness Tutorial"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 2953,
+    "output_tokens": 1499,
+    "total_tokens": 4452,
+    "cost_usd": 0.001342,
+    "latency_ms": 16982,
+    "upload_ms": 3425
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

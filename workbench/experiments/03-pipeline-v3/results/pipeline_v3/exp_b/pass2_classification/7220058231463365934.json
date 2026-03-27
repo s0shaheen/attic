@@ -1,0 +1,75 @@
+{
+  "item_id": "7220058231463365934",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:01:03.278390+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "sports",
+      "secondary": "education",
+      "micro_labels": [
+        "basketball",
+        "dribbling",
+        "ball handling",
+        "athletic training"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "skills demonstration",
+        "sports drills"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "inspiring",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "text_overlay",
+      "raw_footage"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6484,
+    "output_tokens": 344,
+    "total_tokens": 6828,
+    "cost_usd": 0.001179,
+    "latency_ms": 9066,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 3
+  }
+}

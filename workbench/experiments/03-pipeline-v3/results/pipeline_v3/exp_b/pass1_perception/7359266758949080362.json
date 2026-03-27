@@ -1,0 +1,333 @@
+{
+  "item_id": "7359266758949080362",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:45:31.307364+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "A young man, the creator, wearing a light blue 'BERKELEY' t-shirt and two pairs of sunglasses stacked on his face, speaks directly to the camera in an indoor setting.",
+        "audio_description": "The creator states he is 'temporarily blind' and introduces the topic of contributing to open source.",
+        "text_on_screen": "HOW TO CONTRIBUTE TO OPEN SOURCE SOFTWARE",
+        "key_objects": [
+          "sunglasses",
+          "BERKELEY t-shirt"
+        ]
+      },
+      {
+        "time_range": "0:03-1:29",
+        "visual_description": "The creator continues to speak and gesture, with a screen overlay on the right side displaying a dark-themed user interface of a 'git' project from the 'Good First Issues' website. The UI shows project details, tags like 'documentation', 'enhancement', and 'good first issue', star count, organization name, assignee count, and various programming languages.",
+        "audio_description": "The creator explains that the website 'Good First Issues' lists projects with small, basic bugs or tasks suitable for beginners. He advises fixing these issues, performing a pull request, and merging code. He emphasizes that this process helps users understand open source contribution and eventually tackle more difficult issues. He also mentions that 'good first issues' can be found on GitHub.",
+        "text_on_screen": "Describe and map in ...\nApril 18, 2024 - 4 hours ago\ndocumentation\nenhancement\ngood first issue\ngit rizin\n2425 stars\nrizinorg\n0 assignee\nShell\nDockerfile\nC\nMeson\nAssembly\nR\nC++\nPerl\nPython\nJava\nGo to issue",
+        "key_objects": [
+          "sunglasses",
+          "BERKELEY t-shirt",
+          "Good First Issues website UI"
+        ]
+      }
+    ],
+    "overall_summary": "This video provides a guide on how to start contributing to open-source software, particularly for beginners. The creator recommends using the website 'Good First Issues' to find projects with simple tasks, often labeled as 'good first issues'. He explains that these tasks, such as changing return types or renaming elements, are excellent starting points to learn the process of making pull requests and merging code. The video encourages viewers to use this method to gain experience and eventually contribute to more complex open-source projects.",
+    "people": [
+      {
+        "description": "A young Asian male with short dark hair, wearing a light blue t-shirt and two pairs of sunglasses stacked on his face. He is speaking directly to the camera and gesturing with his hands.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Michael Lin"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Good First Issues",
+        "display_name": "Good First Issues website",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Website for finding beginner-friendly open-source tasks",
+        "confidence": 5
+      },
+      {
+        "name": "Open Source Software",
+        "display_name": "Open Source Software",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "GitHub",
+        "display_name": "GitHub",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Platform for software development and version control",
+        "confidence": 4
+      },
+      {
+        "name": "Rizin",
+        "display_name": "Rizin git project",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Git project with 2425 stars, by rizinorg",
+        "confidence": 4
+      },
+      {
+        "name": "Shell",
+        "display_name": "Shell programming language",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Programming language tag on project",
+        "confidence": 4
+      },
+      {
+        "name": "Dockerfile",
+        "display_name": "Dockerfile",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Programming language/tool tag on project",
+        "confidence": 4
+      },
+      {
+        "name": "C",
+        "display_name": "C programming language",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Programming language tag on project",
+        "confidence": 4
+      },
+      {
+        "name": "Meson",
+        "display_name": "Meson build system",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Build system tag on project",
+        "confidence": 4
+      },
+      {
+        "name": "Assembly",
+        "display_name": "Assembly programming language",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Programming language tag on project",
+        "confidence": 4
+      },
+      {
+        "name": "R",
+        "display_name": "R programming language",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Programming language tag on project",
+        "confidence": 4
+      },
+      {
+        "name": "C++",
+        "display_name": "C++ programming language",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Programming language tag on project",
+        "confidence": 4
+      },
+      {
+        "name": "Perl",
+        "display_name": "Perl programming language",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Programming language tag on project",
+        "confidence": 4
+      },
+      {
+        "name": "Python",
+        "display_name": "Python programming language",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Programming language tag on project",
+        "confidence": 4
+      },
+      {
+        "name": "Java",
+        "display_name": "Java programming language",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Programming language tag on project",
+        "confidence": 4
+      },
+      {
+        "name": "Pull Request",
+        "display_name": "Pull Request",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Software development process for merging code changes",
+        "confidence": 4
+      },
+      {
+        "name": "Bug Fixes",
+        "display_name": "Bug Fixes",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Minor code changes to resolve issues",
+        "confidence": 4
+      },
+      {
+        "name": "Documentation",
+        "display_name": "Documentation",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Type of issue/task",
+        "confidence": 4
+      },
+      {
+        "name": "Enhancement",
+        "display_name": "Enhancement",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Type of issue/task",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The 'Good First Issues' website is an excellent resource for beginners to start contributing to open-source software by finding simple, manageable tasks.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Starting with 'good first issues' helps new contributors understand the open-source contribution workflow, including making pull requests, and prepares them for more complex contributions.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Good First Issues website",
+          "details": "Recommended for finding beginner-friendly open-source tasks."
+        },
+        {
+          "name": "Basic bug fixes/minor changes",
+          "details": "Examples include changing return types or renaming elements, ideal for initial contributions."
+        },
+        {
+          "name": "Pull requests",
+          "details": "The standard method for submitting code changes in open source."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The 'original sound' metadata is accurate as there is no discernible background music, only speech."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "informative",
+    "topic_hints": [
+      "open source",
+      "programming",
+      "software development"
+    ],
+    "affect_hints": [
+      "informative",
+      "encouraging",
+      "helpful"
+    ],
+    "genre_hints": [
+      "tutorial",
+      "educational",
+      "tech tips"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 28115,
+    "output_tokens": 2549,
+    "total_tokens": 30664,
+    "cost_usd": 0.005747,
+    "latency_ms": 28339,
+    "upload_ms": 5524
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

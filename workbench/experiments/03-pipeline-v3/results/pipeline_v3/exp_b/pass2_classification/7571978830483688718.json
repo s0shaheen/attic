@@ -1,0 +1,72 @@
+{
+  "item_id": "7571978830483688718",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:02:14.544505+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "career",
+      "micro_labels": [
+        "AI automation",
+        "Claude AI",
+        "startup productivity",
+        "software development",
+        "investor updates"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "productivity hack",
+        "software walkthrough"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "screen_recording"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.85
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 11807,
+    "output_tokens": 326,
+    "total_tokens": 12133,
+    "cost_usd": 0.001967,
+    "latency_ms": 9928,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 8
+  }
+}

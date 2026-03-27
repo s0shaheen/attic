@@ -1,0 +1,259 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-03-24T06:04:54.672795+00:00",
+      "items_tested": 10,
+      "total_urls_tested": 28,
+      "total_accessible": 27,
+      "total_failed": 1,
+      "results": [
+        {
+          "platform_id": "7498435459140357419",
+          "urls": {
+            "video_url": {
+              "status_code": 200,
+              "content_type": "video/mp4",
+              "content_length": "4733552",
+              "latency_ms": 308,
+              "accessible": true
+            },
+            "cover_url": {
+              "status_code": 200,
+              "content_type": "image/jpeg",
+              "content_length": "98607",
+              "latency_ms": 56,
+              "accessible": true
+            },
+            "subtitle_url": {
+              "status_code": 200,
+              "content_type": "text/vtt",
+              "content_length": "1717",
+              "latency_ms": 62,
+              "accessible": true
+            }
+          }
+        },
+        {
+          "platform_id": "7509539154242407710",
+          "urls": {
+            "video_url": {
+              "status_code": 200,
+              "content_type": "video/mp4",
+              "content_length": "1416897",
+              "latency_ms": 143,
+              "accessible": true
+            },
+            "cover_url": {
+              "status_code": 200,
+              "content_type": "image/jpeg",
+              "content_length": "67404",
+              "latency_ms": 58,
+              "accessible": true
+            }
+          }
+        },
+        {
+          "platform_id": "7509917943501819158",
+          "urls": {
+            "video_url": {
+              "status_code": 200,
+              "content_type": "video/mp4",
+              "content_length": "1246010",
+              "latency_ms": 204,
+              "accessible": true
+            },
+            "cover_url": {
+              "status_code": 200,
+              "content_type": "image/jpeg",
+              "content_length": "122255",
+              "latency_ms": 87,
+              "accessible": true
+            },
+            "subtitle_url": {
+              "status_code": 200,
+              "content_type": "text/vtt",
+              "content_length": "316",
+              "latency_ms": 78,
+              "accessible": true
+            }
+          }
+        },
+        {
+          "platform_id": "7509921078882389291",
+          "urls": {
+            "video_url": {
+              "status_code": 200,
+              "content_type": "video/mp4",
+              "content_length": "1808573",
+              "latency_ms": 102,
+              "accessible": true
+            },
+            "cover_url": {
+              "status_code": 200,
+              "content_type": "image/jpeg",
+              "content_length": "60149",
+              "latency_ms": 57,
+              "accessible": true
+            },
+            "subtitle_url": {
+              "status_code": 200,
+              "content_type": "text/vtt",
+              "content_length": "180",
+              "latency_ms": 59,
+              "accessible": true
+            }
+          }
+        },
+        {
+          "platform_id": "7511805008313175327",
+          "urls": {
+            "video_url": {
+              "status_code": 200,
+              "content_type": "video/mp4",
+              "content_length": "15089156",
+              "latency_ms": 157,
+              "accessible": true
+            },
+            "cover_url": {
+              "status_code": 200,
+              "content_type": "image/jpeg",
+              "content_length": "75742",
+              "latency_ms": 71,
+              "accessible": true
+            },
+            "subtitle_url": {
+              "status_code": 200,
+              "content_type": "text/vtt",
+              "content_length": "4522",
+              "latency_ms": 74,
+              "accessible": true
+            }
+          }
+        },
+        {
+          "platform_id": "7511809004985666838",
+          "urls": {
+            "video_url": {
+              "status_code": 404,
+              "content_type": "application/json; charset=utf-8",
+              "content_length": "90",
+              "latency_ms": 49,
+              "accessible": false
+            },
+            "cover_url": {
+              "status_code": 200,
+              "content_type": "image/jpeg",
+              "content_length": "217217",
+              "latency_ms": 89,
+              "accessible": true
+            },
+            "slideshow_image_url": {
+              "status_code": 200,
+              "content_type": "image/jpeg",
+              "content_length": "217217",
+              "latency_ms": 103,
+              "accessible": true
+            }
+          }
+        },
+        {
+          "platform_id": "7512105331862932767",
+          "urls": {
+            "video_url": {
+              "status_code": 200,
+              "content_type": "video/mp4",
+              "content_length": "21410633",
+              "latency_ms": 171,
+              "accessible": true
+            },
+            "cover_url": {
+              "status_code": 200,
+              "content_type": "image/jpeg",
+              "content_length": "161936",
+              "latency_ms": 90,
+              "accessible": true
+            },
+            "subtitle_url": {
+              "status_code": 200,
+              "content_type": "text/vtt",
+              "content_length": "3594",
+              "latency_ms": 166,
+              "accessible": true
+            }
+          }
+        },
+        {
+          "platform_id": "7513946775380659502",
+          "urls": {
+            "video_url": {
+              "status_code": 200,
+              "content_type": "video/mp4",
+              "content_length": "6284827",
+              "latency_ms": 212,
+              "accessible": true
+            },
+            "cover_url": {
+              "status_code": 200,
+              "content_type": "image/jpeg",
+              "content_length": "96755",
+              "latency_ms": 88,
+              "accessible": true
+            },
+            "subtitle_url": {
+              "status_code": 200,
+              "content_type": "text/vtt",
+              "content_length": "2263",
+              "latency_ms": 60,
+              "accessible": true
+            }
+          }
+        },
+        {
+          "platform_id": "7515102713319869726",
+          "urls": {
+            "video_url": {
+              "status_code": 200,
+              "content_type": "video/mp4",
+              "content_length": "6482113",
+              "latency_ms": 127,
+              "accessible": true
+            },
+            "cover_url": {
+              "status_code": 200,
+              "content_type": "image/jpeg",
+              "content_length": "180293",
+              "latency_ms": 91,
+              "accessible": true
+            },
+            "subtitle_url": {
+              "status_code": 200,
+              "content_type": "text/vtt",
+              "content_length": "97",
+              "latency_ms": 59,
+              "accessible": true
+            }
+          }
+        },
+        {
+          "platform_id": "7516779585908837663",
+          "urls": {
+            "video_url": {
+              "status_code": 200,
+              "content_type": "video/mp4",
+              "content_length": "7744863",
+              "latency_ms": 144,
+              "accessible": true
+            },
+            "cover_url": {
+              "status_code": 200,
+              "content_type": "image/jpeg",
+              "content_length": "208362",
+              "latency_ms": 83,
+              "accessible": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

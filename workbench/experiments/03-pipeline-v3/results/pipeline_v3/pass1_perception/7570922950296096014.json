@@ -1,0 +1,252 @@
+{
+  "item_id": "7570922950296096014",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:21:39.654694+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:18",
+        "visual_description": "Conor Harris introduces the psoas muscle using a 3D skeleton model and demonstrates how it creates asymmetrical posture.",
+        "audio_description": "Most people don't realize how impactful their psoas muscle can be on creating and keeping someone in an imbalanced and asymmetrical posture. Most think of it as a primary hip flexor, but it also has a significant role in the rotation of the pelvis and lumbar spine.",
+        "text_on_screen": "DON'T REALIZE, IMPACTFUL, MUSCLE, ON CREATING, SOMEONE, IMBALANCED, ASYMMETRICAL, POSTURE, PSOAS, PRIMARY, HIP FLEXOR, SIGNIFICANT, ROLE, ROTATION, TURNING, PELVIS, LUMBAR SPINE",
+        "key_objects": [
+          "3D Skeleton Model"
+        ]
+      },
+      {
+        "time_range": "0:18-0:43",
+        "visual_description": "Creator uses a red resistance band on the skeleton to show psoas attachment points from the lumbar spine to the femur.",
+        "audio_description": "To understand how, we need to understand the attachment sites. It attaches on the side of our lumbar spine and runs down to the inside portion of our femur. A muscular contraction turns the lumbar spine towards the other side.",
+        "text_on_screen": "ATTACHMENT SITES, FEMUR, THIGH BONE, MUSCULAR CONTRACTION",
+        "key_objects": [
+          "Red resistance band",
+          "Skeleton model"
+        ]
+      },
+      {
+        "time_range": "0:43-1:05",
+        "visual_description": "Creator explains that a pelvis rotated to the right usually indicates a tight psoas on the left side.",
+        "audio_description": "People with a pelvis rotated to one side and hiked up usually have a psoas that is tighter on the opposite side. If my pelvis is rotated right, I likely have a tight left psoas creating that turn. It also pulls the pelvis forward into hip flexion.",
+        "text_on_screen": "TIGHTER, OPPOSITE SIDE, RIGHT SIDE, LEFT SIDE, HIP FLEXION",
+        "key_objects": [
+          "Skeleton model"
+        ]
+      },
+      {
+        "time_range": "0:105-1:24",
+        "visual_description": "Creator highlights the hamstrings as the key to pulling the pelvis back and restoring rotation.",
+        "audio_description": "The solution is two things: pull the pelvis back on the tight side and create a better ability to turn the pelvis toward that side. The hamstrings are key players here because they help pull the pelvis back.",
+        "text_on_screen": "SOLUTION, HAMSTRINGS, KEY PLAYERS",
+        "key_objects": [
+          "Skeleton model"
+        ]
+      },
+      {
+        "time_range": "1:24-1:43",
+        "visual_description": "Creator demonstrates the setup for a corrective exercise: lying on the back with feet on the wall and a foam roller between the thighs.",
+        "audio_description": "Lay on your back with your feet on the wall, 90-degree bend at knees and hips. Place a foam roller between your mid-to-upper thighs. Feel three points of contact on the wall, focusing on your heels.",
+        "text_on_screen": "90 DEGREE BEND, FOAM ROLLER, MID TO UPPER THIGHS, 3 POINTS OF CONTACT, HEELS",
+        "key_objects": [
+          "Foam roller",
+          "Wall"
+        ]
+      },
+      {
+        "time_range": "1:43-2:02",
+        "visual_description": "Creator demonstrates dragging heels down the wall to activate hamstrings and lift the tailbone.",
+        "audio_description": "First, activate hamstrings to rotate the pelvis back. Drag down on the wall with your heels, keeping the whole foot flat. Your tailbone should lift off the ground because you're dragging down, flattening your low back.",
+        "text_on_screen": "ACTIVATE, DRAG DOWN, TAILBONE LIFT, FLATTEN OUT OUR LOW BACK",
+        "key_objects": [
+          "Foam roller"
+        ]
+      },
+      {
+        "time_range": "2:02-2:34",
+        "visual_description": "Creator shows the 'shift' movement: dragging one knee down the roller while pushing the other up to rotate the hips.",
+        "audio_description": "To get the pelvis to rotate back on one side, gently drag down on the foam roller with one knee as you gently push the other knee toward the ceiling. This turns your hips and activates more hamstring and inner thigh adductor.",
+        "text_on_screen": "ENGAGED, INNER THIGH, ADDUCTOR MUSCLE, 3 OUT OF 10 EFFORT",
+        "key_objects": [
+          "Foam roller"
+        ]
+      },
+      {
+        "time_range": "2:34-2:59",
+        "visual_description": "Creator holds the position and explains the breathing technique and set/rep scheme.",
+        "audio_description": "Take long, relaxed breaths in through your nose and out through your mouth. Keep your neck relaxed. Hold this for about 2 sets of 5 to 10 breath cycles. Some may benefit from a block under the heels.",
+        "text_on_screen": "LONG, RELAXED BREATHS, 2 SETS, 5 TO 10 BREATH CYCLES",
+        "key_objects": [
+          "Foam roller",
+          "Heel block"
+        ]
+      }
+    ],
+    "overall_summary": "In this video, Conor Harris explains the critical role the psoas muscle plays in pelvic rotation and postural asymmetry. He demonstrates how a tight psoas on one side can cause the pelvis to rotate and hike on the opposite side, leading to chronic imbalances. To correct this, he teaches a specific 90/90 wall exercise using a foam roller to activate the hamstrings and adductors, which helps pull the pelvis back into a neutral position. The main takeaway is that restoring pelvic alignment requires targeted muscle activation and controlled breathing rather than just stretching.",
+    "people": [
+      {
+        "description": "Athletic male fitness professional and postural specialist",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Conor Harris"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Psoas",
+        "display_name": "Psoas Muscle",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Primary hip flexor and pelvic rotator",
+        "confidence": 5
+      },
+      {
+        "name": "Hamstrings",
+        "display_name": "Hamstring Muscles",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Used to pull the pelvis back into neutral",
+        "confidence": 5
+      },
+      {
+        "name": "90/90 Wall Hip Lift with Shift",
+        "display_name": "90/90 Wall Hip Lift with Shift",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "2 sets of 5-10 breath cycles",
+        "confidence": 4
+      },
+      {
+        "name": "Foam Roller",
+        "display_name": "Foam Roller",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Standard cylindrical foam roller",
+        "confidence": 5
+      },
+      {
+        "name": "Adductors",
+        "display_name": "Adductor Muscles",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Inner thigh muscles",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The psoas muscle is a major driver of pelvic and lumbar spine rotation, not just a hip flexor.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Postural asymmetry, such as a rotated or hiked pelvis, is often caused by a tight psoas on the opposite side of the rotation.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Engaging the hamstrings is essential for pulling the pelvis back and correcting psoas-driven imbalances.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Corrective exercises should be performed with low intensity (2-3/10 effort) and focused breathing to be effective.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Setup",
+          "details": "Lie on your back with feet flat on a wall, creating a 90-degree angle at the knees and hips."
+        },
+        {
+          "name": "Foam Roller Placement",
+          "details": "Place a foam roller between your mid-to-upper thighs."
+        },
+        {
+          "name": "Hamstring Activation",
+          "details": "Gently drag your heels down the wall (without moving the feet) until your tailbone lifts slightly and your low back flattens."
+        },
+        {
+          "name": "The Shift",
+          "details": "Gently drag one knee down the roller while pushing the other knee toward the ceiling to rotate the pelvis."
+        },
+        {
+          "name": "Breathing",
+          "details": "Maintain the position and take long, relaxed breaths (inhale through nose, exhale through mouth)."
+        },
+        {
+          "name": "Prescription",
+          "details": "Perform 2 sets of 5 to 10 breath cycles."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound - Conor Harris",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The background audio is a very low-volume ambient track, likely royalty-free or generic background music."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Educational, clinical, and professional.",
+    "topic_hints": [
+      "Physical Therapy",
+      "Posture Correction",
+      "Biomechanics"
+    ],
+    "affect_hints": [
+      "Informative",
+      "Empowering",
+      "Analytical"
+    ],
+    "genre_hints": [
+      "Educational Tutorial",
+      "Fitness Advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 17442,
+    "output_tokens": 2592,
+    "total_tokens": 20034,
+    "cost_usd": 0.004171,
+    "latency_ms": 35306,
+    "upload_ms": 7837
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

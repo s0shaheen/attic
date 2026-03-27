@@ -1,0 +1,52 @@
+{
+  "item_id": "7593439419022036246",
+  "parsed_output": {
+    "summary": "In an interview with The Economist, Israeli Prime Minister Binyamin Netanyahu addresses the restriction of international media access to Gaza. He asserts that the Israel Defence Forces (IDF) do not target journalists and that independent entry is barred because the area is a dangerous warzone.",
+    "entities": [
+      {
+        "name": "Binyamin Netanyahu",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "The Economist",
+        "type": "brand",
+        "relevance": "primary"
+      },
+      {
+        "name": "Gaza",
+        "type": "place",
+        "relevance": "primary"
+      },
+      {
+        "name": "Israel Defence Forces",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Israel",
+        "type": "place",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "news",
+      "secondary": "politics"
+    },
+    "genre": "interview",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "A news interview clip from @theeconomist featuring Israeli Prime Minister Binyamin Netanyahu. The video addresses the high death toll of journalists in Gaza and the lack of independent media access to the region since the start of the war. Netanyahu argues that the restrictions exist because Gaza is a dangerous warzone and maintains that the Israel Defence Forces (IDF) do not target journalists. Key visual elements include Netanyahu speaking directly to the camera, wearing a suit with a yellow ribbon pin and an Israeli flag lapel pin. On-screen text reads 'Netanyahu on why journalists can't enter Gaza without the IDF' and 'But it's dangerous'. This video is a primary source for those researching the Israel-Gaza war, press freedom, and Israeli government policy."
+  },
+  "metrics": {
+    "input_tokens": 4324,
+    "output_tokens": 464,
+    "total_tokens": 4788,
+    "cost_usd": 0.000927,
+    "latency_ms": 7510,
+    "keyframe_count": 3
+  }
+}

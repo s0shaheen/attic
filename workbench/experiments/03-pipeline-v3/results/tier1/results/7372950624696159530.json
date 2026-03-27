@@ -1,0 +1,52 @@
+{
+  "item_id": "7372950624696159530",
+  "parsed_output": {
+    "summary": "Creator Arabella Jensen recommends the RH Restaurant in Indianapolis as a must-see destination. The video showcases the grand estate-like exterior, elegant interior decor with statues and chandeliers, and the creator enjoying a glass of champagne.",
+    "entities": [
+      {
+        "name": "RH Restaurant",
+        "type": "restaurant",
+        "relevance": "primary"
+      },
+      {
+        "name": "Indianapolis",
+        "type": "place",
+        "relevance": "primary"
+      },
+      {
+        "name": "Restoration Hardware",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Arabella Jensen",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "SABOR A MI (Versi\u00f3n Piano)",
+        "type": "song",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "travel",
+      "secondary": "food"
+    },
+    "genre": "vlog",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "relaxing"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "In this travel and dining vlog, creator Arabella Jensen (@arabellajensenn) highlights the RH Restaurant in Indianapolis, Indiana, describing it as a must-see location. The video features the impressive architecture of the building, which resembles a grand mansion or estate, complete with a circular fountain in the courtyard. On-screen text identifies the location as 'The RH Restaurant'. The creator is seen in a mirror selfie wearing a white dress and holding a glass of champagne, showcasing the upscale and aesthetic interior design typical of Restoration Hardware properties, including chandeliers and classical statues. Set to a relaxing piano version of 'SABOR A MI', the content is aimed at users looking for luxury dining recommendations and beautiful things to do in Indiana."
+  },
+  "metrics": {
+    "input_tokens": 4266,
+    "output_tokens": 455,
+    "total_tokens": 4721,
+    "cost_usd": 0.000913,
+    "latency_ms": 6875,
+    "keyframe_count": 3
+  }
+}

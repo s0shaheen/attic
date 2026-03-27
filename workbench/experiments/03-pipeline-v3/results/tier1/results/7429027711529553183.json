@@ -1,0 +1,42 @@
+{
+  "item_id": "7429027711529553183",
+  "parsed_output": {
+    "summary": "This TikTok is a cinematic edit and recommendation for the 2017 Western drama movie 'Hostiles'. The creator @parr.ott suggests the film for its emotional depth and 'healing' qualities, featuring intense shots of lead actor Christian Bale.",
+    "entities": [
+      {
+        "name": "Hostiles",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Christian Bale",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "@parr.ott",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "other"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "inspiring",
+      "secondary": "sad"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "A cinematic movie edit and recommendation for the film Hostiles (2017) starring Christian Bale. The video features high-quality, atmospheric clips from the movie, including a close-up of a bearded Christian Bale looking upward in the rain and a wide landscape shot of the American frontier with the title 'HOSTILES' on screen. The creator @parr.ott captions the video 'Let this movie heal you', framing the gritty Western drama as a cathartic or emotional experience. This content is designed for film enthusiasts looking for movie recommendations, specifically those interested in Westerns, Christian Bale's filmography, or emotionally resonant storytelling. The 50-second edit uses an original sound to create a somber and reflective mood."
+  },
+  "metrics": {
+    "input_tokens": 4229,
+    "output_tokens": 401,
+    "total_tokens": 4630,
+    "cost_usd": 0.000875,
+    "latency_ms": 5912,
+    "keyframe_count": 3
+  }
+}

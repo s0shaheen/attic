@@ -1,0 +1,71 @@
+{
+  "item_id": "7350052611262811438",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:02:00.233299+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fitness",
+      "secondary": "education",
+      "micro_labels": [
+        "leg day",
+        "workout routine",
+        "minimalist training",
+        "hypertrophy"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": [
+        "exercise guide",
+        "fitness tips"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "funny",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": [
+      "talking_head",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 12008,
+    "output_tokens": 321,
+    "total_tokens": 12329,
+    "cost_usd": 0.001994,
+    "latency_ms": 9813,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 8
+  }
+}

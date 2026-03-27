@@ -1,0 +1,52 @@
+{
+  "item_id": "7169990240491326726",
+  "parsed_output": {
+    "summary": "This TikTok by @highenquiries is a cinematic edit that poses existential questions about time and reality. It uses dramatic film clips, including a mentor-like figure in a landscape and a close-up of a man in aviator glasses, to provoke deep thought in the viewer.",
+    "entities": [
+      {
+        "name": "@highenquiries",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Matthew McConaughey",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Existentialism",
+        "type": "cultural_reference",
+        "relevance": "primary"
+      },
+      {
+        "name": "Simulation Theory",
+        "type": "trend_or_meme",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Interstellar",
+        "type": "movie_or_show",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "other",
+      "secondary": "movies_tv"
+    },
+    "genre": "edit",
+    "affect": {
+      "dominant": "shocking",
+      "secondary": "informative"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "A philosophical and cinematic TikTok edit from @highenquiries that asks the viewer, 'Do you know how long you\u2019ve been here?' The video is a compilation of moody, high-quality film clips designed to evoke existential reflection. Key visuals include an older man in a black coat placing a hand on a younger man's shoulder while overlooking a vast, rolling green landscape with sparse trees. Another shot features a close-up of a man's face wearing silver aviator glasses, looking downward with a somber expression, resembling Matthew McConaughey. The final frame shows a person from behind wearing a dark parka with a fur-lined hood, staring into a dark, foggy, or snowy void. This content is optimized for users searching for 'deep thoughts,' 'existential questions,' 'simulation theory aesthetics,' and 'mind-bending movie edits.'"
+  },
+  "metrics": {
+    "input_tokens": 4247,
+    "output_tokens": 500,
+    "total_tokens": 4747,
+    "cost_usd": 0.000937,
+    "latency_ms": 12403,
+    "keyframe_count": 3
+  }
+}

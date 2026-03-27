@@ -1,0 +1,52 @@
+{
+  "item_id": "7140937195505863938",
+  "parsed_output": {
+    "summary": "Creator Jacquie Alexander (@jacquiealexander_) shares her top two coffee shop recommendations in Amsterdam: Toki and Locals. The video highlights the aesthetic of the cafes and their menus, featuring items like iced coffee and strawberry matcha.",
+    "entities": [
+      {
+        "name": "Toki",
+        "type": "restaurant",
+        "relevance": "primary"
+      },
+      {
+        "name": "Locals",
+        "type": "restaurant",
+        "relevance": "primary"
+      },
+      {
+        "name": "Amsterdam",
+        "type": "place",
+        "relevance": "primary"
+      },
+      {
+        "name": "Jacquie Alexander",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Adidas Samba",
+        "type": "clothing",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "travel",
+      "secondary": "food"
+    },
+    "genre": "vlog",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "relaxing"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "In this 13-second travel vlog, creator @jacquiealexander_ highlights the best coffee in Amsterdam by showcasing two of her favorite local cafes. The video begins with a scenic shot of her on a canal bridge, wearing Adidas Samba sneakers and a graphic midi skirt, with the text 'two of my favourite cafes in amsterdam.' She first features Toki, where she is seen enjoying an iced coffee in a blue Adidas ringer tee against a classic letter-board menu showing prices for Espresso, Macchiato, and Cortado. The second recommendation is a cafe called Locals, featuring a minimalist wall menu with prices for specialty drinks like Strawberry Matcha, Hibiscus Iced Tea, and Hand Brew coffee. This video serves as a curated guide for coffee enthusiasts and travelers looking for aesthetic and high-quality cafe experiences in the Netherlands."
+  },
+  "metrics": {
+    "input_tokens": 4235,
+    "output_tokens": 478,
+    "total_tokens": 4713,
+    "cost_usd": 0.000922,
+    "latency_ms": 9828,
+    "keyframe_count": 3
+  }
+}

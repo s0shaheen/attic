@@ -1,0 +1,235 @@
+{
+  "item_id": "7585174691510373687",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:50:16.206803+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "The creator's hand is shown in a close-up, meticulously adjusting a silver cufflink on the cuff of a white dress shirt.",
+        "audio_description": "Upbeat rap music plays.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Cufflink",
+          "White dress shirt"
+        ]
+      },
+      {
+        "time_range": "0:03-0:05",
+        "visual_description": "A close-up shot focuses on the creator's wrist, showcasing a silver watch with a white face and a black strap.",
+        "audio_description": "Upbeat rap music plays.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Watch",
+          "White dress shirt"
+        ]
+      },
+      {
+        "time_range": "0:05-0:07",
+        "visual_description": "The camera focuses on the creator's torso, highlighting a dark red and blue paisley tie against a crisp white dress shirt as he adjusts it.",
+        "audio_description": "Upbeat rap music plays.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Paisley tie",
+          "White dress shirt"
+        ]
+      },
+      {
+        "time_range": "0:07-0:10",
+        "visual_description": "The creator is seen adjusting his paisley tie and the lapels of a grey suit jacket, now worn over the white shirt.",
+        "audio_description": "Upbeat rap music plays.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Grey suit jacket",
+          "Paisley tie",
+          "White dress shirt"
+        ]
+      },
+      {
+        "time_range": "0:10-0:20",
+        "visual_description": "The creator, dressed in a full grey suit, white shirt, and paisley tie, buttons his jacket, adjusts his attire, and walks confidently towards the camera in a modern living space.",
+        "audio_description": "Upbeat rap music with vocals, including the lyrics 'Too much smokey coming like Canada, don't crush my heart, let me do my own thing'.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Grey suit",
+          "White dress shirt",
+          "Paisley tie",
+          "Watch",
+          "Black dress shoes"
+        ]
+      }
+    ],
+    "overall_summary": "This video presents a detailed showcase of a man's formal outfit, emphasizing the process of getting dressed. It begins with close-ups of him meticulously adjusting accessories like cufflinks and a watch, followed by the careful arrangement of a paisley tie. The video culminates in a full-body reveal of the complete ensemble, a stylish grey suit, as the creator confidently walks towards the camera. The content highlights attention to detail in men's fashion and formal wear.",
+    "people": [
+      {
+        "description": "A young man with dark, curly hair and a beard, wearing a formal suit. He is the central figure demonstrating the outfit.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Cufflinks",
+        "display_name": "Silver circular cufflinks with intricate design",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Watch",
+        "display_name": "Silver watch with white dial and black strap",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "White dress shirt",
+        "display_name": "White long-sleeved dress shirt",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Paisley tie",
+        "display_name": "Dark red and blue paisley patterned tie",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Grey suit jacket",
+        "display_name": "Grey single-breasted suit jacket",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Dark trousers",
+        "display_name": "Dark colored dress trousers",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Black dress shoes",
+        "display_name": "Black polished dress shoes",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Canada",
+        "display_name": "Canada by DaBaby",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "DaBaby",
+        "display_name": "DaBaby (Artist)",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "This video showcases a stylish and well-coordinated formal outfit, emphasizing attention to detail in accessories and overall presentation.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Canada \u2014 DaBaby",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "No specific brands for clothing or accessories were visually identifiable."
+    },
+    "presentation_style": {
+      "primary_format": "outfit_showcase",
+      "camera_work": "static, handheld, panning",
+      "editing_style": "minimal, jump_cuts"
+    },
+    "visual_mood": "Polished, confident, stylish, sophisticated, clean, professional.",
+    "topic_hints": [
+      "Men's fashion",
+      "Formal wear",
+      "Outfit inspiration"
+    ],
+    "affect_hints": [
+      "Confident",
+      "Stylish",
+      "Professional",
+      "Elegant"
+    ],
+    "genre_hints": [
+      "Fashion content",
+      "Outfit of the day (OOTD)",
+      "Style guide",
+      "Grooming"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 7384,
+    "output_tokens": 1846,
+    "total_tokens": 9230,
+    "cost_usd": 0.002215,
+    "latency_ms": 23357,
+    "upload_ms": 5439
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

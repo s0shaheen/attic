@@ -1,0 +1,52 @@
+{
+  "item_id": "7402274475779034399",
+  "parsed_output": {
+    "summary": "Basketball creator @pattyoghoops demonstrates a 4-step beginner tutorial specifically designed to improve left-hand dribbling skills. The video provides actionable drills for basketball players looking to develop their non-dominant hand on an outdoor court.",
+    "entities": [
+      {
+        "name": "@pattyoghoops",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Wilson NCAA Legend",
+        "type": "product",
+        "relevance": "primary"
+      },
+      {
+        "name": "Nike",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Rode",
+        "type": "brand",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Dribbling",
+        "type": "technique",
+        "relevance": "primary"
+      }
+    ],
+    "topic": {
+      "primary": "sports",
+      "secondary": "education"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "A 29-second basketball tutorial by @pattyoghoops titled '4 Step Beginners Tutorial To improve your left hand dribble'. The video features the creator on an outdoor basketball court wearing a teal t-shirt, Nike shorts, and a Rode wireless microphone. He demonstrates specific drills using a Wilson NCAA Legend basketball to help players strengthen their non-dominant hand. The tutorial is structured into four steps, with on-screen text like 'IN' and 'WILL' appearing during the demonstration. This content is optimized for basketball players seeking skill-building exercises, left-hand ball handling tips, and beginner-friendly sports training routines."
+  },
+  "metrics": {
+    "input_tokens": 4263,
+    "output_tokens": 438,
+    "total_tokens": 4701,
+    "cost_usd": 0.000902,
+    "latency_ms": 6406,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "item_id": "7266997489377594654",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:45:40.509168+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "A man in a plaid shirt and backward hat is seated on a couch with a blonde woman and another man partially visible. He is speaking animatedly.",
+        "audio_description": "Man 1: \"Yo, it's chill you guys are back and shit, but fuck this ratio.\"",
+        "text_on_screen": "Real Bros Of Simi Valley\nInvalid Ratio \ud83c\udf7b\ud83d\ude14",
+        "key_objects": [
+          "couch",
+          "beer can"
+        ]
+      },
+      {
+        "time_range": "0:04-0:08",
+        "visual_description": "A different man in a dark shirt and backward hat is seated on a couch next to a woman with red hair. Both appear surprised or displeased.",
+        "audio_description": "Sound effect (whoosh/transition)",
+        "text_on_screen": "Real Bros Of Simi Valley\nInvalid Ratio \ud83c\udf7b\ud83d\ude14",
+        "key_objects": [
+          "couch",
+          "string lights",
+          "beer can"
+        ]
+      },
+      {
+        "time_range": "0:08-0:12",
+        "visual_description": "The man in the plaid shirt continues to speak, gesturing with his hands, while the blonde woman listens intently.",
+        "audio_description": "Man 1: \"Four dudes, three chicks. Like that's gay as fuck. Sorry, what?\"",
+        "text_on_screen": "Real Bros Of Simi Valley\nInvalid Ratio \ud83c\udf7b\ud83d\ude14",
+        "key_objects": [
+          "couch",
+          "beer can"
+        ]
+      },
+      {
+        "time_range": "0:12-0:16",
+        "visual_description": "The man in the dark shirt and the woman with red hair react with confusion and mild offense.",
+        "audio_description": "Man 2: \"What?\" Woman 2: \"We literally just got back, so...\"",
+        "text_on_screen": "Real Bros Of Simi Valley\nInvalid Ratio \ud83c\udf7b\ud83d\ude14",
+        "key_objects": [
+          "couch",
+          "string lights",
+          "beer can"
+        ]
+      },
+      {
+        "time_range": "0:16-0:21",
+        "visual_description": "The man in the plaid shirt takes a drink from his beer and continues to express his frustration.",
+        "audio_description": "Man 1: \"I mean, you guys are all wifed up. And I'm not gonna fuck you again, no offense.\"",
+        "text_on_screen": "Real Bros Of Simi Valley\nInvalid Ratio \ud83c\udf7b\ud83d\ude14",
+        "key_objects": [
+          "couch",
+          "beer can"
+        ]
+      },
+      {
+        "time_range": "0:21-0:25",
+        "visual_description": "The man in the dark shirt appears shocked and tells the other man to calm down, while the woman with red hair looks aghast.",
+        "audio_description": "Man 2: \"Yo, chill the fuck out, bro.\"",
+        "text_on_screen": "Real Bros Of Simi Valley\nInvalid Ratio \ud83c\udf7b\ud83d\ude14",
+        "key_objects": [
+          "couch",
+          "string lights",
+          "beer can"
+        ]
+      },
+      {
+        "time_range": "0:25-0:29",
+        "visual_description": "The man in the plaid shirt dismisses the comment and takes another drink from his beer, stating his intention to find another woman.",
+        "audio_description": "Man 1: \"Whatever, dude. Fucking bullshit. It's fine, I'll just text a girl from work.\"",
+        "text_on_screen": "Real Bros Of Simi Valley\nInvalid Ratio \ud83c\udf7b\ud83d\ude14",
+        "key_objects": [
+          "couch",
+          "beer can"
+        ]
+      },
+      {
+        "time_range": "0:29-0:32",
+        "visual_description": "The woman with red hair looks at her phone, seemingly preparing to text someone, then looks up.",
+        "audio_description": "(Dialogue from previous scene carries over)",
+        "text_on_screen": "Real Bros Of Simi Valley\nInvalid Ratio \ud83c\udf7b\ud83d\ude14",
+        "key_objects": [
+          "cell phone",
+          "couch",
+          "string lights",
+          "beer can"
+        ]
+      },
+      {
+        "time_range": "0:32-0:37",
+        "visual_description": "The man in the plaid shirt expresses satisfaction and continues to drink his beer, while the blonde woman watches.",
+        "audio_description": "Man 1: \"Seriously? For real? Thank you. That's fucking awesome. So like, I know...\"",
+        "text_on_screen": "Real Bros Of Simi Valley\nInvalid Ratio \ud83c\udf7b\ud83d\ude14",
+        "key_objects": [
+          "couch",
+          "beer can"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a comedic skit from 'Real Bros Of Simi Valley' about an 'invalid ratio' at a social gathering. One man complains vocally about the gender imbalance (four dudes, three chicks) and the fact that the women present are 'wifed up,' making it difficult for him to find a casual encounter. His friends react with disbelief and annoyance at his blunt and offensive comments. The video concludes with him deciding to text a girl from work to improve his odds, highlighting a self-centered and crude perspective on social interactions.",
+    "people": [
+      {
+        "description": "A man with a plaid shirt and a backward baseball cap, appearing to be the main character, expressing frustration and crude opinions about the gender ratio and relationship status of others. He is speaking throughout the video.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "A blonde woman in a white tank top, seated next to the main speaker, mostly listening and reacting with subtle expressions.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "A man in a dark patterned shirt and a backward baseball cap, reacting with surprise, offense, and eventually telling the main speaker to 'chill out.'",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "A woman with red hair in a purple top, seated next to the man in the dark shirt, reacting with annoyance and then offering a solution by suggesting she'll text a friend.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Real Bros Of Simi Valley",
+        "display_name": "Real Bros Of Simi Valley (Web Series/Show)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Simi Valley",
+        "display_name": "Simi Valley",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Ratio",
+        "display_name": "Gender Ratio (Social Context)",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "caption"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Beer",
+        "display_name": "Beer (Beverage)",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video satirizes a specific type of male perspective on social gatherings, where the gender ratio and relationship status of attendees are prioritized for personal romantic/sexual gain.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "The concept of an 'invalid ratio' refers to an undesirable gender imbalance at a social event, particularly from the perspective of someone seeking casual hookups.",
+        "source": "audio",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific brand of beer is not identifiable from the visual quality."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Comedic, casual, slightly tense, confrontational",
+    "topic_hints": [
+      "social dynamics",
+      "comedy skit",
+      "friendship",
+      "dating culture"
+    ],
+    "affect_hints": [
+      "humorous",
+      "awkward",
+      "frustrated",
+      "annoyed"
+    ],
+    "genre_hints": [
+      "comedy",
+      "slice of life",
+      "satire"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 12726,
+    "output_tokens": 2224,
+    "total_tokens": 14950,
+    "cost_usd": 0.003243,
+    "latency_ms": 27405,
+    "upload_ms": 5596
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

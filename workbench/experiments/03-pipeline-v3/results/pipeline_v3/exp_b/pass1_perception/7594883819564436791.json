@@ -1,0 +1,360 @@
+{
+  "item_id": "7594883819564436791",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:57:05.092162+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:12",
+        "visual_description": "An animated anatomical skeleton with muscles highlights the hip and lower back regions, demonstrating how lack of hip mobility can lead to low back compensation and pain.",
+        "audio_description": "The narrator explains that when hips lack mobility, the low back compensates, leading to pain. Understanding this compensation is essential for addressing low back pain.",
+        "text_on_screen": "MOST PEOPLE, THE HIPS, THE LOW BACK, MAKES UP, MOBILITY VIA, COMPENSATION, UNDERSTANDING, THE LOW BACK, WHAT CONTEXT, IS ESSENTIAL, UNDERSTAND, SIGNIFICANT, FACTORS",
+        "key_objects": [
+          "anatomical skeleton model",
+          "muscles",
+          "pelvis",
+          "femur",
+          "spine"
+        ]
+      },
+      {
+        "time_range": "0:12-0:21",
+        "visual_description": "The creator holds a model of a pelvis and femur, explaining the two main types of hip mobility. An animated close-up shows external rotation of the femur in the hip socket.",
+        "audio_description": "The narrator explains that hips need two main types of mobility: external rotation, where the femur slides forward in the hip socket.",
+        "text_on_screen": "IT'S, OUR HIPS, ACCESS TWO, OF MOBILITY, THE FIRST IS, ROTATION, OR THE FEMUR, MORE FORWARD, HIP SOCKET",
+        "key_objects": [
+          "pelvis model",
+          "femur model",
+          "anatomical skeleton model"
+        ]
+      },
+      {
+        "time_range": "0:21-0:26",
+        "visual_description": "The creator continues to hold the pelvis model. An animated close-up shows internal rotation of the femur in the hip socket.",
+        "audio_description": "The narrator explains the second type: internal rotation, where the femur slides further back in the hip socket.",
+        "text_on_screen": "THE OTHER IS, INTERNAL, MEANING THAT, FURTHER BACK, LIKE THAT",
+        "key_objects": [
+          "pelvis model",
+          "femur model",
+          "anatomical skeleton model"
+        ]
+      },
+      {
+        "time_range": "0:26-0:38",
+        "visual_description": "The creator demonstrates with the pelvis model how lacking external rotation leads to the low back excessively rounding and the pelvis tipping back in space.",
+        "audio_description": "The narrator explains that lacking genuine external rotation typically results in the low back excessively rounding, tipping the pelvis back in space.",
+        "text_on_screen": "NOW, IF YOU, THE ABILITY, TO GENUINELY, EXTERNAL, TYPICALLY, GOING TO SEE, LOW BACK, EXCESSIVELY, ROUND, SEE THAT, THE PELVIS, IN SPACE",
+        "key_objects": [
+          "pelvis model",
+          "femur model"
+        ]
+      },
+      {
+        "time_range": "0:38-0:49",
+        "visual_description": "An animated full skeleton model shows the 'sway back' posture, illustrating how the femur still glides forward in the hip socket due to compensation, not genuine rotation. The creator holds the pelvis model, explaining this.",
+        "audio_description": "The narrator explains that a 'sway back' posture results in the femur still gliding forward in the hip socket, creating space but not through genuine femoral rotation.",
+        "text_on_screen": "#4 Sway back, GLIDING, RELATIVELY, HIP SOCKET, CREATING, BUT IT'S, OCCURRING, PRESENCE OF, DOING THAT, ON ITS OWN",
+        "key_objects": [
+          "anatomical skeleton model",
+          "pelvis model",
+          "femur model"
+        ]
+      },
+      {
+        "time_range": "0:49-1:00",
+        "visual_description": "The creator uses the pelvis model to demonstrate how lacking internal rotation leads to the pelvis tipping forward into an anterior pelvic tilt. An animated full skeleton model shows the 'hyper-lordotic' posture.",
+        "audio_description": "The narrator explains that lacking genuine internal rotation or being out of internal rotation space often leads to the pelvis tipping forward into an anterior pelvic tilt.",
+        "text_on_screen": "INTERNAL, EXAMPLE, IF YOU LACK, TO GENUINELY, INTERNALLY, OR YOU'RE, ROTATION, VERY COMMON, THE PELVIS, INTO AN, #2 Hyper-lordotic, PELVIC TILT",
+        "key_objects": [
+          "pelvis model",
+          "femur model",
+          "anatomical skeleton model"
+        ]
+      },
+      {
+        "time_range": "1:00-1:13",
+        "visual_description": "An animated anatomical model with muscles shows the low back pushing the pelvis forward. The creator holds the pelvis model, explaining how this allows the femur to go further back in the hip socket, but not through genuine internal rotation.",
+        "audio_description": "The narrator clarifies that the low back pushing the pelvis forward allows the femur to move back in the hip socket, but this is compensation, not genuine internal rotation from the hip rotators.",
+        "text_on_screen": "THIS IS THE WHOLE, LOW BACK, THE PELVIS, IN SPACE, ALLOWING, FURTHER BACK, WITHIN THE, HIP SOCKET, HAPPENING, GENUINE, INTERNAL, CREATING, THIS ACTION",
+        "key_objects": [
+          "anatomical skeleton model",
+          "muscles",
+          "pelvis model",
+          "femur model"
+        ]
+      },
+      {
+        "time_range": "1:13-1:20",
+        "visual_description": "The creator holds the pelvis model and announces he will show two exercises to restore hip mobility.",
+        "audio_description": "The narrator states he will demonstrate two simple exercises: one to restore genuine external rotation space and another for genuine internal rotation space.",
+        "text_on_screen": "YOU TWO, EXERCISES, RESTORE, ROTATION, THE OTHER, INTERNAL, SPACE",
+        "key_objects": [
+          "pelvis model",
+          "femur model"
+        ]
+      },
+      {
+        "time_range": "1:20-2:07",
+        "visual_description": "The creator demonstrates an exercise for internal rotation using a foam roller. He lies on his side with the foam roller under his hip, slowly rolling his trunk back and forth while opening and closing his knee.",
+        "audio_description": "The narrator instructs to use a foam roller, starting on the hip with knees bent. Slowly roll up until the pelvis bone rests on the roller. Stack the other foot on top and gently roll the trunk back, opening the knee, then slowly forward, about one inch per second, without losing the outside knee position.",
+        "text_on_screen": "ALL YOU'RE, ON YOUR HIP, KNEES BENT, POSITION, SLOWLY, ROLL UP, FOAM ROLLER, YOU GET TO, THE POINT, PELVIS BONE, AND THE VERY, RESTING, AND SINKING, DOWN INTO, ROLLER, STACK THAT, ON TOP, LIKE SO, YOU'RE GOING, GENTLY ROLL, YOUR, TRUNK BACK, SIMULTANEOUSLY, OPEN UP, TO ROLL, BACK SIDE, PELVIC BONE, COMING OFF, VERY SLOWLY, AND THEN, VERY SLOWLY, FORWARD, ABOUT ONE, INCH PER, AGAIN, THE BACK, OF THAT, LOSING THIS, KNEE, JUST SLOWLY, JUST SLOWLY, FORWARD",
+        "key_objects": [
+          "foam roller",
+          "pillow"
+        ]
+      },
+      {
+        "time_range": "2:07-2:14",
+        "visual_description": "The creator sits up, emphasizing the importance of testing mobility before and after the exercises. A visual overlay shows a red 'X' and a green checkmark over a person lying on their back, demonstrating a mobility test.",
+        "audio_description": "The narrator acknowledges the exercises might feel weird but encourages testing mobility before and after to see the results.",
+        "text_on_screen": "NOW THESE, ARE GOING, WEIRD, I ENCOURAGE, AND RETEST, MOBILITY, AND SEE, HAPPENS",
+        "key_objects": [
+          "pillow"
+        ]
+      },
+      {
+        "time_range": "2:14-2:59",
+        "visual_description": "The creator demonstrates an exercise for external rotation. He lies on his side with a pillow under his head, bending his bottom leg and hooking his top foot underneath. He then inhales and opens his body to flop onto his back, exhaling and slowly returning to the starting position.",
+        "audio_description": "For external rotation, the narrator instructs to lie on the floor with a pillow under the head. Bring the bottom leg up to a comfortable hip and knee bend. Hook the top foot underneath the bottom foot. Rest the top hand on the side of the head. Inhale, open the body, flopping onto the back, then exhale and slowly return to the starting position. The goal is to do this with minimal tension.",
+        "text_on_screen": "EXTERNAL ROTATION, ALL YOU'RE GOING, ON THE FLOOR, SPECIFIC, PILLOW, YOUR HEAD, BRING UP, THIS BOTTOM, ABOUT THIS, BEND, TO, FEEL YOUR, OUTSIDE KNEE, THE GROUND, TAKE THE, AND HOOK IT, UNDERNEATH, LIKE SO, TOP HAND, ON THE SIDE, LIKE THIS, IS INHALING, THROUGH, YOUR NOSE, OPEN UP, SIMULTANEOUSLY, AS YOU FLOP, BACK, AND THEN, EXHALE, SLOWLY, STARTING, THE QUESTION, IS, IS, HOW LITTLE, CAN YOU, DO THIS WITH, YOUR BODY, OPEN UP, ONTO YOUR, BACK, COME BACK, STARTING",
+        "key_objects": [
+          "pillow"
+        ]
+      }
+    ],
+    "overall_summary": "This video explains how a lack of hip mobility, specifically in external and internal rotation, can lead to compensatory movements in the low back, resulting in pain. The creator, Conor Harris, uses anatomical models to illustrate how the low back rounds or excessively arches to make up for restricted hip movement. He then demonstrates two simple exercises: one using a foam roller to restore internal hip rotation and another lying on the floor with a pillow to improve external hip rotation. The main takeaway is that improving genuine hip mobility can alleviate low back pain caused by compensatory movements.",
+    "people": [
+      {
+        "description": "Muscular man with short brown hair, wearing a brown t-shirt and black pants. He is the instructor and demonstrator.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Conor Harris"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Hip Mobility",
+        "display_name": "Hip Mobility",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Low Back Pain",
+        "display_name": "Low Back Pain",
+        "type": "medical_condition",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "External Rotation",
+        "display_name": "External Rotation (Hip)",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Internal Rotation",
+        "display_name": "Internal Rotation (Hip)",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pelvis",
+        "display_name": "Pelvis",
+        "type": "body_part",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Femur",
+        "display_name": "Femur",
+        "type": "body_part",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Foam Roller",
+        "display_name": "Foam Roller",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Pillow",
+        "display_name": "Pillow",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Sway Back Posture",
+        "display_name": "Sway Back Posture",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Hyper-lordotic Pelvic Tilt",
+        "display_name": "Hyper-lordotic Pelvic Tilt",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Anatomy Standard",
+        "display_name": "Anatomy Standard",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Lack of genuine hip mobility (external and internal rotation) often leads to compensatory movements in the low back, causing pain.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Restoring genuine hip external rotation involves preventing excessive low back rounding and posterior pelvic tilt.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Restoring genuine hip internal rotation involves preventing the low back from pushing the pelvis forward into an anterior pelvic tilt.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Specific exercises can help restore genuine hip mobility and alleviate compensatory low back pain.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Internal Rotation Exercise (Foam Roller)",
+          "details": "Lie on side with foam roller under hip. Knees bent. Slowly roll up until pelvis bone rests on roller. Stack top foot on bottom. Gently roll trunk back, opening knee, then slowly forward (1 inch/second), maintaining outside knee position."
+        },
+        {
+          "name": "External Rotation Exercise (Pillow)",
+          "details": "Lie on side with pillow under head. Bottom leg bent (comfortable hip/knee bend), outside knee resting on ground. Hook top foot underneath bottom foot. Top hand on side of head. Inhale, open body to flop onto back. Exhale, slowly return to starting position with minimal tension."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The audio is purely narration, so 'original sound' matching 'null' for actual song is correct."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "informative, educational, calm",
+    "topic_hints": [
+      "hip mobility",
+      "low back pain",
+      "exercise"
+    ],
+    "affect_hints": [
+      "educational",
+      "helpful",
+      "instructive"
+    ],
+    "genre_hints": [
+      "fitness",
+      "health",
+      "education"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 53961,
+    "output_tokens": 3842,
+    "total_tokens": 57803,
+    "cost_usd": 0.010399,
+    "latency_ms": 38436,
+    "upload_ms": 10489
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

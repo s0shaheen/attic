@@ -1,0 +1,395 @@
+{
+  "item_id": "7596803820412325142",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:57:55.782522+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A person drizzles chilli oil into a non-stick pan, followed by chopped spring onions, which begin to sizzle.",
+        "audio_description": "Sizzling sound.",
+        "text_on_screen": "a doctor's favourite lunch\nChilli oil",
+        "key_objects": [
+          "Frying pan",
+          "Chilli oil",
+          "Spring onion"
+        ]
+      },
+      {
+        "time_range": "0:01-0:03",
+        "visual_description": "Whisked eggs are poured into the pan, covering the chilli oil and spring onions, and begin to cook.",
+        "audio_description": "Pouring and sizzling sounds.",
+        "text_on_screen": "a doctor's favourite lunch\nEgg",
+        "key_objects": [
+          "Eggs"
+        ]
+      },
+      {
+        "time_range": "0:03-0:04",
+        "visual_description": "A sesame seed bagel is placed face down onto the cooking eggs in the pan.",
+        "audio_description": "Sizzling sound.",
+        "text_on_screen": "a doctor's favourite lunch\nBagel",
+        "key_objects": [
+          "Bagel"
+        ]
+      },
+      {
+        "time_range": "0:04-0:05",
+        "visual_description": "The bagel with the cooked egg attached is expertly flipped over using a hand and a spatula.",
+        "audio_description": "Flipping sound.",
+        "text_on_screen": "a doctor's favourite lunch",
+        "key_objects": [
+          "Spatula"
+        ]
+      },
+      {
+        "time_range": "0:05-0:06",
+        "visual_description": "Mashed avocado is spread evenly over the cooked egg on the bagel.",
+        "audio_description": "Spreading sound.",
+        "text_on_screen": "a doctor's favourite lunch",
+        "key_objects": [
+          "Mashed avocado",
+          "Spoon"
+        ]
+      },
+      {
+        "time_range": "0:06-0:07",
+        "visual_description": "Two slices of fresh red tomato are placed on top of the avocado layer.",
+        "audio_description": "None distinct.",
+        "text_on_screen": "a doctor's favourite lunch",
+        "key_objects": [
+          "Tomato slices"
+        ]
+      },
+      {
+        "time_range": "0:07-0:08",
+        "visual_description": "A small handful of shredded mozzarella cheese is sprinkled over the tomato and avocado.",
+        "audio_description": "None distinct.",
+        "text_on_screen": "a doctor's favourite lunch",
+        "key_objects": [
+          "Mozzarella cheese"
+        ]
+      },
+      {
+        "time_range": "0:08-0:09",
+        "visual_description": "The egg-bagel creation is folded in half, forming a sandwich.",
+        "audio_description": "None distinct.",
+        "text_on_screen": "a doctor's favourite lunch",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:09-0:13",
+        "visual_description": "The finished bagel sandwich is cut in half and held up, revealing the melted cheese stretching between the halves and the layered ingredients.",
+        "audio_description": "Crinkling/cutting sound, then music.",
+        "text_on_screen": "a doctor's favourite lunch",
+        "key_objects": [
+          "Plate",
+          "Melted mozzarella"
+        ]
+      }
+    ],
+    "overall_summary": "This video presents a quick and easy recipe for a \"viral lunch\" bagel. It demonstrates cooking eggs with chilli oil and spring onions in a pan, then placing a bagel on top. After flipping, the bagel is filled with mashed avocado, fresh tomato slices, and mozzarella cheese, then folded into a sandwich. The final product is shown cut in half, highlighting the melted cheese and layered ingredients, promoting it as a healthy and delicious meal option.",
+    "people": [
+      {
+        "description": "A person with light skin tone, demonstrating a cooking recipe. Their hands are visible throughout the video as they prepare the meal.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Chilli oil",
+        "display_name": "Chilli oil",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "1 tsp",
+        "confidence": 5
+      },
+      {
+        "name": "Spring onion",
+        "display_name": "Spring onion",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "1, chopped",
+        "confidence": 5
+      },
+      {
+        "name": "Bagel",
+        "display_name": "Bagel",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "1",
+        "confidence": 5
+      },
+      {
+        "name": "Eggs",
+        "display_name": "Eggs",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "2, whisked, seasoned with salt and pepper",
+        "confidence": 5
+      },
+      {
+        "name": "Avocado",
+        "display_name": "Avocado",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "1/2, mashed",
+        "confidence": 5
+      },
+      {
+        "name": "Tomato",
+        "display_name": "Tomato",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "2 slices",
+        "confidence": 5
+      },
+      {
+        "name": "Mozzarella",
+        "display_name": "Mozzarella",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Small handful",
+        "confidence": 5
+      },
+      {
+        "name": "Frying pan",
+        "display_name": "Frying Pan",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Spatula",
+        "display_name": "Spatula",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "@doctorbowl",
+        "display_name": "Doctorbowl",
+        "type": "creator",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Echoes",
+        "display_name": "Echoes",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Viral lunch recipe",
+        "display_name": "Viral Lunch Recipe",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "caption",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Healthy recipes",
+        "display_name": "Healthy Recipes",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Easy recipes",
+        "display_name": "Easy Recipes",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "This viral lunch recipe for a bagel is incredibly tasty and a must-try.",
+        "source": "caption",
+        "confidence": 4
+      },
+      {
+        "statement": "The recipe is presented as a healthy and easy meal option.",
+        "source": "caption",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Chilli oil",
+          "details": "1 tsp"
+        },
+        {
+          "name": "Spring onion",
+          "details": "1, chopped"
+        },
+        {
+          "name": "Bagel",
+          "details": "1"
+        },
+        {
+          "name": "Eggs",
+          "details": "2, whisked, seasoned with salt and pepper"
+        },
+        {
+          "name": "Avocado",
+          "details": "1/2, mashed"
+        },
+        {
+          "name": "Tomato",
+          "details": "2 slices"
+        },
+        {
+          "name": "Mozzarella",
+          "details": "Small handful"
+        },
+        {
+          "name": "Method Step 1",
+          "details": "In a pan over medium heat, drizzle some chilli oil. Then add spring onions. Cook for a minute."
+        },
+        {
+          "name": "Method Step 2",
+          "details": "Add the eggs to the pan and then add the bagel face down. Cook for 3-4 minutes."
+        },
+        {
+          "name": "Method Step 3",
+          "details": "Flip the bagel with the cooked egg attached."
+        },
+        {
+          "name": "Method Step 4",
+          "details": "Spread mashed avocado onto the cooked egg."
+        },
+        {
+          "name": "Method Step 5",
+          "details": "Place tomato slices on the avocado."
+        },
+        {
+          "name": "Method Step 6",
+          "details": "Sprinkle mozzarella cheese over the tomato."
+        },
+        {
+          "name": "Method Step 7",
+          "details": "Fold the bagel in half to form a sandwich."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Echoes",
+      "metadata_song": "Echoes",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Actual song identification is based on metadata; unable to verify by listening to the audio."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "overhead",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Appetizing, instructional, clean, bright",
+    "topic_hints": [
+      "Cooking",
+      "Breakfast",
+      "Lunch",
+      "Healthy food",
+      "Easy recipes"
+    ],
+    "affect_hints": [
+      "Satisfying",
+      "Inspiring",
+      "Hungry",
+      "Instructional"
+    ],
+    "genre_hints": [
+      "Recipe tutorial",
+      "Food hack",
+      "Cooking demonstration"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5458,
+    "output_tokens": 3043,
+    "total_tokens": 8501,
+    "cost_usd": 0.002645,
+    "latency_ms": 31472,
+    "upload_ms": 3682
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

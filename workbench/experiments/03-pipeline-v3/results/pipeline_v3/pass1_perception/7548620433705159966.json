@@ -1,0 +1,449 @@
+{
+  "item_id": "7548620433705159966",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:15:39.403231+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "Creator @crsnscott speaks to the camera with a screenshot of his Substack post '25 THINGS FOR FREELANCE CREATIVES' overlaid.",
+        "audio_description": "Probably my greatest contribution to society was the Substack that I wrote today.",
+        "text_on_screen": "ORANGE TREE STUDIO\n25 THINGS FOR FREELANCE CREATIVES\nBusiness tools, hacks, mockups, tutorials, inspiration, and more.\nSEP 10, 2025",
+        "key_objects": [
+          "Smartphone",
+          "Substack interface",
+          "LFG hat"
+        ]
+      },
+      {
+        "time_range": "0:04-0:10",
+        "visual_description": "Creator scrolls through the 'Inspiration & Organization' section of the list.",
+        "audio_description": "It is essentially just a list of 25 things I wish I had when I started from inspiration and organization...",
+        "text_on_screen": "Inspiration & Organization\n1. Cosmos \u2014 like Pinterest, but much better...\n2. Framer \u2014 next level templates for portfolios or websites\n3. Milanote \u2014 free, easy to build mood boards...\n4. Internet Archive \u2014 good ol flickr. very unique old archives\n5. Notion \u2014 organize projects, clients, and inspiration...",
+        "key_objects": [
+          "Cosmos",
+          "Framer",
+          "Milanote",
+          "Internet Archive",
+          "Notion"
+        ]
+      },
+      {
+        "time_range": "0:10-0:17",
+        "visual_description": "Creator scrolls through the 'YouTube University' section.",
+        "audio_description": "...to the YouTube videos I learned Illustrator to the YouTubes I watch today to how to be a studio owner and grow.",
+        "text_on_screen": "YouTube University\n6. The Futur \u2014 straight talk on design & business...\n7. EdgyKatrina \u2014 beginner friendly Adobe illustrator tutorials...\n8. Orenmeetsworld \u2014 dude has seen behind the curtain...\n9. Jesse Nyberg \u2014 talented graphic designer showing process...\n10. Tetragrammaton \u2014 my king, Rick Rubin, talking to the author that changed my life, Steven Pressfield",
+        "key_objects": [
+          "The Futur",
+          "EdgyKatrina",
+          "Orenmeetsworld",
+          "Jesse Nyberg",
+          "Rick Rubin",
+          "Steven Pressfield"
+        ]
+      },
+      {
+        "time_range": "0:17-0:21",
+        "visual_description": "Creator scrolls through the 'Mockup Madness' section.",
+        "audio_description": "Um, all the mockup sites that I use for clients...",
+        "text_on_screen": "Mockup Madness\n11. MockupWorld \u2014 free mockups to show off your designs in context\n12. Envato Elements \u2014 unlimited mockups for a monthly fee\n13. Bendito Mockups \u2014 very elite site, good freebies but mostly paid\n14. Moxio Studio \u2014 need Adobe stock account, but 77 pages of mockups\n15. Mockup Maison \u2014 limited freebies, but very high quality paid mockups",
+        "key_objects": [
+          "MockupWorld",
+          "Envato Elements",
+          "Bendito Mockups",
+          "Moxio Studio",
+          "Mockup Maison"
+        ]
+      },
+      {
+        "time_range": "0:21-0:25",
+        "visual_description": "Creator scrolls through the 'Big Business' section.",
+        "audio_description": "...and even some business stuff like contracts, invoicing, positioning tips...",
+        "text_on_screen": "Big Business\n16. Hello Bonsai \u2014 free, lawyer-reviewed templates and more\n17. Zoho \u2014 simple, professional invoicing & expense tracking...\n18. Loom \u2014 record quick video walkthroughs for clients...\n19. Positioning Tip \u2014 \"I design brand identities for wellness founders\" > \"I do logos for everyone.\"\n20. Client Onboarding Tip \u2014 always send a welcome PDF...",
+        "key_objects": [
+          "Hello Bonsai",
+          "Zoho",
+          "Loom"
+        ]
+      },
+      {
+        "time_range": "0:25-0:29",
+        "visual_description": "Creator scrolls through the 'Portfolio Project Prompts' section.",
+        "audio_description": "...and then at the end I give you some portfolio project prompts.",
+        "text_on_screen": "Portfolio Project Prompts\n21. Design packaging for an unrealistic product. EX: \"Cereal to make you taller\"\n22. Take 3 random objects from your house and design a product label for them.\n23. Design your own currency. $$$",
+        "key_objects": [
+          "Substack"
+        ]
+      },
+      {
+        "time_range": "0:29-1:14",
+        "visual_description": "Creator returns to full-screen talking head, pointing to the link in his bio and encouraging subscriptions.",
+        "audio_description": "Again, that is on my Substack right now. It is free for all readers... please subscribe... I'm going to be shooting for every Wednesday on resources, lessons, templates... whatever it is to possibly help you guys succeed.",
+        "text_on_screen": "25 THINGS FOR FREELANCE CREATIVES\nORANGE TREE STUDIO\nSubscribed",
+        "key_objects": [
+          "LFG hat"
+        ]
+      }
+    ],
+    "overall_summary": "Creator @crsnscott promotes his free Substack newsletter, 'Orange Tree Studio,' specifically highlighting a post titled '25 Things for Freelance Creatives.' He walks through a curated list of resources he wishes he had when starting as a self-taught creative, including design tools like Cosmos and Framer, educational YouTube channels like The Futur, and business management tools like Hello Bonsai. The video serves as a resource guide and a call to action for viewers to subscribe to his weekly Wednesday newsletter for ongoing creative business tips.",
+    "people": [
+      {
+        "description": "Male creator with short hair, wearing a light blue hat with 'LFG' in white letters and a grey t-shirt.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@crsnscott"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Substack",
+        "display_name": "Substack",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Orange Tree Studio",
+        "display_name": "Orange Tree Studio",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Substack newsletter name",
+        "confidence": 5
+      },
+      {
+        "name": "Cosmos",
+        "display_name": "Cosmos",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Pinterest alternative",
+        "confidence": 5
+      },
+      {
+        "name": "Framer",
+        "display_name": "Framer",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Portfolio/website templates",
+        "confidence": 5
+      },
+      {
+        "name": "Milanote",
+        "display_name": "Milanote",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Mood board tool",
+        "confidence": 5
+      },
+      {
+        "name": "Internet Archive",
+        "display_name": "Internet Archive",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Old archives/Flickr alternative",
+        "confidence": 5
+      },
+      {
+        "name": "Notion",
+        "display_name": "Notion",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Project organization",
+        "confidence": 5
+      },
+      {
+        "name": "The Futur",
+        "display_name": "The Futur",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "YouTube channel for design & business",
+        "confidence": 5
+      },
+      {
+        "name": "EdgyKatrina",
+        "display_name": "EdgyKatrina",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Adobe Illustrator tutorials",
+        "confidence": 5
+      },
+      {
+        "name": "Orenmeetsworld",
+        "display_name": "Orenmeetsworld",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "YouTube channel",
+        "confidence": 5
+      },
+      {
+        "name": "Jesse Nyberg",
+        "display_name": "Jesse Nyberg",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Graphic designer/YouTube channel",
+        "confidence": 5
+      },
+      {
+        "name": "Rick Rubin",
+        "display_name": "Rick Rubin",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Producer/Host of Tetragrammaton",
+        "confidence": 5
+      },
+      {
+        "name": "Steven Pressfield",
+        "display_name": "Steven Pressfield",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Author",
+        "confidence": 5
+      },
+      {
+        "name": "MockupWorld",
+        "display_name": "MockupWorld",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Free mockups",
+        "confidence": 5
+      },
+      {
+        "name": "Envato Elements",
+        "display_name": "Envato Elements",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Subscription assets",
+        "confidence": 5
+      },
+      {
+        "name": "Hello Bonsai",
+        "display_name": "Hello Bonsai",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Freelance business management",
+        "confidence": 5
+      },
+      {
+        "name": "Zoho",
+        "display_name": "Zoho",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Invoicing and expense tracking",
+        "confidence": 5
+      },
+      {
+        "name": "Loom",
+        "display_name": "Loom",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Video messaging",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Freelance creatives can significantly benefit from a curated list of tools for inspiration, learning, and business management.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The creator's Substack, Orange Tree Studio, provides these resources for free to help others build their creative businesses.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Continuous learning through specific YouTube channels and podcasts (like Rick Rubin's) is vital for creative growth.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Cosmos",
+          "details": "Pinterest alternative for inspiration"
+        },
+        {
+          "name": "Framer",
+          "details": "Templates for portfolios or websites"
+        },
+        {
+          "name": "Milanote",
+          "details": "Mood board and project brief tool"
+        },
+        {
+          "name": "Internet Archive",
+          "details": "Resource for unique old archives"
+        },
+        {
+          "name": "Notion",
+          "details": "Organization for projects and clients"
+        },
+        {
+          "name": "The Futur",
+          "details": "YouTube channel for design and business education"
+        },
+        {
+          "name": "EdgyKatrina",
+          "details": "Adobe Illustrator tutorials"
+        },
+        {
+          "name": "Orenmeetsworld",
+          "details": "Insights into the creative industry"
+        },
+        {
+          "name": "Jesse Nyberg",
+          "details": "Graphic design process and insights"
+        },
+        {
+          "name": "Tetragrammaton",
+          "details": "Rick Rubin's podcast/YouTube channel"
+        },
+        {
+          "name": "MockupWorld",
+          "details": "Free design mockups"
+        },
+        {
+          "name": "Envato Elements",
+          "details": "Unlimited digital assets for a fee"
+        },
+        {
+          "name": "Hello Bonsai",
+          "details": "Freelance contracts and templates"
+        },
+        {
+          "name": "Zoho",
+          "details": "Invoicing and expense tracking"
+        },
+        {
+          "name": "Loom",
+          "details": "Video walkthroughs for clients"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Chill Lo-fi Hip Hop Beat \u2014 Unidentified Artist",
+      "metadata_song": "original sound \u2014 crsnscott",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All entities were clearly listed in the text overlay of the Substack post."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, helpful, and professional yet accessible.",
+    "topic_hints": [
+      "Freelancing",
+      "Graphic Design",
+      "Business Tools"
+    ],
+    "affect_hints": [
+      "Empowered",
+      "Resourceful",
+      "Motivated"
+    ],
+    "genre_hints": [
+      "Educational",
+      "Resource List",
+      "Career Advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8063,
+    "output_tokens": 3707,
+    "total_tokens": 11770,
+    "cost_usd": 0.003434,
+    "latency_ms": 39396,
+    "upload_ms": 7872
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

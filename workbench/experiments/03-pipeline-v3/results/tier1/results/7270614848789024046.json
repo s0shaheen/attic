@@ -1,0 +1,52 @@
+{
+  "item_id": "7270614848789024046",
+  "parsed_output": {
+    "summary": "Traveler @internationalnae shares a vlog of the cannabis coffeeshops she visited while on a solo trip to Amsterdam. The video features interior aesthetics of various spots, including lounge areas with neon signs and greenery, while she discusses using them for menstrual cramp relief.",
+    "entities": [
+      {
+        "name": "Amsterdam",
+        "type": "place",
+        "relevance": "primary"
+      },
+      {
+        "name": "Centraal Station",
+        "type": "place",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Pheelz",
+        "type": "artist",
+        "relevance": "supporting"
+      },
+      {
+        "name": "D'evils",
+        "type": "song",
+        "relevance": "supporting"
+      },
+      {
+        "name": "@internationalnae",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "travel",
+      "secondary": "health"
+    },
+    "genre": "vlog",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "inspiration_saving",
+    "embedding_text": "A travel vlog by @internationalnae documenting her visits to various cannabis coffeeshops in Amsterdam. The video starts with a street view of a tram labeled '4 Centraal Station' before moving indoors to show the vibe of different establishments. One location features a TV screen playing music videos by the artist Pheelz against a wall of artificial greenery. Another location features a pink neon sign on the wall that reads 'Lose my Mind and Find my Soul' above plush lounge seating and tables with ashtrays. The creator mentions visiting these spots specifically to help manage menstrual cramps, though she notes it didn't quite work. This video is a useful reference for solo travelers looking for aesthetic coffeeshop recommendations in the Netherlands or those interested in the Amsterdam cannabis scene."
+  },
+  "metrics": {
+    "input_tokens": 4327,
+    "output_tokens": 464,
+    "total_tokens": 4791,
+    "cost_usd": 0.000927,
+    "latency_ms": 7780,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "item_id": "7195085850798001410",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:05:34.320271+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "Bryan Cranston is announced as the winner of an Emmy Award, receiving a standing ovation from peers like Woody Harrelson and Matthew McConaughey.",
+        "audio_description": "Presenter Julia Louis-Dreyfus says, 'And the Emmy goes to... Bryan Cranston.' Frank Sinatra's 'My Way' begins to swell.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Emmy Award"
+        ]
+      },
+      {
+        "time_range": "0:07-0:13",
+        "visual_description": "Kawhi Leonard hits a historic game-winning buzzer-beater for the Toronto Raptors against the Philadelphia 76ers in Game 7 of the 2019 playoffs.",
+        "audio_description": "Crowd roar and the dramatic climax of 'My Way'.",
+        "text_on_screen": "PHI 90, TOR 90, 4th 01.2",
+        "key_objects": [
+          "Basketball",
+          "NBA Hoop"
+        ]
+      },
+      {
+        "time_range": "0:13-0:17",
+        "visual_description": "Professional bowler Pete Weber celebrates a high-stakes strike with intense emotion and his famous catchphrase.",
+        "audio_description": "Pete Weber screams: 'Who do you think you are? I am!'",
+        "text_on_screen": "Weber, Pagan, 175, 195, 215",
+        "key_objects": [
+          "Bowling ball",
+          "Bowling pins"
+        ]
+      },
+      {
+        "time_range": "0:17-0:22",
+        "visual_description": "Mutaz Essa Barshim and Gianmarco Tamberi celebrate their decision to share the Olympic gold medal in high jump at the Tokyo 2020 Olympics.",
+        "audio_description": "Mutaz Essa Barshim says: 'History, my friend. Olympic champions.'",
+        "text_on_screen": "History, my friend. Olympic champions.",
+        "key_objects": [
+          "Olympic track",
+          "Qatar jersey"
+        ]
+      },
+      {
+        "time_range": "0:22-0:25",
+        "visual_description": "Steph Curry celebrates an NBA championship in the locker room, spraying champagne while wearing protective goggles.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Michelob ULTRA",
+        "key_objects": [
+          "Champagne bottle",
+          "Ski goggles",
+          "Larry O'Brien Trophy"
+        ]
+      },
+      {
+        "time_range": "0:25-0:32",
+        "visual_description": "MarJon Beauchamp gives an emotional interview about his journey to the NBA and his faith.",
+        "audio_description": "MarJon Beauchamp: 'I'm just glad, like, I'm just happy, you know. God never gave up on me... everything I had to go through.'",
+        "text_on_screen": "",
+        "key_objects": [
+          "Microphone"
+        ]
+      },
+      {
+        "time_range": "0:32-0:37",
+        "visual_description": "Giannis Antetokounmpo sits on the court, overcome with emotion after winning the 2021 NBA Championship.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "2021 NBA CHAMPIONS",
+        "key_objects": [
+          "Championship hat",
+          "Milwaukee Bucks jersey"
+        ]
+      },
+      {
+        "time_range": "0:37-0:48",
+        "visual_description": "Luka Don\u010di\u0107 hits a casual half-court shot during an NBA All-Star game and laughs with Trae Young.",
+        "audio_description": "The final notes of 'My Way' play as the screen fades to black.",
+        "text_on_screen": "World",
+        "key_objects": [
+          "Basketball"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a 'hopecore' compilation featuring iconic moments of triumph, perseverance, and emotional payoff in sports and entertainment. It highlights Bryan Cranston's Emmy win, Kawhi Leonard's legendary buzzer-beater, and the heartwarming moment two Olympic athletes chose to share a gold medal. Set to the powerful climax of Frank Sinatra's 'My Way,' the montage serves as an inspirational tribute to human achievement and the beauty of reaching the top after a long struggle.",
+    "people": [
+      {
+        "description": "Actor winning an Emmy for Breaking Bad",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Bryan Cranston"
+      },
+      {
+        "description": "NBA player hitting a game-winning shot for the Raptors",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Kawhi Leonard"
+      },
+      {
+        "description": "Professional bowler celebrating a strike",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Pete Weber"
+      },
+      {
+        "description": "Olympic high jumper from Qatar sharing gold",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Mutaz Essa Barshim"
+      },
+      {
+        "description": "Olympic high jumper from Italy sharing gold",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Gianmarco Tamberi"
+      },
+      {
+        "description": "NBA player celebrating a championship with the Warriors",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Steph Curry"
+      },
+      {
+        "description": "NBA player reflecting on his journey in an interview",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "MarJon Beauchamp"
+      },
+      {
+        "description": "NBA player celebrating a championship with the Bucks",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Giannis Antetokounmpo"
+      },
+      {
+        "description": "NBA player hitting a half-court shot",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Luka Don\u010di\u0107"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Bryan Cranston",
+        "display_name": "Bryan Cranston",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Kawhi Leonard",
+        "display_name": "Kawhi Leonard",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "2019 NBA Playoffs",
+        "confidence": 5
+      },
+      {
+        "name": "Pete Weber",
+        "display_name": "Pete Weber",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Professional Bowler",
+        "confidence": 5
+      },
+      {
+        "name": "Mutaz Essa Barshim",
+        "display_name": "Mutaz Essa Barshim",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "Olympic High Jumper",
+        "confidence": 5
+      },
+      {
+        "name": "Steph Curry",
+        "display_name": "Stephen Curry",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Golden State Warriors",
+        "confidence": 5
+      },
+      {
+        "name": "Giannis Antetokounmpo",
+        "display_name": "Giannis Antetokounmpo",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Milwaukee Bucks",
+        "confidence": 5
+      },
+      {
+        "name": "Luka Don\u010di\u0107",
+        "display_name": "Luka Don\u010di\u0107",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Dallas Mavericks",
+        "confidence": 5
+      },
+      {
+        "name": "My Way",
+        "display_name": "My Way - Frank Sinatra",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "2008 Remastered version",
+        "confidence": 5
+      },
+      {
+        "name": "NBA",
+        "display_name": "National Basketball Association",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Emmy Awards",
+        "display_name": "Primetime Emmy Awards",
+        "type": "event",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Success is the ultimate reward for perseverance and staying true to one's path.",
+        "source": "implied",
+        "confidence": 5
+      },
+      {
+        "statement": "Shared victory and sportsmanship can be more meaningful than individual achievement.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Faith and resilience are key components in overcoming life's obstacles to reach the top.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Bryan Cranston's Emmy Win",
+          "details": "Recognition for his role in Breaking Bad."
+        },
+        {
+          "name": "Kawhi Leonard's Buzzer Beater",
+          "details": "Game 7, 2019 Eastern Conference Semifinals."
+        },
+        {
+          "name": "Pete Weber's 'I Am' Celebration",
+          "details": "Iconic moment in professional bowling history."
+        },
+        {
+          "name": "Olympic High Jump Gold Share",
+          "details": "Mutaz Barshim and Gianmarco Tamberi sharing the title."
+        },
+        {
+          "name": "MarJon Beauchamp's Journey",
+          "details": "Reflecting on his path from homelessness/struggle to the NBA."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "My Way \u2014 Frank Sinatra",
+      "metadata_song": "My Way - 2008 Remastered",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All clips are high-profile, easily identifiable cultural and sporting moments."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "various",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Triumphant, emotional, and inspiring with a focus on peak human achievement.",
+    "topic_hints": [
+      "Sports Triumphs",
+      "Inspiration",
+      "Human Achievement"
+    ],
+    "affect_hints": [
+      "Inspired",
+      "Emotional",
+      "Triumphant"
+    ],
+    "genre_hints": [
+      "Hopecore",
+      "Corecore",
+      "Sports Edit"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5746,
+    "output_tokens": 2985,
+    "total_tokens": 8731,
+    "cost_usd": 0.002653,
+    "latency_ms": 34964,
+    "upload_ms": 5644
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "item_id": "7590563268759014687",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:47:52.435427+00:00",
+  "parsed_output": {
+    "_parse_error": true,
+    "_raw_text": "{\n  \"scene_timeline\": [\n    {\n      \"time_range\": \"0:00-0:03\",\n      \"visual_description\": \"New York City Mayor Zohran Mamdani delivers a speech at a podium, referencing the Knicks' starting point guard.\",\n      \"audio_description\": \"A man speaks into a microphone, saying \\\"And from our starting point guard at Madison Square Garden.\\\"\",\n      \"text_on_screen\": null,\n      \"key_objects\": [\"microphone\"]\n    },\n    {\n      \"time_range\": \"0:03-0:07\",\n      \"visual_description\": \"Jalen Brunson, wearing a white New York Knicks jersey (number 11), performs his signature 'three-point celebration' on the basketball court, raising his hand to his face and then pumping his fist.\",\n      \"audio_description\": \"Upbeat hip-hop music begins to play with a male voice rapping.\",\n      \"text_on_screen\": null,\n      \"key_objects\": [\"Jalen Brunson\", \"basketball court\", \"New York Knicks jersey\"]\n    },\n    {\n      \"time_range\": \"0:07-0:08\",\n      \"visual_description\": \"Jalen Brunson, now in a blue New York Knicks jersey (number 11), repeats his signature hand gesture.\",\n      \"audio_description\": \"The hip-hop music continues.\",\n      \"text_on_screen\": null,\n      \"key_objects\": [\"Jalen Brunson\", \"New York Knicks jersey\"]\n    },\n    {\n      \"time_range\": \"0:08-0:10\",\n      \"visual_description\": \"Jalen Brunson (white jersey, 11) is seen on the court, walking past a Denver Nuggets player (number 5).\",\n      \"audio_description\": \"The hip-hop music continues.\",\n      \"text_on_screen\": null,\n      \"key_objects\": [\"Jalen Brunson\", \"Denver Nuggets player\"]\n    },\n    {\n      \"time_range\": \"0:10-0:12\",\n      \"visual_description\": \"Jalen Brunson (blue jersey, 11) performs his signature hand gesture again.\",\n      \"audio_description\": \"The hip-hop music continues.\",\n      \"text_on_screen\": null,\n      \"key_objects\": [\"Jalen Brunson\"]\n    },\n    {\n      \"time_range\": \"0:12-0:13\",\n      \"visual_description\": \"Jalen Brunson (blue jersey, 11) is on the court, with an Indiana Pacers player (number 9) vi"
+  },
+  "grounding_sources": [
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeD-LCoMjVgcBzckCk84_xhbQxrB-rswyNlLWLmCOR6CVNEi189unc0NrM_inBCSl66XaMSFKI6Y_HGnibbutx1oXl6SwVgnhnr36hWHdaLcrwzK-Ew84x0XA1SdzApDO87cGwls0Y2dByNtUpYToHMd7r-EVz2lH3febbBsgNNkJudCSgEuJKIEvyDrboQdwE1bEuhJTKkHfvWgRrf6dZsFIy-C-Rlg_Bki6AaDIg",
+      "title": "basketballnetwork.net"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGN66O4vFyqdp8aUBHTG4mr23kVAWxw8lZcRQkyzDRRUEellO9FaFp7tkVtQ3WfRf60fuxFHNyHi_awaUmOZlh3uS5iTlDoSCFnGYg4rxlgqvLqiAkvjCnq_xAi63N21Jerg5HQLXA=",
+      "title": "youtube.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7HlBOS8jDVYeBo0GnVb10rU09QzPzqyMBVXINE33i-fDAeivLzFZDY1y5oDsYT9fhujhRYINxWtJhF4NsDH0W71tuMcxpXaNqgK7UWnNh3mgSKI96i9stTyffrPdvwIN7CyTP939LvCqsNzuwniEonz0qUSgYjaNOsRUAGxQNmLEjswk53WMbBUT9ksoCseZXmoENmSU39kpQkuKP7ZCLoJZHGueSJQ==",
+      "title": "si.com"
+    }
+  ],
+  "metrics": {
+    "input_tokens": 13323,
+    "output_tokens": 3938,
+    "total_tokens": 17261,
+    "cost_usd": 0.004361,
+    "latency_ms": 41287,
+    "upload_ms": 5515
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "item_id": "7590563268759014687",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:18:00.845191+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Zohran Mamdani introduces Jalen Brunson at a public podium event.",
+        "audio_description": "And from our starting point guard at Madison Square Garden...",
+        "text_on_screen": "",
+        "key_objects": [
+          "microphone",
+          "podium"
+        ]
+      },
+      {
+        "time_range": "0:03-0:13",
+        "visual_description": "Fast-paced montage of Jalen Brunson performing his signature 'three-point' celebration (hand over face) during various games.",
+        "audio_description": "Instrumental beat from 'All Caps' begins playing.",
+        "text_on_screen": "",
+        "key_objects": [
+          "basketball",
+          "Knicks jersey"
+        ]
+      },
+      {
+        "time_range": "0:13-0:20",
+        "visual_description": "Brunson performs a series of crossovers and step-back jumpers against defenders from the Orlando Magic and Brooklyn Nets.",
+        "audio_description": "Commentary: 'Gives him too much room... so nasty!'",
+        "text_on_screen": "",
+        "key_objects": [
+          "basketball hoop"
+        ]
+      },
+      {
+        "time_range": "0:20-0:30",
+        "visual_description": "Brunson drives through the paint and hits a high-arcing floater against the Chicago Bulls.",
+        "audio_description": "Lyrics from 'All Caps' by Madvillain play.",
+        "text_on_screen": "",
+        "key_objects": [
+          "NBA court"
+        ]
+      },
+      {
+        "time_range": "0:30-0:40",
+        "visual_description": "Brunson uses a series of pump fakes and footwork to score a contested layup over Patrick Williams.",
+        "audio_description": "Music continues; crowd cheers.",
+        "text_on_screen": "",
+        "key_objects": [
+          "basketball"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a high-energy highlight reel of New York Knicks point guard Jalen Brunson. It opens with a clip of NYC Council Member Zohran Mamdani introducing Brunson as the team's starting point guard. The remainder of the video features a montage of Brunson's signature celebrations, elite ball-handling, and clutch scoring against various NBA teams, all set to the song 'All Caps' by Madvillain.",
+    "people": [
+      {
+        "description": "Professional basketball player for the New York Knicks, wearing jersey #11.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jalen Brunson"
+      },
+      {
+        "description": "New York City Council Member and mayoral candidate, speaking at a podium.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Zohran Mamdani"
+      },
+      {
+        "description": "Chicago Bulls player #44 defending Brunson.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Patrick Williams"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Jalen Brunson",
+        "display_name": "Jalen Brunson (NY Knicks #11)",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "metadata"
+        ],
+        "specifications": "Point Guard",
+        "confidence": 5
+      },
+      {
+        "name": "New York Knicks",
+        "display_name": "New York Knicks",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "NBA Team",
+        "confidence": 5
+      },
+      {
+        "name": "Zohran Mamdani",
+        "display_name": "Zohran Mamdani",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "metadata"
+        ],
+        "specifications": "NYC Council Member",
+        "confidence": 5
+      },
+      {
+        "name": "Madison Square Garden",
+        "display_name": "Madison Square Garden",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Sports Arena",
+        "confidence": 5
+      },
+      {
+        "name": "All Caps",
+        "display_name": "All Caps \u2014 Madvillain",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "MF DOOM & Madlib",
+        "confidence": 5
+      },
+      {
+        "name": "Chicago Bulls",
+        "display_name": "Chicago Bulls",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "NBA Team",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Jalen Brunson is a premier talent and a central figure in New York City sports culture.",
+        "source": "implied",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "All Caps \u2014 Madvillain (MF DOOM & Madlib)",
+      "metadata_song": "All Caps",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All entities and the song are clearly identifiable from the footage and metadata."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Energetic, rhythmic, and celebratory of athletic skill.",
+    "topic_hints": [
+      "NBA Basketball",
+      "New York Knicks",
+      "Sports Highlights"
+    ],
+    "affect_hints": [
+      "Excited",
+      "Hyped",
+      "Impressed"
+    ],
+    "genre_hints": [
+      "Sports Edit",
+      "Highlight Reel"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5068,
+    "output_tokens": 1608,
+    "total_tokens": 6676,
+    "cost_usd": 0.001725,
+    "latency_ms": 20508,
+    "upload_ms": 5586
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

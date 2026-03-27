@@ -1,0 +1,52 @@
+{
+  "item_id": "7596066672281226527",
+  "parsed_output": {
+    "summary": "This TikTok demonstrates how to use the Claude Cowork tool to automatically rename hundreds of timestamped screenshots into descriptive filenames. The video shows the AI analyzing files from the Desktop and Screenshots folders and presenting a table of proposed names like 'Google-Analytics-Dashboard' for user approval.",
+    "entities": [
+      {
+        "name": "Claude",
+        "type": "brand",
+        "relevance": "primary"
+      },
+      {
+        "name": "Claude Cowork",
+        "type": "app_or_tool",
+        "relevance": "primary"
+      },
+      {
+        "name": "Opus 4.5",
+        "type": "product",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Google Analytics",
+        "type": "product",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Burning Man",
+        "type": "event",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "career"
+    },
+    "genre": "tutorial",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "A productivity tutorial video by @spreadaioli showing a workflow using Claude Cowork to organize a computer. The creator demonstrates how the AI tool scans a Mac desktop and screenshots folder to rename files from generic timestamps like 'Screenshot 2026-01-08' to meaningful descriptions based on image content. Key examples shown in the UI include renaming files to 'Bamboo-Accents-Wholesale-Cart-Empty.png' and 'Google-Analytics-Dashboard-Jan-2026.png'. The interface displays a four-step progress bar: analyzing screenshots, analyzing folder images, showing proposed renames, and renaming approved files. The video highlights the use of the Opus 4.5 model within the Claude interface to handle bulk file management tasks in minutes, making it a valuable reference for digital organization and AI-powered file management."
+  },
+  "metrics": {
+    "input_tokens": 4258,
+    "output_tokens": 494,
+    "total_tokens": 4752,
+    "cost_usd": 0.000935,
+    "latency_ms": 8998,
+    "keyframe_count": 3
+  }
+}

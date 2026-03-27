@@ -1,0 +1,359 @@
+{
+  "item_id": "7602724902357060882",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:57:08.389857+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "The creator stands shirtless, facing away from the camera, with arms raised overhead. He then turns to face the side, touching his right shoulder with his left hand.",
+        "audio_description": "The creator states this is part three of his scapular winging self-healing journey.",
+        "text_on_screen": "Scapular winging update\nPart 3\nDec 29",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:05-0:10",
+        "visual_description": "The creator stands shirtless, facing away from the camera, wearing a colorful beanie. He demonstrates arm movements, raising them overhead, lowering them to the sides, and raising them again.",
+        "audio_description": "The creator mentions receiving feedback in part two and provides an update on new incorporations into his rehab.",
+        "text_on_screen": "Jan 6",
+        "key_objects": [
+          "beanie"
+        ]
+      },
+      {
+        "time_range": "0:10-0:15",
+        "visual_description": "The creator stands shirtless, facing away from the camera in a different room, performing arm raises overhead and to the sides.",
+        "audio_description": "The creator discusses incorporating diaphragmatic breathing into everyday life and exercise, a suggestion from comments.",
+        "text_on_screen": "Feb 4\n(3 weeks into rehab)",
+        "key_objects": [
+          "desk",
+          "office chair",
+          "poster"
+        ]
+      },
+      {
+        "time_range": "0:15-0:22",
+        "visual_description": "The creator stands shirtless, facing away from the camera in a bathroom, performing arm raises overhead and to the sides.",
+        "audio_description": "The creator explains he previously knew diaphragmatic breathing was important but didn't understand its connection to scapular winging.",
+        "text_on_screen": "Feb 4\n(3 weeks into rehab)",
+        "key_objects": [
+          "shower curtain",
+          "sink"
+        ]
+      },
+      {
+        "time_range": "0:22-0:29",
+        "visual_description": "The creator stands shirtless, facing the camera, demonstrating chest breathing (hands on chest) and then diaphragmatic breathing (hands on stomach), showing the difference in abdominal movement.",
+        "audio_description": "The creator explains that through research, he learned the serratus anterior is connected to the ribs, allowing them to expand when the diaphragm is properly activated.",
+        "text_on_screen": "Chest Breathing\nDiaphragmatic Breathing",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:29-0:38",
+        "visual_description": "The creator stands shirtless, facing sideways, demonstrating diaphragmatic breathing, showing his stomach expanding with the breath.",
+        "audio_description": "The creator describes how he now incorporates diaphragmatic breathing into the doorway stretch, focusing on inhaling at the start, exhaling through the bottom, holding, and then pushing back into full protraction.",
+        "text_on_screen": "Diaphragmatic Breathing",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:38-0:50",
+        "visual_description": "The creator stands shirtless in a doorway, performing a doorway stretch by leaning forward.",
+        "audio_description": "The creator continues to explain the breathing technique during the doorway stretch, emphasizing holding the stretch and pushing back into protraction.",
+        "text_on_screen": "",
+        "key_objects": [
+          "doorway"
+        ]
+      },
+      {
+        "time_range": "0:50-1:01",
+        "visual_description": "A close-up of the creator's torso during the doorway stretch, highlighting the activation of his right side abdominal muscles.",
+        "audio_description": "The creator points out that his right side abs appear to be firing off during the movement.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:01-1:23",
+        "visual_description": "The creator stands shirtless in a doorway, facing away from the camera, performing the doorway stretch. He leans forward and back, demonstrating the movement and highlighting scapular retraction.",
+        "audio_description": "The creator notes that his right scapula retracts more than his left during the stretch, emphasizing the benefit of filming oneself to observe such discrepancies.",
+        "text_on_screen": "",
+        "key_objects": [
+          "doorway"
+        ]
+      },
+      {
+        "time_range": "1:23-1:50",
+        "visual_description": "The creator stands shirtless, facing away from the camera, using a foam roller against a wall. He moves his arm up and down, pressing the foam roller against the wall.",
+        "audio_description": "The creator introduces the serratus foam roller movement against a wall, explaining that the physics and line of gravity change compared to doing it on the ground, making protraction secondary to overhead extension.",
+        "text_on_screen": "",
+        "key_objects": [
+          "foam roller",
+          "wall"
+        ]
+      },
+      {
+        "time_range": "1:50-2:16",
+        "visual_description": "The creator stands shirtless, facing away from the camera, using a foam roller against a wall. He adjusts his distance from the wall and performs the movement, demonstrating how standing closer allows for more focus on overhead extension.",
+        "audio_description": "The creator explains that adjusting his distance from the wall changes the focus of the exercise, with closer proximity allowing for more focus on overhead extension, though the scapula may still disconnect slightly. He concludes both variations are beneficial.",
+        "text_on_screen": "",
+        "key_objects": [
+          "foam roller",
+          "wall"
+        ]
+      },
+      {
+        "time_range": "2:16-2:34",
+        "visual_description": "The creator lies prone on the floor, shirtless, with arms extended to the sides in a 'T' shape, then raises them. He then extends his arms forward in a 'Y' shape and attempts to raise them, showing difficulty with his right shoulder.",
+        "audio_description": "The creator discusses working on lower traps through T-raises and Y-raises. He notes that when attempting Y-raises with arms straight in front, his right shoulder could not lift without using compensatory muscles.",
+        "text_on_screen": "*Trying as hard as I can\nto raise it without using\ncompensatory muscles*\nHere it raises but scap disconnects",
+        "key_objects": [
+          "backpack",
+          "shoes",
+          "storage bins"
+        ]
+      },
+      {
+        "time_range": "2:34-2:50",
+        "visual_description": "The creator lies prone on the floor, shirtless, with arms extended to the sides in a 'T' shape. He raises his arms, demonstrating the point where his scapula begins to shake and disconnect.",
+        "audio_description": "The creator explains he can now identify the exact moment his scapula disconnects during the T-raise, which he will use to track his range of motion improvement.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "2:50-2:57",
+        "visual_description": "The creator stands shirtless, facing away from the camera, with arms extended to the sides in a 'T' shape, then raises them overhead in a 'Y' shape.",
+        "audio_description": "The creator thanks viewers for helpful comments and encourages them to follow for part four of his journey.",
+        "text_on_screen": "",
+        "key_objects": [
+          "desk",
+          "office chair",
+          "poster"
+        ]
+      }
+    ],
+    "overall_summary": "This video, part 3 of a scapular winging rehab journey, details the creator's progress and new techniques. He emphasizes the importance of diaphragmatic breathing for serratus anterior activation, demonstrating its application during a doorway stretch and noting asymmetrical muscle engagement. The creator also explores wall-based foam roller exercises for serratus activation, comparing them to ground-based variations and discussing how body positioning affects the focus of the movement. Finally, he introduces prone T-raises and Y-raises as a way to track improvements in scapular range of motion, identifying a specific point of disconnection in his right shoulder.",
+    "people": [
+      {
+        "description": "A young man with dark hair, shirtless and wearing plaid pajama pants. He is the creator of the video, demonstrating various exercises and providing voiceover commentary on his scapular winging rehabilitation journey.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Scapular Winging",
+        "display_name": "Scapular Winging",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Diaphragmatic Breathing",
+        "display_name": "Diaphragmatic Breathing",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "demonstration"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Serratus Anterior",
+        "display_name": "Serratus Anterior Muscle",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Doorway Stretch",
+        "display_name": "Doorway Stretch",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "demonstration"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Foam Roller",
+        "display_name": "Foam Roller (Light Blue/Green)",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": "light blue/green",
+        "confidence": 5
+      },
+      {
+        "name": "Serratus Foam Roller Movement",
+        "display_name": "Serratus Foam Roller Movement (against wall)",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "demonstration"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "T-Raises",
+        "display_name": "Prone T-Raises",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "demonstration"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Y-Raises",
+        "display_name": "Prone Y-Raises",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "demonstration"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Nike",
+        "display_name": "Nike",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "shoes visible in background",
+        "confidence": 3
+      },
+      {
+        "name": "Berserk",
+        "display_name": "Berserk (Brand of Sacrifice tattoo)",
+        "type": "cultural_reference",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "tattoo on chest",
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Diaphragmatic breathing is crucial for activating the serratus anterior, which aids in rib expansion and is directly linked to improving scapular stability.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Filming oneself during exercises is highly beneficial for identifying subtle movement discrepancies and imbalances that might otherwise go unnoticed.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Both ground-based and wall-based serratus foam roller movements are effective, but they offer different focuses (protraction vs. overhead extension) due to changes in physics and gravity.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Prone T-raises and Y-raises can serve as valuable tools to track improvements in scapular range of motion and pinpoint specific moments of muscle disconnection.",
+        "source": "voiceover, demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Diaphragmatic Breathing",
+          "details": "Inhale deeply, expanding the stomach, then exhale, contracting the stomach."
+        },
+        {
+          "name": "Doorway Stretch with Diaphragmatic Breathing",
+          "details": "Inhale at the start of the movement, exhale throughout the bottom of the stretch, hold, take another deep breath, and then push back through into full protraction."
+        },
+        {
+          "name": "Serratus Foam Roller Movement (Wall)",
+          "details": "Use a foam roller against a wall, focusing on overhead extension. Adjust distance from the wall to vary the emphasis on protraction."
+        },
+        {
+          "name": "Prone T-Raises",
+          "details": "Lie prone on the floor, extend arms to the sides in a 'T' shape, and raise them without engaging compensatory muscles."
+        },
+        {
+          "name": "Prone Y-Raises",
+          "details": "Lie prone on the floor, extend arms forward in a 'Y' shape, and raise them without engaging compensatory muscles."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": false,
+      "notes": "Background music is generic instrumental, not a specific identifiable song. The 'original sound' metadata is a placeholder."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, focused, determined, educational",
+    "topic_hints": [
+      "Scapular winging rehab",
+      "Breathing techniques",
+      "Shoulder mobility exercises"
+    ],
+    "affect_hints": [
+      "Informative",
+      "Educational",
+      "Motivating"
+    ],
+    "genre_hints": [
+      "Fitness tutorial",
+      "Rehabilitation guide",
+      "Educational content"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 53479,
+    "output_tokens": 3578,
+    "total_tokens": 57057,
+    "cost_usd": 0.010169,
+    "latency_ms": 45894,
+    "upload_ms": 9927
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

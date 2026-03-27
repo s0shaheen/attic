@@ -1,0 +1,81 @@
+{
+  "item_id": "7609086884974710046",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:14.235592+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": null,
+      "micro_labels": [
+        "Batman",
+        "The Dark Knight Trilogy",
+        "DC Comics",
+        "Bruce Wayne",
+        "Christopher Nolan"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "fan edit",
+        "cinematic edit",
+        "tribute"
+      ],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "nostalgic",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "sad",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "cinematic",
+      "text_overlay"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6480,
+    "output_tokens": 379,
+    "total_tokens": 6859,
+    "cost_usd": 0.001199,
+    "latency_ms": 9515,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 3
+  }
+}

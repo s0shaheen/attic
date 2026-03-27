@@ -1,0 +1,52 @@
+{
+  "item_id": "7548620433705159966",
+  "parsed_output": {
+    "summary": "Creator @crsnscott shares a curated list of 25 resources for freelance creatives hosted on his Orange Tree Studio Substack. The video highlights business tools, mockups, and tutorials designed to help independent professionals succeed in their careers.",
+    "entities": [
+      {
+        "name": "@crsnscott",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Orange Tree Studio",
+        "type": "brand",
+        "relevance": "primary"
+      },
+      {
+        "name": "Substack",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      },
+      {
+        "name": "25 Things for Freelance Creatives",
+        "type": "product",
+        "relevance": "primary"
+      },
+      {
+        "name": "Business tools",
+        "type": "product",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "career",
+      "secondary": "technology"
+    },
+    "genre": "ranking",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "inspiring"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this TikTok, creator @crsnscott (Carson Scott) promotes a comprehensive resource list titled '25 Things for Freelance Creatives' from his Orange Tree Studio Substack. The video serves as a guide for independent professionals looking for business tools, design mockups, tutorials, and creative hacks to improve their workflow and 'win' in the freelance market. On-screen text emphasizes that the list includes inspiration and various hacks, while the creator mentions that providing these resources for free might be a 'mistake' due to their high value. This content is ideal for designers, writers, and digital artists seeking specific tools to manage their freelance business or find creative assets. The video mentions Substack as the primary platform for accessing these 25 resources, which were shared under the Orange Tree Studio brand."
+  },
+  "metrics": {
+    "input_tokens": 4269,
+    "output_tokens": 478,
+    "total_tokens": 4747,
+    "cost_usd": 0.000927,
+    "latency_ms": 11019,
+    "keyframe_count": 3
+  }
+}

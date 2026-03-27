@@ -1,0 +1,229 @@
+{
+  "item_id": "7585397803673718029",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:58:19.197747+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "A person's hands are shown spreading a thick white creamy substance, identified as Oikos Triple Zero Vanilla Greek Yogurt, onto a flatbread or tortilla placed on a paper towel on a patterned table.",
+        "audio_description": "A male voice exclaims, \"Oh my god, bro!\"",
+        "text_on_screen": "\"I'm craving sum sweet\"",
+        "key_objects": [
+          "Oikos Triple Zero Vanilla Greek Yogurt",
+          "flatbread",
+          "spoon",
+          "paper towel"
+        ]
+      },
+      {
+        "time_range": "0:02-0:03",
+        "visual_description": "The creator, a man wearing a black durag and jacket, looks down at the snack he is preparing, then briefly looks up.",
+        "audio_description": "A male voice exclaims, \"Oh hell nah, man, what the f*ck, man!\"",
+        "text_on_screen": "\"I'm craving sum sweet\"",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:03-0:04",
+        "visual_description": "The creator continues to spread the Oikos Triple Zero Vanilla Greek Yogurt evenly across the flatbread.",
+        "audio_description": "The male voice continues to exclaim in disbelief.",
+        "text_on_screen": "\"I'm craving sum sweet\"",
+        "key_objects": [
+          "Oikos Triple Zero Vanilla Greek Yogurt",
+          "flatbread",
+          "spoon"
+        ]
+      },
+      {
+        "time_range": "0:04-0:05",
+        "visual_description": "The creator sprinkles a generous amount of cinnamon powder over the yogurt-covered flatbread.",
+        "audio_description": "The male voice continues with an expletive.",
+        "text_on_screen": "\"I'm craving sum sweet\"",
+        "key_objects": [
+          "cinnamon shaker",
+          "cinnamon",
+          "flatbread",
+          "Oikos Triple Zero Vanilla Greek Yogurt"
+        ]
+      },
+      {
+        "time_range": "0:05-0:06",
+        "visual_description": "The creator carefully rolls up the prepared flatbread into a tight cylindrical shape.",
+        "audio_description": "A male voice exclaims, \"Get your ass on, bro!\"",
+        "text_on_screen": "\"I'm craving sum sweet\"",
+        "key_objects": [
+          "rolled flatbread"
+        ]
+      },
+      {
+        "time_range": "0:06-0:10",
+        "visual_description": "The creator holds the rolled-up flatbread to his mouth and takes a bite, then looks at the camera while chewing.",
+        "audio_description": "The male voice continues to yell, followed by a brief musical interlude.",
+        "text_on_screen": "\"I'm craving sum sweet\" \"gym bros will eat ANYTHING just to get their protein in \ud83d\ude2d\"",
+        "key_objects": [
+          "rolled flatbread"
+        ]
+      }
+    ],
+    "overall_summary": "This video humorously depicts a 'gym bro' preparing a sweet snack to meet his protein goals. The creator spreads Oikos Triple Zero Vanilla Greek Yogurt onto a flatbread, sprinkles it with cinnamon, rolls it up, and then eats it. The on-screen text and audio commentary highlight the lengths to which fitness enthusiasts will go to consume protein, even if the food combination seems unusual. The video's main point is to showcase a relatable and slightly absurd aspect of gym culture.",
+    "people": [
+      {
+        "description": "A man with dark skin, wearing a black durag and a black jacket. He is preparing and eating a snack.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Oikos Triple Zero Vanilla Greek Yogurt",
+        "display_name": "Oikos Triple Zero Vanilla Greek Yogurt (15-17g protein per serving, 0 added sugar, 0 artificial sweeteners, 0% fat)",
+        "type": "product",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": "Vanilla flavored, 15-17g protein per serving, 0 added sugar, 0 artificial sweeteners, 0% fat.",
+        "confidence": 5
+      },
+      {
+        "name": "Cinnamon",
+        "display_name": "Cinnamon powder",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Flatbread",
+        "display_name": "Flatbread (e.g., tortilla or wrap)",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Gym Bro Culture",
+        "display_name": "Gym Bro Culture",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Protein",
+        "display_name": "Protein",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Gym enthusiasts often consume unusual food combinations to meet their daily protein intake goals.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Oikos Triple Zero Greek Yogurt can be used as a high-protein ingredient in creative snack recipes.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Protein Flatbread Snack",
+          "details": "Flatbread/tortilla, Oikos Triple Zero Vanilla Greek Yogurt, Cinnamon"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Meme audio featuring a male voice exclaiming \"Oh my god, bro!\", \"Oh hell nah, man, what the f*ck, man!\", and \"Get your ass on, bro!\"",
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The exact origin of the meme audio could not be definitively identified, but the content and nature of the audio are clear."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Humorous, casual, relatable",
+    "topic_hints": [
+      "Fitness",
+      "Nutrition",
+      "Snacks",
+      "Gym Culture"
+    ],
+    "affect_hints": [
+      "Amused",
+      "Relatable",
+      "Slightly absurd"
+    ],
+    "genre_hints": [
+      "Comedy",
+      "Food Hack",
+      "Fitness Content"
+    ]
+  },
+  "grounding_sources": [
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRSVfIko3d4GSWaXhD8EWW1qcyDN69SMT8gyIQCYWiEWKS7lyKVrePU2bfH_hVMim-zN7qyapahgXxhUjOSycDPu5zq8EVp5wtGukFxIGXrQjhru5i2OHi9aGA6mnLO2QK-vukFaW7FbsMK_19_CFTWQCo12DX2wVhtA==",
+      "title": "oikos.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF1M1lIMPHuMhh5Z6Xh7dWUMxr6wjQIXhdfE8jaOe_9vXzRfXPKFD-Nx99Is4LApiXlsuLUHCkGE93pczQ_IiSsntwoq-bRe0kHZ5gBXe5fkHFfy_DUbMBknFLPoSM3B0LrJfwYNW1H8aaWLyjeAS2N-4-gimMdx6-Y84d1QXPV9HVYnvyCWRKkIPtrzJlJ2pP4ethPQeU-e48LxJXnIeAV",
+      "title": "kroger.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERawwWbjyqA3m34DCweID9VDdFdzPTVU53yNE3REoxaBzc6LQ56rgttrwr0bdcH8zOl88-O6geXDnN9R4CD9aVF9GxkPqaApaFdpEe8jeEmxtx2ITtQ58xBYhHcWNrTpzCK8cs381H439bFfZhJcE-4ETBmkcCEQREsY30X4OYLEHIVzSAoBY7NScnEEmhZUVseQ==",
+      "title": "lowesfoods.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgtSu9n_dS5Bp2ZFN4EEEqzww-LXeik9R3O3uvQLEedXS4mxhTSTsbG4qrwLTOyiJWcZFD-Kxvx7Oo91VaWNT4I2wXsbBXQ6LIhKhpOWZkvhKKjxdrKiILg9tU7YlM7gX5DbU-J0ssZkqzHvUxX733dWtj",
+      "title": "vons.com"
+    },
+    {
+      "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE46iwgrnyKaO9_M8Rjc4pYnPV0_PQ64005A2YSwueu3Y3D6j8-nkoirYNqx3kpH9ssVNP4qWYvde4z8t_oqpJsHUdR-ht3F0oYED1nR1SV12c6M7lwO0Ud7GFZ8vMWC8xTc2VFR2hawmJAR3yf-DssWfUItIUy",
+      "title": "safeway.com"
+    }
+  ],
+  "metrics": {
+    "input_tokens": 4446,
+    "output_tokens": 1791,
+    "total_tokens": 6237,
+    "cost_usd": 0.001741,
+    "latency_ms": 19913,
+    "upload_ms": 3834
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

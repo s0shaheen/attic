@@ -1,0 +1,47 @@
+{
+  "item_id": "7220058231463365934",
+  "parsed_output": {
+    "summary": "Basketball trainer @db3workouts demonstrates five fundamental and effective dribbling moves for players. This video serves as a quick reference for athletes looking to improve their ball-handling and offensive scoring techniques.",
+    "entities": [
+      {
+        "name": "@db3workouts",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Push Cross",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Cross Jab",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Basketball",
+        "type": "game",
+        "relevance": "primary"
+      }
+    ],
+    "topic": {
+      "primary": "sports",
+      "secondary": "fitness"
+    },
+    "genre": "workout",
+    "affect": {
+      "dominant": "informative",
+      "secondary": null
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "A basketball skills tutorial by @db3workouts titled '5 Easy Moves That Will Always Work'. The video features a trainer in a blue shirt and black athletic gear on an indoor basketball court demonstrating effective offensive techniques. Specific moves shown in the on-screen text include the 'Push Cross' and the 'Cross Jab'. This instructional content is designed for basketball players looking for simple yet highly effective moves to beat defenders. The video is 25 seconds long and uses the hashtags #basketballtips and #ballislife, making it a concise resource for sports training and skill development."
+  },
+  "metrics": {
+    "input_tokens": 4266,
+    "output_tokens": 377,
+    "total_tokens": 4643,
+    "cost_usd": 0.000866,
+    "latency_ms": 5690,
+    "keyframe_count": 3
+  }
+}

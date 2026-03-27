@@ -1,0 +1,52 @@
+{
+  "item_id": "7596803820412325142",
+  "parsed_output": {
+    "summary": "Creator @doctorbowl shares a viral one-pan bagel recipe described as 'a doctor's favourite lunch.' The video demonstrates a quick, healthy meal using chilli oil, eggs, and mashed avocado for a satisfying result.",
+    "entities": [
+      {
+        "name": "@doctorbowl",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "chilli oil",
+        "type": "ingredient",
+        "relevance": "primary"
+      },
+      {
+        "name": "bagel",
+        "type": "ingredient",
+        "relevance": "primary"
+      },
+      {
+        "name": "avocado",
+        "type": "ingredient",
+        "relevance": "supporting"
+      },
+      {
+        "name": "mozzarella",
+        "type": "ingredient",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "food",
+      "secondary": "health"
+    },
+    "genre": "recipe",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "satisfying"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "A 13-second viral lunch recipe video by @doctorbowl (DB) titled 'a doctor's favourite lunch'. The video demonstrates how to make a healthy bagel sandwich using a one-pan method. Key ingredients include chilli oil, chopped spring onions, two whisked eggs, a bagel, mashed avocado, tomato slices, and mozzarella cheese. The process starts with heating chilli oil and spring onions in a pan, adding whisked eggs, and then placing the bagel face down to cook for 3-4 minutes. The sandwich is then assembled with mashed avocado and tomato, resulting in a toasted bagel with a satisfying mozzarella cheese pull. This easy recipe is tagged with #bagel, #healthyrecipes, and #easyrecipes, making it ideal for users looking for quick, nutritious meal inspiration or a viral breakfast/lunch hack."
+  },
+  "metrics": {
+    "input_tokens": 4395,
+    "output_tokens": 471,
+    "total_tokens": 4866,
+    "cost_usd": 0.000942,
+    "latency_ms": 7182,
+    "keyframe_count": 3
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "item_id": "7550819005074787615",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:54:43.195392+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:24",
+        "visual_description": "A male DJ, wearing glasses and a white t-shirt, sits in front of a DJ controller, occasionally gesturing with his hands. Two NFL jerseys are visible hanging on the wall behind him, one with 'McLAURIN 17' and the other with 'DANIELS 5'. The room is lit with purple and blue ambient lighting.",
+        "audio_description": "A mashup track plays, featuring a smooth, lo-fi hip-hop instrumental beat characteristic of Nujabes, overlaid with rap vocals by Lil Yachty and Tee Grizzley. Lil Yachty's lyrics include phrases like \"Just fucked a hoe out in France, paint her face like Picasso\" and \"Big ass Beamer, big bands on my feely next.\"",
+        "text_on_screen": "Nujabes X Lil Yachty, Tee Grizzley",
+        "key_objects": [
+          "DJ controller",
+          "glasses",
+          "necklace",
+          "bracelet",
+          "NFL jersey (McLaurin #17)",
+          "NFL jersey (Daniels #5)"
+        ]
+      }
+    ],
+    "overall_summary": "This video features DJ @djbchung demonstrating a mashup track combining the instrumental style of Nujabes with the rap vocals of Lil Yachty and Tee Grizzley. The DJ sits in front of his controller, subtly moving to the beat, while text on screen explicitly identifies the artists involved. The mashup highlights Lil Yachty's distinctive flow over a chill, lo-fi beat, creating a unique blend of styles.",
+    "people": [
+      {
+        "description": "A young man with dark, curly hair, wearing glasses, a white t-shirt, a necklace, and a bracelet. He is the DJ and creator of the video, demonstrating a mashup.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "@djbchung"
+      },
+      {
+        "description": "NFL player, #17, associated with the Washington Commanders, whose jersey is hanging on the wall.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Terry McLaurin"
+      },
+      {
+        "description": "NFL player, #5, associated with the Washington Commanders, whose jersey is hanging on the wall.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jayden Daniels"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Nujabes",
+        "display_name": "Nujabes",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lil Yachty",
+        "display_name": "Lil Yachty",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata",
+          "caption"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Tee Grizzley",
+        "display_name": "Tee Grizzley",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pardon Me",
+        "display_name": "Pardon Me by Lil Yachty",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "inferred"
+        ],
+        "specifications": "Lyrics: \"Just fucked a hoe out in France, paint her face like Picasso\"",
+        "confidence": 4
+      },
+      {
+        "name": "DJ controller",
+        "display_name": "DJ Controller",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Washington Commanders",
+        "display_name": "Washington Commanders",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "NFL team",
+        "confidence": 4
+      },
+      {
+        "name": "Terry McLaurin",
+        "display_name": "Terry McLaurin (NFL Player)",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "Jersey #17",
+        "confidence": 4
+      },
+      {
+        "name": "Jayden Daniels",
+        "display_name": "Jayden Daniels (NFL Player)",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "Jersey #5",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The combination of Nujabes' instrumental style with Lil Yachty and Tee Grizzley's rap vocals creates a compelling and unique mashup.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "Lil Yachty's flow is particularly strong and difficult to match, as highlighted by the creator.",
+        "source": "caption",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Nujabes X Lil Yachty, Tee Grizzley Mashup (featuring Lil Yachty's 'Pardon Me' vocals)",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "Specific Nujabes instrumental track not identified, but the style is distinct. Specific Tee Grizzley vocal contribution not isolated, but his presence is indicated by text and metadata."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Chill, focused, musical, relaxed",
+    "topic_hints": [
+      "DJing",
+      "Music Mashups",
+      "Hip-Hop"
+    ],
+    "affect_hints": [
+      "Engaged",
+      "Appreciative",
+      "Creative"
+    ],
+    "genre_hints": [
+      "Music Performance",
+      "DJ Content",
+      "Mashup"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8591,
+    "output_tokens": 1639,
+    "total_tokens": 10230,
+    "cost_usd": 0.002272,
+    "latency_ms": 21563,
+    "upload_ms": 5686
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

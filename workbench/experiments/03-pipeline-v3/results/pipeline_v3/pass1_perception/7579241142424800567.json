@@ -1,0 +1,224 @@
+{
+  "item_id": "7579241142424800567",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:15:00.005366+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:06",
+        "visual_description": "The creator showcases the finished crispy chicken shawarma wrap, tapping the toasted exterior to demonstrate its crunch and adding a spoonful of garlic sauce.",
+        "audio_description": "Sound of tapping on a crispy surface followed by soft acoustic music.",
+        "text_on_screen": "crispy chicken shawarma \u2728",
+        "key_objects": [
+          "chicken shawarma wrap",
+          "french fries",
+          "garlic sauce"
+        ]
+      },
+      {
+        "time_range": "0:06-0:10",
+        "visual_description": "The creator prepares the chicken marinade by combining sliced chicken with yogurt, tomato paste, lemon juice, and a blend of spices in a glass bowl.",
+        "audio_description": "Soft music continues with sounds of ingredients being added to the bowl.",
+        "text_on_screen": "",
+        "key_objects": [
+          "chicken",
+          "yogurt",
+          "tomato paste",
+          "lemon juice",
+          "spices"
+        ]
+      },
+      {
+        "time_range": "0:10-0:13",
+        "visual_description": "The marinated chicken strips are spread evenly across a Nordic Ware baking sheet using tongs.",
+        "audio_description": "Sizzling or placement sounds.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Nordic Ware baking sheet",
+          "marinated chicken",
+          "tongs"
+        ]
+      },
+      {
+        "time_range": "0:13-0:17",
+        "visual_description": "A red basting oil is prepared by whisking together oil, tomato paste, and spices in a small white bowl.",
+        "audio_description": "Whisking sounds.",
+        "key_objects": [
+          "oil",
+          "tomato paste",
+          "whisk"
+        ]
+      },
+      {
+        "time_range": "0:17-0:22",
+        "visual_description": "The wrap is assembled by spreading garlic sauce on flatbread, adding the cooked chicken and pickles, and rolling it tightly.",
+        "audio_description": "Soft music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "flatbread",
+          "garlic sauce",
+          "pickles",
+          "cooked chicken"
+        ]
+      },
+      {
+        "time_range": "0:22-0:24",
+        "visual_description": "The wrap is pan-seared while being brushed with the red basting oil to achieve a crispy, charred finish.",
+        "audio_description": "Sizzling sound in the pan.",
+        "text_on_screen": "",
+        "key_objects": [
+          "frying pan",
+          "basting brush",
+          "red oil"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a concise recipe tutorial for making crispy chicken shawarma wraps at home. The creator demonstrates the process of marinating chicken in a yogurt and spice blend, baking it, and then assembling the wrap with garlic sauce and pickles. The signature step involves pan-searing the assembled wrap while brushing it with a spiced red oil to create a crunchy, flavorful exterior. The final result is a restaurant-quality shawarma served with fries and extra garlic sauce.",
+    "people": [
+      {
+        "description": "Creator's hands preparing and assembling the food.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "@aflavorfulbite"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Chicken Shawarma",
+        "display_name": "Chicken Shawarma Wrap",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Nordic Ware",
+        "display_name": "Nordic Ware Baking Sheet",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Aluminum baking sheet",
+        "confidence": 5
+      },
+      {
+        "name": "Garlic Sauce",
+        "display_name": "Toum (Garlic Sauce)",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "White, creamy garlic dip",
+        "confidence": 4
+      },
+      {
+        "name": "Tomato Paste",
+        "display_name": "Tomato Paste",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pickles",
+        "display_name": "Pickled Cucumbers",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Spears",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Brushing a shawarma wrap with a spiced oil mixture while pan-searing it creates a superior crispy texture and deep flavor.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "A marinade of yogurt, tomato paste, and lemon juice is essential for flavorful and tender shawarma chicken.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Chicken Marinade",
+          "details": "Chicken strips, Greek yogurt, tomato paste, lemon juice, and a spice blend (likely cumin, coriander, paprika, garlic powder)."
+        },
+        {
+          "name": "Basting Oil",
+          "details": "Vegetable oil mixed with tomato paste and spices."
+        },
+        {
+          "name": "Wrap Assembly",
+          "details": "Flatbread/Pita, garlic sauce (toum), cooked chicken, and pickled cucumber spears."
+        },
+        {
+          "name": "Cooking Method",
+          "details": "Bake chicken on a sheet pan, then assemble wrap and pan-sear while brushing with basting oil."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "The Night We Met (Acoustic/Slowed) \u2014 Lord Huron",
+      "metadata_song": "sonido original - aflavorfulbite",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The brand Nordic Ware is clearly visible on the baking sheet. The song is a very common acoustic cover of Lord Huron's 'The Night We Met'."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "overhead",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Appetizing, warm, and satisfying with a focus on textures.",
+    "topic_hints": [
+      "Middle Eastern Cuisine",
+      "Home Cooking",
+      "Easy Recipes"
+    ],
+    "affect_hints": [
+      "Hungry",
+      "Satisfied",
+      "Inspired"
+    ],
+    "genre_hints": [
+      "Food TikTok",
+      "Recipe Tutorial"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3704,
+    "output_tokens": 1848,
+    "total_tokens": 5552,
+    "cost_usd": 0.001664,
+    "latency_ms": 26281,
+    "upload_ms": 7496
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "item_id": "7607891082247998733",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:14:15.406297+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "Creator presents a tray with a homemade chicken sandwich, waffle fries, sauce, and lemonade, then takes a bite.",
+        "audio_description": "Let's make homemade Chick-fil-A. (Sound of biting into sandwich and sipping drink)",
+        "text_on_screen": "Homemade Chick-fil-A :)",
+        "key_objects": [
+          "Chicken sandwich",
+          "Waffle fries",
+          "Chick-fil-A sauce",
+          "Lemonade",
+          "Tray"
+        ]
+      },
+      {
+        "time_range": "0:04-0:12",
+        "visual_description": "Creator prepares brioche buns from dough, shaping them into rounds, applying egg wash, and baking until golden brown.",
+        "audio_description": "ASMR sounds of dough being handled, cut, and brushed.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Dough",
+          "Bench scraper",
+          "Baking sheet",
+          "Pastry brush",
+          "Egg wash"
+        ]
+      },
+      {
+        "time_range": "0:12-0:19",
+        "visual_description": "Slicing a cucumber with a knife, placing slices in a mason jar, and pouring a hot brine over them.",
+        "audio_description": "Rhythmic chopping sounds and the sound of liquid pouring.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Cucumber",
+          "Chef's knife",
+          "Mason jar",
+          "Brine"
+        ]
+      },
+      {
+        "time_range": "0:19-0:24",
+        "visual_description": "Mixing buttermilk and spices in a bowl, adding raw chicken thighs, and covering with plastic wrap to brine.",
+        "audio_description": "Sound of whisking and plastic wrap being pulled.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Buttermilk",
+          "Spices",
+          "Chicken thighs",
+          "Mixing bowl",
+          "Plastic wrap"
+        ]
+      },
+      {
+        "time_range": "0:24-0:36",
+        "visual_description": "Using a mandoline to cut potatoes into waffle shapes, soaking in ice water, par-boiling, and then the first fry.",
+        "audio_description": "Slicing sounds, splashing water, and the sound of boiling and frying.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Potato",
+          "Mandoline",
+          "Ice water",
+          "Pot of boiling water",
+          "Frying pan"
+        ]
+      },
+      {
+        "time_range": "0:36-0:45",
+        "visual_description": "Mixing the dry dredge, coating the brined chicken, and deep frying until crispy and brown.",
+        "audio_description": "Whisking, flour dusting, and loud sizzling of deep frying.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Flour",
+          "Potato starch",
+          "Spices",
+          "Fried chicken"
+        ]
+      },
+      {
+        "time_range": "0:45-0:47",
+        "visual_description": "The waffle fries are fried a second time to achieve maximum crispiness.",
+        "audio_description": "Intense sizzling sound.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Waffle fries",
+          "Spider strainer"
+        ]
+      },
+      {
+        "time_range": "0:47-0:51",
+        "visual_description": "Combining mayonnaise, BBQ sauce, honey, mustard, and spices in a bowl to make the signature sauce.",
+        "audio_description": "Squeezing and stirring sounds.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Mayonnaise",
+          "BBQ sauce",
+          "Honey",
+          "Yellow mustard"
+        ]
+      },
+      {
+        "time_range": "0:51-0:59",
+        "visual_description": "Assembling the sandwich with lettuce, tomato, chicken, and cheese; pouring lemonade into a glass with ice.",
+        "audio_description": "Sounds of assembly and liquid pouring. Upbeat music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Brioche bun",
+          "Lettuce",
+          "Tomato",
+          "Cheese",
+          "Lemonade"
+        ]
+      }
+    ],
+    "overall_summary": "Creator @cooking_with.kian demonstrates a step-by-step tutorial on how to recreate a full Chick-fil-A meal at home. The video covers making brioche buns, quick-pickled cucumbers, brining and frying chicken thighs, double-frying homemade waffle fries, and mixing the iconic Chick-fil-A sauce. The final result is a high-quality, gourmet version of the fast-food classic, presented with satisfying ASMR cooking sounds.",
+    "people": [
+      {
+        "description": "Young male creator wearing a white t-shirt and a dark denim apron, performing the cooking steps.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Kian (@cooking_with.kian)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Chick-fil-A",
+        "display_name": "Chick-fil-A",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Chick-fil-A Sauce",
+        "display_name": "Homemade Chick-fil-A Sauce",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "visual"
+        ],
+        "specifications": "Mayonnaise, BBQ sauce, honey, yellow mustard, lemon juice",
+        "confidence": 5
+      },
+      {
+        "name": "Chicken Brine",
+        "display_name": "Buttermilk Chicken Brine",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "Buttermilk, pickle juice, paprika, garlic powder, cayenne, white pepper, onion powder",
+        "confidence": 5
+      },
+      {
+        "name": "Waffle Fries",
+        "display_name": "Homemade Waffle Fries",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Double-fried potatoes",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "A high-quality Chick-fil-A meal can be replicated at home by making every component from scratch, including the buns and pickles.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Brining chicken in buttermilk and pickle juice is key to achieving the specific flavor profile of Chick-fil-A chicken.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Chick-fil-A Sauce",
+          "details": "1/2 cup mayonnaise, 3 Tbsp barbecue sauce, 2 Tbsp honey, 2 Tbsp yellow mustard, 1/2 tsp kosher salt, 1/2 black pepper, 1/2 a lemon juiced"
+        },
+        {
+          "name": "Chicken Brine",
+          "details": "4 boneless skinless chicken thighs, 1 cup buttermilk, 1 cup pickle juice, 1 Tbsp paprika, 1 1/2 Tbsp garlic powder, 1 tsp cayenne, 1 tsp white pepper, 1 tsp onion powder, 1 Tbsp kosher salt"
+        },
+        {
+          "name": "Dry Dredge",
+          "details": "2 cups all purpose flour, 1/2 cup potato starch, 1 Tbsp paprika, 1 Tbsp garlic powder, 1 tsp onion powder, 1 tsp MSG (optional)"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "L'Amour Impala \u2014 L'Amour",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Recipe details were explicitly provided in the caption."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "overhead",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Appetizing, clean, and energetic with a focus on culinary technique.",
+    "topic_hints": [
+      "Cooking",
+      "Fast Food Recreations",
+      "ASMR"
+    ],
+    "affect_hints": [
+      "Hungry",
+      "Satisfied",
+      "Inspired"
+    ],
+    "genre_hints": [
+      "Food TikTok",
+      "Recipe Tutorial"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6907,
+    "output_tokens": 2104,
+    "total_tokens": 9011,
+    "cost_usd": 0.002298,
+    "latency_ms": 24738,
+    "upload_ms": 6911
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

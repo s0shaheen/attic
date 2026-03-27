@@ -1,0 +1,84 @@
+{
+  "item_id": "7195085850798001410",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:22:50.434102+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "sports",
+      "secondary": "movies_tv",
+      "micro_labels": [
+        "hopecore",
+        "NBA",
+        "Olympics",
+        "triumph",
+        "perseverance",
+        "basketball",
+        "Emmy Awards"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "montage",
+        "sports highlights",
+        "tribute",
+        "compilation"
+      ],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "wholesome",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "cinematic",
+      "voiceover"
+    ],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "anonymous",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 8702,
+    "output_tokens": 398,
+    "total_tokens": 9100,
+    "cost_usd": 0.001544,
+    "latency_ms": 10887,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 5
+  }
+}

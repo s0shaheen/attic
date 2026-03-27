@@ -1,0 +1,52 @@
+{
+  "item_id": "7197625319606701358",
+  "parsed_output": {
+    "summary": "Bo Burnham discusses the psychological impact of social media on children's developing minds during a panel for his film Eighth Grade. Joined by actress Elsie Fisher, he explores themes of self-esteem and the pressure of performing one's identity online.",
+    "entities": [
+      {
+        "name": "Bo Burnham",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Elsie Fisher",
+        "type": "person",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Eighth Grade",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "Social Media",
+        "type": "cultural_reference",
+        "relevance": "primary"
+      },
+      {
+        "name": "@andythefrogg",
+        "type": "person",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "other"
+    },
+    "genre": "interview",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "Bo Burnham discusses the effects of social media on children's developing minds during a press panel for his 2018 film Eighth Grade. He is joined on stage by the film's star, Elsie Fisher. The background screen displays the text 'Self-Esteem in the Age of Social Media' and 'Eighth Grade written and directed by Bo Burnham.' Bo, dressed in a tan turtleneck, provides a thoughtful critique of how digital platforms force young people to perform their identities rather than simply living them. This video is a snippet of an interview or Q&A session, likely saved for its insightful social commentary and Bo Burnham's specific perspective on the psychological impact of the internet. It is part of a series (pt. 2) shared by creator @andythefrogg and is highly relevant for those interested in media literacy and adolescent mental health."
+  },
+  "metrics": {
+    "input_tokens": 4167,
+    "output_tokens": 490,
+    "total_tokens": 4657,
+    "cost_usd": 0.000919,
+    "latency_ms": 9686,
+    "keyframe_count": 3
+  }
+}

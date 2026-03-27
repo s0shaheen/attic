@@ -1,0 +1,430 @@
+{
+  "item_id": "7607885401025531149",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:58:05.157083+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "The creator pours a thick, light green smoothie from a blender cup into a glass that has honey drizzled on the inside.",
+        "audio_description": "Creator states he has a new smoothie addiction.",
+        "text_on_screen": null,
+        "key_objects": [
+          "smoothie",
+          "glass",
+          "blender cup",
+          "honey"
+        ]
+      },
+      {
+        "time_range": "0:01-0:05",
+        "visual_description": "The creator holds the filled glass of smoothie, gesturing as he talks about its benefits.",
+        "audio_description": "Creator explains the smoothie will give energy all day and will be his 'suhoor' for the whole month.",
+        "text_on_screen": null,
+        "key_objects": [
+          "smoothie",
+          "glass"
+        ]
+      },
+      {
+        "time_range": "0:05-0:09",
+        "visual_description": "Close-up shot of a white plate holding three pitted Medjool dates, split open.",
+        "audio_description": "Creator instructs to pit three dates and ensure there is no mold.",
+        "text_on_screen": null,
+        "key_objects": [
+          "Medjool dates",
+          "plate"
+        ]
+      },
+      {
+        "time_range": "0:09-0:12",
+        "visual_description": "The creator holds an empty blender cup in one hand and a pitted date in the other, then drops the date into the cup.",
+        "audio_description": "Creator shares a personal anecdote about biting into a moldy date and how common it is.",
+        "text_on_screen": null,
+        "key_objects": [
+          "blender cup",
+          "Medjool date"
+        ]
+      },
+      {
+        "time_range": "0:12-0:18",
+        "visual_description": "Close-up shot of hands cutting a dark green avocado in half with a knife, revealing its green flesh and pit.",
+        "audio_description": "Creator mentions that avocado is commonly used in drinks overseas and is his new fixation.",
+        "text_on_screen": null,
+        "key_objects": [
+          "avocado",
+          "knife"
+        ]
+      },
+      {
+        "time_range": "0:18-0:22",
+        "visual_description": "The creator scoops out avocado flesh and adds it to the blender cup with the dates.",
+        "audio_description": "Creator explains he prefers avocado over banana for its healthy fats and fiber.",
+        "text_on_screen": null,
+        "key_objects": [
+          "avocado",
+          "blender cup"
+        ]
+      },
+      {
+        "time_range": "0:22-0:25",
+        "visual_description": "A hand pours chia seeds from a small bowl into the blender cup.",
+        "audio_description": "Creator adds a serving of chia seeds or flax seeds.",
+        "text_on_screen": null,
+        "key_objects": [
+          "chia seeds",
+          "blender cup"
+        ]
+      },
+      {
+        "time_range": "0:25-0:27",
+        "visual_description": "A hand adds a scoop of vanilla protein powder to the blender cup.",
+        "audio_description": "Creator adds a scoop of vanilla protein powder.",
+        "text_on_screen": null,
+        "key_objects": [
+          "vanilla protein powder",
+          "scoop",
+          "blender cup"
+        ]
+      },
+      {
+        "time_range": "0:27-0:29",
+        "visual_description": "The creator pours milk from a glass jar into the blender cup.",
+        "audio_description": "Creator adds a cup of milk.",
+        "text_on_screen": null,
+        "key_objects": [
+          "milk",
+          "glass jar",
+          "blender cup"
+        ]
+      },
+      {
+        "time_range": "0:29-0:30",
+        "visual_description": "A hand drops ice cubes into the blender cup.",
+        "audio_description": "Creator adds a couple of ice cubes.",
+        "text_on_screen": null,
+        "key_objects": [
+          "ice cubes",
+          "blender cup"
+        ]
+      },
+      {
+        "time_range": "0:30-0:39",
+        "visual_description": "The creator puts the lid on the blender cup and shakes it, then holds it and talks to the camera.",
+        "audio_description": "Creator states all details are in the description, highlights the smoothie's nutritional value: roughly 30g of fiber and around 35g of protein.",
+        "text_on_screen": null,
+        "key_objects": [
+          "blender cup"
+        ]
+      },
+      {
+        "time_range": "0:39-0:41",
+        "visual_description": "The blender cup is placed on a Ninja blender base and blends the ingredients into a smooth consistency.",
+        "audio_description": "Sound of blender operating.",
+        "text_on_screen": "NINJA",
+        "key_objects": [
+          "Ninja blender",
+          "blender cup"
+        ]
+      },
+      {
+        "time_range": "0:41-0:51",
+        "visual_description": "The creator opens a bottle of honey and drizzles it into an empty glass, explaining it's for optional sweetness.",
+        "audio_description": "Creator explains the drink is not extremely sweet, but he adds honey when serving because it's his drink. He advises not to add honey if it's too sweet.",
+        "text_on_screen": null,
+        "key_objects": [
+          "honey bottle",
+          "honey",
+          "glass"
+        ]
+      },
+      {
+        "time_range": "0:51-0:54",
+        "visual_description": "The creator pours the blended smoothie from the blender cup into the glass with the honey drizzle.",
+        "audio_description": "Creator exclaims 'Baby, she's a beaut!' as he pours the smoothie.",
+        "text_on_screen": null,
+        "key_objects": [
+          "smoothie",
+          "glass",
+          "blender cup"
+        ]
+      },
+      {
+        "time_range": "0:54-1:00",
+        "visual_description": "The creator inserts a straw into the smoothie, takes a sip, and expresses his satisfaction, then holds the glass and talks to the camera.",
+        "audio_description": "Creator says 'Bismillah' before tasting, then 'That is amazing.' He reiterates it will be his suhoor and encourages viewers not to be intimidated by the avocado.",
+        "text_on_screen": null,
+        "key_objects": [
+          "smoothie",
+          "glass",
+          "straw"
+        ]
+      }
+    ],
+    "overall_summary": "This video features @thegoldenbalance demonstrating how to make a highly nutritious and energizing smoothie, which he calls his 'new favorite smoothie' and ideal for suhoor during Ramadan. He guides viewers through adding pitted Medjool dates, avocado, chia seeds, vanilla protein powder, milk, and ice to a blender. The creator emphasizes the smoothie's health benefits, noting its high fiber and protein content, and offers honey as an optional sweetener. The video concludes with him tasting the finished smoothie and expressing his satisfaction. Total macros for two servings are approximately 820 calories, 28g fiber, and 37g protein.",
+    "people": [
+      {
+        "description": "A man with dark curly hair and a beard, wearing a black t-shirt and an Apple Watch. He is the creator of the content and demonstrates the recipe.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@thegoldenbalance"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Medjool dates",
+        "display_name": "Medjool Dates",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "caption"
+        ],
+        "specifications": "3, pitted",
+        "confidence": 5
+      },
+      {
+        "name": "Avocado",
+        "display_name": "Avocado",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "caption"
+        ],
+        "specifications": "1 small",
+        "confidence": 5
+      },
+      {
+        "name": "Milk",
+        "display_name": "Milk of choice",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "caption"
+        ],
+        "specifications": "2 cups",
+        "confidence": 5
+      },
+      {
+        "name": "Chia seeds",
+        "display_name": "Chia Seeds",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "caption"
+        ],
+        "specifications": "2 tbsp",
+        "confidence": 5
+      },
+      {
+        "name": "Honey",
+        "display_name": "Honey",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "caption"
+        ],
+        "specifications": "1 tsp (optional, for drizzling)",
+        "confidence": 5
+      },
+      {
+        "name": "Vanilla protein powder",
+        "display_name": "Vanilla Protein Powder",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay",
+          "caption"
+        ],
+        "specifications": "1 scoop",
+        "confidence": 5
+      },
+      {
+        "name": "Ice cubes",
+        "display_name": "Ice Cubes",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Smoothie",
+        "display_name": "New Favorite Smoothie",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "caption",
+          "inferred"
+        ],
+        "specifications": "820 calories, 28g fiber, 37g protein (for 2 servings)",
+        "confidence": 5
+      },
+      {
+        "name": "Ninja Blender",
+        "display_name": "Ninja Blender",
+        "type": "product",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Apple Watch",
+        "display_name": "Apple Watch",
+        "type": "product",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "Suhoor",
+        "display_name": "Suhoor (Pre-dawn meal during Ramadan)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Pitting dates",
+        "display_name": "Pitting Dates",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "This smoothie is a highly nutritious and energizing drink, suitable for sustained energy throughout the day, especially as a suhoor meal during Ramadan.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Avocado is a beneficial ingredient for smoothies, offering healthy fats and fiber, and can be a good alternative to banana.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Always check dates for mold before consumption, as it is a common issue.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Medjool dates",
+          "details": "3, pitted"
+        },
+        {
+          "name": "Small avocado",
+          "details": "1"
+        },
+        {
+          "name": "Milk of choice",
+          "details": "2 cups"
+        },
+        {
+          "name": "Chia seeds",
+          "details": "2 tbsp"
+        },
+        {
+          "name": "Honey",
+          "details": "1 tsp (optional)"
+        },
+        {
+          "name": "Vanilla protein powder",
+          "details": "1 scoop"
+        },
+        {
+          "name": "Ice cubes",
+          "details": "A couple"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The exact type of milk is not specified, only 'milk of choice'. The amount of ice cubes is not precise, only 'a couple'."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "informative",
+    "topic_hints": [
+      "healthy eating",
+      "smoothie recipe",
+      "nutrition",
+      "Ramadan food"
+    ],
+    "affect_hints": [
+      "energized",
+      "satisfied",
+      "healthy",
+      "inspired"
+    ],
+    "genre_hints": [
+      "cooking tutorial",
+      "recipe video",
+      "healthy lifestyle"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 19229,
+    "output_tokens": 3335,
+    "total_tokens": 22564,
+    "cost_usd": 0.004885,
+    "latency_ms": 27433,
+    "upload_ms": 5723
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

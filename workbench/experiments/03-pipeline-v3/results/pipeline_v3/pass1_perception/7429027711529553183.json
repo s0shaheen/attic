@@ -1,0 +1,208 @@
+{
+  "item_id": "7429027711529553183",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:09:33.653805+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Creator speaks directly into a microphone, introducing a series about meditative films.",
+        "audio_description": "These are movies to meditate to.",
+        "text_on_screen": "Movies to Meditate To",
+        "key_objects": [
+          "Microphone"
+        ]
+      },
+      {
+        "time_range": "0:03-0:16",
+        "visual_description": "Montage of visually striking films including clips of Ryan Gosling, Emma Stone, and Matthew McConaughey.",
+        "audio_description": "This one somehow, some way slipped under the cracks of the most beautiful films to come out in the past decade. No one ever, ever talks about this film and that's okay...",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:17-0:30",
+        "visual_description": "Cinematic clips from the movie 'Hostiles' showing Rosamund Pike, Christian Bale in uniform, and wide shots of the American West.",
+        "audio_description": "...because it remains a gem of storytelling and every frame is shot in this gorgeous natural light. Addicting to observe, becoming this meditation of sight and sound. The acting is intoxicating...",
+        "text_on_screen": "",
+        "key_objects": [
+          "Horses",
+          "Military uniform"
+        ]
+      },
+      {
+        "time_range": "0:31-0:46",
+        "visual_description": "Close-ups of Christian Bale's emotional performance and sweeping landscapes at sunset.",
+        "audio_description": "...and there's this performance from a prime Christian Bale as this damaged yet inherently good human being ruminating on the fragility of life, the inevitability of death, and the burden of past sins. Gradually opening your heart as you view this and offering a quiet remedy for the soul.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:47-0:50",
+        "visual_description": "A man walks away into a vast landscape as the movie title appears.",
+        "audio_description": "Sometimes I envy the finality of death.",
+        "text_on_screen": "H O S T I L E S",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "Creator @parr.ott recommends the 2017 film 'Hostiles' as a 'movie to meditate to.' He describes it as a beautiful, overlooked gem of storytelling characterized by stunning natural light and a powerful performance by Christian Bale. The video uses cinematic clips to highlight the film's somber, reflective tone and its themes of life, death, and redemption.",
+    "people": [
+      {
+        "description": "Young man with wavy brown hair speaking into a microphone.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "parr.ott"
+      },
+      {
+        "description": "Actor portraying Captain Joseph J. Blocker.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Christian Bale"
+      },
+      {
+        "description": "Actress portraying Rosalie Quaid.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Rosamund Pike"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Hostiles",
+        "display_name": "Hostiles (2017)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "Directed by Scott Cooper",
+        "confidence": 5
+      },
+      {
+        "name": "Christian Bale",
+        "display_name": "Christian Bale",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Rosamund Pike",
+        "display_name": "Rosamund Pike",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "On the Nature of Daylight",
+        "display_name": "On the Nature of Daylight \u2014 Max Richter",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Ryan Gosling",
+        "display_name": "Ryan Gosling",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Clips from 'The Place Beyond the Pines'",
+        "confidence": 5
+      },
+      {
+        "name": "Emma Stone",
+        "display_name": "Emma Stone",
+        "type": "person",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Clips from 'La La Land'",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The movie 'Hostiles' is an underrated masterpiece of visual storytelling and natural cinematography.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Christian Bale's performance in 'Hostiles' is one of his best, portraying a complex, damaged character.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Hostiles",
+          "details": "A 2017 Western drama starring Christian Bale and Rosamund Pike, noted for its meditative pace and natural lighting."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "On the Nature of Daylight \u2014 Max Richter",
+      "metadata_song": "original sound - parr.ott",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The music is the iconic Max Richter track often used in emotional film edits."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Melancholic, serene, and cinematic with a focus on natural lighting and emotional close-ups.",
+    "topic_hints": [
+      "Film recommendations",
+      "Cinematography",
+      "Mental health/Meditation"
+    ],
+    "affect_hints": [
+      "Reflective",
+      "Somber",
+      "Peaceful"
+    ],
+    "genre_hints": [
+      "Movie Review",
+      "Cinematic Edit"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5894,
+    "output_tokens": 1771,
+    "total_tokens": 7665,
+    "cost_usd": 0.001947,
+    "latency_ms": 21904,
+    "upload_ms": 5304
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

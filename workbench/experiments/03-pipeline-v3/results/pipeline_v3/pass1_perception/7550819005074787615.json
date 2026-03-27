@@ -1,0 +1,167 @@
+{
+  "item_id": "7550819005074787615",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:11:37.209087+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:10",
+        "visual_description": "Creator stands behind a DJ controller, nodding his head to the rhythm of a mashup. He is wearing a white t-shirt and glasses, with sports jerseys hanging on the wall behind him.",
+        "audio_description": "A mashup of a lo-fi Nujabes beat with Lil Yachty's verse from 'Coffin' playing.",
+        "text_on_screen": "Nujabes X Lil Yachty, Tee Grizzley",
+        "key_objects": [
+          "DJ controller",
+          "McLaren jersey",
+          "Flowers jersey",
+          "Daniels jersey"
+        ]
+      },
+      {
+        "time_range": "0:10-0:24",
+        "visual_description": "Creator continues to vibe to the music, adjusting his glasses and occasionally touching the DJ controller as the verse transitions to Tee Grizzley.",
+        "audio_description": "The mashup continues with Tee Grizzley's verse over the same Nujabes instrumental.",
+        "text_on_screen": "Nujabes X Lil Yachty, Tee Grizzley",
+        "key_objects": [
+          "DJ controller"
+        ]
+      }
+    ],
+    "overall_summary": "In this video, DJ and creator @djbchung showcases a custom mashup blending the smooth, lo-fi production of Nujabes with the aggressive rap flows of Lil Yachty and Tee Grizzley. The creator performs the mix behind a DJ controller in a room decorated with various sports jerseys. The video highlights the unexpected synergy between the calm instrumental and the high-energy vocal performances, specifically focusing on how well Yachty's flow fits the beat.",
+    "people": [
+      {
+        "description": "Young Asian male with glasses and curly hair, wearing a white t-shirt; acting as the DJ.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "@djbchung"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Nujabes",
+        "display_name": "Nujabes",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lil Yachty",
+        "display_name": "Lil Yachty",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Tee Grizzley",
+        "display_name": "Tee Grizzley",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "metadata",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Aruarian Dance",
+        "display_name": "Aruarian Dance - Nujabes",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Instrumental track used for the mashup",
+        "confidence": 5
+      },
+      {
+        "name": "Coffin",
+        "display_name": "Coffin - Lil Yachty & Tee Grizzley",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Vocal track used for the mashup",
+        "confidence": 5
+      },
+      {
+        "name": "McLaren",
+        "display_name": "McLaren Racing",
+        "type": "brand",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Jersey hanging on the wall",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Lil Yachty's rap flow is surprisingly compatible with Nujabes' lo-fi hip-hop production.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Coffin (Lil Yachty & Tee Grizzley) mashed with Aruarian Dance (Nujabes)",
+      "metadata_song": "original sound - djbchung",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The mashup components are clearly identifiable as Nujabes' 'Aruarian Dance' and the song 'Coffin'."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Chill, rhythmic, and focused.",
+    "topic_hints": [
+      "DJ Mashups",
+      "Lo-fi Hip Hop",
+      "Lil Yachty"
+    ],
+    "affect_hints": [
+      "relaxed",
+      "impressed",
+      "vibey"
+    ],
+    "genre_hints": [
+      "DJ performance",
+      "Music edit"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3635,
+    "output_tokens": 1235,
+    "total_tokens": 4870,
+    "cost_usd": 0.001286,
+    "latency_ms": 19209,
+    "upload_ms": 5599
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

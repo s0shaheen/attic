@@ -1,0 +1,47 @@
+{
+  "item_id": "7610138766837026062",
+  "parsed_output": {
+    "summary": "Creator Evis Drenova discusses professional networking strategies and career growth within the technology industry. This video is a deep dive into building professional connections, likely saved by users looking to navigate the tech job market or improve their networking skills.",
+    "entities": [
+      {
+        "name": "Evis Drenova",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "TechTok",
+        "type": "trend_or_meme",
+        "relevance": "supporting"
+      },
+      {
+        "name": "Networking",
+        "type": "technique",
+        "relevance": "primary"
+      },
+      {
+        "name": "Sell Your Soul graphic tee",
+        "type": "clothing",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "technology",
+      "secondary": "career"
+    },
+    "genre": "vlog",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this 171-second video, creator @evisdrenova provides professional networking advice specifically for the tech industry. The video features a man speaking directly to the camera in a home office or living room setting, characterized by two large arched wooden bookshelves filled with books and decorative items. He is wearing a grey graphic t-shirt that features a vintage-style illustration and the mirrored text 'Sell Your Soul'. The content focuses on career development, professional networking, and navigating the tech landscape, as highlighted by hashtags like #techtok and #networking. This is an informative, talking-head style video intended for viewers seeking career guidance, mentorship, or tips on how to build professional relationships within the technology sector. It serves as a reference for anyone looking to improve their professional presence and connection-building strategies."
+  },
+  "metrics": {
+    "input_tokens": 4259,
+    "output_tokens": 446,
+    "total_tokens": 4705,
+    "cost_usd": 0.000906,
+    "latency_ms": 9382,
+    "keyframe_count": 3
+  }
+}

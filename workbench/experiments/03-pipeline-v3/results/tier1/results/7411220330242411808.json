@@ -1,0 +1,47 @@
+{
+  "item_id": "7411220330242411808",
+  "parsed_output": {
+    "summary": "Creator @pallipau recommends a 'timeless talk' by Daniel Gross titled 'How to Win (Startups)' from the Y Combinator Investors YouTube channel. The video highlights the importance of sleep for founders, arguing that being an 'insanely hardcore' leader who sleeps at the office is counterproductive.",
+    "entities": [
+      {
+        "name": "Daniel Gross",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Y Combinator",
+        "type": "brand",
+        "relevance": "primary"
+      },
+      {
+        "name": "How to Win (Startups)",
+        "type": "movie_or_show",
+        "relevance": "primary"
+      },
+      {
+        "name": "YouTube",
+        "type": "app_or_tool",
+        "relevance": "supporting"
+      }
+    ],
+    "topic": {
+      "primary": "career",
+      "secondary": "technology"
+    },
+    "genre": "news_commentary",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "active_learning",
+    "embedding_text": "In this Techtok video, creator @pallipau breaks down a viral talk by Daniel Gross titled 'How to Win (Startups)' originally hosted by Y Combinator Investors. The video addresses the toxic 'hardcore' startup culture, specifically the mistake of founders sleeping at the office and becoming 'tired idiots.' Gross uses a sports analogy, stating that founders are athletes and startups are the Olympics, where novice athletes make repeated mistakes due to exhaustion. The creator emphasizes that leadership requires being well-rested to be effective. This video is a valuable resource for entrepreneurs, venture capital professionals, and anyone interested in startup productivity and founder health. It features on-screen text transcribing key points from the Daniel Gross talk about why nobody wants to work for an exhausted leader."
+  },
+  "metrics": {
+    "input_tokens": 4273,
+    "output_tokens": 457,
+    "total_tokens": 4730,
+    "cost_usd": 0.000915,
+    "latency_ms": 8801,
+    "keyframe_count": 3
+  }
+}

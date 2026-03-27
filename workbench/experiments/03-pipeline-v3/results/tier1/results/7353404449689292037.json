@@ -1,0 +1,52 @@
+{
+  "item_id": "7353404449689292037",
+  "parsed_output": {
+    "summary": "Bryce Kicks (@brycekicks) ranks his top five sneaker recommendations that cost approximately $100. The video features specific affordable models including the Vans Knu Skool, Asics Gel-1130, Adidas SL 72, and Nike P-6000.",
+    "entities": [
+      {
+        "name": "Bryce Kicks",
+        "type": "person",
+        "relevance": "primary"
+      },
+      {
+        "name": "Vans Knu Skool",
+        "type": "product",
+        "relevance": "primary"
+      },
+      {
+        "name": "Asics Gel-1130",
+        "type": "product",
+        "relevance": "primary"
+      },
+      {
+        "name": "Adidas SL 72",
+        "type": "product",
+        "relevance": "primary"
+      },
+      {
+        "name": "Nike P-6000",
+        "type": "product",
+        "relevance": "primary"
+      }
+    ],
+    "topic": {
+      "primary": "fashion",
+      "secondary": "finance"
+    },
+    "genre": "ranking",
+    "affect": {
+      "dominant": "informative",
+      "secondary": "neutral"
+    },
+    "viewer_orientation": "shopping_research",
+    "embedding_text": "In this TikTok, creator Bryce Kicks (@brycekicks) presents a curated list titled 'Top 5 Best $100 Sneakers,' providing budget-friendly footwear recommendations for men's fashion. The video highlights specific models such as the Vans Knu Skool, Asics Gel-1130, Adidas SL 72, and Nike P-6000, while also acknowledging a viewer's comment about the New Balance 530. One frame showcases a model wearing white Nike Killshot 2 sneakers with a black swoosh and gum sole, styled with navy joggers, a denim shirt, and a tan chore coat. This content is designed for sneakerheads and shoppers looking for affordable, stylish alternatives to high-priced hype shoes. The video functions as both a product review and a style guide, helping viewers find the best value sneakers currently on the market."
+  },
+  "metrics": {
+    "input_tokens": 4339,
+    "output_tokens": 517,
+    "total_tokens": 4856,
+    "cost_usd": 0.000961,
+    "latency_ms": 10637,
+    "keyframe_count": 3
+  }
+}

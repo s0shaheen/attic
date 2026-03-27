@@ -1,0 +1,290 @@
+{
+  "item_id": "7350052611262811438",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:14:18.177260+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:08",
+        "visual_description": "A skit showing a gym-goer performing a single, half-hearted leg extension rep before immediately leaving the gym. The creator is superimposed in the foreground.",
+        "audio_description": "Dialogue from a popular audio trend: 'Nobody's gonna know. They're gonna know. How would they know?' followed by a trap beat.",
+        "text_on_screen": "POV: guys \"leg days\" be like\nHATE TRAINING LEGS? I GOT YOU!",
+        "key_objects": [
+          "Leg extension machine",
+          "Gym equipment",
+          "Backpack"
+        ]
+      },
+      {
+        "time_range": "0:09-0:20",
+        "visual_description": "The creator speaks directly to the camera, introducing a list of essential leg exercises overlaid on a black background.",
+        "audio_description": "If you hate training legs but you still want some big legs, then I have something for you called the bare minimum. These are the five exercises that I think that you should be doing to grow some big legs without doing anything extra.",
+        "text_on_screen": "THE BARE MINIMUM\nSQUAT (GET DEEP, MAXIMIZE KNEE BEND)\nLEG EXT\nHINGE (RDL/SLDL/GOOD MORNING)\nLEG CURL\nCALF RAISE\n\nOPT\nGLUTE BRIDGE OR KICKBACK\nABDUCTION (GLUTE MED KICKBACK)\nADDUCTION",
+        "key_objects": [
+          "Green hat with 'M' logo"
+        ]
+      },
+      {
+        "time_range": "0:21-0:34",
+        "visual_description": "Creator explains the importance of deep squats while pointing to the text overlay.",
+        "audio_description": "Number one, a deep squat maximizing knee bend. This is going to be good for a little bit of everything. You've got some quads in there, you've got adductor magnus, you've got your glutes. So, a nice overall movement. If squats are what you hate most, then just do a single set close to failure. You could even do something like leg press instead.",
+        "text_on_screen": "THE BARE MINIMUM\nSQUAT (GET DEEP, MAXIMIZE KNEE BEND)",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:35-0:40",
+        "visual_description": "Creator highlights leg extensions on the list.",
+        "audio_description": "Leg extensions for the rec fem. That's that middle quad muscle. And no, unfortunately, squats don't work that muscle well.",
+        "text_on_screen": "LEG EXT",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:41-0:43",
+        "visual_description": "Creator highlights hinge movements on the list.",
+        "audio_description": "A hinge movement, which is going to be good for the hamstrings as well as the glutes.",
+        "text_on_screen": "HINGE (RDL/SLDL/GOOD MORNING)",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:44-0:49",
+        "visual_description": "Creator highlights leg curls on the list.",
+        "audio_description": "A leg curl to train both of the big functions of the hamstrings. So we've got a hip extension movement here and a knee flexion movement here.",
+        "text_on_screen": "LEG CURL",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:50-0:57",
+        "visual_description": "Creator highlights calf raises on the list.",
+        "audio_description": "And some kind of straight leg or seated calf raise. You can switch between the two, but I would be doing majority straight leg calf raises where the knee is extended.",
+        "text_on_screen": "CALF RAISE",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:58-1:08",
+        "visual_description": "Creator goes through the optional glute and hip exercises.",
+        "audio_description": "Then if you're trying to grow a big booty, some kind of glute bridge and/or kickback to work the shortened position. Some kind of abduction-based movement for the glute medius and minimus. And then adduction to train the other adductors that were not hit well in the squat.",
+        "text_on_screen": "OPT\nGLUTE BRIDGE OR KICKBACK\nABDUCTION (GLUTE MED KICKBACK)\nADDUCTION",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:09-1:24",
+        "visual_description": "Creator concludes with advice on volume, reps, and intensity.",
+        "audio_description": "And if you wanted to do the bare minimum volume and still maintain or make some progress, then one to two hard sets of each of these. As for rep range and intensity, I like anywhere between four to ten reps. And as long as you're training close to failure or hitting failure, you're good. Hope that helps and as always, make sure to like and follow for more efficient training tips.",
+        "text_on_screen": "",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "Fitness creator @jpgcoaching presents 'The Bare Minimum' leg workout routine designed for individuals who dislike training legs but still want to see muscle growth. He identifies five core exercises: deep squats (or leg press), leg extensions, hinge movements (like RDLs), leg curls, and calf raises, explaining the specific muscle groups each targets. He also provides optional exercises for glute and hip development. The main takeaway is that high-intensity training with low volume (1-2 sets per exercise) and a rep range of 4-10 can still yield significant results if performed close to failure.",
+    "people": [
+      {
+        "description": "Male fitness creator with a beard, wearing a green 'M' hat and a grey jacket.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "JPG Coaching"
+      },
+      {
+        "description": "Young male in a gym setting wearing a blue long-sleeve shirt and shorts.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "JPG Coaching",
+        "display_name": "JPG Coaching",
+        "type": "brand",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Squat",
+        "display_name": "Deep Squat",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "maximize knee bend",
+        "confidence": 5
+      },
+      {
+        "name": "Leg Extension",
+        "display_name": "Leg Extension",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "targets rectus femoris",
+        "confidence": 5
+      },
+      {
+        "name": "RDL",
+        "display_name": "Romanian Deadlift (RDL)",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "hinge movement",
+        "confidence": 5
+      },
+      {
+        "name": "Leg Curl",
+        "display_name": "Leg Curl",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "knee flexion",
+        "confidence": 5
+      },
+      {
+        "name": "Calf Raise",
+        "display_name": "Calf Raise",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "straight leg preferred",
+        "confidence": 5
+      },
+      {
+        "name": "Leg Press",
+        "display_name": "Leg Press",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "alternative to squat",
+        "confidence": 5
+      },
+      {
+        "name": "Rectus Femoris",
+        "display_name": "Rectus Femoris",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "middle quad muscle",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "A 'bare minimum' leg routine of 5 core exercises is sufficient for growth if intensity is high.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Squats do not effectively target the rectus femoris; leg extensions are needed for that specific quad muscle.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Training with low volume (1-2 hard sets) is effective as long as sets are taken close to or to failure.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "A rep range of 4-10 is recommended for these movements.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "workout",
+      "items": [
+        {
+          "name": "Deep Squat",
+          "details": "Maximize knee bend; targets quads, adductor magnus, and glutes. Alternative: Leg Press."
+        },
+        {
+          "name": "Leg Extension",
+          "details": "Targets rectus femoris (middle quad)."
+        },
+        {
+          "name": "Hinge Movement",
+          "details": "RDL, SLDL, or Good Morning; targets hamstrings and glutes."
+        },
+        {
+          "name": "Leg Curl",
+          "details": "Trains hip extension and knee flexion functions of the hamstrings."
+        },
+        {
+          "name": "Calf Raise",
+          "details": "Straight leg or seated; majority should be straight leg."
+        },
+        {
+          "name": "Optional Glute/Hip Work",
+          "details": "Glute bridge/kickback, Abduction (glute med kickback), Adduction."
+        },
+        {
+          "name": "Training Parameters",
+          "details": "1-2 hard sets per exercise; 4-10 rep range; train close to or to failure."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "How Would They Know (Remix) \u2014 BadBoy",
+      "metadata_song": "original sound \u2014 jpgcoaching",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The audio is a common TikTok mashup of the 'How would they know' dialogue with a trap beat."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative and direct, with a humorous skit intro.",
+    "topic_hints": [
+      "Leg Workout",
+      "Bodybuilding",
+      "Fitness Efficiency"
+    ],
+    "affect_hints": [
+      "Encouraging",
+      "Knowledgeable",
+      "Practical"
+    ],
+    "genre_hints": [
+      "Fitness Tutorial",
+      "Gym Hack"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 9061,
+    "output_tokens": 2876,
+    "total_tokens": 11937,
+    "cost_usd": 0.003085,
+    "latency_ms": 35792,
+    "upload_ms": 7849
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

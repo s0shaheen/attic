@@ -1,0 +1,706 @@
+{
+  "item_id": "7195085850798001410",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:47:11.146616+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "Julia Roberts, dressed in a sparkling dark gown, stands at a podium holding an envelope and a card, smiling as she prepares to announce an award winner.",
+        "audio_description": "Instrumental music begins, and Julia Roberts speaks, \"The Emmy goes to...\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "microphone",
+          "Emmy award envelope"
+        ]
+      },
+      {
+        "time_range": "0:01-0:07",
+        "visual_description": "A split-screen shows four actors in formal wear, Bryan Cranston, Jeff Daniels, Woody Harrelson, and Matthew McConaughey, reacting with anticipation. Bryan Cranston is announced as the winner, and the other actors applaud him.",
+        "audio_description": "Julia Roberts announces, \"Bryan Cranston!\" followed by applause and the continuation of the song.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:07-0:13",
+        "visual_description": "A basketball game is shown from an overhead court view. A player in a white jersey (Kawhi Leonard, #2) takes a last-second shot over a defender (Joel Embiid, #21) and scores, leading to an eruption of celebration from the crowd and his teammates.",
+        "audio_description": "The song continues with Frank Sinatra singing, \"I did it my way.\" Crowd cheering intensifies.",
+        "text_on_screen": "GAME 7, 90-90, 4TH, 01.2, PHI 90, TOR 90, END OF REG",
+        "key_objects": [
+          "basketball court",
+          "basketball hoop",
+          "basketball players",
+          "NBA Playoffs branding"
+        ]
+      },
+      {
+        "time_range": "0:13-0:17",
+        "visual_description": "Professional bowler Pete Weber, wearing a green and black Etonic shirt, bowls a strike and then turns to the crowd, passionately celebrating his success with a fist pump and shouts.",
+        "audio_description": "The song continues, \"For what is a man, what has he got? If not himself, then he has naught.\" Crowd cheers.",
+        "text_on_screen": "8 9 10, 175 195 215, 164 184 214, Weber Game (Orlando)",
+        "key_objects": [
+          "bowling lane",
+          "bowling pins",
+          "bowling ball",
+          "Etonic shirt",
+          "Storm shirt"
+        ]
+      },
+      {
+        "time_range": "0:17-0:22",
+        "visual_description": "Olympic high jumpers Gianmarco Tamberi (in blue) and Mutaz Essa Barshim (in red 'QATAR' shirt) embrace and celebrate on the track after sharing a gold medal. Barshim lifts Tamberi in a joyful hug.",
+        "audio_description": "The song continues, \"To say the things he truly feels.\" Crowd cheering.",
+        "text_on_screen": "History, my friend. Olympic champions.",
+        "key_objects": [
+          "Olympic track",
+          "high jump mat",
+          "Olympic medals (implied)",
+          "Nike logo",
+          "Qatar shirt"
+        ]
+      },
+      {
+        "time_range": "0:22-0:24",
+        "visual_description": "Stephen Curry, wearing goggles and a Golden State Warriors shirt, celebrates a championship win by shaking a champagne bottle, spraying it around in a locker room setting.",
+        "audio_description": "The song continues, \"And not the words of one who kneels.\" Champagne popping sounds.",
+        "text_on_screen": "Michelob ULTRA",
+        "key_objects": [
+          "champagne bottle",
+          "Michelob Ultra banner",
+          "Golden State Warriors shirt",
+          "goggles"
+        ]
+      },
+      {
+        "time_range": "0:24-0:32",
+        "visual_description": "MarJon Beauchamp, a young man in a suit and a white Milwaukee Bucks hat, sits on a blue couch being interviewed by a woman holding an ABC microphone. He speaks about his journey and not giving up.",
+        "audio_description": "MarJon Beauchamp speaks, \"I'm just happy, you know, God never gave up on me. Look, everything I had to go through.\"",
+        "text_on_screen": "",
+        "key_objects": [
+          "microphone (ABC logo)",
+          "Milwaukee Bucks hat",
+          "suit"
+        ]
+      },
+      {
+        "time_range": "0:32-0:37",
+        "visual_description": "Giannis Antetokounmpo, wearing a Milwaukee Bucks jersey and hat, sits on the bench after winning the NBA championship, looking emotional and wiping his face, surrounded by celebrating fans.",
+        "audio_description": "The song continues, \"I took the blows and did it my way.\"",
+        "text_on_screen": "105 MIL FINAL 2021 NBA CHAMPIONS",
+        "key_objects": [
+          "Milwaukee Bucks jersey",
+          "Milwaukee Bucks hat",
+          "Motorola logo",
+          "NBA Finals branding"
+        ]
+      },
+      {
+        "time_range": "0:37-0:47",
+        "visual_description": "A basketball player (Luka Don\u010di\u0107, #77) makes a long-range shot during a game. The camera then cuts to him and Trae Young (#11) celebrating the shot, embracing and smiling broadly.",
+        "audio_description": "The song concludes with the iconic line, \"And did it my way.\"",
+        "text_on_screen": "WORLD 77",
+        "key_objects": [
+          "basketball court",
+          "basketball hoop",
+          "basketball players",
+          "NBA All-Star branding",
+          "Nike logo"
+        ]
+      }
+    ],
+    "overall_summary": "This video is a compilation celebrating moments of triumph and emotional achievement across sports and entertainment, set to Frank Sinatra's 'My Way'. It showcases individuals like Bryan Cranston winning an Emmy, Kawhi Leonard making a game-winning shot, Pete Weber celebrating a bowling strike, Olympic high jumpers sharing a gold medal, Stephen Curry and Giannis Antetokounmpo winning NBA championships, and a young NBA draft pick reflecting on his journey. The overarching theme emphasizes perseverance, self-belief, and the profound joy of reaching one's goals through personal effort. A user who saved this video would likely identify it as an inspirational montage of success stories.",
+    "people": [
+      {
+        "description": "Blonde woman, presenter at an awards show, announcing a winner.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Julia Roberts"
+      },
+      {
+        "description": "Actor with a mustache, wearing a tuxedo, reacting to an award announcement.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Bryan Cranston"
+      },
+      {
+        "description": "Actor, wearing a tuxedo, reacting to an award announcement.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jeff Daniels"
+      },
+      {
+        "description": "Actor, bald, wearing a suit, reacting to an award announcement.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Woody Harrelson"
+      },
+      {
+        "description": "Actor, wearing a tuxedo, reacting to an award announcement.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Matthew McConaughey"
+      },
+      {
+        "description": "NBA player in a white jersey, making a game-winning shot.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Kawhi Leonard"
+      },
+      {
+        "description": "NBA player in a red jersey, defending a shot.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Joel Embiid"
+      },
+      {
+        "description": "Professional bowler, male, wearing a green and black shirt, celebrating a strike.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Pete Weber"
+      },
+      {
+        "description": "Olympic high jumper, male, with long hair, wearing a blue singlet, celebrating a shared gold medal.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Gianmarco Tamberi"
+      },
+      {
+        "description": "Olympic high jumper, male, wearing a red 'QATAR' shirt, celebrating a shared gold medal.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Mutaz Essa Barshim"
+      },
+      {
+        "description": "NBA player, male, wearing goggles and a Golden State Warriors shirt, celebrating a championship with champagne.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Stephen Curry"
+      },
+      {
+        "description": "Young male basketball player, wearing a suit and a Milwaukee Bucks hat, being interviewed after the NBA Draft.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "MarJon Beauchamp"
+      },
+      {
+        "description": "Female interviewer, wearing a white outfit, holding an ABC microphone.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "NBA player, male, wearing a Milwaukee Bucks jersey and hat, looking emotional after winning a championship.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Giannis Antetokounmpo"
+      },
+      {
+        "description": "NBA player, male, wearing a purple 'World' jersey, making a shot and celebrating.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Luka Don\u010di\u0107"
+      },
+      {
+        "description": "NBA player, male, wearing an orange jersey, celebrating with Luka Don\u010di\u0107.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Trae Young"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Emmy Awards",
+        "display_name": "Emmy Awards",
+        "type": "event",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Bryan Cranston",
+        "display_name": "Bryan Cranston",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jeff Daniels",
+        "display_name": "Jeff Daniels",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Woody Harrelson",
+        "display_name": "Woody Harrelson",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Matthew McConaughey",
+        "display_name": "Matthew McConaughey",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Kawhi Leonard",
+        "display_name": "Kawhi Leonard",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "Jersey #2",
+        "confidence": 4
+      },
+      {
+        "name": "Joel Embiid",
+        "display_name": "Joel Embiid",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "Jersey #21",
+        "confidence": 4
+      },
+      {
+        "name": "NBA Playoffs",
+        "display_name": "NBA Playoffs",
+        "type": "event",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Game 7, 2019 Eastern Conference Semifinals",
+        "confidence": 5
+      },
+      {
+        "name": "Philadelphia 76ers",
+        "display_name": "Philadelphia 76ers",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Team in NBA Playoffs",
+        "confidence": 4
+      },
+      {
+        "name": "Toronto Raptors",
+        "display_name": "Toronto Raptors",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "Team in NBA Playoffs",
+        "confidence": 4
+      },
+      {
+        "name": "Pete Weber",
+        "display_name": "Pete Weber",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": "Professional bowler",
+        "confidence": 4
+      },
+      {
+        "name": "Etonic",
+        "display_name": "Etonic",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Bowling apparel brand",
+        "confidence": 4
+      },
+      {
+        "name": "Storm",
+        "display_name": "Storm",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Bowling equipment brand",
+        "confidence": 4
+      },
+      {
+        "name": "Olympics",
+        "display_name": "Olympics",
+        "type": "event",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "High jump event",
+        "confidence": 5
+      },
+      {
+        "name": "Gianmarco Tamberi",
+        "display_name": "Gianmarco Tamberi",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": "Olympic high jumper",
+        "confidence": 5
+      },
+      {
+        "name": "Mutaz Essa Barshim",
+        "display_name": "Mutaz Essa Barshim",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": "Olympic high jumper",
+        "confidence": 5
+      },
+      {
+        "name": "Qatar",
+        "display_name": "Qatar",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Country represented on shirt",
+        "confidence": 4
+      },
+      {
+        "name": "Nike",
+        "display_name": "Nike",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Sportswear brand",
+        "confidence": 4
+      },
+      {
+        "name": "Stephen Curry",
+        "display_name": "Stephen Curry",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual"
+        ],
+        "specifications": "NBA player",
+        "confidence": 5
+      },
+      {
+        "name": "Golden State Warriors",
+        "display_name": "Golden State Warriors",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "NBA team",
+        "confidence": 4
+      },
+      {
+        "name": "Michelob Ultra",
+        "display_name": "Michelob Ultra",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Beer brand",
+        "confidence": 4
+      },
+      {
+        "name": "MarJon Beauchamp",
+        "display_name": "MarJon Beauchamp",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "inferred"
+        ],
+        "specifications": "NBA Draft pick",
+        "confidence": 4
+      },
+      {
+        "name": "Milwaukee Bucks",
+        "display_name": "Milwaukee Bucks",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "NBA team",
+        "confidence": 4
+      },
+      {
+        "name": "NBA Draft",
+        "display_name": "NBA Draft",
+        "type": "event",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "ABC",
+        "display_name": "ABC",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Television network",
+        "confidence": 4
+      },
+      {
+        "name": "Giannis Antetokounmpo",
+        "display_name": "Giannis Antetokounmpo",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "NBA player, Jersey #34",
+        "confidence": 5
+      },
+      {
+        "name": "NBA Finals",
+        "display_name": "NBA Finals",
+        "type": "event",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay"
+        ],
+        "specifications": "2021 NBA Champions",
+        "confidence": 5
+      },
+      {
+        "name": "Motorola",
+        "display_name": "Motorola",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Sponsor logo on jersey",
+        "confidence": 4
+      },
+      {
+        "name": "Luka Don\u010di\u0107",
+        "display_name": "Luka Don\u010di\u0107",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": "NBA player, Jersey #77",
+        "confidence": 5
+      },
+      {
+        "name": "Trae Young",
+        "display_name": "Trae Young",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": "NBA player, Jersey #11",
+        "confidence": 4
+      },
+      {
+        "name": "NBA Rising Stars Challenge",
+        "display_name": "NBA Rising Stars Challenge",
+        "type": "event",
+        "relevance": "supporting",
+        "source": [
+          "visual",
+          "inferred"
+        ],
+        "specifications": null,
+        "confidence": 3
+      },
+      {
+        "name": "My Way",
+        "display_name": "My Way",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "2008 Remastered",
+        "confidence": 5
+      },
+      {
+        "name": "Frank Sinatra",
+        "display_name": "Frank Sinatra",
+        "type": "artist",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "hopecore",
+        "display_name": "Hopecore",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "hopetok",
+        "display_name": "Hopetok",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "corecore",
+        "display_name": "Corecore",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": [
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Achieving success often involves overcoming challenges and pursuing one's goals with unwavering determination, ultimately leading to profound personal satisfaction.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "The journey to success, whether in sports or entertainment, is marked by moments of intense emotion, from anticipation and struggle to elation and pride.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "True accomplishment is about doing things 'my way,' embracing one's unique path and convictions.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "My Way \u2014 Frank Sinatra",
+      "metadata_song": "My Way - 2008 Remastered",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The specific NBA game for Luka Don\u010di\u0107 and Trae Young was inferred as a Rising Stars Challenge, but the exact year/event isn't explicitly stated in the video. The interviewer's name was not identifiable."
+    },
+    "presentation_style": {
+      "primary_format": "compilation",
+      "camera_work": "static|panning|transitions",
+      "editing_style": "montage|jump_cuts"
+    },
+    "visual_mood": "Triumphant, emotional, inspiring, celebratory, hopeful",
+    "topic_hints": [
+      "Achievement",
+      "Sports Highlights",
+      "Inspiration",
+      "Awards"
+    ],
+    "affect_hints": [
+      "Joy",
+      "Excitement",
+      "Pride",
+      "Hope",
+      "Motivation"
+    ],
+    "genre_hints": [
+      "Inspirational",
+      "Sports Montage",
+      "Highlight Reel",
+      "Motivational Edit"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 15649,
+    "output_tokens": 5570,
+    "total_tokens": 21219,
+    "cost_usd": 0.005689,
+    "latency_ms": 35861,
+    "upload_ms": 5749
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

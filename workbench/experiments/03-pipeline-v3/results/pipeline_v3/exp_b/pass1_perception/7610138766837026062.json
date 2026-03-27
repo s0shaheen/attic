@@ -1,0 +1,177 @@
+{
+  "item_id": "7610138766837026062",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:55:49.664936+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-2:52",
+        "visual_description": "A man with short dark hair and a grey t-shirt featuring a 'Sell Your Soul!' graphic sits on a light-colored couch, speaking directly to the camera. In the background, two arched bookshelves filled with books flank a television stand.",
+        "audio_description": "The creator discusses three common mistakes people make when networking or seeking help from strangers, emphasizing the importance of being specific, showing prior effort, and making the interaction feel personal rather than transactional.",
+        "text_on_screen": "null",
+        "key_objects": [
+          "grey t-shirt",
+          "Sell Your Soul! graphic",
+          "bookshelves",
+          "books",
+          "couch"
+        ]
+      }
+    ],
+    "overall_summary": "The creator, @evisdrenova, outlines three significant mistakes people make when attempting to network or connect with individuals they don't know. He advises against vague requests, asking for help without demonstrating prior effort, and making the interaction feel like just another transactional call. The main point is to be specific, show initiative, and make the person you're reaching out to feel valued and uniquely positioned to help, fostering a genuine relationship rather than a one-off request.",
+    "people": [
+      {
+        "description": "A man with short dark hair, wearing a grey t-shirt with a 'Sell Your Soul!' graphic, speaking directly to the camera from a couch.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "null"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Networking",
+        "display_name": "Networking",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "hashtags"
+        ],
+        "specifications": "null",
+        "confidence": 5
+      },
+      {
+        "name": "LinkedIn",
+        "display_name": "LinkedIn",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "null",
+        "confidence": 5
+      },
+      {
+        "name": "TikTok",
+        "display_name": "TikTok",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "null",
+        "confidence": 5
+      },
+      {
+        "name": "Y Combinator",
+        "display_name": "Y Combinator (YC)",
+        "type": "organization",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "null",
+        "confidence": 4
+      },
+      {
+        "name": "Sell Your Soul! T-shirt",
+        "display_name": "Sell Your Soul! T-shirt",
+        "type": "clothing",
+        "relevance": "background",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Grey t-shirt with a graphic depicting children at a carnival-like stand and the text 'Sell Your Soul!'",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "When reaching out to someone for networking, always provide a clear reason for your contact, why you want to talk about it, and why they are the right person to help.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Before asking for help, an introduction, or a referral, demonstrate that you have already put in effort and made progress on your own towards your goal.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Avoid making networking calls feel like a generic, transactional interaction; make the person feel special and specifically chosen, as people want to feel valued.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "It is your responsibility to make it easy for someone to help you by providing context and clearly explaining how they can specifically assist.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Mistake 1: Lack of Clarity",
+          "details": "Not providing a clear reason for contact, why you want to talk, and why the recipient is the right person to help."
+        },
+        {
+          "name": "Mistake 2: Lack of Prior Effort",
+          "details": "Asking for help or referrals without demonstrating that you've already done work or made progress on your own."
+        },
+        {
+          "name": "Mistake 3: Impersonal Approach",
+          "details": "Making the interaction feel like a generic networking call, failing to make the recipient feel special or uniquely chosen."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The 'Sell Your Soul!' t-shirt is a specific visual entity, but its cultural context or specific brand might be deeper than what's immediately apparent without further search. However, the text is clear."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Informative, direct, casual, bright",
+    "topic_hints": [
+      "networking advice",
+      "career development",
+      "professional communication"
+    ],
+    "affect_hints": [
+      "informative",
+      "direct",
+      "helpful",
+      "candid"
+    ],
+    "genre_hints": [
+      "educational",
+      "tutorial",
+      "advice"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 52228,
+    "output_tokens": 1487,
+    "total_tokens": 53715,
+    "cost_usd": 0.008726,
+    "latency_ms": 33572,
+    "upload_ms": 12355
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": true
+  }
+}

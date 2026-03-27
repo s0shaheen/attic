@@ -1,0 +1,135 @@
+{
+  "item_id": "7483494180535422254",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:18:18.333521+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:13",
+        "visual_description": "Creator speaks directly to the camera, posing a philosophical question about digital consumption versus reflection.",
+        "audio_description": "Today's thoughts: what happens to a life that is perpetually pushed to be digital or spent more time digitally while also being pushed to continuously consume rather than stop and reflect, given one, the ephemeral nature of the internet...",
+        "text_on_screen": "What happens to a life that is spent digitally and pushed to continuously consume versus stop and reflect?\n\nWhat happens to tech when it is optimized for memories or meant to simulate real life, including things like memory?",
+        "key_objects": [
+          "shoe shelf",
+          "pink top"
+        ]
+      },
+      {
+        "time_range": "0:13-0:32",
+        "visual_description": "Creator continues her monologue, emphasizing that life is a culmination of memories which are harder to form through screens.",
+        "audio_description": "...and two, the understanding that a life is the culmination of its memories, and memories are difficult to preserve or form through a screen. I don't think we've ever had to think about this or worry about it, given that a lot of people did spend the majority of their time in the real world, so the majority of their life would be adequately remembered or captured.",
+        "text_on_screen": "What happens to a life that is spent digitally and pushed to continuously consume versus stop and reflect?\n\nWhat happens to tech when it is optimized for memories or meant to simulate real life, including things like memory?",
+        "key_objects": [
+          "shoe shelf"
+        ]
+      },
+      {
+        "time_range": "0:32-0:49",
+        "visual_description": "Creator takes a sip from a silver can and reflects on her personal experience with real-life versus digital memories.",
+        "audio_description": "But I don't think that's any longer the case. I remember the breakups and the fights that occurred in real life a hundred times\u2014I don't even think I remember any of the ones that occurred through text. What happens at the end of my life then, when I think back on my relationships? I don't know.",
+        "text_on_screen": "What happens to a life that is spent digitally and pushed to continuously consume versus stop and reflect?\n\nWhat happens to tech when it is optimized for memories or meant to simulate real life, including things like memory?",
+        "key_objects": [
+          "silver can",
+          "beverage"
+        ]
+      }
+    ],
+    "overall_summary": "The creator reflects on the long-term impact of living a predominantly digital life focused on constant consumption rather than reflection. She argues that life is defined by memories, which are significantly harder to form and preserve through digital screens compared to real-world experiences. Using the example of personal conflicts, she notes that real-life arguments are far more memorable than those conducted via text, leading her to wonder how a digital-first life will be remembered at its end.",
+    "people": [
+      {
+        "description": "Young woman with dark hair wearing a pink shirt, speaking in a reflective, philosophical tone.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@abcbribri96"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Internet",
+        "display_name": "The Internet",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Digital Life",
+        "display_name": "Digital Life",
+        "type": "technique",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "A life spent primarily in digital spaces may result in fewer lasting memories compared to a life lived in the physical world.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Digital consumption culture discourages the reflection necessary to form deep-seated memories.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video is a pure philosophical monologue with no background music or specific product placements other than generic household items."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Reflective, pensive, and slightly concerned about the future of human experience.",
+    "topic_hints": [
+      "Digital Wellness",
+      "Philosophy of Technology",
+      "Memory and Psychology"
+    ],
+    "affect_hints": [
+      "thoughtful",
+      "introspective",
+      "existential"
+    ],
+    "genre_hints": [
+      "vlog",
+      "philosophical monologue",
+      "shower thoughts"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5793,
+    "output_tokens": 1263,
+    "total_tokens": 7056,
+    "cost_usd": 0.001627,
+    "latency_ms": 17486,
+    "upload_ms": 6254
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

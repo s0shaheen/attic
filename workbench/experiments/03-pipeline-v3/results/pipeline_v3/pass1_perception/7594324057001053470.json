@@ -1,0 +1,219 @@
+{
+  "item_id": "7594324057001053470",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:10:49.297482+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:17",
+        "visual_description": "Creator speaks directly to the camera in a dimly lit room, recounting a story about her missing neighbor.",
+        "audio_description": "Transcribes: 'There's a girl that lives in the apartment directly across the way from me. I have not seen her in two months. Nobody has. Her car is still in the parking lot. Her family, nobody can get in contact with them. I have no idea where my neighbor is. Do you know where your neighbor is?'",
+        "text_on_screen": "THERE'S A GIRL THAT LIVES IN THE APARTMENT; I HAVE NOT SEEN HER IN; NOBODY HAS; I HAVE NO IDEA; DO YOU KNOW WHERE YOUR NEIGHBOR IS?",
+        "key_objects": [
+          "American flag",
+          "shoe rack"
+        ]
+      },
+      {
+        "time_range": "0:17-0:20",
+        "visual_description": "Black screen with a grey bar containing a Bible verse.",
+        "audio_description": "Dramatic bass line from 'The Chain' by Fleetwood Mac begins.",
+        "text_on_screen": "'YOU SHALL LOVE YOUR NEIGHBOR AS YOURSELF.' MATTHEW 22:39",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:20-0:26",
+        "visual_description": "Montage of a White House press briefing and street protests with various signs.",
+        "audio_description": "Male voiceover: 'Because this was an attack on federal law enforcement, this was an attack on law and order, this was an attack on the American people.'",
+        "text_on_screen": "The WHITE HOUSE Press Briefing; THE AMERICAN PEOPLE",
+        "key_objects": [
+          "American flag",
+          "protest signs",
+          "podium"
+        ]
+      },
+      {
+        "time_range": "0:27-0:29",
+        "visual_description": "Black screen with white text.",
+        "audio_description": "Music continues to build.",
+        "text_on_screen": "WE HAVE FORGOTTEN WHO OUR NEIGHBORS ARE",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:30-0:35",
+        "visual_description": "Donald Trump speaks at a podium in Grand Rapids, Michigan, flanked by law enforcement officers.",
+        "audio_description": "Donald Trump: 'The Democrats say please don't call them animals, they're humans. I said no, they're not humans, they're not humans, they're animals.'",
+        "text_on_screen": "STOP BIDEN'S BORDER BLOODBATH; GRAND RAPIDS, MICHIGAN 2024; 'THEY'RE NOT HUMANS'; 'THEY'RE ANIMALS'",
+        "key_objects": [
+          "Microphones",
+          "Police uniforms"
+        ]
+      },
+      {
+        "time_range": "0:36-0:38",
+        "visual_description": "Crowd shots of people at a rally or public event.",
+        "audio_description": "Music reaches a crescendo.",
+        "text_on_screen": "ALL ANIMALS ARE EQUAL",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:39-0:46",
+        "visual_description": "Archival footage from 1992 showing Donald Trump and Jeffrey Epstein talking and laughing together.",
+        "audio_description": "Music continues as the scene fades to black.",
+        "text_on_screen": "BUT SOME MORE EQUAL THAN OTHERS",
+        "key_objects": [
+          "Donald Trump",
+          "Jeffrey Epstein"
+        ]
+      }
+    ],
+    "overall_summary": "The video begins with a personal story from the creator about a missing neighbor to introduce the theme of 'neighborly love' and social awareness. It then transitions into a political critique, using Matthew 22:39 to highlight a perceived moral failing in modern society. The edit juxtaposes Donald Trump's rhetoric regarding immigrants (referring to them as 'animals') with his past association with Jeffrey Epstein, utilizing the famous quote from George Orwell's 'Animal Farm' to suggest hypocrisy and a hierarchy of human value in politics.",
+    "people": [
+      {
+        "description": "Young woman with dark hair wearing a dark hoodie, speaking as a talking head.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "Former US President Donald Trump, shown in 2024 and 1992 footage.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Donald Trump"
+      },
+      {
+        "description": "Convicted sex offender Jeffrey Epstein, shown in archival footage from 1992.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jeffrey Epstein"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Matthew 22:39",
+        "display_name": "Matthew 22:39 (Bible Verse)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay"
+        ],
+        "specifications": "New Testament verse: 'You shall love your neighbor as yourself.'",
+        "confidence": 5
+      },
+      {
+        "name": "Donald Trump",
+        "display_name": "Donald Trump",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "visual",
+          "audio",
+          "text_overlay"
+        ],
+        "specifications": "45th US President",
+        "confidence": 5
+      },
+      {
+        "name": "Jeffrey Epstein",
+        "display_name": "Jeffrey Epstein",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "visual"
+        ],
+        "specifications": "Convicted sex offender",
+        "confidence": 5
+      },
+      {
+        "name": "Animal Farm",
+        "display_name": "Animal Farm by George Orwell",
+        "type": "book",
+        "relevance": "primary",
+        "source": [
+          "text_overlay",
+          "inferred"
+        ],
+        "specifications": "Reference to the quote: 'All animals are equal, but some animals are more equal than others.'",
+        "confidence": 5
+      },
+      {
+        "name": "The Chain",
+        "display_name": "The Chain \u2014 Fleetwood Mac",
+        "type": "song",
+        "relevance": "supporting",
+        "source": [
+          "audio"
+        ],
+        "specifications": "Rumours (1977)",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Modern political rhetoric has abandoned the biblical principle of loving one's neighbor.",
+        "source": "text_overlay",
+        "confidence": 4
+      },
+      {
+        "statement": "Dehumanizing language used by politicians (calling people 'animals') is a dangerous social trend.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "There is a perceived hypocrisy in political leaders who dehumanize others while having questionable personal associations.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "The Chain \u2014 Fleetwood Mac",
+      "metadata_song": "original sound",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The political figures and the literary reference to Orwell are very clear."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "static",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Tense, provocative, and somber, shifting from a personal mystery to a broad social critique.",
+    "topic_hints": [
+      "Political Rhetoric",
+      "Social Justice",
+      "Religious Ethics"
+    ],
+    "affect_hints": [
+      "Cynical",
+      "Concerned",
+      "Provoked"
+    ],
+    "genre_hints": [
+      "Political Commentary",
+      "Social Critique Edit"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 5549,
+    "output_tokens": 2080,
+    "total_tokens": 7629,
+    "cost_usd": 0.00208,
+    "latency_ms": 23434,
+    "upload_ms": 5631
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

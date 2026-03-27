@@ -1,0 +1,168 @@
+{
+  "item_id": "7550741362736401694",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T22:11:54.510751+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:08",
+        "visual_description": "The DJ, Guala, performs behind the decks in a dark club with blue and purple lighting. Text overlays sync with the lyrics as he interacts with the crowd.",
+        "audio_description": "A high-energy EDM remix of Nav's 'Fell In Love' plays. Lyrics: 'I found myself a club when I was down in Cali / Because I met some white girls sniffin' coke up in the valley / I'm sorry I'm just really high, nice to meet you'",
+        "text_on_screen": "FOUND WHEN CALI SOME SNIFFIN' COKE IN THE VALLEY SORRY HIGH YOU YOU YOU",
+        "key_objects": [
+          "DJ controller",
+          "headphones",
+          "club lighting"
+        ]
+      },
+      {
+        "time_range": "0:08-0:14",
+        "visual_description": "An overhead shot shows the DJ booth and the dense, energetic crowd dancing. The DJ is seen manipulating the mixer.",
+        "audio_description": "The beat builds up. Lyrics: 'I told her I just wanna fuck her I don't need her / I fell in love with LA'",
+        "text_on_screen": "I JUST WANNA DON'T NEED WITH LA",
+        "key_objects": [
+          "Pioneer DJ setup",
+          "crowd"
+        ]
+      },
+      {
+        "time_range": "0:14-0:25",
+        "visual_description": "The camera cuts between the crowd's raised hands and the DJ. The lighting shifts to pink and red hues as the track drops.",
+        "audio_description": "The bass-heavy drop continues. Lyrics: 'I fell in love with LA / Yeah yeah yeah / I might not go home I might just stay in LA'",
+        "text_on_screen": "WITH LA YEAH YEAH YEAH WITH LA NOT GO HOME JUST STAY IN",
+        "key_objects": [
+          "wristbands",
+          "club strobe lights"
+        ]
+      }
+    ],
+    "overall_summary": "This video features DJ and producer Guala performing a high-energy EDM remix of Nav's song 'Fell In Love' at a club in Los Angeles. The visuals capture the vibrant nightlife atmosphere, alternating between close-ups of Guala at the decks and overhead shots of an enthusiastic crowd. Stylized text overlays sync perfectly with the lyrics to emphasize the track's hook. The video serves as a promotional clip for the 'Guala Bootleg' of the song, which is available on SoundCloud.",
+    "people": [
+      {
+        "description": "A heavily tattooed male DJ wearing a black tank top, performing and interacting with the crowd.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Guala"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Nav",
+        "display_name": "Nav",
+        "type": "person",
+        "relevance": "primary",
+        "source": [
+          "metadata",
+          "text_overlay"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "KETTAMA",
+        "display_name": "KETTAMA",
+        "type": "person",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": "Irish DJ/Producer",
+        "confidence": 4
+      },
+      {
+        "name": "Fell In Love",
+        "display_name": "Fell In Love (Guala Bootleg)",
+        "type": "song",
+        "relevance": "primary",
+        "source": [
+          "audio",
+          "metadata"
+        ],
+        "specifications": "Remix of Nav's 'Fell In Love'",
+        "confidence": 5
+      },
+      {
+        "name": "Los Angeles",
+        "display_name": "Los Angeles, CA",
+        "type": "place",
+        "relevance": "supporting",
+        "source": [
+          "text_overlay",
+          "metadata"
+        ],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "SoundCloud",
+        "display_name": "SoundCloud",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": [
+          "metadata"
+        ],
+        "specifications": "Platform where the remix is hosted",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Guala has released a new high-energy EDM bootleg remix of Nav's 'Fell In Love'.",
+        "source": "metadata",
+        "confidence": 5
+      },
+      {
+        "statement": "The remix is currently available for streaming on SoundCloud.",
+        "source": "metadata",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Fell In Love (Guala Bootleg) \u2014 Nav",
+      "metadata_song": "Fell In Love Guala Bootleg Nav Out on SC",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The remix style is consistent with the KETTAMA hashtag, suggesting a hard house or techno influence."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "High-energy, immersive, and rhythmic with a dark club aesthetic.",
+    "topic_hints": [
+      "EDM Remixes",
+      "Nightlife",
+      "DJ Performance"
+    ],
+    "affect_hints": [
+      "hyped",
+      "energetic",
+      "vibrant"
+    ],
+    "genre_hints": [
+      "Music Edit",
+      "Performance Clip"
+    ]
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 3715,
+    "output_tokens": 1471,
+    "total_tokens": 5186,
+    "cost_usd": 0.00144,
+    "latency_ms": 20581,
+    "upload_ms": 5441
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "grounding_enabled": false
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "item_id": "7535646365616065823",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-03-25T23:00:09.482075+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "sports",
+      "secondary": "movies_tv",
+      "micro_labels": [
+        "LeBron James",
+        "NBA highlights",
+        "Marvel crossover",
+        "basketball",
+        "Fantastic Four"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": [
+        "sports edit",
+        "fan edit",
+        "hype video"
+      ],
+      "confidence": 0.98
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": [
+      "voiceover",
+      "text_overlay",
+      "mixed"
+    ],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "grounding_sources": [],
+  "metrics": {
+    "input_tokens": 6526,
+    "output_tokens": 363,
+    "total_tokens": 6889,
+    "cost_usd": 0.001197,
+    "latency_ms": 8701,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "keyframe_count": 3
+  }
+}
