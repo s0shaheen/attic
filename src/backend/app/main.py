@@ -28,7 +28,10 @@ VERSION = "0.1.0"
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     """Application lifespan event handler."""
-    # Startup
+    # Startup — validate all prompt files exist before accepting requests
+    from app.services.prompt_loader import validate_all_prompts
+
+    validate_all_prompts()
     logger.info({"event": "server_started", "version": VERSION})
     yield
     # Shutdown (if needed)

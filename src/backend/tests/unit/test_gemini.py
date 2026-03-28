@@ -6,7 +6,7 @@ from unittest.mock import AsyncMock, patch
 import httpx
 import pytest
 
-from app.services.gemini import _VISION_PROMPTS, VisionFocus, analyze_visual, classify
+from app.services.gemini import VisionFocus, _get_vision_prompt, analyze_visual, classify
 
 # ---------------------------------------------------------------------------
 # classify
@@ -430,7 +430,7 @@ class TestVisionFocus:
             call_args = mock_client.post.call_args
             body = call_args.kwargs["json"]
             prompt_text = body["contents"][0]["parts"][0]["text"]
-            assert prompt_text == _VISION_PROMPTS[focus]
+            assert prompt_text == _get_vision_prompt(focus)
 
     @pytest.mark.asyncio
     async def test_books_focus_contains_book_keywords(self):
@@ -485,11 +485,13 @@ class TestVisionFocus:
             assert "book" in prompt_text.lower()
 
     def test_all_focus_modes_have_prompt_templates(self):
-        """Every VisionFocus enum value has a corresponding prompt template."""
+        """Every VisionFocus enum value has a corresponding prompt file."""
         for focus in VisionFocus:
-            assert focus in _VISION_PROMPTS, f"Missing prompt template for {focus}"
+            prompt = _get_vision_prompt(focus)
+            assert prompt, f"Missing or empty prompt template for {focus}"
 
     def test_all_prompts_request_json_output(self):
         """All prompt templates end with JSON output instruction."""
-        for focus, prompt in _VISION_PROMPTS.items():
+        for focus in VisionFocus:
+            prompt = _get_vision_prompt(focus)
             assert "Return ONLY valid JSON" in prompt, f"{focus} prompt missing JSON instruction"

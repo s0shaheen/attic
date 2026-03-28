@@ -13,6 +13,7 @@ from app.models.auth import (
     AuthErrorResponse,
     DeletionErrorCode,
 )
+from app.models.collection import Collection, CollectionItem
 from app.models.conversation import Conversation, Message
 from app.models.cost_model import CostModel
 from app.models.media_event import MediaEvent
@@ -42,6 +43,8 @@ __all__ = [
     # Pydantic - API
     "HealthResponse",
     # SQLAlchemy
+    "Collection",
+    "CollectionItem",
     "Conversation",
     "CostModel",
     "Message",

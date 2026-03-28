@@ -1,0 +1,49 @@
+{
+  "agent": {
+    "active": "v1",
+    "versions": {
+      "v1": {
+        "created": "2026-03-28",
+        "sections": [
+          "identity",
+          "data_quality",
+          "query_plan_templates",
+          "recall_check",
+          "cost_awareness",
+          "disambiguation",
+          "formatting"
+        ],
+        "description": "Initial agent system prompt — 5 query plans, cost awareness, recall check"
+      }
+    }
+  },
+  "classify": {
+    "active": "v1",
+    "versions": {
+      "v1": {
+        "created": "2026-03-28",
+        "files": [
+          "tier1"
+        ],
+        "description": "Tier 1 single-pass classification with 8-facet ontology"
+      }
+    }
+  },
+  "vision": {
+    "active": "v1",
+    "versions": {
+      "v1": {
+        "created": "2026-03-28",
+        "modes": [
+          "general",
+          "books",
+          "scenes",
+          "places",
+          "text",
+          "products"
+        ],
+        "description": "6 focus modes for targeted vision analysis"
+      }
+    }
+  }
+}

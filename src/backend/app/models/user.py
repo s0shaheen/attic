@@ -39,5 +39,6 @@ class User(Base):
     uploads = relationship("Upload", back_populates="user", cascade="all, delete")
     pipeline_runs = relationship("UploadPipelineRun", back_populates="user", cascade="all, delete")
     media_events = relationship("MediaEvent", back_populates="user", cascade="all, delete")
+    collections = relationship("Collection", back_populates="user", cascade="all, delete")
 
     __table_args__ = ({"comment": "User accounts linked to Supabase Auth"},)

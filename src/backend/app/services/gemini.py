@@ -16,6 +16,8 @@ from typing import Any
 
 import httpx
 
+from app.services.prompt_loader import load_prompt
+
 logger = logging.getLogger(__name__)
 
 # Gemini API endpoint
@@ -29,92 +31,13 @@ REQUEST_TIMEOUT = 30.0
 
 
 # ---------------------------------------------------------------------------
-# Tier 1 classification prompt — ported from workbench/experiments/03-pipeline-v3
+# Tier 1 classification prompt — loaded from prompts/classify/v1/tier1.md
 # ---------------------------------------------------------------------------
 
-_TIER1_PROMPT = """\
-You are processing a TikTok video for a personal media library. Your output \
-powers search, browse filters, and aggregate stats. Users will search for \
-specific items ("that grilled cheese recipe"), browse by category ("show me \
-fitness videos"), and ask questions about their collection ("what topics do I \
-save most?").
 
-{image_instruction}
-
-METADATA:
-{context}
-
-Return JSON with this exact structure:
-
-{
-  "summary": "2-3 sentences: what is this about? Why save it? \
-Be specific — name people, products, places.",
-  "entities": [
-    {
-      "name": "specific name (e.g., 'Adidas Samba')",
-      "type": "person|place|product|brand|song|artist|book|\
-movie_or_show|app_or_tool|restaurant|exercise|recipe|\
-ingredient|clothing|technique|trend_or_meme|\
-cultural_reference|event|podcast|game",
-      "relevance": "primary|supporting"
-    }
-  ],
-  "topic": {
-    "primary": "label",
-    "secondary": "label or null"
-  },
-  "genre": "label",
-  "affect": {
-    "dominant": "label",
-    "secondary": "label or null"
-  },
-  "viewer_orientation": "active_learning|\
-passive_consumption|inspiration_saving|\
-shopping_research|social_sharing|emotional_regulation",
-  "embedding_text": "A 100-150 word paragraph for semantic \
-search. Describe the video as if helping someone find it \
-later. Include: main subject, key entities by name, what \
-happens, content type. Be specific — 'Adidas Samba sneaker \
-recommendation for European travel' over 'shoe video'."
-}
-
-TOPIC LABELS (pick one primary, optional secondary):
-food, fashion, beauty, fitness, travel, music, dance, comedy, education, \
-technology, gaming, sports, pets, art, books, movies_tv, news, politics, \
-science, nature, diy, finance, relationships, parenting, health, career, \
-real_estate, automotive, other
-
-Key definitions:
-- fitness: Exercise must be VISIBLE or explicitly discussed. \
-NOT content that merely has fitness hashtags.
-- comedy: Primary purpose is humor. For funny-but-informative \
-content, use the informative topic and let affect capture humor.
-- education: Structured teaching. Career advice = career.
-- health: Wellbeing/medical. Distinct from fitness (exercise).
-
-GENRE LABELS:
-tutorial, review, vlog, skit, storytime, haul, asmr, challenge, reaction, \
-compilation, before_after, day_in_life, get_ready_with_me, unboxing, recipe, \
-workout, news_commentary, interview, timelapse, meme, duet, room_tour, \
-outfit_showcase, ranking, edit, pov, other
-
-AFFECT LABELS:
-funny, wholesome, sad, angry, nostalgic, inspiring, informative, cringe, \
-satisfying, scary, relaxing, shocking, neutral
-
-Key definitions:
-- inspiring: Genuine emotional uplift — NOT merely useful/informative content.
-- informative: Saved to LEARN or REFERENCE. Tutorials, tips, advice, recommendations.
-- neutral: Only when no other label applies.
-
-INSTRUCTIONS:
-- Extract up to 5 entities. Focus on what someone would search for.
-- Use comments to identify entities, cultural references, and context.
-- On-screen text in images is high-value — transcribe names, products, places.
-- Be specific in entity names: "Nike Pegasus 39" not "running shoes".
-- The embedding_text field is critical — it determines \
-whether users can find this item via search. Write it like \
-a rich description, not a label list."""
+def _get_tier1_prompt() -> str:
+    """Load the Tier 1 classification prompt from the versioned filesystem."""
+    return load_prompt("classify", "tier1")
 
 
 # ---------------------------------------------------------------------------
@@ -133,89 +56,9 @@ class VisionFocus(StrEnum):
     PRODUCTS = "products"
 
 
-_VISION_PROMPTS: dict[VisionFocus, str] = {
-    VisionFocus.GENERAL: (
-        "Analyze this TikTok thumbnail/image. Provide:\n"
-        "1. A brief description of what's shown\n"
-        "2. Key objects, people, or products visible\n"
-        "3. Any text detected in the image (OCR)\n"
-        "\n"
-        "Return JSON with keys: description (str), objects (list of str), "
-        "text_detected (str or null).\n"
-        "Return ONLY valid JSON, no markdown fences."
-    ),
-    VisionFocus.BOOKS: (
-        "Analyze this image for book-related content. Look for:\n"
-        "- Book covers, spines, or pages\n"
-        "- Titles, author names, publisher logos\n"
-        "- ISBN barcodes or bookshelf contents\n"
-        "- Any reading material (magazines, comics, textbooks)\n"
-        "\n"
-        "List each identifiable book with title and author if visible.\n"
-        "Capture any visible text on covers, spines, or pages.\n"
-        "\n"
-        "Return JSON with keys: description (str), objects (list of str), "
-        "text_detected (str or null).\n"
-        "Return ONLY valid JSON, no markdown fences."
-    ),
-    VisionFocus.SCENES: (
-        "Analyze this image for movie, TV show, or entertainment content. Look for:\n"
-        "- Recognizable actors, characters, or celebrities\n"
-        "- Movie or TV show scenes, frames, or posters\n"
-        "- Streaming service UI or video player screenshots\n"
-        "- Award shows, premieres, or entertainment events\n"
-        "\n"
-        "Identify specific movies, TV shows, or actors if recognizable.\n"
-        "Note any on-screen text like titles or credits.\n"
-        "\n"
-        "Return JSON with keys: description (str), objects (list of str), "
-        "text_detected (str or null).\n"
-        "Return ONLY valid JSON, no markdown fences."
-    ),
-    VisionFocus.PLACES: (
-        "Analyze this image for place and location content. Look for:\n"
-        "- Restaurant facades, interiors, or menus\n"
-        "- Store signage, business names, or logos\n"
-        "- Landmarks, monuments, or recognizable buildings\n"
-        "- Street signs, addresses, or neighborhood features\n"
-        "\n"
-        "Identify specific businesses, restaurants, or landmarks if recognizable.\n"
-        "Capture all visible signage text, addresses, and business names.\n"
-        "\n"
-        "Return JSON with keys: description (str), objects (list of str), "
-        "text_detected (str or null).\n"
-        "Return ONLY valid JSON, no markdown fences."
-    ),
-    VisionFocus.TEXT: (
-        "Focus on extracting ALL visible text from this image. This may be:\n"
-        "- A screenshot of an app, website, or message\n"
-        "- A recipe, ingredient list, or instructions\n"
-        "- A note, list, article, or caption card\n"
-        "- Overlaid text, subtitles, or watermarks\n"
-        "\n"
-        "Transcribe ALL readable text as accurately as possible.\n"
-        "Preserve formatting like line breaks and bullet points where visible.\n"
-        "Put all transcribed text in the text_detected field.\n"
-        "\n"
-        "Return JSON with keys: description (str), objects (list of str), "
-        "text_detected (str or null).\n"
-        "Return ONLY valid JSON, no markdown fences."
-    ),
-    VisionFocus.PRODUCTS: (
-        "Analyze this image for products and commercial items. Look for:\n"
-        "- Product packaging, labels, or brand logos\n"
-        "- Price tags, store displays, or shopping content\n"
-        "- Unboxing content or product reviews\n"
-        "- Specific brand names, model numbers, or product names\n"
-        "\n"
-        "Identify specific brands and product names if visible.\n"
-        "Capture any text on labels, packaging, or price tags.\n"
-        "\n"
-        "Return JSON with keys: description (str), objects (list of str), "
-        "text_detected (str or null).\n"
-        "Return ONLY valid JSON, no markdown fences."
-    ),
-}
+def _get_vision_prompt(focus: VisionFocus) -> str:
+    """Load a vision focus prompt from the versioned filesystem."""
+    return load_prompt("vision", focus.value)
 
 
 # Module-level client for connection reuse across calls
@@ -349,8 +192,10 @@ async def classify(
 
     # Use replace instead of .format() to avoid crashes when user content
     # contains braces (e.g., caption "Use {this} for cooking")
-    prompt = _TIER1_PROMPT.replace("{context}", context).replace(
-        "{image_instruction}", image_instruction
+    prompt = (
+        _get_tier1_prompt()
+        .replace("{context}", context)
+        .replace("{image_instruction}", image_instruction)
     )
     gemini_model = model or DEFAULT_GEMINI_MODEL
 
@@ -437,7 +282,7 @@ async def analyze_visual(
     Returns:
         VisualAnalysisResult with description, detected objects/text, and grounding sources.
     """
-    base_prompt = _VISION_PROMPTS[focus]
+    base_prompt = _get_vision_prompt(focus)
     if caption:
         prompt = f"Context caption: {caption}\n\n{base_prompt}"
     else:

@@ -657,12 +657,12 @@ def _classify_one_sync(
     import httpx as _httpx
 
     from app.services.gemini import (
-        _TIER1_PROMPT,
         CLASSIFY_MAX_TOKENS,
         DEFAULT_GEMINI_MODEL,
         GEMINI_API_BASE,
         REQUEST_TIMEOUT,
         _build_classify_context,
+        _get_tier1_prompt,
     )
 
     try:
@@ -686,8 +686,10 @@ def _classify_one_sync(
         else:
             image_instruction = "No image is available. Classify based on the metadata below."
 
-        prompt = _TIER1_PROMPT.replace("{context}", context).replace(
-            "{image_instruction}", image_instruction
+        prompt = (
+            _get_tier1_prompt()
+            .replace("{context}", context)
+            .replace("{image_instruction}", image_instruction)
         )
         gemini_model = model or DEFAULT_GEMINI_MODEL
 
