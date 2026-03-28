@@ -1,7 +1,8 @@
-"""Gemini 3 Flash client for classification and visual analysis.
+"""Gemini Flash client for classification and visual analysis.
 
 Two functions:
-- classify(): Classifies a media event using text metadata + ontology prompt.
+- classify(): Classifies a media event using the Tier 1 prompt (text metadata +
+  optional thumbnail). Returns classification, entities, summary, and embedding text.
 - analyze_visual(): Analyzes a thumbnail/image with Gemini vision + Google Search grounding.
 
 Both return Result-style dataclasses (never raise on API errors).
@@ -11,21 +12,109 @@ import json
 import logging
 from dataclasses import dataclass, field
 from enum import StrEnum
+from typing import Any
 
 import httpx
-
-from app.services.ontology import format_ontology_for_prompt
 
 logger = logging.getLogger(__name__)
 
 # Gemini API endpoint
 GEMINI_API_BASE = "https://generativelanguage.googleapis.com/v1beta"
-GEMINI_MODEL = "gemini-2.0-flash"  # Google's latest Flash model
+DEFAULT_GEMINI_MODEL = "gemini-2.0-flash"
 
 # Request defaults
-CLASSIFY_MAX_TOKENS = 1024
+CLASSIFY_MAX_TOKENS = 2048
 VISUAL_MAX_TOKENS = 2048
 REQUEST_TIMEOUT = 30.0
+
+
+# ---------------------------------------------------------------------------
+# Tier 1 classification prompt — ported from workbench/experiments/03-pipeline-v3
+# ---------------------------------------------------------------------------
+
+_TIER1_PROMPT = """\
+You are processing a TikTok video for a personal media library. Your output \
+powers search, browse filters, and aggregate stats. Users will search for \
+specific items ("that grilled cheese recipe"), browse by category ("show me \
+fitness videos"), and ask questions about their collection ("what topics do I \
+save most?").
+
+{image_instruction}
+
+METADATA:
+{context}
+
+Return JSON with this exact structure:
+
+{
+  "summary": "2-3 sentences: what is this about? Why save it? \
+Be specific — name people, products, places.",
+  "entities": [
+    {
+      "name": "specific name (e.g., 'Adidas Samba')",
+      "type": "person|place|product|brand|song|artist|book|\
+movie_or_show|app_or_tool|restaurant|exercise|recipe|\
+ingredient|clothing|technique|trend_or_meme|\
+cultural_reference|event|podcast|game",
+      "relevance": "primary|supporting"
+    }
+  ],
+  "topic": {
+    "primary": "label",
+    "secondary": "label or null"
+  },
+  "genre": "label",
+  "affect": {
+    "dominant": "label",
+    "secondary": "label or null"
+  },
+  "viewer_orientation": "active_learning|\
+passive_consumption|inspiration_saving|\
+shopping_research|social_sharing|emotional_regulation",
+  "embedding_text": "A 100-150 word paragraph for semantic \
+search. Describe the video as if helping someone find it \
+later. Include: main subject, key entities by name, what \
+happens, content type. Be specific — 'Adidas Samba sneaker \
+recommendation for European travel' over 'shoe video'."
+}
+
+TOPIC LABELS (pick one primary, optional secondary):
+food, fashion, beauty, fitness, travel, music, dance, comedy, education, \
+technology, gaming, sports, pets, art, books, movies_tv, news, politics, \
+science, nature, diy, finance, relationships, parenting, health, career, \
+real_estate, automotive, other
+
+Key definitions:
+- fitness: Exercise must be VISIBLE or explicitly discussed. \
+NOT content that merely has fitness hashtags.
+- comedy: Primary purpose is humor. For funny-but-informative \
+content, use the informative topic and let affect capture humor.
+- education: Structured teaching. Career advice = career.
+- health: Wellbeing/medical. Distinct from fitness (exercise).
+
+GENRE LABELS:
+tutorial, review, vlog, skit, storytime, haul, asmr, challenge, reaction, \
+compilation, before_after, day_in_life, get_ready_with_me, unboxing, recipe, \
+workout, news_commentary, interview, timelapse, meme, duet, room_tour, \
+outfit_showcase, ranking, edit, pov, other
+
+AFFECT LABELS:
+funny, wholesome, sad, angry, nostalgic, inspiring, informative, cringe, \
+satisfying, scary, relaxing, shocking, neutral
+
+Key definitions:
+- inspiring: Genuine emotional uplift — NOT merely useful/informative content.
+- informative: Saved to LEARN or REFERENCE. Tutorials, tips, advice, recommendations.
+- neutral: Only when no other label applies.
+
+INSTRUCTIONS:
+- Extract up to 5 entities. Focus on what someone would search for.
+- Use comments to identify entities, cultural references, and context.
+- On-screen text in images is high-value — transcribe names, products, places.
+- Be specific in entity names: "Nike Pegasus 39" not "running shoes".
+- The embedding_text field is critical — it determines \
+whether users can find this item via search. Write it like \
+a rich description, not a label list."""
 
 
 # ---------------------------------------------------------------------------
@@ -143,10 +232,17 @@ def _get_client() -> httpx.AsyncClient:
 
 @dataclass
 class ClassifyResult:
-    """Result of a classification request."""
+    """Result of a classification request.
+
+    The Tier 1 prompt returns structured JSON with classification labels,
+    entities, a summary, and embedding text — all stored here.
+    """
 
     success: bool
     raw_classification: dict | None = None
+    summary: str | None = None
+    entities: list[dict[str, Any]] = field(default_factory=list)
+    embedding_text: str | None = None
     error: str | None = None
 
 
@@ -162,15 +258,36 @@ class VisualAnalysisResult:
     error: str | None = None
 
 
-# Cached ontology prompt (stable across calls for prompt caching)
-_ONTOLOGY_PROMPT: str | None = None
+def _build_classify_context(
+    caption: str | None,
+    subtitle: str | None,
+    hashtags: list[str] | None,
+    creator_username: str | None,
+    music_name: str | None,
+    duration_seconds: int | None,
+    comments: list[str] | None,
+) -> str | None:
+    """Build the METADATA context block for the classify prompt.
 
-
-def _get_ontology_prompt() -> str:
-    global _ONTOLOGY_PROMPT
-    if _ONTOLOGY_PROMPT is None:
-        _ONTOLOGY_PROMPT = format_ontology_for_prompt()
-    return _ONTOLOGY_PROMPT
+    Returns None if no metadata is available.
+    """
+    parts: list[str] = []
+    if caption:
+        parts.append(f"Caption: {caption}")
+    if subtitle:
+        parts.append(f"Transcript: {subtitle[:500]}")
+    if hashtags:
+        parts.append(f"Hashtags: {', '.join(hashtags[:20])}")
+    if creator_username:
+        parts.append(f"Creator: @{creator_username}")
+    if music_name:
+        parts.append(f"Music: {music_name}")
+    if duration_seconds is not None:
+        parts.append(f"Duration: {duration_seconds}s")
+    if comments:
+        top_comments = comments[:10]
+        parts.append(f"Top comments: {' | '.join(top_comments)}")
+    return "\n".join(parts) if parts else None
 
 
 async def classify(
@@ -180,11 +297,17 @@ async def classify(
     hashtags: list[str] | None,
     creator_username: str | None,
     music_name: str | None,
+    *,
+    duration_seconds: int | None = None,
+    thumbnail_url: str | None = None,
+    comments: list[str] | None = None,
+    model: str | None = None,
 ) -> ClassifyResult:
-    """Classify a media event using Gemini 3 Flash.
+    """Classify a media event using the Tier 1 prompt.
 
-    Builds a prompt from text metadata and the ontology, asks Gemini to return
-    structured JSON with tier-1 labels, micro-labels, and confidence scores.
+    Builds a rich prompt from text metadata (and optionally a thumbnail image),
+    asks Gemini to return structured JSON with classification labels, entities,
+    a summary, and embedding text optimized for semantic search.
 
     Args:
         api_key: Gemini API key.
@@ -193,43 +316,63 @@ async def classify(
         hashtags: List of hashtags.
         creator_username: Creator's username.
         music_name: Name of the music track.
+        duration_seconds: Video duration in seconds.
+        thumbnail_url: URL of thumbnail image (included as visual input).
+        comments: Top comments for context.
+        model: Gemini model name override (defaults to DEFAULT_GEMINI_MODEL).
 
     Returns:
-        ClassifyResult with raw_classification dict or error.
+        ClassifyResult with raw_classification, summary, entities, embedding_text,
+        or error.
     """
-    ontology = _get_ontology_prompt()
+    context = _build_classify_context(
+        caption,
+        subtitle,
+        hashtags,
+        creator_username,
+        music_name,
+        duration_seconds,
+        comments,
+    )
 
-    # Build context from available metadata
-    context_parts = []
-    if caption:
-        context_parts.append(f"Caption: {caption}")
-    if subtitle:
-        context_parts.append(f"Transcript: {subtitle[:500]}")
-    if hashtags:
-        context_parts.append(f"Hashtags: {', '.join(hashtags[:20])}")
-    if creator_username:
-        context_parts.append(f"Creator: @{creator_username}")
-    if music_name:
-        context_parts.append(f"Music: {music_name}")
-
-    if not context_parts:
+    if context is None:
         return ClassifyResult(success=False, error="No metadata available for classification")
 
-    context = "\n".join(context_parts)
+    # Build prompt from template
+    if thumbnail_url:
+        image_instruction = (
+            "You are seeing a thumbnail image from the video. "
+            "Extract what you can from this image plus the metadata below."
+        )
+    else:
+        image_instruction = "No image is available. Classify based on the metadata below."
 
-    prompt = (
-        f"{ontology}\n\n"
-        f"## Content to Classify\n\n{context}\n\n"
-        "Classify this TikTok content. Return ONLY valid JSON, no markdown fences."
+    # Use replace instead of .format() to avoid crashes when user content
+    # contains braces (e.g., caption "Use {this} for cooking")
+    prompt = _TIER1_PROMPT.replace("{context}", context).replace(
+        "{image_instruction}", image_instruction
     )
+    gemini_model = model or DEFAULT_GEMINI_MODEL
+
+    # Build request parts — text first, then optional image
+    parts: list[dict[str, Any]] = [{"text": prompt}]
+    if thumbnail_url:
+        parts.append(
+            {
+                "fileData": {
+                    "mimeType": "image/jpeg",
+                    "fileUri": thumbnail_url,
+                }
+            }
+        )
 
     try:
         client = _get_client()
         resp = await client.post(
-            f"{GEMINI_API_BASE}/models/{GEMINI_MODEL}:generateContent",
+            f"{GEMINI_API_BASE}/models/{gemini_model}:generateContent",
             params={"key": api_key},
             json={
-                "contents": [{"parts": [{"text": prompt}]}],
+                "contents": [{"parts": parts}],
                 "generationConfig": {
                     "maxOutputTokens": CLASSIFY_MAX_TOKENS,
                     "temperature": 0.2,
@@ -253,10 +396,15 @@ async def classify(
 
         data = resp.json()
         text = data["candidates"][0]["content"]["parts"][0]["text"]
-
-        # Parse the JSON response
         classification = json.loads(text)
-        return ClassifyResult(success=True, raw_classification=classification)
+
+        return ClassifyResult(
+            success=True,
+            raw_classification=classification,
+            summary=classification.get("summary"),
+            entities=classification.get("entities") or [],
+            embedding_text=classification.get("embedding_text"),
+        )
 
     except httpx.TimeoutException:
         logger.warning({"event": "gemini_classify_timeout"})
@@ -274,6 +422,8 @@ async def analyze_visual(
     image_url: str,
     caption: str | None = None,
     focus: VisionFocus = VisionFocus.GENERAL,
+    *,
+    model: str | None = None,
 ) -> VisualAnalysisResult:
     """Analyze a thumbnail or image using Gemini vision + Google Search grounding.
 
@@ -282,6 +432,7 @@ async def analyze_visual(
         image_url: URL of the image/thumbnail to analyze.
         caption: Optional caption for context.
         focus: Vision analysis focus mode for targeted extraction.
+        model: Gemini model name override (defaults to DEFAULT_GEMINI_MODEL).
 
     Returns:
         VisualAnalysisResult with description, detected objects/text, and grounding sources.
@@ -292,10 +443,12 @@ async def analyze_visual(
     else:
         prompt = base_prompt
 
+    gemini_model = model or DEFAULT_GEMINI_MODEL
+
     try:
         client = _get_client()
         resp = await client.post(
-            f"{GEMINI_API_BASE}/models/{GEMINI_MODEL}:generateContent",
+            f"{GEMINI_API_BASE}/models/{gemini_model}:generateContent",
             params={"key": api_key},
             json={
                 "contents": [

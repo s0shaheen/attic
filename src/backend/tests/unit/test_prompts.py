@@ -66,3 +66,23 @@ class TestBuildSystemPrompt:
         first = build_system_prompt()
         second = build_system_prompt()
         assert first is second  # Same object reference (lru_cache)
+
+    def test_contains_data_quality_section(self):
+        prompt = build_system_prompt()
+        assert "Data Quality" in prompt
+        assert "pipeline_tier1" in prompt
+        assert "agent_chat" in prompt
+
+    def test_contains_label_definitions(self):
+        """Workbench-validated label definitions should be in the prompt."""
+        prompt = build_system_prompt()
+        assert "informative" in prompt
+        assert "inspiring" in prompt
+        # Key definitions from ontology
+        assert "fitness:" in prompt.lower() or "fitness" in prompt
+
+    def test_contains_new_labels(self):
+        prompt = build_system_prompt()
+        assert "informative" in prompt
+        assert "room_tour" in prompt
+        assert "pov" in prompt

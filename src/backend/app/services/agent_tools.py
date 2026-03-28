@@ -20,7 +20,7 @@ from typing import Any
 from uuid import UUID
 
 import httpx
-from sqlalchemy import String, cast, func, or_, select, text
+from sqlalchemy import func, or_, select, text
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.config import Settings
@@ -197,20 +197,14 @@ async def query_items(
             stmt = stmt.where(MediaEvent.creator_username.ilike(f"%{creator}%"))
 
         if topic:
-            # Query cached_classifications JSONB
-            stmt = stmt.where(
-                cast(MediaEvent.cached_classifications["topic"]["label"], String) == topic
-            )
+            # Query cached_classifications JSONB — tier1 structure, astext for unquoted
+            stmt = stmt.where(MediaEvent.cached_classifications["tier1"]["topic"].astext == topic)
 
         if affect:
-            stmt = stmt.where(
-                cast(MediaEvent.cached_classifications["affect"]["label"], String) == affect
-            )
+            stmt = stmt.where(MediaEvent.cached_classifications["tier1"]["affect"].astext == affect)
 
         if genre:
-            stmt = stmt.where(
-                cast(MediaEvent.cached_classifications["genre"]["label"], String) == genre
-            )
+            stmt = stmt.where(MediaEvent.cached_classifications["tier1"]["genre"].astext == genre)
 
         if media_type:
             stmt = stmt.where(MediaEvent.media_type == media_type)
@@ -316,7 +310,7 @@ async def classify(
         if event.cached_classifications:
             return AgentToolResult(success=True, data=event.cached_classifications)
 
-        # Call Gemini
+        # Call Gemini with enriched context
         gemini_result = await gemini_classify(
             api_key=settings.gemini_api_key,
             caption=event.caption_text,
@@ -324,6 +318,9 @@ async def classify(
             hashtags=event.hashtags,
             creator_username=event.creator_username,
             music_name=event.music_name,
+            duration_seconds=event.video_duration_seconds,
+            thumbnail_url=event.thumbnail_url,
+            model=settings.gemini_model,
         )
 
         if not gemini_result.success:
@@ -332,12 +329,19 @@ async def classify(
         # Validate through ontology
         validated = validate_classification(gemini_result.raw_classification or {})
 
-        # Build cache payload
-        cache = {
+        # Build cache payload with Tier 1 enriched fields
+        cache: dict = {
             "tier1": validated.tier1,
             "tier2": validated.tier2,
             "confidence": validated.confidence,
+            "source": "agent_chat",
         }
+        if gemini_result.summary:
+            cache["summary"] = gemini_result.summary
+        if gemini_result.entities:
+            cache["entities"] = gemini_result.entities
+        if gemini_result.embedding_text:
+            cache["embedding_text"] = gemini_result.embedding_text
 
         # Write back to DB (upsert pattern — just update the column)
         event.cached_classifications = cache
@@ -1046,19 +1050,20 @@ async def _stats_classification_breakdown(db: AsyncSession, user_id: UUID) -> Ag
             },
         )
 
-    # Get distributions for key facets in a single query (no f-string SQL)
+    # Get distributions for key facets from tier1 structure
     facet_stmt = text(
         """
         SELECT
             facet.key AS facet,
-            facet.value->>'label' AS label,
+            facet.value #>> '{}' AS label,
             COUNT(*) AS count
         FROM media_events,
-             jsonb_each(cached_classifications) AS facet(key, value)
+             jsonb_each(cached_classifications->'tier1') AS facet(key, value)
         WHERE user_id = :uid
           AND cached_classifications IS NOT NULL
+          AND cached_classifications->'tier1' IS NOT NULL
           AND facet.key = ANY(:facets)
-          AND facet.value->>'label' IS NOT NULL
+          AND facet.value #>> '{}' IS NOT NULL
         GROUP BY facet.key, label
         ORDER BY facet.key, count DESC
         """
@@ -1135,16 +1140,16 @@ async def _stats_creator_details(db: AsyncSession, user_id: UUID) -> AgentToolRe
         for row in creator_rows
     }
 
-    # Query 2: Bulk topic fetch for top creators
+    # Query 2: Bulk topic fetch for top creators (tier1 structure)
     topics_stmt = text(
         """
         SELECT creator_username,
-               cached_classifications->'topic'->>'label' AS topic,
+               cached_classifications->'tier1'->>'topic' AS topic,
                COUNT(*) AS topic_count
         FROM media_events
         WHERE user_id = :uid
           AND creator_username = ANY(:creators)
-          AND cached_classifications->'topic'->>'label' IS NOT NULL
+          AND cached_classifications->'tier1'->>'topic' IS NOT NULL
         GROUP BY creator_username, topic
         ORDER BY creator_username, topic_count DESC
         """

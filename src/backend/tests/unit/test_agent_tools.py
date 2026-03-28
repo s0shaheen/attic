@@ -46,6 +46,7 @@ def _make_media_event(
     music_name: str | None = "Original Sound",
     play_count: int | None = 1000,
     like_count: int | None = 500,
+    video_duration_seconds: int | None = 30,
     cached_classifications: dict | None = None,
     cached_entities: list | None = None,
 ) -> MagicMock:
@@ -69,6 +70,7 @@ def _make_media_event(
     event.music_name = music_name
     event.play_count = play_count
     event.like_count = like_count
+    event.video_duration_seconds = video_duration_seconds
     event.cached_classifications = cached_classifications
     event.cached_entities = cached_entities
     return event
@@ -114,6 +116,7 @@ def _make_settings() -> MagicMock:
     """Build a mock Settings object with test API keys."""
     settings = MagicMock()
     settings.gemini_api_key = "test-gemini-key"
+    settings.gemini_model = "gemini-2.0-flash"
     settings.openai_api_key = "test-openai-key"
     settings.google_maps_api_key = "test-maps-key"
     settings.google_books_api_key = "test-books-key"
@@ -329,6 +332,9 @@ class TestClassify:
         gemini_result = MagicMock()
         gemini_result.success = True
         gemini_result.raw_classification = raw_classification
+        gemini_result.summary = "A funny cooking tutorial"
+        gemini_result.entities = [{"name": "Pasta", "type": "recipe", "relevance": "primary"}]
+        gemini_result.embedding_text = "Funny cooking video about pasta"
 
         with patch(
             "app.services.agent_tools.gemini_classify", new_callable=AsyncMock
@@ -341,8 +347,12 @@ class TestClassify:
         assert "tier1" in result.data
         assert "tier2" in result.data
         assert "confidence" in result.data
+        assert result.data["source"] == "agent_chat"
+        assert result.data["summary"] == "A funny cooking tutorial"
+        assert result.data["entities"][0]["name"] == "Pasta"
+        assert result.data["embedding_text"] == "Funny cooking video about pasta"
 
-        # Verify gemini was called with correct args
+        # Verify gemini was called with correct args (including enriched context)
         mock_gemini.assert_called_once_with(
             api_key="test-gemini-key",
             caption=event.caption_text,
@@ -350,6 +360,9 @@ class TestClassify:
             hashtags=event.hashtags,
             creator_username=event.creator_username,
             music_name=event.music_name,
+            duration_seconds=event.video_duration_seconds,
+            thumbnail_url=event.thumbnail_url,
+            model="gemini-2.0-flash",
         )
 
         # Verify DB was updated (event.cached_classifications set + flush)

@@ -313,7 +313,7 @@ class TestPipelineEndToEnd:
     """End-to-end tests for the full pipeline flow."""
 
     def test_full_pipeline_success_marks_upload_complete(self):
-        """Full pipeline: all 4 steps run, upload and pipeline run marked complete."""
+        """Full pipeline: all 5 steps run, upload and pipeline run marked complete."""
         upload_id = str(uuid4())
         user_id = str(uuid4())
         pipeline_run_id = str(uuid4())
@@ -335,6 +335,7 @@ class TestPipelineEndToEnd:
             ),
             patch("app.services.pipeline.step_apify_enrich"),
             patch("app.services.pipeline.step_subtitle_fetch"),
+            patch("app.services.pipeline.step_classify"),
             patch("app.services.pipeline.step_embed"),
         ):
             result = handler(event, _make_context())
@@ -349,7 +350,7 @@ class TestPipelineEndToEnd:
         assert mock_session.commit.call_count > 0
 
     def test_step_order_is_correct(self):
-        """Pipeline steps execute in order: parse -> apify -> subtitle -> embed."""
+        """Pipeline steps execute in order: parse -> apify -> subtitle -> classify -> embed."""
         body = _make_message_body()
         event = _make_sqs_event(body)
 
@@ -366,6 +367,9 @@ class TestPipelineEndToEnd:
         def track_subtitle(*args, **kwargs):
             call_order.append("subtitle")
 
+        def track_classify(*args, **kwargs):
+            call_order.append("classify")
+
         def track_embed(*args, **kwargs):
             call_order.append("embed")
 
@@ -375,11 +379,12 @@ class TestPipelineEndToEnd:
             patch("app.services.pipeline.step_parse_export", side_effect=track_parse),
             patch("app.services.pipeline.step_apify_enrich", side_effect=track_apify),
             patch("app.services.pipeline.step_subtitle_fetch", side_effect=track_subtitle),
+            patch("app.services.pipeline.step_classify", side_effect=track_classify),
             patch("app.services.pipeline.step_embed", side_effect=track_embed),
         ):
             handler(event, _make_context())
 
-        assert call_order == ["parse", "apify", "subtitle", "embed"]
+        assert call_order == ["parse", "apify", "subtitle", "classify", "embed"]
 
     def test_pipeline_failure_at_step2_marks_upload_failed(self):
         """If step 2 (apify) fails, upload is marked as failed."""
@@ -416,6 +421,7 @@ class TestPipelineEndToEnd:
             patch("app.services.pipeline.step_parse_export", return_value=[]),
             patch("app.services.pipeline.step_apify_enrich") as mock_apify,
             patch("app.services.pipeline.step_subtitle_fetch") as mock_subtitle,
+            patch("app.services.pipeline.step_classify"),
             patch("app.services.pipeline.step_embed") as mock_embed,
         ):
             result = handler(event, _make_context())

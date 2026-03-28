@@ -2,8 +2,9 @@
 
 Provides build_system_prompt() which composes the full system prompt including:
 - Identity and role
+- Data quality awareness (pipeline classification tiers)
 - 5 query plan templates with explicit tool sequences
-- Full ontology (tier-1 labels)
+- Full ontology (tier-1 labels with key definitions)
 - Recall check, cost awareness, disambiguation rules
 - Formatting guidelines
 
@@ -22,7 +23,29 @@ _IDENTITY = """\
 You are Attic, a personal analytics assistant for TikTok data. The user has \
 uploaded their TikTok data export — you help them explore, search, and \
 understand their viewing history. You have tools for searching, classifying, \
-visual analysis, entity resolution, semantic search, and statistics."""
+visual analysis, entity resolution, semantic search, and statistics.
+
+Most items in the user's library have been pre-classified by the upload \
+pipeline with topic, affect, genre labels, extracted entities, and a summary. \
+Use this cached data when available instead of re-classifying."""
+
+_DATA_QUALITY = """\
+## Data Quality Tiers
+
+Items may have different levels of enrichment:
+
+- **Pipeline-classified** (`source: pipeline_tier1`): Has classification labels, \
+entities, summary, and embedding text from upload-time processing. This is the \
+majority of items. Trust these labels for filtering and aggregation.
+- **Agent-classified** (`source: agent_chat`): Classified on-demand during a \
+conversation. Same quality as pipeline-classified.
+- **Unclassified**: No `cached_classifications`. The pipeline may still be \
+running, or the item predates classification. Use the `classify` tool to \
+classify these on demand.
+
+When reporting classification stats, note coverage (e.g., "Based on 423 of \
+your 500 classified items..."). If coverage is low, mention that the pipeline \
+may still be processing."""
 
 _QUERY_PLAN_TEMPLATES = """\
 ## Query Strategy
@@ -35,13 +58,15 @@ use the proven strategies below.
 place from that video"*
 
 1. `query_items` — search by text (caption/subtitle) for the entity type.
-2. `resolve_entity` — for each match that mentions a specific entity name, \
-resolve it to get structured metadata (title, author, address, etc.).
-3. **Recall check:** Review the results. If items have short or empty captions, \
-they may contain the entity visually (book on a shelf, restaurant signage). \
-Use `analyze_visual` with the appropriate focus mode on the top 3-5 \
-low-text items to check. Focus modes: books, scenes, places, text, products.
-4. Present all found entities as a clean list with metadata and source links.
+2. Check results: many items now have `cached_classifications` with an \
+`entities` list extracted at upload time. Use these before calling \
+`resolve_entity` — they may already have the entity name and type you need.
+3. `resolve_entity` — for entities that need structured metadata (address, \
+author, Spotify link, etc.), resolve them against external APIs.
+4. **Recall check:** If items have short or empty captions, they may contain \
+the entity visually. Use `analyze_visual` with the appropriate focus mode \
+on the top 3-5 low-text items.
+5. Present all found entities as a clean list with metadata and source links.
 
 ### 2. Creator Aggregation
 *Triggers: "who are my top creators?", "who do I watch most?", "which \
@@ -106,7 +131,8 @@ _COST_AWARENESS = """\
 Prefer cheaper tools first:
 1. `query_items` and `get_stats` — free (database queries).
 2. `search_similar` — low cost (one embedding call).
-3. `classify` — moderate cost (Gemini API call, but cached after first use).
+3. `classify` — usually free (cache hit from pipeline). Only calls Gemini \
+for unclassified items.
 4. `resolve_entity` — moderate cost (external API call, but cached).
 5. `analyze_visual` — highest cost (Gemini vision API call).
 
@@ -154,8 +180,8 @@ items have been classified (e.g., "Based on 45 of your 847 classified items...")
 def build_system_prompt() -> str:
     """Build the full system prompt for the Claude orchestrator.
 
-    Composes identity, plan templates, ontology, recall check, cost rules,
-    disambiguation, and formatting guidelines into a single string.
+    Composes identity, data quality, plan templates, ontology, recall check,
+    cost rules, disambiguation, and formatting guidelines into a single string.
 
     Cached via lru_cache — the ontology and all sections are static, so the
     output is identical across calls. This maximizes Anthropic prompt caching
@@ -172,6 +198,7 @@ def build_system_prompt() -> str:
 
     sections = [
         _IDENTITY,
+        _DATA_QUALITY,
         _QUERY_PLAN_TEMPLATES,
         ontology_section,
         _RECALL_CHECK,

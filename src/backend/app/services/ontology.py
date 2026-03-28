@@ -24,6 +24,7 @@ ONTOLOGY_V1: dict[str, list[str]] = {
         "angry",
         "nostalgic",
         "inspiring",
+        "informative",
         "cringe",
         "satisfying",
         "scary",
@@ -84,6 +85,11 @@ ONTOLOGY_V1: dict[str, list[str]] = {
         "timelapse",
         "meme",
         "duet",
+        "room_tour",
+        "outfit_showcase",
+        "ranking",
+        "edit",
+        "pov",
         "other",
     ],
     "communicative_intent": [
@@ -197,8 +203,20 @@ def validate_classification(raw: dict[str, Any]) -> ClassificationResult:
             micro_labels: list[str] = []
             conf = 0.5
         elif isinstance(facet_data, dict):
-            label = str(facet_data.get("label", "")).lower().strip()
+            # Support multiple key formats: "label" (old ontology prompt),
+            # "primary" (Tier 1 topic), "dominant" (Tier 1 affect)
+            raw_label = (
+                facet_data.get("label")
+                or facet_data.get("primary")
+                or facet_data.get("dominant")
+                or ""
+            )
+            label = str(raw_label).lower().strip()
             micro_labels = facet_data.get("micro_labels", [])
+            # Also capture "secondary" as a micro-label if present
+            secondary = facet_data.get("secondary")
+            if secondary and isinstance(secondary, str):
+                micro_labels = list(micro_labels) + [secondary]
             conf = float(facet_data.get("confidence", 0.5))
         else:
             continue
@@ -235,8 +253,9 @@ def validate_classification(raw: dict[str, Any]) -> ClassificationResult:
 def format_ontology_for_prompt() -> str:
     """Format the ontology as a string for inclusion in LLM prompts.
 
-    Returns a compact representation listing each facet and its valid labels,
-    designed for prompt-caching efficiency (stable text across calls).
+    Returns a representation listing each facet, its valid labels, and key
+    definitions for commonly confused labels. Designed for prompt-caching
+    efficiency (stable text across calls).
     """
     lines = ["## Classification Ontology (Tier-1 Labels)", ""]
     for facet, labels in ONTOLOGY_V1.items():
@@ -244,6 +263,41 @@ def format_ontology_for_prompt() -> str:
         labels_str = ", ".join(labels)
         lines.append(f"**{facet_display}**: {labels_str}")
     lines.append("")
+
+    # Label definitions — the single biggest quality lever from workbench experiments.
+    # These disambiguate commonly confused labels and reduce misclassification.
+    lines.append("### Key Definitions")
+    lines.append("")
+    lines.append(
+        "**Affect:**\n"
+        "- inspiring: Genuine emotional uplift — overcoming adversity, achievement, "
+        "beauty. NOT merely useful/informative content.\n"
+        "- informative: Saved to LEARN or REFERENCE — tutorials, tips, advice, "
+        "recommendations. The user wants the knowledge, not an emotional response.\n"
+        "- neutral: Only when no other affect label applies. Most content has some affect."
+    )
+    lines.append("")
+    lines.append(
+        "**Topic:**\n"
+        "- fitness: Exercise must be VISIBLE or explicitly discussed. "
+        "NOT content that merely has fitness hashtags.\n"
+        "- comedy: Primary purpose is humor. For funny-but-informative content, "
+        "use the informative topic and let affect capture the humor.\n"
+        "- education: Structured teaching (classroom, lecture, explainer). "
+        "Career advice = career, not education.\n"
+        "- health: Wellbeing, medical, mental health. Distinct from fitness (exercise)."
+    )
+    lines.append("")
+    lines.append(
+        "**Genre:**\n"
+        "- room_tour: Showing a space — bedroom, apartment, office setup.\n"
+        "- outfit_showcase: Trying on or displaying clothing/outfits.\n"
+        "- ranking: Ordering or rating items (tier lists, top 5s).\n"
+        "- edit: Short-form creative edit with transitions, effects, or music sync.\n"
+        "- pov: First-person perspective skit or scenario."
+    )
+    lines.append("")
+
     lines.append(
         "For each facet, pick exactly one tier-1 label. "
         "You may also suggest micro-labels (tier-2) for nuance."

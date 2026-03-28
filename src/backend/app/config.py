@@ -50,6 +50,10 @@ class Settings(BaseSettings):
     gemini_api_key: str | None = Field(
         default=None, description="Google Gemini API key for classification/vision"
     )
+    gemini_model: str = Field(
+        default="gemini-2.0-flash",
+        description="Gemini model name for classification/vision",
+    )
 
     # Entity resolution APIs (optional — agent tools degrade gracefully without them)
     google_maps_api_key: str | None = Field(

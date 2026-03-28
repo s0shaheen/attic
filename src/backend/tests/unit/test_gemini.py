@@ -15,10 +15,15 @@ from app.services.gemini import _VISION_PROMPTS, VisionFocus, analyze_visual, cl
 
 class TestClassify:
     @pytest.mark.asyncio
-    async def test_classify_success(self):
+    async def test_classify_success_with_tier1_fields(self):
         classification = {
-            "affect": {"label": "funny", "confidence": 0.9},
-            "topic": {"label": "food", "confidence": 0.8},
+            "summary": "A cooking tutorial showing grilled cheese technique.",
+            "entities": [{"name": "Grilled Cheese", "type": "recipe", "relevance": "primary"}],
+            "topic": {"primary": "food", "secondary": None},
+            "genre": "recipe",
+            "affect": {"dominant": "informative", "secondary": None},
+            "viewer_orientation": "active_learning",
+            "embedding_text": "A grilled cheese tutorial showing the perfect flip technique.",
         }
         mock_response = httpx.Response(
             200,
@@ -40,6 +45,10 @@ class TestClassify:
 
         assert result.success is True
         assert result.raw_classification == classification
+        assert result.summary == "A cooking tutorial showing grilled cheese technique."
+        assert len(result.entities) == 1
+        assert result.entities[0]["name"] == "Grilled Cheese"
+        assert result.embedding_text is not None
 
     @pytest.mark.asyncio
     async def test_classify_no_metadata_returns_error(self):
@@ -134,6 +143,8 @@ class TestClassify:
                 hashtags=["tag1"],
                 creator_username="user1",
                 music_name="song1",
+                duration_seconds=60,
+                comments=["great video", "love this"],
             )
 
             # Check prompt contains all metadata
@@ -145,6 +156,114 @@ class TestClassify:
             assert "tag1" in prompt_text
             assert "user1" in prompt_text
             assert "song1" in prompt_text
+            assert "60s" in prompt_text
+            assert "great video" in prompt_text
+
+    @pytest.mark.asyncio
+    async def test_classify_with_thumbnail_includes_image_part(self):
+        mock_response = httpx.Response(
+            200,
+            json={"candidates": [{"content": {"parts": [{"text": "{}"}]}}]},
+        )
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
+
+            await classify(
+                api_key="test-key",
+                caption="test video",
+                subtitle=None,
+                hashtags=None,
+                creator_username=None,
+                music_name=None,
+                thumbnail_url="https://example.com/thumb.jpg",
+            )
+
+            call_args = mock_client.post.call_args
+            body = call_args.kwargs["json"]
+            parts = body["contents"][0]["parts"]
+            assert len(parts) == 2
+            assert "fileData" in parts[1]
+            assert parts[1]["fileData"]["fileUri"] == "https://example.com/thumb.jpg"
+
+    @pytest.mark.asyncio
+    async def test_classify_without_thumbnail_text_only(self):
+        mock_response = httpx.Response(
+            200,
+            json={"candidates": [{"content": {"parts": [{"text": "{}"}]}}]},
+        )
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
+
+            await classify(
+                api_key="test-key",
+                caption="test video",
+                subtitle=None,
+                hashtags=None,
+                creator_username=None,
+                music_name=None,
+            )
+
+            call_args = mock_client.post.call_args
+            body = call_args.kwargs["json"]
+            parts = body["contents"][0]["parts"]
+            assert len(parts) == 1
+            assert "text" in parts[0]
+
+    @pytest.mark.asyncio
+    async def test_classify_model_override(self):
+        mock_response = httpx.Response(
+            200,
+            json={"candidates": [{"content": {"parts": [{"text": "{}"}]}}]},
+        )
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
+
+            await classify(
+                api_key="test-key",
+                caption="test",
+                subtitle=None,
+                hashtags=None,
+                creator_username=None,
+                music_name=None,
+                model="gemini-3-flash-preview",
+            )
+
+            call_args = mock_client.post.call_args
+            url = call_args.args[0]
+            assert "gemini-3-flash-preview" in url
+
+    @pytest.mark.asyncio
+    async def test_classify_missing_summary_and_entities_graceful(self):
+        """Gemini returns minimal JSON — missing optional Tier 1 fields."""
+        classification = {"topic": {"primary": "food"}}
+        mock_response = httpx.Response(
+            200,
+            json={"candidates": [{"content": {"parts": [{"text": json.dumps(classification)}]}}]},
+        )
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
+
+            result = await classify(
+                api_key="test-key",
+                caption="food video",
+                subtitle=None,
+                hashtags=None,
+                creator_username=None,
+                music_name=None,
+            )
+
+        assert result.success is True
+        assert result.summary is None
+        assert result.entities == []
+        assert result.embedding_text is None
 
 
 # ---------------------------------------------------------------------------
@@ -232,6 +351,28 @@ class TestAnalyzeVisual:
 
         assert result.success is False
         assert "timed out" in result.error
+
+    @pytest.mark.asyncio
+    async def test_analyze_visual_model_override(self):
+        analysis = {"description": "test", "objects": [], "text_detected": None}
+        mock_response = httpx.Response(
+            200,
+            json={"candidates": [{"content": {"parts": [{"text": json.dumps(analysis)}]}}]},
+        )
+        with patch("app.services.gemini._get_client") as mock_get_client:
+            mock_client = AsyncMock()
+            mock_get_client.return_value = mock_client
+            mock_client.post = AsyncMock(return_value=mock_response)
+
+            await analyze_visual(
+                api_key="test-key",
+                image_url="https://example.com/thumb.jpg",
+                model="gemini-3-flash-preview",
+            )
+
+            call_args = mock_client.post.call_args
+            url = call_args.args[0]
+            assert "gemini-3-flash-preview" in url
 
 
 # ---------------------------------------------------------------------------

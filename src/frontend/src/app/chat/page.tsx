@@ -8,10 +8,25 @@ import React, { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
+interface StructuredEvent {
+  type: "media_grid" | "entity_card" | "stat_card";
+  data: Record<string, unknown>;
+}
+
+interface MediaGridItem {
+  id: string;
+  caption?: string;
+  creator?: string;
+  thumbnail_url?: string;
+  canonical_url?: string;
+  media_type?: string;
+}
+
 interface Message {
   id: string;
   role: "user" | "assistant";
   content: string;
+  structuredEvents?: StructuredEvent[];
 }
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
@@ -186,6 +201,26 @@ export default function ChatPage() {
           )
         );
         break;
+      case "media_grid":
+      case "entity_card":
+      case "stat_card":
+        setMessages((prev) =>
+          prev.map((m) =>
+            m.id === assistantId
+              ? {
+                  ...m,
+                  structuredEvents: [
+                    ...(m.structuredEvents ?? []),
+                    { type: eventType as StructuredEvent["type"], data },
+                  ],
+                }
+              : m
+          )
+        );
+        break;
+      case "tool_activity":
+        // Loading indicators deferred to task 2B
+        break;
       case "error":
         setError(data.error as string);
         break;
@@ -248,36 +283,162 @@ export default function ChatPage() {
               className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
             >
               <div
-                className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed ${
+                className={`rounded-2xl px-4 py-3 text-sm leading-relaxed ${
                   message.role === "user"
-                    ? "bg-blue-600 text-white"
-                    : "bg-neutral-800 text-neutral-100"
+                    ? "max-w-[85%] bg-blue-600 text-white"
+                    : "max-w-[90%] bg-neutral-800 text-neutral-100"
                 }`}
               >
                 {message.role === "assistant" ? (
-                  message.content ? (
-                    <div className="prose prose-sm prose-invert max-w-none prose-headings:text-neutral-100 prose-p:text-neutral-200 prose-strong:text-white prose-li:text-neutral-200 prose-code:text-blue-300">
-                      <ReactMarkdown
-                        remarkPlugins={[remarkGfm]}
-                        components={{
-                          a: ({ href, children }) => (
-                            <a
-                              href={href}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-blue-400 underline hover:text-blue-300"
-                            >
-                              {children}
-                            </a>
-                          ),
-                        }}
-                      >
-                        {message.content}
-                      </ReactMarkdown>
-                    </div>
-                  ) : (
-                    <span className="inline-block h-4 w-4 animate-pulse rounded-full bg-neutral-600" />
-                  )
+                  <>
+                    {message.content ? (
+                      <div className="prose prose-sm prose-invert max-w-none prose-headings:text-neutral-100 prose-p:text-neutral-200 prose-strong:text-white prose-li:text-neutral-200 prose-code:text-blue-300">
+                        <ReactMarkdown
+                          remarkPlugins={[remarkGfm]}
+                          components={{
+                            a: ({ href, children }) => (
+                              <a
+                                href={href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-400 underline hover:text-blue-300"
+                              >
+                                {children}
+                              </a>
+                            ),
+                          }}
+                        >
+                          {message.content}
+                        </ReactMarkdown>
+                      </div>
+                    ) : (
+                      <span className="inline-block h-4 w-4 animate-pulse rounded-full bg-neutral-600" />
+                    )}
+                    {/* Structured events: media grids, entity cards, stat cards */}
+                    {message.structuredEvents?.map((event, i) => (
+                      <div key={i}>
+                        {event.type === "media_grid" && (
+                          <div className="-mx-2 mt-3 flex gap-2 overflow-x-auto px-2 pb-2">
+                            {(
+                              (event.data.items as MediaGridItem[]) ?? []
+                            ).map((item) => (
+                              <a
+                                key={item.id}
+                                href={item.canonical_url ?? "#"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-36 flex-none overflow-hidden rounded-lg border border-neutral-700 transition-colors hover:border-blue-500"
+                              >
+                                {item.thumbnail_url ? (
+                                  <img
+                                    src={item.thumbnail_url}
+                                    alt=""
+                                    className="h-48 w-full object-cover"
+                                    loading="lazy"
+                                  />
+                                ) : (
+                                  <div className="flex h-48 w-full items-center justify-center bg-neutral-900 text-xs text-neutral-600">
+                                    No thumbnail
+                                  </div>
+                                )}
+                                <div className="p-2">
+                                  {item.creator && (
+                                    <p className="truncate text-xs text-neutral-400">
+                                      @{item.creator}
+                                    </p>
+                                  )}
+                                  {item.caption && (
+                                    <p className="mt-0.5 line-clamp-2 text-xs text-neutral-300">
+                                      {item.caption}
+                                    </p>
+                                  )}
+                                </div>
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                        {event.type === "entity_card" && (
+                          <div className="mt-3 rounded-lg border border-neutral-700 p-3">
+                            <div className="flex items-center gap-2">
+                              <span className="rounded bg-blue-900/50 px-1.5 py-0.5 text-[10px] font-medium uppercase text-blue-400">
+                                {event.data.entity_type as string}
+                              </span>
+                              <span className="text-sm font-medium text-white">
+                                {event.data.name as string}
+                              </span>
+                            </div>
+                            {event.data.metadata != null &&
+                              typeof event.data.metadata === "object" ? (
+                                <div className="mt-2 space-y-1">
+                                  {Object.entries(
+                                    event.data.metadata as Record<
+                                      string,
+                                      unknown
+                                    >
+                                  )
+                                    .filter(
+                                      ([, v]) =>
+                                        v !== null &&
+                                        v !== undefined &&
+                                        v !== ""
+                                    )
+                                    .slice(0, 4)
+                                    .map(([k, v]) => (
+                                      <p
+                                        key={k}
+                                        className="text-xs text-neutral-400"
+                                      >
+                                        <span className="text-neutral-500">
+                                          {k.replace(/_/g, " ")}:
+                                        </span>{" "}
+                                        <span className="text-neutral-300">
+                                          {`${v}`}
+                                        </span>
+                                      </p>
+                                    ))}
+                                </div>
+                              ) : null}
+                          </div>
+                        )}
+                        {event.type === "stat_card" && (
+                          <div className="mt-3 rounded-lg border border-neutral-700 p-3">
+                            <p className="text-[10px] font-medium uppercase tracking-wide text-neutral-500">
+                              {event.data.title as string}
+                            </p>
+                            {event.data.data != null &&
+                              typeof event.data.data === "object" ? (
+                                <div className="mt-2 space-y-1">
+                                  {Object.entries(
+                                    event.data.data as Record<string, unknown>
+                                  )
+                                    .filter(
+                                      ([, v]) =>
+                                        typeof v === "number" ||
+                                        typeof v === "string"
+                                    )
+                                    .slice(0, 6)
+                                    .map(([k, v]) => (
+                                      <div
+                                        key={k}
+                                        className="flex justify-between text-xs"
+                                      >
+                                        <span className="text-neutral-400">
+                                          {k.replace(/_/g, " ")}
+                                        </span>
+                                        <span className="font-medium text-neutral-200">
+                                          {typeof v === "number"
+                                            ? (v as number).toLocaleString()
+                                            : `${v}`}
+                                        </span>
+                                      </div>
+                                    ))}
+                                </div>
+                              ) : null}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </>
                 ) : (
                   message.content
                 )}

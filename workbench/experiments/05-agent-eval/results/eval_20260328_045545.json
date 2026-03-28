@@ -1,0 +1,108 @@
+{
+  "summary": {
+    "timestamp": "20260328_045545",
+    "total_queries": 1,
+    "success_rate": "1/1 (100%)",
+    "tools_match_rate": "1/1 (100%)",
+    "avg_latency_ms": 7435,
+    "total_tokens": 17460,
+    "total_structured_events": 1
+  },
+  "results": [
+    {
+      "id": "adhoc",
+      "query": "what restaurants do i have saved?",
+      "strategy": "adhoc",
+      "tags": [
+        "adhoc"
+      ],
+      "elapsed_ms": 7435,
+      "total_tokens": 17460,
+      "response_length": 1700,
+      "response_text": "I'll search for restaurants in your TikTok data.Great! I found **8 restaurant-related items** in your saved TikToks. Here are the specific restaurants you've saved:\n\n### Restaurant Recommendations\n\n**1. Lardon** \u2014 Chicago (Logan Square)\n- **Creator:** @realtorchicago773\n- **Cuisine:** Sandwiches with house-made meats\n- **Highlights:** Michelin Guide 2026 recognition, high-quality technique\n- **Saved:** Feb 10, 2026\n- [Watch on TikTok](https://www.tiktok.com/@realtorchicago773)\n\n**2. Falafel & Grill** \u2014 Chicago\n- **Creator:** @falafelngrill\n- **Cuisine:** Mediterranean/Lebanese (falafel, kabobs, hummus)\n- **Highlights:** Vibrant food presentation, dinner-friendly\n- **Saved:** Apr 1, 2025\n\n**3. Lawrence Fish Market** \u2014 Chicago (Albany Park)\n- **Creator:** @isabellebanez\n- **Cuisine:** Sushi takeout platters\n- **Highlights:** Affordable, high-quality, cash-only, Michelin chef-approved\n- **Saved:** Mar 20, 2025\n\n**4. RH Restaurant** \u2014 Indianapolis\n- **Creator:** @arabellajensenn\n- **Cuisine:** Fine dining/upscale\n- **Highlights:** Grand estate-like setting, elegant interior, champagne service\n- **Saved:** May 25, 2024\n\n### Other Restaurant-Related Videos\n\nI also found a couple of videos that mention restaurants in an indirect way:\n- **Homemade Chick-fil-A Recipe** \u2014 DIY tutorial by @cooking_with.kian (detailed copycat recipe)\n- **CLAWDbot** \u2014 AI reservation booking demo by @trytwin.so (technology focused)\n\nIt looks like you have great taste in Chicago dining! Three of your four saved restaurants are in Chicago, with a focus on quality ingredients and unique cuisines. \n\n**Would you like to explore more Chicago food spots, or learn about recipes from any of these restaurants?**",
+      "tool_sequence": [
+        "query_items"
+      ],
+      "tool_calls_count": 1,
+      "expected_tools": [],
+      "tools_match": true,
+      "structured_events": [
+        {
+          "type": "media_grid",
+          "data": {
+            "items": [
+              {
+                "id": "20000000-0000-0000-0000-000000000058",
+                "caption": "Experience the future as CLAWDbot  books restaurant tables through voices and discover how AI transforms dining services in real time ahhhh!!\n\n#clawdbot #reservation #aiagent #automation #greenscreen ",
+                "creator": "trytwin.so",
+                "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/og1iDCA4EbIpSMXodf1YaIRv0xyJnBsHzBiwAB~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=tkef6qDTF1JrD2o2jyIP5RIKhq4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+                "canonical_url": null,
+                "media_type": "video"
+              },
+              {
+                "id": "20000000-0000-0000-0000-000000000093",
+                "caption": "Homemade Chick-fil-a :)\n\nChick-fil-a sauce\n\n\u00bd cup mayonnaise \n3 Tbsp barbecue sauce\n2 Tbsp honey\n2 Tbsp yellow mustard\n\u00bd Tsp kosher salt \n\u00bd black pepper\n\u00bd a lemon juiced\n\nChicken Brine\n\n4 boneless skinless chicken thighs \n1 cups buttermilk\n1 cup pickle juice\n1 Tbsp paprika\n1 \u00bd Tbsp garlic powder\n1 tsp cayenne\n1 tsp white pepper\n1 tsp onion powder\n1 Tbsp kosher salt\n\nDry Drede \n\n2 cups all purpose flour\n\u00bd cup potato starch\n1 Tbsp paprika\n1 Tbsp garlic powder\n1 tsp onion powder\n1 tsp MSG (optional)\n1 Tbsp kosher salt\n2 \u00bd tsp cayenne \n1 tsp ground black pepper\n\nWaffle Fries\n\n3 large russet potatoes\n1 \u00bd Tbsp white vinegar\n1 Tbsp salt\n1.5 qt vegetable oil for frying\n\nPickles\n\n1 small english cucumber or \u00bd a large one, sliced into thin rounds \n1 Tbsp pickling spice\n1 cup white vinegar\n1 cup water\n2 Tbsp sugar\n1 tsp MSG optional \n2 Tbsp kosher salt\n2 sprigs dill\n\nAssembly \n\n4 burger buns\n4 slices pepper jack \n1 small head butter lettuce,\n1 beefsteak tomato, thinly sliced\nLemonade (for the traditional experience) \n\nFor the Chick-fil-a sauce, in a mixing bowl add, mayonnaise, barbecue sauce, honey, yellow mustard, kosher salt, black pepper and lemon. Mix until fully combined and set aside in the fridge. \n\nFor the pickles, add your sliced cucumber to your mason jar along with the dill and pickling spice. In your sauce pot add white vinegar, water, sugar, MSG and kosher salt. Bring to a simmer then pour into the mason jar. Screw the lid on, let cool then refrigerate while you prep everything else. \n\nPrep the fries. Peel your potatoes and cut on a slice once on a wavy  mandoline, quarter turn, slice again and so on and so forth to get your waffle fries. If you don't have a wavy mandoline, you can cut the potatoes normally.\n\nAdd the potatoes to a large bowl and cover with ice water. Mix well to remove the starch, drain and set aside. \n\nFill a large pot \u2154 the way with water, cover with a lid and bring to a boil. Once boiling add, white vinegar and salt.\n \nAdd your fries carefully to the pot and cook for about 2-3 minutes until slightly soft but not fully cooked. When you break one in half it should not snap like it's raw but it should be cooked with slight resistance. Make sure not to over cook this. Remove your potatoes to a couple of wire racks to cool. \n\nHeat your frying oil in a large pot to 330\u00b0F.\n\nCarefully add your fries in batches and fry for 1-2 minutes until par cooked but not golden. Remove to a wire rack and set aside while we work on our chicken.\n\nChicken Brine: To a large bowl add, buttermilk, pickle juice, kosher salt, black pepper, garlic powder, onion powder, paprika, cayenne and MSG. Add your chicken, mix well to coat and set aside in the fridge for 1 hour to overnight. Or use right away. \n\nIn a large bowl add all purpose flour, potato starch, kosher salt, black pepper, garlic powder, onion powder, paprika, cayenne and whisk to combine. Remove the chicken from the fridge. Coat the chicken in the dry dredge with no bald spots then dip back in the wet brine then back in the dry with no bald spots. Place your coated chicken on a wire rack and set aside.\n\nHeat your oil to 350\u00b0 F. Once your oil is up to temp, fry your chicken, 2 pieces at a time for about 6-8 minutes, until fully cooked and golden brown and crispy. Remove to a wire rack and repeat with all your chicken. \n\nHeat your oil to 375\u00b0F. \n\nCarefully add your par cooked fries to the oil in batches and fry for 1-2 minutes until beautiful golden brown and crispy. Remove to a wire rack and season generously with salt. \n\nAssembly, on a toasted bun add sauce, pickles, lettuce, tomato, chicken and cheese. melt however possible then add the sauced top bun. Serve with the fries and lemonade. Enjoy!\n ",
+                "creator": "cooking_with.kian",
+                "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ogUW6PAZigoGSa4ZB47PagqiEBwBM1kIPUIaE~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=4KkWrinLYzk%2BN%2BP%2BWCuH%2B4BAwzc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+                "canonical_url": null,
+                "media_type": "video"
+              },
+              {
+                "id": "20000000-0000-0000-0000-000000000026",
+                "caption": "Day 1 - 6 Start ups in 6 months | Gonna be a journey but let\u2019s gooo! #saas #startup #vibecoding ",
+                "creator": "drewsimic_",
+                "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/okScQ6FE78V5uLAcEGDAQQj7R7pAjBME3kEife~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=VhUCink7j5zs6PsnQUt8BQGABLA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+                "canonical_url": null,
+                "media_type": "video"
+              },
+              {
+                "id": "20000000-0000-0000-0000-000000000085",
+                "caption": "Chicago just got Michelin-recognized for sandwiches. Yes, really.\n\nLardon officially landed a spot on the Michelin Guide 2026 Must-Try Sandwiches list, and this 30-second stop proves why.\n\nHouse-made meats. Serious technique. Zero fluff.\n\nThis is the kind of sandwich that makes you stop scrolling\u2014and start planning lunch.\n\nIf you\u2019re eating your way through Chicago\u2019s best food spots, Lardon just became mandatory.\n\n\ud83d\udccd Logan Square\n\u2b50 Michelin Guide 2026\n\ud83e\udd56 Save this for later\n\n#michelinguide #chicagoeats #bestsandwiches #chicagorestaurants #chicagorealestate ",
+                "creator": "realtorchicago773",
+                "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oAIh0D7gpqEJnt0KBnFEAYD6EiARNU1IEefWVo~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=GHx1XfzHrh%2F7GN3hBIJkuCNWJyQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+                "canonical_url": null,
+                "media_type": "video"
+              },
+              {
+                "id": "20000000-0000-0000-0000-000000000068",
+                "caption": "Follow for more Tim Dillon clips and rants \ud83e\udef5 #timdillon #fyp #rant #flowstate ",
+                "creator": "scapehaven.tt",
+                "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ocwgAIQGjk3gSAleJOExGMl2y9LGICL5kEeHeN~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=18%2FDUtGyfKNudLftdnyrbPDAgTI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+                "canonical_url": null,
+                "media_type": "video"
+              },
+              {
+                "id": "20000000-0000-0000-0000-000000000080",
+                "caption": "This is your sign to come on in and taste these delicious flavors  \ud83e\udd59 \ud83d\udc6b\n\n #FalafelandGrill #MediterraneanFood #FoodnFriends #ChicagoEats #ChicagoFoodie #DinnerNight",
+                "creator": "falafelngrill",
+                "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/osJEAzF7lEDoG1BAD5XgfUEensIMRMADS3NDMB~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=ApO%2FhzUAYpQGHnWzZp%2BgFiedvJc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+                "canonical_url": null,
+                "media_type": "video"
+              },
+              {
+                "id": "20000000-0000-0000-0000-000000000082",
+                "caption": "part 2 | I\u2019ve been going here since I was young \ud83c\udf63 their platters are perfect for birthdays, affordable, and they never disappoint *cash only!\n\n#chicagorestaurants #chicago #albanypark ",
+                "creator": "isabellebanez",
+                "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ogNH93GdLA33ufwnAjWwAEdII7aQgkAeAPHyeI~tplv-tiktokx-dmt-logom:tos-useast5-i-0068-tx/oEAAfvIIEHAP3JuefPLkcqD7R790oIAaGEHjAW.image?dr=9634&x-expires=1774641600&x-signature=Bn9wlK1Ckd8ZaFtO2WWD1v9riFw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+                "canonical_url": null,
+                "media_type": "video"
+              },
+              {
+                "id": "20000000-0000-0000-0000-000000000083",
+                "caption": "The RH restaurant in Indianapolis is a must see!! #rhrestaurant #thingstodoindiana ",
+                "creator": "arabellajensenn",
+                "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ogQGZRCqVe1fRFw4z7OOFVHAIqI4jBNIGAeLGe~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=EaBgupKExqqY8Ez%2BVMjBmtBla4k%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+                "canonical_url": null,
+                "media_type": "video"
+              }
+            ],
+            "total": 8
+          }
+        }
+      ],
+      "structured_event_count": 1,
+      "error": null,
+      "success": true
+    }
+  ]
+}

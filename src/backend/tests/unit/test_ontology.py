@@ -151,3 +151,39 @@ class TestFormatOntologyForPrompt:
         result = format_ontology_for_prompt()
         assert "tier-1" in result.lower()
         assert "JSON" in result
+
+    def test_contains_label_definitions(self):
+        result = format_ontology_for_prompt()
+        assert "Key Definitions" in result
+        assert "inspiring:" in result
+        assert "informative:" in result
+        assert "fitness:" in result
+
+    def test_contains_new_genre_definitions(self):
+        result = format_ontology_for_prompt()
+        assert "room_tour:" in result
+        assert "outfit_showcase:" in result
+        assert "ranking:" in result
+
+
+class TestNewLabels:
+    """Test that new labels added in v3 are recognized."""
+
+    def test_informative_is_valid_affect(self):
+        assert "informative" in ONTOLOGY_V1["affect"]
+
+    def test_validate_classification_accepts_informative(self):
+        raw = {"affect": {"label": "informative", "confidence": 0.9}}
+        result = validate_classification(raw)
+        assert result.tier1["affect"] == "informative"
+
+    def test_new_genre_labels_exist(self):
+        genres = ONTOLOGY_V1["genre"]
+        for label in ["room_tour", "outfit_showcase", "ranking", "edit", "pov"]:
+            assert label in genres, f"Genre '{label}' missing from ONTOLOGY_V1"
+
+    def test_validate_classification_accepts_new_genres(self):
+        for label in ["room_tour", "outfit_showcase", "ranking", "edit", "pov"]:
+            raw = {"genre": {"label": label, "confidence": 0.8}}
+            result = validate_classification(raw)
+            assert result.tier1["genre"] == label

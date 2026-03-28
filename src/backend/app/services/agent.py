@@ -7,6 +7,15 @@ Implements a ~50-line core loop that:
 4. Repeats until Claude returns a text response (or hits limits)
 5. Yields SSE events as an async generator
 
+SSE event types:
+- token: streamed text chunks from Claude
+- done: completion signal with token count
+- error: error message
+- tool_activity: tool call started/completed/failed
+- media_grid: structured media items from query_items/search_similar
+- entity_card: resolved entity from resolve_entity
+- stat_card: aggregate statistics from get_stats
+
 Cost controls: 50 tool calls per query, 200 per hour per user.
 """
 
@@ -19,6 +28,7 @@ from typing import Any
 from uuid import UUID
 
 import anthropic
+from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.config import Settings
@@ -189,6 +199,146 @@ def _sse_error(message: str) -> SSEEvent:
 
 
 # ---------------------------------------------------------------------------
+# Structured SSE events — rich data for frontend rendering
+# ---------------------------------------------------------------------------
+
+
+class MediaGridItem(BaseModel):
+    """Single item in a media grid event."""
+
+    id: str
+    caption: str | None = None
+    creator: str | None = None
+    thumbnail_url: str | None = None
+    canonical_url: str | None = None
+    media_type: str = "video"
+
+
+class MediaGridEvent(BaseModel):
+    """Grid of media items from query_items or search_similar."""
+
+    items: list[MediaGridItem]
+    total: int
+
+
+class EntityCardEvent(BaseModel):
+    """Resolved entity from resolve_entity."""
+
+    entity_type: str
+    name: str
+    metadata: dict[str, Any]
+    source_media_event_id: str
+
+
+class StatCardEvent(BaseModel):
+    """Aggregate statistics from get_stats."""
+
+    stat_type: str
+    title: str
+    data: dict[str, Any]
+
+
+class ToolActivityEvent(BaseModel):
+    """Tool call lifecycle event for loading indicators."""
+
+    tool_name: str
+    status: str  # "started" | "completed" | "failed"
+
+
+def _sse_media_grid(data: MediaGridEvent) -> SSEEvent:
+    return SSEEvent(event="media_grid", data=data.model_dump_json())
+
+
+def _sse_entity_card(data: EntityCardEvent) -> SSEEvent:
+    return SSEEvent(event="entity_card", data=data.model_dump_json())
+
+
+def _sse_stat_card(data: StatCardEvent) -> SSEEvent:
+    return SSEEvent(event="stat_card", data=data.model_dump_json())
+
+
+def _sse_tool_activity(data: ToolActivityEvent) -> SSEEvent:
+    return SSEEvent(event="tool_activity", data=data.model_dump_json())
+
+
+# Tools that emit structured events after successful execution
+_STRUCTURED_EVENT_TOOLS = {"query_items", "search_similar", "resolve_entity", "get_stats"}
+
+
+def _build_structured_events(
+    tool_name: str, tool_input: dict[str, Any], result: AgentToolResult
+) -> list[SSEEvent]:
+    """Build structured SSE events from a successful tool result.
+
+    Returns a list of SSE events to emit (may be empty for tools like
+    classify/analyze_visual that feed into Claude's reasoning).
+    """
+    if not result.success or tool_name not in _STRUCTURED_EVENT_TOOLS:
+        return []
+
+    events: list[SSEEvent] = []
+    data = result.data
+
+    if tool_name in ("query_items", "search_similar") and isinstance(data, dict):
+        items = data.get("items", [])
+        if items:
+            grid_items = [
+                MediaGridItem(
+                    id=str(item.get("id", "")),
+                    caption=item.get("caption"),
+                    creator=item.get("creator"),
+                    thumbnail_url=item.get("thumbnail_url"),
+                    canonical_url=item.get("canonical_url"),
+                    media_type=item.get("media_type", "video"),
+                )
+                for item in items[:20]  # Cap at 20 for frontend
+            ]
+            events.append(
+                _sse_media_grid(
+                    MediaGridEvent(items=grid_items, total=data.get("total", len(items)))
+                )
+            )
+
+    elif tool_name == "resolve_entity" and isinstance(data, dict):
+        entity_type = data.get("entity_type", "")
+        name = data.get("name", "")
+        if name:
+            events.append(
+                _sse_entity_card(
+                    EntityCardEvent(
+                        entity_type=entity_type,
+                        name=name,
+                        metadata=data.get("metadata", {}),
+                        source_media_event_id=str(tool_input.get("media_event_id", "")),
+                    )
+                )
+            )
+
+    elif tool_name == "get_stats" and isinstance(data, dict):
+        stat_type = tool_input.get("stat_type", "unknown")
+        title_map = {
+            "overview": "Collection Overview",
+            "top_creators": "Top Creators",
+            "top_hashtags": "Top Hashtags",
+            "interaction_timeline": "Activity Timeline",
+            "classification_breakdown": "Content Breakdown",
+            "creator_details": "Creator Details",
+            "field_distribution": "Distribution",
+        }
+        events.append(
+            _sse_stat_card(
+                StatCardEvent(
+                    stat_type=stat_type,
+                    title=title_map.get(stat_type, stat_type.replace("_", " ").title()),
+                    data=data,
+                )
+            )
+        )
+
+    return events
+
+
+# ---------------------------------------------------------------------------
 # Agent loop
 # ---------------------------------------------------------------------------
 
@@ -210,7 +360,8 @@ async def run_agent(
         user_id: The authenticated user's ID.
 
     Yields:
-        SSEEvent objects (token, done, or error).
+        SSEEvent objects (token, done, error, tool_activity, media_grid,
+        entity_card, stat_card).
     """
     user_id_str = str(user_id)
 
@@ -290,8 +441,23 @@ async def run_agent(
 
                 _record_tool_call(user_id_str)
 
+                # Signal tool start
+                yield _sse_tool_activity(ToolActivityEvent(tool_name=block.name, status="started"))
+
                 # Dispatch tool
                 result = await _dispatch_tool(block.name, block.input, db, settings, user_id)
+
+                # Emit structured events for rich frontend rendering
+                for structured_event in _build_structured_events(block.name, block.input, result):
+                    yield structured_event
+
+                # Signal tool completion
+                yield _sse_tool_activity(
+                    ToolActivityEvent(
+                        tool_name=block.name,
+                        status="completed" if result.success else "failed",
+                    )
+                )
 
                 # Format result for Claude
                 if result.success:

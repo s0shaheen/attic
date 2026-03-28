@@ -1,22 +1,24 @@
-# Upload processing pipeline (4 steps, idempotent)
+# Upload processing pipeline (5 steps, idempotent)
 #
-#   parsed ──► enriched ──► subtitled ──► complete
-#     │            │             │            │
-#     └──► skip ◄──┘──► skip ◄──┘            │
-#     (already      (images/       (all done)
+#   parsed ──► enriched ──► subtitled ──► classified ──► complete
+#     │            │             │             │             │
+#     └──► skip ◄──┘──► skip ◄──┘             │             │
+#     (already      (images/         (Gemini Tier 1)  (all done)
 #      enriched)     slideshows)
 #
 # Dev mode fallbacks:
 #   No APIFY_API_TOKEN → _fake_apify_response() in step 2
-#   No OPENAI_API_KEY  → _random_vectors() in step 4
+#   No GEMINI_API_KEY  → _fake_classification() in step 4
+#   No OPENAI_API_KEY  → _random_vectors() in step 5
 
-"""Unified 4-step pipeline for TikTok data export processing.
+"""Unified 5-step pipeline for TikTok data export processing.
 
-SQS -> single Lambda: parse_export -> apify_enrich -> subtitle_fetch -> embed
+SQS -> single Lambda: parse_export -> apify_enrich -> subtitle_fetch -> classify -> embed
 
 Each step is idempotent (upserts with deterministic IDs).
 Single invocation processes one upload (SQS BatchSize: 1).
-Steps advance items through processing_state: parsed -> enriched -> subtitled -> complete.
+Steps advance items through processing_state:
+    parsed -> enriched -> subtitled -> classified -> complete.
 On retry, each step only picks up items still in its expected input state.
 """
 
@@ -55,9 +57,12 @@ DATABASE_URL = os.environ.get("DATABASE_URL", "")
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
 SUPABASE_SECRET_KEY = os.environ.get("SUPABASE_SECRET_KEY", "")
 APIFY_API_TOKEN = os.environ.get("APIFY_API_TOKEN", "")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
 APIFY_BATCH_SIZE = 50
+CLASSIFY_CONCURRENCY = 8
 EMBEDDING_BATCH_SIZE = 100
 EMBEDDING_MODEL = "text-embedding-3-small"
 EMBEDDING_DIMENSIONS = 1536
@@ -163,7 +168,7 @@ def step_parse_export(
     Returns list of media_event IDs (as strings).
     """
     step_start = time.time()
-    logger.info("Step 1/4: parse_export started", extra={"upload_id": upload_id})
+    logger.info("Step 1/5: parse_export started", extra={"upload_id": upload_id})
 
     # Mark upload as processing
     session.execute(update(Upload).where(Upload.id == UUID(upload_id)).values(status="processing"))
@@ -232,14 +237,14 @@ def step_parse_export(
 
     duration_ms = int((time.time() - step_start) * 1000)
     logger.info(
-        "Step 1/4: parse_export complete",
+        "Step 1/5: parse_export complete",
         extra={
             "upload_id": upload_id,
             "items": len(media_event_ids),
             "duration_ms": duration_ms,
         },
     )
-    _dev_print(f"Step 1/4: Parsed {len(media_event_ids)} URLs from export")
+    _dev_print(f"Step 1/5: Parsed {len(media_event_ids)} URLs from export")
     return media_event_ids
 
 
@@ -464,7 +469,7 @@ def step_apify_enrich(
 ) -> None:
     """Fetch TikTok metadata via Apify scraper in batches of 50."""
     step_start = time.time()
-    logger.info("Step 2/4: apify_enrich started", extra={"upload_id": upload_id})
+    logger.info("Step 2/5: apify_enrich started", extra={"upload_id": upload_id})
 
     # Only enrich items still in 'parsed' state (idempotent on retry)
     events = (
@@ -480,7 +485,7 @@ def step_apify_enrich(
 
     if not events:
         logger.info(
-            "Step 2/4: no items to enrich (all already enriched)",
+            "Step 2/5: no items to enrich (all already enriched)",
             extra={"upload_id": upload_id},
         )
         return
@@ -532,7 +537,7 @@ def step_apify_enrich(
 
     duration_ms = int((time.time() - step_start) * 1000)
     logger.info(
-        "Step 2/4: apify_enrich complete",
+        "Step 2/5: apify_enrich complete",
         extra={
             "upload_id": upload_id,
             "enriched": enriched_count,
@@ -540,7 +545,7 @@ def step_apify_enrich(
         },
     )
     suffix = " (fake data)" if not APIFY_API_TOKEN else ""
-    _dev_print(f"Step 2/4: Enriched {enriched_count} items{suffix}")
+    _dev_print(f"Step 2/5: Enriched {enriched_count} items{suffix}")
 
 
 # ==========================================================================
@@ -556,7 +561,7 @@ def step_subtitle_fetch(
 ) -> None:
     """Extract subtitles from Apify data. Skip images/slideshows."""
     step_start = time.time()
-    logger.info("Step 3/4: subtitle_fetch started", extra={"upload_id": upload_id})
+    logger.info("Step 3/5: subtitle_fetch started", extra={"upload_id": upload_id})
 
     id_uuids = [UUID(eid) for eid in media_event_ids]
 
@@ -618,18 +623,295 @@ def step_subtitle_fetch(
 
     duration_ms = int((time.time() - step_start) * 1000)
     logger.info(
-        "Step 3/4: subtitle_fetch complete",
+        "Step 3/5: subtitle_fetch complete",
         extra={
             "upload_id": upload_id,
             "subtitled": len(events),
             "duration_ms": duration_ms,
         },
     )
-    _dev_print(f"Step 3/4: Subtitles for {len(events)} videos")
+    _dev_print(f"Step 3/5: Subtitles for {len(events)} videos")
 
 
 # ==========================================================================
-# Step 4: EMBEDDING
+# Step 4: CLASSIFY (Gemini Tier 1)
+# ==========================================================================
+
+
+def _classify_one_sync(
+    api_key: str,
+    model: str,
+    caption: str | None,
+    subtitle: str | None,
+    hashtags: list | None,
+    creator_username: str | None,
+    music_name: str | None,
+    duration_seconds: int | None,
+    thumbnail_url: str | None,
+) -> dict | None:
+    """Synchronous Gemini classification for ThreadPoolExecutor.
+
+    Uses a per-call sync httpx.Client instead of the shared async client
+    to avoid thread-safety issues with httpx.AsyncClient across event loops.
+    """
+    import httpx as _httpx
+
+    from app.services.gemini import (
+        _TIER1_PROMPT,
+        CLASSIFY_MAX_TOKENS,
+        DEFAULT_GEMINI_MODEL,
+        GEMINI_API_BASE,
+        REQUEST_TIMEOUT,
+        _build_classify_context,
+    )
+
+    try:
+        context = _build_classify_context(
+            caption,
+            subtitle,
+            hashtags,
+            creator_username,
+            music_name,
+            duration_seconds,
+            None,
+        )
+        if context is None:
+            return None
+
+        if thumbnail_url:
+            image_instruction = (
+                "You are seeing a thumbnail image from the video. "
+                "Extract what you can from this image plus the metadata below."
+            )
+        else:
+            image_instruction = "No image is available. Classify based on the metadata below."
+
+        prompt = _TIER1_PROMPT.replace("{context}", context).replace(
+            "{image_instruction}", image_instruction
+        )
+        gemini_model = model or DEFAULT_GEMINI_MODEL
+
+        parts: list[dict] = [{"text": prompt}]
+        if thumbnail_url:
+            parts.append(
+                {
+                    "fileData": {
+                        "mimeType": "image/jpeg",
+                        "fileUri": thumbnail_url,
+                    }
+                }
+            )
+
+        # Use sync httpx.Client (NOT the shared async one) for thread safety
+        with _httpx.Client(timeout=REQUEST_TIMEOUT) as client:
+            resp = client.post(
+                f"{GEMINI_API_BASE}/models/{gemini_model}:generateContent",
+                params={"key": api_key},
+                json={
+                    "contents": [{"parts": parts}],
+                    "generationConfig": {
+                        "maxOutputTokens": CLASSIFY_MAX_TOKENS,
+                        "temperature": 0.2,
+                        "responseMimeType": "application/json",
+                    },
+                },
+            )
+
+        if resp.status_code != 200:
+            logger.warning(
+                "Gemini classify API error",
+                extra={"status": resp.status_code},
+            )
+            return None
+
+        data = resp.json()
+        text = data["candidates"][0]["content"]["parts"][0]["text"]
+        classification = json.loads(text)
+
+        return {
+            "raw": classification,
+            "summary": classification.get("summary"),
+            "entities": classification.get("entities") or [],
+            "embedding_text": classification.get("embedding_text"),
+        }
+    except Exception as e:
+        logger.warning("Gemini classify failed", extra={"error": str(e)})
+        return None
+
+
+_FAKE_CLASSIFICATIONS = [
+    {"topic": "food", "affect": "informative", "genre": "recipe"},
+    {"topic": "travel", "affect": "inspiring", "genre": "vlog"},
+    {"topic": "fashion", "affect": "informative", "genre": "haul"},
+    {"topic": "fitness", "affect": "informative", "genre": "workout"},
+    {"topic": "comedy", "affect": "funny", "genre": "skit"},
+    {"topic": "technology", "affect": "informative", "genre": "review"},
+    {"topic": "pets", "affect": "wholesome", "genre": "vlog"},
+    {"topic": "books", "affect": "informative", "genre": "review"},
+    {"topic": "food", "affect": "satisfying", "genre": "recipe"},
+    {"topic": "career", "affect": "informative", "genre": "tutorial"},
+]
+
+
+def _fake_classification(index: int) -> dict:
+    """Generate a fake cached_classifications payload for dev mode."""
+    c = _FAKE_CLASSIFICATIONS[index % len(_FAKE_CLASSIFICATIONS)]
+    return {
+        "tier1": {
+            "topic": c["topic"],
+            "affect": c["affect"],
+            "genre": c["genre"],
+            "communicative_intent": "inform",
+            "creator_role": "amateur",
+            "viewer_orientation": "active_learning",
+            "presentation_style": "talking_head",
+            "content_provenance": "original",
+        },
+        "tier2": {},
+        "confidence": {
+            facet: 0.7
+            for facet in [
+                "topic",
+                "affect",
+                "genre",
+                "communicative_intent",
+                "creator_role",
+                "viewer_orientation",
+                "presentation_style",
+                "content_provenance",
+            ]
+        },
+        "summary": f"Dev mode fake classification for {c['topic']} content.",
+        "entities": [],
+        "embedding_text": f"A {c['genre']} about {c['topic']} that is {c['affect']}.",
+        "source": "pipeline_tier1",
+    }
+
+
+def step_classify(
+    session: Session,
+    upload_id: str,
+    media_event_ids: list[str],
+    pipeline_run_id: str,
+) -> None:
+    """Classify items using Gemini Tier 1 prompt. Writes to cached_classifications."""
+    step_start = time.time()
+    logger.info("Step 4/5: classify started", extra={"upload_id": upload_id})
+
+    events = (
+        session.execute(
+            select(MediaEvent).where(
+                MediaEvent.id.in_([UUID(eid) for eid in media_event_ids]),
+                MediaEvent.processing_state == "subtitled",
+            )
+        )
+        .scalars()
+        .all()
+    )
+
+    if not events:
+        logger.info("Step 4/5: no items to classify", extra={"upload_id": upload_id})
+        return
+
+    classified_count = 0
+
+    if GEMINI_API_KEY:
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+
+        from app.services.ontology import validate_classification
+
+        # Submit all items to thread pool for concurrent classification
+        futures = {}
+        with ThreadPoolExecutor(max_workers=CLASSIFY_CONCURRENCY) as executor:
+            for event in events:
+                future = executor.submit(
+                    _classify_one_sync,
+                    api_key=GEMINI_API_KEY,
+                    model=GEMINI_MODEL,
+                    caption=event.caption_text,
+                    subtitle=event.subtitle_text,
+                    hashtags=event.hashtags,
+                    creator_username=event.creator_username,
+                    music_name=event.music_name,
+                    duration_seconds=event.video_duration_seconds,
+                    thumbnail_url=event.thumbnail_url,
+                )
+                futures[future] = event
+
+            for future in as_completed(futures):
+                event = futures[future]
+                result = future.result()
+
+                if result:
+                    validated = validate_classification(result["raw"])
+                    cache = {
+                        "tier1": validated.tier1,
+                        "tier2": validated.tier2,
+                        "confidence": validated.confidence,
+                        "source": "pipeline_tier1",
+                    }
+                    if result.get("summary"):
+                        cache["summary"] = result["summary"]
+                    if result.get("entities"):
+                        cache["entities"] = result["entities"]
+                    if result.get("embedding_text"):
+                        cache["embedding_text"] = result["embedding_text"]
+                else:
+                    # Classification failed — don't write to cached_classifications
+                    # so the agent's classify tool can retry on demand
+                    cache = None
+
+                session.execute(
+                    update(MediaEvent)
+                    .where(MediaEvent.id == event.id)
+                    .values(
+                        cached_classifications=cache,
+                        processing_state="classified",
+                        updated_at=func.now(),
+                    )
+                )
+                classified_count += 1
+    else:
+        # Dev mode: fake classifications
+        logger.info(
+            "Using fake classifications (no GEMINI_API_KEY)",
+            extra={"upload_id": upload_id},
+        )
+        for idx, event in enumerate(events):
+            cache = _fake_classification(idx)
+            session.execute(
+                update(MediaEvent)
+                .where(MediaEvent.id == event.id)
+                .values(
+                    cached_classifications=cache,
+                    processing_state="classified",
+                    updated_at=func.now(),
+                )
+            )
+            classified_count += 1
+
+    session.execute(
+        update(UploadPipelineRun)
+        .where(UploadPipelineRun.id == UUID(pipeline_run_id))
+        .values(items_vision_done=classified_count)
+    )
+    session.commit()
+
+    duration_ms = int((time.time() - step_start) * 1000)
+    logger.info(
+        "Step 4/5: classify complete",
+        extra={
+            "upload_id": upload_id,
+            "classified": classified_count,
+            "duration_ms": duration_ms,
+        },
+    )
+    suffix = " (fake)" if not GEMINI_API_KEY else ""
+    _dev_print(f"Step 4/5: Classified {classified_count} items{suffix}")
+
+
+# ==========================================================================
+# Step 5: EMBEDDING
 # ==========================================================================
 
 
@@ -678,13 +960,13 @@ def step_embed(
 ) -> None:
     """Fuse text fields and generate embeddings via OpenAI."""
     step_start = time.time()
-    logger.info("Step 4/4: embed started", extra={"upload_id": upload_id})
+    logger.info("Step 5/5: embed started", extra={"upload_id": upload_id})
 
     events = (
         session.execute(
             select(MediaEvent).where(
                 MediaEvent.id.in_([UUID(eid) for eid in media_event_ids]),
-                MediaEvent.processing_state == "subtitled",
+                MediaEvent.processing_state == "classified",
             )
         )
         .scalars()
@@ -692,14 +974,19 @@ def step_embed(
     )
 
     if not events:
-        logger.info("Step 4/4: no items to embed", extra={"upload_id": upload_id})
+        logger.info("Step 5/5: no items to embed", extra={"upload_id": upload_id})
         return
 
-    # Fuse text and store full_text
+    # Build embedding text: prefer model-generated embedding_text, fall back to _fuse_text
     texts: list[str] = []
     ordered_events: list[MediaEvent] = []
     for event in events:
-        full_text = _fuse_text(event)
+        # Use embedding_text from Gemini classification if available
+        embedding_text = None
+        if event.cached_classifications and isinstance(event.cached_classifications, dict):
+            embedding_text = event.cached_classifications.get("embedding_text")
+
+        full_text = embedding_text or _fuse_text(event)
         session.execute(
             update(MediaEvent).where(MediaEvent.id == event.id).values(full_text=full_text)
         )
@@ -743,7 +1030,7 @@ def step_embed(
 
     duration_ms = int((time.time() - step_start) * 1000)
     logger.info(
-        "Step 4/4: embed complete",
+        "Step 5/5: embed complete",
         extra={
             "upload_id": upload_id,
             "embedded": embedded_count,
@@ -751,7 +1038,7 @@ def step_embed(
         },
     )
     suffix = " (random)" if not OPENAI_API_KEY else ""
-    _dev_print(f"Step 4/4: Embeddings for {embedded_count} items{suffix}")
+    _dev_print(f"Step 5/5: Embeddings for {embedded_count} items{suffix}")
 
 
 # ==========================================================================
@@ -817,7 +1104,7 @@ def run_pipeline(
     scope: str,
     request_id: str = "local",
 ) -> dict:
-    """Run the full 4-step pipeline for a single upload.
+    """Run the full 5-step pipeline for a single upload.
 
     This is the main entry point, called by both the Lambda handler
     and local dev mode.
@@ -862,7 +1149,10 @@ def run_pipeline(
         # Step 3: Subtitle fetch -> extract subtitles
         step_subtitle_fetch(session, upload_id, media_event_ids, pipeline_run_id)
 
-        # Step 4: Embed -> generate search embeddings
+        # Step 4: Classify -> Gemini Tier 1 classification
+        step_classify(session, upload_id, media_event_ids, pipeline_run_id)
+
+        # Step 5: Embed -> generate search embeddings
         step_embed(session, upload_id, media_event_ids, pipeline_run_id)
 
         # Mark upload + pipeline run as complete
