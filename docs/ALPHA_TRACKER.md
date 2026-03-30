@@ -28,7 +28,7 @@
 
 | ID | Task | Status | Depends on | Gate? |
 |----|------|--------|------------|-------|
-| 1A | Auto-collection generation | [ ] | 0A, 0C | YES |
+| 1A | Auto-collection generation | [~] DEFERRED | 0A, 0C | NO |
 | 1B | Instagram parser | [ ] | — | NO |
 | 1C | Instagram pipeline + collection import | [ ] | 1B, 0C | NO |
 | 1D | Background Tier 2 processing | [ ] | 0A | NO |
@@ -37,7 +37,7 @@
 | 1G | Rate limiting + error handling | [ ] | — | YES |
 | 1H | Collection-from-chat agent tool | [ ] | 0C, 0A | NO |
 
-**1A** — After Tier 1 completes, scan classifications and auto-generate named collections. Topic→collection mapping, thresholds, and summary generation approach are decisions to surface. Full-stack: includes an LLM call for summaries.
+**1A** — DEFERRED. Rule-based entity grouping was implemented and tested against 1334 real IG posts but produced too many false positives even with intent-based filtering (primary entity + actionable viewer_orientation). Needs a fundamentally different approach — likely LLM-driven per-item collection assignment rather than entity-type grouping. Demoted from gate to non-gate. Collections remain available via manual, agent, and import modes.
 
 **1B** — Instagram exports are structurally different: folder-based not ZIP, different JSON schemas, and pre-existing user collections as separate files. Decisions about how IG data maps to the existing media event schema should be surfaced.
 

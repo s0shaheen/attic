@@ -1,9 +1,9 @@
-# Upload processing pipeline (5 steps, idempotent)
+# Upload processing pipeline (6 steps, idempotent)
 #
-#   parsed ──► enriched ──► subtitled ──► classified ──► complete
-#     │            │             │             │             │
-#     └──► skip ◄──┘──► skip ◄──┘             │             │
-#     (already      (images/         (Gemini Tier 1)  (all done)
+#   parsed ──► enriched ──► subtitled ──► classified ──► embedded ──► collections
+#     │            │             │             │             │             │
+#     └──► skip ◄──┘──► skip ◄──┘             │             │       (non-blocking)
+#     (already      (images/         (Gemini Tier 1)  (OpenAI)   (auto-generate)
 #      enriched)     slideshows)
 #
 # Dev mode fallbacks:
@@ -11,9 +11,9 @@
 #   No GEMINI_API_KEY  → _fake_classification() in step 4
 #   No OPENAI_API_KEY  → _random_vectors() in step 5
 
-"""Unified 5-step pipeline for TikTok data export processing.
+"""Unified 6-step pipeline for data export processing.
 
-SQS -> single Lambda: parse_export -> apify_enrich -> subtitle_fetch -> classify -> embed
+SQS -> Lambda: parse -> apify_enrich -> subtitle -> perceive -> classify -> embed
 
 Each step is idempotent (upserts with deterministic IDs).
 Single invocation processes one upload (SQS BatchSize: 1).
@@ -36,6 +36,7 @@ from pathlib import Path
 from typing import Any
 from uuid import UUID
 
+from dotenv import load_dotenv
 from sqlalchemy import create_engine, func, select, update
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 from sqlalchemy.orm import Session, sessionmaker
@@ -44,10 +45,16 @@ from app.common.idempotency import generate_idempotency_key
 from app.common.logger import get_logger
 
 # Imports from CommonLayer (bundled backend app/)
+from app.models.collection import Collection, CollectionItem
 from app.models.media_event import MediaEvent
 from app.models.upload import Upload
 from app.models.upload_pipeline_run import UploadPipelineRun
+from app.schemas.instagram_export import extract_shortcode as _extract_ig_shortcode
+from app.services.instagram_parser import parse_instagram_export
 from app.services.tiktok_parser import parse_tiktok_export
+
+# Load .env for local dev (no-op if vars already set, e.g. Lambda)
+load_dotenv(Path(__file__).resolve().parents[2] / ".env")
 
 logger = get_logger("pipeline")
 
@@ -58,15 +65,18 @@ SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
 SUPABASE_SECRET_KEY = os.environ.get("SUPABASE_SECRET_KEY", "")
 APIFY_API_TOKEN = os.environ.get("APIFY_API_TOKEN", "")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3-flash-preview")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
 APIFY_BATCH_SIZE = 50
-CLASSIFY_CONCURRENCY = 8
+CLASSIFY_CONCURRENCY = int(os.environ.get("CLASSIFY_CONCURRENCY", "20"))
+PERCEIVE_CONCURRENCY = int(os.environ.get("PERCEIVE_CONCURRENCY", "20"))
 EMBEDDING_BATCH_SIZE = 100
 EMBEDDING_MODEL = "text-embedding-3-small"
 EMBEDDING_DIMENSIONS = 1536
-APIFY_ACTOR_ID = "clockworks~tiktok-scraper"
+APIFY_TIKTOK_ACTOR_ID = "clockworks~tiktok-scraper"
+APIFY_INSTAGRAM_ACTOR_ID = "apify~instagram-scraper"
+APIFY_ACTOR_ID = APIFY_TIKTOK_ACTOR_ID  # Backward compat alias
 APIFY_POLL_INTERVAL_S = 5
 APIFY_MAX_WAIT_S = 600  # 10 minutes
 
@@ -80,9 +90,11 @@ def _get_engine():
     global _engine  # noqa: PLW0603
     if _engine is None:
         url = DATABASE_URL
-        # Normalize to sync driver
+        # Normalize to sync driver (psycopg v3)
         if url.startswith("postgresql+asyncpg://"):
-            url = url.replace("postgresql+asyncpg://", "postgresql://", 1)
+            url = url.replace("postgresql+asyncpg://", "postgresql+psycopg://", 1)
+        elif url.startswith("postgresql://"):
+            url = url.replace("postgresql://", "postgresql+psycopg://", 1)
         _engine = create_engine(url, pool_pre_ping=True, pool_size=1, max_overflow=0)
     return _engine
 
@@ -151,6 +163,14 @@ def _extract_platform_id_or_hash(url: str, upload_id: str) -> str:
     return generate_idempotency_key(upload_id, url)
 
 
+def _extract_ig_platform_id_or_hash(url: str, upload_id: str) -> str:
+    """Extract Instagram shortcode or generate a deterministic ID from URL."""
+    shortcode = _extract_ig_shortcode(url)
+    if shortcode:
+        return shortcode
+    return generate_idempotency_key(upload_id, url)
+
+
 # ==========================================================================
 # Step 1: PARSE_EXPORT
 # ==========================================================================
@@ -162,16 +182,27 @@ def step_parse_export(
     user_id: str,
     storage_path: str,
     scope: str,
+    source_platform: str = "tiktok",
 ) -> list[str]:
     """Download ZIP from Supabase Storage, parse, upsert media_event rows.
+
+    Dispatches to the correct parser based on source_platform.
+    For Instagram, also imports user-created collections.
 
     Returns list of media_event IDs (as strings).
     """
     step_start = time.time()
-    logger.info("Step 1/5: parse_export started", extra={"upload_id": upload_id})
+    logger.info(
+        "Step 1/7: parse_export started",
+        extra={"upload_id": upload_id, "platform": source_platform},
+    )
 
-    # Mark upload as processing
-    session.execute(update(Upload).where(Upload.id == UUID(upload_id)).values(status="processing"))
+    # Mark upload as processing and sync source_platform
+    session.execute(
+        update(Upload)
+        .where(Upload.id == UUID(upload_id))
+        .values(status="processing", source_platform=source_platform)
+    )
     session.flush()
 
     # Download ZIP from Supabase Storage to /tmp
@@ -189,12 +220,22 @@ def step_parse_export(
             dest_path=tmp_path,
         )
 
-        # Parse export using existing tiktok_parser
-        parsed = parse_tiktok_export(Path(tmp_path), scope=scope)
+        if source_platform == "instagram":
+            ig_parsed = parse_instagram_export(Path(tmp_path))
+            all_refs = [
+                (ref.url, ref.timestamp, ref.creator_username, "saved")
+                for ref in ig_parsed.saved_posts
+            ]
+            ig_collections = ig_parsed.collections
+        else:
+            parsed = parse_tiktok_export(Path(tmp_path), scope=scope)
+            all_refs = [
+                (ref.url, ref.timestamp, None, ref.interaction_type)
+                for ref in parsed.liked_videos + parsed.favorited_videos
+            ]
+            ig_collections = None
     finally:
         os.unlink(tmp_path)
-
-    all_refs = parsed.liked_videos + parsed.favorited_videos
 
     # Update upload total_items
     session.execute(
@@ -203,9 +244,12 @@ def step_parse_export(
 
     # Upsert media_event rows with deterministic IDs
     media_event_ids: list[str] = []
-    for ref in all_refs:
-        platform_id = _extract_platform_id_or_hash(ref.url, upload_id)
-        event_id = generate_idempotency_key(upload_id, ref.url)
+    for url, timestamp, _creator, interaction_type in all_refs:
+        if source_platform == "instagram":
+            platform_id = _extract_ig_platform_id_or_hash(url, upload_id)
+        else:
+            platform_id = _extract_platform_id_or_hash(url, upload_id)
+        event_id = generate_idempotency_key(upload_id, url)
 
         stmt = (
             pg_insert(MediaEvent)
@@ -213,18 +257,18 @@ def step_parse_export(
                 id=UUID(event_id),
                 user_id=UUID(user_id),
                 upload_id=UUID(upload_id),
-                platform="tiktok",
+                platform=source_platform,
                 platform_id=platform_id,
-                canonical_url=ref.url,
-                interaction_type=ref.interaction_type,
-                interaction_at=ref.timestamp,
+                canonical_url=url,
+                interaction_type=interaction_type,
+                interaction_at=timestamp,
                 processing_state="parsed",
             )
             .on_conflict_do_update(
                 constraint="uq_media_events_user_platform",
                 set_={
-                    "interaction_type": ref.interaction_type,
-                    "interaction_at": ref.timestamp,
+                    "interaction_type": interaction_type,
+                    "interaction_at": timestamp,
                     # Don't reset processing_state — preserve progress from prior attempts
                     "updated_at": func.now(),
                 },
@@ -233,19 +277,141 @@ def step_parse_export(
         session.execute(stmt)
         media_event_ids.append(event_id)
 
+    # Import Instagram collections (if present)
+    if ig_collections:
+        _import_ig_collections(
+            session,
+            user_id,
+            upload_id,
+            ig_collections,
+            media_event_ids,
+            all_refs,
+        )
+
     session.commit()
 
     duration_ms = int((time.time() - step_start) * 1000)
     logger.info(
-        "Step 1/5: parse_export complete",
+        "Step 1/7: parse_export complete",
         extra={
             "upload_id": upload_id,
             "items": len(media_event_ids),
+            "platform": source_platform,
             "duration_ms": duration_ms,
         },
     )
-    _dev_print(f"Step 1/5: Parsed {len(media_event_ids)} URLs from export")
+    _dev_print(f"Step 1/7: Parsed {len(media_event_ids)} URLs from {source_platform} export")
     return media_event_ids
+
+
+def _import_ig_collections(
+    session: Session,
+    user_id: str,
+    upload_id: str,
+    ig_collections: list,
+    media_event_ids: list[str],
+    all_refs: list[tuple],
+) -> None:
+    """Import Instagram user-created collections into the collections table.
+
+    Creates Collection rows (source_type='import', source_platform='instagram')
+    and links items to their media_events via CollectionItem.
+    """
+    uid = UUID(user_id)
+    upid = UUID(upload_id)
+
+    # Build URL → event_id lookup for matching collection items to media events
+    url_to_event_id: dict[str, str] = {}
+    for (url, _ts, _cr, _it), event_id in zip(all_refs, media_event_ids):
+        url_to_event_id[url] = event_id
+
+    imported_count = 0
+    for ig_coll in ig_collections:
+        # Guard: never overwrite a manual/auto/agent collection
+        existing = session.execute(
+            select(
+                Collection.__table__.c.id,
+                Collection.__table__.c.source_type,
+            ).where(
+                Collection.__table__.c.user_id == uid,
+                Collection.__table__.c.name == ig_coll.name,
+            )
+        ).first()
+
+        if existing and existing.source_type != "import":
+            logger.info(
+                "IG collection import skipped — name conflicts with "
+                f"existing {existing.source_type} collection",
+                extra={
+                    "upload_id": upload_id,
+                    "collection_name": ig_coll.name,
+                },
+            )
+            continue
+
+        if existing:
+            # Update existing import collection
+            collection_id = existing.id
+            session.execute(
+                update(Collection.__table__)
+                .where(Collection.__table__.c.id == collection_id)
+                .values(
+                    upload_id=upid,
+                    source_platform="instagram",
+                    updated_at=func.now(),
+                )
+            )
+        else:
+            # Insert new import collection
+            stmt = (
+                pg_insert(Collection.__table__)
+                .values(
+                    user_id=uid,
+                    name=ig_coll.name,
+                    source_type="import",
+                    source_platform="instagram",
+                    upload_id=upid,
+                    item_count=0,
+                )
+                .returning(Collection.__table__.c.id)
+            )
+            result = session.execute(stmt)
+            collection_id = result.scalar_one()
+
+        # Link collection items to media events
+        for position, item in enumerate(ig_coll.items):
+            event_id = url_to_event_id.get(item.url)
+            if not event_id:
+                continue
+
+            item_stmt = (
+                pg_insert(CollectionItem.__table__)
+                .values(
+                    collection_id=collection_id,
+                    media_event_id=UUID(event_id),
+                    position=position,
+                )
+                .on_conflict_do_nothing(constraint="uq_collection_items_collection_media")
+            )
+            session.execute(item_stmt)
+
+        # Update item_count to reflect actual total (fix: COUNT(*) not batch)
+        count = session.scalar(
+            select(func.count()).where(CollectionItem.__table__.c.collection_id == collection_id)
+        )
+        session.execute(
+            update(Collection.__table__)
+            .where(Collection.__table__.c.id == collection_id)
+            .values(item_count=count)
+        )
+        imported_count += 1
+
+    if imported_count:
+        logger.info(
+            "Imported Instagram collections",
+            extra={"upload_id": upload_id, "count": imported_count},
+        )
+        _dev_print(f"  Imported {imported_count} Instagram collections")
 
 
 # ==========================================================================
@@ -461,15 +627,149 @@ def _dev_print(message: str) -> None:
         print(f"  \u2705 {message}")
 
 
+def _run_apify_instagram_batch(urls: list[str]) -> list[dict]:
+    """Start an Apify Instagram scraper run, poll for completion, return items."""
+    headers = {
+        "Authorization": f"Bearer {APIFY_API_TOKEN}",
+        "Content-Type": "application/json",
+    }
+
+    run_resp = _http_json(
+        "POST",
+        f"https://api.apify.com/v2/acts/{APIFY_INSTAGRAM_ACTOR_ID}/runs",
+        headers=headers,
+        body={"directUrls": urls, "resultsLimit": len(urls)},
+        timeout=30,
+    )
+    run_id = run_resp["data"]["id"]
+
+    elapsed = 0
+    status = "RUNNING"
+    status_resp: dict = {}
+    while elapsed < APIFY_MAX_WAIT_S:
+        time.sleep(APIFY_POLL_INTERVAL_S)
+        elapsed += APIFY_POLL_INTERVAL_S
+
+        status_resp = _http_json(
+            "GET",
+            f"https://api.apify.com/v2/actor-runs/{run_id}",
+            headers=headers,
+            timeout=15,
+        )
+        status = status_resp["data"]["status"]
+        if status in ("SUCCEEDED", "FAILED", "ABORTED", "TIMED-OUT"):
+            break
+
+    if status != "SUCCEEDED":
+        logger.warning(
+            "Apify Instagram run did not succeed",
+            extra={"run_id": run_id, "status": status},
+        )
+        return []
+
+    dataset_id = status_resp["data"]["defaultDatasetId"]
+    items: list[dict] = _http_json(
+        "GET",
+        f"https://api.apify.com/v2/datasets/{dataset_id}/items?format=json",
+        headers=headers,
+        timeout=60,
+    )
+    return items if isinstance(items, list) else []
+
+
+def _map_instagram_apify_to_update(apify_data: dict) -> dict[str, Any]:
+    """Map Apify Instagram scraper response to MediaEvent column values.
+
+    The Instagram scraper returns a different structure than TikTok.
+    Fields are mapped to the existing MediaEvent columns where possible.
+    """
+    owner = apify_data.get("ownerUsername") or ""
+    owner_full = apify_data.get("ownerFullName") or ""
+
+    # Determine media type
+    post_type = apify_data.get("type", "")
+    images = apify_data.get("images") or []
+    if post_type == "Video" or apify_data.get("videoUrl"):
+        media_type = "video"
+    elif len(images) > 1 or post_type == "Sidecar":
+        media_type = "slideshow"
+    else:
+        media_type = "image"
+
+    raw_hashtags = apify_data.get("hashtags") or []
+    # Normalize: handle both string lists and dict lists (like TikTok's format)
+    hashtags = [h.get("name", str(h)) if isinstance(h, dict) else str(h) for h in raw_hashtags]
+    raw_mentions = apify_data.get("mentions") or []
+    mentions = [m.get("name", str(m)) if isinstance(m, dict) else str(m) for m in raw_mentions]
+
+    timestamp_str = apify_data.get("timestamp")
+    video_created_at = None
+    if timestamp_str:
+        try:
+            video_created_at = datetime.fromisoformat(timestamp_str.replace("Z", "+00:00"))
+        except (ValueError, AttributeError):
+            pass
+
+    return {
+        "caption_text": apify_data.get("caption"),
+        "hashtags": hashtags if hashtags else None,
+        "mentions": mentions if mentions else None,
+        "creator_username": owner or None,
+        "creator_name": owner_full or None,
+        "creator_id": str(apify_data.get("ownerId", "")) or None,
+        "like_count": apify_data.get("likesCount"),
+        "comment_count": apify_data.get("commentsCount"),
+        "video_duration_seconds": apify_data.get("videoDuration"),
+        "video_created_at": video_created_at,
+        "is_ad": None,
+        "is_pinned": None,
+        "is_slideshow": media_type == "slideshow",
+        "media_type": media_type,
+        "image_count": len(images) if images else None,
+        "image_urls": images if images else None,
+        "location_created": apify_data.get("locationName"),
+        "thumbnail_url": apify_data.get("displayUrl"),
+        "processing_state": "enriched",
+        "updated_at": func.now(),
+    }
+
+
+def _fake_ig_apify_response(platform_id: str, index: int) -> dict:
+    """Generate Instagram Apify-shaped fake data for dev mode."""
+    i = index % len(_FAKE_CREATORS)
+    creator = _FAKE_CREATORS[i]
+    return {
+        "shortCode": platform_id,
+        "url": f"https://www.instagram.com/p/{platform_id}/",
+        "caption": _FAKE_CAPTIONS[i],
+        "ownerUsername": creator["name"],
+        "ownerFullName": creator["nickName"],
+        "ownerId": str(1000000 + i),
+        "timestamp": f"2025-06-{15 + (index % 15):02d}T12:00:00.000Z",
+        "likesCount": 5000 + (index * 1000),
+        "commentsCount": 200 + (index * 50),
+        "type": "Video" if index % 3 != 0 else "Image",
+        "displayUrl": f"https://instagram.fcdn.net/v/fake-{platform_id}.jpg",
+        "hashtags": _FAKE_HASHTAGS[i],
+        "mentions": [],
+        "images": [],
+        "locationName": "",
+    }
+
+
 def step_apify_enrich(
     session: Session,
     upload_id: str,
     media_event_ids: list[str],
     pipeline_run_id: str,
+    source_platform: str = "tiktok",
 ) -> None:
-    """Fetch TikTok metadata via Apify scraper in batches of 50."""
+    """Fetch metadata via Apify scraper in batches. Dispatches by platform."""
     step_start = time.time()
-    logger.info("Step 2/5: apify_enrich started", extra={"upload_id": upload_id})
+    logger.info(
+        "Step 2/7: apify_enrich started",
+        extra={"upload_id": upload_id, "platform": source_platform},
+    )
 
     # Only enrich items still in 'parsed' state (idempotent on retry)
     events = (
@@ -485,45 +785,70 @@ def step_apify_enrich(
 
     if not events:
         logger.info(
-            "Step 2/5: no items to enrich (all already enriched)",
+            "Step 2/7: no items to enrich (all already enriched)",
             extra={"upload_id": upload_id},
         )
         return
 
+    is_instagram = source_platform == "instagram"
     enriched_count = 0
 
     for i in range(0, len(events), APIFY_BATCH_SIZE):
         batch = events[i : i + APIFY_BATCH_SIZE]
-        urls = [_normalize_tiktok_url(e.canonical_url) for e in batch if e.canonical_url]
+        urls = [e.canonical_url for e in batch if e.canonical_url]
+
+        if not is_instagram:
+            urls = [_normalize_tiktok_url(u) for u in urls]
 
         if APIFY_API_TOKEN:
-            apify_items = _run_apify_batch(urls)
+            if is_instagram:
+                apify_items = _run_apify_instagram_batch(urls)
+            else:
+                apify_items = _run_apify_batch(urls)
         else:
             logger.info(
                 "Using fake enrichment (no APIFY_API_TOKEN)",
-                extra={"upload_id": upload_id},
+                extra={"upload_id": upload_id, "platform": source_platform},
             )
-            apify_items = [
-                _fake_apify_response(e.platform_id, i + idx) for idx, e in enumerate(batch)
-            ]
+            if is_instagram:
+                apify_items = [
+                    _fake_ig_apify_response(e.platform_id, i + idx) for idx, e in enumerate(batch)
+                ]
+            else:
+                apify_items = [
+                    _fake_apify_response(e.platform_id, i + idx) for idx, e in enumerate(batch)
+                ]
 
-        # Index Apify results by video ID for matching
+        # Index Apify results by platform ID for matching
         results_by_pid: dict[str, dict] = {}
         for item in apify_items:
-            apify_id = str(item.get("id", ""))
-            if apify_id:
-                results_by_pid[apify_id] = item
-            web_url = item.get("webVideoUrl", "")
-            pid = _extract_platform_id(web_url)
-            if pid:
-                results_by_pid[pid] = item
+            if is_instagram:
+                shortcode = item.get("shortCode") or ""
+                if shortcode:
+                    results_by_pid[shortcode] = item
+                # Also try extracting from URL
+                item_url = item.get("url", "")
+                sc = _extract_ig_shortcode(item_url)
+                if sc:
+                    results_by_pid[sc] = item
+            else:
+                apify_id = str(item.get("id", ""))
+                if apify_id:
+                    results_by_pid[apify_id] = item
+                web_url = item.get("webVideoUrl", "")
+                pid = _extract_platform_id(web_url)
+                if pid:
+                    results_by_pid[pid] = item
 
         for event in batch:
             apify_data = results_by_pid.get(event.platform_id)
             if not apify_data:
                 continue
 
-            values = _map_apify_to_update(apify_data)
+            if is_instagram:
+                values = _map_instagram_apify_to_update(apify_data)
+            else:
+                values = _map_apify_to_update(apify_data)
             session.execute(update(MediaEvent).where(MediaEvent.id == event.id).values(**values))
             enriched_count += 1
 
@@ -537,7 +862,7 @@ def step_apify_enrich(
 
     duration_ms = int((time.time() - step_start) * 1000)
     logger.info(
-        "Step 2/5: apify_enrich complete",
+        "Step 2/7: apify_enrich complete",
         extra={
             "upload_id": upload_id,
             "enriched": enriched_count,
@@ -545,7 +870,7 @@ def step_apify_enrich(
         },
     )
     suffix = " (fake data)" if not APIFY_API_TOKEN else ""
-    _dev_print(f"Step 2/5: Enriched {enriched_count} items{suffix}")
+    _dev_print(f"Step 2/7: Enriched {enriched_count} items{suffix}")
 
 
 # ==========================================================================
@@ -561,7 +886,7 @@ def step_subtitle_fetch(
 ) -> None:
     """Extract subtitles from Apify data. Skip images/slideshows."""
     step_start = time.time()
-    logger.info("Step 3/5: subtitle_fetch started", extra={"upload_id": upload_id})
+    logger.info("Step 3/7: subtitle_fetch started", extra={"upload_id": upload_id})
 
     id_uuids = [UUID(eid) for eid in media_event_ids]
 
@@ -623,18 +948,271 @@ def step_subtitle_fetch(
 
     duration_ms = int((time.time() - step_start) * 1000)
     logger.info(
-        "Step 3/5: subtitle_fetch complete",
+        "Step 3/7: subtitle_fetch complete",
         extra={
             "upload_id": upload_id,
             "subtitled": len(events),
             "duration_ms": duration_ms,
         },
     )
-    _dev_print(f"Step 3/5: Subtitles for {len(events)} videos")
+    _dev_print(f"Step 3/7: Subtitles for {len(events)} videos")
 
 
 # ==========================================================================
-# Step 4: CLASSIFY (Gemini Tier 1)
+# Step 4: PERCEIVE (Visual observation — separate from classification)
+# ==========================================================================
+
+
+def _perceive_one_sync(
+    api_key: str,
+    model: str,
+    thumbnail_url: str | None,
+    image_urls: list[str] | None,
+    is_slideshow: bool,
+    media_type: str | None,
+    caption: str | None,
+    creator_username: str | None,
+) -> dict | None:
+    """Run visual perception on a single item. Returns observation dict or None.
+
+    For slideshows/carousels, all images are sent to Gemini in a single call.
+    For videos, the thumbnail is used (full video upload is a future enhancement).
+    For single photos, the display URL (stored as thumbnail_url) is the full image.
+    """
+    import httpx as _httpx
+
+    from app.services.gemini import (
+        CLASSIFY_MAX_TOKENS,
+        GEMINI_API_BASE,
+        REQUEST_TIMEOUT,
+    )
+    from app.services.prompt_loader import load_prompt
+
+    # Determine which image(s) to send
+    urls_to_send: list[str] = []
+    if is_slideshow and image_urls:
+        urls_to_send = image_urls[:10]  # Cap at 10 images per carousel
+    elif thumbnail_url:
+        urls_to_send = [thumbnail_url]
+    else:
+        return None  # No visual content
+
+    # Build media instruction
+    n_images = len(urls_to_send)
+    if is_slideshow and n_images > 1:
+        media_instruction = (
+            f"You are seeing a carousel/slideshow with {n_images} images. "
+            "Describe each image, noting what changes between slides."
+        )
+    elif media_type == "video":
+        media_instruction = (
+            "You are seeing a thumbnail from a video. Describe what's visible in this frame."
+        )
+    else:
+        media_instruction = "You are seeing the full image from this post."
+
+    # Build minimal context (just enough for the LLM to ground observations)
+    context_parts = []
+    if caption:
+        context_parts.append(f"Caption: {caption[:300]}")
+    if creator_username:
+        context_parts.append(f"Creator: @{creator_username}")
+    context = "\n".join(context_parts) if context_parts else "(No metadata available)"
+
+    try:
+        prompt_text = load_prompt("perception", "observe")
+        prompt = prompt_text.replace("{media_instruction}", media_instruction).replace(
+            "{context}", context
+        )
+
+        parts: list[dict] = [{"text": prompt}]
+        for url in urls_to_send:
+            parts.append({"fileData": {"mimeType": "image/jpeg", "fileUri": url}})
+
+        gemini_model = model or "gemini-2.0-flash"
+
+        with _httpx.Client(timeout=REQUEST_TIMEOUT) as client:
+            resp = client.post(
+                f"{GEMINI_API_BASE}/models/{gemini_model}:generateContent",
+                params={"key": api_key},
+                json={
+                    "contents": [{"parts": parts}],
+                    "generationConfig": {
+                        "maxOutputTokens": CLASSIFY_MAX_TOKENS,
+                        "temperature": 0.2,
+                        "responseMimeType": "application/json",
+                    },
+                },
+            )
+
+        if resp.status_code != 200:
+            body = resp.text[:300] if resp.text else "(empty)"
+            logger.warning(
+                "Gemini perceive API error",
+                extra={"status": resp.status_code, "body": body},
+            )
+            return None
+
+        data = resp.json()
+        text = data["candidates"][0]["content"]["parts"][0]["text"]
+        return json.loads(text)
+
+    except Exception as e:
+        logger.warning("Gemini perceive failed", extra={"error": str(e)})
+        return None
+
+
+def _fake_perception(index: int) -> dict:
+    """Generate fake perception for dev mode (no GEMINI_API_KEY)."""
+    scenes = [
+        ("indoor kitchen scene with cooking", "food_close_up", "warm"),
+        ("person talking to camera outdoors", "outdoor", "energetic"),
+        ("product display on clean background", "product_shot", "minimal"),
+        ("gym workout with equipment visible", "gym", "energetic"),
+        ("street scene with storefronts", "street", "bright"),
+    ]
+    desc, scene, mood = scenes[index % len(scenes)]
+    return {
+        "visual_description": f"Dev mode: {desc}.",
+        "text_on_screen": None,
+        "entities_detected": [],
+        "people": [],
+        "scene_type": scene,
+        "visual_mood": mood,
+        "colors_dominant": ["neutral"],
+        "presentation_format": "photo",
+    }
+
+
+def step_perceive(
+    session: Session,
+    upload_id: str,
+    media_event_ids: list[str],
+    pipeline_run_id: str,
+) -> None:
+    """Step 4/7: Visual perception pass. Observes images without classifying.
+
+    Writes perception results to cached_classifications.perception for each item.
+    The classify step reads this and uses it as additional context.
+    """
+    step_start = time.time()
+    logger.info("Step 4/7: perceive started", extra={"upload_id": upload_id})
+
+    events = (
+        session.execute(
+            select(MediaEvent).where(
+                MediaEvent.id.in_([UUID(eid) for eid in media_event_ids]),
+                MediaEvent.processing_state == "subtitled",
+            )
+        )
+        .scalars()
+        .all()
+    )
+
+    if not events:
+        logger.info("Step 4/7: no items to perceive", extra={"upload_id": upload_id})
+        return
+
+    perceived_count = 0
+
+    if GEMINI_API_KEY:
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+
+        futures = {}
+        with ThreadPoolExecutor(max_workers=PERCEIVE_CONCURRENCY) as executor:
+            for event in events:
+                # Skip items with no visual content at all
+                if not event.thumbnail_url and not event.image_urls:
+                    continue
+
+                future = executor.submit(
+                    _perceive_one_sync,
+                    api_key=GEMINI_API_KEY,
+                    model=GEMINI_MODEL,
+                    thumbnail_url=event.thumbnail_url,
+                    image_urls=event.image_urls,
+                    is_slideshow=bool(event.is_slideshow),
+                    media_type=event.media_type,
+                    caption=event.caption_text,
+                    creator_username=event.creator_username,
+                )
+                futures[future] = event
+
+            processed = 0
+            failed = 0
+            total_submitted = len(futures)
+            for future in as_completed(futures):
+                event = futures[future]
+                perception = future.result()
+
+                if perception:
+                    existing = event.cached_classifications or {}
+                    existing["perception"] = perception
+                    session.execute(
+                        update(MediaEvent)
+                        .where(MediaEvent.id == event.id)
+                        .values(
+                            cached_classifications=existing,
+                            processing_state="perceived",
+                            updated_at=func.now(),
+                        )
+                    )
+                    perceived_count += 1
+                else:
+                    failed += 1
+                    session.execute(
+                        update(MediaEvent)
+                        .where(MediaEvent.id == event.id)
+                        .values(
+                            processing_state="perceived",
+                            updated_at=func.now(),
+                        )
+                    )
+
+                processed += 1
+                # Batch commit every 50 items + progress log
+                if processed % 50 == 0:
+                    session.commit()
+                    _dev_print(
+                        f"  Step 4/7 progress: {processed}/{total_submitted} "
+                        f"({perceived_count} perceived, {failed} failed)"
+                    )
+    else:
+        logger.info(
+            "Using fake perceptions (no GEMINI_API_KEY)",
+            extra={"upload_id": upload_id},
+        )
+        for idx, event in enumerate(events):
+            existing = event.cached_classifications or {}
+            existing["perception"] = _fake_perception(idx)
+            session.execute(
+                update(MediaEvent)
+                .where(MediaEvent.id == event.id)
+                .values(
+                    cached_classifications=existing,
+                    processing_state="perceived",
+                    updated_at=func.now(),
+                )
+            )
+            perceived_count += 1
+
+    session.commit()
+
+    duration_ms = int((time.time() - step_start) * 1000)
+    logger.info(
+        "Step 4/7: perceive complete",
+        extra={
+            "upload_id": upload_id,
+            "perceived": perceived_count,
+            "duration_ms": duration_ms,
+        },
+    )
+    suffix = " (fake)" if not GEMINI_API_KEY else ""
+    _dev_print(f"Step 4/7: Perceived {perceived_count} items{suffix}")
+
+
+# ==========================================================================
+# Step 5: CLASSIFY (Gemini — enhanced with perception context)
 # ==========================================================================
 
 
@@ -648,11 +1226,16 @@ def _classify_one_sync(
     music_name: str | None,
     duration_seconds: int | None,
     thumbnail_url: str | None,
+    perception: dict | None = None,
 ) -> dict | None:
     """Synchronous Gemini classification for ThreadPoolExecutor.
 
     Uses a per-call sync httpx.Client instead of the shared async client
     to avoid thread-safety issues with httpx.AsyncClient across event loops.
+
+    When perception data is available (from step_perceive), it's injected into
+    the prompt as additional visual context. The image is NOT re-sent to Gemini
+    since perception already captured the visual information.
     """
     import httpx as _httpx
 
@@ -675,26 +1258,67 @@ def _classify_one_sync(
             duration_seconds,
             None,
         )
-        if context is None:
+        if context is None and not thumbnail_url and not perception:
             return None
 
-        if thumbnail_url:
+        if context is None:
+            context = "(No text metadata available.)"
+
+        # Build perception context block from step_perceive results
+        if perception:
+            perception_lines = ["VISUAL PERCEPTION (from image analysis):"]
+            if perception.get("visual_description"):
+                perception_lines.append(f"  Description: {perception['visual_description']}")
+            if perception.get("text_on_screen"):
+                perception_lines.append(f"  Text on screen: {perception['text_on_screen']}")
+            if perception.get("entities_detected"):
+                ent_strs = [
+                    f"{e['name']} ({e.get('type', '?')}, {e.get('confidence', '?')})"
+                    for e in perception["entities_detected"]
+                ]
+                perception_lines.append(f"  Entities seen: {', '.join(ent_strs)}")
+            if perception.get("people"):
+                ppl_strs = [
+                    p.get("identified_as") or p.get("description", "unknown person")
+                    for p in perception["people"]
+                ]
+                perception_lines.append(f"  People: {', '.join(ppl_strs)}")
+            if perception.get("scene_type"):
+                perception_lines.append(f"  Scene: {perception['scene_type']}")
+            if perception.get("visual_mood"):
+                perception_lines.append(f"  Mood: {perception['visual_mood']}")
+            if perception.get("presentation_format"):
+                perception_lines.append(f"  Format: {perception['presentation_format']}")
+            perception_block = "\n".join(perception_lines)
             image_instruction = (
-                "You are seeing a thumbnail image from the video. "
+                "Visual perception data is provided below from a prior image analysis pass. "
+                "Use it alongside the metadata to classify. No image is attached."
+            )
+        elif thumbnail_url:
+            perception_block = ""
+            image_instruction = (
+                "You are seeing a thumbnail image from the content. "
                 "Extract what you can from this image plus the metadata below."
             )
         else:
+            perception_block = ""
             image_instruction = "No image is available. Classify based on the metadata below."
+
+        # Inject perception context into the metadata block
+        full_context = context
+        if perception_block:
+            full_context = f"{perception_block}\n\n{context}"
 
         prompt = (
             _get_tier1_prompt()
-            .replace("{context}", context)
+            .replace("{context}", full_context)
             .replace("{image_instruction}", image_instruction)
         )
         gemini_model = model or DEFAULT_GEMINI_MODEL
 
+        # Only attach the image if there's NO perception data (avoid double-processing)
         parts: list[dict] = [{"text": prompt}]
-        if thumbnail_url:
+        if thumbnail_url and not perception:
             parts.append(
                 {
                     "fileData": {
@@ -796,15 +1420,20 @@ def step_classify(
     media_event_ids: list[str],
     pipeline_run_id: str,
 ) -> None:
-    """Classify items using Gemini Tier 1 prompt. Writes to cached_classifications."""
+    """Step 5/7: Classify items using Gemini Tier 1 prompt, enhanced with perception.
+
+    Reads perception data from cached_classifications.perception (written by
+    step_perceive) and injects it as context for the classification prompt.
+    When perception is available, the image is NOT re-sent to Gemini.
+    """
     step_start = time.time()
-    logger.info("Step 4/5: classify started", extra={"upload_id": upload_id})
+    logger.info("Step 5/7: classify started", extra={"upload_id": upload_id})
 
     events = (
         session.execute(
             select(MediaEvent).where(
                 MediaEvent.id.in_([UUID(eid) for eid in media_event_ids]),
-                MediaEvent.processing_state == "subtitled",
+                MediaEvent.processing_state == "perceived",
             )
         )
         .scalars()
@@ -812,7 +1441,7 @@ def step_classify(
     )
 
     if not events:
-        logger.info("Step 4/5: no items to classify", extra={"upload_id": upload_id})
+        logger.info("Step 5/7: no items to classify", extra={"upload_id": upload_id})
         return
 
     classified_count = 0
@@ -826,6 +1455,10 @@ def step_classify(
         futures = {}
         with ThreadPoolExecutor(max_workers=CLASSIFY_CONCURRENCY) as executor:
             for event in events:
+                # Read perception data written by step_perceive (if available)
+                existing_cache = event.cached_classifications or {}
+                perception_data = existing_cache.get("perception")
+
                 future = executor.submit(
                     _classify_one_sync,
                     api_key=GEMINI_API_KEY,
@@ -837,12 +1470,18 @@ def step_classify(
                     music_name=event.music_name,
                     duration_seconds=event.video_duration_seconds,
                     thumbnail_url=event.thumbnail_url,
+                    perception=perception_data,
                 )
                 futures[future] = event
 
+            processed = 0
+            total_submitted = len(futures)
             for future in as_completed(futures):
                 event = futures[future]
                 result = future.result()
+
+                existing_cache = event.cached_classifications or {}
+                perception_data = existing_cache.get("perception")
 
                 if result:
                     validated = validate_classification(result["raw"])
@@ -850,7 +1489,11 @@ def step_classify(
                         "tier1": validated.tier1,
                         "tier2": validated.tier2,
                         "confidence": validated.confidence,
-                        "source": "pipeline_tier1",
+                        "source": (
+                            "pipeline_tier1_with_perception"
+                            if perception_data
+                            else "pipeline_tier1"
+                        ),
                     }
                     if result.get("summary"):
                         cache["summary"] = result["summary"]
@@ -858,9 +1501,9 @@ def step_classify(
                         cache["entities"] = result["entities"]
                     if result.get("embedding_text"):
                         cache["embedding_text"] = result["embedding_text"]
+                    if perception_data:
+                        cache["perception"] = perception_data
                 else:
-                    # Classification failed — don't write to cached_classifications
-                    # so the agent's classify tool can retry on demand
                     cache = None
 
                 session.execute(
@@ -873,6 +1516,14 @@ def step_classify(
                     )
                 )
                 classified_count += 1
+                processed += 1
+
+                if processed % 50 == 0:
+                    session.commit()
+                    _dev_print(
+                        f"  Step 5/7 progress: {processed}/{total_submitted} "
+                        f"({classified_count} classified)"
+                    )
     else:
         # Dev mode: fake classifications
         logger.info(
@@ -901,7 +1552,7 @@ def step_classify(
 
     duration_ms = int((time.time() - step_start) * 1000)
     logger.info(
-        "Step 4/5: classify complete",
+        "Step 5/7: classify complete",
         extra={
             "upload_id": upload_id,
             "classified": classified_count,
@@ -909,11 +1560,11 @@ def step_classify(
         },
     )
     suffix = " (fake)" if not GEMINI_API_KEY else ""
-    _dev_print(f"Step 4/5: Classified {classified_count} items{suffix}")
+    _dev_print(f"Step 5/7: Classified {classified_count} items{suffix}")
 
 
 # ==========================================================================
-# Step 5: EMBEDDING
+# Step 6: EMBEDDING
 # ==========================================================================
 
 
@@ -930,7 +1581,7 @@ def _fuse_text(event: MediaEvent) -> str:
         parts.append(f"by @{event.creator_username}")
     if event.music_name:
         parts.append(f"music: {event.music_name}")
-    return " | ".join(parts) if parts else "untitled tiktok"
+    return " | ".join(parts) if parts else f"untitled {event.platform} post"
 
 
 def _embed_batch(texts: list[str]) -> list[list[float]]:
@@ -962,7 +1613,7 @@ def step_embed(
 ) -> None:
     """Fuse text fields and generate embeddings via OpenAI."""
     step_start = time.time()
-    logger.info("Step 5/5: embed started", extra={"upload_id": upload_id})
+    logger.info("Step 6/7: embed started", extra={"upload_id": upload_id})
 
     events = (
         session.execute(
@@ -976,7 +1627,7 @@ def step_embed(
     )
 
     if not events:
-        logger.info("Step 5/5: no items to embed", extra={"upload_id": upload_id})
+        logger.info("Step 6/7: no items to embed", extra={"upload_id": upload_id})
         return
 
     # Build embedding text: prefer model-generated embedding_text, fall back to _fuse_text
@@ -1032,7 +1683,7 @@ def step_embed(
 
     duration_ms = int((time.time() - step_start) * 1000)
     logger.info(
-        "Step 5/5: embed complete",
+        "Step 6/7: embed complete",
         extra={
             "upload_id": upload_id,
             "embedded": embedded_count,
@@ -1040,7 +1691,7 @@ def step_embed(
         },
     )
     suffix = " (random)" if not OPENAI_API_KEY else ""
-    _dev_print(f"Step 5/5: Embeddings for {embedded_count} items{suffix}")
+    _dev_print(f"Step 6/7: Embeddings for {embedded_count} items{suffix}")
 
 
 # ==========================================================================
@@ -1105,8 +1756,9 @@ def run_pipeline(
     storage_path: str,
     scope: str,
     request_id: str = "local",
+    source_platform: str = "tiktok",
 ) -> dict:
-    """Run the full 5-step pipeline for a single upload.
+    """Run the full 6-step pipeline for a single upload.
 
     This is the main entry point, called by both the Lambda handler
     and local dev mode.
@@ -1117,13 +1769,19 @@ def run_pipeline(
         storage_path: Supabase Storage path to the ZIP file.
         scope: Which videos to process ('liked', 'favorited', or 'both').
         request_id: Correlation ID for logging (Lambda request ID or 'local').
+        source_platform: Platform of the export ('tiktok' or 'instagram').
 
     Returns:
         Dict with statusCode and body (matches Lambda response format).
     """
     logger.info(
         "Pipeline started",
-        extra={"upload_id": upload_id, "request_id": request_id, "scope": scope},
+        extra={
+            "upload_id": upload_id,
+            "request_id": request_id,
+            "scope": scope,
+            "platform": source_platform,
+        },
     )
 
     start = time.time()
@@ -1135,7 +1793,14 @@ def run_pipeline(
         session.commit()
 
         # Step 1: Parse export -> create media_event rows
-        media_event_ids = step_parse_export(session, upload_id, user_id, storage_path, scope)
+        media_event_ids = step_parse_export(
+            session,
+            upload_id,
+            user_id,
+            storage_path,
+            scope,
+            source_platform=source_platform,
+        )
 
         # Update pipeline run total
         session.execute(
@@ -1145,16 +1810,25 @@ def run_pipeline(
         )
         session.commit()
 
-        # Step 2: Apify enrich -> fetch TikTok metadata
-        step_apify_enrich(session, upload_id, media_event_ids, pipeline_run_id)
+        # Step 2: Apify enrich -> fetch metadata (platform-specific actor)
+        step_apify_enrich(
+            session,
+            upload_id,
+            media_event_ids,
+            pipeline_run_id,
+            source_platform=source_platform,
+        )
 
         # Step 3: Subtitle fetch -> extract subtitles
         step_subtitle_fetch(session, upload_id, media_event_ids, pipeline_run_id)
 
-        # Step 4: Classify -> Gemini Tier 1 classification
+        # Step 4: Perceive -> visual observation (separate from classification)
+        step_perceive(session, upload_id, media_event_ids, pipeline_run_id)
+
+        # Step 5: Classify -> perception-enhanced classification
         step_classify(session, upload_id, media_event_ids, pipeline_run_id)
 
-        # Step 5: Embed -> generate search embeddings
+        # Step 6: Embed -> generate search embeddings
         step_embed(session, upload_id, media_event_ids, pipeline_run_id)
 
         # Mark upload + pipeline run as complete

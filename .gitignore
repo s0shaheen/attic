@@ -51,6 +51,9 @@ tsconfig.tsbuildinfo
 # Workbench
 workbench/.env
 workbench/data/my-export/
+workbench/data/instagram-export-sample.zip
+instagram-*.zip
+workbench/output/
 workbench/evals/results/
 *.ipynb_checkpoints/
 

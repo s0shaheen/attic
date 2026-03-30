@@ -49,6 +49,7 @@ def _make_event(**kwargs: Any) -> SimpleNamespace:
         "subtitle_text": None,
         "creator_username": None,
         "music_name": None,
+        "platform": "tiktok",
     }
     defaults.update(kwargs)
     return SimpleNamespace(**defaults)
@@ -203,12 +204,12 @@ class TestFuseText:
 
     def test_empty_fields_returns_untitled(self):
         event = _make_event()
-        assert _fuse_text(event) == "untitled tiktok"
+        assert _fuse_text(event) == "untitled tiktok post"
 
     def test_empty_hashtag_list_returns_untitled(self):
         """An empty list [] is falsy, should be treated same as None."""
         event = _make_event(hashtags=[])
-        assert _fuse_text(event) == "untitled tiktok"
+        assert _fuse_text(event) == "untitled tiktok post"
 
     def test_caption_and_creator_only(self):
         event = _make_event(caption_text="check this out", creator_username="testuser")
@@ -422,7 +423,7 @@ class TestMapApifyToUpdate:
 
 class TestGetEngine:
     def test_normalizes_asyncpg_url(self):
-        """_get_engine should replace postgresql+asyncpg:// with postgresql://."""
+        """_get_engine should replace postgresql+asyncpg:// with postgresql+psycopg://."""
         import app.services.pipeline as handler_module
 
         # Reset cached engine
@@ -435,7 +436,7 @@ class TestGetEngine:
                 mock_create.return_value = MagicMock()
                 engine = _get_engine()
                 mock_create.assert_called_once_with(
-                    "postgresql://user:pass@host/db",
+                    "postgresql+psycopg://user:pass@host/db",
                     pool_pre_ping=True,
                     pool_size=1,
                     max_overflow=0,
@@ -453,7 +454,7 @@ class TestGetEngine:
         original_db_url = handler_module.DATABASE_URL
 
         try:
-            handler_module.DATABASE_URL = "postgresql://user:pass@host/db"
+            handler_module.DATABASE_URL = "postgresql+psycopg://user:pass@host/db"
             with patch.object(handler_module, "create_engine") as mock_create:
                 sentinel = MagicMock()
                 mock_create.return_value = sentinel
@@ -467,8 +468,8 @@ class TestGetEngine:
             handler_module.DATABASE_URL = original_db_url
             handler_module._engine = None
 
-    def test_no_change_for_plain_postgresql_url(self):
-        """Standard postgresql:// URL should pass through unchanged."""
+    def test_normalizes_plain_postgresql_url(self):
+        """Standard postgresql:// URL should be normalized to postgresql+psycopg://."""
         import app.services.pipeline as handler_module
 
         handler_module._engine = None
@@ -480,7 +481,7 @@ class TestGetEngine:
                 mock_create.return_value = MagicMock()
                 _get_engine()
                 mock_create.assert_called_once_with(
-                    "postgresql://user:pass@host/db",
+                    "postgresql+psycopg://user:pass@host/db",
                     pool_pre_ping=True,
                     pool_size=1,
                     max_overflow=0,

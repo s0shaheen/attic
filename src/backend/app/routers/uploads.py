@@ -10,7 +10,7 @@ Endpoint flow:
 import json
 import logging
 from datetime import UTC, datetime
-from typing import Annotated
+from typing import Annotated, Literal
 from uuid import UUID
 
 import boto3
@@ -345,6 +345,7 @@ class ProcessUploadRequest(BaseModel):
 
     upload_id: UUID
     storage_path: str
+    source_platform: Literal["tiktok", "instagram"] = "tiktok"
 
 
 @router.post(
@@ -378,6 +379,7 @@ async def process_upload(
                     user_id=str(user.id),
                     storage_path=request.storage_path,
                     scope="both",
+                    source_platform=request.source_platform,
                 )
             except Exception:
                 logger.exception(
@@ -407,6 +409,7 @@ async def process_upload(
         "user_id": str(user.id),
         "storage_path": request.storage_path,
         "scope": "both",
+        "source_platform": request.source_platform,
     }
 
     try:

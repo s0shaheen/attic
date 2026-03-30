@@ -496,16 +496,17 @@ class TestFuseText:
         assert "Original Sound" in result
 
     def test_fuse_text_with_no_fields(self):
-        """_fuse_text returns 'untitled tiktok' when no text fields exist."""
+        """_fuse_text returns 'untitled tiktok post' when no text fields exist."""
         event = MagicMock()
         event.caption_text = None
         event.hashtags = None
         event.subtitle_text = None
         event.creator_username = None
         event.music_name = None
+        event.platform = "tiktok"
 
         result = _fuse_text(event)
-        assert result == "untitled tiktok"
+        assert result == "untitled tiktok post"
 
     def test_fuse_text_with_partial_fields(self):
         """_fuse_text handles partial field availability."""

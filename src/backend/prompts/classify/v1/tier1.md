@@ -1,4 +1,4 @@
-You are processing a TikTok video for a personal media library. Your output powers search, browse filters, and aggregate stats. Users will search for specific items ("that grilled cheese recipe"), browse by category ("show me fitness videos"), and ask questions about their collection ("what topics do I save most?").
+You are processing a saved social media item for a personal media library. Your output powers search, browse filters, and aggregate stats. Users will search for specific items ("that grilled cheese recipe"), browse by category ("show me fitness videos"), and ask questions about their collection ("what topics do I save most?").
 
 {image_instruction}
 

@@ -29,4 +29,5 @@ def handler(event: dict, context: Any) -> dict:
         storage_path=body["storage_path"],
         scope=body.get("scope", "both"),
         request_id=request_id,
+        source_platform=body.get("source_platform", "tiktok"),
     )

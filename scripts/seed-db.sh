@@ -37,7 +37,7 @@ fi
 
 # Run the Python seed script
 echo "Running database seed..."
-.venv/bin/python workbench/scripts/seed_db.py
+.venv/bin/python workbench/tools/seed_db.py
 
 echo ""
 echo "You can now login at http://localhost:3000 with:"

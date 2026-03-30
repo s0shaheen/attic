@@ -78,7 +78,7 @@ class Collection(Base):
             "source_type IN ('manual', 'agent', 'import')",
             name="ck_collections_source_type",
         ),
-        {"comment": "User-curated groups of media events (manual, agent-created, or imported)"},
+        {"comment": "Groups of media events (manual, agent-created, or imported)"},
     )
 
 

@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 # Gemini API endpoint
 GEMINI_API_BASE = "https://generativelanguage.googleapis.com/v1beta"
-DEFAULT_GEMINI_MODEL = "gemini-2.0-flash"
+DEFAULT_GEMINI_MODEL = "gemini-3-flash-preview"
 
 # Request defaults
 CLASSIFY_MAX_TOKENS = 2048

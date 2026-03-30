@@ -117,8 +117,8 @@ class TestValidateAllPrompts:
         from app.services.prompt_loader import _prompt_cache
 
         validate_all_prompts()
-        # 7 agent + 1 classify + 6 vision = 14
-        assert len(_prompt_cache) == 14
+        # 7 agent + 1 classify + 1 perception + 6 vision = 15
+        assert len(_prompt_cache) == 15
 
 
 class TestComputePromptHash:
