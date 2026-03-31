@@ -64,6 +64,9 @@ DATABASE_URL = os.environ.get("DATABASE_URL", "")
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
 SUPABASE_SECRET_KEY = os.environ.get("SUPABASE_SECRET_KEY", "")
 APIFY_API_TOKEN = os.environ.get("APIFY_API_TOKEN", "")
+TIKWM_API_KEY = os.environ.get("TIKWM_API_KEY", "")
+TIKWM_BASE_URL = "https://api.tikwmapi.com"
+TIKWM_DELAY_S = 0.25  # Stay under 5 RPS
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3-flash-preview")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
@@ -132,6 +135,109 @@ def _http_download(url: str, headers: dict[str, str], dest_path: str, timeout: i
                 if not chunk:
                     break
                 f.write(chunk)
+
+
+# ---------- TikWM Helpers ----------
+
+
+def _tikwm_get(url: str) -> dict | None:
+    """Fetch TikTok video metadata from TikWM. Returns data dict or None on failure."""
+    try:
+        resp = _http_json(
+            "GET",
+            f"{TIKWM_BASE_URL}/?url={urllib.request.quote(url, safe='')}",
+            headers={"x-tikwmapi-key": TIKWM_API_KEY},
+            timeout=15,
+        )
+        if resp.get("code") != 0:
+            logger.warning(
+                "TikWM non-zero code",
+                extra={"code": resp.get("code"), "url": url},
+            )
+            return None
+        return resp.get("data")
+    except (urllib.error.URLError, json.JSONDecodeError, KeyError) as exc:
+        logger.warning("TikWM request failed", extra={"url": url, "error": str(exc)})
+        return None
+
+
+def _run_tikwm_batch(urls: list[str]) -> dict[str, dict]:
+    """Fetch TikTok metadata via TikWM for a list of URLs.
+
+    Returns {platform_id: tikwm_data}. Failed items silently omitted.
+    """
+    results: dict[str, dict] = {}
+    for idx, url in enumerate(urls):
+        if idx > 0:
+            time.sleep(TIKWM_DELAY_S)
+        data = _tikwm_get(url)
+        if not data:
+            continue
+        vid_id = str(data.get("id", ""))
+        if vid_id:
+            results[vid_id] = data
+        pid = _extract_platform_id(url)
+        if pid:
+            results[pid] = data
+    return results
+
+
+def _map_tikwm_to_update(data: dict) -> dict[str, Any]:
+    """Map TikWM response fields to MediaEvent column values."""
+    author = data.get("author") or {}
+    music = data.get("music_info") or {}
+
+    # TikWM puts caption + hashtags together in "title"
+    title = data.get("title") or ""
+    hashtags = re.findall(r"#(\w+)", title)
+    caption = re.sub(r"\s*#\w+", "", title).strip()
+
+    images = data.get("images") or []
+    if len(images) > 1:
+        media_type = "slideshow"
+        is_slideshow = True
+    elif len(images) == 1:
+        media_type = "image"
+        is_slideshow = False
+    else:
+        media_type = "video"
+        is_slideshow = False
+
+    create_time = data.get("create_time")
+    video_created_at = datetime.fromtimestamp(int(create_time), tz=UTC) if create_time else None
+
+    return {
+        "caption_text": caption or None,
+        "hashtags": hashtags or None,
+        "mentions": None,
+        "creator_username": author.get("unique_id"),
+        "creator_name": author.get("nickname"),
+        "creator_id": str(author.get("id", "")) or None,
+        "creator_followers": None,
+        "creator_verified": None,
+        "play_count": data.get("play_count"),
+        "like_count": data.get("digg_count"),
+        "comment_count": data.get("comment_count"),
+        "share_count": data.get("share_count"),
+        "collect_count": data.get("collect_count"),
+        "video_duration_seconds": data.get("duration"),
+        "video_created_at": video_created_at,
+        "is_ad": data.get("is_ad"),
+        "is_pinned": None,
+        "is_slideshow": is_slideshow,
+        "media_type": media_type,
+        "image_count": len(images) if images else None,
+        "image_urls": images if images else None,
+        "location_created": data.get("region"),
+        "music_id": str(music.get("id", "")) or None,
+        "music_name": music.get("title"),
+        "music_author": music.get("author"),
+        "music_is_original": music.get("is_original"),
+        "effect_stickers": None,
+        "thumbnail_url": data.get("origin_cover") or data.get("cover"),
+        "processing_state": "enriched",
+        "updated_at": func.now(),
+    }
 
 
 # ---------- URL Helpers ----------
@@ -764,10 +870,14 @@ def step_apify_enrich(
     pipeline_run_id: str,
     source_platform: str = "tiktok",
 ) -> None:
-    """Fetch metadata via Apify scraper in batches. Dispatches by platform."""
+    """Fetch metadata via enrichment providers in batches.
+
+    TikTok: TikWM (primary) with Apify fallback for failures.
+    Instagram: Apify only.
+    """
     step_start = time.time()
     logger.info(
-        "Step 2/7: apify_enrich started",
+        "Step 2/7: enrich started",
         extra={"upload_id": upload_id, "platform": source_platform},
     )
 
@@ -792,6 +902,8 @@ def step_apify_enrich(
 
     is_instagram = source_platform == "instagram"
     enriched_count = 0
+    tikwm_count = 0
+    apify_fallback_count = 0
 
     for i in range(0, len(events), APIFY_BATCH_SIZE):
         batch = events[i : i + APIFY_BATCH_SIZE]
@@ -800,14 +912,93 @@ def step_apify_enrich(
         if not is_instagram:
             urls = [_normalize_tiktok_url(u) for u in urls]
 
-        if APIFY_API_TOKEN:
+        # --- TikTok with TikWM primary + Apify fallback ---
+        if not is_instagram and TIKWM_API_KEY:
+            tikwm_results = _run_tikwm_batch(urls)
+            failed_events: list = []
+
+            for event in batch:
+                tikwm_data = tikwm_results.get(event.platform_id)
+                if tikwm_data:
+                    values = _map_tikwm_to_update(tikwm_data)
+                    session.execute(
+                        update(MediaEvent).where(MediaEvent.id == event.id).values(**values)
+                    )
+                    enriched_count += 1
+                    tikwm_count += 1
+                else:
+                    failed_events.append(event)
+
+            # Apify fallback for TikWM failures
+            if failed_events and APIFY_API_TOKEN:
+                fallback_urls = [
+                    _normalize_tiktok_url(e.canonical_url) for e in failed_events if e.canonical_url
+                ]
+                apify_items = _run_apify_batch(fallback_urls)
+                results_by_pid: dict[str, dict] = {}
+                for item in apify_items:
+                    apify_id = str(item.get("id", ""))
+                    if apify_id:
+                        results_by_pid[apify_id] = item
+                    web_url = item.get("webVideoUrl", "")
+                    pid = _extract_platform_id(web_url)
+                    if pid:
+                        results_by_pid[pid] = item
+
+                for event in failed_events:
+                    apify_data = results_by_pid.get(event.platform_id)
+                    if not apify_data:
+                        continue
+                    values = _map_apify_to_update(apify_data)
+                    session.execute(
+                        update(MediaEvent).where(MediaEvent.id == event.id).values(**values)
+                    )
+                    enriched_count += 1
+                    apify_fallback_count += 1
+
+        # --- Apify-only path (Instagram, or TikTok without TikWM key) ---
+        elif APIFY_API_TOKEN:
             if is_instagram:
                 apify_items = _run_apify_instagram_batch(urls)
             else:
                 apify_items = _run_apify_batch(urls)
+
+            results_by_pid = {}
+            for item in apify_items:
+                if is_instagram:
+                    shortcode = item.get("shortCode") or ""
+                    if shortcode:
+                        results_by_pid[shortcode] = item
+                    item_url = item.get("url", "")
+                    sc = _extract_ig_shortcode(item_url)
+                    if sc:
+                        results_by_pid[sc] = item
+                else:
+                    apify_id = str(item.get("id", ""))
+                    if apify_id:
+                        results_by_pid[apify_id] = item
+                    web_url = item.get("webVideoUrl", "")
+                    pid = _extract_platform_id(web_url)
+                    if pid:
+                        results_by_pid[pid] = item
+
+            for event in batch:
+                apify_data = results_by_pid.get(event.platform_id)
+                if not apify_data:
+                    continue
+                if is_instagram:
+                    values = _map_instagram_apify_to_update(apify_data)
+                else:
+                    values = _map_apify_to_update(apify_data)
+                session.execute(
+                    update(MediaEvent).where(MediaEvent.id == event.id).values(**values)
+                )
+                enriched_count += 1
+
+        # --- Dev mode fake data ---
         else:
             logger.info(
-                "Using fake enrichment (no APIFY_API_TOKEN)",
+                "Using fake enrichment (no API keys)",
                 extra={"upload_id": upload_id, "platform": source_platform},
             )
             if is_instagram:
@@ -819,38 +1010,29 @@ def step_apify_enrich(
                     _fake_apify_response(e.platform_id, i + idx) for idx, e in enumerate(batch)
                 ]
 
-        # Index Apify results by platform ID for matching
-        results_by_pid: dict[str, dict] = {}
-        for item in apify_items:
-            if is_instagram:
-                shortcode = item.get("shortCode") or ""
-                if shortcode:
-                    results_by_pid[shortcode] = item
-                # Also try extracting from URL
-                item_url = item.get("url", "")
-                sc = _extract_ig_shortcode(item_url)
-                if sc:
-                    results_by_pid[sc] = item
-            else:
-                apify_id = str(item.get("id", ""))
-                if apify_id:
-                    results_by_pid[apify_id] = item
-                web_url = item.get("webVideoUrl", "")
-                pid = _extract_platform_id(web_url)
-                if pid:
-                    results_by_pid[pid] = item
+            results_by_pid = {}
+            for item in apify_items:
+                if is_instagram:
+                    shortcode = item.get("shortCode") or ""
+                    if shortcode:
+                        results_by_pid[shortcode] = item
+                else:
+                    apify_id = str(item.get("id", ""))
+                    if apify_id:
+                        results_by_pid[apify_id] = item
 
-        for event in batch:
-            apify_data = results_by_pid.get(event.platform_id)
-            if not apify_data:
-                continue
-
-            if is_instagram:
-                values = _map_instagram_apify_to_update(apify_data)
-            else:
-                values = _map_apify_to_update(apify_data)
-            session.execute(update(MediaEvent).where(MediaEvent.id == event.id).values(**values))
-            enriched_count += 1
+            for event in batch:
+                fake_data = results_by_pid.get(event.platform_id)
+                if not fake_data:
+                    continue
+                if is_instagram:
+                    values = _map_instagram_apify_to_update(fake_data)
+                else:
+                    values = _map_apify_to_update(fake_data)
+                session.execute(
+                    update(MediaEvent).where(MediaEvent.id == event.id).values(**values)
+                )
+                enriched_count += 1
 
         # Update pipeline progress after each batch
         session.execute(
@@ -861,16 +1043,26 @@ def step_apify_enrich(
         session.commit()
 
     duration_ms = int((time.time() - step_start) * 1000)
+    provider = "tikwm+apify" if tikwm_count else ("apify" if APIFY_API_TOKEN else "fake")
     logger.info(
-        "Step 2/7: apify_enrich complete",
+        "Step 2/7: enrich complete",
         extra={
             "upload_id": upload_id,
             "enriched": enriched_count,
+            "tikwm_count": tikwm_count,
+            "apify_fallback_count": apify_fallback_count,
+            "provider": provider,
             "duration_ms": duration_ms,
         },
     )
-    suffix = " (fake data)" if not APIFY_API_TOKEN else ""
-    _dev_print(f"Step 2/7: Enriched {enriched_count} items{suffix}")
+    if tikwm_count:
+        _dev_print(
+            f"Step 2/7: Enriched {enriched_count} items "
+            f"(TikWM: {tikwm_count}, Apify fallback: {apify_fallback_count})"
+        )
+    else:
+        suffix = " (fake data)" if not APIFY_API_TOKEN and not TIKWM_API_KEY else ""
+        _dev_print(f"Step 2/7: Enriched {enriched_count} items{suffix}")
 
 
 # ==========================================================================

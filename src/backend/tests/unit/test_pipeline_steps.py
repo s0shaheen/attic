@@ -33,7 +33,9 @@ from app.services.pipeline import (  # noqa: E402
     _fuse_text,
     _get_engine,
     _map_apify_to_update,
+    _map_tikwm_to_update,
     _normalize_tiktok_url,
+    _run_tikwm_batch,
 )
 
 # ---------------------------------------------------------------------------
@@ -510,3 +512,204 @@ class TestHandler:
         mock_context = SimpleNamespace(aws_request_id="test-req-id")
         result = handler({"Records": []}, mock_context)
         assert result == {"statusCode": 200, "body": "No records"}
+
+
+# ==========================================================================
+# 8. _map_tikwm_to_update
+# ==========================================================================
+
+
+class TestMapTikwmToUpdate:
+    def test_standard_video_all_fields(self):
+        tikwm_data = {
+            "id": "7123456789",
+            "title": "Best tacos in Austin #food #tacos",
+            "author": {
+                "unique_id": "foodie_sarah",
+                "nickname": "Sarah Eats",
+                "id": "12345",
+            },
+            "music_info": {
+                "id": "m789",
+                "title": "Cool Song",
+                "author": "DJ Cool",
+                "is_original": False,
+            },
+            "duration": 30,
+            "origin_cover": "https://p16.tiktokcdn.com/origin.jpg",
+            "cover": "https://p16.tiktokcdn.com/cover.jpg",
+            "play_count": 100000,
+            "digg_count": 5000,
+            "comment_count": 200,
+            "share_count": 100,
+            "collect_count": 50,
+            "create_time": 1700000000,
+            "is_ad": False,
+            "region": "US",
+            "images": [],
+        }
+
+        result = _map_tikwm_to_update(tikwm_data)
+
+        assert result["caption_text"] == "Best tacos in Austin"
+        assert result["hashtags"] == ["food", "tacos"]
+        assert result["mentions"] is None
+        assert result["creator_username"] == "foodie_sarah"
+        assert result["creator_name"] == "Sarah Eats"
+        assert result["creator_id"] == "12345"
+        assert result["creator_followers"] is None
+        assert result["creator_verified"] is None
+        assert result["play_count"] == 100000
+        assert result["like_count"] == 5000
+        assert result["comment_count"] == 200
+        assert result["share_count"] == 100
+        assert result["collect_count"] == 50
+        assert result["video_duration_seconds"] == 30
+        assert result["is_ad"] is False
+        assert result["is_pinned"] is None
+        assert result["is_slideshow"] is False
+        assert result["media_type"] == "video"
+        assert result["image_count"] is None
+        assert result["image_urls"] is None
+        assert result["location_created"] == "US"
+        assert result["music_id"] == "m789"
+        assert result["music_name"] == "Cool Song"
+        assert result["music_author"] == "DJ Cool"
+        assert result["music_is_original"] is False
+        assert result["effect_stickers"] is None
+        assert result["thumbnail_url"] == "https://p16.tiktokcdn.com/origin.jpg"
+        assert result["processing_state"] == "enriched"
+
+        expected_dt = datetime.fromtimestamp(1700000000, tz=UTC)
+        assert result["video_created_at"] == expected_dt
+
+    def test_hashtag_parsing_from_title(self):
+        data = {"title": "Caption text #tag1 #tag2 #tag3"}
+        result = _map_tikwm_to_update(data)
+        assert result["hashtags"] == ["tag1", "tag2", "tag3"]
+        assert result["caption_text"] == "Caption text"
+
+    def test_title_only_hashtags(self):
+        data = {"title": "#tag1 #tag2"}
+        result = _map_tikwm_to_update(data)
+        assert result["hashtags"] == ["tag1", "tag2"]
+        assert result["caption_text"] is None
+
+    def test_missing_optional_fields(self):
+        result = _map_tikwm_to_update({})
+        assert result["caption_text"] is None
+        assert result["hashtags"] is None
+        assert result["creator_username"] is None
+        assert result["creator_name"] is None
+        assert result["creator_id"] is None
+        assert result["play_count"] is None
+        assert result["like_count"] is None
+        assert result["video_created_at"] is None
+        assert result["is_slideshow"] is False
+        assert result["media_type"] == "video"
+        assert result["music_id"] is None
+        assert result["thumbnail_url"] is None
+        assert result["processing_state"] == "enriched"
+
+    def test_timestamp_conversion(self):
+        data = {"create_time": 1700000000}
+        result = _map_tikwm_to_update(data)
+        expected = datetime.fromtimestamp(1700000000, tz=UTC)
+        assert result["video_created_at"] == expected
+
+    def test_slideshow_detection(self):
+        data = {
+            "images": [
+                "https://img1.tiktokcdn.com/1.jpg",
+                "https://img2.tiktokcdn.com/2.jpg",
+                "https://img3.tiktokcdn.com/3.jpg",
+            ]
+        }
+        result = _map_tikwm_to_update(data)
+        assert result["media_type"] == "slideshow"
+        assert result["is_slideshow"] is True
+        assert result["image_count"] == 3
+        assert len(result["image_urls"]) == 3
+
+    def test_single_image_detection(self):
+        data = {"images": ["https://img.tiktokcdn.com/photo.jpg"]}
+        result = _map_tikwm_to_update(data)
+        assert result["media_type"] == "image"
+        assert result["is_slideshow"] is False
+        assert result["image_count"] == 1
+
+    def test_thumbnail_prefers_origin_cover(self):
+        data = {
+            "origin_cover": "https://origin.jpg",
+            "cover": "https://cover.jpg",
+        }
+        result = _map_tikwm_to_update(data)
+        assert result["thumbnail_url"] == "https://origin.jpg"
+
+    def test_thumbnail_fallback_to_cover(self):
+        data = {"cover": "https://cover.jpg"}
+        result = _map_tikwm_to_update(data)
+        assert result["thumbnail_url"] == "https://cover.jpg"
+
+    def test_creator_id_empty_becomes_none(self):
+        data = {"author": {"id": ""}}
+        result = _map_tikwm_to_update(data)
+        assert result["creator_id"] is None
+
+    def test_music_id_empty_becomes_none(self):
+        data = {"music_info": {"id": ""}}
+        result = _map_tikwm_to_update(data)
+        assert result["music_id"] is None
+
+
+# ==========================================================================
+# 9. _run_tikwm_batch
+# ==========================================================================
+
+
+class TestRunTikwmBatch:
+    def test_successful_batch(self):
+        mock_data = {
+            "id": "7123456789",
+            "title": "Test video",
+            "author": {"unique_id": "test"},
+        }
+        with patch("app.services.pipeline._tikwm_get", return_value=mock_data):
+            results = _run_tikwm_batch(["https://www.tiktok.com/@user/video/7123456789"])
+        assert "7123456789" in results
+        assert results["7123456789"]["title"] == "Test video"
+
+    def test_failed_items_omitted(self):
+        def side_effect(url):
+            if "111" in url:
+                return {"id": "111", "title": "ok"}
+            return None
+
+        with patch("app.services.pipeline._tikwm_get", side_effect=side_effect):
+            results = _run_tikwm_batch(
+                [
+                    "https://www.tiktok.com/@a/video/111",
+                    "https://www.tiktok.com/@b/video/222",
+                ]
+            )
+        assert "111" in results
+        assert "222" not in results
+
+    def test_rate_limiting_sleep_called(self):
+        with (
+            patch("app.services.pipeline._tikwm_get", return_value=None),
+            patch("app.services.pipeline.time.sleep") as mock_sleep,
+        ):
+            _run_tikwm_batch(
+                [
+                    "https://www.tiktok.com/@a/video/111",
+                    "https://www.tiktok.com/@b/video/222",
+                    "https://www.tiktok.com/@c/video/333",
+                ]
+            )
+        # sleep called before 2nd and 3rd items (not before 1st)
+        assert mock_sleep.call_count == 2
+
+    def test_empty_urls_returns_empty(self):
+        results = _run_tikwm_batch([])
+        assert results == {}

@@ -41,6 +41,9 @@ class Settings(BaseSettings):
     apify_api_token: str | None = Field(
         default=None, description="Apify API token for TikTok scraping"
     )
+    tikwm_api_key: str | None = Field(
+        default=None, description="TikWM API key for TikTok enrichment (primary provider)"
+    )
     openai_api_key: str | None = Field(default=None, description="OpenAI API key for embeddings")
 
     # Agent LLM APIs (optional in dev — production guard below)
