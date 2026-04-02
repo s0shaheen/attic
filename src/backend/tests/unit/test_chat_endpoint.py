@@ -15,6 +15,7 @@ import pytest
 
 from app.config import Settings, get_settings
 from app.core.auth import get_current_user
+from app.core.rate_limit import check_chat_rate_limit
 from app.db.session import get_db
 from app.main import app
 from app.models.auth import AuthenticatedUser
@@ -130,7 +131,7 @@ def _override_dependencies():
 
     mock_db = _make_mock_db()
 
-    app.dependency_overrides[get_current_user] = lambda: TEST_USER
+    app.dependency_overrides[check_chat_rate_limit] = lambda: TEST_USER
     app.dependency_overrides[get_db] = lambda: mock_db
     app.dependency_overrides[get_settings] = _make_mock_settings
 
@@ -149,7 +150,7 @@ class TestChatAuth:
 
     async def test_unauthenticated_request_returns_401(self, client):
         """Request without auth should be rejected with 401."""
-        app.dependency_overrides.pop(get_current_user, None)
+        app.dependency_overrides.pop(check_chat_rate_limit, None)
 
         response = await client.post(
             "/api/chat",

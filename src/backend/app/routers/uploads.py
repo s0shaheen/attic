@@ -21,6 +21,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.config import Settings, get_settings
 from app.core.auth import get_current_user
+from app.core.rate_limit import check_upload_rate_limit
 from app.db.session import get_db
 from app.models.auth import AuthenticatedUser
 from app.models.upload import Upload
@@ -79,7 +80,7 @@ async def _get_upload_or_404(upload_id: UUID, user_id: UUID, db: AsyncSession) -
 )
 async def create_presigned_url(
     request: PresignedUrlRequest,
-    user: Annotated[AuthenticatedUser, Depends(get_current_user)],
+    user: Annotated[AuthenticatedUser, Depends(check_upload_rate_limit)],
     settings: Annotated[Settings, Depends(get_settings)],
     db: Annotated[AsyncSession, Depends(get_db)],
 ) -> PresignedUrlResponse:
@@ -359,7 +360,7 @@ class ProcessUploadRequest(BaseModel):
 )
 async def process_upload(
     request: ProcessUploadRequest,
-    user: Annotated[AuthenticatedUser, Depends(get_current_user)],
+    user: Annotated[AuthenticatedUser, Depends(check_upload_rate_limit)],
     settings: Annotated[Settings, Depends(get_settings)],
     background_tasks: BackgroundTasks,
 ) -> dict:

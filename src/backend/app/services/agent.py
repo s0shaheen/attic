@@ -65,6 +65,8 @@ def _get_anthropic_client() -> anthropic.AsyncAnthropic:
 
 
 MAX_TOKENS = 4096
+
+# Defaults — overridden at runtime by Settings values passed to run_agent
 MAX_TOOL_CALLS_PER_QUERY = 50
 MAX_TOOL_CALLS_PER_HOUR = 200
 
@@ -76,7 +78,7 @@ MAX_TOOL_CALLS_PER_HOUR = 200
 _hourly_counts: dict[str, list[float]] = {}
 
 
-def _check_hourly_limit(user_id: str) -> bool:
+def _check_hourly_limit(user_id: str, max_per_hour: int = MAX_TOOL_CALLS_PER_HOUR) -> bool:
     """Check if user is within the hourly tool call limit."""
     now = time.time()
     cutoff = now - 3600
@@ -86,7 +88,7 @@ def _check_hourly_limit(user_id: str) -> bool:
     timestamps = [t for t in timestamps if t > cutoff]
     _hourly_counts[user_id] = timestamps
 
-    return len(timestamps) < MAX_TOOL_CALLS_PER_HOUR
+    return len(timestamps) < max_per_hour
 
 
 def _record_tool_call(user_id: str) -> None:
@@ -350,9 +352,11 @@ async def run_agent(
         entity_card, stat_card).
     """
     user_id_str = str(user_id)
+    max_per_query = settings.max_tool_calls_per_query
+    max_per_hour = settings.max_tool_calls_per_hour
 
     # Check hourly rate limit
-    if not _check_hourly_limit(user_id_str):
+    if not _check_hourly_limit(user_id_str, max_per_hour):
         yield _sse_error("You've reached the hourly tool usage limit. Please try again later.")
         yield _sse_done()
         return
@@ -400,7 +404,7 @@ async def run_agent(
                 tool_calls_this_query += 1
 
                 # Per-query limit
-                if tool_calls_this_query > MAX_TOOL_CALLS_PER_QUERY:
+                if tool_calls_this_query > max_per_query:
                     tool_results.append(
                         {
                             "type": "tool_result",
@@ -414,7 +418,7 @@ async def run_agent(
                     continue
 
                 # Hourly limit
-                if not _check_hourly_limit(user_id_str):
+                if not _check_hourly_limit(user_id_str, max_per_hour):
                     tool_results.append(
                         {
                             "type": "tool_result",

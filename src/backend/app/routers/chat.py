@@ -16,7 +16,7 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.config import Settings, get_settings
-from app.core.auth import get_current_user
+from app.core.rate_limit import check_chat_rate_limit
 from app.db.session import get_db
 from app.models.auth import AuthenticatedUser
 from app.models.conversation import Conversation, Message
@@ -60,7 +60,7 @@ class ChatRequest(BaseModel):
 )
 async def chat(
     request: ChatRequest,
-    user: Annotated[AuthenticatedUser, Depends(get_current_user)],
+    user: Annotated[AuthenticatedUser, Depends(check_chat_rate_limit)],
     settings: Annotated[Settings, Depends(get_settings)],
     db: Annotated[AsyncSession, Depends(get_db)],
 ) -> StreamingResponse:
@@ -160,6 +160,18 @@ async def chat(
                         db.add(assistant_msg)
                         await db.commit()
                         saved = True
+        except Exception as e:
+            # Catch any unhandled error so the client gets a clean error+done
+            # instead of a dropped connection.
+            logger.error(
+                {
+                    "event": "stream_error",
+                    "conversation_id": str(conversation_id),
+                    "error": str(e),
+                }
+            )
+            yield _format_sse("error", {"error": "Something went wrong. Please try again."})
+            yield _format_sse("done", {"total_tokens": None})
         finally:
             if not saved and full_response:
                 assistant_text = "".join(full_response)

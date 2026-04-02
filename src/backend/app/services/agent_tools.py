@@ -14,7 +14,9 @@ Tools:
   classification_breakdown, creator_details, field_distribution.
 """
 
+import asyncio
 import logging
+import time
 from dataclasses import dataclass
 from typing import Any
 from uuid import UUID
@@ -405,24 +407,64 @@ def _get_openai_client() -> httpx.AsyncClient:
     return _openai_client
 
 
+_EMBED_RETRYABLE_STATUSES = {429, 500, 502, 503}
+_EMBED_MAX_RETRIES = 3
+_EMBED_BACKOFF = [1, 2, 4]
+
+
 async def _embed_query(api_key: str, text: str) -> list[float] | None:
     """Embed a query string via OpenAI embeddings API.
 
-    Returns the embedding vector or None on failure.
+    Retries on 429/5xx with exponential backoff. Returns the embedding
+    vector or None on failure.
     """
     client = _get_openai_client()
-    resp = await client.post(
-        "/embeddings",
-        json={
-            "model": OPENAI_EMBEDDING_MODEL,
-            "input": text,
-            "dimensions": OPENAI_EMBEDDING_DIMENSIONS,
-        },
-        headers={"Authorization": f"Bearer {api_key}"},
-    )
-    resp.raise_for_status()
-    data = resp.json()
-    return data["data"][0]["embedding"]
+    start = time.monotonic()
+
+    for attempt in range(_EMBED_MAX_RETRIES + 1):
+        resp = await client.post(
+            "/embeddings",
+            json={
+                "model": OPENAI_EMBEDDING_MODEL,
+                "input": text,
+                "dimensions": OPENAI_EMBEDDING_DIMENSIONS,
+            },
+            headers={"Authorization": f"Bearer {api_key}"},
+        )
+
+        if resp.status_code not in _EMBED_RETRYABLE_STATUSES:
+            resp.raise_for_status()
+            data = resp.json()
+            return data["data"][0]["embedding"]
+
+        if attempt == _EMBED_MAX_RETRIES:
+            resp.raise_for_status()  # raise on final failure
+
+        # Backoff with Retry-After support
+        retry_after = resp.headers.get("Retry-After")
+        if retry_after:
+            try:
+                wait = min(float(retry_after), 30)
+            except ValueError:
+                wait = _EMBED_BACKOFF[attempt]
+        else:
+            wait = _EMBED_BACKOFF[attempt]
+
+        # Cap total retry time at 30s
+        if time.monotonic() - start + wait > 30:
+            resp.raise_for_status()
+
+        logger.warning(
+            {
+                "event": "openai_embedding_retry",
+                "status": resp.status_code,
+                "attempt": attempt + 1,
+                "wait_seconds": wait,
+            }
+        )
+        await asyncio.sleep(wait)
+
+    return None  # unreachable but satisfies type checker
 
 
 @tool(
