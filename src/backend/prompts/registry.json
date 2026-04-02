@@ -18,26 +18,42 @@
     }
   },
   "classify": {
-    "active": "v1",
+    "active": "v2",
     "versions": {
       "v1": {
         "created": "2026-03-28",
         "files": [
           "tier1"
         ],
-        "description": "Tier 1 single-pass classification with 8-facet ontology"
+        "description": "Tier 1 single-pass classification with 4-facet output"
+      },
+      "v2": {
+        "created": "2026-03-31",
+        "files": [
+          "tier2"
+        ],
+        "description": "Full 8-facet classification, multi-label affect, embedding_text, entities, platform context, perception-as-primary"
       }
     }
   },
   "perception": {
-    "active": "v1",
+    "active": "v2",
     "versions": {
       "v1": {
         "created": "2026-03-29",
         "files": [
           "observe"
         ],
-        "description": "Visual perception pass — describe what you see, do not classify"
+        "description": "Single generic perception prompt for all media types"
+      },
+      "v2": {
+        "created": "2026-03-31",
+        "files": [
+          "observe_video",
+          "observe_slideshow",
+          "observe_image"
+        ],
+        "description": "Separate prompts per media type with full video upload, scene timeline, audio ID, structured content, entity extraction, platform context"
       }
     }
   },

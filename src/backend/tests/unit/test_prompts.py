@@ -36,7 +36,7 @@ class TestBuildSystemPrompt:
     def test_contains_recall_check(self):
         prompt = build_system_prompt()
         assert "Recall Check" in prompt
-        assert "analyze_visual" in prompt
+        assert "perception" in prompt.lower()
         assert "low-text" in prompt.lower() or "low text" in prompt.lower()
 
     def test_contains_cost_awareness(self):
@@ -70,8 +70,7 @@ class TestBuildSystemPrompt:
     def test_contains_data_quality_section(self):
         prompt = build_system_prompt()
         assert "Data Quality" in prompt
-        assert "pipeline_tier1" in prompt
-        assert "agent_chat" in prompt
+        assert "pipeline_v2" in prompt
 
     def test_contains_label_definitions(self):
         """Workbench-validated label definitions should be in the prompt."""

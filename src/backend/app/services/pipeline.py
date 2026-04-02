@@ -1,10 +1,16 @@
 # Upload processing pipeline (6 steps, idempotent)
 #
-#   parsed ──► enriched ──► subtitled ──► classified ──► embedded ──► collections
-#     │            │             │             │             │             │
-#     └──► skip ◄──┘──► skip ◄──┘             │             │       (non-blocking)
-#     (already      (images/         (Gemini Tier 1)  (OpenAI)   (auto-generate)
+#   parsed ──► enriched ──► subtitled ──► perceived ──► classified ──► complete
+#     │            │             │             │             │
+#     └──► skip ◄──┘──► skip ◄──┘       (Gemini v2      (Gemini v2
+#     (already      (images/          + video upload)   8-facet classify)
 #      enriched)     slideshows)
+#
+# Video processing: Videos are uploaded to Gemini File API for full
+# video analysis. Each video upload adds ~30-60s latency. A time budget
+# (STEP_TIME_BUDGET_S) ensures the pipeline makes progress within the
+# Lambda timeout. On retry, idempotent state transitions resume from
+# where processing left off.
 #
 # Dev mode fallbacks:
 #   No APIFY_API_TOKEN → _fake_apify_response() in step 2
@@ -71,6 +77,10 @@ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 APIFY_BATCH_SIZE = 50
 CLASSIFY_CONCURRENCY = int(os.environ.get("CLASSIFY_CONCURRENCY", "20"))
 PERCEIVE_CONCURRENCY = int(os.environ.get("PERCEIVE_CONCURRENCY", "20"))
+# Time budget per step to stay within Lambda's 900s timeout.
+# Steps commit progress and return when budget is exceeded.
+# On retry, idempotent state transitions resume from where they left off.
+STEP_TIME_BUDGET_S = int(os.environ.get("STEP_TIME_BUDGET_S", "360"))  # 6 minutes
 EMBEDDING_BATCH_SIZE = 100
 EMBEDDING_MODEL = "text-embedding-3-small"
 EMBEDDING_DIMENSIONS = 1536
@@ -963,73 +973,195 @@ def step_subtitle_fetch(
 # ==========================================================================
 
 
+def _build_perception_context(
+    caption: str | None,
+    creator_username: str | None,
+    hashtags: list[str] | None,
+    music_name: str | None,
+    duration_seconds: int | None,
+    subtitle_text: str | None,
+    comments_top: list[str] | None,
+) -> str:
+    """Build the context block for perception prompts."""
+    parts: list[str] = []
+    if caption:
+        parts.append(f"Caption: {caption[:500]}")
+    if hashtags:
+        parts.append(f"Hashtags: #{', #'.join(hashtags[:15])}")
+    if creator_username:
+        parts.append(f"Creator: @{creator_username}")
+    if music_name:
+        parts.append(f"Music metadata: {music_name}")
+    if duration_seconds:
+        parts.append(f"Duration: {duration_seconds}s")
+    if subtitle_text:
+        parts.append(f"Subtitles: {subtitle_text[:500]}")
+    if comments_top:
+        clines = [f'  {j + 1}. "{c[:120]}"' for j, c in enumerate(comments_top[:10]) if c]
+        if clines:
+            parts.append("Top comments:\n" + "\n".join(clines))
+    return "\n".join(parts) if parts else "(No metadata available)"
+
+
 def _perceive_one_sync(
     api_key: str,
     model: str,
+    media_type: str | None,
+    is_slideshow: bool,
     thumbnail_url: str | None,
     image_urls: list[str] | None,
-    is_slideshow: bool,
-    media_type: str | None,
+    video_url: str | None,
     caption: str | None,
     creator_username: str | None,
+    hashtags: list[str] | None,
+    music_name: str | None,
+    duration_seconds: int | None,
+    subtitle_text: str | None,
+    comments_top: list[str] | None,
+    platform: str = "tiktok",
+    interaction_type: str | None = None,
 ) -> dict | None:
-    """Run visual perception on a single item. Returns observation dict or None.
+    """Run visual perception on a single item using v2 prompts.
 
-    For slideshows/carousels, all images are sent to Gemini in a single call.
-    For videos, the thumbnail is used (full video upload is a future enhancement).
-    For single photos, the display URL (stored as thumbnail_url) is the full image.
+    Selects the appropriate prompt (observe_video, observe_slideshow, observe_image)
+    based on media type. For videos with a video_url, uploads full video to Gemini
+    File API. Falls back to thumbnail if upload fails or no video_url.
     """
     import httpx as _httpx
 
     from app.services.gemini import (
-        CLASSIFY_MAX_TOKENS,
         GEMINI_API_BASE,
+        PERCEPTION_MAX_TOKENS,
         REQUEST_TIMEOUT,
+        delete_file_sync,
+        upload_file_sync,
+        wait_for_file_sync,
     )
     from app.services.prompt_loader import load_prompt
 
-    # Determine which image(s) to send
-    urls_to_send: list[str] = []
-    if is_slideshow and image_urls:
-        urls_to_send = image_urls[:10]  # Cap at 10 images per carousel
-    elif thumbnail_url:
-        urls_to_send = [thumbnail_url]
-    else:
-        return None  # No visual content
-
-    # Build media instruction
-    n_images = len(urls_to_send)
-    if is_slideshow and n_images > 1:
-        media_instruction = (
-            f"You are seeing a carousel/slideshow with {n_images} images. "
-            "Describe each image, noting what changes between slides."
-        )
-    elif media_type == "video":
-        media_instruction = (
-            "You are seeing a thumbnail from a video. Describe what's visible in this frame."
-        )
-    else:
-        media_instruction = "You are seeing the full image from this post."
-
-    # Build minimal context (just enough for the LLM to ground observations)
-    context_parts = []
-    if caption:
-        context_parts.append(f"Caption: {caption[:300]}")
-    if creator_username:
-        context_parts.append(f"Creator: @{creator_username}")
-    context = "\n".join(context_parts) if context_parts else "(No metadata available)"
+    context = _build_perception_context(
+        caption,
+        creator_username,
+        hashtags,
+        music_name,
+        duration_seconds,
+        subtitle_text,
+        comments_top,
+    )
+    interaction = interaction_type or "saved"
+    gemini_model = model or "gemini-2.0-flash"
 
     try:
-        prompt_text = load_prompt("perception", "observe")
-        prompt = prompt_text.replace("{media_instruction}", media_instruction).replace(
-            "{context}", context
-        )
+        # ---- VIDEO: upload full video to Gemini File API ----
+        if media_type == "video" and video_url:
+            prompt_text = load_prompt("perception", "observe_video")
+            prompt = (
+                prompt_text.replace("{platform}", platform)
+                .replace("{interaction_type}", interaction)
+                .replace("{context}", context)
+            )
 
-        parts: list[dict] = [{"text": prompt}]
-        for url in urls_to_send:
-            parts.append({"fileData": {"mimeType": "image/jpeg", "fileUri": url}})
+            video_file_name = None
+            video_tmp_path = None
+            try:
+                video_tmp = tempfile.NamedTemporaryFile(suffix=".mp4", delete=False)
+                video_tmp_path = video_tmp.name
+                video_tmp.close()
 
-        gemini_model = model or "gemini-2.0-flash"
+                _http_download(video_url, headers={}, dest_path=video_tmp_path, timeout=120)
+
+                video_file_name = upload_file_sync(api_key, video_tmp_path, "video/mp4")
+                if video_file_name:
+                    file_uri = wait_for_file_sync(api_key, video_file_name)
+                    if file_uri:
+                        parts: list[dict] = [
+                            {"text": prompt},
+                            {"fileData": {"mimeType": "video/mp4", "fileUri": file_uri}},
+                        ]
+
+                        with _httpx.Client(timeout=REQUEST_TIMEOUT * 3) as client:
+                            resp = client.post(
+                                f"{GEMINI_API_BASE}/models/{gemini_model}:generateContent",
+                                params={"key": api_key},
+                                json={
+                                    "contents": [{"parts": parts}],
+                                    "generationConfig": {
+                                        "maxOutputTokens": PERCEPTION_MAX_TOKENS,
+                                        "temperature": 0.2,
+                                        "responseMimeType": "application/json",
+                                    },
+                                },
+                            )
+
+                        delete_file_sync(api_key, video_file_name)
+                        video_file_name = None
+
+                        if resp.status_code == 200:
+                            data = resp.json()
+                            text = data["candidates"][0]["content"]["parts"][0]["text"]
+                            return json.loads(text)
+
+                        logger.warning(
+                            "Gemini perceive video API error",
+                            extra={"status": resp.status_code},
+                        )
+                    else:
+                        delete_file_sync(api_key, video_file_name)
+                        video_file_name = None
+            finally:
+                if video_file_name:
+                    delete_file_sync(api_key, video_file_name)
+                if video_tmp_path:
+                    try:
+                        os.remove(video_tmp_path)
+                    except Exception:
+                        pass
+            # Fall through to thumbnail below if video upload failed
+
+        # ---- VIDEO FALLBACK (no video_url or upload failed): use thumbnail ----
+        if media_type == "video":
+            if not thumbnail_url:
+                return None
+            prompt_text = load_prompt("perception", "observe_image")
+            prompt = (
+                prompt_text.replace("{platform}", platform)
+                .replace("{interaction_type}", interaction)
+                .replace("{context}", context)
+            )
+            parts = [
+                {"text": prompt},
+                {"fileData": {"mimeType": "image/jpeg", "fileUri": thumbnail_url}},
+            ]
+
+        # ---- SLIDESHOW: send all images ----
+        elif is_slideshow and image_urls:
+            urls_to_send = image_urls[:10]
+            n_images = len(urls_to_send)
+            prompt_text = load_prompt("perception", "observe_slideshow")
+            prompt = (
+                prompt_text.replace("{platform}", platform)
+                .replace("{interaction_type}", interaction)
+                .replace("{image_count}", str(n_images))
+                .replace("{context}", context)
+            )
+            parts = [{"text": prompt}]
+            for url in urls_to_send:
+                parts.append({"fileData": {"mimeType": "image/jpeg", "fileUri": url}})
+
+        # ---- SINGLE IMAGE ----
+        elif thumbnail_url:
+            prompt_text = load_prompt("perception", "observe_image")
+            prompt = (
+                prompt_text.replace("{platform}", platform)
+                .replace("{interaction_type}", interaction)
+                .replace("{context}", context)
+            )
+            parts = [
+                {"text": prompt},
+                {"fileData": {"mimeType": "image/jpeg", "fileUri": thumbnail_url}},
+            ]
+        else:
+            return None
 
         with _httpx.Client(timeout=REQUEST_TIMEOUT) as client:
             resp = client.post(
@@ -1038,7 +1170,7 @@ def _perceive_one_sync(
                 json={
                     "contents": [{"parts": parts}],
                     "generationConfig": {
-                        "maxOutputTokens": CLASSIFY_MAX_TOKENS,
+                        "maxOutputTokens": PERCEPTION_MAX_TOKENS,
                         "temperature": 0.2,
                         "responseMimeType": "application/json",
                     },
@@ -1121,20 +1253,27 @@ def step_perceive(
         futures = {}
         with ThreadPoolExecutor(max_workers=PERCEIVE_CONCURRENCY) as executor:
             for event in events:
-                # Skip items with no visual content at all
-                if not event.thumbnail_url and not event.image_urls:
+                if not event.thumbnail_url and not event.image_urls and not event.video_url:
                     continue
 
                 future = executor.submit(
                     _perceive_one_sync,
                     api_key=GEMINI_API_KEY,
                     model=GEMINI_MODEL,
+                    media_type=event.media_type,
+                    is_slideshow=bool(event.is_slideshow),
                     thumbnail_url=event.thumbnail_url,
                     image_urls=event.image_urls,
-                    is_slideshow=bool(event.is_slideshow),
-                    media_type=event.media_type,
+                    video_url=event.video_url,
                     caption=event.caption_text,
                     creator_username=event.creator_username,
+                    hashtags=event.hashtags,
+                    music_name=event.music_name,
+                    duration_seconds=event.video_duration_seconds,
+                    subtitle_text=event.subtitle_text,
+                    comments_top=event.comments_top,
+                    platform=event.platform or "tiktok",
+                    interaction_type=event.interaction_type,
                 )
                 futures[future] = event
 
@@ -1226,16 +1365,16 @@ def _classify_one_sync(
     music_name: str | None,
     duration_seconds: int | None,
     thumbnail_url: str | None,
+    comments_top: list[str] | None = None,
     perception: dict | None = None,
+    platform: str = "tiktok",
+    interaction_type: str | None = None,
 ) -> dict | None:
-    """Synchronous Gemini classification for ThreadPoolExecutor.
+    """Synchronous Gemini classification using v2 prompt (8-facet, multi-label affect).
 
-    Uses a per-call sync httpx.Client instead of the shared async client
-    to avoid thread-safety issues with httpx.AsyncClient across event loops.
-
-    When perception data is available (from step_perceive), it's injected into
-    the prompt as additional visual context. The image is NOT re-sent to Gemini
-    since perception already captured the visual information.
+    Uses perception data as PRIMARY evidence (serialized as JSON).
+    Raw metadata is SUPPLEMENTARY context for disambiguation.
+    Image is NOT re-sent when perception exists.
     """
     import httpx as _httpx
 
@@ -1244,79 +1383,51 @@ def _classify_one_sync(
         DEFAULT_GEMINI_MODEL,
         GEMINI_API_BASE,
         REQUEST_TIMEOUT,
-        _build_classify_context,
-        _get_tier1_prompt,
     )
+    from app.services.prompt_loader import load_prompt
 
     try:
-        context = _build_classify_context(
-            caption,
-            subtitle,
-            hashtags,
-            creator_username,
-            music_name,
-            duration_seconds,
-            None,
-        )
-        if context is None and not thumbnail_url and not perception:
+        # Build supplementary metadata context
+        context_parts: list[str] = []
+        if caption:
+            context_parts.append(f"Caption: {caption}")
+        if subtitle:
+            context_parts.append(f"Subtitles: {subtitle[:500]}")
+        if hashtags:
+            context_parts.append(f"Hashtags: #{', #'.join(str(h) for h in hashtags[:20])}")
+        if creator_username:
+            context_parts.append(f"Creator: @{creator_username}")
+        if music_name:
+            context_parts.append(f"Music: {music_name}")
+        if duration_seconds is not None:
+            context_parts.append(f"Duration: {duration_seconds}s")
+        if comments_top:
+            clines = [f'  {j + 1}. "{c[:120]}"' for j, c in enumerate(comments_top[:10]) if c]
+            if clines:
+                context_parts.append("Top comments:\n" + "\n".join(clines))
+        context = "\n".join(context_parts) if context_parts else "(No metadata available.)"
+
+        if not context_parts and not thumbnail_url and not perception:
             return None
 
-        if context is None:
-            context = "(No text metadata available.)"
-
-        # Build perception context block from step_perceive results
+        # Serialize perception as JSON for the v2 prompt
         if perception:
-            perception_lines = ["VISUAL PERCEPTION (from image analysis):"]
-            if perception.get("visual_description"):
-                perception_lines.append(f"  Description: {perception['visual_description']}")
-            if perception.get("text_on_screen"):
-                perception_lines.append(f"  Text on screen: {perception['text_on_screen']}")
-            if perception.get("entities_detected"):
-                ent_strs = [
-                    f"{e['name']} ({e.get('type', '?')}, {e.get('confidence', '?')})"
-                    for e in perception["entities_detected"]
-                ]
-                perception_lines.append(f"  Entities seen: {', '.join(ent_strs)}")
-            if perception.get("people"):
-                ppl_strs = [
-                    p.get("identified_as") or p.get("description", "unknown person")
-                    for p in perception["people"]
-                ]
-                perception_lines.append(f"  People: {', '.join(ppl_strs)}")
-            if perception.get("scene_type"):
-                perception_lines.append(f"  Scene: {perception['scene_type']}")
-            if perception.get("visual_mood"):
-                perception_lines.append(f"  Mood: {perception['visual_mood']}")
-            if perception.get("presentation_format"):
-                perception_lines.append(f"  Format: {perception['presentation_format']}")
-            perception_block = "\n".join(perception_lines)
-            image_instruction = (
-                "Visual perception data is provided below from a prior image analysis pass. "
-                "Use it alongside the metadata to classify. No image is attached."
-            )
-        elif thumbnail_url:
-            perception_block = ""
-            image_instruction = (
-                "You are seeing a thumbnail image from the content. "
-                "Extract what you can from this image plus the metadata below."
-            )
+            perception_summary = json.dumps(perception, indent=2, default=str)[:6000]
         else:
-            perception_block = ""
-            image_instruction = "No image is available. Classify based on the metadata below."
+            perception_summary = "(No perception data available — classify from metadata only.)"
 
-        # Inject perception context into the metadata block
-        full_context = context
-        if perception_block:
-            full_context = f"{perception_block}\n\n{context}"
+        interaction = interaction_type or "saved"
 
         prompt = (
-            _get_tier1_prompt()
-            .replace("{context}", full_context)
-            .replace("{image_instruction}", image_instruction)
+            load_prompt("classify", "tier2")
+            .replace("{platform}", platform)
+            .replace("{interaction_type}", interaction)
+            .replace("{perception_summary}", perception_summary)
+            .replace("{context}", context)
         )
         gemini_model = model or DEFAULT_GEMINI_MODEL
 
-        # Only attach the image if there's NO perception data (avoid double-processing)
+        # Only attach image if there's NO perception data (avoid double-processing)
         parts: list[dict] = [{"text": prompt}]
         if thumbnail_url and not perception:
             parts.append(
@@ -1410,7 +1521,7 @@ def _fake_classification(index: int) -> dict:
         "summary": f"Dev mode fake classification for {c['topic']} content.",
         "entities": [],
         "embedding_text": f"A {c['genre']} about {c['topic']} that is {c['affect']}.",
-        "source": "pipeline_tier1",
+        "source": "pipeline_v2",
     }
 
 
@@ -1470,7 +1581,10 @@ def step_classify(
                     music_name=event.music_name,
                     duration_seconds=event.video_duration_seconds,
                     thumbnail_url=event.thumbnail_url,
+                    comments_top=event.comments_top,
                     perception=perception_data,
+                    platform=event.platform or "tiktok",
+                    interaction_type=event.interaction_type,
                 )
                 futures[future] = event
 
@@ -1490,9 +1604,7 @@ def step_classify(
                         "tier2": validated.tier2,
                         "confidence": validated.confidence,
                         "source": (
-                            "pipeline_tier1_with_perception"
-                            if perception_data
-                            else "pipeline_tier1"
+                            "pipeline_v2_with_perception" if perception_data else "pipeline_v2"
                         ),
                     }
                     if result.get("summary"):
@@ -1824,6 +1936,28 @@ def run_pipeline(
 
         # Step 4: Perceive -> visual observation (separate from classification)
         step_perceive(session, upload_id, media_event_ids, pipeline_run_id)
+
+        # Check if we're running low on time (video uploads are expensive)
+        elapsed_s = time.time() - start
+        remaining_items = session.scalar(
+            select(func.count()).where(
+                MediaEvent.id.in_([UUID(eid) for eid in media_event_ids]),
+                MediaEvent.processing_state.in_(["subtitled", "perceived"]),
+            )
+        )
+        if elapsed_s > STEP_TIME_BUDGET_S and remaining_items and remaining_items > 0:
+            logger.info(
+                "Time budget exceeded, relying on retry for remaining items",
+                extra={
+                    "upload_id": upload_id,
+                    "elapsed_s": int(elapsed_s),
+                    "remaining_items": remaining_items,
+                },
+            )
+            _dev_print(
+                f"  \u23f1 Time budget exceeded ({int(elapsed_s)}s), "
+                f"{remaining_items} items remain — will continue on retry"
+            )
 
         # Step 5: Classify -> perception-enhanced classification
         step_classify(session, upload_id, media_event_ids, pipeline_run_id)

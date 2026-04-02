@@ -84,6 +84,8 @@ class MediaEvent(Base):
     music_is_original: Mapped[bool | None] = mapped_column(Boolean)
     effect_stickers: Mapped[list[str] | None] = mapped_column(ARRAY(Text))
     thumbnail_url: Mapped[str | None] = mapped_column(Text)
+    video_url: Mapped[str | None] = mapped_column(Text)  # Download URL for videos
+    comments_top: Mapped[list[str] | None] = mapped_column(ARRAY(Text))  # Top 10 comments
 
     # From transcription
     subtitle_text: Mapped[str | None] = mapped_column(Text)

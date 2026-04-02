@@ -176,14 +176,17 @@ class ClassificationResult:
 def validate_classification(raw: dict[str, Any]) -> ClassificationResult:
     """Validate and split a raw classification dict into tier-1/tier-2 labels.
 
+    Handles two output formats:
+    - v1 (flat): each facet is a dict with "label"/"primary"/"dominant" + "confidence"
+    - v2 (multi-label affect): affect is a list of {label, tier} dicts;
+      other facets are dicts with "label"/"primary" + "confidence" + "micro_labels"
+
     For each facet, the primary label is checked against ONTOLOGY_V1:
     - If valid → tier-1
-    - If not in ONTOLOGY_V1 → stored as tier-2 micro-label, tier-1 gets "other" or closest match
+    - If not in ONTOLOGY_V1 → stored as tier-2 micro-label, tier-1 gets fallback
 
     Args:
-        raw: Dict with facet names as keys. Each value should be a dict with
-             "label" (str), optionally "micro_labels" (list[str]),
-             and optionally "confidence" (float).
+        raw: Dict with facet names as keys.
 
     Returns:
         ClassificationResult with validated tier-1 and tier-2 labels.
@@ -197,14 +200,71 @@ def validate_classification(raw: dict[str, Any]) -> ClassificationResult:
         if facet_data is None:
             continue
 
+        valid_labels = _VALID_LABELS.get(facet, frozenset())
+
+        # Handle multi-label affect (v2 format): list of {label, tier}
+        if facet == "affect" and isinstance(facet_data, list):
+            dominant_labels = []
+            secondary_labels = []
+            minor_labels = []
+            for entry in facet_data:
+                if not isinstance(entry, dict):
+                    continue
+                lbl = str(entry.get("label", "")).lower().strip()
+                tier_val = str(entry.get("tier", "")).lower().strip()
+                if not lbl:
+                    continue
+                if tier_val == "dominant":
+                    dominant_labels.append(lbl)
+                elif tier_val == "secondary":
+                    secondary_labels.append(lbl)
+                elif tier_val == "minor":
+                    minor_labels.append(lbl)
+
+            # tier-1: first valid dominant label
+            primary_affect = None
+            for lbl in dominant_labels:
+                if lbl in valid_labels:
+                    primary_affect = lbl
+                    break
+            if not primary_affect:
+                primary_affect = "neutral"
+            tier1[facet] = primary_affect
+
+            # tier-2: all other labels (secondary + minor + extra dominant)
+            all_other = (
+                [lbl for lbl in dominant_labels if lbl != primary_affect]
+                + secondary_labels
+                + minor_labels
+            )
+            if all_other:
+                tier2[facet] = [lbl for lbl in all_other if lbl.strip()]
+
+            confidence[facet] = 0.8 if dominant_labels else 0.5
+            continue
+
+        # Handle presentation_style as list (v2 format): ["talking_head", "text_overlay"]
+        if facet == "presentation_style" and isinstance(facet_data, list):
+            valid_styles = [
+                str(s).lower().strip() for s in facet_data if str(s).lower().strip() in valid_labels
+            ]
+            if valid_styles:
+                tier1[facet] = valid_styles[0]
+                if len(valid_styles) > 1:
+                    tier2[facet] = valid_styles[1:]
+            else:
+                tier1[facet] = "mixed"
+            confidence[facet] = 0.7
+            continue
+
         if isinstance(facet_data, str):
             # Simple string value
             label = facet_data.lower().strip()
             micro_labels: list[str] = []
             conf = 0.5
         elif isinstance(facet_data, dict):
-            # Support multiple key formats: "label" (old ontology prompt),
-            # "primary" (Tier 1 topic), "dominant" (Tier 1 affect)
+            # Support multiple key formats: "label" (v2 prompt),
+            # "primary" (topic), "dominant" (v1 affect)
             raw_label = (
                 facet_data.get("label")
                 or facet_data.get("primary")
@@ -221,15 +281,12 @@ def validate_classification(raw: dict[str, Any]) -> ClassificationResult:
         else:
             continue
 
-        valid_labels = _VALID_LABELS.get(facet, frozenset())
-
         if label in valid_labels:
             tier1[facet] = label
         else:
             # Label not in ontology — treat as micro-label, use fallback
             if label:
                 micro_labels = [label] + [m for m in micro_labels if m != label]
-            # Use "other" if the facet has it, otherwise skip tier-1
             if "other" in valid_labels:
                 tier1[facet] = "other"
             elif "unknown" in valid_labels:

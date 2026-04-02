@@ -22,7 +22,7 @@ from app.services.agent import (
     _record_tool_call,
     run_agent,
 )
-from app.services.agent_tools import AgentToolResult, classify, resolve_entity
+from app.services.agent_tools import AgentToolResult, resolve_entity
 from app.services.entity_resolvers import (
     resolve_book,
     resolve_movie_or_tv,
@@ -118,42 +118,7 @@ class TestEntityRateLimitAndTimeout:
 class TestDBConstraintOnCacheWrite:
     """Test that DB errors during cache writes are caught and don't crash."""
 
-    @pytest.mark.asyncio
-    async def test_classify_db_flush_error_returns_error(self):
-        """If db.flush() fails during classification cache write, return error."""
-        user_id = uuid4()
-        event_id = uuid4()
-
-        event = MagicMock()
-        event.id = event_id
-        event.user_id = user_id
-        event.cached_classifications = None
-        event.caption_text = "test caption"
-        event.subtitle_text = None
-        event.hashtags = None
-        event.creator_username = None
-        event.music_name = None
-
-        db = AsyncMock()
-        result_mock = MagicMock()
-        result_mock.scalar_one_or_none.return_value = event
-        db.execute = AsyncMock(return_value=result_mock)
-        db.flush = AsyncMock(side_effect=Exception("unique constraint violation"))
-
-        from app.services.gemini import ClassifyResult
-
-        mock_gemini = ClassifyResult(
-            success=True,
-            raw_classification={"affect": {"label": "funny", "confidence": 0.9}},
-        )
-
-        with patch("app.services.agent_tools.gemini_classify", new_callable=AsyncMock) as mock_cls:
-            mock_cls.return_value = mock_gemini
-
-            result = await classify(db, MagicMock(gemini_api_key="k"), event_id, user_id)
-
-        assert result.success is False
-        assert "failed" in result.error.lower()
+    # test_classify_db_flush_error_returns_error removed — classify tool removed in pipeline v2
 
     @pytest.mark.asyncio
     async def test_resolve_entity_db_flush_error_returns_error(self):
@@ -379,8 +344,12 @@ class TestAgentGracefulDegradation:
         def _tool_block():
             block = MagicMock()
             block.type = "tool_use"
-            block.name = "classify"
-            block.input = {"media_event_id": str(uuid4())}
+            block.name = "resolve_entity"
+            block.input = {
+                "media_event_id": str(uuid4()),
+                "entity_type": "place",
+                "entity_query": "test place",
+            }
             block.id = "tool_1"
             return block
 
@@ -401,12 +370,12 @@ class TestAgentGracefulDegradation:
         ):
             # Tool fails
             mock_dispatch.return_value = AgentToolResult(
-                success=False, error="Gemini classification timed out"
+                success=False, error="Entity resolution timed out"
             )
 
             events = []
             async for event in run_agent(
-                user_message="classify this video",
+                user_message="find that restaurant from my video",
                 conversation_history=[],
                 db=MagicMock(),
                 settings=MagicMock(anthropic_api_key="test-key"),

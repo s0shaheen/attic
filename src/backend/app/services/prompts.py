@@ -42,7 +42,7 @@ def build_system_prompt() -> str:
     # Ontology section is dynamically generated from ontology.py
     ontology_section = (
         "## Available Classification Labels\n\n"
-        "When using `classify` or interpreting cached classifications, "
+        "When interpreting cached classifications from the pipeline, "
         "these are the valid tier-1 labels:\n\n" + format_ontology_for_prompt()
     )
 

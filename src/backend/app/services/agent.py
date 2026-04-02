@@ -34,8 +34,6 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.config import Settings
 from app.services.agent_tools import (
     AgentToolResult,
-    analyze_visual,
-    classify,
     get_stats,
     get_tool_definitions,
     query_items,
@@ -129,18 +127,6 @@ async def _dispatch_tool(
     if tool_name == "query_items":
         filtered = {k: v for k, v in tool_input.items() if k in _QUERY_ITEMS_KEYS}
         return await query_items(db, user_id, **filtered)
-
-    elif tool_name == "classify":
-        return await classify(db, settings, UUID(tool_input["media_event_id"]), user_id)
-
-    elif tool_name == "analyze_visual":
-        return await analyze_visual(
-            db,
-            settings,
-            UUID(tool_input["media_event_id"]),
-            user_id,
-            focus=tool_input.get("focus"),
-        )
 
     elif tool_name == "resolve_entity":
         return await resolve_entity(

@@ -6,9 +6,9 @@ Recognize the user's intent and follow the matching plan. Do NOT improvise — u
 *Triggers: "what books/restaurants/movies/songs have I saved?", "find the place from that video"*
 
 1. `query_items` — search by text (caption/subtitle) for the entity type.
-2. Check results: many items now have `cached_classifications` with an `entities` list extracted at upload time. Use these before calling `resolve_entity` — they may already have the entity name and type you need.
+2. Check results: items have `cached_classifications` with an `entities` list and `perception` data extracted at upload time. Use these — they contain entity names, types, and visual details the pipeline already extracted from the full video/image.
 3. `resolve_entity` — for entities that need structured metadata (address, author, Spotify link, etc.), resolve them against external APIs.
-4. **Recall check:** If items have short or empty captions, they may contain the entity visually. Use `analyze_visual` with the appropriate focus mode on the top 3-5 low-text items.
+4. **Recall check:** If text search returns few results, try `search_similar` with a specific entity query. The pipeline's `embedding_text` field captures visual entities that may not appear in captions.
 5. Present all found entities as a clean list with metadata and source links.
 
 ### 2. Creator Aggregation
@@ -34,7 +34,7 @@ Recognize the user's intent and follow the matching plan. Do NOT improvise — u
 *Triggers: "something relaxing", "funny cooking fails", "aesthetic content", "videos that made me cry"*
 
 1. `search_similar` — semantic search matches meaning, not just keywords.
-2. Optionally `classify` the top results to surface deeper patterns (mood, genre, topic).
+2. Review `cached_classifications` on results to surface patterns (affect tiers, genre, topic).
 3. Present results grouped by theme if patterns emerge.
 
 ### 5. Ambiguous / Broad

@@ -1,7 +1,9 @@
 ## Recall Check
 
-After any text-based search that looks for entities (books, places, movies, songs, products), review your results for items with short or empty captions. These items may contain the entity visually — a book cover, restaurant sign, or movie poster — but without text mentioning it. Use `analyze_visual` with the matching focus mode (books, scenes, places, text, products) on the top 3-5 such items to catch what text search missed.
+After any text-based search that looks for entities (books, places, movies, songs, products), review your results:
 
-Only skip the recall check if:
-- The user explicitly asked for text-only results.
-- All returned items have substantial caption text (3+ sentences).
+1. Check `cached_classifications.perception` on low-text items — the pipeline's visual perception step already extracted entities, text on screen, and scene descriptions from every item (including full video analysis). Use this data to find entities that caption search missed.
+2. Check `cached_classifications.entities` — the classification step extracted searchable entities with types and relevance.
+3. If both are empty and the item has short/no caption, try `search_similar` with a more specific query.
+
+The pipeline handles all visual analysis at upload time. You do not need to call any vision tool — the data is already in the item's `cached_classifications`.
