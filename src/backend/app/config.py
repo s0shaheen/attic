@@ -84,6 +84,14 @@ class Settings(BaseSettings):
     # Notifications (optional for MVP)
     resend_api_key: str | None = Field(default=None, description="Resend API key for email")
 
+    # Upload limits
+    max_file_size_mb: int = Field(
+        default=500, description="Maximum upload file size in MB"
+    )
+    max_concurrent_uploads: int = Field(
+        default=3, description="Maximum concurrent active uploads per user"
+    )
+
     # Observability (optional)
     sentry_dsn: str | None = Field(default=None, description="Sentry DSN for error tracking")
     posthog_api_key: str | None = Field(default=None, description="PostHog API key for analytics")

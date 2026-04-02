@@ -16,7 +16,7 @@ from uuid import UUID
 import boto3
 from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException
 from pydantic import BaseModel
-from sqlalchemy import select
+from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.config import Settings, get_settings
@@ -38,6 +38,7 @@ from app.schemas.uploads import (
     ValidateUploadResponse,
     ValidationResult,
 )
+from app.services.tiers import estimate_processing_minutes, get_tier_limit
 from app.services.uploads import UploadService
 
 logger = logging.getLogger(__name__)
@@ -85,6 +86,26 @@ async def create_presigned_url(
     db: Annotated[AsyncSession, Depends(get_db)],
 ) -> PresignedUrlResponse:
     """Generate a presigned URL and create a pending upload record."""
+    # Check concurrent upload limit (pending/processing uploads)
+    active_statuses = ("pending", "validated", "scope_selected", "consented", "processing")
+    active_count_result = await db.execute(
+        select(func.count())
+        .select_from(Upload)
+        .where(Upload.user_id == user.id, Upload.status.in_(active_statuses))
+    )
+    active_count = active_count_result.scalar() or 0
+    if active_count >= settings.max_concurrent_uploads:
+        raise HTTPException(
+            status_code=429,
+            detail=UploadErrorResponse(
+                detail=(
+                    f"You have {active_count} uploads in progress. "
+                    "Please wait for them to complete before starting another."
+                ),
+                code=UploadErrorCode.UPLOAD_LIMIT_EXCEEDED,
+            ).model_dump(),
+        )
+
     upload_service = UploadService(settings)
 
     # Tier/count defaults — full tier enforcement is a follow-up
@@ -257,15 +278,21 @@ async def set_scope(
         }
     )
 
+    # Use real item count if available (populated by pipeline parse step),
+    # otherwise estimate from scope selection
+    total_items = upload.total_items or 0
+    tier_limit = get_tier_limit("free")
+    estimated_minutes = estimate_processing_minutes(total_items) if total_items > 0 else 5
+
     return ScopeSelectionResponse(
         upload_id=upload_id,
         scope=request.scope,
-        total_items=0,
+        total_items=total_items,
         liked_count=0,
         favorited_count=0,
-        tier_limit=500,
-        within_limit=True,
-        estimated_processing_minutes=5,
+        tier_limit=tier_limit,
+        within_limit=total_items <= tier_limit,
+        estimated_processing_minutes=estimated_minutes,
         ready_for_consent=True,
     )
 
