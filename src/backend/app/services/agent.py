@@ -51,16 +51,25 @@ MODEL = "claude-haiku-4-5-20251001"
 _anthropic_client: anthropic.AsyncAnthropic | None = None
 
 
-def _get_anthropic_client() -> anthropic.AsyncAnthropic:
+def _get_anthropic_client() -> anthropic.AsyncAnthropic | None:
     """Get or create the shared Anthropic client.
 
     Reads API key from settings on first init. Cached for process lifetime.
+    Returns None if the API key is missing or client creation fails.
     """
     global _anthropic_client
     if _anthropic_client is None:
         from app.config import get_settings
 
-        _anthropic_client = anthropic.AsyncAnthropic(api_key=get_settings().anthropic_api_key)
+        api_key = get_settings().anthropic_api_key
+        if not api_key:
+            logger.error({"event": "anthropic_client_init_failed", "reason": "missing_api_key"})
+            return None
+        try:
+            _anthropic_client = anthropic.AsyncAnthropic(api_key=api_key)
+        except Exception as e:
+            logger.error({"event": "anthropic_client_init_failed", "error": str(e)})
+            return None
     return _anthropic_client
 
 
@@ -366,6 +375,11 @@ async def run_agent(
     messages.append({"role": "user", "content": user_message})
 
     client = _get_anthropic_client()
+    if client is None:
+        yield _sse_error("The chat service is temporarily unavailable. Please try again later.")
+        yield _sse_done()
+        return
+
     tool_calls_this_query = 0
     total_tokens = 0
 

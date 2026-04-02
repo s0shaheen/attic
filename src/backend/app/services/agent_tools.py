@@ -402,7 +402,7 @@ def _get_openai_client() -> httpx.AsyncClient:
     if _openai_client is None:
         _openai_client = httpx.AsyncClient(
             base_url="https://api.openai.com/v1",
-            timeout=30.0,
+            timeout=10.0,
         )
     return _openai_client
 
