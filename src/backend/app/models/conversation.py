@@ -28,7 +28,7 @@ class Conversation(Base):
     )
 
     # Relationships
-    user = relationship("User", backref="conversations")
+    user = relationship("User", back_populates="conversations")
     messages: Mapped[list["Message"]] = relationship(
         back_populates="conversation", cascade="all, delete", order_by="Message.created_at"
     )
