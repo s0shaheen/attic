@@ -761,6 +761,7 @@ async def process_test_client():
     mock_settings.aws_endpoint_url = None
     mock_settings.supabase_jwt_secret = TEST_JWT_SECRET
     mock_settings.supabase_url = TEST_SUPABASE_URL
+    mock_settings.upload_rate_limit_per_minute = 100
 
     app.dependency_overrides[get_settings] = lambda: mock_settings
 
@@ -809,6 +810,7 @@ async def test_process_upload_no_sqs_url_runs_inline():
     mock_settings.sqs_queue_url = None
     mock_settings.supabase_jwt_secret = TEST_JWT_SECRET
     mock_settings.supabase_url = TEST_SUPABASE_URL
+    mock_settings.upload_rate_limit_per_minute = 100
 
     app.dependency_overrides[get_settings] = lambda: mock_settings
 
