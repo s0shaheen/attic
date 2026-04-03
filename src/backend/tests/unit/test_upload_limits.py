@@ -114,16 +114,11 @@ class TestConcurrentUploadLimit:
 
 
 class TestConfigurableFileSize:
-    def test_settings_default_max_file_size(self):
+    def test_max_file_size_is_500mb(self):
         """Default max file size is 500MB."""
-        import os
+        from app.services.storage import MAX_FILE_SIZE_BYTES
 
-        os.environ.setdefault("MAX_FILE_SIZE_MB", "500")
-        # Just verify the field exists and defaults correctly
-        from app.config import Settings
-
-        # Settings reads from env, default is 500
-        assert Settings.model_fields["max_file_size_mb"].default == 500
+        assert MAX_FILE_SIZE_BYTES == 500 * 1024 * 1024
 
     def test_settings_default_concurrent_uploads(self):
         """Default max concurrent uploads is 3."""

@@ -23,7 +23,7 @@ import pytest
 from fastapi import FastAPI
 from httpx import ASGITransport, AsyncClient, Response
 
-from app.core.config import Settings
+from app.config import Settings
 from app.models.auth import AuthErrorCode, DeletionErrorCode
 from app.routers.user import router as user_router
 from app.services.user_deletion import DeletionResult, UserDeletionService

@@ -13,7 +13,7 @@ from datetime import datetime
 from typing import Literal
 from uuid import UUID, uuid4
 
-from app.core.config import Settings
+from app.config import Settings
 from app.schemas.uploads import ScopeSelectionResponse, ScopeType
 from app.services.storage import (
     BUCKET_NAME,

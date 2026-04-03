@@ -10,8 +10,8 @@ from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException
 
+from app.config import Settings, get_settings
 from app.core.auth import get_current_user
-from app.core.config import Settings, get_settings
 from app.models.auth import (
     AccountDeletionResponse,
     AuthenticatedUser,

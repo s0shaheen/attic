@@ -25,7 +25,7 @@ import pytest
 from fastapi import FastAPI
 from httpx import ASGITransport, AsyncClient, Response
 
-from app.core.config import Settings
+from app.config import Settings
 from app.models.auth import AuthErrorCode
 from app.routers.uploads import router as uploads_router
 from app.schemas.uploads import UploadErrorCode
@@ -749,7 +749,7 @@ async def process_test_client():
     """Create test client with dependency overrides for process endpoint tests."""
     from unittest.mock import MagicMock
 
-    from app.core.config import get_settings
+    from app.config import get_settings
 
     app = create_test_app()
 
@@ -802,7 +802,7 @@ async def test_process_upload_no_sqs_url_runs_inline():
     """POST /api/uploads/process returns 202 with inline pipeline when SQS is not configured."""
     from unittest.mock import MagicMock
 
-    from app.core.config import get_settings
+    from app.config import get_settings
 
     app = create_test_app()
 

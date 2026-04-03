@@ -11,7 +11,7 @@ from uuid import UUID
 
 import httpx
 
-from app.core.config import Settings
+from app.config import Settings
 
 logger = logging.getLogger(__name__)
 
@@ -21,8 +21,10 @@ BUCKET_NAME = "tiktok-exports"
 # Presigned URL expiration time in seconds (1 hour)
 PRESIGNED_URL_EXPIRY_SECONDS = 3600
 
-# Default maximum file size in bytes (500MB) — can be overridden via Settings.max_file_size_mb
-MAX_FILE_SIZE_BYTES = 524288000
+# Default maximum file size in bytes (500MB)
+# Canonical value — Settings.max_file_size_mb is intentionally removed since
+# this constant is the single source of truth (no runtime override needed).
+MAX_FILE_SIZE_BYTES = 500 * 1024 * 1024  # 500 MB
 
 
 @dataclass

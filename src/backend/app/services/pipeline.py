@@ -67,6 +67,9 @@ load_dotenv(Path(__file__).resolve().parents[2] / ".env")
 logger = get_logger("pipeline")
 
 # ---------- Configuration ----------
+# NOTE: This module reads os.environ directly (not app.config.Settings) because
+# the pipeline runs in AWS Lambda — a separate process from the FastAPI API server.
+# Defaults here must stay aligned with app/config.py where they overlap.
 
 DATABASE_URL = os.environ.get("DATABASE_URL", "")
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
@@ -1244,7 +1247,7 @@ def _perceive_one_sync(
         comments_top,
     )
     interaction = interaction_type or "saved"
-    gemini_model = model or "gemini-2.0-flash"
+    gemini_model = model or GEMINI_MODEL
 
     try:
         # ---- VIDEO: upload full video to Gemini File API ----
