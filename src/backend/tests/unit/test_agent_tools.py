@@ -295,7 +295,6 @@ class TestQueryItems:
         assert result.data["total"] == 0
 
 
-
 # ---------------------------------------------------------------------------
 # Tools removed in pipeline v2: classify, analyze_visual
 # All classification and visual perception is handled by the pipeline.
