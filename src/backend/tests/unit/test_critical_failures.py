@@ -174,7 +174,7 @@ class TestStaleConversation:
     async def test_deleted_conversation_returns_404(self):
         """If a conversation was deleted between requests, return 404."""
         from app.config import get_settings
-        from app.core.auth import get_current_user
+        from app.core.rate_limit import check_chat_rate_limit
         from app.db.session import get_db
         from app.main import app
         from app.models.auth import AuthenticatedUser
@@ -192,7 +192,7 @@ class TestStaleConversation:
         mock_db.add = MagicMock()
         mock_db.flush = AsyncMock()
 
-        app.dependency_overrides[get_current_user] = lambda: user
+        app.dependency_overrides[check_chat_rate_limit] = lambda: user
         app.dependency_overrides[get_db] = lambda: mock_db
         app.dependency_overrides[get_settings] = lambda: MagicMock(
             anthropic_api_key="k",
@@ -302,7 +302,11 @@ class TestAgentCostControls:
                 user_message="test",
                 conversation_history=[],
                 db=MagicMock(),
-                settings=MagicMock(anthropic_api_key="test-key"),
+                settings=MagicMock(
+                    anthropic_api_key="test-key",
+                    max_tool_calls_per_query=50,
+                    max_tool_calls_per_hour=200,
+                ),
                 user_id=user_id,
             ):
                 events.append(event)
@@ -378,7 +382,11 @@ class TestAgentGracefulDegradation:
                 user_message="find that restaurant from my video",
                 conversation_history=[],
                 db=MagicMock(),
-                settings=MagicMock(anthropic_api_key="test-key"),
+                settings=MagicMock(
+                    anthropic_api_key="test-key",
+                    max_tool_calls_per_query=50,
+                    max_tool_calls_per_hour=200,
+                ),
                 user_id=uuid4(),
             ):
                 events.append(event)
@@ -400,7 +408,11 @@ class TestAgentGracefulDegradation:
                 user_message="hi",
                 conversation_history=[],
                 db=MagicMock(),
-                settings=MagicMock(anthropic_api_key="test-key"),
+                settings=MagicMock(
+                    anthropic_api_key="test-key",
+                    max_tool_calls_per_query=50,
+                    max_tool_calls_per_hour=200,
+                ),
                 user_id=uuid4(),
             ):
                 events.append(event)

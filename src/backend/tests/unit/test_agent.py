@@ -245,7 +245,11 @@ class TestRunAgent:
                 user_message="hi",
                 conversation_history=[],
                 db=MagicMock(),
-                settings=MagicMock(anthropic_api_key="test-key"),
+                settings=MagicMock(
+                    anthropic_api_key="test-key",
+                    max_tool_calls_per_query=50,
+                    max_tool_calls_per_hour=200,
+                ),
                 user_id=uuid4(),
             ):
                 events.append(event)
@@ -282,7 +286,11 @@ class TestRunAgent:
                 user_message="show me food",
                 conversation_history=[],
                 db=MagicMock(),
-                settings=MagicMock(anthropic_api_key="test-key"),
+                settings=MagicMock(
+                    anthropic_api_key="test-key",
+                    max_tool_calls_per_query=50,
+                    max_tool_calls_per_hour=200,
+                ),
                 user_id=uuid4(),
             ):
                 events.append(event)
@@ -306,7 +314,11 @@ class TestRunAgent:
             user_message="hi",
             conversation_history=[],
             db=MagicMock(),
-            settings=MagicMock(anthropic_api_key="test-key"),
+            settings=MagicMock(
+                anthropic_api_key="test-key",
+                max_tool_calls_per_query=50,
+                max_tool_calls_per_hour=200,
+            ),
             user_id=user_id,
         ):
             events.append(event)
@@ -349,7 +361,11 @@ class TestRunAgent:
                 user_message="test",
                 conversation_history=[],
                 db=MagicMock(),
-                settings=MagicMock(anthropic_api_key="test-key"),
+                settings=MagicMock(
+                    anthropic_api_key="test-key",
+                    max_tool_calls_per_query=50,
+                    max_tool_calls_per_hour=200,
+                ),
                 user_id=uuid4(),
             ):
                 events.append(event)
@@ -378,7 +394,11 @@ class TestRunAgent:
                 user_message="hi",
                 conversation_history=[],
                 db=MagicMock(),
-                settings=MagicMock(anthropic_api_key="test-key"),
+                settings=MagicMock(
+                    anthropic_api_key="test-key",
+                    max_tool_calls_per_query=50,
+                    max_tool_calls_per_hour=200,
+                ),
                 user_id=uuid4(),
             ):
                 events.append(event)
@@ -415,7 +435,11 @@ class TestRunAgent:
                 user_message="search food",
                 conversation_history=[],
                 db=MagicMock(),
-                settings=MagicMock(anthropic_api_key="test-key"),
+                settings=MagicMock(
+                    anthropic_api_key="test-key",
+                    max_tool_calls_per_query=50,
+                    max_tool_calls_per_hour=200,
+                ),
                 user_id=uuid4(),
             ):
                 events.append(event)
@@ -442,7 +466,11 @@ class TestRunAgent:
                 user_message="second message",
                 conversation_history=history,
                 db=MagicMock(),
-                settings=MagicMock(anthropic_api_key="test-key"),
+                settings=MagicMock(
+                    anthropic_api_key="test-key",
+                    max_tool_calls_per_query=50,
+                    max_tool_calls_per_hour=200,
+                ),
                 user_id=uuid4(),
             ):
                 events.append(event)

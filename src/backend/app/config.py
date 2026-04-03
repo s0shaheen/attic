@@ -88,6 +88,20 @@ class Settings(BaseSettings):
     sentry_dsn: str | None = Field(default=None, description="Sentry DSN for error tracking")
     posthog_api_key: str | None = Field(default=None, description="PostHog API key for analytics")
 
+    # Rate limiting
+    chat_rate_limit_per_minute: int = Field(
+        default=20, description="Max chat requests per user per minute"
+    )
+    upload_rate_limit_per_minute: int = Field(
+        default=5, description="Max upload requests per user per minute"
+    )
+    max_tool_calls_per_query: int = Field(
+        default=50, description="Max agent tool calls per single query"
+    )
+    max_tool_calls_per_hour: int = Field(
+        default=200, description="Max agent tool calls per user per hour"
+    )
+
     # Application
     environment: str = Field(default="development", description="Environment name")
     log_level: str = Field(default="INFO", description="Logging level")
