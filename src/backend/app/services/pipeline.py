@@ -541,22 +541,33 @@ def _import_ig_collections(
 # ==========================================================================
 
 
-def _run_apify_batch(urls: list[str]) -> list[dict]:
-    """Start an Apify TikTok scraper run, poll for completion, return items."""
+def _run_apify_actor(
+    actor_id: str,
+    body: dict,
+    label: str = "apify",
+) -> list[dict]:
+    """Start an Apify actor run, poll for completion, return dataset items.
+
+    Shared implementation for TikTok and Instagram scrapers.
+    Returns [] on any failure (never raises).
+    """
     headers = {
         "Authorization": f"Bearer {APIFY_API_TOKEN}",
         "Content-Type": "application/json",
     }
 
-    # Start run
-    run_resp = _http_json(
-        "POST",
-        f"https://api.apify.com/v2/acts/{APIFY_ACTOR_ID}/runs",
-        headers=headers,
-        body={"postURLs": urls, "resultsPerPage": len(urls)},
-        timeout=30,
-    )
-    run_id = run_resp["data"]["id"]
+    try:
+        run_resp = _http_json(
+            "POST",
+            f"https://api.apify.com/v2/acts/{actor_id}/runs",
+            headers=headers,
+            body=body,
+            timeout=30,
+        )
+        run_id = run_resp["data"]["id"]
+    except Exception as e:
+        logger.warning(f"{label} actor start failed", extra={"error": str(e)})
+        return []
 
     # Poll for completion
     elapsed = 0
@@ -566,29 +577,47 @@ def _run_apify_batch(urls: list[str]) -> list[dict]:
         time.sleep(APIFY_POLL_INTERVAL_S)
         elapsed += APIFY_POLL_INTERVAL_S
 
-        status_resp = _http_json(
-            "GET",
-            f"https://api.apify.com/v2/actor-runs/{run_id}",
-            headers=headers,
-            timeout=15,
-        )
-        status = status_resp["data"]["status"]
+        try:
+            status_resp = _http_json(
+                "GET",
+                f"https://api.apify.com/v2/actor-runs/{run_id}",
+                headers=headers,
+                timeout=15,
+            )
+            status = status_resp["data"]["status"]
+        except Exception as e:
+            logger.warning(f"{label} poll failed", extra={"run_id": run_id, "error": str(e)})
+            continue
+
         if status in ("SUCCEEDED", "FAILED", "ABORTED", "TIMED-OUT"):
             break
 
     if status != "SUCCEEDED":
-        logger.warning("Apify run did not succeed", extra={"run_id": run_id, "status": status})
+        logger.warning(f"{label} run did not succeed", extra={"run_id": run_id, "status": status})
         return []
 
-    # Fetch dataset items (returns JSON array directly)
-    dataset_id = status_resp["data"]["defaultDatasetId"]
-    items: list[dict] = _http_json(
-        "GET",
-        f"https://api.apify.com/v2/datasets/{dataset_id}/items?format=json",
-        headers=headers,
-        timeout=60,
+    # Fetch dataset items
+    try:
+        dataset_id = status_resp["data"]["defaultDatasetId"]
+        items: list[dict] = _http_json(
+            "GET",
+            f"https://api.apify.com/v2/datasets/{dataset_id}/items?format=json",
+            headers=headers,
+            timeout=60,
+        )
+        return items if isinstance(items, list) else []
+    except Exception as e:
+        logger.warning(f"{label} dataset fetch failed", extra={"run_id": run_id, "error": str(e)})
+        return []
+
+
+def _run_apify_batch(urls: list[str]) -> list[dict]:
+    """Start an Apify TikTok scraper run, poll for completion, return items."""
+    return _run_apify_actor(
+        actor_id=APIFY_ACTOR_ID,
+        body={"postURLs": urls, "resultsPerPage": len(urls)},
+        label="apify-tiktok",
     )
-    return items if isinstance(items, list) else []
 
 
 def _map_apify_to_update(apify_data: dict) -> dict[str, Any]:
@@ -751,52 +780,11 @@ def _dev_print(message: str) -> None:
 
 def _run_apify_instagram_batch(urls: list[str]) -> list[dict]:
     """Start an Apify Instagram scraper run, poll for completion, return items."""
-    headers = {
-        "Authorization": f"Bearer {APIFY_API_TOKEN}",
-        "Content-Type": "application/json",
-    }
-
-    run_resp = _http_json(
-        "POST",
-        f"https://api.apify.com/v2/acts/{APIFY_INSTAGRAM_ACTOR_ID}/runs",
-        headers=headers,
+    return _run_apify_actor(
+        actor_id=APIFY_INSTAGRAM_ACTOR_ID,
         body={"directUrls": urls, "resultsLimit": len(urls)},
-        timeout=30,
+        label="apify-instagram",
     )
-    run_id = run_resp["data"]["id"]
-
-    elapsed = 0
-    status = "RUNNING"
-    status_resp: dict = {}
-    while elapsed < APIFY_MAX_WAIT_S:
-        time.sleep(APIFY_POLL_INTERVAL_S)
-        elapsed += APIFY_POLL_INTERVAL_S
-
-        status_resp = _http_json(
-            "GET",
-            f"https://api.apify.com/v2/actor-runs/{run_id}",
-            headers=headers,
-            timeout=15,
-        )
-        status = status_resp["data"]["status"]
-        if status in ("SUCCEEDED", "FAILED", "ABORTED", "TIMED-OUT"):
-            break
-
-    if status != "SUCCEEDED":
-        logger.warning(
-            "Apify Instagram run did not succeed",
-            extra={"run_id": run_id, "status": status},
-        )
-        return []
-
-    dataset_id = status_resp["data"]["defaultDatasetId"]
-    items: list[dict] = _http_json(
-        "GET",
-        f"https://api.apify.com/v2/datasets/{dataset_id}/items?format=json",
-        headers=headers,
-        timeout=60,
-    )
-    return items if isinstance(items, list) else []
 
 
 def _map_instagram_apify_to_update(apify_data: dict) -> dict[str, Any]:
@@ -1092,60 +1080,38 @@ def step_subtitle_fetch(
     media_event_ids: list[str],
     pipeline_run_id: str,
 ) -> None:
-    """Extract subtitles from Apify data. Skip images/slideshows."""
+    """Advance enriched items to subtitled state.
+
+    Subtitle extraction is not yet implemented — this step exists to maintain
+    the state machine (enriched → subtitled → perceived → classified → complete).
+    When real subtitle extraction is added, this step will do actual work.
+    """
     step_start = time.time()
     logger.info("Step 3/7: subtitle_fetch started", extra={"upload_id": upload_id})
 
     id_uuids = [UUID(eid) for eid in media_event_ids]
 
-    # Advance images/slideshows past this step (no subtitles to fetch)
-    session.execute(
+    # Bulk-advance all enriched items to subtitled (single UPDATE, no per-row loop)
+    result = session.execute(
         update(MediaEvent)
         .where(
             MediaEvent.id.in_(id_uuids),
             MediaEvent.processing_state == "enriched",
-            MediaEvent.media_type.in_(["image", "slideshow"]),
         )
         .values(processing_state="subtitled", updated_at=func.now())
     )
+    advanced = result.rowcount
 
-    # Get enriched video events
-    events = (
+    # Count items with caption text as a proxy for "has text signal"
+    subtitle_count = (
         session.execute(
-            select(MediaEvent).where(
+            select(func.count()).where(
                 MediaEvent.id.in_(id_uuids),
-                MediaEvent.processing_state == "enriched",
-                MediaEvent.media_type == "video",
+                MediaEvent.caption_text.isnot(None),
+                MediaEvent.caption_text != "",
             )
         )
-        .scalars()
-        .all()
-    )
-
-    subtitle_count = 0
-
-    for event in events:
-        # Apify TikTok data often includes subtitles in the response.
-        # caption_text is always available; subtitle_text comes from subtitle files.
-        # For MVP, we mark as subtitled. The agent's classify/vision tools
-        # handle deeper analysis on demand.
-        subtitle_text = None
-        subtitle_source = None
-
-        # If caption_text exists, that serves as our primary text signal
-        if event.caption_text:
-            subtitle_count += 1
-
-        session.execute(
-            update(MediaEvent)
-            .where(MediaEvent.id == event.id)
-            .values(
-                subtitle_text=subtitle_text,
-                subtitle_source=subtitle_source,
-                processing_state="subtitled",
-                updated_at=func.now(),
-            )
-        )
+    ).scalar() or 0
 
     session.execute(
         update(UploadPipelineRun)
@@ -1159,11 +1125,12 @@ def step_subtitle_fetch(
         "Step 3/7: subtitle_fetch complete",
         extra={
             "upload_id": upload_id,
-            "subtitled": len(events),
+            "advanced": advanced,
+            "with_text": subtitle_count,
             "duration_ms": duration_ms,
         },
     )
-    _dev_print(f"Step 3/7: Subtitles for {len(events)} videos")
+    _dev_print(f"Step 3/7: Advanced {advanced} items (subtitles pending)")
 
 
 # ==========================================================================
