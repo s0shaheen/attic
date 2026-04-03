@@ -3,8 +3,6 @@
 from unittest.mock import MagicMock, patch
 from uuid import uuid4
 
-import pytest
-
 from app.models.user import User
 
 
@@ -36,7 +34,7 @@ class TestSendCompletionEmail:
 
         mock_httpx.post.assert_called_once()
         call_kwargs = mock_httpx.post.call_args
-        payload = call_kwargs.kwargs["json"] if "json" in call_kwargs.kwargs else call_kwargs[1]["json"]
+        payload = call_kwargs.kwargs.get("json") or call_kwargs[1]["json"]
         assert "ready" in payload["subject"].lower()
         assert "42 items" in payload["html"]
         assert payload["to"] == ["test@test.com"]
@@ -55,7 +53,7 @@ class TestSendCompletionEmail:
 
         mock_httpx.post.assert_called_once()
         call_kwargs = mock_httpx.post.call_args
-        payload = call_kwargs.kwargs["json"] if "json" in call_kwargs.kwargs else call_kwargs[1]["json"]
+        payload = call_kwargs.kwargs.get("json") or call_kwargs[1]["json"]
         assert "snag" in payload["subject"].lower()
 
     @patch("app.services.pipeline.RESEND_API_KEY", "")
