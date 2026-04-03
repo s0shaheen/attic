@@ -93,7 +93,7 @@ def get_tool_definitions() -> list[dict]:
 @tool(
     "query_items",
     description=(
-        "Search and filter the user's TikTok media events. "
+        "Search and filter the user's saved social media content. "
         "Supports text search, hashtag filtering, creator filtering, "
         "and classification-based filters. Returns matching items with metadata."
     ),
@@ -659,7 +659,7 @@ _AGGREGATE_FIELDS = frozenset({"music_name", "creator_username", "media_type", "
 @tool(
     "get_stats",
     description=(
-        "Get aggregate statistics about the user's TikTok media events. "
+        "Get aggregate statistics about the user's saved social media content. "
         "Use this for high-level insights like 'what's my feed about?', "
         "'who are my top creators?', or 'how has my usage changed over time?'."
     ),

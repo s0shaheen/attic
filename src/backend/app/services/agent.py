@@ -19,6 +19,7 @@ SSE event types:
 Cost controls: 50 tool calls per query, 200 per hour per user.
 """
 
+import inspect as _inspect
 import json
 import logging
 import time
@@ -112,18 +113,11 @@ def _record_tool_call(user_id: str) -> None:
 # ---------------------------------------------------------------------------
 
 
+# Derive allowed keys from query_items signature (avoids stale manual copy)
 _QUERY_ITEMS_KEYS = frozenset(
-    {
-        "search_text",
-        "hashtag",
-        "creator",
-        "topic",
-        "affect",
-        "genre",
-        "media_type",
-        "limit",
-        "offset",
-    }
+    p.name
+    for p in _inspect.signature(query_items).parameters.values()
+    if p.name not in ("db", "user_id")
 )
 
 
