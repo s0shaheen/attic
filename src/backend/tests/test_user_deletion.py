@@ -1,22 +1,8 @@
 """Tests for user deletion functionality."""
 
-import os
 import time
 from unittest.mock import AsyncMock, patch
 from uuid import uuid4
-
-# Set environment variables BEFORE importing anything from app
-os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
-os.environ.setdefault("SUPABASE_URL", "https://test-project.supabase.co")
-os.environ.setdefault("SUPABASE_SERVICE_KEY", "test-service-key")
-os.environ.setdefault("SUPABASE_JWT_SECRET", "test-jwt-secret-for-testing-only")
-os.environ.setdefault("AWS_ACCESS_KEY_ID", "test-aws-key")
-os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "test-aws-secret")
-os.environ.setdefault("APIFY_API_TOKEN", "test-apify-token")
-os.environ.setdefault("OPENAI_API_KEY", "test-openai-key")
-os.environ.setdefault("STRIPE_SECRET_KEY", "test-stripe-key")
-os.environ.setdefault("STRIPE_WEBHOOK_SECRET", "test-stripe-webhook")
-os.environ.setdefault("RESEND_API_KEY", "test-resend-key")
 
 import jwt
 import pytest

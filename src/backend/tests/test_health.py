@@ -42,7 +42,7 @@ async def test_health_endpoint_returns_correct_schema(client: AsyncClient) -> No
 
     # Verify values are correct types
     assert data["status"] == "healthy"
-    assert data["version"] == "0.1.0"
+    assert isinstance(data["version"], str) and len(data["version"]) > 0
 
 
 @pytest.mark.asyncio

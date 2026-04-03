@@ -36,7 +36,7 @@ where = ["."]
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 testpaths = ["tests"]
-pythonpath = ["."]
+pythonpath = [".", "../lambdas"]
 markers = ["requires_db: test requires a running PostgreSQL database"]
 
 [tool.ruff]
