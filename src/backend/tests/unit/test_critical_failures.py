@@ -302,7 +302,11 @@ class TestAgentCostControls:
                 user_message="test",
                 conversation_history=[],
                 db=MagicMock(),
-                settings=MagicMock(anthropic_api_key="test-key", max_tool_calls_per_query=50, max_tool_calls_per_hour=200),
+                settings=MagicMock(
+                    anthropic_api_key="test-key",
+                    max_tool_calls_per_query=50,
+                    max_tool_calls_per_hour=200,
+                ),
                 user_id=user_id,
             ):
                 events.append(event)
@@ -378,7 +382,11 @@ class TestAgentGracefulDegradation:
                 user_message="find that restaurant from my video",
                 conversation_history=[],
                 db=MagicMock(),
-                settings=MagicMock(anthropic_api_key="test-key", max_tool_calls_per_query=50, max_tool_calls_per_hour=200),
+                settings=MagicMock(
+                    anthropic_api_key="test-key",
+                    max_tool_calls_per_query=50,
+                    max_tool_calls_per_hour=200,
+                ),
                 user_id=uuid4(),
             ):
                 events.append(event)
@@ -400,7 +408,11 @@ class TestAgentGracefulDegradation:
                 user_message="hi",
                 conversation_history=[],
                 db=MagicMock(),
-                settings=MagicMock(anthropic_api_key="test-key", max_tool_calls_per_query=50, max_tool_calls_per_hour=200),
+                settings=MagicMock(
+                    anthropic_api_key="test-key",
+                    max_tool_calls_per_query=50,
+                    max_tool_calls_per_hour=200,
+                ),
                 user_id=uuid4(),
             ):
                 events.append(event)

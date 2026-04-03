@@ -8,15 +8,14 @@ import pytest
 from fastapi import HTTPException
 
 from app.core.rate_limit import (
-    _check_rate_limit,
     _chat_request_times,
+    _check_rate_limit,
     _record_request,
     _upload_request_times,
     check_chat_rate_limit,
     check_upload_rate_limit,
 )
 from app.models.auth import AuthenticatedUser
-
 
 # ---------------------------------------------------------------------------
 # Low-level helpers

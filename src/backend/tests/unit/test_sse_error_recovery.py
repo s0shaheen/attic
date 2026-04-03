@@ -15,7 +15,6 @@ from app.core.rate_limit import check_chat_rate_limit
 from app.db.session import get_db
 from app.main import app
 from app.models.auth import AuthenticatedUser
-from app.models.conversation import Message
 from app.services.agent import SSEEvent
 
 # ---------------------------------------------------------------------------
@@ -64,9 +63,9 @@ def _parse_sse_events(response_text: str) -> list[dict]:
     current_event = {}
     for line in response_text.split("\n"):
         if line.startswith("event: "):
-            current_event["event"] = line[len("event: "):]
+            current_event["event"] = line[len("event: ") :]
         elif line.startswith("data: "):
-            raw = line[len("data: "):]
+            raw = line[len("data: ") :]
             try:
                 current_event["data"] = json.loads(raw)
             except json.JSONDecodeError:

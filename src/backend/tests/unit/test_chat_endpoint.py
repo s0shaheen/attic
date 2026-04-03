@@ -14,7 +14,6 @@ from uuid import uuid4
 import pytest
 
 from app.config import Settings, get_settings
-from app.core.auth import get_current_user
 from app.core.rate_limit import check_chat_rate_limit
 from app.db.session import get_db
 from app.main import app
@@ -567,7 +566,7 @@ class TestPartialSaveOnDisconnect:
         async def mock_run_agent(**kwargs):
             # Disconnect immediately — no tokens yielded
             raise asyncio.CancelledError()
-            yield  # noqa: unreachable — makes this an async generator
+            yield  # noqa: F541 — unreachable, makes this an async generator
 
         with patch("app.routers.chat.run_agent", side_effect=mock_run_agent):
             try:
