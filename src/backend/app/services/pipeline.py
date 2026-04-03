@@ -42,6 +42,7 @@ from pathlib import Path
 from typing import Any
 from uuid import UUID
 
+import httpx
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, func, select, update
 from sqlalchemy.dialects.postgresql import insert as pg_insert
@@ -55,6 +56,7 @@ from app.models.collection import Collection, CollectionItem
 from app.models.media_event import MediaEvent
 from app.models.upload import Upload
 from app.models.upload_pipeline_run import UploadPipelineRun
+from app.models.user import User
 from app.schemas.instagram_export import extract_shortcode as _extract_ig_shortcode
 from app.services.instagram_parser import parse_instagram_export
 from app.services.tiktok_parser import parse_tiktok_export
@@ -76,6 +78,7 @@ TIKWM_DELAY_S = 0.25  # Stay under 5 RPS
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3-flash-preview")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "")
 
 APIFY_BATCH_SIZE = 50
 CLASSIFY_CONCURRENCY = int(os.environ.get("CLASSIFY_CONCURRENCY", "20"))
@@ -2026,6 +2029,70 @@ def _ensure_pipeline_run(session: Session, upload_id: str, user_id: str) -> str:
     return str(run.id)
 
 
+def _send_completion_email(
+    session: Session, user_id: str, items_processed: int, *, failed: bool = False
+) -> None:
+    """Send email notification when pipeline completes (success or failure).
+
+    Skips silently if RESEND_API_KEY is not configured or user has no email.
+    Never raises — email failure must not break the pipeline.
+    """
+    if not RESEND_API_KEY:
+        return
+
+    try:
+        user = session.get(User, UUID(user_id))
+        if not user or not user.email:
+            return
+
+        if failed:
+            subject = "Attic — we hit a snag processing your export"
+            body = (
+                "<h2>Processing issue</h2>"
+                "<p>We ran into a problem processing your data export. "
+                "Our team has been notified and we're looking into it.</p>"
+                "<p>You don't need to re-upload — we'll retry automatically. "
+                "If the issue persists, we'll reach out.</p>"
+            )
+        else:
+            subject = "Attic — your content is ready!"
+            body = (
+                "<h2>Your content is ready to explore</h2>"
+                f"<p>We've finished processing <strong>{items_processed} items</strong> "
+                "from your export.</p>"
+                "<p>Head over to Attic to start chatting with your content — "
+                "ask questions, discover patterns, and explore your collection.</p>"
+            )
+
+        resp = httpx.post(
+            "https://api.resend.com/emails",
+            headers={
+                "Authorization": f"Bearer {RESEND_API_KEY}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "from": "Attic <noreply@attic.app>",
+                "to": [user.email],
+                "subject": subject,
+                "html": body,
+            },
+            timeout=10.0,
+        )
+
+        if resp.status_code in (200, 201):
+            logger.info(
+                "Completion email sent",
+                extra={"user_id": user_id, "status": "failed" if failed else "complete"},
+            )
+        else:
+            logger.warning(
+                "Completion email failed",
+                extra={"user_id": user_id, "status_code": resp.status_code},
+            )
+    except Exception:
+        logger.exception("Failed to send completion email", extra={"user_id": user_id})
+
+
 def _mark_upload_failed(upload_id: str) -> None:
     """Mark upload and pipeline run as failed (called on unrecoverable error)."""
     try:
@@ -2174,6 +2241,9 @@ def run_pipeline(
         )
         session.commit()
 
+        # Notify user via email (non-fatal — pipeline success is already committed)
+        _send_completion_email(session, user_id, len(media_event_ids))
+
         duration_ms = int((time.time() - start) * 1000)
         logger.info(
             "Pipeline complete",
@@ -2210,6 +2280,7 @@ def run_pipeline(
             },
         )
         _mark_upload_failed(upload_id)
+        _send_completion_email(session, user_id, 0, failed=True)
         raise
     finally:
         session.close()
