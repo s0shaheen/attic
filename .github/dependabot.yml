@@ -23,29 +23,29 @@ updates:
           - "minor"
           - "patch"
 
-  # npm dependencies (frontend)
+  # npm dependencies (frontend) — paused during rebuild, will re-enable post-brand
   - package-ecosystem: "npm"
     directory: "/src/frontend"
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "monthly"
       time: "09:00"
       timezone: "America/New_York"
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 2
     labels:
       - "dependencies"
       - "javascript"
     commit-message:
       prefix: "deps(frontend)"
     groups:
-      npm-minor:
+      npm-all:
         patterns:
           - "*"
         update-types:
           - "minor"
           - "patch"
+          - "major"
 
-  # GitHub Actions
+  # GitHub Actions — group all into a single PR
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
@@ -53,9 +53,13 @@ updates:
       day: "monday"
       time: "09:00"
       timezone: "America/New_York"
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 3
     labels:
       - "dependencies"
       - "github-actions"
     commit-message:
       prefix: "deps(ci)"
+    groups:
+      github-actions-all:
+        patterns:
+          - "*"
