@@ -21,7 +21,7 @@ BUCKET_NAME = "tiktok-exports"
 # Presigned URL expiration time in seconds (1 hour)
 PRESIGNED_URL_EXPIRY_SECONDS = 3600
 
-# Maximum file size in bytes (500MB)
+# Default maximum file size in bytes (500MB) — can be overridden via Settings.max_file_size_mb
 MAX_FILE_SIZE_BYTES = 524288000
 
 
