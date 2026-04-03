@@ -1574,11 +1574,12 @@ def _classify_one_sync(
     import httpx as _httpx
 
     from app.services.gemini import (
-        CLASSIFY_MAX_TOKENS,
         DEFAULT_GEMINI_MODEL,
         GEMINI_API_BASE,
         REQUEST_TIMEOUT,
     )
+
+    CLASSIFY_MAX_TOKENS = 2048
     from app.services.prompt_loader import load_prompt
 
     try:

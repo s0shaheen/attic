@@ -41,7 +41,7 @@ markers = ["requires_db: test requires a running PostgreSQL database"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py313"
+target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP"]

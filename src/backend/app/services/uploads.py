@@ -96,23 +96,6 @@ class ScopeSelectionResult:
     error_details: dict | None = None
 
 
-@dataclass
-class MockUploadRecord:
-    """Mock upload record for testing until database integration.
-
-    This represents what an upload record from the database would look like.
-    Will be replaced with actual ORM model when database integration is complete.
-    """
-
-    id: UUID
-    user_id: UUID
-    status: str
-    scope: str | None
-    total_items: int | None
-    liked_count: int
-    favorited_count: int
-
-
 class UploadService:
     """Service for managing TikTok export uploads.
 

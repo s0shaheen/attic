@@ -79,7 +79,7 @@ class TestUploadModel:
             "total_items",
             "processed_items",
             "file_hash",
-            "step_functions_execution_arn",
+            "pipeline_execution_ref",
             "created_at",
             "completed_at",
         }

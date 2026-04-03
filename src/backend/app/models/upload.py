@@ -29,9 +29,9 @@ class Upload(Base):
     total_items: Mapped[int | None] = mapped_column(Integer)
     processed_items: Mapped[int] = mapped_column(Integer, server_default="0")
     file_hash: Mapped[str | None] = mapped_column(String(64))  # for debugging, not content
-    step_functions_execution_arn: Mapped[str | None] = mapped_column(
+    pipeline_execution_ref: Mapped[str | None] = mapped_column(
         String(255)
-    )  # AWS Step Functions execution reference
+    )  # SQS message ID or pipeline run reference
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), nullable=False
     )

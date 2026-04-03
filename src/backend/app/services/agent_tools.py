@@ -5,8 +5,6 @@ All tools return AgentToolResult (never raise). Results are cached to DB inline.
 
 Tools:
 - query_items: Search/filter user's media_events via SQLAlchemy.
-- classify: Classify a media event using Gemini 3 Flash.
-- analyze_visual: Analyze a thumbnail with Gemini vision + grounding.
 - resolve_entity: Resolve an entity (place, book, movie, music) via external APIs.
 - search_similar: Semantic search via pgvector cosine similarity.
 - get_stats: Aggregate statistics on user's media events.
