@@ -54,7 +54,7 @@ class Settings(BaseSettings):
         default=None, description="Google Gemini API key for classification/vision"
     )
     gemini_model: str = Field(
-        default="gemini-2.0-flash",
+        default="gemini-3-flash-preview",
         description="Gemini model name for classification/vision",
     )
 
@@ -85,7 +85,6 @@ class Settings(BaseSettings):
     resend_api_key: str | None = Field(default=None, description="Resend API key for email")
 
     # Upload limits
-    max_file_size_mb: int = Field(default=500, description="Maximum upload file size in MB")
     max_concurrent_uploads: int = Field(
         default=3, description="Maximum concurrent active uploads per user"
     )

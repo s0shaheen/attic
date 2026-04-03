@@ -5,25 +5,19 @@ pipeline orchestration with mocked external dependencies.
 """
 
 import json
-import sys
 from datetime import datetime
-from pathlib import Path
 from unittest.mock import MagicMock, patch
 from uuid import UUID, uuid4
 
 import pytest
+from pipeline.handler import handler
 
-# Ensure the lambdas directory is on sys.path so we can import the handler
-sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "lambdas"))
-
-from app.services.pipeline import (  # noqa: E402, I001
+from app.services.pipeline import (
     _ensure_pipeline_run,
     _extract_platform_id,
     _fuse_text,
     _normalize_tiktok_url,
 )
-from pipeline.handler import handler  # noqa: E402
-
 
 # ---------------------------------------------------------------------------
 # Helpers

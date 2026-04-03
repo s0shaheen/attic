@@ -5,8 +5,6 @@ All tools return AgentToolResult (never raise). Results are cached to DB inline.
 
 Tools:
 - query_items: Search/filter user's media_events via SQLAlchemy.
-- classify: Classify a media event using Gemini 3 Flash.
-- analyze_visual: Analyze a thumbnail with Gemini vision + grounding.
 - resolve_entity: Resolve an entity (place, book, movie, music) via external APIs.
 - search_similar: Semantic search via pgvector cosine similarity.
 - get_stats: Aggregate statistics on user's media events.
@@ -95,7 +93,7 @@ def get_tool_definitions() -> list[dict]:
 @tool(
     "query_items",
     description=(
-        "Search and filter the user's TikTok media events. "
+        "Search and filter the user's saved social media content. "
         "Supports text search, hashtag filtering, creator filtering, "
         "and classification-based filters. Returns matching items with metadata."
     ),
@@ -661,7 +659,7 @@ _AGGREGATE_FIELDS = frozenset({"music_name", "creator_username", "media_type", "
 @tool(
     "get_stats",
     description=(
-        "Get aggregate statistics about the user's TikTok media events. "
+        "Get aggregate statistics about the user's saved social media content. "
         "Use this for high-level insights like 'what's my feed about?', "
         "'who are my top creators?', or 'how has my usage changed over time?'."
     ),

@@ -18,7 +18,7 @@ from app.services.agent import (
     _sse_token,
     run_agent,
 )
-from app.services.agent_tools import AgentToolResult, get_tool_definitions
+from app.services.agent_tools import AgentToolResult
 
 # ---------------------------------------------------------------------------
 # SSE helpers
@@ -99,70 +99,6 @@ class TestDispatchTool:
             mock.assert_called_once()
             call_kwargs = mock.call_args
             assert "unknown_key" not in call_kwargs.kwargs
-
-    @pytest.mark.asyncio
-    async def test_dispatch_classify(self):
-        with patch("app.services.agent.classify", new_callable=AsyncMock) as mock:
-            mock.return_value = AgentToolResult(success=True, data={})
-            event_id = uuid4()
-            user_id = uuid4()
-            await _dispatch_tool(
-                "classify",
-                {"media_event_id": str(event_id)},
-                MagicMock(),
-                MagicMock(),
-                user_id,
-            )
-            mock.assert_called_once()
-
-    @pytest.mark.asyncio
-    async def test_dispatch_analyze_visual(self):
-        with patch("app.services.agent.analyze_visual", new_callable=AsyncMock) as mock:
-            mock.return_value = AgentToolResult(success=True, data={})
-            await _dispatch_tool(
-                "analyze_visual",
-                {"media_event_id": str(uuid4())},
-                MagicMock(),
-                MagicMock(),
-                uuid4(),
-            )
-            mock.assert_called_once()
-
-    @pytest.mark.asyncio
-    async def test_dispatch_analyze_visual_with_focus(self):
-        """Dispatcher forwards the focus parameter to analyze_visual."""
-        with patch("app.services.agent.analyze_visual", new_callable=AsyncMock) as mock:
-            mock.return_value = AgentToolResult(success=True, data={})
-            event_id = uuid4()
-            user_id = uuid4()
-            db = MagicMock()
-            settings = MagicMock()
-            await _dispatch_tool(
-                "analyze_visual",
-                {"media_event_id": str(event_id), "focus": "books"},
-                db,
-                settings,
-                user_id,
-            )
-            mock.assert_called_once()
-            call_kwargs = mock.call_args
-            assert call_kwargs.kwargs.get("focus") == "books"
-
-    @pytest.mark.asyncio
-    async def test_dispatch_analyze_visual_without_focus(self):
-        """Dispatcher passes focus=None when not provided in tool_input."""
-        with patch("app.services.agent.analyze_visual", new_callable=AsyncMock) as mock:
-            mock.return_value = AgentToolResult(success=True, data={})
-            await _dispatch_tool(
-                "analyze_visual",
-                {"media_event_id": str(uuid4())},
-                MagicMock(),
-                MagicMock(),
-                uuid4(),
-            )
-            mock.assert_called_once()
-            call_kwargs = mock.call_args
-            assert call_kwargs.kwargs.get("focus") is None
 
     @pytest.mark.asyncio
     async def test_dispatch_resolve_entity(self):
@@ -480,30 +416,3 @@ class TestRunAgent:
         assert len(messages) == 3  # 2 history + 1 current
         assert messages[0]["content"] == "first message"
         assert messages[2]["content"] == "second message"
-
-
-# ---------------------------------------------------------------------------
-# Tool schema validation
-# ---------------------------------------------------------------------------
-
-
-class TestToolSchemas:
-    def test_analyze_visual_schema_includes_focus_enum(self):
-        """analyze_visual tool schema exposes focus parameter with valid enum values."""
-        tools = get_tool_definitions()
-        visual_tool = next(t for t in tools if t["name"] == "analyze_visual")
-        schema = visual_tool["input_schema"]
-
-        assert "focus" in schema["properties"]
-        focus_prop = schema["properties"]["focus"]
-        assert focus_prop["type"] == "string"
-        assert set(focus_prop["enum"]) == {
-            "general",
-            "books",
-            "scenes",
-            "places",
-            "text",
-            "products",
-        }
-        # focus should NOT be required (optional, defaults to general)
-        assert "focus" not in schema.get("required", [])

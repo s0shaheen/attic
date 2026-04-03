@@ -9,20 +9,15 @@ Covers:
 """
 
 import json
-import sys
-from pathlib import Path
 from unittest.mock import MagicMock, patch
+
+from pipeline.handler import handler
 
 from app.services.pipeline import (
     _extract_ig_platform_id_or_hash,
     _fake_ig_apify_response,
     _map_instagram_apify_to_update,
 )
-
-# Ensure the lambdas directory is on sys.path
-sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "lambdas"))
-
-from pipeline.handler import handler  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # _extract_ig_platform_id_or_hash

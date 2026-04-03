@@ -401,12 +401,15 @@ async def process_upload(
     - If not: runs pipeline inline via BackgroundTasks (dev path)
     """
     if not settings.sqs_queue_url:
-        # Dev mode: run pipeline inline via background thread
-        def _run_inline() -> None:
+        # Dev mode: run pipeline in a thread to avoid blocking the event loop
+        import asyncio
+
+        async def _run_inline() -> None:
             try:
                 from app.services.pipeline import run_pipeline
 
-                run_pipeline(
+                await asyncio.to_thread(
+                    run_pipeline,
                     upload_id=str(request.upload_id),
                     user_id=str(user.id),
                     storage_path=request.storage_path,

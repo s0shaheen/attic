@@ -11,7 +11,7 @@ from uuid import UUID
 
 import httpx
 
-from app.core.config import Settings
+from app.config import Settings
 
 logger = logging.getLogger(__name__)
 

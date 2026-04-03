@@ -43,9 +43,10 @@ class TestLoadRegistry:
 
 
 class TestGetActiveVersion:
-    def test_returns_v1_for_all_sets(self):
+    def test_returns_correct_active_version_for_all_sets(self):
         assert get_active_version("agent") == "v1"
-        assert get_active_version("classify") == "v1"
+        assert get_active_version("classify") == "v2"
+        assert get_active_version("perception") == "v2"
         assert get_active_version("vision") == "v1"
 
     def test_unknown_set_raises_key_error(self):
@@ -77,11 +78,17 @@ class TestLoadPrompt:
         content2 = load_prompt("agent", "identity")
         assert content1 == content2
 
-    def test_classify_tier1_loads_correctly(self):
-        content = load_prompt("classify", "tier1")
+    def test_classify_active_version_loads_correctly(self):
+        """Active classify version (v2/tier2) loads with expected content."""
+        content = load_prompt("classify", "tier2")
+        assert "classifying content" in content
+        assert "BROWSE FILTERS" in content
+
+    def test_classify_v1_tier1_loads_explicitly(self):
+        """Legacy classify v1/tier1 still loads when version is specified."""
+        content = load_prompt("classify", "tier1", version="v1")
         assert "METADATA" in content
         assert "{context}" in content
-        assert "TOPIC LABELS" in content
 
     def test_vision_modes_all_load(self):
         for mode in ["general", "books", "scenes", "places", "text", "products"]:
@@ -98,10 +105,10 @@ class TestLoadPromptSet:
         # Last section should be formatting
         assert "Response Formatting" in sections[-1]
 
-    def test_classify_returns_tier1(self):
+    def test_classify_returns_active_version(self):
         sections = load_prompt_set("classify")
         assert len(sections) == 1
-        assert "METADATA" in sections[0]
+        assert "classifying content" in sections[0]
 
     def test_vision_returns_all_modes(self):
         sections = load_prompt_set("vision")
@@ -117,8 +124,8 @@ class TestValidateAllPrompts:
         from app.services.prompt_loader import _prompt_cache
 
         validate_all_prompts()
-        # 7 agent + 1 classify + 1 perception + 6 vision = 15
-        assert len(_prompt_cache) == 15
+        # 7 agent + 2 classify (v1+v2) + 4 perception (v1+v2) + 6 vision = 19
+        assert len(_prompt_cache) == 19
 
 
 class TestComputePromptHash:
@@ -147,7 +154,7 @@ class TestPromptRegressionSnapshot:
         build_system_prompt.cache_clear()
         prompt = build_system_prompt()
         h = hashlib.sha256(prompt.encode()).hexdigest()
-        expected = "9169dd19a1f1e4e6a1b74bc4867cee72041bf0e99b7f3428598cdceb1d4c4c04"
+        expected = "9415e3351eea826b31be1c8405c86421651954102c4efa4df712a5b1b4ab03bd"
         assert h == expected, (
             f"System prompt hash changed! Expected {expected}, got {h}. "
             "This means the prompt content changed during the refactor, "

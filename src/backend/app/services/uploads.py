@@ -13,7 +13,7 @@ from datetime import datetime
 from typing import Literal
 from uuid import UUID, uuid4
 
-from app.core.config import Settings
+from app.config import Settings
 from app.schemas.uploads import ScopeSelectionResponse, ScopeType
 from app.services.storage import (
     BUCKET_NAME,
@@ -94,23 +94,6 @@ class ScopeSelectionResult:
     error_type: Literal["not_validated", "already_processing", "tier_limit_exceeded"] | None = None
     error_message: str | None = None
     error_details: dict | None = None
-
-
-@dataclass
-class MockUploadRecord:
-    """Mock upload record for testing until database integration.
-
-    This represents what an upload record from the database would look like.
-    Will be replaced with actual ORM model when database integration is complete.
-    """
-
-    id: UUID
-    user_id: UUID
-    status: str
-    scope: str | None
-    total_items: int | None
-    liked_count: int
-    favorited_count: int
 
 
 class UploadService:

@@ -1,31 +1,15 @@
 """Tests for upload functionality including presigned URL generation."""
 
-import os
 import time
-from unittest.mock import AsyncMock, patch
+from unittest.mock import AsyncMock, MagicMock, patch
 from uuid import uuid4
-
-# Set environment variables BEFORE importing anything from app
-os.environ.setdefault("DATABASE_URL", "postgresql+asyncpg://test:test@localhost/test")
-os.environ.setdefault("SUPABASE_URL", "https://test-project.supabase.co")
-os.environ.setdefault("SUPABASE_SERVICE_KEY", "test-service-key")
-os.environ.setdefault("SUPABASE_JWT_SECRET", "test-jwt-secret-for-testing-only")
-os.environ.setdefault("AWS_ACCESS_KEY_ID", "test-aws-key")
-os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "test-aws-secret")
-os.environ.setdefault("APIFY_API_TOKEN", "test-apify-token")
-os.environ.setdefault("OPENAI_API_KEY", "test-openai-key")
-os.environ.setdefault("STRIPE_SECRET_KEY", "test-stripe-key")
-os.environ.setdefault("STRIPE_WEBHOOK_SECRET", "test-stripe-webhook")
-os.environ.setdefault("RESEND_API_KEY", "test-resend-key")
-os.environ.setdefault("ANTHROPIC_API_KEY", "test-anthropic-key")
-os.environ.setdefault("GEMINI_API_KEY", "test-gemini-key")
 
 import jwt
 import pytest
 from fastapi import FastAPI
 from httpx import ASGITransport, AsyncClient, Response
 
-from app.core.config import Settings
+from app.config import Settings, get_settings
 from app.models.auth import AuthErrorCode
 from app.routers.uploads import router as uploads_router
 from app.schemas.uploads import UploadErrorCode
@@ -75,21 +59,12 @@ def create_test_app() -> FastAPI:
 
 
 @pytest.fixture
-async def test_client():
-    """Create test client with upload routes."""
-    app = create_test_app()
-    transport = ASGITransport(app=app)
-    async with AsyncClient(transport=transport, base_url="http://test") as client:
-        yield client
-
-
-@pytest.fixture
 def mock_settings():
     """Create mock settings for testing."""
     return Settings(
         database_url="postgresql+asyncpg://test:test@localhost/test",
         supabase_url=TEST_SUPABASE_URL,
-        supabase_service_key="test-service-key",
+        supabase_secret_key="test-secret-key",
         supabase_jwt_secret=TEST_JWT_SECRET,
         aws_access_key_id="test-aws-key",
         aws_secret_access_key="test-aws-secret",
@@ -99,6 +74,30 @@ def mock_settings():
         stripe_webhook_secret="test-stripe-webhook",
         resend_api_key="test-resend-key",
     )
+
+
+@pytest.fixture
+async def test_client(mock_settings):
+    """Create test client with upload routes.
+
+    Overrides get_settings and get_db so endpoint tests work without a
+    real database. Auth dependency is NOT overridden so 401 tests still work.
+    """
+    from app.db.session import get_db
+
+    mock_db = AsyncMock()
+    mock_db.execute = AsyncMock(return_value=MagicMock(scalar=MagicMock(return_value=0)))
+    mock_db.add = MagicMock()
+    mock_db.flush = AsyncMock()
+    mock_db.commit = AsyncMock()
+
+    app = create_test_app()
+    app.dependency_overrides[get_settings] = lambda: mock_settings
+    app.dependency_overrides[get_db] = lambda: mock_db
+
+    transport = ASGITransport(app=app)
+    async with AsyncClient(transport=transport, base_url="http://test") as client:
+        yield client
 
 
 # =============================================================================
@@ -749,7 +748,7 @@ async def process_test_client():
     """Create test client with dependency overrides for process endpoint tests."""
     from unittest.mock import MagicMock
 
-    from app.core.config import get_settings
+    from app.config import get_settings
 
     app = create_test_app()
 
@@ -802,7 +801,7 @@ async def test_process_upload_no_sqs_url_runs_inline():
     """POST /api/uploads/process returns 202 with inline pipeline when SQS is not configured."""
     from unittest.mock import MagicMock
 
-    from app.core.config import get_settings
+    from app.config import get_settings
 
     app = create_test_app()
 

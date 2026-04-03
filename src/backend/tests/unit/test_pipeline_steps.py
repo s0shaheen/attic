@@ -12,22 +12,15 @@ making tests fast and isolated from the full ORM chain.
 from __future__ import annotations
 
 import hashlib
-import sys
 import uuid
 from datetime import UTC, datetime
-from pathlib import Path
 from types import SimpleNamespace
 from typing import Any
 from unittest.mock import MagicMock, patch
 
-# Ensure the lambdas directory is on sys.path so we can import the handler
-_lambdas_dir = str(Path(__file__).resolve().parents[3] / "lambdas")
-if _lambdas_dir not in sys.path:
-    sys.path.insert(0, _lambdas_dir)
+from pipeline.handler import handler
 
-from pipeline.handler import handler  # noqa: E402
-
-from app.services.pipeline import (  # noqa: E402
+from app.services.pipeline import (
     _extract_platform_id,
     _extract_platform_id_or_hash,
     _fuse_text,

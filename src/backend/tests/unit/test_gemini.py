@@ -1,497 +1,66 @@
-"""Tests for Gemini client (classification and visual analysis)."""
+"""Tests for Gemini client (file upload/poll/delete).
 
-import json
-from unittest.mock import AsyncMock, patch
+NOTE: classify and analyze_visual tests were removed along with the functions —
+the pipeline handles all classification and visual perception via its own sync code.
+"""
+
+from unittest.mock import MagicMock, patch
 
 import httpx
-import pytest
 
-from app.services.gemini import VisionFocus, _get_vision_prompt, analyze_visual, classify
-
-# ---------------------------------------------------------------------------
-# classify
-# ---------------------------------------------------------------------------
-
-
-class TestClassify:
-    @pytest.mark.asyncio
-    async def test_classify_success_with_tier1_fields(self):
-        classification = {
-            "summary": "A cooking tutorial showing grilled cheese technique.",
-            "entities": [{"name": "Grilled Cheese", "type": "recipe", "relevance": "primary"}],
-            "topic": {"primary": "food", "secondary": None},
-            "genre": "recipe",
-            "affect": {"dominant": "informative", "secondary": None},
-            "viewer_orientation": "active_learning",
-            "embedding_text": "A grilled cheese tutorial showing the perfect flip technique.",
-        }
-        mock_response = httpx.Response(
-            200,
-            json={"candidates": [{"content": {"parts": [{"text": json.dumps(classification)}]}}]},
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
-
-            result = await classify(
-                api_key="test-key",
-                caption="Funny cooking video",
-                subtitle=None,
-                hashtags=["food", "cooking"],
-                creator_username="chef123",
-                music_name=None,
-            )
-
-        assert result.success is True
-        assert result.raw_classification == classification
-        assert result.summary == "A cooking tutorial showing grilled cheese technique."
-        assert len(result.entities) == 1
-        assert result.entities[0]["name"] == "Grilled Cheese"
-        assert result.embedding_text is not None
-
-    @pytest.mark.asyncio
-    async def test_classify_no_metadata_returns_error(self):
-        result = await classify(
-            api_key="test-key",
-            caption=None,
-            subtitle=None,
-            hashtags=None,
-            creator_username=None,
-            music_name=None,
-        )
-        assert result.success is False
-        assert "No metadata" in result.error
-
-    @pytest.mark.asyncio
-    async def test_classify_api_error(self):
-        mock_response = httpx.Response(500, text="Internal Server Error")
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
-
-            result = await classify(
-                api_key="test-key",
-                caption="test",
-                subtitle=None,
-                hashtags=None,
-                creator_username=None,
-                music_name=None,
-            )
-
-        assert result.success is False
-        assert "500" in result.error
-
-    @pytest.mark.asyncio
-    async def test_classify_timeout(self):
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(side_effect=httpx.TimeoutException("timeout"))
-
-            result = await classify(
-                api_key="test-key",
-                caption="test",
-                subtitle=None,
-                hashtags=None,
-                creator_username=None,
-                music_name=None,
-            )
-
-        assert result.success is False
-        assert "timed out" in result.error
-
-    @pytest.mark.asyncio
-    async def test_classify_invalid_json_response(self):
-        mock_response = httpx.Response(
-            200,
-            json={"candidates": [{"content": {"parts": [{"text": "not valid json {{{"}]}}]},
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
-
-            result = await classify(
-                api_key="test-key",
-                caption="test",
-                subtitle=None,
-                hashtags=None,
-                creator_username=None,
-                music_name=None,
-            )
-
-        assert result.success is False
-        assert "parse" in result.error.lower()
-
-    @pytest.mark.asyncio
-    async def test_classify_builds_context_from_all_fields(self):
-        mock_response = httpx.Response(
-            200,
-            json={"candidates": [{"content": {"parts": [{"text": "{}"}]}}]},
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
-
-            await classify(
-                api_key="test-key",
-                caption="caption",
-                subtitle="transcript text",
-                hashtags=["tag1"],
-                creator_username="user1",
-                music_name="song1",
-                duration_seconds=60,
-                comments=["great video", "love this"],
-            )
-
-            # Check prompt contains all metadata
-            call_args = mock_client.post.call_args
-            body = call_args.kwargs["json"]
-            prompt_text = body["contents"][0]["parts"][0]["text"]
-            assert "caption" in prompt_text
-            assert "transcript text" in prompt_text
-            assert "tag1" in prompt_text
-            assert "user1" in prompt_text
-            assert "song1" in prompt_text
-            assert "60s" in prompt_text
-            assert "great video" in prompt_text
-
-    @pytest.mark.asyncio
-    async def test_classify_with_thumbnail_includes_image_part(self):
-        mock_response = httpx.Response(
-            200,
-            json={"candidates": [{"content": {"parts": [{"text": "{}"}]}}]},
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
-
-            await classify(
-                api_key="test-key",
-                caption="test video",
-                subtitle=None,
-                hashtags=None,
-                creator_username=None,
-                music_name=None,
-                thumbnail_url="https://example.com/thumb.jpg",
-            )
-
-            call_args = mock_client.post.call_args
-            body = call_args.kwargs["json"]
-            parts = body["contents"][0]["parts"]
-            assert len(parts) == 2
-            assert "fileData" in parts[1]
-            assert parts[1]["fileData"]["fileUri"] == "https://example.com/thumb.jpg"
-
-    @pytest.mark.asyncio
-    async def test_classify_without_thumbnail_text_only(self):
-        mock_response = httpx.Response(
-            200,
-            json={"candidates": [{"content": {"parts": [{"text": "{}"}]}}]},
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
-
-            await classify(
-                api_key="test-key",
-                caption="test video",
-                subtitle=None,
-                hashtags=None,
-                creator_username=None,
-                music_name=None,
-            )
-
-            call_args = mock_client.post.call_args
-            body = call_args.kwargs["json"]
-            parts = body["contents"][0]["parts"]
-            assert len(parts) == 1
-            assert "text" in parts[0]
-
-    @pytest.mark.asyncio
-    async def test_classify_model_override(self):
-        mock_response = httpx.Response(
-            200,
-            json={"candidates": [{"content": {"parts": [{"text": "{}"}]}}]},
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
-
-            await classify(
-                api_key="test-key",
-                caption="test",
-                subtitle=None,
-                hashtags=None,
-                creator_username=None,
-                music_name=None,
-                model="gemini-3-flash-preview",
-            )
-
-            call_args = mock_client.post.call_args
-            url = call_args.args[0]
-            assert "gemini-3-flash-preview" in url
-
-    @pytest.mark.asyncio
-    async def test_classify_missing_summary_and_entities_graceful(self):
-        """Gemini returns minimal JSON — missing optional Tier 1 fields."""
-        classification = {"topic": {"primary": "food"}}
-        mock_response = httpx.Response(
-            200,
-            json={"candidates": [{"content": {"parts": [{"text": json.dumps(classification)}]}}]},
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
-
-            result = await classify(
-                api_key="test-key",
-                caption="food video",
-                subtitle=None,
-                hashtags=None,
-                creator_username=None,
-                music_name=None,
-            )
-
-        assert result.success is True
-        assert result.summary is None
-        assert result.entities == []
-        assert result.embedding_text is None
+from app.services.gemini import (
+    DEFAULT_GEMINI_MODEL,
+    delete_file_sync,
+    wait_for_file_sync,
+)
 
 
-# ---------------------------------------------------------------------------
-# analyze_visual
-# ---------------------------------------------------------------------------
+class TestConstants:
+    def test_default_model_is_set(self):
+        assert DEFAULT_GEMINI_MODEL == "gemini-3-flash-preview"
 
 
-class TestAnalyzeVisual:
-    @pytest.mark.asyncio
-    async def test_analyze_visual_success(self):
-        analysis = {
-            "description": "A person cooking pasta",
-            "objects": ["pan", "pasta", "kitchen"],
-            "text_detected": "Recipe: Easy Pasta",
-        }
-        mock_response = httpx.Response(
-            200,
-            json={
-                "candidates": [
-                    {
-                        "content": {"parts": [{"text": json.dumps(analysis)}]},
-                        "groundingMetadata": {
-                            "groundingChunks": [
-                                {"web": {"uri": "https://example.com", "title": "Example"}}
-                            ]
-                        },
-                    }
-                ]
-            },
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
+class TestWaitForFileSync:
+    def test_returns_uri_on_active(self):
+        mock_response = MagicMock()
+        mock_response.status_code = 200
+        mock_response.raise_for_status = MagicMock()
+        mock_response.json.return_value = {"state": "ACTIVE", "uri": "https://example.com/file"}
 
-            result = await analyze_visual(
-                api_key="test-key",
-                image_url="https://example.com/thumb.jpg",
-                caption="cooking video",
-            )
+        with patch("app.services.gemini.httpx.Client") as mock_client_cls:
+            mock_client = MagicMock()
+            mock_client_cls.return_value.__enter__ = MagicMock(return_value=mock_client)
+            mock_client_cls.return_value.__exit__ = MagicMock(return_value=False)
+            mock_client.get.return_value = mock_response
 
-        assert result.success is True
-        assert result.description == "A person cooking pasta"
-        assert "pan" in result.objects
-        assert result.text_detected == "Recipe: Easy Pasta"
-        assert len(result.grounding_sources) == 1
+            result = wait_for_file_sync("test-key", "files/abc123", timeout=10)
 
-    @pytest.mark.asyncio
-    async def test_analyze_visual_no_grounding(self):
-        analysis = {"description": "A cat", "objects": ["cat"], "text_detected": None}
-        mock_response = httpx.Response(
-            200,
-            json={
-                "candidates": [
-                    {
-                        "content": {"parts": [{"text": json.dumps(analysis)}]},
-                    }
-                ]
-            },
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
+        assert result == "https://example.com/file"
 
-            result = await analyze_visual(
-                api_key="test-key",
-                image_url="https://example.com/cat.jpg",
-            )
+    def test_returns_none_on_failed(self):
+        mock_response = MagicMock()
+        mock_response.status_code = 200
+        mock_response.raise_for_status = MagicMock()
+        mock_response.json.return_value = {"state": "FAILED"}
 
-        assert result.success is True
-        assert result.grounding_sources == []
+        with patch("app.services.gemini.httpx.Client") as mock_client_cls:
+            mock_client = MagicMock()
+            mock_client_cls.return_value.__enter__ = MagicMock(return_value=mock_client)
+            mock_client_cls.return_value.__exit__ = MagicMock(return_value=False)
+            mock_client.get.return_value = mock_response
 
-    @pytest.mark.asyncio
-    async def test_analyze_visual_timeout(self):
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(side_effect=httpx.TimeoutException("timeout"))
+            result = wait_for_file_sync("test-key", "files/abc123", timeout=10)
 
-            result = await analyze_visual(
-                api_key="test-key",
-                image_url="https://example.com/thumb.jpg",
-            )
-
-        assert result.success is False
-        assert "timed out" in result.error
-
-    @pytest.mark.asyncio
-    async def test_analyze_visual_model_override(self):
-        analysis = {"description": "test", "objects": [], "text_detected": None}
-        mock_response = httpx.Response(
-            200,
-            json={"candidates": [{"content": {"parts": [{"text": json.dumps(analysis)}]}}]},
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
-
-            await analyze_visual(
-                api_key="test-key",
-                image_url="https://example.com/thumb.jpg",
-                model="gemini-3-flash-preview",
-            )
-
-            call_args = mock_client.post.call_args
-            url = call_args.args[0]
-            assert "gemini-3-flash-preview" in url
+        assert result is None
 
 
-# ---------------------------------------------------------------------------
-# Vision focus modes
-# ---------------------------------------------------------------------------
+class TestDeleteFileSync:
+    def test_delete_does_not_raise(self):
+        with patch("app.services.gemini.httpx.Client") as mock_client_cls:
+            mock_client = MagicMock()
+            mock_client_cls.return_value.__enter__ = MagicMock(return_value=mock_client)
+            mock_client_cls.return_value.__exit__ = MagicMock(return_value=False)
+            mock_client.delete.side_effect = httpx.HTTPError("connection failed")
 
-
-class TestVisionFocus:
-    @pytest.mark.asyncio
-    async def test_default_focus_is_general(self):
-        """Calling without focus kwarg uses GENERAL prompt."""
-        analysis = {"description": "test", "objects": [], "text_detected": None}
-        mock_response = httpx.Response(
-            200,
-            json={"candidates": [{"content": {"parts": [{"text": json.dumps(analysis)}]}}]},
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
-
-            await analyze_visual(
-                api_key="test-key",
-                image_url="https://example.com/thumb.jpg",
-            )
-
-            call_args = mock_client.post.call_args
-            body = call_args.kwargs["json"]
-            prompt_text = body["contents"][0]["parts"][0]["text"]
-            # GENERAL prompt contains these key phrases (backward compat regression)
-            assert "brief description" in prompt_text
-            assert "objects, people, or products" in prompt_text
-            assert "text detected" in prompt_text.lower()
-
-    @pytest.mark.asyncio
-    @pytest.mark.parametrize("focus", list(VisionFocus))
-    async def test_each_focus_uses_its_prompt_template(self, focus):
-        """Each focus mode produces a prompt matching its template."""
-        analysis = {"description": "test", "objects": [], "text_detected": None}
-        mock_response = httpx.Response(
-            200,
-            json={"candidates": [{"content": {"parts": [{"text": json.dumps(analysis)}]}}]},
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
-
-            await analyze_visual(
-                api_key="test-key",
-                image_url="https://example.com/thumb.jpg",
-                focus=focus,
-            )
-
-            call_args = mock_client.post.call_args
-            body = call_args.kwargs["json"]
-            prompt_text = body["contents"][0]["parts"][0]["text"]
-            assert prompt_text == _get_vision_prompt(focus)
-
-    @pytest.mark.asyncio
-    async def test_books_focus_contains_book_keywords(self):
-        """BOOKS focus prompt mentions book-specific content."""
-        analysis = {"description": "test", "objects": [], "text_detected": None}
-        mock_response = httpx.Response(
-            200,
-            json={"candidates": [{"content": {"parts": [{"text": json.dumps(analysis)}]}}]},
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
-
-            await analyze_visual(
-                api_key="test-key",
-                image_url="https://example.com/thumb.jpg",
-                focus=VisionFocus.BOOKS,
-            )
-
-            call_args = mock_client.post.call_args
-            body = call_args.kwargs["json"]
-            prompt_text = body["contents"][0]["parts"][0]["text"]
-            assert "book" in prompt_text.lower()
-            assert "title" in prompt_text.lower()
-            assert "author" in prompt_text.lower()
-
-    @pytest.mark.asyncio
-    async def test_caption_prepended_with_focus(self):
-        """Caption is prepended to the focus-specific prompt."""
-        analysis = {"description": "test", "objects": [], "text_detected": None}
-        mock_response = httpx.Response(
-            200,
-            json={"candidates": [{"content": {"parts": [{"text": json.dumps(analysis)}]}}]},
-        )
-        with patch("app.services.gemini._get_client") as mock_get_client:
-            mock_client = AsyncMock()
-            mock_get_client.return_value = mock_client
-            mock_client.post = AsyncMock(return_value=mock_response)
-
-            await analyze_visual(
-                api_key="test-key",
-                image_url="https://example.com/thumb.jpg",
-                caption="great book recommendation",
-                focus=VisionFocus.BOOKS,
-            )
-
-            call_args = mock_client.post.call_args
-            body = call_args.kwargs["json"]
-            prompt_text = body["contents"][0]["parts"][0]["text"]
-            assert prompt_text.startswith("Context caption: great book recommendation")
-            assert "book" in prompt_text.lower()
-
-    def test_all_focus_modes_have_prompt_templates(self):
-        """Every VisionFocus enum value has a corresponding prompt file."""
-        for focus in VisionFocus:
-            prompt = _get_vision_prompt(focus)
-            assert prompt, f"Missing or empty prompt template for {focus}"
-
-    def test_all_prompts_request_json_output(self):
-        """All prompt templates end with JSON output instruction."""
-        for focus in VisionFocus:
-            prompt = _get_vision_prompt(focus)
-            assert "Return ONLY valid JSON" in prompt, f"{focus} prompt missing JSON instruction"
+            # Should not raise
+            delete_file_sync("test-key", "files/abc123")
