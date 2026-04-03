@@ -6,9 +6,6 @@ their parent relationship, and that the FK-level ondelete="CASCADE" is
 set as a safety net.
 """
 
-from uuid import UUID
-
-import pytest
 from sqlalchemy import inspect
 
 from app.models.collection import Collection, CollectionItem
@@ -154,14 +151,14 @@ class TestFullCascadeChain:
         are in the cascade chain."""
         # These are all tables that hold user data and must be cleaned up
         expected_cascaded = {
-            "uploads",          # User → Upload
+            "uploads",  # User → Upload
             "upload_pipeline_runs",  # User → UploadPipelineRun, Upload → UploadPipelineRun
-            "media_events",     # User → MediaEvent, Upload → MediaEvent
-            "processing_steps", # MediaEvent → ProcessingStep
-            "collections",      # User → Collection
-            "collection_items", # Collection → CollectionItem
-            "conversations",    # User → Conversation
-            "messages",         # Conversation → Message
+            "media_events",  # User → MediaEvent, Upload → MediaEvent
+            "processing_steps",  # MediaEvent → ProcessingStep
+            "collections",  # User → Collection
+            "collection_items",  # Collection → CollectionItem
+            "conversations",  # User → Conversation
+            "messages",  # Conversation → Message
         }
 
         # Verify each table is reachable via cascade from User
