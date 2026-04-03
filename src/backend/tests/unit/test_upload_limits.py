@@ -22,6 +22,7 @@ TEST_USER = AuthenticatedUser(id=TEST_USER_ID, email="test@test.com")
 def _make_mock_settings() -> MagicMock:
     settings = MagicMock(spec=Settings)
     settings.max_concurrent_uploads = 3
+    settings.upload_rate_limit_per_minute = 100
     settings.supabase_url = "https://test.supabase.co"
     settings.supabase_secret_key = "test-key"
     settings.aws_region = "us-east-1"

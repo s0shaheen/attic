@@ -1,7 +1,7 @@
 """Tests for upload functionality including presigned URL generation."""
 
 import time
-from unittest.mock import AsyncMock, patch
+from unittest.mock import AsyncMock, MagicMock, patch
 from uuid import uuid4
 
 import jwt
@@ -9,7 +9,7 @@ import pytest
 from fastapi import FastAPI
 from httpx import ASGITransport, AsyncClient, Response
 
-from app.config import Settings
+from app.config import Settings, get_settings
 from app.models.auth import AuthErrorCode
 from app.routers.uploads import router as uploads_router
 from app.schemas.uploads import UploadErrorCode
@@ -59,21 +59,12 @@ def create_test_app() -> FastAPI:
 
 
 @pytest.fixture
-async def test_client():
-    """Create test client with upload routes."""
-    app = create_test_app()
-    transport = ASGITransport(app=app)
-    async with AsyncClient(transport=transport, base_url="http://test") as client:
-        yield client
-
-
-@pytest.fixture
 def mock_settings():
     """Create mock settings for testing."""
     return Settings(
         database_url="postgresql+asyncpg://test:test@localhost/test",
         supabase_url=TEST_SUPABASE_URL,
-        supabase_service_key="test-service-key",
+        supabase_secret_key="test-secret-key",
         supabase_jwt_secret=TEST_JWT_SECRET,
         aws_access_key_id="test-aws-key",
         aws_secret_access_key="test-aws-secret",
@@ -83,6 +74,30 @@ def mock_settings():
         stripe_webhook_secret="test-stripe-webhook",
         resend_api_key="test-resend-key",
     )
+
+
+@pytest.fixture
+async def test_client(mock_settings):
+    """Create test client with upload routes.
+
+    Overrides get_settings and get_db so endpoint tests work without a
+    real database. Auth dependency is NOT overridden so 401 tests still work.
+    """
+    from app.db.session import get_db
+
+    mock_db = AsyncMock()
+    mock_db.execute = AsyncMock(return_value=MagicMock(scalar=MagicMock(return_value=0)))
+    mock_db.add = MagicMock()
+    mock_db.flush = AsyncMock()
+    mock_db.commit = AsyncMock()
+
+    app = create_test_app()
+    app.dependency_overrides[get_settings] = lambda: mock_settings
+    app.dependency_overrides[get_db] = lambda: mock_db
+
+    transport = ASGITransport(app=app)
+    async with AsyncClient(transport=transport, base_url="http://test") as client:
+        yield client
 
 
 # =============================================================================
