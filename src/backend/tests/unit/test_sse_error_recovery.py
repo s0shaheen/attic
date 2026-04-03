@@ -154,3 +154,28 @@ class TestSSEErrorRecovery:
         assert "token" in event_types
         assert "done" in event_types
         assert "error" not in event_types
+
+    async def test_db_commit_failure_after_done_no_double_done(self, client):
+        """When db.commit() fails after the agent's done event was already
+        forwarded, the client should NOT receive a second done event."""
+        mock_db = _make_mock_db()
+        # Make commit raise — simulates DB failure when saving assistant message
+        mock_db.commit.side_effect = Exception("DB connection lost")
+        app.dependency_overrides[get_db] = lambda: mock_db
+
+        async def mock_run_agent(**kwargs):
+            yield SSEEvent(event="token", data=json.dumps({"text": "Hello!"}))
+            yield SSEEvent(event="done", data=json.dumps({"total_tokens": 42}))
+
+        with patch("app.routers.chat.run_agent", side_effect=mock_run_agent):
+            response = await client.post(
+                "/api/chat",
+                json={"message": "hi"},
+            )
+
+        assert response.status_code == 200
+        events = _parse_sse_events(response.text)
+
+        # Should have exactly ONE done event, not two
+        done_events = [e for e in events if e["event"] == "done"]
+        assert len(done_events) == 1

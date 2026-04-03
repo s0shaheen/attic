@@ -130,6 +130,7 @@ async def chat(
 
         full_response = []
         saved = False
+        done_sent = False  # tracks whether a done event was forwarded to client
 
         try:
             async for event in run_agent(
@@ -145,6 +146,9 @@ async def chat(
                 if event.event == "token":
                     token_data = json.loads(event.data)
                     full_response.append(token_data.get("text", ""))
+
+                if event.event == "done":
+                    done_sent = True
 
                 # On done, save assistant message
                 if event.event == "done":
@@ -162,16 +166,20 @@ async def chat(
                         saved = True
         except Exception as e:
             # Catch any unhandled error so the client gets a clean error+done
-            # instead of a dropped connection.
+            # instead of a dropped connection. Log exception type only (no PII).
             logger.error(
                 {
                     "event": "stream_error",
                     "conversation_id": str(conversation_id),
-                    "error": str(e),
+                    "error_type": type(e).__name__,
                 }
             )
-            yield _format_sse("error", {"error": "Something went wrong. Please try again."})
-            yield _format_sse("done", {"total_tokens": None})
+            # Only emit error+done if the agent's done event hasn't already
+            # been forwarded — avoids sending a duplicate done to the client
+            # (e.g., when db.commit fails after the agent's done was yielded).
+            if not done_sent:
+                yield _format_sse("error", {"error": "Something went wrong. Please try again."})
+                yield _format_sse("done", {"total_tokens": None})
         finally:
             if not saved and full_response:
                 assistant_text = "".join(full_response)

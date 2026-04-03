@@ -155,6 +155,10 @@ async def create_presigned_url(
 # ---------------------------------------------------------------------------
 # POST /{upload_id}/validate
 # ---------------------------------------------------------------------------
+# Note: validate, scope, and consent endpoints use get_current_user (not
+# check_upload_rate_limit) because they operate on existing uploads owned by
+# the user. Abuse is gated by presigned-url rate limiting — you can't call
+# these without first creating an upload through the rate-limited endpoint.
 
 
 @router.post(
