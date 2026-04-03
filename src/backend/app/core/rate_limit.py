@@ -23,7 +23,11 @@ _upload_request_times: dict[str, list[float]] = {}
 
 
 def reset_rate_limit_state() -> None:
-    """Clear all rate limit state. For use in test teardown."""
+    """Clear HTTP-layer rate limit state. For use in test teardown.
+
+    Note: agent-level rate limits (_hourly_counts in agent.py) are separate
+    and must be cleared independently.
+    """
     _chat_request_times.clear()
     _upload_request_times.clear()
 

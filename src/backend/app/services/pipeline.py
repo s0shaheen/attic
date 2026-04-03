@@ -566,7 +566,7 @@ def _run_apify_actor(
         )
         run_id = run_resp["data"]["id"]
     except Exception as e:
-        logger.warning(f"{label} actor start failed", extra={"error": str(e)})
+        logger.warning("apify actor start failed", extra={"label": label, "error": str(e)})
         return []
 
     # Poll for completion
@@ -586,14 +586,18 @@ def _run_apify_actor(
             )
             status = status_resp["data"]["status"]
         except Exception as e:
-            logger.warning(f"{label} poll failed", extra={"run_id": run_id, "error": str(e)})
+            logger.warning(
+                "apify poll failed", extra={"label": label, "run_id": run_id, "error": str(e)}
+            )
             continue
 
         if status in ("SUCCEEDED", "FAILED", "ABORTED", "TIMED-OUT"):
             break
 
     if status != "SUCCEEDED":
-        logger.warning(f"{label} run did not succeed", extra={"run_id": run_id, "status": status})
+        logger.warning(
+            "apify run did not succeed", extra={"label": label, "run_id": run_id, "status": status}
+        )
         return []
 
     # Fetch dataset items
@@ -607,7 +611,9 @@ def _run_apify_actor(
         )
         return items if isinstance(items, list) else []
     except Exception as e:
-        logger.warning(f"{label} dataset fetch failed", extra={"run_id": run_id, "error": str(e)})
+        logger.warning(
+            "apify dataset fetch failed", extra={"label": label, "run_id": run_id, "error": str(e)}
+        )
         return []
 
 
