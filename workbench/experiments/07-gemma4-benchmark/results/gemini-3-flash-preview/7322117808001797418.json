@@ -1,0 +1,190 @@
+{
+  "item_id": "7322117808001797418",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": [
+      {
+        "scene_timeline": [
+          {
+            "time_range": "0:00-0:11",
+            "visual_description": "A dog wearing a penguin costume walks through a doorway to confront another dog also dressed in a penguin costume. They stand still and stare at each other in a dimly lit room.",
+            "audio_description": "A slowed-down, distorted, and eerie synth-wave track plays, creating a tense and ominous atmosphere.",
+            "text_on_screen": "How it feels to see your childhood best friend that you framed for murdering a classmate on a field trip 23 years ago in the Hardware store (he's out on parole and has nothing to lose)",
+            "key_objects": ["penguin costumes", "dogs"]
+          }
+        ],
+        "overall_summary": "This video is a dark humor 'POV' meme featuring two dogs dressed in penguin costumes. The text overlay describes a hyper-specific and grim scenario where the viewer encounters a childhood friend they framed for murder decades ago. The humor stems from the contrast between the absurd, cute visual of the dogs and the intense, threatening narrative provided by the text and the ominous music.",
+        "people": [],
+        "entities": [
+          {
+            "name": "Penguin Costume",
+            "display_name": "Penguin Costume",
+            "type": "clothing",
+            "relevance": "primary",
+            "source": ["visual"],
+            "specifications": null,
+            "confidence": 5
+          },
+          {
+            "name": "The Perfect Girl \u2014 Mareux",
+            "display_name": "The Perfect Girl (Slowed) \u2014 Mareux",
+            "type": "song",
+            "relevance": "primary",
+            "source": ["audio"],
+            "specifications": "Slowed and reverb version",
+            "confidence": 4
+          },
+          {
+            "name": "Hardware Store",
+            "display_name": "Hardware Store",
+            "type": "place",
+            "relevance": "supporting",
+            "source": ["text_overlay"],
+            "specifications": null,
+            "confidence": 5
+          }
+        ],
+        "takeaways": [
+          {
+            "statement": "The video uses the 'POV' meme format to create a dark humor scenario about a past betrayal and a chance encounter.",
+            "source": "text_overlay",
+            "confidence": 5
+          }
+        ],
+        "structured_content": {
+          "type": null,
+          "items": null
+        },
+        "audio_identification": {
+          "actual_song": "The Perfect Girl (Slowed & Reverb) \u2014 Mareux",
+          "metadata_song": "original sound - coleslawisevil \u2014 Coleslaw is evil",
+          "match": false
+        },
+        "extraction_confidence": {
+          "entities_complete": 5,
+          "audio_identified": true,
+          "notes": "The audio is a very common 'Sigma' or 'Literally Me' meme sound, which is a slowed version of Mareux's 'The Perfect Girl'."
+        },
+        "presentation_style": {
+          "primary_format": "pov",
+          "camera_work": "static",
+          "editing_style": "jump_cuts"
+        },
+        "visual_mood": "Absurdist, ominous, and awkward dark humor.",
+        "topic_hints": ["Dark humor memes", "Pet costumes", "POV storytelling"],
+        "affect_hints": ["Amused", "Unsettled", "Awkward"],
+        "genre_hints": ["Meme", "Pet video"]
+      }
+    ],
+    "metrics": {
+      "input_tokens": 2543,
+      "output_tokens": 886,
+      "cost_usd": 0.0006087,
+      "latency_ms": 14221,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "comedy",
+        "secondary": "pets",
+        "micro_labels": [
+          "dark humor",
+          "POV memes",
+          "absurdist humor",
+          "dog costumes"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "pov",
+        "micro_labels": ["meme", "short-form video"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "funny",
+          "tier": "dominant"
+        },
+        {
+          "label": "cringe",
+          "tier": "secondary"
+        },
+        {
+          "label": "scary",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["text_overlay", "raw_footage"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "social_sharing",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Penguin Costume",
+          "type": "clothing",
+          "relevance": "primary"
+        },
+        {
+          "name": "The Perfect Girl (Slowed) \u2014 Mareux",
+          "type": "song",
+          "relevance": "primary"
+        },
+        {
+          "name": "Hardware Store",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Sigma Meme",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Literally Me Meme",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A dark humor POV meme featuring two dogs in penguin costumes staring each other down in a tense, ominous confrontation. The text describes a hyper-specific scenario about encountering a childhood friend you framed for murder 23 years ago at a hardware store.",
+      "embedding_text": "This TikTok video by @coleslawisevil is a dark humor POV meme featuring two dogs dressed in penguin costumes. The dogs are standing in a dimly lit room, staring each other down in a tense confrontation. The on-screen text describes a hyper-specific and grim scenario: 'How it feels to see your childhood best friend that you framed for murdering a classmate on a field trip 23 years ago in the Hardware store (he's out on parole and has nothing to lose).' The audio features a slowed and reverb version of 'The Perfect Girl' by Mareux, a song often associated with 'Sigma' or 'Literally Me' memes, which adds to the ominous and absurd atmosphere. This content blends pet videos with absurdist storytelling and dark comedy, making it a classic example of niche internet humor. It is likely saved for its relatable meme format or its specific brand of unsettling yet funny storytelling involving betrayal and a hardware store encounter."
+    },
+    "metrics": {
+      "input_tokens": 3325,
+      "output_tokens": 784,
+      "cost_usd": 0.0006461,
+      "latency_ms": 7122
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "funny",
+      "topic": "comedy",
+      "genre": "pov",
+      "communicative_intent": "entertain",
+      "creator_role": "influencer",
+      "viewer_orientation": "social_sharing",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

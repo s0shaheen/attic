@@ -1,0 +1,280 @@
+{
+  "item_id": "7536146973540306198",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:06",
+          "visual_description": "John Cena sits at a streaming desk with Kai Cenat and other AMP members, wearing a plaid suit and multiple gold hamburger chains. He gestures while explaining his philosophy on life.",
+          "audio_description": "John Cena: 'And then if I want to live life with purpose, well, what... what is purpose to me? And purpose to me is simply being useful.'",
+          "text_on_screen": "top 3 people of all time",
+          "key_objects": [
+            "Blue Yeti Microphone",
+            "Gold hamburger chains",
+            "Plaid suit"
+          ]
+        },
+        {
+          "time_range": "0:06-0:15",
+          "visual_description": "A fast-paced montage begins showing John Cena's early WWE career, including him winning championships and celebrating in the ring.",
+          "audio_description": "Cena voiceover: 'I used to think I was put on earth to be a wrestler. That was it. I was put on earth to be a WWE superstar.' Melancholic, slowed music plays.",
+          "text_on_screen": "CENA IS THE CHAMP",
+          "key_objects": ["WWE Championship Belt"]
+        },
+        {
+          "time_range": "0:15-0:25",
+          "visual_description": "Clips of Cena performing his signature salute and 'You Can't See Me' gesture in various iconic colorful t-shirts.",
+          "audio_description": "Cena voiceover: 'And then I started doing a little bit of acting and I'm like, oh no, it's easy, I'm a storyteller. No, I'm a human being.'",
+          "text_on_screen": "HUSTLE LOYALTY RESPECT",
+          "key_objects": ["Cenation armbands", "Baseball caps"]
+        },
+        {
+          "time_range": "0:25-0:35",
+          "visual_description": "Emotional highlights of Cena interacting with fans, including children, and standing in the center of massive stadium crowds.",
+          "audio_description": "Cena voiceover: 'I'm a grain of sand on a beach in a pale blue dot out in the middle of nowhere. I just want to be useful. Life to me is a gift.'",
+          "text_on_screen": "I LOVE CENA",
+          "key_objects": ["Fan signs"]
+        },
+        {
+          "time_range": "0:35-0:44",
+          "visual_description": "Final shots of Cena looking directly into the camera with a humble expression, interspersed with his most triumphant WrestleMania moments.",
+          "audio_description": "Cena voiceover: 'I have been given lottery ticket after lottery ticket after lottery ticket. I am lucky. I understand my luck and I try to live each day grateful for the luck.'",
+          "text_on_screen": "WRESTLEMANIA",
+          "key_objects": ["WWE Ring"]
+        }
+      ],
+      "overall_summary": "This video is a reflective tribute to John Cena's career and personal philosophy. It opens with Cena speaking on a live stream with Kai Cenat, where he defines his life's purpose as 'being useful.' The video then transitions into a nostalgic montage of his WWE highlights, set to a melancholic soundtrack, while a voiceover of Cena expresses his deep gratitude and his perspective on being a 'lucky' human being rather than just a superstar.",
+      "people": [
+        {
+          "description": "Former WWE wrestler and actor, wearing a plaid suit and gold chains in the opening, then shown in various wrestling gear.",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "John Cena"
+        },
+        {
+          "description": "Popular streamer wearing a green hat and green shirt, listening intently to Cena.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Kai Cenat"
+        },
+        {
+          "description": "Streamer in a black t-shirt standing behind Cena.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Fanum"
+        },
+        {
+          "description": "Streamer in a white shirt and gold chains standing behind Cena.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Agent 00"
+        }
+      ],
+      "entities": [
+        {
+          "name": "John Cena",
+          "display_name": "John Cena",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "audio", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "WWE",
+          "display_name": "World Wrestling Entertainment (WWE)",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["visual", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Kai Cenat",
+          "display_name": "Kai Cenat",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "AMP member",
+          "confidence": 5
+        },
+        {
+          "name": "WrestleMania",
+          "display_name": "WrestleMania",
+          "type": "event",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Hustle Loyalty Respect",
+          "display_name": "Hustle, Loyalty, Respect",
+          "type": "trend_or_meme",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "John Cena's catchphrase",
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "True purpose in life is found in being useful to others.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Success is often a combination of hard work and immense luck, requiring constant gratitude.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Maintaining a sense of being a 'human being' is more important than the labels of 'superstar' or 'storyteller.'",
+          "source": "voiceover",
+          "confidence": 4
+        }
+      ],
+      "structured_content": null,
+      "audio_identification": {
+        "actual_song": "The Night We Met (Slowed + Reverb) \u2014 Lord Huron",
+        "metadata_song": "original sound - xzrqrz0",
+        "match": false
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The background music is a very common slowed/reverb version of 'The Night We Met' by Lord Huron, frequently used in emotional TikTok edits. The stream participants are members of the AMP group."
+      },
+      "presentation_style": {
+        "primary_format": "edit",
+        "camera_work": "static",
+        "editing_style": "montage"
+      },
+      "visual_mood": "Reflective, nostalgic, and inspirational with a touch of melancholy.",
+      "topic_hints": ["Personal Philosophy", "WWE History", "Motivation"],
+      "affect_hints": ["Inspired", "Nostalgic", "Grateful"],
+      "genre_hints": ["Fan Edit", "Motivational", "Sports Highlights"]
+    },
+    "metrics": {
+      "input_tokens": 5412,
+      "output_tokens": 1927,
+      "cost_usd": 0.001312,
+      "latency_ms": 26328,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "sports",
+        "secondary": "career",
+        "micro_labels": [
+          "WWE",
+          "professional wrestling",
+          "life philosophy",
+          "personal growth"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "edit",
+        "micro_labels": ["fan edit", "montage", "motivational edit"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "inspiring",
+          "tier": "dominant"
+        },
+        {
+          "label": "nostalgic",
+          "tier": "dominant"
+        },
+        {
+          "label": "sad",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["mixed", "voiceover", "text_overlay"],
+      "content_provenance": {
+        "label": "clip",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "inspire",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "John Cena",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "World Wrestling Entertainment (WWE)",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "Kai Cenat",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "WrestleMania",
+          "type": "event",
+          "relevance": "supporting"
+        },
+        {
+          "name": "The Night We Met - Lord Huron",
+          "type": "song",
+          "relevance": "supporting"
+        },
+        {
+          "name": "AMP",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Hustle, Loyalty, Respect",
+          "type": "trend_or_meme",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "John Cena reflects on his life's purpose and career during an appearance on Kai Cenat's stream, defining success as 'being useful.' The video is a nostalgic fan edit featuring his greatest WWE highlights and championship wins set to a melancholic soundtrack.",
+      "embedding_text": "An inspiring and nostalgic fan edit of John Cena, featuring a voiceover from his guest appearance on a Kai Cenat / AMP live stream. Cena discusses his philosophy on life, defining his purpose as 'being useful' and expressing gratitude for his luck. The visual content is a montage of Cena's legendary WWE career, including clips of him winning championship belts, performing his 'You Can't See Me' salute, and his 'Hustle Loyalty Respect' era. The video features on-screen text like 'top 3 people of all time' and 'CENA IS THE CHAMP.' The background music is a slowed and reverb version of 'The Night We Met' by Lord Huron. It captures Cena's transition from a wrestling superstar to a humble human being, making it a popular save for motivation and sports nostalgia."
+    },
+    "metrics": {
+      "input_tokens": 4144,
+      "output_tokens": 838,
+      "cost_usd": 0.0007496000000000001,
+      "latency_ms": 8184
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "inspiring",
+      "topic": "sports",
+      "genre": "edit",
+      "communicative_intent": "inspire",
+      "creator_role": "influencer",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "mixed",
+      "content_provenance": "clip"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

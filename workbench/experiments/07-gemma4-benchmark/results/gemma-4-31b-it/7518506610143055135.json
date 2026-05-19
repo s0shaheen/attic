@@ -1,0 +1,233 @@
+{
+  "item_id": "7518506610143055135",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A screenshot of a video featuring two men sitting on a brown leather couch in a studio setting. The man on the left is wearing a white button-down shirt and blue jeans, with a laptop open on a small table in front of him. The man on the right, Ari Shaffir, is wearing a blue and white checkered button-down shirt and dark trousers. The background is a dimly lit room with various studio equipment and furniture visible.",
+      "text_on_screen": "Ari said this 10 years ago \ud83d\ude2d\nTikTok @aronunc\nHUFF POST LIVE\nwe are the United States of israel",
+      "overall_summary": "This post is a clip from a HuffPost Live interview featuring comedian Ari Shaffir from approximately ten years ago. The user is likely saving it to highlight Shaffir's provocative commentary on the relationship between the US and Israel and systemic political corruption.",
+      "entities": [
+        {
+          "name": "Ari Shaffir",
+          "display_name": "Ari Shaffir",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "HuffPost Live",
+          "display_name": "HuffPost Live",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "United States",
+          "display_name": "United States",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Israel",
+          "display_name": "Israel",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Ari Shaffir claimed that the US is effectively the 'United States of Israel'.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "There is a deep frustration with systemic corruption in the American political system, including campaign finance and regulatory capture.",
+          "source": "metadata",
+          "confidence": 5
+        },
+        {
+          "statement": "The rhetoric of 'killing politicians' is presented as a hyperbolic expression of despair over a lack of accountability rather than a literal call for violence.",
+          "source": "metadata",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Clean Campaign Finance Reform",
+            "details": "Push for public funding, contribution limits, and transparency in political donations."
+          },
+          {
+            "name": "Stronger Legal Enforcement",
+            "details": "Empower independent prosecutors to investigate and punish corruption effectively."
+          },
+          {
+            "name": "Improve Voter Influence",
+            "details": "Enact better voter access (e.g., ranked-choice voting, easier registration, fewer gerrymanders)."
+          },
+          {
+            "name": "Civic Participation",
+            "details": "Build watchdog groups, support independent media, encourage citizens to stay informed and vote."
+          },
+          {
+            "name": "Cultural Shift",
+            "details": "Normalize integrity and ethical leadership as qualities people demand from representatives."
+          }
+        ]
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All primary entities and text were clearly identifiable from the image and metadata."
+      },
+      "presentation_style": {
+        "primary_format": "screenshot",
+        "visual_style": "informational"
+      },
+      "scene_type": "text_graphic",
+      "visual_mood": "serious",
+      "topic_hints": [
+        "Political Corruption",
+        "US-Israel Relations",
+        "Political Satire"
+      ],
+      "affect_hints": ["Cynical", "Frustrated", "Provoked"],
+      "genre_hints": [
+        "Political Commentary",
+        "Social Critique",
+        "Interview Clip"
+      ]
+    },
+    "metrics": {
+      "input_tokens": 1881,
+      "output_tokens": 1054,
+      "cost_usd": 0.0,
+      "latency_ms": 70420,
+      "video_uploaded": false,
+      "thoughts_tokens": 910
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "politics",
+        "secondary": "news",
+        "micro_labels": [
+          "US-Israel relations",
+          "political corruption",
+          "campaign finance",
+          "systemic corruption"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "interview",
+        "micro_labels": ["political commentary"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "angry",
+          "tier": "secondary"
+        },
+        {
+          "label": "shocking",
+          "tier": "secondary"
+        },
+        {
+          "label": "funny",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "clip",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.85
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Ari Shaffir",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "HuffPost Live",
+          "type": "movie_or_show",
+          "relevance": "supporting"
+        },
+        {
+          "name": "United States",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Israel",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Campaign Finance",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Regulatory Capture",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A clip from a HuffPost Live interview featuring comedian Ari Shaffir discussing the 'United States of Israel' and systemic political corruption. The user saved it for the curator's analysis of campaign finance, regulatory capture, and the frustration stemming from a lack of political accountability.",
+      "embedding_text": "A political commentary clip shared by @thoughtxtheory featuring comedian Ari Shaffir in a HuffPost Live interview from ten years ago. Shaffir makes the provocative claim that the US is effectively the 'United States of Israel' and uses hyperbolic rhetoric about politicians to express frustration with systemic corruption. The content provides a detailed analysis of campaign finance reform, regulatory capture, and the influence of big-money donors and PACs on US elections. It frames Shaffir's extreme language as a signal of despair over political decay and suggests non-violent democratic strategies for reform, such as ranked-choice voting and increased transparency in political donations."
+    },
+    "metrics": {
+      "input_tokens": 4113,
+      "output_tokens": 769,
+      "cost_usd": 0.0,
+      "latency_ms": 44334,
+      "thoughts_tokens": 809
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "politics",
+      "genre": "interview",
+      "communicative_intent": "inform",
+      "creator_role": "amateur",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "clip"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

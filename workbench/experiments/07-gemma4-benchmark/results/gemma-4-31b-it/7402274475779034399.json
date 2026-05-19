@@ -1,0 +1,181 @@
+{
+  "item_id": "7402274475779034399",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A young man with curly brown hair stands on an asphalt surface, likely a basketball court, holding an orange basketball in his left hand. He is wearing a mint green t-shirt and grey athletic shorts with grey sneakers. The background features a dense green hedge and leafy trees under natural daylight.",
+      "text_on_screen": null,
+      "overall_summary": "This post is a basketball training tutorial designed to help beginners improve their left-hand dribbling skills. The user likely saved this as a reference for a specific 4-step practice routine.",
+      "entities": [
+        {
+          "name": "Patrick O'Gorman",
+          "display_name": "Patrick O'Gorman (pattyoghoops)",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Left hand dribbling",
+          "display_name": "Left Hand Dribbling Technique",
+          "type": "technique",
+          "relevance": "primary",
+          "source": ["metadata", "visual"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Basketball",
+          "display_name": "Basketball",
+          "type": "product",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Standard orange basketball",
+          "confidence": 5
+        },
+        {
+          "name": "Basketball training",
+          "display_name": "Basketball Training",
+          "type": "exercise",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "There is a 4-step beginner-friendly process to improve left-hand dribbling proficiency.",
+          "source": "implied",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "instructions",
+        "items": [
+          {
+            "name": "Left hand dribble improvement",
+            "details": "4-step beginners tutorial"
+          }
+        ]
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "The specific 4 steps are not visible in the static image but are explicitly mentioned in the caption metadata."
+      },
+      "presentation_style": {
+        "primary_format": "photo",
+        "visual_style": "raw"
+      },
+      "scene_type": "outdoor",
+      "visual_mood": "energetic",
+      "topic_hints": ["Basketball", "Athletic Training", "Skill Development"],
+      "affect_hints": ["Motivated", "Focused"],
+      "genre_hints": ["Tutorial", "Sports"]
+    },
+    "metrics": {
+      "input_tokens": 1284,
+      "output_tokens": 710,
+      "cost_usd": 0.0,
+      "latency_ms": 54405,
+      "video_uploaded": false,
+      "thoughts_tokens": 830
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "sports",
+        "secondary": "fitness",
+        "micro_labels": [
+          "basketball",
+          "dribbling",
+          "skill development",
+          "beginner training"
+        ],
+        "confidence": 1.0
+      },
+      "genre": {
+        "label": "tutorial",
+        "micro_labels": ["how-to", "drill"],
+        "confidence": 1.0
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["raw_footage"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "educator",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.95
+      },
+      "entities": [
+        {
+          "name": "Patrick O'Gorman",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Left hand dribbling",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "Basketball training",
+          "type": "exercise",
+          "relevance": "primary"
+        },
+        {
+          "name": "Basketball",
+          "type": "product",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A basketball training tutorial by Patrick O'Gorman (@pattyoghoops) that provides a 4-step routine for beginners to improve their left-hand dribbling. A user would save this as a practical reference to follow during their own athletic practice.",
+      "embedding_text": "A basketball training tutorial by Patrick O'Gorman (@pattyoghoops) specifically designed for beginners to improve their left-hand dribbling skills. The content features a 4-step practice routine demonstrated on an outdoor basketball court to help players increase proficiency and ball control with their non-dominant hand. This is a sports skill development video focusing on basketball dribbling techniques and beginner-friendly drills. It is intended for users looking for structured basketball exercises to improve their game."
+    },
+    "metrics": {
+      "input_tokens": 3166,
+      "output_tokens": 617,
+      "cost_usd": 0.0,
+      "latency_ms": 43406,
+      "thoughts_tokens": 920
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "sports",
+      "genre": "tutorial",
+      "communicative_intent": "inform",
+      "creator_role": "educator",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "raw_footage",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

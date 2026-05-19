@@ -1,0 +1,347 @@
+{
+  "item_id": "7389315780392865066",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "A screenshot of an AP score report showing a score of 5 for AP 2-D Art and Design.",
+          "text_detected": "2024 SCORES\nAP 2-D Art and Design\nWE DID IT YOU GUYS\nYOUR SCORE\n5\nMost U.S. colleges accept your score for credit and placement.\nFind College Credit\nAbout your score",
+          "primary_content": "Score reveal for AP 2-D Art and Design exam.",
+          "entities": [
+            {
+              "name": "AP 2-D Art and Design",
+              "type": "event",
+              "specifications": "2024 Exam"
+            },
+            {
+              "name": "College Board",
+              "type": "brand",
+              "specifications": "AP Program provider"
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "A colored pencil drawing of two hands holding a piece of cardboard fashioned into a mock newspaper called 'Ankle-Biter Gazette'.",
+          "text_detected": "ANKLE-BITER GAZETTE\nRecess - WEdzday, Nov. 2, 20-\nELECSHUN NEWS!\nTiMMY is CORRUPT!\nHe's a meanie. DON'T vote For him! CHUZE \"THE Kid\" insted!!!",
+          "primary_content": "Artwork: Satirical child-themed newspaper about a school election.",
+          "entities": [
+            {
+              "name": "Prismacolor",
+              "type": "brand",
+              "specifications": "Colored pencils"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "A graphite sketch of a young boy in a suit with his hand raised, while a young girl holds a book for him.",
+          "text_detected": "Bibble",
+          "primary_content": "Artwork: A parody of a presidential inauguration using children.",
+          "entities": [
+            {
+              "name": "Bibble",
+              "type": "book",
+              "specifications": "Child-like misspelling of Bible"
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "A miniature painting inside a black tin. The lid shows a man's face flanked by smiley faces; the bottom contains tiny sculpted figures in red theater seats.",
+          "text_detected": "none",
+          "primary_content": "Artwork: Mixed media miniature representing an audience watching a figure.",
+          "entities": [
+            {
+              "name": "Acrylic paint",
+              "type": "technique",
+              "specifications": "Miniature painting"
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "An acrylic painting of a young girl in a judge's robe holding a gavel and pointing, with a 'Whac-A-Mole' style mole in a prisoner outfit in front of her.",
+          "text_detected": "none",
+          "primary_content": "Artwork: Satire on the justice system using childhood games.",
+          "entities": [
+            {
+              "name": "Whac-A-Mole",
+              "type": "game",
+              "specifications": "Arcade game reference"
+            }
+          ]
+        },
+        {
+          "image_number": 6,
+          "description": "A detailed pen and ink drawing of a boy in a suit eating a human-shaped nugget. A skull sits on the table and a girl looks on with concern.",
+          "text_detected": "none",
+          "primary_content": "Artwork: Social commentary on consumption and class.",
+          "entities": [
+            {
+              "name": "Pen and Ink",
+              "type": "technique",
+              "specifications": "Cross-hatching"
+            }
+          ]
+        },
+        {
+          "image_number": 7,
+          "description": "A painting of a child wearing a black and white striped prisoner's cap and shirt, looking through the bars of a playground structure.",
+          "text_detected": "none",
+          "primary_content": "Artwork: Metaphorical comparison between childhood play and imprisonment.",
+          "entities": [
+            {
+              "name": "Prismacolor",
+              "type": "brand",
+              "specifications": "Colored pencils"
+            }
+          ]
+        },
+        {
+          "image_number": 8,
+          "description": "A painting of two propaganda-style posters on a brick wall. One features a clown and the other a child with a knife.",
+          "text_detected": "DOWN WITH THE RICH\nTHE POOR ARE A THREAT",
+          "primary_content": "Artwork: Satirical posters regarding class warfare.",
+          "entities": [
+            {
+              "name": "Propaganda Art",
+              "type": "technique",
+              "specifications": "Political satire"
+            }
+          ]
+        },
+        {
+          "image_number": 9,
+          "description": "A drawing of a young girl in 1950s attire vacuuming with a toy vacuum while a nuclear explosion is visible through the window.",
+          "text_detected": "none",
+          "primary_content": "Artwork: Juxtaposition of domestic innocence and nuclear catastrophe.",
+          "entities": [
+            {
+              "name": "Nuclear Mushroom Cloud",
+              "type": "cultural_reference",
+              "specifications": "Cold War imagery"
+            }
+          ]
+        },
+        {
+          "image_number": 10,
+          "description": "A painting of two giant hands clasped in a thumb war or handshake over a dead body, with a war-torn landscape and helicopter in the background.",
+          "text_detected": "none",
+          "primary_content": "Artwork: Commentary on the human cost of political or military 'games'.",
+          "entities": [
+            {
+              "name": "Huey Helicopter",
+              "type": "product",
+              "specifications": "Military aircraft silhouette"
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This post is an art portfolio showcase by a student who received a perfect score of 5 on their 2024 AP 2-D Art and Design exam. The artwork follows a consistent narrative theme of using childhood imagery\u2014toys, playgrounds, and juvenile misspellings\u2014to satirize adult political and social issues such as corruption, class warfare, and the military-industrial complex. The user is likely sharing this to celebrate their achievement and provide inspiration or examples for other AP Art students.",
+      "carousel_type": "photo_dump",
+      "narrative_thread": "The portfolio transitions from the 'innocence' of childhood to the 'corruption' of adulthood, using kids as the primary actors in dark, satirical scenarios.",
+      "entities": [
+        {
+          "name": "AP 2-D Art and Design",
+          "display_name": "AP 2-D Art and Design Portfolio",
+          "type": "event",
+          "relevance": "primary",
+          "source": ["metadata", "text_overlay"],
+          "slide_number": 1,
+          "specifications": "2024 Score: 5",
+          "confidence": 5
+        },
+        {
+          "name": "Prismacolor",
+          "display_name": "Prismacolor Pencils",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "slide_number": 2,
+          "confidence": 4
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The artist successfully used a cohesive thematic inquiry (childhood vs. political satire) to earn a top AP score.",
+          "source": "implied",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "product_list",
+        "items": [
+          {
+            "name": "Ankle-Biter Gazette",
+            "details": "Colored pencil drawing of a mock newspaper",
+            "slide_number": 2
+          },
+          {
+            "name": "The Bibble Inauguration",
+            "details": "Graphite sketch of a child's inauguration",
+            "slide_number": 3
+          },
+          {
+            "name": "Judge and Mole",
+            "details": "Acrylic painting of a child judge",
+            "slide_number": 5
+          },
+          {
+            "name": "Domestic Fallout",
+            "details": "Drawing of a girl vacuuming during a nuclear blast",
+            "slide_number": 9
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "original sound \u2014 Ian Asher",
+        "metadata_song": "original sound - ianasher",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "The score and hashtags provide high certainty for the context of the art."
+      },
+      "presentation_style": {
+        "primary_format": "photo_dump",
+        "visual_style": "aesthetic"
+      },
+      "visual_mood": "Satirical, dark, and thought-provoking",
+      "topic_hints": ["AP Art Portfolio", "Political Satire", "Fine Art"],
+      "affect_hints": ["impressed", "unsettled", "thoughtful"],
+      "genre_hints": ["Art Showcase", "Educational Achievement"]
+    },
+    "metrics": {
+      "input_tokens": 12225,
+      "output_tokens": 2248,
+      "cost_usd": 0.0021217,
+      "latency_ms": 25653,
+      "video_uploaded": false
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "art",
+        "secondary": "education",
+        "micro_labels": [
+          "AP Art Portfolio",
+          "Illustration",
+          "Political Satire",
+          "Visual Arts"
+        ],
+        "confidence": 0.98
+      },
+      "genre": {
+        "label": "compilation",
+        "micro_labels": ["photo_dump", "portfolio_showcase"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "secondary"
+        },
+        {
+          "label": "funny",
+          "tier": "secondary"
+        },
+        {
+          "label": "satisfying",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "document",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "artist",
+        "confidence": 0.95
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "AP 2-D Art and Design",
+          "type": "event",
+          "relevance": "primary"
+        },
+        {
+          "name": "College Board",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Prismacolor",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Ankle-Biter Gazette",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Whac-A-Mole",
+          "type": "game",
+          "relevance": "supporting"
+        },
+        {
+          "name": "phyllisia_art",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Acrylic painting",
+          "type": "technique",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Pen and Ink",
+          "type": "technique",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A student artist showcases their 2024 AP 2-D Art and Design portfolio which earned a perfect score of 5. The artwork uses a consistent narrative theme of childhood innocence to satirize complex adult issues like class warfare, political corruption, and the military-industrial complex.",
+      "embedding_text": "A TikTok photo dump by artist @phyllisia_art showcasing a successful 2024 AP 2-D Art and Design portfolio that received a score of 5. The video begins with a College Board score report reveal and proceeds through ten slides of original artwork. The portfolio features a satirical theme where children act out adult social and political scenarios. Key pieces include a colored pencil drawing of a mock newspaper called 'Ankle-Biter Gazette', a graphite sketch of a child's 'Bibble' inauguration, an acrylic painting of a 'Whac-A-Mole' style justice system, and pen-and-ink illustrations of class consumption. The artist uses Prismacolor pencils and acrylics to create dark, metaphorical commentary on war, poverty, and power. This content serves as a high-quality example for AP Art students looking for portfolio inspiration, theme development, and technical execution in mixed media and illustration."
+    },
+    "metrics": {
+      "input_tokens": 4096,
+      "output_tokens": 854,
+      "cost_usd": 0.0007512,
+      "latency_ms": 7698
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "art",
+      "genre": "compilation",
+      "communicative_intent": "document",
+      "creator_role": "artist",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

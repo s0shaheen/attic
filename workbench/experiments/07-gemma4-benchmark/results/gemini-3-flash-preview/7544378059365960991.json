@@ -1,0 +1,195 @@
+{
+  "item_id": "7544378059365960991",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:32",
+          "visual_description": "Creator speaks directly to the camera in a home office setting, explaining a productivity concept using hand gestures for emphasis.",
+          "audio_description": "Creator explains the concept of 'anchor loops'\u2014identifying small, manageable tasks that represent progress on major goals. He emphasizes that doing the bare minimum on these tasks allows one to feel successful at the end of the day, maintaining momentum even when energy is low.",
+          "text_on_screen": "Anchor loops: minimum still feels good",
+          "key_objects": [
+            "bookshelf",
+            "framed desert artwork",
+            "gold ring",
+            "black t-shirt"
+          ]
+        }
+      ],
+      "overall_summary": "The creator introduces 'anchor loops,' a mindset and productivity technique designed to combat the 'all or nothing' mentality. By identifying the smallest possible step forward on an important goal, a person can 'close the loop' and feel a sense of accomplishment even on difficult days. The video argues that discipline is about consistent progress rather than unattainable perfection, helping users maintain long-term momentum.",
+      "people": [
+        {
+          "description": "Male with short light brown hair, wearing a black t-shirt and a gold ring, speaking directly to the camera.",
+          "is_creator": true,
+          "speaking": true,
+          "identified_as": "thecreativeathlete"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Anchor Loops",
+          "display_name": "Anchor Loops Technique",
+          "type": "technique",
+          "relevance": "primary",
+          "source": ["audio", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "thecreativeathlete",
+          "display_name": "The Creative Athlete",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Discipline is about progress, not perfection.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Performing the bare minimum on a key task (an 'anchor loop') prevents the feeling of a wasted day.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Small wins are essential for maintaining long-term momentum and mental well-being.",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "instructions",
+        "items": [
+          {
+            "name": "Identify Anchor Loops",
+            "details": "Determine the most important tasks that contribute to your long-term goals."
+          },
+          {
+            "name": "Define the Minimum",
+            "details": "Establish the smallest possible action you can take on that task (e.g., writing one sentence, doing one pushup)."
+          },
+          {
+            "name": "Close the Loop",
+            "details": "Complete that minimum action on days when you lack the energy for a full session to maintain your streak and feel good."
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "original sound \u2014 thecreativeathlete",
+        "metadata_song": "original sound - thecreativeathlete \u2014 Creative Athlete",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": null
+      },
+      "presentation_style": {
+        "primary_format": "talking_head",
+        "camera_work": "static",
+        "editing_style": "minimal"
+      },
+      "visual_mood": "Calm, encouraging, and focused.",
+      "topic_hints": ["Productivity", "Mindset", "Habit Formation"],
+      "affect_hints": ["Empowered", "Reassured", "Motivated"],
+      "genre_hints": ["Self-improvement", "Educational"]
+    },
+    "metrics": {
+      "input_tokens": 4428,
+      "output_tokens": 1031,
+      "cost_usd": 0.0008552000000000001,
+      "latency_ms": 20459,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "career",
+        "secondary": "education",
+        "micro_labels": [
+          "productivity methods",
+          "mindset",
+          "habit formation",
+          "discipline"
+        ],
+        "confidence": 0.9
+      },
+      "genre": {
+        "label": "tutorial",
+        "micro_labels": ["mindset coaching", "productivity tip"],
+        "confidence": 0.85
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "educator",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Anchor Loops Technique",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "thecreativeathlete",
+          "type": "person",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "Creator @thecreativeathlete explains the 'Anchor Loops' technique, a productivity mindset designed to defeat the 'all or nothing' mentality. By defining and completing the bare minimum version of a task, users can maintain momentum and feel a sense of accomplishment even on low-energy days.",
+      "embedding_text": "In this productivity and mindset video, creator @thecreativeathlete introduces the 'Anchor Loops' technique to combat the 'all or nothing' mentality. He explains that an anchor loop is the smallest, most manageable version of a task that represents progress on a major goal, such as writing one sentence or doing one pushup. The video features a talking-head format with text overlay stating 'Anchor loops: minimum still feels good.' The creator emphasizes that discipline is about consistent progress rather than perfection, allowing users to 'close the loop' and feel a sense of accomplishment even on difficult days. This content is ideal for those interested in habit formation, mental well-being, and professional development. Key concepts include maintaining momentum, small wins, and defining the minimum viable action for long-term success."
+    },
+    "metrics": {
+      "input_tokens": 3469,
+      "output_tokens": 623,
+      "cost_usd": 0.0005961,
+      "latency_ms": 5632
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "career",
+      "genre": "tutorial",
+      "communicative_intent": "inform",
+      "creator_role": "educator",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

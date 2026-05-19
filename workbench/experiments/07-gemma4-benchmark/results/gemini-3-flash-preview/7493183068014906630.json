@@ -1,0 +1,371 @@
+{
+  "item_id": "7493183068014906630",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:12",
+          "visual_description": "Creator and her husband introduce a haul of fashion items purchased in Pakistan.",
+          "audio_description": "This is a long overdue video. Alia wanted me to show you guys my top favorite pieces that I got from Pakistan.",
+          "text_on_screen": "MY HUSBANDS TOP FASHION FINDS FROM PAKISTAN",
+          "key_objects": ["maroon hoodie", "brown hoodie"]
+        },
+        {
+          "time_range": "0:12-0:37",
+          "visual_description": "Husband displays a cream-colored shawl from Gul Ahmed, demonstrating how to drape it.",
+          "audio_description": "This cool shawl which I replaced as my winter jacket this Eid. It's from Gul Ahmed. The fabric is really nice. It was under $20.",
+          "text_on_screen": "brand: Gul Ahmed",
+          "key_objects": ["Gul Ahmed shawl"]
+        },
+        {
+          "time_range": "0:37-1:03",
+          "visual_description": "Husband shows a brown bomber jacket from Republic by Omar Farooq, explaining the boutique sizing.",
+          "audio_description": "This bomber jacket, pilot jacket. I had to get a size larger because it's like a boutique, they don't have sizes, you just pick what's there.",
+          "text_on_screen": "brand: Republic by Omar Farooq",
+          "key_objects": ["Republic by Omar Farooq bomber jacket"]
+        },
+        {
+          "time_range": "1:03-1:38",
+          "visual_description": "Husband presents a black wool coat, highlighting the quality and shoulder pads.",
+          "audio_description": "Wool coat from the same place. This is my favorite coat. It's not made of polyester. It has slight shoulder pads.",
+          "text_on_screen": "brand: Republic by Omar Farooq",
+          "key_objects": ["Republic by Omar Farooq wool coat"]
+        },
+        {
+          "time_range": "1:38-2:25",
+          "visual_description": "Husband showcases a dark brown shalwar kameez set from Shaffer.",
+          "audio_description": "My favorite shalwar kameez which I didn't know about before I went to Pakistan. This was a slim fit that I got, medium.",
+          "text_on_screen": "brand: Shaffer, *me trying to find the tag*",
+          "key_objects": ["Shaffer shalwar kameez"]
+        },
+        {
+          "time_range": "2:25-3:05",
+          "visual_description": "Husband shows off a pair of Ray-Ban style sunglasses bought at a supermarket.",
+          "audio_description": "I got these sunglasses, Ray-Ban sunglasses, from Naheed. They are heavy and really good quality. They were $23.",
+          "text_on_screen": "brand: rayban DOOP from Naheed Supermarket",
+          "key_objects": ["Ray-Ban dupe sunglasses"]
+        },
+        {
+          "time_range": "3:05-3:34",
+          "visual_description": "Husband displays a patterned velvet waistcoat from Manto with Urdu calligraphy.",
+          "audio_description": "Velvet vest from Manto. I love Manto's store. It has cool calligraphy. Invite me to your Mehndi if you want to see me in this.",
+          "text_on_screen": "brand: Manto",
+          "key_objects": ["Manto velvet waistcoat"]
+        },
+        {
+          "time_range": "3:34-3:44",
+          "visual_description": "Quick mention of basic items from the brand Lama.",
+          "audio_description": "Honorable mention, Lama. I got a lot of basics from there.",
+          "text_on_screen": "brand: Lama",
+          "key_objects": ["Lama clothing"]
+        },
+        {
+          "time_range": "3:44-3:58",
+          "visual_description": "Husband wears an oversized, retro-style denim jacket from Outfitters.",
+          "audio_description": "The Outfitters jean jacket that we'll both be sharing. It's so oversized, retro, and in style right now.",
+          "text_on_screen": "brand: Outfitters",
+          "key_objects": ["Outfitters denim jacket"]
+        },
+        {
+          "time_range": "3:58-4:19",
+          "visual_description": "Creator highlights her maroon Rastah hoodie before the couple signs off.",
+          "audio_description": "I also bought this hoodie from Rastah. Pakistan Zindabad.",
+          "text_on_screen": "brand: Rastah",
+          "key_objects": ["Rastah hoodie"]
+        }
+      ],
+      "overall_summary": "In this video, a creator and her husband showcase a variety of high-quality fashion finds from their recent trip to Pakistan. The husband models several items, including a cream shawl from Gul Ahmed, a wool coat and bomber jacket from Republic by Omar Farooq, and a slim-fit shalwar kameez from Shaffer. They also highlight affordable accessories like Ray-Ban dupes from Naheed Supermarket and unique pieces like a Manto velvet waistcoat with calligraphy. The video emphasizes the superior quality and style of Pakistani men's fashion brands compared to global fast-fashion alternatives.",
+      "people": [
+        {
+          "description": "South Asian female creator wearing a maroon Rastah hoodie and checkered pants.",
+          "is_creator": true,
+          "speaking": true,
+          "identified_as": "Alia"
+        },
+        {
+          "description": "South Asian male, the creator's husband, wearing a brown hoodie and modeling the haul items.",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": null
+        }
+      ],
+      "entities": [
+        {
+          "name": "Ideas by Gul Ahmed",
+          "display_name": "Gul Ahmed",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "specifications": "Shawl priced under $20",
+          "confidence": 5
+        },
+        {
+          "name": "Republic by Omar Farooq",
+          "display_name": "Republic by Omar Farooq",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "specifications": "Bomber jacket and black wool coat with shoulder pads",
+          "confidence": 5
+        },
+        {
+          "name": "SHAFFER",
+          "display_name": "Shaffer",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "specifications": "Slim fit brown shalwar kameez, size medium",
+          "confidence": 5
+        },
+        {
+          "name": "wearmanto",
+          "display_name": "Manto",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "specifications": "Velvet waistcoat with Urdu calligraphy",
+          "confidence": 5
+        },
+        {
+          "name": "LAMA RETAIL",
+          "display_name": "Lama",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["text_overlay", "metadata"],
+          "specifications": "Basics and t-shirts",
+          "confidence": 5
+        },
+        {
+          "name": "Outfitters",
+          "display_name": "Outfitters",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "specifications": "Oversized retro denim jacket",
+          "confidence": 5
+        },
+        {
+          "name": "Rastah",
+          "display_name": "Rastah",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "specifications": "Maroon hoodie with Urdu script",
+          "confidence": 5
+        },
+        {
+          "name": "Naheed Supermarket",
+          "display_name": "Naheed Supermarket",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["text_overlay", "audio"],
+          "specifications": "Location for $23 polarized sunglasses",
+          "confidence": 5
+        },
+        {
+          "name": "electric piano bossa nova jazz(1392318) \u2014 Kenta Fukuoka",
+          "display_name": "Electric Piano Bossa Nova Jazz \u2014 Kenta Fukuoka",
+          "type": "song",
+          "relevance": "background",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Pakistani men's fashion brands offer high-quality materials (like real wool) and unique designs that rival or exceed Western fast-fashion brands.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Shopping at local Pakistani boutiques and supermarkets can yield high-quality fashion items and accessories at very affordable prices.",
+          "source": "voiceover",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Gul Ahmed Shawl",
+            "details": "Cream color, under $20, high-quality fabric."
+          },
+          {
+            "name": "Republic by Omar Farooq Bomber Jacket",
+            "details": "Pilot style, boutique sizing (recommend sizing up)."
+          },
+          {
+            "name": "Republic by Omar Farooq Wool Coat",
+            "details": "Black, non-polyester, features slight shoulder pads."
+          },
+          {
+            "name": "Shaffer Shalwar Kameez",
+            "details": "Brown, slim fit, medium size."
+          },
+          {
+            "name": "Naheed Supermarket Sunglasses",
+            "details": "Ray-Ban dupe, polarized, heavy quality, $23."
+          },
+          {
+            "name": "Manto Velvet Waistcoat",
+            "details": "Features Urdu calligraphy, ideal for formal events like Mehndis."
+          },
+          {
+            "name": "Outfitters Denim Jacket",
+            "details": "Oversized, retro aesthetic."
+          },
+          {
+            "name": "Rastah Hoodie",
+            "details": "Maroon with embroidered script."
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "electric piano bossa nova jazz \u2014 Kenta Fukuoka",
+        "metadata_song": "electric piano bossa nova jazz(1392318) \u2014 Kenta Fukuoka",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "All brands and items were clearly identified via text overlays and verbal confirmation."
+      },
+      "presentation_style": {
+        "primary_format": "outfit_showcase",
+        "camera_work": "static",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Casual, upbeat, and informative with a focus on cultural pride and fashion appreciation.",
+      "topic_hints": ["Pakistani Fashion", "Men's Style", "Clothing Haul"],
+      "affect_hints": ["Enthusiastic", "Proud", "Helpful"],
+      "genre_hints": ["Fashion Review", "Travel Haul"]
+    },
+    "metrics": {
+      "input_tokens": 24673,
+      "output_tokens": 2806,
+      "cost_usd": 0.0035897000000000004,
+      "latency_ms": 48104,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "fashion",
+        "secondary": "travel",
+        "micro_labels": [
+          "Pakistani menswear",
+          "South Asian fashion",
+          "Clothing haul",
+          "Men's style"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "haul",
+        "micro_labels": ["outfit_showcase"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "funny",
+          "tier": "secondary"
+        },
+        {
+          "label": "satisfying",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "shopping_research",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Gul Ahmed",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "Republic by Omar Farooq",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "SHAFFER",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "Manto",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "Rastah",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Outfitters",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Naheed Supermarket",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Lama",
+          "type": "brand",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "Alia Athar and her husband showcase a high-quality fashion haul from their trip to Pakistan, highlighting top-tier menswear brands. They review specific pieces including a Gul Ahmed shawl, Republic by Omar Farooq outerwear, and a Manto velvet waistcoat, emphasizing the superior quality and value of Pakistani fashion.",
+      "embedding_text": "A Pakistani fashion haul video by creator Alia Athar (@alia.athar) featuring her husband's top menswear finds from their trip to Pakistan. The video showcases several specific brands and items, including a cream shawl from Gul Ahmed priced under $20, a brown bomber jacket and a black wool coat with shoulder pads from Republic by Omar Farooq, and a slim-fit brown shalwar kameez from Shaffer. They also highlight Ray-Ban dupe sunglasses from Naheed Supermarket, a velvet waistcoat with Urdu calligraphy from Manto, basics from Lama, an oversized retro denim jacket from Outfitters, and a maroon hoodie from Rastah. The content is informative, providing brand names, pricing, and quality assessments, aimed at viewers interested in South Asian style, menswear recommendations, and shopping in Pakistan. On-screen text identifies each brand as they model the outfits."
+    },
+    "metrics": {
+      "input_tokens": 4183,
+      "output_tokens": 863,
+      "cost_usd": 0.0007635,
+      "latency_ms": 7427
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "fashion",
+      "genre": "haul",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "shopping_research",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

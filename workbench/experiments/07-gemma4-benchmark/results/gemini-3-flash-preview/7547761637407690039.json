@@ -1,0 +1,242 @@
+{
+  "item_id": "7547761637407690039",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:02",
+          "visual_description": "A man in a vest and white shirt (meme template) looks thoughtful and then has a moment of realization.",
+          "audio_description": "The intro beat of a pop song begins.",
+          "text_on_screen": "When your going audio for audio with bro and he pulls this masterpiece out so you accept defeat and jam out",
+          "key_objects": ["BBC logo"]
+        },
+        {
+          "time_range": "0:02-0:05",
+          "visual_description": "A man dances and sings with high energy while walking down a residential street.",
+          "audio_description": "Lyrics: 'Smashing mics in karaoke bars'",
+          "text_on_screen": "When your going audio for audio with bro and he pulls this masterpiece out so you accept defeat and jam out",
+          "key_objects": ["headphones"]
+        },
+        {
+          "time_range": "0:05-0:08",
+          "visual_description": "Druski performs a comedic dance in a crowded office hallway while people cheer him on.",
+          "audio_description": "Lyrics: 'You're running late with half your makeup on'",
+          "text_on_screen": "When your going audio for audio with bro and he pulls this masterpiece out so you accept defeat and jam out",
+          "key_objects": ["Exit sign"]
+        },
+        {
+          "time_range": "0:08-0:12",
+          "visual_description": "A waiter in a restaurant breaks into a professional-style dance routine while serving.",
+          "audio_description": "Lyrics: 'This method acting might pay our bills'",
+          "text_on_screen": "When your going audio for audio with bro and he pulls this masterpiece out so you accept defeat and jam out",
+          "key_objects": ["restaurant tables", "plates"]
+        },
+        {
+          "time_range": "0:12-0:16",
+          "visual_description": "A group of dancers in a studio perform a synchronized, high-energy hip-hop routine.",
+          "audio_description": "Upbeat pop music continues.",
+          "text_on_screen": "When your going audio for audio with bro and he pulls this masterpiece out so you accept defeat and jam out",
+          "key_objects": ["dance studio"]
+        }
+      ],
+      "overall_summary": "This video is a compilation of various people dancing and vibing to the song 'Classic' by MKTO. The creator uses these clips to illustrate the feeling of losing an 'audio for audio' battle (a trend where friends trade song recommendations) because the other person played such a nostalgic and undeniable hit. The video captures a sense of collective joy and nostalgia associated with the track.",
+      "people": [
+        {
+          "description": "A man in a tan shirt and hat dancing in a hallway.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Druski"
+        },
+        {
+          "description": "A man in a vest looking thoughtful, appearing in a BBC clip.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": null
+        }
+      ],
+      "entities": [
+        {
+          "name": "Classic",
+          "display_name": "Classic by MKTO",
+          "type": "song",
+          "relevance": "primary",
+          "source": ["audio"],
+          "specifications": "Released in 2013",
+          "confidence": 5
+        },
+        {
+          "name": "MKTO",
+          "display_name": "MKTO",
+          "type": "artist",
+          "relevance": "primary",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Druski",
+          "display_name": "Druski",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Comedian and content creator",
+          "confidence": 5
+        },
+        {
+          "name": "Audio for Audio",
+          "display_name": "Audio for Audio Trend",
+          "type": "trend_or_meme",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "specifications": "A social media trend where users exchange music recommendations",
+          "confidence": 4
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The song 'Classic' by MKTO is a universally recognized 'masterpiece' that evokes strong nostalgia and an urge to dance.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Classic - MKTO",
+            "details": "Described as a 'masterpiece' for music sharing battles."
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Classic \u2014 MKTO",
+        "metadata_song": "original sound - slurs \u2014 \u3164",
+        "match": false
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The song and the appearance of Druski are highly recognizable."
+      },
+      "presentation_style": {
+        "primary_format": "compilation",
+        "camera_work": "various",
+        "editing_style": "montage"
+      },
+      "visual_mood": "Energetic, nostalgic, and celebratory.",
+      "topic_hints": ["2010s Pop Music", "Nostalgia", "Dance Trends"],
+      "affect_hints": ["Joyful", "Hype", "Nostalgic"],
+      "genre_hints": ["Music Edit", "Meme Compilation"]
+    },
+    "metrics": {
+      "input_tokens": 2905,
+      "output_tokens": 1417,
+      "cost_usd": 0.0008573000000000001,
+      "latency_ms": 20679,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "music",
+        "secondary": "comedy",
+        "micro_labels": [
+          "2010s Pop Music",
+          "Song Recommendations",
+          "Music Memes"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "edit",
+        "micro_labels": ["compilation", "meme montage", "trend"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "nostalgic",
+          "tier": "dominant"
+        },
+        {
+          "label": "funny",
+          "tier": "secondary"
+        },
+        {
+          "label": "satisfying",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["text_overlay", "mixed"],
+      "content_provenance": {
+        "label": "repost",
+        "confidence": 0.85
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "anonymous",
+        "confidence": 0.7
+      },
+      "viewer_orientation": {
+        "label": "social_sharing",
+        "confidence": 0.8
+      },
+      "entities": [
+        {
+          "name": "Classic",
+          "type": "song",
+          "relevance": "primary"
+        },
+        {
+          "name": "MKTO",
+          "type": "artist",
+          "relevance": "primary"
+        },
+        {
+          "name": "Druski",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Audio for Audio",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        },
+        {
+          "name": "2010s Pop",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A high-energy music edit celebrating the 2013 hit song 'Classic' by MKTO as part of the 'audio for audio' trend. The video features a compilation of people dancing, including comedian Druski, to illustrate the feeling of hearing a nostalgic masterpiece that makes you 'accept defeat and jam out.'",
+      "embedding_text": "A nostalgic music edit and meme compilation centered on the song 'Classic' by MKTO. The video uses the 'audio for audio' trend, where friends trade song recommendations, to highlight this 2013 pop hit as an undeniable masterpiece. Visuals include a BBC meme template of a man having a realization, comedian Druski dancing in a hallway, a waiter performing a routine in a restaurant, and synchronized hip-hop dancers. The text overlay reads: 'When your going audio for audio with bro and he pulls this masterpiece out so you accept defeat and jam out.' This content captures the collective joy and hype associated with 2010s pop nostalgia. Created by @fear_of_heights_, it serves as both a humorous relatable meme and a music appreciation post for MKTO's discography."
+    },
+    "metrics": {
+      "input_tokens": 3921,
+      "output_tokens": 771,
+      "cost_usd": 0.0007005,
+      "latency_ms": 6059
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "nostalgic",
+      "topic": "music",
+      "genre": "edit",
+      "communicative_intent": "entertain",
+      "creator_role": "anonymous",
+      "viewer_orientation": "social_sharing",
+      "presentation_style": "text_overlay",
+      "content_provenance": "repost"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

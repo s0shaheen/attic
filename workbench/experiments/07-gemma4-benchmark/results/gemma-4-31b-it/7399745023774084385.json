@@ -1,0 +1,248 @@
+{
+  "item_id": "7399745023774084385",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "A screenshot of a messaging app's conversation list with dates from December 2022. Overlaid is a colorful impasto painting of a jester or clown figure holding a yellow flower.",
+          "text_detected": "Search Conversations 12/12/2022 I love you too 12/12/2022 I love you 11/12/2022 love 10/12/2022 08/12/2022 I was... to say okay my love I'll you pain 08/12/2022 I love you... 're perfect too 08/12/2022 As I love you and your perfect anyway",
+          "primary_content": "Contrast between affectionate old messages and a whimsical yet distorted jester painting.",
+          "entities": [
+            {
+              "name": "Jester",
+              "type": "person",
+              "specifications": "Impasto painting style"
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "A black background with two chat bubbles. Overlaid is a blue and white impasto painting of a figure being pierced by a red arrow.",
+          "text_detected": "hey, how have you been? I'm good Read 19:0",
+          "primary_content": "Contrast between a mundane 'how are you' exchange and a painting representing heartbreak or being wounded.",
+          "entities": [
+            {
+              "name": "Pierced Figure",
+              "type": "person",
+              "specifications": "Impasto painting style"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "A black background with one chat bubble. Overlaid is a colorful impasto painting of two figures holding hands and walking toward a jagged, blue-green landscape.",
+          "text_detected": "we can dream",
+          "primary_content": "Contrast between a hopeful text and a painting of a shared journey or dreamscape.",
+          "entities": [
+            {
+              "name": "Couple",
+              "type": "person",
+              "specifications": "Impasto painting style"
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "A white background with chat bubbles expressing deep affection followed by a 'but' and a typing indicator. Overlaid is a painting of a sad clown with a blue ruff collar.",
+          "text_detected": "I can honestly say you are the best thing that's ever happened to me but ...",
+          "primary_content": "Contrast between a declaration of love and the impending 'but', paired with a sad clown painting.",
+          "entities": [
+            {
+              "name": "Sad Clown",
+              "type": "person",
+              "specifications": "Impasto painting style"
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "A black background with one chat bubble. Overlaid is an abstract, colorful impasto painting featuring a small purple elephant in the bottom right corner.",
+          "text_detected": "I dream about it all the time",
+          "primary_content": "Contrast between a text about longing/dreaming and an abstract, surreal painting.",
+          "entities": [
+            {
+              "name": "Purple Elephant",
+              "type": "product",
+              "specifications": "Impasto painting style"
+            }
+          ]
+        },
+        {
+          "image_number": 6,
+          "description": "A white background with a chat bubble asking a mundane question. Overlaid is a painting of a person in a red hoodie with their face buried in their hands in distress.",
+          "text_detected": "how many siblings do you have?",
+          "primary_content": "Contrast between a casual, getting-to-know-you question and a painting of intense grief or anxiety.",
+          "entities": [
+            {
+              "name": "Distressed Person",
+              "type": "person",
+              "specifications": "Impasto painting style"
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This post is a conceptual art series that juxtaposes old, digital text messages with visceral, impasto-style paintings. The messages range from deeply affectionate to mundane, while the art represents the hidden, complex emotions (heartbreak, sadness, longing) associated with those memories. The user likely saved this for its aesthetic emotional resonance and its commentary on the gap between digital communication and internal feeling.",
+      "carousel_type": "other",
+      "narrative_thread": "The series explores the emotional weight of 'old messages,' showing that behind simple text strings lie profound and often painful human emotions.",
+      "entities": [
+        {
+          "name": "Aurenth",
+          "display_name": "Aurenth",
+          "type": "artist",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "slide_number": null,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "green to blue (Sped Up)",
+          "display_name": "green to blue (Sped Up)",
+          "type": "song",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "slide_number": null,
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Digital communication often masks the true depth of emotional turmoil or affection.",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "null",
+        "items": []
+      },
+      "audio_identification": {
+        "actual_song": "green to blue (Sped Up) \u2014 Aurenth",
+        "metadata_song": "green to blue (Sped Up) \u2014 Aurenth",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All text and visual elements were clearly identifiable."
+      },
+      "presentation_style": {
+        "primary_format": "other",
+        "visual_style": "aesthetic"
+      },
+      "visual_mood": "Melancholic, nostalgic, and emotionally raw.",
+      "topic_hints": ["Digital nostalgia", "Emotional art", "Heartbreak"],
+      "affect_hints": ["Sadness", "Longing", "Empathy"],
+      "genre_hints": ["Digital art", "Visual poetry", "Conceptual art"]
+    },
+    "metrics": {
+      "input_tokens": 2833,
+      "output_tokens": 1593,
+      "cost_usd": 0.0,
+      "latency_ms": 87596,
+      "video_uploaded": false,
+      "thoughts_tokens": 1331
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "art",
+        "secondary": "relationships",
+        "micro_labels": [
+          "conceptual art",
+          "impasto painting",
+          "digital nostalgia",
+          "emotional expression"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "edit",
+        "micro_labels": ["visual poetry"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "sad",
+          "tier": "dominant"
+        },
+        {
+          "label": "nostalgic",
+          "tier": "secondary"
+        },
+        {
+          "label": "wholesome",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "connect",
+        "confidence": 0.85
+      },
+      "creator_role": {
+        "label": "artist",
+        "confidence": 0.95
+      },
+      "viewer_orientation": {
+        "label": "emotional_regulation",
+        "confidence": 0.8
+      },
+      "entities": [
+        {
+          "name": "@amaanjahangir",
+          "type": "artist",
+          "relevance": "primary"
+        },
+        {
+          "name": "Aurenth",
+          "type": "artist",
+          "relevance": "supporting"
+        },
+        {
+          "name": "green to blue (Sped Up)",
+          "type": "song",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Impasto",
+          "type": "technique",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A conceptual art series by @amaanjahangir that juxtaposes old, digital text messages with visceral impasto paintings. The work explores the emotional gap between simple text communication and the complex internal feelings of heartbreak, longing, and nostalgia.",
+      "embedding_text": "A conceptual art slideshow by @amaanjahangir featuring a series of impasto paintings juxtaposed with screenshots of old text messages from December 2022. The content explores themes of digital nostalgia and heartbreak, contrasting mundane chat bubbles (e.g., 'how many siblings do you have?') and affectionate declarations ('I love you') with emotionally raw imagery including a sad clown, a figure pierced by a red arrow, and a distressed person with their face in their hands. Set to the song 'green to blue (Sped Up)' by Aurenth, the piece highlights the gap between digital interaction and internal emotional turmoil. This is a visual poetry piece focused on the pain of old memories and the hidden depth of human emotion."
+    },
+    "metrics": {
+      "input_tokens": 4026,
+      "output_tokens": 693,
+      "cost_usd": 0.0,
+      "latency_ms": 40067,
+      "thoughts_tokens": 723
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "sad",
+      "topic": "art",
+      "genre": "edit",
+      "communicative_intent": "connect",
+      "creator_role": "artist",
+      "viewer_orientation": "emotional_regulation",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

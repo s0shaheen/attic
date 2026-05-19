@@ -1,0 +1,272 @@
+{
+  "item_id": "7402274475779034399",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": [
+      {
+        "scene_timeline": [
+          {
+            "time_range": "0:00-0:06",
+            "visual_description": "Patrick O'Gorman introduces the tutorial by demonstrating a weak left-hand dribble that 'dies' on the ground.",
+            "audio_description": "If you have no left hand dribble, like the ball keeps dying like that, do this four-step progression and by the end you'll have the left hand.",
+            "text_on_screen": "IF YOU HAVE NO LEFT HAND DRIBBLE LIKE THE BALL KEEPS DYING LIKE THAT DO THIS 4 STEP PROGRESSION AND BY THE END YOU'LL HAVE THE",
+            "key_objects": ["basketball", "Hollyland wireless microphone"]
+          },
+          {
+            "time_range": "0:06-0:12",
+            "visual_description": "Creator demonstrates Step 1: performing hard pound dribbles with the left hand while stationary.",
+            "audio_description": "The first step of the progression, just get 100 pound dribbles in a row. Don't move on until you can get 100 in a row.",
+            "text_on_screen": "LEFT HAND THE FIRST STEP OF THE PROGRESSION JUST GET 100 POUND DRIBBLES IN A ROW DON'T MOVE ON UNTIL YOU CAN GET 100 IN A ROW",
+            "key_objects": ["basketball"]
+          },
+          {
+            "time_range": "0:12-0:17",
+            "visual_description": "Creator demonstrates Step 2: dribbling the ball high above his head with his left hand.",
+            "audio_description": "When that's too easy, do 100 in a row above your head.",
+            "text_on_screen": "WHEN THAT'S TOO EASY DO 100 IN A ROW ABOVE YOUR HEAD",
+            "key_objects": ["basketball"]
+          },
+          {
+            "time_range": "0:17-0:21",
+            "visual_description": "Creator demonstrates Step 3: dribbling the ball side-to-side (in-and-out motion) with the left hand.",
+            "audio_description": "And when that's too easy, get 100 in a row moving back and forth.",
+            "text_on_screen": "WHEN THAT'S TOO EASY GET 100 IN A ROW MOVING BACK AND FORTH",
+            "key_objects": ["basketball"]
+          },
+          {
+            "time_range": "0:21-0:25",
+            "visual_description": "Creator demonstrates Step 4: dribbling with the left hand while running forward.",
+            "audio_description": "And then when that's too easy, start doing it on the move.",
+            "text_on_screen": "AND THEN WHEN THAT'S TOO EASY START DOING IT ON THE MOVE",
+            "key_objects": ["basketball"]
+          },
+          {
+            "time_range": "0:25-0:29",
+            "visual_description": "Creator holds the basketball and concludes the video, emphasizing the effectiveness of the drill.",
+            "audio_description": "You do that four-step progression, dribbling with your left hand will be pretty easy.",
+            "text_on_screen": "YOU DO THAT FOUR STEP PROGRESSION DRIBBLING WITH YOUR LEFT HAND WILL BE PRETTY EASY",
+            "key_objects": ["basketball"]
+          }
+        ],
+        "overall_summary": "Basketball creator Patrick O'Gorman shares a four-step progression designed for beginners to develop their non-dominant (left) hand dribbling. The routine starts with stationary pound dribbles and increases in difficulty to high dribbles, side-to-side dribbles, and finally dribbling while moving. The main takeaway is that high-repetition consistency (100 reps per stage) is the key to gaining ball control and confidence with the left hand.",
+        "people": [
+          {
+            "description": "Young male athlete with brown hair, wearing a mint green t-shirt and grey athletic shorts.",
+            "is_creator": true,
+            "speaking": true,
+            "identified_as": "Patrick O'Gorman"
+          }
+        ],
+        "entities": [
+          {
+            "name": "Patrick O'Gorman",
+            "display_name": "Patrick O'Gorman (@pattyoghoops)",
+            "type": "person",
+            "relevance": "primary",
+            "source": ["metadata", "visual"],
+            "specifications": null,
+            "confidence": 5
+          },
+          {
+            "name": "Pound Dribble",
+            "display_name": "Pound Dribble Drill",
+            "type": "technique",
+            "relevance": "primary",
+            "source": ["audio", "text_overlay"],
+            "specifications": "100 reps in a row",
+            "confidence": 5
+          },
+          {
+            "name": "High Dribble",
+            "display_name": "High Dribble (Above Head)",
+            "type": "technique",
+            "relevance": "primary",
+            "source": ["audio", "visual"],
+            "specifications": "100 reps in a row",
+            "confidence": 5
+          },
+          {
+            "name": "Side-to-Side Dribble",
+            "display_name": "Side-to-Side Dribble",
+            "type": "technique",
+            "relevance": "primary",
+            "source": ["audio", "visual"],
+            "specifications": "100 reps in a row",
+            "confidence": 5
+          },
+          {
+            "name": "Hollyland",
+            "display_name": "Hollyland Wireless Microphone",
+            "type": "product",
+            "relevance": "supporting",
+            "source": ["visual"],
+            "specifications": "Lavalier mic clipped to shirt",
+            "confidence": 4
+          }
+        ],
+        "takeaways": [
+          {
+            "statement": "Mastering the left hand requires a high-volume, progressive repetition strategy.",
+            "source": "voiceover",
+            "confidence": 5
+          },
+          {
+            "statement": "Do not progress to more difficult dribbling variations until you can complete 100 reps of the current drill without error.",
+            "source": "voiceover",
+            "confidence": 5
+          }
+        ],
+        "structured_content": {
+          "type": "workout",
+          "items": [
+            {
+              "name": "Stationary Pound Dribbles",
+              "details": "100 repetitions in a row with the left hand."
+            },
+            {
+              "name": "High Dribbles",
+              "details": "100 repetitions in a row with the ball reaching above head height."
+            },
+            {
+              "name": "Side-to-Side Dribbles",
+              "details": "100 repetitions in a row moving the ball laterally."
+            },
+            {
+              "name": "Dribbling on the Move",
+              "details": "Maintain left-hand dribble control while running or walking."
+            }
+          ]
+        },
+        "audio_identification": {
+          "actual_song": "original sound - pattyoghoops",
+          "metadata_song": "original sound - pattyoghoops \u2014 Patrick O\u2019Gorman",
+          "match": true
+        },
+        "extraction_confidence": {
+          "entities_complete": 5,
+          "audio_identified": true,
+          "notes": "The creator is a known basketball influencer; drills are standard basketball training terminology."
+        },
+        "presentation_style": {
+          "primary_format": "tutorial_demo",
+          "camera_work": "static",
+          "editing_style": "jump_cuts"
+        },
+        "visual_mood": "High-energy, instructional, and encouraging.",
+        "topic_hints": [
+          "Basketball Training",
+          "Dribbling Drills",
+          "Skill Development"
+        ],
+        "affect_hints": ["Motivated", "Focused", "Empowered"],
+        "genre_hints": ["Sports Tutorial", "Fitness Advice"]
+      }
+    ],
+    "metrics": {
+      "input_tokens": 4153,
+      "output_tokens": 2015,
+      "cost_usd": 0.0012213,
+      "latency_ms": 26754,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "sports",
+        "secondary": "education",
+        "micro_labels": [
+          "basketball training",
+          "ball handling",
+          "dribbling drills"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "tutorial",
+        "micro_labels": ["how-to", "sports drill"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay", "voiceover"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Patrick O'Gorman",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Pound Dribble Drill",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "High Dribble",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "Side-to-Side Dribble",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "Basketball",
+          "type": "product",
+          "relevance": "primary"
+        },
+        {
+          "name": "Hollyland Wireless Microphone",
+          "type": "product",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "Basketball creator Patrick O'Gorman (@pattyoghoops) demonstrates a four-step progression for beginners to develop their non-dominant (left) hand dribbling. The routine emphasizes high-repetition consistency, requiring 100 reps of stationary, high, and side-to-side dribbles before moving to dribbling while running.",
+      "embedding_text": "Basketball creator Patrick O'Gorman (@pattyoghoops) shares a 4-step beginner tutorial to improve left-hand dribbling. The video demonstrates a progression starting with a weak dribble that 'dies' and moving through four specific drills: 100 stationary pound dribbles, 100 high dribbles above the head, 100 side-to-side (in-and-out) dribbles, and finally dribbling while running. The tutorial uses a Hollyland wireless microphone and features on-screen text instructions like 'IF YOU HAVE NO LEFT HAND DRIBBLE... DO THIS 4 STEP PROGRESSION.' This instructional sports content is designed for active learning, focusing on high-repetition ball handling techniques to build confidence and control with the non-dominant hand. The creator emphasizes not moving to the next step until 100 reps are completed in a row."
+    },
+    "metrics": {
+      "input_tokens": 4127,
+      "output_tokens": 789,
+      "cost_usd": 0.0007283000000000001,
+      "latency_ms": 6992
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "sports",
+      "genre": "tutorial",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

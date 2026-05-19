@@ -1,0 +1,279 @@
+{
+  "item_id": "7292204605306473729",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:03",
+          "visual_description": "The creator holds up a large white poster featuring the 'homeboy' logo and menu items inside the cafe.",
+          "audio_description": "Upbeat, lo-fi indie music plays.",
+          "text_on_screen": "Starting a cafe at 18: Finally some signage \ud83d\ude4c\ud83d\ude4c\ud83d\ude4c",
+          "key_objects": ["homeboy poster", "Oat Milk cap"]
+        },
+        {
+          "time_range": "0:03-0:04",
+          "visual_description": "POV shot of various flag pole components and a black flag laid out on a wooden floor.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "Flag arrived \ud83d\ude4f",
+          "key_objects": ["flag components", "black flag"]
+        },
+        {
+          "time_range": "0:04-0:09",
+          "visual_description": "The creator assembles and positions a tall black 'OPEN COFFEE' feather flag on the sidewalk in front of the cafe.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "Flag arrived \ud83d\ude4f",
+          "key_objects": ["OPEN COFFEE flag", "bench", "white truck"]
+        },
+        {
+          "time_range": "0:09-0:12",
+          "visual_description": "The creator removes an old 'Art Exhibition' poster from a community notice board outside the building.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "Take down old poster \u2705",
+          "key_objects": ["notice board", "Art Exhibition poster"]
+        },
+        {
+          "time_range": "0:12-0:16",
+          "visual_description": "The creator pins the new 'homeboy' poster into the notice board and closes the glass door.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "In with the new \u2705",
+          "key_objects": ["homeboy poster"]
+        },
+        {
+          "time_range": "0:16-0:18",
+          "visual_description": "The creator wipes down the glass of the notice board with a cloth.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "Give it a scrub \ud83e\uddfd",
+          "key_objects": ["cleaning cloth"]
+        },
+        {
+          "time_range": "0:18-0:21",
+          "visual_description": "A wide panning shot shows the cafe exterior with the new flag and poster visible under the 'THIELE'S' building sign.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "Lookin better !",
+          "key_objects": [
+            "THIELE'S sign",
+            "outdoor seating",
+            "OPEN COFFEE flag"
+          ]
+        }
+      ],
+      "overall_summary": "An 18-year-old entrepreneur documents the process of setting up physical signage for his new business, 'homeboy' cafe in Adelaide. The video shows him unboxing a large menu poster, assembling an 'OPEN COFFEE' feather flag for the sidewalk, and updating a community notice board with his branding. It captures the satisfying milestones of preparing a small business for its public opening.",
+      "people": [
+        {
+          "description": "Young male with curly hair, wearing a grey sweatshirt, green cargo pants, and a blue 'OAT MILK' cap. He is the owner of the cafe.",
+          "is_creator": true,
+          "speaking": false,
+          "identified_as": null
+        }
+      ],
+      "entities": [
+        {
+          "name": "homeboy",
+          "display_name": "homeboy cafe",
+          "type": "restaurant",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay", "metadata"],
+          "specifications": "Located in Adelaide; serves coffee, croissants, and sandwiches",
+          "confidence": 5
+        },
+        {
+          "name": "Adelaide",
+          "display_name": "Adelaide, Australia",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "duvet",
+          "display_name": "duvet \u2014 henri",
+          "type": "song",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Minor Figures",
+          "display_name": "Minor Figures Oat Milk",
+          "type": "brand",
+          "relevance": "background",
+          "source": ["visual"],
+          "specifications": "Branding on the creator's cap",
+          "confidence": 4
+        },
+        {
+          "name": "Thiele's",
+          "display_name": "Thiele's Building",
+          "type": "place",
+          "relevance": "background",
+          "source": ["visual"],
+          "specifications": "The name on the shopfront where the cafe is located",
+          "confidence": 4
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Physical signage like flags and posters are essential for visibility when starting a new cafe.",
+          "source": "demonstration",
+          "confidence": 5
+        },
+        {
+          "statement": "The creator is successfully launching a small business at the age of 18.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "product_list",
+        "items": [
+          {
+            "name": "homeboy Menu",
+            "details": "Great coffee, home-baked croissants, fresh sandwiches, vibes"
+          },
+          {
+            "name": "Signage",
+            "details": "Large logo poster, 'OPEN COFFEE' feather flag"
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "duvet \u2014 henri",
+        "metadata_song": "duvet \u2014 henri",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The location is confirmed as Adelaide via hashtags. The building name 'Thiele's' suggests a historic or specific local shopfront."
+      },
+      "presentation_style": {
+        "primary_format": "montage",
+        "camera_work": "handheld",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Wholesome, productive, and optimistic.",
+      "topic_hints": ["Small Business", "Cafe Culture", "Entrepreneurship"],
+      "affect_hints": ["Inspired", "Motivated", "Satisfied"],
+      "genre_hints": ["Business Vlog", "Behind the Scenes"]
+    },
+    "metrics": {
+      "input_tokens": 3369,
+      "output_tokens": 1796,
+      "cost_usd": 0.0010553000000000001,
+      "latency_ms": 22619,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "career",
+        "secondary": "food",
+        "micro_labels": [
+          "entrepreneurship",
+          "small business",
+          "cafe culture",
+          "business signage",
+          "Adelaide"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "vlog",
+        "micro_labels": ["montage", "business diary"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "satisfying",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "dominant"
+        },
+        {
+          "label": "informative",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["text_overlay", "cinematic"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "document",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "professional",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "homeboy cafe",
+          "type": "restaurant",
+          "relevance": "primary"
+        },
+        {
+          "name": "Adelaide",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "duvet \u2014 henri",
+          "type": "song",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Minor Figures",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Thiele's Building",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "OPEN COFFEE flag",
+          "type": "product",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "An 18-year-old entrepreneur documents the process of setting up physical signage and branding for his new business, 'homeboy' cafe in Adelaide. The video shows him unboxing a menu poster, assembling an 'OPEN COFFEE' feather flag, and updating a community notice board to prepare for the public opening.",
+      "embedding_text": "An 18-year-old entrepreneur @homeboy.co documents the process of setting up his new business, homeboy cafe, in Adelaide, Australia. The video features a montage of him installing physical signage, including a large white menu poster with the homeboy logo and an 'OPEN COFFEE' feather flag on the sidewalk. He is seen removing old posters from a notice board at the Thiele's building and replacing them with his own branding, then cleaning the glass. The creator wears a blue Minor Figures Oat Milk cap. The video is set to the song 'duvet' by henri and captures the satisfying milestones of a small business launch. Key text includes 'Starting a cafe at 18', 'Finally some signage', and 'In with the new'. This content is ideal for users interested in small business inspiration, cafe startup logistics, entrepreneurship vlogs, and satisfying business setup processes."
+    },
+    "metrics": {
+      "input_tokens": 4250,
+      "output_tokens": 822,
+      "cost_usd": 0.0007538,
+      "latency_ms": 7278
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "satisfying",
+      "topic": "career",
+      "genre": "vlog",
+      "communicative_intent": "document",
+      "creator_role": "professional",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

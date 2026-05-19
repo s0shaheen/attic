@@ -1,0 +1,153 @@
+{
+  "item_id": "7544378059365960991",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A medium close-up shot of a man with light brown/blonde hair and a short beard, wearing a black t-shirt. He is positioned indoors against a white wall with a white floating shelf above him and a framed piece of art featuring cacti to his left. A white text box with black text is overlaid across the top of his head.",
+      "text_on_screen": "Anchor loops: minimum still feels good",
+      "overall_summary": "The post is a motivational or educational tip regarding a technique called 'Anchor loops,' emphasizing that doing the minimum requirement is still beneficial. The user is likely saving this for personal growth, habit tracking, or discipline-related inspiration.",
+      "entities": [
+        {
+          "name": "thecreativeathlete",
+          "display_name": "Creative Athlete",
+          "type": "person",
+          "relevance": "primary",
+          "source": "metadata",
+          "specifications": null,
+          "confidence": 4
+        },
+        {
+          "name": "Anchor loops",
+          "display_name": "Anchor Loops",
+          "type": "technique",
+          "relevance": "primary",
+          "source": "text_overlay",
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Performing the minimum version of 'anchor loops' is still effective and feels positive.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Anchor loops",
+            "details": "minimum still feels good"
+          }
+        ]
+      },
+      "extraction_confidence": {
+        "entities_complete": 4,
+        "notes": "The term 'Anchor loops' is a specific technique mentioned but not further explained in the image; its exact definition is inferred as a habit or discipline tool based on hashtags."
+      },
+      "presentation_style": {
+        "primary_format": "selfie",
+        "visual_style": "raw"
+      },
+      "scene_type": "indoor",
+      "visual_mood": "serious",
+      "topic_hints": ["personal growth", "habit formation", "discipline"],
+      "affect_hints": ["motivated", "focused"],
+      "genre_hints": ["educational", "self-improvement", "motivational"]
+    },
+    "metrics": {
+      "input_tokens": 1280,
+      "output_tokens": 600,
+      "cost_usd": 0.0,
+      "latency_ms": 47954,
+      "video_uploaded": false,
+      "thoughts_tokens": 675
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "career",
+        "secondary": "education",
+        "micro_labels": [
+          "productivity methods",
+          "habit formation",
+          "discipline",
+          "personal growth"
+        ],
+        "confidence": 0.85
+      },
+      "genre": {
+        "label": "other",
+        "micro_labels": ["educational tip", "mindset advice"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "thecreativeathlete",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Anchor loops",
+          "type": "technique",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A motivational tip from @thecreativeathlete regarding a technique called 'Anchor loops.' The video emphasizes that completing the minimum requirement of a habit is still effective and that discipline is about progress over perfection.",
+      "embedding_text": "A motivational and educational TikTok video by @thecreativeathlete focusing on personal growth, mindset, and discipline. The creator discusses a specific productivity technique called 'Anchor loops,' using on-screen text to highlight that 'minimum still feels good.' The content encourages viewers to prioritize progress over perfection when building habits. This is a raw, talking-head style video intended for those seeking habit formation tips, discipline strategies, and mental frameworks for self-improvement. It is a useful reference for anyone looking to implement anchor loops or overcome the barrier of perfectionism in their daily routine."
+    },
+    "metrics": {
+      "input_tokens": 3024,
+      "output_tokens": 560,
+      "cost_usd": 0.0,
+      "latency_ms": 46387,
+      "thoughts_tokens": 1088
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "career",
+      "genre": "other",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

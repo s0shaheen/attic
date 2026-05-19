@@ -1,0 +1,242 @@
+{
+  "item_id": "7516923870369156408",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "An infographic showing two examples of nested rounded corners on a light background. The left side shows an incorrect method with a red 'X', and the right side shows the correct method with a green checkmark.",
+          "text_detected": "Border Radius Tip\n24px\n24px\nSame value for inner and outer radius\n24px\n14px\n10px\nOuter radius = inner radius + padding\nAvoid the urge to round inner elements the same amount as the card. Decrease inner element slightly. Just scale up your the inner element to the size of your outer frame.\nSave for later",
+          "primary_content": "UI Design Tip: Nested Border Radius formula (Outer = Inner + Padding)",
+          "entities": [
+            {
+              "name": "Border Radius",
+              "type": "technique",
+              "specifications": "24px outer, 14px inner, 10px padding"
+            },
+            {
+              "name": "Web Development",
+              "type": "technique",
+              "specifications": "CSS styling"
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "A second infographic on a white background illustrating the same nested border radius principle using orange and green lines to represent the curves.",
+          "text_detected": "Better Nested Border Radius\n24px\n24px\nouter r = inner r\n24px\n16px\n8px\nouter r = inner r + padding\nWorks if both radius have the same center point. Or use a multiplier. To test, scale up your inner frame to the size of your outer frame.\nFollow us for more content like this",
+          "primary_content": "UI Design Tip: Visualizing concentric circles for nested radii",
+          "entities": [
+            {
+              "name": "Border Radius",
+              "type": "technique",
+              "specifications": "24px outer, 16px inner, 8px padding"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "A dark-themed infographic showing the border radius rule with neon green and pink highlights.",
+          "text_detected": "Perfect border radius tips\n40\n40\n40\n18\n24\nOuter R = Inner R\nOuter R = Inner R + Padding\nSave it for later",
+          "primary_content": "UI Design Tip: Dark mode visualization of the border radius formula",
+          "entities": [
+            {
+              "name": "Border Radius",
+              "type": "technique",
+              "specifications": "40 outer, 18 inner, 24 padding"
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "A final infographic with a dark grey background and orange accents, reiterating the nested border radius rule.",
+          "text_detected": "Border Radius Tips\n24px\n24px\n8px\nOuter R = Inner R\n24px\n16px\n8px\nOuter R = Inner R + Padding\nFollow me for more content like this",
+          "primary_content": "UI Design Tip: Summary of the Outer R = Inner R + Padding rule",
+          "entities": [
+            {
+              "name": "Border Radius",
+              "type": "technique",
+              "specifications": "24px outer, 16px inner, 8px padding"
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This post provides a fundamental UI/UX design and web development tip regarding 'nested border radius'. It explains that when placing a rounded element inside another rounded container, the outer radius should be equal to the inner radius plus the padding to maintain visual harmony. The user likely saved this as a quick reference guide for CSS styling and interface design consistency.",
+      "carousel_type": "infographic",
+      "narrative_thread": "The carousel repeatedly demonstrates a single design rule (Outer Radius = Inner Radius + Padding) across different visual styles and numerical examples to ensure the viewer understands the concept of concentric rounded corners.",
+      "entities": [
+        {
+          "name": "Border Radius",
+          "display_name": "CSS Border Radius",
+          "type": "technique",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay", "metadata"],
+          "slide_number": 1,
+          "specifications": "Outer R = Inner R + Padding",
+          "confidence": 5
+        },
+        {
+          "name": "UI/UX Design",
+          "display_name": "User Interface Design",
+          "type": "technique",
+          "relevance": "primary",
+          "source": ["inferred"],
+          "slide_number": 1,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "To achieve a visually pleasing nested corner look, the outer border radius must be the sum of the inner border radius and the padding between the two elements.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Using the same radius for both inner and outer elements creates a visual clash that looks unprofessional.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "instructions",
+        "items": [
+          {
+            "name": "Nested Border Radius Formula",
+            "details": "Outer Radius = Inner Radius + Padding",
+            "slide_number": 1
+          },
+          {
+            "name": "Visual Testing Method",
+            "details": "Scale up the inner frame to the size of the outer frame to ensure they share the same center point.",
+            "slide_number": 2
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Scars (Slowed Down) \u2014 Dionnysuss",
+        "metadata_song": "Scars (Slowed Down) \u2014 Dionnysuss",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "Text was extremely clear and transcribed verbatim, including a minor typo in the first slide ('your the')."
+      },
+      "presentation_style": {
+        "primary_format": "infographic",
+        "visual_style": "minimal"
+      },
+      "visual_mood": "educational, clean, and professional",
+      "topic_hints": ["Web Development", "UI Design", "CSS Tips"],
+      "affect_hints": ["Informed", "Capable", "Organized"],
+      "genre_hints": ["Educational", "Tutorial"]
+    },
+    "metrics": {
+      "input_tokens": 5592,
+      "output_tokens": 1649,
+      "cost_usd": 0.0012188000000000001,
+      "latency_ms": 16082,
+      "video_uploaded": false
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "technology",
+        "secondary": "education",
+        "micro_labels": [
+          "UI Design",
+          "Web Development",
+          "CSS",
+          "Frontend Development",
+          "Graphic Design"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "tutorial",
+        "micro_labels": ["Infographic", "Design Tip", "How-to"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 1.0
+      },
+      "creator_role": {
+        "label": "educator",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.95
+      },
+      "entities": [
+        {
+          "name": "Border Radius",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "CSS",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "UI/UX Design",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "Web Development",
+          "type": "technique",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Scars (Slowed Down) \u2014 Dionnysuss",
+          "type": "song",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A UI design tutorial explaining the mathematical formula for nested border radii to ensure visual harmony. It demonstrates that the outer radius must equal the inner radius plus the padding (Outer R = Inner R + Padding) through several infographic examples.",
+      "embedding_text": "This UI/UX design tutorial by @techbyapdalla provides a specific formula for creating visually harmonious nested border radii in web development and interface design. The core principle explained is that the Outer Border Radius should equal the Inner Border Radius plus the Padding (Outer R = Inner R + Padding). The content features multiple infographics with numerical examples, such as a 24px outer radius paired with a 14px inner radius and 10px padding, to demonstrate the 'correct' way to style rounded corners versus the 'incorrect' method of using the same value for both. It covers CSS styling tips, concentric circles, and visual testing methods like scaling up the inner frame to match the outer frame's center point. This is a practical reference for developers and designers looking to improve their UI consistency and aesthetic quality in both light and dark mode interfaces."
+    },
+    "metrics": {
+      "input_tokens": 4069,
+      "output_tokens": 747,
+      "cost_usd": 0.0007057000000000001,
+      "latency_ms": 6445
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "technology",
+      "genre": "tutorial",
+      "communicative_intent": "inform",
+      "creator_role": "educator",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

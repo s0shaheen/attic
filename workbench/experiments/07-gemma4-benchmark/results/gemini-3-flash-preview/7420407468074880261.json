@@ -1,0 +1,274 @@
+{
+  "item_id": "7420407468074880261",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:05",
+          "visual_description": "Jlew faces off against DeAllen in a high school gym, executing a quick crossover and drive to the basket.",
+          "audio_description": "A high-energy rock remix of Evanescence's 'Bring Me To Life' begins playing.",
+          "text_on_screen": "Bro think he is aonime\nJLEW 0-1 DeAllen",
+          "key_objects": ["basketball", "scoreboard", "Nike sneakers"]
+        },
+        {
+          "time_range": "0:05-0:11",
+          "visual_description": "Jlew, wearing red pants, performs a flashy behind-the-back dribble move through a crowd of defenders in a different indoor court.",
+          "audio_description": "The song reaches its chorus with heavy percussion.",
+          "text_on_screen": "Bro think he is aonime",
+          "key_objects": ["basketball", "red athletic pants"]
+        },
+        {
+          "time_range": "0:11-0:17",
+          "visual_description": "Jlew demonstrates extremely low-to-the-ground ball handling and change of direction at 'The Next Chapter' facility.",
+          "audio_description": "Music continues at high intensity.",
+          "text_on_screen": "Bro think he is aonime\nTHE NEXT CHAPTER",
+          "key_objects": ["basketball", "The Next Chapter logo"]
+        },
+        {
+          "time_range": "0:17-0:24",
+          "visual_description": "Jlew plays 1v1 against D'Vontay Friga on an outdoor court, hitting a step-back jumper.",
+          "audio_description": "The song continues; background crowd noise is muffled by the music.",
+          "text_on_screen": "Bro think he is aonime\nFRIGA 11-9 JACKSONV\nFRIGA 12-9 JACKSONV",
+          "key_objects": ["outdoor basketball hoop", "basketball"]
+        },
+        {
+          "time_range": "0:24-0:34",
+          "visual_description": "Final montage of Jlew's elite handles and crossovers against various defenders in different gym settings.",
+          "audio_description": "The music fades out as the video ends.",
+          "text_on_screen": "Bro think he is aonime",
+          "key_objects": ["basketball"]
+        }
+      ],
+      "overall_summary": "This video is a high-energy compilation of basketball highlights featuring streetballer Jlew. It showcases his exceptional dribbling skills, crossovers, and scoring ability against various opponents, including well-known basketball creator D'Vontay Friga. The edit draws heavy parallels between Jlew's playstyle and anime characters, specifically referencing Aomine Daiki from 'Kuroko no Basket' to emphasize his 'villain' persona and elite talent.",
+      "people": [
+        {
+          "description": "Athletic male basketball player with elite ball-handling skills.",
+          "is_creator": true,
+          "speaking": false,
+          "identified_as": "Jlew"
+        },
+        {
+          "description": "Well-known basketball YouTuber and streetballer playing defense.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "D'Vontay Friga"
+        },
+        {
+          "description": "Opponent in the first clip.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "DeAllen"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Jlew",
+          "display_name": "Jlew",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "D'Vontay Friga",
+          "display_name": "D'Vontay Friga",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["visual", "text_overlay"],
+          "specifications": "Basketball creator/YouTuber",
+          "confidence": 5
+        },
+        {
+          "name": "Aomine Daiki",
+          "display_name": "Aomine Daiki",
+          "type": "cultural_reference",
+          "relevance": "supporting",
+          "source": ["text_overlay", "metadata"],
+          "specifications": "Character from Kuroko no Basket; 'aonime' is a typo in the video text",
+          "confidence": 5
+        },
+        {
+          "name": "Kuroko no Basket",
+          "display_name": "Kuroko's Basketball",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": "Anime series",
+          "confidence": 5
+        },
+        {
+          "name": "Kyrie Irving",
+          "display_name": "Kyrie Irving",
+          "type": "person",
+          "relevance": "background",
+          "source": ["metadata"],
+          "specifications": "NBA player known for handles",
+          "confidence": 5
+        },
+        {
+          "name": "Bring Me To Life",
+          "display_name": "Bring Me To Life \u2014 Evanescence",
+          "type": "song",
+          "relevance": "primary",
+          "source": ["audio"],
+          "specifications": "Rock/Nu-metal track",
+          "confidence": 5
+        },
+        {
+          "name": "Nike",
+          "display_name": "Nike",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Apparel and footwear",
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Jlew possesses elite, anime-like basketball handles and scoring ability that make him a 'villain' on the court.",
+          "source": "demonstration",
+          "confidence": 5
+        }
+      ],
+      "structured_content": null,
+      "audio_identification": {
+        "actual_song": "Bring Me To Life \u2014 Evanescence",
+        "metadata_song": "original sound - gym_mentals \u2014 Just_Levrone",
+        "match": false
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The text 'aonime' is a clear misspelling of 'Aomine' from the anime Kuroko no Basket, which is also referenced in the hashtags."
+      },
+      "presentation_style": {
+        "primary_format": "edit",
+        "camera_work": "handheld",
+        "editing_style": "montage"
+      },
+      "visual_mood": "Intense, competitive, and high-energy with a 'villain' or 'sigma' aesthetic.",
+      "topic_hints": ["Basketball", "Streetball", "Sports Highlights"],
+      "affect_hints": ["Hyped", "Impressed", "Energetic"],
+      "genre_hints": ["Sports Edit", "Highlight Reel"]
+    },
+    "metrics": {
+      "input_tokens": 4630,
+      "output_tokens": 1853,
+      "cost_usd": 0.0012042,
+      "latency_ms": 25971,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "sports",
+        "secondary": "movies_tv",
+        "micro_labels": [
+          "basketball highlights",
+          "streetball",
+          "anime aesthetic",
+          "ball handling"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "edit",
+        "micro_labels": ["montage", "sports edit", "fan edit"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "inspiring",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["text_overlay", "cinematic"],
+      "content_provenance": {
+        "label": "remix",
+        "confidence": 0.85
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Jlew",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "D'Vontay Friga",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Aomine Daiki",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Kuroko's Basketball",
+          "type": "movie_or_show",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Bring Me To Life \u2014 Evanescence",
+          "type": "song",
+          "relevance": "primary"
+        },
+        {
+          "name": "Nike",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Streetball",
+          "type": "trend_or_meme",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A high-energy basketball highlight edit of streetballer Jlew, showcasing elite dribbling and crossovers. The video draws parallels to the anime character Aomine Daiki from 'Kuroko's Basketball' using a rock remix of Evanescence's 'Bring Me To Life'.",
+      "embedding_text": "This TikTok is a high-intensity basketball highlight edit featuring streetballer Jlew, known for his elite ball-handling and 'villain' persona. The video showcases Jlew performing flashy crossovers, behind-the-back dribbles, and step-back jumpers against opponents like D'Vontay Friga and DeAllen in various gym and outdoor court settings. The edit is heavily themed around the anime 'Kuroko's Basketball' (Kuroko no Basket), specifically comparing Jlew's playstyle to the character Aomine Daiki (misspelled as 'aonime' in the text overlay). Set to a high-energy rock remix of 'Bring Me To Life' by Evanescence, the montage emphasizes Jlew's speed and agility, often seen wearing Nike sneakers. It serves as both sports entertainment and inspiration for basketball players looking to improve their handles and streetball style, referencing Kyrie Irving's influence in the metadata."
+    },
+    "metrics": {
+      "input_tokens": 4266,
+      "output_tokens": 856,
+      "cost_usd": 0.000769,
+      "latency_ms": 7013
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "inspiring",
+      "topic": "sports",
+      "genre": "edit",
+      "communicative_intent": "entertain",
+      "creator_role": "influencer",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "text_overlay",
+      "content_provenance": "remix"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

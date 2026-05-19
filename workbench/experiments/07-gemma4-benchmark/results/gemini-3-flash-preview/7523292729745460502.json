@@ -1,0 +1,501 @@
+{
+  "item_id": "7523292729745460502",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "Black and white portrait of director Martin Scorsese sitting in a chair with his hands raised. Text overlay introduces the list.",
+          "text_detected": "Top 15 movie trilogies of all time",
+          "primary_content": "Introduction to a ranked list of movie trilogies.",
+          "entities": [
+            {
+              "name": "Martin Scorsese",
+              "type": "person",
+              "specifications": "Director"
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "Portrait of Richard Linklater with the number 15 and posters for the Before Trilogy.",
+          "text_detected": "15 Richard Linklater's Before Trilogy BEFORE SUNRISE Before Sunset Before Midnight",
+          "primary_content": "Rank 15: Richard Linklater's Before Trilogy",
+          "entities": [
+            {
+              "name": "Richard Linklater",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "Before Trilogy",
+              "type": "movie_or_show",
+              "specifications": "Film series"
+            },
+            {
+              "name": "Before Sunrise",
+              "type": "movie_or_show",
+              "specifications": "1995 film"
+            },
+            {
+              "name": "Before Sunset",
+              "type": "movie_or_show",
+              "specifications": "2004 film"
+            },
+            {
+              "name": "Before Midnight",
+              "type": "movie_or_show",
+              "specifications": "2013 film"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "Portrait of Christopher Nolan with the number 14 and posters for the Dark Knight Trilogy.",
+          "text_detected": "14 Christopher Nolan's Dark knight Trilogy WIDESCREEN EDITION BATMAN BEGINS THE DARK KNIGHT THE DARK KNIGHT RISES",
+          "primary_content": "Rank 14: Christopher Nolan's Dark Knight Trilogy",
+          "entities": [
+            {
+              "name": "Christopher Nolan",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "Dark Knight Trilogy",
+              "type": "movie_or_show",
+              "specifications": "Batman film series"
+            },
+            {
+              "name": "Batman Begins",
+              "type": "movie_or_show",
+              "specifications": "2005 film"
+            },
+            {
+              "name": "The Dark Knight",
+              "type": "movie_or_show",
+              "specifications": "2008 film"
+            },
+            {
+              "name": "The Dark Knight Rises",
+              "type": "movie_or_show",
+              "specifications": "2012 film"
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "Portrait of George Lucas with the number 13 and posters for the Star Wars prequel trilogy.",
+          "text_detected": "13 George Lucas's Star Wars prequels STAR WARS EPISODE I THE PHANTOM MENACE STAR WARS EPISODE II ATTACK OF THE CLONES STAR WARS EPISODE III REVENGE OF THE SITH",
+          "primary_content": "Rank 13: George Lucas's Star Wars Prequels",
+          "entities": [
+            {
+              "name": "George Lucas",
+              "type": "person",
+              "specifications": "Director/Creator"
+            },
+            {
+              "name": "Star Wars Prequel Trilogy",
+              "type": "movie_or_show",
+              "specifications": "Episodes I-III"
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "Portrait of Peter Jackson holding an Oscar with the number 12 and posters for the Lord of the Rings trilogy.",
+          "text_detected": "12 Peter Jackson's Lord of the rings trilogy THE LORD OF THE RINGS THE FELLOWSHIP OF THE RING THE LORD OF THE RINGS THE TWO TOWERS THE LORD OF THE RINGS THE RETURN OF THE KING",
+          "primary_content": "Rank 12: Peter Jackson's Lord of the Rings Trilogy",
+          "entities": [
+            {
+              "name": "Peter Jackson",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "The Lord of the Rings",
+              "type": "movie_or_show",
+              "specifications": "Trilogy"
+            }
+          ]
+        },
+        {
+          "image_number": 6,
+          "description": "Portrait of Robert Zemeckis with the number 11 and posters for the Back to the Future trilogy.",
+          "text_detected": "11 Robert Zemeckis's Back to the future trilogy BACK TO THE FUTURE BACK TO THE FUTURE II BACK TO THE FUTURE III",
+          "primary_content": "Rank 11: Robert Zemeckis's Back to the Future Trilogy",
+          "entities": [
+            {
+              "name": "Robert Zemeckis",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "Back to the Future",
+              "type": "movie_or_show",
+              "specifications": "Trilogy"
+            }
+          ]
+        },
+        {
+          "image_number": 7,
+          "description": "Portrait of Sam Raimi with the number 10 and posters for the Spider-Man trilogy.",
+          "text_detected": "10 Sam Raimi's Spider man trilogy SPIDER-MAN SPIDER-MAN 2 SPIDER-MAN 3",
+          "primary_content": "Rank 10: Sam Raimi's Spider-Man Trilogy",
+          "entities": [
+            {
+              "name": "Sam Raimi",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "Spider-Man Trilogy",
+              "type": "movie_or_show",
+              "specifications": "Tobey Maguire series"
+            }
+          ]
+        },
+        {
+          "image_number": 8,
+          "description": "Portrait of George Lucas with the number 9 and posters for the original Star Wars trilogy.",
+          "text_detected": "9 George Lucas's Original Star Wars trilogy STAR WARS STAR WARS THE EMPIRE STRIKES BACK STAR WARS RETURN OF THE JEDI",
+          "primary_content": "Rank 9: George Lucas's Original Star Wars Trilogy",
+          "entities": [
+            {
+              "name": "George Lucas",
+              "type": "person",
+              "specifications": "Director/Creator"
+            },
+            {
+              "name": "Star Wars Original Trilogy",
+              "type": "movie_or_show",
+              "specifications": "Episodes IV-VI"
+            }
+          ]
+        },
+        {
+          "image_number": 9,
+          "description": "Black and white portrait of Sergio Leone with the number 8 and posters for the Dollars Trilogy.",
+          "text_detected": "8 Sergio Leone's Dollars Trilogy A FISTFUL OF DOLLARS FOR A FEW DOLLARS MORE THE GOOD, THE BAD AND THE UGLY",
+          "primary_content": "Rank 8: Sergio Leone's Dollars Trilogy",
+          "entities": [
+            {
+              "name": "Sergio Leone",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "Dollars Trilogy",
+              "type": "movie_or_show",
+              "specifications": "Spaghetti Western series"
+            }
+          ]
+        },
+        {
+          "image_number": 10,
+          "description": "Portrait of Wong Kar-wai with the number 7 and posters for his Love Trilogy.",
+          "text_detected": "7 Wong Kar-wai's Love Trilogy DAYS OF BEING WILD IN THE MOOD FOR LOVE 2046",
+          "primary_content": "Rank 7: Wong Kar-wai's Love Trilogy",
+          "entities": [
+            {
+              "name": "Wong Kar-wai",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "Love Trilogy",
+              "type": "movie_or_show",
+              "specifications": "Film series"
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This TikTok carousel presents a ranked list of the 'Top 15 movie trilogies of all time,' specifically covering ranks 15 through 7. Each slide features a portrait of the trilogy's director, the rank number, and the official posters for the three films in the set. The user is likely saving this as a watchlist for high-quality cinema or to participate in film-related discussions on the platform.",
+      "carousel_type": "ranking",
+      "narrative_thread": "A countdown of critically acclaimed film trilogies, highlighting the directors' contributions to cinema history.",
+      "entities": [
+        {
+          "name": "Martin Scorsese",
+          "display_name": "Martin Scorsese",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "slide_number": 1,
+          "confidence": 5
+        },
+        {
+          "name": "Richard Linklater",
+          "display_name": "Richard Linklater",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "slide_number": 2,
+          "confidence": 5
+        },
+        {
+          "name": "Christopher Nolan",
+          "display_name": "Christopher Nolan",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "slide_number": 3,
+          "confidence": 5
+        },
+        {
+          "name": "George Lucas",
+          "display_name": "George Lucas",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "slide_number": 4,
+          "confidence": 5
+        },
+        {
+          "name": "Peter Jackson",
+          "display_name": "Peter Jackson",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "slide_number": 5,
+          "confidence": 5
+        },
+        {
+          "name": "Robert Zemeckis",
+          "display_name": "Robert Zemeckis",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "slide_number": 6,
+          "confidence": 5
+        },
+        {
+          "name": "Sam Raimi",
+          "display_name": "Sam Raimi",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "slide_number": 7,
+          "confidence": 5
+        },
+        {
+          "name": "Sergio Leone",
+          "display_name": "Sergio Leone",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "slide_number": 9,
+          "confidence": 5
+        },
+        {
+          "name": "Wong Kar-wai",
+          "display_name": "Wong Kar-wai",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "slide_number": 10,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The 'Before Trilogy' is ranked as the 15th best trilogy of all time.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Wong Kar-wai's 'Love Trilogy' is ranked higher than major blockbusters like Star Wars and Lord of the Rings in this specific list.",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "ranking",
+        "items": [
+          {
+            "name": "Before Trilogy",
+            "details": "Dir. Richard Linklater",
+            "slide_number": 2
+          },
+          {
+            "name": "Dark Knight Trilogy",
+            "details": "Dir. Christopher Nolan",
+            "slide_number": 3
+          },
+          {
+            "name": "Star Wars Prequels",
+            "details": "Dir. George Lucas",
+            "slide_number": 4
+          },
+          {
+            "name": "Lord of the Rings Trilogy",
+            "details": "Dir. Peter Jackson",
+            "slide_number": 5
+          },
+          {
+            "name": "Back to the Future Trilogy",
+            "details": "Dir. Robert Zemeckis",
+            "slide_number": 6
+          },
+          {
+            "name": "Spider-Man Trilogy",
+            "details": "Dir. Sam Raimi",
+            "slide_number": 7
+          },
+          {
+            "name": "Original Star Wars Trilogy",
+            "details": "Dir. George Lucas",
+            "slide_number": 8
+          },
+          {
+            "name": "Dollars Trilogy",
+            "details": "Dir. Sergio Leone",
+            "slide_number": 9
+          },
+          {
+            "name": "Love Trilogy",
+            "details": "Dir. Wong Kar-wai",
+            "slide_number": 10
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "original sound - tonilk_",
+        "metadata_song": "original sound - tonilk_ \u2014 tonilk_",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All text and directors were clearly identifiable."
+      },
+      "presentation_style": {
+        "primary_format": "ranking",
+        "visual_style": "informational"
+      },
+      "visual_mood": "Cinematic and authoritative, using professional portraits of famous directors.",
+      "topic_hints": ["Cinema", "Film History", "Movie Rankings"],
+      "affect_hints": ["Nostalgic", "Opinionated", "Inspired"],
+      "genre_hints": ["Film Criticism", "Top List"]
+    },
+    "metrics": {
+      "input_tokens": 12288,
+      "output_tokens": 3514,
+      "cost_usd": 0.0026344000000000007,
+      "latency_ms": 28292,
+      "video_uploaded": false
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "movies_tv",
+        "secondary": "art",
+        "micro_labels": [
+          "film history",
+          "cinema",
+          "movie trilogies",
+          "director spotlights"
+        ],
+        "confidence": 0.98
+      },
+      "genre": {
+        "label": "ranking",
+        "micro_labels": ["top 15 list", "recommendation list"],
+        "confidence": 1.0
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "nostalgic",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Martin Scorsese",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Richard Linklater",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Christopher Nolan",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "George Lucas",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Before Trilogy",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "Dark Knight Trilogy",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "Star Wars",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "The Lord of the Rings",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A ranked countdown of the top 15 movie trilogies of all time, curated for film enthusiasts. The video features iconic series from directors like Christopher Nolan, George Lucas, and Peter Jackson, providing a definitive watchlist for cinephiles.",
+      "embedding_text": "This TikTok video by @cinephileofgiza presents a curated ranking of the 'Top 15 movie trilogies of all time.' The content is presented as a slideshow featuring portraits of legendary directors alongside their most famous film series. Key entries include Richard Linklater's Before Trilogy (Before Sunrise, Before Sunset, Before Midnight), Christopher Nolan's Dark Knight Trilogy featuring Batman, and George Lucas's Star Wars original and prequel trilogies. Other major cinematic works mentioned are Peter Jackson's The Lord of the Rings, Robert Zemeckis's Back to the Future, and Sam Raimi's Spider-Man trilogy. The video serves as a high-quality recommendation list for movie lovers and cinephiles, using text overlays to identify each rank and director. It is an informative guide for anyone looking to explore the best multi-film narratives in cinema history, from sci-fi and fantasy to indie romance."
+    },
+    "metrics": {
+      "input_tokens": 4163,
+      "output_tokens": 866,
+      "cost_usd": 0.0007627,
+      "latency_ms": 7555
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "movies_tv",
+      "genre": "ranking",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

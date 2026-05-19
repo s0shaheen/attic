@@ -1,0 +1,31 @@
+{
+  "item_id": "7399745023774084385",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": null,
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 73796,
+      "video_uploaded": false
+    },
+    "error": "Expecting value: line 53 column 28 (char 2242)"
+  },
+  "pass2_classification": {
+    "parsed_output": null,
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 9713
+    },
+    "valid": false,
+    "tier1": null,
+    "validation_errors": [],
+    "error": "JSON parse error: Expecting ',' delimiter: line 40 column 3 (char 643)"
+  }
+}

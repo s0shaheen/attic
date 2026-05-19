@@ -1,0 +1,175 @@
+{
+  "item_id": "7536146973540306198",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A group of men are gathered in an indoor room that appears to be a studio or gaming area. In the foreground, a man is wearing a blue plaid suit and a large, chunky gold chain with a pendant resembling a stack of donuts or coins. A blue Blue Yeti microphone is positioned prominently in front of him. Behind him, another man in a white t-shirt wears a similar gold chain, and to the right, a man is wearing a bright green hoodie and a matching green baseball cap. The background features arcade machines, including a yellow one, and several framed certificates on the wall.",
+      "text_on_screen": null,
+      "overall_summary": "This is a comedic TikTok post featuring men in exaggerated outfits and jewelry, likely parodying rappers or wealthy personas. The user is likely saving it for its humorous, meme-like quality.",
+      "entities": [
+        {
+          "name": "Blue Yeti",
+          "display_name": "Blue Yeti USB Microphone",
+          "type": "product",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Blue color, condenser microphone",
+          "confidence": 5
+        },
+        {
+          "name": "WWE",
+          "display_name": "World Wrestling Entertainment",
+          "type": "brand",
+          "relevance": "background",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "John Cena",
+          "display_name": "John Cena",
+          "type": "person",
+          "relevance": "background",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The post is a humorous ranking of 'top 3 people' using visual irony and exaggerated fashion.",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "ranking",
+        "items": [
+          {
+            "name": "Man in blue plaid suit",
+            "details": "Wearing oversized gold chain"
+          },
+          {
+            "name": "Man in white shirt",
+            "details": "Wearing oversized gold chain"
+          },
+          {
+            "name": "Man in green hoodie",
+            "details": "Wearing green cap"
+          }
+        ]
+      },
+      "extraction_confidence": {
+        "entities_complete": 4,
+        "notes": "The people in the image are not globally recognized celebrities, but the metadata tags (WWE, John Cena) are likely used for algorithmic reach or as part of a specific meme format."
+      },
+      "presentation_style": {
+        "primary_format": "meme",
+        "visual_style": "raw"
+      },
+      "scene_type": "indoor",
+      "visual_mood": "playful",
+      "topic_hints": ["Internet Memes", "Comedy", "Pop Culture"],
+      "affect_hints": ["amused", "confused"],
+      "genre_hints": ["Comedy skit", "TikTok trend"]
+    },
+    "metrics": {
+      "input_tokens": 1277,
+      "output_tokens": 760,
+      "cost_usd": 0.0,
+      "latency_ms": 59179,
+      "video_uploaded": false,
+      "thoughts_tokens": 987
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "comedy",
+        "secondary": "fashion",
+        "micro_labels": ["internet memes", "parody", "wealth parody"],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "ranking",
+        "micro_labels": ["meme"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "funny",
+          "tier": "dominant"
+        },
+        {
+          "label": "cringe",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["raw_footage"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.8
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "social_sharing",
+        "confidence": 0.8
+      },
+      "entities": [
+        {
+          "name": "Blue Yeti USB Microphone",
+          "type": "product",
+          "relevance": "supporting"
+        },
+        {
+          "name": "WWE",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "John Cena",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "top 3 people of all time",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A comedic TikTok by @xzrqrz0 featuring a 'top 3 people of all time' ranking. The video uses visual irony, with men wearing exaggerated gold chains and outfits, such as a blue plaid suit, to parody wealthy personas.",
+      "embedding_text": "A humorous TikTok video by @xzrqrz0 titled 'top 3 people of all time,' featuring a comedic ranking of men in a studio or gaming area. The content is a parody of rappers or wealthy personas, showcasing men wearing oversized gold chains, a blue plaid suit, and a bright green hoodie and cap. A Blue Yeti USB microphone is prominently visible in the foreground, and the background contains arcade machines. While the metadata includes hashtags for WWE and John Cena, the video is primarily a meme-style skit focusing on visual irony and absurd, exaggerated fashion. This is a short-form comedy clip intended for entertainment and social sharing."
+    },
+    "metrics": {
+      "input_tokens": 3200,
+      "output_tokens": 638,
+      "cost_usd": 0.0,
+      "latency_ms": 37864,
+      "thoughts_tokens": 711
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "funny",
+      "topic": "comedy",
+      "genre": "ranking",
+      "communicative_intent": "entertain",
+      "creator_role": "amateur",
+      "viewer_orientation": "social_sharing",
+      "presentation_style": "raw_footage",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

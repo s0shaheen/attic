@@ -1,0 +1,339 @@
+{
+  "item_id": "7389839975719652650",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "A rustic wooden barn at night with light leaking through the slats, featuring vintage advertising signs.",
+          "text_detected": "POV the first time you got drunk, GASOLINE TEXACO MOTOR OIL, FOUNTAIN SERVICE DRINK Coca-Cola Delicious and Refreshing, GOOD YEAR TIRES",
+          "primary_content": "Introduction slide for a nostalgic narrative about teenage drinking.",
+          "entities": [
+            {
+              "name": "Texaco",
+              "type": "brand",
+              "specifications": "Vintage gasoline sign"
+            },
+            {
+              "name": "Coca-Cola",
+              "type": "brand",
+              "specifications": "Vintage fountain service sign"
+            },
+            {
+              "name": "Goodyear",
+              "type": "brand",
+              "specifications": "Vertical tire sign"
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "An upscale, modern kitchen with a large wooden island, grey bar stools, and white cabinetry.",
+          "text_detected": "FRESH BAKED PIES SERVED DAILY",
+          "primary_content": "Representation of a 'rich person's house' kitchen environment.",
+          "entities": [
+            {
+              "name": "Kitchen",
+              "type": "place",
+              "specifications": "Modern farmhouse style"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "A view looking down a wooden staircase with an exposed brick wall and recessed lighting.",
+          "text_detected": "",
+          "primary_content": "Transition to a basement area.",
+          "entities": [
+            {
+              "name": "Staircase",
+              "type": "place",
+              "specifications": "Exposed brick interior"
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "A large, empty finished basement with beige carpeting, tan walls, and a sectional sofa.",
+          "text_detected": "",
+          "primary_content": "The classic 'party basement' setting.",
+          "entities": [
+            {
+              "name": "Basement",
+              "type": "place",
+              "specifications": "Finished, carpeted"
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "A dark forest at night with pine trees, illuminated by a single beam of light on the ground.",
+          "text_detected": "fineart america",
+          "primary_content": "The feeling of wandering outside at night while intoxicated.",
+          "entities": [
+            {
+              "name": "Forest",
+              "type": "place",
+              "specifications": "Nighttime, pine trees"
+            }
+          ]
+        },
+        {
+          "image_number": 6,
+          "description": "A wood-paneled basement room containing a green ping pong table.",
+          "text_detected": "",
+          "primary_content": "Recreational area in a suburban home.",
+          "entities": [
+            {
+              "name": "Ping pong table",
+              "type": "product",
+              "specifications": "Standard green top"
+            }
+          ]
+        },
+        {
+          "image_number": 7,
+          "description": "An outdoor patio at night with a white sectional sofa and a net of string lights overhead.",
+          "text_detected": "",
+          "primary_content": "Upscale outdoor hangout area.",
+          "entities": [
+            {
+              "name": "Patio",
+              "type": "place",
+              "specifications": "Outdoor lounge with string lights"
+            }
+          ]
+        },
+        {
+          "image_number": 8,
+          "description": "A close-up of a campfire burning brightly in a stone fire pit at night.",
+          "text_detected": "",
+          "primary_content": "Late-night bonfire activity.",
+          "entities": [
+            {
+              "name": "Campfire",
+              "type": "event",
+              "specifications": "Stone fire pit"
+            }
+          ]
+        },
+        {
+          "image_number": 9,
+          "description": "The interior of a barn or garage with string lights and a ping pong table.",
+          "text_detected": "",
+          "primary_content": "Alternative party setting in a barn.",
+          "entities": [
+            {
+              "name": "Barn",
+              "type": "place",
+              "specifications": "Converted for recreation"
+            }
+          ]
+        },
+        {
+          "image_number": 10,
+          "description": "A wide field of green wheat or grass under a bright morning sky.",
+          "text_detected": "",
+          "primary_content": "The morning after the party.",
+          "entities": [
+            {
+              "name": "Field",
+              "type": "place",
+              "specifications": "Agricultural field at dawn"
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This TikTok slideshow is a nostalgic narrative piece titled 'POV the first time you got drunk.' It uses a series of aesthetic and 'liminal space' images to recreate the atmosphere of a teenage party at a wealthy person's home. The sequence moves from the initial arrival at a barn, through the high-end kitchen and basement, to wandering outside and finally seeing the sunrise the next morning.",
+      "carousel_type": "photo_dump",
+      "narrative_thread": "The images tell a chronological story of a night out: arriving at a cool location, hanging out in a nice house, moving to the basement for games, wandering into the woods, sitting by a fire, and waking up to the morning sun.",
+      "entities": [
+        {
+          "name": "Nostalgia",
+          "display_name": "Nostalgia / Core Aesthetic",
+          "type": "cultural_reference",
+          "relevance": "primary",
+          "source": ["metadata", "visual"],
+          "slide_number": 1,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Rich Person's House",
+          "display_name": "Luxury Suburban Home",
+          "type": "place",
+          "relevance": "primary",
+          "source": ["text_overlay", "visual"],
+          "slide_number": 2,
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Parties at wealthy homes have a specific, 'unbeaten' aesthetic and atmosphere.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "The Kitchen",
+            "details": "High-end modern farmhouse style",
+            "slide_number": 2
+          },
+          {
+            "name": "The Basement",
+            "details": "Large carpeted area with entertainment",
+            "slide_number": 4
+          },
+          {
+            "name": "The Barn",
+            "details": "Rustic space with vintage signs and games",
+            "slide_number": 9
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "original sound - dainsleif908",
+        "metadata_song": "original sound - dainsleif908 \u2014 user72884808288",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "The imagery is very clear and aligns perfectly with the 'nostalgia' and 'rich house' theme described in the caption."
+      },
+      "presentation_style": {
+        "primary_format": "photo_dump",
+        "visual_style": "aesthetic"
+      },
+      "visual_mood": "Nostalgic, slightly hazy, atmospheric, and evocative of teenage memories.",
+      "topic_hints": ["Nostalgia", "Teenage Life", "Interior Design"],
+      "affect_hints": ["Sentimental", "Melancholic", "Comforted"],
+      "genre_hints": ["POV", "Aesthetic Dump"]
+    },
+    "metrics": {
+      "input_tokens": 12132,
+      "output_tokens": 1969,
+      "cost_usd": 0.0020008,
+      "latency_ms": 27981,
+      "video_uploaded": false
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "other",
+        "secondary": "relationships",
+        "micro_labels": [
+          "nostalgia",
+          "teenage party culture",
+          "liminal spaces",
+          "suburban lifestyle"
+        ],
+        "confidence": 0.9
+      },
+      "genre": {
+        "label": "pov",
+        "micro_labels": ["slideshow", "photo_dump", "narrative_edit"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "nostalgic",
+          "tier": "dominant"
+        },
+        {
+          "label": "relaxing",
+          "tier": "secondary"
+        },
+        {
+          "label": "funny",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.85
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.75
+      },
+      "entities": [
+        {
+          "name": "Texaco",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Coca-Cola",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Goodyear",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Liminal Spaces",
+          "type": "cultural_reference",
+          "relevance": "primary"
+        },
+        {
+          "name": "Rich Person's House",
+          "type": "cultural_reference",
+          "relevance": "primary"
+        },
+        {
+          "name": "Teenage Party",
+          "type": "event",
+          "relevance": "primary"
+        },
+        {
+          "name": "Nostalgia",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A nostalgic TikTok slideshow titled 'POV the first time you got drunk,' capturing the specific atmosphere of a teenage party at a wealthy suburban home. It uses aesthetic images of vintage barns, modern kitchens, and 'liminal' basements to evoke memories of youth and social gatherings.",
+      "embedding_text": "A nostalgic TikTok slideshow by @edit_creator55 titled 'POV the first time you got drunk.' The content uses a series of aesthetic and liminal space images to recreate the atmosphere of a teenage party at a luxury suburban home. Visuals include a rustic barn with vintage Texaco, Coca-Cola, and Goodyear signs, a modern high-end kitchen, a finished basement with a ping pong table, and a dark forest at night. The narrative thread follows the night from arrival to a campfire and finally the sunrise over a field the next morning. This video is a prime example of 'core' aesthetic content, focusing on the relatable trope that a 'banger at a rich person's house is unbeaten.' It is designed to evoke memories of youth, social drinking, and the specific feeling of being in large, quiet suburban spaces at night."
+    },
+    "metrics": {
+      "input_tokens": 4057,
+      "output_tokens": 843,
+      "cost_usd": 0.0007429000000000001,
+      "latency_ms": 8475
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "nostalgic",
+      "topic": "other",
+      "genre": "pov",
+      "communicative_intent": "entertain",
+      "creator_role": "amateur",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

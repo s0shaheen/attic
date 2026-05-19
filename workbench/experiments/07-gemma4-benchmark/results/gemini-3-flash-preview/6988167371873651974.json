@@ -1,0 +1,332 @@
+{
+  "item_id": "6988167371873651974",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": [
+      {
+        "scene_timeline": [
+          {
+            "time_range": "0:00-0:05",
+            "visual_description": "Creator performs a barbell bench press in a gym setting.",
+            "audio_description": "Are you having trouble setting up the barbell bench press? As a certified personal trainer, here is what I think about during my setup.",
+            "text_on_screen": "BARBELL BENCH PRESS",
+            "key_objects": ["Barbell", "Weight plates", "Bench"]
+          },
+          {
+            "time_range": "0:05-0:08",
+            "visual_description": "Close-up of the creator's head on the bench, showing eye alignment with the bar.",
+            "audio_description": "I start by lying on the bench so that my eyes are directly under the bar.",
+            "text_on_screen": "Eyes UNDER Bar",
+            "key_objects": ["Barbell"]
+          },
+          {
+            "time_range": "0:08-0:13",
+            "visual_description": "Close-up of hands gripping the barbell using a specific technique.",
+            "audio_description": "I grab the bar about one hand width from the start of the knurl and internally rotate my hands before gripping the bar.",
+            "text_on_screen": "~ONE HAND WIDTH\nINTERNALLY ROTATE (BULLDOG GRIP)",
+            "key_objects": ["Barbell"]
+          },
+          {
+            "time_range": "0:13-0:17",
+            "visual_description": "Side view of the creator retracting shoulder blades on the bench.",
+            "audio_description": "Then, I pull my shoulder blades back and down, building up tension in my upper back.",
+            "text_on_screen": "",
+            "key_objects": ["Bench"]
+          },
+          {
+            "time_range": "0:17-0:24",
+            "visual_description": "Focus on foot placement and leg tension.",
+            "audio_description": "While I do this, I place my feet as far back as I can while keeping my feet flat on the floor. Next, I spread and screw my feet into the floor to build up lower body tension.",
+            "text_on_screen": "SCREW",
+            "key_objects": ["Nike shoes"]
+          },
+          {
+            "time_range": "0:24-0:30",
+            "visual_description": "Wide shot highlighting the points of contact with the bench.",
+            "audio_description": "In this position, I have 5 points of contact: my head, my upper back, my butt, and both of my feet.",
+            "text_on_screen": "5 POINTS OF CONTACT",
+            "key_objects": ["Bench"]
+          },
+          {
+            "time_range": "0:30-0:37",
+            "visual_description": "Creator unracks the bar and demonstrates back engagement.",
+            "audio_description": "Then, I unrack the bar by pulling with my lats. Here, I think about pulling the bar apart and bending the bar in half to build up tension in my back and rear delts.",
+            "text_on_screen": "LATS\nBACK (LATS)",
+            "key_objects": ["Barbell"]
+          },
+          {
+            "time_range": "0:37-0:41",
+            "visual_description": "Creator takes a breath and lowers the bar to the chest.",
+            "audio_description": "Next, I take a deep breath to brace my core, then lower the bar to the lower part of my chest.",
+            "text_on_screen": "DEEP BREATH TO BRACE CORE\nLOWER PART OF CHEST (NIPPLE LEVEL)",
+            "key_objects": ["Barbell"]
+          },
+          {
+            "time_range": "0:41-0:46",
+            "visual_description": "Creator presses the bar back up to the starting position.",
+            "audio_description": "After that, I drive my feet into the floor as I press the weight up and back until the bar is stacked over my shoulders again.",
+            "text_on_screen": "BAR STACKED OVER SHOULDERS",
+            "key_objects": ["Barbell"]
+          },
+          {
+            "time_range": "0:46-0:58",
+            "visual_description": "Close-up of elbow positioning during the press followed by an outro.",
+            "audio_description": "During the press, my elbows flare anywhere between 45 to 60 degrees. I think about keeping my elbows directly under or slightly in front of the bar. If you have anything to add, let me know in the comments. Follow for more tips and let me know if that helped.",
+            "text_on_screen": "ELBOWS UNDER OR SLIGHTLY IN FRONT",
+            "key_objects": ["Barbell"]
+          }
+        ],
+        "overall_summary": "This tutorial video features a certified personal trainer, Chris Schaum, providing a comprehensive guide on how to properly set up and execute a barbell bench press. He breaks down the process into specific steps, including eye alignment, the 'Bulldog Grip,' shoulder blade retraction, and foot placement for maximum tension. The video emphasizes the '5 points of contact' rule and provides technical cues for unracking, bracing, and maintaining a proper bar path and elbow angle. The main takeaway is that a stable, high-tension setup is crucial for a safe and effective bench press.",
+        "people": [
+          {
+            "description": "Male fitness creator with a muscular build, wearing a black tank top, blue shorts, and a black baseball cap.",
+            "is_creator": true,
+            "speaking": true,
+            "identified_as": "Chris Schaum"
+          }
+        ],
+        "entities": [
+          {
+            "name": "Barbell Bench Press",
+            "display_name": "Barbell Bench Press",
+            "type": "exercise",
+            "relevance": "primary",
+            "source": ["visual", "audio", "text_overlay", "metadata"],
+            "specifications": null,
+            "confidence": 5
+          },
+          {
+            "name": "Bulldog Grip",
+            "display_name": "Bulldog Grip",
+            "type": "technique",
+            "relevance": "supporting",
+            "source": ["audio", "text_overlay"],
+            "specifications": "Internal rotation of hands before gripping",
+            "confidence": 5
+          },
+          {
+            "name": "York Barbell",
+            "display_name": "York Barbell Equipment",
+            "type": "brand",
+            "relevance": "background",
+            "source": ["visual"],
+            "specifications": "York logo visible on the weight rack and plates",
+            "confidence": 4
+          },
+          {
+            "name": "Nike",
+            "display_name": "Nike Training Shoes",
+            "type": "brand",
+            "relevance": "supporting",
+            "source": ["visual"],
+            "specifications": "Likely Nike Metcon model",
+            "confidence": 4
+          },
+          {
+            "name": "Gymshark",
+            "display_name": "Gymshark Shorts",
+            "type": "brand",
+            "relevance": "supporting",
+            "source": ["visual"],
+            "specifications": "Logo visible on blue shorts",
+            "confidence": 4
+          },
+          {
+            "name": "Misfits (instrum.)",
+            "display_name": "Misfits (Instrumental) - RYYZN",
+            "type": "song",
+            "relevance": "supporting",
+            "source": ["metadata"],
+            "specifications": null,
+            "confidence": 5
+          }
+        ],
+        "takeaways": [
+          {
+            "statement": "Proper bench press setup requires aligning eyes directly under the bar for optimal positioning.",
+            "source": "voiceover",
+            "confidence": 5
+          },
+          {
+            "statement": "Using a 'Bulldog Grip' (internal hand rotation) can improve grip stability on the barbell.",
+            "source": "voiceover",
+            "confidence": 5
+          },
+          {
+            "statement": "Maintaining 5 points of contact (head, upper back, butt, and both feet) is essential for a stable bench press.",
+            "source": "voiceover",
+            "confidence": 5
+          },
+          {
+            "statement": "Leg drive and full-body tension are created by 'screwing' the feet into the floor and retracting the shoulder blades.",
+            "source": "voiceover",
+            "confidence": 5
+          },
+          {
+            "statement": "The bar should be lowered to nipple level and pressed back in a path that ends stacked over the shoulders.",
+            "source": "voiceover",
+            "confidence": 5
+          }
+        ],
+        "structured_content": {
+          "type": "instructions",
+          "items": [
+            {
+              "name": "Eye Alignment",
+              "details": "Lie on the bench with eyes directly under the bar."
+            },
+            {
+              "name": "Grip Setup",
+              "details": "Hands ~one hand width from knurling; use Bulldog Grip (internal rotation)."
+            },
+            {
+              "name": "Upper Body Tension",
+              "details": "Pull shoulder blades back and down into the bench."
+            },
+            {
+              "name": "Lower Body Setup",
+              "details": "Feet as far back as possible while flat; screw feet into the floor for tension."
+            },
+            {
+              "name": "Unracking",
+              "details": "Pull bar out with lats; imagine bending the bar to engage rear delts."
+            },
+            {
+              "name": "Execution",
+              "details": "Deep breath to brace; lower to nipple level; press up and back to shoulder-stacked position."
+            },
+            {
+              "name": "Elbow Position",
+              "details": "Maintain 45-60 degree flare; keep elbows under or slightly in front of the bar."
+            }
+          ]
+        },
+        "audio_identification": {
+          "actual_song": "Misfits (instrum.) \u2014 RYYZN",
+          "metadata_song": "original sound - schaumfitness \u2014 Chris Schaum",
+          "match": true
+        },
+        "extraction_confidence": {
+          "entities_complete": 5,
+          "audio_identified": true,
+          "notes": "The song in metadata is listed as an original sound, but the secondary metadata correctly identifies the RYYZN track."
+        },
+        "presentation_style": {
+          "primary_format": "tutorial_demo",
+          "camera_work": "static",
+          "editing_style": "jump_cuts"
+        },
+        "visual_mood": "Informative, focused, and professional gym environment.",
+        "topic_hints": [
+          "Weightlifting technique",
+          "Bench press setup",
+          "Gym safety"
+        ],
+        "affect_hints": ["Motivated", "Educational", "Disciplined"],
+        "genre_hints": ["Fitness Tutorial", "How-to"]
+      }
+    ],
+    "metrics": {
+      "input_tokens": 6669,
+      "output_tokens": 2744,
+      "cost_usd": 0.0017645000000000002,
+      "latency_ms": 27385,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "fitness",
+        "secondary": "education",
+        "micro_labels": [
+          "weightlifting",
+          "bench press technique",
+          "strength training",
+          "gym tips"
+        ],
+        "confidence": 0.98
+      },
+      "genre": {
+        "label": "tutorial",
+        "micro_labels": ["how-to", "instructional"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        }
+      ],
+      "presentation_style": ["voiceover", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "professional",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.95
+      },
+      "entities": [
+        {
+          "name": "Barbell Bench Press",
+          "type": "exercise",
+          "relevance": "primary"
+        },
+        {
+          "name": "Bulldog Grip",
+          "type": "technique",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Chris Schaum",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "York Barbell",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Nike",
+          "type": "brand",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "Certified personal trainer Chris Schaum provides a comprehensive step-by-step tutorial on the barbell bench press. He covers technical cues including eye alignment, the 'Bulldog Grip', shoulder retraction, and the '5 points of contact' rule for a stable setup.",
+      "embedding_text": "A detailed fitness tutorial by certified personal trainer Chris Schaum (@schaumfitness) explaining the proper setup and execution of the barbell bench press. The video features step-by-step instructions on eye alignment under the bar, the 'Bulldog Grip' (internal hand rotation), shoulder blade retraction, and foot placement to build lower body tension. Chris highlights the '5 points of contact' rule\u2014head, upper back, butt, and both feet\u2014and provides cues for unracking using the lats. He demonstrates the correct bar path to the lower chest (nipple level) and pressing back until the bar is stacked over the shoulders, while maintaining a 45 to 60-degree elbow flare. This instructional content is ideal for gym-goers looking to improve their bench press form and safety. On-screen text includes 'BARBELL BENCH PRESS', 'BULLDOG GRIP', and '5 POINTS OF CONTACT'."
+    },
+    "metrics": {
+      "input_tokens": 4084,
+      "output_tokens": 732,
+      "cost_usd": 0.0007012,
+      "latency_ms": 6031
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "fitness",
+      "genre": "tutorial",
+      "communicative_intent": "inform",
+      "creator_role": "professional",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "voiceover",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

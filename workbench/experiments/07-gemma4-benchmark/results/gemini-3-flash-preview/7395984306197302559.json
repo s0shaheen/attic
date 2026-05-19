@@ -1,0 +1,277 @@
+{
+  "item_id": "7395984306197302559",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": [
+      {
+        "scene_timeline": [
+          {
+            "time_range": "0:00-0:02",
+            "visual_description": "Rough sketch animation of a character in a cloak igniting a green lightsaber.",
+            "audio_description": "Upbeat rap music begins with lyrics: 'Got racks...'",
+            "text_on_screen": "Recent shi",
+            "key_objects": ["lightsaber"]
+          },
+          {
+            "time_range": "0:02-0:07",
+            "visual_description": "Animation of a woman with pink hair and yellow ringed eyes (Makima) staring forward as her hair blows in the wind.",
+            "audio_description": "Lyrics: '...if they shoot at us we gon' pop back...'",
+            "text_on_screen": "Recent shi",
+            "key_objects": ["Makima"]
+          },
+          {
+            "time_range": "0:07-0:10",
+            "visual_description": "A hand clenches into a fist against a dark, textured background, followed by a large orange and yellow explosion.",
+            "audio_description": "Lyrics: '...you keep actin' tough need to stop that...'",
+            "text_on_screen": "Recent shi",
+            "key_objects": ["fist", "explosion"]
+          },
+          {
+            "time_range": "0:10-0:13",
+            "visual_description": "Profile sketch of a young man with messy hair (Denji) looking to the side.",
+            "audio_description": "Lyrics: '...I'm already done can't have your thought back...'",
+            "text_on_screen": "Recent shi",
+            "key_objects": ["Denji"]
+          },
+          {
+            "time_range": "0:13-0:15",
+            "visual_description": "A hand opens in a sketch style, and a vibrant blue and purple flower blooms from the palm.",
+            "audio_description": "Lyrics: '...yeah, thought back...'",
+            "text_on_screen": "Recent shi",
+            "key_objects": ["flower"]
+          },
+          {
+            "time_range": "0:15-0:18",
+            "visual_description": "Detailed colored animation of Johnny Joestar falling or being held by the massive pink Stand, Tusk Act 4.",
+            "audio_description": "Lyrics: '...look at you in love you got your thought back.'",
+            "text_on_screen": "Recent shi",
+            "key_objects": ["Johnny Joestar", "Tusk Act 4"]
+          }
+        ],
+        "overall_summary": "This video is a compilation of 2D animation clips created by the user, showcasing their recent work and artistic progress. It features various characters and scenes, including a Star Wars-inspired Jedi, Makima and Denji from Chainsaw Man, and a highly detailed sequence from JoJo's Bizarre Adventure: Steel Ball Run featuring Johnny Joestar and his Stand, Tusk Act 4. The creator uses a mix of rough sketches and fully colored animations to demonstrate their range in the 2D animation medium.",
+        "people": [],
+        "entities": [
+          {
+            "name": "Johnny Joestar",
+            "display_name": "Johnny Joestar",
+            "type": "person",
+            "relevance": "primary",
+            "source": ["visual", "metadata"],
+            "specifications": "Protagonist of JoJo's Bizarre Adventure Part 7: Steel Ball Run",
+            "confidence": 5
+          },
+          {
+            "name": "Tusk Act 4",
+            "display_name": "Tusk Act 4",
+            "type": "person",
+            "relevance": "primary",
+            "source": ["visual"],
+            "specifications": "Stand of Johnny Joestar",
+            "confidence": 5
+          },
+          {
+            "name": "Makima",
+            "display_name": "Makima",
+            "type": "person",
+            "relevance": "supporting",
+            "source": ["visual", "metadata"],
+            "specifications": "Character from Chainsaw Man",
+            "confidence": 4
+          },
+          {
+            "name": "Denji",
+            "display_name": "Denji",
+            "type": "person",
+            "relevance": "supporting",
+            "source": ["visual", "metadata"],
+            "specifications": "Protagonist of Chainsaw Man",
+            "confidence": 4
+          },
+          {
+            "name": "Star Wars",
+            "display_name": "Star Wars",
+            "type": "movie_or_show",
+            "relevance": "supporting",
+            "source": ["visual", "metadata"],
+            "specifications": null,
+            "confidence": 5
+          },
+          {
+            "name": "JoJo's Bizarre Adventure",
+            "display_name": "JoJo's Bizarre Adventure",
+            "type": "movie_or_show",
+            "relevance": "primary",
+            "source": ["visual", "metadata"],
+            "specifications": "Part 7: Steel Ball Run",
+            "confidence": 5
+          },
+          {
+            "name": "Thought Back",
+            "display_name": "Thought Back \u2014 allv.lone",
+            "type": "song",
+            "relevance": "primary",
+            "source": ["audio", "metadata"],
+            "specifications": null,
+            "confidence": 5
+          }
+        ],
+        "takeaways": [
+          {
+            "statement": "The creator is showcasing their 2D animation skills through a reel of recent sketches and finished pieces.",
+            "source": "demonstration",
+            "confidence": 5
+          }
+        ],
+        "structured_content": null,
+        "audio_identification": {
+          "actual_song": "Thought Back \u2014 allv.lone",
+          "metadata_song": "original sound - allv.lone \u2014 Allv.lone",
+          "match": true
+        },
+        "extraction_confidence": {
+          "entities_complete": 5,
+          "audio_identified": true,
+          "notes": "Characters from JJBA and Chainsaw Man are clearly identifiable based on design and hashtags."
+        },
+        "presentation_style": {
+          "primary_format": "edit",
+          "camera_work": "static",
+          "editing_style": "montage"
+        },
+        "visual_mood": "Artistic and energetic with a focus on dynamic movement and character design.",
+        "topic_hints": [
+          "2D Animation",
+          "Anime Fan Art",
+          "Digital Illustration"
+        ],
+        "affect_hints": ["Impressed", "Inspired", "Hyped"],
+        "genre_hints": ["Animation Reel", "Art Showcase"]
+      }
+    ],
+    "metrics": {
+      "input_tokens": 3116,
+      "output_tokens": 1720,
+      "cost_usd": 0.0009996,
+      "latency_ms": 21442,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "art",
+        "secondary": "movies_tv",
+        "micro_labels": [
+          "2D Animation",
+          "Anime Fan Art",
+          "Digital Illustration",
+          "Character Animation"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "edit",
+        "micro_labels": ["Animation Reel", "Montage"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "satisfying",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "secondary"
+        },
+        {
+          "label": "informative",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["animation", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "artist",
+        "confidence": 0.95
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Johnny Joestar",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Tusk Act 4",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Makima",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Denji",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "JoJo's Bizarre Adventure: Steel Ball Run",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "Chainsaw Man",
+          "type": "movie_or_show",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Star Wars",
+          "type": "movie_or_show",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Thought Back \u2014 allv.lone",
+          "type": "song",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A compilation of 2D animation clips by @gyro_animates showcasing their recent artistic progress. The video features fan art animations of characters from Chainsaw Man, JoJo's Bizarre Adventure: Steel Ball Run, and Star Wars, moving from rough sketches to polished sequences.",
+      "embedding_text": "A 2D animation reel and edit by creator @gyro_animates showcasing recent digital art and animation progress. The video features several dynamic sequences including a Jedi with a green lightsaber from Star Wars, Makima and Denji from the anime Chainsaw Man, and a highly detailed animation of Johnny Joestar and his Stand, Tusk Act 4, from JoJo's Bizarre Adventure Part 7: Steel Ball Run. The content transitions between rough character sketches and fully colored, fluid animations. Set to the song 'Thought Back' by allv.lone, the video includes on-screen text 'Recent shi'. This is a prime example of independent 2D animation, anime fan art, and digital illustration techniques, likely saved by users for artistic inspiration, animation reference, or as a fan edit of popular manga and anime series."
+    },
+    "metrics": {
+      "input_tokens": 4159,
+      "output_tokens": 883,
+      "cost_usd": 0.0007691000000000001,
+      "latency_ms": 7001
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "satisfying",
+      "topic": "art",
+      "genre": "edit",
+      "communicative_intent": "entertain",
+      "creator_role": "artist",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "animation",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

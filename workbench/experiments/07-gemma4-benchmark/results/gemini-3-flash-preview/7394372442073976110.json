@@ -1,0 +1,415 @@
+{
+  "item_id": "7394372442073976110",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "Doctor Doom sitting in a red egg-shaped chair in a high-tech laboratory or lair. He is wearing his signature green cloak and silver armor. A book titled 'DEMONOLOGY' sits on a table in the foreground.",
+          "text_detected": "DEMONOLOGY BY BOB LAYTON",
+          "primary_content": "Character: Doctor Doom (Victor von Doom)",
+          "entities": [
+            {
+              "name": "Doctor Doom",
+              "type": "person",
+              "specifications": "Marvel Comics character"
+            },
+            {
+              "name": "Bob Layton",
+              "type": "person",
+              "specifications": "Comic book artist/writer"
+            },
+            {
+              "name": "Demonology",
+              "type": "book",
+              "specifications": "In-universe prop book"
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "A close-up of Thanos wearing the Infinity Gauntlet, with bright light rays emanating from the Infinity Stones.",
+          "text_detected": "",
+          "primary_content": "Character: Thanos with Infinity Gauntlet",
+          "entities": [
+            {
+              "name": "Thanos",
+              "type": "person",
+              "specifications": "Marvel Comics character"
+            },
+            {
+              "name": "Infinity Gauntlet",
+              "type": "product",
+              "specifications": "Cosmic artifact with six stones"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "Venom (Eddie Brock) crouching on a brick building ledge, showing his large white eyes and sharp teeth with a long tongue.",
+          "text_detected": "",
+          "primary_content": "Character: Venom",
+          "entities": [
+            {
+              "name": "Venom",
+              "type": "person",
+              "specifications": "Marvel Comics character/symbiote"
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "Kang the Conqueror sitting in a complex, futuristic command chair surrounded by monitors and machinery.",
+          "text_detected": "",
+          "primary_content": "Character: Kang the Conqueror",
+          "entities": [
+            {
+              "name": "Kang the Conqueror",
+              "type": "person",
+              "specifications": "Marvel Comics character"
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "An extreme close-up of Magneto's face, focusing on his eyes and the bridge of his purple and red helmet.",
+          "text_detected": "",
+          "primary_content": "Character: Magneto",
+          "entities": [
+            {
+              "name": "Magneto",
+              "type": "person",
+              "specifications": "Marvel Comics character"
+            }
+          ]
+        },
+        {
+          "image_number": 6,
+          "description": "Galactus standing in the vastness of space, towering over planets and asteroids.",
+          "text_detected": "",
+          "primary_content": "Character: Galactus",
+          "entities": [
+            {
+              "name": "Galactus",
+              "type": "person",
+              "specifications": "Marvel Comics character, Devourer of Worlds"
+            }
+          ]
+        },
+        {
+          "image_number": 7,
+          "description": "Doctor Octopus (Doc Ock) using his mechanical arms to restrain Spider-Man in mid-air against a city backdrop.",
+          "text_detected": "FOR, THIS TIME.. YOU DIE! 19",
+          "primary_content": "Battle: Doctor Octopus vs. Spider-Man",
+          "entities": [
+            {
+              "name": "Doctor Octopus",
+              "type": "person",
+              "specifications": "Otto Octavius"
+            },
+            {
+              "name": "Spider-Man",
+              "type": "person",
+              "specifications": "Peter Parker"
+            }
+          ]
+        },
+        {
+          "image_number": 8,
+          "description": "Thor delivering a powerful punch to Loki, with debris flying from the impact.",
+          "text_detected": "",
+          "primary_content": "Battle: Thor vs. Loki",
+          "entities": [
+            {
+              "name": "Thor",
+              "type": "person",
+              "specifications": "God of Thunder"
+            },
+            {
+              "name": "Loki",
+              "type": "person",
+              "specifications": "God of Mischief"
+            }
+          ]
+        },
+        {
+          "image_number": 9,
+          "description": "The Green Goblin flying on his Goblin Glider through a city at night, laughing maniacally.",
+          "text_detected": "THE TIME HAS COME FOR SPIDER-MAN TO FACE HIS INEVITABLE DEATH... AT THE HANDS OF THE SUPREMELY POWERFUL GREEN GOBLIN!",
+          "primary_content": "Character: Green Goblin",
+          "entities": [
+            {
+              "name": "Green Goblin",
+              "type": "person",
+              "specifications": "Norman Osborn"
+            },
+            {
+              "name": "Spider-Man",
+              "type": "person",
+              "specifications": "Mentioned in text"
+            }
+          ]
+        },
+        {
+          "image_number": 10,
+          "description": "A dejected or contemplative Thanos sitting alone on a set of white steps, wearing simple robes instead of armor.",
+          "text_detected": "THE END",
+          "primary_content": "Character: Thanos (Farmer/Retired version)",
+          "entities": [
+            {
+              "name": "Thanos",
+              "type": "person",
+              "specifications": "Marvel Comics character"
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This post is a curated collection of iconic Marvel Comics panels, primarily featuring legendary villains like Doctor Doom, Thanos, and Magneto. The images showcase classic comic book art styles ranging from the Silver Age to the 90s. The user is likely saving this as a 'mood board' for comic book aesthetics or as a collection of high-quality character art for wallpapers.",
+      "carousel_type": "photo_dump",
+      "narrative_thread": "The sequence highlights the power, menace, and occasional vulnerability of Marvel's most famous antagonists through striking visual compositions.",
+      "entities": [
+        {
+          "name": "Marvel Comics",
+          "display_name": "Marvel Comics",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["metadata", "visual"],
+          "slide_number": 1,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Thanos",
+          "display_name": "Thanos",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual"],
+          "slide_number": 2,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Doctor Doom",
+          "display_name": "Doctor Doom",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual"],
+          "slide_number": 1,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Spider-Man",
+          "display_name": "Spider-Man",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["visual", "text_overlay"],
+          "slide_number": 7,
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The post celebrates the 'tuff' (cool/intimidating) aesthetic of classic Marvel villainy.",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Doctor Doom",
+            "details": "Art by Bob Layton",
+            "slide_number": 1
+          },
+          {
+            "name": "Thanos",
+            "details": "Infinity Gauntlet era",
+            "slide_number": 2
+          },
+          {
+            "name": "Venom",
+            "details": "90s era aesthetic",
+            "slide_number": 3
+          },
+          {
+            "name": "Kang the Conqueror",
+            "details": "Classic command chair visual",
+            "slide_number": 4
+          },
+          {
+            "name": "Magneto",
+            "details": "Close-up helmet detail",
+            "slide_number": 5
+          },
+          {
+            "name": "Galactus",
+            "details": "Cosmic scale illustration",
+            "slide_number": 6
+          },
+          {
+            "name": "Doctor Octopus",
+            "details": "Silver Age battle with Spider-Man",
+            "slide_number": 7
+          },
+          {
+            "name": "Thor vs Loki",
+            "details": "Classic Jack Kirby style",
+            "slide_number": 8
+          },
+          {
+            "name": "Green Goblin",
+            "details": "Night flight on glider",
+            "slide_number": 9
+          },
+          {
+            "name": "Thanos",
+            "details": "The End / Infinity Gauntlet finale",
+            "slide_number": 10
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Lavender Buds \u2014 MF DOOM",
+        "metadata_song": "Lavender Buds \u2014 MF DOOM",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All characters are highly recognizable icons of Marvel Comics."
+      },
+      "presentation_style": {
+        "primary_format": "photo_dump",
+        "visual_style": "aesthetic"
+      },
+      "visual_mood": "Intense, nostalgic, and powerful; characterized by high-contrast comic book coloring and dramatic posing.",
+      "topic_hints": ["Marvel Comics", "Comic Book Art", "Supervillains"],
+      "affect_hints": ["Intimidated", "Inspired", "Nostalgic"],
+      "genre_hints": ["Pop Culture", "Art Gallery"]
+    },
+    "metrics": {
+      "input_tokens": 12045,
+      "output_tokens": 2517,
+      "cost_usd": 0.0022113000000000002,
+      "latency_ms": 24040,
+      "video_uploaded": false
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "art",
+        "secondary": "movies_tv",
+        "micro_labels": [
+          "comic book art",
+          "marvel villains",
+          "illustration",
+          "comic panels"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "compilation",
+        "micro_labels": ["photo dump", "mood board"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "nostalgic",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["slideshow"],
+      "content_provenance": {
+        "label": "repost",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.85
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Marvel Comics",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "Doctor Doom",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Thanos",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Venom",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Magneto",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Galactus",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Spider-Man",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "MF DOOM",
+          "type": "artist",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A curated photo dump of iconic Marvel Comics panels featuring legendary villains like Doctor Doom, Thanos, and Magneto. It serves as a visual mood board for classic comic book art styles and character aesthetics.",
+      "embedding_text": "A TikTok photo dump featuring a series of classic Marvel Comics panels and illustrations. The carousel showcases legendary villains including Doctor Doom in his laboratory with a 'Demonology' book, Thanos wielding the Infinity Gauntlet, Venom on a ledge, Kang the Conqueror in his command chair, and a close-up of Magneto's helmet. It also includes action scenes like Doctor Octopus fighting Spider-Man, Thor punching Loki, and the Green Goblin on his glider. The art styles range from vintage Silver Age to 90s comic aesthetics. Set to the track 'Lavender Buds' by MF DOOM, the post is captioned 'so tuff' and serves as a visual gallery or mood board for comic book fans and art enthusiasts looking for iconic character depictions, comic book history, and high-quality comic book wallpapers."
+    },
+    "metrics": {
+      "input_tokens": 4042,
+      "output_tokens": 800,
+      "cost_usd": 0.0007242,
+      "latency_ms": 8917
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "nostalgic",
+      "topic": "art",
+      "genre": "compilation",
+      "communicative_intent": "entertain",
+      "creator_role": "amateur",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "slideshow",
+      "content_provenance": "repost"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

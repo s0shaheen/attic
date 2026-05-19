@@ -1,0 +1,228 @@
+{
+  "item_id": "7418602991973829931",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": [
+      {
+        "scene_timeline": [
+          {
+            "time_range": "0:00-0:12",
+            "visual_description": "The creator, portraying a character who is visibly intoxicated, approaches a job fair booth. He has a dazed expression and slow movements.",
+            "audio_description": "Recruiter: 'How are you doing today, sir?' Character: 'Yo... um...'",
+            "text_on_screen": "The dude who never stopped ripping the cart goes to a job fair",
+            "key_objects": ["silver chain", "red t-shirt"]
+          },
+          {
+            "time_range": "0:12-0:24",
+            "visual_description": "The character awkwardly asks about compensation while struggling to maintain focus.",
+            "audio_description": "Recruiter: 'Are you interested in H&R Block?' Character: 'Um... how much do you guys like... pay?' Recruiter: 'Well, considering we're a big company with a lot of roles, it depends.'",
+            "text_on_screen": "The dude who never stopped ripping the cart goes to a job fair",
+            "key_objects": ["H&R Block booth (implied)"]
+          },
+          {
+            "time_range": "0:24-0:44",
+            "visual_description": "The character explains his lack of a resume with a confused and rambling story.",
+            "audio_description": "Character: 'Uh... like... I'll do whatever pays the most.' Recruiter: 'I'll take your resume, see if you qualify for anything.' Character: 'Um... I do... well, I like... did have one, but I um... gave it to the Enterprise Rent-A-Car.'",
+            "text_on_screen": "The dude who never stopped ripping the cart goes to a job fair",
+            "key_objects": ["Enterprise Rent-A-Car (mentioned)"]
+          },
+          {
+            "time_range": "0:44-1:19",
+            "visual_description": "The character continues to ramble about his interaction with Enterprise Rent-A-Car, appearing increasingly lost in thought.",
+            "audio_description": "Recruiter: 'So you only brought one?' Character: 'Uh... should I go get it back from the Enterprise Rent-A-Car? ... Well, I think I'd rather work for you guys though than the Enterprise Rent-A-Car because it's a... well, I don't know if that's true, I just got on the wrong foot with them, so... it was worse than this.'",
+            "text_on_screen": "The dude who never stopped ripping the cart goes to a job fair",
+            "key_objects": []
+          }
+        ],
+        "overall_summary": "This comedic skit features a creator playing a character who is perpetually high from using a THC vape pen ('ripping the cart') attempting to find a job at a career fair. The character displays classic stoner tropes, including slow speech, bloodshot-looking eyes, and a lack of preparation. He awkwardly interacts with a recruiter from H&R Block, asking about pay immediately and revealing he gave his only copy of his resume to Enterprise Rent-A-Car. The video satirizes the disconnect between a heavy cannabis user and the professional world.",
+        "people": [
+          {
+            "description": "Young man with long brown hair, wearing a red t-shirt and silver chain, acting as a person under the influence of cannabis.",
+            "is_creator": true,
+            "speaking": true,
+            "identified_as": "bmac"
+          }
+        ],
+        "entities": [
+          {
+            "name": "H&R Block",
+            "display_name": "H&R Block",
+            "type": "brand",
+            "relevance": "supporting",
+            "source": ["audio"],
+            "specifications": null,
+            "confidence": 5
+          },
+          {
+            "name": "Enterprise Rent-A-Car",
+            "display_name": "Enterprise Rent-A-Car",
+            "type": "brand",
+            "relevance": "supporting",
+            "source": ["audio"],
+            "specifications": null,
+            "confidence": 5
+          },
+          {
+            "name": "THC Cartridge",
+            "display_name": "The Cart",
+            "type": "product",
+            "relevance": "primary",
+            "source": ["text_overlay"],
+            "specifications": "slang for a cannabis vape cartridge",
+            "confidence": 5
+          }
+        ],
+        "takeaways": [
+          {
+            "statement": "Heavy cannabis use can lead to awkward and unprofessional social interactions, especially in high-stakes environments like job fairs.",
+            "source": "demonstration",
+            "confidence": 4
+          }
+        ],
+        "structured_content": {
+          "type": "instructions",
+          "items": [
+            {
+              "name": "Character Archetype",
+              "details": "The 'stoner' who is perpetually high and lacks social awareness in professional settings."
+            }
+          ]
+        },
+        "audio_identification": {
+          "actual_song": "original sound \u2014 bigballerbmac",
+          "metadata_song": "original sound - bigballerbmac \u2014 bmac\u2122\ufe0f",
+          "match": true
+        },
+        "extraction_confidence": {
+          "entities_complete": 5,
+          "audio_identified": true,
+          "notes": "The background is a generic stock photo of a job fair/convention center."
+        },
+        "presentation_style": {
+          "primary_format": "skit",
+          "camera_work": "static",
+          "editing_style": "jump_cuts"
+        },
+        "visual_mood": "Humorous, awkward, and slightly hazy due to the character's performance.",
+        "topic_hints": ["Job Hunting", "Cannabis Culture", "Comedy Skit"],
+        "affect_hints": ["Amused", "Second-hand embarrassment", "Relatable"],
+        "genre_hints": ["Comedy", "POV Skit"]
+      }
+    ],
+    "metrics": {
+      "input_tokens": 8497,
+      "output_tokens": 1484,
+      "cost_usd": 0.0014433000000000002,
+      "latency_ms": 24833,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "comedy",
+        "secondary": "career",
+        "micro_labels": [
+          "stoner humor",
+          "job hunting",
+          "cannabis culture",
+          "workplace satire"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "skit",
+        "micro_labels": ["pov", "character comedy"],
+        "confidence": 0.98
+      },
+      "affect": [
+        {
+          "label": "funny",
+          "tier": "dominant"
+        },
+        {
+          "label": "cringe",
+          "tier": "dominant"
+        },
+        {
+          "label": "relatable",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["text_overlay", "talking_head"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.98
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "passive_consumption",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "bmac",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "H&R Block",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Enterprise Rent-A-Car",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "THC Cartridge",
+          "type": "product",
+          "relevance": "primary"
+        },
+        {
+          "name": "Job Fair",
+          "type": "event",
+          "relevance": "primary"
+        },
+        {
+          "name": "ripping the cart",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A comedic POV skit by @bigballerbmac featuring a character who is perpetually high from 'ripping the cart' (THC vape) attempting to navigate a professional job fair. The character awkwardly interacts with an H&R Block recruiter, asks about pay immediately, and explains that he lost his only resume to Enterprise Rent-A-Car.",
+      "embedding_text": "A comedic POV skit by creator @bigballerbmac (bmac) titled 'The dude who never stopped ripping the cart goes to a job fair.' The video features a young man in a red t-shirt and silver chain portraying a character under the influence of cannabis (THC vape pen/cartridge) while trying to find employment. He approaches an H&R Block booth with bloodshot eyes and slow speech, immediately asking about pay and rambling about how he gave his only resume to Enterprise Rent-A-Car. The content uses jump cuts and text overlay to satirize stoner culture and the awkwardness of professional interactions while intoxicated. Key entities include H&R Block, Enterprise Rent-A-Car, and cannabis vape culture. This video is saved for its humor and second-hand embarrassment (cringe) factor."
+    },
+    "metrics": {
+      "input_tokens": 3898,
+      "output_tokens": 814,
+      "cost_usd": 0.0007154,
+      "latency_ms": 6084
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "funny",
+      "topic": "comedy",
+      "genre": "skit",
+      "communicative_intent": "entertain",
+      "creator_role": "influencer",
+      "viewer_orientation": "passive_consumption",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

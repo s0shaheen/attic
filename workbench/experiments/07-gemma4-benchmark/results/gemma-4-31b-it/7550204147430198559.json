@@ -1,0 +1,189 @@
+{
+  "item_id": "7550204147430198559",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A black and white photograph of a man, identified as Charlie Kirk, wearing a dark suit jacket, a white dress shirt, and a tie. He is shown from the waist up, standing and looking downward with a contemplative or somber expression. The background is dark and out of focus with small, scattered white bokeh spots, and the image is framed as part of a digital publication layout with text at the bottom.",
+      "text_on_screen": "Cheney Orr/Reuters\nOPINION\nEZRA KLEIN",
+      "overall_summary": "This post is a screenshot of an opinion piece by Ezra Klein, featuring a photo of Charlie Kirk. The user is likely saving it for its analysis of the ideological overlap between the American center-left and far-right.",
+      "entities": [
+        {
+          "name": "Charlie Kirk",
+          "display_name": "Charlie Kirk",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "metadata"],
+          "specifications": null,
+          "confidence": 4
+        },
+        {
+          "name": "Ezra Klein",
+          "display_name": "Ezra Klein",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Reuters",
+          "display_name": "Reuters",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Cheney Orr",
+          "display_name": "Cheney Orr",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The author (Ezra Klein) is exploring whether the center-left and far-right in American political culture share deeper, perhaps unrecognized, commonalities.",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": []
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "The man in the photo is identified as Charlie Kirk based on the caption and visual likeness."
+      },
+      "presentation_style": {
+        "primary_format": "screenshot",
+        "visual_style": "professional"
+      },
+      "scene_type": "text_graphic",
+      "visual_mood": "serious",
+      "topic_hints": [
+        "American Politics",
+        "Political Theory",
+        "Ideological Polarization"
+      ],
+      "affect_hints": ["analytical", "somber", "curious"],
+      "genre_hints": ["Political Commentary", "Opinion Piece"]
+    },
+    "metrics": {
+      "input_tokens": 1328,
+      "output_tokens": 728,
+      "cost_usd": 0.0,
+      "latency_ms": 74585,
+      "video_uploaded": false,
+      "thoughts_tokens": 770
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "politics",
+        "secondary": "news",
+        "micro_labels": [
+          "American Politics",
+          "Political Theory",
+          "Ideological Polarization"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "news_commentary",
+        "micro_labels": ["Opinion Piece", "Political Analysis"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "neutral",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["text_overlay", "slideshow"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.8
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.85
+      },
+      "creator_role": {
+        "label": "activist",
+        "confidence": 0.7
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Charlie Kirk",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Ezra Klein",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Reuters",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Cheney Orr",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "American center-left",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        },
+        {
+          "name": "far-right",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A screenshot of an opinion piece by Ezra Klein featuring a photo of Charlie Kirk. The post analyzes the potential ideological overlap between the American center-left and the far-right.",
+      "embedding_text": "A political commentary post by @tadstoermer featuring a screenshot of an Ezra Klein opinion piece from Reuters. The image shows a somber photograph of Charlie Kirk and discusses the ideological overlap and shared commonalities between the American center-left and the far-right. This content is intended for those interested in American political culture, political theory, and ideological polarization, specifically questioning if establishment Democrats and far-right figures share deeper common ground than is typically recognized. It is an analytical piece of media focusing on the intersection of political ideologies in the US."
+    },
+    "metrics": {
+      "input_tokens": 3227,
+      "output_tokens": 682,
+      "cost_usd": 0.0,
+      "latency_ms": 42594,
+      "thoughts_tokens": 820
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "politics",
+      "genre": "news_commentary",
+      "communicative_intent": "inform",
+      "creator_role": "activist",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "item_id": "7530827399215287583",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A close-up, slightly blurry shot of water inside a greyish basin or sink. The water surface shows a slight curve, known as a meniscus, where it meets the side wall. In the bottom right corner, a dark, glossy object and a small portion of a person's finger are visible.",
+      "text_on_screen": "look how the water curves on the side isnt that cool? whatever fuck you im never showing you anything again",
+      "overall_summary": "This is a humorous 'shitpost' style image where the creator attempts to share a mundane observation about water surface tension and reacts with exaggerated anger when it is presumably ignored. The user likely saved it for the relatable, ironic humor.",
+      "entities": [
+        {
+          "name": "Cycad Slumber",
+          "display_name": "Cycad Slumber",
+          "type": "song",
+          "relevance": "supporting",
+          "source": "metadata",
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Desmond Cheese",
+          "display_name": "Desmond Cheese",
+          "type": "artist",
+          "relevance": "supporting",
+          "source": "metadata",
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The post uses a common meme format of sharing something trivial and reacting with fake outrage to a lack of enthusiasm.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": []
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All metadata and text were clearly extracted."
+      },
+      "presentation_style": {
+        "primary_format": "photo",
+        "visual_style": "raw"
+      },
+      "scene_type": "indoor",
+      "visual_mood": "playful",
+      "topic_hints": ["humor", "relatable content", "surface tension"],
+      "affect_hints": ["amused", "ironically frustrated"],
+      "genre_hints": ["meme", "shitpost"]
+    },
+    "metrics": {
+      "input_tokens": 1245,
+      "output_tokens": 556,
+      "cost_usd": 0.0,
+      "latency_ms": 38554,
+      "video_uploaded": false,
+      "thoughts_tokens": 541
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "comedy",
+        "secondary": "science",
+        "micro_labels": ["shitposting", "ironic humor", "surface tension"],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "meme",
+        "micro_labels": ["shitpost"],
+        "confidence": 0.98
+      },
+      "affect": [
+        {
+          "label": "funny",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["text_overlay", "raw_footage"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "social_sharing",
+        "confidence": 0.8
+      },
+      "entities": [
+        {
+          "name": "surface tension",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "meniscus",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "Cycad Slumber",
+          "type": "song",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Desmond Cheese",
+          "type": "artist",
+          "relevance": "supporting"
+        },
+        {
+          "name": "@meredithfarewell",
+          "type": "person",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A humorous shitpost by @meredithfarewell showing a close-up of water surface tension (a meniscus) in a basin. The creator shares the observation and then immediately reacts with fake anger when ignored, making it a relatable piece of ironic humor.",
+      "embedding_text": "A humorous shitpost by @meredithfarewell featuring a raw photo of water surface tension, specifically showing the meniscus where water curves against the side of a grey basin. The on-screen text reads, 'look how the water curves on the side isnt that cool? whatever fuck you im never showing you anything again,' utilizing a common meme format of sharing a trivial observation followed by exaggerated frustration. The content is set to the song 'Cycad Slumber' by Desmond Cheese. This is a relatable, ironic piece of comedy content focused on the contrast between a mundane scientific phenomenon and a sudden emotional outburst."
+    },
+    "metrics": {
+      "input_tokens": 2947,
+      "output_tokens": 676,
+      "cost_usd": 0.0,
+      "latency_ms": 39038,
+      "thoughts_tokens": 710
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "funny",
+      "topic": "comedy",
+      "genre": "meme",
+      "communicative_intent": "entertain",
+      "creator_role": "amateur",
+      "viewer_orientation": "social_sharing",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

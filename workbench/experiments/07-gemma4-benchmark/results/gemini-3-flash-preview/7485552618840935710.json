@@ -1,0 +1,403 @@
+{
+  "item_id": "7485552618840935710",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:11",
+          "visual_description": "Creator introduces a wave of 'all time great' animated TV dramas that are currently being overlooked.",
+          "audio_description": "Something kind of amazing is happening right now but most of you are missing it. There's been a wave of some all time great TV dramas but they happen to be animated.",
+          "text_on_screen": "SOMETHING KIND OF AMAZING IS HAPPENING RIGHT NOW BUT MOST OF YOU ARE MISSING IT",
+          "key_objects": []
+        },
+        {
+          "time_range": "0:11-0:19",
+          "visual_description": "Creator highlights 'Common Side Effects' on Adult Swim and Max.",
+          "audio_description": "The most recent one is called Common Side Effects and it airs on Adult Swim and/or Max.",
+          "text_on_screen": "COMMON SIDE EFFECTS NEW SERIES FEB 2 [adult swim]",
+          "key_objects": ["Common Side Effects poster"]
+        },
+        {
+          "time_range": "0:19-0:33",
+          "visual_description": "Creator references his previous praise for 'Scavengers Reign' on Netflix.",
+          "audio_description": "I previously talked about Scavengers Reign on Netflix, which I consider to be one of the all time great single seasons of TV.",
+          "text_on_screen": "SCAVENGERS REIGN",
+          "key_objects": ["Scavengers Reign poster"]
+        },
+        {
+          "time_range": "0:33-0:47",
+          "visual_description": "Creator mentions 'Pantheon' on Netflix as another masterpiece.",
+          "audio_description": "And more recently I've talked about Pantheon, which got two seasons and did get to complete its story. It's also on Netflix, it has an all star cast, beautiful animation.",
+          "text_on_screen": "PANTHEON",
+          "key_objects": ["Pantheon poster"]
+        },
+        {
+          "time_range": "0:47-0:55",
+          "visual_description": "Creator claims these animated shows surpass many 'prestige TV' live-action dramas like Breaking Bad.",
+          "audio_description": "But I think these shows are better than most of the live action shows that aired during the golden era of 'prestige TV' dramas.",
+          "text_on_screen": "Breaking Bad",
+          "key_objects": ["Breaking Bad poster"]
+        },
+        {
+          "time_range": "0:55-1:15",
+          "visual_description": "Creator defines 'adult' content as exploring the sensation of existing in unfixable systems.",
+          "audio_description": "I mean that they all address the very adult sensation of existing in a system that you don't know how to fix and so you kind of don't know what it means to be a good person in that system.",
+          "text_on_screen": "COMMON SIDE EFFECTS",
+          "key_objects": []
+        },
+        {
+          "time_range": "1:15-1:40",
+          "visual_description": "Creator summarizes the plot of 'Common Side Effects' involving a miracle mushroom cure and its conflict with corporations.",
+          "audio_description": "It's about this guy who is a genius but kind of a hippie who lives off the grid. And he discovers a mushroom that can cure anything. And his goal is to get this miracle cure out to the people, but to him that means keeping it away from the evil pharmaceutical corporations.",
+          "text_on_screen": "SULLIVAN COUNTY JAIL",
+          "key_objects": ["Animation clips"]
+        },
+        {
+          "time_range": "1:40-1:48",
+          "visual_description": "Creator notes the involvement of Mike Judge and the 'Scavengers Reign' team.",
+          "audio_description": "This show has a lot of people working on it that worked on Scavengers Reign. And also Mike Judge who has done of course King of the Hill and Silicon Valley.",
+          "text_on_screen": "COMMON SIDE EFFECTS",
+          "key_objects": []
+        },
+        {
+          "time_range": "1:48-2:12",
+          "visual_description": "Creator explains the show's nuance regarding the difficulty of growing the miracle fungus naturally.",
+          "audio_description": "It turns out that this guy's miracle fungus is rare not due to any kind of conspiracy or evil, but just because it's difficult to grow. It requires certain soil and a certain climate.",
+          "text_on_screen": "COMMON SIDE EFFECTS",
+          "key_objects": []
+        },
+        {
+          "time_range": "2:12-2:39",
+          "visual_description": "Creator discusses the bureaucratic and corporate requirements for mass-producing a cure.",
+          "audio_description": "The thing that he wants... can only happen if it is mass produced on an incredible scale at incredible expense with layers of bureaucracy and quality control, stuff that could only be supplied by some huge institution.",
+          "text_on_screen": "COMMON SIDE EFFECTS",
+          "key_objects": []
+        },
+        {
+          "time_range": "2:39-3:07",
+          "visual_description": "Creator reflects on the realization that holding power makes idealism difficult.",
+          "audio_description": "You watch as this guy has the realization that every idealistic adult has... 'I am screwing things up in the exact same way.' Being on the outside of a system and critiquing it is easy... actually being in control of the system and doing it better is a million times harder.",
+          "text_on_screen": "COMMON SIDE EFFECTS",
+          "key_objects": []
+        },
+        {
+          "time_range": "3:07-3:18",
+          "visual_description": "Creator compares the theme of corrupting power to Robert Baratheon in 'Game of Thrones.'",
+          "audio_description": "This is what I loved about Game of Thrones when it came out because it started with the story of a revolutionary who then got the reins of power and was just as corrupt.",
+          "text_on_screen": "COMMON SIDE EFFECTS",
+          "key_objects": ["Robert Baratheon image"]
+        },
+        {
+          "time_range": "3:18-3:30",
+          "visual_description": "Creator emphasizes that building a better system is harder than being a disruptor.",
+          "audio_description": "Being a revolutionary or disruptor is extremely difficult, but actually building up a system, a better system that works for everybody, is a million times harder.",
+          "text_on_screen": "COMMON SIDE EFFECTS",
+          "key_objects": []
+        },
+        {
+          "time_range": "3:30-3:46",
+          "visual_description": "Creator praises the hyper-realistic animation style and subtle character expressions.",
+          "audio_description": "All this is conveyed with an animation style that's kind of hyper-realistic and has all these extremely subtle facial expressions and mannerisms. It just really conveys the authenticity of these characters.",
+          "text_on_screen": "DEA",
+          "key_objects": ["Animation clips"]
+        },
+        {
+          "time_range": "3:46-4:01",
+          "visual_description": "Creator concludes that these shows are part of a remarkable, now-ending animation boom.",
+          "audio_description": "I get the sense that all of these shows are part of a post-pandemic animation boom that is now over. But if so that's too bad because a lot of what came out of it was remarkable.",
+          "text_on_screen": "COMMON SIDE EFFECTS",
+          "key_objects": []
+        }
+      ],
+      "overall_summary": "The video highlights a recent wave of high-quality Western animated dramas for adults, specifically recommending 'Common Side Effects,' 'Scavengers Reign,' and 'Pantheon.' The creator argues that these shows rival 'prestige TV' like 'Breaking Bad' by exploring complex systemic issues and the existential difficulty of creating positive change. He focuses on 'Common Side Effects' (Adult Swim/Max), detailing its plot about a miracle cure and the bureaucratic hurdles of mass distribution. The main takeaway is that while critiquing systems from the outside is easy, building better ones is significantly harder, a theme these shows masterfully portray through hyper-realistic animation.",
+      "people": [
+        {
+          "description": "Male creator with short hair and a blue shirt, speaking directly to the camera.",
+          "is_creator": true,
+          "speaking": true,
+          "identified_as": null
+        }
+      ],
+      "entities": [
+        {
+          "name": "Common Side Effects",
+          "display_name": "Common Side Effects (Adult Swim/Max)",
+          "type": "movie_or_show",
+          "relevance": "primary",
+          "source": ["visual", "audio", "text_overlay"],
+          "specifications": "Aired on Adult Swim and Max",
+          "confidence": 5
+        },
+        {
+          "name": "Scavengers Reign",
+          "display_name": "Scavengers Reign (Netflix)",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["visual", "audio", "text_overlay"],
+          "specifications": "Available on Netflix",
+          "confidence": 5
+        },
+        {
+          "name": "Pantheon",
+          "display_name": "Pantheon (Netflix)",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["visual", "audio", "text_overlay"],
+          "specifications": "Available on Netflix, 2 seasons",
+          "confidence": 5
+        },
+        {
+          "name": "Breaking Bad",
+          "display_name": "Breaking Bad",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["visual", "audio", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Mike Judge",
+          "display_name": "Mike Judge",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Creator of King of the Hill and Silicon Valley",
+          "confidence": 5
+        },
+        {
+          "name": "Game of Thrones",
+          "display_name": "Game of Thrones",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Robert Baratheon",
+          "display_name": "Robert Baratheon",
+          "type": "person",
+          "relevance": "background",
+          "source": ["visual", "audio"],
+          "specifications": "Character from Game of Thrones",
+          "confidence": 5
+        },
+        {
+          "name": "Adult Swim",
+          "display_name": "Adult Swim",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual", "audio", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Max",
+          "display_name": "Max (Streaming Service)",
+          "type": "app_or_tool",
+          "relevance": "supporting",
+          "source": ["visual", "audio", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Netflix",
+          "display_name": "Netflix",
+          "type": "app_or_tool",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "DEA",
+          "display_name": "Drug Enforcement Administration (DEA)",
+          "type": "brand",
+          "relevance": "background",
+          "source": ["visual", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Western animation is currently producing high-quality adult dramas that rival prestige live-action TV.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Truly 'adult' content explores the complexity of existing within and trying to fix broken systems.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Critiquing a system from the outside is easy, but building a better one while holding power is significantly harder.",
+          "source": "voiceover",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Common Side Effects",
+            "details": "Animated series on Adult Swim/Max about a genius hippie who discovers a miracle mushroom cure and faces corporate/bureaucratic obstacles."
+          },
+          {
+            "name": "Scavengers Reign",
+            "details": "Sci-fi animated series on Netflix, described as one of the all-time great single seasons of TV."
+          },
+          {
+            "name": "Pantheon",
+            "details": "Sci-fi animated series on Netflix with an all-star cast and a complete two-season story arc."
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "bitchbaby \u2014 TESLA",
+        "metadata_song": "TESLA \u2014 bitchbaby",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The video provides very specific titles and platforms for all shows mentioned."
+      },
+      "presentation_style": {
+        "primary_format": "talking_head",
+        "camera_work": "static",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Thoughtful, analytical, and enthusiastic about adult animation.",
+      "topic_hints": [
+        "Adult Animation",
+        "TV Show Recommendations",
+        "Social Commentary"
+      ],
+      "affect_hints": ["Intrigued", "Reflective", "Informed"],
+      "genre_hints": ["Review", "Video Essay", "Recommendation"]
+    },
+    "metrics": {
+      "input_tokens": 23001,
+      "output_tokens": 3598,
+      "cost_usd": 0.0037393,
+      "latency_ms": 56432,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "movies_tv",
+        "secondary": "education",
+        "micro_labels": [
+          "animated drama",
+          "prestige TV",
+          "media analysis",
+          "adult animation"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "review",
+        "micro_labels": ["recommendation", "video essay"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "nostalgic",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Common Side Effects",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "Scavengers Reign",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "Pantheon",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "Breaking Bad",
+          "type": "movie_or_show",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Game of Thrones",
+          "type": "movie_or_show",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Mike Judge",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Adult Swim",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Netflix",
+          "type": "brand",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "Jason Pargin recommends a wave of 'all-time great' animated TV dramas that explore complex adult themes like systemic corruption and the difficulty of idealism. He specifically highlights 'Common Side Effects' on Adult Swim/Max, 'Scavengers Reign' on Netflix, and 'Pantheon' on Netflix as masterpieces that rival live-action prestige TV.",
+      "embedding_text": "Creator Jason Pargin (@jasonkpargin) discusses a new wave of prestige animated TV dramas that he believes surpass live-action classics like Breaking Bad. He focuses on the new series Common Side Effects on Adult Swim and Max, which involves a miracle mushroom cure and corporate conflict. He also recommends Scavengers Reign and Pantheon on Netflix. Pargin analyzes the 'adult' nature of these shows, defining it as the struggle of existing within unfixable systems and the difficulty of being a builder versus a disruptor, comparing the themes to Robert Baratheon in Game of Thrones. The video mentions Mike Judge's involvement in Common Side Effects and highlights the show's nuanced take on bureaucracy and pharmaceutical corporations. This is a deep-dive media recommendation for fans of high-quality animation and philosophical storytelling. On-screen text includes 'SOMETHING KIND OF AMAZING IS HAPPENING RIGHT NOW BUT MOST OF YOU ARE MISSING IT'."
+    },
+    "metrics": {
+      "input_tokens": 3998,
+      "output_tokens": 883,
+      "cost_usd": 0.000753,
+      "latency_ms": 7007
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "movies_tv",
+      "genre": "review",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

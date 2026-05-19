@@ -1,0 +1,218 @@
+{
+  "item_id": "7450489862269979947",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:04",
+          "visual_description": "Creator demonstrates the integrated spring-like functionality of a green 3D printed compliant trigger mechanism.",
+          "audio_description": "Mechanical clicking and snapping sounds from the plastic flexing.",
+          "text_on_screen": "compliant",
+          "key_objects": ["3D printed frame", "Cutting mat"]
+        },
+        {
+          "time_range": "0:04-0:09",
+          "visual_description": "Close-up inspection of a white 3D printed component featuring flexible internal geometry designed to act as a slide or magazine.",
+          "audio_description": "Rhythmic mechanical clicking.",
+          "text_on_screen": "",
+          "key_objects": ["3D printed slide component"]
+        },
+        {
+          "time_range": "0:09-0:16",
+          "visual_description": "Full assembly and functional test of the 3D printed toy, showcasing rapid mechanical reset and firing motion using only flexible plastic parts.",
+          "audio_description": "Rapid, high-pitched plastic clicking sounds.",
+          "text_on_screen": "",
+          "key_objects": ["Assembled 3D printed toy"]
+        }
+      ],
+      "overall_summary": "This video demonstrates a 3D printed toy gun that utilizes compliant mechanisms for its entire mechanical operation. Instead of using traditional metal springs or hinges, the design relies on the inherent flexibility of the 3D printed material to create tension and movement. The creator shows the individual components and then assembles them to demonstrate a rapid-fire clicking action, highlighting an impressive application of mechanical engineering in 3D printing.",
+      "people": [
+        {
+          "description": "Hands of the creator demonstrating the 3D printed object.",
+          "is_creator": true,
+          "speaking": false,
+          "identified_as": null
+        }
+      ],
+      "entities": [
+        {
+          "name": "Compliant Mechanism",
+          "display_name": "Compliant Mechanism Engineering",
+          "type": "technique",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay", "metadata"],
+          "specifications": "Mechanical design that gains mobility from the relative flexibility of its members rather than from joints.",
+          "confidence": 5
+        },
+        {
+          "name": "3D Printing",
+          "display_name": "3D Printing / Additive Manufacturing",
+          "type": "technique",
+          "relevance": "primary",
+          "source": ["visual", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Zachariehs",
+          "display_name": "Zachariehs",
+          "type": "artist",
+          "relevance": "background",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "All For Nothing",
+          "display_name": "All For Nothing \u2014 Zachariehs",
+          "type": "song",
+          "relevance": "background",
+          "source": ["metadata", "audio"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Compliant mechanisms allow for complex mechanical functions in 3D printed objects without the need for external hardware like metal springs.",
+          "source": "demonstration",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "product_list",
+        "items": [
+          {
+            "name": "3D Printed Compliant Toy Frame",
+            "details": "Green plastic with integrated flexible trigger and spring segments."
+          },
+          {
+            "name": "3D Printed Compliant Slide",
+            "details": "White plastic component with internal flexible zig-zag geometry for mechanical reset."
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "All For Nothing \u2014 Zachariehs",
+        "metadata_song": "All For Nothing \u2014 Zachariehs",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The video is a straightforward technical demonstration of a 3D printed project."
+      },
+      "presentation_style": {
+        "primary_format": "tutorial_demo",
+        "camera_work": "static",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Technical, satisfying, and focused on engineering precision.",
+      "topic_hints": ["3D Printing", "Mechanical Engineering", "DIY Projects"],
+      "affect_hints": ["curious", "satisfied", "impressed"],
+      "genre_hints": ["tech demo", "maker content"]
+    },
+    "metrics": {
+      "input_tokens": 2968,
+      "output_tokens": 1239,
+      "cost_usd": 0.0007924000000000001,
+      "latency_ms": 19219,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "diy",
+        "secondary": "technology",
+        "micro_labels": [
+          "3D printing",
+          "mechanical engineering",
+          "compliant mechanisms",
+          "additive manufacturing"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "other",
+        "micro_labels": ["tech demo", "maker showcase"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "dominant"
+        }
+      ],
+      "presentation_style": ["raw_footage", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Compliant Mechanism Engineering",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "3D Printing",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "Zachariehs",
+          "type": "artist",
+          "relevance": "supporting"
+        },
+        {
+          "name": "All For Nothing",
+          "type": "song",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A technical demonstration by @cartyski showing a 3D printed toy gun that functions entirely through compliant mechanisms. The video highlights how flexible plastic geometry replaces traditional metal springs for the trigger and slide reset, resulting in a satisfying mechanical clicking action.",
+      "embedding_text": "This video by @cartyski demonstrates a 3D printed compliant gun, a fascinating application of mechanical engineering where the object's movement comes from the flexibility of the material rather than traditional joints or metal springs. The creator showcases a green 3D printed frame with an integrated compliant trigger and a white slide component featuring internal zig-zag geometry for mechanical reset. The demonstration highlights the 'compliant' nature of the design through rhythmic clicking and snapping sounds as the parts flex and fire. Set to the song 'All For Nothing' by Zachariehs, the content is a technical showcase of additive manufacturing and engineering precision. It serves as inspiration for makers and engineers interested in DIY projects, 3D printing techniques, and compliant mechanism design without external hardware. The on-screen text 'compliant' emphasizes the engineering principle being displayed."
+    },
+    "metrics": {
+      "input_tokens": 3653,
+      "output_tokens": 693,
+      "cost_usd": 0.0006425,
+      "latency_ms": 7117
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "diy",
+      "genre": "other",
+      "communicative_intent": "inform",
+      "creator_role": "amateur",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "raw_footage",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

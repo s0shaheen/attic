@@ -1,0 +1,342 @@
+{
+  "item_id": "7418511628473355552",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "A futuristic warrior in white and gold armor with a gold helmet and white cape, standing before a tall, slender futuristic spire under a bright blue sky with white clouds.",
+          "text_detected": "Don't protect your heart by pretending not to have one",
+          "primary_content": "Motivational quote about emotional vulnerability",
+          "entities": [
+            {
+              "name": "Midjourney",
+              "type": "app_or_tool",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "A green-skinned alien with a large orange eye and a long snout, wearing orange and purple robes, smoking a cigarette in a desert landscape under a purple sky with a yellow moon.",
+          "text_detected": "You had a purpose before anyone had an opinion",
+          "primary_content": "Motivational quote about intrinsic purpose",
+          "entities": [
+            {
+              "name": "Midjourney",
+              "type": "app_or_tool",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "A silhouette of a person meditating in a lotus position on a stone platform. The background features a vibrant red sky with floating blue crystalline cubes and jagged mountains.",
+          "text_detected": "The peace I have right now is worth everything I've been through",
+          "primary_content": "Motivational quote about inner peace and resilience",
+          "entities": [
+            {
+              "name": "Midjourney",
+              "type": "app_or_tool",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "A futuristic robot with glowing blue eyes and a black helmet playing a trumpet. The setting is a neon-lit cyberpunk city with pink and purple lighting and other figures in the background.",
+          "text_detected": "\"You attract what you are\" So what are you waiting for to become the person you need in your life ?",
+          "primary_content": "Motivational quote about self-improvement and manifestation",
+          "entities": [
+            {
+              "name": "Midjourney",
+              "type": "app_or_tool",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "A man wearing a golden Roman-style helmet with a red plume and golden chest armor, sitting in a high-tech spaceship cockpit with various screens and a view of a planet through the window.",
+          "text_detected": "Just go for a walk for an hour and come back and see how you feel",
+          "primary_content": "Advice on mental health and taking a break",
+          "entities": [
+            {
+              "name": "Midjourney",
+              "type": "app_or_tool",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 6,
+          "description": "A massive blue industrial robot standing in a field of white daisies under a cloudy blue sky.",
+          "text_detected": "Sometimes life won't be gentle with you, so you must be gentle with yourself",
+          "primary_content": "Motivational quote about self-compassion",
+          "entities": [
+            {
+              "name": "Midjourney",
+              "type": "app_or_tool",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 7,
+          "description": "A black armored robot/knight with glowing blue eyes, holding a long silver sword and pointing one finger upward. The background shows a large blue planet and futuristic city spires.",
+          "text_detected": "CosmicRequiem",
+          "primary_content": "Creator handle or title of the series",
+          "entities": [
+            {
+              "name": "CosmicRequiem",
+              "type": "brand",
+              "specifications": null
+            },
+            {
+              "name": "Midjourney",
+              "type": "app_or_tool",
+              "specifications": null
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This post is a collection of motivational and mental health-focused quotes paired with surreal, retro-futuristic AI-generated art. It utilizes the 'hopecore' and 'corecore' aesthetic to blend emotional vulnerability with cosmic and sci-fi imagery. The user likely saved this for daily inspiration, emotional support, or as a mood board for a specific aesthetic.",
+      "carousel_type": "text_cards",
+      "narrative_thread": "The images convey a message of self-worth, resilience, and the importance of self-care, framing these human struggles against a vast, imaginative cosmic backdrop to suggest a universal experience of growth.",
+      "entities": [
+        {
+          "name": "CosmicRequiem",
+          "display_name": "CosmicRequiem",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["visual"],
+          "slide_number": 7,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Midjourney",
+          "display_name": "Midjourney AI",
+          "type": "app_or_tool",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "slide_number": 1,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "BAANDIT!",
+          "display_name": "BAANDIT!",
+          "type": "artist",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "slide_number": null,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "hopecore",
+          "display_name": "Hopecore",
+          "type": "trend_or_meme",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "slide_number": null,
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Emotional vulnerability is a strength, not a weakness.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Inner peace is a reward for enduring hardship.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Self-compassion is necessary when external circumstances are harsh.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Personal growth is the key to attracting the life and people you desire.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Emotional Openness",
+            "details": "Don't pretend not to have a heart to protect it.",
+            "slide_number": 1
+          },
+          {
+            "name": "Intrinsic Purpose",
+            "details": "Your purpose exists independently of others' opinions.",
+            "slide_number": 2
+          },
+          {
+            "name": "Resilience",
+            "details": "Current peace justifies past struggles.",
+            "slide_number": 3
+          },
+          {
+            "name": "Self-Actualization",
+            "details": "Become the person you need in your life to attract that energy.",
+            "slide_number": 4
+          },
+          {
+            "name": "Mental Reset",
+            "details": "Take a simple walk to clear your mind and reset your mood.",
+            "slide_number": 5
+          },
+          {
+            "name": "Self-Gentleness",
+            "details": "Be kind to yourself when life is not.",
+            "slide_number": 6
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "rumination \u2014 BAANDIT!",
+        "metadata_song": "rumination \u2014 BAANDIT!",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All text and metadata were clearly legible."
+      },
+      "presentation_style": {
+        "primary_format": "text_cards",
+        "visual_style": "aesthetic"
+      },
+      "visual_mood": "Melancholic yet hopeful, surreal, cosmic, and reflective.",
+      "topic_hints": ["Mental Health", "Motivation", "AI Art"],
+      "affect_hints": ["Inspired", "Calm", "Introspective"],
+      "genre_hints": ["Hopecore", "Corecore", "Digital Art"]
+    },
+    "metrics": {
+      "input_tokens": 3136,
+      "output_tokens": 2138,
+      "cost_usd": 0.0,
+      "latency_ms": 88701,
+      "video_uploaded": false,
+      "thoughts_tokens": 941
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "health",
+        "secondary": "art",
+        "micro_labels": [
+          "mental health",
+          "motivational quotes",
+          "AI art",
+          "hopecore",
+          "wellness"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "compilation",
+        "micro_labels": ["text cards", "quote collection"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "inspiring",
+          "tier": "dominant"
+        },
+        {
+          "label": "relaxing",
+          "tier": "secondary"
+        },
+        {
+          "label": "wholesome",
+          "tier": "secondary"
+        },
+        {
+          "label": "nostalgic",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["text_overlay", "slideshow"],
+      "content_provenance": {
+        "label": "ai_generated",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "inspire",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "artist",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "CosmicRequiem",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "Midjourney",
+          "type": "app_or_tool",
+          "relevance": "primary"
+        },
+        {
+          "name": "hopecore",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        },
+        {
+          "name": "corecore",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        },
+        {
+          "name": "BAANDIT!",
+          "type": "artist",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A collection of motivational and mental health quotes paired with surreal, retro-futuristic AI art created via Midjourney. The content focuses on self-compassion, resilience, and emotional vulnerability, utilizing the 'hopecore' aesthetic to provide emotional support.",
+      "embedding_text": "A 'hopecore' and 'corecore' style motivational carousel by @10.002_ featuring surreal AI art from CosmicRequiem created with Midjourney. The content consists of a series of text cards with quotes about emotional vulnerability ('Don't protect your heart by pretending not to have one'), intrinsic purpose, inner peace, and self-compassion ('Sometimes life won't be gentle with you, so you must be gentle with yourself'). The visuals blend sci-fi and retro-futuristic imagery, including a futuristic warrior in gold armor, a green alien in a desert, a meditating silhouette under a red sky, and a robot playing a trumpet in a cyberpunk city. It is designed for emotional regulation and mental health inspiration, set to music by BAANDIT!."
+    },
+    "metrics": {
+      "input_tokens": 4051,
+      "output_tokens": 789,
+      "cost_usd": 0.0,
+      "latency_ms": 42424,
+      "thoughts_tokens": 723
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "inspiring",
+      "topic": "health",
+      "genre": "compilation",
+      "communicative_intent": "inspire",
+      "creator_role": "artist",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "text_overlay",
+      "content_provenance": "ai_generated"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

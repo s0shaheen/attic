@@ -1,0 +1,240 @@
+{
+  "item_id": "7539956613356981526",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:10",
+          "visual_description": "Creator Toshua performs a spoken word piece directly to the camera in a white-walled room.",
+          "audio_description": "Toshua raps: 'It's been a while since I've done an Ahmed impression. I've got a confession to make, I'm getting tired. I asked him for a photo, it's taken so slow-mo. I'm a spoken word poet and I didn't even know it. All I want is an interaction...'",
+          "text_on_screen": "pov: Riz Ahmed interrupts you for a photo\nit's been a while\nAhmed impression I've got\nI'm getting tired I asked him for a photo\nit's taken so slow-mo\nI'm a spoken word poet and I didn't even know it\nall I want is an interaction",
+          "key_objects": ["black t-shirt", "white brick wall"]
+        },
+        {
+          "time_range": "0:11-0:25",
+          "visual_description": "Actor Riz Ahmed enters the frame, interrupting the performance to ask for a photo, mistakenly calling Toshua 'Vikkstar'.",
+          "audio_description": "Riz Ahmed: 'So sorry, if you're filming... sorry to interrupt. Can I get a photo of you bro? I'm a massive fan. I'm absolutely massive fan. Take a picture, take a picture, yeah. Vikkstar, yeah? You're sick man, Vikkstar!'",
+          "text_on_screen": "so sorry if you're filming\nsorry to interrupt can I get a photo\nI'm a massive fan I'm absolutely massive fan\ntake a picture\ntake a picture yeah\nVikkstar yeah?\nyou're sick man Vikkstar",
+          "key_objects": ["brown suede jacket", "smartphone"]
+        },
+        {
+          "time_range": "0:26-0:33",
+          "visual_description": "Riz Ahmed exits the frame and Toshua stares into the camera lens with a wide-eyed, confused expression.",
+          "audio_description": "Toshua: 'Bro, I think I got my confused face on.'",
+          "text_on_screen": "bro I think I got my confused face on",
+          "key_objects": []
+        }
+      ],
+      "overall_summary": "This comedic TikTok skit features creator Toshua and actor Riz Ahmed. While Toshua is performing a spoken word piece about wanting an interaction with 'Ahmed', Riz Ahmed himself walks into the frame and interrupts him. In a humorous twist, Riz Ahmed pretends to be a starstruck fan who mistakes Toshua for the famous YouTuber Vikkstar. The video serves as a promotional piece for Riz Ahmed's movie 'RELAY'.",
+      "people": [
+        {
+          "description": "South Asian male with long dark hair and a mustache, wearing a black t-shirt.",
+          "is_creator": true,
+          "speaking": true,
+          "identified_as": "Toshua"
+        },
+        {
+          "description": "Famous British-Pakistani actor wearing a brown suede jacket.",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "Riz Ahmed"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Riz Ahmed",
+          "display_name": "Riz Ahmed",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Toshua",
+          "display_name": "Toshua",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Vikkstar123",
+          "display_name": "Vikkstar (Vikram Singh Barn)",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["audio", "text_overlay"],
+          "specifications": "Sidemen member and YouTuber",
+          "confidence": 5
+        },
+        {
+          "name": "RELAY",
+          "display_name": "Relay (2024 Movie)",
+          "type": "movie_or_show",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "specifications": "Directed by David Mackenzie",
+          "confidence": 5
+        },
+        {
+          "name": "Bleecker Street",
+          "display_name": "Bleecker Street",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": "Film distribution company",
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Riz Ahmed is promoting his new film 'RELAY' through a collaborative comedy skit with TikTok creator Toshua.",
+          "source": "implied",
+          "confidence": 5
+        },
+        {
+          "statement": "The video uses the 'mistaken identity' trope, specifically referencing the physical resemblance between Toshua and YouTuber Vikkstar.",
+          "source": "audio",
+          "confidence": 5
+        }
+      ],
+      "structured_content": null,
+      "audio_identification": {
+        "actual_song": "Original Spoken Word Performance \u2014 Toshua",
+        "metadata_song": "original sound - toshua_",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The video is a clear promotional collaboration for the movie Relay."
+      },
+      "presentation_style": {
+        "primary_format": "skit",
+        "camera_work": "static",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Humorous, awkward, and energetic.",
+      "topic_hints": ["Movie Promotion", "Celebrity Cameo", "British Comedy"],
+      "affect_hints": ["Amused", "Surprised", "Confused"],
+      "genre_hints": ["Comedy Skit", "POV", "Promotional Content"]
+    },
+    "metrics": {
+      "input_tokens": 4441,
+      "output_tokens": 1600,
+      "cost_usd": 0.0010841,
+      "latency_ms": 21126,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "movies_tv",
+        "secondary": "comedy",
+        "micro_labels": [
+          "Celebrity Cameo",
+          "British Comedy",
+          "South Asian Diaspora",
+          "Movie Promotion"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "skit",
+        "micro_labels": ["POV", "Promotional Content"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "funny",
+          "tier": "dominant"
+        },
+        {
+          "label": "shocking",
+          "tier": "secondary"
+        },
+        {
+          "label": "cringe",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "passive_consumption",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Riz Ahmed",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Toshua",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Vikkstar123",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Relay",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "Bleecker Street",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Sidemen",
+          "type": "trend_or_meme",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A comedic promotional skit for the movie 'Relay' featuring actor Riz Ahmed and creator Toshua. Riz Ahmed interrupts Toshua's spoken word performance to ask for a photo, hilariously mistaking him for YouTuber Vikkstar.",
+      "embedding_text": "A comedic TikTok skit featuring creator Toshua and famous British-Pakistani actor Riz Ahmed. The video begins with Toshua performing a spoken word piece about wanting an interaction with Ahmed. Suddenly, Riz Ahmed himself walks into the frame, interrupting the performance. In a humorous twist of mistaken identity, Riz Ahmed acts like a starstruck fan and repeatedly calls Toshua 'Vikkstar', referencing the YouTuber Vikkstar123 from the Sidemen. The video is a promotional collaboration for Riz Ahmed's 2024 movie 'RELAY', distributed by Bleecker Street. It features on-screen text like 'pov: Riz Ahmed interrupts you for a photo' and 'Vikkstar yeah?'. The scene ends with Toshua looking confused at the camera. This content is a prime example of celebrity-influencer marketing and South Asian diaspora humor."
+    },
+    "metrics": {
+      "input_tokens": 4037,
+      "output_tokens": 801,
+      "cost_usd": 0.0007241000000000001,
+      "latency_ms": 6114
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "funny",
+      "topic": "movies_tv",
+      "genre": "skit",
+      "communicative_intent": "entertain",
+      "creator_role": "influencer",
+      "viewer_orientation": "passive_consumption",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

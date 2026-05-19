@@ -1,0 +1,337 @@
+{
+  "item_id": "7433550209214319903",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:10",
+          "visual_description": "Jon Stewart and Ezra Klein discuss the psychological weight of media in a split-screen and individual close-up format.",
+          "audio_description": "Stewart: 'In my experience, media has an effect. It has a weight, and it has an ability to warp perceptions.'",
+          "text_on_screen": "EZRA KLEIN OPINION COLUMNIST; \"In my experience, media has an effect. It has a weight, and it has an ability to warp perceptions.\"",
+          "key_objects": ["Headphones", "Microphone", "Laptop"]
+        },
+        {
+          "time_range": "0:10-0:32",
+          "visual_description": "Stewart critiques the 24-hour news cycle while Klein listens from a newsroom-style background.",
+          "audio_description": "Stewart argues that the 24-hour news cycle is only truly necessary for events like 9/11; otherwise, it must manufacture urgency.",
+          "text_on_screen": "Cable news, to me, was mind-blowing. Twenty-four hour news cycle is good for one thing, and that's 9/11. Like when 9/11 happens, you want that fucking station to be on all day... But in the absence of it, how are you going to keep people watching?",
+          "key_objects": ["Microphone", "Headphones"]
+        },
+        {
+          "time_range": "0:32-1:06",
+          "visual_description": "Stewart explains the 'contrived urgency' used by media to retain viewers, referencing historical news figures.",
+          "audio_description": "Stewart describes how news programs use fear-mongering tactics, like warning about 'dangers in your bathroom,' to keep 'eyeballs' on the screen.",
+          "text_on_screen": "Well, you have to, in some ways, impose kind of a contrived urgency or a fear. And it's nothing new. It's just a question of degrees. How many times, in the olden days of Roger Mudd and Eyewitness News it was, do you have children? Well, you won't believe the dangers in your bathroom.",
+          "key_objects": ["Headphones"]
+        },
+        {
+          "time_range": "1:06-1:16",
+          "visual_description": "A brief humorous exchange between Stewart and Klein regarding the 'classy' nature of the program.",
+          "audio_description": "Stewart asks if he can use a 'not safe for work' example; Klein jokingly asks if the previous content was considered 'PG.'",
+          "text_on_screen": "I'm going to use \u2014 may I use a not safe for work and somewhat tawdry example here, Ezra? Before now, this has all been safe for work? This has been your version of PG? This is a classy program.",
+          "key_objects": ["Microphone"]
+        },
+        {
+          "time_range": "1:16-1:54",
+          "visual_description": "Stewart uses an analogy about sexual desensitization to explain the need for escalating media extremes.",
+          "audio_description": "Stewart compares the evolution of media consumption to needing more extreme stimulation to get the same dopamine hit.",
+          "text_on_screen": "When I was a young man, I'm 13, 14 years old. If I got hold of a Sears catalog, and there was a picture of a woman in a bra in it, I was like, this is the most sexually exciting and arousing image. And as you get older, you get to like, that doesn't work on you anymore... You have to keep stimulating people further and further, to different extremities, to get that same hit of dopamine.",
+          "key_objects": ["Headphones"]
+        },
+        {
+          "time_range": "1:54-2:32",
+          "visual_description": "Stewart compares social media algorithms to the design of processed food.",
+          "audio_description": "Stewart explains that apps and media are scientifically designed to bypass the brain's 'stop' signals, much like addictive food.",
+          "text_on_screen": "And those apps and that media, especially now, are scientifically designed, purposefully, like the woman who was blowing the whistle on Facebook. Like our food is designed to escape that part of your brain that says I should stop eating right now. This is purposeful.",
+          "key_objects": ["Microphone"]
+        },
+        {
+          "time_range": "2:32-3:02",
+          "visual_description": "Stewart delivers his final thesis on the role of capitalism in societal division.",
+          "audio_description": "Stewart concludes that while political actors weaponize division, the primary driver is a capitalist business model that profits from outrage.",
+          "text_on_screen": "The way that we are divided as people, some of it is political and weaponized by political actors, but the majority of it is capitalism. Capitalism, with the idea of how do I generate the most income out of engagement? And it turns out, fear and anger and hate and outrage pay huge. The business model is creating an atmosphere of outrage and anger. OPINION",
+          "key_objects": ["Headphones"]
+        }
+      ],
+      "overall_summary": "In this interview clip from 'The Ezra Klein Show,' comedian Jon Stewart discusses how modern media and social media apps are engineered to polarize society. He argues that the 24-hour news cycle relies on 'contrived urgency' and fear to maintain viewership, comparing the constant need for more extreme content to a dopamine-driven addiction. Stewart's central thesis is that while political division exists, the primary driver of societal discord is a capitalist business model that prioritizes engagement\u2014and therefore profit\u2014through the promotion of outrage, anger, and hate.",
+      "people": [
+        {
+          "description": "Grey-haired man with glasses and a beard, wearing black headphones and a grey t-shirt.",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "Jon Stewart"
+        },
+        {
+          "description": "Man with dark hair and a beard, wearing black headphones and a blue polo shirt.",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "Ezra Klein"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Jon Stewart",
+          "display_name": "Jon Stewart",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "audio", "text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Ezra Klein",
+          "display_name": "Ezra Klein",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "audio", "text_overlay", "metadata"],
+          "specifications": "NYT Opinion Columnist",
+          "confidence": 5
+        },
+        {
+          "name": "The Ezra Klein Show",
+          "display_name": "The Ezra Klein Show",
+          "type": "podcast",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "New York Times Opinion",
+          "display_name": "NYT Opinion",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["metadata", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "9/11",
+          "display_name": "September 11 attacks",
+          "type": "event",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Roger Mudd",
+          "display_name": "Roger Mudd",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Broadcast journalist",
+          "confidence": 5
+        },
+        {
+          "name": "Eyewitness News",
+          "display_name": "Eyewitness News",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "News format",
+          "confidence": 4
+        },
+        {
+          "name": "Sears catalog",
+          "display_name": "Sears Catalog",
+          "type": "product",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Facebook",
+          "display_name": "Facebook",
+          "type": "app_or_tool",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Reference to whistleblower Frances Haugen",
+          "confidence": 4
+        },
+        {
+          "name": "Luciano Pavarotti",
+          "display_name": "Pavarotti",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Opera singer",
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Media has a significant ability to warp public perception through its inherent 'weight' and influence.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "The 24-hour news cycle is largely unnecessary outside of major crises and relies on manufactured fear to stay relevant.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Social media apps and modern media are scientifically designed to be addictive, similar to processed foods.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Capitalism, not just politics, is the primary driver of societal division because outrage is the most profitable form of engagement.",
+          "source": "voiceover",
+          "confidence": 5
+        }
+      ],
+      "structured_content": null,
+      "audio_identification": {
+        "actual_song": null,
+        "metadata_song": "original sound - nytopinion \u2014 New York Times Opinion",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "Dialogue is clear and speakers are well-known public figures."
+      },
+      "presentation_style": {
+        "primary_format": "talking_head",
+        "camera_work": "static",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Serious, intellectual, and analytical with moments of dry humor.",
+      "topic_hints": [
+        "Media Criticism",
+        "Political Polarization",
+        "Capitalism"
+      ],
+      "affect_hints": ["Thoughtful", "Cynical", "Concerned"],
+      "genre_hints": ["Interview", "Podcast", "Social Commentary"]
+    },
+    "metrics": {
+      "input_tokens": 17825,
+      "output_tokens": 2636,
+      "cost_usd": 0.0028369000000000003,
+      "latency_ms": 44639,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "politics",
+        "secondary": "news",
+        "micro_labels": [
+          "media criticism",
+          "capitalism",
+          "social media algorithms",
+          "polarization"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "interview",
+        "micro_labels": ["podcast clip", "political commentary"],
+        "confidence": 0.98
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "funny",
+          "tier": "secondary"
+        },
+        {
+          "label": "shocking",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "clip",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "persuade",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "brand",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Jon Stewart",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Ezra Klein",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "The Ezra Klein Show",
+          "type": "podcast",
+          "relevance": "primary"
+        },
+        {
+          "name": "New York Times Opinion",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "Facebook",
+          "type": "app_or_tool",
+          "relevance": "supporting"
+        },
+        {
+          "name": "9/11",
+          "type": "event",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Roger Mudd",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Sears catalog",
+          "type": "brand",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "Jon Stewart discusses the psychological weight of media and the 24-hour news cycle with Ezra Klein, arguing that media is engineered to warp perceptions. He concludes that societal division is primarily driven by a capitalist business model that profits from manufactured outrage and dopamine-driven engagement.",
+      "embedding_text": "In this interview clip from The Ezra Klein Show by NYT Opinion, comedian Jon Stewart provides a deep critique of modern media and the 24-hour news cycle. Stewart explains how media outlets use 'contrived urgency' and fear to maintain viewership, comparing the need for escalating extremes to a dopamine addiction. He discusses how social media apps like Facebook are scientifically designed to bypass the brain's 'stop' signals, much like processed food. Stewart's central thesis is that while political actors weaponize division, the primary driver of societal discord is a capitalist business model that prioritizes profit through the promotion of outrage, anger, and hate. The video features Jon Stewart and Ezra Klein in a split-screen talking-head format with on-screen text overlays of key quotes regarding media, capitalism, and polarization."
+    },
+    "metrics": {
+      "input_tokens": 4030,
+      "output_tokens": 852,
+      "cost_usd": 0.0007438,
+      "latency_ms": 6945
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "politics",
+      "genre": "interview",
+      "communicative_intent": "persuade",
+      "creator_role": "brand",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "clip"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

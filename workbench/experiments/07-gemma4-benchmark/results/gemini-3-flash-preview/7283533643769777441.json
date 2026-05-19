@@ -1,0 +1,285 @@
+{
+  "item_id": "7283533643769777441",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:04",
+          "visual_description": "A group of hikers treks through a dense, lush green forest trail on Mount Kilimanjaro.",
+          "audio_description": "Kilimanjaro is not a technical climb. It's actually a hike.",
+          "text_on_screen": "KILIMANJARO IS NOT A TECHNICAL CLIMB\nIT'S ACTUALLY A HIKE\nTHE BUCKETLISTER PODCAST",
+          "key_objects": ["backpacks", "hiking poles"]
+        },
+        {
+          "time_range": "0:04-0:08",
+          "visual_description": "Hikers walk out from under a wooden archway at the Marangu Gate starting point.",
+          "audio_description": "When people think of climbing a mountain, they have these images of harnesses and ropes...",
+          "text_on_screen": "WHEN PEOPLE THINK OF CLIMBING A MOUNTAIN\nTHEY HAVE THESE IMAGES OF HARNESSES AND ROPES\nTHE BUCKETLISTER PODCAST\nMARANGU GATE STARTING POINT WISHING YOU A GOOD CLIMB",
+          "key_objects": ["wooden sign", "hiking poles"]
+        },
+        {
+          "time_range": "0:08-0:13",
+          "visual_description": "A wide shot of a base camp area with several small huts and many hikers gathered under a bright sun.",
+          "audio_description": "...and ice axes and crampons. Kilimanjaro is definitely not like that.",
+          "text_on_screen": "AND ICE AXES AND CRAMPONS\nKILIMANJARO IS DEFINITELY NOT LIKE THAT\nTHE BUCKETLISTER PODCAST",
+          "key_objects": ["huts", "mountain gear"]
+        },
+        {
+          "time_range": "0:13-0:19",
+          "visual_description": "Hikers continue their journey along a dirt path surrounded by trees and vegetation.",
+          "audio_description": "Kilimanjaro does not require any technical skills and it is a walk up a mountain.",
+          "text_on_screen": "KILIMANJARO DOES NOT REQUIRE ANY TECHNICAL SKILLS\nAND IT IS A WALK UP A MOUNTAIN\nTHE BUCKETLISTER PODCAST",
+          "key_objects": ["OEX backpack"]
+        },
+        {
+          "time_range": "0:19-0:23",
+          "visual_description": "Close-up view from behind a hiker showing their backpack and Leki trekking poles as they move uphill.",
+          "audio_description": "So there are no special skills needed and there is no danger of falling off...",
+          "text_on_screen": "SO THERE ARE NO SPECIAL SKILLS NEEDED\nAND THERE IS NO DANGER OF FALLING OFF\nTHE BUCKETLISTER PODCAST",
+          "key_objects": ["Leki hiking poles", "backpack"]
+        },
+        {
+          "time_range": "0:23-0:29",
+          "visual_description": "The group hikes up a steep, grassy and rocky slope under a cloudy sky.",
+          "audio_description": "...or any of the other things that you see on some of the mountaineering films.",
+          "text_on_screen": "OR ANY OF THE OTHER THINGS THAT YOU SEE ON SOME OF THE MOUNTAINEERING FILMS\nTHE BUCKETLISTER PODCAST",
+          "key_objects": ["hiking gear"]
+        }
+      ],
+      "overall_summary": "This video clarifies common misconceptions about climbing Mount Kilimanjaro, explaining that it is a non-technical hike rather than a technical mountain climb. The narrator emphasizes that specialized equipment like harnesses, ropes, ice axes, and crampons are not required. Through a montage of hikers on various parts of the trail\u2014from lush forests to open rocky slopes\u2014the video illustrates that the journey is essentially a 'walk up a mountain' accessible to those without advanced mountaineering skills. The content serves as a promotional clip for 'The Bucketlister Podcast' by The Bucket List Company.",
+      "people": [
+        {
+          "description": "Various hikers of different ages and genders wearing outdoor trekking gear and carrying large backpacks.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": null
+        }
+      ],
+      "entities": [
+        {
+          "name": "Mount Kilimanjaro",
+          "display_name": "Mount Kilimanjaro",
+          "type": "place",
+          "relevance": "primary",
+          "source": ["visual", "audio", "text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "The Bucket List Company",
+          "display_name": "The Bucket List Company",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "The Bucketlister Podcast",
+          "display_name": "The Bucketlister Podcast",
+          "type": "podcast",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Marangu Gate",
+          "display_name": "Marangu Gate, Kilimanjaro",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Starting point for the Marangu route",
+          "confidence": 5
+        },
+        {
+          "name": "OEX",
+          "display_name": "OEX Outdoor Gear",
+          "type": "brand",
+          "relevance": "background",
+          "source": ["visual"],
+          "specifications": "Backpack brand",
+          "confidence": 4
+        },
+        {
+          "name": "Leki",
+          "display_name": "Leki Trekking Poles",
+          "type": "brand",
+          "relevance": "background",
+          "source": ["visual"],
+          "specifications": "Hiking pole brand",
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Mount Kilimanjaro is a high-altitude hike, not a technical climb requiring ropes or harnesses.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "No specialized mountaineering skills or equipment like ice axes and crampons are necessary for this trek.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "The climb is described as a 'walk up a mountain' without the extreme dangers often depicted in mountaineering films.",
+          "source": "voiceover",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Kilimanjaro Hike Type",
+            "details": "Non-technical, high-altitude trek"
+          },
+          {
+            "name": "Equipment Not Needed",
+            "details": "Harnesses, ropes, ice axes, crampons"
+          },
+          {
+            "name": "Required Skills",
+            "details": "No special technical mountaineering skills required"
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Ambient nature sounds and light background music with voiceover",
+        "metadata_song": "original sound - thebucketlistcompany \u2014 The Bucket List Company",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The location and brands are clearly visible and mentioned."
+      },
+      "presentation_style": {
+        "primary_format": "voiceover",
+        "camera_work": "handheld",
+        "editing_style": "montage"
+      },
+      "visual_mood": "Adventurous, scenic, and encouraging",
+      "topic_hints": [
+        "Mount Kilimanjaro trekking",
+        "Adventure travel",
+        "Hiking tips"
+      ],
+      "affect_hints": ["Inspired", "Reassured", "Adventurous"],
+      "genre_hints": ["Travel guide", "Educational"]
+    },
+    "metrics": {
+      "input_tokens": 4105,
+      "output_tokens": 2100,
+      "cost_usd": 0.0012505,
+      "latency_ms": 24164,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "travel",
+        "secondary": "nature",
+        "micro_labels": [
+          "hiking",
+          "mountain climbing",
+          "adventure travel",
+          "mountaineering"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "compilation",
+        "micro_labels": ["podcast clip", "travel montage"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["voiceover", "text_overlay", "cinematic"],
+      "content_provenance": {
+        "label": "clip",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "brand",
+        "confidence": 0.95
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Mount Kilimanjaro",
+          "type": "place",
+          "relevance": "primary"
+        },
+        {
+          "name": "The Bucket List Company",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "The Bucketlister Podcast",
+          "type": "podcast",
+          "relevance": "primary"
+        },
+        {
+          "name": "Marangu Gate",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "OEX Outdoor Gear",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Leki Trekking Poles",
+          "type": "brand",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "This video from The Bucket List Company clarifies that Mount Kilimanjaro is a non-technical hike rather than a technical climb requiring ropes or ice axes. It features footage of hikers at Marangu Gate and on various trails to illustrate that the journey is essentially a 'walk up a mountain' accessible to those without specialized mountaineering skills.",
+      "embedding_text": "A travel and adventure video from The Bucket List Company clarifying misconceptions about climbing Mount Kilimanjaro. The narrator from The Bucketlister Podcast explains that Kilimanjaro is not a technical climb requiring harnesses, ropes, ice axes, or crampons, but is instead a high-altitude hike or 'walk up a mountain.' The footage shows diverse hikers using Leki trekking poles and OEX backpacks while traversing lush forests and rocky slopes. Key locations shown include the Marangu Gate starting point and base camp huts. This content is ideal for those researching bucket list travel, hiking tips for Tanzania, or mountain trekking requirements. The video emphasizes that no special mountaineering skills are needed and there is no danger of falling off, contrasting it with extreme mountaineering films. On-screen text reinforces the message that Kilimanjaro is a hike, not a technical climb."
+    },
+    "metrics": {
+      "input_tokens": 4173,
+      "output_tokens": 788,
+      "cost_usd": 0.0007325,
+      "latency_ms": 5275
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "travel",
+      "genre": "compilation",
+      "communicative_intent": "inform",
+      "creator_role": "brand",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "voiceover",
+      "content_provenance": "clip"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

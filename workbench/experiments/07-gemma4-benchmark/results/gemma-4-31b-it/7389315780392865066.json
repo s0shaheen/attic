@@ -1,0 +1,327 @@
+{
+  "item_id": "7389315780392865066",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "A screenshot of an official AP score report for the 2024 school year.",
+          "text_detected": "2024 SCORES\nAP 2-D Art and Design\nWE DID IT YOU GUYS\nYOUR SCORE\n5\nMost U.S. colleges accept your score for credit and placement.\nFind College Credit\nAbout your score",
+          "primary_content": "AP Score: 5 in AP 2-D Art and Design",
+          "entities": [
+            {
+              "name": "AP 2-D Art and Design",
+              "type": "event",
+              "specifications": "Score: 5"
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "A painting of a child's handmade newspaper held by two hands.",
+          "text_detected": "ANKLE-Biter GaZetTe\nRecess- Wedzday, Nov. 2, 20-\nELECSHUN NEWS!\nT:MMY is CORRUPT!\nHe's a meanie. DON'T Vote For him! Chuze \"THE Kid\" insted!!!",
+          "primary_content": "Artwork: Satirical child's newspaper about corruption",
+          "entities": [
+            {
+              "name": "Ankle-Biter Gazette",
+              "type": "other",
+              "specifications": "fictional newspaper"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "A graphite pencil sketch of two children; a boy in a suit waving and a girl holding a book.",
+          "text_detected": "Bibble",
+          "primary_content": "Artwork: Pencil sketch of children in formal attire",
+          "entities": [
+            {
+              "name": "Bibble",
+              "type": "book",
+              "specifications": "misspelled version of Bible"
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "A mixed-media art piece inside a red and black tin. The lid features a painting of a stern child's face with two smiley faces. The bottom contains small pencil-stub figures in red seats.",
+          "text_detected": "",
+          "primary_content": "Artwork: 3D installation in a tin depicting a leader and followers",
+          "entities": []
+        },
+        {
+          "image_number": 5,
+          "description": "A painting of a young girl dressed as a judge, holding a gavel and pointing accusingly at a small figure in a hole.",
+          "text_detected": "",
+          "primary_content": "Artwork: Child as a judge",
+          "entities": []
+        },
+        {
+          "image_number": 6,
+          "description": "A black and white ink drawing of a man in a suit eating at a table with a woman, a human skull, and a painting of a money bag on the wall.",
+          "text_detected": "",
+          "primary_content": "Artwork: Ink drawing exploring themes of greed and mortality",
+          "entities": []
+        },
+        {
+          "image_number": 7,
+          "description": "A painting of a child in a striped prisoner outfit behind wooden bars, with a colorful playground in the background.",
+          "text_detected": "",
+          "primary_content": "Artwork: Child prisoner at a playground",
+          "entities": []
+        },
+        {
+          "image_number": 8,
+          "description": "A painting of two torn posters on a brick wall. One says 'DOWN WITH THE RICH' with a clown; the other says 'THE POOR ARE A THREAT' with a child holding a knife.",
+          "text_detected": "DOWN WITH THE RICH\nTHE POOR ARE A THREAT",
+          "primary_content": "Artwork: Political propaganda posters",
+          "entities": []
+        },
+        {
+          "image_number": 9,
+          "description": "A painting of a young girl in a dress and apron vacuuming a room. A TV shows a smiley face, and a nuclear mushroom cloud is visible through the window.",
+          "text_detected": "",
+          "primary_content": "Artwork: Domesticity contrasted with nuclear war",
+          "entities": []
+        },
+        {
+          "image_number": 10,
+          "description": "A painting of two large hands shaking over a battlefield. A dead body lies below, and a helicopter and explosions are in the background.",
+          "text_detected": "",
+          "primary_content": "Artwork: Political agreement over war and death",
+          "entities": []
+        }
+      ],
+      "overall_summary": "This post is a showcase of an artist's AP 2-D Art and Design portfolio, celebrating the achievement of a perfect score of 5. The artwork consistently explores the juxtaposition of childhood innocence with adult themes of corruption, class warfare, judicial power, and global conflict. The user is likely saving this as a reference for art style, thematic development, or as inspiration for their own AP Art portfolio.",
+      "carousel_type": "photo_dump",
+      "narrative_thread": "The sequence begins with the validation of the work (the score) and then reveals the specific pieces that comprise the portfolio, moving through various critiques of societal structures through the lens of childhood.",
+      "entities": [
+        {
+          "name": "AP 2-D Art and Design",
+          "display_name": "AP 2-D Art and Design Course",
+          "type": "event",
+          "relevance": "primary",
+          "source": ["visual", "metadata"],
+          "slide_number": 1,
+          "specifications": "Score: 5",
+          "confidence": 5
+        },
+        {
+          "name": "Prismacolor",
+          "display_name": "Prismacolor Art Supplies",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "slide_number": null,
+          "specifications": null,
+          "confidence": 4
+        },
+        {
+          "name": "Ian Asher",
+          "display_name": "Ian Asher",
+          "type": "artist",
+          "relevance": "background",
+          "source": ["metadata"],
+          "slide_number": null,
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The artist successfully uses childhood imagery to create a biting social commentary on adult corruption and systemic violence.",
+          "source": "implied",
+          "confidence": 5
+        },
+        {
+          "statement": "A score of 5 in AP 2-D Art and Design is achievable through a cohesive thematic portfolio with high technical skill across multiple mediums.",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "product_list",
+        "items": [
+          {
+            "name": "Ankle-Biter Gazette",
+            "details": "Painting of a child's satirical newspaper",
+            "slide_number": 2
+          },
+          {
+            "name": "Bibble Sketch",
+            "details": "Graphite drawing of children in formal wear",
+            "slide_number": 3
+          },
+          {
+            "name": "Leader Tin",
+            "details": "Mixed media installation in a tin",
+            "slide_number": 4
+          },
+          {
+            "name": "Child Judge",
+            "details": "Painting of a child as a judge with a gavel",
+            "slide_number": 5
+          },
+          {
+            "name": "Greed and Mortality",
+            "details": "Ink drawing with skull and money bag",
+            "slide_number": 6
+          },
+          {
+            "name": "Playground Prisoner",
+            "details": "Painting of a child in prison stripes",
+            "slide_number": 7
+          },
+          {
+            "name": "Class Propaganda",
+            "details": "Painting of 'Rich' vs 'Poor' posters",
+            "slide_number": 8
+          },
+          {
+            "name": "Nuclear Domesticity",
+            "details": "Painting of a girl vacuuming during a nuclear blast",
+            "slide_number": 9
+          },
+          {
+            "name": "War Handshake",
+            "details": "Painting of political agreement over a casualty",
+            "slide_number": 10
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "original sound - ianasher",
+        "metadata_song": "original sound - ianasher \u2014 Ian Asher",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All text and visual themes extracted accurately."
+      },
+      "presentation_style": {
+        "primary_format": "photo_dump",
+        "visual_style": "professional"
+      },
+      "visual_mood": "Unsettling, satirical, and conceptually heavy, contrasting bright 'childlike' colors with dark themes.",
+      "topic_hints": [
+        "AP Art Portfolio",
+        "Social Commentary",
+        "Childhood Innocence vs Corruption"
+      ],
+      "affect_hints": ["Intrigued", "Uncomfortable", "Impressed"],
+      "genre_hints": ["Art Portfolio", "Satire", "Educational Achievement"]
+    },
+    "metrics": {
+      "input_tokens": 3933,
+      "output_tokens": 2260,
+      "cost_usd": 0.0,
+      "latency_ms": 96187,
+      "video_uploaded": false,
+      "thoughts_tokens": 1008
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "art",
+        "secondary": "education",
+        "micro_labels": [
+          "AP Art and Design",
+          "social commentary",
+          "portfolio showcase",
+          "mixed media"
+        ],
+        "confidence": 1.0
+      },
+      "genre": {
+        "label": "compilation",
+        "micro_labels": ["portfolio"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "secondary"
+        },
+        {
+          "label": "funny",
+          "tier": "secondary"
+        },
+        {
+          "label": "shocking",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["slideshow"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.98
+      },
+      "communicative_intent": {
+        "label": "inspire",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "artist",
+        "confidence": 1.0
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "AP 2-D Art and Design",
+          "type": "event",
+          "relevance": "primary"
+        },
+        {
+          "name": "@phyllisia_art",
+          "type": "artist",
+          "relevance": "primary"
+        },
+        {
+          "name": "Prismacolor",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Ankle-Biter Gazette",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A showcase of @phyllisia_art's AP 2-D Art and Design portfolio, which earned a perfect score of 5. The artwork uses childhood imagery to critique adult themes like corruption, war, and class struggle.",
+      "embedding_text": "A photo dump by artist @phyllisia_art showcasing their AP 2-D Art and Design portfolio that received a score of 5. The collection features a variety of mixed-media pieces, including Prismacolor drawings and paintings, that juxtapose childhood innocence with dark societal themes. Key works include the 'Ankle-Biter Gazette' satirical newspaper, a child judge, and imagery of nuclear war and political corruption. This content serves as a high-scoring example of an AP Art portfolio, focusing on thematic cohesion and social commentary through visual art."
+    },
+    "metrics": {
+      "input_tokens": 4146,
+      "output_tokens": 677,
+      "cost_usd": 0.0,
+      "latency_ms": 40130,
+      "thoughts_tokens": 744
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "art",
+      "genre": "compilation",
+      "communicative_intent": "inspire",
+      "creator_role": "artist",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

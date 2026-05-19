@@ -1,0 +1,190 @@
+{
+  "item_id": "7498280610637663519",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A medium close-up shot of Pete Buttigieg. He is wearing a navy blue blazer over a white collared shirt and has a neatly trimmed beard. He is looking slightly off-camera with a serious expression. The background is a blurred indoor setting featuring a brick wall and a doorway.",
+      "text_on_screen": "Pete Buttigieg: No One Person Should Have Too Much Power",
+      "overall_summary": "This is a screenshot from a video, likely a podcast interview, featuring Pete Buttigieg discussing the importance of checks and balances in government. The user likely saved it as a political reference or a quote regarding democratic principles.",
+      "entities": [
+        {
+          "name": "Pete Buttigieg",
+          "display_name": "Pete Buttigieg",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Andrew Schulz",
+          "display_name": "Andrew Schulz",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 4
+        },
+        {
+          "name": "United States Government",
+          "display_name": "US Government",
+          "type": "cultural_reference",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Thomas Jefferson",
+          "display_name": "Thomas Jefferson",
+          "type": "person",
+          "relevance": "background",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 4
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "No single individual should possess excessive power within a government system.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": []
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "Entities are clearly identified through a combination of visual recognition, text overlays, and metadata hashtags."
+      },
+      "presentation_style": {
+        "primary_format": "screenshot",
+        "visual_style": "professional"
+      },
+      "scene_type": "indoor",
+      "visual_mood": "serious",
+      "topic_hints": [
+        "US Politics",
+        "Democratic Governance",
+        "Checks and Balances"
+      ],
+      "affect_hints": ["serious", "authoritative", "thoughtful"],
+      "genre_hints": ["political commentary", "podcast clip"]
+    },
+    "metrics": {
+      "input_tokens": 1319,
+      "output_tokens": 722,
+      "cost_usd": 0.0,
+      "latency_ms": 65004,
+      "video_uploaded": false,
+      "thoughts_tokens": 575
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "politics",
+        "secondary": "education",
+        "micro_labels": [
+          "US Politics",
+          "Democratic Governance",
+          "Checks and Balances",
+          "US Constitution"
+        ],
+        "confidence": 1.0
+      },
+      "genre": {
+        "label": "interview",
+        "micro_labels": ["podcast clip"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "neutral",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "clip",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "activist",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Pete Buttigieg",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "United States Government",
+          "type": "cultural_reference",
+          "relevance": "primary"
+        },
+        {
+          "name": "Andrew Schulz",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Thomas Jefferson",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "US Constitution",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Dream for America",
+          "type": "brand",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A clip from a podcast interview featuring Pete Buttigieg discussing the necessity of checks and balances in the US government. The user likely saved this as a reference for democratic principles and the prevention of concentrated power.",
+      "embedding_text": "A political commentary clip from a podcast interview featuring Pete Buttigieg, posted by @dreamforamerica_. In the video, Buttigieg discusses the importance of the US government's three branches and the principle that no one person should have too much power, emphasizing checks and balances. The content references democratic governance, the US Constitution, and mentions Thomas Jefferson and Andrew Schulz in the metadata. This is a professional talking-head style video with text overlay reading 'Pete Buttigieg: No One Person Should Have Too Much Power,' intended for those interested in US politics, civic education, and government structure."
+    },
+    "metrics": {
+      "input_tokens": 3186,
+      "output_tokens": 699,
+      "cost_usd": 0.0,
+      "latency_ms": 47855,
+      "thoughts_tokens": 999
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "politics",
+      "genre": "interview",
+      "communicative_intent": "inform",
+      "creator_role": "activist",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "clip"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

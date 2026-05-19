@@ -1,0 +1,368 @@
+{
+  "item_id": "7489113358906461483",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:02",
+          "visual_description": "Creator presents a flat-lay of a complete outfit intended for a professional dinner.",
+          "audio_description": "Upbeat mashup of 'LV Sandals' and 'Little Dark Age' begins.",
+          "text_on_screen": "Fit for the intern dinner",
+          "key_objects": [
+            "Barbour vest",
+            "Polo Ralph Lauren shirt",
+            "Wrangler jeans",
+            "Cowboy boots"
+          ]
+        },
+        {
+          "time_range": "0:02-0:04",
+          "visual_description": "Close-up shots of accessories including a watch, a Ford Mustang key fob, and a wallet with an American Express card.",
+          "audio_description": "Music continues with rhythmic beats.",
+          "text_on_screen": "",
+          "key_objects": [
+            "Ford Mustang key fob",
+            "American Express card",
+            "Braided leather belt",
+            "Silver watch"
+          ]
+        },
+        {
+          "time_range": "0:04-0:06",
+          "visual_description": "Detailed view of the Polo Ralph Lauren striped shirt layered under a Barbour quilted vest.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "",
+          "key_objects": ["Polo Ralph Lauren shirt", "Barbour vest"]
+        },
+        {
+          "time_range": "0:06-0:07",
+          "visual_description": "Reaction clip of Matthew McConaughey as Mark Hanna from 'The Wolf of Wall Street' smiling approvingly.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "",
+          "key_objects": ["Matthew McConaughey"]
+        },
+        {
+          "time_range": "0:07-0:09",
+          "visual_description": "Showcase of two Creed fragrances: Silver Mountain Water and Aventus.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "",
+          "key_objects": ["Creed Silver Mountain Water", "Creed Aventus"]
+        },
+        {
+          "time_range": "0:09-0:11",
+          "visual_description": "Close-up of worn-in brown leather cowboy boots.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "",
+          "key_objects": ["Leather cowboy boots"]
+        },
+        {
+          "time_range": "0:11-0:12",
+          "visual_description": "Focus on the Barbour brand label inside the vest.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "",
+          "key_objects": ["Barbour tag"]
+        },
+        {
+          "time_range": "0:12-0:16",
+          "visual_description": "Wide shot of the entire ensemble laid out on a bed.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "",
+          "key_objects": ["Full outfit"]
+        },
+        {
+          "time_range": "0:16-0:17",
+          "visual_description": "Clip of Leonardo DiCaprio as Jordan Belfort from 'The Wolf of Wall Street' during his 'I'm not leaving' speech.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "",
+          "key_objects": ["Leonardo DiCaprio"]
+        },
+        {
+          "time_range": "0:17-0:20",
+          "visual_description": "Final close-up of the shirt and vest collar details.",
+          "audio_description": "Music fades out.",
+          "text_on_screen": "",
+          "key_objects": ["Polo Ralph Lauren label", "Barbour vest"]
+        }
+      ],
+      "overall_summary": "This video is a fast-paced outfit showcase (flat-lay style) for an 'intern dinner,' leaning heavily into the 'finance bro' or 'old money' aesthetic. The creator displays a curated selection of high-end items including a Barbour quilted vest, a Polo Ralph Lauren button-down, Wrangler jeans, and Creed fragrances. Interspersed clips from 'The Wolf of Wall Street' reinforce the theme of corporate ambition and success. The main takeaway is a recommendation for a specific, polished look for professional networking events.",
+      "people": [
+        {
+          "description": "Matthew McConaughey as Mark Hanna in The Wolf of Wall Street",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Matthew McConaughey"
+        },
+        {
+          "description": "Leonardo DiCaprio as Jordan Belfort in The Wolf of Wall Street",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Leonardo DiCaprio"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Barbour",
+          "display_name": "Barbour Quilted Vest",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["visual", "metadata"],
+          "specifications": "Size S",
+          "confidence": 5
+        },
+        {
+          "name": "Polo Ralph Lauren",
+          "display_name": "Polo Ralph Lauren Striped Shirt",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["visual", "metadata"],
+          "specifications": "Classic Fit",
+          "confidence": 5
+        },
+        {
+          "name": "Creed",
+          "display_name": "Creed Fragrances",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["visual", "metadata"],
+          "specifications": "Silver Mountain Water and Aventus",
+          "confidence": 5
+        },
+        {
+          "name": "Wrangler",
+          "display_name": "Wrangler Jeans",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Light wash denim",
+          "confidence": 5
+        },
+        {
+          "name": "Ford",
+          "display_name": "Ford Mustang Key Fob",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Mustang logo visible",
+          "confidence": 5
+        },
+        {
+          "name": "American Express",
+          "display_name": "American Express Card",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Visible in wallet",
+          "confidence": 5
+        },
+        {
+          "name": "The Wolf of Wall Street",
+          "display_name": "The Wolf of Wall Street (2013)",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "lv sandals x little dark age \u2014 mc cece",
+          "display_name": "LV Sandals x Little Dark Age Mashup",
+          "type": "song",
+          "relevance": "primary",
+          "source": ["audio", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Dressing in classic, high-end brands like Barbour and Ralph Lauren is a strategy for fitting into corporate/finance environments.",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "product_list",
+        "items": [
+          {
+            "name": "Barbour Quilted Vest",
+            "details": "Olive green, size Small"
+          },
+          {
+            "name": "Polo Ralph Lauren Shirt",
+            "details": "Blue and white striped, button-down, classic fit"
+          },
+          {
+            "name": "Wrangler Jeans",
+            "details": "Light wash denim"
+          },
+          {
+            "name": "Creed Silver Mountain Water",
+            "details": "Fragrance"
+          },
+          {
+            "name": "Creed Aventus",
+            "details": "Fragrance"
+          },
+          {
+            "name": "Brown Leather Cowboy Boots",
+            "details": "Worn-in aesthetic"
+          },
+          {
+            "name": "Braided Leather Belt",
+            "details": "Brown leather"
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "LV Sandals (MC Cece) x Little Dark Age (MGMT) Mashup",
+        "metadata_song": "lv sandals x little dark age \u2014 mc cece",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "All brands and movie clips are clearly identifiable."
+      },
+      "presentation_style": {
+        "primary_format": "outfit_showcase",
+        "camera_work": "static",
+        "editing_style": "montage"
+      },
+      "visual_mood": "Ambitious, clean, and aspirational with a touch of corporate humor.",
+      "topic_hints": [
+        "Men's Fashion",
+        "Corporate Culture",
+        "Finance Bro Aesthetic"
+      ],
+      "affect_hints": ["Confident", "Ambitious", "Polished"],
+      "genre_hints": ["Outfit of the Day (OOTD)", "Aesthetic Edit"]
+    },
+    "metrics": {
+      "input_tokens": 3365,
+      "output_tokens": 2449,
+      "cost_usd": 0.0013161,
+      "latency_ms": 24993,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "fashion",
+        "secondary": "career",
+        "micro_labels": [
+          "menswear",
+          "finance bro aesthetic",
+          "old money style",
+          "corporate fashion",
+          "preppy style"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "outfit_showcase",
+        "micro_labels": ["flat-lay", "fit check"],
+        "confidence": 1.0
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "funny",
+          "tier": "secondary"
+        },
+        {
+          "label": "satisfying",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["text_overlay", "mixed"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Barbour Quilted Vest",
+          "type": "clothing",
+          "relevance": "primary"
+        },
+        {
+          "name": "Polo Ralph Lauren Striped Shirt",
+          "type": "clothing",
+          "relevance": "primary"
+        },
+        {
+          "name": "Creed Aventus",
+          "type": "product",
+          "relevance": "primary"
+        },
+        {
+          "name": "Creed Silver Mountain Water",
+          "type": "product",
+          "relevance": "primary"
+        },
+        {
+          "name": "Wrangler Jeans",
+          "type": "clothing",
+          "relevance": "supporting"
+        },
+        {
+          "name": "The Wolf of Wall Street",
+          "type": "movie_or_show",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Ford Mustang",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "American Express",
+          "type": "brand",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A curated 'finance bro' outfit showcase for a professional intern dinner, featuring a Barbour vest, Polo Ralph Lauren shirt, and Creed fragrances. The video uses clips from The Wolf of Wall Street to lean into corporate ambition and 'old money' aesthetics.",
+      "embedding_text": "This TikTok by @highsocietystyles features a flat-lay outfit showcase titled 'Fit for the intern dinner.' The ensemble includes a Barbour quilted vest, a Polo Ralph Lauren striped button-down shirt, light wash Wrangler jeans, and brown leather cowboy boots. Accessories shown include a Ford Mustang key fob, an American Express card, a silver watch, and a braided leather belt. The creator also recommends Creed fragrances, specifically Silver Mountain Water and Aventus. The video is edited with clips of Matthew McConaughey and Leonardo DiCaprio from the movie The Wolf of Wall Street, emphasizing a high-achieving corporate or finance aesthetic. It serves as style inspiration for professional networking and corporate internships, blending classic prep with 'old money' and 'finance bro' fashion trends. The audio features a mashup of 'LV Sandals' and 'Little Dark Age'."
+    },
+    "metrics": {
+      "input_tokens": 4203,
+      "output_tokens": 876,
+      "cost_usd": 0.0007707,
+      "latency_ms": 7142
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "fashion",
+      "genre": "outfit_showcase",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

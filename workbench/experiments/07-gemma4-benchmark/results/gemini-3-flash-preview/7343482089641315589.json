@@ -1,0 +1,254 @@
+{
+  "item_id": "7343482089641315589",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": [
+      {
+        "scene_timeline": [
+          {
+            "time_range": "0:00-0:05",
+            "visual_description": "Creator introduces a solution for kitchen odors while a woman cooks in the background of a modern kitchen.",
+            "audio_description": "If you're cooking up a stinky meal tonight like we are, let me introduce you to something.",
+            "text_on_screen": "",
+            "key_objects": ["lighter", "kitchen island"]
+          },
+          {
+            "time_range": "0:05-0:14",
+            "visual_description": "Close-up of a clear glass Lampe Berger; creator removes the cap and lights the ceramic burner with a long-reach lighter.",
+            "audio_description": "This is a Lampe Berger. Just gotta take that off, light it up, let it go for two minutes.",
+            "text_on_screen": "",
+            "key_objects": ["Lampe Berger", "lighter"]
+          },
+          {
+            "time_range": "0:14-0:40",
+            "visual_description": "Creator blows out the flame and points to the ceramic burner, explaining how the alcohol-based scent diffuses.",
+            "audio_description": "So once two minutes is up, you just gotta blow it out and then this ceramic piece that we were just burning, it's gonna start emitting the alcohol-based scent in there. This one's Ocean Breeze. Very, very yummy.",
+            "text_on_screen": "",
+            "key_objects": ["Lampe Berger ceramic burner"]
+          },
+          {
+            "time_range": "0:40-0:47",
+            "visual_description": "Creator places the decorative silver cap back on the lamp and gives a thumbs up to the camera.",
+            "audio_description": "And I gotta say, this makes the best housewarming gift. Ciao!",
+            "text_on_screen": "",
+            "key_objects": ["Lampe Berger decorative cap"]
+          }
+        ],
+        "overall_summary": "The creator demonstrates how to use a Lampe Berger to eliminate strong cooking odors in a home. He walks through the specific steps of lighting the ceramic burner, letting it burn for two minutes, and then blowing it out to allow the alcohol-based fragrance to diffuse. He specifically recommends the 'Ocean Breeze' scent and suggests the product as an ideal housewarming gift.",
+        "people": [
+          {
+            "description": "Asian male wearing a green 'Hanalei Backdoor Surf' long-sleeve shirt, acting as the presenter.",
+            "is_creator": true,
+            "speaking": true,
+            "identified_as": null
+          }
+        ],
+        "entities": [
+          {
+            "name": "Lampe Berger",
+            "display_name": "Lampe Berger Fragrance Lamp",
+            "type": "product",
+            "relevance": "primary",
+            "source": ["visual", "audio"],
+            "specifications": "Alcohol-based catalytic lamp",
+            "confidence": 5
+          },
+          {
+            "name": "Maison Berger Paris",
+            "display_name": "Maison Berger Paris",
+            "type": "brand",
+            "relevance": "supporting",
+            "source": ["inferred"],
+            "specifications": null,
+            "confidence": 5
+          },
+          {
+            "name": "Ocean Breeze",
+            "display_name": "Ocean Breeze Scent",
+            "type": "product",
+            "relevance": "supporting",
+            "source": ["audio"],
+            "specifications": "Alcohol-based fragrance",
+            "confidence": 5
+          },
+          {
+            "name": "Hanalei Backdoor Surf",
+            "display_name": "Hanalei Backdoor Surf",
+            "type": "brand",
+            "relevance": "background",
+            "source": ["visual"],
+            "specifications": "Apparel brand on creator's shirt",
+            "confidence": 4
+          }
+        ],
+        "takeaways": [
+          {
+            "statement": "A Lampe Berger is an effective tool for neutralizing strong household odors, particularly from cooking.",
+            "source": "demonstration",
+            "confidence": 5
+          },
+          {
+            "statement": "The lamp requires a specific two-minute burn time before blowing out the flame to activate the catalytic diffusion.",
+            "source": "voiceover",
+            "confidence": 5
+          },
+          {
+            "statement": "Lampe Berger products make excellent housewarming gifts.",
+            "source": "voiceover",
+            "confidence": 4
+          }
+        ],
+        "structured_content": {
+          "type": "instructions",
+          "items": [
+            {
+              "name": "Remove Caps",
+              "details": "Take off the decorative silver cap and the small solid extinguishing cap."
+            },
+            {
+              "name": "Light the Burner",
+              "details": "Use a lighter to ignite the ceramic burner at the top of the wick."
+            },
+            {
+              "name": "Timed Burn",
+              "details": "Allow the flame to burn for exactly two minutes."
+            },
+            {
+              "name": "Extinguish Flame",
+              "details": "Blow out the flame; the ceramic burner will remain hot and begin diffusing scent."
+            },
+            {
+              "name": "Replace Decorative Cap",
+              "details": "Put the vented decorative cap back on to allow the fragrance to spread safely."
+            }
+          ]
+        },
+        "audio_identification": {
+          "actual_song": "original sound - rinselab",
+          "metadata_song": "original sound - rinselab \u2014 rinselab",
+          "match": true
+        },
+        "extraction_confidence": {
+          "entities_complete": 5,
+          "audio_identified": true,
+          "notes": "Product and brand are clearly identified and demonstrated."
+        },
+        "presentation_style": {
+          "primary_format": "tutorial_demo",
+          "camera_work": "handheld",
+          "editing_style": "jump_cuts"
+        },
+        "visual_mood": "Informative, casual, and helpful home environment.",
+        "topic_hints": ["Home Fragrance", "Kitchen Hacks", "Gift Ideas"],
+        "affect_hints": ["Enthusiastic", "Practical", "Satisfied"],
+        "genre_hints": ["Home & Lifestyle", "Product Review"]
+      }
+    ],
+    "metrics": {
+      "input_tokens": 5663,
+      "output_tokens": 1580,
+      "cost_usd": 0.0011983000000000002,
+      "latency_ms": 25297,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "diy",
+        "secondary": "food",
+        "micro_labels": [
+          "home fragrance",
+          "kitchen hacks",
+          "odor elimination",
+          "home maintenance"
+        ],
+        "confidence": 0.9
+      },
+      "genre": {
+        "label": "tutorial",
+        "micro_labels": ["how-to", "product demonstration"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["talking_head", "voiceover"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Lampe Berger",
+          "type": "product",
+          "relevance": "primary"
+        },
+        {
+          "name": "Maison Berger Paris",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "Ocean Breeze Scent",
+          "type": "product",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Hanalei Backdoor Surf",
+          "type": "clothing",
+          "relevance": "supporting"
+        },
+        {
+          "name": "catalytic lamp",
+          "type": "technique",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "Creator @rinselab demonstrates how to use a Lampe Berger catalytic lamp to effectively eliminate strong kitchen and cooking odors. The video provides a step-by-step guide on lighting the ceramic burner, timing the burn, and diffusing the 'Ocean Breeze' fragrance, while recommending it as a housewarming gift.",
+      "embedding_text": "A home fragrance tutorial by @rinselab demonstrating how to use a Lampe Berger (Maison Berger Paris) catalytic lamp to neutralize strong household odors, specifically from cooking in the kitchen. The creator walks through the specific instructions: removing the decorative and extinguishing caps, lighting the ceramic burner with a long-reach lighter, allowing it to burn for exactly two minutes, blowing out the flame, and replacing the vented silver cap to diffuse the alcohol-based scent. He highlights the 'Ocean Breeze' fragrance and suggests the product as a high-quality housewarming gift. The video features an Asian male presenter in a green Hanalei Backdoor Surf long-sleeve shirt in a modern kitchen environment. This content is ideal for users looking for home hacks, odor removal tips, or gift ideas for new homeowners."
+    },
+    "metrics": {
+      "input_tokens": 3990,
+      "output_tokens": 736,
+      "cost_usd": 0.0006934,
+      "latency_ms": 6343
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "diy",
+      "genre": "tutorial",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "item_id": "7512625786642353454",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:12",
+          "visual_description": "Creator sits in his car and introduces the strategy for negotiating car prices with dealerships.",
+          "audio_description": "Creator explains that you should start with a phone call to build rapport before transitioning to text for written documentation.",
+          "text_on_screen": "GETTING THE OUT THE DOOR PRICE FROM DEALERSHIP",
+          "key_objects": ["iPhone", "Baseball cap", "Car interior"]
+        },
+        {
+          "time_range": "0:12-0:40",
+          "visual_description": "Creator records a live phone call with a dealership salesperson while holding his phone.",
+          "audio_description": "Creator asks about stock number 6410016. The salesperson confirms it is available and asks if he is in Minnesota. He says he is in Washington.",
+          "text_on_screen": "Reply to Melissa | SAHM of Both \ud83d\udc99\ud83e\ude77\ud83d\udc99 comment: How do you ask for this list of prices? Like the full breakdown of this all? Can you do an example call/text/email?",
+          "key_objects": ["iPhone"]
+        },
+        {
+          "time_range": "0:40-1:25",
+          "visual_description": "Creator continues the phone conversation, focusing on the financial breakdown.",
+          "audio_description": "Creator asks for the total price including taxes and fees. They discuss out-of-state financing and wire transfers.",
+          "text_on_screen": "Reply to Melissa | SAHM of Both \ud83d\udc99\ud83e\ude77\ud83d\udc99 comment: How do you ask for this list of prices? Like the full breakdown of this all? Can you do an example call/text/email?",
+          "key_objects": []
+        },
+        {
+          "time_range": "1:25-2:08",
+          "visual_description": "Creator listens as the salesperson calculates the final price.",
+          "audio_description": "Salesperson quotes a wire transfer price of $59,272, which includes a $295 doc fee. Creator confirms there are no hidden fees or add-ons.",
+          "text_on_screen": "59,272 UM",
+          "key_objects": []
+        },
+        {
+          "time_range": "2:08-3:38",
+          "visual_description": "Creator wraps up the call by requesting the quote in writing.",
+          "audio_description": "Creator asks for the numbers in writing via text to show his son. Salesperson agrees and mentions a $2,000 non-refundable deposit to hold the vehicle.",
+          "text_on_screen": "Reply to Melissa | SAHM of Both \ud83d\udc99\ud83e\ude77\ud83d\udc99 comment: How do you ask for this list of prices? Like the full breakdown of this all? Can you do an example call/text/email?",
+          "key_objects": []
+        },
+        {
+          "time_range": "3:38-3:44",
+          "visual_description": "Branding outro with a dark, digital background.",
+          "audio_description": "Music fades out.",
+          "text_on_screen": "THE FUTURE OF CAR BUYING By TRUE PRICE www.truepriceauto.com",
+          "key_objects": ["True Price Logo"]
+        }
+      ],
+      "overall_summary": "This video features a car buying expert demonstrating how to successfully negotiate an 'out-the-door' price with a dealership. The creator emphasizes starting with a phone call to build rapport with the salesperson before moving to text or email to ensure all pricing is documented in writing. He records a live example call where he obtains a full price breakdown for a truck, confirms the absence of hidden fees, and arranges for a written quote, providing a clear blueprint for consumers to follow.",
+      "people": [
+        {
+          "description": "Male creator with glasses and a baseball cap, sitting in a car, providing car buying advice.",
+          "is_creator": true,
+          "speaking": true,
+          "identified_as": null
+        },
+        {
+          "description": "Female dealership salesperson providing pricing information over the phone.",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "Barnett representative"
+        }
+      ],
+      "entities": [
+        {
+          "name": "True Price Auto",
+          "display_name": "True Price Auto",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "specifications": "www.truepriceauto.com",
+          "confidence": 5
+        },
+        {
+          "name": "Barnett",
+          "display_name": "Barnett Dealership",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 4
+        },
+        {
+          "name": "Minnesota",
+          "display_name": "Minnesota",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Washington",
+          "display_name": "Washington State",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Comfortable Life \u2014 Ficki Nugraha",
+          "display_name": "Comfortable Life \u2014 Ficki Nugraha",
+          "type": "song",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Always start with a phone call to build rapport and excitement with a car salesperson before moving to text.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Transition to text or email for the final price breakdown to ensure you have everything in writing.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Ask specifically for the 'out-the-door' price to uncover all taxes, doc fees, and potential hidden charges.",
+          "source": "demonstration",
+          "confidence": 5
+        },
+        {
+          "statement": "Out-of-state buyers should be prepared to handle tax and registration in their home state and may need to use wire transfers.",
+          "source": "audio",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "instructions",
+        "items": [
+          {
+            "name": "Step 1: Phone Call",
+            "details": "Call the dealership to build rapport and confirm vehicle availability (e.g., Stock #6410016)."
+          },
+          {
+            "name": "Step 2: Request Breakdown",
+            "details": "Ask for the full breakdown of the sales price, taxes, and fees."
+          },
+          {
+            "name": "Step 3: Confirm Fees",
+            "details": "Explicitly ask if there are any hidden fees, add-ons, or agendas."
+          },
+          {
+            "name": "Step 4: Transition to Text",
+            "details": "Request the final numbers and window sticker be sent via text for written documentation."
+          },
+          {
+            "name": "Step 5: Secure Vehicle",
+            "details": "Be prepared for a non-refundable deposit (e.g., $2,000) if you need to hold the car while arranging payment."
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Comfortable Life \u2014 Ficki Nugraha",
+        "metadata_song": "Comfortable Life \u2014 Ficki Nugraha",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": null
+      },
+      "presentation_style": {
+        "primary_format": "tutorial_demo",
+        "camera_work": "static",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Informative, practical, and transparent.",
+      "topic_hints": [
+        "Car buying tips",
+        "Negotiation strategy",
+        "Automotive finance"
+      ],
+      "affect_hints": ["Empowered", "Informed", "Confident"],
+      "genre_hints": ["Educational", "How-to", "Consumer Advice"]
+    },
+    "metrics": {
+      "input_tokens": 21494,
+      "output_tokens": 2116,
+      "cost_usd": 0.0029958000000000003,
+      "latency_ms": 41830,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "automotive",
+        "secondary": "finance",
+        "micro_labels": [
+          "car buying",
+          "negotiation tactics",
+          "dealership pricing",
+          "out-the-door price"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "tutorial",
+        "micro_labels": ["demonstration", "how-to"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["talking_head", "voiceover"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "professional",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Billy the Car Kid",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "True Price Auto",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "Barnett Dealership",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Minnesota",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Washington State",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Out-the-door price",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "Car negotiation",
+          "type": "technique",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "Car buying expert Billy the Car Kid demonstrates how to negotiate an 'out-the-door' price by recording a live call with a dealership. He teaches viewers to build rapport over the phone before requesting a full written breakdown via text to avoid hidden fees and dealer add-ons.",
+      "embedding_text": "A car buying tutorial by expert Billy the Car Kid (@billythecarkid) demonstrating how to successfully negotiate an 'out-the-door' price with a dealership. The video features a live recorded phone call between the creator and a representative from Barnett Dealership regarding a vehicle (stock number 6410016). The creator explains a specific strategy: start with a phone call to build rapport and excitement, then transition to text or email to get the final price breakdown in writing. The discussion covers taxes, doc fees, out-of-state wire transfers between Minnesota and Washington, and avoiding hidden dealer add-ons. This informative content from True Price Auto (truepriceauto.com) is designed for consumers looking for car buying secrets, dealership negotiation tips, and transparent vehicle pricing documentation."
+    },
+    "metrics": {
+      "input_tokens": 4203,
+      "output_tokens": 802,
+      "cost_usd": 0.0007411000000000001,
+      "latency_ms": 8825
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "automotive",
+      "genre": "tutorial",
+      "communicative_intent": "inform",
+      "creator_role": "professional",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

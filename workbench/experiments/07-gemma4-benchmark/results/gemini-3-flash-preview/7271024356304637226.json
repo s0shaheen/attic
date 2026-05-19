@@ -1,0 +1,423 @@
+{
+  "item_id": "7271024356304637226",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": [
+      {
+        "scene_timeline": [
+          {
+            "time_range": "0:00-0:03",
+            "visual_description": "The creator and two friends walk down a residential Amsterdam street towards the camera.",
+            "audio_description": "If you're going to Amsterdam, this is how you spend the perfect 24 hours in the city.",
+            "text_on_screen": "The perfect 24 hours in AMSTERDAM",
+            "key_objects": ["sunglasses", "crossbody bag"]
+          },
+          {
+            "time_range": "0:03-0:06",
+            "visual_description": "The group eats brunch at an outdoor cafe table with pancakes and burgers.",
+            "audio_description": "We woke up and walked to get brunch. Not gonna lie, this place was mid, so do your research before.",
+            "text_on_screen": "the breakfast club",
+            "key_objects": ["pancakes", "burger", "fries"]
+          },
+          {
+            "time_range": "0:06-0:16",
+            "visual_description": "Montage of a large outdoor flea market featuring racks of vintage clothes and sunglasses.",
+            "audio_description": "After that, we headed over to this flea market, and this is a must-see. This place had everything: glasses, jewelry, their denim selection was actually insane.",
+            "text_on_screen": "Waterlooplein Market \ud83d\udccd",
+            "key_objects": ["vintage clothing", "sunglasses", "denim jackets"]
+          },
+          {
+            "time_range": "0:16-0:22",
+            "visual_description": "Interior of a thrift store where the creator looks at a pinstripe blazer.",
+            "audio_description": "Then we went to this place called Kilo Store. It's basically this giant thrift shop, but they price everything off weight. I still regret not getting this jacket.",
+            "text_on_screen": "Kilo Store \ud83d\udccd",
+            "key_objects": ["Twinlife Masters jacket", "leather jackets"]
+          },
+          {
+            "time_range": "0:22-0:26",
+            "visual_description": "The group rents red bicycles from a rental shop.",
+            "audio_description": "Then you have to rent bikes. We went to this place called MacBike, and it was super smooth and easy.",
+            "text_on_screen": "MacBike Rental \ud83d\udccd",
+            "key_objects": ["red bicycles"]
+          },
+          {
+            "time_range": "0:26-0:38",
+            "visual_description": "The group visits the Heineken brewery, pours beers, and cheers with glasses.",
+            "audio_description": "We rode our bikes to the Heineken brewery and did the Heineken Experience. Here's a pro-tip: the tour isn't that cool, but they give you drink tokens to use at this bar at the end of the tour, and a bunch of people don't want their tokens, so you end up getting like 6 or 7 beers per person for the price of one.",
+            "text_on_screen": "HEINEKEN BROUWERY",
+            "key_objects": ["Heineken beer", "Budweiser t-shirt", "beer tap"]
+          },
+          {
+            "time_range": "0:38-0:44",
+            "visual_description": "The group eats at a crowded indoor food hall.",
+            "audio_description": "After that, we're feeling good, hop back on the bikes, and we biked to Foodhallen. This is a giant food market with a bunch of different styles of cuisine. All of it's really good.",
+            "text_on_screen": "Foodhallen \ud83d\udccd",
+            "key_objects": ["avocado salad", "tacos"]
+          },
+          {
+            "time_range": "0:44-0:48",
+            "visual_description": "Close up of a cup of pink and white gelato.",
+            "audio_description": "And then we got gelato at Massimo Gelato. Really good, definitely go.",
+            "text_on_screen": "MASSIMO GELATO",
+            "key_objects": ["gelato"]
+          },
+          {
+            "time_range": "0:48-0:53",
+            "visual_description": "Cinematic shots of the Amsterdam canals at sunset with a boat passing by.",
+            "audio_description": "Then we're back on the bikes, biking over to the canals to catch the sunset. Everything here looks like a movie set. It's ridiculous.",
+            "text_on_screen": "",
+            "key_objects": ["canal boat", "bridge"]
+          },
+          {
+            "time_range": "0:53-1:05",
+            "visual_description": "The group enters an ice bar, wears parkas, and drinks from ice glasses.",
+            "audio_description": "Once the sun is down, get changed and we're heading to an ice bar. I'm gonna be honest again: this looks way doper on camera than it is in person. It's kind of one of those things you have to do just to say that you did it, but like, it's freezing cold, you don't wanna spend a lot of time in there.",
+            "text_on_screen": "ICEBAR",
+            "key_objects": ["ice glasses", "parkas", "vodka bottles"]
+          },
+          {
+            "time_range": "1:05-1:11",
+            "visual_description": "The group dances in a dark nightclub with green lasers and a DJ.",
+            "audio_description": "And then to cap the night off, you have to explore the nightlife. We hit a bunch of different bars and clubs, but this one's called Escape, and I would definitely recommend.",
+            "text_on_screen": "Escape \ud83d\udccd",
+            "key_objects": ["DJ deck", "lasers"]
+          }
+        ],
+        "overall_summary": "The creator provides a comprehensive 24-hour travel guide for Amsterdam, highlighting a mix of popular tourist spots and personal recommendations. The day includes brunch, vintage shopping at Waterlooplein Market and Kilo Store, and renting bikes from MacBike to navigate the city. Key activities featured are the Heineken Experience (with a tip for extra beer), dining at Foodhallen, and visiting the Amsterdam Icebar and Escape nightclub. The video maintains an honest tone, critiquing some spots as 'mid' or better on camera than in person while praising the city's aesthetic and food scene.",
+        "people": [
+          {
+            "description": "Young male creator with short dark hair and light eyes, wearing a white t-shirt and sunglasses.",
+            "is_creator": true,
+            "speaking": true,
+            "identified_as": null
+          },
+          {
+            "description": "Young male friend with short brown hair, wearing a green t-shirt.",
+            "is_creator": false,
+            "speaking": false,
+            "identified_as": null
+          },
+          {
+            "description": "Young male friend with dark hair, wearing a white Budweiser t-shirt.",
+            "is_creator": false,
+            "speaking": false,
+            "identified_as": null
+          }
+        ],
+        "entities": [
+          {
+            "name": "Amsterdam",
+            "display_name": "Amsterdam, Netherlands",
+            "type": "place",
+            "relevance": "primary",
+            "source": ["text_overlay", "audio", "metadata"],
+            "specifications": null,
+            "confidence": 5
+          },
+          {
+            "name": "The Breakfast Club",
+            "display_name": "The Breakfast Club",
+            "type": "restaurant",
+            "relevance": "supporting",
+            "source": ["text_overlay", "audio"],
+            "specifications": "Brunch spot",
+            "confidence": 5
+          },
+          {
+            "name": "Waterlooplein Market",
+            "display_name": "Waterlooplein Market",
+            "type": "place",
+            "relevance": "supporting",
+            "source": ["text_overlay", "audio"],
+            "specifications": "Flea market",
+            "confidence": 5
+          },
+          {
+            "name": "Kilo Store",
+            "display_name": "Kilo Store",
+            "type": "brand",
+            "relevance": "supporting",
+            "source": ["text_overlay", "audio"],
+            "specifications": "Vintage clothing store priced by weight",
+            "confidence": 5
+          },
+          {
+            "name": "MacBike Rental",
+            "display_name": "MacBike Rental",
+            "type": "brand",
+            "relevance": "supporting",
+            "source": ["text_overlay", "audio"],
+            "specifications": "Bicycle rental service",
+            "confidence": 5
+          },
+          {
+            "name": "Heineken Experience",
+            "display_name": "Heineken Experience",
+            "type": "event",
+            "relevance": "supporting",
+            "source": ["text_overlay", "audio"],
+            "specifications": "Brewery tour and museum",
+            "confidence": 5
+          },
+          {
+            "name": "Foodhallen",
+            "display_name": "Foodhallen Amsterdam",
+            "type": "restaurant",
+            "relevance": "supporting",
+            "source": ["text_overlay", "audio"],
+            "specifications": "Indoor food market",
+            "confidence": 5
+          },
+          {
+            "name": "Massimo Gelato",
+            "display_name": "Massimo Gelato",
+            "type": "restaurant",
+            "relevance": "supporting",
+            "source": ["text_overlay", "audio"],
+            "specifications": "Ice cream shop",
+            "confidence": 5
+          },
+          {
+            "name": "Amsterdam Icebar",
+            "display_name": "Amsterdam Icebar (XtraCold)",
+            "type": "restaurant",
+            "relevance": "supporting",
+            "source": ["text_overlay", "audio"],
+            "specifications": "Themed bar made of ice",
+            "confidence": 5
+          },
+          {
+            "name": "Escape",
+            "display_name": "Escape Nightclub",
+            "type": "restaurant",
+            "relevance": "supporting",
+            "source": ["text_overlay", "audio"],
+            "specifications": "Nightclub in Rembrandtplein",
+            "confidence": 5
+          },
+          {
+            "name": "Budweiser",
+            "display_name": "Budweiser",
+            "type": "brand",
+            "relevance": "background",
+            "source": ["visual"],
+            "specifications": "T-shirt worn by friend",
+            "confidence": 5
+          },
+          {
+            "name": "Twinlife",
+            "display_name": "Twinlife",
+            "type": "brand",
+            "relevance": "background",
+            "source": ["visual"],
+            "specifications": "Clothing brand on blazer tag",
+            "confidence": 4
+          }
+        ],
+        "takeaways": [
+          {
+            "statement": "Waterlooplein Market is a must-visit for vintage clothing and accessories.",
+            "source": "voiceover",
+            "confidence": 5
+          },
+          {
+            "statement": "The Heineken Experience tour is underwhelming, but the bar at the end offers a chance for many free beers if you collect unused tokens.",
+            "source": "voiceover",
+            "confidence": 5
+          },
+          {
+            "statement": "The Amsterdam Icebar is a 'tourist trap' style experience that looks better on social media than it feels in person.",
+            "source": "voiceover",
+            "confidence": 4
+          },
+          {
+            "statement": "Renting a bike (specifically from MacBike) is the most efficient and 'smooth' way to see the city.",
+            "source": "voiceover",
+            "confidence": 5
+          }
+        ],
+        "structured_content": {
+          "type": "recommendation_list",
+          "items": [
+            {
+              "name": "Waterlooplein Market",
+              "details": "Flea market with great denim and sunglasses."
+            },
+            {
+              "name": "Kilo Store",
+              "details": "Thrift shop where you pay by weight."
+            },
+            {
+              "name": "MacBike Rental",
+              "details": "Recommended for easy bike rentals."
+            },
+            {
+              "name": "Heineken Experience",
+              "details": "Brewery tour; tip: collect extra drink tokens at the end."
+            },
+            {
+              "name": "Foodhallen",
+              "details": "Large food market with diverse cuisines."
+            },
+            {
+              "name": "Massimo Gelato",
+              "details": "Highly recommended gelato spot."
+            },
+            {
+              "name": "Amsterdam Icebar",
+              "details": "Themed bar; noted as being better for the 'photo op' than the experience."
+            },
+            {
+              "name": "Escape",
+              "details": "Recommended nightclub for nightlife."
+            }
+          ]
+        },
+        "audio_identification": {
+          "actual_song": "Wes Anderson-esque Cute Acoustic \u2014 Kenji Ueda",
+          "metadata_song": "Wes Anderson-esque Cute Acoustic \u2014 Kenji Ueda",
+          "match": true
+        },
+        "extraction_confidence": {
+          "entities_complete": 5,
+          "audio_identified": true,
+          "notes": "All locations and brands mentioned or shown were successfully identified."
+        },
+        "presentation_style": {
+          "primary_format": "voiceover",
+          "camera_work": "handheld",
+          "editing_style": "montage"
+        },
+        "visual_mood": "Bright, energetic, and aesthetic with a warm 'Euro Summer' color palette.",
+        "topic_hints": ["Travel Guide", "Amsterdam Tourism", "Thrifting"],
+        "affect_hints": ["Adventurous", "Honest", "Social"],
+        "genre_hints": ["Travel Vlog", "Itinerary"]
+      }
+    ],
+    "metrics": {
+      "input_tokens": 7901,
+      "output_tokens": 3569,
+      "cost_usd": 0.0022177000000000004,
+      "latency_ms": 41944,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "travel",
+        "secondary": "food",
+        "micro_labels": [
+          "amsterdam travel guide",
+          "itinerary",
+          "vintage shopping",
+          "nightlife"
+        ],
+        "confidence": 0.98
+      },
+      "genre": {
+        "label": "vlog",
+        "micro_labels": ["travel guide", "itinerary", "review"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "secondary"
+        },
+        {
+          "label": "neutral",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["voiceover", "text_overlay", "cinematic"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Amsterdam",
+          "type": "place",
+          "relevance": "primary"
+        },
+        {
+          "name": "Waterlooplein Market",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Kilo Store",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "MacBike Rental",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Heineken Experience",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Foodhallen",
+          "type": "restaurant",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Massimo Gelato",
+          "type": "restaurant",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Escape",
+          "type": "place",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "Miles Jones shares a comprehensive 24-hour travel guide for Amsterdam, featuring vintage shopping at Waterlooplein Market and honest reviews of the Heineken Experience. The video provides a full itinerary including bike rentals from MacBike, food at Foodhallen, and nightlife at the Icebar and Escape nightclub.",
+      "embedding_text": "A travel guide for the perfect 24 hours in Amsterdam by creator Miles Jones (@milesjones) as part of a 'Euro Summer' series. The video provides a detailed itinerary including brunch at The Breakfast Club, vintage clothing shopping at Waterlooplein Market and Kilo Store, and renting red bicycles from MacBike. It features the Heineken Experience brewery tour with a pro-tip on getting extra beer tokens, dining at the Foodhallen food market, and dessert at Massimo Gelato. The vlog captures cinematic sunset views of the Amsterdam canals before heading to the Amsterdam Icebar and dancing at Escape nightclub. The creator provides honest commentary, labeling some spots as 'mid' while recommending others. Ideal for users searching for Amsterdam travel tips, Netherlands vacation planning, or European city guides with text overlays and voiceover narration."
+    },
+    "metrics": {
+      "input_tokens": 4092,
+      "output_tokens": 814,
+      "cost_usd": 0.0007348000000000001,
+      "latency_ms": 6896
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "travel",
+      "genre": "vlog",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "voiceover",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

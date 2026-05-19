@@ -1,0 +1,206 @@
+{
+  "item_id": "7530827399215287583",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:09",
+          "visual_description": "The creator demonstrates the Coanda effect by spraying water from a kitchen sink sprayer against the curved side of a stainless steel sink, causing the water to wrap around the surface.",
+          "audio_description": "A chill, lo-fi instrumental track plays throughout the duration of the clip. No voices are heard.",
+          "text_on_screen": "look how the water curves on the side isnt that cool? whatever fuck you im never showing you anything again",
+          "key_objects": ["kitchen sink", "sink sprayer", "glass jar", "water"]
+        }
+      ],
+      "overall_summary": "The video captures a simple but visually satisfying physics phenomenon where water from a sink sprayer curves along the side of a kitchen sink. The creator uses a humorous and mock-aggressive text overlay to express frustration that viewers might not find the visual as 'cool' as they do. It is a short, lo-fi clip set to a relaxed instrumental track that highlights the Coanda effect in an everyday setting.",
+      "people": [
+        {
+          "description": "Creator's hand holding a sink sprayer",
+          "is_creator": true,
+          "speaking": false,
+          "identified_as": null
+        }
+      ],
+      "entities": [
+        {
+          "name": "Cycad Slumber",
+          "display_name": "Cycad Slumber by Desmond Cheese",
+          "type": "song",
+          "relevance": "primary",
+          "source": ["metadata", "audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Desmond Cheese",
+          "display_name": "Desmond Cheese",
+          "type": "artist",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Coanda effect",
+          "display_name": "Coanda effect",
+          "type": "technique",
+          "relevance": "primary",
+          "source": ["visual", "inferred"],
+          "specifications": "The tendency of a fluid jet to stay attached to a convex surface",
+          "confidence": 5
+        },
+        {
+          "name": "Kitchen Sink",
+          "display_name": "Stainless Steel Kitchen Sink",
+          "type": "product",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The Coanda effect causes water to follow the curve of a sink's surface.",
+          "source": "demonstration",
+          "confidence": 5
+        },
+        {
+          "statement": "The creator is using mock-aggressive humor to share a niche interest in everyday physics.",
+          "source": "text_overlay",
+          "confidence": 4
+        }
+      ],
+      "structured_content": null,
+      "audio_identification": {
+        "actual_song": "Cycad Slumber \u2014 Desmond Cheese",
+        "metadata_song": "Cycad Slumber \u2014 Desmond Cheese",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The physics phenomenon is a textbook example of the Coanda effect."
+      },
+      "presentation_style": {
+        "primary_format": "pov",
+        "camera_work": "handheld",
+        "editing_style": "minimal"
+      },
+      "visual_mood": "Casual and lo-fi with a humorous, mock-hostile tone.",
+      "topic_hints": ["Physics", "Everyday Life", "Oddly Satisfying"],
+      "affect_hints": ["Amused", "Defensive", "Relaxed"],
+      "genre_hints": ["POV", "Short-form video"]
+    },
+    "metrics": {
+      "input_tokens": 2268,
+      "output_tokens": 1014,
+      "cost_usd": 0.0006324000000000001,
+      "latency_ms": 19019,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "science",
+        "secondary": "education",
+        "micro_labels": [
+          "physics",
+          "fluid dynamics",
+          "oddly satisfying",
+          "everyday science"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "pov",
+        "micro_labels": ["lo-fi", "short-form video"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "satisfying",
+          "tier": "dominant"
+        },
+        {
+          "label": "funny",
+          "tier": "secondary"
+        },
+        {
+          "label": "informative",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["pov", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.85
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "passive_consumption",
+        "confidence": 0.8
+      },
+      "entities": [
+        {
+          "name": "Coanda effect",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "Cycad Slumber",
+          "type": "song",
+          "relevance": "primary"
+        },
+        {
+          "name": "Desmond Cheese",
+          "type": "artist",
+          "relevance": "primary"
+        },
+        {
+          "name": "Kitchen Sink",
+          "type": "product",
+          "relevance": "supporting"
+        },
+        {
+          "name": "@meredithfarewell",
+          "type": "person",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A visually satisfying demonstration of the Coanda effect where water from a kitchen sprayer curves along the side of a stainless steel sink. The creator, @meredithfarewell, uses mock-aggressive humor in the text overlay to defend their interest in this niche physics phenomenon.",
+      "embedding_text": "In this short TikTok video by @meredithfarewell, the creator demonstrates a visually satisfying physics phenomenon known as the Coanda effect. Using a kitchen sink sprayer, they aim a stream of water at the curved stainless steel side of the sink, showing how the water remains attached to and follows the convex surface rather than splashing off. The video features a chill, lo-fi instrumental track titled 'Cycad Slumber' by Desmond Cheese. The creator includes humorous and mock-aggressive text overlays that read, 'look how the water curves on the side isnt that cool? whatever fuck you im never showing you anything again,' reacting to the perceived lack of enthusiasm from an audience. This POV-style clip is a perfect example of everyday science and oddly satisfying content found in a domestic setting, highlighting how fluid dynamics work in common household objects."
+    },
+    "metrics": {
+      "input_tokens": 3414,
+      "output_tokens": 759,
+      "cost_usd": 0.000645,
+      "latency_ms": 6955
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "satisfying",
+      "topic": "science",
+      "genre": "pov",
+      "communicative_intent": "entertain",
+      "creator_role": "amateur",
+      "viewer_orientation": "passive_consumption",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

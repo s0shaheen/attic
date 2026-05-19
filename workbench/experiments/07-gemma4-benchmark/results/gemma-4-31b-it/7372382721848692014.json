@@ -1,0 +1,231 @@
+{
+  "item_id": "7372382721848692014",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A man is dressed in a homemade superhero costume. He wears a green hard hat with two cans of 'Skyduster Beer' attached to the sides via clear plastic tubing that leads to his mouth. He is also wearing a blue eye mask, a blue cape, and a black tactical-style vest with small bottles attached to the chest and waist. A large text box with a blue and red border at the bottom reads 'Blackout Man'.",
+      "text_on_screen": "Skyduster Beer IPA, Skyduster Beer Lager, Blackout Man, HOCKEY",
+      "overall_summary": "This is a frame from a comedy sketch trailer featuring a character called 'Blackout Man'. The user is likely saving it for its comedic value or as a reference to the creators mentioned in the metadata.",
+      "entities": [
+        {
+          "name": "Blackout Man",
+          "display_name": "Blackout Man",
+          "type": "cultural_reference",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Skyduster Beer",
+          "display_name": "Skyduster Beer",
+          "type": "product",
+          "relevance": "primary",
+          "source": ["visual"],
+          "specifications": "IPA and Lager varieties",
+          "confidence": 5
+        },
+        {
+          "name": "Brett Dodenhoff",
+          "display_name": "Brett Dodenhoff",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Sam Swank",
+          "display_name": "Sam Swank",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Billy and Chet",
+          "display_name": "Billy and Chet",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Kelsey June Jensen",
+          "display_name": "Kelsey June Jensen",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "QuirosOfficial",
+          "display_name": "QuirosOfficial",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Will Peters",
+          "display_name": "Will Peters",
+          "type": "artist",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The image introduces a comedic character named 'Blackout Man' who uses a beer-delivery system integrated into his helmet.",
+          "source": "visual",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": []
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All mentioned creators and visible text were extracted."
+      },
+      "presentation_style": {
+        "primary_format": "screenshot",
+        "visual_style": "raw"
+      },
+      "scene_type": "indoor",
+      "visual_mood": "playful",
+      "topic_hints": ["comedy", "sketch comedy", "parody"],
+      "affect_hints": ["amused", "curious"],
+      "genre_hints": ["comedy sketch", "trailer"]
+    },
+    "metrics": {
+      "input_tokens": 1310,
+      "output_tokens": 993,
+      "cost_usd": 0.0,
+      "latency_ms": 80978,
+      "video_uploaded": false,
+      "thoughts_tokens": 1120
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "comedy",
+        "secondary": null,
+        "micro_labels": [
+          "superhero parody",
+          "sketch comedy",
+          "absurdist humor"
+        ],
+        "confidence": 1.0
+      },
+      "genre": {
+        "label": "skit",
+        "micro_labels": ["trailer"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "funny",
+          "tier": "dominant"
+        },
+        {
+          "label": "shocking",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["text_overlay", "raw_footage"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 1.0
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "social_sharing",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Blackout Man",
+          "type": "cultural_reference",
+          "relevance": "primary"
+        },
+        {
+          "name": "Skyduster Beer",
+          "type": "product",
+          "relevance": "primary"
+        },
+        {
+          "name": "Brett Dodenhoff",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Sam Swank",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Billy and Chet",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Kelsey June Jensen",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "QuirosOfficial",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Will Peters",
+          "type": "artist",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A comedy sketch trailer introducing 'Blackout Man,' a character wearing a homemade superhero costume with a beer-delivery system integrated into his helmet. The user likely saved this for its absurd humor and the creative, low-budget costume design.",
+      "embedding_text": "A comedic sketch trailer by @squilliam_peters featuring the character 'Blackout Man.' The video showcases a man in a homemade superhero outfit consisting of a blue cape, mask, and a green hard hat equipped with tubing that delivers Skyduster Beer IPA and Lager directly to his mouth. This absurd parody of superhero tropes was created by a team including Brett Dodenhoff, Sam Swank, Billy and Chet, Kelsey June Jensen, and QuirosOfficial, with audio by Will Peters. The content is characterized by its playful, low-budget aesthetic and uses text overlays to identify the character and the fictional beer brand."
+    },
+    "metrics": {
+      "input_tokens": 3500,
+      "output_tokens": 773,
+      "cost_usd": 0.0,
+      "latency_ms": 43018,
+      "thoughts_tokens": 734
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "funny",
+      "topic": "comedy",
+      "genre": "skit",
+      "communicative_intent": "entertain",
+      "creator_role": "amateur",
+      "viewer_orientation": "social_sharing",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

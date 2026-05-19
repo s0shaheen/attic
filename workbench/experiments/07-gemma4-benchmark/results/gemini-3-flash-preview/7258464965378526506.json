@@ -1,0 +1,297 @@
+{
+  "item_id": "7258464965378526506",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": [
+      {
+        "scene_timeline": [
+          {
+            "time_range": "0:00-0:03",
+            "visual_description": "Close-up of golden-brown chicken arayes frying in a pan, then one is lifted to show the seared meat filling.",
+            "audio_description": "I know that you are going to love this chicken arayes!",
+            "text_on_screen": "I KNOW THAT YOU ARE GOING TO LOVE THIS CHICKEN ARAYES!",
+            "key_objects": ["frying pan", "chicken arayes", "pita"]
+          },
+          {
+            "time_range": "0:03-0:06",
+            "visual_description": "The creator takes a large bite of a finished chicken arayes topped with sauce and herbs.",
+            "audio_description": "Stuffed pita with juicy chicken. So good.",
+            "text_on_screen": "STUFFED PITA WITH JUICY CHICKEN.",
+            "key_objects": ["chicken arayes", "tahini sauce", "red onion"]
+          },
+          {
+            "time_range": "0:06-0:18",
+            "visual_description": "Overhead shot of ingredients being added to a bowl of ground chicken: herbs, onions, jalapenos, spices, harissa, and an egg.",
+            "audio_description": "Let's take ground chicken, herbs, onion, jalape\u00f1o, salt, sumac, cumin, and New York Shuk Harissa, preserved lemon. Let's add olive oil, one egg. Mix all the ingredients together.",
+            "text_on_screen": "LET'S TAKE GROUND CHICKEN, HERBS, ONION, JALAPE\u00d1O, SALT, SUMAC, CUMIN AND NEW YORK SHUK HARISSA PRESERVED LEMON. LET'S ADD OLIVE OIL, ONE EGG. MIX ALL THE INGREDIENT TOGETHER",
+            "key_objects": [
+              "ground chicken",
+              "New York Shuk Harissa",
+              "sumac",
+              "cumin",
+              "olive oil",
+              "egg"
+            ]
+          },
+          {
+            "time_range": "0:18-0:24",
+            "visual_description": "The creator stuffs pita bread halves with the prepared chicken mixture using a spoon.",
+            "audio_description": "And let's take pita bread, cut to half, stuff each pita with the chicken mixture.",
+            "text_on_screen": "AND LET'S TAKE PITA BREAD, CUT TO HALF, STUFF EACH PITA WITH THE CHICKEN MIXTURE",
+            "key_objects": ["pita bread", "chicken mixture", "spoon"]
+          },
+          {
+            "time_range": "0:24-0:31",
+            "visual_description": "The stuffed pitas are placed face-down in a hot pan with oil and flipped after browning.",
+            "audio_description": "Fry it on a grilling pan face down. Let's flip it after five minutes to get this beautiful nice color from both sides.",
+            "text_on_screen": "FRY IT ON A GRILLING PAN FACE DOWN. LET'S FLIP IT AFTER 5 MINUTES TO GET THIS BEAUTIFUL NICE COLOR FROM BOTH SIDES",
+            "key_objects": ["grilling pan", "spatula", "chicken arayes"]
+          },
+          {
+            "time_range": "0:31-0:34",
+            "visual_description": "The pan of arayes is shown inside an oven to finish cooking.",
+            "audio_description": "And transfer to the oven.",
+            "text_on_screen": "AND TRANSFER TO THE OVEN.",
+            "key_objects": ["oven", "baking pan"]
+          },
+          {
+            "time_range": "0:34-0:38",
+            "visual_description": "The cooked arayes are plated and drizzled with tahini, topped with onions and parsley, and finished with amba sauce.",
+            "audio_description": "Serve it with your favorite topping. Enjoy and follow for more.",
+            "text_on_screen": "SERVE IT WITH YOUR FAVORITE TOPPING. ENJOY AND FOLLOW FOR MORE.",
+            "key_objects": ["plate", "tahini", "amba sauce", "parsley"]
+          }
+        ],
+        "overall_summary": "This video is a cooking tutorial for Chicken Arayes, a Middle Eastern dish featuring pita bread stuffed with a flavorful meat mixture. The creator, Ruhama, demonstrates how to prepare the filling using ground chicken, fresh herbs, onions, and a variety of spices including sumac, cumin, and harissa. The stuffed pitas are first pan-seared to achieve a crispy exterior and then finished in the oven to ensure the chicken is fully cooked. The final dish is presented with traditional toppings like tahini, red onions, and amba sauce.",
+        "people": [
+          {
+            "description": "Woman with light brown hair wearing a blue and white patterned blouse.",
+            "is_creator": true,
+            "speaking": true,
+            "identified_as": "Ruhama (ruhamasfood)"
+          }
+        ],
+        "entities": [
+          {
+            "name": "Chicken Arayes",
+            "display_name": "Chicken Arayes",
+            "type": "recipe",
+            "relevance": "primary",
+            "source": ["text_overlay", "audio"],
+            "specifications": null,
+            "confidence": 5
+          },
+          {
+            "name": "New York Shuk Harissa",
+            "display_name": "New York Shuk Harissa with Preserved Lemon",
+            "type": "product",
+            "relevance": "supporting",
+            "source": ["visual", "audio"],
+            "specifications": "Harissa with Preserved Lemon",
+            "confidence": 5
+          },
+          {
+            "name": "Pita",
+            "display_name": "Pita Bread",
+            "type": "ingredient",
+            "relevance": "primary",
+            "source": ["visual", "audio"],
+            "specifications": "halved",
+            "confidence": 5
+          },
+          {
+            "name": "Amba",
+            "display_name": "Amba Sauce",
+            "type": "ingredient",
+            "relevance": "supporting",
+            "source": ["visual"],
+            "specifications": "mango pickle sauce",
+            "confidence": 4
+          }
+        ],
+        "takeaways": [
+          {
+            "statement": "Chicken Arayes are a juicy and flavorful Middle Eastern stuffed pita dish.",
+            "source": "voiceover",
+            "confidence": 5
+          },
+          {
+            "statement": "Searing the pita face-down before baking ensures a crispy texture and locks in the meat's juices.",
+            "source": "demonstration",
+            "confidence": 5
+          },
+          {
+            "statement": "Using harissa and preserved lemon adds a specific depth of flavor to the chicken filling.",
+            "source": "voiceover",
+            "confidence": 4
+          }
+        ],
+        "structured_content": {
+          "type": "recipe",
+          "items": [
+            {
+              "name": "Chicken Filling",
+              "details": "Ground chicken, chopped herbs (parsley/cilantro), red onion, jalape\u00f1o, salt, sumac, cumin, New York Shuk Harissa with Preserved Lemon, olive oil, and one egg."
+            },
+            {
+              "name": "Base",
+              "details": "Pita bread halves."
+            },
+            {
+              "name": "Cooking Method",
+              "details": "Pan-fry face down for 5 minutes until golden, then finish in the oven."
+            },
+            {
+              "name": "Toppings",
+              "details": "Tahini sauce, sliced red onions, fresh parsley, and amba (mango sauce)."
+            }
+          ]
+        },
+        "audio_identification": {
+          "actual_song": "original sound - ruhamasfood",
+          "metadata_song": "original sound - ruhamasfood \u2014 RuhamasFood",
+          "match": true
+        },
+        "extraction_confidence": {
+          "entities_complete": 5,
+          "audio_identified": true,
+          "notes": "The brand New York Shuk is clearly visible and mentioned."
+        },
+        "presentation_style": {
+          "primary_format": "tutorial_demo",
+          "camera_work": "overhead",
+          "editing_style": "jump_cuts"
+        },
+        "visual_mood": "Appetizing and instructional with warm lighting.",
+        "topic_hints": [
+          "Middle Eastern Cuisine",
+          "Chicken Recipes",
+          "Easy Dinner Ideas"
+        ],
+        "affect_hints": ["Hungry", "Inspired", "Satisfied"],
+        "genre_hints": ["Cooking Tutorial", "Foodie Content"]
+      }
+    ],
+    "metrics": {
+      "input_tokens": 5004,
+      "output_tokens": 2186,
+      "cost_usd": 0.0013748000000000002,
+      "latency_ms": 26341,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "food",
+        "secondary": "education",
+        "micro_labels": [
+          "Middle Eastern cuisine",
+          "Chicken Arayes",
+          "Stuffed pita",
+          "Easy dinner recipes"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "recipe",
+        "micro_labels": ["cooking tutorial", "step-by-step"],
+        "confidence": 1.0
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["voiceover", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Chicken Arayes",
+          "type": "recipe",
+          "relevance": "primary"
+        },
+        {
+          "name": "New York Shuk Harissa",
+          "type": "product",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Pita Bread",
+          "type": "ingredient",
+          "relevance": "primary"
+        },
+        {
+          "name": "Amba Sauce",
+          "type": "ingredient",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Tahini",
+          "type": "ingredient",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Sumac",
+          "type": "ingredient",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Ruhama",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Ground Chicken",
+          "type": "ingredient",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A step-by-step cooking tutorial for Chicken Arayes by creator Ruhama (@ruhamasfood). The video demonstrates how to prepare a flavorful ground chicken mixture with harissa and spices, stuff it into pita bread, and cook it using a pan-sear and oven-finish method.",
+      "embedding_text": "In this TikTok video, creator Ruhama (@ruhamasfood) shares a recipe for juicy Chicken Arayes, a Middle Eastern stuffed pita dish. The tutorial begins with a close-up of the golden-brown pitas frying in a pan. Ruhama demonstrates mixing ground chicken with herbs, onion, jalape\u00f1o, salt, sumac, cumin, and New York Shuk Harissa with preserved lemon, along with olive oil and an egg. She shows the process of stuffing halved pita bread with the meat mixture, searing them face-down in a grilling pan to achieve a crispy texture, and then finishing them in the oven. The final dish is plated and topped with tahini, red onions, parsley, and amba sauce. This informative cooking video is ideal for users looking for Middle Eastern dinner inspiration or specific instructions on how to make arayes with chicken instead of traditional beef or lamb."
+    },
+    "metrics": {
+      "input_tokens": 4165,
+      "output_tokens": 856,
+      "cost_usd": 0.0007589000000000001,
+      "latency_ms": 7257
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "food",
+      "genre": "recipe",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "voiceover",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

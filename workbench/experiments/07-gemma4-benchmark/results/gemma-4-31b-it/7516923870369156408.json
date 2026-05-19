@@ -1,0 +1,259 @@
+{
+  "item_id": "7516923870369156408",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "A comparison of two nested boxes showing the correct way to apply border radius. The left side is marked with a red X and shows both inner and outer radii as 24px. The right side is marked with a green check and shows an outer radius of 24px, an inner radius of 14px, and padding of 10px.",
+          "text_detected": "Border Radius Tip\n24px\n24px\n24px\n14px\n10px\nSame value for inner and outer radius\nOuter radius = inner radius + padding\nAvoid the urge to round inner elements the same amount as the card. Decrease inner element slightly. Just scale up your the inner element to the size of your outer frame.\nSave for later",
+          "primary_content": "UI Design Tip: Nested Border Radius Formula (Example 1)",
+          "entities": [
+            {
+              "name": "Nested Border Radius",
+              "type": "technique",
+              "specifications": "Outer radius = inner radius + padding"
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "A comparison of nested border radii. The left side (incorrect) shows outer r = inner r (both 24px). The right side (correct) shows outer r = inner r + padding (Outer 24px, Inner 16px, Padding 8px).",
+          "text_detected": "Better Nested Border Radius\n24px\n24px\n24px\n16px\n8px\nouter r = inner r\nouter r = inner r + padding\nWorks if both radius have the same center point. Or use a multiplier. To test, scale up your inner frame to the size of your outer frame.\nFollow us for more content like this",
+          "primary_content": "UI Design Tip: Nested Border Radius Formula (Example 2)",
+          "entities": [
+            {
+              "name": "Nested Border Radius",
+              "type": "technique",
+              "specifications": "Outer r = inner r + padding"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "A comparison of nested border radii with larger values. The left side (incorrect) shows Outer R = Inner R (both 40). The right side (correct) shows Outer R = Inner R + Padding (Outer 40, Inner 18, Padding 24).",
+          "text_detected": "Perfect border radius tips\n40\n40\n40\n18\n24\nOuter R = Inner R\nOuter R = Inner R + Padding\nSave it for later",
+          "primary_content": "UI Design Tip: Nested Border Radius Formula (Example 3)",
+          "entities": [
+            {
+              "name": "Nested Border Radius",
+              "type": "technique",
+              "specifications": "Outer R = Inner R + Padding"
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "A final comparison of nested border radii. The left side (incorrect) shows Outer R = Innor R (Outer 24px, Inner 24px, Padding 8px). The right side (correct) shows Outor R = Inner R + Padding (Outer 24px, Inner 16px, Padding 8px).",
+          "text_detected": "Border Radius Tips\n24px\n8px\n24px\n24px\n8px\n16px\nOuter R = Innor R\nOutor R = Inner R + Padding\nFollow me for more content like this",
+          "primary_content": "UI Design Tip: Nested Border Radius Formula (Example 4)",
+          "entities": [
+            {
+              "name": "Nested Border Radius",
+              "type": "technique",
+              "specifications": "Outer R = Inner R + Padding"
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This post is a series of educational infographics for web developers and UI designers explaining the 'Nested Border Radius' rule. It demonstrates that to make nested rounded corners look concentric and visually pleasing, the outer radius must be the sum of the inner radius and the padding. The user is likely saving this as a technical reference for CSS implementation.",
+      "carousel_type": "infographic",
+      "narrative_thread": "The carousel repeatedly reinforces a single mathematical rule for UI design through four different visual examples, contrasting the 'wrong' way (equal radii) with the 'right' way (Outer = Inner + Padding).",
+      "entities": [
+        {
+          "name": "Nested Border Radius",
+          "display_name": "Nested Border Radius Technique",
+          "type": "technique",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay"],
+          "slide_number": 1,
+          "specifications": "Outer Radius = Inner Radius + Padding",
+          "confidence": 5
+        },
+        {
+          "name": "Scars (Slowed Down)",
+          "display_name": "Scars (Slowed Down) \u2014 Dionnysuss",
+          "type": "song",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "slide_number": null,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Dionnysuss",
+          "display_name": "Dionnysuss",
+          "type": "artist",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "slide_number": null,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "CSS",
+          "display_name": "CSS (Cascading Style Sheets)",
+          "type": "app_or_tool",
+          "relevance": "supporting",
+          "source": ["inferred"],
+          "slide_number": null,
+          "specifications": null,
+          "confidence": 4
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "To achieve a visually correct nested corner, the outer radius should equal the inner radius plus the padding.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Avoid using the same border-radius value for both the outer container and the inner element.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "instructions",
+        "items": [
+          {
+            "name": "Nested Border Radius Formula",
+            "details": "Outer Radius = Inner Radius + Padding",
+            "slide_number": 1
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Scars (Slowed Down) \u2014 Dionnysuss",
+        "metadata_song": "Scars (Slowed Down) \u2014 Dionnysuss",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "Text in image 4 contains typos ('Innor', 'Outor') which were transcribed exactly as requested."
+      },
+      "presentation_style": {
+        "primary_format": "text_cards",
+        "visual_style": "informational"
+      },
+      "visual_mood": "Educational, clean, and technical.",
+      "topic_hints": ["Web Development", "UI/UX Design", "CSS Tips"],
+      "affect_hints": ["Enlightened", "Focused", "Analytical"],
+      "genre_hints": ["Educational Tutorial", "Design Guide"]
+    },
+    "metrics": {
+      "input_tokens": 2316,
+      "output_tokens": 1860,
+      "cost_usd": 0.0,
+      "latency_ms": 91656,
+      "video_uploaded": false,
+      "thoughts_tokens": 1385
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "technology",
+        "secondary": "education",
+        "micro_labels": [
+          "UI Design",
+          "CSS",
+          "Web Development",
+          "Frontend Design"
+        ],
+        "confidence": 1.0
+      },
+      "genre": {
+        "label": "tutorial",
+        "micro_labels": ["infographic"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 1.0
+      },
+      "creator_role": {
+        "label": "educator",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.95
+      },
+      "entities": [
+        {
+          "name": "Nested Border Radius Technique",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "CSS",
+          "type": "app_or_tool",
+          "relevance": "supporting"
+        },
+        {
+          "name": "UI Design",
+          "type": "technique",
+          "relevance": "supporting"
+        },
+        {
+          "name": "@techbyapdalla",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Scars (Slowed Down)",
+          "type": "song",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Dionnysuss",
+          "type": "artist",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A series of educational infographics by @techbyapdalla explaining the Nested Border Radius formula for UI design. It teaches that the outer radius should equal the inner radius plus padding to achieve a visually pleasing, concentric look.",
+      "embedding_text": "A UI design and web development tutorial by @techbyapdalla focusing on the Nested Border Radius technique. The content provides a mathematical formula (Outer Radius = Inner Radius + Padding) to ensure rounded corners in nested elements look concentric and professional, contrasting 'wrong' examples (equal radii) with 'correct' ones. This is a technical reference for CSS implementation and frontend design, featuring multiple visual examples with specific pixel values (e.g., 24px outer, 14px inner, 10px padding). The video uses the song 'Scars (Slowed Down)' by Dionnysuss as background audio. Ideal for developers and designers looking to refine their border-radius styling."
+    },
+    "metrics": {
+      "input_tokens": 4170,
+      "output_tokens": 728,
+      "cost_usd": 0.0,
+      "latency_ms": 36452,
+      "thoughts_tokens": 563
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "technology",
+      "genre": "tutorial",
+      "communicative_intent": "inform",
+      "creator_role": "educator",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

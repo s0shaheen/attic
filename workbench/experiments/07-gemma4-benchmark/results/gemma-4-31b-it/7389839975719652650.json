@@ -1,0 +1,246 @@
+{
+  "item_id": "7389839975719652650",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "A rustic wooden barn at night illuminated by interior lights and neon signs. A text overlay is at the top.",
+          "text_detected": "POV the first time you got drunk\nGASOLINE MOTOR OIL\nFOUNTAIN SERVICE\nDRINK Coca-Cola Delicious and Refreshing\nGOOD YEAR TIRES\nKEN LEE PHOTOGRAPHY",
+          "primary_content": "Exterior of a luxury rustic barn used as a party venue",
+          "entities": [
+            {
+              "name": "Coca-Cola",
+              "type": "brand",
+              "specifications": null
+            },
+            {
+              "name": "Goodyear",
+              "type": "brand",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "A modern, high-end kitchen with a large wooden island, grey base cabinets, white upper cabinets, and stainless steel appliances.",
+          "text_detected": "FRESH BAKED PIES SERVED DAILY",
+          "primary_content": "Luxury kitchen interior",
+          "entities": []
+        },
+        {
+          "image_number": 3,
+          "description": "A hallway or staircase landing featuring a prominent red brick accent wall and recessed ceiling lighting.",
+          "text_detected": "",
+          "primary_content": "Interior home architecture",
+          "entities": []
+        },
+        {
+          "image_number": 4,
+          "description": "A spacious finished basement with beige carpeting, a large grey sectional sofa, and a television on a wooden stand.",
+          "text_detected": "",
+          "primary_content": "Luxury basement lounge",
+          "entities": []
+        },
+        {
+          "image_number": 5,
+          "description": "A dark forest at night, with a flashlight illuminating the tree trunks and ground.",
+          "text_detected": "fineart america",
+          "primary_content": "Nighttime outdoor environment",
+          "entities": []
+        },
+        {
+          "image_number": 6,
+          "description": "A wood-paneled basement room containing a green ping-pong table.",
+          "text_detected": "",
+          "primary_content": "Game room with ping-pong table",
+          "entities": []
+        },
+        {
+          "image_number": 7,
+          "description": "An outdoor patio at dusk with a large white sectional sofa, a wooden coffee table, and a canopy of string lights.",
+          "text_detected": "",
+          "primary_content": "Luxury outdoor lounge area",
+          "entities": []
+        },
+        {
+          "image_number": 8,
+          "description": "A close-up shot of a bright orange and yellow campfire burning in a pit at night.",
+          "text_detected": "",
+          "primary_content": "Bonfire/Campfire",
+          "entities": []
+        },
+        {
+          "image_number": 9,
+          "description": "The interior of a rustic barn with wooden beams, string lights, and a black ping-pong table.",
+          "text_detected": "",
+          "primary_content": "Barn converted into a game room",
+          "entities": []
+        },
+        {
+          "image_number": 10,
+          "description": "A wide landscape shot of a golden wheat field under a clear blue sky with light clouds.",
+          "text_detected": "",
+          "primary_content": "Rural landscape/field",
+          "entities": []
+        }
+      ],
+      "overall_summary": "This post is a 'POV' meme depicting the experience of attending a party at a wealthy person's estate. It showcases a series of luxury amenities including a high-end kitchen, finished basements, a converted barn for games, and an elaborate outdoor lounge. The user is likely saving it for the 'aesthetic' of luxury party culture or as a nostalgic reference to youth.",
+      "carousel_type": "meme",
+      "narrative_thread": "The images follow a loose narrative of a night out: arriving at a grand rustic venue, hanging out in the house, exploring the basement and game rooms, venturing outside into the woods and by a fire, and ending with a peaceful morning landscape.",
+      "entities": [
+        {
+          "name": "Coca-Cola",
+          "display_name": "Coca-Cola",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "slide_number": 1,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Goodyear",
+          "display_name": "Goodyear Tires",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "slide_number": 1,
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Parties at wealthy people's houses are superior ('unbeaten') due to the facilities and atmosphere.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": []
+      },
+      "audio_identification": {
+        "actual_song": null,
+        "metadata_song": "original sound - dainsleif908 \u2014 user72884808288",
+        "match": false
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All visible text and objects identified. No specific brands other than the signs in image 1 were identifiable."
+      },
+      "presentation_style": {
+        "primary_format": "photo_dump",
+        "visual_style": "aesthetic"
+      },
+      "visual_mood": "Nostalgic, luxurious, and slightly chaotic/dreamy",
+      "topic_hints": ["Luxury lifestyle", "Party culture", "Nostalgia"],
+      "affect_hints": ["Envy", "Nostalgia", "Awe"],
+      "genre_hints": ["POV Meme", "Lifestyle Aesthetic"]
+    },
+    "metrics": {
+      "input_tokens": 3900,
+      "output_tokens": 1482,
+      "cost_usd": 0.0,
+      "latency_ms": 68051,
+      "video_uploaded": false,
+      "thoughts_tokens": 830
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "other",
+        "secondary": "real_estate",
+        "micro_labels": ["luxury lifestyle", "party culture"],
+        "confidence": 0.9
+      },
+      "genre": {
+        "label": "pov",
+        "micro_labels": ["meme", "photo_dump"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "nostalgic",
+          "tier": "dominant"
+        },
+        {
+          "label": "funny",
+          "tier": "secondary"
+        },
+        {
+          "label": "satisfying",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.8
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.8
+      },
+      "entities": [
+        {
+          "name": "Coca-Cola",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Goodyear Tires",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "POV Meme",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        },
+        {
+          "name": "Luxury Estate",
+          "type": "place",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A POV meme by @edit_creator55 depicting the experience of attending a party at a wealthy person's estate. It showcases a series of luxury amenities, from a converted barn game room to high-end interiors, to evoke a sense of nostalgia and awe regarding luxury party culture.",
+      "embedding_text": "A POV meme by @edit_creator55 titled 'A banger at a rich persons house is unbeaten,' depicting the experience of attending a party at a wealthy person's estate. The content is a slideshow of luxury home aesthetics, featuring a rustic barn with Coca-Cola and Goodyear signs, a modern high-end kitchen, a finished basement lounge, a game room with a ping-pong table, and an outdoor patio with string lights and a bonfire. It captures a nostalgic, dreamy vibe of youth and luxury party culture, ending with a peaceful rural landscape of a wheat field. This is a lifestyle aesthetic post focused on the 'rich person house' trope and the feeling of the first time getting drunk at a grand venue."
+    },
+    "metrics": {
+      "input_tokens": 3942,
+      "output_tokens": 694,
+      "cost_usd": 0.0,
+      "latency_ms": 40607,
+      "thoughts_tokens": 763
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "nostalgic",
+      "topic": "other",
+      "genre": "pov",
+      "communicative_intent": "entertain",
+      "creator_role": "amateur",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

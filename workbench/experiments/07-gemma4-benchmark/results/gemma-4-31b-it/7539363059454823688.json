@@ -1,0 +1,162 @@
+{
+  "item_id": "7539363059454823688",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_image",
+  "media_type": "image",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A young man with wind-swept blonde hair is captured in a medium shot from a low angle against a bright blue sky with scattered white clouds. He is wearing a light blue button-down dress shirt, a dark tie which he is adjusting with his right hand, and dark dress trousers. The composition places the subject centrally, creating a sense of confidence or poise.",
+      "text_on_screen": "me bc I've been homies with atheists and christians, popular kids and emos, artists, nerds, addicts, and I can only admire everyone's differences",
+      "overall_summary": "This is a relatable meme post about being a 'social chameleon' or someone who can form friendships across diverse social, religious, and lifestyle boundaries. The user likely saved it because they identify with the sentiment of being inclusive and appreciative of people's differences.",
+      "entities": [
+        {
+          "name": "vankirn",
+          "display_name": "vankirn",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "rina",
+          "display_name": "rina",
+          "type": "artist",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The creator identifies as someone who can get along with and admire people from vastly different social and ideological groups.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": []
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "The person in the image is a meme subject and not a specifically named celebrity."
+      },
+      "presentation_style": {
+        "primary_format": "meme",
+        "visual_style": "aesthetic"
+      },
+      "scene_type": "outdoor",
+      "visual_mood": "polished",
+      "topic_hints": ["social dynamics", "inclusivity", "friendship"],
+      "affect_hints": ["proud", "inclusive", "reflective"],
+      "genre_hints": ["relatable meme", "social commentary"]
+    },
+    "metrics": {
+      "input_tokens": 1276,
+      "output_tokens": 593,
+      "cost_usd": 0.0,
+      "latency_ms": 36905,
+      "video_uploaded": false,
+      "thoughts_tokens": 661
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "relationships",
+        "secondary": "other",
+        "micro_labels": [
+          "social chameleon",
+          "inclusivity",
+          "friendship diversity",
+          "social dynamics"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "meme",
+        "micro_labels": ["relatable"],
+        "confidence": 1.0
+      },
+      "affect": [
+        {
+          "label": "wholesome",
+          "tier": "dominant"
+        },
+        {
+          "label": "funny",
+          "tier": "secondary"
+        },
+        {
+          "label": "inspiring",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.8
+      },
+      "communicative_intent": {
+        "label": "connect",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "social_sharing",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "social chameleon",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        },
+        {
+          "name": "rina",
+          "type": "artist",
+          "relevance": "supporting"
+        },
+        {
+          "name": "vankirn",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "inclusivity",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A relatable meme about being a 'social chameleon' who can form friendships across diverse religious, social, and lifestyle boundaries. The user likely saved this to identify with the sentiment of being an inclusive person who admires differences in others.",
+      "embedding_text": "A relatable TikTok meme by @imaeruon featuring an aesthetic, polished shot of a young man with blonde hair wearing a blue dress shirt and tie against a bright blue sky. The on-screen text reads, 'me bc I've been homies with atheists and christians, popular kids and emos, artists, nerds, addicts, and I can only admire everyone's differences,' highlighting the experience of being a social chameleon. The video uses a sound by artist rina. This content focuses on inclusivity, diverse friendships, and social dynamics, designed for users who identify as being able to connect with people from vastly different ideological and social groups."
+    },
+    "metrics": {
+      "input_tokens": 3025,
+      "output_tokens": 668,
+      "cost_usd": 0.0,
+      "latency_ms": 48908,
+      "thoughts_tokens": 1086
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "wholesome",
+      "topic": "relationships",
+      "genre": "meme",
+      "communicative_intent": "connect",
+      "creator_role": "amateur",
+      "viewer_orientation": "social_sharing",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

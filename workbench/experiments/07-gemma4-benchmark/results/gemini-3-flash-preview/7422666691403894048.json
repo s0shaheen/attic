@@ -1,0 +1,500 @@
+{
+  "item_id": "7422666691403894048",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "Title card featuring a profile shot of actress Saoirse Ronan with vibrant orange hair against a cloudy sky and ocean background.",
+          "text_detected": "movies about healing\npart 3",
+          "primary_content": "Title card for a movie recommendation series focused on the theme of healing.",
+          "entities": [
+            {
+              "name": "Saoirse Ronan",
+              "type": "person",
+              "specifications": "Actress"
+            },
+            {
+              "name": "The Outrun",
+              "type": "movie_or_show",
+              "specifications": "2024 film"
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "Letterboxd app screenshot for the movie 'You Were Never Really Here' featuring Joaquin Phoenix.",
+          "text_detected": "healing from abuse/trauma/ptsd\n\"Do you know what paradise is? It's a lie, a fantasy we create about people and places as we'd like them to be.\"\nYou Were Never Really Here\n2017 \u2022 DIRECTED BY\nLynne Ramsay\nTRAILER 89 mins\nBRING THE HAMMER.\nA traumatised veteran, unafraid of violence, tracks down missing girls for a living. When a job spins out of control,",
+          "primary_content": "Movie Recommendation: You Were Never Really Here (2017)",
+          "entities": [
+            {
+              "name": "You Were Never Really Here",
+              "type": "movie_or_show",
+              "specifications": "2017 film"
+            },
+            {
+              "name": "Lynne Ramsay",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "Joaquin Phoenix",
+              "type": "person",
+              "specifications": "Actor"
+            },
+            {
+              "name": "Letterboxd",
+              "type": "app_or_tool",
+              "specifications": "Film social media app"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "Letterboxd app screenshot for the movie 'The Outrun' featuring Saoirse Ronan with blue hair.",
+          "text_detected": "healing from addiction\n\"But there is only so much height any wave can sustain before it comes crashing down.\"\nThe Outrun\n2024 \u2022 DIRECTED BY\nNora Fingscheidt\nTRAILER 117 mins\nRona, fresh out of rehab, returns to the Orkney Islands; a place both wild and beautiful right off the Scottish coast. After more than a decade of living life on the edge in",
+          "primary_content": "Movie Recommendation: The Outrun (2024)",
+          "entities": [
+            {
+              "name": "The Outrun",
+              "type": "movie_or_show",
+              "specifications": "2024 film"
+            },
+            {
+              "name": "Nora Fingscheidt",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "Saoirse Ronan",
+              "type": "person",
+              "specifications": "Actor"
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "Letterboxd app screenshot for the movie 'Priscilla' featuring Cailee Spaeny.",
+          "text_detected": "healing from a traumatic relationship/ finding autonomy\n\"You're losing me to a life of my own.\"\nPriscilla\n2023 \u2022 DIRECTED BY\nSofia Coppola\nTRAILER 110 mins\nWIFE TO THE KING. ICON TO THE WORLD. DESTINED FOR MORE.\nThe unseen side of a great American myth in Elvis and Priscilla Presley's long courtship and turbulent marriage",
+          "primary_content": "Movie Recommendation: Priscilla (2023)",
+          "entities": [
+            {
+              "name": "Priscilla",
+              "type": "movie_or_show",
+              "specifications": "2023 film"
+            },
+            {
+              "name": "Sofia Coppola",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "Cailee Spaeny",
+              "type": "person",
+              "specifications": "Actor"
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "Letterboxd app screenshot for the movie 'The Descendants' featuring George Clooney and Shailene Woodley.",
+          "text_detected": "healing from grief/father daughter bond\n\"A family seems exactly like an archipelago. All part of the same whole, but still separate and alone and always drifting slowly apart.\"\nThe Descendants\n2011 \u2022 DIRECTED BY\nAlexander Payne\nTRAILER 115 mins\nTHE SOUTH PACIFIC AIN'T THAT TERRIFIC.\nWith his wife Elizabeth on life support after a boating accident, Hawaiian land baron Matt King takes his",
+          "primary_content": "Movie Recommendation: The Descendants (2011)",
+          "entities": [
+            {
+              "name": "The Descendants",
+              "type": "movie_or_show",
+              "specifications": "2011 film"
+            },
+            {
+              "name": "Alexander Payne",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "George Clooney",
+              "type": "person",
+              "specifications": "Actor"
+            },
+            {
+              "name": "Shailene Woodley",
+              "type": "person",
+              "specifications": "Actor"
+            }
+          ]
+        },
+        {
+          "image_number": 6,
+          "description": "Letterboxd app screenshot for the movie 'Past Lives' featuring Greta Lee.",
+          "text_detected": "healing from feelings of disconnect/ identity crisis\n\"I liked you for who you are; and who you are is a person who leaves.... But for him, you're the person who stays.\"\nPast Lives\n2023 \u2022 DIRECTED BY\nCeline Song\nTRAILER 106 mins\nNora and Hae Sung, two childhood friends, are reunited in New York for one fateful week as they confront notions of destiny, love, and the choices that make a life.",
+          "primary_content": "Movie Recommendation: Past Lives (2023)",
+          "entities": [
+            {
+              "name": "Past Lives",
+              "type": "movie_or_show",
+              "specifications": "2023 film"
+            },
+            {
+              "name": "Celine Song",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "Greta Lee",
+              "type": "person",
+              "specifications": "Actor"
+            }
+          ]
+        },
+        {
+          "image_number": 7,
+          "description": "Letterboxd app screenshot for the movie 'A Beautiful Day in the Neighborhood' featuring Tom Hanks as Fred Rogers.",
+          "text_detected": "healing a father/son bond\n\"I don't think you are broken. I know you are a man of conviction, a person who knows the difference between what is wrong and what is right. Try to remember that your relationship with your father also helped to shape those parts. He helped you become what you are.\"\nA Beautiful Day in the Neighborhood\n2019 \u2022 DIRECTED BY\nMarielle Heller\nTRAILER 109 mins\nNEIGHBOR. ICON. FRIEND.\nAn award-winning cynical journalist, Lloyd Vogel, begrudgingly accepts an assignment to write an Esquire profile piece on the beloved television icon Fred Rogers.",
+          "primary_content": "Movie Recommendation: A Beautiful Day in the Neighborhood (2019)",
+          "entities": [
+            {
+              "name": "A Beautiful Day in the Neighborhood",
+              "type": "movie_or_show",
+              "specifications": "2019 film"
+            },
+            {
+              "name": "Marielle Heller",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "Tom Hanks",
+              "type": "person",
+              "specifications": "Actor"
+            },
+            {
+              "name": "Fred Rogers",
+              "type": "person",
+              "specifications": "Cultural figure"
+            }
+          ]
+        },
+        {
+          "image_number": 8,
+          "description": "Letterboxd app screenshot for the movie 'Big Fish' featuring Ewan McGregor in a field of yellow flowers.",
+          "text_detected": "healing from grief/ father son bond\n\"A man tells his stories so many times that he becomes the stories. They live on after him, and in that way he becomes immortal.\"\nBig Fish\n2003 \u2022 DIRECTED BY\nTim Burton\nTRAILER 125 mins\nAN ADVENTURE AS BIG AS LIFE ITSELF.\nThroughout his life Edward Bloom has always been a man of big appetites, enormous passions and tall tales. In his later years, he remains a huge mystery to his son, William.",
+          "primary_content": "Movie Recommendation: Big Fish (2003)",
+          "entities": [
+            {
+              "name": "Big Fish",
+              "type": "movie_or_show",
+              "specifications": "2003 film"
+            },
+            {
+              "name": "Tim Burton",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "Ewan McGregor",
+              "type": "person",
+              "specifications": "Actor"
+            }
+          ]
+        },
+        {
+          "image_number": 9,
+          "description": "Letterboxd app screenshot for the movie 'A Monster Calls' featuring a boy lying under a giant tree monster.",
+          "text_detected": "healing from grief/loss of a parent\n\"You believe comforting lies, while knowing full well the painful truth that makes those lies necessary. In the end, Conor, it is not important what you think. It is only important what you do.\"\nA Monster Calls\n2016 \u2022 DIRECTED BY\nJ. A. Bayona\nTRAILER 108 mins\nSTORIES ARE WILD CREATURES.\nA boy imagines a monster that helps him deal with his difficult life and see the world in a different way.",
+          "primary_content": "Movie Recommendation: A Monster Calls (2016)",
+          "entities": [
+            {
+              "name": "A Monster Calls",
+              "type": "movie_or_show",
+              "specifications": "2016 film"
+            },
+            {
+              "name": "J. A. Bayona",
+              "type": "person",
+              "specifications": "Director"
+            },
+            {
+              "name": "Lewis MacDougall",
+              "type": "person",
+              "specifications": "Actor"
+            }
+          ]
+        },
+        {
+          "image_number": 10,
+          "description": "Letterboxd app screenshot for the movie 'Garden State' featuring Natalie Portman and Zach Braff.",
+          "text_detected": "healing from grief/loneliness\n\"Maybe that's all family really is. A group of people that miss the same imaginary place.\"\nGarden State\n2004 \u2022 DIRECTED BY\nZach Braff\nTRAILER 102 mins\nAndrew returns to his hometown for the funeral of his mother, a journey that reconnects him with past friends. The trip coincides with his decision to stop taking his powerful antidepressants. A chance meeting with Sam - a",
+          "primary_content": "Movie Recommendation: Garden State (2004)",
+          "entities": [
+            {
+              "name": "Garden State",
+              "type": "movie_or_show",
+              "specifications": "2004 film"
+            },
+            {
+              "name": "Zach Braff",
+              "type": "person",
+              "specifications": "Director/Actor"
+            },
+            {
+              "name": "Natalie Portman",
+              "type": "person",
+              "specifications": "Actor"
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This TikTok carousel is a curated list of nine movies centered on the theme of emotional healing. Each slide uses a Letterboxd screenshot to recommend a film, categorizing it by the specific type of struggle it addresses, such as addiction, grief, or trauma, and providing a significant quote. The user likely saved this post as a cinematic watchlist for films that offer emotional depth and catharsis.",
+      "carousel_type": "recommendation_list",
+      "narrative_thread": "The post presents a series of films that explore the process of emotional recovery and personal growth, framing cinema as a tool for understanding and healing from various life hardships.",
+      "entities": [
+        {
+          "name": "Letterboxd",
+          "display_name": "Letterboxd App",
+          "type": "app_or_tool",
+          "relevance": "primary",
+          "source": ["visual"],
+          "slide_number": 2,
+          "confidence": 5
+        },
+        {
+          "name": "The Outrun",
+          "display_name": "The Outrun (2024)",
+          "type": "movie_or_show",
+          "relevance": "primary",
+          "source": ["metadata", "text_overlay"],
+          "slide_number": 3,
+          "confidence": 5
+        },
+        {
+          "name": "Saoirse Ronan",
+          "display_name": "Saoirse Ronan",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual"],
+          "slide_number": 1,
+          "confidence": 5
+        },
+        {
+          "name": "Past Lives",
+          "display_name": "Past Lives (2023)",
+          "type": "movie_or_show",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "slide_number": 6,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The movie 'The Outrun' is highly recommended for its beautiful portrayal of healing from addiction.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Films like 'Big Fish' and 'A Beautiful Day in the Neighborhood' are identified as key stories for healing father/son relationships.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "The post categorizes films by specific emotional needs, such as healing from trauma, grief, or identity crises.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "You Were Never Really Here",
+            "details": "Healing from abuse/trauma/ptsd",
+            "slide_number": 2
+          },
+          {
+            "name": "The Outrun",
+            "details": "Healing from addiction",
+            "slide_number": 3
+          },
+          {
+            "name": "Priscilla",
+            "details": "Healing from a traumatic relationship/finding autonomy",
+            "slide_number": 4
+          },
+          {
+            "name": "The Descendants",
+            "details": "Healing from grief/father daughter bond",
+            "slide_number": 5
+          },
+          {
+            "name": "Past Lives",
+            "details": "Healing from feelings of disconnect/identity crisis",
+            "slide_number": 6
+          },
+          {
+            "name": "A Beautiful Day in the Neighborhood",
+            "details": "Healing a father/son bond",
+            "slide_number": 7
+          },
+          {
+            "name": "Big Fish",
+            "details": "Healing from grief/father son bond",
+            "slide_number": 8
+          },
+          {
+            "name": "A Monster Calls",
+            "details": "Healing from grief/loss of a parent",
+            "slide_number": 9
+          },
+          {
+            "name": "Garden State",
+            "details": "Healing from grief/loneliness",
+            "slide_number": 10
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "magic \u2014 Medasin & MAE.SUN & Sara Kawai",
+        "metadata_song": "magic \u2014 Medasin & MAE.SUN & Sara Kawai",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All movie titles, directors, and thematic categories were transcribed directly from the Letterboxd screenshots."
+      },
+      "presentation_style": {
+        "primary_format": "recommendation_list",
+        "visual_style": "aesthetic"
+      },
+      "visual_mood": "Melancholic, introspective, and hopeful.",
+      "topic_hints": ["Cinema", "Mental Health", "Film Recommendations"],
+      "affect_hints": ["Reflective", "Emotional", "Comforted"],
+      "genre_hints": ["FilmTok", "Watchlist", "Mental Wellness"]
+    },
+    "metrics": {
+      "input_tokens": 11977,
+      "output_tokens": 4214,
+      "cost_usd": 0.0028833,
+      "latency_ms": 63446,
+      "video_uploaded": false
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "movies_tv",
+        "secondary": "health",
+        "micro_labels": [
+          "film recommendations",
+          "mental health in film",
+          "healing and trauma",
+          "indie cinema"
+        ],
+        "confidence": 0.98
+      },
+      "genre": {
+        "label": "ranking",
+        "micro_labels": ["watchlist", "recommendation list"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "sad",
+          "tier": "secondary"
+        },
+        {
+          "label": "inspiring",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "The Outrun",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "Saoirse Ronan",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Past Lives",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "Priscilla",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "You Were Never Really Here",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "The Descendants",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "Letterboxd",
+          "type": "app_or_tool",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Sofia Coppola",
+          "type": "person",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A curated list of movie recommendations focused on themes of emotional healing, recovery from addiction, and overcoming trauma. The creator uses Letterboxd screenshots to showcase films like 'The Outrun', 'Past Lives', and 'Priscilla' as essential viewing for those seeking cathartic cinema.",
+      "embedding_text": "A movie recommendation video titled 'movies about healing part 3' by creator @catwatchesfilms. The content features a slideshow of Letterboxd screenshots for several films, including 'The Outrun' (2024) starring Saoirse Ronan, 'You Were Never Really Here' (2017) starring Joaquin Phoenix and directed by Lynne Ramsay, 'Priscilla' (2023) directed by Sofia Coppola, 'The Descendants' (2011) starring George Clooney, and 'Past Lives' (2023) directed by Celine Song. Each slide categorizes the film by the type of healing it portrays, such as healing from addiction, abuse, PTSD, traumatic relationships, grief, and identity crises. This video is designed for film lovers looking to build a watchlist of emotionally resonant and therapeutic cinema. It includes specific quotes from the films and details like director names and runtimes."
+    },
+    "metrics": {
+      "input_tokens": 4143,
+      "output_tokens": 900,
+      "cost_usd": 0.0007742999999999999,
+      "latency_ms": 7374
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "movies_tv",
+      "genre": "ranking",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

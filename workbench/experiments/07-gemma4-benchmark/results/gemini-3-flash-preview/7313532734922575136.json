@@ -1,0 +1,391 @@
+{
+  "item_id": "7313532734922575136",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "A screenshot of a Reddit post from the r/AskReddit community.",
+          "text_detected": "r/AskReddit \u2022 u/ImportGuy \u2022 6y\nWhat's the single best piece of advice you've ever heard?",
+          "primary_content": "The prompt for the advice thread: 'What's the single best piece of advice you've ever heard?'",
+          "entities": [
+            {
+              "name": "r/AskReddit",
+              "type": "app_or_tool",
+              "specifications": "Reddit community"
+            },
+            {
+              "name": "u/ImportGuy",
+              "type": "person",
+              "specifications": "Reddit user"
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "A Reddit comment by user the_krug sharing advice about uncomfortable conversations.",
+          "text_detected": "the_krug \u2022 6y\n\"Your success in life is largely dependent on how many uncomfortable conversations you're willing to have.\"\nMy former boss told me this when I was denied re-enrollment to my university to finish my degree. He encouraged me to take a day off from work, drive down to the university, and negotiate with them in person about the ordeal. Being a very non-confrontational person, I would never have done this on my own. Sure enough, I spoke to the offices about it and I was able to enroll.\nHe later used this line again when he had to lay me off because of financial constraints. But thanks to the same advice, I was planning on leaving work anyways to attend school full time.",
+          "primary_content": "Advice: Success depends on the willingness to have uncomfortable conversations.",
+          "entities": [
+            {
+              "name": "the_krug",
+              "type": "person",
+              "specifications": "Reddit user"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "A Reddit comment by user DLun203 quoting Warren Buffett.",
+          "text_detected": "DLun203 \u2022 6y\nWarren Buffett had some awesome bits of wisdom yesterday on CNBC\nOne of them was \"You can always tell someone to go to hell tomorrow.\" Basically, wait to cool down a bit before reacting to someone.",
+          "primary_content": "Advice: Wait to cool down before reacting to someone (quoted from Warren Buffett).",
+          "entities": [
+            {
+              "name": "Warren Buffett",
+              "type": "person",
+              "specifications": "Investor/Businessman"
+            },
+            {
+              "name": "CNBC",
+              "type": "brand",
+              "specifications": "News network"
+            },
+            {
+              "name": "DLun203",
+              "type": "person",
+              "specifications": "Reddit user"
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "A short Reddit comment by user scribbyx about mastery.",
+          "text_detected": "scribbyx \u2022 6y\nNo one who is great at something was always great at it.",
+          "primary_content": "Advice: Greatness is a process; everyone starts as a beginner.",
+          "entities": [
+            {
+              "name": "scribbyx",
+              "type": "person",
+              "specifications": "Reddit user"
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "A Reddit comment by user AlphaQUp_Bish regarding parenting.",
+          "text_detected": "AlphaQUp_Bish \u2022 6y\n\"Don't prepare the road for your kids, prepare your kids for the road\"\nGot this gem after joking about the cat \"going to live on a farm.\" And they are 100% correct. Kids need to see how the world really works especially since you are there to comfort them and help them through it. If you shield them until they are out on their own, they are going to have an extremely hard time.",
+          "primary_content": "Advice: Prepare children for the realities of the world rather than shielding them from it.",
+          "entities": [
+            {
+              "name": "AlphaQUp_Bish",
+              "type": "person",
+              "specifications": "Reddit user"
+            }
+          ]
+        },
+        {
+          "image_number": 6,
+          "description": "A short Reddit comment by user Golden-Sun about self-reliance.",
+          "text_detected": "Golden-Sun \u2022 6y\nBe the person you needed in life. Gave me something to think about",
+          "primary_content": "Advice: Embody the qualities of the person you wished you had to support you.",
+          "entities": [
+            {
+              "name": "Golden-Sun",
+              "type": "person",
+              "specifications": "Reddit user"
+            }
+          ]
+        },
+        {
+          "image_number": 7,
+          "description": "A Reddit comment by user acompanyofliars about perspective and mortality.",
+          "text_detected": "acompanyofliars \u2022 6y\nSome redditor from an similar thread a few months back posted how his boss always seemed totally at peace in a high-stress enviroment. Totally chill, no mater how messed up things got. When he asked him about it, the boss said \"Someday, someone you love will die, and everything else will seem totally irrelevant.\"\nTotally morbid way of saying \"Life is too short to be mad/sad/stressed all the time,\" but it gets to the point and it's stuck in my head.\nEdit: Thanks for the gold and responses everyone! I wish you all much joy in life.",
+          "primary_content": "Advice: Keep perspective on stress by remembering what truly matters (mortality).",
+          "entities": [
+            {
+              "name": "acompanyofliars",
+              "type": "person",
+              "specifications": "Reddit user"
+            }
+          ]
+        },
+        {
+          "image_number": 8,
+          "description": "A Reddit comment by user eggre about marriage and dating.",
+          "text_detected": "eggre \u2022 6y\nAnything that annoys you when you're dating, you're going to get from both barrels when you're married.",
+          "primary_content": "Advice: Small annoyances in dating become major issues in marriage.",
+          "entities": [
+            {
+              "name": "eggre",
+              "type": "person",
+              "specifications": "Reddit user"
+            }
+          ]
+        },
+        {
+          "image_number": 9,
+          "description": "A long Reddit comment by user gegenbesuch about emotional control.",
+          "text_detected": "gegenbesuch \u2022 6y\n\u201cDon\u2019t worry about controlling your emotions. Control your actions.\u201d\nThis was from my geometry instructor when I was a sophomore in high school. He was the kind of guy who spent 80% of class time discussing mathematics, and 20% talking about life. He was an excellent teacher, and one hell of a human being.\nThe goal, I think, of parents in the area where I grew up was a kind of steely-eyed stoicism. Conceal your anger, ignore your lust, show no fear, show no weakness, be strong, strong, strong. Being awash in hormones, I could do none of those things, and I was beating myself up constantly. I think most kids in school were under the same pressure.\nHis advice hit me right between the eyes. The experience of emotions is outside our control, but our response to them is not. Don\u2019t be ashamed of a feeling, but be ashamed if you act like an ass because of the feeling. That idea changed everything for me. I passed his insight on to my kids, and I still apply it to my own life decades later.\nThanks, Coach, wherever you are.\nEDIT: Thank you for the gold and all the kind comments! I hope his advice helps you as much as it helped me.",
+          "primary_content": "Advice: You cannot control how you feel, but you can control how you act.",
+          "entities": [
+            {
+              "name": "gegenbesuch",
+              "type": "person",
+              "specifications": "Reddit user"
+            }
+          ]
+        },
+        {
+          "image_number": 10,
+          "description": "A short Reddit comment by user andorooski about taking initiative.",
+          "text_detected": "andorooski \u2022 6y\nThe answer is always no, until you ask.",
+          "primary_content": "Advice: You miss 100% of the shots you don't take; ask for what you want.",
+          "entities": [
+            {
+              "name": "andorooski",
+              "type": "person",
+              "specifications": "Reddit user"
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This post is a compilation of screenshots from a popular Reddit thread on r/AskReddit where users shared the best advice they have ever received. The slides cover a wide range of topics including career success, parenting, emotional intelligence, and relationship wisdom. The user likely saved this for personal inspiration, motivation, or as a collection of life lessons to revisit.",
+      "carousel_type": "recommendation_list",
+      "narrative_thread": "The carousel starts with a broad question about life advice and follows with nine distinct, impactful responses from different individuals, creating a narrative of shared human wisdom and practical philosophy.",
+      "entities": [
+        {
+          "name": "Reddit",
+          "display_name": "Reddit",
+          "type": "app_or_tool",
+          "relevance": "primary",
+          "source": ["visual", "metadata"],
+          "slide_number": 1,
+          "confidence": 5
+        },
+        {
+          "name": "Warren Buffett",
+          "display_name": "Warren Buffett",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["text_overlay"],
+          "slide_number": 3,
+          "confidence": 5
+        },
+        {
+          "name": "CNBC",
+          "display_name": "CNBC",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["text_overlay"],
+          "slide_number": 3,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Success is tied to the ability to handle uncomfortable conversations.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Emotional regulation should focus on actions rather than trying to suppress feelings.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Perspective on mortality can help minimize daily stress.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Preparation for life's challenges is better for children than removing those challenges.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Uncomfortable Conversations",
+            "details": "Success depends on how many you are willing to have.",
+            "slide_number": 2
+          },
+          {
+            "name": "Delayed Reaction",
+            "details": "Wait to cool down before telling someone to 'go to hell'.",
+            "slide_number": 3
+          },
+          {
+            "name": "Growth Mindset",
+            "details": "No one starts out great at what they do.",
+            "slide_number": 4
+          },
+          {
+            "name": "Resilient Parenting",
+            "details": "Prepare the kids for the road, not the road for the kids.",
+            "slide_number": 5
+          },
+          {
+            "name": "Self-Embodiment",
+            "details": "Be the person you needed in life.",
+            "slide_number": 6
+          },
+          {
+            "name": "Ultimate Perspective",
+            "details": "Remembering mortality makes minor stresses irrelevant.",
+            "slide_number": 7
+          },
+          {
+            "name": "Relationship Realism",
+            "details": "Dating annoyances are amplified in marriage.",
+            "slide_number": 8
+          },
+          {
+            "name": "Action Control",
+            "details": "Control your actions, not your emotions.",
+            "slide_number": 9
+          },
+          {
+            "name": "Initiative",
+            "details": "The answer is always no until you ask.",
+            "slide_number": 10
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Ethereal \u2014 txmy",
+        "metadata_song": "Ethereal by txmy slowed \u2014 Octive down",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "Text was clearly legible and transcribed verbatim."
+      },
+      "presentation_style": {
+        "primary_format": "screenshot",
+        "visual_style": "minimal"
+      },
+      "visual_mood": "Contemplative, somber, and wise.",
+      "topic_hints": ["Life Advice", "Stoicism", "Personal Growth"],
+      "affect_hints": ["Inspired", "Reflective", "Grounded"],
+      "genre_hints": ["Educational", "Motivational"]
+    },
+    "metrics": {
+      "input_tokens": 12040,
+      "output_tokens": 3217,
+      "cost_usd": 0.0024908,
+      "latency_ms": 24948,
+      "video_uploaded": false
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "career",
+        "secondary": "relationships",
+        "micro_labels": [
+          "life advice",
+          "personal growth",
+          "professional development",
+          "parenting tips"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "compilation",
+        "micro_labels": ["reddit thread", "advice compilation"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "secondary"
+        },
+        {
+          "label": "relaxing",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "repost",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "anonymous",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "r/AskReddit",
+          "type": "app_or_tool",
+          "relevance": "primary"
+        },
+        {
+          "name": "Warren Buffett",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "CNBC",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "the_krug",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "AlphaQUp_Bish",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "acompanyofliars",
+          "type": "person",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A compilation of the best pieces of advice from an r/AskReddit thread, featuring wisdom on career, relationships, and parenting. Key insights include Warren Buffett's tip on delaying reactions and the importance of having uncomfortable conversations for success.",
+      "embedding_text": "A TikTok slideshow compilation of Reddit posts from the r/AskReddit community answering the question: 'What's the single best piece of advice you've ever heard?'. The video features several screenshots of user comments, including advice from user the_krug about how success depends on having uncomfortable conversations, and a quote from Warren Buffett via CNBC shared by user DLun203: 'You can always tell someone to go to hell tomorrow,' emphasizing emotional regulation. Other advice includes parenting wisdom from AlphaQUp_Bish about preparing kids for the road rather than the road for the kids, and a perspective on stress and mortality from acompanyofliars. This content is a collection of life lessons and motivational insights intended for personal development and active learning, set to ethereal background music."
+    },
+    "metrics": {
+      "input_tokens": 4049,
+      "output_tokens": 778,
+      "cost_usd": 0.0007161000000000001,
+      "latency_ms": 5445
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "career",
+      "genre": "compilation",
+      "communicative_intent": "inform",
+      "creator_role": "anonymous",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "slideshow",
+      "content_provenance": "repost"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "item_id": "7370357819779992852",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "A hand holding a fully assembled Greek-style pita wrap filled with grilled chicken, red onions, tomatoes, parsley, and tzatziki sauce over a white plate.",
+          "text_detected": "Let\u2019s make one of my favourite weeknight meals\nQuick, healthy, delicious and full of protein!",
+          "primary_content": "Final product: Greek-inspired chicken pita wrap.",
+          "entities": [
+            {
+              "name": "Pita wrap",
+              "type": "recipe",
+              "specifications": "Greek inspired"
+            },
+            {
+              "name": "Chicken",
+              "type": "ingredient",
+              "specifications": "Grilled/charred"
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "Raw chicken breast pieces in a white bowl covered in a creamy white marinade with herbs.",
+          "text_detected": "Marinate chicken in yoghurt, lemon, minced garlic, lots of oregano and salt and pepper\nMarinate anywhere between 20 mins to 2 hours",
+          "primary_content": "Step 1: Marinating the chicken.",
+          "entities": [
+            {
+              "name": "Chicken",
+              "type": "ingredient",
+              "specifications": "Raw breast"
+            },
+            {
+              "name": "Yoghurt",
+              "type": "ingredient",
+              "specifications": "Used for marinade"
+            },
+            {
+              "name": "Oregano",
+              "type": "ingredient",
+              "specifications": "Dried"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "A white bowl containing Greek yogurt, minced garlic, fresh dill, and black pepper, ready to be mixed.",
+          "text_detected": "While that\u2019s in the fridge, we make the tzatziki\nGreek yoghurt\nMinced garlic\nLemon\nDill\nS&P\nYou can add cucumber if you want but I prefer without",
+          "primary_content": "Step 2: Preparing the tzatziki sauce.",
+          "entities": [
+            {
+              "name": "Tzatziki",
+              "type": "recipe",
+              "specifications": "No-cucumber version"
+            },
+            {
+              "name": "Greek yoghurt",
+              "type": "ingredient",
+              "specifications": "Base for sauce"
+            },
+            {
+              "name": "Dill",
+              "type": "ingredient",
+              "specifications": "Freshly chopped"
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "A white bowl containing a salad of sliced red onions, tomato wedges, and chopped parsley.",
+          "text_detected": "Then make a little salad of tomato, red onion, and parsley\nDrizzle with EVOO, lemon juice and salt",
+          "primary_content": "Step 3: Preparing the salad topping.",
+          "entities": [
+            {
+              "name": "EVOO",
+              "type": "ingredient",
+              "specifications": "Extra Virgin Olive Oil"
+            },
+            {
+              "name": "Red onion",
+              "type": "ingredient",
+              "specifications": "Sliced"
+            },
+            {
+              "name": "Tomato",
+              "type": "ingredient",
+              "specifications": "Wedges"
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "Chicken breasts being pan-fried in oil in a stainless steel skillet.",
+          "text_detected": "Fry the chicken until charred and golden on the outside",
+          "primary_content": "Step 4: Searing the chicken.",
+          "entities": [
+            {
+              "name": "Chicken",
+              "type": "ingredient",
+              "specifications": "Pan-fried"
+            }
+          ]
+        },
+        {
+          "image_number": 6,
+          "description": "The seared chicken breasts resting on aluminum foil on a baking tray.",
+          "text_detected": "Finish it in the oven",
+          "primary_content": "Step 5: Finishing the chicken in the oven.",
+          "entities": [
+            {
+              "name": "Chicken",
+              "type": "ingredient",
+              "specifications": "Oven-baked"
+            }
+          ]
+        },
+        {
+          "image_number": 7,
+          "description": "A single piece of flatbread/pita being warmed or cooked in a stainless steel pan.",
+          "text_detected": "Make your own pita breads! Recipe for these is in a previous video",
+          "primary_content": "Step 6: Preparing the pita bread.",
+          "entities": [
+            {
+              "name": "Pita bread",
+              "type": "recipe",
+              "specifications": "Homemade"
+            }
+          ]
+        },
+        {
+          "image_number": 8,
+          "description": "A piece of pita bread on a white plate with a layer of tzatziki sauce spread down the center.",
+          "text_detected": "Let\u2019s assemble \ud83d\udc45\nTzatziki first",
+          "primary_content": "Assembly Step 1: Adding sauce to the pita.",
+          "entities": [
+            {
+              "name": "Tzatziki",
+              "type": "recipe",
+              "specifications": "Spread on bread"
+            }
+          ]
+        },
+        {
+          "image_number": 9,
+          "description": "The pita bread with tzatziki, now topped with sliced pieces of the cooked chicken.",
+          "text_detected": "Then the chicken \ud83c\udf57",
+          "primary_content": "Assembly Step 2: Adding the protein.",
+          "entities": [
+            {
+              "name": "Chicken",
+              "type": "ingredient",
+              "specifications": "Sliced and cooked"
+            }
+          ]
+        },
+        {
+          "image_number": 10,
+          "description": "The pita bread fully loaded with tzatziki, chicken, and the tomato-onion salad.",
+          "text_detected": "Lastly, the salad \ud83e\udd57",
+          "primary_content": "Assembly Step 3: Final topping.",
+          "entities": [
+            {
+              "name": "Salad",
+              "type": "recipe",
+              "specifications": "Tomato, onion, parsley"
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This post is a step-by-step recipe tutorial for making Greek-inspired chicken pita wraps. It covers marinating the chicken in yogurt and herbs, making a custom tzatziki sauce (without cucumber), preparing a simple tomato and onion salad, and the final assembly on homemade pita bread. The user likely saved this for a quick, high-protein weeknight dinner idea.",
+      "carousel_type": "recipe_steps",
+      "narrative_thread": "The carousel follows a logical culinary progression: starting with the finished appetizing result, then moving through preparation (marinade, sauce, salad), cooking (pan-fry to oven), and finally the assembly process.",
+      "entities": [
+        {
+          "name": "Greek inspired pita wraps",
+          "display_name": "Greek Chicken Pita Wraps",
+          "type": "recipe",
+          "relevance": "primary",
+          "source": ["metadata", "visual"],
+          "slide_number": 1,
+          "confidence": 5
+        },
+        {
+          "name": "Tzatziki",
+          "display_name": "Homemade Tzatziki Sauce",
+          "type": "recipe",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "slide_number": 3,
+          "confidence": 5
+        },
+        {
+          "name": "EVOO",
+          "display_name": "Extra Virgin Olive Oil",
+          "type": "product",
+          "relevance": "supporting",
+          "source": ["text_overlay"],
+          "slide_number": 4,
+          "confidence": 5
+        },
+        {
+          "name": "Vanille",
+          "display_name": "Vanille",
+          "type": "artist",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Marinating chicken in yogurt for 20 minutes to 2 hours makes it a viable quick weeknight meal.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Tzatziki can be made without cucumber based on personal preference.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Searing chicken in a pan and finishing it in the oven ensures a charred exterior and juicy interior.",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "recipe",
+        "items": [
+          {
+            "name": "Marinated Chicken",
+            "details": "Chicken breast, yoghurt, lemon, minced garlic, oregano, salt, pepper. Marinate 20m-2h.",
+            "slide_number": 2
+          },
+          {
+            "name": "Tzatziki Sauce",
+            "details": "Greek yoghurt, minced garlic, lemon, dill, salt, pepper (cucumber optional).",
+            "slide_number": 3
+          },
+          {
+            "name": "Tomato & Onion Salad",
+            "details": "Tomato, red onion, parsley, EVOO, lemon juice, salt.",
+            "slide_number": 4
+          },
+          {
+            "name": "Homemade Pita",
+            "details": "Recipe mentioned in a previous video; warmed in a pan.",
+            "slide_number": 7
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Suivre le soleil \u2014 Vanille",
+        "metadata_song": "Suivre le soleil \u2014 Vanille",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All ingredients and steps are clearly labeled with text overlays."
+      },
+      "presentation_style": {
+        "primary_format": "recipe_steps",
+        "visual_style": "aesthetic"
+      },
+      "visual_mood": "Bright, appetizing, and homey.",
+      "topic_hints": ["Healthy Cooking", "Greek Cuisine", "Meal Prep"],
+      "affect_hints": ["Hungry", "Motivated to cook", "Satisfied"],
+      "genre_hints": ["Food & Drink", "Cooking Tutorial"]
+    },
+    "metrics": {
+      "input_tokens": 11967,
+      "output_tokens": 2544,
+      "cost_usd": 0.0022143,
+      "latency_ms": 30009,
+      "video_uploaded": false
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "food",
+        "secondary": "health",
+        "micro_labels": [
+          "Greek cuisine",
+          "high protein meals",
+          "weeknight dinners",
+          "Mediterranean recipes"
+        ],
+        "confidence": 0.98
+      },
+      "genre": {
+        "label": "recipe",
+        "micro_labels": ["cooking tutorial", "meal prep"],
+        "confidence": 1.0
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "secondary"
+        },
+        {
+          "label": "relaxing",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["text_overlay", "cinematic"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.95
+      },
+      "entities": [
+        {
+          "name": "Greek chicken pita wrap",
+          "type": "recipe",
+          "relevance": "primary"
+        },
+        {
+          "name": "Tzatziki",
+          "type": "recipe",
+          "relevance": "primary"
+        },
+        {
+          "name": "Greek yogurt",
+          "type": "ingredient",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Chicken breast",
+          "type": "ingredient",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Pita bread",
+          "type": "recipe",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Dill",
+          "type": "ingredient",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Oregano",
+          "type": "ingredient",
+          "relevance": "supporting"
+        },
+        {
+          "name": "EVOO",
+          "type": "ingredient",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A step-by-step recipe tutorial for Greek-inspired chicken pita wraps by @inapickle__. The video demonstrates marinating chicken in yogurt and herbs, making a cucumber-free tzatziki, and assembling the final wrap with a fresh tomato and onion salad on homemade pita bread.",
+      "embedding_text": "This TikTok video by @inapickle__ is a comprehensive recipe tutorial for making Greek-inspired chicken pita wraps, framed as a healthy, high-protein weeknight dinner. The process includes marinating chicken breast in a mixture of Greek yogurt, lemon, garlic, and oregano before pan-searing and finishing it in the oven for a charred texture. It features a specific recipe for a cucumber-free tzatziki sauce made with Greek yogurt, dill, and garlic. The assembly involves a fresh salad of tomato, red onion, and parsley dressed with extra virgin olive oil (EVOO). The creator uses homemade pita bread to wrap the ingredients. On-screen text highlights the meal as 'Quick, healthy, delicious and full of protein!' This content is perfect for users searching for Mediterranean diet inspiration, easy chicken recipes, or high-protein meal ideas. The video uses a cinematic montage style with clear text overlays for each step."
+    },
+    "metrics": {
+      "input_tokens": 4108,
+      "output_tokens": 876,
+      "cost_usd": 0.0007612000000000001,
+      "latency_ms": 7871
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "food",
+      "genre": "recipe",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

@@ -1,0 +1,318 @@
+{
+  "item_id": "7497784222665444630",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:32",
+          "visual_description": "Chris Eubank Jr. and Conor Benn at a press conference; Eubank Jr. speaks emotionally about personal loss and family estrangement.",
+          "audio_description": "Eubank Jr. says: 'What is pain? I have a 31-year-old brother... he is buried in the desert in Dubai. That's pain. My own father... we haven't spoken for years and he thinks I'm a disgrace.'",
+          "text_on_screen": "FATAL FURY",
+          "key_objects": ["Microphones", "Everlast jacket"]
+        },
+        {
+          "time_range": "0:33-0:36",
+          "visual_description": "Chris Eubank Sr. speaking to a reporter in a park, expressing his disapproval of his son.",
+          "audio_description": "Eubank Sr. says: 'I would never be in your corner. You're a disgrace.'",
+          "text_on_screen": "SD",
+          "key_objects": ["Microphone"]
+        },
+        {
+          "time_range": "0:37-0:56",
+          "visual_description": "Chris Eubank Jr. being interviewed by Piers Morgan on a television set.",
+          "audio_description": "Eubank Jr. discusses the possibility of his father being in his corner for the upcoming fight.",
+          "text_on_screen": "PIERS MORGAN UNCENSORED, COMMENT #UNCENSORED, FOLLOW US, LIKE & SUBSCRIBE",
+          "key_objects": ["TV Studio set"]
+        },
+        {
+          "time_range": "0:57-1:27",
+          "visual_description": "Cinematic montage of Eubank Jr. arriving at the arena, walking through corridors with his team, and preparing backstage.",
+          "audio_description": "Dramatic orchestral version of 'My Way' begins to play.",
+          "text_on_screen": "02.09.2023, EUBANK JR, RING",
+          "key_objects": ["Elevator", "Boxing gloves", "Championship belt"]
+        },
+        {
+          "time_range": "1:28-2:05",
+          "visual_description": "The 'Perfect Ending': Chris Eubank Sr. joins his son for the ring walk at Tottenham Hotspur Stadium.",
+          "audio_description": "Crowd cheering over 'My Way' lyrics: 'I planned each charted course, each careful step along the byway...'",
+          "text_on_screen": "TOTTENHAM HOTSPUR",
+          "key_objects": ["Boxing robe", "Stadium lights"]
+        },
+        {
+          "time_range": "2:06-3:38",
+          "visual_description": "High-intensity highlights of the boxing match between Chris Eubank Jr. and Liam Smith.",
+          "audio_description": "Commentary: 'A right hand from Chris Eubank! This is good from Chris Eubank Jr! 10 seconds left...'",
+          "text_on_screen": "EUBANK JR. BENN, ROUND 3 OF 12, ROUND 10 OF 12, ROUND 11 OF 12, ROUND 12 OF 12, BOXRAW, Gamdom",
+          "key_objects": ["Boxing ring", "Referee", "Boxing trunks"]
+        },
+        {
+          "time_range": "3:39-4:03",
+          "visual_description": "Post-fight celebration: Eubank Jr. celebrates his victory and shares an emotional embrace with his father in the ring.",
+          "audio_description": "Final crescendo of 'My Way'.",
+          "text_on_screen": "Sky Sports",
+          "key_objects": ["Boxing ring"]
+        }
+      ],
+      "overall_summary": "This cinematic edit chronicles the emotional reconciliation between British boxer Chris Eubank Jr. and his legendary father, Chris Eubank Sr. The video begins with Eubank Jr. reflecting on the pain of their public estrangement and his father's harsh criticisms. It then builds to a triumphant climax at Tottenham Hotspur Stadium, where Eubank Sr. finally returns to his son's corner for his fight against Liam Smith. The video concludes with Eubank Jr.'s dominant victory and a heartfelt embrace between father and son, framed as the 'perfect ending' to their personal conflict.",
+      "people": [
+        {
+          "description": "Professional boxer, son of Chris Eubank Sr.",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "Chris Eubank Jr."
+        },
+        {
+          "description": "Boxing legend and father of Chris Eubank Jr.",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "Chris Eubank Sr."
+        },
+        {
+          "description": "British television presenter and journalist.",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "Piers Morgan"
+        },
+        {
+          "description": "Professional boxer and opponent in the press conference footage.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Conor Benn"
+        },
+        {
+          "description": "Professional boxer and opponent in the fight highlights.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Liam Smith"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Chris Eubank Jr.",
+          "display_name": "Chris Eubank Jr.",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "audio", "text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Chris Eubank Sr.",
+          "display_name": "Chris Eubank Sr.",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "audio", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Tottenham Hotspur Stadium",
+          "display_name": "Tottenham Hotspur Stadium",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["visual", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "My Way",
+          "display_name": "My Way \u2014 Frank Sinatra",
+          "type": "song",
+          "relevance": "primary",
+          "source": ["audio"],
+          "specifications": "Cinematic/Dramatic Remix",
+          "confidence": 5
+        },
+        {
+          "name": "Piers Morgan Uncensored",
+          "display_name": "Piers Morgan Uncensored",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["visual", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Everlast",
+          "display_name": "Everlast",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Sky Sports",
+          "display_name": "Sky Sports",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The reconciliation between Chris Eubank Jr. and his father served as a powerful emotional conclusion to their public rift.",
+          "source": "demonstration",
+          "confidence": 5
+        },
+        {
+          "statement": "Personal redemption and family support can be as significant as athletic victory in professional sports.",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": null,
+      "audio_identification": {
+        "actual_song": "My Way \u2014 Frank Sinatra",
+        "metadata_song": "original sound - akiekinsai \u2014 \u03b1\u0438g\u03ba\u03bf\u2113 g\u03c5\u0438\u0455\u03b9\u03ba\u03b1\u0438g(\u963f\u5947)",
+        "match": false
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The video includes a graphic error at 2:06 that says 'EUBANK JR. BENN' while showing the Liam Smith fight; this is likely due to the edit using footage from multiple events."
+      },
+      "presentation_style": {
+        "primary_format": "edit",
+        "camera_work": "transitions",
+        "editing_style": "heavy_effects"
+      },
+      "visual_mood": "Dramatic, emotional, and triumphant with cinematic color grading.",
+      "topic_hints": ["Boxing", "Family Relationships", "Sports Redemption"],
+      "affect_hints": ["Inspired", "Emotional", "Triumphant"],
+      "genre_hints": ["Sports Edit", "Tribute Video"]
+    },
+    "metrics": {
+      "input_tokens": 23173,
+      "output_tokens": 2205,
+      "cost_usd": 0.0031993,
+      "latency_ms": 54122,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "sports",
+        "secondary": "relationships",
+        "micro_labels": [
+          "boxing",
+          "father-son reconciliation",
+          "british boxing",
+          "sports drama"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "edit",
+        "micro_labels": ["cinematic montage", "sports highlight", "tribute"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "inspiring",
+          "tier": "dominant"
+        },
+        {
+          "label": "wholesome",
+          "tier": "dominant"
+        },
+        {
+          "label": "sad",
+          "tier": "secondary"
+        },
+        {
+          "label": "nostalgic",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["cinematic", "text_overlay", "voiceover"],
+      "content_provenance": {
+        "label": "remix",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "inspire",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "professional",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.8
+      },
+      "entities": [
+        {
+          "name": "Chris Eubank Jr.",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Chris Eubank Sr.",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Liam Smith",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Piers Morgan",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Tottenham Hotspur Stadium",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "My Way \u2014 Frank Sinatra",
+          "type": "song",
+          "relevance": "primary"
+        },
+        {
+          "name": "Piers Morgan Uncensored",
+          "type": "movie_or_show",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Sky Sports",
+          "type": "brand",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A cinematic sports edit documenting the emotional reconciliation between British boxer Chris Eubank Jr. and his father, Chris Eubank Sr. The video follows their journey from public estrangement and harsh criticism to a triumphant 'perfect ending' where they walk to the ring together for the Liam Smith fight.",
+      "embedding_text": "A cinematic boxing edit by @combatcentral6 titled 'The perfect ending,' chronicling the emotional reconciliation between Chris Eubank Jr. and his legendary father, Chris Eubank Sr. The content features press conference footage of Eubank Jr. discussing family pain and his brother's death, an interview on Piers Morgan Uncensored, and the iconic ring walk at Tottenham Hotspur Stadium. Set to a dramatic orchestral remix of 'My Way' by Frank Sinatra, the video shows the father and son reuniting in the corner for the fight against Liam Smith. It includes high-intensity match highlights from Sky Sports and concludes with a heartfelt embrace in the ring after victory. This narrative-driven sports montage captures themes of redemption, family dynamics, and athletic triumph, featuring on-screen text like 'FATAL FURY' and 'EUBANK JR. BENN'."
+    },
+    "metrics": {
+      "input_tokens": 4274,
+      "output_tokens": 912,
+      "cost_usd": 0.0007922000000000001,
+      "latency_ms": 7594
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "inspiring",
+      "topic": "sports",
+      "genre": "edit",
+      "communicative_intent": "inspire",
+      "creator_role": "professional",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "cinematic",
+      "content_provenance": "remix"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

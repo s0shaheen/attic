@@ -1,0 +1,378 @@
+{
+  "item_id": "7550204147430198559",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:24",
+          "visual_description": "Creator Tad Stoermer addresses the camera in a library setting, introducing the concept of 'Liberal Nationalism'.",
+          "audio_description": "Tad discusses recent comments by Ezra Klein and Gavin Newsom regarding Charlie Kirk, suggesting they reveal a shared 'Liberal Nationalism' project.",
+          "text_on_screen": "WHEN EZRA KLEIN CLAIMS THAT HE AND CHARLIE KIRK SHARE A LARGER PROJECT; WHEN GAVIN NEWSOM URGES US TO 'CONTINUE CHARLIE'S WORK'; LIBERAL NATIONALISM",
+          "key_objects": ["Bookshelves", "Books"]
+        },
+        {
+          "time_range": "0:24-1:10",
+          "visual_description": "Creator introduces himself and his academic background while gesturing with his hands.",
+          "audio_description": "Tad Stoermer identifies as an American scholar of resistance history and explains his research into why resistance movements in America often fail to achieve structural change.",
+          "text_on_screen": "I'M TAD STOERMER; AN AMERICAN SCHOLAR OF RESISTANCE HISTORY AT THE UNIVERSITY OF SOUTHERN DENMARK; AUTHOR OF A RESISTANCE HISTORY OF THE UNITED STATES",
+          "key_objects": ["Bookshelves"]
+        },
+        {
+          "time_range": "1:10-2:19",
+          "visual_description": "Creator explains the historical origins of 'The American Project' mythology.",
+          "audio_description": "He argues that the 'American Experiment' is a construct invented by Patriots and reinforced in the 1830s to maintain the Union despite the existence of slavery.",
+          "text_on_screen": "AMERICAN MYTHOLOGY OF EXCEPTIONALISM; THE AMERICAN PROJECT; THE AMERICAN EXPERIMENT; MORE PERFECT UNION; CUE SENTIMENTAL VIOLINS",
+          "key_objects": []
+        },
+        {
+          "time_range": "2:19-3:35",
+          "visual_description": "Creator details how Liberal Nationalism functions to suppress dissent.",
+          "audio_description": "He explains that Liberal Nationalism wins by making compromise seem noble and injustice seem temporary, effectively 'defanging' resistance.",
+          "text_on_screen": "LIBERAL NATIONALISM WON; MAKING COMPROMISE SEEM NOBLE; MAKING INJUSTICE SEEM TEMPORARY; MAKING PATIENCE SEEM VIRTUOUS",
+          "key_objects": []
+        },
+        {
+          "time_range": "3:35-4:50",
+          "visual_description": "Creator compares the ideologies of right-wing and left-wing nationalists.",
+          "audio_description": "He claims both sides are 'exceptionalists' who revere the founders and excuse historical 'brutalizers' as visionaries to maintain the current establishment.",
+          "text_on_screen": "CELEBRATORS AND EXCEPTIONALISTS; REVERE THE FOUNDERS; EXCUSE BRUTALIZERS AND RACISTS AS VISIONARIES",
+          "key_objects": []
+        },
+        {
+          "time_range": "4:50-5:49",
+          "visual_description": "Creator discusses the historical consequences of delaying structural change.",
+          "audio_description": "He cites the Civil War and the Civil Rights Movement as examples where the 'patience' demanded by Liberal Nationalism led to catastrophic costs.",
+          "text_on_screen": "THE CIVIL WAR; THE VIOLENCE OF THE CIVIL RIGHTS MOVEMENT; DISGUISED SURRENDER",
+          "key_objects": []
+        },
+        {
+          "time_range": "5:49-6:53",
+          "visual_description": "Creator concludes his argument by questioning what truly needs to be resisted.",
+          "audio_description": "He posits that the entire framework of Liberal Nationalism must be resisted because it prioritizes stability over justice and enables the far-right.",
+          "text_on_screen": "WHAT EXACTLY NEEDS TO BE RESISTED?; LIBERAL NATIONALISM WILL ALWAYS CHOOSE STABILITY OVER JUSTICE",
+          "key_objects": []
+        },
+        {
+          "time_range": "6:53-7:04",
+          "visual_description": "Static graphic with book pre-order information and social media handles.",
+          "audio_description": "Patriotic marching band music plays.",
+          "text_on_screen": "PRE-ORDER A RESISTANCE HISTORY OF THE UNITED STATES AT WWW.PENGUINRANDOMHOUSE.COM; JOIN OUR COMMUNITY ON SUBSTACK AND PATREON; #RESISTANCEHISTORY; TAD STOERMER",
+          "key_objects": [
+            "Penguin Random House logo",
+            "Substack logo",
+            "Patreon logo"
+          ]
+        }
+      ],
+      "overall_summary": "Historian Tad Stoermer analyzes the concept of 'Liberal Nationalism,' arguing that the American center-left and far-right share a foundational commitment to the 'American Project' mythology. He explains that this ideology prioritizes national stability and 'American Exceptionalism' over actual justice, often co-opting or defanging resistance movements. Stoermer uses historical examples like the 1830s slavery debates and the Civil War to illustrate how delaying structural change through 'patience' and 'compromise' leads to catastrophic societal costs. The video serves as a critique of the political establishment and a promotion for his book, 'A Resistance History of the United States'.",
+      "people": [
+        {
+          "description": "Middle-aged man with short blonde hair, wearing a navy blue button-down shirt over a white t-shirt. He is a historian and author.",
+          "is_creator": true,
+          "speaking": true,
+          "identified_as": "Tad Stoermer"
+        },
+        {
+          "description": "American journalist and political commentator mentioned as sharing a 'larger project' with the right.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Ezra Klein"
+        },
+        {
+          "description": "Right-wing activist and founder of Turning Point USA mentioned as having common ground with establishment Democrats.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Charlie Kirk"
+        },
+        {
+          "description": "Governor of California mentioned for urging people to 'continue Charlie's work'.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Gavin Newsom"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Ezra Klein",
+          "display_name": "Ezra Klein",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["audio", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Charlie Kirk",
+          "display_name": "Charlie Kirk",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["audio", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Gavin Newsom",
+          "display_name": "Gavin Newsom",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["audio", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Tad Stoermer",
+          "display_name": "Tad Stoermer",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["audio", "text_overlay", "metadata"],
+          "specifications": "Scholar of Resistance History",
+          "confidence": 5
+        },
+        {
+          "name": "University of Southern Denmark",
+          "display_name": "University of Southern Denmark",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["audio", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "A Resistance History of the United States",
+          "display_name": "A Resistance History of the United States (Book)",
+          "type": "book",
+          "relevance": "primary",
+          "source": ["audio", "text_overlay"],
+          "specifications": "Author: Tad Stoermer",
+          "confidence": 5
+        },
+        {
+          "name": "American Civil War",
+          "display_name": "American Civil War",
+          "type": "event",
+          "relevance": "supporting",
+          "source": ["audio", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Civil Rights Movement",
+          "display_name": "Civil Rights Movement",
+          "type": "event",
+          "relevance": "supporting",
+          "source": ["audio", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "The Federalists",
+          "display_name": "The Federalists",
+          "type": "event",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Historical political faction",
+          "confidence": 4
+        },
+        {
+          "name": "Penguin Random House",
+          "display_name": "Penguin Random House",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["text_overlay"],
+          "specifications": "Publisher",
+          "confidence": 5
+        },
+        {
+          "name": "Substack",
+          "display_name": "Substack",
+          "type": "app_or_tool",
+          "relevance": "supporting",
+          "source": ["text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Patreon",
+          "display_name": "Patreon",
+          "type": "app_or_tool",
+          "relevance": "supporting",
+          "source": ["text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Liberal Nationalism is an establishment ideology that prioritizes national stability over structural justice.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "The 'American Project' and 'American Experiment' are mythological constructs used to co-opt and defang resistance movements.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Both center-left and far-right nationalists share a commitment to American Exceptionalism, which protects the establishment.",
+          "source": "voiceover",
+          "confidence": 4
+        },
+        {
+          "statement": "Delaying necessary structural change through compromise and patience leads to catastrophic historical costs like the Civil War.",
+          "source": "voiceover",
+          "confidence": 5
+        }
+      ],
+      "structured_content": null,
+      "audio_identification": {
+        "actual_song": "Patriotic March (Generic) \u2014 Unidentified",
+        "metadata_song": "original sound - tadstoermer",
+        "match": false
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The speaker's thesis is very clearly articulated and supported by text overlays. The music at the end is a generic patriotic march used for ironic effect."
+      },
+      "presentation_style": {
+        "primary_format": "talking_head",
+        "camera_work": "static",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Academic, serious, and critical with a library backdrop.",
+      "topic_hints": [
+        "American Political History",
+        "Resistance Movements",
+        "Liberal Nationalism"
+      ],
+      "affect_hints": ["Thought-provoking", "Critical", "Urgent"],
+      "genre_hints": ["Educational", "Political Commentary"]
+    },
+    "metrics": {
+      "input_tokens": 39358,
+      "output_tokens": 2977,
+      "cost_usd": 0.0051266,
+      "latency_ms": 66755,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "politics",
+        "secondary": "education",
+        "micro_labels": [
+          "American History",
+          "Political Theory",
+          "Liberal Nationalism",
+          "Resistance History"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "news_commentary",
+        "micro_labels": ["Educational Lecture", "Political Analysis"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "angry",
+          "tier": "secondary"
+        },
+        {
+          "label": "neutral",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "persuade",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "educator",
+        "confidence": 0.95
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Tad Stoermer",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Ezra Klein",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Charlie Kirk",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Gavin Newsom",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "A Resistance History of the United States",
+          "type": "book",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Liberal Nationalism",
+          "type": "cultural_reference",
+          "relevance": "primary"
+        },
+        {
+          "name": "American Exceptionalism",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        },
+        {
+          "name": "University of Southern Denmark",
+          "type": "place",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "Historian Tad Stoermer analyzes the concept of 'Liberal Nationalism,' arguing that the American center-left and far-right share a foundational commitment to the 'American Project' mythology that prioritizes stability over justice. He explains how this ideology co-opts resistance movements and uses historical examples like the Civil War to illustrate the dangers of political compromise. This video serves as both a political critique and a promotion for his book, 'A Resistance History of the United States'.",
+      "embedding_text": "Historian and author Tad Stoermer (@tadstoermer) discusses the political concept of 'Liberal Nationalism' in this educational talking-head video set in a library. He analyzes recent comments by Ezra Klein and Gavin Newsom regarding Charlie Kirk to argue that establishment Democrats and the far-right share a commitment to the 'American Project' mythology. Stoermer, a scholar of resistance history at the University of Southern Denmark, explains how American Exceptionalism is used to suppress dissent and prioritize national stability over actual justice. He references his book 'A Resistance History of the United States' and uses historical examples like the 1830s slavery debates, the Civil War, and the Civil Rights Movement to illustrate the catastrophic costs of political 'patience' and compromise. Key on-screen text includes 'Liberal Nationalism Won', 'American Mythology of Exceptionalism', and 'What exactly needs to be resisted?'. This video is a deep dive into American political culture and the historical failure of structural change."
+    },
+    "metrics": {
+      "input_tokens": 4018,
+      "output_tokens": 935,
+      "cost_usd": 0.0007758,
+      "latency_ms": 8607
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "politics",
+      "genre": "news_commentary",
+      "communicative_intent": "persuade",
+      "creator_role": "educator",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

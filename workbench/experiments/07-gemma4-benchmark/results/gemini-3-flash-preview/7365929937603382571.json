@@ -1,0 +1,314 @@
+{
+  "item_id": "7365929937603382571",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:02",
+          "visual_description": "Matthew Merril introduces the dish and takes a large bite of the pesto grilled cheese.",
+          "audio_description": "Let's make pesto grilled cheese and tomato soup!",
+          "text_on_screen": "",
+          "key_objects": ["Pesto Grilled Cheese", "Tomato Soup"]
+        },
+        {
+          "time_range": "0:02-0:09",
+          "visual_description": "Creator prepares tomatoes, red bell peppers, and a head of garlic on a baking sheet, drizzling with oil and seasoning.",
+          "audio_description": "Sound of chopping and oil drizzling.",
+          "text_on_screen": "",
+          "key_objects": [
+            "Tomatoes",
+            "Red Bell Pepper",
+            "Garlic",
+            "Olive Oil",
+            "Baking Sheet"
+          ]
+        },
+        {
+          "time_range": "0:09-0:16",
+          "visual_description": "Creator peels and finely dices carrots and a yellow onion.",
+          "audio_description": "Fast-paced rhythmic chopping sounds.",
+          "text_on_screen": "",
+          "key_objects": ["Carrots", "Onion", "Chef's Knife"]
+        },
+        {
+          "time_range": "0:16-0:24",
+          "visual_description": "Creator prepares fresh pesto by adding basil, pine nuts, and parmesan to a food processor, then drizzling in olive oil while blending.",
+          "audio_description": "Sound of food processor whirring.",
+          "text_on_screen": "",
+          "key_objects": [
+            "Basil",
+            "Pine Nuts",
+            "Parmesan Cheese",
+            "Food Processor",
+            "Olive Oil"
+          ]
+        },
+        {
+          "time_range": "0:24-0:33",
+          "visual_description": "Creator saut\u00e9s onions and carrots in a Dutch oven, adds the roasted tomatoes and garlic, pours in broth, and adds fresh herbs.",
+          "audio_description": "Sizzling and pouring sounds.",
+          "text_on_screen": "",
+          "key_objects": ["Dutch Oven", "Broth", "Thyme", "Roasted Tomatoes"]
+        },
+        {
+          "time_range": "0:33-0:36",
+          "visual_description": "The soup is transferred to a blender, processed until smooth, and returned to the pot with a swirl of heavy cream.",
+          "audio_description": "Blender noise followed by stirring.",
+          "text_on_screen": "",
+          "key_objects": ["Blender", "Heavy Cream"]
+        },
+        {
+          "time_range": "0:36-0:43",
+          "visual_description": "Creator grates cheese and spreads butter and pesto onto sourdough bread slices to assemble the sandwich.",
+          "audio_description": "Grating and spreading sounds.",
+          "text_on_screen": "",
+          "key_objects": ["Cheese Grater", "Sourdough Bread", "Butter", "Pesto"]
+        },
+        {
+          "time_range": "0:43-0:48",
+          "visual_description": "The sandwich is grilled on a flat pan until the bread is toasted and the cheese is melted.",
+          "audio_description": "Sizzling on the pan.",
+          "text_on_screen": "",
+          "key_objects": ["Griddle Pan", "Spatula"]
+        },
+        {
+          "time_range": "0:48-0:53",
+          "visual_description": "Creator plates the soup in a ramekin with a cream garnish and serves it alongside the sliced pesto grilled cheese.",
+          "audio_description": "It's raining today, so...",
+          "text_on_screen": "",
+          "key_objects": ["Ramekin", "Serving Plate"]
+        }
+      ],
+      "overall_summary": "In this high-energy cooking tutorial, creator Matthew Merril demonstrates how to make a gourmet version of the classic tomato soup and grilled cheese pairing. He starts by roasting tomatoes, peppers, and garlic to create a deep, flavorful soup base, which is then blended with saut\u00e9ed carrots, onions, and cream. For the sandwich, he makes a fresh basil pesto from scratch and uses it alongside freshly grated cheese on sourdough bread. The video concludes with a cozy presentation of the meal, framed as the perfect comfort food for a rainy day.",
+      "people": [
+        {
+          "description": "Young male chef with light brown hair, wearing a cream sweatshirt with a red french fry graphic.",
+          "is_creator": true,
+          "speaking": true,
+          "identified_as": "Matthew Merril"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Matthew Merril",
+          "display_name": "Matthew Merril",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Pesto Grilled Cheese",
+          "display_name": "Pesto Grilled Cheese",
+          "type": "recipe",
+          "relevance": "primary",
+          "source": ["visual", "audio", "metadata"],
+          "specifications": "Sourdough bread, butter, shredded cheese, homemade pesto",
+          "confidence": 5
+        },
+        {
+          "name": "Roasted Tomato Soup",
+          "display_name": "Roasted Tomato Soup",
+          "type": "recipe",
+          "relevance": "primary",
+          "source": ["visual", "audio", "metadata"],
+          "specifications": "Roasted tomatoes, red pepper, garlic, carrots, onion, broth, heavy cream",
+          "confidence": 5
+        },
+        {
+          "name": "Moonglow (Take 1)",
+          "display_name": "Moonglow (Take 1) \u2014 Benny Goodman Quartet",
+          "type": "song",
+          "relevance": "supporting",
+          "source": ["metadata", "audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Benny Goodman Quartet",
+          "display_name": "Benny Goodman Quartet",
+          "type": "artist",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Roasting the base vegetables (tomatoes, peppers, garlic) creates a more complex and flavorful tomato soup.",
+          "source": "demonstration",
+          "confidence": 5
+        },
+        {
+          "statement": "Adding a layer of fresh pesto to a grilled cheese sandwich significantly elevates the traditional recipe.",
+          "source": "demonstration",
+          "confidence": 5
+        },
+        {
+          "statement": "Tomato soup and grilled cheese is the ideal comfort meal for rainy weather.",
+          "source": "audio",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "recipe",
+        "items": [
+          {
+            "name": "Roasted Tomato Soup",
+            "details": "Tomatoes, red bell pepper, garlic, olive oil, salt, pepper, carrots, onion, chicken/vegetable broth, fresh thyme, heavy cream."
+          },
+          {
+            "name": "Homemade Pesto",
+            "details": "Fresh basil, pine nuts, parmesan cheese, olive oil."
+          },
+          {
+            "name": "Pesto Grilled Cheese",
+            "details": "Sourdough bread, butter, shredded cheese (likely mozzarella or monterey jack), homemade pesto."
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Moonglow (Take 1) \u2014 Benny Goodman Quartet",
+        "metadata_song": "Moonglow (Take 1) \u2014 Benny Goodman Quartet",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": null
+      },
+      "presentation_style": {
+        "primary_format": "tutorial_demo",
+        "camera_work": "overhead",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Cozy, warm, and appetizing with a focus on culinary technique.",
+      "topic_hints": ["Cooking", "Comfort Food", "Homemade Recipes"],
+      "affect_hints": ["Hungry", "Cozy", "Satisfied"],
+      "genre_hints": ["Cooking Tutorial", "Food ASMR"]
+    },
+    "metrics": {
+      "input_tokens": 6278,
+      "output_tokens": 2187,
+      "cost_usd": 0.0015026000000000002,
+      "latency_ms": 28551,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "food",
+        "secondary": "education",
+        "micro_labels": [
+          "cooking tutorial",
+          "comfort food",
+          "soup recipes",
+          "sandwich recipes"
+        ],
+        "confidence": 0.98
+      },
+      "genre": {
+        "label": "recipe",
+        "micro_labels": ["cooking demonstration", "step-by-step"],
+        "confidence": 1.0
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "secondary"
+        },
+        {
+          "label": "relaxing",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["voiceover", "mixed"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.95
+      },
+      "entities": [
+        {
+          "name": "Matthew Merril",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Pesto Grilled Cheese",
+          "type": "recipe",
+          "relevance": "primary"
+        },
+        {
+          "name": "Roasted Tomato Soup",
+          "type": "recipe",
+          "relevance": "primary"
+        },
+        {
+          "name": "Sourdough Bread",
+          "type": "ingredient",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Fresh Basil Pesto",
+          "type": "recipe",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Moonglow (Take 1)",
+          "type": "song",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Benny Goodman Quartet",
+          "type": "artist",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "Matthew Merril demonstrates how to make a gourmet version of the classic tomato soup and grilled cheese pairing, featuring a homemade roasted vegetable base and fresh basil pesto. This high-energy tutorial is framed as the ultimate comfort food for a rainy day.",
+      "embedding_text": "In this cooking tutorial, creator Matthew Merril (@cooking_with.kian) teaches how to make a gourmet Pesto Grilled Cheese and Roasted Tomato Soup. The recipe involves roasting tomatoes, red bell peppers, and garlic on a baking sheet before blending them with saut\u00e9ed onions, carrots, broth, and heavy cream for a deep, flavorful soup base. For the sandwich, Merril demonstrates making fresh basil pesto from scratch in a food processor with pine nuts and parmesan, then assembling the sandwich on sourdough bread with freshly grated cheese and butter. The video features rhythmic chopping sounds and a cozy rainy-day vibe, set to the song 'Moonglow' by the Benny Goodman Quartet. This content is perfect for users looking for elevated comfort food recipes, homemade soup techniques, or sourdough sandwich ideas."
+    },
+    "metrics": {
+      "input_tokens": 4150,
+      "output_tokens": 812,
+      "cost_usd": 0.0007398,
+      "latency_ms": 6290
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "food",
+      "genre": "recipe",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "voiceover",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

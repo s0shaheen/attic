@@ -1,0 +1,297 @@
+{
+  "item_id": "7438318246736022827",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:22",
+          "visual_description": "Creator introduces himself while lying down, establishing his credibility as a 29-year-old business owner.",
+          "audio_description": "Sameer Jauhar introduces himself, mentions he runs a company with 15 employees, and notes he went to Michigan State University, not an Ivy League school.",
+          "text_on_screen": "early-mid 20s career success = being broke",
+          "key_objects": ["AirPods"]
+        },
+        {
+          "time_range": "0:22-0:47",
+          "visual_description": "Creator explains his first rule for early career success, emphasizing long-term wealth over immediate savings.",
+          "audio_description": "He advises not to obsess over entry-level salary in low-cost cities, stating that real money comes 5-20 years down the road.",
+          "text_on_screen": "early-mid 20s career success = being broke",
+          "key_objects": []
+        },
+        {
+          "time_range": "0:47-1:20",
+          "visual_description": "Creator lists specific cities for specific industries and explains the value of being in a hub.",
+          "audio_description": "He suggests moving to industry hubs: NYC for finance, Hollywood for acting, and San Francisco for tech to learn from the best and build a network.",
+          "text_on_screen": "early-mid 20s career success = being broke",
+          "key_objects": []
+        },
+        {
+          "time_range": "1:20-1:45",
+          "visual_description": "Creator uses hand gestures to illustrate linear vs. exponential income growth.",
+          "audio_description": "He explains that the early career 'scoreboard' is learning speed and network quality, not savings, because income growth is exponential.",
+          "text_on_screen": "early-mid 20s career success = being broke",
+          "key_objects": []
+        },
+        {
+          "time_range": "1:45-2:10",
+          "visual_description": "Creator recommends tech sales as a specific career path and outlines the potential salary progression.",
+          "audio_description": "He pitches tech sales as a role requiring no experience with high earning potential: $70k-$110k entry, scaling up to $350k+ in a few years.",
+          "text_on_screen": "learn about tech sales in my bio",
+          "key_objects": []
+        },
+        {
+          "time_range": "2:10-2:32",
+          "visual_description": "Creator concludes with a call to action, offering help to get into the industry.",
+          "audio_description": "He mentions that once the foundation is set, one can go remote. He offers to help people get into tech sales in under 60 days via his bio link.",
+          "text_on_screen": "learn about tech sales in my bio",
+          "key_objects": []
+        }
+      ],
+      "overall_summary": "Sameer Jauhar provides career advice for individuals in their early to mid-20s, arguing that early success often involves being 'broke' while investing in a professional foundation. He advises against staying in low-cost cities for small savings, instead recommending moves to industry hubs like San Francisco or NYC to maximize learning and networking. He specifically highlights tech sales as a high-growth career path that doesn't require coding or prior experience, offering a roadmap for significant salary increases before eventually transitioning to remote work.",
+      "people": [
+        {
+          "description": "South Asian male with a beard, wearing a green quarter-zip pullover and AirPods, lying on a pillow.",
+          "is_creator": true,
+          "speaking": true,
+          "identified_as": "Sameer Jauhar"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Sameer Jauhar",
+          "display_name": "Sameer Jauhar",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["metadata", "audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Michigan State University",
+          "display_name": "Michigan State University",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "New York City",
+          "display_name": "New York City",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Hollywood",
+          "display_name": "Hollywood",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "San Francisco",
+          "display_name": "San Francisco",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Tech Sales",
+          "display_name": "Tech Sales",
+          "type": "technique",
+          "relevance": "primary",
+          "source": ["audio", "text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Finance",
+          "display_name": "Finance Industry",
+          "type": "trend_or_meme",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 4
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Early career success is defined by the foundation you build (skills, network, opportunities), not your immediate savings account.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Move to the geographic hub of your industry to accelerate learning and networking by being around the best in the field.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Tech sales is a highly accessible, high-income career path that does not require prior experience or technical coding skills.",
+          "source": "voiceover",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Move to Industry Hubs",
+            "details": "NYC for Finance, Hollywood for Acting, San Francisco for Tech."
+          },
+          {
+            "name": "Tech Sales Salary Progression",
+            "details": "Entry level: $70k-$110k; 1-2 years: $120k-$180k; 3-4 years: $200k-$350k."
+          },
+          {
+            "name": "Early Career Scoreboard",
+            "details": "Prioritize learning speed, quality of opportunities, and network level over savings."
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "original sound - sameer_jauhar",
+        "metadata_song": "original sound - sameer_jauhar \u2014 sameer's no bs career talk",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The creator's name and advice are clearly stated and reinforced by text overlays."
+      },
+      "presentation_style": {
+        "primary_format": "talking_head",
+        "camera_work": "selfie",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Direct, casual, and authoritative.",
+      "topic_hints": ["Career Advice", "Tech Sales", "Personal Finance"],
+      "affect_hints": ["Motivated", "Ambitious", "Focused"],
+      "genre_hints": ["Educational", "Career Coaching"]
+    },
+    "metrics": {
+      "input_tokens": 15032,
+      "output_tokens": 2055,
+      "cost_usd": 0.0023252,
+      "latency_ms": 38164,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "career",
+        "secondary": "finance",
+        "micro_labels": [
+          "tech sales",
+          "early career advice",
+          "networking",
+          "industry hubs",
+          "salary growth",
+          "professional development"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "tutorial",
+        "micro_labels": ["career roadmap", "advice video"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "professional",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Sameer Jauhar",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Tech Sales",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "San Francisco",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "New York City",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Hollywood",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Michigan State University",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Finance Industry",
+          "type": "trend_or_meme",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "Sameer Jauhar provides a roadmap for early career success, emphasizing the importance of building a professional foundation in industry hubs like NYC or San Francisco over saving small amounts in low-cost cities. He specifically recommends tech sales as a high-earning, accessible career path and explains the concept of exponential income growth.",
+      "embedding_text": "Sameer Jauhar (@sameer_jauhar) shares career advice for people in their early to mid-20s, explaining why 'being broke' early on can lead to long-term wealth. He argues that the early career scoreboard should be learning speed and network quality rather than savings. He recommends moving to industry hubs such as New York City for finance, Hollywood for acting, or San Francisco for tech to learn from the best. A significant portion of the video pitches tech sales as a lucrative career path with no experience required, citing potential salaries from $70k to $350k+. The video features a talking head style with text overlays like 'early-mid 20s career success = being broke' and 'learn about tech sales in my bio.' This is a guide for professional development, networking, and wealth building for young professionals."
+    },
+    "metrics": {
+      "input_tokens": 4087,
+      "output_tokens": 825,
+      "cost_usd": 0.0007387,
+      "latency_ms": 8901
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "career",
+      "genre": "tutorial",
+      "communicative_intent": "inform",
+      "creator_role": "professional",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

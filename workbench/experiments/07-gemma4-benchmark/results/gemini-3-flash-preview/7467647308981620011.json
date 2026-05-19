@@ -1,0 +1,108 @@
+{
+  "item_id": "7467647308981620011",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": null,
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 45458,
+      "video_uploaded": false
+    },
+    "error": "Expecting ',' delimiter: line 78 column 1 (char 3900)"
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "news",
+        "secondary": "other",
+        "micro_labels": ["viral story", "human interest"],
+        "confidence": 0.9
+      },
+      "genre": {
+        "label": "news_commentary",
+        "micro_labels": ["explainer"],
+        "confidence": 0.85
+      },
+      "affect": [
+        {
+          "label": "shocking",
+          "tier": "dominant"
+        },
+        {
+          "label": "informative",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.85
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "passive_consumption",
+        "confidence": 0.8
+      },
+      "entities": [
+        {
+          "name": "Jack Mac",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "@jackmacbarstool",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Karachi, Pakistan",
+          "type": "place",
+          "relevance": "primary"
+        },
+        {
+          "name": "RAWSALERTS",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Barstool Sports",
+          "type": "brand",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "Jack Mac from Barstool Sports recounts a viral and 'unbelievable' news story about an American woman in Karachi, Pakistan. The video features Jack Mac's commentary over footage of the woman being interviewed by local press, highlighting a bizarre or surprising turn of events.",
+      "embedding_text": "TikTok video by @jackmacbarstool (Jack Mac) discussing a viral news story from Karachi, Pakistan. The video features a talking-head commentary style where Jack Mac explains what he calls the 'best story on the internet' involving an American woman in Pakistan. The background footage shows the woman surrounded by microphones from various news outlets, originally sourced from RAWSALERTS. The content is a 3-minute long explainer typical of Barstool Sports' social media coverage of trending global human interest stories. It focuses on the shocking and unbelievable nature of the event, intended for viewers interested in viral news, international human interest stories, and commentary by Jack Mac. Key entities include Jack Mac, Karachi, Pakistan, and RAWSALERTS."
+    },
+    "metrics": {
+      "input_tokens": 3480,
+      "output_tokens": 697,
+      "cost_usd": 0.0006268,
+      "latency_ms": 8285
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "shocking",
+      "topic": "news",
+      "genre": "news_commentary",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "passive_consumption",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

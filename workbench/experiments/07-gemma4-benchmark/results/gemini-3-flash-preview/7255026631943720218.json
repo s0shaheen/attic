@@ -1,0 +1,379 @@
+{
+  "item_id": "7255026631943720218",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:04",
+          "visual_description": "The creator shows a close-up of the finished ram-don dish being tossed in a wok and then takes a bite.",
+          "audio_description": "Upbeat, light bossa nova music plays.",
+          "text_on_screen": "How to: ram-don (noodles with steak) from the movie \"parasite\"",
+          "key_objects": ["noodles", "steak", "chopsticks"]
+        },
+        {
+          "time_range": "0:05-0:10",
+          "visual_description": "Shopping montage at M&S Food, selecting ribeye steaks, a variety of mushrooms, spring onions, and young spinach.",
+          "audio_description": "Ambient grocery store sounds mixed with music.",
+          "text_on_screen": "M&S Food",
+          "key_objects": [
+            "M&S Ribeye Steak",
+            "M&S Oyster Mushrooms",
+            "M&S Shiitake Mushrooms",
+            "M&S Chestnut Mushrooms",
+            "M&S Young Spinach"
+          ]
+        },
+        {
+          "time_range": "0:11-0:15",
+          "visual_description": "Shopping at Oseyo for the specific Korean instant noodles required for the recipe.",
+          "audio_description": "Music continues.",
+          "text_on_screen": "oseyo",
+          "key_objects": ["Nongshim Chapagetti", "Nongshim Neoguri"]
+        },
+        {
+          "time_range": "0:16-0:19",
+          "visual_description": "The creator shows two drinks: a mango juice and an orange-flavored Ramune.",
+          "audio_description": "Music continues.",
+          "text_on_screen": null,
+          "key_objects": ["Foco Mango Drink", "Kimura Ramune Orange Flavor"]
+        },
+        {
+          "time_range": "0:20-0:26",
+          "visual_description": "Cooking begins by wilting spinach in a wok and boiling the two types of noodles together with the vegetable flakes.",
+          "audio_description": "Sizzling and boiling water sounds.",
+          "text_on_screen": null,
+          "key_objects": ["wok", "noodles", "spinach"]
+        },
+        {
+          "time_range": "0:27-0:30",
+          "visual_description": "Preparing the steak with sea salt and finely chopping the mushrooms and spring onions.",
+          "audio_description": "Chopping sounds on a wooden board.",
+          "text_on_screen": null,
+          "key_objects": [
+            "Maldon Sea Salt",
+            "ribeye steak",
+            "mushrooms",
+            "spring onions"
+          ]
+        },
+        {
+          "time_range": "0:31-0:42",
+          "visual_description": "Searing the steaks in a hot pan with oil, then adding a large knob of butter to baste them.",
+          "audio_description": "Loud sizzling of steak in the pan.",
+          "text_on_screen": null,
+          "key_objects": ["Lurpak Butter", "ribeye steak", "frying pan"]
+        },
+        {
+          "time_range": "0:43-0:48",
+          "visual_description": "Saut\u00e9ing the sliced mushrooms in the same pan used for the steak to soak up the juices.",
+          "audio_description": "Sizzling sounds.",
+          "text_on_screen": null,
+          "key_objects": ["mushrooms", "wooden spoon"]
+        },
+        {
+          "time_range": "0:49-0:58",
+          "visual_description": "Combining the cooked noodles and spinach in the wok, adding noodle water and the seasoning packets from both noodle brands.",
+          "audio_description": "Music continues.",
+          "text_on_screen": null,
+          "key_objects": ["Chapagetti seasoning", "Neoguri seasoning", "wok"]
+        },
+        {
+          "time_range": "0:59-1:10",
+          "visual_description": "Slicing the medium-rare steak into cubes, adding it to the noodles, and garnishing with spring onions before serving.",
+          "audio_description": "Music fades out.",
+          "text_on_screen": null,
+          "key_objects": ["steak", "noodles", "spring onions"]
+        }
+      ],
+      "overall_summary": "This video is a detailed cooking tutorial for 'ram-don' (Jjapaguri), the famous noodle dish from the movie 'Parasite'. The creator begins by shopping for high-quality ingredients, including ribeye steak and fresh mushrooms from M&S Food and specific Korean noodles from Oseyo. The process involves searing the steak in butter, saut\u00e9ing mushrooms, and combining Nongshim Chapagetti and Neoguri noodles with wilted spinach. The final result is a gourmet version of the cinematic comfort food, garnished with fresh spring onions.",
+      "people": [
+        {
+          "description": "Young woman with long, dark curly hair wearing a black top and later a white hoodie while shopping.",
+          "is_creator": true,
+          "speaking": false,
+          "identified_as": null
+        }
+      ],
+      "entities": [
+        {
+          "name": "M&S Food",
+          "display_name": "Marks & Spencer Food",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["visual", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Oseyo",
+          "display_name": "Oseyo Korean Supermarket",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["visual", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Nongshim Chapagetti",
+          "display_name": "Nongshim Chapagetti Noodles",
+          "type": "product",
+          "relevance": "primary",
+          "source": ["visual"],
+          "specifications": "Black bean sauce noodles",
+          "confidence": 5
+        },
+        {
+          "name": "Nongshim Neoguri",
+          "display_name": "Nongshim Neoguri Ramyun",
+          "type": "product",
+          "relevance": "primary",
+          "source": ["visual"],
+          "specifications": "Spicy seafood flavor",
+          "confidence": 5
+        },
+        {
+          "name": "Parasite",
+          "display_name": "Parasite (2019 Movie)",
+          "type": "movie_or_show",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "specifications": "Directed by Bong Joon-ho",
+          "confidence": 5
+        },
+        {
+          "name": "Maldon Sea Salt",
+          "display_name": "Maldon Sea Salt Flakes",
+          "type": "product",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Lurpak",
+          "display_name": "Lurpak Butter",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Slightly salted",
+          "confidence": 5
+        },
+        {
+          "name": "Foco Mango Drink",
+          "display_name": "Foco Mango Juice",
+          "type": "product",
+          "relevance": "background",
+          "source": ["visual"],
+          "specifications": "350ml can",
+          "confidence": 5
+        },
+        {
+          "name": "Kimura Ramune",
+          "display_name": "Kimura Ramune Orange Flavor",
+          "type": "product",
+          "relevance": "background",
+          "source": ["visual"],
+          "specifications": "200ml bottle",
+          "confidence": 5
+        },
+        {
+          "name": "Waitrose Extra Virgin Olive Oil",
+          "display_name": "Waitrose Olive Oil",
+          "type": "product",
+          "relevance": "background",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 4
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Ram-don is made by combining Chapagetti and Neoguri instant noodles.",
+          "source": "demonstration",
+          "confidence": 5
+        },
+        {
+          "statement": "Using high-quality ribeye steak and a variety of fresh mushrooms elevates the dish from basic instant noodles to a gourmet meal.",
+          "source": "demonstration",
+          "confidence": 4
+        },
+        {
+          "statement": "Basting the steak in butter adds significant flavor to the meat and the subsequent saut\u00e9ed mushrooms.",
+          "source": "demonstration",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "recipe",
+        "items": [
+          {
+            "name": "Noodle Base",
+            "details": "1 pack Nongshim Chapagetti, 1 pack Nongshim Neoguri"
+          },
+          {
+            "name": "Protein",
+            "details": "2 Ribeye steaks seasoned with Maldon sea salt"
+          },
+          {
+            "name": "Vegetables",
+            "details": "Young spinach, Shiitake mushrooms, Oyster mushrooms, Chestnut mushrooms, Spring onions"
+          },
+          {
+            "name": "Cooking Fats",
+            "details": "Olive oil, Lurpak butter"
+          },
+          {
+            "name": "Instructions",
+            "details": "Wilt spinach in a wok. Boil noodles with vegetable flakes. Sear steak in a pan with butter and salt. Saut\u00e9 mushrooms in steak fat. Combine noodles, spinach, mushrooms, and seasoning packets with a splash of noodle water. Top with sliced steak and spring onions."
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Cooking, bossa nova, adults, light(950693) \u2014 Kids Sound",
+        "metadata_song": "Cooking, bossa nova, adults, light(950693) \u2014 Kids Sound",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "All brands and products were clearly visible. The recipe steps are clearly demonstrated."
+      },
+      "presentation_style": {
+        "primary_format": "tutorial_demo",
+        "camera_work": "handheld",
+        "editing_style": "montage"
+      },
+      "visual_mood": "Cozy, appetizing, and instructional with a bright, clean kitchen aesthetic.",
+      "topic_hints": ["Korean Cuisine", "Movie Recipes", "Easy Home Cooking"],
+      "affect_hints": ["Hungry", "Satisfied", "Inspired"],
+      "genre_hints": ["Food Vlog", "Recipe Tutorial"]
+    },
+    "metrics": {
+      "input_tokens": 7871,
+      "output_tokens": 2831,
+      "cost_usd": 0.0019195,
+      "latency_ms": 38503,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "food",
+        "secondary": "movies_tv",
+        "micro_labels": [
+          "korean food",
+          "ram-don",
+          "jjapaguri",
+          "movie recipes",
+          "steak recipes"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "recipe",
+        "micro_labels": ["cooking tutorial", "shopping vlog"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "secondary"
+        },
+        {
+          "label": "relaxing",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["voiceover", "text_overlay", "cinematic"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Parasite",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "ram-don",
+          "type": "recipe",
+          "relevance": "primary"
+        },
+        {
+          "name": "Nongshim Chapagetti",
+          "type": "product",
+          "relevance": "primary"
+        },
+        {
+          "name": "Nongshim Neoguri",
+          "type": "product",
+          "relevance": "primary"
+        },
+        {
+          "name": "Marks & Spencer Food",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Oseyo Korean Supermarket",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "ribeye steak",
+          "type": "ingredient",
+          "relevance": "primary"
+        },
+        {
+          "name": "Maldon Sea Salt",
+          "type": "product",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A detailed cooking tutorial for making 'ram-don' (Jjapaguri), the iconic noodle and steak dish from the movie 'Parasite'. The creator documents shopping for premium ingredients at M&S and Oseyo before demonstrating the step-by-step preparation of the steak and noodles.",
+      "embedding_text": "A high-quality cooking tutorial and mini-vlog by @chants_coop showing how to make ram-don (Jjapaguri), the famous noodle dish with steak from the movie Parasite. The video begins with a shopping trip to Marks & Spencer (M&S Food) for ribeye steak, oyster mushrooms, and spinach, followed by a visit to Oseyo Korean Supermarket for Nongshim Chapagetti and Nongshim Neoguri instant noodles. The recipe demonstration includes searing the ribeye steak with Maldon Sea Salt and Lurpak butter, saut\u00e9ing mushrooms, and combining the two types of noodles with their seasoning packets and wilted spinach. The final dish is a gourmet version of the cinematic comfort food. The video features upbeat bossa nova music, clear text overlays, and a satisfying cooking montage, making it an ideal reference for fans of Korean cuisine and movie-inspired recipes."
+    },
+    "metrics": {
+      "input_tokens": 4291,
+      "output_tokens": 904,
+      "cost_usd": 0.0007907000000000001,
+      "latency_ms": 7284
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "food",
+      "genre": "recipe",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "voiceover",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

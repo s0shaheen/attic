@@ -1,0 +1,170 @@
+{
+  "item_id": "7539363059454823688",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_image",
+  "media_type": "image",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A young man with messy light brown hair stands against a clear blue sky with sparse white clouds. He is dressed in business casual attire, including a light blue long-sleeved shirt and a dark necktie which he is adjusting with his right hand. The camera angle is low, looking up at him, creating a 'main character' or reflective aesthetic. White sans-serif text is overlaid across the center of the frame.",
+      "text_on_screen": "me bc I've been homies with atheists and christians, popular kids and emos, artists, nerds, addicts, and I can only admire everyone's differences",
+      "overall_summary": "This post is a 'relatable' sentiment piece where the creator expresses pride in their ability to befriend and appreciate people from vastly different social and ideological backgrounds. The user likely saved it because they identify with this sense of open-mindedness and social versatility.",
+      "entities": [
+        {
+          "name": "@vankirn",
+          "display_name": "vankirn",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "original sound - stvnem \u2014 rina",
+          "display_name": "original sound - stvnem \u2014 rina",
+          "type": "song",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "TikTok",
+          "display_name": "TikTok",
+          "type": "app_or_tool",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The creator values inclusivity and the ability to find common ground with diverse social groups.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "The post promotes a non-judgmental attitude toward people's differences, whether religious, social, or lifestyle-based.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": null
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "The text is clear and the metadata provides the specific creator and audio information."
+      },
+      "presentation_style": {
+        "primary_format": "meme",
+        "visual_style": "aesthetic"
+      },
+      "scene_type": "outdoor",
+      "visual_mood": "reflective",
+      "topic_hints": ["social circles", "inclusivity", "personality traits"],
+      "affect_hints": ["proud", "accepting", "relatable"],
+      "genre_hints": ["POV", "relatable content"]
+    },
+    "metrics": {
+      "input_tokens": 2107,
+      "output_tokens": 756,
+      "cost_usd": 0.0005131000000000001,
+      "latency_ms": 8135,
+      "video_uploaded": false
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "relationships",
+        "secondary": "other",
+        "micro_labels": [
+          "social circles",
+          "inclusivity",
+          "personality traits",
+          "open-mindedness",
+          "social versatility"
+        ],
+        "confidence": 0.9
+      },
+      "genre": {
+        "label": "pov",
+        "micro_labels": ["relatable content", "aesthetic video"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "wholesome",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "dominant"
+        },
+        {
+          "label": "nostalgic",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["text_overlay", "cinematic"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "connect",
+        "confidence": 0.85
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "@vankirn",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "original sound - stvnem \u2014 rina",
+          "type": "song",
+          "relevance": "supporting"
+        },
+        {
+          "name": "social inclusivity",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A reflective POV video by @vankirn where he expresses pride in his ability to befriend and appreciate people from diverse social and ideological backgrounds. It highlights a non-judgmental attitude toward groups like artists, nerds, and different religious backgrounds.",
+      "embedding_text": "This TikTok video by creator @vankirn features a young man in business casual attire against a clear blue sky, using a low-angle cinematic shot. The text overlay reads: 'me bc I've been homies with atheists and christians, popular kids and emos, artists, nerds, addicts, and I can only admire everyone's differences.' The content is a relatable POV meme focused on social inclusivity, open-mindedness, and the ability to find common ground across diverse social circles and ideologies. It promotes a non-judgmental attitude toward religious, lifestyle, and social differences. The background music is 'original sound - stvnem \u2014 rina'. This post is ideal for users looking for content about personality traits, social skills, friendship, and positive social values."
+    },
+    "metrics": {
+      "input_tokens": 3186,
+      "output_tokens": 698,
+      "cost_usd": 0.0005978,
+      "latency_ms": 7949
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "wholesome",
+      "topic": "relationships",
+      "genre": "pov",
+      "communicative_intent": "connect",
+      "creator_role": "influencer",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "item_id": "7463884459872423211",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "Title slide showing a single slice of pizza on a metal tray, topped with shredded white cheese and chopped chives.",
+          "text_detected": "My Top Pizza Spots | \ud83d\udccd Chicago (Non Deep Dish)",
+          "primary_content": "Introduction to a list of non-deep dish pizza recommendations in Chicago",
+          "entities": [
+            {
+              "name": "Chicago",
+              "type": "place",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "A slice of pepperoni pizza with fresh basil on a white paper plate, sitting on a dark wooden table next to a pink water bottle.",
+          "text_detected": "Paulie Gee's",
+          "primary_content": "Restaurant: Paulie Gee's",
+          "entities": [
+            {
+              "name": "Paulie Gee's",
+              "type": "restaurant",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "Two Neapolitan-style pizzas on a wooden table; one is a Margherita and the other is topped with pepperoni/salami. A pizza cutter is visible.",
+          "text_detected": "Spacca Napoli",
+          "primary_content": "Restaurant: Spacca Napoli",
+          "entities": [
+            {
+              "name": "Spacca Napoli",
+              "type": "restaurant",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "A large thin-crust pepperoni pizza topped with dollops of white ricotta cheese, served on a metal tray.",
+          "text_detected": "Ranalli's",
+          "primary_content": "Restaurant: Ranalli's",
+          "entities": [
+            {
+              "name": "Ranalli's",
+              "type": "restaurant",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "A pepperoni pizza served on a raised metal stand. The table includes glasses of beer and cocktails.",
+          "text_detected": "Robert's Pizza and Dough Co.",
+          "primary_content": "Restaurant: Robert's Pizza and Dough Co.",
+          "entities": [
+            {
+              "name": "Robert's Pizza and Dough Co.",
+              "type": "restaurant",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 6,
+          "description": "A close-up of a charred, thin-crust pizza with melted cheese and shredded parmesan around the edges.",
+          "text_detected": "Bungalow By Middle Brow",
+          "primary_content": "Restaurant: Bungalow By Middle Brow",
+          "entities": [
+            {
+              "name": "Bungalow By Middle Brow",
+              "type": "restaurant",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 7,
+          "description": "A table setting featuring a Margherita pizza and two different green salads.",
+          "text_detected": "Coda di Volpe",
+          "primary_content": "Restaurant: Coda di Volpe",
+          "entities": [
+            {
+              "name": "Coda di Volpe",
+              "type": "restaurant",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 8,
+          "description": "Two trays of Roman-style pizza al taglio (square slices) with various gourmet toppings including blueberries, prosciutto, and zucchini.",
+          "text_detected": "Bonci Pizza",
+          "primary_content": "Restaurant: Bonci Pizza",
+          "entities": [
+            {
+              "name": "Bonci Pizza",
+              "type": "restaurant",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 9,
+          "description": "Two square slices of pizza in a cardboard box; one is plain cheese and the other is pepperoni with 'cup and char' pepperoni.",
+          "text_detected": "Prince St. Pizza",
+          "primary_content": "Restaurant: Prince St. Pizza",
+          "entities": [
+            {
+              "name": "Prince St. Pizza",
+              "type": "restaurant",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 10,
+          "description": "Three different slices of pizza on paper plates: one with chicken and cheese, one with arugula and tomato, and one with sausage and blue cheese.",
+          "text_detected": "Dimo's Pizza",
+          "primary_content": "Restaurant: Dimo's Pizza",
+          "entities": [
+            {
+              "name": "Dimo's Pizza",
+              "type": "restaurant",
+              "specifications": null
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This post is a curated guide to the best non-deep dish pizza restaurants in Chicago. The user provides a visual list of 9 different spots, showcasing various styles from Neapolitan to Roman al taglio and New York style. The user likely saved this as a food guide for future dining in Chicago.",
+      "carousel_type": "recommendation_list",
+      "narrative_thread": "The content challenges the stereotype that Chicago is only about deep dish pizza by highlighting a diverse range of high-quality thin-crust and specialty pizza options across the city.",
+      "entities": [
+        {
+          "name": "Paulie Gee's",
+          "display_name": "Paulie Gee's",
+          "type": "restaurant",
+          "relevance": "primary",
+          "source": ["text_overlay", "visual"],
+          "slide_number": 2,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Spacca Napoli",
+          "display_name": "Spacca Napoli",
+          "type": "restaurant",
+          "relevance": "primary",
+          "source": ["text_overlay", "visual"],
+          "slide_number": 3,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Ranalli's",
+          "display_name": "Ranalli's",
+          "type": "restaurant",
+          "relevance": "primary",
+          "source": ["text_overlay", "visual"],
+          "slide_number": 4,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Robert's Pizza and Dough Co.",
+          "display_name": "Robert's Pizza and Dough Co.",
+          "type": "restaurant",
+          "relevance": "primary",
+          "source": ["text_overlay", "visual"],
+          "slide_number": 5,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Bungalow By Middle Brow",
+          "display_name": "Bungalow By Middle Brow",
+          "type": "restaurant",
+          "relevance": "primary",
+          "source": ["text_overlay", "visual"],
+          "slide_number": 6,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Coda di Volpe",
+          "display_name": "Coda di Volpe",
+          "type": "restaurant",
+          "relevance": "primary",
+          "source": ["text_overlay", "visual"],
+          "slide_number": 7,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Bonci Pizza",
+          "display_name": "Bonci Pizza",
+          "type": "restaurant",
+          "relevance": "primary",
+          "source": ["text_overlay", "visual"],
+          "slide_number": 8,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Prince St. Pizza",
+          "display_name": "Prince St. Pizza",
+          "type": "restaurant",
+          "relevance": "primary",
+          "source": ["text_overlay", "visual"],
+          "slide_number": 9,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Dimo's Pizza",
+          "display_name": "Dimo's Pizza",
+          "type": "restaurant",
+          "relevance": "primary",
+          "source": ["text_overlay", "visual"],
+          "slide_number": 10,
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Chicago has a vibrant non-deep dish pizza scene with various international styles.",
+          "source": "implied",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Paulie Gee's",
+            "details": "Thin crust pepperoni",
+            "slide_number": 2
+          },
+          {
+            "name": "Spacca Napoli",
+            "details": "Neapolitan style",
+            "slide_number": 3
+          },
+          {
+            "name": "Ranalli's",
+            "details": "Thin crust with ricotta dollops",
+            "slide_number": 4
+          },
+          {
+            "name": "Robert's Pizza and Dough Co.",
+            "details": "Thin crust pepperoni",
+            "slide_number": 5
+          },
+          {
+            "name": "Bungalow By Middle Brow",
+            "details": "Charred crust",
+            "slide_number": 6
+          },
+          {
+            "name": "Coda di Volpe",
+            "details": "Margherita style",
+            "slide_number": 7
+          },
+          {
+            "name": "Bonci Pizza",
+            "details": "Roman al taglio / square slices",
+            "slide_number": 8
+          },
+          {
+            "name": "Prince St. Pizza",
+            "details": "Square slices / cup and char pepperoni",
+            "slide_number": 9
+          },
+          {
+            "name": "Dimo's Pizza",
+            "details": "Variety of specialty slices",
+            "slide_number": 10
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Juna \u2014 Clairo",
+        "metadata_song": "Juna \u2014 Clairo",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All restaurant names were clearly stated in text overlays."
+      },
+      "presentation_style": {
+        "primary_format": "recommendation_list",
+        "visual_style": "aesthetic"
+      },
+      "visual_mood": "Appetizing, vibrant, and urban foodie aesthetic.",
+      "topic_hints": [
+        "Chicago Food",
+        "Pizza Recommendations",
+        "City Travel Guide"
+      ],
+      "affect_hints": ["Hungry", "Excited", "Inspired"],
+      "genre_hints": ["Food Guide", "Lifestyle", "Travel"]
+    },
+    "metrics": {
+      "input_tokens": 3980,
+      "output_tokens": 2752,
+      "cost_usd": 0.0,
+      "latency_ms": 103155,
+      "video_uploaded": false,
+      "thoughts_tokens": 828
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "food",
+        "secondary": "travel",
+        "micro_labels": ["pizza", "Chicago restaurants", "food guide"],
+        "confidence": 1.0
+      },
+      "genre": {
+        "label": "compilation",
+        "micro_labels": ["recommendation list"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Chicago",
+          "type": "place",
+          "relevance": "primary"
+        },
+        {
+          "name": "Paulie Gee's",
+          "type": "restaurant",
+          "relevance": "primary"
+        },
+        {
+          "name": "Spacca Napoli",
+          "type": "restaurant",
+          "relevance": "primary"
+        },
+        {
+          "name": "Ranalli's",
+          "type": "restaurant",
+          "relevance": "primary"
+        },
+        {
+          "name": "Robert's Pizza and Dough Co.",
+          "type": "restaurant",
+          "relevance": "primary"
+        },
+        {
+          "name": "Bungalow By Middle Brow",
+          "type": "restaurant",
+          "relevance": "primary"
+        },
+        {
+          "name": "Coda di Volpe",
+          "type": "restaurant",
+          "relevance": "primary"
+        },
+        {
+          "name": "Bonci Pizza",
+          "type": "restaurant",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A curated guide by @culinary.cowboy featuring the best non-deep dish pizza restaurants in Chicago. It showcases a variety of styles from Neapolitan to Roman al taglio, serving as a dining reference for those avoiding deep dish.",
+      "embedding_text": "A food guide to the best non-deep dish pizza spots in Chicago created by @culinary.cowboy. The content is a slideshow recommendation list featuring various thin-crust and specialty pizza restaurants including Paulie Gee's, Spacca Napoli, Ranalli's, Robert's Pizza and Dough Co., Bungalow By Middle Brow, Coda di Volpe, Bonci Pizza, Prince St. Pizza, and Dimo's Pizza. It highlights diverse styles such as Neapolitan and Roman al taglio (pizza al taglio), challenging the stereotype that Chicago only offers deep dish pizza. This is a useful reference for anyone looking for high-quality pizza recommendations in Chicago, IL."
+    },
+    "metrics": {
+      "input_tokens": 4190,
+      "output_tokens": 791,
+      "cost_usd": 0.0,
+      "latency_ms": 43801,
+      "thoughts_tokens": 762
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "food",
+      "genre": "compilation",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

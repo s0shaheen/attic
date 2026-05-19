@@ -1,0 +1,319 @@
+{
+  "item_id": "7494008023048801566",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:45",
+          "visual_description": "Creator introduces the video, explaining that Neon Genesis Evangelion is about surviving oneself rather than just a mecha anime.",
+          "audio_description": "Creator explains that while there are giant robots and aliens, the show is really about what happens when you can no longer repress your emotions.",
+          "text_on_screen": "the philosophy of neon genesis evangelion",
+          "key_objects": ["bookshelf", "classical bust statue", "lamp"]
+        },
+        {
+          "time_range": "0:45-1:25",
+          "visual_description": "Creator discusses the 'inner life leaking out' and the philosophical weight of the series regarding identity and existence.",
+          "audio_description": "She describes the show as being about the fear of being seen versus the fear of being alone, leading to a state of being 'numb' or 'reactive.'",
+          "text_on_screen": "",
+          "key_objects": ["bookshelf"]
+        },
+        {
+          "time_range": "1:25-1:51",
+          "visual_description": "Creator provides a psychological breakdown of the three main characters: Shinji, Asuka, and Rei.",
+          "audio_description": "She notes Shinji wants to be held and told it's okay to be here; Asuka wants her pain recognized and to be chosen; Rei wants to know she matters outside of her created purpose.",
+          "text_on_screen": "",
+          "key_objects": []
+        },
+        {
+          "time_range": "1:51-2:27",
+          "visual_description": "Creator identifies the show's core themes as mental health struggles and the consequences of self-disconnection.",
+          "audio_description": "She lists depression, grief, anxiety, shame, trauma, and isolation as the true subjects hidden beneath the 'angel attacks.'",
+          "text_on_screen": "",
+          "key_objects": []
+        },
+        {
+          "time_range": "2:27-3:22",
+          "visual_description": "Creator analyzes the Eva units as psychological mirrors rather than just tools or machines.",
+          "audio_description": "She describes the Evas as the 'panic rising in your chest'\u2014the version of yourself you can't control that remembers things you try to forget.",
+          "text_on_screen": "",
+          "key_objects": []
+        },
+        {
+          "time_range": "3:22-4:01",
+          "visual_description": "Creator explains the concept of 'Instrumentality' as a forced emotional nakedness.",
+          "audio_description": "She describes Instrumentality as a collapse of separation and a forced intimacy that feels like a panic attack or drowning in everything you never wanted to say.",
+          "text_on_screen": "",
+          "key_objects": []
+        },
+        {
+          "time_range": "4:01-4:55",
+          "visual_description": "Creator suggests the 'apocalypse' in the show is a metaphor for the internal experience of life feeling impossible.",
+          "audio_description": "She posits that the apocalypse isn't external, but rather the inner world breaking the surface, capturing the feeling of being 15 and exhausted.",
+          "text_on_screen": "",
+          "key_objects": []
+        },
+        {
+          "time_range": "4:55-6:16",
+          "visual_description": "Creator concludes by emphasizing the show's lack of easy hope and its depiction of the chaos of being alive.",
+          "audio_description": "She states the show doesn't offer hope in a 'packaged way' but shows that even if you break, you can come back 'real' and still willing to try. She recommends watching it on Netflix.",
+          "text_on_screen": "",
+          "key_objects": []
+        }
+      ],
+      "overall_summary": "This video provides a deep psychological and philosophical analysis of the anime series 'Neon Genesis Evangelion.' The creator argues that the show's sci-fi elements\u2014giant robots and alien invaders\u2014are metaphors for internal struggles such as depression, trauma, and the fear of intimacy. By analyzing the core motivations of characters like Shinji, Asuka, and Rei, she frames the series as a raw exploration of the human condition and the terrifying but necessary process of being 'real' in a world that feels impossible.",
+      "people": [
+        {
+          "description": "Woman with long dark hair, wearing black-rimmed glasses and a white t-shirt, sitting in front of a bookshelf.",
+          "is_creator": true,
+          "speaking": true,
+          "identified_as": "soggyrice3"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Neon Genesis Evangelion",
+          "display_name": "Neon Genesis Evangelion",
+          "type": "movie_or_show",
+          "relevance": "primary",
+          "source": ["visual", "audio", "text_overlay", "metadata"],
+          "specifications": "Anime series created by Hideaki Anno",
+          "confidence": 5
+        },
+        {
+          "name": "Shinji Ikari",
+          "display_name": "Shinji",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Main protagonist of Evangelion",
+          "confidence": 5
+        },
+        {
+          "name": "Asuka Langley Soryu",
+          "display_name": "Asuka",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Pilot of Eva Unit-02",
+          "confidence": 5
+        },
+        {
+          "name": "Rei Ayanami",
+          "display_name": "Rei",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Pilot of Eva Unit-00",
+          "confidence": 5
+        },
+        {
+          "name": "Eva Units",
+          "display_name": "Evangelion Units",
+          "type": "product",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Giant bio-mechanical mecha",
+          "confidence": 5
+        },
+        {
+          "name": "Human Instrumentality Project",
+          "display_name": "Instrumentality",
+          "type": "cultural_reference",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "A central plot point involving the merging of human souls",
+          "confidence": 5
+        },
+        {
+          "name": "Netflix",
+          "display_name": "Netflix",
+          "type": "app_or_tool",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Streaming platform",
+          "confidence": 5
+        },
+        {
+          "name": "Fallen D. \u2014 Undoing",
+          "display_name": "Undoing by Fallen D.",
+          "type": "song",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 4
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Neon Genesis Evangelion is a psychological exploration of the human condition rather than a standard action anime.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "The 'monsters' and 'robots' in the series are metaphors for internal psychological states like depression, anxiety, and trauma.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "The show suggests that the apocalypse is an internal experience where one's inner world breaks through the surface of repression.",
+          "source": "voiceover",
+          "confidence": 4
+        },
+        {
+          "statement": "True courage in the series is defined as the willingness to exist and be 'real' despite the inherent pain and vulnerability of life.",
+          "source": "voiceover",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Neon Genesis Evangelion",
+            "details": "Themes: Philosophy, Psychology, Depression, Trauma, Identity, Human Connection."
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Undoing \u2014 Fallen D.",
+        "metadata_song": "Fallen D. \u2014 Undoing",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The analysis is highly detailed and aligns perfectly with the established lore and common critical interpretations of the series."
+      },
+      "presentation_style": {
+        "primary_format": "talking_head",
+        "camera_work": "static",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Intellectual, somber, and introspective, set in a cozy, academic-style environment.",
+      "topic_hints": ["Anime Analysis", "Philosophy", "Mental Health"],
+      "affect_hints": ["Introspective", "Melancholic", "Enlightened"],
+      "genre_hints": ["Video Essay", "Literary Analysis", "Review"]
+    },
+    "metrics": {
+      "input_tokens": 35015,
+      "output_tokens": 2254,
+      "cost_usd": 0.0044031,
+      "latency_ms": 53109,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "movies_tv",
+        "secondary": "education",
+        "micro_labels": [
+          "anime analysis",
+          "media literacy",
+          "psychology of fiction",
+          "Neon Genesis Evangelion"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "other",
+        "micro_labels": ["video essay", "media analysis"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "nostalgic",
+          "tier": "secondary"
+        },
+        {
+          "label": "sad",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "educator",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Neon Genesis Evangelion",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "Shinji Ikari",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Asuka Langley Soryu",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Rei Ayanami",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Human Instrumentality Project",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Netflix",
+          "type": "app_or_tool",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Hideaki Anno",
+          "type": "person",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A deep psychological and philosophical analysis of the anime 'Neon Genesis Evangelion' by @dearcaitlynn. The creator explores how the show's mecha elements serve as metaphors for depression, trauma, and the fear of intimacy, providing character breakdowns for Shinji, Asuka, and Rei.",
+      "embedding_text": "In this video essay, creator @dearcaitlynn (soggyrice3) provides a comprehensive psychological analysis of the anime series Neon Genesis Evangelion. She argues that the show is not just about giant robots, but is a profound exploration of surviving oneself and the human condition. The video breaks down the core motivations of characters Shinji Ikari, Asuka Langley Soryu, and Rei Ayanami, framing their struggles through the lens of depression, grief, anxiety, and trauma. Key concepts discussed include the Eva units as psychological mirrors, the 'Human Instrumentality Project' as a metaphor for forced emotional intimacy, and the internal experience of the apocalypse. The creator highlights the show's lack of easy hope and its depiction of the chaos of being alive. On-screen text includes 'the philosophy of neon genesis evangelion'. This content is ideal for fans of literary analysis, anime philosophy, and deep-dives into mental health themes in media."
+    },
+    "metrics": {
+      "input_tokens": 4122,
+      "output_tokens": 874,
+      "cost_usd": 0.0007618000000000001,
+      "latency_ms": 7057
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "movies_tv",
+      "genre": "other",
+      "communicative_intent": "inform",
+      "creator_role": "educator",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

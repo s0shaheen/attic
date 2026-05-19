@@ -1,0 +1,281 @@
+{
+  "item_id": "7518506610143055135",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:17",
+          "visual_description": "Ari Shaffir sits on a couch during a HuffPost Live interview, discussing political corruption with a host.",
+          "audio_description": "Ari Shaffir states that the system is corrupt and suggests that 'violence, kill a politician' is the only way to change things.",
+          "text_on_screen": "Ari said this 10 years ago \ud83d\ude2d\nwe are the United States of Israel\nHUFF POST LIVE",
+          "key_objects": ["couch", "laptop", "HuffPost Live logo"]
+        },
+        {
+          "time_range": "0:17-0:45",
+          "visual_description": "The interviewer reacts with shock as Ari doubles down on his stance against voting.",
+          "audio_description": "The interviewer asks if he's joking; Ari says voting hasn't made a difference in 100 years and calls for getting business out of government.",
+          "text_on_screen": "Ari said this 10 years ago \ud83d\ude2d\nwe are the United States of Israel\nLIVE",
+          "key_objects": ["HuffPost Live studio"]
+        },
+        {
+          "time_range": "0:45-1:15",
+          "visual_description": "Ari gestures while explaining his view on regime changes globally.",
+          "audio_description": "Ari argues that regimes only change through violence, citing Arab countries and the loss of trial rights in the US.",
+          "text_on_screen": "Ari said this 10 years ago \ud83d\ude2d\nwe are the United States of Israel",
+          "key_objects": []
+        },
+        {
+          "time_range": "1:15-2:00",
+          "visual_description": "Close-up on Ari as he discusses foreign policy and the lack of accountability.",
+          "audio_description": "Ari mentions civilian deaths in Yemen and criticizes the Obama administration's lack of response to drone strike casualties.",
+          "text_on_screen": "Ari said this 10 years ago \ud83d\ude2d\nwe are the United States of Israel",
+          "key_objects": []
+        },
+        {
+          "time_range": "2:00-2:54",
+          "visual_description": "Ari references domestic unrest as the host attempts to wrap up the segment.",
+          "audio_description": "Ari points to the Baltimore riots as the only time the system rethinks itself; the host agrees to disagree.",
+          "text_on_screen": "Ari said this 10 years ago \ud83d\ude2d\nwe are the United States of Israel",
+          "key_objects": ["TikTok logo", "@aronunc"]
+        }
+      ],
+      "overall_summary": "This video features a decade-old interview clip of comedian Ari Shaffir on HuffPost Live, where he expresses extreme cynicism toward the American political system. Shaffir argues that voting is ineffective and that systemic corruption, driven by corporate interests, can only be overturned through radical action or violence. He cites examples like drone strikes in Yemen and the Baltimore riots to support his claim that the government only responds to force or civil unrest. The video is presented with a modern overlay suggesting his past comments are relevant to current geopolitical tensions.",
+      "people": [
+        {
+          "description": "Comedian and podcaster, wearing a plaid shirt, sitting on a couch.",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "Ari Shaffir"
+        },
+        {
+          "description": "Male host for HuffPost Live, wearing a light blue button-down shirt.",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": null
+        }
+      ],
+      "entities": [
+        {
+          "name": "Ari Shaffir",
+          "display_name": "Ari Shaffir",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["audio", "text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "HuffPost Live",
+          "display_name": "HuffPost Live",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Barack Obama",
+          "display_name": "Barack Obama",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Former US President",
+          "confidence": 5
+        },
+        {
+          "name": "Yemen",
+          "display_name": "Yemen",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Baltimore",
+          "display_name": "Baltimore",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Reference to 2015 riots",
+          "confidence": 4
+        },
+        {
+          "name": "Israel",
+          "display_name": "Israel",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Traditional democratic processes like voting are perceived as ineffective against entrenched systemic corruption.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Radical civil unrest or violence is historically the primary catalyst for significant regime or systemic change.",
+          "source": "voiceover",
+          "confidence": 4
+        },
+        {
+          "statement": "Corporate and business interests have 'captured' the government, leading to a lack of representation for the average citizen.",
+          "source": "voiceover",
+          "confidence": 5
+        }
+      ],
+      "structured_content": null,
+      "audio_identification": {
+        "actual_song": "Lo-fi hip hop beat \u2014 Unidentified",
+        "metadata_song": "original sound - thoughtxtheory \u2014 THOUGHT&THEORY",
+        "match": false
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The interviewer is likely Ahmed Shihab-Eldin based on the HuffPost Live era, but not explicitly named in the clip."
+      },
+      "presentation_style": {
+        "primary_format": "talking_head",
+        "camera_work": "static",
+        "editing_style": "minimal"
+      },
+      "visual_mood": "Tense and provocative, contrasting a professional news setting with radical rhetoric.",
+      "topic_hints": [
+        "Political Corruption",
+        "Systemic Reform",
+        "Ari Shaffir Interview"
+      ],
+      "affect_hints": ["Shocked", "Cynical", "Provoked"],
+      "genre_hints": ["Interview", "Political Commentary", "Podcast Clip"]
+    },
+    "metrics": {
+      "input_tokens": 17588,
+      "output_tokens": 1705,
+      "cost_usd": 0.0024408000000000003,
+      "latency_ms": 31588,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "politics",
+        "secondary": "news",
+        "micro_labels": [
+          "political corruption",
+          "systemic reform",
+          "US foreign policy",
+          "civil unrest"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "interview",
+        "micro_labels": ["news_commentary", "clip"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "shocking",
+          "tier": "dominant"
+        },
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "angry",
+          "tier": "secondary"
+        },
+        {
+          "label": "funny",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "clip",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "provoke",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "anonymous",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Ari Shaffir",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "HuffPost Live",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Barack Obama",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Yemen",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Baltimore",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Israel",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Ahmed Shihab-Eldin",
+          "type": "person",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A decade-old interview clip of comedian Ari Shaffir on HuffPost Live where he expresses extreme cynicism toward the American political system. Shaffir argues that voting is ineffective against corporate-driven corruption and suggests that only radical action or civil unrest, like the Baltimore riots, forces the government to change.",
+      "embedding_text": "This video features a 10-year-old interview clip of comedian Ari Shaffir on HuffPost Live, discussing his cynical views on the American political system. Shaffir, wearing a plaid shirt, argues with host Ahmed Shihab-Eldin about systemic corruption, corporate influence in government, and the ineffectiveness of voting. He controversially suggests that violence against politicians might be the only catalyst for change, referencing the Baltimore riots and civilian casualties from drone strikes in Yemen during the Barack Obama administration. The video includes text overlays like 'Ari said this 10 years ago' and 'we are the United States of Israel,' framing his past comments within modern geopolitical tensions. This content is a political commentary clip featuring Ari Shaffir, HuffPost Live, and mentions of US foreign policy and campaign finance reform."
+    },
+    "metrics": {
+      "input_tokens": 4722,
+      "output_tokens": 849,
+      "cost_usd": 0.0008118000000000001,
+      "latency_ms": 7316
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "shocking",
+      "topic": "politics",
+      "genre": "interview",
+      "communicative_intent": "provoke",
+      "creator_role": "anonymous",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "clip"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "item_id": "7389310013736602910",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:05",
+          "visual_description": "Creator slices a freshly baked, thin-crust cheese pizza on a metal tray.",
+          "audio_description": "How to make pizza like this in your home oven, part two.",
+          "text_on_screen": "Replying to @saleen it's been 4hrs, pizza boy. where is part 2??????",
+          "key_objects": ["pizza", "pizza cutter", "metal pizza tray"]
+        },
+        {
+          "time_range": "0:05-0:20",
+          "visual_description": "Montage of tomato brands followed by the creator mixing Mutti Passata with seasonings in a bowl.",
+          "audio_description": "Recommends Bianco DiNapoli, Cento, and Mutti brands. Mentions adding salt, oregano, and pepper to taste.",
+          "text_on_screen": "Bianco DiNapoli Whole Peeled Tomatoes, Cento San Marzano Peeled Tomatoes, Mutti Passata Tomato Puree",
+          "key_objects": [
+            "Bianco DiNapoli tomatoes",
+            "Cento tomatoes",
+            "Mutti Passata",
+            "mixing bowl",
+            "oregano"
+          ]
+        },
+        {
+          "time_range": "0:20-0:37",
+          "visual_description": "Creator shows Trader Joe's mozzarella and grates a block of cheese, then feeds a small piece to a German Shepherd.",
+          "audio_description": "Suggests whole milk low moisture mozzarella from Trader Joe's. Advises against pre-shredded cheese because of anti-caking agents.",
+          "text_on_screen": "Trader Joe's Whole Milk Mozzarella, Trader Joe's Part Skim Mozzarella",
+          "key_objects": [
+            "Trader Joe's Mozzarella",
+            "box grater",
+            "German Shepherd dog"
+          ]
+        },
+        {
+          "time_range": "0:37-0:49",
+          "visual_description": "Screen recording of an Amazon storefront and the Baking Steel website showing pizza equipment.",
+          "audio_description": "Attributes the crispy crust to a 'Baking Steel' and mentions a discount code 'echo' on their site.",
+          "text_on_screen": "Pizza Essentials Amazon Storefront, Baking Steel, discount code: echo",
+          "key_objects": [
+            "Baking Steel",
+            "pizza peel",
+            "infrared thermometer",
+            "pizza wheel"
+          ]
+        },
+        {
+          "time_range": "0:49-1:01",
+          "visual_description": "Creator takes dough out of the fridge and sets the Hotpoint oven to 550\u00b0F.",
+          "audio_description": "Takes dough out 2-3 hours before baking. Preheats oven to 550\u00b0F for at least one hour.",
+          "text_on_screen": "550\u00b0F",
+          "key_objects": [
+            "Hotpoint oven",
+            "dough container",
+            "wooden pizza peel"
+          ]
+        },
+        {
+          "time_range": "1:01-1:36",
+          "visual_description": "Creator prepares the wooden peel with semolina, stretches the dough using the 'knuckle to knuckle' method, and applies toppings.",
+          "audio_description": "Explains the process of dusting the peel with semolina and stretching the dough. Mentions a future video for launching techniques.",
+          "text_on_screen": "Semolina, All-purpose flour",
+          "key_objects": [
+            "semolina flour",
+            "pizza dough",
+            "dough scraper",
+            "ladle"
+          ]
+        }
+      ],
+      "overall_summary": "This video is a detailed tutorial on preparing high-quality pizza in a standard home oven. The creator, AJ, covers essential ingredients including specific tomato brands like Mutti and Bianco DiNapoli, and recommends using whole milk low moisture mozzarella from Trader Joe's. He emphasizes the importance of specialized equipment like a Baking Steel for a crispy crust and provides technical tips on oven preheating and dough stretching techniques.",
+      "people": [
+        {
+          "description": "Male creator with a mustache, wearing a purple shirt, demonstrating pizza making techniques.",
+          "is_creator": true,
+          "speaking": true,
+          "identified_as": "AJ"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Bianco DiNapoli",
+          "display_name": "Bianco DiNapoli Whole Peeled Tomatoes",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual", "audio"],
+          "specifications": "28 oz can",
+          "confidence": 5
+        },
+        {
+          "name": "Cento",
+          "display_name": "Cento San Marzano Peeled Tomatoes",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual", "audio"],
+          "specifications": "Certified San Marzano",
+          "confidence": 5
+        },
+        {
+          "name": "Mutti",
+          "display_name": "Mutti Passata Tomato Puree",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["visual", "audio"],
+          "specifications": "24.5 oz bottle",
+          "confidence": 5
+        },
+        {
+          "name": "Trader Joe's",
+          "display_name": "Trader Joe's Whole Milk Low Moisture Mozzarella",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["visual", "audio"],
+          "specifications": "Low moisture, whole milk",
+          "confidence": 5
+        },
+        {
+          "name": "Baking Steel",
+          "display_name": "Baking Steel Original",
+          "type": "product",
+          "relevance": "primary",
+          "source": ["visual", "audio", "text_overlay"],
+          "specifications": "Steel pizza stone alternative",
+          "confidence": 5
+        },
+        {
+          "name": "King Arthur",
+          "display_name": "King Arthur Semolina Flour",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Coarse ground",
+          "confidence": 4
+        },
+        {
+          "name": "Hotpoint",
+          "display_name": "Hotpoint Electric Oven",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Standard home oven",
+          "confidence": 4
+        },
+        {
+          "name": "knuckle to knuckle",
+          "display_name": "Knuckle-to-Knuckle Stretching",
+          "type": "technique",
+          "relevance": "primary",
+          "source": ["audio", "visual"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Avoid pre-shredded cheese because it contains anti-caking agents that prevent it from melting properly.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "A Baking Steel is the key to achieving a crispy 'undercarriage' or bottom crust in a home oven.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Preheat your home oven to its maximum temperature (550\u00b0F) for at least one hour before baking.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Use semolina flour on the pizza peel to prevent the dough from sticking.",
+          "source": "demonstration",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "instructions",
+        "items": [
+          {
+            "name": "Sauce Preparation",
+            "details": "Mix Mutti Passata with salt, oregano, and pepper. Optional: fresh garlic, olive oil, and basil."
+          },
+          {
+            "name": "Cheese Preparation",
+            "details": "Grate whole milk low moisture mozzarella. Can mix with Edam for better browning."
+          },
+          {
+            "name": "Oven Setup",
+            "details": "Place Baking Steel in oven. Preheat to 550\u00b0F for 1 hour."
+          },
+          {
+            "name": "Dough Handling",
+            "details": "Remove dough from fridge 2-3 hours before use. Dust peel with semolina. Stretch using knuckle-to-knuckle method."
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "As Time Goes By \u2014 ricca",
+        "metadata_song": "Jazz masterpiece \"As time goes by\" covered by a Jazz violinist by profession(962408) \u2014 ricca",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "All brands and techniques were clearly stated or shown."
+      },
+      "presentation_style": {
+        "primary_format": "tutorial_demo",
+        "camera_work": "overhead",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Warm, instructional, and cozy kitchen atmosphere.",
+      "topic_hints": ["Pizza making", "Home cooking", "Kitchen equipment"],
+      "affect_hints": ["Hungry", "Productive", "Informed"],
+      "genre_hints": ["Cooking Tutorial", "Food Review", "DIY"]
+    },
+    "metrics": {
+      "input_tokens": 10169,
+      "output_tokens": 2268,
+      "cost_usd": 0.0019241000000000002,
+      "latency_ms": 34525,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "food",
+        "secondary": "education",
+        "micro_labels": [
+          "pizza making",
+          "home baking",
+          "cooking techniques",
+          "ingredient reviews"
+        ],
+        "confidence": 0.98
+      },
+      "genre": {
+        "label": "recipe",
+        "micro_labels": ["tutorial", "how-to"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": [
+        "voiceover",
+        "text_overlay",
+        "mixed",
+        "screen_recording"
+      ],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.95
+      },
+      "entities": [
+        {
+          "name": "AJ",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Mutti Passata",
+          "type": "ingredient",
+          "relevance": "primary"
+        },
+        {
+          "name": "Baking Steel",
+          "type": "app_or_tool",
+          "relevance": "primary"
+        },
+        {
+          "name": "Trader Joe's Whole Milk Mozzarella",
+          "type": "ingredient",
+          "relevance": "primary"
+        },
+        {
+          "name": "Bianco DiNapoli Whole Peeled Tomatoes",
+          "type": "ingredient",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Cento San Marzano Peeled Tomatoes",
+          "type": "ingredient",
+          "relevance": "supporting"
+        },
+        {
+          "name": "King Arthur Semolina Flour",
+          "type": "ingredient",
+          "relevance": "supporting"
+        },
+        {
+          "name": "knuckle-to-knuckle stretching",
+          "type": "technique",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "AJ (@ajeatworld) shares a technical tutorial on making professional-quality pizza in a home oven, focusing on high-quality ingredients and specific equipment. He recommends brands like Mutti, Bianco DiNapoli, and Trader Joe's mozzarella while demonstrating the use of a Baking Steel and proper dough stretching techniques.",
+      "embedding_text": "A detailed home pizza-making tutorial by creator AJ (@ajeatworld) focusing on the best ingredients and equipment for a professional-style thin crust. The video provides specific recommendations for tomato sauces, including Bianco DiNapoli Whole Peeled Tomatoes, Cento San Marzano, and Mutti Passata. AJ demonstrates the importance of using Trader Joe's Whole Milk Low Moisture Mozzarella and grating it fresh to avoid anti-caking agents. Essential equipment highlighted includes the Baking Steel for achieving a crispy crust in a standard Hotpoint oven at 550\u00b0F, along with a pizza peel and infrared thermometer. The guide covers technical steps like dusting the peel with King Arthur Semolina flour and the 'knuckle to knuckle' dough stretching technique. This part two video is designed for home cooks looking to elevate their pizza game through specific product choices and professional methods."
+    },
+    "metrics": {
+      "input_tokens": 4224,
+      "output_tokens": 885,
+      "cost_usd": 0.0007764000000000001,
+      "latency_ms": 6993
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "food",
+      "genre": "recipe",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "voiceover",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

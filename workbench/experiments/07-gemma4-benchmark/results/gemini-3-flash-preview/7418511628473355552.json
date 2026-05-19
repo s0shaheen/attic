@@ -1,0 +1,351 @@
+{
+  "item_id": "7418511628473355552",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "A golden-helmeted knight in white and gold armor standing on a ledge overlooking a vast, cloudy sky with a tall, slender white tower in the background. The art style is reminiscent of 70s/80s sci-fi illustrations.",
+          "text_detected": "Don't protect your heart by pretending not to have one",
+          "primary_content": "Motivational quote about emotional vulnerability paired with a heroic fantasy figure.",
+          "entities": [
+            {
+              "name": "Knight",
+              "type": "character",
+              "specifications": "White and gold armor, golden helmet, white cape"
+            },
+            {
+              "name": "White Tower",
+              "type": "place",
+              "specifications": "Tall, multi-tiered, futuristic/fantasy architecture"
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "A green, lizard-like humanoid alien wearing an orange cloak and purple tunic, smoking a cigarette in a desert landscape under a purple sky with a yellow sun.",
+          "text_detected": "You had a purpose before anyone had an opinion",
+          "primary_content": "Motivational quote about intrinsic worth and purpose.",
+          "entities": [
+            {
+              "name": "Lizard Alien",
+              "type": "character",
+              "specifications": "Green skin, large eyes, smoking a cigarette"
+            },
+            {
+              "name": "Desert",
+              "type": "place",
+              "specifications": "Orange sand, rocky outcrops, purple sky"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "A person with long hair sitting in a meditative pose on a platform, facing a red and black cosmic horizon with large, textured blue cubes floating in the air.",
+          "text_detected": "The peace I have right now is worth everything I've been through",
+          "primary_content": "Motivational quote about the value of inner peace after hardship.",
+          "entities": [
+            {
+              "name": "Meditating Figure",
+              "type": "person",
+              "specifications": "Back to camera, cross-legged pose"
+            },
+            {
+              "name": "Floating Cubes",
+              "type": "object",
+              "specifications": "Blue, textured, monolithic"
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "A figure in a dark suit and a gas-mask-like helmet with glowing blue eyes playing a trumpet in a neon-lit, pink and purple club environment.",
+          "text_detected": "\"You attract what you are\" So what are you waiting for to become the person you need in your life ?",
+          "primary_content": "Motivational quote about self-improvement and manifestation.",
+          "entities": [
+            {
+              "name": "Trumpet Player",
+              "type": "person",
+              "specifications": "Gas mask helmet, glowing eyes, playing trumpet"
+            },
+            {
+              "name": "Neon Club",
+              "type": "place",
+              "specifications": "Pink and purple lighting, silhouettes of a crowd"
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "A Roman centurion in full traditional armor and a red-crested helmet sitting in the high-tech cockpit of a spaceship, looking out at snowy mountains.",
+          "text_detected": "Just go for a walk for an hour and come back and see how you feel",
+          "primary_content": "Practical advice for mental health paired with a surreal anachronistic image.",
+          "entities": [
+            {
+              "name": "Roman Centurion",
+              "type": "character",
+              "specifications": "Golden armor, red crest helmet"
+            },
+            {
+              "name": "Spaceship Cockpit",
+              "type": "place",
+              "specifications": "Advanced control panels, view of mountains"
+            }
+          ]
+        },
+        {
+          "image_number": 6,
+          "description": "A massive, bulky blue robot walking through a field of white daisies under a cloudy sky. The style is painterly and textured.",
+          "text_detected": "Sometimes life won't be gentle with you, so you must be gentle with yourself",
+          "primary_content": "Motivational quote about self-compassion.",
+          "entities": [
+            {
+              "name": "Blue Robot",
+              "type": "character",
+              "specifications": "Large, industrial design, blue paint"
+            },
+            {
+              "name": "Daisy Field",
+              "type": "place",
+              "specifications": "White flowers with yellow centers"
+            }
+          ]
+        },
+        {
+          "image_number": 7,
+          "description": "A knight in black armor with glowing blue eyes, holding a sword and pointing one finger upward. A large teal moon and futuristic towers are in the background.",
+          "text_detected": "CosmicRequiem",
+          "primary_content": "Closing slide featuring the creator's handle or series title.",
+          "entities": [
+            {
+              "name": "CosmicRequiem",
+              "type": "brand",
+              "specifications": "Creator handle/Title"
+            },
+            {
+              "name": "Black Knight",
+              "type": "character",
+              "specifications": "Black armor, glowing blue eyes, longsword"
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This TikTok carousel is a collection of 'hopecore' content, featuring motivational and philosophical quotes overlaid on retro-futuristic, AI-generated art. Each slide pairs a piece of life advice or a reflective statement with a surreal, Moebius-inspired visual (e.g., a Roman centurion in a spaceship or a robot in a flower field). The user likely saved this for its aesthetic appeal and the comforting, empowering nature of the messages.",
+      "carousel_type": "text_cards",
+      "narrative_thread": "The post moves through various surreal scenarios to deliver a cohesive message of self-worth, resilience, and the importance of inner peace.",
+      "entities": [
+        {
+          "name": "CosmicRequiem",
+          "display_name": "CosmicRequiem",
+          "type": "trend_or_meme",
+          "relevance": "primary",
+          "source": ["text_overlay"],
+          "slide_number": 7,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Midjourney",
+          "display_name": "Midjourney AI",
+          "type": "app_or_tool",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "slide_number": null,
+          "specifications": "AI image generation tool",
+          "confidence": 5
+        },
+        {
+          "name": "rumination \u2014 BAANDIT!",
+          "display_name": "rumination by BAANDIT!",
+          "type": "song",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "slide_number": null,
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Vulnerability is a strength, not a weakness to be hidden.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Individual purpose exists independently of external validation or opinions.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Self-compassion is a necessary response to a harsh world.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Emotional Authenticity",
+            "details": "Don't pretend not to have a heart to protect it.",
+            "slide_number": 1
+          },
+          {
+            "name": "Intrinsic Purpose",
+            "details": "Your purpose precedes others' opinions of you.",
+            "slide_number": 2
+          },
+          {
+            "name": "Valuing Peace",
+            "details": "Current peace justifies past struggles.",
+            "slide_number": 3
+          },
+          {
+            "name": "Self-Actualization",
+            "details": "Become the person you need to attract what you want.",
+            "slide_number": 4
+          },
+          {
+            "name": "Physical Activity for Mental Health",
+            "details": "A one-hour walk can significantly alter your perspective.",
+            "slide_number": 5
+          },
+          {
+            "name": "Self-Gentleness",
+            "details": "Be kind to yourself when life is difficult.",
+            "slide_number": 6
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "rumination \u2014 BAANDIT!",
+        "metadata_song": "rumination \u2014 BAANDIT!",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "Text was transcribed verbatim. Art style and creator handle are clearly identified."
+      },
+      "presentation_style": {
+        "primary_format": "text_cards",
+        "visual_style": "aesthetic"
+      },
+      "visual_mood": "Reflective, nostalgic, and hopeful (hopecore aesthetic).",
+      "topic_hints": ["Mental Health", "Philosophy", "AI Art"],
+      "affect_hints": ["Calm", "Empowered", "Reflective"],
+      "genre_hints": ["Hopecore", "Retro-futurism"]
+    },
+    "metrics": {
+      "input_tokens": 8841,
+      "output_tokens": 2349,
+      "cost_usd": 0.0018237000000000001,
+      "latency_ms": 24640,
+      "video_uploaded": false
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "health",
+        "secondary": "art",
+        "micro_labels": [
+          "mental health",
+          "wellness",
+          "retro-futurism",
+          "hopecore",
+          "philosophical quotes"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "compilation",
+        "micro_labels": ["slideshow", "text cards", "aesthetic edit"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "inspiring",
+          "tier": "dominant"
+        },
+        {
+          "label": "relaxing",
+          "tier": "dominant"
+        },
+        {
+          "label": "nostalgic",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "ai_generated",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inspire",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "artist",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "emotional_regulation",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "CosmicRequiem",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        },
+        {
+          "name": "Hopecore",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        },
+        {
+          "name": "Moebius",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Retro-futurism",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Midjourney",
+          "type": "app_or_tool",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A collection of 'hopecore' motivational slides featuring AI-generated retro-futuristic art in the style of 70s and 80s sci-fi illustrators. Each slide pairs a surreal image\u2014such as a Roman centurion in a spaceship or a robot in a daisy field\u2014with a quote about emotional vulnerability, self-worth, and inner peace.",
+      "embedding_text": "A TikTok carousel of hopecore and corecore content by @10.002_ featuring motivational and philosophical quotes over AI-generated retro-futuristic art. The visuals are reminiscent of 70s and 80s sci-fi illustrations like those of Moebius, featuring a golden-helmeted knight, a lizard-like alien smoking in a desert, a meditating figure facing a cosmic horizon, a trumpet player in a neon club, a Roman centurion in a spaceship cockpit, and a large blue robot in a field of daisies. On-screen text includes quotes like 'Don't protect your heart by pretending not to have one', 'You had a purpose before anyone had an opinion', and 'The peace I have right now is worth everything I've been through'. This content is designed for emotional regulation and inspiration, focusing on mental health, self-compassion, and resilience."
+    },
+    "metrics": {
+      "input_tokens": 3971,
+      "output_tokens": 833,
+      "cost_usd": 0.0007303,
+      "latency_ms": 5769
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "inspiring",
+      "topic": "health",
+      "genre": "compilation",
+      "communicative_intent": "inspire",
+      "creator_role": "artist",
+      "viewer_orientation": "emotional_regulation",
+      "presentation_style": "slideshow",
+      "content_provenance": "ai_generated"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

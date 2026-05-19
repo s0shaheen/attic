@@ -1,0 +1,705 @@
+{
+  "models": ["gemini-3-flash-preview", "gemma-4-31b-it"],
+  "metrics": {
+    "gemini-3-flash-preview": {
+      "total_items": 55,
+      "perceive": {
+        "cost": {
+          "n": 53,
+          "mean": 0.00192,
+          "median": 0.001765,
+          "p5": 0.000728,
+          "p95": 0.00365,
+          "min": 0.000513,
+          "max": 0.005127
+        },
+        "latency_ms": {
+          "n": 53,
+          "mean": 30539.716981,
+          "median": 26774,
+          "p5": 16377.2,
+          "p95": 55046.0,
+          "min": 8135,
+          "max": 66755
+        },
+        "input_tokens": {
+          "n": 53,
+          "mean": 10290,
+          "median": 7871,
+          "p5": 2760.2,
+          "p95": 23773.0,
+          "min": 2107,
+          "max": 39358
+        },
+        "output_tokens": {
+          "n": 53,
+          "mean": 2227.09434,
+          "median": 2186,
+          "p5": 1024.2,
+          "p95": 3580.6,
+          "min": 756,
+          "max": 4214
+        },
+        "thoughts_tokens": {
+          "n": 53,
+          "mean": 0,
+          "median": 0,
+          "p5": 0.0,
+          "p95": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "errors": 2,
+        "video_upload_rate": "38/39"
+      },
+      "classify": {
+        "cost": {
+          "n": 54,
+          "mean": 0.000736,
+          "median": 0.000746,
+          "p5": 0.000637,
+          "p95": 0.000792,
+          "min": 0.000596,
+          "max": 0.000812
+        },
+        "latency_ms": {
+          "n": 54,
+          "mean": 7141,
+          "median": 7035.0,
+          "p5": 5721.05,
+          "p95": 8851.6,
+          "min": 5275,
+          "max": 9111
+        },
+        "input_tokens": {
+          "n": 54,
+          "mean": 4040.111111,
+          "median": 4085.5,
+          "p5": 3449.75,
+          "p95": 4279.95,
+          "min": 3186,
+          "max": 4722
+        },
+        "output_tokens": {
+          "n": 54,
+          "mean": 829.666667,
+          "median": 840.5,
+          "p5": 697.65,
+          "p95": 920.05,
+          "min": 623,
+          "max": 962
+        },
+        "thoughts_tokens": {
+          "n": 54,
+          "mean": 0,
+          "median": 0.0,
+          "p5": 0.0,
+          "p95": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "errors": 1,
+        "schema_valid": 53,
+        "schema_invalid": 1,
+        "validity_pct": 98.1,
+        "top_validation_errors": [["'list' object has no attribute 'get'", 1]]
+      },
+      "total_cost": 0.1415,
+      "by_type": {
+        "tiktok_video": {
+          "p1_cost": {
+            "n": 38,
+            "mean": 0.001876,
+            "median": 0.001461,
+            "p5": 0.000768,
+            "p95": 0.003839,
+            "min": 0.000609,
+            "max": 0.005127
+          },
+          "p2_cost": {
+            "n": 39,
+            "mean": 0.000736,
+            "median": 0.000748,
+            "p5": 0.000641,
+            "p95": 0.000792,
+            "min": 0.000596,
+            "max": 0.000812
+          },
+          "p1_latency_ms": {
+            "n": 38,
+            "mean": 32234.578947,
+            "median": 27177.5,
+            "p5": 18930.8,
+            "p95": 54468.5,
+            "min": 14221,
+            "max": 66755
+          },
+          "p2_latency_ms": {
+            "n": 39,
+            "mean": 7074.25641,
+            "median": 7007,
+            "p5": 5818.3,
+            "p95": 8832.6,
+            "min": 5275,
+            "max": 9111
+          }
+        },
+        "tiktok_slideshow": {
+          "p1_cost": {
+            "n": 14,
+            "mean": 0.00214,
+            "median": 0.002174,
+            "p5": 0.001424,
+            "p95": 0.002809,
+            "min": 0.001219,
+            "max": 0.002883
+          },
+          "p2_cost": {
+            "n": 14,
+            "mean": 0.000746,
+            "median": 0.000747,
+            "p5": 0.000712,
+            "p95": 0.00078,
+            "min": 0.000706,
+            "max": 0.00079
+          },
+          "p1_latency_ms": {
+            "n": 14,
+            "mean": 27539.714286,
+            "median": 26213.5,
+            "p5": 16401.8,
+            "p95": 42042.15,
+            "min": 16082,
+            "max": 63446
+          },
+          "p2_latency_ms": {
+            "n": 14,
+            "mean": 7269.214286,
+            "median": 7464.5,
+            "p5": 5655.6,
+            "p95": 8823.4,
+            "min": 5445,
+            "max": 8917
+          }
+        },
+        "tiktok_image": {
+          "p1_cost": {
+            "n": 1,
+            "mean": 0.000513,
+            "median": 0.000513,
+            "p5": 0.000513,
+            "p95": 0.000513,
+            "min": 0.000513,
+            "max": 0.000513
+          },
+          "p2_cost": {
+            "n": 1,
+            "mean": 0.000598,
+            "median": 0.000598,
+            "p5": 0.000598,
+            "p95": 0.000598,
+            "min": 0.000598,
+            "max": 0.000598
+          },
+          "p1_latency_ms": {
+            "n": 1,
+            "mean": 8135,
+            "median": 8135,
+            "p5": 8135,
+            "p95": 8135,
+            "min": 8135,
+            "max": 8135
+          },
+          "p2_latency_ms": {
+            "n": 1,
+            "mean": 7949,
+            "median": 7949,
+            "p5": 7949,
+            "p95": 7949,
+            "min": 7949,
+            "max": 7949
+          }
+        }
+      }
+    },
+    "gemma-4-31b-it": {
+      "total_items": 28,
+      "perceive": {
+        "cost": {
+          "n": 28,
+          "mean": 0.0,
+          "median": 0.0,
+          "p5": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "latency_ms": {
+          "n": 28,
+          "mean": 73858.535714,
+          "median": 72502.5,
+          "p5": 41734.1,
+          "p95": 111966.2,
+          "min": 36905,
+          "max": 116418
+        },
+        "input_tokens": {
+          "n": 28,
+          "mean": 2200.5,
+          "median": 1329.0,
+          "p5": 1258.7,
+          "p95": 3923.9,
+          "min": 1245,
+          "max": 3980
+        },
+        "output_tokens": {
+          "n": 28,
+          "mean": 1472.25,
+          "median": 899.5,
+          "p5": 595.45,
+          "p95": 3029.35,
+          "min": 556,
+          "max": 4318
+        },
+        "thoughts_tokens": {
+          "n": 28,
+          "mean": 920,
+          "median": 899.0,
+          "p5": 590.75,
+          "p95": 1317.0,
+          "min": 541,
+          "max": 1385
+        },
+        "errors": 0,
+        "video_upload_rate": "0/15"
+      },
+      "classify": {
+        "cost": {
+          "n": 28,
+          "mean": 0.0,
+          "median": 0.0,
+          "p5": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "latency_ms": {
+          "n": 28,
+          "mean": 42357.25,
+          "median": 42433.5,
+          "p5": 36946.2,
+          "p95": 48737.55,
+          "min": 32402,
+          "max": 49568
+        },
+        "input_tokens": {
+          "n": 28,
+          "mean": 3592.571429,
+          "median": 3376.5,
+          "p5": 3024.35,
+          "p95": 4161.6,
+          "min": 2947,
+          "max": 4190
+        },
+        "output_tokens": {
+          "n": 28,
+          "mean": 708.035714,
+          "median": 687.5,
+          "p5": 607.55,
+          "p95": 860.6,
+          "min": 560,
+          "max": 878
+        },
+        "thoughts_tokens": {
+          "n": 28,
+          "mean": 817.035714,
+          "median": 775.0,
+          "p5": 710.35,
+          "p95": 1059.05,
+          "min": 563,
+          "max": 1088
+        },
+        "errors": 0,
+        "schema_valid": 28,
+        "schema_invalid": 0,
+        "validity_pct": 100.0,
+        "top_validation_errors": []
+      },
+      "total_cost": 0.0,
+      "by_type": {
+        "tiktok_video": {
+          "p1_cost": {
+            "n": 15,
+            "mean": 0.0,
+            "median": 0.0,
+            "p5": 0.0,
+            "p95": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "p2_cost": {
+            "n": 15,
+            "mean": 0.0,
+            "median": 0.0,
+            "p5": 0.0,
+            "p95": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "p1_latency_ms": {
+            "n": 15,
+            "mean": 60702.333333,
+            "median": 59179,
+            "p5": 44914.2,
+            "p95": 79033.4,
+            "min": 38554,
+            "max": 80978
+          },
+          "p2_latency_ms": {
+            "n": 15,
+            "mean": 41353.8,
+            "median": 41746,
+            "p5": 36225.4,
+            "p95": 46849.8,
+            "min": 32402,
+            "max": 47855
+          }
+        },
+        "tiktok_slideshow": {
+          "p1_cost": {
+            "n": 12,
+            "mean": 0.0,
+            "median": 0.0,
+            "p5": 0.0,
+            "p95": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "p2_cost": {
+            "n": 12,
+            "mean": 0.0,
+            "median": 0.0,
+            "p5": 0.0,
+            "p95": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "p1_latency_ms": {
+            "n": 12,
+            "mean": 93383.25,
+            "median": 92834.5,
+            "p5": 64845.65,
+            "p95": 114259.8,
+            "min": 60928,
+            "max": 116418
+          },
+          "p2_latency_ms": {
+            "n": 12,
+            "mean": 43065.666667,
+            "median": 42433.5,
+            "p5": 37713.15,
+            "p95": 48937.15,
+            "min": 36452,
+            "max": 49568
+          }
+        },
+        "tiktok_image": {
+          "p1_cost": {
+            "n": 1,
+            "mean": 0.0,
+            "median": 0.0,
+            "p5": 0.0,
+            "p95": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "p2_cost": {
+            "n": 1,
+            "mean": 0.0,
+            "median": 0.0,
+            "p5": 0.0,
+            "p95": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "p1_latency_ms": {
+            "n": 1,
+            "mean": 36905,
+            "median": 36905,
+            "p5": 36905,
+            "p95": 36905,
+            "min": 36905,
+            "max": 36905
+          },
+          "p2_latency_ms": {
+            "n": 1,
+            "mean": 48908,
+            "median": 48908,
+            "p5": 48908,
+            "p95": 48908,
+            "min": 48908,
+            "max": 48908
+          }
+        }
+      }
+    }
+  },
+  "agreement": {
+    "topic": {
+      "n": 26,
+      "exact_match": 20,
+      "accuracy_pct": 76.9,
+      "top_disagreements": [
+        {
+          "item_id": "7418683486002842912",
+          "model_a": "sports",
+          "model_b": "comedy"
+        },
+        {
+          "item_id": "7467647308981620011",
+          "model_a": "news",
+          "model_b": "travel"
+        },
+        {
+          "item_id": "7485552618840935710",
+          "model_a": "movies_tv",
+          "model_b": "comedy"
+        },
+        {
+          "item_id": "7530827399215287583",
+          "model_a": "science",
+          "model_b": "comedy"
+        },
+        {
+          "item_id": "7536146973540306198",
+          "model_a": "sports",
+          "model_b": "comedy"
+        }
+      ]
+    },
+    "genre": {
+      "n": 26,
+      "exact_match": 16,
+      "accuracy_pct": 61.5,
+      "top_disagreements": [
+        {
+          "item_id": "7283533643769777441",
+          "model_a": "compilation",
+          "model_b": "other"
+        },
+        {
+          "item_id": "7319866290590502177",
+          "model_a": "ranking",
+          "model_b": "compilation"
+        },
+        {
+          "item_id": "7394372442073976110",
+          "model_a": "compilation",
+          "model_b": "edit"
+        },
+        {
+          "item_id": "7405643343918599455",
+          "model_a": "other",
+          "model_b": "compilation"
+        },
+        {
+          "item_id": "7485552618840935710",
+          "model_a": "review",
+          "model_b": "meme"
+        }
+      ]
+    },
+    "communicative_intent": {
+      "n": 26,
+      "exact_match": 19,
+      "accuracy_pct": 73.1,
+      "top_disagreements": [
+        {
+          "item_id": "7292204605306473729",
+          "model_a": "document",
+          "model_b": "inspire"
+        },
+        {
+          "item_id": "7389315780392865066",
+          "model_a": "document",
+          "model_b": "inspire"
+        },
+        {
+          "item_id": "7467647308981620011",
+          "model_a": "inform",
+          "model_b": "entertain"
+        },
+        {
+          "item_id": "7485552618840935710",
+          "model_a": "inform",
+          "model_b": "entertain"
+        },
+        {
+          "item_id": "7518506610143055135",
+          "model_a": "provoke",
+          "model_b": "inform"
+        }
+      ]
+    },
+    "creator_role": {
+      "n": 26,
+      "exact_match": 13,
+      "accuracy_pct": 50.0,
+      "top_disagreements": [
+        {
+          "item_id": "7292204605306473729",
+          "model_a": "professional",
+          "model_b": "amateur"
+        },
+        {
+          "item_id": "7319866290590502177",
+          "model_a": "influencer",
+          "model_b": "amateur"
+        },
+        {
+          "item_id": "7372382721848692014",
+          "model_a": "professional",
+          "model_b": "amateur"
+        },
+        {
+          "item_id": "7402274475779034399",
+          "model_a": "influencer",
+          "model_b": "educator"
+        },
+        {
+          "item_id": "7485552618840935710",
+          "model_a": "influencer",
+          "model_b": "amateur"
+        }
+      ]
+    },
+    "viewer_orientation": {
+      "n": 26,
+      "exact_match": 18,
+      "accuracy_pct": 69.2,
+      "top_disagreements": [
+        {
+          "item_id": "7372382721848692014",
+          "model_a": "passive_consumption",
+          "model_b": "social_sharing"
+        },
+        {
+          "item_id": "7418511628473355552",
+          "model_a": "emotional_regulation",
+          "model_b": "inspiration_saving"
+        },
+        {
+          "item_id": "7467647308981620011",
+          "model_a": "passive_consumption",
+          "model_b": "social_sharing"
+        },
+        {
+          "item_id": "7485552618840935710",
+          "model_a": "inspiration_saving",
+          "model_b": "social_sharing"
+        },
+        {
+          "item_id": "7530827399215287583",
+          "model_a": "passive_consumption",
+          "model_b": "social_sharing"
+        }
+      ]
+    },
+    "content_provenance": {
+      "n": 26,
+      "exact_match": 21,
+      "accuracy_pct": 80.8,
+      "top_disagreements": [
+        {
+          "item_id": "7283533643769777441",
+          "model_a": "clip",
+          "model_b": "original"
+        },
+        {
+          "item_id": "7394372442073976110",
+          "model_a": "repost",
+          "model_b": "original"
+        },
+        {
+          "item_id": "7405643343918599455",
+          "model_a": "original",
+          "model_b": "repost"
+        },
+        {
+          "item_id": "7536146973540306198",
+          "model_a": "clip",
+          "model_b": "original"
+        },
+        {
+          "item_id": "7547761637407690039",
+          "model_a": "repost",
+          "model_b": "clip"
+        }
+      ]
+    },
+    "affect": {
+      "n": 26,
+      "exact_match": 17,
+      "accuracy_pct": 65.4,
+      "top_disagreements": [
+        {
+          "item_id": "7292204605306473729",
+          "model_a": "satisfying",
+          "model_b": "wholesome"
+        },
+        {
+          "item_id": "7378272396303715589",
+          "model_a": "nostalgic",
+          "model_b": "satisfying"
+        },
+        {
+          "item_id": "7394372442073976110",
+          "model_a": "nostalgic",
+          "model_b": "satisfying"
+        },
+        {
+          "item_id": "7485552618840935710",
+          "model_a": "informative",
+          "model_b": "funny"
+        },
+        {
+          "item_id": "7518506610143055135",
+          "model_a": "shocking",
+          "model_b": "informative"
+        }
+      ]
+    },
+    "presentation_style": {
+      "n": 26,
+      "exact_match": 18,
+      "accuracy_pct": 69.2,
+      "top_disagreements": [
+        {
+          "item_id": "7283533643769777441",
+          "model_a": "voiceover",
+          "model_b": "text_overlay"
+        },
+        {
+          "item_id": "7292204605306473729",
+          "model_a": "text_overlay",
+          "model_b": "slideshow"
+        },
+        {
+          "item_id": "7372382721848692014",
+          "model_a": "cinematic",
+          "model_b": "text_overlay"
+        },
+        {
+          "item_id": "7402274475779034399",
+          "model_a": "talking_head",
+          "model_b": "raw_footage"
+        },
+        {
+          "item_id": "7418511628473355552",
+          "model_a": "slideshow",
+          "model_b": "text_overlay"
+        }
+      ]
+    }
+  }
+}

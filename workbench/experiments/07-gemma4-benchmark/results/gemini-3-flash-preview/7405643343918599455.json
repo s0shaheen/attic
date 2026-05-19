@@ -1,0 +1,295 @@
+{
+  "item_id": "7405643343918599455",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "A close-up shot of a human forearm featuring a surgically implanted, cell-cultivated ear. The ear appears integrated with the skin and tissue of the arm.",
+          "text_detected": "",
+          "primary_content": "Visual documentation of Stelarc's 'Ear on Arm' project.",
+          "entities": [
+            {
+              "name": "Stelarc",
+              "type": "person",
+              "specifications": "Performance artist"
+            },
+            {
+              "name": "Ear on Arm",
+              "type": "technique",
+              "specifications": "Surgically implanted cell-cultivated ear"
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "A clinical close-up of the implanted ear on the arm, being examined by gloved hands. Surgical markings are visible on the skin near the ear.",
+          "text_detected": "",
+          "primary_content": "Medical/surgical examination of the bio-implant.",
+          "entities": [
+            {
+              "name": "Stelarc",
+              "type": "person",
+              "specifications": "Subject of the procedure"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "A screenshot of a webpage or digital document titled 'The Internet Ear' detailing the project's exhibition history and credits, alongside a chat log.",
+          "text_detected": "Echo: I am mouthing a few words here\nAnonymous: Can you hear me?\nThe Ear: I am listening in when Biotopia Revisited opens february 1 at LEAs Digital Platform.\nAnonymous: We are Anonymous. We are Legion. We do not forgive. We do not forget. Expect us.\nAnonymous: As we gather together in solidarity to express a feeling of mass injustice, we must not lose sight of what brought us together. We write so that all people who feel wronged by the corporate forces of the world can know...\nThe Internet Ear\nThe Internet Ear was developed specifically for the exhibition \"Biotopia - Art in the Wet Zone\" in the context PORT 20:10 Festival of Contemporary Art and Social Technology, October 15, 2010 - January 10, 2011 in Aalborg, Denmark.\nwww.port2010.dk\nPort 2010 Conference / Biotopia Symposium\nOctober 15 - 17 www.port2010conference.dk\nVenues:\nGalerie l'Arche de Morph\u00e9e, 6 rue \u00c9tienne Dolet. 75020 Paris, France. Arranged by Artifist.\nLABORATORIA Art&Science Space, Moscow, Russia. Organizers: LABORATORIA Art&Science Space (Moscow) and The National Centre for Contemporary Arts (Kaliningrad branch, Russia). Curator in Moscow: Dmitry Bulatov.\nUtzon Center, Aalborg, Denmark. Biotopia - Art in the Wet Zone. Organizer: PORT 20:10 - Festival of Contemporary Art and Social Technology, KUNSTEN - Museum of Modern Art in Aalborg, CIT / Aalborg University, and Utzon Centre. Curator of Biotopia in Aalborg: Morten S\u00f8ndergaard.\nCIT - Copenhagen Institute of Technology / Aalborg University, Denmark.\nCredits:\nCurator of the Internet Arm Project by STELARC: Morten S\u00f8ndergaard, Denmark.\nTechnological development: Mogens Jacobsen, Denmark.\nPolyurethane arms: Olivier Goulet, France.\nSpecial thanks to Fundere Foundry, Melbourne, Australia.\nSTELARC's artwork is represented by the Scott Livesey Galleries, Melbourne, Australia.",
+          "primary_content": "Project documentation, exhibition details, and chat interface for 'The Internet Ear'.",
+          "entities": [
+            {
+              "name": "Biotopia - Art in the Wet Zone",
+              "type": "event",
+              "specifications": "Exhibition"
+            },
+            {
+              "name": "PORT 20:10",
+              "type": "event",
+              "specifications": "Festival of Contemporary Art and Social Technology"
+            },
+            {
+              "name": "Morten S\u00f8ndergaard",
+              "type": "person",
+              "specifications": "Curator"
+            },
+            {
+              "name": "Mogens Jacobsen",
+              "type": "person",
+              "specifications": "Technological developer"
+            },
+            {
+              "name": "Olivier Goulet",
+              "type": "person",
+              "specifications": "Polyurethane arms creator"
+            },
+            {
+              "name": "Anonymous",
+              "type": "brand",
+              "specifications": "Hacktivist collective mentioned in chat"
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "A profile photograph of the artist Stelarc holding his left arm up to his face, showcasing the implanted ear.",
+          "text_detected": "",
+          "primary_content": "Portrait of the artist with his bio-implant.",
+          "entities": [
+            {
+              "name": "Stelarc",
+              "type": "person",
+              "specifications": "Performance artist"
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "An exhibition display featuring a model or prosthetic arm with an ear, positioned in front of a screen displaying a diagram and song lyrics.",
+          "text_detected": "just singing in the rain, what a glorious feeling",
+          "primary_content": "Exhibition installation of the project.",
+          "entities": [
+            {
+              "name": "Singin' in the Rain",
+              "type": "song",
+              "specifications": "Lyrics displayed on screen"
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This post documents the 'Ear on Arm' project by performance artist Stelarc, who had a cell-cultivated ear surgically implanted on his forearm. The project, which took ten years to fund and realize, features an internet-capable microphone inside the ear, allowing people worldwide to listen to what the ear 'hears' via a web interface. The user is likely saving this as a piece of 'weird history,' bio-hacking interest, or avant-garde art documentation.",
+      "carousel_type": "infographic",
+      "narrative_thread": "The images trace the project from the physical implant on the artist's body to the conceptual and digital interface that allows the ear to function as a remote listening device for the public.",
+      "entities": [
+        {
+          "name": "Stelarc",
+          "display_name": "Stelarc (Performance Artist)",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay", "metadata"],
+          "slide_number": 1,
+          "specifications": "Australian performance artist",
+          "confidence": 5
+        },
+        {
+          "name": "The Internet Ear",
+          "display_name": "The Internet Ear Project",
+          "type": "technique",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "slide_number": 3,
+          "specifications": "Bio-implant with internet connectivity",
+          "confidence": 5
+        },
+        {
+          "name": "Biotopia",
+          "display_name": "Biotopia - Art in the Wet Zone",
+          "type": "event",
+          "relevance": "supporting",
+          "source": ["text_overlay"],
+          "slide_number": 3,
+          "specifications": "Exhibition in Aalborg, Denmark",
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Stelarc's ear implant is a permanent fixture with its own blood supply and tissue.",
+          "source": "metadata",
+          "confidence": 5
+        },
+        {
+          "statement": "The project serves as a remote listening device for the public rather than a hearing aid for the artist.",
+          "source": "metadata",
+          "confidence": 5
+        },
+        {
+          "statement": "The project involved a decade of fundraising and a team of plastic surgeons.",
+          "source": "metadata",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "null",
+        "items": []
+      },
+      "audio_identification": {
+        "actual_song": "original sound \u2014 Blurry Face Films",
+        "metadata_song": "original sound - blurry.face.films \u2014 Blurry Face Films",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "Text from the exhibition document in slide 3 was transcribed verbatim."
+      },
+      "presentation_style": {
+        "primary_format": "infographic",
+        "visual_style": "informational"
+      },
+      "visual_mood": "Clinical, uncanny, and avant-garde.",
+      "topic_hints": ["Bio-art", "Cybernetics", "Performance Art"],
+      "affect_hints": ["Unsettled", "Intrigued", "Fascinated"],
+      "genre_hints": ["Documentary", "Art History", "Body Horror"]
+    },
+    "metrics": {
+      "input_tokens": 6826,
+      "output_tokens": 2223,
+      "cost_usd": 0.0015718000000000002,
+      "latency_ms": 17895,
+      "video_uploaded": false
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "art",
+        "secondary": "technology",
+        "micro_labels": [
+          "performance art",
+          "bio-hacking",
+          "body modification",
+          "weird history",
+          "cybernetics"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "other",
+        "micro_labels": ["infographic", "documentary"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "shocking",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.85
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Stelarc",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Ear on Arm",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "The Internet Ear",
+          "type": "technique",
+          "relevance": "primary"
+        },
+        {
+          "name": "Biotopia - Art in the Wet Zone",
+          "type": "event",
+          "relevance": "supporting"
+        },
+        {
+          "name": "PORT 20:10",
+          "type": "event",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Morten S\u00f8ndergaard",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Anonymous",
+          "type": "brand",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "This post documents the 'Ear on Arm' project by performance artist Stelarc, who had a cell-cultivated ear surgically implanted on his forearm. The project features an internet-capable microphone inside the ear, allowing people worldwide to listen to what the ear 'hears' via a web interface.",
+      "embedding_text": "A TikTok infographic documenting the 'Ear on Arm' project by performance artist Stelarc. The content features visual documentation of a cell-cultivated ear surgically implanted onto Stelarc's left forearm, which functions as a permanent fixture with its own tissue and blood supply. The artist explains that the ear contains an internet-capable microphone, turning it into a remote listening device for the public to access via a web interface. The post details the ten-year process of raising funds and finding plastic surgeons for the procedure. It mentions the 'Biotopia - Art in the Wet Zone' exhibition and the 'PORT 20:10 Festival of Contemporary Art and Social Technology'. This content is a mix of weird history, bio-hacking, and avant-garde art, appealing to those interested in the intersection of technology and the human body."
+    },
+    "metrics": {
+      "input_tokens": 4080,
+      "output_tokens": 819,
+      "cost_usd": 0.0007356,
+      "latency_ms": 5980
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "art",
+      "genre": "other",
+      "communicative_intent": "inform",
+      "creator_role": "amateur",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

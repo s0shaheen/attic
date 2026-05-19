@@ -1,0 +1,373 @@
+{
+  "item_id": "7555209321932410134",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:11",
+          "visual_description": "Creator stands with a man in a long black coat on a London street, delivering a monologue into a microphone.",
+          "audio_description": "Creator argues that therapy culture has over-prescribed self-obsession to the middle class, turning social issues into personal failings.",
+          "text_on_screen": "",
+          "key_objects": ["microphone", "Johnny Cash t-shirt"]
+        },
+        {
+          "time_range": "0:11-0:17",
+          "visual_description": "Creator stands with a woman in a plaid skirt and brown jacket.",
+          "audio_description": "Creator claims that in therapy culture, being sad is viewed as a choice and toxic positivity is a daily affirmation.",
+          "text_on_screen": "",
+          "key_objects": ["microphone"]
+        },
+        {
+          "time_range": "0:17-0:28",
+          "visual_description": "Creator sits on steps with a man holding a specific book about PTSD.",
+          "audio_description": "Creator discusses the collapse of community and the rise of paid counseling as a substitute for genuine connection.",
+          "text_on_screen": "",
+          "key_objects": [
+            "Book: Complex PTSD: From Surviving to Thriving by Pete Walker"
+          ]
+        },
+        {
+          "time_range": "0:28-0:52",
+          "visual_description": "Creator stands with a woman in a brown corduroy jacket; she smiles as he speaks.",
+          "audio_description": "Creator critiques therapeutic buzzwords like 'set boundaries' and 'manifest intentions,' suggesting they turn life into a brand campaign.",
+          "text_on_screen": "set boundaries\nmanifest intentions\nhold space",
+          "key_objects": ["EU flag t-shirt"]
+        },
+        {
+          "time_range": "0:52-1:01",
+          "visual_description": "Creator stands with a man wearing headphones around his neck.",
+          "audio_description": "Creator mocks the idea of 'detaching with love' to protect one's space from 'toxic' people who don't fulfill a personal purpose.",
+          "text_on_screen": "detach with love\nprotect my space",
+          "key_objects": ["headphones"]
+        },
+        {
+          "time_range": "1:01-1:13",
+          "visual_description": "Creator stands with a man in a black suit in a public square.",
+          "audio_description": "Creator states that therapy culture has become the default social setting where everything is about individual feelings.",
+          "text_on_screen": "I refuse to go to therapy",
+          "key_objects": ["wedding ring"]
+        },
+        {
+          "time_range": "1:13-1:19",
+          "visual_description": "Creator stands with a man in camo pants and a St\u00fcssy hoodie.",
+          "audio_description": "Creator describes how 'gaslighters' weaponize therapeutic language to avoid accountability.",
+          "text_on_screen": "\u201cI am the best at therapy\u201d",
+          "key_objects": ["St\u00fcssy hoodie", "camo pants"]
+        },
+        {
+          "time_range": "1:19-1:32",
+          "visual_description": "Creator stands with a woman in a leather jacket on a street corner.",
+          "audio_description": "Creator argues that over-saturation of therapeutic language normalizes narcissism and entrenches a neoliberal worldview.",
+          "text_on_screen": "1. Normalises a culture of narcissism\n2. Entrenches the neoliberal worldview",
+          "key_objects": ["leather jacket"]
+        },
+        {
+          "time_range": "1:32-1:41",
+          "visual_description": "Creator stands with a man in a green flannel shirt and a green beret.",
+          "audio_description": "Creator suggests therapy culture blames personal 'attachment styles' or 'mother wounds' instead of systemic issues like capitalism.",
+          "text_on_screen": "",
+          "key_objects": ["green beret", "sunglasses"]
+        },
+        {
+          "time_range": "1:41-2:00",
+          "visual_description": "Creator stands with a man in a grey coat; the man smiles at the camera.",
+          "audio_description": "Creator laments that sitting with feelings alone has made people forget how to be together in a collapsing society.",
+          "text_on_screen": "",
+          "key_objects": ["microphone"]
+        },
+        {
+          "time_range": "2:00-2:15",
+          "visual_description": "Creator stands with a woman with red hair and sunglasses.",
+          "audio_description": "Creator argues that therapy should challenge the self, but consumer society makes it about feeling 'warm and fuzzy.'",
+          "text_on_screen": "consumer society",
+          "key_objects": ["sunglasses", "scarf"]
+        },
+        {
+          "time_range": "2:15-2:28",
+          "visual_description": "Creator sits on church steps with a man in a brown jacket.",
+          "audio_description": "Creator compares the therapist's office to a modern-day confession box in a 'quasi-religious cult.'",
+          "text_on_screen": "",
+          "key_objects": ["religious statue in background"]
+        },
+        {
+          "time_range": "2:28-2:43",
+          "visual_description": "Creator stands with a woman in a black leather jacket and Tabi-style shoes.",
+          "audio_description": "Creator suggests that the 'hole' people try to fill with therapy or religion might be part of the human design.",
+          "text_on_screen": "hole",
+          "key_objects": ["Tabi shoes", "leather jacket"]
+        },
+        {
+          "time_range": "2:43-2:59",
+          "visual_description": "Creator stands with a woman holding a dog outside 'The Dolphin' pub, then runs away as others chase him.",
+          "audio_description": "Creator concludes that self-improvement is self-impoverishment and we don't need apps like Headspace.",
+          "text_on_screen": "self-improvment\nself-improvment is self-impoverishment",
+          "key_objects": ["dog", "The Dolphin pub sign"]
+        }
+      ],
+      "overall_summary": "This video is a sociological critique of modern 'therapy culture,' delivered as a series of street interviews in London. The creator argues that the over-saturation of therapeutic language has led to a culture of narcissism, where systemic social issues are pathologized as individual failings. He suggests that therapy has become a 'quasi-religious cult' that prioritizes self-obsession over community connection and serves a neoliberal agenda by making individuals responsible for their own happiness within a broken capitalist system. The video concludes by suggesting that the pursuit of constant self-improvement is actually a form of self-impoverishment.",
+      "people": [
+        {
+          "description": "Young man with short hair, wearing a very colorful, patterned 'C.E.B.' jacket and black cargo pants. He acts as the interviewer/narrator.",
+          "is_creator": true,
+          "speaking": true,
+          "identified_as": "meditationsfortheanxious"
+        },
+        {
+          "description": "Various young adults in London, appearing as interviewees who stand silently or smile while the creator speaks.",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": null
+        }
+      ],
+      "entities": [
+        {
+          "name": "Complex PTSD: From Surviving to Thriving",
+          "display_name": "Complex PTSD: From Surviving to Thriving by Pete Walker",
+          "type": "book",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Author: Pete Walker",
+          "confidence": 5
+        },
+        {
+          "name": "Headspace",
+          "display_name": "Headspace App",
+          "type": "app_or_tool",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Meditation and mental health app",
+          "confidence": 5
+        },
+        {
+          "name": "CBT",
+          "display_name": "Cognitive Behavioral Therapy (CBT)",
+          "type": "technique",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Capitalism",
+          "display_name": "Capitalism",
+          "type": "cultural_reference",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Neoliberalism",
+          "display_name": "Neoliberalism",
+          "type": "cultural_reference",
+          "relevance": "supporting",
+          "source": ["audio", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "The Dolphin",
+          "display_name": "The Dolphin Pub",
+          "type": "restaurant",
+          "relevance": "background",
+          "source": ["visual"],
+          "specifications": "Pub in London",
+          "confidence": 4
+        },
+        {
+          "name": "St\u00fcssy",
+          "display_name": "St\u00fcssy",
+          "type": "brand",
+          "relevance": "background",
+          "source": ["visual"],
+          "specifications": "Hoodie worn by interviewee",
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Therapy culture has turned collective social experiences into individual personal failings to be 'unpacked' with a professional.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "The use of therapeutic buzzwords (like 'boundaries' or 'toxic') can be used to justify narcissistic behavior and social withdrawal.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Modern therapy culture entrenches a neoliberal worldview by making individuals solely responsible for their wellness, ignoring the impact of capitalism.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Self-improvement is framed as 'self-impoverishment' because it focuses on fixing a perceived 'hole' in the self rather than connecting with others.",
+          "source": "voiceover",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Critique of Therapy Culture",
+            "details": "Argues it promotes self-obsession and narcissism."
+          },
+          {
+            "name": "Critique of Neoliberalism",
+            "details": "Argues it shifts systemic blame onto the individual's mental health."
+          },
+          {
+            "name": "Critique of Consumerist Wellness",
+            "details": "Argues that wellness apps and 'warm and fuzzy' therapy avoid challenging the self."
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Unidentifiable melancholic ambient piano track",
+        "metadata_song": "original sound - meditationsfortheanxious \u2014 Meditations for the anxious",
+        "match": false
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": false,
+        "notes": "The background music is a generic melancholic piano loop likely used for atmospheric effect. All text and book titles were clearly visible."
+      },
+      "presentation_style": {
+        "primary_format": "talking_head",
+        "camera_work": "static",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Melancholic, intellectual, cynical, and urban.",
+      "topic_hints": ["Sociology", "Mental Health", "Cultural Criticism"],
+      "affect_hints": ["Reflective", "Cynical", "Thought-provoking"],
+      "genre_hints": ["Video Essay", "Social Commentary"]
+    },
+    "metrics": {
+      "input_tokens": 17412,
+      "output_tokens": 2928,
+      "cost_usd": 0.0029124,
+      "latency_ms": 43699,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "health",
+        "secondary": "other",
+        "micro_labels": [
+          "mental health",
+          "sociology",
+          "cultural critique",
+          "therapy culture"
+        ],
+        "confidence": 0.9
+      },
+      "genre": {
+        "label": "news_commentary",
+        "micro_labels": ["street interview", "social commentary"],
+        "confidence": 0.85
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "funny",
+          "tier": "secondary"
+        },
+        {
+          "label": "angry",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "provoke",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Complex PTSD: From Surviving to Thriving",
+          "type": "book",
+          "relevance": "primary"
+        },
+        {
+          "name": "Pete Walker",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Headspace",
+          "type": "app_or_tool",
+          "relevance": "supporting"
+        },
+        {
+          "name": "London",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "The Dolphin",
+          "type": "restaurant",
+          "relevance": "supporting"
+        },
+        {
+          "name": "St\u00fcssy",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Therapy Culture",
+          "type": "cultural_reference",
+          "relevance": "primary"
+        },
+        {
+          "name": "Neoliberalism",
+          "type": "cultural_reference",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A sociological critique of modern 'therapy culture' filmed as street interviews in London, arguing that therapeutic language often pathologizes social issues and replaces genuine community with paid counseling. The creator, @meditationsfortheanxious, explores how buzzwords like 'setting boundaries' and 'attachment styles' can be weaponized to avoid accountability and entrench neoliberal worldviews.",
+      "embedding_text": "A sociological critique of modern therapy culture by @meditationsfortheanxious on the streets of London. The creator argues that therapy culture has over-prescribed self-obsession to the middle class, turning systemic social issues into personal failings. Key topics include the collapse of community, the rise of paid counseling as a substitute for connection, and the weaponization of therapeutic buzzwords like 'set boundaries', 'manifest intentions', 'hold space', and 'detach with love'. The video features the book 'Complex PTSD: From Surviving to Thriving' by Pete Walker and critiques apps like Headspace. It explores how 'gaslighters' use therapeutic language to avoid accountability and how the therapist's office has become a modern confession box. The creator concludes that self-improvement is self-impoverishment in a consumer society. Includes mentions of capitalism, neoliberalism, narcissism, and on-screen text such as 'I refuse to go to therapy' and 'consumer society'."
+    },
+    "metrics": {
+      "input_tokens": 4083,
+      "output_tokens": 910,
+      "cost_usd": 0.0007723,
+      "latency_ms": 6885
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "health",
+      "genre": "news_commentary",
+      "communicative_intent": "provoke",
+      "creator_role": "influencer",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

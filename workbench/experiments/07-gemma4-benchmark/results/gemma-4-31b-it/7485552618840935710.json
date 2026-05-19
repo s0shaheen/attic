@@ -1,0 +1,176 @@
+{
+  "item_id": "7485552618840935710",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A two-panel meme. The top panel features a distorted, wide-eyed close-up of an animated character from a Studio Ghibli film, appearing to look down with a bewildered expression. The bottom panel shows a close-up photo of a middle-aged man with a neutral, slightly judgmental or skeptical expression. The text 'YOU ARE MISSING IT' is overlaid in white, bold, sans-serif capital letters across the center of the image.",
+      "text_on_screen": "YOU ARE MISSING IT",
+      "overall_summary": "This is a reaction meme used to imply that the viewer is overlooking something obvious or failing to understand a point. The user likely saved it to use as a response in conversations or because they relate to the sentiment of others missing the point.",
+      "entities": [
+        {
+          "name": "bitchbaby",
+          "display_name": "bitchbaby",
+          "type": "song",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "TESLA",
+          "display_name": "TESLA",
+          "type": "artist",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Princess Mononoke",
+          "display_name": "Princess Mononoke",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Studio Ghibli animation",
+          "confidence": 4
+        },
+        {
+          "name": "Studio Ghibli",
+          "display_name": "Studio Ghibli",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 4
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The viewer is missing a key detail or the core point of a situation.",
+          "source": "implied",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": []
+      },
+      "extraction_confidence": {
+        "entities_complete": 4,
+        "notes": "The man in the bottom image is a common meme subject but is not a named celebrity in this context."
+      },
+      "presentation_style": {
+        "primary_format": "meme",
+        "visual_style": "raw"
+      },
+      "scene_type": "text_graphic",
+      "visual_mood": "moody",
+      "topic_hints": ["internet memes", "reaction images", "pop culture"],
+      "affect_hints": ["judgmental", "ironic", "amused"],
+      "genre_hints": ["meme", "social media post"]
+    },
+    "metrics": {
+      "input_tokens": 1260,
+      "output_tokens": 727,
+      "cost_usd": 0.0,
+      "latency_ms": 76935,
+      "video_uploaded": false,
+      "thoughts_tokens": 1291
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "comedy",
+        "secondary": "movies_tv",
+        "micro_labels": ["internet memes", "reaction images", "pop culture"],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "meme",
+        "micro_labels": [],
+        "confidence": 1.0
+      },
+      "affect": [
+        {
+          "label": "funny",
+          "tier": "dominant"
+        },
+        {
+          "label": "neutral",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["text_overlay", "slideshow"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.8
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "social_sharing",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "YOU ARE MISSING IT",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        },
+        {
+          "name": "Princess Mononoke",
+          "type": "movie_or_show",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Studio Ghibli",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "bitchbaby",
+          "type": "song",
+          "relevance": "supporting"
+        },
+        {
+          "name": "TESLA",
+          "type": "artist",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A reaction meme featuring a bewildered Studio Ghibli character and a skeptical man with the text 'YOU ARE MISSING IT'. The user likely saved this to use as a response in conversations to point out that someone is overlooking the obvious.",
+      "embedding_text": "A reaction meme posted by @jasonkpargin featuring a two-panel image. The top panel shows a distorted, wide-eyed character from the Studio Ghibli film Princess Mononoke, and the bottom panel shows a skeptical middle-aged man. The bold white text 'YOU ARE MISSING IT' is overlaid across the center. This content is used to imply that someone is failing to understand a point or overlooking a key detail. The video uses the song 'bitchbaby' by the artist TESLA. It is a piece of internet pop culture intended for social sharing as a response image."
+    },
+    "metrics": {
+      "input_tokens": 3156,
+      "output_tokens": 665,
+      "cost_usd": 0.0,
+      "latency_ms": 40865,
+      "thoughts_tokens": 787
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "funny",
+      "topic": "comedy",
+      "genre": "meme",
+      "communicative_intent": "entertain",
+      "creator_role": "amateur",
+      "viewer_orientation": "social_sharing",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

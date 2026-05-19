@@ -1,0 +1,167 @@
+{
+  "item_id": "7283533643769777441",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A group of three hikers is seen from behind, walking along a reddish-brown dirt path through a dense, lush green forest. The hiker in the foreground on the right wears a grey t-shirt and a large black technical backpack. To the left, another hiker wears a black jacket, olive green trousers, and a bright blue backpack. The background is filled with tall trees and thick foliage under bright, natural daylight.",
+      "text_on_screen": "KILIMANJARO DOES NOT REQUIRE\nTHE BUCKETLISTER PODCAST",
+      "overall_summary": "This post is a promotional teaser for an episode of 'The Bucketlister Podcast' focusing on Mount Kilimanjaro. The user is likely saving it as a travel resource or a reminder to listen to the podcast for planning tips and debunking myths about the climb.",
+      "entities": [
+        {
+          "name": "Mount Kilimanjaro",
+          "display_name": "Mount Kilimanjaro",
+          "type": "place",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "The Bucketlister Podcast",
+          "display_name": "The Bucketlister Podcast",
+          "type": "podcast",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "The Bucket List Company",
+          "display_name": "The Bucket List Company",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "There are common misconceptions or unnecessary requirements associated with climbing Mount Kilimanjaro that the podcast aims to clarify.",
+          "source": "text_overlay",
+          "confidence": 4
+        },
+        {
+          "statement": "The Bucketlister Podcast provides specific advice and information for those booking a trip to Kilimanjaro.",
+          "source": "metadata",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": []
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "The text on screen is a cliffhanger; the specific 'requirements' being discussed are not listed in the image but are the subject of the linked podcast."
+      },
+      "presentation_style": {
+        "primary_format": "graphic_design",
+        "visual_style": "informational"
+      },
+      "scene_type": "nature",
+      "visual_mood": "adventurous",
+      "topic_hints": ["Adventure Travel", "Hiking", "Mount Kilimanjaro"],
+      "affect_hints": ["curious", "inspired", "determined"],
+      "genre_hints": ["Travel Guide", "Podcast Promotion"]
+    },
+    "metrics": {
+      "input_tokens": 1302,
+      "output_tokens": 769,
+      "cost_usd": 0.0,
+      "latency_ms": 49164,
+      "video_uploaded": false,
+      "thoughts_tokens": 620
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "travel",
+        "secondary": "nature",
+        "micro_labels": [
+          "Mount Kilimanjaro",
+          "hiking",
+          "adventure travel",
+          "travel planning"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "other",
+        "micro_labels": ["podcast promotion", "teaser"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["text_overlay", "cinematic"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.85
+      },
+      "creator_role": {
+        "label": "brand",
+        "confidence": 0.95
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Mount Kilimanjaro",
+          "type": "place",
+          "relevance": "primary"
+        },
+        {
+          "name": "The Bucketlister Podcast",
+          "type": "podcast",
+          "relevance": "primary"
+        },
+        {
+          "name": "The Bucket List Company",
+          "type": "brand",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A promotional teaser for The Bucketlister Podcast focusing on climbing Mount Kilimanjaro. It encourages viewers to listen to the podcast to learn essential tips and debunk myths before booking their trip. A user would save this as a travel resource for planning an adventure hike.",
+      "embedding_text": "A travel planning teaser from @thebucketlistcompany promoting an episode of The Bucketlister Podcast about climbing Mount Kilimanjaro. The video features cinematic footage of hikers with technical backpacks trekking through a lush green forest on a reddish-brown dirt path. The on-screen text 'KILIMANJARO DOES NOT REQUIRE THE BUCKETLISTER PODCAST' serves as a hook to encourage viewers to listen to the podcast for essential tips and misconceptions to know before booking a climb. This content is ideal for adventure travelers, hikers, and anyone researching Mount Kilimanjaro trip requirements and preparation."
+    },
+    "metrics": {
+      "input_tokens": 3216,
+      "output_tokens": 616,
+      "cost_usd": 0.0,
+      "latency_ms": 37929,
+      "thoughts_tokens": 721
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "travel",
+      "genre": "other",
+      "communicative_intent": "inform",
+      "creator_role": "brand",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

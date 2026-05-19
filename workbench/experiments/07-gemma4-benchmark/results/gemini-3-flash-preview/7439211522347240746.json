@@ -1,0 +1,257 @@
+{
+  "item_id": "7439211522347240746",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:10",
+          "visual_description": "The creator performs leg extensions on a Cybex Eagle machine in a gym setting.",
+          "audio_description": "A slowed-down, bass-heavy trap beat plays throughout.",
+          "text_on_screen": "Stopping the overcomplication of muscle groups: Part 1: The quads\nLeg extensions",
+          "key_objects": [
+            "Cybex Eagle Leg Extension machine",
+            "Headphones",
+            "Converse shoes"
+          ]
+        },
+        {
+          "time_range": "0:10-0:25",
+          "visual_description": "The creator transitions to a leg press machine to demonstrate a squat pattern movement.",
+          "audio_description": "The slowed trap beat continues with rhythmic bass hits.",
+          "text_on_screen": "Squat pattern\nSimple as that",
+          "key_objects": ["Cybex Leg Press machine", "Gym bag"]
+        }
+      ],
+      "overall_summary": "This fitness video simplifies quad training by narrowing it down to two essential movements. The creator demonstrates leg extensions for isolation and a leg press to represent a squat pattern, arguing that these are sufficient for muscle growth. The video aims to reduce the confusion often associated with complex workout routines, particularly during the 'winter arc' training phase.",
+      "people": [
+        {
+          "description": "Black male with short hair, wearing a black hoodie, black pants, and black Converse, performing leg exercises.",
+          "is_creator": true,
+          "speaking": false,
+          "identified_as": null
+        }
+      ],
+      "entities": [
+        {
+          "name": "Quads",
+          "display_name": "Quadriceps",
+          "type": "exercise",
+          "relevance": "primary",
+          "source": ["text_overlay", "metadata"],
+          "specifications": "Target muscle group",
+          "confidence": 5
+        },
+        {
+          "name": "Leg Extension",
+          "display_name": "Leg Extension",
+          "type": "exercise",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay"],
+          "specifications": "Isolation movement",
+          "confidence": 5
+        },
+        {
+          "name": "Leg Press",
+          "display_name": "Leg Press (Squat Pattern)",
+          "type": "exercise",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay"],
+          "specifications": "Compound movement",
+          "confidence": 5
+        },
+        {
+          "name": "Cybex",
+          "display_name": "Cybex International",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Eagle series equipment",
+          "confidence": 5
+        },
+        {
+          "name": "Winter Arc",
+          "display_name": "Winter Arc Trend",
+          "type": "trend_or_meme",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 4
+        },
+        {
+          "name": "Money So Big",
+          "display_name": "Money So Big (Slowed) \u2014 Yeat",
+          "type": "song",
+          "relevance": "primary",
+          "source": ["audio"],
+          "specifications": "Slowed and reverb version",
+          "confidence": 4
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Effective quad training only requires two types of movements: an isolation exercise and a squat pattern.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "Overcomplicating muscle group training is unnecessary for progress.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "workout",
+        "items": [
+          {
+            "name": "Leg Extensions",
+            "details": "Isolation movement for quads"
+          },
+          {
+            "name": "Squat Pattern (Leg Press)",
+            "details": "Compound movement for overall leg development"
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Money So Big \u2014 Yeat",
+        "metadata_song": "original sound - wave_sslowed \u2014 user78300950337",
+        "match": false
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The audio is a very common slowed-down edit of Yeat's 'Money So Big' used in gym content."
+      },
+      "presentation_style": {
+        "primary_format": "tutorial_demo",
+        "camera_work": "static",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Focused, disciplined, and minimalist gym atmosphere.",
+      "topic_hints": ["Bodybuilding", "Leg Day", "Fitness Simplification"],
+      "affect_hints": ["Motivated", "Focused", "Straightforward"],
+      "genre_hints": ["Fitness Tutorial", "Gym Edit"]
+    },
+    "metrics": {
+      "input_tokens": 3727,
+      "output_tokens": 1262,
+      "cost_usd": 0.0008775,
+      "latency_ms": 18431,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "fitness",
+        "secondary": "education",
+        "micro_labels": [
+          "bodybuilding",
+          "leg day",
+          "quad training",
+          "muscle growth"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "workout",
+        "micro_labels": ["gym edit", "tutorial"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "secondary"
+        },
+        {
+          "label": "focused",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["text_overlay", "cinematic"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Quadriceps",
+          "type": "exercise",
+          "relevance": "primary"
+        },
+        {
+          "name": "Leg Extension",
+          "type": "exercise",
+          "relevance": "primary"
+        },
+        {
+          "name": "Leg Press",
+          "type": "exercise",
+          "relevance": "primary"
+        },
+        {
+          "name": "Cybex International",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Winter Arc",
+          "type": "trend_or_meme",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Money So Big - Yeat",
+          "type": "song",
+          "relevance": "supporting"
+        },
+        {
+          "name": "@champ_.gf",
+          "type": "person",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "Fitness creator @champ_.gf demonstrates a simplified quad workout routine to help viewers stop overcomplicating their training. He highlights two essential movements: leg extensions for isolation and the leg press for a squat pattern, specifically tailored for the 'winter arc' training phase.",
+      "embedding_text": "A fitness tutorial and gym edit by @champ_.gf focused on simplifying quadriceps training. The creator demonstrates how to train quads effectively using only two movements: isolation leg extensions on a Cybex Eagle machine and a compound squat pattern using a leg press. The video features on-screen text stating 'Stopping the overcomplication of muscle groups: Part 1: The quads' and 'Simple as that.' Set to a slowed version of 'Money So Big' by Yeat, the content is designed for the 'winter arc' trend, providing viewers with a minimalist but effective approach to muscle growth. This is a high-quality gym demonstration showing proper form for leg extensions and leg press, aimed at gym-goers looking for straightforward workout tips and leg day inspiration."
+    },
+    "metrics": {
+      "input_tokens": 3797,
+      "output_tokens": 753,
+      "cost_usd": 0.0006809000000000001,
+      "latency_ms": 6570
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "fitness",
+      "genre": "workout",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "text_overlay",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

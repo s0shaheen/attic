@@ -1,0 +1,197 @@
+{
+  "item_id": "7467647308981620011",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A composite screenshot from a TikTok video. The top portion shows a woman wearing a black hijab and a green garment, appearing to be in an interview setting with multiple microphones held in front of her. The bottom portion features a close-up of a man's face, likely the narrator, overlaid on the scene. The background of the top image is a dimly lit indoor room.",
+      "text_on_screen": "\ud83d\udccd Karachi Pakistan\nRAWSALERTS\nAmerican woman in Pakistan is best story on Internet\nhilling you",
+      "overall_summary": "This post is a storytelling or reaction video about an American woman's experience in Karachi, Pakistan. The user is likely saving it because the narrator frames it as one of the 'best stories on the internet,' suggesting high emotional or narrative value.",
+      "entities": [
+        {
+          "name": "Karachi",
+          "display_name": "Karachi, Pakistan",
+          "type": "place",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Pakistan",
+          "display_name": "Pakistan",
+          "type": "place",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Jack Mac",
+          "display_name": "Jack Mac",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "RAWSALERTS",
+          "display_name": "RAWSALERTS",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "American woman",
+          "display_name": "Unnamed American Woman",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "There is a highly compelling or 'unbelievable' story involving an American woman in Pakistan.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": []
+      },
+      "extraction_confidence": {
+        "entities_complete": 4,
+        "notes": "The specific identity of the American woman is not mentioned in the text or metadata provided."
+      },
+      "presentation_style": {
+        "primary_format": "screenshot",
+        "visual_style": "raw"
+      },
+      "scene_type": "other",
+      "visual_mood": "serious",
+      "topic_hints": [
+        "Human interest stories",
+        "International travel",
+        "Current events in Pakistan"
+      ],
+      "affect_hints": ["curiosity", "intrigue", "shock"],
+      "genre_hints": ["storytelling", "reaction video", "viral news"]
+    },
+    "metrics": {
+      "input_tokens": 1260,
+      "output_tokens": 806,
+      "cost_usd": 0.0,
+      "latency_ms": 61773,
+      "video_uploaded": false,
+      "thoughts_tokens": 808
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "travel",
+        "secondary": "news",
+        "micro_labels": [
+          "human interest stories",
+          "cultural experiences",
+          "viral news"
+        ],
+        "confidence": 0.85
+      },
+      "genre": {
+        "label": "news_commentary",
+        "micro_labels": ["storytelling", "reaction"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "shocking",
+          "tier": "dominant"
+        },
+        {
+          "label": "informative",
+          "tier": "secondary"
+        },
+        {
+          "label": "neutral",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay", "mixed"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.8
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.85
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "social_sharing",
+        "confidence": 0.75
+      },
+      "entities": [
+        {
+          "name": "Karachi",
+          "type": "place",
+          "relevance": "primary"
+        },
+        {
+          "name": "Pakistan",
+          "type": "place",
+          "relevance": "primary"
+        },
+        {
+          "name": "Jack Mac",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "RAWSALERTS",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Unnamed American Woman",
+          "type": "person",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A storytelling video by @jackmacbarstool about an American woman's unbelievable experience in Karachi, Pakistan. The narrator frames the narrative as one of the best stories on the internet, utilizing interview footage and reaction commentary.",
+      "embedding_text": "A storytelling and reaction video by @jackmacbarstool featuring a viral human interest story about an American woman in Karachi, Pakistan. The video includes interview footage of the woman wearing a hijab and green garment, with text overlays from RAWSALERTS stating 'American woman in Pakistan is best story on Internet.' The content is presented as an unbelievable and shocking account of her experiences in Pakistan. This is a narrative-driven piece focused on international travel, cultural encounters, and viral news, designed to evoke curiosity and disbelief."
+    },
+    "metrics": {
+      "input_tokens": 3253,
+      "output_tokens": 676,
+      "cost_usd": 0.0,
+      "latency_ms": 46419,
+      "thoughts_tokens": 964
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "shocking",
+      "topic": "travel",
+      "genre": "news_commentary",
+      "communicative_intent": "entertain",
+      "creator_role": "influencer",
+      "viewer_orientation": "social_sharing",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "item_id": "7394372442073976110",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "Doctor Doom sitting in a red throne-like chair, wearing his signature green cloak and metal armor. To his left is a small table with a lit candle and a book titled 'DEMONOLOGY'. To his right is a bowl of fire.",
+          "text_detected": "DEMONOLOGY by BOB LANTOR",
+          "primary_content": "Character: Doctor Doom",
+          "entities": [
+            {
+              "name": "Doctor Doom",
+              "type": "person",
+              "specifications": null
+            },
+            {
+              "name": "Marvel Comics",
+              "type": "brand",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "Close-up of Thanos with a sinister grin, wearing the Infinity Gauntlet. Beams of light are emitting from the various Infinity Stones on the glove.",
+          "text_detected": "",
+          "primary_content": "Character: Thanos",
+          "entities": [
+            {
+              "name": "Thanos",
+              "type": "person",
+              "specifications": null
+            },
+            {
+              "name": "Infinity Gauntlet",
+              "type": "product",
+              "specifications": "contains Infinity Stones"
+            },
+            {
+              "name": "Marvel Comics",
+              "type": "brand",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "Venom lunging forward with a wide mouth, sharp teeth, and a long tongue extended. He is depicted in a dynamic, aggressive pose.",
+          "text_detected": "",
+          "primary_content": "Character: Venom",
+          "entities": [
+            {
+              "name": "Venom",
+              "type": "person",
+              "specifications": null
+            },
+            {
+              "name": "Marvel Comics",
+              "type": "brand",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "Doctor Doom sitting in a high-tech control room filled with monitors, keyboards, and complex machinery. He is wearing a purple and green outfit with a metal mask.",
+          "text_detected": "",
+          "primary_content": "Character: Doctor Doom",
+          "entities": [
+            {
+              "name": "Doctor Doom",
+              "type": "person",
+              "specifications": null
+            },
+            {
+              "name": "Marvel Comics",
+              "type": "brand",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "Extreme close-up of Magneto's face, showing an intense and determined expression. He is wearing his iconic purple helmet.",
+          "text_detected": "",
+          "primary_content": "Character: Magneto",
+          "entities": [
+            {
+              "name": "Magneto",
+              "type": "person",
+              "specifications": null
+            },
+            {
+              "name": "Marvel Comics",
+              "type": "brand",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 6,
+          "description": "Galactus standing in the vacuum of space, surrounded by asteroids and planets. He is wearing his massive purple and blue armor.",
+          "text_detected": "",
+          "primary_content": "Character: Galactus",
+          "entities": [
+            {
+              "name": "Galactus",
+              "type": "person",
+              "specifications": null
+            },
+            {
+              "name": "Marvel Comics",
+              "type": "brand",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 7,
+          "description": "Spider-Man being constricted by the mechanical tentacles of Doctor Octopus. Doc Ock is wearing his green suit and glasses, looking menacing.",
+          "text_detected": "FOR THIS TIME.. YOU DIE!",
+          "primary_content": "Characters: Spider-Man and Doctor Octopus",
+          "entities": [
+            {
+              "name": "Spider-Man",
+              "type": "person",
+              "specifications": null
+            },
+            {
+              "name": "Doctor Octopus",
+              "type": "person",
+              "specifications": null
+            },
+            {
+              "name": "Marvel Comics",
+              "type": "brand",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 8,
+          "description": "Thor and Loki engaged in a physical fight. Thor is in the foreground with a determined look, while Loki is seen in the background.",
+          "text_detected": "",
+          "primary_content": "Characters: Thor and Loki",
+          "entities": [
+            {
+              "name": "Thor",
+              "type": "person",
+              "specifications": null
+            },
+            {
+              "name": "Loki",
+              "type": "person",
+              "specifications": null
+            },
+            {
+              "name": "Marvel Comics",
+              "type": "brand",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 9,
+          "description": "Green Goblin flying on his glider against a night sky with a large yellow moon. He has a manic expression on his face.",
+          "text_detected": "THE TIME HAS COME FOR SPIDER-MAN TO FACE HIS INEVITABLE DEATH... AT THE HANDS OF THE SUPREMELY POWERFUL GREEN GOBLIN!",
+          "primary_content": "Character: Green Goblin",
+          "entities": [
+            {
+              "name": "Green Goblin",
+              "type": "person",
+              "specifications": null
+            },
+            {
+              "name": "Spider-Man",
+              "type": "person",
+              "specifications": null
+            },
+            {
+              "name": "Marvel Comics",
+              "type": "brand",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 10,
+          "description": "Thanos sitting in a relaxed, contemplative pose, wearing a yellow-green tunic and brown boots. A small box in the corner says 'THE END'.",
+          "text_detected": "THE END",
+          "primary_content": "Character: Thanos",
+          "entities": [
+            {
+              "name": "Thanos",
+              "type": "person",
+              "specifications": null
+            },
+            {
+              "name": "Marvel Comics",
+              "type": "brand",
+              "specifications": null
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This post is a curated collection of high-impact, classic Marvel comic book panels. It focuses primarily on powerful villains and iconic confrontations, emphasizing a 'tuff' or 'cool' aesthetic. The user is likely saving this for artistic inspiration, nostalgia, or as a mood board for comic book art styles.",
+      "carousel_type": "photo_dump",
+      "narrative_thread": "A showcase of the most imposing and 'badass' characters and moments from Marvel Comics history, presented as a visual gallery.",
+      "entities": [
+        {
+          "name": "Marvel Comics",
+          "display_name": "Marvel Comics",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["visual", "metadata"],
+          "slide_number": 1,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Doctor Doom",
+          "display_name": "Doctor Doom",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual"],
+          "slide_number": 1,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Thanos",
+          "display_name": "Thanos",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual"],
+          "slide_number": 2,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Venom",
+          "display_name": "Venom",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual"],
+          "slide_number": 3,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Magneto",
+          "display_name": "Magneto",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual"],
+          "slide_number": 5,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Galactus",
+          "display_name": "Galactus",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual"],
+          "slide_number": 6,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Spider-Man",
+          "display_name": "Spider-Man",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["visual", "text_overlay"],
+          "slide_number": 7,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Doctor Octopus",
+          "display_name": "Doctor Octopus",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual"],
+          "slide_number": 7,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Thor",
+          "display_name": "Thor",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual"],
+          "slide_number": 8,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Loki",
+          "display_name": "Loki",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual"],
+          "slide_number": 8,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Green Goblin",
+          "display_name": "Green Goblin",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay"],
+          "slide_number": 9,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Lavender Buds",
+          "display_name": "Lavender Buds \u2014 MF DOOM",
+          "type": "song",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "slide_number": null,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "MF DOOM",
+          "display_name": "MF DOOM",
+          "type": "artist",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "slide_number": null,
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The user finds classic comic book art of powerful villains to be aesthetically 'tuff' (cool).",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": []
+      },
+      "audio_identification": {
+        "actual_song": "Lavender Buds \u2014 MF DOOM",
+        "metadata_song": "Lavender Buds \u2014 MF DOOM",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All characters and text were clearly identifiable from the visual and metadata provided."
+      },
+      "presentation_style": {
+        "primary_format": "photo_dump",
+        "visual_style": "aesthetic"
+      },
+      "visual_mood": "Intense, powerful, sinister, and nostalgic.",
+      "topic_hints": ["Marvel Comics", "Comic Book Art", "Supervillains"],
+      "affect_hints": ["Awe", "Intimidation", "Nostalgia"],
+      "genre_hints": ["Art Gallery", "Pop Culture"]
+    },
+    "metrics": {
+      "input_tokens": 3895,
+      "output_tokens": 3057,
+      "cost_usd": 0.0,
+      "latency_ms": 116418,
+      "video_uploaded": false,
+      "thoughts_tokens": 992
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "art",
+        "secondary": "movies_tv",
+        "micro_labels": ["Marvel Comics", "Comic Book Art", "Supervillains"],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "edit",
+        "micro_labels": ["art curation"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "satisfying",
+          "tier": "dominant"
+        },
+        {
+          "label": "neutral",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.8
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Doctor Doom",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Thanos",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Venom",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Magneto",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Galactus",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Spider-Man",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Marvel Comics",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "Infinity Gauntlet",
+          "type": "product",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A curated slideshow of high-impact Marvel Comics art featuring powerful villains like Doctor Doom, Thanos, and Galactus. The user saved this for the 'tuff' aesthetic and impressive illustration style of the characters.",
+      "embedding_text": "A curated comic book art slideshow by @eclecticism.me featuring iconic Marvel Comics villains and characters. The video showcases high-impact illustrations of Doctor Doom (with a 'Demonology' book), Thanos with the Infinity Gauntlet, Venom, Magneto, and Galactus in space. It also includes scenes of Spider-Man fighting Doctor Octopus, Thor and Loki battling, and the Green Goblin on his glider. The content is presented as a 'tuff' aesthetic edit set to 'Lavender Buds' by MF DOOM, focusing on the menacing and powerful imagery of these comic book characters. Ideal for fans of Marvel art and character design."
+    },
+    "metrics": {
+      "input_tokens": 4039,
+      "output_tokens": 762,
+      "cost_usd": 0.0,
+      "latency_ms": 49568,
+      "thoughts_tokens": 1009
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "satisfying",
+      "topic": "art",
+      "genre": "edit",
+      "communicative_intent": "entertain",
+      "creator_role": "amateur",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

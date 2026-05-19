@@ -1,0 +1,414 @@
+{
+  "item_id": "7378272396303715589",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_slideshow",
+  "media_type": "slideshow",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "per_image": [
+        {
+          "image_number": 1,
+          "description": "Wide shot of a desk setup against a yellow wall. Includes a monitor, laptop, desk lamp, microphone, and a wooden bookshelf above with various books and toys. Two posters are on the left wall.",
+          "text_detected": "Current Room Setup, 22 year old male, Beautiful BRITISH COLUMBIA, Rocky Mountain Rainforest SAVE THE CUMMINS RIVER VALLEY, THE LEAN STARTUP ERIC RIES, ANTIFRAGILE, SKIN IN THE GAME, Day 28/114, -10K IG, - Hoodies, shorts, T-shirt",
+          "primary_content": "Room Tour: Desk and Workspace",
+          "entities": [
+            {
+              "name": "British Columbia",
+              "type": "place",
+              "specifications": null
+            },
+            {
+              "name": "The Lean Startup",
+              "type": "book",
+              "specifications": "Author: Eric Ries"
+            },
+            {
+              "name": "Antifragile",
+              "type": "book",
+              "specifications": null
+            },
+            {
+              "name": "Skin in the Game",
+              "type": "book",
+              "specifications": null
+            },
+            {
+              "name": "Lumix",
+              "type": "brand",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 2,
+          "description": "Close-up of a wooden dresser surface featuring a large orange Garfield ceramic figure, perfume bottles, a Philips sunrise alarm clock, and a paperback book.",
+          "text_detected": "Best vintage find, Sunrise alarm clock, ACQUA DI GIO GIORGIO ARMANI, 3:46, PHILIPS, ZANE GREY'S ARIZONA AMES GUN TROUBLE IN TONTO BASIN ZANE GREY, Current read",
+          "primary_content": "Room Tour: Dresser Details",
+          "entities": [
+            {
+              "name": "Garfield",
+              "type": "product",
+              "specifications": "Vintage ceramic figure"
+            },
+            {
+              "name": "Acqua di Gio",
+              "type": "product",
+              "specifications": "Brand: Giorgio Armani"
+            },
+            {
+              "name": "Philips Sunrise Alarm Clock",
+              "type": "product",
+              "specifications": "Brand: Philips"
+            },
+            {
+              "name": "Arizona Ames",
+              "type": "book",
+              "specifications": "Author: Zane Grey"
+            }
+          ]
+        },
+        {
+          "image_number": 3,
+          "description": "A white, red, and black Buffalo Sabres hockey jersey hanging on a wooden door next to a large green houseplant.",
+          "text_detected": "Not from buffalo but a sick jersey, CCM",
+          "primary_content": "Room Tour: Clothing/Decor",
+          "entities": [
+            {
+              "name": "Buffalo Sabres",
+              "type": "brand",
+              "specifications": "Hockey Jersey"
+            },
+            {
+              "name": "CCM",
+              "type": "brand",
+              "specifications": null
+            }
+          ]
+        },
+        {
+          "image_number": 4,
+          "description": "Close-up of the wooden wall shelves and a whiteboard. The shelves hold books, a camera, a small Garfield figure, and toys. The whiteboard has goals written on it.",
+          "text_detected": "The toys from my youth are suddenly cool again, More Garfield, THE LEAN STARTUP ERIC RIES, ANTIFRAGILE, SKIN IN THE GAME, Lumix, Carhartt, Day 28/114, -10K IG, - Hoodies, shorts, T-shirt",
+          "primary_content": "Room Tour: Shelving and Goals",
+          "entities": [
+            {
+              "name": "Lumix",
+              "type": "brand",
+              "specifications": "Camera"
+            },
+            {
+              "name": "Carhartt",
+              "type": "brand",
+              "specifications": "Sign/Logo"
+            },
+            {
+              "name": "Darth Vader",
+              "type": "product",
+              "specifications": "Figure"
+            }
+          ]
+        },
+        {
+          "image_number": 5,
+          "description": "Inside of a closet showing a row of jackets and hoodies in earth tones (olive, grey, navy, brown) hanging on wooden hangers. Shoe boxes are on the top shelf.",
+          "text_detected": "Current colour palette, Reebok, CONVERSE",
+          "primary_content": "Room Tour: Closet/Wardrobe",
+          "entities": [
+            {
+              "name": "Arc'teryx",
+              "type": "brand",
+              "specifications": "Olive green jacket"
+            },
+            {
+              "name": "Reebok",
+              "type": "brand",
+              "specifications": "Shoe box"
+            },
+            {
+              "name": "Converse",
+              "type": "brand",
+              "specifications": "Shoe box"
+            }
+          ]
+        },
+        {
+          "image_number": 6,
+          "description": "A stack of folded Carhartt carpenter pants in various colors (black, navy, grey, tan, olive) and a Carhartt Racing cap on a wooden dresser.",
+          "text_detected": "I will die wearing my carhartt carpenters, Carhartt Racing",
+          "primary_content": "Room Tour: Clothing Essentials",
+          "entities": [
+            {
+              "name": "Carhartt",
+              "type": "brand",
+              "specifications": "Carpenter pants and Racing cap"
+            }
+          ]
+        },
+        {
+          "image_number": 7,
+          "description": "Close-up of a vintage travel poster for British Columbia, Canada, featuring a scenic mountain and lake view.",
+          "text_detected": "Vacation in..., Beautiful BRITISH COLUMBIA Canada, Best poster find",
+          "primary_content": "Room Tour: Wall Art",
+          "entities": [
+            {
+              "name": "British Columbia",
+              "type": "place",
+              "specifications": "Travel Poster"
+            }
+          ]
+        },
+        {
+          "image_number": 8,
+          "description": "A view from a window showing residential rooftops in the foreground and a large, snow-capped mountain range under a clear blue sky in the distance.",
+          "text_detected": "The view from the room",
+          "primary_content": "Room Tour: Exterior View",
+          "entities": [
+            {
+              "name": "Mountains",
+              "type": "place",
+              "specifications": "Snow-capped peaks"
+            }
+          ]
+        }
+      ],
+      "overall_summary": "This post is a curated room tour of a 22-year-old male's living space. It showcases a blend of productivity tools, 'gorpcore' and workwear fashion (Carhartt, Arc'teryx), and vintage collectibles. The user is likely saving this as a mood board for 'aesthetic' interior design and personal style inspiration.",
+      "carousel_type": "room_tour",
+      "narrative_thread": "The images convey a lifestyle focused on self-improvement (business/philosophy books, goal tracking on a whiteboard) and a specific visual aesthetic characterized by earth tones and vintage finds.",
+      "entities": [
+        {
+          "name": "Carhartt",
+          "display_name": "Carhartt Workwear",
+          "type": "brand",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay"],
+          "slide_number": 6,
+          "specifications": "Carpenter pants, Racing cap",
+          "confidence": 5
+        },
+        {
+          "name": "Arc'teryx",
+          "display_name": "Arc'teryx Outerwear",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "slide_number": 5,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Nassim Nicholas Taleb",
+          "display_name": "Nassim Nicholas Taleb (Author)",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "slide_number": 4,
+          "specifications": "Author of Antifragile, Skin in the Game",
+          "confidence": 4
+        },
+        {
+          "name": "British Columbia",
+          "display_name": "British Columbia, Canada",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["visual", "text_overlay"],
+          "slide_number": 7,
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Philips",
+          "display_name": "Philips Sunrise Alarm Clock",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual", "text_overlay"],
+          "slide_number": 2,
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The user highly values Carhartt carpenter pants as a staple of their wardrobe.",
+          "source": "text_overlay",
+          "confidence": 5
+        },
+        {
+          "statement": "The room is designed with a specific 'aesthetic' that mixes modern productivity with vintage nostalgia.",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "product_list",
+        "items": [
+          {
+            "name": "Carhartt Carpenter Pants",
+            "details": "Multiple colors: black, navy, grey, tan, olive",
+            "slide_number": 6
+          },
+          {
+            "name": "Arc'teryx Jacket",
+            "details": "Olive green",
+            "slide_number": 5
+          },
+          {
+            "name": "Philips Sunrise Alarm Clock",
+            "details": "Wake-up light",
+            "slide_number": 2
+          },
+          {
+            "name": "The Lean Startup",
+            "details": "Book by Eric Ries",
+            "slide_number": 1
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "ykwim yot club \u2014 adonaimelodias",
+        "metadata_song": "ykwim yot club \u2014 adonaimelodias",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All visible brands and book titles were extracted. Mountain range in image 8 is not specifically named but fits the PNW/BC region."
+      },
+      "presentation_style": {
+        "primary_format": "room_tour",
+        "visual_style": "aesthetic"
+      },
+      "visual_mood": "Calm, curated, intellectual, and cozy with a focus on earth tones.",
+      "topic_hints": ["Interior Design", "Menswear", "Productivity"],
+      "affect_hints": ["Inspired", "Organized", "Aspirational"],
+      "genre_hints": ["Lifestyle", "Room Tour", "Aesthetic"]
+    },
+    "metrics": {
+      "input_tokens": 3363,
+      "output_tokens": 2713,
+      "cost_usd": 0.0,
+      "latency_ms": 112494,
+      "video_uploaded": false,
+      "thoughts_tokens": 1102
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "other",
+        "secondary": "fashion",
+        "micro_labels": [
+          "room tour",
+          "interior design",
+          "lifestyle",
+          "gorpcore"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "room_tour",
+        "micro_labels": [],
+        "confidence": 1.0
+      },
+      "affect": [
+        {
+          "label": "satisfying",
+          "tier": "dominant"
+        },
+        {
+          "label": "informative",
+          "tier": "secondary"
+        },
+        {
+          "label": "relaxing",
+          "tier": "secondary"
+        },
+        {
+          "label": "nostalgic",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["slideshow", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "document",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "British Columbia",
+          "type": "place",
+          "relevance": "primary"
+        },
+        {
+          "name": "Carhartt",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "Arc'teryx",
+          "type": "brand",
+          "relevance": "primary"
+        },
+        {
+          "name": "The Lean Startup",
+          "type": "book",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Antifragile",
+          "type": "book",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Skin in the Game",
+          "type": "book",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Buffalo Sabres",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Lumix",
+          "type": "brand",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A curated room tour by @joshgreenwood showcasing the aesthetic living space of a 22-year-old male in British Columbia. The content highlights a productivity-focused desk setup, a 'gorpcore' wardrobe featuring Carhartt and Arc'teryx, and a collection of non-fiction books. It is saved for interior design and style inspiration.",
+      "embedding_text": "A curated room tour by @joshgreenwood featuring the aesthetic living space of a 22-year-old male in British Columbia. The content showcases a desk setup with a Lumix camera and books including 'The Lean Startup' by Eric Ries, 'Antifragile', and 'Skin in the Game'. It highlights a 'gorpcore' fashion style with Carhartt carpenter pants, an Arc'teryx olive green jacket, and a Buffalo Sabres hockey jersey. Other details include a vintage Garfield ceramic figure, a Philips sunrise alarm clock, and a scenic window view of snow-capped mountains. This is a lifestyle and interior design inspiration video focusing on a blend of productivity, vintage finds, and earth-tone fashion."
+    },
+    "metrics": {
+      "input_tokens": 4092,
+      "output_tokens": 862,
+      "cost_usd": 0.0,
+      "latency_ms": 47585,
+      "thoughts_tokens": 832
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "satisfying",
+      "topic": "other",
+      "genre": "room_tour",
+      "communicative_intent": "document",
+      "creator_role": "influencer",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

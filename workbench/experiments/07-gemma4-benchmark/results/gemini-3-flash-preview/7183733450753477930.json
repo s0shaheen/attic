@@ -1,0 +1,359 @@
+{
+  "item_id": "7183733450753477930",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:02",
+          "visual_description": "Rapid-fire montage of TikTok creators posing in various outfits, including gym wear and a racing suit.",
+          "audio_description": "Fast-paced, distorted electronic music starts.",
+          "text_on_screen": "\u201cthis tastes like ass\u201d",
+          "key_objects": ["gym wear", "racing suit", "fishnet stockings"]
+        },
+        {
+          "time_range": "0:02-0:05",
+          "visual_description": "Joe Rogan and a guest on the Joe Rogan Experience podcast discussing the nature of love.",
+          "audio_description": "Joe Rogan: 'How about love? Love...'",
+          "text_on_screen": "",
+          "key_objects": ["microphone", "headphones"]
+        },
+        {
+          "time_range": "0:05-0:08",
+          "visual_description": "An elderly couple dances together on a beach at night under artificial lighting.",
+          "audio_description": "Guest: '...just our ability to see friends and the beautiful feeling you get when you hug a friend.'",
+          "text_on_screen": "",
+          "key_objects": ["beach chairs", "umbrellas"]
+        },
+        {
+          "time_range": "0:08-0:14",
+          "visual_description": "Two people engage in a playful lightsaber duel in a parking lot at night.",
+          "audio_description": "Joe Rogan: 'Is it just pheromones? Is it just electrochemical? Or is it something more?'",
+          "text_on_screen": "",
+          "key_objects": ["lightsabers", "cars", "shipping container"]
+        },
+        {
+          "time_range": "0:14-0:22",
+          "visual_description": "Montage of emotional hugs and kisses from the films Interstellar, Green Book, and Up.",
+          "audio_description": "Guest: 'That's right. And love is what should drive us. We are here to give and receive love.'",
+          "text_on_screen": "",
+          "key_objects": ["watch"]
+        },
+        {
+          "time_range": "0:22-0:31",
+          "visual_description": "Peter Parker (Tom Holland) speaks to a dying Tony Stark (Robert Downey Jr.) on the battlefield in Avengers: Endgame.",
+          "audio_description": "Peter Parker: 'We won Mr. Stark. We won. You did it sir. You did it.'",
+          "text_on_screen": "",
+          "key_objects": ["Iron Man suit", "Spider-Man suit"]
+        },
+        {
+          "time_range": "0:31-0:41",
+          "visual_description": "Leonardo DiCaprio and Kate Winslet engage in a high-intensity domestic argument in a scene from Revolutionary Road.",
+          "audio_description": "Frank Wheeler: 'What the hell are you doing in my house if you hate me so much? Why the hell are you married to me? What the hell are you doing carrying my child?'",
+          "text_on_screen": "",
+          "key_objects": ["kitchen cabinets", "curtains"]
+        }
+      ],
+      "overall_summary": "This 'corecore' style edit explores the profound depth of human emotion by contrasting superficial social media content with intense cinematic and real-life moments. It begins with a fast-paced montage of influencers before transitioning into a philosophical discussion by Joe Rogan about the nature of love. The video then showcases a series of poignant scenes\u2014ranging from joyful dancing and playful lightsaber duels to the heartbreaking death of Tony Stark and a visceral domestic argument\u2014to illustrate the complexity of human connection and the spectrum of love and pain.",
+      "people": [
+        {
+          "description": "TikTok creator in gym wear",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Sadie McKenna"
+        },
+        {
+          "description": "Podcast host discussing philosophy",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "Joe Rogan"
+        },
+        {
+          "description": "Actor in a scene from Interstellar",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Matthew McConaughey"
+        },
+        {
+          "description": "Actor in a scene from Green Book",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Mahershala Ali"
+        },
+        {
+          "description": "Actor playing Peter Parker",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "Tom Holland"
+        },
+        {
+          "description": "Actor playing Tony Stark",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Robert Downey Jr."
+        },
+        {
+          "description": "Actor playing Frank Wheeler",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "Leonardo DiCaprio"
+        },
+        {
+          "description": "Actress playing April Wheeler",
+          "is_creator": false,
+          "speaking": false,
+          "identified_as": "Kate Winslet"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Joe Rogan",
+          "display_name": "Joe Rogan",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Aphex Twin",
+          "display_name": "Aphex Twin",
+          "type": "artist",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "QKThr",
+          "display_name": "QKThr",
+          "type": "song",
+          "relevance": "primary",
+          "source": ["metadata", "audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Interstellar",
+          "display_name": "Interstellar (2014)",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Green Book",
+          "display_name": "Green Book (2018)",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Up",
+          "display_name": "Up (2009)",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Avengers: Endgame",
+          "display_name": "Avengers: Endgame (2019)",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["visual", "audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Revolutionary Road",
+          "display_name": "Revolutionary Road (2008)",
+          "type": "movie_or_show",
+          "relevance": "supporting",
+          "source": ["visual", "audio"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Joe Rogan Experience",
+          "display_name": "The Joe Rogan Experience",
+          "type": "podcast",
+          "relevance": "supporting",
+          "source": ["visual", "audio"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "Love is a fundamental human driver that transcends simple biological or chemical explanations.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "The human experience is defined by a spectrum of intense connection, profound loss, and visceral conflict.",
+          "source": "demonstration",
+          "confidence": 4
+        },
+        {
+          "statement": "There is a sharp contrast between the curated, superficial nature of social media and the raw reality of human emotion.",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": null,
+      "audio_identification": {
+        "actual_song": "QKThr \u2014 Aphex Twin",
+        "metadata_song": "QKThr \u2014 Aphex Twin",
+        "match": true
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "All movie scenes and public figures are clearly identifiable. The 'corecore' editing style is a primary cultural reference."
+      },
+      "presentation_style": {
+        "primary_format": "edit",
+        "camera_work": "various",
+        "editing_style": "montage"
+      },
+      "visual_mood": "Melancholic, existential, and emotionally intense.",
+      "topic_hints": [
+        "Philosophy of Love",
+        "Cinematic Emotional Beats",
+        "Human Connection"
+      ],
+      "affect_hints": ["Nostalgic", "Melancholic", "Reflective", "Empathetic"],
+      "genre_hints": ["Corecore", "Nichetok", "Cinematic Edit"]
+    },
+    "metrics": {
+      "input_tokens": 5204,
+      "output_tokens": 2480,
+      "cost_usd": 0.0015124000000000001,
+      "latency_ms": 26970,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "relationships",
+        "secondary": "movies_tv",
+        "micro_labels": [
+          "human connection",
+          "philosophy of love",
+          "emotional depth",
+          "corecore"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "edit",
+        "micro_labels": ["corecore", "nichetok", "cinematic montage"],
+        "confidence": 0.98
+      },
+      "affect": [
+        {
+          "label": "sad",
+          "tier": "dominant"
+        },
+        {
+          "label": "wholesome",
+          "tier": "dominant"
+        },
+        {
+          "label": "nostalgic",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["cinematic", "text_overlay", "mixed"],
+      "content_provenance": {
+        "label": "remix",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "provoke",
+        "confidence": 0.85
+      },
+      "creator_role": {
+        "label": "anonymous",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "emotional_regulation",
+        "confidence": 0.8
+      },
+      "entities": [
+        {
+          "name": "Joe Rogan",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Aphex Twin",
+          "type": "artist",
+          "relevance": "primary"
+        },
+        {
+          "name": "QKThr",
+          "type": "song",
+          "relevance": "primary"
+        },
+        {
+          "name": "Interstellar",
+          "type": "movie_or_show",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Avengers: Endgame",
+          "type": "movie_or_show",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Revolutionary Road",
+          "type": "movie_or_show",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Leonardo DiCaprio",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Tom Holland",
+          "type": "person",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A 'corecore' style edit by @lostandunfound0 that explores the complexity of love and human connection. It features a philosophical discussion by Joe Rogan layered over emotional scenes from Interstellar, Avengers: Endgame, and Revolutionary Road, set to Aphex Twin's 'QKThr'.",
+      "embedding_text": "A corecore and nichetok style edit by @lostandunfound0 exploring the depth of human emotion and love. The video features a Joe Rogan Experience podcast clip where Joe Rogan discusses the nature of love, questioning if it is just pheromones or something more. The visual montage includes emotional scenes from movies such as Interstellar, Green Book, Up, and the death of Tony Stark (Robert Downey Jr.) in Avengers: Endgame with Peter Parker (Tom Holland). It also features a visceral domestic argument between Leonardo DiCaprio and Kate Winslet from Revolutionary Road. The edit begins with a fast-paced montage of TikTok creators like Sadie McKenna and uses the text overlay 'this tastes like ass' to contrast superficial social media with profound cinematic moments. The background music is the ambient track QKThr by Aphex Twin. This content is designed for emotional regulation and philosophical reflection on relationships and pain."
+    },
+    "metrics": {
+      "input_tokens": 4168,
+      "output_tokens": 899,
+      "cost_usd": 0.0007764000000000001,
+      "latency_ms": 7968
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "sad",
+      "topic": "relationships",
+      "genre": "edit",
+      "communicative_intent": "provoke",
+      "creator_role": "anonymous",
+      "viewer_orientation": "emotional_regulation",
+      "presentation_style": "cinematic",
+      "content_provenance": "remix"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

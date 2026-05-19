@@ -1,0 +1,266 @@
+{
+  "item_id": "7498280610637663519",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:15",
+          "visual_description": "Pete Buttigieg explains the foundational American rejection of monarchy while sitting in a podcast studio.",
+          "audio_description": "Pete states that the whole point of the country is that no one person should have too much power, referencing the rejection of kings.",
+          "text_on_screen": "PETE BUTTIGIEG: \u201cThe whole point of this country is that no one person should have too much power.\u201d",
+          "key_objects": ["microphone", "armchair", "potted plant"]
+        },
+        {
+          "time_range": "0:15-0:35",
+          "visual_description": "Pete discusses Thomas Jefferson's concerns about the presidency; Andrew Schulz listens intently.",
+          "audio_description": "Pete mentions the fierce debates during the founding and Jefferson's worry that a presidency would devolve into a kingship, leading to constitutional compromises.",
+          "text_on_screen": "PETE BUTTIGIEG: \u201cThe whole point of this country is that no one person should have too much power.\u201d",
+          "key_objects": ["soda can", "coffee table"]
+        },
+        {
+          "time_range": "0:35-1:05",
+          "visual_description": "Pete describes the architectural symbolism of Washington D.C. using hand gestures to show alignment.",
+          "audio_description": "Pete explains that the Jefferson Memorial is perfectly aligned with the White House's center line so that Jefferson's statue 'watches' the executive branch from the Blue Room.",
+          "text_on_screen": "PETE BUTTIGIEG: \u201cThe whole point of this country is that no one person should have too much power.\u201d",
+          "key_objects": ["wedding ring"]
+        }
+      ],
+      "overall_summary": "In this podcast clip from 'Flagrant', Pete Buttigieg discusses the core American principle of preventing any single individual from holding absolute power. He recounts Thomas Jefferson's historical fears that the office of the presidency might become a new form of monarchy, which necessitated the Constitution's system of checks and balances. Buttigieg concludes with a symbolic 'fun fact' about D.C. geography, noting that the Jefferson Memorial is architecturally aligned to ensure the statue of Jefferson is always 'watching' the White House to keep the executive branch in check.",
+      "people": [
+        {
+          "description": "Man in a blue suit and white shirt, sitting in a grey armchair, speaking articulately.",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "Pete Buttigieg"
+        },
+        {
+          "description": "Man with a mustache wearing a white long-sleeve shirt, listening and occasionally interjecting.",
+          "is_creator": false,
+          "speaking": true,
+          "identified_as": "Andrew Schulz"
+        }
+      ],
+      "entities": [
+        {
+          "name": "Pete Buttigieg",
+          "display_name": "Pete Buttigieg",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay", "metadata"],
+          "specifications": "U.S. Secretary of Transportation",
+          "confidence": 5
+        },
+        {
+          "name": "Andrew Schulz",
+          "display_name": "Andrew Schulz",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["visual", "metadata"],
+          "specifications": "Comedian and Podcast Host",
+          "confidence": 5
+        },
+        {
+          "name": "Thomas Jefferson",
+          "display_name": "Thomas Jefferson",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["audio", "metadata"],
+          "specifications": "3rd U.S. President",
+          "confidence": 5
+        },
+        {
+          "name": "Flagrant",
+          "display_name": "Flagrant Podcast",
+          "type": "podcast",
+          "relevance": "primary",
+          "source": ["visual", "metadata"],
+          "specifications": "Hosted by Andrew Schulz",
+          "confidence": 5
+        },
+        {
+          "name": "Jefferson Memorial",
+          "display_name": "Jefferson Memorial",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "Washington D.C. monument",
+          "confidence": 5
+        },
+        {
+          "name": "White House",
+          "display_name": "The White House",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["audio"],
+          "specifications": "1600 Pennsylvania Avenue NW",
+          "confidence": 5
+        },
+        {
+          "name": "U.S. Constitution",
+          "display_name": "United States Constitution",
+          "type": "cultural_reference",
+          "relevance": "supporting",
+          "source": ["audio", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The fundamental purpose of the United States government structure is to prevent the concentration of power in a single person.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "Thomas Jefferson was historically skeptical of the presidency, fearing it would mirror the British monarchy.",
+          "source": "voiceover",
+          "confidence": 5
+        },
+        {
+          "statement": "The architectural layout of Washington D.C. contains symbolic checks on power, such as the Jefferson Memorial's alignment with the White House.",
+          "source": "voiceover",
+          "confidence": 4
+        }
+      ],
+      "structured_content": null,
+      "audio_identification": {
+        "actual_song": "Unidentifiable cinematic ambient background music",
+        "metadata_song": "original sound - dreamforamerica_ \u2014 dreamforamerica",
+        "match": false
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The background music is a generic inspirational/cinematic track common in political edits."
+      },
+      "presentation_style": {
+        "primary_format": "talking_head",
+        "camera_work": "static",
+        "editing_style": "jump_cuts"
+      },
+      "visual_mood": "Intellectual, serious, and informative with a warm, professional podcast aesthetic.",
+      "topic_hints": [
+        "American History",
+        "Political Philosophy",
+        "Checks and Balances"
+      ],
+      "affect_hints": ["thoughtful", "patriotic", "educational"],
+      "genre_hints": ["Interview", "Educational", "Political Commentary"]
+    },
+    "metrics": {
+      "input_tokens": 7397,
+      "output_tokens": 1617,
+      "cost_usd": 0.0013865,
+      "latency_ms": 24930,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": [
+      {
+        "topic": {
+          "primary": "politics",
+          "secondary": "history",
+          "micro_labels": [
+            "American Government",
+            "Civics",
+            "Founding Fathers",
+            "Checks and Balances"
+          ],
+          "confidence": 0.95
+        },
+        "genre": {
+          "label": "interview",
+          "micro_labels": ["podcast clip", "talking head"],
+          "confidence": 0.95
+        },
+        "affect": [
+          {
+            "label": "informative",
+            "tier": "dominant"
+          },
+          {
+            "label": "inspiring",
+            "tier": "secondary"
+          }
+        ],
+        "presentation_style": ["talking_head", "text_overlay"],
+        "content_provenance": {
+          "label": "clip",
+          "confidence": 0.95
+        },
+        "communicative_intent": {
+          "label": "inform",
+          "confidence": 0.9
+        },
+        "creator_role": {
+          "label": "activist",
+          "confidence": 0.85
+        },
+        "viewer_orientation": {
+          "label": "active_learning",
+          "confidence": 0.9
+        },
+        "entities": [
+          {
+            "name": "Pete Buttigieg",
+            "type": "person",
+            "relevance": "primary"
+          },
+          {
+            "name": "Andrew Schulz",
+            "type": "person",
+            "relevance": "supporting"
+          },
+          {
+            "name": "Flagrant Podcast",
+            "type": "podcast",
+            "relevance": "primary"
+          },
+          {
+            "name": "Thomas Jefferson",
+            "type": "person",
+            "relevance": "supporting"
+          },
+          {
+            "name": "Jefferson Memorial",
+            "type": "place",
+            "relevance": "supporting"
+          },
+          {
+            "name": "White House",
+            "type": "place",
+            "relevance": "supporting"
+          },
+          {
+            "name": "United States Constitution",
+            "type": "cultural_reference",
+            "relevance": "supporting"
+          },
+          {
+            "name": "Washington D.C.",
+            "type": "place",
+            "relevance": "supporting"
+          }
+        ],
+        "summary": "Pete Buttigieg appears on the Flagrant podcast with Andrew Schulz to discuss the foundational American principle of preventing the concentration of power in a single individual. He explains Thomas Jefferson's historical fears of the presidency becoming a monarchy and shares a symbolic fact about how the Jefferson Memorial is architecturally aligned to 'watch' the White House.",
+        "embedding_text": "In this podcast clip from Flagrant, U.S. Secretary of Transportation Pete Buttigieg discusses American democracy and the rejection of monarchy with host Andrew Schulz. Buttigieg explains that the core purpose of the U.S. government is to ensure no one person holds too much power, referencing Thomas Jefferson's early concerns that the presidency might devolve into a kingship. He highlights the system of checks and balances found in the U.S. Constitution and provides a fascinating architectural detail about Washington D.C.: the Jefferson Memorial is perfectly aligned with the White House so that the statue of Thomas Jefferson symbolically watches over the executive branch from the Blue Room. This informative and civic-minded video features talking head footage with text overlays emphasizing Buttigieg's quotes about power and the three branches of government."
+      }
+    ],
+    "metrics": {
+      "input_tokens": 4105,
+      "output_tokens": 844,
+      "cost_usd": 0.0007481,
+      "latency_ms": 5839
+    },
+    "valid": false,
+    "tier1": null,
+    "validation_errors": ["'list' object has no attribute 'get'"],
+    "error": null
+  }
+}

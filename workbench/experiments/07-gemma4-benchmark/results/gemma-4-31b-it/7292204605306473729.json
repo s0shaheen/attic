@@ -1,0 +1,175 @@
+{
+  "item_id": "7292204605306473729",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A young man with curly hair, wearing a blue baseball cap and a grey sweatshirt, stands behind a cafe counter. He is holding up a white piece of paper or board featuring a simple, black-and-white line drawing of a smiling character. The background consists of white shelves stocked with various syrup bottles, glassware, and coffee supplies, with a professional espresso machine and colorful coffee bean bags visible on the counter. A warm, conical pendant light hangs from the ceiling, casting a soft glow over the scene.",
+      "text_on_screen": null,
+      "overall_summary": "The post features a young entrepreneur at his new business, Homeboy Cafe in Adelaide. The user likely saved this as a wholesome example of a small business launch or as a destination recommendation for a cafe in Adelaide.",
+      "entities": [
+        {
+          "name": "Homeboy Cafe",
+          "display_name": "Homeboy Cafe",
+          "type": "restaurant",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Adelaide",
+          "display_name": "Adelaide, South Australia",
+          "type": "place",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "duvet",
+          "display_name": "duvet",
+          "type": "song",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "henri",
+          "display_name": "henri",
+          "type": "artist",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "A young person has successfully opened a small business called Homeboy Cafe in Adelaide.",
+          "source": "implied",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": []
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "Entities were clearly identified via metadata hashtags and music credits."
+      },
+      "presentation_style": {
+        "primary_format": "photo",
+        "visual_style": "aesthetic"
+      },
+      "scene_type": "restaurant",
+      "visual_mood": "cozy",
+      "topic_hints": ["Small Business", "Cafe Culture", "Adelaide"],
+      "affect_hints": ["wholesome", "inspiring", "warm"],
+      "genre_hints": ["Lifestyle", "Entrepreneurship"]
+    },
+    "metrics": {
+      "input_tokens": 1281,
+      "output_tokens": 724,
+      "cost_usd": 0.0,
+      "latency_ms": 53619,
+      "video_uploaded": false,
+      "thoughts_tokens": 856
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "career",
+        "secondary": "food",
+        "micro_labels": ["small business", "entrepreneurship", "cafe culture"],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "vlog",
+        "micro_labels": ["milestone", "lifestyle"],
+        "confidence": 0.8
+      },
+      "affect": [
+        {
+          "label": "wholesome",
+          "tier": "dominant"
+        },
+        {
+          "label": "inspiring",
+          "tier": "secondary"
+        },
+        {
+          "label": "informative",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["slideshow"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "inspire",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.8
+      },
+      "entities": [
+        {
+          "name": "Homeboy Cafe",
+          "type": "restaurant",
+          "relevance": "primary"
+        },
+        {
+          "name": "Adelaide",
+          "type": "place",
+          "relevance": "supporting"
+        },
+        {
+          "name": "duvet",
+          "type": "song",
+          "relevance": "supporting"
+        },
+        {
+          "name": "henri",
+          "type": "artist",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A young entrepreneur showcases the launch of his new business, Homeboy Cafe, in Adelaide. The post is a wholesome celebration of small business ownership, likely saved for inspiration or as a local cafe recommendation.",
+      "embedding_text": "An aesthetic and wholesome post by @homeboy.co featuring a young entrepreneur at his new business, Homeboy Cafe, located in Adelaide, South Australia. The creator is pictured behind the cafe counter surrounded by coffee supplies and an espresso machine, holding a simple line drawing of a smiling character. This content serves as an inspiring example of small business entrepreneurship and a destination recommendation for cafe culture in Adelaide. The post is set to the song 'duvet' by henri and captures a cozy, warm atmosphere, emphasizing the achievement of opening a new local shop."
+    },
+    "metrics": {
+      "input_tokens": 3149,
+      "output_tokens": 635,
+      "cost_usd": 0.0,
+      "latency_ms": 41746,
+      "thoughts_tokens": 826
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "wholesome",
+      "topic": "career",
+      "genre": "vlog",
+      "communicative_intent": "inspire",
+      "creator_role": "amateur",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "slideshow",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

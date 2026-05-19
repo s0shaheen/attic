@@ -1,0 +1,330 @@
+{
+  "item_id": "7513212773279468808",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "scene_timeline": [
+        {
+          "time_range": "0:00-0:07",
+          "visual_description": "The creator opens a large wooden drawer filled with neatly organized vintage watches in individual compartments.",
+          "audio_description": "Whimsical, orchestral waltz music begins playing.",
+          "text_on_screen": "Watches from another lifetime, still breathing in silence. \ud83d\udccdOSAKA, JAPAN \ud83c\uddef\ud83c\uddf5",
+          "key_objects": ["vintage watches", "wooden display drawer"]
+        },
+        {
+          "time_range": "0:07-0:14",
+          "visual_description": "Close-up panning shots of the watches in the drawer, showing price tags and brand names like Seiko and Citizen.",
+          "audio_description": "The orchestral music continues with a light, magical tone.",
+          "text_on_screen": "Watches from another lifetime, still breathing in silence. \ud83d\udccdOSAKA, JAPAN \ud83c\uddef\ud83c\uddf5",
+          "key_objects": ["Seiko watches", "Citizen watches", "Alba watches"]
+        },
+        {
+          "time_range": "0:14-0:21",
+          "visual_description": "A montage of various vintage clocks and high-end watches in glass display cases, including Tag Heuer and Nike models.",
+          "audio_description": "The music swells slightly as the camera pans across the displays.",
+          "text_on_screen": "Watches from another lifetime, still breathing in silence. \ud83d\udccdOSAKA, JAPAN \ud83c\uddef\ud83c\uddf5; 90's v2k",
+          "key_objects": [
+            "Tag Heuer Professional",
+            "Nike Triax",
+            "vintage alarm clocks"
+          ]
+        },
+        {
+          "time_range": "0:21-0:29",
+          "visual_description": "The camera moves through sections of digital watches, G-Shocks, and colorful novelty watches featuring characters like Mickey Mouse.",
+          "audio_description": "The waltz music continues.",
+          "text_on_screen": "Watches from another lifetime, still breathing in silence. \ud83d\udccdOSAKA, JAPAN \ud83c\uddef\ud83c\uddf5",
+          "key_objects": [
+            "Casio watches",
+            "G-Shock",
+            "Mickey Mouse watch",
+            "Godzilla watch"
+          ]
+        },
+        {
+          "time_range": "0:29-0:38",
+          "visual_description": "The creator holds a tiny gold-colored alarm clock in their palm before the camera pans out to show the full scale of the shop's inventory.",
+          "audio_description": "The music fades out as the video ends.",
+          "text_on_screen": "Watches from another lifetime, still breathing in silence. \ud83d\udccdOSAKA, JAPAN \ud83c\uddef\ud83c\uddf5; GENUINE VINTAGE WATCHES; \u30a2\u30e1\u30ea\u30ab\u6751\u30d5\u30ea\u30fc\u30de\u30fc\u30b1\u30c3\u30c8B.B",
+          "key_objects": [
+            "miniature alarm clock",
+            "shop interior",
+            "vintage watch signs"
+          ]
+        }
+      ],
+      "overall_summary": "This video showcases an extensive collection of vintage watches and clocks at 'American village freemarket B.B' in the Amerikamura district of Osaka, Japan. The creator explores various drawers and glass display cases filled with a wide range of timepieces, from classic brands like Seiko and Citizen to 90s digital icons like Nike Triax and Casio G-Shocks. The video highlights the nostalgic beauty of these 'watches from another lifetime' and serves as a visual guide for vintage watch enthusiasts visiting Osaka.",
+      "people": [
+        {
+          "description": "Creator's hands and arms are visible as they open drawers and hold items.",
+          "is_creator": true,
+          "speaking": false,
+          "identified_as": null
+        }
+      ],
+      "entities": [
+        {
+          "name": "Amerikamura",
+          "display_name": "Amerikamura (American Village), Osaka",
+          "type": "place",
+          "relevance": "primary",
+          "source": ["metadata", "text_overlay"],
+          "specifications": "West of Shinsaibashi",
+          "confidence": 5
+        },
+        {
+          "name": "American village freemarket B.B",
+          "display_name": "American village freemarket B.B (\u30a2\u30e1\u30ea\u30ab\u6751\u30d5\u30ea\u30fc\u30de\u30fc\u30b1\u30c3\u30c8B.B)",
+          "type": "place",
+          "relevance": "primary",
+          "source": ["metadata", "visual"],
+          "specifications": "Vintage watch and jewelry shop",
+          "confidence": 5
+        },
+        {
+          "name": "Seiko",
+          "display_name": "Seiko",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Models visible: Actus, Silver Wave, Lord Matic",
+          "confidence": 5
+        },
+        {
+          "name": "Citizen",
+          "display_name": "Citizen",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Various vintage models",
+          "confidence": 5
+        },
+        {
+          "name": "Tag Heuer",
+          "display_name": "Tag Heuer",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Professional and Formula 1 models",
+          "confidence": 5
+        },
+        {
+          "name": "Casio",
+          "display_name": "Casio",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "G-Shock and digital models",
+          "confidence": 5
+        },
+        {
+          "name": "Nike",
+          "display_name": "Nike",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Triax series",
+          "confidence": 5
+        },
+        {
+          "name": "Alba",
+          "display_name": "Alba",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": ["visual"],
+          "specifications": "Sub-brand of Seiko",
+          "confidence": 4
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "American village freemarket B.B in Osaka is a premier destination for a diverse range of vintage watches.",
+          "source": "demonstration",
+          "confidence": 5
+        },
+        {
+          "statement": "Vintage watches are viewed as historical artifacts that carry the essence of past lifetimes.",
+          "source": "text_overlay",
+          "confidence": 4
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Seiko Vintage Watches",
+            "details": "Extensive collection including Actus, Silver Wave, and Lord Matic models."
+          },
+          {
+            "name": "Citizen Vintage Watches",
+            "details": "Large variety of mid-century and late 20th-century models."
+          },
+          {
+            "name": "Tag Heuer Professional",
+            "details": "Classic dive and sport watches from the 80s and 90s."
+          },
+          {
+            "name": "Nike Triax",
+            "details": "Iconic 90s/Y2K digital sports watches."
+          },
+          {
+            "name": "Casio G-Shock",
+            "details": "Vintage and collectible digital tough watches."
+          }
+        ]
+      },
+      "audio_identification": {
+        "actual_song": "Merry-Go-Round of Life \u2014 Joe Hisaishi (Howl's Moving Castle OST)",
+        "metadata_song": "original sound - veesun95",
+        "match": false
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "audio_identified": true,
+        "notes": "The shop name and location are clearly identified from the metadata and visual signs. The music is a very recognizable Ghibli track despite the generic metadata."
+      },
+      "presentation_style": {
+        "primary_format": "cinematic",
+        "camera_work": "handheld",
+        "editing_style": "montage"
+      },
+      "visual_mood": "Nostalgic, whimsical, and appreciative; the lighting is warm and the pacing matches the waltz music.",
+      "topic_hints": [
+        "Vintage Watch Collecting",
+        "Osaka Travel Guide",
+        "Japanese Thrift Shopping"
+      ],
+      "affect_hints": ["Nostalgic", "Curious", "Calm"],
+      "genre_hints": ["Shop Tour", "Aesthetic Edit", "Travel Vlog"]
+    },
+    "metrics": {
+      "input_tokens": 4953,
+      "output_tokens": 2172,
+      "cost_usd": 0.0013641,
+      "latency_ms": 28317,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "travel",
+        "secondary": "fashion",
+        "micro_labels": [
+          "vintage watches",
+          "osaka shopping",
+          "retro accessories",
+          "japanese watch brands"
+        ],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "compilation",
+        "micro_labels": ["shop tour", "montage"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "nostalgic",
+          "tier": "dominant"
+        },
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "satisfying",
+          "tier": "secondary"
+        },
+        {
+          "label": "relaxing",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["cinematic", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 1.0
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "influencer",
+        "confidence": 0.85
+      },
+      "viewer_orientation": {
+        "label": "shopping_research",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Amerikamura",
+          "type": "place",
+          "relevance": "primary"
+        },
+        {
+          "name": "American village freemarket B.B",
+          "type": "place",
+          "relevance": "primary"
+        },
+        {
+          "name": "Seiko",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Citizen",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Tag Heuer",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Casio G-Shock",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Nike Triax",
+          "type": "product",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Osaka",
+          "type": "place",
+          "relevance": "primary"
+        }
+      ],
+      "summary": "A cinematic tour of American village freemarket B.B in Osaka's Amerikamura district, showcasing an extensive collection of vintage watches. The video highlights rare finds from brands like Seiko, Citizen, Tag Heuer, and 90s digital icons like Nike Triax, serving as a shopping guide for collectors.",
+      "embedding_text": "A vintage watch shopping guide in Osaka, Japan, featuring the store American village freemarket B.B (\u30a2\u30e1\u30ea\u30ab\u6751\u30d5\u30ea\u30fc\u30de\u30fc\u30b1\u30c3\u30c8B.B) in Amerikamura, west of Shinsaibashi. The creator @gaijin.story showcases a massive inventory of timepieces including vintage Seiko (Actus, Silver Wave, Lord Matic), Citizen, Tag Heuer Professional, and Casio G-Shock models. The video also features 90s 'v2k' style icons like the Nike Triax and novelty items like Mickey Mouse and Godzilla watches. With a nostalgic and satisfying aesthetic, the content uses cinematic panning shots of organized wooden drawers and glass display cases. Text overlays describe the items as 'watches from another lifetime, still breathing in silence.' This is a primary resource for travelers and collectors looking for vintage jewelry and watches in Japan."
+    },
+    "metrics": {
+      "input_tokens": 4368,
+      "output_tokens": 891,
+      "cost_usd": 0.0007932000000000001,
+      "latency_ms": 7512
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "nostalgic",
+      "topic": "travel",
+      "genre": "compilation",
+      "communicative_intent": "inform",
+      "creator_role": "influencer",
+      "viewer_orientation": "shopping_research",
+      "presentation_style": "cinematic",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

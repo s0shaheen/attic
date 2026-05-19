@@ -1,0 +1,355 @@
+{
+  "item_id": "7372382721848692014",
+  "model": "gemini-3-flash-preview",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": [
+      {
+        "scene_timeline": [
+          {
+            "time_range": "0:00-0:04",
+            "visual_description": "Will Peters lies on the floor surrounded by empty beer cans, explaining his unique condition.",
+            "audio_description": "Whenever I blackout, I do something... good.",
+            "text_on_screen": "New Blackout Man trailer looks insane",
+            "key_objects": ["SkyDuster Beer cans"]
+          },
+          {
+            "time_range": "0:04-0:19",
+            "visual_description": "A montage of news reports and TV screens showing Blackout Man's heroic deeds.",
+            "audio_description": "A drunken man saves a family in a house fire. Drunken civilian stops bank heist and saves hundreds. They're calling him Blackout Man.",
+            "text_on_screen": "NEWS DRUNKEN MAN SAVES FAMILY, DRUNKEN MAN STOPS HEIST, BLACKOUT MAN - NEXT SPIDERMAN?",
+            "key_objects": ["Television", "Xbox controller", "Lego set"]
+          },
+          {
+            "time_range": "0:19-0:33",
+            "visual_description": "Will is recruited by a government agent, Agent Cobb, in a dark interrogation-style setting.",
+            "audio_description": "Wakey wakey Blackout Man. Half the government wants you dead, the other half thinks we can use you. Guess which side I'm on.",
+            "text_on_screen": "New Blackout Man trailer looks insane",
+            "key_objects": ["Sunglasses", "Earpiece"]
+          },
+          {
+            "time_range": "0:33-0:39",
+            "visual_description": "Will argues with his wife in their bedroom about his new role with the CIA.",
+            "audio_description": "The CIA wants me to work for them. I can use my powers for good! I didn't marry Blackout Man, I married Will.",
+            "text_on_screen": "New Blackout Man trailer looks insane",
+            "key_objects": ["Magazine"]
+          },
+          {
+            "time_range": "0:39-0:51",
+            "visual_description": "Agent Cobb presents a table of alcoholic 'equipment' for Will's missions.",
+            "audio_description": "Got your standard six pack, your hard stuff, for your longer missions your IV drip... and then there's the big gun. Oh, a funnel!",
+            "text_on_screen": "New Blackout Man trailer looks insane",
+            "key_objects": [
+              "SkyDuster Beer",
+              "Vodka bottle",
+              "IV drip",
+              "Beer bong funnel"
+            ]
+          },
+          {
+            "time_range": "0:51-1:12",
+            "visual_description": "Will faces domestic issues and sees a drawing his daughter made of him as a hero.",
+            "audio_description": "Then explain the piss soaked sheets! Your daughter was asked to draw her favorite superhero... she drew her father.",
+            "text_on_screen": "New Blackout Man trailer looks insane",
+            "key_objects": ["Candle", "Child's drawing"]
+          },
+          {
+            "time_range": "1:12-1:36",
+            "visual_description": "Will experiences a moral crisis regarding civilian casualties during a mission briefing.",
+            "audio_description": "Why the f*** didn't you tell me there'd be civilians?! Oh we told Blackout Man, and he had no problem. We need your help to terminate Moroccan insurgents.",
+            "text_on_screen": "New Blackout Man trailer looks insane",
+            "key_objects": ["Tactical vest", "Whiteboard"]
+          },
+          {
+            "time_range": "1:36-1:55",
+            "visual_description": "Ten years later, Agent Cobb finds a retired Will living in the woods.",
+            "audio_description": "10 Years Later... How'd you find me? Satellites. The Russians say they got a man that can do twice your damage with half the booze. Russian called you lightweight.",
+            "text_on_screen": "10 Years Later...",
+            "key_objects": [
+              "Axe",
+              "Cowboy hat",
+              "Classified folder",
+              "SkyDuster Beer"
+            ]
+          },
+          {
+            "time_range": "1:55-2:05",
+            "visual_description": "Will prepares to return to action while a betrayal is hinted between his wife and Cobb.",
+            "audio_description": "Forgetting something? You did the right thing. Also, he doesn't know about us, right?",
+            "text_on_screen": "New Blackout Man trailer looks insane",
+            "key_objects": ["Blue cape", "Superhero mask", "Vodka bottle"]
+          },
+          {
+            "time_range": "2:05-2:29",
+            "visual_description": "Will faces off against a Russian villain and uses hand sanitizer as a last resort power-up.",
+            "audio_description": "So... this is the great Blackout Man. I wasted whole bottle vodka on you when all it would have taken was Heineken 0.0. Any last words? Yeah, it's 5 o'clock somewhere.",
+            "text_on_screen": "BLACKOUT MAN COMING THIS FALL",
+            "key_objects": ["Purell Hand Sanitizer", "Beer helmet"]
+          }
+        ],
+        "overall_summary": "This video is a high-effort parody trailer for a fictional superhero movie titled 'Blackout Man.' It stars Will Peters as a man who discovers he performs heroic, superhuman feats only when he is completely blacked out from drinking. The trailer follows his recruitment by a shady government agent (Agent Cobb), his struggle to balance his 'heroic' duties with his failing marriage, and his eventual return from retirement to fight a Russian rival. The sketch satirizes common action movie tropes, including the 'retired hero' clich\u00e9 and the dramatic 'power-up' moment, which in this case involves drinking hand sanitizer.",
+        "people": [
+          {
+            "description": "Main protagonist who becomes a hero when drunk",
+            "is_creator": true,
+            "speaking": true,
+            "identified_as": "Will Peters"
+          },
+          {
+            "description": "Government agent/handler with a mustache and sunglasses",
+            "is_creator": false,
+            "speaking": true,
+            "identified_as": "Brett Dodenhoff"
+          },
+          {
+            "description": "Will's frustrated wife",
+            "is_creator": false,
+            "speaking": true,
+            "identified_as": "Kelsey June Jensen"
+          },
+          {
+            "description": "The Russian antagonist",
+            "is_creator": false,
+            "speaking": true,
+            "identified_as": "QuirosOfficial"
+          }
+        ],
+        "entities": [
+          {
+            "name": "Blackout Man",
+            "display_name": "Blackout Man",
+            "type": "person",
+            "relevance": "primary",
+            "source": ["visual", "audio", "text_overlay"],
+            "specifications": null,
+            "confidence": 5
+          },
+          {
+            "name": "SkyDuster Beer",
+            "display_name": "SkyDuster Beer",
+            "type": "brand",
+            "relevance": "primary",
+            "source": ["visual"],
+            "specifications": "West Coast IPA",
+            "confidence": 5
+          },
+          {
+            "name": "Purell",
+            "display_name": "Purell Hand Sanitizer",
+            "type": "product",
+            "relevance": "supporting",
+            "source": ["visual", "audio"],
+            "specifications": "Advanced Hand Sanitizer",
+            "confidence": 5
+          },
+          {
+            "name": "Heineken 0.0",
+            "display_name": "Heineken 0.0 Non-Alcoholic Beer",
+            "type": "product",
+            "relevance": "supporting",
+            "source": ["audio"],
+            "specifications": "Non-alcoholic beer",
+            "confidence": 5
+          },
+          {
+            "name": "CIA",
+            "display_name": "Central Intelligence Agency",
+            "type": "brand",
+            "relevance": "supporting",
+            "source": ["audio"],
+            "specifications": null,
+            "confidence": 5
+          },
+          {
+            "name": "Liverpool FC",
+            "display_name": "Liverpool FC Jacket",
+            "type": "brand",
+            "relevance": "background",
+            "source": ["visual"],
+            "specifications": "Red puffer jacket with LFC crest",
+            "confidence": 5
+          },
+          {
+            "name": "Canadian Club",
+            "display_name": "Canadian Club Hat",
+            "type": "brand",
+            "relevance": "background",
+            "source": ["visual"],
+            "specifications": "Black baseball cap",
+            "confidence": 5
+          },
+          {
+            "name": "Margaritaville",
+            "display_name": "Margaritaville",
+            "type": "cultural_reference",
+            "relevance": "supporting",
+            "source": ["audio"],
+            "specifications": "Jimmy Buffett reference",
+            "confidence": 4
+          }
+        ],
+        "takeaways": [
+          {
+            "statement": "The video parodies the absurdity of superhero origin stories and government recruitment tropes by using extreme intoxication as a superpower.",
+            "source": "demonstration",
+            "confidence": 5
+          }
+        ],
+        "structured_content": {
+          "type": "product_list",
+          "items": [
+            {
+              "name": "Standard Six Pack",
+              "details": "SkyDuster Beer West Coast IPA"
+            },
+            {
+              "name": "Hard Stuff",
+              "details": "Vodka/Liquor for immediate blackout"
+            },
+            {
+              "name": "IV Drip",
+              "details": "For longer duration missions"
+            },
+            {
+              "name": "The Big Gun",
+              "details": "Beer bong funnel for rapid intake"
+            },
+            {
+              "name": "The Last Resort",
+              "details": "Purell Hand Sanitizer for maximum potency"
+            }
+          ]
+        },
+        "audio_identification": {
+          "actual_song": "Cinematic Trailer Score \u2014 Unidentified",
+          "metadata_song": "original sound - squilliam_peters \u2014 Will Peters",
+          "match": false
+        },
+        "extraction_confidence": {
+          "entities_complete": 5,
+          "audio_identified": true,
+          "notes": "All actors identified from caption tags. Brands like SkyDuster and Purell are clearly visible."
+        },
+        "presentation_style": {
+          "primary_format": "skit",
+          "camera_work": "handheld",
+          "editing_style": "jump_cuts"
+        },
+        "visual_mood": "Cinematic, high-stakes, satirical, and comedic with dramatic lighting.",
+        "topic_hints": ["Comedy", "Superhero Parody", "Movie Trailer Satire"],
+        "affect_hints": ["Amused", "Entertained", "Nostalgic"],
+        "genre_hints": ["Sketch Comedy", "Parody"]
+      }
+    ],
+    "metrics": {
+      "input_tokens": 14861,
+      "output_tokens": 2672,
+      "cost_usd": 0.0025549,
+      "latency_ms": 53840,
+      "video_uploaded": true
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "comedy",
+        "secondary": "movies_tv",
+        "micro_labels": [
+          "sketch comedy",
+          "superhero parody",
+          "movie trailer satire",
+          "action movie tropes"
+        ],
+        "confidence": 0.98
+      },
+      "genre": {
+        "label": "skit",
+        "micro_labels": ["parody trailer", "satire"],
+        "confidence": 1.0
+      },
+      "affect": [
+        {
+          "label": "funny",
+          "tier": "dominant"
+        },
+        {
+          "label": "shocking",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["cinematic", "mixed"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 1.0
+      },
+      "creator_role": {
+        "label": "professional",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "passive_consumption",
+        "confidence": 0.9
+      },
+      "entities": [
+        {
+          "name": "Will Peters",
+          "type": "person",
+          "relevance": "primary"
+        },
+        {
+          "name": "Brett Dodenhoff",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Blackout Man",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        },
+        {
+          "name": "SkyDuster Beer",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Purell Hand Sanitizer",
+          "type": "product",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Marvel Cinematic Universe",
+          "type": "cultural_reference",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A high-production parody trailer for a fictional movie called 'Blackout Man,' starring Will Peters as a man who only gains superhero abilities when he is dangerously intoxicated. The sketch satirizes action movie clich\u00e9s, including government recruitment by Agent Cobb, a dramatic retirement in the woods, and a final showdown with a Russian rival where the hero 'powers up' using hand sanitizer.",
+      "embedding_text": "A high-effort sketch comedy video by @squilliam_peters (Will Peters) presented as a cinematic movie trailer for 'Blackout Man'. The plot follows Will, a man who discovers he performs heroic deeds like stopping bank heists and saving families only when he blackouts from drinking SkyDuster Beer. The trailer features Brett Dodenhoff as Agent Cobb, a government handler who recruits him for the CIA. It parodies various film tropes including the 'retired hero' living in the woods, domestic arguments about secret identities, and the dramatic final battle against a Russian villain. Key moments include the hero using an IV drip of alcohol and drinking Purell hand sanitizer as a last-resort power-up. On-screen text includes 'New Blackout Man trailer looks insane' and 'BLACKOUT MAN COMING THIS FALL'. This is a satire of superhero origin stories and action movie trailers."
+    },
+    "metrics": {
+      "input_tokens": 4056,
+      "output_tokens": 808,
+      "cost_usd": 0.0007288,
+      "latency_ms": 6181
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "funny",
+      "topic": "comedy",
+      "genre": "skit",
+      "communicative_intent": "entertain",
+      "creator_role": "professional",
+      "viewer_orientation": "passive_consumption",
+      "presentation_style": "cinematic",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

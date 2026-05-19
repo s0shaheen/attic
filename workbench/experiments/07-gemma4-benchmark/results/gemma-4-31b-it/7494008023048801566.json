@@ -1,0 +1,176 @@
+{
+  "item_id": "7494008023048801566",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A woman with long dark hair and black-rimmed glasses is the central focus, wearing a white t-shirt. She is positioned in an indoor setting that resembles a study or bedroom, with a bookshelf filled with books behind her to the right. In the background, there is a white pleated lampshade, a classical white bust, and several glass bottles on a dark shelf.",
+      "text_on_screen": "the philosophy of neon genesis evangelion",
+      "overall_summary": "The post is a video essay or commentary discussing the philosophical underpinnings of the anime series Neon Genesis Evangelion. The user likely saved it for its intellectual analysis or as a recommendation for shows to watch.",
+      "entities": [
+        {
+          "name": "Neon Genesis Evangelion",
+          "display_name": "Neon Genesis Evangelion",
+          "type": "movie_or_show",
+          "relevance": "primary",
+          "source": ["visual", "text_overlay", "metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Fallen D.",
+          "display_name": "Fallen D.",
+          "type": "artist",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Undoing",
+          "display_name": "Undoing",
+          "type": "song",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "soggyrice3",
+          "display_name": "soggyrice3",
+          "type": "person",
+          "relevance": "supporting",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 4
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The anime Neon Genesis Evangelion contains significant philosophical themes worth analyzing.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": "recommendation_list",
+        "items": [
+          {
+            "name": "Neon Genesis Evangelion",
+            "details": "Anime series discussed from a philosophical perspective"
+          }
+        ]
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "All key entities from metadata and text are captured."
+      },
+      "presentation_style": {
+        "primary_format": "screenshot",
+        "visual_style": "aesthetic"
+      },
+      "scene_type": "indoor",
+      "visual_mood": "moody",
+      "topic_hints": ["Anime", "Philosophy", "Media Analysis"],
+      "affect_hints": ["Intellectual", "Curious"],
+      "genre_hints": ["Video Essay", "Commentary"]
+    },
+    "metrics": {
+      "input_tokens": 1330,
+      "output_tokens": 755,
+      "cost_usd": 0.0,
+      "latency_ms": 78200,
+      "video_uploaded": false,
+      "thoughts_tokens": 1202
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "movies_tv",
+        "secondary": "education",
+        "micro_labels": ["anime", "philosophy", "media analysis"],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "other",
+        "micro_labels": ["video essay", "commentary"],
+        "confidence": 0.9
+      },
+      "affect": [
+        {
+          "label": "informative",
+          "tier": "dominant"
+        },
+        {
+          "label": "neutral",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["talking_head", "text_overlay"],
+      "content_provenance": {
+        "label": "original",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "inform",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "active_learning",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "Neon Genesis Evangelion",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "dearcaitlynn",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Fallen D.",
+          "type": "artist",
+          "relevance": "supporting"
+        },
+        {
+          "name": "Undoing",
+          "type": "song",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A video essay by @dearcaitlynn discussing the philosophical themes and underpinnings of the anime series Neon Genesis Evangelion. The user likely saved this for its intellectual analysis and as a reference for the show's deeper meanings.",
+      "embedding_text": "A philosophical analysis and video essay of the anime series Neon Genesis Evangelion created by @dearcaitlynn. The video features a talking-head presentation with text on screen reading 'the philosophy of neon genesis evangelion,' set in a study environment with bookshelves and a classical bust. It explores the intellectual and philosophical themes of the show, catering to fans of anime, literary analysis, and philosophy. The background music is 'Undoing' by Fallen D. This content is highly relevant for users searching for Neon Genesis Evangelion commentary, anime philosophy, or media analysis on TikTok."
+    },
+    "metrics": {
+      "input_tokens": 3231,
+      "output_tokens": 639,
+      "cost_usd": 0.0,
+      "latency_ms": 38222,
+      "thoughts_tokens": 717
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "informative",
+      "topic": "movies_tv",
+      "genre": "other",
+      "communicative_intent": "inform",
+      "creator_role": "amateur",
+      "viewer_orientation": "active_learning",
+      "presentation_style": "talking_head",
+      "content_provenance": "original"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

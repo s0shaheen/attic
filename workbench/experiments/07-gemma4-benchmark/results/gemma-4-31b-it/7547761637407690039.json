@@ -1,0 +1,157 @@
+{
+  "item_id": "7547761637407690039",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A screenshot from a video featuring two men on an outdoor sports field. In the center, a Black man wearing a white dress shirt and a dark navy waistcoat looks on with a skeptical or thoughtful expression, holding his hand to his chin. To the right, the back of another man's head and shoulder are visible, wearing a bright yellow high-visibility safety vest. A white soccer goal net is visible in the background, and a small 'BBC' logo appears in the top left corner.",
+      "text_on_screen": "BBC\nWhen your going audio for audio with bro and he pulls this masterpiece out so you accept defeat and jam out",
+      "overall_summary": "This is a relatable meme about the experience of sharing music ('audio for audio') with a friend and being completely impressed by a song they choose. The user is likely saving it as a humorous representation of music discovery and friendship.",
+      "entities": [
+        {
+          "name": "BBC",
+          "display_name": "British Broadcasting Corporation",
+          "type": "brand",
+          "relevance": "supporting",
+          "source": "visual",
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "audio for audio",
+          "display_name": "Audio for Audio",
+          "type": "trend_or_meme",
+          "relevance": "primary",
+          "source": "text_overlay",
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "slurs",
+          "display_name": "slurs",
+          "type": "artist",
+          "relevance": "supporting",
+          "source": "metadata",
+          "specifications": null,
+          "confidence": 4
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The feeling of admitting defeat in a music taste competition when a friend plays an exceptionally good song.",
+          "source": "text_overlay",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": []
+      },
+      "extraction_confidence": {
+        "entities_complete": 4,
+        "notes": "The specific show or sketch from the BBC that this image is sourced from is not explicitly stated, but the logo is clear."
+      },
+      "presentation_style": {
+        "primary_format": "meme",
+        "visual_style": "raw"
+      },
+      "scene_type": "outdoor",
+      "visual_mood": "playful",
+      "topic_hints": ["music sharing", "friendship", "nostalgia"],
+      "affect_hints": ["amused", "relatable", "impressed"],
+      "genre_hints": ["internet meme", "social media humor"]
+    },
+    "metrics": {
+      "input_tokens": 1258,
+      "output_tokens": 681,
+      "cost_usd": 0.0,
+      "latency_ms": 47640,
+      "video_uploaded": false,
+      "thoughts_tokens": 696
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "comedy",
+        "secondary": "music",
+        "micro_labels": ["music sharing", "friendship", "internet memes"],
+        "confidence": 0.95
+      },
+      "genre": {
+        "label": "meme",
+        "micro_labels": [],
+        "confidence": 1.0
+      },
+      "affect": [
+        {
+          "label": "funny",
+          "tier": "dominant"
+        },
+        {
+          "label": "nostalgic",
+          "tier": "secondary"
+        }
+      ],
+      "presentation_style": ["text_overlay", "raw_footage"],
+      "content_provenance": {
+        "label": "clip",
+        "confidence": 0.9
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.95
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.8
+      },
+      "viewer_orientation": {
+        "label": "social_sharing",
+        "confidence": 0.85
+      },
+      "entities": [
+        {
+          "name": "audio for audio",
+          "type": "trend_or_meme",
+          "relevance": "primary"
+        },
+        {
+          "name": "BBC",
+          "type": "brand",
+          "relevance": "supporting"
+        },
+        {
+          "name": "slurs",
+          "type": "artist",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A relatable meme using a BBC clip to describe the experience of 'audio for audio' music sharing with a friend. The user likely saved this as a humorous representation of music discovery and the feeling of being impressed by a friend's superior song choice.",
+      "embedding_text": "A TikTok meme by @fear_of_heights_ featuring a clip from the BBC showing a man with a skeptical expression on a sports field. The video centers on the 'audio for audio' trend, where friends trade songs to see who has the better taste. The on-screen text reads, 'When your going audio for audio with bro and he pulls this masterpiece out so you accept defeat and jam out,' capturing the feeling of music discovery and friendship. The audio is provided by the artist slurs, and the caption mentions nostalgia. This content is a humorous take on sharing music and admitting defeat when a friend plays an exceptionally good song."
+    },
+    "metrics": {
+      "input_tokens": 3087,
+      "output_tokens": 603,
+      "cost_usd": 0.0,
+      "latency_ms": 38228,
+      "thoughts_tokens": 725
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "funny",
+      "topic": "comedy",
+      "genre": "meme",
+      "communicative_intent": "entertain",
+      "creator_role": "amateur",
+      "viewer_orientation": "social_sharing",
+      "presentation_style": "text_overlay",
+      "content_provenance": "clip"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}

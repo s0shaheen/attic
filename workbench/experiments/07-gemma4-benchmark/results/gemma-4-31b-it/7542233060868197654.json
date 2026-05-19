@@ -1,0 +1,171 @@
+{
+  "item_id": "7542233060868197654",
+  "model": "gemma-4-31b-it",
+  "type_key": "tiktok_video",
+  "media_type": "video",
+  "platform": "tiktok",
+  "pass1_perception": {
+    "parsed_output": {
+      "visual_description": "A close-up shot of a man with ginger hair and a full red beard, exhibiting a deeply emotional and distressed facial expression with watery eyes. He is dressed in a brown textured blazer over a light-colored, thin-striped button-down shirt. The background is softly blurred, suggesting an indoor gallery or museum setting.",
+      "text_on_screen": null,
+      "overall_summary": "A screenshot from the TV series 'Doctor Who' depicting the character Vincent van Gogh in a moment of emotional distress. The user is likely saving this as part of a fan collection or for use in a video edit.",
+      "entities": [
+        {
+          "name": "Vincent van Gogh",
+          "display_name": "Vincent van Gogh (Character)",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["metadata", "visual"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Tony Curran",
+          "display_name": "Tony Curran",
+          "type": "person",
+          "relevance": "primary",
+          "source": ["visual"],
+          "specifications": null,
+          "confidence": 5
+        },
+        {
+          "name": "Doctor Who",
+          "display_name": "Doctor Who",
+          "type": "movie_or_show",
+          "relevance": "primary",
+          "source": ["metadata"],
+          "specifications": null,
+          "confidence": 5
+        }
+      ],
+      "takeaways": [
+        {
+          "statement": "The image captures a moment of intense emotional vulnerability for the character Vincent van Gogh in the Doctor Who universe.",
+          "source": "visual",
+          "confidence": 5
+        }
+      ],
+      "structured_content": {
+        "type": null,
+        "items": []
+      },
+      "extraction_confidence": {
+        "entities_complete": 5,
+        "notes": "The actor and character are clearly identifiable given the visual evidence and the provided metadata hashtags."
+      },
+      "presentation_style": {
+        "primary_format": "screenshot",
+        "visual_style": "polished"
+      },
+      "scene_type": "indoor",
+      "visual_mood": "moody",
+      "topic_hints": ["Doctor Who", "Vincent van Gogh", "Television Drama"],
+      "affect_hints": ["sadness", "heartbreak", "empathy"],
+      "genre_hints": ["TV show screenshot", "Fan content"]
+    },
+    "metrics": {
+      "input_tokens": 1315,
+      "output_tokens": 637,
+      "cost_usd": 0.0,
+      "latency_ms": 52125,
+      "video_uploaded": false,
+      "thoughts_tokens": 1005
+    },
+    "error": null
+  },
+  "pass2_classification": {
+    "parsed_output": {
+      "topic": {
+        "primary": "movies_tv",
+        "secondary": "art",
+        "micro_labels": [
+          "Doctor Who",
+          "Vincent van Gogh",
+          "TV show edits",
+          "Fan content"
+        ],
+        "confidence": 1.0
+      },
+      "genre": {
+        "label": "edit",
+        "micro_labels": ["fan edit"],
+        "confidence": 0.95
+      },
+      "affect": [
+        {
+          "label": "sad",
+          "tier": "dominant"
+        },
+        {
+          "label": "wholesome",
+          "tier": "secondary"
+        },
+        {
+          "label": "nostalgic",
+          "tier": "minor"
+        }
+      ],
+      "presentation_style": ["cinematic", "mixed"],
+      "content_provenance": {
+        "label": "clip",
+        "confidence": 0.95
+      },
+      "communicative_intent": {
+        "label": "entertain",
+        "confidence": 0.9
+      },
+      "creator_role": {
+        "label": "amateur",
+        "confidence": 0.9
+      },
+      "viewer_orientation": {
+        "label": "inspiration_saving",
+        "confidence": 0.8
+      },
+      "entities": [
+        {
+          "name": "Vincent van Gogh",
+          "type": "cultural_reference",
+          "relevance": "primary"
+        },
+        {
+          "name": "Doctor Who",
+          "type": "movie_or_show",
+          "relevance": "primary"
+        },
+        {
+          "name": "Tony Curran",
+          "type": "person",
+          "relevance": "supporting"
+        },
+        {
+          "name": "@editsbyfunpage",
+          "type": "person",
+          "relevance": "supporting"
+        }
+      ],
+      "summary": "A fan edit from the TV series Doctor Who featuring the character Vincent van Gogh in a moment of deep emotional distress. The user likely saved this for its emotional impact or as part of a fan collection of the show's most poignant moments.",
+      "embedding_text": "A cinematic fan edit from the TV series Doctor Who, created by @editsbyfunpage. The content features a close-up of the character Vincent van Gogh, portrayed by actor Tony Curran, exhibiting intense sadness and emotional vulnerability with watery eyes. The scene takes place in an indoor museum or gallery setting, capturing a heartbreaking moment from the episode. This is a high-emotion clip often used in fan collections or video edits to evoke empathy and sadness. It focuses on the portrayal of mental health and artistic struggle within the Doctor Who universe."
+    },
+    "metrics": {
+      "input_tokens": 3098,
+      "output_tokens": 656,
+      "cost_usd": 0.0,
+      "latency_ms": 32402,
+      "thoughts_tokens": 895
+    },
+    "valid": true,
+    "tier1": {
+      "affect": "sad",
+      "topic": "movies_tv",
+      "genre": "edit",
+      "communicative_intent": "entertain",
+      "creator_role": "amateur",
+      "viewer_orientation": "inspiration_saving",
+      "presentation_style": "cinematic",
+      "content_provenance": "clip"
+    },
+    "validation_errors": [],
+    "error": null
+  }
+}
