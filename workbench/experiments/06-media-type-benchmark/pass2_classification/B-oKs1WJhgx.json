@@ -1,0 +1,61 @@
+{
+  "item_id": "B-oKs1WJhgx",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:39.495794+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "comedy",
+      "secondary": "music",
+      "micro_labels": ["NBA Youngboy", "hip-hop culture", "dance parody"],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "skit",
+      "micro_labels": ["parody", "impersonation", "meme"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "shocking",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["text_overlay", "raw_footage"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 4221,
+    "output_tokens": 324,
+    "total_tokens": 4545,
+    "cost_usd": 0.000828,
+    "latency_ms": 5848,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}

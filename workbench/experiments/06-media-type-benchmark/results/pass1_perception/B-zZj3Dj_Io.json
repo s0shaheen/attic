@@ -1,0 +1,153 @@
+{
+  "item_id": "B-zZj3Dj_Io",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:36:31.855156+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "Dwyane Wade is reclining and holding a smartphone with a black and white checkered case. His daughter, Kaavia, is positioned behind him, looking at the phone screen with a skeptical and intense expression.",
+        "text_detected": "Champion",
+        "primary_content": "Dwyane Wade and Kaavia James Union-Wade sharing a moment where Kaavia displays a humorous facial expression.",
+        "entities": [
+          {
+            "name": "Dwyane Wade",
+            "type": "person",
+            "specifications": "Wearing black Champion hoodie"
+          },
+          {
+            "name": "Kaavia James Union-Wade",
+            "type": "person",
+            "specifications": "Wearing striped pajamas"
+          },
+          {
+            "name": "Champion",
+            "type": "brand",
+            "specifications": "Logo on sleeve"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "Kaavia James Union-Wade sitting on a white modular sofa or floor cushion. She is looking off-camera with a pensive, slightly grumpy expression.",
+        "text_detected": "",
+        "primary_content": "A candid photo of Kaavia James Union-Wade looking 'unimpressed'.",
+        "entities": [
+          {
+            "name": "Kaavia James Union-Wade",
+            "type": "person",
+            "specifications": "Wearing grey long-sleeve shirt and pants"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "Gabrielle Union sits at an outdoor table holding a white mug with a black 'G' and a smartphone. Kaavia sits in front of her with her hands clasped, staring directly into the camera with a serious, judgmental expression.",
+        "text_detected": "G",
+        "primary_content": "Gabrielle Union and Kaavia James Union-Wade outdoors; Kaavia is the focus due to her 'mood' expression.",
+        "entities": [
+          {
+            "name": "Gabrielle Union",
+            "type": "person",
+            "specifications": "Holding 'G' monogram mug"
+          },
+          {
+            "name": "Kaavia James Union-Wade",
+            "type": "person",
+            "specifications": "Wearing white floral top"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post is a collection of photos featuring Kaavia James Union-Wade, the daughter of Gabrielle Union and Dwyane Wade. The images highlight her famously expressive and often 'unimpressed' facial expressions, which have earned her the nickname 'Shady Baby' on social media. The user is likely saving this as a relatable 'mood' post or for celebrity pop-culture appreciation.",
+    "carousel_type": "photo_dump",
+    "narrative_thread": "The images collectively showcase the personality of Kaavia James, framing her as a 'permanent mood' through various candid, humorous expressions.",
+    "entities": [
+      {
+        "name": "Kaavia James Union-Wade",
+        "display_name": "Kaavia James Union-Wade",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "slide_number": 1,
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Gabrielle Union",
+        "display_name": "Gabrielle Union",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["visual", "metadata"],
+        "slide_number": 3,
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Dwyane Wade",
+        "display_name": "Dwyane Wade",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["visual", "metadata"],
+        "slide_number": 1,
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Shady Baby",
+        "display_name": "Shady Baby (Meme/Persona)",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": ["inferred"],
+        "slide_number": 1,
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Kaavia James Union-Wade is a viral sensation known for her relatable and funny facial expressions.",
+        "source": "implied",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "The subjects are high-profile celebrities and their well-known child; identification is certain."
+    },
+    "presentation_style": {
+      "primary_format": "photo_dump",
+      "visual_style": "informational"
+    },
+    "visual_mood": "Humorous, relatable, and candid.",
+    "topic_hints": ["Celebrity Families", "Memes", "Parenting Humor"],
+    "affect_hints": ["amused", "relatable", "charmed"],
+    "genre_hints": ["Celebrity News", "Humor"]
+  },
+  "metrics": {
+    "input_tokens": 4531,
+    "output_tokens": 1331,
+    "total_tokens": 5862,
+    "cost_usd": 0.001478,
+    "latency_ms": 11537,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 3
+  }
+}

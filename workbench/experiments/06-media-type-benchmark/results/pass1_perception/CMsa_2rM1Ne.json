@@ -1,0 +1,314 @@
+{
+  "item_id": "CMsa_2rM1Ne",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:36:31.001485+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "A pink Keith Haring-style figure sitting inside a tall grey rectangular frame with a light blue circle at the top, mimicking the cover of Frank Ocean's 'Blonde'.",
+        "text_detected": "@4thdimensiongraphics",
+        "primary_content": "Album: Blonde by Frank Ocean",
+        "entities": [
+          {
+            "name": "Frank Ocean",
+            "type": "person",
+            "specifications": "Artist"
+          },
+          {
+            "name": "Blonde",
+            "type": "song",
+            "specifications": "Album"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "A black and white illustration of a figure diving into a crowd of other figures, mimicking the cover of Playboi Carti's 'Die Lit'.",
+        "text_detected": "@4thdimensiongraphics",
+        "primary_content": "Album: Die Lit by Playboi Carti",
+        "entities": [
+          {
+            "name": "Playboi Carti",
+            "type": "person",
+            "specifications": "Artist"
+          },
+          {
+            "name": "Die Lit",
+            "type": "song",
+            "specifications": "Album"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "A red figure with a television for a head sitting on a green floor in front of a pile of televisions, referencing the '808s & Heartbreak' era of Kanye West.",
+        "text_detected": "@4thdimensiongraphics",
+        "primary_content": "Album: 808s & Heartbreak by Kanye West",
+        "entities": [
+          {
+            "name": "Kanye West",
+            "type": "person",
+            "specifications": "Artist"
+          },
+          {
+            "name": "808s & Heartbreak",
+            "type": "song",
+            "specifications": "Album"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "A yellow figure sitting on a small stool (representing a roof edge) against a dark background with a window showing white stars, mimicking J. Cole's '2014 Forest Hills Drive'.",
+        "text_detected": "@4thdimensiongraphics",
+        "primary_content": "Album: 2014 Forest Hills Drive by J. Cole",
+        "entities": [
+          {
+            "name": "J. Cole",
+            "type": "person",
+            "specifications": "Artist"
+          },
+          {
+            "name": "2014 Forest Hills Drive",
+            "type": "song",
+            "specifications": "Album"
+          }
+        ]
+      },
+      {
+        "image_number": 5,
+        "description": "A black and white illustration of a dense crowd of figures in front of a building with a flag, mimicking Kendrick Lamar's 'To Pimp a Butterfly'.",
+        "text_detected": "@4thdimensiongraphics",
+        "primary_content": "Album: To Pimp a Butterfly by Kendrick Lamar",
+        "entities": [
+          {
+            "name": "Kendrick Lamar",
+            "type": "person",
+            "specifications": "Artist"
+          },
+          {
+            "name": "To Pimp a Butterfly",
+            "type": "song",
+            "specifications": "Album"
+          }
+        ]
+      },
+      {
+        "image_number": 6,
+        "description": "A colorful illustration featuring a white ghost-like figure and a running figure against a mountain backdrop, mimicking the cover of 'Kids See Ghosts'.",
+        "text_detected": "@4thdimensiongraphics",
+        "primary_content": "Album: Kids See Ghosts by Kids See Ghosts",
+        "entities": [
+          {
+            "name": "Kids See Ghosts",
+            "type": "person",
+            "specifications": "Musical Duo (Kanye West & Kid Cudi)"
+          },
+          {
+            "name": "Kids See Ghosts",
+            "type": "song",
+            "specifications": "Album"
+          }
+        ]
+      },
+      {
+        "image_number": 7,
+        "description": "A large golden head with a smiling mouth and figures dancing in front of it, mimicking the cover of Travis Scott's 'ASTROWORLD'.",
+        "text_detected": "@4thdimensiongraphics",
+        "primary_content": "Album: ASTROWORLD by Travis Scott",
+        "entities": [
+          {
+            "name": "Travis Scott",
+            "type": "person",
+            "specifications": "Artist"
+          },
+          {
+            "name": "ASTROWORLD",
+            "type": "song",
+            "specifications": "Album"
+          }
+        ]
+      },
+      {
+        "image_number": 8,
+        "description": "A black and white illustration of a figure's torso and arm framed by thick blue diagonal stripes, mimicking Baby Keem's 'The Melodic Blue'.",
+        "text_detected": "@4thdimensiongraphics",
+        "primary_content": "Album: The Melodic Blue by Baby Keem",
+        "entities": [
+          {
+            "name": "Baby Keem",
+            "type": "person",
+            "specifications": "Artist"
+          },
+          {
+            "name": "The Melodic Blue",
+            "type": "song",
+            "specifications": "Album"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post features a series of digital illustrations by @4thdimensiongraphics that reimagine iconic modern hip-hop and R&B album covers in the signature pop-art style of Keith Haring. The collection includes visual references to artists like Frank Ocean, Kendrick Lamar, and Travis Scott, translating their famous cover art into Haring's bold lines and minimalist figures. A user would likely save this for artistic inspiration, as a fan of the featured musicians, or to share the creative crossover between street art and music culture.",
+    "carousel_type": "recommendation_list",
+    "narrative_thread": "The images present a cohesive gallery of 'what if' scenarios, merging the visual language of 1980s New York street art with 21st-century musical landmarks.",
+    "entities": [
+      {
+        "name": "Keith Haring",
+        "display_name": "Keith Haring (Art Style)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "confidence": 5
+      },
+      {
+        "name": "@4thdimensiongraphics",
+        "display_name": "4th Dimension Graphics",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["text_overlay", "metadata"],
+        "confidence": 5
+      },
+      {
+        "name": "Frank Ocean",
+        "display_name": "Frank Ocean",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "Playboi Carti",
+        "display_name": "Playboi Carti",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 2,
+        "confidence": 5
+      },
+      {
+        "name": "Kanye West",
+        "display_name": "Kanye West",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 3,
+        "confidence": 4
+      },
+      {
+        "name": "J. Cole",
+        "display_name": "J. Cole",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 4,
+        "confidence": 5
+      },
+      {
+        "name": "Kendrick Lamar",
+        "display_name": "Kendrick Lamar",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 5,
+        "confidence": 5
+      },
+      {
+        "name": "Travis Scott",
+        "display_name": "Travis Scott",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 7,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Iconic album covers can be instantly recognized even when stripped of their original photography and translated into a minimalist art style.",
+        "source": "implied",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Blonde",
+          "details": "Frank Ocean reimagined in Keith Haring style",
+          "slide_number": 1
+        },
+        {
+          "name": "Die Lit",
+          "details": "Playboi Carti reimagined in Keith Haring style",
+          "slide_number": 2
+        },
+        {
+          "name": "808s & Heartbreak",
+          "details": "Kanye West reimagined in Keith Haring style",
+          "slide_number": 3
+        },
+        {
+          "name": "2014 Forest Hills Drive",
+          "details": "J. Cole reimagined in Keith Haring style",
+          "slide_number": 4
+        },
+        {
+          "name": "To Pimp a Butterfly",
+          "details": "Kendrick Lamar reimagined in Keith Haring style",
+          "slide_number": 5
+        },
+        {
+          "name": "Kids See Ghosts",
+          "details": "Kids See Ghosts reimagined in Keith Haring style",
+          "slide_number": 6
+        },
+        {
+          "name": "ASTROWORLD",
+          "details": "Travis Scott reimagined in Keith Haring style",
+          "slide_number": 7
+        },
+        {
+          "name": "The Melodic Blue",
+          "details": "Baby Keem reimagined in Keith Haring style",
+          "slide_number": 8
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "null",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "All album covers are highly recognizable cultural icons."
+    },
+    "presentation_style": {
+      "primary_format": "recommendation_list",
+      "visual_style": "aesthetic"
+    },
+    "visual_mood": "Playful, vibrant, and nostalgic.",
+    "topic_hints": ["Hip-Hop Culture", "Pop Art", "Graphic Design"],
+    "affect_hints": ["Creative", "Impressed", "Nostalgic"],
+    "genre_hints": ["Art Showcase"]
+  },
+  "metrics": {
+    "input_tokens": 9971,
+    "output_tokens": 2666,
+    "total_tokens": 12637,
+    "cost_usd": 0.003095,
+    "latency_ms": 28525,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 8
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "item_id": "7523292729745460502",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:57.828313+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": null,
+      "micro_labels": [
+        "film trilogies",
+        "movie rankings",
+        "cinema history",
+        "film directors"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "ranking",
+      "micro_labels": ["top 15 list"],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 14166,
+    "output_tokens": 342,
+    "total_tokens": 14508,
+    "cost_usd": 0.00233,
+    "latency_ms": 7599,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 10
+  }
+}

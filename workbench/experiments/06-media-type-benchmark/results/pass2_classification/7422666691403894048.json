@@ -1,0 +1,75 @@
+{
+  "item_id": "7422666691403894048",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:43.904222+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "health",
+      "micro_labels": [
+        "movie recommendations",
+        "healing",
+        "mental health",
+        "Letterboxd",
+        "trauma recovery"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "compilation",
+      "micro_labels": ["movie list", "watchlist", "curated recommendations"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "wholesome",
+        "tier": "secondary"
+      },
+      {
+        "label": "sad",
+        "tier": "secondary"
+      },
+      {
+        "label": "inspiring",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 13755,
+    "output_tokens": 380,
+    "total_tokens": 14135,
+    "cost_usd": 0.002291,
+    "latency_ms": 11685,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 10
+  }
+}

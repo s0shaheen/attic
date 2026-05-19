@@ -1,0 +1,146 @@
+{
+  "item_id": "C82mrC0xXuJ",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:39:09.292977+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Visual projections of a snow monkey and a solar eclipse are shown on the side of a building at night.",
+        "audio_description": "Atmospheric, bass-heavy electronic music begins to swell.",
+        "text_on_screen": "",
+        "key_objects": ["Projector", "Building"]
+      },
+      {
+        "time_range": "0:05-0:10",
+        "visual_description": "Jus Reign is seen behind the DJ decks in a red-lit room, transitioning into a high-energy performance.",
+        "audio_description": "The beat drops into a high-tempo Punjabi-electronic fusion track.",
+        "text_on_screen": "",
+        "key_objects": ["DJ Controller", "Headphones"]
+      },
+      {
+        "time_range": "0:10-0:22",
+        "visual_description": "A rapid-fire montage of the crowded dance floor, Jus Reign DJing, and people dancing under intense red lighting.",
+        "audio_description": "Loud, rhythmic Punjabi vocals mixed with heavy bass; crowd cheering is audible.",
+        "text_on_screen": "EXIT",
+        "key_objects": ["Vinyl Record", "Exit Sign"]
+      },
+      {
+        "time_range": "0:22-0:30",
+        "visual_description": "Crowd members are seen waving purple lightsabers; Jus Reign continues to hype the crowd.",
+        "audio_description": "Music continues with high energy; rhythmic chanting.",
+        "text_on_screen": "",
+        "key_objects": ["Lightsabers"]
+      },
+      {
+        "time_range": "0:30-0:35",
+        "visual_description": "Close-up of hands on the mixer, followed by a wide shot of a city sunrise and a purple monster animation.",
+        "audio_description": "The music fades into a more melodic, atmospheric outro.",
+        "text_on_screen": "Jun.30.2024 4:16 AM",
+        "key_objects": ["MacBook", "Mixer"]
+      }
+    ],
+    "overall_summary": "This video captures Jus Reign's return to the DJ booth after a five-year hiatus for an event titled 'Sound Bath'. The footage features a high-energy Punjabi-electronic fusion set with a packed, enthusiastic crowd dancing under vibrant red lights. The edit concludes with a sunrise shot at 4:16 AM, signifying an all-night event, and highlights Jus Reign's dynamic stage presence alongside Sikh Knowledge.",
+    "people": [
+      {
+        "description": "DJ wearing a turban and a red patterned shirt, performing with high energy.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Jus Reign"
+      },
+      {
+        "description": "DJ/Producer seen collaborating and performing at the event.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Sikh Knowledge"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Jus Reign",
+        "display_name": "Jus Reign (Jasmeet Singh Raina)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata", "visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Sikh Knowledge",
+        "display_name": "Sikh Knowledge (Kanwar Saini)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "spingle.ai",
+        "display_name": "Spingle AI",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "AI Video Editing Tool",
+        "confidence": 5
+      },
+      {
+        "name": "Sound Bath",
+        "display_name": "Sound Bath DJ Set",
+        "type": "event",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": "Jus Reign's first set in 5 years",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Jus Reign has officially returned to live DJ performances after a 5-year break.",
+        "source": "metadata",
+        "confidence": 5
+      },
+      {
+        "statement": "The 'Sound Bath' event was a high-energy, all-night party featuring Punjabi-electronic fusion music.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Punjabi Electronic Remix \u2014 Unidentified Artist",
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The specific remix track is likely a custom set mix by Jus Reign or Sikh Knowledge."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "handheld",
+      "editing_style": "heavy_effects"
+    },
+    "visual_mood": "High-energy, nocturnal, vibrant, and celebratory with heavy use of red lighting and fast-paced cuts.",
+    "topic_hints": ["Nightlife", "Punjabi Music", "DJ Culture"],
+    "affect_hints": ["Excited", "Energetic", "Hype"],
+    "genre_hints": ["Event Recap", "Music Edit"]
+  },
+  "metrics": {
+    "input_tokens": 4686,
+    "output_tokens": 1480,
+    "total_tokens": 6166,
+    "cost_usd": 0.001591,
+    "latency_ms": 20016,
+    "upload_ms": 5456
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

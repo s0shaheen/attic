@@ -1,0 +1,361 @@
+{
+  "item_id": "7319866290590502177",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:21.946335+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "Title card for the slideshow featuring a stylized graphic of two people and the Letterboxd logo.",
+        "text_detected": "FILMS FOR WHEN YOU'RE FEELING LOST IN YOUR 20S",
+        "primary_content": "Title card for a film recommendation list",
+        "entities": [
+          {
+            "name": "Letterboxd",
+            "type": "app_or_tool",
+            "specifications": "Social film discovery platform"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "Letterboxd app screenshot for the movie American Honey.",
+        "text_detected": "American Honey 2016 \u2022 DIRECTED BY Andrea Arnold TRAILER 163 mins NOTHING TO LOSE. A teenage girl with nothing to lose joins a traveling magazine sales crew, and gets caught up in a whirlwind of hard partying, law bending and young love as she criss-crosses the Midwest with a band of misfits.",
+        "primary_content": "Movie: American Honey (2016)",
+        "entities": [
+          {
+            "name": "American Honey",
+            "type": "movie_or_show",
+            "specifications": "2016, 163 mins"
+          },
+          {
+            "name": "Andrea Arnold",
+            "type": "person",
+            "specifications": "Director"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "Letterboxd app screenshot for the movie The Worst Person in the World.",
+        "text_detected": "The Worst Person in the World Verdens verste menneske 2021 \u2022 DIRECTED BY Joachim Trier TRAILER 128 mins Chronicles four years in the life of Julie, a young woman who navigates the troubled waters of her love life and struggles to find her career path, leading her to take a realistic look at who she really is.",
+        "primary_content": "Movie: The Worst Person in the World (2021)",
+        "entities": [
+          {
+            "name": "The Worst Person in the World",
+            "type": "movie_or_show",
+            "specifications": "2021, 128 mins"
+          },
+          {
+            "name": "Joachim Trier",
+            "type": "person",
+            "specifications": "Director"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "Letterboxd app screenshot for the movie Frances Ha.",
+        "text_detected": "Frances Ha 2012 \u2022 DIRECTED BY Noah Baumbach TRAILER 86 mins An aspiring dancer moves to New York City and becomes caught up in a whirlwind of flighty fair-weather friends, diminishing fortunes and career setbacks.",
+        "primary_content": "Movie: Frances Ha (2012)",
+        "entities": [
+          {
+            "name": "Frances Ha",
+            "type": "movie_or_show",
+            "specifications": "2012, 86 mins"
+          },
+          {
+            "name": "Noah Baumbach",
+            "type": "person",
+            "specifications": "Director"
+          }
+        ]
+      },
+      {
+        "image_number": 5,
+        "description": "Letterboxd app screenshot for the movie Lost in Translation.",
+        "text_detected": "Lost in Translation 2003 \u2022 DIRECTED BY Sofia Coppola TRAILER 102 mins EVERYONE WANTS TO BE FOUND. Two lost souls visiting Tokyo -- the young, neglected wife of a photographer and a washed-up movie star shooting a TV commercial -- find an odd solace and pensive freedom to be real in each other's company, away from their lives in America.",
+        "primary_content": "Movie: Lost in Translation (2003)",
+        "entities": [
+          {
+            "name": "Lost in Translation",
+            "type": "movie_or_show",
+            "specifications": "2003, 102 mins"
+          },
+          {
+            "name": "Sofia Coppola",
+            "type": "person",
+            "specifications": "Director"
+          }
+        ]
+      },
+      {
+        "image_number": 6,
+        "description": "Letterboxd app screenshot for the movie Punch-Drunk Love.",
+        "text_detected": "Punch-Drunk Love 2002 \u2022 DIRECTED BY Paul Thomas Anderson TRAILER 96 mins YOU CAN GO TO PLACES IN THE WORLD WITH PUDDING. A socially awkward and volatile small business owner meets the love of his life after being threatened by a gang of scammers.",
+        "primary_content": "Movie: Punch-Drunk Love (2002)",
+        "entities": [
+          {
+            "name": "Punch-Drunk Love",
+            "type": "movie_or_show",
+            "specifications": "2002, 96 mins"
+          },
+          {
+            "name": "Paul Thomas Anderson",
+            "type": "person",
+            "specifications": "Director"
+          }
+        ]
+      },
+      {
+        "image_number": 7,
+        "description": "Letterboxd app screenshot for the movie Moonlight.",
+        "text_detected": "Moonlight 2016 \u2022 DIRECTED BY Barry Jenkins TRAILER 111 mins THIS IS THE STORY OF A LIFETIME The tender, heartbreaking story of a young man\u2019s struggle to find himself, told across three defining chapters in his life as he experiences the ecstasy, pain, and beauty of falling in love, while grappling with his own sexuality.",
+        "primary_content": "Movie: Moonlight (2016)",
+        "entities": [
+          {
+            "name": "Moonlight",
+            "type": "movie_or_show",
+            "specifications": "2016, 111 mins"
+          },
+          {
+            "name": "Barry Jenkins",
+            "type": "person",
+            "specifications": "Director"
+          }
+        ]
+      },
+      {
+        "image_number": 8,
+        "description": "Letterboxd app screenshot for the movie Her.",
+        "text_detected": "Her 2013 \u2022 DIRECTED BY Spike Jonze TRAILER 126 mins A SPIKE JONZE LOVE STORY In the not so distant future, Theodore, a lonely writer purchases a newly developed operating system designed to meet the user's every needs. To Theodore's surprise, a romantic relationship develops between him and his operating system. This unconventional love story blends science fiction and romance in a sweet tale that explores the nature of love and the ways that technology isolates and connects us all.",
+        "primary_content": "Movie: Her (2013)",
+        "entities": [
+          {
+            "name": "Her",
+            "type": "movie_or_show",
+            "specifications": "2013, 126 mins"
+          },
+          {
+            "name": "Spike Jonze",
+            "type": "person",
+            "specifications": "Director"
+          }
+        ]
+      },
+      {
+        "image_number": 9,
+        "description": "Letterboxd app screenshot for the movie Chungking Express.",
+        "text_detected": "Chungking Express \u91cd\u6176\u68ee\u6797 1994 \u2022 DIRECTED BY Wong Kar-wai TRAILER 103 mins WHAT A DIFFERENCE A DAY MAKES Two melancholic Hong Kong policemen fall in love: one with a mysterious underworld figure, the other with a beautiful and ethereal server at a late-night restaurant he frequents.",
+        "primary_content": "Movie: Chungking Express (1994)",
+        "entities": [
+          {
+            "name": "Chungking Express",
+            "type": "movie_or_show",
+            "specifications": "1994, 103 mins"
+          },
+          {
+            "name": "Wong Kar-wai",
+            "type": "person",
+            "specifications": "Director"
+          }
+        ]
+      },
+      {
+        "image_number": 10,
+        "description": "Letterboxd app screenshot for the movie Kiki's Delivery Service.",
+        "text_detected": "Kiki's Delivery Service \u9b54\u5973\u306e\u5b85\u6025\u4fbf 1989 \u2022 DIRECTED BY Hayao Miyazaki TRAILER 103 mins I WAS FEELING BLUE, BUT I'M BETTER NOW. A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
+        "primary_content": "Movie: Kiki's Delivery Service (1989)",
+        "entities": [
+          {
+            "name": "Kiki's Delivery Service",
+            "type": "movie_or_show",
+            "specifications": "1989, 103 mins"
+          },
+          {
+            "name": "Hayao Miyazaki",
+            "type": "person",
+            "specifications": "Director"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This TikTok slideshow provides a curated list of nine films recommended for viewers in their 20s who are 'feeling lost.' The creator uses screenshots from the Letterboxd app to display each movie's title, director, year, runtime, and a brief synopsis. The selection focuses on themes of identity, existential dread, loneliness, and self-discovery, ranging from live-action dramas to Studio Ghibli animation.",
+    "carousel_type": "recommendation_list",
+    "narrative_thread": "The post addresses a specific emotional demographic (people in their 20s feeling aimless) and offers cinematic works that mirror or provide comfort for that experience.",
+    "entities": [
+      {
+        "name": "American Honey",
+        "display_name": "American Honey (2016)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 2,
+        "confidence": 5
+      },
+      {
+        "name": "The Worst Person in the World",
+        "display_name": "The Worst Person in the World (2021)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 3,
+        "confidence": 5
+      },
+      {
+        "name": "Frances Ha",
+        "display_name": "Frances Ha (2012)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 4,
+        "confidence": 5
+      },
+      {
+        "name": "Lost in Translation",
+        "display_name": "Lost in Translation (2003)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 5,
+        "confidence": 5
+      },
+      {
+        "name": "Punch-Drunk Love",
+        "display_name": "Punch-Drunk Love (2002)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 6,
+        "confidence": 5
+      },
+      {
+        "name": "Moonlight",
+        "display_name": "Moonlight (2016)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 7,
+        "confidence": 5
+      },
+      {
+        "name": "Her",
+        "display_name": "Her (2013)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 8,
+        "confidence": 5
+      },
+      {
+        "name": "Chungking Express",
+        "display_name": "Chungking Express (1994)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 9,
+        "confidence": 5
+      },
+      {
+        "name": "Kiki's Delivery Service",
+        "display_name": "Kiki's Delivery Service (1989)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 10,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "These nine films are highly recommended for individuals navigating the uncertainty of their 20s.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "American Honey",
+          "details": "Directed by Andrea Arnold, 2016",
+          "slide_number": 2
+        },
+        {
+          "name": "The Worst Person in the World",
+          "details": "Directed by Joachim Trier, 2021",
+          "slide_number": 3
+        },
+        {
+          "name": "Frances Ha",
+          "details": "Directed by Noah Baumbach, 2012",
+          "slide_number": 4
+        },
+        {
+          "name": "Lost in Translation",
+          "details": "Directed by Sofia Coppola, 2003",
+          "slide_number": 5
+        },
+        {
+          "name": "Punch-Drunk Love",
+          "details": "Directed by Paul Thomas Anderson, 2002",
+          "slide_number": 6
+        },
+        {
+          "name": "Moonlight",
+          "details": "Directed by Barry Jenkins, 2016",
+          "slide_number": 7
+        },
+        {
+          "name": "Her",
+          "details": "Directed by Spike Jonze, 2013",
+          "slide_number": 8
+        },
+        {
+          "name": "Chungking Express",
+          "details": "Directed by Wong Kar-wai, 1994",
+          "slide_number": 9
+        },
+        {
+          "name": "Kiki's Delivery Service",
+          "details": "Directed by Hayao Miyazaki, 1989",
+          "slide_number": 10
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Les Fleurs \u2014 Minnie Riperton",
+      "metadata_song": "Les Fleurs \u2014 Minnie Riperton",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "All movie titles, directors, and years were clearly visible and transcribed."
+    },
+    "presentation_style": {
+      "primary_format": "recommendation_list",
+      "visual_style": "minimal"
+    },
+    "visual_mood": "Reflective, melancholic, and cinematic.",
+    "topic_hints": ["Film recommendations", "Coming of age", "Letterboxd"],
+    "affect_hints": ["Pensive", "Relatable", "Comforting"],
+    "genre_hints": ["Movie-tok", "Cinephile content"]
+  },
+  "metrics": {
+    "input_tokens": 12087,
+    "output_tokens": 3746,
+    "total_tokens": 15833,
+    "cost_usd": 0.004061,
+    "latency_ms": 22831,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 10
+  }
+}

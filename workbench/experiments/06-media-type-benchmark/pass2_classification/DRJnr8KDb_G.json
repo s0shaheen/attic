@@ -1,0 +1,65 @@
+{
+  "item_id": "DRJnr8KDb_G",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:46.649067+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "comedy",
+      "secondary": "other",
+      "micro_labels": [
+        "middle school humor",
+        "classroom memories",
+        "7th grade"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["screenshot meme", "facebook post"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 4087,
+    "output_tokens": 317,
+    "total_tokens": 4404,
+    "cost_usd": 0.000803,
+    "latency_ms": 5800,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}

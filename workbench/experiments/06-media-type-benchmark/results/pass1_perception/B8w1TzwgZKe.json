@@ -1,0 +1,192 @@
+{
+  "item_id": "B8w1TzwgZKe",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:37:39.990750+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Creator introduces himself as 'Bill', a whitewashed version of his name Bilal, while wearing a maroon bomber jacket.",
+        "audio_description": "Welcome to Desi Students Association. My name's Bilal, but most people call me Bill.",
+        "text_on_screen": "POV: you talk to a whitewashed brown person",
+        "key_objects": ["maroon bomber jacket"]
+      },
+      {
+        "time_range": "0:05-0:14",
+        "visual_description": "Creator reacts with feigned surprise and mispronounces 'Pakistan' with a heavy Western accent.",
+        "audio_description": "Where are you from? Pakistan? I mean, like, where are you FROM? You're actually from Pakistan? You say it funny. Pock-is-tan. It's like Pokemon.",
+        "text_on_screen": "POV: you talk to a whitewashed brown person",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:14-0:18",
+        "visual_description": "Creator mispronounces the city 'Lahore' and laughs at the name.",
+        "audio_description": "What city you from? La-hore? I always thought that name was jokes.",
+        "text_on_screen": "POV: you talk to a whitewashed brown person",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:18-0:24",
+        "visual_description": "Creator claims to be from downtown Toronto but whispers that he is actually from Brampton.",
+        "audio_description": "Where am I from? I'm actually from Toronto. Downtown apartment. I'm actually from Brampton, bro. Keep that on the down low, okay?",
+        "text_on_screen": "POV: you talk to a whitewashed brown person",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:24-0:36",
+        "visual_description": "Creator describes his childhood visit to Pakistan negatively and confuses the Urdu word 'Beta' with 'Beta male'.",
+        "audio_description": "When was the last time I went to Pakistan? Probably when I was like eight. It was a shithole, right? Where can't you drink tap water, bro? Shithole. All the adults kept calling me beta. I'm definitely an alpha.",
+        "text_on_screen": "POV: you talk to a whitewashed brown person",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:36-0:48",
+        "visual_description": "Creator speaks very basic, heavily accented Urdu while claiming to be a professional.",
+        "audio_description": "So can you speak Urdu? I try not to speak Urdu. It's kind of embarrassing. I can understand it. I can speak it if I wanted to. Check this out. Mera naam Bill hai. Tumhara kya haal hai? Professional.",
+        "text_on_screen": "POV: you talk to a whitewashed brown person",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:48-1:00",
+        "visual_description": "Creator ponders moving back to Pakistan for attention from women and compares baseball to cricket.",
+        "audio_description": "Sometimes I actually think of moving back to Pakistan. I bet the ladies would love me, bro. What do you mean I'm uncultured? My favorite sport is baseball. That's practically just like cricket.",
+        "text_on_screen": "POV: you talk to a whitewashed brown person",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This satirical POV skit features a creator playing the character of a 'whitewashed' South Asian man named Bilal, who prefers to go by 'Bill'. He displays various stereotypical behaviors associated with the trope, such as mispronouncing his home country and cities, claiming to be from downtown Toronto while hiding his Brampton roots, and speaking broken Urdu with a thick Western accent. The video mocks the disconnect some diaspora youth have with their heritage, highlighted by his confusion of the Urdu term 'Beta' (son) with the Western concept of a 'beta male'.",
+    "people": [
+      {
+        "description": "South Asian male with styled dark hair, wearing a white t-shirt and a maroon bomber jacket. He plays a satirical character.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Ansar (@__ansar__a)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Pakistan",
+        "display_name": "Pakistan",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Toronto",
+        "display_name": "Toronto, Canada",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Brampton",
+        "display_name": "Brampton, Ontario",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": "City in the GTA with a high South Asian population",
+        "confidence": 5
+      },
+      {
+        "name": "Lahore",
+        "display_name": "Lahore, Pakistan",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Urdu",
+        "display_name": "Urdu Language",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Pokemon",
+        "display_name": "Pok\u00e9mon",
+        "type": "game",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Baseball",
+        "display_name": "Baseball",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Cricket",
+        "display_name": "Cricket",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video satirizes the 'whitewashed' South Asian diaspora experience, specifically highlighting the performative distancing from cultural roots and the Greater Toronto Area (GTA) social dynamics.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Unknown Lo-fi Instrumental Beat",
+      "metadata_song": "original sound - desiproblems",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "The background music is a generic lo-fi track often used in skits. The creator's handle on the end screen is @__ansar__a, while the metadata says @desiproblems."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "selfie",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Humorous and satirical with a cringey, intentional awkwardness.",
+    "topic_hints": [
+      "South Asian Diaspora",
+      "Cultural Identity",
+      "Canadian Desi Culture"
+    ],
+    "affect_hints": ["amused", "second-hand embarrassment", "relatable"],
+    "genre_hints": ["POV", "Comedy Skit"]
+  },
+  "metrics": {
+    "input_tokens": 6813,
+    "output_tokens": 2075,
+    "total_tokens": 8888,
+    "cost_usd": 0.002267,
+    "latency_ms": 22144,
+    "upload_ms": 5508
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

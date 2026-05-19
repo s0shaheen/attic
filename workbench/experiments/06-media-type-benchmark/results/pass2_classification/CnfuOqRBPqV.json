@@ -1,0 +1,72 @@
+{
+  "item_id": "CnfuOqRBPqV",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:51.342565+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "art",
+      "secondary": "comedy",
+      "micro_labels": [
+        "Spider-Man",
+        "ASL",
+        "David Choe",
+        "Marvel Comics",
+        "Sign Language",
+        "Watercolor Painting"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "storytime",
+      "micro_labels": ["anecdote", "art showcase"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      },
+      {
+        "label": "wholesome",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["voiceover", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 1.0
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 8631,
+    "output_tokens": 356,
+    "total_tokens": 8987,
+    "cost_usd": 0.001508,
+    "latency_ms": 8091,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 5
+  }
+}

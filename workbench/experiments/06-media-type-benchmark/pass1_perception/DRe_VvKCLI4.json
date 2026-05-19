@@ -1,0 +1,134 @@
+{
+  "item_id": "DRe_VvKCLI4",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:39:46.981595+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:09",
+        "visual_description": "An Asian man in a tan shirt is seen in a store, arguing with an off-camera individual. The camera is positioned at a low angle, looking up at him.",
+        "audio_description": "The man tells the woman to pay him before talking to him that way. The woman responds, 'Go back to your damn country if you want to act like that.'",
+        "text_on_screen": "Asian bro had enough of the EBT hood rat\nPAY ME\nAND THEN YOU\nUS ALL KIND\nI CAN TALK\nBACK TO YOUR\nDAMN COUNTRY IF",
+        "key_objects": ["shelves", "television monitor", "store interior"]
+      },
+      {
+        "time_range": "0:09-0:20",
+        "visual_description": "The man reacts with shock and anger to the racist comment, pointing his finger toward the off-camera woman.",
+        "audio_description": "The man repeats her comment in disbelief: 'You just told me to go back to my country? Bitch, I saw your fucking EBT card in there. Guess who paid for that motherfucking shit? I did!'",
+        "text_on_screen": "BACK TO THE\nYOU JUST TOLD\nCOUNTRY\nSAY THAT BITCH\nBITCH I SAW\nEBT CARD\nIN THERE\nGUESS WHO\nFOR THAT MOTHERFUCKING\nI DID",
+        "key_objects": ["EBT card (referenced)"]
+      },
+      {
+        "time_range": "0:20-0:30",
+        "visual_description": "The man puts his hands on his head in frustration as the woman continues to shout back at him.",
+        "audio_description": "The woman says, 'Oh well bitch... I like to feed my kids, I'm fat.' The man yells, 'Oh my fucking god bro, you got me fucked up! I pay taxes for your fucking food!'",
+        "text_on_screen": "OH WELL\nBITCH HOW DO\nKIDS\nI'M FAT\nOH MY FUCKING\nGOD BRO\nFUCKED UP BRO\nI PAY TAXES\nFOR YOUR FUCKING\nFOOD",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:30-0:49",
+        "visual_description": "The man continues his verbal tirade, gesturing aggressively while the woman continues to talk over him.",
+        "audio_description": "The man calls her a 'lazy big ass bitch' and compares her appearance to an 'upside down bowling pin' and a 'suburban.' He ends by calling her a 'potato bill looking ass.'",
+        "text_on_screen": "YEAH BITCHES\nMY KIDS LIKE\nI PAY TAXES\nFOOD\nBACK TO MY\nCOUNTRY\nTHAT'S WHAT\nLAZY\nBIG ASS BITCH\nLOOK LIKE A FUCKING\nUPSIDE DOWN BOWLING\nPIN LOOKING ASS\nMY FUCKING SUBURBAN\nOKAY FUCKING POTATO",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video captures a heated verbal confrontation in a retail store between an Asian man and an off-camera woman. After the woman tells the man to 'go back to your country,' he retaliates by pointing out her use of an EBT card and claiming his taxes fund her lifestyle. The man becomes increasingly frustrated, eventually resorting to a series of creative insults regarding the woman's weight and physical appearance. The video highlights a clash involving racial tension and socioeconomic status.",
+    "people": [
+      {
+        "description": "Asian man in a tan t-shirt, appearing very angry and confrontational.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@baconkorean"
+      },
+      {
+        "description": "Off-camera woman who makes a racist remark and defends her use of government assistance.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "@baconkorean",
+        "display_name": "Bacon Korean",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata", "visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "EBT",
+        "display_name": "Electronic Benefit Transfer (EBT)",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Government assistance program for food",
+        "confidence": 5
+      },
+      {
+        "name": "Go back to your country",
+        "display_name": "Xenophobic Trope",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": "Common racist insult directed at immigrants or people of color",
+        "confidence": 5
+      },
+      {
+        "name": "Potato",
+        "display_name": "Potato (Insult)",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay", "metadata"],
+        "specifications": "Used as a derogatory term for someone's appearance",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The creator uses his status as a taxpayer to counter a racist 'go back to your country' insult directed at him.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The dialogue is very clear and the context of the argument is explicit."
+    },
+    "presentation_style": {
+      "primary_format": "pov",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Aggressive, tense, and confrontational.",
+    "topic_hints": ["racism", "social class", "public assistance"],
+    "affect_hints": ["angry", "defiant", "shocked"],
+    "genre_hints": ["public confrontation", "viral argument"]
+  },
+  "metrics": {
+    "input_tokens": 5828,
+    "output_tokens": 1585,
+    "total_tokens": 7413,
+    "cost_usd": 0.001825,
+    "latency_ms": 31449,
+    "upload_ms": 5240
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

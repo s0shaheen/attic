@@ -1,0 +1,290 @@
+{
+  "item_id": "CNF3fXLHPkQ",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:36:54.074966+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "A profile portrait of Nipsey Hussle against a bright blue textured wall. He is wearing a brown satin-finish suit jacket and has visible neck tattoos.",
+        "text_detected": "Dior, time is",
+        "primary_content": "Portrait of Nipsey Hussle",
+        "entities": [
+          {
+            "name": "Nipsey Hussle",
+            "type": "person",
+            "specifications": "Rapper, entrepreneur"
+          },
+          {
+            "name": "Dior",
+            "type": "brand",
+            "specifications": "Tattoo on neck"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "Nipsey Hussle speaking into a microphone during an interview or panel. He is wearing a black hoodie and a black baseball cap worn backwards.",
+        "text_detected": "",
+        "primary_content": "Interview footage of Nipsey Hussle",
+        "entities": [
+          {
+            "name": "Nipsey Hussle",
+            "type": "person",
+            "specifications": "Wearing black hoodie and cap"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "Nipsey Hussle hugging NBA player Russell Westbrook on a basketball court. Westbrook is wearing a white All-Star jersey.",
+        "text_detected": "WESTBROOK, 0",
+        "primary_content": "Nipsey Hussle with Russell Westbrook",
+        "entities": [
+          {
+            "name": "Nipsey Hussle",
+            "type": "person",
+            "specifications": "Wearing blue and white tracksuit"
+          },
+          {
+            "name": "Russell Westbrook",
+            "type": "person",
+            "specifications": "NBA Player, wearing #0 jersey"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "Nipsey Hussle standing on a colorful painted basketball court holding a custom basketball. He is wearing a white hoodie and white sweatpants.",
+        "text_detected": "ESSENTIALS, Puma, Trew Visuals",
+        "primary_content": "Nipsey Hussle on a community basketball court",
+        "entities": [
+          {
+            "name": "Nipsey Hussle",
+            "type": "person",
+            "specifications": "Wearing Fear of God Essentials"
+          },
+          {
+            "name": "Fear of God Essentials",
+            "type": "brand",
+            "specifications": "White sweatpants"
+          },
+          {
+            "name": "Puma",
+            "type": "brand",
+            "specifications": "Logo on basketball"
+          }
+        ]
+      },
+      {
+        "image_number": 5,
+        "description": "Nipsey Hussle and A$AP Rocky standing together shirtless at an outdoor event. Both are wearing Calvin Klein underwear visible above their waistbands.",
+        "text_detected": "Calvin Klein, Supreme",
+        "primary_content": "Nipsey Hussle with A$AP Rocky",
+        "entities": [
+          {
+            "name": "Nipsey Hussle",
+            "type": "person",
+            "specifications": "Holding red Supreme pouch"
+          },
+          {
+            "name": "A$AP Rocky",
+            "type": "person",
+            "specifications": "Rapper"
+          },
+          {
+            "name": "Calvin Klein",
+            "type": "brand",
+            "specifications": "Underwear"
+          },
+          {
+            "name": "Supreme",
+            "type": "brand",
+            "specifications": "Red utility pouch"
+          }
+        ]
+      },
+      {
+        "image_number": 6,
+        "description": "A low-resolution video still of Nipsey Hussle wearing a black turtleneck and a silver chain.",
+        "text_detected": "",
+        "primary_content": "Candid video still of Nipsey Hussle",
+        "entities": [
+          {
+            "name": "Nipsey Hussle",
+            "type": "person",
+            "specifications": "Wearing black turtleneck"
+          }
+        ]
+      },
+      {
+        "image_number": 7,
+        "description": "A large mural of Nipsey Hussle's face on a blue brick wall, accompanied by a painted reproduction of one of his tweets.",
+        "text_detected": "THA GREAT @NipseyHussle, The highest human act is to inspire..., 5:12 PM - May 1, 2016 - Twitter for iPhone",
+        "primary_content": "Nipsey Hussle memorial mural",
+        "entities": [
+          {
+            "name": "Nipsey Hussle",
+            "type": "person",
+            "specifications": "Mural subject"
+          },
+          {
+            "name": "Twitter",
+            "type": "app_or_tool",
+            "specifications": "Social media platform referenced in mural"
+          }
+        ]
+      },
+      {
+        "image_number": 8,
+        "description": "A younger photo of Nipsey Hussle with long braids, wearing a white tank top and a thick silver chain.",
+        "text_detected": "",
+        "primary_content": "Early career photo of Nipsey Hussle",
+        "entities": [
+          {
+            "name": "Nipsey Hussle",
+            "type": "person",
+            "specifications": "Younger appearance"
+          }
+        ]
+      },
+      {
+        "image_number": 9,
+        "description": "A formal portrait of Nipsey Hussle wearing a black tuxedo and bow tie against a brown curtain backdrop.",
+        "text_detected": "",
+        "primary_content": "Formal portrait of Nipsey Hussle",
+        "entities": [
+          {
+            "name": "Nipsey Hussle",
+            "type": "person",
+            "specifications": "Wearing formal tuxedo"
+          }
+        ]
+      },
+      {
+        "image_number": 10,
+        "description": "Nipsey Hussle standing in front of his store, The Marathon Clothing, in a strip mall. A black Mercedes-Benz is parked behind him.",
+        "text_detected": "Crenshaw, THE MARATHON CLOTHING, THE MARATHON, T-Mobile, boost mobile, CULT LEADER",
+        "primary_content": "Nipsey Hussle at The Marathon Clothing store",
+        "entities": [
+          {
+            "name": "Nipsey Hussle",
+            "type": "person",
+            "specifications": "Wearing 'CULT LEADER' sweatshirt"
+          },
+          {
+            "name": "The Marathon Clothing",
+            "type": "brand",
+            "specifications": "Flagship store location"
+          },
+          {
+            "name": "T-Mobile",
+            "type": "brand",
+            "specifications": "Adjacent storefront"
+          },
+          {
+            "name": "Boost Mobile",
+            "type": "brand",
+            "specifications": "Adjacent storefront"
+          },
+          {
+            "name": "Mercedes-Benz",
+            "type": "brand",
+            "specifications": "S-Class sedan"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post is a commemorative tribute to the late rapper and entrepreneur Nipsey Hussle, shared on the second anniversary of his passing. The slideshow features a collection of images spanning his career, including formal portraits, candid moments with other celebrities like A$AP Rocky and Russell Westbrook, and shots highlighting his business ventures and community impact. The user is likely saving this as a memorial or for inspiration, given Nipsey Hussle's reputation for community building and 'the marathon' philosophy.",
+    "carousel_type": "photo_dump",
+    "narrative_thread": "The images tell a story of a multi-faceted individual who moved between the worlds of street culture, high fashion, professional sports, and community entrepreneurship, ultimately leaving a lasting legacy represented by the final mural and store images.",
+    "entities": [
+      {
+        "name": "Nipsey Hussle",
+        "display_name": "Nipsey Hussle",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "The Marathon Clothing",
+        "display_name": "The Marathon Clothing",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 10,
+        "confidence": 5
+      },
+      {
+        "name": "Russell Westbrook",
+        "display_name": "Russell Westbrook",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "slide_number": 3,
+        "confidence": 5
+      },
+      {
+        "name": "A$AP Rocky",
+        "display_name": "A$AP Rocky",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "slide_number": 5,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Nipsey Hussle's legacy is defined by his commitment to his community and his 'Marathon' mindset.",
+        "source": "implied",
+        "confidence": 5
+      },
+      {
+        "statement": "The highest human act, according to Nipsey Hussle, is to inspire others.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "null",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "All major figures and brands were clearly identifiable through visual cues and text overlays."
+    },
+    "presentation_style": {
+      "primary_format": "photo_dump",
+      "visual_style": "aesthetic"
+    },
+    "visual_mood": "Reflective, respectful, and celebratory of a life's work.",
+    "topic_hints": ["Hip-Hop Culture", "Community Leadership", "Memorial"],
+    "affect_hints": ["Inspired", "Somber", "Respectful"],
+    "genre_hints": ["Tribute", "Celebrity Culture"]
+  },
+  "metrics": {
+    "input_tokens": 12155,
+    "output_tokens": 2540,
+    "total_tokens": 14695,
+    "cost_usd": 0.003347,
+    "latency_ms": 22216,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 10
+  }
+}

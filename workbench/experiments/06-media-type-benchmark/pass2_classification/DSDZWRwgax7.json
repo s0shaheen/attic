@@ -1,0 +1,66 @@
+{
+  "item_id": "DSDZWRwgax7",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:47.597612+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "relationships",
+      "secondary": "finance",
+      "micro_labels": [
+        "dating anxiety",
+        "personal finance",
+        "restaurant etiquette",
+        "money management"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "pov",
+      "micro_labels": ["relatable comedy"],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "cringe",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["text_overlay", "raw_footage"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 4318,
+    "output_tokens": 315,
+    "total_tokens": 4633,
+    "cost_usd": 0.000837,
+    "latency_ms": 6691,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}

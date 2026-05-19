@@ -1,0 +1,177 @@
+{
+  "item_id": "DSXvReFkfy0",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:46.609195+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "Creator speaks directly to the camera, introducing the concept of AI identifying the 'mathematical essence' of a slur.",
+        "audio_description": "Fun fact: it's theoretically possible to use AI to identify the mathematical essence of a slur.",
+        "text_on_screen": "it's theoretically possible to use AI to identify the mathematical essence of a slur",
+        "key_objects": ["glasses"]
+      },
+      {
+        "time_range": "0:04-0:09",
+        "visual_description": "A graph titled 'Semantic Feature Space' is overlaid, showing words like 'grandfather', 'man', 'boy', and 'infant' plotted on axes for Age and Gender.",
+        "audio_description": "You see, the way large language models represent information is through a bunch of coordinates, kind of like in this graph here but with way more dimensions.",
+        "text_on_screen": "Semantic Feature Space\nAge\nGender\ngrandfather\noctogenarian\ngrandparent\ngrandmother\nman\nadult\nwoman\nteenager\nboy\nchild\ninfant",
+        "key_objects": ["graph"]
+      },
+      {
+        "time_range": "0:09-0:20",
+        "visual_description": "A vector diagram shows the relationship between 'King', 'Queen', 'Man', and 'Woman' in a coordinate system.",
+        "audio_description": "And each dimension corresponds to some fundamental property of a word. Like the noun for 'king' exists about the same distance from the word 'queen' as the word 'man' does from 'woman,' because there's a dimension representing gender that helps provide the coordinates for these words.",
+        "text_on_screen": "Queen = [0.3, 0.9]\nKing = [0.5, 0.7]\nWoman = [0.3, 0.2]\nMan = [0.5, 0.1]\n*I'm simplifying a lot here",
+        "key_objects": ["vector diagram"]
+      },
+      {
+        "time_range": "0:20-0:31",
+        "visual_description": "A citation for a 2016 research paper on debiasing word embeddings is shown, followed by mathematical formulas for isolating the 'eigenslur'.",
+        "audio_description": "But that raises the question of if there's also a dimension representing offensiveness. Theoretically, if you subtract 'Black' from the n-word or 'Jewish' from the k-word, you should be able to find a pure 'eigenslur' that represents the derogatory direction of a word.",
+        "text_on_screen": "Cite\nBolukbasi, Tolga, et al. \"Man is to computer programmer as woman is to homemaker: debiasing word embeddings.\" Advances in neural information processing systems 29 (2016).\nv1 = (n-word) - \"Black\"\nv2 = (k-word) - \"Jewish\"\nfirst principal component of {v1, v2...} = \"eigenslur\"",
+        "key_objects": ["academic citation"]
+      },
+      {
+        "time_range": "0:31-0:38",
+        "visual_description": "A heatmap of 'Cosine Similarity' between various slurs and demographic groups is displayed, sourced from a social media post by Quantian.",
+        "audio_description": "And it does seem like we're able to find a correlation when we try this with a bunch of slurs, implying that there is an axis of toxicity that helps define why a word is offensive.",
+        "text_on_screen": "Quantian @quantian1\nThe eigenslur is indeed real, tho the correlation could be higher\nCosine Similarity\nthis graph uses the older GloVe model",
+        "key_objects": ["heatmap"]
+      },
+      {
+        "time_range": "0:38-1:00",
+        "visual_description": "Creator gestures with a pen, explaining the complexity of modern LLMs like ChatGPT and the difficulty of removing bias.",
+        "audio_description": "Of course, the eigenslur can never be spoken aloud because it's entirely a mathematical idea... In reality, there are multiple invisible dimensions which make up the bias of a word and the LLMs you interact with, like ChatGPT, are contextual... this actually makes it harder to fully remove bias because we can't theoretically extract what makes a word evil outside of this theoretical setting.",
+        "text_on_screen": "Of course, the eigenslur can never be spoken aloud, because it's entirely a mathematical idea, and also it incredibly simplifies what's really happening with large language models. In reality, there are multiple invisible dimensions which make up the bias of a word and the LLMs you interact with, like ChatGPT, are contextual, meaning that the coordinates will also change depending on the situation. However, this actually makes it harder to fully remove bias because we can't theoretically extract what makes a word evil outside of this theoretical setting.",
+        "key_objects": ["pen"]
+      }
+    ],
+    "overall_summary": "In this video, @etymologynerd explains the concept of the 'eigenslur,' a theoretical mathematical construct used to identify the essence of derogatory language in AI models. He describes how Large Language Models (LLMs) represent words as vectors in multi-dimensional space, where specific dimensions can represent traits like gender or age. By using vector subtraction on slurs (e.g., subtracting the neutral identity from the slur), researchers can isolate a 'derogatory direction.' However, the creator concludes by noting that modern models like ChatGPT are highly contextual, making it difficult to perfectly isolate or remove such biases in practice.",
+    "people": [
+      {
+        "description": "A man with dark hair, a beard, and glasses wearing a green sweater. He is an educational creator specializing in linguistics and etymology.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@etymologynerd"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Tolga Bolukbasi",
+        "display_name": "Tolga Bolukbasi",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "specifications": "Lead author of 'Man is to computer programmer as woman is to homemaker'",
+        "confidence": 5
+      },
+      {
+        "name": "ChatGPT",
+        "display_name": "ChatGPT",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "OpenAI Large Language Model",
+        "confidence": 5
+      },
+      {
+        "name": "GloVe",
+        "display_name": "GloVe (Global Vectors for Word Representation)",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "specifications": "Unsupervised learning algorithm for obtaining vector representations for words",
+        "confidence": 5
+      },
+      {
+        "name": "Eigenslur",
+        "display_name": "Eigenslur",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Mathematical concept representing the derogatory component of a word vector",
+        "confidence": 5
+      },
+      {
+        "name": "NIPS 2016",
+        "display_name": "NIPS 2016 Conference",
+        "type": "event",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "specifications": "Neural Information Processing Systems conference",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Large Language Models represent words as coordinates in a high-dimensional 'Semantic Feature Space'.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The 'eigenslur' is a mathematical vector that represents the derogatory direction or 'axis of toxicity' in word embeddings.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Removing bias from modern AI is difficult because word meanings and offensiveness are contextual and multi-dimensional.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Word Vector Subtraction",
+          "details": "Subtracting a neutral identity vector from a slur vector to isolate the derogatory component (e.g., Slur - Identity = Eigenslur)."
+        },
+        {
+          "name": "Principal Component Analysis",
+          "details": "Using the first principal component of multiple derogatory vectors to define the 'eigenslur' direction."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Unknown Lo-Fi Hip Hop Beat",
+      "metadata_song": "original sound - etymologynerd",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The citation and mathematical concepts are transcribed verbatim from the video overlays."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Educational, analytical, and intellectual.",
+    "topic_hints": [
+      "Artificial Intelligence",
+      "Linguistics",
+      "Data Science Ethics"
+    ],
+    "affect_hints": ["Intrigued", "Informed", "Analytical"],
+    "genre_hints": ["EduTok", "Science Communication"]
+  },
+  "metrics": {
+    "input_tokens": 6808,
+    "output_tokens": 2425,
+    "total_tokens": 9233,
+    "cost_usd": 0.002476,
+    "latency_ms": 29716,
+    "upload_ms": 6182
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

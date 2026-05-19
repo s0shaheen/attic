@@ -1,0 +1,193 @@
+{
+  "item_id": "DTHacbSD75l",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:39:47.070037+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:14",
+        "visual_description": "The creator, playing two different characters, is shown tied up in yellow rope and standing in patches of wet cement on a road. One character is panicking while the other remains calm.",
+        "audio_description": "The panicking character screams about not being able to handle the situation. The calm character asks why he's upset.",
+        "text_on_screen": "When everything's going wrong:\nI can't handle this!\nWhat are you talking about?\nMy whole life's falling apart-\nthere's too many problems right now.\nReally? Why?\nI'm stuck in cement, this car's gonna rip me in half and I'm losing everything.\nAnd?\nAnd what?\nI think you'll be okay, man.",
+        "key_objects": [
+          "Yellow rope",
+          "Wet cement",
+          "Silver sedan",
+          "Multitool"
+        ]
+      },
+      {
+        "time_range": "0:14-0:29",
+        "visual_description": "The characters continue their dialogue; the panicking one is hunched over while the calm one stands upright, holding a multitool.",
+        "audio_description": "The calm character suggests dealing with the problems. The panicking character explains the feeling of being overwhelmed by too many things happening at once.",
+        "text_on_screen": "What are you talking about?\nI mean, can you not just deal with it?\nExcuse me?\nI don't even know what to deal with.\nWhy not?\nBecause there's too much happening. It's so overwhelming.\nWhat's overwhelming about this?\nEverything that could possibly be going wrong is going wrong right now. How is that not overwhelming?\nI'm not overwhelmed.\nWhy not?\nBecause I'm dealing with it.\nOkay, but you're not trying to get out of the cement- you're gonna get stuck.",
+        "key_objects": ["Yellow rope", "Wet cement", "Multitool"]
+      },
+      {
+        "time_range": "0:29-0:46",
+        "visual_description": "The calm character uses the multitool to start cutting his ropes while explaining the logic of prioritization.",
+        "audio_description": "The calm character asks which problem is more dangerous: the car or the cement. The panicking character admits the car is the primary threat.",
+        "text_on_screen": "Okay, well, let me ask you, what do you think is more dangerous right now? Getting ripped in half by a car? Or getting stuck in cement?\nI guess getting ripped in half.\nThen- why would you not cut the rope first and then worry about the cement?\nBecause we don't know how long it takes to harden, and the car might turn around and then come back at us.\nAnd if that happens, we can figure it out then. But it won't matter until we get out of the ropes.",
+        "key_objects": [
+          "Yellow rope",
+          "Wet cement",
+          "Silver sedan",
+          "Multitool"
+        ]
+      },
+      {
+        "time_range": "0:46-1:01",
+        "visual_description": "The calm character successfully cuts his rope and steps away. The panicking character tries to cut his but fails because he is distracted by the cement.",
+        "audio_description": "The calm character demonstrates how easy it is to cut the rope when focused. He points out that the other character is failing because he's trying to do too much.",
+        "text_on_screen": "How did you do that?\nWatch me, I just cut the rope with the knife.\nBut mine's not cutting!\nWell, yeah, you keep covering it in cement when you try to get out.\nYeah, because I don't want to get stuck.\nOh, okay. Well, this is why you're overwhelmed, dude.\nFinally. You get it.\nNo, it's not because of the amount of problems-",
+        "key_objects": ["Yellow rope", "Wet cement", "Multitool"]
+      },
+      {
+        "time_range": "1:01-1:32",
+        "visual_description": "The panicking character finally focuses, cuts his rope, and they both prepare to address the cement problem.",
+        "audio_description": "The calm character explains that overwhelm comes from a lack of prioritization. He advises focusing on the one problem causing the most pain first.",
+        "text_on_screen": "it's because you're trying to solve them all.\nHow can you say that?\nWell, because there will always be an unlimited amount of problems you could solve. So overwhelm doesn't come from having too many problems. It comes from not prioritizing those problems.\nOkay fine. How do I prioritize my problems?\nWell, you really only have enough capacity to solve one at a time. So I would figure out which one is causing you the most pain and then focus all of your attention on it.\nNow what?\nWell, now we gotta focus on getting out of the cement and then getting out of the road. But remember, you gotta take it one step at a time.",
+        "key_objects": ["Yellow rope", "Wet cement"]
+      }
+    ],
+    "overall_summary": "In this metaphorical skit, creator Reid Olson plays two characters stuck in a life-threatening situation: tied to a car and standing in wet cement. One character is paralyzed by overwhelm, trying to solve every problem at once, while the other remains calm and logical. The video serves as a lesson on mental health and productivity, arguing that overwhelm is caused by a lack of prioritization rather than the number of problems faced. The main takeaway is to identify the most immediate or painful problem and focus on solving it entirely before moving to the next task.",
+    "people": [
+      {
+        "description": "Young man with wavy brown hair and a mustache, playing two roles: one in a maroon shirt and jeans (panicking), and one in a light blue button-down (calm).",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Reid Olson"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Reid Olson",
+        "display_name": "Reid Olson (@_reidolson)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Home Depot",
+        "display_name": "The Home Depot",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Mentioned in caption as the source of the rope and cement",
+        "confidence": 5
+      },
+      {
+        "name": "Silver Sedan",
+        "display_name": "Silver Sedan",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Older model silver sedan used as a prop",
+        "confidence": 4
+      },
+      {
+        "name": "Yellow Polypropylene Rope",
+        "display_name": "Yellow Polypropylene Rope",
+        "type": "product",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": "High-visibility yellow rope used to tie the characters",
+        "confidence": 5
+      },
+      {
+        "name": "Quikrete",
+        "display_name": "Concrete Mix",
+        "type": "product",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": "Wet cement/concrete mix used as a prop",
+        "confidence": 4
+      },
+      {
+        "name": "Multitool",
+        "display_name": "Folding Multitool/Knife",
+        "type": "product",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "Pocket knife or multitool used to cut the rope",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Overwhelm is caused by a lack of prioritization, not the volume of problems.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Humans only have the capacity to solve one problem effectively at a time.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "To reduce stress, identify the problem causing the most pain and focus all attention on it first.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Identify the Primary Threat",
+          "details": "Determine which problem is the most dangerous or causing the most immediate pain."
+        },
+        {
+          "name": "Isolate the Problem",
+          "details": "Ignore secondary issues (like the 'cement') until the primary issue (the 'rope') is resolved."
+        },
+        {
+          "name": "Focus Attention",
+          "details": "Apply all available capacity to the prioritized task."
+        },
+        {
+          "name": "Sequential Solving",
+          "details": "Move to the next problem only after the first is handled, taking it one step at a time."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Original Skit Audio \u2014 Reid Olson",
+      "metadata_song": "original sound - Reid Olson",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video is a scripted educational skit. All text and entities are clearly visible or mentioned in the metadata."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "panning",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Tense and high-stakes initially, transitioning into a calm, philosophical, and educational tone.",
+    "topic_hints": ["Mental Health", "Prioritization", "Problem Solving"],
+    "affect_hints": ["Overwhelmed", "Calm", "Focused"],
+    "genre_hints": ["Educational Skit", "Life Advice"]
+  },
+  "metrics": {
+    "input_tokens": 9689,
+    "output_tokens": 2560,
+    "total_tokens": 12249,
+    "cost_usd": 0.002989,
+    "latency_ms": 37025,
+    "upload_ms": 8626
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "item_id": "7394372442073976110",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:12.262726+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "Doctor Doom sitting in a red egg-shaped chair in a high-tech laboratory or throne room. A book titled 'Demonology' sits on a side table.",
+        "text_detected": "DEMONOLOGY BY BOB LAYTON",
+        "primary_content": "Character: Doctor Doom (Victor von Doom)",
+        "entities": [
+          {
+            "name": "Doctor Doom",
+            "type": "person",
+            "specifications": "Classic green cloak and metal mask"
+          },
+          {
+            "name": "Demonology",
+            "type": "book",
+            "specifications": "Written by Bob Layton"
+          },
+          {
+            "name": "Bob Layton",
+            "type": "person",
+            "specifications": "Comic book artist/writer"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "Close-up of Thanos smiling while wearing the Infinity Gauntlet, with light rays emanating from the Infinity Gems.",
+        "text_detected": "",
+        "primary_content": "Character: Thanos with Infinity Gauntlet",
+        "entities": [
+          {
+            "name": "Thanos",
+            "type": "person",
+            "specifications": "Purple skin, gold armor"
+          },
+          {
+            "name": "Infinity Gauntlet",
+            "type": "product",
+            "specifications": "Equipped with all six Infinity Gems"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "Venom crouching on the side of a brick building, showing his tongue and sharp teeth.",
+        "text_detected": "",
+        "primary_content": "Character: Venom (Eddie Brock)",
+        "entities": [
+          {
+            "name": "Venom",
+            "type": "person",
+            "specifications": "Black symbiote suit with white spider emblem"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "Kang the Conqueror sitting in a complex, high-tech command chair surrounded by monitors and machinery.",
+        "text_detected": "",
+        "primary_content": "Character: Kang the Conqueror",
+        "entities": [
+          {
+            "name": "Kang the Conqueror",
+            "type": "person",
+            "specifications": "Purple and green futuristic armor"
+          }
+        ]
+      },
+      {
+        "image_number": 5,
+        "description": "Extreme close-up of Magneto's face, focusing on his intense eyes and purple helmet.",
+        "text_detected": "",
+        "primary_content": "Character: Magneto (Erik Lehnsherr)",
+        "entities": [
+          {
+            "name": "Magneto",
+            "type": "person",
+            "specifications": "Classic purple and red helmet"
+          }
+        ]
+      },
+      {
+        "image_number": 6,
+        "description": "Galactus standing in the vastness of space, towering over planets and asteroids.",
+        "text_detected": "",
+        "primary_content": "Character: Galactus",
+        "entities": [
+          {
+            "name": "Galactus",
+            "type": "person",
+            "specifications": "Devourer of Worlds, purple and blue armor"
+          }
+        ]
+      },
+      {
+        "image_number": 7,
+        "description": "Doctor Octopus holding Spider-Man in the air with his mechanical tentacles in a city setting.",
+        "text_detected": "FOR THIS TIME.. YOU DIE! 19",
+        "primary_content": "Character: Doctor Octopus vs Spider-Man",
+        "entities": [
+          {
+            "name": "Doctor Octopus",
+            "type": "person",
+            "specifications": "Otto Octavius, green suit, four mechanical arms"
+          },
+          {
+            "name": "Spider-Man",
+            "type": "person",
+            "specifications": "Peter Parker, classic red and blue suit"
+          }
+        ]
+      },
+      {
+        "image_number": 8,
+        "description": "Loki punching Thor in a dynamic action panel from a classic comic.",
+        "text_detected": "",
+        "primary_content": "Character: Loki vs Thor",
+        "entities": [
+          {
+            "name": "Loki",
+            "type": "person",
+            "specifications": "God of Mischief, green suit, horned helmet"
+          },
+          {
+            "name": "Thor",
+            "type": "person",
+            "specifications": "God of Thunder, winged helmet, red cape"
+          }
+        ]
+      },
+      {
+        "image_number": 9,
+        "description": "Green Goblin flying on his glider in front of a full moon, threatening Spider-Man.",
+        "text_detected": "THE TIME HAS COME FOR SPIDER-MAN TO FACE HIS INEVITABLE DEATH... AT THE HANDS OF THE SUPREMELY POWERFUL GREEN GOBLIN!",
+        "primary_content": "Character: Green Goblin",
+        "entities": [
+          {
+            "name": "Green Goblin",
+            "type": "person",
+            "specifications": "Norman Osborn, green skin, purple tunic, glider"
+          },
+          {
+            "name": "Spider-Man",
+            "type": "person",
+            "specifications": "Mentioned in text"
+          }
+        ]
+      },
+      {
+        "image_number": 10,
+        "description": "Thanos sitting alone on a set of steps, looking contemplative or defeated, with a 'The End' caption.",
+        "text_detected": "THE END",
+        "primary_content": "Character: Thanos (Post-Infinity Gauntlet)",
+        "entities": [
+          {
+            "name": "Thanos",
+            "type": "person",
+            "specifications": "Wearing simple yellow/green tunic"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This TikTok slideshow is a curated collection of iconic Marvel Comics villain panels, primarily from the Bronze and Silver Ages of comics. It features legendary antagonists like Doctor Doom, Thanos, Kang, and Magneto in visually striking, 'tough' poses. The post serves as an aesthetic appreciation of classic comic book art and the imposing presence of Marvel's most famous villains.",
+    "carousel_type": "photo_dump",
+    "narrative_thread": "The sequence showcases a gallery of Marvel's most powerful and 'cool' villains, concluding with a somber image of Thanos and a 'The End' tag, suggesting a definitive look at comic book villainy.",
+    "entities": [
+      {
+        "name": "Marvel Comics",
+        "display_name": "Marvel Comics",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["metadata", "visual"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "Doctor Doom",
+        "display_name": "Doctor Doom",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "Thanos",
+        "display_name": "Thanos",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 2,
+        "confidence": 5
+      },
+      {
+        "name": "MF DOOM",
+        "display_name": "MF DOOM",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "slide_number": 1,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The creator considers these specific comic panels to be exceptionally 'tough' or aesthetically pleasing.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Doctor Doom",
+          "details": "Sitting in throne",
+          "slide_number": 1
+        },
+        {
+          "name": "Thanos",
+          "details": "Infinity Gauntlet close-up",
+          "slide_number": 2
+        },
+        {
+          "name": "Venom",
+          "details": "Crouching on building",
+          "slide_number": 3
+        },
+        {
+          "name": "Kang the Conqueror",
+          "details": "In command chair",
+          "slide_number": 4
+        },
+        {
+          "name": "Magneto",
+          "details": "Helmet close-up",
+          "slide_number": 5
+        },
+        {
+          "name": "Galactus",
+          "details": "In space",
+          "slide_number": 6
+        },
+        {
+          "name": "Doctor Octopus",
+          "details": "Fighting Spider-Man",
+          "slide_number": 7
+        },
+        {
+          "name": "Loki",
+          "details": "Fighting Thor",
+          "slide_number": 8
+        },
+        {
+          "name": "Green Goblin",
+          "details": "On glider",
+          "slide_number": 9
+        },
+        {
+          "name": "Thanos",
+          "details": "Sitting on steps",
+          "slide_number": 10
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Lavender Buds \u2014 MF DOOM",
+      "metadata_song": "Lavender Buds \u2014 MF DOOM",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "All characters are highly recognizable icons of Marvel Comics."
+    },
+    "presentation_style": {
+      "primary_format": "photo_dump",
+      "visual_style": "aesthetic"
+    },
+    "visual_mood": "Menacing, nostalgic, and powerful.",
+    "topic_hints": ["Marvel Comics", "Comic Book Art", "Supervillains"],
+    "affect_hints": ["Intimidated", "Impressed", "Nostalgic"],
+    "genre_hints": ["ComicTok", "Art Showcase"]
+  },
+  "metrics": {
+    "input_tokens": 12035,
+    "output_tokens": 2541,
+    "total_tokens": 14576,
+    "cost_usd": 0.00333,
+    "latency_ms": 19976,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 10
+  }
+}

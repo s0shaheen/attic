@@ -1,0 +1,146 @@
+{
+  "item_id": "BpP5gMvl0uW",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:38:49.274361+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Pioladitingancia enters a hallway holding a black hoodie with red rose embroidery, approaching Fatboy SSE.",
+        "audio_description": "Pioladitingancia: 'Yo Fatboy, I like this sweater. Who make it?'",
+        "text_on_screen": "",
+        "key_objects": ["black hoodie with red roses", "Chicago Bulls hat"]
+      },
+      {
+        "time_range": "0:05-0:15",
+        "visual_description": "Fatboy SSE tries to take the hoodie back, explaining it won't fit Pioladitingancia because he is too small.",
+        "audio_description": "Fatboy SSE: 'It can't fit you, you're a f***ing baby. Give me my sweater, man.'",
+        "text_on_screen": "",
+        "key_objects": ["black hoodie"]
+      },
+      {
+        "time_range": "0:15-0:30",
+        "visual_description": "Fatboy SSE repeatedly tells Pioladitingancia the brand is Fashion Nova while Pioladitingancia mispronounces it.",
+        "audio_description": "Fatboy SSE: 'Fashion Nova. Fashion Nova. Calm down. Fashion Nova.' Pioladitingancia: 'Catch Nova? Catch Nova?'",
+        "text_on_screen": "",
+        "key_objects": ["Fashion Nova Men apparel"]
+      },
+      {
+        "time_range": "0:30-0:41",
+        "visual_description": "Fatboy SSE walks away into a room to escape the persistent questioning as Pioladitingancia follows him shouting.",
+        "audio_description": "Pioladitingancia: 'Okay bro, I like it! Catch Nova!' Fatboy SSE: 'Back up! I gotta go to the bathroom!'",
+        "text_on_screen": "",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "In this comedic skit, creator Pioladitingancia discovers a stylish black hoodie with rose embroidery belonging to Fatboy SSE. Upon asking who made it, Fatboy SSE reveals it is from Fashion Nova, a brand Pioladitingancia expresses surprise at for having men's clothing. The humor stems from Pioladitingancia's high-energy reaction and his persistent mispronunciation of 'Fashion Nova' as 'Catch Nova' while chasing Fatboy SSE through the house.",
+    "people": [
+      {
+        "description": "Small-statured man wearing a grey sweatshirt and a Chicago Bulls cap, acting very energetic and curious.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Pioladitingancia"
+      },
+      {
+        "description": "Large man wearing a black long-sleeve shirt with gold sleeve graphics and a black durag.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Fatboy SSE"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Fashion Nova",
+        "display_name": "Fashion Nova",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["audio", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Fashion Nova Men",
+        "display_name": "Fashion Nova Men",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Chicago Bulls",
+        "display_name": "Chicago Bulls",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Logo on Pioladitingancia's hat",
+        "confidence": 5
+      },
+      {
+        "name": "Fatboy SSE",
+        "display_name": "Fatboy SSE",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "audio"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Fashion Nova carries a line of clothing specifically for men (Fashion Nova Men).",
+        "source": "audio",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Fashion Nova Men Hoodie",
+          "details": "Black hoodie with red rose floral embroidery on the sleeves and chest."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound - Pioladitingancia",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The brand name mispronunciation is a central part of the joke."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Energetic, chaotic, and humorous.",
+    "topic_hints": [
+      "Men's Fashion",
+      "Comedy Skits",
+      "Influencer Collaboration"
+    ],
+    "affect_hints": ["Amused", "Surprised", "Energetic"],
+    "genre_hints": ["Comedy", "Fashion"]
+  },
+  "metrics": {
+    "input_tokens": 5210,
+    "output_tokens": 1411,
+    "total_tokens": 6621,
+    "cost_usd": 0.001628,
+    "latency_ms": 26137,
+    "upload_ms": 7793
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

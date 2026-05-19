@@ -1,0 +1,175 @@
+{
+  "item_id": "DOuHFr2jhAz",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:41:16.937781+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "The creator holds up a finished red heart mosaic tile against a backdrop of trees. The scene cuts to a wide shot of a busy art studio with people working at tables.",
+        "audio_description": "Now this is what I mean when I say I want to do something fun in Chicago, but not spend a lot of money.",
+        "text_on_screen": "Unique & Affordable Chicago Activity",
+        "key_objects": ["heart mosaic", "art studio", "work tables"]
+      },
+      {
+        "time_range": "0:04-0:10",
+        "visual_description": "Montage of finished mosaic art pieces including a strawberry, a turkey, and abstract patterns. An instructor is seen helping students at a table.",
+        "audio_description": "We're taking a BYOB mosaics art class at the Chicago Mosaic School with a great deal on Groupon.",
+        "text_on_screen": "\ud83d\udccd Chicago Mosaic School",
+        "key_objects": [
+          "mosaic art",
+          "Groupon logo",
+          "Chicago Mosaic School sign"
+        ]
+      },
+      {
+        "time_range": "0:10-0:16",
+        "visual_description": "Close-up of a tool box labeled 'Tool Box 15' containing glue and a glass cutter. A hand uses a glass nipper to cut a piece of green glass over a cherry design template.",
+        "audio_description": "No worries if you're a beginner like us because the instructors make it super easy to follow along.",
+        "text_on_screen": "Chicago Mosaic School",
+        "key_objects": [
+          "glass nippers",
+          "cherry design template",
+          "glass shards"
+        ]
+      },
+      {
+        "time_range": "0:16-0:21",
+        "visual_description": "A person uses tweezers to carefully place red glass pieces onto a heart-shaped adhesive base. Another shot shows a hand spreading white mortar onto a tile.",
+        "audio_description": "You get to pick out your design and then they'll teach you how to cut glass and attach it to your tile.",
+        "text_on_screen": "",
+        "key_objects": ["tweezers", "mortar", "tile"]
+      },
+      {
+        "time_range": "0:21-0:26",
+        "visual_description": "The creator continues placing glass on the cherry design. The video ends with a shot of the finished cherry mosaic and a wide view of the studio's lounge area.",
+        "audio_description": "And don't forget to use my code REN30 for 30% off all Groupon activities.",
+        "text_on_screen": "Use code: REN30 for 30% off!",
+        "key_objects": ["cherry mosaic", "studio lounge"]
+      }
+    ],
+    "overall_summary": "The video features a BYOB mosaic workshop at the Chicago Mosaic School, presented as a fun and affordable activity found through Groupon. The creator demonstrates the beginner-friendly process, which includes choosing a design, cutting colored glass with specialized tools, and assembling the pieces onto a tile. The workshop is highlighted as an ideal group or date activity for those in Chicago. The creator also provides a promotional code, REN30, for a discount on Groupon activities.",
+    "people": [
+      {
+        "description": "Female creator with dark hair and red nails, wearing a black and white striped sweater and safety glasses.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@chicago.by.ren"
+      },
+      {
+        "description": "Male instructor in a blue shirt and apron, assisting students.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Chicago Mosaic School",
+        "display_name": "The Chicago Mosaic School",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay", "metadata"],
+        "specifications": "1127 W Granville Ave, Chicago",
+        "confidence": 5
+      },
+      {
+        "name": "Groupon",
+        "display_name": "Groupon",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["audio", "text_overlay", "metadata"],
+        "specifications": "Discount code: REN30",
+        "confidence": 5
+      },
+      {
+        "name": "Chicago",
+        "display_name": "Chicago, IL",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["audio", "text_overlay", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "BYOB Mosaics Basics Workshop",
+        "display_name": "BYOB Mosaics Basics Workshop for Two",
+        "type": "event",
+        "relevance": "primary",
+        "source": ["audio", "metadata"],
+        "specifications": "Ages 8 and up",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The Chicago Mosaic School offers an affordable and beginner-friendly mosaic workshop.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Using Groupon is an effective way to find deals on unique local activities in Chicago.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The mosaic workshop is a BYOB event suitable for ages 8 and up.",
+        "source": "metadata",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "BYOB Mosaics Basics Workshop",
+          "details": "Located at Chicago Mosaic School; beginner-friendly; instructors teach glass cutting and assembly."
+        },
+        {
+          "name": "Groupon Discount",
+          "details": "Use code REN30 for 30% off activities on Groupon."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "L'amore dice ciao (From \"La matriarca\") - Main Titles - Armando Trovajoli",
+      "metadata_song": "original sound - Chicago by Ren",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The address was partially cut off in the caption but confirmed via the school's name and location."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "handheld",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Creative, educational, and upbeat with a focus on DIY crafting.",
+    "topic_hints": [
+      "Chicago activities",
+      "Mosaic art",
+      "Budget-friendly travel"
+    ],
+    "affect_hints": ["Inspired", "Creative", "Satisfied"],
+    "genre_hints": ["Lifestyle vlog", "Local guide"]
+  },
+  "metrics": {
+    "input_tokens": 4016,
+    "output_tokens": 1830,
+    "total_tokens": 5846,
+    "cost_usd": 0.0017,
+    "latency_ms": 21899,
+    "upload_ms": 5830
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

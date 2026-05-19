@@ -1,0 +1,26 @@
+{
+  "item_id": "CDMJVbCFR90",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:36:22.559339+00:00",
+  "parsed_output": {
+    "_parse_error": true,
+    "_raw_text": "{\n  \"per_image\": [\n    {\n      \"image_number\": 1,\n      \"description\": \"A tweet from user @rfarawi_ initiating a thread about immigrant parents wanting their children to come home, featuring a text message screenshot.\",\n      \"text_detected\": \"rana @rfarawi_ can we start a thread on ways immigrant parents have expressed they want us to come home? ill start AT&T 12:05 AM 7 BF Baba > Yesterday 11:44 PM I believe it is enough\",\n      \"primary_content\": \"Tweet thread initiation: Immigrant parents' ways of asking kids to come home.\",\n      \"entities\": [\n        {\n          \"name\": \"rana (@rfarawi_)\",\n          \"type\": \"person\",\n          \"specifications\": \"Twitter user\"\n        },\n        {\n          \"name\": \"Baba\",\n          \"type\": \"person\",\n          \"specifications\": \"Father figure in text message\"\n        }\n      ]\n    },\n    {\n      \"image_number\": 2,\n      \"description\": \"A Twitter reply from @kashifaarif showing a text conversation with her mother using health concerns as a tactic.\",\n      \"text_detected\": \"kashifa @kashifaarif Replying to @rfarawi_ my mom Sun, Jul 19, 3:39 PM You coming home what time your Hungry bro waiting Sun, Jul 19, 4:57 PM Please reply my blood pressure up i'm coming\",\n      \"primary_content\": \"Text message: Mother using 'blood pressure' to get a reply.\",\n      \"entities\": [\n        {\n          \"name\": \"kashifa (@kashifaarif)\",\n          \"type\": \"person\",\n          \"specifications\": \"Twitter user\"\n        },\n        {\n          \"name\": \"Mom\",\n          \"type\": \"person\",\n          \"specifications\": \"Mother figure in text message\"\n        }\n      ]\n    },\n    {\n      \"image_number\": 3,\n      \"description\": \"A Twitter reply from @may_okoro showing a highly dramatic guilt-tripping text message from a mother.\",\n      \"text_detected\": \"youngmay @may_okoro Replying to @rfarawi_ 15 O Oof > Sun, May 17, 9:05 PM I know you don't want to hear anything but remember if you die remember your mom tried her best to help you but you refused.. ok LMAOOOim a"
+  },
+  "metrics": {
+    "input_tokens": 8760,
+    "output_tokens": 2413,
+    "total_tokens": 11173,
+    "cost_usd": 0.002762,
+    "latency_ms": 18455,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 7
+  }
+}

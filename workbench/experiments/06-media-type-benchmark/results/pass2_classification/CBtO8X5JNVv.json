@@ -1,0 +1,70 @@
+{
+  "item_id": "CBtO8X5JNVv",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:59.164761+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "relationships",
+      "secondary": "comedy",
+      "micro_labels": [
+        "gender wars",
+        "social media roast",
+        "sexual humor",
+        "savage comeback"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["screenshot", "roast"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "shocking",
+        "tier": "secondary"
+      },
+      {
+        "label": "cringe",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["text_overlay", "slideshow"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "anonymous",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 4223,
+    "output_tokens": 342,
+    "total_tokens": 4565,
+    "cost_usd": 0.000839,
+    "latency_ms": 5305,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "visual_input": "thumbnail",
+    "visual_count": 1
+  }
+}

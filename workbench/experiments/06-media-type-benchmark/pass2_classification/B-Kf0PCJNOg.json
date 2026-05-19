@@ -1,0 +1,71 @@
+{
+  "item_id": "B-Kf0PCJNOg",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:16.871093+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "relationships",
+      "secondary": "comedy",
+      "micro_labels": [
+        "dating culture",
+        "situationships",
+        "toxic relationships",
+        "texting humor",
+        "internet slang"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["compilation", "slideshow"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "cringe",
+        "tier": "secondary"
+      },
+      {
+        "label": "shocking",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.8
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "anonymous",
+      "confidence": 0.7
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 13953,
+    "output_tokens": 349,
+    "total_tokens": 14302,
+    "cost_usd": 0.002302,
+    "latency_ms": 8822,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 10
+  }
+}

@@ -1,6 +1,8 @@
+> Superseded by `docs/UNIT_ECONOMICS.md` — this file is retained as a historical artifact from the 2026-03-26 research sprint.
+
 # Attic — Unit Economics Model
 
-*Generated 2026-03-26 from measured experiment data*
+_Generated 2026-03-26 from measured experiment data_
 
 ---
 
@@ -8,31 +10,31 @@
 
 ### Ingestion (one-time per item, at upload)
 
-| Component | Cost/item | Source |
-|-----------|-----------|--------|
-| Apify metadata + video DL + comments | $0.0140 | Starter PPE, measured |
-| Gemini Tier 1 (keyframes, single pass) | $0.0009 | Measured (100 items) |
-| OpenAI embedding | $0.0001 | Measured |
-| **TIER 1 SUBTOTAL** | **$0.0150** | |
+| Component                              | Cost/item   | Source                |
+| -------------------------------------- | ----------- | --------------------- |
+| Apify metadata + video DL + comments   | $0.0140     | Starter PPE, measured |
+| Gemini Tier 1 (keyframes, single pass) | $0.0009     | Measured (100 items)  |
+| OpenAI embedding                       | $0.0001     | Measured              |
+| **TIER 1 SUBTOTAL**                    | **$0.0150** |                       |
 
 ### Background Enrichment (async, after upload)
 
-| Component | Cost/item | Source |
-|-----------|-----------|--------|
-| Gemini Pass 1 (full video perception) | $0.0024 | Measured (106 items) |
-| Gemini Pass 2 (classification) | $0.0019 | Measured (106 items) |
-| OpenAI re-embedding | $0.0001 | Measured |
-| **TIER 2 SUBTOTAL** | **$0.0044** | |
+| Component                             | Cost/item   | Source               |
+| ------------------------------------- | ----------- | -------------------- |
+| Gemini Pass 1 (full video perception) | $0.0024     | Measured (106 items) |
+| Gemini Pass 2 (classification)        | $0.0019     | Measured (106 items) |
+| OpenAI re-embedding                   | $0.0001     | Measured             |
+| **TIER 2 SUBTOTAL**                   | **$0.0044** |                      |
 
 ### Total Ingestion Cost: **$0.0194/item**
 
 ### Agent Queries (per query, ongoing)
 
-| Component | Cost/query | Source |
-|-----------|-----------|--------|
-| Claude Haiku 4.5 (~3 tool calls avg) | $0.005 | Estimated |
-| OpenAI embedding (query vector) | $0.0001 | Measured |
-| **QUERY SUBTOTAL** | **$0.005** | |
+| Component                            | Cost/query | Source    |
+| ------------------------------------ | ---------- | --------- |
+| Claude Haiku 4.5 (~3 tool calls avg) | $0.005     | Estimated |
+| OpenAI embedding (query vector)      | $0.0001    | Measured  |
+| **QUERY SUBTOTAL**                   | **$0.005** |           |
 
 ---
 
@@ -41,11 +43,11 @@
 Assumptions: 50 queries/month, Apify Starter plan
 
 | Library Size | Ingestion (one-time) | Monthly Agent (50 queries) | Total Month 1 | Ongoing/mo |
-|---|---|---|---|---|
-| 200 | $3.88 | $0.25 | $4.13 | $0.25 |
-| 500 | $9.70 | $0.25 | $9.95 | $0.25 |
-| 1,000 | $19.40 | $0.25 | $19.65 | $0.25 |
-| 2,000 | $38.80 | $0.25 | $39.05 | $0.25 |
+| ------------ | -------------------- | -------------------------- | ------------- | ---------- |
+| 200          | $3.88                | $0.25                      | $4.13         | $0.25      |
+| 500          | $9.70                | $0.25                      | $9.95         | $0.25      |
+| 1,000        | $19.40               | $0.25                      | $19.65        | $0.25      |
+| 2,000        | $38.80               | $0.25                      | $39.05        | $0.25      |
 
 **Key insight:** Ingestion is the dominant cost. Agent queries are cheap. A 1000-item user costs ~$19.40 to onboard but only $0.25/mo ongoing.
 
@@ -53,16 +55,16 @@ Assumptions: 50 queries/month, Apify Starter plan
 
 ## 3. Fixed Costs (monthly)
 
-| Service | Cost/mo | Notes |
-|---------|---------|-------|
-| Apify Starter subscription | $29 | Includes $29 prepaid credit |
-| Supabase Pro | $25 | DB + auth + storage |
-| Render (API hosting) | $25 | Starter instance |
-| Vercel Pro (frontend) | $20 | |
-| AWS Lambda (pipeline) | ~$5 | At <100 users |
-| Sentry + PostHog | $0 | Free tiers |
-| Domain + email (Resend) | ~$5 | |
-| **TOTAL FIXED** | **~$109/mo** | |
+| Service                    | Cost/mo      | Notes                       |
+| -------------------------- | ------------ | --------------------------- |
+| Apify Starter subscription | $29          | Includes $29 prepaid credit |
+| Supabase Pro               | $25          | DB + auth + storage         |
+| Render (API hosting)       | $25          | Starter instance            |
+| Vercel Pro (frontend)      | $20          |                             |
+| AWS Lambda (pipeline)      | ~$5          | At <100 users               |
+| Sentry + PostHog           | $0           | Free tiers                  |
+| Domain + email (Resend)    | ~$5          |                             |
+| **TOTAL FIXED**            | **~$109/mo** |                             |
 
 ### Breakeven at $109/mo fixed costs
 
@@ -74,11 +76,11 @@ Assumptions: 50 queries/month, Apify Starter plan
 
 ## 4. Apify Plan Scaling
 
-| Plan | Sub cost | PPE/item | Items from prepaid | Break-even users (1K items each) |
-|---|---|---|---|---|
-| Starter | $29 | $0.0140 | ~2,071 | 2 users |
-| Scale | $199 | $0.0106 | ~18,774 | 19 users |
-| Business | $999 | $0.0073 | ~136,849 | 137 users |
+| Plan     | Sub cost | PPE/item | Items from prepaid | Break-even users (1K items each) |
+| -------- | -------- | -------- | ------------------ | -------------------------------- |
+| Starter  | $29      | $0.0140  | ~2,071             | 2 users                          |
+| Scale    | $199     | $0.0106  | ~18,774            | 19 users                         |
+| Business | $999     | $0.0073  | ~136,849           | 137 users                        |
 
 → Stay on Starter until ~15 users, then jump to Scale.
 → Scale plan: $199/mo covers ~19K items from prepaid alone.
@@ -87,31 +89,31 @@ Assumptions: 50 queries/month, Apify Starter plan
 
 ## 5. Proposed Pricing Structure
 
-|  | Free | Starter | Pro | Power |
-|--|------|---------|-----|-------|
-| Monthly price | $0 | $9/mo | $19/mo | $39/mo |
-| Annual price | -- | $7/mo | $15/mo | $31/mo |
-| Items included | 200 (first upload) | 1,000/mo | 3,000/mo | 10,000/mo |
-| Agent queries | 20/mo | 200/mo | Unlimited | Unlimited |
-| Extra items (overage) | -- | $0.03/item | $0.025/item | $0.02/item |
-| Entity links (Spotify, Maps) | -- | ✓ | ✓ | ✓ |
-| Collections | -- | ✓ | ✓ | ✓ |
-| Export | -- | -- | ✓ | ✓ |
-| Priority queue | -- | -- | -- | ✓ |
+|                              | Free               | Starter    | Pro         | Power      |
+| ---------------------------- | ------------------ | ---------- | ----------- | ---------- |
+| Monthly price                | $0                 | $9/mo      | $19/mo      | $39/mo     |
+| Annual price                 | --                 | $7/mo      | $15/mo      | $31/mo     |
+| Items included               | 200 (first upload) | 1,000/mo   | 3,000/mo    | 10,000/mo  |
+| Agent queries                | 20/mo              | 200/mo     | Unlimited   | Unlimited  |
+| Extra items (overage)        | --                 | $0.03/item | $0.025/item | $0.02/item |
+| Entity links (Spotify, Maps) | --                 | ✓          | ✓           | ✓          |
+| Collections                  | --                 | ✓          | ✓           | ✓          |
+| Export                       | --                 | --         | ✓           | ✓          |
+| Priority queue               | --                 | --         | --          | ✓          |
 
 ---
 
 ## 6. Margin Analysis
 
-| Tier | Revenue/user/mo | COGS (ingest + agent) | Gross Profit | Gross Margin |
-|---|---|---|---|---|
-| Free | $0 | $3.88 + $0.25 | -$4.13 | N/A (loss leader) |
-| Starter (month 1) | $9 | $14.00 + $1.00 | -$6.00 | -67% |
-| Starter (month 2+) | $9 | $0 + $1.00 | $8.00 | **89%** |
-| Pro (month 1) | $19 | $42.00 + $1.00 | -$24.00 | -126% |
-| Pro (month 2+) | $19 | $0 + $1.00 | $18.00 | **95%** |
-| Power (month 1) | $39 | $140.00 + $1.00 | -$102.00 | -262% |
-| Power (month 2+) | $39 | $0 + $1.00 | $38.00 | **97%** |
+| Tier               | Revenue/user/mo | COGS (ingest + agent) | Gross Profit | Gross Margin      |
+| ------------------ | --------------- | --------------------- | ------------ | ----------------- |
+| Free               | $0              | $3.88 + $0.25         | -$4.13       | N/A (loss leader) |
+| Starter (month 1)  | $9              | $14.00 + $1.00        | -$6.00       | -67%              |
+| Starter (month 2+) | $9              | $0 + $1.00            | $8.00        | **89%**           |
+| Pro (month 1)      | $19             | $42.00 + $1.00        | -$24.00      | -126%             |
+| Pro (month 2+)     | $19             | $0 + $1.00            | $18.00       | **95%**           |
+| Power (month 1)    | $39             | $140.00 + $1.00       | -$102.00     | -262%             |
+| Power (month 2+)   | $39             | $0 + $1.00            | $38.00       | **97%**           |
 
 ### Payback period (months to recoup ingestion cost)
 
@@ -128,13 +130,13 @@ Assumptions: 50 queries/month, Apify Starter plan
 Assume mix: 50% Free, 25% Starter, 15% Pro, 10% Power
 Assume 80% annual retention, avg 2 uploads/year
 
-| Users (total) | Paying users | MRR | Var Cost/mo | Fixed Cost | Net Profit |
-|---|---|---|---|---|---|
-| 20 | 10 | $180 | $10 | $109 | +$61 |
-| 50 | 24 | $436 | $24 | $109 | +$303 |
-| 100 | 50 | $900 | $48 | $250 | +$602 |
-| 250 | 124 | $2,236 | $120 | $500 | +$1,616 |
-| 500 | 250 | $4,500 | $239 | $500 | +$3,761 |
+| Users (total) | Paying users | MRR    | Var Cost/mo | Fixed Cost | Net Profit |
+| ------------- | ------------ | ------ | ----------- | ---------- | ---------- |
+| 20            | 10           | $180   | $10         | $109       | +$61       |
+| 50            | 24           | $436   | $24         | $109       | +$303      |
+| 100           | 50           | $900   | $48         | $250       | +$602      |
+| 250           | 124          | $2,236 | $120        | $500       | +$1,616    |
+| 500           | 250          | $4,500 | $239        | $500       | +$3,761    |
 
 **Breakeven:** ~30-40 total users (15-20 paying)
 **$10K MRR milestone:** ~500 total users

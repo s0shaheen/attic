@@ -1,0 +1,143 @@
+{
+  "item_id": "CmO_dSUITaO",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:42:02.736333+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:06",
+        "visual_description": "A close-up street interview with Anthony Bourdain as an off-camera interviewer asks for hangover cure recommendations.",
+        "audio_description": "Interviewer: 'Any recommendations for the winners to cure a hangover tomorrow? Like athletes, you know, what kind of food they should be eating?'",
+        "text_on_screen": "Anthony Bourdain's Hangover Cure \ud83c\udf43\nANY RECOMMENDATIONS FOR THE\nFOR THE WINNERS TO CURE A HANGOVER TOMORROW\nLIKE ATHLETES\nYOU KNOW\nWHAT KIND OF FOOD THEY SHOULD BE EATING",
+        "key_objects": ["scarf", "blue jacket"]
+      },
+      {
+        "time_range": "0:06-0:12",
+        "visual_description": "Anthony Bourdain looks directly at the camera and lists his specific hangover remedy steps.",
+        "audio_description": "Anthony Bourdain: 'Aspirin, cold Coca-Cola, smoke a joint, eat some spicy Szechuan food. Works every time.'",
+        "text_on_screen": "ASPIRIN COLD COCA COLA\nSMOKE A JOINT EAT SOME SPICY SZECHUAN FOOD\nWORKS EVERY TIME",
+        "key_objects": ["Coca-Cola", "Aspirin"]
+      }
+    ],
+    "overall_summary": "In this short interview clip, legendary chef and traveler Anthony Bourdain shares his personal 'fail-proof' hangover cure. When asked what 'winners' or athletes should eat to recover from a night of drinking, he provides a four-step regimen: aspirin, cold Coca-Cola, smoking marijuana, and eating spicy Szechuan food. He confidently asserts that this combination works every time.",
+    "people": [
+      {
+        "description": "Grey-haired man in a blue jacket and scarf, known for his culinary and travel expertise.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Anthony Bourdain"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Anthony Bourdain",
+        "display_name": "Anthony Bourdain",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Coca-Cola",
+        "display_name": "Coca-Cola",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Cold",
+        "confidence": 5
+      },
+      {
+        "name": "Aspirin",
+        "display_name": "Aspirin",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Pain reliever",
+        "confidence": 5
+      },
+      {
+        "name": "Szechuan food",
+        "display_name": "Spicy Szechuan Cuisine",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Spicy",
+        "confidence": 5
+      },
+      {
+        "name": "Marijuana",
+        "display_name": "Marijuana / Joint",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Smoked",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Anthony Bourdain's recommended hangover cure involves a combination of medication, caffeine/sugar, cannabis, and spicy food.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Aspirin",
+          "details": "Standard pain relief"
+        },
+        {
+          "name": "Cold Coca-Cola",
+          "details": "For hydration, sugar, and caffeine"
+        },
+        {
+          "name": "Smoke a joint",
+          "details": "Cannabis for nausea/discomfort"
+        },
+        {
+          "name": "Spicy Szechuan food",
+          "details": "To sweat out toxins and stimulate the palate"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": 5,
+      "notes": "The video is a very clear interview segment with no background music."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Candid, direct, and slightly gritty urban street vibe.",
+    "topic_hints": ["Anthony Bourdain", "Hangover Cures", "Culinary Advice"],
+    "affect_hints": ["Nostalgic", "Amused", "Practical"],
+    "genre_hints": ["Celebrity Interview", "Life Hack"]
+  },
+  "metrics": {
+    "input_tokens": 2789,
+    "output_tokens": 1383,
+    "total_tokens": 4172,
+    "cost_usd": 0.001248,
+    "latency_ms": 18257,
+    "upload_ms": 4138
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

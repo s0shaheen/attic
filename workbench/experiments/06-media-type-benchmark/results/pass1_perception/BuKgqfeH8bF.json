@@ -1,0 +1,158 @@
+{
+  "item_id": "BuKgqfeH8bF",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:47.615293+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A static screenshot of a tweet by Lil Yachty (@lilyachty) which contains a screenshot of an Instagram story from Lil Baby (@lilbaby_1). The photo shows rapper Lil Baby holding his older son, who is holding a newborn baby whose face is obscured by a baby emoji.",
+        "audio_description": "No audio \u2014 static image.",
+        "text_on_screen": "underdog @lilyachty\nNow this may be a stretch but this awesome photo of Lil baby holding his lil baby who is holding his new born lil baby is awesomeeeeeee wow\n10:53\nlilbaby_1 16h",
+        "key_objects": [
+          "iPhone status bar",
+          "baby bottle",
+          "baby emoji",
+          "Twitter interface",
+          "Instagram story interface"
+        ]
+      }
+    ],
+    "overall_summary": "This image is a screenshot of a tweet by rapper Lil Yachty commenting on a wholesome photo shared by rapper Lil Baby. The photo depicts Lil Baby holding his older son, Jason, who is in turn holding Lil Baby's newborn son, Loyal. Lil Yachty's tweet uses a play on words with the name 'Lil Baby' to describe the multi-generational 'inception' style photo, which was shared by media personality Akademiks.",
+    "people": [
+      {
+        "description": "Rapper and tweet author, seen in profile picture.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Lil Yachty"
+      },
+      {
+        "description": "Rapper holding his children in the photo.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Lil Baby"
+      },
+      {
+        "description": "Lil Baby's older son, sitting in his father's lap and holding his baby brother.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jason Armani"
+      },
+      {
+        "description": "Lil Baby's newborn son, being held by his older brother.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Loyal Armani"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Lil Yachty",
+        "display_name": "Lil Yachty",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lil Baby",
+        "display_name": "Lil Baby",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Twitter",
+        "display_name": "Twitter / X",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Instagram",
+        "display_name": "Instagram",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Inception",
+        "display_name": "Inception (2010)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Cultural reference to nested layers",
+        "confidence": 5
+      },
+      {
+        "name": "Akademiks",
+        "display_name": "DJ Akademiks",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": "Media personality and content curator",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The post highlights a wholesome family moment with a humorous linguistic play on the artist's name 'Lil Baby'.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "The 'Inception' caption refers to the visual recursion of a baby holding a baby being held by a man named Baby.",
+        "source": "implied",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Static image analysis; entities are clearly identified via text and visual recognition."
+    },
+    "presentation_style": {
+      "primary_format": "other",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Wholesome, humorous, and celebratory of family.",
+    "topic_hints": [
+      "Hip-hop culture",
+      "Family and parenting",
+      "Social media memes"
+    ],
+    "affect_hints": ["Amusement", "Warmth", "Joy"],
+    "genre_hints": ["Social media screenshot", "Meme"]
+  },
+  "metrics": {
+    "input_tokens": 2513,
+    "output_tokens": 1383,
+    "total_tokens": 3896,
+    "cost_usd": 0.001207,
+    "latency_ms": 14201,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

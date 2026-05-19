@@ -1,0 +1,70 @@
+{
+  "item_id": "BdjKjY0hF9w",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:03.335638+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "science",
+      "secondary": "art",
+      "micro_labels": [
+        "astronomy",
+        "astrophotography",
+        "international space station",
+        "solar transit"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": ["photography showcase"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "inspiring",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "journalist",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 4280,
+    "output_tokens": 330,
+    "total_tokens": 4610,
+    "cost_usd": 0.00084,
+    "latency_ms": 4170,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "visual_input": "thumbnail",
+    "visual_count": 1
+  }
+}

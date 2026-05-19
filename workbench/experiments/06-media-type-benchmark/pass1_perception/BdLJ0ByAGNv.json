@@ -1,0 +1,153 @@
+{
+  "item_id": "BdLJ0ByAGNv",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:42:22.884016+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "Aerial drone shots showcase the intricate red-and-white checkered and striped exterior of the Jami Ul-Alfar Mosque, focusing on its domes and clock tower.",
+        "audio_description": "Rhythmic, upbeat instrumental world music with heavy percussion and a South Asian influence.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Jami Ul-Alfar Mosque",
+          "Clock tower",
+          "Domes",
+          "Minarets"
+        ]
+      },
+      {
+        "time_range": "0:04-0:06",
+        "visual_description": "Worshippers in traditional attire enter the mosque through a highly decorated, patterned archway.",
+        "audio_description": "The rhythmic music continues.",
+        "text_on_screen": "",
+        "key_objects": ["Archway", "Arabic calligraphy"]
+      },
+      {
+        "time_range": "0:06-0:08",
+        "visual_description": "Interior view of the mosque courtyard where men are gathered around a central pool for ritual ablution (wudu).",
+        "audio_description": "The rhythmic music continues.",
+        "text_on_screen": "",
+        "key_objects": ["Ablution pool", "Columns"]
+      },
+      {
+        "time_range": "0:08-0:13",
+        "visual_description": "A wide shot of the prayer hall filled with hundreds of men performing congregational prayer in unison.",
+        "audio_description": "The rhythmic music continues.",
+        "text_on_screen": "",
+        "key_objects": ["Prayer hall", "Chandeliers"]
+      },
+      {
+        "time_range": "0:13-0:22",
+        "visual_description": "Final montage of aerial and ground-level shots highlighting the mosque's unique architecture against the backdrop of the Colombo port.",
+        "audio_description": "The rhythmic music continues and fades out.",
+        "text_on_screen": "",
+        "key_objects": ["Colombo Port", "Shipping containers", "Cranes"]
+      }
+    ],
+    "overall_summary": "This video provides a cinematic tour of the Jami Ul-Alfar Mosque, also known as the 'Red Mosque,' located in Colombo, Sri Lanka. It highlights the mosque's striking Indo-Saracenic architecture, characterized by its vibrant red-and-white striped and checkered patterns. The footage captures the daily religious life within the mosque, including worshippers performing ritual ablutions and participating in large-scale congregational prayers, while showcasing its scale against the city's industrial port background.",
+    "people": [
+      {
+        "description": "Numerous male worshippers in traditional Sri Lankan Muslim attire (sarongs, skullcaps) and casual clothing.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Jami Ul-Alfar Mosque",
+        "display_name": "Jami Ul-Alfar Mosque (Red Mosque)",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": "Built in 1908; capacity for 10,000+ worshippers",
+        "confidence": 5
+      },
+      {
+        "name": "Colombo",
+        "display_name": "Colombo, Sri Lanka",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["inferred"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Indo-Saracenic architecture",
+        "display_name": "Indo-Saracenic Architecture",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Hybrid of Indian and Islamic styles",
+        "confidence": 4
+      },
+      {
+        "name": "Great Big Story",
+        "display_name": "@greatbigstory",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Jami Ul-Alfar is a major architectural wonder in Sri Lanka, blending Indian and Islamic styles.",
+        "source": "metadata",
+        "confidence": 5
+      },
+      {
+        "statement": "The mosque is a central place of worship for the Sri Lankan Muslim community, capable of holding over 10,000 people.",
+        "source": "metadata",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Jami Ul-Alfar Mosque",
+          "details": "A historic mosque in Colombo known for its distinctive red-and-white patterns and Indo-Saracenic design."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Instrumental World Music \u2014 Unidentified",
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": 3,
+      "notes": "The mosque and its location are well-documented; the audio is a generic thematic track."
+    },
+    "presentation_style": {
+      "primary_format": "cinematic",
+      "camera_work": "panning",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Majestic, serene, and culturally vibrant.",
+    "topic_hints": ["Architecture", "Travel", "Religion"],
+    "affect_hints": ["Awe", "Respect", "Curiosity"],
+    "genre_hints": ["Travel Documentary"]
+  },
+  "metrics": {
+    "input_tokens": 3526,
+    "output_tokens": 1512,
+    "total_tokens": 5038,
+    "cost_usd": 0.001436,
+    "latency_ms": 24647,
+    "upload_ms": 5677
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

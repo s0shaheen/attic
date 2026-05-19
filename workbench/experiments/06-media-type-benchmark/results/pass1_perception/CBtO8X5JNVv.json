@@ -1,0 +1,116 @@
+{
+  "item_id": "CBtO8X5JNVv",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:21.737761+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "A static screenshot of a social media interaction. The top portion shows a post by a user named Rashiiiiiii criticizing men's sexual performance, while the bottom portion shows a dismissive reply from a user named Rajesh Meena.",
+        "audio_description": "No audio; static image.",
+        "text_on_screen": "Rashiiiiiii @fierceymess 3mins into sex and boys be like \u201cDid you cum?\u201d Yeah...to the wrong house, pass me my clothes WEAK DI*K BITCH. 349 104 Comments Like Comment Rajesh Meena Bruh female orgasm isn't even necessary for reproduction. If God doesn't care about you, what makes you think I do?",
+        "key_objects": ["Facebook UI elements", "Twitter handle"]
+      }
+    ],
+    "overall_summary": "This is a screenshot of a viral social media interaction involving a 'gender war' style exchange. A female user (@fierceymess) posts a derogatory comment about men asking if a partner finished after only three minutes of sex. A male user, Rajesh Meena, responds with a 'savage' retort, claiming that because female orgasms aren't biologically necessary for reproduction, he doesn't care about them. The post is intended as a piece of dark or confrontational humor.",
+    "people": [
+      {
+        "description": "Social media user who posted the initial complaint about sexual performance.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Rashiiiiiii (@fierceymess)"
+      },
+      {
+        "description": "Social media user who provided the dismissive comeback in the comments.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Rajesh Meena"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Rajesh Meena",
+        "display_name": "Rajesh Meena",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Rashiiiiiii",
+        "display_name": "Rashiiiiiii (@fierceymess)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Facebook",
+        "display_name": "Facebook",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "UI layout and icons",
+        "confidence": 4
+      },
+      {
+        "name": "Twitter",
+        "display_name": "Twitter / X",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Handle format (@fierceymess)",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The image depicts a 'savage' social media comeback where a man uses a biological argument to dismiss a woman's complaint about sexual satisfaction.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The image is a static screenshot of a text-based interaction; all text is clearly legible."
+    },
+    "presentation_style": {
+      "primary_format": "other",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Confrontational, cynical, and humorous in a 'roast' context.",
+    "topic_hints": ["Gender dynamics", "Social media roasts", "Sexual humor"],
+    "affect_hints": ["Amused", "Cynical", "Shocked"],
+    "genre_hints": ["Meme", "Screenshot", "Savage comeback"]
+  },
+  "metrics": {
+    "input_tokens": 2521,
+    "output_tokens": 1128,
+    "total_tokens": 3649,
+    "cost_usd": 0.001055,
+    "latency_ms": 10328,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

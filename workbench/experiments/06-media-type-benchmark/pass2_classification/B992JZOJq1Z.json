@@ -1,0 +1,71 @@
+{
+  "item_id": "B992JZOJq1Z",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:26.201902+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "music",
+      "secondary": "fashion",
+      "micro_labels": [
+        "music production",
+        "studio aesthetic",
+        "sneaker culture",
+        "analog synthesizers",
+        "behind the scenes"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "vlog",
+      "micro_labels": ["photo dump", "behind the scenes"],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "relaxing",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "inspiring",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "raw_footage"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "document",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 1.0
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 5295,
+    "output_tokens": 352,
+    "total_tokens": 5647,
+    "cost_usd": 0.001005,
+    "latency_ms": 6266,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 2
+  }
+}

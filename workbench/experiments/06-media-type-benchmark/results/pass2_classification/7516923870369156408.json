@@ -1,0 +1,67 @@
+{
+  "item_id": "7516923870369156408",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:39.669213+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "education",
+      "micro_labels": [
+        "UI/UX design",
+        "web development",
+        "CSS",
+        "frontend development",
+        "design principles"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": ["infographic", "design tip"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "educator",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 7408,
+    "output_tokens": 325,
+    "total_tokens": 7733,
+    "cost_usd": 0.001306,
+    "latency_ms": 7451,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 4
+  }
+}

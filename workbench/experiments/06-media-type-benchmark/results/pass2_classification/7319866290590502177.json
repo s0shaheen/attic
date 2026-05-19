@@ -1,0 +1,74 @@
+{
+  "item_id": "7319866290590502177",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:57.840950+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "health",
+      "micro_labels": [
+        "film recommendations",
+        "quarter-life crisis",
+        "coming of age",
+        "letterboxd"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "compilation",
+      "micro_labels": ["slideshow", "listicle", "recommendation list"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "sad",
+        "tier": "minor"
+      },
+      {
+        "label": "relaxing",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 13956,
+    "output_tokens": 379,
+    "total_tokens": 14335,
+    "cost_usd": 0.002321,
+    "latency_ms": 8655,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 10
+  }
+}

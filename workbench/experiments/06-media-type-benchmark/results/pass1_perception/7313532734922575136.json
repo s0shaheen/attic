@@ -1,0 +1,18 @@
+{
+  "item_id": "7313532734922575136",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:25:59.495390+00:00",
+  "parsed_output": {
+    "_error": "'parts'"
+  },
+  "metrics": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_ms": 20179,
+    "upload_ms": 0
+  },
+  "context_used": {}
+}

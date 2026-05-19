@@ -1,0 +1,76 @@
+{
+  "item_id": "DR5ggKZiTWI",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:39.766169+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "politics",
+      "secondary": "comedy",
+      "micro_labels": [
+        "political satire",
+        "dark humor",
+        "internet irony",
+        "Charlie Kirk",
+        "Benjamin Netanyahu",
+        "Jeffrey Epstein"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["pov", "audio trend", "shock humor"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "shocking",
+        "tier": "dominant"
+      },
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "cringe",
+        "tier": "secondary"
+      },
+      {
+        "label": "scary",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["text_overlay", "raw_footage"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "provoke",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 4270,
+    "output_tokens": 383,
+    "total_tokens": 4653,
+    "cost_usd": 0.00087,
+    "latency_ms": 8542,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}

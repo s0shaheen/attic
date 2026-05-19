@@ -1,0 +1,134 @@
+{
+  "item_id": "B7HkMuNA5L7",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:36:33.594113+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "A close-up selfie-style photo of rapper Boosie Badazz looking into the camera. He is wearing a red, blue, and black bandana-patterned button-down shirt and diamond stud earrings.",
+        "text_detected": "",
+        "primary_content": "Portrait of rapper Boosie Badazz",
+        "entities": [
+          {
+            "name": "Boosie Badazz",
+            "type": "person",
+            "specifications": "also known as Lil Boosie"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "Boosie Badazz wearing a red sweatshirt with white Greek letters for Kappa Alpha Psi. He is wearing multiple large diamond-encrusted cuban link chains and a large 'B' pendant. A ring on his finger reads 'FRESH' in diamonds.",
+        "text_detected": "KA\u03a8, FRESH",
+        "primary_content": "Boosie Badazz wearing Kappa Alpha Psi fraternity apparel",
+        "entities": [
+          {
+            "name": "Boosie Badazz",
+            "type": "person",
+            "specifications": ""
+          },
+          {
+            "name": "Kappa Alpha Psi",
+            "type": "brand",
+            "specifications": "Greek letter organization (KA\u03a8)"
+          },
+          {
+            "name": "FRESH ring",
+            "type": "product",
+            "specifications": "diamond encrusted jewelry"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post features rapper Boosie Badazz addressing a controversy regarding him wearing a Kappa Alpha Psi fraternity sweatshirt without being a member. The caption indicates he is apologizing for the action while expressing a lighthearted interest in learning the fraternity's signature 'shimmy' dance. The user is likely saving this as a piece of celebrity news or cultural commentary regarding Greek Life etiquette in the Black community.",
+    "carousel_type": "photo_dump",
+    "narrative_thread": "The images provide visual context for a public apology; the first shows the artist in neutral clothing, while the second shows the specific controversial garment (the KA\u03a8 sweatshirt) that prompted the apology.",
+    "entities": [
+      {
+        "name": "Boosie Badazz",
+        "display_name": "Boosie Badazz",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "slide_number": 1,
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Kappa Alpha Psi",
+        "display_name": "Kappa Alpha Psi (KA\u03a8) Fraternity",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay", "metadata"],
+        "slide_number": 2,
+        "specifications": "Divine Nine Greek organization",
+        "confidence": 5
+      },
+      {
+        "name": "Akademiks",
+        "display_name": "DJ Akademiks",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "slide_number": 1,
+        "specifications": "Content creator/media personality",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Boosie Badazz is apologizing for wearing Kappa Alpha Psi letters as a non-member.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "The artist expressed interest in learning the fraternity's traditional dance moves.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "The Greek letters and the identity of the rapper are clearly visible and confirmed by metadata."
+    },
+    "presentation_style": {
+      "primary_format": "photo_dump",
+      "visual_style": "informational"
+    },
+    "visual_mood": "Contrite yet casual",
+    "topic_hints": [
+      "Hip Hop Culture",
+      "Greek Life Controversy",
+      "Celebrity Apologies"
+    ],
+    "affect_hints": ["amused", "informed", "critical"],
+    "genre_hints": ["Celebrity News", "Culture Commentary"]
+  },
+  "metrics": {
+    "input_tokens": 3469,
+    "output_tokens": 1155,
+    "total_tokens": 4624,
+    "cost_usd": 0.001213,
+    "latency_ms": 11032,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 2
+  }
+}

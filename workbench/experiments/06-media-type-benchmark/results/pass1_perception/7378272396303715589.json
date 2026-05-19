@@ -1,0 +1,26 @@
+{
+  "item_id": "7378272396303715589",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:25:59.111892+00:00",
+  "parsed_output": {
+    "_parse_error": true,
+    "_raw_text": "{\n  \"per_image\": [\n    {\n      \"image_number\": 1,\n      \"description\": \"A wide shot of a wooden desk setup against a pale yellow wall. It features a laptop, an external monitor, a microphone, and a shelf above with books and toys. Two large vintage posters are on the left wall.\",\n      \"text_detected\": \"Current Room Setup 22 year old male Beautiful BRITISH COLUMBIA Rocky Mountain Rainforest SAVE THE CUMMINS RIVER VALLEY what if? DALIO THE LEAN STARTUP ERIC RIES MILLION DOLLAR WEEKEND NOAH KAGAN THE ART OF BULLSHIT CLEARLY ANTIFRAGILE THE BLACK SWAN SKIN IN THE GAME MARCUS AURELIUS MEDITATIONS Day 28/114 -10K IG - Hoodie, shorts, T shirt\",\n      \"primary_content\": \"Introduction to the room tour showing the main workspace.\",\n      \"entities\": [\n        {\n          \"name\": \"British Columbia\",\n          \"type\": \"place\",\n          \"specifications\": \"Vintage travel poster\"\n        },\n        {\n          \"name\": \"Principles by Ray Dalio\",\n          \"type\": \"book\",\n          \"specifications\": \"Hardcover\"\n        },\n        {\n          \"name\": \"The Lean Startup by Eric Ries\",\n          \"type\": \"book\",\n          \"specifications\": \"Hardcover\"\n        },\n        {\n          \"name\": \"Antifragile by Nassim Nicholas Taleb\",\n          \"type\": \"book\",\n          \"specifications\": \"Hardcover\"\n\"        },\n        {\n          \"name\": \"Meditations by Marcus Aurelius\",\n          \"type\": \"book\",\n          \"specifications\": \"Hardcover\"\n        }\n      ]\n    },\n    {\n      \"image_number\": 2,\n      \"description\": \"Close-up of a wooden dresser top featuring a Garfield cookie jar, fragrances, a sunrise alarm clock, and a vintage paperback book.\",\n      \"text_detected\": \"Best vintage find Sunrise alarm clock ACQUA DI GIO GIORGIO ARMANI PHILIPS 3:46 ZANE GREY'S ARIZONA AMES GUN TROUBLE IN TONTO BASIN Current read\",\n      \"primary_content\": \"Showcase of personal items and vintage finds on the nightstand.\",\n      \"entities\": [\n        {\n          \"name\": \"Garfield Cookie Jar\",\n          \"type\": \"pr"
+  },
+  "metrics": {
+    "input_tokens": 9800,
+    "output_tokens": 3029,
+    "total_tokens": 12829,
+    "cost_usd": 0.003287,
+    "latency_ms": 26219,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 8
+  }
+}

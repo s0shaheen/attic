@@ -1,0 +1,189 @@
+{
+  "item_id": "C4C6CpFCX1A",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:53.855177+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Creator performs a Downward Dog stretch, focusing on lengthening the spine and lifting the hips.",
+        "audio_description": "Atmospheric, slowed-down instrumental music plays throughout.",
+        "text_on_screen": "IF YOU ONLY HAD 5 MIN/DAY\nTO RELEASE LOWER BACK PAIN\nHERE IS WHAT I WOULD DO",
+        "key_objects": ["Gym flooring", "Gym bench", "Gymnastic rings"]
+      },
+      {
+        "time_range": "0:05-0:11",
+        "visual_description": "Creator transitions into the World's Greatest Stretch, reaching his elbow toward the floor and then rotating his arm upward.",
+        "audio_description": "Steady rhythmic beat continues.",
+        "text_on_screen": "I WOULD CREATE\nTHE MOST EFFECTIVE\nAND TIME SAVING\nFLOW",
+        "key_objects": ["White sneakers", "White socks"]
+      },
+      {
+        "time_range": "0:11-0:15",
+        "visual_description": "Creator demonstrates a Hip Flexor stretch while reaching back to hold his rear foot for a quad stretch.",
+        "audio_description": "Music maintains a calm, focused tempo.",
+        "text_on_screen": "HOLDING EACH POSITION FOR 30sec",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:15-0:18",
+        "visual_description": "Creator shifts back into a half-split position to stretch the hamstrings.",
+        "audio_description": "Instrumental music continues.",
+        "text_on_screen": "I WOULD GIVE MY BODY SOME TIME",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:18-0:21",
+        "visual_description": "Creator moves into a Pigeon Pose to target the glutes and hips.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "BECAUSE I KNOW\nIT WILL GET EASIER",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:21-0:25",
+        "visual_description": "Creator returns to the Downward Dog position before standing up.",
+        "audio_description": "Music fades out slightly.",
+        "text_on_screen": "IF YOU DO IT EVERY DAY\nAND I WOULD SAVE THIS FOR LATER",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "Fitness creator @lorenz.fit_ demonstrates a 5-minute daily mobility flow designed to reduce stiffness and alleviate lower back pain. The routine consists of five key movements: Downward Dog, World's Greatest Stretch, Hip Flexor stretch, Hamstring stretch, and Pigeon Pose. The video emphasizes consistency, suggesting that performing these stretches for 30 seconds each every day will lead to long-term improvement in mobility.",
+    "people": [
+      {
+        "description": "Athletic male with short brown hair, wearing a dark navy tank top and light-colored shorts.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "lorenz.fit_"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Downward Dog",
+        "display_name": "Downward-Facing Dog",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay", "metadata"],
+        "specifications": "30 seconds",
+        "confidence": 5
+      },
+      {
+        "name": "World's Greatest Stretch",
+        "display_name": "World's Greatest Stretch",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay", "metadata"],
+        "specifications": "Elbow to floor then rotation",
+        "confidence": 5
+      },
+      {
+        "name": "Hip Flexor Stretch",
+        "display_name": "Hip Flexor Stretch",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay", "metadata"],
+        "specifications": "30 seconds",
+        "confidence": 5
+      },
+      {
+        "name": "Pigeon Pose",
+        "display_name": "Pigeon Pose",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Hamstring Stretch",
+        "display_name": "Half Splits Hamstring Stretch",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "A 5-minute daily mobility routine can effectively release lower back pain and stiffness.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Consistency is key; stretching becomes easier and more effective when done every day.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Holding mobility positions for at least 30 seconds is recommended for effectiveness.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "workout",
+      "items": [
+        {
+          "name": "Downward Dog",
+          "details": "Hold for 30 seconds; focus on length in lower back and high hips; knees can be bent."
+        },
+        {
+          "name": "World's Greatest Stretch",
+          "details": "Go deep with the elbow toward the ground, then rotate and open up."
+        },
+        {
+          "name": "Hip Flexor Stretch",
+          "details": "Hold for 30 seconds; can include a quad reach."
+        },
+        {
+          "name": "Hamstring Stretch",
+          "details": "Half split position to target the back of the leg."
+        },
+        {
+          "name": "Pigeon Pose",
+          "details": "Targeting glutes and hip external rotators."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "The Night We Met (Slowed & Reverb) \u2014 Lord Huron",
+      "metadata_song": "original sound - Lorenz",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Exercises are clearly demonstrated and partially listed in the caption/overlay."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Calm, disciplined, and instructional with a moody, dark-gym aesthetic.",
+    "topic_hints": [
+      "Mobility training",
+      "Lower back pain relief",
+      "Daily stretching routine"
+    ],
+    "affect_hints": ["Motivated", "Relieved", "Focused"],
+    "genre_hints": ["Fitness Tutorial", "Health & Wellness"]
+  },
+  "metrics": {
+    "input_tokens": 3907,
+    "output_tokens": 1755,
+    "total_tokens": 5662,
+    "cost_usd": 0.001639,
+    "latency_ms": 21155,
+    "upload_ms": 7750
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

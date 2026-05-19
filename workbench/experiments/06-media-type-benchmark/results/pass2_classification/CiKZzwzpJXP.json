@@ -1,0 +1,71 @@
+{
+  "item_id": "CiKZzwzpJXP",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:14.352700+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fitness",
+      "secondary": "health",
+      "micro_labels": [
+        "mobility",
+        "stretching",
+        "hip flexibility",
+        "lower back pain relief",
+        "desk worker wellness"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "workout",
+      "micro_labels": ["exercise demonstration", "tutorial"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["text_overlay", "raw_footage"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 4490,
+    "output_tokens": 349,
+    "total_tokens": 4839,
+    "cost_usd": 0.000883,
+    "latency_ms": 5432,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}

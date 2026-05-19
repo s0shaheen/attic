@@ -1,0 +1,206 @@
+{
+  "item_id": "Cft-vdTJzuR",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:41.522571+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Creator Salt Hank sharpens a knife and introduces the dish.",
+        "audio_description": "Alright, we're making chopped cheese. Motherf***ing chopped cheese.",
+        "text_on_screen": "",
+        "key_objects": [
+          "honing rod",
+          "chef's knife",
+          "white t-shirt",
+          "baseball cap"
+        ]
+      },
+      {
+        "time_range": "0:02-0:07",
+        "visual_description": "Close-up of beef patties searing in a pan, followed by rapid chopping of onions.",
+        "audio_description": "It's a delicious cheeseburger sandwich and we're gonna put some sweet hot peppers on it.",
+        "text_on_screen": "",
+        "key_objects": [
+          "ground beef patties",
+          "white onion",
+          "stainless steel pan"
+        ]
+      },
+      {
+        "time_range": "0:07-0:11",
+        "visual_description": "Onions and sliced peppers are added to the searing beef patties.",
+        "audio_description": "Let that crust form on the bottom. You want that nice brown chunk going on.",
+        "text_on_screen": "",
+        "key_objects": ["sweet hot peppers", "spatula"]
+      },
+      {
+        "time_range": "0:11-0:14",
+        "visual_description": "The creator uses two spatulas to aggressively chop the beef, onions, and peppers together in the pan.",
+        "audio_description": "Now we chop it up.",
+        "text_on_screen": "",
+        "key_objects": ["metal spatulas"]
+      },
+      {
+        "time_range": "0:14-0:18",
+        "visual_description": "Slices of American cheese are layered over the chopped meat mixture and allowed to melt.",
+        "audio_description": "And that's what belongs on a chopped cheese. American cheese.",
+        "text_on_screen": "",
+        "key_objects": ["American cheese slices"]
+      },
+      {
+        "time_range": "0:18-0:23",
+        "visual_description": "The cheesy meat is scooped onto a toasted roll and topped with lettuce, tomato, and ketchup.",
+        "audio_description": "See that? Look at that. That's a chopped cheese right there.",
+        "text_on_screen": "",
+        "key_objects": [
+          "hero roll",
+          "shredded lettuce",
+          "sliced tomatoes",
+          "ketchup"
+        ]
+      },
+      {
+        "time_range": "0:23-0:28",
+        "visual_description": "Salt Hank takes a large bite of the sandwich and reacts with satisfaction.",
+        "audio_description": "Oh. Sometimes the simplest things in life are the best.",
+        "text_on_screen": "",
+        "key_objects": ["sandwich"]
+      },
+      {
+        "time_range": "0:28-0:34",
+        "visual_description": "The sandwich is cut in half and the cross-section is displayed to the camera.",
+        "audio_description": "Chopped cheese, chopped cheese. And the results!",
+        "text_on_screen": "",
+        "key_objects": ["sandwich halves"]
+      },
+      {
+        "time_range": "0:34-0:40",
+        "visual_description": "Logo animation for 'Side of Salt with Salt Hank'.",
+        "audio_description": "Upbeat funky music continues.",
+        "text_on_screen": "SIDE OF SALT WITH SALT HANK",
+        "key_objects": ["logo"]
+      }
+    ],
+    "overall_summary": "Creator Salt Hank demonstrates how to make a classic NYC-style Chopped Cheese sandwich. He sears beef patties with onions and sweet hot peppers, chops them together on the griddle, and melts American cheese over the top. The mixture is served on a toasted roll with lettuce, tomato, and ketchup, emphasizing that simple ingredients often yield the best results.",
+    "people": [
+      {
+        "description": "Male creator with a mustache, wearing a white t-shirt and a backwards baseball cap.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Salt Hank"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Salt Hank",
+        "display_name": "Salt Hank",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Chopped Cheese",
+        "display_name": "Chopped Cheese Sandwich",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": "NYC style",
+        "confidence": 5
+      },
+      {
+        "name": "American Cheese",
+        "display_name": "American Cheese",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": ["audio", "visual"],
+        "specifications": "sliced",
+        "confidence": 5
+      },
+      {
+        "name": "Sweet Hot Peppers",
+        "display_name": "Sweet Hot Peppers",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": ["audio", "visual"],
+        "specifications": "red and yellow varieties",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The simplest things in life (and food) are often the best.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "A proper chopped cheese requires American cheese and a good crust on the beef.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Beef Patties",
+          "details": "Searing until a brown crust forms"
+        },
+        {
+          "name": "Aromatics",
+          "details": "Diced white onions and sliced sweet hot peppers"
+        },
+        {
+          "name": "Cheese",
+          "details": "Multiple slices of American cheese melted over the chopped meat"
+        },
+        {
+          "name": "Bread",
+          "details": "Toasted hero or sub roll"
+        },
+        {
+          "name": "Toppings",
+          "details": "Shredded lettuce, sliced tomato, and ketchup"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Funky upbeat instrumental \u2014 Unidentified",
+      "metadata_song": "original sound - salt_hank",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "The specific background track is likely a royalty-free funky beat used for his 'Side of Salt' series."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "High-energy, appetizing, and casual.",
+    "topic_hints": ["Cooking", "Sandwiches", "NYC Food Culture"],
+    "affect_hints": ["Hungry", "Satisfied", "Energetic"],
+    "genre_hints": ["Food TikTok", "Recipe Tutorial"]
+  },
+  "metrics": {
+    "input_tokens": 5102,
+    "output_tokens": 1818,
+    "total_tokens": 6920,
+    "cost_usd": 0.001856,
+    "latency_ms": 20885,
+    "upload_ms": 6246
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

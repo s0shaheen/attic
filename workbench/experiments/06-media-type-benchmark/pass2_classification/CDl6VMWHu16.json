@@ -1,0 +1,70 @@
+{
+  "item_id": "CDl6VMWHu16",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:06.907814+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "news",
+      "secondary": "health",
+      "micro_labels": [
+        "COVID-19",
+        "school safety",
+        "student rights",
+        "whistleblowing"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "news_commentary",
+      "micro_labels": ["news graphic", "social media report"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "angry",
+        "tier": "secondary"
+      },
+      {
+        "label": "shocking",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["text_overlay", "slideshow"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "journalist",
+      "confidence": 1.0
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 4320,
+    "output_tokens": 346,
+    "total_tokens": 4666,
+    "cost_usd": 0.000856,
+    "latency_ms": 5600,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "visual_input": "thumbnail",
+    "visual_count": 1
+  }
+}

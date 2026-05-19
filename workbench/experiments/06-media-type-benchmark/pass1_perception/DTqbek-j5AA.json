@@ -1,0 +1,140 @@
+{
+  "item_id": "DTqbek-j5AA",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:06.203524+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "The creator, wearing an orange shirt and headphones, speaks directly to the camera before panning to show the internal components of an open enterprise server rack.",
+        "audio_description": "Creator says: 'Let me tell you something right now. Man, this server work is some hard shit. See, this is that shit you don't understand.'",
+        "text_on_screen": "@iDerek4Real\nServer Diagnostic Be Some Serious Work",
+        "key_objects": [
+          "Server Rack",
+          "Motherboard",
+          "RAM modules",
+          "Heat sinks",
+          "Headphones",
+          "Silver chain"
+        ]
+      },
+      {
+        "time_range": "0:07-0:16",
+        "visual_description": "The creator alternates between showing his face and the server hardware, emphasizing the dedication required for the job.",
+        "audio_description": "Creator says: 'You really gotta be putting in this work. But I don't know if you've been putting in that work because you really ain't about that life. You really ain't like that.'",
+        "text_on_screen": "@iDerek4Real\nServer Diagnostic Be Some Serious Work",
+        "key_objects": ["Server components", "Internal wiring"]
+      },
+      {
+        "time_range": "0:16-0:25",
+        "visual_description": "The creator identifies himself as a 'server tech' while gesturing toward the complex hardware and nodding confidently.",
+        "audio_description": "Creator says: 'But look man, we in the room man. Hard work, bruh. Server work. The server guy. Server tech. Look at that... I'm talking about, dawg, this is some hard work.'",
+        "text_on_screen": "@iDerek4Real\nServer Diagnostic Be Some Serious Work",
+        "key_objects": ["Server chassis", "Cooling fans"]
+      }
+    ],
+    "overall_summary": "In this video, creator @derek4fitness (Derek) showcases the technical complexity of server diagnostic and hardware debugging work. He provides a close-up look at the internal components of an enterprise-grade server while emphasizing that the job requires significant expertise and a strong work ethic. The video serves as a 'day-in-the-life' glimpse into the world of an IT specialist, highlighting the pride he takes in his technical skills.",
+    "people": [
+      {
+        "description": "A man in an orange t-shirt, wearing large headphones and a heavy silver chain, acting as an IT specialist/server technician.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Derek (@derek4fitness / @iDerek4Real)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "@uedevgames",
+        "display_name": "UE Dev Games",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["text_overlay", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "iFixit",
+        "display_name": "iFixit",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Repair tool and guide company",
+        "confidence": 4
+      },
+      {
+        "name": "Aquarius",
+        "display_name": "Aquarius Zodiac",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": ["metadata", "visual"],
+        "specifications": "Creator has Aquarius tattoo and mentions it in hashtags",
+        "confidence": 5
+      },
+      {
+        "name": "Enterprise Server",
+        "display_name": "Rack-Mount Server Hardware",
+        "type": "product",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "Multi-socket motherboard with numerous RAM slots and heat sinks",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Server diagnostic work and hardware debugging require a level of understanding that goes beyond just reading a manual.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Professional IT maintenance is a high-effort 'grind' that requires genuine dedication.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": null
+    },
+    "audio_identification": {
+      "actual_song": "Unknown Hip-Hop/Trap Instrumental",
+      "metadata_song": "original sound - Derek4Fitness",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": 3,
+      "notes": "The specific server model is not explicitly visible but is a standard enterprise rack unit. The background music is a generic trap beat often used in motivational content."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Industrious, confident, and technical with a high-energy 'hustle' vibe.",
+    "topic_hints": [
+      "Information Technology",
+      "Hardware Engineering",
+      "Career Motivation"
+    ],
+    "affect_hints": ["Confident", "Determined", "Professional"],
+    "genre_hints": ["Vlog", "Behind-the-scenes", "Tech Showcase"]
+  },
+  "metrics": {
+    "input_tokens": 3871,
+    "output_tokens": 1428,
+    "total_tokens": 5299,
+    "cost_usd": 0.001437,
+    "latency_ms": 23946,
+    "upload_ms": 6235
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

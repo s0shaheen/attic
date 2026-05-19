@@ -1,0 +1,124 @@
+{
+  "item_id": "DPSgFVIDjFW",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:41:28.416027+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:26",
+        "visual_description": "Kendall Roy walks somberly along a waterfront railing at sunset, looking defeated and contemplative. A circular diagram is overlaid on the screen, illustrating a cycle of emotional states using internet slang.",
+        "audio_description": "A dramatic, melancholic orchestral piece with choral elements plays throughout.",
+        "text_on_screen": "\u201cIt\u2019s so over\u201d create strong men\nStrong men create \u201cWe\u2019re so back\u201d\n\u201cWe\u2019re so back\u201d create weak men\nWeak men create \u201cIt\u2019s so over\u201d\nBibawen",
+        "key_objects": ["Kendall Roy", "Overcoat", "Waterfront railing"]
+      }
+    ],
+    "overall_summary": "The video features Kendall Roy from the TV series 'Succession' walking despondently by a river, set to dramatic music from the 'Berserk' anime. It parodies the famous 'Hard times create strong men' quote by replacing the traditional stages with the internet slang phrases 'It's so over' and 'We're so back.' The video serves as a melancholic meme reflecting on the cyclical nature of hope and despair in modern digital culture.",
+    "people": [
+      {
+        "description": "Kendall Roy, portrayed by Jeremy Strong; he is wearing a dark coat and looking emotionally drained while walking in a park.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Kendall Roy"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Kendall Roy",
+        "display_name": "Kendall Roy (Succession)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "Character from HBO's Succession",
+        "confidence": 5
+      },
+      {
+        "name": "Succession",
+        "display_name": "Succession",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "HBO TV Series",
+        "confidence": 5
+      },
+      {
+        "name": "It's so over / We're so back",
+        "display_name": "It's so over / We're so back Meme",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "specifications": "Internet slang cycle",
+        "confidence": 5
+      },
+      {
+        "name": "L'Amour Impitoyable",
+        "display_name": "L'Amour Impitoyable \u2014 Susumu Hirasawa",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": "Berserk (1997) Soundtrack",
+        "confidence": 5
+      },
+      {
+        "name": "Berserk",
+        "display_name": "Berserk (1997)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "Anime series",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The cycle of optimism and pessimism in internet culture is inevitable and self-perpetuating.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "The Cycle of 'Backness'",
+          "details": "1. 'It's so over' leads to Strong Men. 2. Strong Men lead to 'We're so back'. 3. 'We're so back' leads to Weak Men. 4. Weak Men lead to 'It's so over'."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "L'Amour Impitoyable \u2014 Susumu Hirasawa",
+      "metadata_song": "True",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The visual is specifically from the series finale of Succession. The music is a well-known track from the Berserk anime."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "panning",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Melancholic, somber, dramatic, and fatalistic.",
+    "topic_hints": ["Internet Slang", "Succession TV Show", "Philosophy Memes"],
+    "affect_hints": ["Defeated", "Nostalgic", "Ironical"],
+    "genre_hints": ["Corecore", "Meme Edit"]
+  },
+  "metrics": {
+    "input_tokens": 3778,
+    "output_tokens": 1255,
+    "total_tokens": 5033,
+    "cost_usd": 0.00132,
+    "latency_ms": 17276,
+    "upload_ms": 5608
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

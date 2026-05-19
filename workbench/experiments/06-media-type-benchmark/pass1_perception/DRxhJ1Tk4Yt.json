@@ -1,0 +1,144 @@
+{
+  "item_id": "DRxhJ1Tk4Yt",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:32.697137+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "Frank Kole (formerly Comethazine) sits in a professional recording studio, playing a trumpet with focused intensity.",
+        "audio_description": "Smooth, melancholic jazz trumpet melody begins playing.",
+        "text_on_screen": "Cash Cow Music @cashcowmusic\nFrank Kole was Comethazine 6 years ago making gangsta rap, now he's composing jazz",
+        "key_objects": [
+          "Trumpet",
+          "Microphone",
+          "Studio chair",
+          "Acoustic panels"
+        ]
+      },
+      {
+        "time_range": "0:07-0:16",
+        "visual_description": "Cinematic close-up shots of the trumpet's bell and valves as it is being played.",
+        "audio_description": "The jazz melody continues, showcasing technical proficiency on the instrument.",
+        "text_on_screen": "Frank Kole was Comethazine 6 years ago making gangsta rap, now he's composing jazz",
+        "key_objects": ["Trumpet"]
+      },
+      {
+        "time_range": "0:16-0:27",
+        "visual_description": "Extreme close-up of Frank Kole's face and hands, highlighting his concentration and the physical effort of playing.",
+        "audio_description": "The song 'Autumn Leaves' reaches a soulful peak before the clip ends.",
+        "text_on_screen": "Frank Kole was Comethazine 6 years ago making gangsta rap, now he's composing jazz",
+        "key_objects": ["Glasses", "Trumpet"]
+      }
+    ],
+    "overall_summary": "This video highlights the dramatic artistic transformation of the rapper formerly known as Comethazine into a jazz musician named Frank Kole. It features him in a recording studio performing his single 'Autumn Leaves' on the trumpet. The content emphasizes how he has successfully pivoted from 'gangsta rap' to sophisticated jazz, surprising his audience with his technical skill and a believable new persona.",
+    "people": [
+      {
+        "description": "Black male musician wearing glasses and a white shirt, playing the trumpet.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Frank Kole"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Frank Kole",
+        "display_name": "Frank Kole",
+        "type": "artist",
+        "relevance": "primary",
+        "source": ["text_overlay", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Comethazine",
+        "display_name": "Comethazine",
+        "type": "artist",
+        "relevance": "primary",
+        "source": ["text_overlay", "metadata"],
+        "specifications": "Former stage name of Frank Kole",
+        "confidence": 5
+      },
+      {
+        "name": "Autumn Leaves",
+        "display_name": "Autumn Leaves",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": "Jazz single by Frank Kole",
+        "confidence": 5
+      },
+      {
+        "name": "Cash Cow Music",
+        "display_name": "Cash Cow Music",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["text_overlay", "metadata"],
+        "specifications": "@cashcowmusic",
+        "confidence": 5
+      },
+      {
+        "name": "Jazz",
+        "display_name": "Jazz",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Musical genre",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Frank Kole (formerly Comethazine) has undergone one of the most drastic and believable genre pivots in modern music history.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "The artist has transitioned from making aggressive rap anthems to sophisticated jazz compositions suitable for background listening.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Autumn Leaves \u2014 Frank Kole",
+      "metadata_song": "null",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The identity of the artist and the song are explicitly stated in the caption and text overlay."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "heavy_effects"
+    },
+    "visual_mood": "Sophisticated, calm, and surprisingly professional.",
+    "topic_hints": [
+      "Music career transformation",
+      "Jazz performance",
+      "Artist rebranding"
+    ],
+    "affect_hints": ["Impressed", "Surprised", "Relaxed"],
+    "genre_hints": ["Music showcase", "Artist update"]
+  },
+  "metrics": {
+    "input_tokens": 3985,
+    "output_tokens": 1334,
+    "total_tokens": 5319,
+    "cost_usd": 0.001398,
+    "latency_ms": 19244,
+    "upload_ms": 5626
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

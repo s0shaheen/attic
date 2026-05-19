@@ -1,0 +1,71 @@
+{
+  "item_id": "DVGbB9ikU-b",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:57.727552+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "music",
+      "micro_labels": [
+        "Gully Boy",
+        "Ranveer Singh",
+        "Bollywood",
+        "Indian Hip Hop",
+        "Class Struggle"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": ["fan edit", "cinematic montage", "movie scene"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["cinematic", "text_overlay"],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 6688,
+    "output_tokens": 362,
+    "total_tokens": 7050,
+    "cost_usd": 0.00122,
+    "latency_ms": 10145,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 3
+  }
+}

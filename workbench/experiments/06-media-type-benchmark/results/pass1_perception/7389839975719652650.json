@@ -1,0 +1,262 @@
+{
+  "item_id": "7389839975719652650",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:25:32.687748+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "A rustic wooden barn at night illuminated from within, featuring vintage advertising signs.",
+        "text_detected": "POV the first time you got drunk\nTEXACO GASOLINE MOTOR OIL\nFOUNTAIN SERVICE DRINK Coca-Cola Delicious and Refreshing\nGOOD YEAR TIRES",
+        "primary_content": "Introduction to the POV: arriving at a party location (a barn).",
+        "entities": [
+          {
+            "name": "Coca-Cola",
+            "type": "brand",
+            "specifications": "Vintage fountain service sign"
+          },
+          {
+            "name": "Texaco",
+            "type": "brand",
+            "specifications": "Vintage star logo gasoline sign"
+          },
+          {
+            "name": "Goodyear",
+            "type": "brand",
+            "specifications": "Vertical tire advertisement sign"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "A modern, high-end kitchen with a large dark-colored island, wooden countertop, and three grey bar stools.",
+        "text_detected": "FRESH BAKED PIES SERVED DAILY",
+        "primary_content": "The 'rich person's house' kitchen setting.",
+        "entities": [
+          {
+            "name": "Kitchen Island",
+            "type": "product",
+            "specifications": "Dark base with butcher block top"
+          },
+          {
+            "name": "Stainless Steel Refrigerator",
+            "type": "product",
+            "specifications": "French door style"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "A view looking down a staircase with a prominent exposed brick wall on the right and recessed lighting.",
+        "text_detected": "none",
+        "primary_content": "Transition space leading to a basement.",
+        "entities": [
+          {
+            "name": "Exposed Brick Wall",
+            "type": "technique",
+            "specifications": "Red and brown multi-tonal brick"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "A large, empty-feeling finished basement with beige carpeting, tan walls, and a sectional sofa in the distance.",
+        "text_detected": "none",
+        "primary_content": "The classic 'party basement' setting.",
+        "entities": [
+          {
+            "name": "Sectional Sofa",
+            "type": "product",
+            "specifications": "Grey fabric"
+          }
+        ]
+      },
+      {
+        "image_number": 5,
+        "description": "A dark forest at night with a flashlight beam illuminating the ground and tree trunks.",
+        "text_detected": "fineart america",
+        "primary_content": "The 'wandering outside' phase of a party.",
+        "entities": [
+          {
+            "name": "Fine Art America",
+            "type": "brand",
+            "specifications": "Watermark"
+          }
+        ]
+      },
+      {
+        "image_number": 6,
+        "description": "A green ping pong table in a basement with wood-paneled walls and a low ceiling.",
+        "text_detected": "none",
+        "primary_content": "Entertainment area in a basement.",
+        "entities": [
+          {
+            "name": "Ping Pong Table",
+            "type": "game",
+            "specifications": "Standard green folding table"
+          }
+        ]
+      },
+      {
+        "image_number": 7,
+        "description": "An outdoor patio at night with a white sectional sofa, a patterned rug, and a net of string lights overhead.",
+        "text_detected": "none",
+        "primary_content": "Upscale outdoor lounge area.",
+        "entities": [
+          {
+            "name": "String Lights",
+            "type": "product",
+            "specifications": "Net-style warm white LEDs"
+          },
+          {
+            "name": "Outdoor Sectional",
+            "type": "product",
+            "specifications": "White cushions with wooden frame"
+          }
+        ]
+      },
+      {
+        "image_number": 8,
+        "description": "A close-up shot of a bright campfire burning in a stone or dirt pit at night.",
+        "text_detected": "none",
+        "primary_content": "Outdoor gathering spot.",
+        "entities": [
+          {
+            "name": "Campfire",
+            "type": "event",
+            "specifications": "Wood-burning"
+          }
+        ]
+      },
+      {
+        "image_number": 9,
+        "description": "The interior of a barn with a ping pong table in the center and string lights hanging from the rafters.",
+        "text_detected": "none",
+        "primary_content": "Alternative party space inside a barn.",
+        "entities": [
+          {
+            "name": "Ping Pong Table",
+            "type": "game",
+            "specifications": "Black or dark blue surface"
+          },
+          {
+            "name": "Edison Bulbs",
+            "type": "product",
+            "specifications": "String light style"
+          }
+        ]
+      },
+      {
+        "image_number": 10,
+        "description": "A wide, sunlit field of tall grass or wheat at dawn or dusk with a line of trees in the background.",
+        "text_detected": "none",
+        "primary_content": "The 'morning after' or the scale of the property.",
+        "entities": [
+          {
+            "name": "Wheat Field",
+            "type": "place",
+            "specifications": "Golden hour lighting"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This TikTok slideshow is a nostalgic 'POV' meme about the experience of attending a party at a wealthy person's house for the first time. It uses a series of 'liminal space' style images\u2014large basements, fancy kitchens, and expansive outdoor areas\u2014to evoke the specific feeling of teenage or young adult social gatherings. The user is likely saving this for the 'nostalgia' factor or to share a relatable cultural experience of 'rich house' parties.",
+    "carousel_type": "photo_dump",
+    "narrative_thread": "The images follow a chronological or spatial journey of a party: arriving at a barn, hanging out in a high-end kitchen, moving to the basement, wandering into the woods, playing games, sitting by a fire, and finally seeing the property at sunrise.",
+    "entities": [
+      {
+        "name": "Rich Person's House Party",
+        "display_name": "Rich House Party Aesthetic",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": ["metadata", "text_overlay"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "Liminal Space",
+        "display_name": "Liminal Space Aesthetic",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "slide_number": 4,
+        "confidence": 4
+      },
+      {
+        "name": "Ping Pong",
+        "display_name": "Ping Pong / Table Tennis",
+        "type": "game",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "slide_number": 6,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Parties at wealthy homes are uniquely memorable due to the variety of high-end and expansive spaces available.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "The Barn",
+          "details": "Rustic exterior with vintage branding",
+          "slide_number": 1
+        },
+        {
+          "name": "The Kitchen",
+          "details": "Modern luxury with large island",
+          "slide_number": 2
+        },
+        {
+          "name": "The Basement",
+          "details": "Large carpeted area for congregating",
+          "slide_number": 4
+        },
+        {
+          "name": "The Game Room",
+          "details": "Wood-paneled room with ping pong",
+          "slide_number": 6
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Unknown \u2014 dainsleif908",
+      "metadata_song": "original sound - dainsleif908",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "The images are standard stock or aesthetic photos used to represent a specific vibe; brands like Coca-Cola and Texaco are clearly visible."
+    },
+    "presentation_style": {
+      "primary_format": "photo_dump",
+      "visual_style": "aesthetic"
+    },
+    "visual_mood": "Nostalgic, slightly eerie, and atmospheric.",
+    "topic_hints": ["Youth culture", "Nostalgia", "Luxury real estate"],
+    "affect_hints": ["Nostalgic", "Melancholic", "Comforted"],
+    "genre_hints": ["POV meme", "Corecore", "Dreamcore"]
+  },
+  "metrics": {
+    "input_tokens": 12122,
+    "output_tokens": 2256,
+    "total_tokens": 14378,
+    "cost_usd": 0.003172,
+    "latency_ms": 18632,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 10
+  }
+}

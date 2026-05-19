@@ -1,0 +1,107 @@
+{
+  "item_id": "DRJnr8KDb_G",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:38:23.135092+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:08",
+        "visual_description": "A static screenshot of a Facebook post is displayed over a dark background while music plays.",
+        "audio_description": "The song 'My Dawg' by Lil Baby plays, specifically the hook: 'That's my dog for sure... Yes my dog for sure... Yes my dog...'",
+        "text_on_screen": "Treyfrmda9 \u2022 Follow\n2d \u2022 \nIn class 7th grade everyone jus chillin then niggas jus moan in class outta nowhere \ud83d\ude02",
+        "key_objects": ["Facebook interface", "Smartphone screenshot"]
+      }
+    ],
+    "overall_summary": "The video features a relatable meme presented as a screenshot of a Facebook post by user Treyfrmda9. The post reminisces about the random and disruptive behavior of boys in 7th-grade classrooms, specifically their tendency to make moaning sounds out of nowhere. The post is set to the song 'My Dawg' by Lil Baby, emphasizing a sense of camaraderie or shared experience among peers.",
+    "people": [
+      {
+        "description": "A young Black man appearing in a small circular profile picture for the Facebook account 'Treyfrmda9'.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Treyfrmda9"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Lil Baby",
+        "display_name": "Lil Baby",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "My Dawg",
+        "display_name": "My Dawg - Lil Baby",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": "Released 2017",
+        "confidence": 5
+      },
+      {
+        "name": "Facebook",
+        "display_name": "Facebook",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "7th Grade",
+        "display_name": "7th Grade",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "specifications": "Middle school education level",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Middle school classroom environments are often characterized by unpredictable, immature, and disruptive humor from male students.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "My Dawg \u2014 Lil Baby",
+      "metadata_song": "original sound - baghdadboob",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The audio is a very clear snippet of Lil Baby's 'My Dawg'. The text is a direct transcription of the Facebook post screenshot."
+    },
+    "presentation_style": {
+      "primary_format": "slideshow",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Humorous and nostalgic with a casual, social media aesthetic.",
+    "topic_hints": ["School memories", "Middle school humor", "Internet memes"],
+    "affect_hints": ["Amused", "Nostalgic", "Relatable"],
+    "genre_hints": ["Meme", "Relatable content"]
+  },
+  "metrics": {
+    "input_tokens": 2162,
+    "output_tokens": 984,
+    "total_tokens": 3146,
+    "cost_usd": 0.000915,
+    "latency_ms": 13261,
+    "upload_ms": 3265
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "item_id": "BOyDZyhFXph",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:39:38.840668+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "A television screen displays a mugshot of a man with an afro, identified as Charles, during a news broadcast.",
+        "audio_description": "News reporter states that Charles was shot in the chest and prosecutors say he fired a .40 caliber shot.",
+        "text_on_screen": "Im crying at the sketch \ud83d\ude02\n10:04 78\u00b0\n7 NEWS",
+        "key_objects": ["Television", "Mugshot"]
+      },
+      {
+        "time_range": "0:04-0:08",
+        "visual_description": "The news report shows footage of a crime scene involving a car at night.",
+        "audio_description": "Reporter mentions DNA evidence linking the suspect to the crime.",
+        "text_on_screen": "Im crying at the sketch \ud83d\ude02\n10:04 78\u00b0\n7 NEWS",
+        "key_objects": ["Car", "Crime scene tape"]
+      },
+      {
+        "time_range": "0:08-0:12",
+        "visual_description": "The news report reveals a crude, hand-drawn witness sketch of the suspect, then displays it side-by-side with the actual mugshot.",
+        "audio_description": "Reporter: 'In addition, a witness provided this sketch.' The person filming begins laughing hysterically.",
+        "text_on_screen": "Im crying at the sketch \ud83d\ude02\n10:04 78\u00b0\n7 NEWS",
+        "key_objects": ["Witness sketch", "Mugshot comparison"]
+      },
+      {
+        "time_range": "0:12-0:16",
+        "visual_description": "A police officer is shown speaking at a press conference on the news.",
+        "audio_description": "Reporter: 'Police are still looking for others.' The person filming continues to laugh loudly.",
+        "text_on_screen": "Im crying at the sketch \ud83d\ude02\n10:04 78\u00b0\n7 NEWS",
+        "key_objects": ["Police officer", "Microphones"]
+      }
+    ],
+    "overall_summary": "This video is a reaction to a viral local news segment from WSVN 7 News Miami. The news report discusses a shooting involving a suspect named Charles, but the highlight is the reveal of an incredibly crude and humorous witness sketch. The person filming the TV screen bursts into uncontrollable laughter at the poor quality of the drawing and its comparison to the suspect's actual mugshot.",
+    "people": [
+      {
+        "description": "Suspect in a mugshot with an afro and red shirt",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Charles"
+      },
+      {
+        "description": "Police officer speaking at a press conference",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "Person filming the TV screen and laughing",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "WSVN 7 News",
+        "display_name": "WSVN 7 News Miami",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "Local news station in Miami, Florida",
+        "confidence": 5
+      },
+      {
+        "name": "Charles",
+        "display_name": "Charles (Suspect)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["audio", "visual"],
+        "specifications": "Suspect in a shooting case",
+        "confidence": 4
+      },
+      {
+        "name": ".40 caliber handgun",
+        "display_name": ".40 Caliber Handgun",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "Weapon mentioned in the news report",
+        "confidence": 5
+      },
+      {
+        "name": "Witness Sketch Meme",
+        "display_name": "Viral Witness Sketch",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": ["visual", "audio"],
+        "specifications": "Crude drawing used in a police investigation",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The witness sketch provided to the police is unintentionally hilarious due to its lack of artistic detail.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "The juxtaposition of serious crime reporting with a funny drawing creates a viral comedic moment.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The news station is clearly identifiable as WSVN 7 Miami. The suspect's first name is mentioned."
+    },
+    "presentation_style": {
+      "primary_format": "reaction",
+      "camera_work": "handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Humorous and ironic, contrasting serious news with a funny drawing.",
+    "topic_hints": ["Funny News Moments", "Police Sketches", "Viral Memes"],
+    "affect_hints": ["Amused", "Hilarious", "Entertained"],
+    "genre_hints": ["Reaction", "Comedy", "News Blooper"]
+  },
+  "metrics": {
+    "input_tokens": 2957,
+    "output_tokens": 1397,
+    "total_tokens": 4354,
+    "cost_usd": 0.001282,
+    "latency_ms": 20626,
+    "upload_ms": 5349
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

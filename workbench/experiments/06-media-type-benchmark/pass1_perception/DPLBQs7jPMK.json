@@ -1,0 +1,162 @@
+{
+  "item_id": "DPLBQs7jPMK",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:41:44.476503+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Several ICE and U.S. Border Patrol agents in full tactical gear stand on a downtown Chicago sidewalk; one agent checks his phone.",
+        "audio_description": "Ambient city noise and indistinct chatter.",
+        "text_on_screen": "POLICE, U.S. BORDER PATROL",
+        "key_objects": ["Tactical vests", "Smartphones", "Patches"]
+      },
+      {
+        "time_range": "0:02-0:09",
+        "visual_description": "A food delivery man on a bicycle passes the agents; they immediately begin a high-speed foot pursuit across the LaSalle Street Bridge.",
+        "audio_description": "Shouting: 'Get him! Get him!' and 'Watch out!' along with the sound of heavy boots running on pavement.",
+        "text_on_screen": "CHICAGO, RIVERWALK, 320",
+        "key_objects": [
+          "Bicycle",
+          "Delivery thermal bag",
+          "LaSalle Street Bridge"
+        ]
+      },
+      {
+        "time_range": "0:09-0:17",
+        "visual_description": "The delivery man speeds away down a city street, successfully outdistancing the agents who eventually slow down and stop the chase.",
+        "audio_description": "Continued shouting and heavy breathing from the agents as they realize the man has escaped.",
+        "text_on_screen": "FLIGHT CLUB",
+        "key_objects": ["Sneaker store storefront", "Traffic"]
+      }
+    ],
+    "overall_summary": "This video captures a tense encounter in downtown Chicago where several ICE and U.S. Border Patrol agents attempt to detain a food delivery worker on a bicycle. The chase begins suddenly on a sidewalk and continues across the LaSalle Street Bridge. Despite the agents' pursuit on foot, the delivery man manages to pedal away quickly, successfully evading capture. According to the caption, the incident was sparked by verbal comments made by the man rather than any physical threat.",
+    "people": [
+      {
+        "description": "Multiple law enforcement officers in olive and camouflage tactical gear with 'POLICE' and 'U.S. BORDER PATROL' markings.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "ICE / Border Patrol Agents"
+      },
+      {
+        "description": "A man in a brown shirt riding a bicycle with a large delivery bag, fleeing from the agents.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "U.S. Immigration and Customs Enforcement",
+        "display_name": "ICE",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["metadata", "visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "U.S. Border Patrol",
+        "display_name": "U.S. Border Patrol",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Chicago",
+        "display_name": "Chicago, Illinois",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["metadata", "visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "LaSalle Street Bridge",
+        "display_name": "LaSalle Street Bridge",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Flight Club",
+        "display_name": "Flight Club Chicago",
+        "type": "brand",
+        "relevance": "background",
+        "source": ["visual"],
+        "specifications": "Sneaker consignment store",
+        "confidence": 5
+      },
+      {
+        "name": "Christopher Sweat",
+        "display_name": "Christopher Sweat",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Original video credit",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "ICE and Border Patrol agents engaged in a foot pursuit of a delivery worker in downtown Chicago.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "The delivery worker successfully evaded the agents using a bicycle.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "The pursuit was reportedly initiated due to verbal comments rather than physical threats.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": null
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The location and agencies are clearly visible via signage and uniform patches."
+    },
+    "presentation_style": {
+      "primary_format": "pov",
+      "camera_work": "handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Tense, high-energy, and chaotic.",
+    "topic_hints": ["Law Enforcement", "Immigration", "Chicago"],
+    "affect_hints": ["Anxiety", "Surprise", "Tension"],
+    "genre_hints": ["Street footage", "News clip"]
+  },
+  "metrics": {
+    "input_tokens": 3087,
+    "output_tokens": 1403,
+    "total_tokens": 4490,
+    "cost_usd": 0.001305,
+    "latency_ms": 22106,
+    "upload_ms": 6038
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

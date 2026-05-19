@@ -1,0 +1,76 @@
+{
+  "item_id": "DRxhJ1Tk4Yt",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:57.621806+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "music",
+      "secondary": "career",
+      "micro_labels": [
+        "jazz",
+        "hip-hop",
+        "artist transformation",
+        "trumpet",
+        "comethazine",
+        "frank kole"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": ["artist spotlight", "music news"],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "relaxing",
+        "tier": "secondary"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      },
+      {
+        "label": "shocking",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["cinematic", "text_overlay"],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "brand",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 6639,
+    "output_tokens": 374,
+    "total_tokens": 7013,
+    "cost_usd": 0.00122,
+    "latency_ms": 8959,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 3
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "item_id": "DPUqXCijbEr",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:41.044883+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "relationships",
+      "secondary": "diy",
+      "micro_labels": [
+        "marriage advice",
+        "date night ideas",
+        "sushi battleship",
+        "conflict resolution"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "reaction",
+      "micro_labels": ["pov"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "wholesome",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["talking_head", "text_overlay", "mixed"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 6672,
+    "output_tokens": 343,
+    "total_tokens": 7015,
+    "cost_usd": 0.001207,
+    "latency_ms": 5709,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 3
+  }
+}

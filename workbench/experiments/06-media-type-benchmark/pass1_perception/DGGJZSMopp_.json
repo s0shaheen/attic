@@ -1,0 +1,207 @@
+{
+  "item_id": "DGGJZSMopp_",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:40:12.029560+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "Creator tastes the finished dish from a large frying pan, expressing satisfaction.",
+        "audio_description": "Creator says 'Fire' after taking a bite.",
+        "text_on_screen": "POV: you make food like this so you never get the egg ick",
+        "key_objects": ["frying pan", "fork", "breakfast hash with eggs"]
+      },
+      {
+        "time_range": "0:04-0:15",
+        "visual_description": "Creator pours olive oil and diced potatoes into a pan, then covers it with a lid to cook.",
+        "audio_description": "a bunch of olive oil, in with some diced potatoes, potato, cook this for like a minute, put the lid on and cook this for about three minutes",
+        "text_on_screen": "a bunch of olive oil, in with some diced potatoes, potato, cook this for like a minute, put the lid on and cook this for about three minutes",
+        "key_objects": ["olive oil", "diced potatoes", "frying pan", "lid"]
+      },
+      {
+        "time_range": "0:15-0:21",
+        "visual_description": "Creator adds diced tomatoes, chopped peppers, and minced garlic to the pan.",
+        "audio_description": "I'm gonna take off the lid, as you can see crustacean man... that's exactly what we want, in with some diced tomatoes and some chopped peppers, a bunch of garlic",
+        "text_on_screen": "I'm gonna take off the lid, as you can see crustacean man... that's exactly what we want, in with some diced tomatoes and some chopped peppers, a bunch of garlic",
+        "key_objects": ["diced tomatoes", "chopped peppers", "garlic"]
+      },
+      {
+        "time_range": "0:21-0:30",
+        "visual_description": "Creator seasons the mixture with salt, black pepper, and a blend of spices from a small bowl.",
+        "audio_description": "a pinch of salt, black pepper, I've got onion powder, garlic powder, paprika, cumin powder and some smoked paprika, go in with all of these spices",
+        "text_on_screen": "a pinch of salt, black pepper, I've got onion powder, garlic powder, paprika, cumin powder and some smoked paprika, go in with all of these spices",
+        "key_objects": ["salt", "black pepper", "spice blend"]
+      },
+      {
+        "time_range": "0:30-0:38",
+        "visual_description": "Creator adds dried parsley, oregano, and a splash of water to the pan.",
+        "audio_description": "dried parsley, oregano, some dried oregano and stir, blast some water in there",
+        "text_on_screen": "dried parsley, oregano, some dried oregano and stir, blast some water in there",
+        "key_objects": ["dried parsley", "dried oregano", "water"]
+      },
+      {
+        "time_range": "0:38-0:43",
+        "visual_description": "Creator covers the pan with a lid to simmer the vegetable mixture.",
+        "audio_description": "perfect, lid on, I'm gonna simmer this for about 8 to 10 minutes on a low heat",
+        "text_on_screen": "perfect, lid on, I'm gonna simmer this for about 8 to 10 minutes on a low heat",
+        "key_objects": ["lid", "frying pan"]
+      },
+      {
+        "time_range": "0:43-0:53",
+        "visual_description": "Creator makes four wells in the mixture and cracks an egg into each one.",
+        "audio_description": "and cook this... for a final minute, I'm gonna make some wells, four, let this cook for... one minute, eggs gone, I get sad man",
+        "text_on_screen": "and cook this... for a final minute, I'm gonna make some wells, four, let this cook for... one minute, eggs gone, I get sad man",
+        "key_objects": ["eggs", "egg carton"]
+      },
+      {
+        "time_range": "0:53-0:58",
+        "visual_description": "Creator covers the pan again to cook the eggs until the whites are set but yolks are jiggly.",
+        "audio_description": "put the lid on and let the egg get jiggly but also like sealed",
+        "text_on_screen": "put the lid on and let the egg get jiggly but also like sealed",
+        "key_objects": ["lid"]
+      },
+      {
+        "time_range": "0:58-1:06",
+        "visual_description": "Creator removes the lid, seasons the eggs with salt, pepper, chili flakes, and chives, then presents the final dish.",
+        "audio_description": "remove, jiggly eggs still, bit of salt, pepper, chilli flakes, a bunch of chives, and this is it",
+        "text_on_screen": "remove, jiggly eggs still, bit of salt, pepper, chilli flakes, a bunch of chives, and this is it",
+        "key_objects": ["chili flakes", "chives", "finished dish"]
+      }
+    ],
+    "overall_summary": "In this video, creator @whatinthechef demonstrates how to make a 'power breakfast' one-pot meal consisting of a potato and vegetable hash topped with poached eggs. He starts by frying diced potatoes, then adds tomatoes, peppers, and garlic before seasoning heavily with a variety of spices and herbs. After simmering the base with water, he cracks four eggs into wells in the mixture and cooks them under a lid until the whites are set. The dish is finished with fresh chives and chili flakes, serving as a high-energy meal perfect for breaking an intermittent fast.",
+    "people": [
+      {
+        "description": "Male creator wearing a black 'WhatInTheChef' apron, demonstrating a recipe.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@whatinthechef"
+      }
+    ],
+    "entities": [
+      {
+        "name": "WhatInTheChef",
+        "display_name": "WhatInTheChef",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "One-Pot Breakfast Hash",
+        "display_name": "One-Pot Breakfast Hash",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": ["visual", "audio"],
+        "specifications": "Potatoes, tomatoes, peppers, eggs",
+        "confidence": 5
+      },
+      {
+        "name": "Olive Oil",
+        "display_name": "Olive Oil",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Potatoes",
+        "display_name": "Diced Potatoes",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": ["audio", "visual"],
+        "specifications": "diced",
+        "confidence": 5
+      },
+      {
+        "name": "Eggs",
+        "display_name": "Large Eggs",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": ["audio", "visual"],
+        "specifications": "4 eggs",
+        "confidence": 5
+      },
+      {
+        "name": "Smoked Paprika",
+        "display_name": "Smoked Paprika",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Cumin Powder",
+        "display_name": "Cumin Powder",
+        "type": "ingredient",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Cooking eggs in a flavorful vegetable and potato base prevents 'the egg ick' and creates a satisfying 'power breakfast'.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Simmering the potato base with water and a lid ensures the potatoes are cooked through before adding the eggs.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "One-Pot Power Breakfast",
+          "details": "Ingredients: Olive oil, diced potatoes, diced tomatoes, chopped peppers, garlic, salt, black pepper, onion powder, garlic powder, paprika, cumin powder, smoked paprika, dried parsley, dried oregano, water, 4 eggs, chili flakes, chives."
+        },
+        {
+          "name": "Cooking Steps",
+          "details": "1. Fry potatoes in olive oil for 1 min, then cover for 3 mins. 2. Add tomatoes, peppers, and garlic. 3. Season with salt, pepper, and spice blend. 4. Add herbs and water, simmer covered for 8-10 mins. 5. Create wells, add eggs, and cook covered for 1-2 mins until set but jiggly. 6. Garnish with chives and chili flakes."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Original Sound - whatinthechef",
+      "metadata_song": "original sound - WhatInTheChef",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Recipe steps and ingredients are clearly stated in the audio and shown visually."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Energetic, appetizing, and instructional.",
+    "topic_hints": ["Breakfast Recipes", "One Pot Meals", "Healthy Cooking"],
+    "affect_hints": ["Hungry", "Motivated", "Satisfied"],
+    "genre_hints": ["Cooking Tutorial", "Foodie TikTok"]
+  },
+  "metrics": {
+    "input_tokens": 7530,
+    "output_tokens": 2520,
+    "total_tokens": 10050,
+    "cost_usd": 0.002642,
+    "latency_ms": 24957,
+    "upload_ms": 6351
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

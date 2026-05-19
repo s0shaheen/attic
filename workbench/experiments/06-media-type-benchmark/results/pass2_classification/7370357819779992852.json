@@ -1,0 +1,70 @@
+{
+  "item_id": "7370357819779992852",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:49.182813+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "health",
+      "micro_labels": [
+        "Greek cuisine",
+        "chicken pita wrap",
+        "high protein meals",
+        "weeknight dinner ideas"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "recipe",
+      "micro_labels": ["cooking tutorial", "step-by-step cooking"],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "relaxing",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["text_overlay", "slideshow"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 13810,
+    "output_tokens": 350,
+    "total_tokens": 14160,
+    "cost_usd": 0.002282,
+    "latency_ms": 8885,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 10
+  }
+}

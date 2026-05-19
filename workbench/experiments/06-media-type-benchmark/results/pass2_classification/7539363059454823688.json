@@ -1,0 +1,70 @@
+{
+  "item_id": "7539363059454823688",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:38.659570+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "relationships",
+      "secondary": "health",
+      "micro_labels": [
+        "social inclusivity",
+        "open-mindedness",
+        "human connection",
+        "personal growth"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "pov",
+      "micro_labels": ["main character edit"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "wholesome",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["text_overlay", "cinematic"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 4070,
+    "output_tokens": 341,
+    "total_tokens": 4411,
+    "cost_usd": 0.000815,
+    "latency_ms": 6442,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "image",
+    "is_slideshow": false,
+    "visual_input": "thumbnail",
+    "visual_count": 1
+  }
+}

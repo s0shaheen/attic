@@ -1,0 +1,161 @@
+{
+  "item_id": "CBfJ87LlT_T",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:42:50.590597+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:06",
+        "visual_description": "The creator stands in front of a green-screened clip of Aang from Avatar: The Last Airbender using his glider. He points out that air is animated for the audience but invisible to characters.",
+        "audio_description": "I never once thought about this. You ever just get salty over absolutely nothing out of nowhere? Haha, yeah me neither. I think about this a lot sometimes, but like, they animate the air so that we can see it, but like no one else can.",
+        "text_on_screen": "TikTok @g0_dieg0_",
+        "key_objects": ["Aang's Glider", "Airbending effects"]
+      },
+      {
+        "time_range": "0:06-0:12",
+        "visual_description": "A clip of Aang riding his air scooter is shown. The creator explains that to other characters, Aang just looks like he is floating.",
+        "audio_description": "Like this scene especially, like to us we're just like 'Oh, Aang's on his air scooter.' To everyone else, this man's flying.",
+        "text_on_screen": "TikTok @g0_dieg0_",
+        "key_objects": ["Air Scooter"]
+      },
+      {
+        "time_range": "0:12-0:35",
+        "visual_description": "A clip of Aang fighting Toph at Earth Rumble 6 is shown. The creator mimics airbending movements and explains the difficulty of fighting an invisible force.",
+        "audio_description": "Like do you guys remember that scene when he beats Toph at Earth Rumble 6 and no one else saw how he beat her because he's airbending? Like, no one else could see that. It's tricky. How do you fight him? He's just moving his hands and things are happening and people are getting blown out the way. Like you know the breeze is coming, but can you dodge it? Do you know what direction? Like you can't see it. Everything's low-key OP.",
+        "text_on_screen": "TikTok @g0_dieg0_",
+        "key_objects": ["Toph Beifong", "Earth Rumble 6 arena"]
+      },
+      {
+        "time_range": "0:35-0:41",
+        "visual_description": "The creator leans into the camera, emphasizing that Aang's 100-year absence makes his style even more unpredictable.",
+        "audio_description": "Plus he was gone for a hundred years! So no one's ever faced one before. No wonder he just be clapping fools the entire time.",
+        "text_on_screen": "TikTok @g0_dieg0_",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "The creator discusses a realization regarding the animation logic in 'Avatar: The Last Airbender.' He explains that while viewers see the swirling white lines representing airbending, the characters within the show cannot see the air, making the bending style invisible and incredibly difficult to fight. He uses Aang's air scooter and his duel with Toph as examples of how 'overpowered' (OP) airbending is, especially since Aang is the only practitioner most people have seen in a century.",
+    "people": [
+      {
+        "description": "Young Black male with a brown headband, wearing a white hoodie and red shorts; he is the commentator.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "g0_dieg0_"
+      },
+      {
+        "description": "Animated protagonist of Avatar: The Last Airbender; shown airbending.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Aang"
+      },
+      {
+        "description": "Animated earthbending master; shown being defeated by Aang.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Toph Beifong"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Avatar: The Last Airbender",
+        "display_name": "Avatar: The Last Airbender",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual", "audio"],
+        "specifications": "Nickelodeon animated series",
+        "confidence": 5
+      },
+      {
+        "name": "Aang",
+        "display_name": "Aang",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "audio"],
+        "specifications": "The Last Airbender",
+        "confidence": 5
+      },
+      {
+        "name": "Toph Beifong",
+        "display_name": "Toph Beifong",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["visual", "audio"],
+        "specifications": "Earthbending master",
+        "confidence": 5
+      },
+      {
+        "name": "Earth Rumble 6",
+        "display_name": "Earth Rumble 6",
+        "type": "event",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "Underground earthbending tournament",
+        "confidence": 5
+      },
+      {
+        "name": "Airbending",
+        "display_name": "Airbending",
+        "type": "technique",
+        "relevance": "primary",
+        "source": ["visual", "audio"],
+        "specifications": "One of the four elemental bending arts",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Airbending is invisible to characters in the Avatar universe, providing a significant tactical advantage.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Aang is exceptionally powerful because his opponents have no experience fighting airbenders due to their 100-year extinction.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Avatar: The Last Airbender Main Theme \u2014 Jeremy Zucki Remix \u2014 Samuel Kim",
+      "metadata_song": "null",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The creator is reacting to specific scenes from Book 2 of Avatar: The Last Airbender."
+    },
+    "presentation_style": {
+      "primary_format": "reaction",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Casual, analytical, and enthusiastic.",
+    "topic_hints": [
+      "Avatar: The Last Airbender",
+      "Animation Logic",
+      "Pop Culture Analysis"
+    ],
+    "affect_hints": ["Amused", "Mind-blown", "Nostalgic"],
+    "genre_hints": ["Commentary", "Fandom TikTok"]
+  },
+  "metrics": {
+    "input_tokens": 5230,
+    "output_tokens": 1711,
+    "total_tokens": 6941,
+    "cost_usd": 0.001811,
+    "latency_ms": 20620,
+    "upload_ms": 5451
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "item_id": "C3NrC_9r00V",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:16.889983+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:19",
+        "visual_description": "Creator presents a large slow cooker filled with creamy rigatoni pasta and steak, then shows a stack of 10 meal prep containers filled with the same dish.",
+        "audio_description": "If you're getting tired of boring meal preps, then this spicy steak pasta is for you. Each serving packs 37 grams of protein and only 9 grams of fat. It's one of the best tasting pasta dishes you'll ever make. To make it even better, this is part of my slow cooker meal prep series, so it's super simple to make and it makes 10 servings that you can store frozen, heat up in less than 5 minutes for lunches all throughout the week.",
+        "text_on_screen": "HIGH PROTEIN, MEAL PREP SPICY STEAK PASTA; ONLY 480 CALORIES & 37G PROTEIN; LOW EFFORT & MAKES 10 SERVINGS; SPICY STEAK RIGATONI",
+        "key_objects": ["Crockpot", "Meal prep containers", "Rigatoni pasta"]
+      },
+      {
+        "time_range": "0:19-0:23",
+        "visual_description": "Creator places garlic cloves and a shallot on foil, wraps them, and places the foil packet on a baking sheet to roast.",
+        "audio_description": "To start, we're going to quickly roast some garlic and shallot to add some extra depth of flavor to the sauce.",
+        "text_on_screen": "BAKE AT 400 25 MINS",
+        "key_objects": ["Garlic", "Shallot", "Aluminum foil", "Baking sheet"]
+      },
+      {
+        "time_range": "0:23-0:34",
+        "visual_description": "Roasted garlic and shallots are added to a Vitamix blender along with canned tomatoes, dried chiles, soy sauce, spices, and honey, then blended until smooth.",
+        "audio_description": "Add to a blender along with fire roasted tomatoes, dried chili peppers, soy sauce, spice blend shown on screen, and some honey for sweetness. Give that a blend and let it run for about 2 minutes until it's completely smooth.",
+        "text_on_screen": "28OZ CAN FIRE ROASTED TOMATOES 5 GUAJILLO CHILE'S 4 CHILE DE ARBOL; 2 TSP SOY SAUCE 1.5 TABLESPOON SALT 2 TSP ONION POWDER 2 TSP PAPRIKA 2 TSP BLACK PEPPER 60G HONEY (3 TABLESPOONS)",
+        "key_objects": [
+          "Vitamix blender",
+          "Bianco DiNapoli Tomatoes",
+          "Guajillo chiles",
+          "Chile de Arbol",
+          "Honey"
+        ]
+      },
+      {
+        "time_range": "0:34-0:42",
+        "visual_description": "Cubic pieces of flank steak are placed in a slow cooker, covered with the blended sauce and a drizzle of hot sauce, then stirred.",
+        "audio_description": "To your slow cooker, add in cubed flank steak, pour over your sauce. I like to add some Truff hot sauce just for some extra flavor. Give that a mix until it looks like this.",
+        "text_on_screen": "32OZ FLANK STEAK",
+        "key_objects": ["Crockpot", "Flank steak", "Truff Hot Sauce"]
+      },
+      {
+        "time_range": "0:42-0:46",
+        "visual_description": "The slow cooker lid is placed on and the dial is turned to 'High'.",
+        "audio_description": "Cook based on the instructions shown on screen.",
+        "text_on_screen": "HIGH: 4-5 HOURS LOW 5-6 HOURS",
+        "key_objects": ["Crockpot"]
+      },
+      {
+        "time_range": "0:46-0:52",
+        "visual_description": "The lid is removed to reveal tender steak in sauce. Cheeses, yogurt, milk, and herbs are added and stirred in.",
+        "audio_description": "Then when it's done, that meat should be extremely tender. Add in a little bit of goat cheese, Parmigiano Reggiano, milk, fat-free Skyr or Greek yogurt, red chili flakes, and chives.",
+        "text_on_screen": "300G PLAIN NONFAT SKYR 40G PARMIGIANO REGGIANO 60G GOAT CHEESE 240ML MILK RED CHILI FLAKES & CHIVES",
+        "key_objects": ["Goat cheese", "Parmigiano Reggiano", "Skyr", "Chives"]
+      },
+      {
+        "time_range": "0:52-0:58",
+        "visual_description": "Partially cooked rigatoni is added to the slow cooker and mixed with the sauce to finish cooking.",
+        "audio_description": "Pour over half-cooked pasta and then you're just going to cover and cook that for another 20 to 25 minutes to let that pasta finish cooking, and then you're good to go.",
+        "text_on_screen": "672G RIGATONI (COOKED TO 50%)",
+        "key_objects": ["Rigatoni pasta", "Crockpot"]
+      }
+    ],
+    "overall_summary": "This video demonstrates a high-protein, low-fat 'Spicy Steak Pasta' recipe designed for meal prep using a slow cooker. The creator, @stealth_health_life, shows how to roast aromatics, blend a spicy tomato-based sauce, and slow-cook flank steak until tender. The dish is finished by mixing in various cheeses, Skyr for creaminess, and rigatoni pasta, resulting in 10 servings that are macro-friendly and easy to reheat.",
+    "people": [
+      {
+        "description": "Male creator with curly hair wearing a grey t-shirt, demonstrating the cooking process.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "stealth_health_life"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Crockpot",
+        "display_name": "Crockpot Slow Cooker",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "Manual dial model",
+        "confidence": 5
+      },
+      {
+        "name": "Vitamix",
+        "display_name": "Vitamix Blender",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Professional series model",
+        "confidence": 5
+      },
+      {
+        "name": "Bianco DiNapoli",
+        "display_name": "Bianco DiNapoli Fire Roasted Tomatoes",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "28oz can",
+        "confidence": 5
+      },
+      {
+        "name": "Truff",
+        "display_name": "Truff Hot Sauce",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Signature black truffle hot sauce",
+        "confidence": 5
+      },
+      {
+        "name": "Flank Steak",
+        "display_name": "32oz Flank Steak",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": ["text_overlay", "audio"],
+        "specifications": "32oz, cubed",
+        "confidence": 5
+      },
+      {
+        "name": "Rigatoni",
+        "display_name": "672g Rigatoni Pasta",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": ["text_overlay", "audio"],
+        "specifications": "672g, cooked to 50%",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Meal prep doesn't have to be boring and can be both high-protein and low-fat.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Slow cookers are an efficient tool for making large batches of macro-friendly meals.",
+        "source": "demonstration",
+        "confidence": 4
+      },
+      {
+        "statement": "Roasting aromatics like garlic and shallots adds significant depth of flavor to sauces.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Spicy Steak Pasta Sauce",
+          "details": "1 Shallot, 8 cloves Garlic (roasted at 400F for 25 mins); 28oz can fire roasted Tomatoes, 5 Guajillo Chiles, 4 Chile de Arbol, 2 tsp soy sauce, 60g honey, 1.5 tbsp salt, 2 tsp onion powder, 2 tsp paprika, 2 tsp black pepper. Blend until smooth."
+        },
+        {
+          "name": "Slow Cooker Base",
+          "details": "32oz cubed Flank Steak, blended sauce, Truff hot sauce. Cook on High for 4-5 hours or Low for 5-6 hours."
+        },
+        {
+          "name": "Finishing Ingredients",
+          "details": "300g plain nonfat Skyr, 40g Parmigiano Reggiano, 60g goat cheese, 240ml milk, red chili flakes, chives."
+        },
+        {
+          "name": "Pasta",
+          "details": "672g Rigatoni (cooked to 50%). Add to slow cooker and cook for additional 20-25 mins."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "The Way I Are (Instrumental/Remix) \u2014 Timbaland",
+      "metadata_song": "original sound - Stealth Health Life",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All ingredients and brands clearly visible or stated."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "overhead",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Productive, appetizing, and bright.",
+    "topic_hints": ["Meal Prep", "High Protein Recipes", "Slow Cooker Cooking"],
+    "affect_hints": ["Motivated", "Hungry", "Satisfied"],
+    "genre_hints": ["Cooking Tutorial", "Fitness/Nutrition"]
+  },
+  "metrics": {
+    "input_tokens": 6943,
+    "output_tokens": 2606,
+    "total_tokens": 9549,
+    "cost_usd": 0.002605,
+    "latency_ms": 26296,
+    "upload_ms": 8519
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

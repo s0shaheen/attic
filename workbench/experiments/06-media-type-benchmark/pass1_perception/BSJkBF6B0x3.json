@@ -1,0 +1,232 @@
+{
+  "item_id": "BSJkBF6B0x3",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:40:34.259002+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "A woman has her skin moisture levels tested with a digital device and oil-testing patches applied to her forehead and cheek.",
+        "audio_description": "Upbeat, jazzy instrumental music begins.",
+        "text_on_screen": "This face serum is designed just for your skin",
+        "key_objects": [
+          "digital moisture meter",
+          "oil-testing patches",
+          "Kiehl's"
+        ]
+      },
+      {
+        "time_range": "0:05-0:15",
+        "visual_description": "Close-up of a Kiehl's Apothecary Preparations bottle and a wide shot of the 'Personalized Skincare' counter at the NYC flagship store.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Apothecary Preparations is offered at Kiehl's NYC flagship store.",
+        "key_objects": [
+          "Kiehl's Apothecary Preparations bottle",
+          "Kiehl's NYC Flagship Store"
+        ]
+      },
+      {
+        "time_range": "0:15-0:23",
+        "visual_description": "Constance Stoian, the store director, explains the service while sitting across from a customer.",
+        "audio_description": "Constance Stoian: 'Apothecary Preparations is your own personalized serum... and we actually get to kind of dive deeper into your skin concerns.'",
+        "text_on_screen": "Constance Stoian, NYC Flagship Store Director",
+        "key_objects": ["Kiehl's products", "consultation desk"]
+      },
+      {
+        "time_range": "0:23-0:31",
+        "visual_description": "Close-ups of the skin testing process, showing the moisture meter reading and the oil-testing patches being compared to a chart.",
+        "audio_description": "Constance Stoian: 'We check if you're dry, we check if you're oily, dehydrated versus hydrated.'",
+        "text_on_screen": "Dry, Normal to Dry, Normal, Normal to Oily, Oily",
+        "key_objects": [
+          "moisture meter",
+          "oil-testing patches",
+          "diagnostic chart"
+        ]
+      },
+      {
+        "time_range": "0:31-0:36",
+        "visual_description": "A person flips through the 'Skin Atlas' book, showing photos of different skin concerns like lines and wrinkles.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "The skin atlas helps determine the best ingredients for your skin.",
+        "key_objects": ["Kiehl's Skin Atlas"]
+      },
+      {
+        "time_range": "0:36-0:45",
+        "visual_description": "A selection of serum concentrates is shown, and a technician uses a dropper to fill a vial with a custom blend.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Then, they mix a base made especially for you.",
+        "key_objects": [
+          "Skin Strengthening Concentrate",
+          "Visible Redness Neutralizing Complex",
+          "Brightening Complex"
+        ]
+      },
+      {
+        "time_range": "0:45-0:51",
+        "visual_description": "The customer is shown at home, squeezing the contents of a small tube into the larger serum bottle.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Once you're home, you mix the formula yourself...",
+        "key_objects": ["Kiehl's serum bottle", "concentrate tube"]
+      },
+      {
+        "time_range": "0:51-0:58",
+        "visual_description": "The customer holds up the finished product and a Kiehl's shopping bag. The video ends with the Insider logo.",
+        "audio_description": "Music fades out.",
+        "text_on_screen": "You can get your own serum for $95. INSIDER LIFE IS AN ADVENTURE",
+        "key_objects": [
+          "Kiehl's shopping bag",
+          "Kiehl's Apothecary Preparations bottle"
+        ]
+      }
+    ],
+    "overall_summary": "This video showcases Kiehl's 'Apothecary Preparations' service, a personalized skincare experience available at their NYC flagship store. The process involves a professional skin analysis using digital tools and a 'Skin Atlas' to identify specific needs like hydration levels or redness. Based on these results, a custom serum is created using a base and targeted concentrates, which the customer then mixes at home for a fresh, tailored skincare solution costing $95.",
+    "people": [
+      {
+        "description": "Blonde woman, customer receiving the skin analysis and demonstrating the product.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Caroline Mishelle"
+      },
+      {
+        "description": "Woman with dark hair, wearing a white lab coat, explaining the service.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Constance Stoian"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Kiehl's",
+        "display_name": "Kiehl's",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Apothecary Preparations",
+        "display_name": "Kiehl's Apothecary Preparations",
+        "type": "product",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay", "metadata"],
+        "specifications": "Personalized facial concentrate",
+        "confidence": 5
+      },
+      {
+        "name": "Kiehl's NYC Flagship Store",
+        "display_name": "Kiehl's NYC Flagship Store",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "specifications": "109 3rd Ave, New York, NY 10003",
+        "confidence": 5
+      },
+      {
+        "name": "Skin Atlas",
+        "display_name": "Kiehl's Skin Atlas",
+        "type": "book",
+        "relevance": "supporting",
+        "source": ["visual", "text_overlay"],
+        "specifications": "Diagnostic tool for skin concerns",
+        "confidence": 5
+      },
+      {
+        "name": "Skin Strengthening Concentrate",
+        "display_name": "Kiehl's Skin Strengthening Concentrate",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "1.0 fl oz - 30 ml",
+        "confidence": 5
+      },
+      {
+        "name": "Visible Redness Neutralizing Complex",
+        "display_name": "Kiehl's Visible Redness Neutralizing Complex",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "With sunflower seed extract and Vitamin E",
+        "confidence": 5
+      },
+      {
+        "name": "Brightening Complex",
+        "display_name": "Kiehl's Brightening Complex",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "With Vitamin C and Scotch Pine extract",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Kiehl's offers a highly personalized skincare service called Apothecary Preparations that uses data-driven analysis to create custom serums.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "The personalized serum service costs $95 and is available at the Kiehl's NYC flagship store.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Skin Analysis",
+          "details": "Moisture levels and oiliness are tested using digital meters and patches."
+        },
+        {
+          "name": "Consultation",
+          "details": "A specialist uses the Skin Atlas to identify specific concerns like wrinkles or redness."
+        },
+        {
+          "name": "Custom Formulation",
+          "details": "A base and two targeted complexes are selected based on the analysis."
+        },
+        {
+          "name": "Home Mixing",
+          "details": "The customer mixes the concentrates into the base at home for maximum freshness."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Upbeat Jazz Instrumental \u2014 Unidentified Production Music",
+      "metadata_song": "null",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The music is generic production music common in Insider videos. All product names and locations were clearly visible."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, professional, and clean, typical of a beauty/lifestyle feature.",
+    "topic_hints": ["Skincare", "Personalization", "Beauty Technology"],
+    "affect_hints": ["Curious", "Informed", "Satisfied"],
+    "genre_hints": ["Product Review", "Brand Showcase", "How-to"]
+  },
+  "metrics": {
+    "input_tokens": 6672,
+    "output_tokens": 2323,
+    "total_tokens": 8995,
+    "cost_usd": 0.002395,
+    "latency_ms": 22227,
+    "upload_ms": 5537
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

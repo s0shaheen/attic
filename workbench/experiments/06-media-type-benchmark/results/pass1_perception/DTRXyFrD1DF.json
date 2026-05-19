@@ -1,0 +1,121 @@
+{
+  "item_id": "DTRXyFrD1DF",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:42:42.255191+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "A man with a grey beard and glasses speaks into a microphone at a podium, addressing an audience.",
+        "audio_description": "You know how we say it take a village to raise a child? But what if the village is retarded?",
+        "text_on_screen": "You know how we say it take a village to raise a child? But what if the village is retarded?\n\nI think about this way too often when I deal with people everyday",
+        "key_objects": ["microphone", "glasses", "suit"]
+      },
+      {
+        "time_range": "0:04-0:08",
+        "visual_description": "The camera cuts to various audience members reacting with laughter, disbelief, and thoughtful expressions.",
+        "audio_description": "What you think it's going to produce?",
+        "text_on_screen": "What you think it's going to produce?\n\nI think about this way too often when I deal with people everyday",
+        "key_objects": ["bowtie"]
+      },
+      {
+        "time_range": "0:08-0:09",
+        "visual_description": "A final brief shot of the speaker looking out at the crowd.",
+        "audio_description": "Laughter from the audience.",
+        "text_on_screen": "I think about this way too often when I deal with people everyday",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "In this short clip, a speaker (likely a pastor or community leader) challenges the popular proverb 'it takes a village to raise a child.' He humorously and bluntly asks what happens to a child if the 'village' (the community) is incompetent or 'retarded,' implying that the environment dictates the outcome. The video captures the audience's mixed reactions of laughter and shock, while the creator's caption expresses a cynical relatability to this sentiment in everyday life.",
+    "people": [
+      {
+        "description": "Black man with a shaved head, grey beard, and glasses wearing a suit; acting as the keynote speaker.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Edward Lamar Brinson Sr."
+      },
+      {
+        "description": "Audience members of various ages and attire, reacting to the speech.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "It takes a village to raise a child",
+        "display_name": "It takes a village to raise a child (Proverb)",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": ["audio", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Edward Lamar Brinson Sr.",
+        "display_name": "Edward Lamar Brinson Sr.",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The 'it takes a village' proverb assumes the community is healthy and capable; if the community is flawed, the child's upbringing will be as well.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "The creator finds this logic applicable to their daily frustrations with the general public.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": null
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound - Edward Lamar Brinson Sr.",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video uses a slur ('retarded') as part of a rhetorical question in a speech context."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Provocative, cynical, and humorous.",
+    "topic_hints": [
+      "Social Commentary",
+      "Community Dynamics",
+      "Parenting Logic"
+    ],
+    "affect_hints": ["Amused", "Cynical", "Relatable"],
+    "genre_hints": ["Speech Clip", "Meme"]
+  },
+  "metrics": {
+    "input_tokens": 2250,
+    "output_tokens": 1174,
+    "total_tokens": 3424,
+    "cost_usd": 0.001042,
+    "latency_ms": 16797,
+    "upload_ms": 3571
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

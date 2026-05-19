@@ -1,0 +1,133 @@
+{
+  "item_id": "B0ZxRyUjJiS",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:58.173996+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:15",
+        "visual_description": "Grant Sabatier is shown in a professional portrait, smiling and wearing a blue suit with a boutonniere. The CNBC logo is visible in the bottom right corner.",
+        "audio_description": "Grant Sabatier recounts his 'wake up call' when he couldn't afford a burrito, leading him to set a goal of earning $1 million and retiring early through 13 income streams and an 80% savings rate.",
+        "text_on_screen": "If you make $70,000, you could retire in 10 years. This 34-year-old millionaire explains how.",
+        "key_objects": ["Blue suit", "Boutonniere", "CNBC logo"]
+      }
+    ],
+    "overall_summary": "The video profiles Grant Sabatier, a 34-year-old millionaire who achieved financial independence in five years after being broke. He explains that by diversifying income\u2014at one point having 13 different streams including flipping domain names and campers\u2014and saving 80% of his earnings, early retirement is possible. The core message is that even with a $70,000 salary, one can retire in a decade through extreme saving and aggressive income growth.",
+    "people": [
+      {
+        "description": "34-year-old millionaire and entrepreneur, wearing a blue suit and smiling.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Grant Sabatier"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Grant Sabatier",
+        "display_name": "Grant Sabatier",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "audio", "metadata"],
+        "specifications": "Author of 'Financial Freedom', 34 years old",
+        "confidence": 5
+      },
+      {
+        "name": "CNBC",
+        "display_name": "CNBC",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": "Business news outlet",
+        "confidence": 5
+      },
+      {
+        "name": "Volkswagen",
+        "display_name": "Volkswagen",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Campers flipped for profit",
+        "confidence": 4
+      },
+      {
+        "name": "Burrito",
+        "display_name": "Burrito",
+        "type": "product",
+        "relevance": "background",
+        "source": ["metadata"],
+        "specifications": "The catalyst for his financial change",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "A high savings rate (e.g., 80%) is more critical for early retirement than just a high salary.",
+        "source": "metadata",
+        "confidence": 5
+      },
+      {
+        "statement": "Diversifying income into multiple streams (up to 13) accelerates the path to millionaire status.",
+        "source": "metadata",
+        "confidence": 5
+      },
+      {
+        "statement": "Financial independence is achievable in 10 years on a $70,000 salary with aggressive strategies.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Income Diversification",
+          "details": "Create multiple income streams (e.g., flipping domain names, flipping Volkswagen campers)."
+        },
+        {
+          "name": "Aggressive Saving",
+          "details": "Aim to save a high percentage of income, such as 80%."
+        },
+        {
+          "name": "Market Growth",
+          "details": "Invest savings in the market to allow wealth to grow over time."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "Analysis based on provided image and caption metadata. Audio details are inferred from the context of a CNBC interview."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Professional, optimistic, and aspirational.",
+    "topic_hints": ["Personal Finance", "Early Retirement", "Wealth Building"],
+    "affect_hints": ["Inspired", "Motivated", "Ambitious"],
+    "genre_hints": ["Financial Advice", "Success Story"]
+  },
+  "metrics": {
+    "input_tokens": 2659,
+    "output_tokens": 1258,
+    "total_tokens": 3917,
+    "cost_usd": 0.001154,
+    "latency_ms": 23627,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

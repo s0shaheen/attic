@@ -1,0 +1,66 @@
+{
+  "item_id": "7394372442073976110",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:51.525274+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "art",
+      "micro_labels": [
+        "Marvel Comics",
+        "Supervillains",
+        "Comic Book Art",
+        "Retro Comics"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": ["slideshow", "character showcase"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "nostalgic",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["slideshow"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.85
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 13857,
+    "output_tokens": 318,
+    "total_tokens": 14175,
+    "cost_usd": 0.002269,
+    "latency_ms": 7618,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 10
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "item_id": "B992JZOJq1Z",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:36:44.605574+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "A side-profile view of a person, likely Travis Scott, playing a three-tiered wall-mounted synthesizer rig in a recording studio. The person is wearing Travis Scott x Nike Air Max 270 'Cactus Trails' sneakers and standing on a yellow circular rug.",
+        "text_detected": "",
+        "primary_content": "Music production setup featuring high-end analog synthesizers.",
+        "entities": [
+          {
+            "name": "Travis Scott",
+            "type": "person",
+            "specifications": null
+          },
+          {
+            "name": "Nike x Travis Scott Air Max 270 'Cactus Trails'",
+            "type": "clothing",
+            "specifications": "Style Code: CT2864-200"
+          },
+          {
+            "name": "Moog One",
+            "type": "product",
+            "specifications": "Polyphonic Analog Synthesizer (bottom rack)"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "A close-up shot of Travis Scott looking towards the camera while working on a silver MacBook Pro. The synthesizer rack from the previous slide is visible in the background along with a red bottle of soda (likely Big Red or similar).",
+        "text_detected": "",
+        "primary_content": "Travis Scott working in a studio environment.",
+        "entities": [
+          {
+            "name": "Travis Scott",
+            "type": "person",
+            "specifications": null
+          },
+          {
+            "name": "MacBook Pro",
+            "type": "product",
+            "specifications": "Silver laptop"
+          },
+          {
+            "name": "Jordan Brand",
+            "type": "brand",
+            "specifications": "Logo visible on t-shirt"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post provides a behind-the-scenes look at Travis Scott in a professional recording studio. It showcases his high-end synthesizer equipment and his personal style, specifically featuring his Nike sneaker collaboration. Fans likely save this for studio aesthetic inspiration or as a teaser for upcoming music projects.",
+    "carousel_type": "photo_dump",
+    "narrative_thread": "The images capture the creative process of a high-profile music artist, moving from the tactile hardware of synthesizers to the digital workspace of a laptop.",
+    "entities": [
+      {
+        "name": "Travis Scott",
+        "display_name": "Travis Scott",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata", "visual"],
+        "slide_number": 1,
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Nike x Travis Scott Air Max 270 'Cactus Trails'",
+        "display_name": "Travis Scott x Nike Air Max 270 'Cactus Trails'",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 1,
+        "specifications": "CT2864-200",
+        "confidence": 5
+      },
+      {
+        "name": "Moog One",
+        "display_name": "Moog One Synthesizer",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "slide_number": 1,
+        "specifications": "Analog synthesizer",
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Travis Scott utilizes a mix of high-end analog hardware and digital workstations for his music production.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "product_list",
+      "items": [
+        {
+          "name": "Nike x Travis Scott Air Max 270 'Cactus Trails'",
+          "details": "Signature sneaker collaboration",
+          "slide_number": 1
+        },
+        {
+          "name": "Moog One",
+          "details": "High-end polyphonic analog synthesizer",
+          "slide_number": 1
+        },
+        {
+          "name": "MacBook Pro",
+          "details": "Apple laptop used for music production",
+          "slide_number": 2
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "Igtv",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "notes": "Synthesizer models are identified based on visual form factor common in high-end studios; sneakers are confirmed based on distinct colorway."
+    },
+    "presentation_style": {
+      "primary_format": "photo_dump",
+      "visual_style": "aesthetic"
+    },
+    "visual_mood": "Creative, focused, and high-end studio atmosphere.",
+    "topic_hints": ["Music Production", "Streetwear", "Studio Gear"],
+    "affect_hints": ["Inspired", "Intrigued", "Hype"],
+    "genre_hints": ["Behind the scenes", "Artist lifestyle"]
+  },
+  "metrics": {
+    "input_tokens": 3428,
+    "output_tokens": 1308,
+    "total_tokens": 4736,
+    "cost_usd": 0.001299,
+    "latency_ms": 11009,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 2
+  }
+}

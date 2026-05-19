@@ -1,0 +1,71 @@
+{
+  "item_id": "7418511628473355552",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:27:03.108876+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "health",
+      "secondary": "art",
+      "micro_labels": [
+        "hopecore",
+        "mental wellness",
+        "motivation",
+        "retro-futurism",
+        "sci-fi aesthetic"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "slideshow",
+      "micro_labels": ["quote gallery"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "relaxing",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "ai_generated",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "anonymous",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 10577,
+    "output_tokens": 351,
+    "total_tokens": 10928,
+    "cost_usd": 0.001797,
+    "latency_ms": 13922,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 7
+  }
+}

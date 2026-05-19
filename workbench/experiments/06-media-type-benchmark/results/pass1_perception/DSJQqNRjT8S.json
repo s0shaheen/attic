@@ -1,0 +1,169 @@
+{
+  "item_id": "DSJQqNRjT8S",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:39:50.066169+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Stylized, high-contrast glitch edit of Peter Parker's face transitioning into the Spider-Man mask with heavy scanline effects.",
+        "audio_description": "Tobey Maguire's iconic monologue: 'Who am I? You sure you want to know?' over a rhythmic, bass-heavy electronic beat.",
+        "text_on_screen": "",
+        "key_objects": ["Spider-Man Mask", "Peter Parker"]
+      },
+      {
+        "time_range": "0:05-0:12",
+        "visual_description": "Rapid montage of CGI Spider-Man swinging through a dark, stylized New York City, focusing on the suit's texture and web-slinging mechanics.",
+        "audio_description": "'The story of my life is not for the faint of heart.'",
+        "text_on_screen": "",
+        "key_objects": ["Webbing", "Skyscrapers"]
+      },
+      {
+        "time_range": "0:12-0:20",
+        "visual_description": "Clips of Peter Parker in his civilian clothes, Mary Jane Watson, and Harry Osborn from the MTV animated series, interspersed with action shots.",
+        "audio_description": "'If somebody told you it was a happy little tale... somebody lied.'",
+        "text_on_screen": "",
+        "key_objects": ["Peter Parker", "Mary Jane Watson", "Harry Osborn"]
+      },
+      {
+        "time_range": "0:20-0:26",
+        "visual_description": "Intense action sequences featuring the series' unique cel-shaded CGI style, showing Spider-Man in combat and web-tunnel visuals.",
+        "audio_description": "'This is my gift, my curse. Who am I?'",
+        "text_on_screen": "",
+        "key_objects": ["Spider-Man"]
+      },
+      {
+        "time_range": "0:26-0:30",
+        "visual_description": "Final reveal of Spider-Man's profile against a city backdrop, followed by a stylized creator watermark.",
+        "audio_description": "'I'm Spider-Man.' Music swells and then cuts.",
+        "text_on_screen": "UCRNATE",
+        "key_objects": ["Spider-Man"]
+      }
+    ],
+    "overall_summary": "This video is a high-energy 'aesthetic edit' of the 2003 MTV series 'Spider-Man: The New Animated Series.' It uses the famous opening monologue from Sam Raimi's 2002 Spider-Man film, voiced by Tobey Maguire, to frame the show's unique CGI visuals. The edit highlights the show's darker tone and its role as a narrative bridge between the first two Raimi films, focusing on Peter Parker's struggle with his dual identity.",
+    "people": [
+      {
+        "description": "Protagonist, college student and superhero",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Peter Parker / Spider-Man"
+      },
+      {
+        "description": "Peter's love interest",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Mary Jane Watson"
+      },
+      {
+        "description": "Peter's best friend",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Harry Osborn"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Spider-Man: The New Animated Series",
+        "display_name": "Spider-Man: The New Animated Series (2003)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": "MTV animated series",
+        "confidence": 5
+      },
+      {
+        "name": "Tobey Maguire",
+        "display_name": "Tobey Maguire",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["audio", "metadata"],
+        "specifications": "Voice from 2002 film monologue",
+        "confidence": 5
+      },
+      {
+        "name": "Sam Raimi",
+        "display_name": "Sam Raimi",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Director of the 2002 film",
+        "confidence": 5
+      },
+      {
+        "name": "MTV",
+        "display_name": "MTV",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Original network for the series",
+        "confidence": 5
+      },
+      {
+        "name": "Marvel",
+        "display_name": "Marvel",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Comic book publisher/IP owner",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Spider-Man: The New Animated Series serves as a stylish, darker bridge between the first two Sam Raimi films.",
+        "source": "metadata",
+        "confidence": 5
+      },
+      {
+        "statement": "The 2003 series is defined by its unique early-2000s CGI aesthetic and more mature tone compared to other animated iterations.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Spider-Man: The New Animated Series",
+          "details": "A 13-episode series following Peter Parker's early college life after the events of the 2002 film."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Spider-Man (2002) Monologue x Phonk/Electronic Remix \u2014 Unidentified Artist",
+      "metadata_song": "null",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": 3,
+      "notes": "The monologue is definitely Tobey Maguire from the 2002 film. The background music is a custom edit/remix common in 'aesthetic' TikTok edits."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "heavy_effects"
+    },
+    "visual_mood": "Nostalgic, gritty, high-energy, and 'Y2K' aesthetic with glitch and scanline filters.",
+    "topic_hints": ["Spider-Man", "2000s Nostalgia", "Marvel Animation"],
+    "affect_hints": ["Excited", "Nostalgic", "Intense"],
+    "genre_hints": ["Fan Edit", "Pop Culture", "Animation"]
+  },
+  "metrics": {
+    "input_tokens": 4325,
+    "output_tokens": 1699,
+    "total_tokens": 6024,
+    "cost_usd": 0.001668,
+    "latency_ms": 21881,
+    "upload_ms": 5416
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

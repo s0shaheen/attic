@@ -1,0 +1,75 @@
+{
+  "item_id": "DTHacbSD75l",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:04.410808+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "health",
+      "secondary": "education",
+      "micro_labels": [
+        "mental health",
+        "prioritization",
+        "overcoming overwhelm",
+        "productivity",
+        "life advice"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "skit",
+      "micro_labels": [
+        "multi-character skit",
+        "metaphorical comedy",
+        "absurdist humor"
+      ],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "funny",
+        "tier": "secondary"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["talking_head", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.85
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 13019,
+    "output_tokens": 361,
+    "total_tokens": 13380,
+    "cost_usd": 0.002169,
+    "latency_ms": 10584,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 9
+  }
+}

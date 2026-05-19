@@ -1,0 +1,70 @@
+{
+  "item_id": "CDMJVbCFR90",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:19.934310+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "relationships",
+      "secondary": "comedy",
+      "micro_labels": [
+        "immigrant parents",
+        "family dynamics",
+        "relatable content",
+        "guilt tripping"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "compilation",
+      "micro_labels": ["twitter thread", "screenshots", "text messages"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 10130,
+    "output_tokens": 352,
+    "total_tokens": 10482,
+    "cost_usd": 0.001731,
+    "latency_ms": 9716,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 7
+  }
+}

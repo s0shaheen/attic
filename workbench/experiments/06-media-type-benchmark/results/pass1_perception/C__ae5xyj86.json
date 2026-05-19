@@ -1,0 +1,211 @@
+{
+  "item_id": "C__ae5xyj86",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:38:59.827343+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Creator pours four raw eggs from two martini glasses into a flour tortilla sitting in a frying pan on a gas stove.",
+        "audio_description": "Going to start by putting four eggs into a tortilla shell that's inside of a pan.",
+        "text_on_screen": "Learned this at the gymnasium",
+        "key_objects": [
+          "eggs",
+          "tortilla",
+          "martini glasses",
+          "frying pan",
+          "gas stove"
+        ]
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "A large spoonful of Smith's cottage cheese is added to the center of the eggs.",
+        "audio_description": "Now we're going to take some cottage cheese and put that in there as well.",
+        "text_on_screen": "Learned this at the gymnasium",
+        "key_objects": ["Smith's Small Curd Cottage Cheese", "spoon"]
+      },
+      {
+        "time_range": "0:06-0:18",
+        "visual_description": "The creator seasons the mixture with salt from a small tin, black pepper from a grinder, red pepper flakes, and dried chives.",
+        "audio_description": "We're going to take some salt, a little pinch of salt, some black pepper, some crushed red pepper flakes for heat, and some chives for color.",
+        "text_on_screen": "Learned this at the gymnasium",
+        "key_objects": [
+          "salt tin",
+          "pepper grinder",
+          "red pepper flakes bottle",
+          "chives bottle"
+        ]
+      },
+      {
+        "time_range": "0:18-0:25",
+        "visual_description": "Using a blue silicone spatula, the creator breaks the yolks and mixes the ingredients together within the tortilla.",
+        "audio_description": "Now we're going to go ahead and break the eggs up and get this all combined together. This is going to be your favorite way to make eggs, you guys.",
+        "text_on_screen": "Learned this at the gymnasium",
+        "key_objects": ["blue spatula"]
+      },
+      {
+        "time_range": "0:25-0:31",
+        "visual_description": "Shredded cheddar cheese is poured from a small glass bowl into the egg mixture and stirred.",
+        "audio_description": "Once it looks like this, we're going to come in with some cheddar cheese and dump that in and mix that as well.",
+        "text_on_screen": "Learned this at the gymnasium",
+        "key_objects": ["shredded cheddar cheese", "glass bowl"]
+      },
+      {
+        "time_range": "0:31-0:42",
+        "visual_description": "A bowl of fresh spinach is added to the pan, mixed in, and then covered with a glass lid.",
+        "audio_description": "And you guessed it, some fresh spinach. Throw the spinach in, get that all mixed up. Once it looks like this, we're going to go take the lid, throw that on and let this cook up a little bit.",
+        "text_on_screen": "Learned this at the gymnasium",
+        "key_objects": ["fresh spinach", "white bowl", "glass lid"]
+      },
+      {
+        "time_range": "0:42-0:51",
+        "visual_description": "The lid is removed to reveal the cooked omelette. The creator slides the entire tortilla omelette onto a black plate.",
+        "audio_description": "Okay, once it looks like this, we are ready to plate it. So we're going to go ahead and hopefully it should slide right out, just like that.",
+        "text_on_screen": "Learned this at the gymnasium",
+        "key_objects": ["cooked omelette", "black plate"]
+      },
+      {
+        "time_range": "0:51-0:58",
+        "visual_description": "The creator uses a red-handled pizza cutter to slice the omelette into four equal wedges.",
+        "audio_description": "We're going to take a pizza cutter and we're going to cut it into fourths, just like this.",
+        "text_on_screen": "Learned this at the gymnasium",
+        "key_objects": ["pizza cutter"]
+      },
+      {
+        "time_range": "0:58-1:12",
+        "visual_description": "The creator picks up a wedge, shows the cross-section to the camera, and takes a large bite, nodding in approval.",
+        "audio_description": "Pick this up and look at that, guys. Cooked perfectly. Got the spinach, the cheese. It's a little warm, but we're going to go ahead and give this a shot. Mmm. Listen to that crunch. Give this recipe a shot, you're gonna love it.",
+        "text_on_screen": "Learned this at the gymnasium",
+        "key_objects": ["omelette wedge", "gold chain"]
+      }
+    ],
+    "overall_summary": "In this cooking tutorial, creator @fooddudescook demonstrates a high-protein breakfast 'hack' involving a tortilla-based omelette. He combines four eggs, cottage cheese, various seasonings, cheddar cheese, and fresh spinach directly inside a tortilla shell in a frying pan. After cooking under a lid, the result is a crispy, nutrient-dense meal that he slices like a pizza. The video emphasizes the ease of preparation and the satisfying 'crunch' of the final dish, positioning it as an ideal meal for fitness enthusiasts.",
+    "people": [
+      {
+        "description": "Muscular male with long hair tied back, wearing a purple 'Maui's Gym' tank top and a thick gold chain.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@fooddudescook"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Smith's Small Curd Cottage Cheese",
+        "display_name": "Smith's Cottage Cheese",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Small curd, yellow container",
+        "confidence": 5
+      },
+      {
+        "name": "Maui's Gym",
+        "display_name": "Maui's Gym",
+        "type": "brand",
+        "relevance": "background",
+        "source": ["visual"],
+        "specifications": "Text on shirt: 'Muscle up, buttercup'",
+        "confidence": 5
+      },
+      {
+        "name": "High Protein Omelette",
+        "display_name": "High Protein Tortilla Omelette",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": "4 eggs, cottage cheese, spinach, cheddar, tortilla",
+        "confidence": 5
+      },
+      {
+        "name": "Pizza Cutter",
+        "display_name": "Red Pizza Cutter",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Red handle, circular blade",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Cooking eggs directly inside a tortilla shell creates a high-protein, crispy breakfast meal with minimal cleanup.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Adding cottage cheese to an omelette increases protein content and adds creaminess.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Eggs",
+          "details": "4 large eggs"
+        },
+        {
+          "name": "Tortilla",
+          "details": "1 large flour tortilla shell"
+        },
+        {
+          "name": "Cottage Cheese",
+          "details": "1 large spoonful (Smith's brand shown)"
+        },
+        {
+          "name": "Seasonings",
+          "details": "Salt, black pepper, crushed red pepper flakes, dried chives"
+        },
+        {
+          "name": "Cheddar Cheese",
+          "details": "Shredded, approximately 1/4 cup"
+        },
+        {
+          "name": "Spinach",
+          "details": "Fresh baby spinach, one small bowl"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Upbeat Acoustic Folk \u2014 Unknown Artist",
+      "metadata_song": "original sound - Food Dudes",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "The background music is a generic upbeat stock track common in lifestyle videos. All ingredients and brands were clearly visible."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "overhead",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Energetic, practical, and appetizing with a focus on fitness-oriented nutrition.",
+    "topic_hints": [
+      "High protein recipes",
+      "Breakfast hacks",
+      "Healthy cooking"
+    ],
+    "affect_hints": ["Motivated", "Hungry", "Satisfied"],
+    "genre_hints": ["Food TikTok", "Fitness Meal Prep"]
+  },
+  "metrics": {
+    "input_tokens": 7898,
+    "output_tokens": 2260,
+    "total_tokens": 10158,
+    "cost_usd": 0.002541,
+    "latency_ms": 28570,
+    "upload_ms": 5942
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

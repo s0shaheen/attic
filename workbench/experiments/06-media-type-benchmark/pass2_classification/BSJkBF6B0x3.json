@@ -1,0 +1,75 @@
+{
+  "item_id": "BSJkBF6B0x3",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:15.788261+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "beauty",
+      "secondary": "education",
+      "micro_labels": [
+        "skincare",
+        "personalized beauty",
+        "skin analysis",
+        "Kiehl's",
+        "serum"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "vlog",
+      "micro_labels": [
+        "service showcase",
+        "brand feature",
+        "experience report"
+      ],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "relaxing",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["voiceover", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "journalist",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "shopping_research",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 9703,
+    "output_tokens": 358,
+    "total_tokens": 10061,
+    "cost_usd": 0.00167,
+    "latency_ms": 9579,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 6
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "item_id": "BdLJ0ByAGNv",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:40.586143+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "travel",
+      "secondary": "other",
+      "micro_labels": [
+        "Sri Lanka",
+        "Religious Architecture",
+        "Islamic Culture",
+        "Colombo"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": ["Cinematic Showcase"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "relaxing",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["cinematic"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "brand",
+      "confidence": 1.0
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 5418,
+    "output_tokens": 328,
+    "total_tokens": 5746,
+    "cost_usd": 0.001009,
+    "latency_ms": 8038,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 2
+  }
+}

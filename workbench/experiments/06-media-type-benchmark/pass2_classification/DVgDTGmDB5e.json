@@ -1,0 +1,72 @@
+{
+  "item_id": "DVgDTGmDB5e",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:42.900006+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "politics",
+      "secondary": "education",
+      "micro_labels": [
+        "Pashtun history",
+        "radicalization",
+        "madrassas",
+        "geopolitics",
+        "Sufism",
+        "Zia-ul-Haq"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "interview",
+      "micro_labels": ["oral history", "political commentary", "testimony"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "angry",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["talking_head", "text_overlay"],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "anonymous",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 20380,
+    "output_tokens": 371,
+    "total_tokens": 20751,
+    "cost_usd": 0.00328,
+    "latency_ms": 11502,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 16
+  }
+}

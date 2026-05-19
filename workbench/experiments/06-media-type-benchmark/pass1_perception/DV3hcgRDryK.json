@@ -1,0 +1,241 @@
+{
+  "item_id": "DV3hcgRDryK",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:41:06.037138+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "The creator and her partner play rock-paper-scissors in a doorway to decide who picks the first restaurant.",
+        "audio_description": "The couple chants 'Rock, paper, scissors, shoot!' twice.",
+        "text_on_screen": "rock paper scissors date night in nyc\nround 1: appetizers",
+        "key_objects": ["Kangal hat", "Polo Bear sweater"]
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "The couple walks through NYC streets and arrives at the yellow-framed entrance of Sappe Thai.",
+        "audio_description": "Creator: 'What are we getting for our appetizers?'",
+        "text_on_screen": "Sappe Thai",
+        "key_objects": [
+          "Sappe Thai restaurant storefront",
+          "Museum of Illusions sign"
+        ]
+      },
+      {
+        "time_range": "0:06-0:16",
+        "visual_description": "Inside Sappe, they order and eat papaya salad and larb. Close-ups of the food being served and eaten.",
+        "audio_description": "Partner: 'So we're gonna do the Som Tum, the papaya salad, and the Larb Moo.' Creator: 'Fresh, crunchy, sour, a little sweet, it's perfect.'",
+        "text_on_screen": "",
+        "key_objects": ["Som Tum (Papaya Salad)", "Larb Moo", "Thai beer"]
+      },
+      {
+        "time_range": "0:16-0:22",
+        "visual_description": "Outside, they play rock-paper-scissors again for the entree round. The creator wins and they walk to Jackson Heights.",
+        "audio_description": "Creator: 'Next up, Jackson Heights for Indian food.'",
+        "text_on_screen": "round 2: entree",
+        "key_objects": ["Angel Indian Restaurant storefront"]
+      },
+      {
+        "time_range": "0:22-0:30",
+        "visual_description": "Inside Angel Indian Restaurant, the creator looks at the menu and places a large order.",
+        "audio_description": "Creator: 'I'll do the Paneer Tikka Masala, the Garlic Naan, the Goat Biryani... could we please do the Pani Puri?'",
+        "text_on_screen": "",
+        "key_objects": ["Menu", "Angel Indian Restaurant interior"]
+      },
+      {
+        "time_range": "0:30-0:40",
+        "visual_description": "They eat Pani Puri. The partner gives a lukewarm reaction, causing the creator to joke about divorce.",
+        "audio_description": "Partner: 'The Pani Puri, I think it's okay.' Creator: 'Divorce, babes, divorce.'",
+        "text_on_screen": "",
+        "key_objects": ["Pani Puri"]
+      },
+      {
+        "time_range": "0:40-0:49",
+        "visual_description": "The main courses arrive. They open the sealed biryani pot and eat the paneer.",
+        "audio_description": "Partner: 'Fire.' Creator: 'This is one of my favorite paneer dishes in all of New York.'",
+        "text_on_screen": "",
+        "key_objects": ["Goat Biryani", "Kadai Paneer", "Garlic Naan"]
+      },
+      {
+        "time_range": "0:49-0:56",
+        "visual_description": "They play the final round of rock-paper-scissors for dessert. The creator wins and they head to Koreatown.",
+        "audio_description": "Creator: 'We're in Koreatown, we're gonna go get my favorite cheesecake.'",
+        "text_on_screen": "round 3: dessert",
+        "key_objects": ["Koreatown street signs"]
+      },
+      {
+        "time_range": "0:56-1:07",
+        "visual_description": "Inside Grace Street, they order and eat a Basque cheesecake and a cookie.",
+        "audio_description": "Creator: 'Can we do the original Basque cheesecake and one of the Dubai chewy cookies? That Basque cheesecake was insane.' Partner: 'I like that it wasn't super sweet. 10 out of 10.'",
+        "text_on_screen": "Grace Street",
+        "key_objects": ["Basque Cheesecake", "Dubai Chewy Cookie"]
+      },
+      {
+        "time_range": "1:07-1:12",
+        "visual_description": "The creator walks down a busy NYC street at night holding a coffee cup.",
+        "audio_description": "Creator: 'Had to get some tea to digest, but I would say that was pretty successful. Goodnight guys!'",
+        "text_on_screen": "",
+        "key_objects": ["Grace Street coffee cup"]
+      }
+    ],
+    "overall_summary": "Creator Viva Mehta and her partner go on a 'Rock Paper Scissors' date night in New York City, where the winner of each round chooses the restaurant for that course. They visit Sappe for Thai appetizers, Angel Indian Restaurant in Jackson Heights for entrees, and Grace Street in Koreatown for dessert. The video highlights specific dishes like Som Tum, Goat Biryani, and Basque cheesecake, while featuring a humorous disagreement over the quality of Pani Puri. The date concludes successfully with tea after three rounds of dining.",
+    "people": [
+      {
+        "description": "South Asian woman with long dark hair, wearing a blue Polo Bear sweater and a blue beanie; the creator.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Viva Mehta"
+      },
+      {
+        "description": "East Asian man with dark hair, wearing a black Kangol shirt and a black coat; the creator's partner.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Sappe",
+        "display_name": "Sappe Thai Food",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay", "metadata"],
+        "specifications": "Thai restaurant in NYC",
+        "confidence": 5
+      },
+      {
+        "name": "Angel Indian Restaurant",
+        "display_name": "Angel Indian Restaurant",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay", "metadata"],
+        "specifications": "Indian restaurant in Jackson Heights, Queens",
+        "confidence": 5
+      },
+      {
+        "name": "Grace Street",
+        "display_name": "Grace Street Coffee & Desserts",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay", "metadata"],
+        "specifications": "Dessert shop in Koreatown, Manhattan",
+        "confidence": 5
+      },
+      {
+        "name": "Som Tum",
+        "display_name": "Som Tum (Papaya Salad)",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Goat Biryani",
+        "display_name": "Goat Biryani",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": ["audio", "visual"],
+        "specifications": "Served in a dough-sealed pot",
+        "confidence": 5
+      },
+      {
+        "name": "Basque Cheesecake",
+        "display_name": "Basque Burnt Cheesecake",
+        "type": "recipe",
+        "relevance": "supporting",
+        "source": ["audio", "visual"],
+        "specifications": "Original flavor",
+        "confidence": 5
+      },
+      {
+        "name": "Polo Ralph Lauren",
+        "display_name": "Polo Ralph Lauren Bear Sweater",
+        "type": "clothing",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Blue knit sweater with bear graphic",
+        "confidence": 4
+      },
+      {
+        "name": "Kangol",
+        "display_name": "Kangol",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Black t-shirt with kangaroo logo",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The 'Rock Paper Scissors' format is an engaging way to structure a multi-stop date night.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Angel Indian Restaurant serves one of the best paneer dishes in New York City.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Grace Street's Basque cheesecake is highly rated for not being overly sweet.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Sappe",
+          "details": "Recommended for appetizers: Som Tum (Papaya Salad) and Larb Moo."
+        },
+        {
+          "name": "Angel Indian Restaurant",
+          "details": "Recommended for entrees: Goat Biryani, Kadai Paneer, and Garlic Naan. Note: Partner found Pani Puri 'mid'."
+        },
+        {
+          "name": "Grace Street",
+          "details": "Recommended for dessert: Original Basque Cheesecake and Dubai Chewy Cookie."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "L'Amore Dice Ciao (From \"La matriarca - The Libertine\") - Main Titles - Armando Trovajoli",
+      "metadata_song": "original sound - Viva Mehta",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All restaurants and major dishes were explicitly named or shown."
+    },
+    "presentation_style": {
+      "primary_format": "vlog",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Upbeat, cozy, and culinary-focused with warm indoor lighting and bustling NYC night vibes.",
+    "topic_hints": ["NYC Food Scene", "Date Night Ideas", "Restaurant Reviews"],
+    "affect_hints": ["Hungry", "Amused", "Satisfied"],
+    "genre_hints": ["Food Vlog", "Lifestyle"]
+  },
+  "metrics": {
+    "input_tokens": 7890,
+    "output_tokens": 2693,
+    "total_tokens": 10583,
+    "cost_usd": 0.002799,
+    "latency_ms": 31775,
+    "upload_ms": 7845
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

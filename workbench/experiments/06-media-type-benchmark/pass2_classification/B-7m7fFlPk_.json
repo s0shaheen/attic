@@ -1,0 +1,75 @@
+{
+  "item_id": "B-7m7fFlPk_",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:20.309548+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "news",
+      "micro_labels": [
+        "strawberry pie",
+        "baking",
+        "COVID-19 lockdown",
+        "quarantine life",
+        "2020 nostalgia"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "recipe",
+      "micro_labels": ["subverted tutorial", "chaos edit", "montage"],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "shocking",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["text_overlay", "mixed"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 9549,
+    "output_tokens": 385,
+    "total_tokens": 9934,
+    "cost_usd": 0.001663,
+    "latency_ms": 10665,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 6
+  }
+}

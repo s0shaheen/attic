@@ -1,0 +1,273 @@
+{
+  "item_id": "7389315780392865066",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:04.639074+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "A screenshot of an AP score report showing a perfect score for AP 2-D Art and Design.",
+        "text_detected": "2024 SCORES AP 2-D Art and Design WE DID IT YOU GUYS YOUR SCORE 5 Most U.S. colleges accept your score for credit and placement. Find College Credit About your score",
+        "primary_content": "AP Exam Score Result",
+        "entities": [
+          {
+            "name": "AP 2-D Art and Design",
+            "type": "event",
+            "specifications": "2024 Exam"
+          },
+          {
+            "name": "College Board",
+            "type": "brand",
+            "specifications": "AP Score Portal"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "A colored pencil or pastel drawing of hands holding a mock newspaper titled 'ANKLE-BITER GAZETTE' with a headline about a corrupt 'Timmy'.",
+        "text_detected": "ANKLE-BITER GAZETTE Recess - WEdzday, Nov. 2, 20- ELECSHUN NEWS! TIMMY is CORRUPT! He's a meanie. DON'T vote For him! Chuze \"THE Kid\" insted!!!",
+        "primary_content": "Artwork: Political satire through a child's lens",
+        "entities": [
+          {
+            "name": "Ankle-Biter Gazette",
+            "type": "product",
+            "specifications": "Original artwork"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "A graphite sketch of a baby in a suit being sworn into office, placing a hand on a book labeled 'Bibble'.",
+        "text_detected": "Bibble",
+        "primary_content": "Artwork: Satirical depiction of a baby politician",
+        "entities": [
+          {
+            "name": "Bibble",
+            "type": "book",
+            "specifications": "Satirical version of the Bible"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "A mixed-media miniature scene inside a black tin (likely an Altoids-style tin) showing a painted face on the lid and tiny figures in red seats in the base.",
+        "text_detected": "",
+        "primary_content": "Artwork: Miniature diorama of a theater or courtroom",
+        "entities": [
+          {
+            "name": "Miniature Diorama",
+            "type": "technique",
+            "specifications": "Mixed media in a tin"
+          }
+        ]
+      },
+      {
+        "image_number": 5,
+        "description": "An oil or acrylic painting of a young girl with braids acting as a judge, holding a gavel and pointing at a Whac-A-Mole character in a prisoner's uniform.",
+        "text_detected": "",
+        "primary_content": "Artwork: Child judge and Whac-A-Mole prisoner",
+        "entities": [
+          {
+            "name": "Whac-A-Mole",
+            "type": "game",
+            "specifications": "Depicted as a prisoner"
+          }
+        ]
+      },
+      {
+        "image_number": 6,
+        "description": "An ink drawing of a boy in a suit eating a chicken nugget shaped like a person, with a human skull on the table.",
+        "text_detected": "",
+        "primary_content": "Artwork: Dark satire involving a child and a skull",
+        "entities": [
+          {
+            "name": "Ink Drawing",
+            "type": "technique",
+            "specifications": "Cross-hatching style"
+          }
+        ]
+      },
+      {
+        "image_number": 7,
+        "description": "A painting of a sad child in a black-and-white striped prisoner's uniform looking through bars at a playground.",
+        "text_detected": "",
+        "primary_content": "Artwork: Commentary on childhood and incarceration",
+        "entities": [
+          {
+            "name": "Prisoner Uniform",
+            "type": "clothing",
+            "specifications": "Striped cap and shirt"
+          }
+        ]
+      },
+      {
+        "image_number": 8,
+        "description": "A painting of two posters on a brick wall. One says 'DOWN WITH THE RICH' with a clown; the other says 'THE POOR ARE A THREAT' with a child holding a knife.",
+        "text_detected": "DOWN WITH THE RICH THE POOR ARE A THREAT",
+        "primary_content": "Artwork: Social class commentary posters",
+        "entities": [
+          {
+            "name": "Class Warfare Posters",
+            "type": "product",
+            "specifications": "Original painting"
+          }
+        ]
+      },
+      {
+        "image_number": 9,
+        "description": "A drawing of a young girl in an apron vacuuming a room while a nuclear mushroom cloud is visible through the window.",
+        "text_detected": "",
+        "primary_content": "Artwork: Domesticity vs. nuclear apocalypse",
+        "entities": [
+          {
+            "name": "Nuclear Mushroom Cloud",
+            "type": "event",
+            "specifications": "Visible through window"
+          }
+        ]
+      },
+      {
+        "image_number": 10,
+        "description": "A painting of two giant hands engaged in a thumb war or handshake over a dead body, with a military helicopter in the background.",
+        "text_detected": "",
+        "primary_content": "Artwork: War and casualty commentary",
+        "entities": [
+          {
+            "name": "Military Helicopter",
+            "type": "product",
+            "specifications": "Huey-style silhouette"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post is a portfolio showcase by artist @phyllisia_art, celebrating their perfect score of 5 on the 2024 AP 2-D Art and Design exam. The slideshow features ten images, starting with the score report and followed by nine original artworks that utilize a 'childhood' aesthetic to deliver dark, satirical, and political commentary. The user is likely sharing this to document their academic achievement and showcase the specific pieces that comprised their successful AP portfolio.",
+    "carousel_type": "product_showcase",
+    "narrative_thread": "The post begins with a moment of triumph (the perfect AP score) and then provides the visual evidence of the skill and conceptual depth that earned that score through a series of surreal, politically charged artworks.",
+    "entities": [
+      {
+        "name": "AP 2-D Art and Design",
+        "display_name": "AP 2-D Art and Design Exam",
+        "type": "event",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay", "metadata"],
+        "slide_number": 1,
+        "specifications": "Score: 5",
+        "confidence": 5
+      },
+      {
+        "name": "phyllisia_art",
+        "display_name": "Phyllisia Art",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "Prismacolor",
+        "display_name": "Prismacolor Pencils",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "slide_number": 2,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The artist achieved a perfect score of 5 on their AP Art portfolio.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "The portfolio's theme centers on social and political satire using children as the primary subjects.",
+        "source": "implied",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "product_list",
+      "items": [
+        {
+          "name": "Ankle-Biter Gazette",
+          "details": "Mixed media drawing of a mock school newspaper",
+          "slide_number": 2
+        },
+        {
+          "name": "The Bibble Swearing-In",
+          "details": "Graphite sketch of a baby politician",
+          "slide_number": 3
+        },
+        {
+          "name": "Miniature Courtroom Tin",
+          "details": "Mixed media diorama in a small metal container",
+          "slide_number": 4
+        },
+        {
+          "name": "Child Judge vs Whac-A-Mole",
+          "details": "Painting of a girl judge and a mole prisoner",
+          "slide_number": 5
+        },
+        {
+          "name": "The Nugget Meal",
+          "details": "Ink drawing of a boy eating a human-shaped nugget",
+          "slide_number": 6
+        },
+        {
+          "name": "Playground Prison",
+          "details": "Painting of a child in prison stripes at a park",
+          "slide_number": 7
+        },
+        {
+          "name": "Class Warfare Posters",
+          "details": "Painting of contrasting political posters on a brick wall",
+          "slide_number": 8
+        },
+        {
+          "name": "Nuclear Housework",
+          "details": "Drawing of a girl vacuuming during an explosion",
+          "slide_number": 9
+        },
+        {
+          "name": "Thumb War Casualty",
+          "details": "Painting of giant hands over a fallen figure",
+          "slide_number": 10
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "original sound \u2014 Ian Asher",
+      "metadata_song": "original sound - ianasher",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "The score and the artwork themes are very clear and consistent with the hashtags provided."
+    },
+    "presentation_style": {
+      "primary_format": "product_showcase",
+      "visual_style": "aesthetic"
+    },
+    "visual_mood": "Triumphant yet unsettling; the contrast between the high score and the dark, satirical nature of the art creates a provocative atmosphere.",
+    "topic_hints": ["AP Art Portfolio", "Social Satire", "Political Art"],
+    "affect_hints": ["impressed", "unsettled", "thoughtful"],
+    "genre_hints": ["Art TikTok", "Student Achievement", "Portfolio Tour"]
+  },
+  "metrics": {
+    "input_tokens": 12210,
+    "output_tokens": 2554,
+    "total_tokens": 14764,
+    "cost_usd": 0.003364,
+    "latency_ms": 22849,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 10
+  }
+}

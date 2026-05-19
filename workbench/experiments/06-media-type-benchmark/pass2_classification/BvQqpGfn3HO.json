@@ -1,0 +1,61 @@
+{
+  "item_id": "BvQqpGfn3HO",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:10.217083+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "gaming",
+      "secondary": "relationships",
+      "micro_labels": ["console wars", "Xbox vs PS4", "dating memes"],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["twitter screenshots", "image gallery"],
+      "confidence": 0.98
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 6464,
+    "output_tokens": 318,
+    "total_tokens": 6782,
+    "cost_usd": 0.00116,
+    "latency_ms": 5303,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 3
+  }
+}

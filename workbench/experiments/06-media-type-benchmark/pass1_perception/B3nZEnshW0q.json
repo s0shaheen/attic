@@ -1,0 +1,122 @@
+{
+  "item_id": "B3nZEnshW0q",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:22.118806+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A presenter stands in front of a projection screen displaying a humorous 'HTTP return codes cheat sheet' during a lecture or tech talk.",
+        "audio_description": "No audio provided (static image).",
+        "text_on_screen": "HTTP return codes cheat sheet\n1**. Hold on\n2**. Here you go\n3**. Go away\n4**. You fucked up\n5**. I fucked up",
+        "key_objects": ["Projector screen", "HTTP Status Codes"]
+      }
+    ],
+    "overall_summary": "This image features a presenter at a tech talk or lecture showing a slide titled 'HTTP return codes cheat sheet'. The slide provides a humorous, simplified explanation of the five classes of HTTP status codes: 1xx (Informational), 2xx (Success), 3xx (Redirection), 4xx (Client Error), and 5xx (Server Error). It is a popular educational meme used to help developers remember the general meaning of status code ranges through plain language.",
+    "people": [
+      {
+        "description": "A man with short hair, wearing a dark t-shirt, seen from the side/back while gesturing towards a projection screen.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "HTTP",
+        "display_name": "Hypertext Transfer Protocol",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "specifications": "Status Codes",
+        "confidence": 5
+      },
+      {
+        "name": "@stvmcg",
+        "display_name": "stvmcg",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "@codingblog",
+        "display_name": "codingblog",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "HTTP status codes are grouped into five categories: 1xx (Informational), 2xx (Success), 3xx (Redirection), 4xx (Client Error), and 5xx (Server Error).",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "1**",
+          "details": "Hold on (Informational)"
+        },
+        {
+          "name": "2**",
+          "details": "Here you go (Success)"
+        },
+        {
+          "name": "3**",
+          "details": "Go away (Redirection)"
+        },
+        {
+          "name": "4**",
+          "details": "You fucked up (Client Error)"
+        },
+        {
+          "name": "5**",
+          "details": "I fucked up (Server Error)"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Content is a static image; text was transcribed verbatim including profanity as it appears on the slide."
+    },
+    "presentation_style": {
+      "primary_format": "slideshow",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Educational, humorous, and informal.",
+    "topic_hints": ["Web Development", "Programming", "HTTP Status Codes"],
+    "affect_hints": ["Amused", "Informed"],
+    "genre_hints": ["Educational Meme", "Tech Humor"]
+  },
+  "metrics": {
+    "input_tokens": 2654,
+    "output_tokens": 1045,
+    "total_tokens": 3699,
+    "cost_usd": 0.001025,
+    "latency_ms": 10709,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "item_id": "DNnER2PNC9h",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:40:58.764789+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:10",
+        "visual_description": "Split-screen TikTok live recording. On the left, Kodak Black sits in a car; on the right, two young boys are visible. One boy blows kisses and calls Kodak 'big brother'.",
+        "audio_description": "The boy says, 'Okay, okay, okay, my big brother, you my big brother, here you go,' while blowing kisses. Kodak responds, 'All right, holla at me later lil bruh... man you better keep them stinky ass kisses over there boy.'",
+        "text_on_screen": "That time El Snappo didn't know how to kick these kids off the live \ud83d\ude02",
+        "key_objects": ["Smartphone", "Car interior", "Gold chain"]
+      },
+      {
+        "time_range": "0:10-0:23",
+        "visual_description": "The boy continues to gesture and ask for a 'match' (TikTok battle). Kodak looks increasingly uncomfortable and skeptical.",
+        "audio_description": "The boy says, 'One match, I support you.' Kodak replies, 'You better support your ass off my screen, that's what you better do.'",
+        "text_on_screen": "That time El Snappo didn't know how to kick these kids off the live \ud83d\ude02\nMR ZAIN...",
+        "key_objects": ["TikTok Live interface"]
+      },
+      {
+        "time_range": "0:23-0:49",
+        "visual_description": "Kodak agrees to the match. The TikTok battle interface appears with a timer and score bars. The boy continues to act affectionately, which Kodak mocks.",
+        "audio_description": "Kodak says, 'All right, I'm gonna match you just to be a good sport. Boy, keep them stinky kisses over there... what the fuck you got going on today? Crazy ass... zesty as a motherfucker. You too young for that shit lil bruh.'",
+        "text_on_screen": "That time El Snappo didn't know how to kick these kids off the live \ud83d\ude02\nMR ZAIN...\nmrzainofficial007",
+        "key_objects": ["TikTok Battle UI", "Gift icons"]
+      }
+    ],
+    "overall_summary": "This video captures a humorous and awkward interaction during a TikTok Live session between rapper Kodak Black (referred to as El Snappo) and a young fan named Mr. Zain. The young boy repeatedly blows kisses and calls Kodak his 'big brother,' which visibly confuses and irritates the rapper. Despite his clear discomfort with the boy's 'zesty' behavior, Kodak agrees to a TikTok battle 'match' just to be a good sport. Throughout the clip, Kodak tells the boy to stop the affectionate gestures, noting that he is too young for such behavior.",
+    "people": [
+      {
+        "description": "Famous American rapper, wearing a gold chain and sitting in a car, looking confused and annoyed.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Kodak Black"
+      },
+      {
+        "description": "A young boy with dark hair wearing a patterned shirt, acting very affectionate toward Kodak.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Mr. Zain"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Kodak Black",
+        "display_name": "Kodak Black (El Snappo)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Mr. Zain",
+        "display_name": "Mr. Zain (@mrzainofficial007)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "specifications": "TikTok username: mrzainofficial007",
+        "confidence": 5
+      },
+      {
+        "name": "TikTok Live",
+        "display_name": "TikTok Live Battle",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Split-screen live streaming feature",
+        "confidence": 5
+      },
+      {
+        "name": "Love & War",
+        "display_name": "Love & War \u2014 Kodak Black",
+        "type": "song",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Kodak Black finds overly affectionate behavior from young male fans on social media to be awkward and inappropriate.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Kodak Black is willing to engage with fans in TikTok battles even when he is annoyed, citing being a 'good sport'.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Love & War \u2014 Kodak Black",
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The background music is a slowed/reverbed version of Kodak Black's own song."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Humorous, awkward, and slightly tense due to the generational and cultural clash between the participants.",
+    "topic_hints": [
+      "Social Media Interactions",
+      "Kodak Black",
+      "TikTok Live Culture"
+    ],
+    "affect_hints": ["Amused", "Cringe", "Confused"],
+    "genre_hints": ["Live Stream Highlight", "Celebrity Interaction"]
+  },
+  "metrics": {
+    "input_tokens": 5898,
+    "output_tokens": 1454,
+    "total_tokens": 7352,
+    "cost_usd": 0.001757,
+    "latency_ms": 19720,
+    "upload_ms": 5815
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

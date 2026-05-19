@@ -1,0 +1,146 @@
+{
+  "item_id": "B6t62BEBh30",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:41:22.368137+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:10",
+        "visual_description": "A silver BMW sedan begins weaving aggressively through heavy nighttime highway traffic, closely followed by the camera car.",
+        "audio_description": "High-revving engine sounds and a high-tempo electronic track play as the filmer shouts in excitement.",
+        "text_on_screen": "When the only dude with the addy says \"Just follow me\"",
+        "key_objects": ["BMW sedan", "Highway traffic", "Dashboard"]
+      },
+      {
+        "time_range": "0:10-0:21",
+        "visual_description": "The BMW performs rapid lane changes, 'cutting up' between cars with inches to spare while maintaining high speed.",
+        "audio_description": "The filmer continues to shout 'Oh my god!' and 'He's nice!' over the engine noise.",
+        "text_on_screen": "When the only dude with the addy says \"Just follow me\"",
+        "key_objects": ["BMW", "Brake lights", "Street lights"]
+      },
+      {
+        "time_range": "0:21-0:32",
+        "visual_description": "The lead car continues its 'No Hesi' style driving, narrowly missing a white SUV while the camera car struggles to keep pace.",
+        "audio_description": "Filmer: 'Suntray my n***a! No bro! No! He's f***ing nice bro!'",
+        "text_on_screen": "When the only dude with the addy says \"Just follow me\"",
+        "key_objects": ["BMW", "White SUV"]
+      },
+      {
+        "time_range": "0:32-0:43",
+        "visual_description": "The chase passes under green highway signs for Francis Lewis Blvd and Grand Central Pkwy as the BMW disappears into the distance.",
+        "audio_description": "Engine roaring continues as the filmer laughs and comments on the driver's skill.",
+        "text_on_screen": "When the only dude with the addy says \"Just follow me\"",
+        "key_objects": [
+          "Francis Lewis Blvd sign",
+          "Grand Central Pkwy sign",
+          "BMW"
+        ]
+      }
+    ],
+    "overall_summary": "This video showcases a high-speed 'No Hesi' (no hesitation) driving session on a New York City highway at night. A BMW driver aggressively weaves through dense traffic, performing dangerous maneuvers while a passenger in the following car films and reacts with shock and admiration. The video humorously references the stress of following a friend who has the destination address ('the addy') but drives recklessly.",
+    "people": [
+      {
+        "description": "Male passenger or driver in the following car, filming the lead BMW.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "BMW",
+        "display_name": "BMW 5 Series (likely M5 or 550i)",
+        "type": "product",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "F10 generation, quad exhaust, New York plates",
+        "confidence": 5
+      },
+      {
+        "name": "No Hesi",
+        "display_name": "No Hesi Driving Style",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": ["metadata", "visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Francis Lewis Blvd",
+        "display_name": "Francis Lewis Boulevard",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Queens, New York",
+        "confidence": 5
+      },
+      {
+        "name": "Grand Central Pkwy",
+        "display_name": "Grand Central Parkway",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "New York City Highway",
+        "confidence": 5
+      },
+      {
+        "name": "Daquan",
+        "display_name": "@daquan",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Content aggregator",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "'No Hesi' driving involves extreme risk-taking and high-speed weaving through active highway traffic.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Following a driver who has the destination address can be a terrifying experience if they drive aggressively.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Unidentifiable high-tempo electronic/Jersey Club track",
+      "metadata_song": "null",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "The car is clearly a BMW 5-series (F10) and the location is definitely Queens, NY based on the highway signs. The song is obscured by engine noise."
+    },
+    "presentation_style": {
+      "primary_format": "pov",
+      "camera_work": "handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Adrenaline-fueled, chaotic, and high-energy.",
+    "topic_hints": ["Car Culture", "Street Racing", "New York City"],
+    "affect_hints": ["Anxious", "Excited", "Shocked"],
+    "genre_hints": ["Car Edit", "Street Driving Clip"]
+  },
+  "metrics": {
+    "input_tokens": 5305,
+    "output_tokens": 1510,
+    "total_tokens": 6815,
+    "cost_usd": 0.001702,
+    "latency_ms": 23600,
+    "upload_ms": 5529
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

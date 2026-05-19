@@ -1,0 +1,71 @@
+{
+  "item_id": "C82mrC0xXuJ",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:56.951077+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "music",
+      "secondary": "dance",
+      "micro_labels": [
+        "DJ set",
+        "Punjabi fusion",
+        "Live event",
+        "Electronic music",
+        "Nightlife"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": ["Event recap", "Montage", "Cinematic edit"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "satisfying",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "informative",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["cinematic", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "document",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 7623,
+    "output_tokens": 356,
+    "total_tokens": 7979,
+    "cost_usd": 0.001357,
+    "latency_ms": 8998,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 4
+  }
+}

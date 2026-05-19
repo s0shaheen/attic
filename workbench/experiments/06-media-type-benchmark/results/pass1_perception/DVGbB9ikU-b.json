@@ -1,0 +1,150 @@
+{
+  "item_id": "DVGbB9ikU-b",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:20.778499+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Murad's father sternly advises him to keep his aspirations grounded in his current social standing.",
+        "audio_description": "Father: 'Tera sapna teri sachai se mel khana chahiye' (Your dream must match your reality).",
+        "text_on_screen": "Your dream must match your reality.",
+        "key_objects": ["Simple domestic interior"]
+      },
+      {
+        "time_range": "0:03-0:05",
+        "visual_description": "Murad looks at his father with quiet defiance and conviction.",
+        "audio_description": "Murad: 'Main nahi badalta apna sapna apni sachai se mel khane ke vaaste' (I will not change my dream to match my reality).",
+        "text_on_screen": "I will not change my dream to match my reality.",
+        "key_objects": ["Murad's face"]
+      },
+      {
+        "time_range": "0:05-0:11",
+        "visual_description": "A montage shows Murad's daily life: writing lyrics in a notebook, working as a chauffeur, and commuting on a crowded bus.",
+        "audio_description": "Atmospheric, low-frequency synth pad builds tension.",
+        "text_on_screen": "I will change my reality",
+        "key_objects": ["Notebook", "Car steering wheel", "Public bus"]
+      },
+      {
+        "time_range": "0:11-0:13",
+        "visual_description": "Close up of Murad finishing his statement to his father.",
+        "audio_description": "Murad: 'Main apni sachai badlega jo mere sapne se mel khaye' (I will change my reality to match my dream).",
+        "text_on_screen": "to match my dream.",
+        "key_objects": ["Murad"]
+      },
+      {
+        "time_range": "0:13-0:28",
+        "visual_description": "High-energy montage of Murad performing on stage, recording in a studio, and the title 'GULLY BOY' appearing over his face.",
+        "audio_description": "A heavy, pulsating hip-hop beat drops. Crowd cheering is heard.",
+        "text_on_screen": "GULLY BOY, cinematicsaji",
+        "key_objects": ["Microphone", "Headphones", "Stage lights", "Hoodie"]
+      }
+    ],
+    "overall_summary": "This video is a cinematic fan edit of the 2019 Indian film 'Gully Boy'. It centers on a pivotal dialogue between the protagonist Murad and his father regarding the conflict between one's social reality and their dreams. The edit transitions from Murad's humble beginnings and struggles to his eventual rise as a successful rapper, emphasizing the theme of self-determination and changing one's circumstances through art.",
+    "people": [
+      {
+        "description": "A young man from the slums of Mumbai who aspires to be a rapper.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Ranveer Singh (as Murad)"
+      },
+      {
+        "description": "Murad's father, a man who believes in staying within the limits of one's social class.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Vijay Raaz (as Murad's father)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Gully Boy",
+        "display_name": "Gully Boy (2019)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["metadata", "text_overlay"],
+        "specifications": "Directed by Zoya Akhtar",
+        "confidence": 5
+      },
+      {
+        "name": "Ranveer Singh",
+        "display_name": "Ranveer Singh",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Vijay Raaz",
+        "display_name": "Vijay Raaz",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Mumbai",
+        "display_name": "Mumbai, India",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["metadata", "inferred"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Apna Time Aayega",
+        "display_name": "Apna Time Aayega \u2014 Ranveer Singh",
+        "type": "song",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "The beat is a remix/edit of this track",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "One should not lower their dreams to fit their current reality; instead, they should work to change their reality to fit their dreams.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Apna Time Aayega (Remix/Edit) \u2014 Ranveer Singh & Dub Sharma",
+      "metadata_song": "null",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The dialogue is iconic to the film and accurately transcribed."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "cinematic",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Inspiring, gritty, and emotionally charged.",
+    "topic_hints": ["Bollywood", "Hip Hop Culture", "Motivation"],
+    "affect_hints": ["Empowered", "Determined", "Inspired"],
+    "genre_hints": ["Movie Edit", "Fan Edit"]
+  },
+  "metrics": {
+    "input_tokens": 4045,
+    "output_tokens": 1501,
+    "total_tokens": 5546,
+    "cost_usd": 0.001507,
+    "latency_ms": 19088,
+    "upload_ms": 5534
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

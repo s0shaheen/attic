@@ -1,0 +1,71 @@
+{
+  "item_id": "B3H_WhZHkqb",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:33.336867+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "art",
+      "secondary": "technology",
+      "micro_labels": [
+        "kinetic art",
+        "pinscreen",
+        "ward fleming",
+        "industrial design",
+        "mechanical sculpture"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "asmr",
+      "micro_labels": ["oddly satisfying", "art demo"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "satisfying",
+        "tier": "dominant"
+      },
+      {
+        "label": "relaxing",
+        "tier": "secondary"
+      },
+      {
+        "label": "informative",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["raw_footage"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "brand",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 4222,
+    "output_tokens": 346,
+    "total_tokens": 4568,
+    "cost_usd": 0.000841,
+    "latency_ms": 7469,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}

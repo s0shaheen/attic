@@ -1,0 +1,71 @@
+{
+  "item_id": "B7EnEP5g5uR",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:32.702075+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "music",
+      "secondary": "food",
+      "micro_labels": [
+        "Lil Nas X",
+        "Old Town Road",
+        "career milestones",
+        "social media stats",
+        "pizza"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "vlog",
+      "micro_labels": ["time capsule", "video diary", "personal archive"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "nostalgic",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      },
+      {
+        "label": "informative",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["talking_head", "raw_footage"],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "document",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 9673,
+    "output_tokens": 357,
+    "total_tokens": 10030,
+    "cost_usd": 0.001665,
+    "latency_ms": 10136,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 6
+  }
+}

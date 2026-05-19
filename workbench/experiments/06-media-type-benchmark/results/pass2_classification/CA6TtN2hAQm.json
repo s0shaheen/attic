@@ -1,0 +1,67 @@
+{
+  "item_id": "CA6TtN2hAQm",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:59.294193+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "comedy",
+      "secondary": "gaming",
+      "micro_labels": [
+        "Big Chungus",
+        "Final Boss Trope",
+        "Internet Memes",
+        "Police Gear",
+        "Justin Whang"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["social media screenshot", "image macro"],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "shocking",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["text_overlay", "slideshow"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 1.0
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 4197,
+    "output_tokens": 331,
+    "total_tokens": 4528,
+    "cost_usd": 0.000828,
+    "latency_ms": 5433,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "visual_input": "thumbnail",
+    "visual_count": 1
+  }
+}

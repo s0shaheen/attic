@@ -1,0 +1,98 @@
+{
+  "item_id": "BO3j021FnT_",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:53.738681+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A static reaction meme featuring a blurry, wide-eyed, and open-mouthed Chance the Rapper wearing his signature '3' baseball cap.",
+        "audio_description": "None (static image)",
+        "text_on_screen": "Listening to a song for months & you listen deeper than usual & end up catching a hidden metaphor",
+        "key_objects": ["Chance the Rapper's '3' hat"]
+      }
+    ],
+    "overall_summary": "This is a relatable meme about the 'epiphany' moment music listeners experience when they finally understand a complex metaphor or hidden meaning in a song they've heard many times. It uses a low-quality, high-energy reaction image of Chance the Rapper looking shocked to convey the intensity of the realization. The post is curated by the popular meme account @daquan and captures a common experience in music appreciation.",
+    "people": [
+      {
+        "description": "Chance the Rapper looking shocked and surprised in a blurry candid photo.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Chance the Rapper"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Chance the Rapper",
+        "display_name": "Chance the Rapper",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Chance the Rapper 3 Hat",
+        "display_name": "Chance the Rapper '3' New Era Cap",
+        "type": "clothing",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Signature tan hat with white '3' embroidery",
+        "confidence": 5
+      },
+      {
+        "name": "@daquan",
+        "display_name": "Daquan",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Meme curator/influencer",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Deep listening and lyrical analysis can reveal hidden layers of meaning in familiar music.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Static image meme; no audio present."
+    },
+    "presentation_style": {
+      "primary_format": "other",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Surprised, humorous, and relatable.",
+    "topic_hints": ["Music Lyrics", "Internet Memes", "Pop Culture"],
+    "affect_hints": ["Surprised", "Amused", "Relatable"],
+    "genre_hints": ["Meme"]
+  },
+  "metrics": {
+    "input_tokens": 2526,
+    "output_tokens": 833,
+    "total_tokens": 3359,
+    "cost_usd": 0.000879,
+    "latency_ms": 10658,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

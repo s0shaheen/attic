@@ -1,0 +1,76 @@
+{
+  "item_id": "DK5X3oghgOW",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:40.905236+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "music",
+      "secondary": "books",
+      "micro_labels": [
+        "ghazal",
+        "Urdu poetry",
+        "South Asian culture",
+        "translation",
+        "Mehdi Hassan",
+        "Ahmad Faraz"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": ["cultural explainer", "lyric breakdown"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "sad",
+        "tier": "secondary"
+      },
+      {
+        "label": "wholesome",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["mixed", "talking_head", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "educator",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 19779,
+    "output_tokens": 391,
+    "total_tokens": 20170,
+    "cost_usd": 0.003201,
+    "latency_ms": 8685,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 15
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "item_id": "DGEtInQzQNS",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:38:31.254933+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "A sequence of iMessage text bubbles on a dark background transitions from a hateful message sent on Saturday to a series of highly motivational messages sent on Sunday morning.",
+        "audio_description": "A high-pitched, sped-up remix of Jessie Ware's 'Say You Love Me' plays, specifically the lyrics 'Say that you love me / Say that you need me'.",
+        "text_on_screen": "Sat, 23 Mar at 05:31\nu a broke bum matter of fact \ud83d\udc48 yourself bro\nSun, 24 Mar at 06:45\nget up bro\nBiggest in the world.\nYou gon be the best of all time\nThe greatest",
+        "key_objects": ["iMessage interface", "iPhone text bubbles"]
+      }
+    ],
+    "overall_summary": "This short motivational edit contrasts a negative, insulting text message with a series of empowering messages received the following day. The video uses the 'before and after' or 'haters vs. supporters' trope to inspire viewers to ignore negativity and strive for greatness. The main takeaway is the importance of resilience and maintaining a mindset focused on becoming 'the greatest' despite external criticism.",
+    "people": [],
+    "entities": [
+      {
+        "name": "Say You Love Me",
+        "display_name": "Say You Love Me - Jessie Ware (Sped Up)",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": "Sped up/Nightcore remix",
+        "confidence": 5
+      },
+      {
+        "name": "Jessie Ware",
+        "display_name": "Jessie Ware",
+        "type": "artist",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "iMessage",
+        "display_name": "Apple iMessage",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "iOS messaging interface",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "External negativity and insults should be ignored in favor of a self-belief that you can be the best in the world.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "The contrast between a 'broke bum' and 'the greatest' highlights a rapid shift in mindset or social support.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Say You Love Me \u2014 Jessie Ware (Sped Up Remix)",
+      "metadata_song": "original sound - diabolicalcustodybattle",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The song is a very common TikTok sound based on Jessie Ware's track. The text uses a finger-pointing emoji to imply a self-harm suggestion, which is a common way to bypass platform filters for 'kys'."
+    },
+    "presentation_style": {
+      "primary_format": "text_overlay",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Motivational, dark, and resilient.",
+    "topic_hints": ["Motivation", "Self-improvement", "Mental Resilience"],
+    "affect_hints": ["Inspired", "Determined", "Defiant"],
+    "genre_hints": ["Motivational Edit", "Text Message Story"]
+  },
+  "metrics": {
+    "input_tokens": 1895,
+    "output_tokens": 979,
+    "total_tokens": 2874,
+    "cost_usd": 0.000872,
+    "latency_ms": 17304,
+    "upload_ms": 5428
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "item_id": "BsIToEWghhy",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:40:21.071663+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Black screen with white text overlay introducing the parody theme.",
+        "audio_description": "Silence or ambient noise.",
+        "text_on_screen": "How 6ix9ine wakes up \ud83d\ude02\ud83e\udd23",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:02-0:06",
+        "visual_description": "POV shot of a bedroom with a mini basketball hoop on the door and a wall clock.",
+        "audio_description": "Creator shouts 'It's fucking Treway!' then immediately corrects himself: 'Fuck, I can't say that shit no more.'",
+        "text_on_screen": "",
+        "key_objects": ["mini basketball hoop", "wall clock"]
+      },
+      {
+        "time_range": "0:06-0:09",
+        "visual_description": "Camera pans to a window looking out at a parking lot and trash bins.",
+        "audio_description": "Creator shouts 'It's fucking Quattro Way!'",
+        "text_on_screen": "",
+        "key_objects": ["trash bins", "parking lot"]
+      },
+      {
+        "time_range": "0:09-0:12",
+        "visual_description": "Creator attempts to shoot a small red basketball into the mini hoop and misses.",
+        "audio_description": "Sound of ball hitting the door. Creator shouts 'Fuck!'",
+        "text_on_screen": "",
+        "key_objects": ["red basketball"]
+      },
+      {
+        "time_range": "0:12-0:18",
+        "visual_description": "Handheld camera searches for glasses on a desk, finding them on a notebook.",
+        "audio_description": "Creator asks 'Where the fuck is my spectacles?' then says 'Alright... Fuck, I want to read a book.'",
+        "text_on_screen": "",
+        "key_objects": ["glasses", "notebook"]
+      },
+      {
+        "time_range": "0:18-0:23",
+        "visual_description": "Close-up of a book cover followed by a page inside showing a 'Butter on a Stick' illustration.",
+        "audio_description": "Creator shouts 'I'm about to read Diary of a Wimpy Wimpy!'",
+        "text_on_screen": "DIARY of a Wimpy Kid THE LONG HAUL Jeff Kinney",
+        "key_objects": ["Diary of a Wimpy Kid: The Long Haul book"]
+      },
+      {
+        "time_range": "0:23-0:30",
+        "visual_description": "Back at the window, looking out through the screen at the parking lot.",
+        "audio_description": "Creator shouts lyrics from GUMMO: 'I don't want you can keep that, she fiending for some more!' followed by aggressive ad-libs.",
+        "text_on_screen": "",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:30-0:35",
+        "visual_description": "Camera moves toward a TV screen showing Fortnite gameplay.",
+        "audio_description": "Creator says 'Fuck, I want to play some video games now.' then shouts lyrics while shooting in-game.",
+        "text_on_screen": "SANYO",
+        "key_objects": ["Sanyo TV", "Fortnite"]
+      },
+      {
+        "time_range": "0:35-0:41",
+        "visual_description": "Shot of Puma sneakers on a wooden floor, followed by a POV of running down a street.",
+        "audio_description": "Creator says 'Hold up, let me go for a jog real quick.' then shouts 'I'm the fastest man in the fucking world!'",
+        "text_on_screen": "NO PARKING FIRE LANE",
+        "key_objects": ["Puma RS-X shoes"]
+      },
+      {
+        "time_range": "0:41-0:44",
+        "visual_description": "Close-up of a computer monitor displaying a photo of rapper Trippie Redd.",
+        "audio_description": "Creator shouts 'Yo, who the fuck you looking at stupid?!'",
+        "text_on_screen": "",
+        "key_objects": ["computer monitor"]
+      },
+      {
+        "time_range": "0:44-0:47",
+        "visual_description": "The creator is shown in person, posing in a McDonald's restaurant.",
+        "audio_description": "A bell dings and a melodic R&B track plays briefly.",
+        "text_on_screen": "I'M LOVIN' IT",
+        "key_objects": ["McDonald's interior"]
+      }
+    ],
+    "overall_summary": "This comedic POV skit parodies the high-energy and aggressive public persona of rapper 6ix9ine. The creator mimics 6ix9ine's signature shouting style and catchphrases while performing mundane daily tasks like waking up, reading a 'Diary of a Wimpy Kid' book, playing Fortnite, and going for a jog. The video includes specific cultural nods to 6ix9ine's history, such as his 'Treway' catchphrase and his public feud with rapper Trippie Redd.",
+    "people": [
+      {
+        "description": "Black male creator wearing a black denim jacket over a graphic t-shirt and black jeans.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "6ix9ine",
+        "display_name": "6ix9ine",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["text_overlay", "audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Trippie Redd",
+        "display_name": "Trippie Redd",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Photo shown on monitor",
+        "confidence": 5
+      },
+      {
+        "name": "Diary of a Wimpy Kid: The Long Haul",
+        "display_name": "Diary of a Wimpy Kid: The Long Haul",
+        "type": "book",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Hardcover book by Jeff Kinney",
+        "confidence": 5
+      },
+      {
+        "name": "Fortnite",
+        "display_name": "Fortnite",
+        "type": "game",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Battle Royale gameplay",
+        "confidence": 5
+      },
+      {
+        "name": "Puma RS-X",
+        "display_name": "Puma RS-X Sneakers",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Grey, blue, and red colorway",
+        "confidence": 4
+      },
+      {
+        "name": "McDonald's",
+        "display_name": "McDonald's",
+        "type": "restaurant",
+        "relevance": "background",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Treway",
+        "display_name": "Treway",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "Reference to Nine Trey Gangsters",
+        "confidence": 5
+      },
+      {
+        "name": "GUMMO",
+        "display_name": "GUMMO by 6ix9ine",
+        "type": "song",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "Lyrics parodied",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video is a satirical take on 6ix9ine's aggressive and loud personality applied to normal life.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "GUMMO (Parody) \u2014 6ix9ine",
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The creator is parodying 6ix9ine's vocal style and lyrics throughout."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Chaotic, high-energy, and humorous.",
+    "topic_hints": ["Hip-hop parody", "6ix9ine", "Internet humor"],
+    "affect_hints": ["amused", "energetic", "startled"],
+    "genre_hints": ["POV", "Comedy Skit"]
+  },
+  "metrics": {
+    "input_tokens": 5644,
+    "output_tokens": 2226,
+    "total_tokens": 7870,
+    "cost_usd": 0.002182,
+    "latency_ms": 24706,
+    "upload_ms": 5417
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

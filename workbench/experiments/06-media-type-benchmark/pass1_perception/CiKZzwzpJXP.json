@@ -1,0 +1,156 @@
+{
+  "item_id": "CiKZzwzpJXP",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:40:36.294453+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Creator positions his leg on a wooden plyo box to begin a mobility exercise.",
+        "audio_description": "A rhythmic, upbeat instrumental track begins.",
+        "text_on_screen": "This One Stretch Can Undo a Day's Worth of Sitting at Your Desk",
+        "key_objects": [
+          "ProsourceFit Plyo Box",
+          "Weight plates",
+          "Exercise bike"
+        ]
+      },
+      {
+        "time_range": "0:02-0:04",
+        "visual_description": "Creator demonstrates the Elevated Pigeon stretch, leaning forward into the movement.",
+        "audio_description": "The beat continues with rhythmic pulses.",
+        "text_on_screen": "Elevated Pigeon\nIt opens up your hips, can help with lower back pain & improve your squats and deadlifts",
+        "key_objects": ["ProsourceFit Plyo Box"]
+      },
+      {
+        "time_range": "0:04-0:08",
+        "visual_description": "Creator continues the stretch from a different angle, tapping his knee to emphasize the position.",
+        "audio_description": "The instrumental track concludes.",
+        "text_on_screen": "You can do this stretch almost anywhere, using a table, a bench, or even your desk\nTap",
+        "key_objects": ["ProsourceFit Plyo Box"]
+      }
+    ],
+    "overall_summary": "Fitness creator @livfitkarl demonstrates the 'Elevated Pigeon' stretch as a solution for the physical strain of desk work. He explains that this single movement can counteract a full day of sitting by opening the hips and relieving lower back pain. The video highlights the stretch's versatility, noting it can be performed on a desk, table, or bench, and its benefits for improving athletic movements like squats and deadlifts.",
+    "people": [
+      {
+        "description": "Muscular bald man with a chest tattoo, wearing tan shorts and white sneakers.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Karl (@livfitkarl)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Elevated Pigeon",
+        "display_name": "Elevated Pigeon Stretch",
+        "type": "exercise",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "ProsourceFit",
+        "display_name": "ProsourceFit",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Wooden Plyo Box",
+        "confidence": 5
+      },
+      {
+        "name": "Squats",
+        "display_name": "Squats",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Deadlifts",
+        "display_name": "Deadlifts",
+        "type": "exercise",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Piriformis Syndrome",
+        "display_name": "Piriformis Syndrome",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Condition addressed by the stretch",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The Elevated Pigeon stretch is an effective way to reverse the negative postural effects of sitting at a desk all day.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Improving hip mobility through this stretch can lead to better performance in compound lifts like squats and deadlifts.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "This mobility exercise is highly accessible because it can be performed on common furniture like desks or tables.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Elevated Pigeon Stretch",
+          "details": "Place one leg on an elevated surface (box, desk, or table) with the knee bent and outer shin resting on the surface. Lean forward to open hips and lower back."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Look At This - Unknown Artist",
+      "metadata_song": "original sound - Karl",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The brand ProsourceFit is clearly visible on the equipment. The song is a common TikTok audio beat."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Focused, athletic, and informative.",
+    "topic_hints": [
+      "Mobility training",
+      "Desk worker health",
+      "Lower back pain relief"
+    ],
+    "affect_hints": ["Motivated", "Relieved", "Empowered"],
+    "genre_hints": ["Fitness Tutorial", "Health Hack"]
+  },
+  "metrics": {
+    "input_tokens": 2369,
+    "output_tokens": 1419,
+    "total_tokens": 3788,
+    "cost_usd": 0.001207,
+    "latency_ms": 15220,
+    "upload_ms": 3329
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

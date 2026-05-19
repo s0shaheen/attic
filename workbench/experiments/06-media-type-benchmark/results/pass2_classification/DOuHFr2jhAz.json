@@ -1,0 +1,71 @@
+{
+  "item_id": "DOuHFr2jhAz",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:24.749017+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "art",
+      "secondary": "travel",
+      "micro_labels": [
+        "mosaic art",
+        "chicago activities",
+        "creative workshops",
+        "date ideas",
+        "groupon deals"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "review",
+      "micro_labels": ["experience review", "activity recommendation"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "relaxing",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["voiceover", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 6585,
+    "output_tokens": 349,
+    "total_tokens": 6934,
+    "cost_usd": 0.001197,
+    "latency_ms": 8632,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 3
+  }
+}

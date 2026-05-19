@@ -1,0 +1,121 @@
+{
+  "item_id": "Bud8iRDBdEd",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:22.843102+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "Panel 1: A Doge character sits at a computer desk, expressing an intention to interact with family.",
+        "audio_description": "null",
+        "text_on_screen": "hmm today i will socialise with my parents",
+        "key_objects": ["computer", "monitor", "Doge"]
+      },
+      {
+        "time_range": "0:01-0:02",
+        "visual_description": "Panel 2: The Doge character sits on a couch between two parent Doge characters who are verbally criticizing him.",
+        "audio_description": "null",
+        "text_on_screen": "why can't you be the son we wanted\nyou need to eat more, you're not normal",
+        "key_objects": ["couch", "picture frames", "Doge"]
+      },
+      {
+        "time_range": "0:02-0:03",
+        "visual_description": "Panel 3: The Doge character sits alone in bed during the day, looking dejected and staring forward.",
+        "audio_description": "null",
+        "text_on_screen": "null",
+        "key_objects": ["bed", "desk", "Doge"]
+      },
+      {
+        "time_range": "0:03-0:04",
+        "visual_description": "Panel 4: The Doge character sits in the same bed at night, now crying with visible blue tears in the dark.",
+        "audio_description": "null",
+        "text_on_screen": "null",
+        "key_objects": ["bed", "Doge"]
+      }
+    ],
+    "overall_summary": "This four-panel comic follows a Doge character's failed attempt to connect with their parents. After deciding to socialize, the character is met with harsh verbal abuse and disappointment from their parents regarding their personality and physical health. The comic concludes with the character retreating into isolation, showing them sitting in bed and eventually crying alone in the dark, illustrating the psychological impact of parental rejection.",
+    "people": [
+      {
+        "description": "Doge character acting as the son; initially optimistic, then depressed and crying.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Doge"
+      },
+      {
+        "description": "Two Doge characters acting as the parents; they are shown sitting on a couch and speaking critically.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Parent Doges"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Doge",
+        "display_name": "Doge",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "Shiba Inu meme character",
+        "confidence": 5
+      },
+      {
+        "name": "Dogelore",
+        "display_name": "Dogelore",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Internet subculture involving narrative stories using Doge characters",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Unsupportive and hyper-critical parenting can lead to social withdrawal and severe emotional distress in children.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Social isolation is often a defense mechanism following negative interpersonal experiences within the family.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Static image comic; no audio present."
+    },
+    "presentation_style": {
+      "primary_format": "other",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Depressing, somber, and isolating; transitions from bright/hopeful to dark/sad.",
+    "topic_hints": ["Mental Health", "Family Dynamics", "Childhood Trauma"],
+    "affect_hints": ["Sadness", "Loneliness", "Rejection", "Relatability"],
+    "genre_hints": ["Meme", "Comic", "Dogelore"]
+  },
+  "metrics": {
+    "input_tokens": 2523,
+    "output_tokens": 1198,
+    "total_tokens": 3721,
+    "cost_usd": 0.001097,
+    "latency_ms": 11434,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

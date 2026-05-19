@@ -1,0 +1,135 @@
+{
+  "item_id": "DSDZWRwgax7",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:01.688356+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:12",
+        "visual_description": "Creator sits at a restaurant table, eating a french fry and looking nervously between his lap and an unseen date, simulating the act of secretly managing bank transfers on a phone under the table.",
+        "audio_description": "The song 'Back to Back' by Drake plays in the background, mixed with ambient restaurant noise.",
+        "text_on_screen": "POV: TRYING TO PAY ATTENTION TO WHAT SHE SAYING ON THE DATE WHILE TRYING TO TRANSFER FROM MY SAVINGS TO CHECKING BEFORE THE CHECK COME",
+        "key_objects": [
+          "Burger with sesame seed bun",
+          "French fries",
+          "Tan overcoat",
+          "Red dress shirt",
+          "Necktie",
+          "Television screen showing sports news"
+        ]
+      }
+    ],
+    "overall_summary": "This comedic POV video captures the relatable financial anxiety of being on a date. The creator, @m3s3fred, portrays a man attempting to maintain eye contact and listen to his date while secretly using his phone to transfer money from his savings to his checking account to cover the bill. The humor lies in his distracted, wide-eyed expressions as he tries to balance social engagement with real-time budget management.",
+    "people": [
+      {
+        "description": "Black male with braided hair, wearing a tan overcoat, red button-down shirt, and a dark tie; acting as a distracted date.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "@m3s3fred"
+      }
+    ],
+    "entities": [
+      {
+        "name": "@m3s3fred",
+        "display_name": "m3s3fred",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Back to Back",
+        "display_name": "Back to Back \u2014 Drake",
+        "type": "song",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Drake",
+        "display_name": "Drake",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Savings Account",
+        "display_name": "Savings Account",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "specifications": "Financial account type",
+        "confidence": 5
+      },
+      {
+        "name": "Checking Account",
+        "display_name": "Checking Account",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "specifications": "Financial account type",
+        "confidence": 5
+      },
+      {
+        "name": "Los Angeles Lakers",
+        "display_name": "Los Angeles Lakers",
+        "type": "brand",
+        "relevance": "background",
+        "source": ["visual"],
+        "specifications": "Mentioned on background TV screen",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The financial pressure of dating can lead to stressful, behind-the-scenes money management during the meal.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": null,
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Back to Back \u2014 Drake",
+      "metadata_song": null,
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The song is clearly identifiable as Drake's 'Back to Back'. The background TV mentions the Lakers and 'James' (LeBron James)."
+    },
+    "presentation_style": {
+      "primary_format": "pov",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Anxious, comedic, and relatable.",
+    "topic_hints": ["Dating", "Personal Finance", "Social Etiquette"],
+    "affect_hints": ["Relatable", "Stressed", "Amused"],
+    "genre_hints": ["Comedy Skit", "POV"]
+  },
+  "metrics": {
+    "input_tokens": 2650,
+    "output_tokens": 1183,
+    "total_tokens": 3833,
+    "cost_usd": 0.001107,
+    "latency_ms": 19922,
+    "upload_ms": 3514
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

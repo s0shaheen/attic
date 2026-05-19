@@ -1,0 +1,121 @@
+{
+  "item_id": "BelrK9lBmsn",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:33.411296+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Static screenshot of a tweet by user @VINCHY. The tweet features an image of an iMessage conversation where a blue outgoing message is being sent, overlaid by a fake incoming notification banner from the 'FBI'.",
+        "audio_description": "No audio; static image.",
+        "text_on_screen": "vince @VINCHY\ndamn it be like that\nMESSAGES in 1m\nFBI\nShe not gon text u back bro, we seen her phone she like somebody else\nToday 2:00 AM\nhey just wanna let u know that i really like u and hope we can talk more (:",
+        "key_objects": [
+          "iPhone notification banner",
+          "iMessage interface",
+          "Twitter UI"
+        ]
+      }
+    ],
+    "overall_summary": "This meme features a screenshot of a tweet by @VINCHY depicting a humorous and self-deprecating dating scenario. After sending a vulnerable text message to a crush at 2:00 AM, the user receives a mock notification from the 'FBI' telling them not to expect a reply because they've seen the girl's phone and she likes someone else. The content plays on the popular 'FBI agent watching me' internet meme to highlight the relatability of unrequited love.",
+    "people": [
+      {
+        "description": "Twitter user and original poster of the meme content",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "vince (@VINCHY)"
+      },
+      {
+        "description": "Meme aggregator who shared the content",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "@daquan"
+      }
+    ],
+    "entities": [
+      {
+        "name": "FBI",
+        "display_name": "Federal Bureau of Investigation",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "specifications": "Referenced as the 'FBI agent watching me' meme trope",
+        "confidence": 5
+      },
+      {
+        "name": "iMessage",
+        "display_name": "Apple iMessage",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "iOS messaging interface",
+        "confidence": 5
+      },
+      {
+        "name": "Twitter",
+        "display_name": "Twitter / X",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "FBI Agent Watching Me",
+        "display_name": "FBI Agent Watching Me Meme",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": ["visual", "inferred"],
+        "specifications": "A meme suggesting a government agent is monitoring your personal life through your devices",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The 'FBI agent watching me' meme is used here to satirize the experience of being 'ghosted' or having unrequited feelings.",
+        "source": "implied",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Content is a static image meme; all text and references are clearly visible."
+    },
+    "presentation_style": {
+      "primary_format": "other",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Humorous, relatable, and slightly self-deprecating.",
+    "topic_hints": [
+      "Dating and Relationships",
+      "Internet Memes",
+      "Surveillance Humor"
+    ],
+    "affect_hints": ["Amused", "Relatable", "Pity"],
+    "genre_hints": ["Meme", "Tweet Screenshot"]
+  },
+  "metrics": {
+    "input_tokens": 2530,
+    "output_tokens": 1104,
+    "total_tokens": 3634,
+    "cost_usd": 0.001042,
+    "latency_ms": 11671,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

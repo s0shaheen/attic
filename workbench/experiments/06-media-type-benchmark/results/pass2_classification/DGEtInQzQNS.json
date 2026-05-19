@@ -1,0 +1,62 @@
+{
+  "item_id": "DGEtInQzQNS",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:49.623232+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "health",
+      "secondary": "career",
+      "micro_labels": [
+        "motivation",
+        "mental resilience",
+        "self-improvement",
+        "hustle culture"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": ["text message story", "motivational edit"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      }
+    ],
+    "presentation_style": ["text_overlay", "screen_recording"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "anonymous",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 4101,
+    "output_tokens": 301,
+    "total_tokens": 4402,
+    "cost_usd": 0.000796,
+    "latency_ms": 7500,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}

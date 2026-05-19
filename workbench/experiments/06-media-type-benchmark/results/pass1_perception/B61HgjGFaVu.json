@@ -1,0 +1,299 @@
+{
+  "item_id": "B61HgjGFaVu",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:37:03.715955+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "Two movie stills stacked vertically. Top: A drummer seen from behind on a stage. Bottom: A man walking through a desolate area towards a burning building.",
+        "text_detected": "Whiplash\nBlade Runner\n2049",
+        "primary_content": "Movie Nominees: Whiplash and Blade Runner 2049",
+        "entities": [
+          {
+            "name": "Whiplash",
+            "type": "movie_or_show",
+            "specifications": "2014 film directed by Damien Chazelle"
+          },
+          {
+            "name": "Blade Runner 2049",
+            "type": "movie_or_show",
+            "specifications": "2017 film directed by Denis Villeneuve"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "Two movie stills stacked vertically. Top: A group of soldiers in green helmets on a boat. Bottom: A black and white shot of a man in a field with a large fire in the background.",
+        "text_detected": "Dunkirk\nRoma",
+        "primary_content": "Movie Nominees: Dunkirk and Roma",
+        "entities": [
+          {
+            "name": "Dunkirk",
+            "type": "movie_or_show",
+            "specifications": "2017 film directed by Christopher Nolan"
+          },
+          {
+            "name": "Roma",
+            "type": "movie_or_show",
+            "specifications": "2018 film directed by Alfonso Cuar\u00f3n"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "Two movie stills stacked vertically. Top: A young man in a red car holding a gun. Bottom: A man with a metal mask strapped to the front of a moving vehicle in a desert.",
+        "text_detected": "Baby\nDriver\nMad Max:\nFury Road",
+        "primary_content": "Movie Nominees: Baby Driver and Mad Max: Fury Road",
+        "entities": [
+          {
+            "name": "Baby Driver",
+            "type": "movie_or_show",
+            "specifications": "2017 film directed by Edgar Wright"
+          },
+          {
+            "name": "Mad Max: Fury Road",
+            "type": "movie_or_show",
+            "specifications": "2015 film directed by George Miller"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "Two movie stills stacked vertically. Top: A man looking up at a city street that is folding over itself. Bottom: A woman standing in thick white mist facing a tall, spindly alien figure.",
+        "text_detected": "Inception\nArrival",
+        "primary_content": "Movie Nominees: Inception and Arrival",
+        "entities": [
+          {
+            "name": "Inception",
+            "type": "movie_or_show",
+            "specifications": "2010 film directed by Christopher Nolan"
+          },
+          {
+            "name": "Arrival",
+            "type": "movie_or_show",
+            "specifications": "2016 film directed by Denis Villeneuve"
+          }
+        ]
+      },
+      {
+        "image_number": 5,
+        "description": "Two movie stills stacked vertically. Top: A close-up of a woman's face covered in soot and blood with fire in the background. Bottom: A close-up of a man's face illuminated by blue and red neon light.",
+        "text_detected": "Mother!\nGood\nTime",
+        "primary_content": "Movie Nominees: Mother! and Good Time",
+        "entities": [
+          {
+            "name": "Mother!",
+            "type": "movie_or_show",
+            "specifications": "2017 film directed by Darren Aronofsky"
+          },
+          {
+            "name": "Good Time",
+            "type": "movie_or_show",
+            "specifications": "2017 film directed by the Safdie Brothers"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post is a nomination list for 'The \ud83d\uddff Decade Awards,' a community-driven film awards event hosted by @moviebuff_93 and @isleoffilms. The slideshow presents 10 critically acclaimed films from the 2010s, likely for a category focused on cinematography or visual style. The user is likely saving this to participate in the voting process or to use as a watchlist for visually stunning cinema.",
+    "carousel_type": "recommendation_list",
+    "narrative_thread": "The images present a curated selection of the most visually impactful films of the decade, inviting the audience to vote for the best among them.",
+    "entities": [
+      {
+        "name": "The \ud83d\uddff Decade Awards",
+        "display_name": "The \ud83d\uddff Decade Awards",
+        "type": "event",
+        "relevance": "primary",
+        "source": ["text_overlay", "metadata"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "Whiplash",
+        "display_name": "Whiplash (2014)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "Blade Runner 2049",
+        "display_name": "Blade Runner 2049 (2017)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "Dunkirk",
+        "display_name": "Dunkirk (2017)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 2,
+        "confidence": 5
+      },
+      {
+        "name": "Roma",
+        "display_name": "Roma (2018)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 2,
+        "confidence": 5
+      },
+      {
+        "name": "Baby Driver",
+        "display_name": "Baby Driver (2017)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 3,
+        "confidence": 5
+      },
+      {
+        "name": "Mad Max: Fury Road",
+        "display_name": "Mad Max: Fury Road (2015)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 3,
+        "confidence": 5
+      },
+      {
+        "name": "Inception",
+        "display_name": "Inception (2010)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 4,
+        "confidence": 5
+      },
+      {
+        "name": "Arrival",
+        "display_name": "Arrival (2016)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 4,
+        "confidence": 5
+      },
+      {
+        "name": "Mother!",
+        "display_name": "Mother! (2017)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 5,
+        "confidence": 5
+      },
+      {
+        "name": "Good Time",
+        "display_name": "Good Time (2017)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 5,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "These ten films are the official nominees for a visual-based category in a community film award event.",
+        "source": "metadata",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Whiplash",
+          "details": "Nominee",
+          "slide_number": 1
+        },
+        {
+          "name": "Blade Runner 2049",
+          "details": "Nominee",
+          "slide_number": 1
+        },
+        {
+          "name": "Dunkirk",
+          "details": "Nominee",
+          "slide_number": 2
+        },
+        {
+          "name": "Roma",
+          "details": "Nominee",
+          "slide_number": 2
+        },
+        {
+          "name": "Baby Driver",
+          "details": "Nominee",
+          "slide_number": 3
+        },
+        {
+          "name": "Mad Max: Fury Road",
+          "details": "Nominee",
+          "slide_number": 3
+        },
+        {
+          "name": "Inception",
+          "details": "Nominee",
+          "slide_number": 4
+        },
+        {
+          "name": "Arrival",
+          "details": "Nominee",
+          "slide_number": 4
+        },
+        {
+          "name": "Mother!",
+          "details": "Nominee",
+          "slide_number": 5
+        },
+        {
+          "name": "Good Time",
+          "details": "Nominee",
+          "slide_number": 5
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "All movie titles were clearly labeled and the metadata provided the necessary context for the award event."
+    },
+    "presentation_style": {
+      "primary_format": "recommendation_list",
+      "visual_style": "aesthetic"
+    },
+    "visual_mood": "Cinematic, intense, and high-contrast.",
+    "topic_hints": ["Cinema", "Film Awards", "Cinematography"],
+    "affect_hints": ["Inspired", "Nostalgic", "Impressed"],
+    "genre_hints": ["FilmTok", "Movie Recommendations"]
+  },
+  "metrics": {
+    "input_tokens": 6817,
+    "output_tokens": 2570,
+    "total_tokens": 9387,
+    "cost_usd": 0.002565,
+    "latency_ms": 19776,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 5
+  }
+}

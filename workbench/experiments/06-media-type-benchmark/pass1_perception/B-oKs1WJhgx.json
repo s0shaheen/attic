@@ -1,0 +1,115 @@
+{
+  "item_id": "B-oKs1WJhgx",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:37:58.723018+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Creator performs exaggerated, jerky dance moves and air-humping in a living room in front of a fireplace and large TV.",
+        "audio_description": "Aggressive rap music with heavy bass and fast-paced lyrics.",
+        "text_on_screen": "How NBA Youngboy has fun",
+        "key_objects": ["Fireplace", "Television"]
+      },
+      {
+        "time_range": "0:02-0:06",
+        "visual_description": "Creator continues the aggressive parody dancing next to a bubble hockey table in a room with a glass door.",
+        "audio_description": "The song 'Green Dot' continues playing.",
+        "text_on_screen": "How NBA Youngboy has fun",
+        "key_objects": ["Bubble hockey table"]
+      },
+      {
+        "time_range": "0:06-0:11",
+        "visual_description": "Creator performs a backflip on an outdoor trampoline and continues the energetic, erratic dancing style.",
+        "audio_description": "The song 'Green Dot' reaches a high-energy point.",
+        "text_on_screen": "How NBA Youngboy has fun",
+        "key_objects": ["Trampoline"]
+      }
+    ],
+    "overall_summary": "This video is a comedic parody of the rapper NBA Youngboy's high-energy and often erratic dancing style. The creator, @mrtraplord, mimics the rapper's signature jerky movements and aggressive air-humping in various locations including a living room, a game room, and on a trampoline. The video uses the rapper's own music to enhance the satire of his public persona.",
+    "people": [
+      {
+        "description": "Young man with dreadlocks wearing a white t-shirt and distressed blue jeans, parodying a rapper.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "@mrtraplord"
+      }
+    ],
+    "entities": [
+      {
+        "name": "NBA Youngboy",
+        "display_name": "YoungBoy Never Broke Again",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["text_overlay", "audio", "metadata"],
+        "specifications": "American rapper",
+        "confidence": 5
+      },
+      {
+        "name": "Green Dot",
+        "display_name": "Green Dot \u2014 YoungBoy Never Broke Again",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": "Released 2020",
+        "confidence": 5
+      },
+      {
+        "name": "mrtraplord",
+        "display_name": "@mrtraplord",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": "Content creator",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video is a humorous critique/parody of NBA Youngboy's distinctive and aggressive dance style.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Green Dot \u2014 YoungBoy Never Broke Again",
+      "metadata_song": "Green Dot \u2014 YoungBoy Never Broke Again",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The parody is a well-known meme format regarding NBA Youngboy's energy."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Chaotic, high-energy, and humorous.",
+    "topic_hints": ["Hip-hop culture", "NBA Youngboy", "Dance parody"],
+    "affect_hints": ["Amused", "Energetic", "Hyped"],
+    "genre_hints": ["Comedy skit", "Dance parody"]
+  },
+  "metrics": {
+    "input_tokens": 2461,
+    "output_tokens": 1033,
+    "total_tokens": 3494,
+    "cost_usd": 0.000989,
+    "latency_ms": 17295,
+    "upload_ms": 5426
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

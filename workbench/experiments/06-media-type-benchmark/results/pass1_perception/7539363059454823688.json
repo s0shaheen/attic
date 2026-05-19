@@ -1,0 +1,105 @@
+{
+  "item_id": "7539363059454823688",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:25:13.238056+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "Creator stands against a bright blue sky, adjusting his tie while looking thoughtfully away from the camera in a low-angle shot.",
+        "audio_description": "A slowed and reverbed synth-heavy track plays, creating a melancholic yet triumphant atmosphere.",
+        "text_on_screen": "me bc I've been homies with atheists and christians, popular kids and emos, artists, nerds, addicts, and I can only admire everyone's differences",
+        "key_objects": [
+          "Light blue dress shirt",
+          "Black necktie",
+          "Leather belt"
+        ]
+      }
+    ],
+    "overall_summary": "The video features creator @imaeruon posing against a clear blue sky, adopting a 'main character' aesthetic while adjusting his tie. A text overlay expresses his pride in maintaining a diverse social circle that spans various religious, social, and lifestyle groups. The video serves as a statement on universal acceptance and the value of appreciating human differences regardless of labels.",
+    "people": [
+      {
+        "description": "Young male with light brown hair, wearing a professional light blue shirt and dark tie, acting as the subject of the video.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "@imaeruon"
+      }
+    ],
+    "entities": [
+      {
+        "name": "@imaeruon",
+        "display_name": "imaeruon",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Money So Big",
+        "display_name": "Money So Big (Slowed + Reverb) \u2014 Yeat",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["audio", "inferred"],
+        "specifications": "Slowed and reverbed edit",
+        "confidence": 3
+      },
+      {
+        "name": "Instagram",
+        "display_name": "Instagram",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "True social maturity and empathy involve befriending people from vastly different backgrounds and appreciating their unique perspectives.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "Money So Big (Slowed + Reverb) \u2014 Yeat",
+      "metadata_song": "original sound - stvnem \u2014 rina",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "audio_identified": true,
+      "notes": "The audio is a popular TikTok edit; while metadata says 'rina', the underlying melody is characteristic of Yeat's 'Money So Big' slowed down."
+    },
+    "presentation_style": {
+      "primary_format": "pov",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Aspirational and reflective with high-key natural lighting and 'main character' energy.",
+    "topic_hints": ["Social Inclusivity", "Friendship", "Personal Growth"],
+    "affect_hints": ["Proud", "Peaceful", "Accepting"],
+    "genre_hints": ["Relatable", "Main Character Edit"]
+  },
+  "metrics": {
+    "input_tokens": 2566,
+    "output_tokens": 940,
+    "total_tokens": 3506,
+    "cost_usd": 0.000949,
+    "latency_ms": 14044,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

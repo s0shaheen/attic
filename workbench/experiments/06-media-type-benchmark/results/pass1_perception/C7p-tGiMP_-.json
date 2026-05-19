@@ -1,0 +1,166 @@
+{
+  "item_id": "C7p-tGiMP_-",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:42:29.967718+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A student in a grey hoodie looks directly into the camera to state his identity.",
+        "audio_description": "A male voice says, 'I'm Chinese.'",
+        "text_on_screen": "I'm Chinese.",
+        "key_objects": ["Grace Qiu for President poster"]
+      },
+      {
+        "time_range": "0:01-0:02",
+        "visual_description": "A student in a black t-shirt holds his hands together in a greeting gesture.",
+        "audio_description": "A male voice says, 'I'm Indian.'",
+        "text_on_screen": "I'm Indian.",
+        "key_objects": ["Grace Qiu for President poster"]
+      },
+      {
+        "time_range": "0:02-0:03",
+        "visual_description": "A female student smiles at the camera while identifying herself.",
+        "audio_description": "A female voice says, 'I'm a Woman.'",
+        "text_on_screen": "I'm a Woman.",
+        "key_objects": ["Grace Qiu for President poster"]
+      },
+      {
+        "time_range": "0:03-0:09",
+        "visual_description": "Austin Liu walks through a school atrium holding a yellow 'Caution Wet Floor' sign while delivering his campaign pitch.",
+        "audio_description": "Austin Liu says, 'And I'm Austin Liu and I think you should vote me for vice president. Thank you.'",
+        "text_on_screen": "And I'm Austin Liu\nme for vice president.\nThank you.",
+        "key_objects": ["Caution Wet Floor sign"]
+      },
+      {
+        "time_range": "0:09-0:13",
+        "visual_description": "Austin Liu stands still in a wide shot, holding the yellow floor sign in front of a photo display board.",
+        "audio_description": "Ambient school hallway noise.",
+        "text_on_screen": "",
+        "key_objects": ["Caution Wet Floor sign", "Photo display board"]
+      }
+    ],
+    "overall_summary": "This video is a humorous student council campaign advertisement for Austin Liu, who is running for vice president. It begins with three students stating their identities (Chinese, Indian, and woman) in a format parodying common social media trends. Austin then appears, holding a yellow 'Caution Wet Floor' sign, and asks for the student body's vote. The video uses a lighthearted, quirky tone to make his candidacy stand out in a school environment.",
+    "people": [
+      {
+        "description": "Young man in a grey hoodie, identifying as Chinese.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "Young man in a black t-shirt, identifying as Indian.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "Young woman in a grey sweater, identifying as a woman.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "Austin Liu, a young man in a yellow zip-up jacket running for student council vice president.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Austin Liu"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Austin Liu",
+        "display_name": "Austin Liu",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["audio", "text_overlay", "metadata"],
+        "specifications": "Candidate for Student Council Vice President",
+        "confidence": 5
+      },
+      {
+        "name": "Student Council",
+        "display_name": "Student Council",
+        "type": "event",
+        "relevance": "primary",
+        "source": ["audio", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Grace Qiu",
+        "display_name": "Grace Qiu",
+        "type": "person",
+        "relevance": "background",
+        "source": ["visual"],
+        "specifications": "Candidate for President (seen on poster)",
+        "confidence": 4
+      },
+      {
+        "name": "Caution Wet Floor Sign",
+        "display_name": "Yellow Caution Wet Floor Sign",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Standard yellow plastic floor cone",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Austin Liu is running for Student Council Vice President.",
+        "source": "audio",
+        "confidence": 5
+      },
+      {
+        "statement": "The campaign utilizes humor and social media trends to appeal to the student body.",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Vote for Austin Liu",
+          "details": "Candidate for Student Council Vice President"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound - aeuogh",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video is a straightforward campaign skit with clear audio and text."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Humorous, energetic, and casual school environment.",
+    "topic_hints": ["Student Council", "School Elections", "Identity Parody"],
+    "affect_hints": ["Amused", "Entertained"],
+    "genre_hints": ["Campaign Video", "Skit"]
+  },
+  "metrics": {
+    "input_tokens": 2611,
+    "output_tokens": 1582,
+    "total_tokens": 4193,
+    "cost_usd": 0.001341,
+    "latency_ms": 27229,
+    "upload_ms": 5807
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

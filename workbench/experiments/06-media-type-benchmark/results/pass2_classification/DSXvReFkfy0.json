@@ -1,0 +1,67 @@
+{
+  "item_id": "DSXvReFkfy0",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:58.951996+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "education",
+      "micro_labels": [
+        "artificial intelligence",
+        "large language models",
+        "linguistics",
+        "data science",
+        "algorithmic bias"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": ["educational explainer"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "funny",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["talking_head", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "educator",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 9717,
+    "output_tokens": 321,
+    "total_tokens": 10038,
+    "cost_usd": 0.00165,
+    "latency_ms": 9674,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 6
+  }
+}

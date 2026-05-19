@@ -1,0 +1,170 @@
+{
+  "item_id": "B8hC6jJFrZi",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:40.459496+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A person wearing Air Jordan 1 'Fearless' sneakers intentionally creases the toe box while walking.",
+        "audio_description": "Fast-paced, high-pitched electronic music starts.",
+        "text_on_screen": "",
+        "key_objects": ["Air Jordan 1 Retro High OG Fearless"]
+      },
+      {
+        "time_range": "0:01-0:02",
+        "visual_description": "A person pours water from a clear plastic bottle directly onto the toe of an Off-White x Air Jordan 1 'Chicago' sneaker.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "",
+        "key_objects": ["Off-White x Air Jordan 1 Chicago", "water bottle"]
+      },
+      {
+        "time_range": "0:02-0:03",
+        "visual_description": "Close-up of hands tying the laces on a pair of Dior B23 High-Top sneakers.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "",
+        "key_objects": ["Dior B23 High-Top"]
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "A person uses orange-handled scissors to cut the signature red zip tie off a pair of Off-White x Air Jordan 1 'UNC' sneakers.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Off-White x Air Jordan 1 UNC",
+          "scissors",
+          "Off-White zip tie"
+        ]
+      },
+      {
+        "time_range": "0:06-0:07",
+        "visual_description": "A brief, blurry shot of someone walking away in dark-colored sneakers.",
+        "audio_description": "Music ends abruptly.",
+        "text_on_screen": "",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "This video is a satirical compilation showcasing people 'mistreating' highly coveted and expensive sneakers. It features clips of individuals intentionally creasing patent leather Jordans, pouring water on Off-White collaborations, and cutting off the iconic Off-White zip ties. The caption implies that these 'careless' individuals are the ones who ironically have the best luck winning limited releases on the Nike SNKRS app, much to the chagrin of serious collectors.",
+    "people": [],
+    "entities": [
+      {
+        "name": "Nike SNKRS",
+        "display_name": "Nike SNKRS App",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": ["metadata", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Air Jordan 1 Retro High OG Fearless",
+        "display_name": "Air Jordan 1 'Fearless' (UNC to Chicago)",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "Patent leather, UNC/Chicago colorway split",
+        "confidence": 5
+      },
+      {
+        "name": "Off-White x Air Jordan 1 Chicago",
+        "display_name": "Off-White x Air Jordan 1 'Chicago'",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "The Ten collection, red/white/black colorway",
+        "confidence": 5
+      },
+      {
+        "name": "Off-White x Air Jordan 1 UNC",
+        "display_name": "Off-White x Air Jordan 1 'UNC'",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "University Blue/White colorway",
+        "confidence": 5
+      },
+      {
+        "name": "Dior B23 High-Top",
+        "display_name": "Dior B23 High-Top Oblique",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "Oblique canvas pattern",
+        "confidence": 5
+      },
+      {
+        "name": "Complex Sneakers",
+        "display_name": "Complex Sneakers",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "There is a running joke in the sneaker community that people who don't appreciate the value or 'rules' of sneaker collecting are the ones who most frequently win hyped releases on the SNKRS app.",
+        "source": "implied",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "product_list",
+      "items": [
+        {
+          "name": "Air Jordan 1 Retro High OG Fearless",
+          "details": "UNC to Chicago colorway"
+        },
+        {
+          "name": "Off-White x Air Jordan 1 Chicago",
+          "details": "Part of 'The Ten' collection"
+        },
+        {
+          "name": "Dior B23 High-Top",
+          "details": "Luxury designer sneaker"
+        },
+        {
+          "name": "Off-White x Air Jordan 1 UNC",
+          "details": "University Blue colorway"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Sped up electronic/trap beat \u2014 Unidentified",
+      "metadata_song": "null",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "Sneaker models are highly identifiable. The audio is a generic high-pitched edit used for meme context."
+    },
+    "presentation_style": {
+      "primary_format": "compilation",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Provocative, chaotic, and humorous (for the sneaker community).",
+    "topic_hints": ["Sneaker culture", "Nike SNKRS app", "Streetwear fashion"],
+    "affect_hints": ["Frustrated", "Amused", "Cringe"],
+    "genre_hints": ["Sneakerhead meme", "Niche humor"]
+  },
+  "metrics": {
+    "input_tokens": 1978,
+    "output_tokens": 1681,
+    "total_tokens": 3659,
+    "cost_usd": 0.001305,
+    "latency_ms": 19678,
+    "upload_ms": 3830
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

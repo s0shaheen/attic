@@ -1,0 +1,70 @@
+{
+  "item_id": "BOyDZyhFXph",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:01.453556+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "comedy",
+      "secondary": "news",
+      "micro_labels": [
+        "police sketch",
+        "news blooper",
+        "viral meme",
+        "bad drawing"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "reaction",
+      "micro_labels": ["off-screen reaction"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "shocking",
+        "tier": "secondary"
+      },
+      {
+        "label": "cringe",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["raw_footage", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 5396,
+    "output_tokens": 339,
+    "total_tokens": 5735,
+    "cost_usd": 0.001013,
+    "latency_ms": 6665,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 2
+  }
+}

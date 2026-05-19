@@ -1,0 +1,70 @@
+{
+  "item_id": "B61HgjGFaVu",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:28.642521+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": null,
+      "micro_labels": [
+        "sound design",
+        "film awards",
+        "2010s cinema",
+        "watchlist"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "ranking",
+      "micro_labels": ["nominees", "awards list"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 8773,
+    "output_tokens": 346,
+    "total_tokens": 9119,
+    "cost_usd": 0.001524,
+    "latency_ms": 8207,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 5
+  }
+}

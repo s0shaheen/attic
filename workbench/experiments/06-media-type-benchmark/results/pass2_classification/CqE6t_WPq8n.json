@@ -1,0 +1,67 @@
+{
+  "item_id": "CqE6t_WPq8n",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:47.951973+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "career",
+      "secondary": "health",
+      "micro_labels": [
+        "psychology",
+        "mindset",
+        "perspective",
+        "professional development",
+        "motivation"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": ["speech clip", "motivational talk"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["talking_head", "text_overlay"],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.98
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 8675,
+    "output_tokens": 325,
+    "total_tokens": 9000,
+    "cost_usd": 0.001496,
+    "latency_ms": 8455,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 5
+  }
+}

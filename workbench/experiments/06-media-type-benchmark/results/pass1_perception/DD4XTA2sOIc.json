@@ -1,0 +1,134 @@
+{
+  "item_id": "DD4XTA2sOIc",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:42:41.763666+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Creator presents the front and right side profile of his layered haircut to the camera.",
+        "audio_description": "Slowed and reverb version of 'Here It Goes Again' by OK Go plays.",
+        "text_on_screen": "Show this video to your barber",
+        "key_objects": ["green knit quarter-zip sweater"]
+      },
+      {
+        "time_range": "0:03-0:07",
+        "visual_description": "Creator uses his hands to fluff and define the curls and layers of the modern mullet, emphasizing texture.",
+        "audio_description": "Music continues with heavy bass and slowed tempo.",
+        "text_on_screen": "Show this video to your barber",
+        "key_objects": ["rings"]
+      },
+      {
+        "time_range": "0:07-0:11",
+        "visual_description": "Creator turns to show the left side and back profile, completing a 360-degree view of the haircut.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "Show this video to your barber",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "Creator @itsnazary showcases his 'modern mullet' haircut from multiple angles to provide a visual reference for his audience. The video features a 360-degree view of the layered, curly style, including the front, sides, and back. The main takeaway is that this specific cut is a desirable aesthetic that viewers can show to their own barbers for replication.",
+    "people": [
+      {
+        "description": "Male with dark curly hair, a groomed beard, wearing a green knit quarter-zip sweater and rings.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Nazary (@itsnazary)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Nazary",
+        "display_name": "@itsnazary",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Modern Mullet",
+        "display_name": "Modern Mullet Haircut",
+        "type": "technique",
+        "relevance": "primary",
+        "source": ["metadata", "visual"],
+        "specifications": "Layered, curly, tapered sides with length in the back",
+        "confidence": 5
+      },
+      {
+        "name": "Layered Haircut",
+        "display_name": "Layered Haircut",
+        "type": "technique",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Here It Goes Again",
+        "display_name": "Here It Goes Again \u2014 OK Go",
+        "type": "song",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "Slowed + Reverb version",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The 'modern mullet' is a recommended hairstyle for men with curly or wavy hair looking for a layered look.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Providing a 360-degree video reference is the best way to communicate a desired haircut to a barber.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Modern Mullet / Layered Haircut",
+          "details": "A hairstyle featuring significant layering, volume on top, and length extending down the neck, suitable for curly hair textures."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Here It Goes Again \u2014 OK Go",
+      "metadata_song": "original sound - Nazary",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The song is a very popular slowed/reverb edit of the OK Go track."
+    },
+    "presentation_style": {
+      "primary_format": "before_after",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Confident, aesthetic, and focused on grooming details.",
+    "topic_hints": ["Men's Grooming", "Hairstyles", "Barber Tips"],
+    "affect_hints": ["Confident", "Stylish", "Inspired"],
+    "genre_hints": ["Hair showcase", "Grooming tutorial"]
+  },
+  "metrics": {
+    "input_tokens": 2567,
+    "output_tokens": 1251,
+    "total_tokens": 3818,
+    "cost_usd": 0.001136,
+    "latency_ms": 15676,
+    "upload_ms": 3692
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

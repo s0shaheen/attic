@@ -1,0 +1,131 @@
+{
+  "item_id": "CDl6VMWHu16",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:46.629578+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Static news graphic featuring a photo of a densely packed high school hallway with students wearing backpacks, most facing away from the camera. The CNN logo is in the top left corner.",
+        "audio_description": "No audio; static image content.",
+        "text_on_screen": "CNN\nStudent suspended after posting this photo of a crowded school hallway\n'I was concerned for the safety of everyone in that building ... guidelines that the CDC has been telling us for months now, weren't being followed,' said student Hannah Watters",
+        "key_objects": ["Backpacks", "School hallway", "CNN logo"]
+      }
+    ],
+    "overall_summary": "High school student Hannah Watters was suspended from North Paulding High School after sharing a viral photo of a crowded hallway during the COVID-19 pandemic. Watters stated she posted the photo because she was concerned that CDC safety guidelines were not being followed in the building. The school district reportedly cited a violation of student conduct policies regarding phone use as the reason for her suspension.",
+    "people": [
+      {
+        "description": "A high school student who took the photo and was subsequently suspended.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Hannah Watters"
+      },
+      {
+        "description": "Numerous unidentified high school students seen from behind in a crowded hallway.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Hannah Watters",
+        "display_name": "Hannah Watters",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["text_overlay", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "North Paulding High School",
+        "display_name": "North Paulding High School",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Paulding County School District",
+        "display_name": "Paulding County School District",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "CNN",
+        "display_name": "CNN",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Centers for Disease Control and Prevention",
+        "display_name": "CDC",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "A student was suspended for whistleblowing on a lack of COVID-19 safety protocols in her school.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "The school district justified the suspension by citing a violation of phone use policies rather than the content of the photo.",
+        "source": "metadata",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The content is a static news graphic; all information is extracted from text overlays and provided metadata."
+    },
+    "presentation_style": {
+      "primary_format": "other",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Tense, crowded, and concerning, reflecting public health anxieties.",
+    "topic_hints": [
+      "COVID-19 School Safety",
+      "Student Rights",
+      "Public Health Guidelines"
+    ],
+    "affect_hints": ["Concerned", "Alarmed", "Indignant"],
+    "genre_hints": ["News Report", "Social Commentary"]
+  },
+  "metrics": {
+    "input_tokens": 2609,
+    "output_tokens": 1137,
+    "total_tokens": 3746,
+    "cost_usd": 0.001074,
+    "latency_ms": 11384,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

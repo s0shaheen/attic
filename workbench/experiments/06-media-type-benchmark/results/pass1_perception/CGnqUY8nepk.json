@@ -1,0 +1,173 @@
+{
+  "item_id": "CGnqUY8nepk",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:39:56.363405+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Ahmad Alzahabi introduces the concept of elevating plain rice in his kitchen.",
+        "audio_description": "Sometimes plain rice gets boring, try this next time. Here's how to take it up a notch.",
+        "text_on_screen": "",
+        "key_objects": ["Alphalete shirt"]
+      },
+      {
+        "time_range": "0:03-0:07",
+        "visual_description": "Slicing and saut\u00e9ing onions and jalape\u00f1os in a pan with oil and curry powder.",
+        "audio_description": "In some dancing oil, go in with an onion and a jalape\u00f1o and a tiny bit of curry powder.",
+        "text_on_screen": "",
+        "key_objects": ["Onion", "Jalape\u00f1o", "Curry powder", "Pan"]
+      },
+      {
+        "time_range": "0:07-0:10",
+        "visual_description": "Adding washed basmati rice to the pan and stirring to toast it.",
+        "audio_description": "Now go in with a bunch of washed basmati rice and toast.",
+        "text_on_screen": "",
+        "key_objects": ["Basmati rice", "Wooden spoon"]
+      },
+      {
+        "time_range": "0:10-0:14",
+        "visual_description": "Pouring lite coconut milk into the rice mixture, followed by salt and more curry powder.",
+        "audio_description": "Now go in with a bunch of lite coconut milk. Now go in with a bunch of salt and more curry powder.",
+        "text_on_screen": "",
+        "key_objects": ["Lite coconut milk", "Salt", "Curry powder"]
+      },
+      {
+        "time_range": "0:14-0:17",
+        "visual_description": "Ahmad explains the simmering process while placing a lid on the steaming pot.",
+        "audio_description": "Now bring to a boil, cover, drop to a simmer and cook for about 12 minutes.",
+        "text_on_screen": "",
+        "key_objects": ["Pot lid", "Stove"]
+      },
+      {
+        "time_range": "0:17-0:21",
+        "visual_description": "Adding chopped cilantro and lime juice to the cooked rice and fluffing it.",
+        "audio_description": "Now add some cilantro, a bunch of lime juice, and now we have the final product.",
+        "text_on_screen": "",
+        "key_objects": ["Cilantro", "Lime juice", "Cooked rice"]
+      }
+    ],
+    "overall_summary": "Ahmad Alzahabi, known as @thegoldenbalance, demonstrates a quick and flavorful way to upgrade plain white rice. The recipe involves saut\u00e9ing onions and jalape\u00f1os with curry powder before toasting basmati rice in the same pan. The rice is then cooked in lite coconut milk and finished with fresh cilantro and lime juice. The result is a fragrant, creamy, and spicy coconut curry rice that serves as a versatile side dish.",
+    "people": [
+      {
+        "description": "Ahmad Alzahabi, a male food creator wearing a black Alphalete t-shirt.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Ahmad Alzahabi"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Ahmad Alzahabi",
+        "display_name": "Ahmad Alzahabi (@thegoldenbalance)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Alphalete",
+        "display_name": "Alphalete Athletics",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Black t-shirt with gold logo",
+        "confidence": 5
+      },
+      {
+        "name": "Basmati Rice",
+        "display_name": "Basmati Rice",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": ["audio", "metadata"],
+        "specifications": "1 cup, washed",
+        "confidence": 5
+      },
+      {
+        "name": "Lite Coconut Milk",
+        "display_name": "Lite Coconut Milk",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": ["audio", "metadata"],
+        "specifications": "2 cups",
+        "confidence": 5
+      },
+      {
+        "name": "Curry Powder",
+        "display_name": "Curry Powder",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": ["audio", "metadata"],
+        "specifications": "1 tsp total",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Toasting rice with aromatics and spices before boiling adds significant depth of flavor.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Replacing water with coconut milk creates a creamier, more decadent rice texture.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Finishing rice with fresh acid (lime) and herbs (cilantro) brightens the heavy flavors of coconut and curry.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Coconut Curry Rice",
+          "details": "1 cup washed basmati rice, 2 cups lite coconut milk, 2 tsp salt, 1 tsp curry powder, 1/2 onion (sliced), 1 jalape\u00f1o (sliced), fresh cilantro, lime juice."
+        },
+        {
+          "name": "Cooking Instructions",
+          "details": "Saut\u00e9 onion and jalape\u00f1o in oil with curry powder. Add rice and toast. Add coconut milk, salt, and more curry powder. Bring to boil, cover, and simmer for 12 minutes. Finish with cilantro and lime."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Unknown Lo-Fi Hip Hop Beat",
+      "metadata_song": "original sound - Ahmad Alzahabi",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "The background music is a generic lo-fi beat often used in cooking videos; specific track title is not identifiable."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "overhead",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Warm, inviting, and energetic kitchen environment.",
+    "topic_hints": ["Cooking", "Rice Recipes", "Meal Prep"],
+    "affect_hints": ["Hungry", "Inspired", "Satisfied"],
+    "genre_hints": ["Food TikTok", "Recipe Tutorial"]
+  },
+  "metrics": {
+    "input_tokens": 3460,
+    "output_tokens": 1851,
+    "total_tokens": 5311,
+    "cost_usd": 0.00163,
+    "latency_ms": 17520,
+    "upload_ms": 5484
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

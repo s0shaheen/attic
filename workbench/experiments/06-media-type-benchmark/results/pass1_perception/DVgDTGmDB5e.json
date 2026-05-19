@@ -1,0 +1,201 @@
+{
+  "item_id": "DVgDTGmDB5e",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:38:09.872471+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:34",
+        "visual_description": "An elderly Pashtun man with a long white beard and a traditional turban speaks directly to the camera in an outdoor setting.",
+        "audio_description": "The man explains how easily a child's mind can be molded, comparing it to a camera that captures everything. He describes how children are taught to view others as infidels (kafir).",
+        "text_on_screen": "Just give a five or six year old infidels child to me. Leave it to me. In 10 years' time, I will teach him prayer, language and he will forget all about English. Will it happen or not? A child's mind is like a camera. Whatever goes in front of the camera, the camera captures it. Tell this innocent child that Punjabis are infidels, so-and-so is an infidel. What would the child know? Because the Mullah said he is an infidel so finish him off.",
+        "key_objects": ["turban", "clay pot", "traditional clothing"]
+      },
+      {
+        "time_range": "0:35-1:04",
+        "visual_description": "The man continues his explanation, gesturing with his hands to emphasize his points about historical influences.",
+        "audio_description": "He discusses the arrival of Russia and European countries, mentioning General Zia-ul-Haq and General Alam Jan. He claims the US influenced the removal of Sufism from madrassas.",
+        "text_on_screen": "Ever since Russia came and the European countries came. Our Lieutenant General Alam Jan was a serving general who belonged to the Mehsud tribe. The rank of lieutenant general is not an ordinary rank. There was a debate going on for three months. For example Ghulam Rasool, who studies in a religious madrassah. How can he become an extremist? The United States told them to remove Sufism from the madrassahs. So now there isn't any Sufism in the madrassahs rather only materialism. It isn't in the actual educational curriculum as rather there is only materialism.",
+        "key_objects": ["turban", "clay pot"]
+      },
+      {
+        "time_range": "1:05-1:44",
+        "visual_description": "The speaker uses hand gestures to illustrate the concept of spirituality and the divide between different political blocs.",
+        "audio_description": "He explains that without Sufism and spirituality, people only think of deceiving each other. He mentions the 'Khawarij' and 'Jabria' sects and the roles of the British and Russian blocs.",
+        "text_on_screen": "We don't object to anyone, but it's difficult without Sufism, without spirituality. Because if it's in your heart, you say, I will deceive him, and in my heart, I say that I will deceive him. But if we fear Allah, you will say to me, \"This is harmful for you,\" and I will say to you, \"This is harmful for you.\" They took out Sufism from the minds of the people. And tuned the minds of people in a particular way. It is called the Khawarij and sect. Or the 'Jabria sect'. The British tried their best. There are actually two blocs, one is the Russian and other one is the British. Russia was made to disintegrate.",
+        "key_objects": ["turban"]
+      },
+      {
+        "time_range": "1:45-2:41",
+        "visual_description": "The man recounts a specific historical warning given to General Zia-ul-Haq regarding the future of madrassas.",
+        "audio_description": "He details an interview with General Alam Jan, who warned Zia-ul-Haq that the very madrassas he was building would one day turn against him. He concludes that the curriculum is the core issue.",
+        "text_on_screen": "General Alam Jan was interviewed, he was retired at that time but still Pervez Musharraf called him. He gave a 15-minute speech that is available. He said, \"General Zia-ul-Haq Sahab, you build religious madrassahs. You call for Jihad once. I call for it thrice. Jihad, jihad, jihad. But these religious madrassahs will turn against you one day.\" I have also given this statement to Colonel. The tribes have never been hostile to you. If they pick up weapons against you, it will become a big problem for you. People who stood with Baitullah, we later learned that they were only 1500. They were from religious madrassahs. But General Alam Jan who belonged to our Mehsud tribe, had given this statement to him (General Zia-ul-Haq), \"These madrassahs will one day turn against you.\" So, the point is that it's all about the curriculum.",
+        "key_objects": ["turban"]
+      }
+    ],
+    "overall_summary": "In this video, an elderly Pashtun man provides a critical perspective on how religious madrassas in Pakistan were transformed into breeding grounds for extremism. He argues that a child's mind is highly impressionable and that the curriculum taught in these schools, which often labels others as infidels, leads to radicalization. He specifically points to the removal of Sufism and spirituality from the curriculum\u2014allegedly at the behest of the United States\u2014as a turning point that replaced moral guidance with materialism and extremist ideologies. The speaker also recounts historical warnings from military figures like General Alam Jan to General Zia-ul-Haq, predicting that the state-sponsored madrassas would eventually turn against the government.",
+    "people": [
+      {
+        "description": "Elderly Pashtun man with a white beard, wearing a brown shirt and a large grey turban.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "General Zia-ul-Haq",
+        "display_name": "General Zia-ul-Haq",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Former President of Pakistan",
+        "confidence": 5
+      },
+      {
+        "name": "General Alam Jan",
+        "display_name": "Lieutenant General Alam Jan",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Mehsud tribe member, Lieutenant General",
+        "confidence": 5
+      },
+      {
+        "name": "Pervez Musharraf",
+        "display_name": "Pervez Musharraf",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Former President of Pakistan",
+        "confidence": 5
+      },
+      {
+        "name": "Baitullah Mehsud",
+        "display_name": "Baitullah",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Militant leader",
+        "confidence": 4
+      },
+      {
+        "name": "Russia",
+        "display_name": "Russia",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "United States",
+        "display_name": "United States",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Sufism",
+        "display_name": "Sufism",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Islamic mysticism",
+        "confidence": 5
+      },
+      {
+        "name": "Khawarij",
+        "display_name": "Khawarij Sect",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Extremist Islamic sect",
+        "confidence": 4
+      },
+      {
+        "name": "Jabria",
+        "display_name": "Jabria Sect",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Islamic theological school",
+        "confidence": 4
+      },
+      {
+        "name": "Madrassah",
+        "display_name": "Religious Madrassah",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Islamic religious school",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Children's minds are easily influenced by the religious curriculum they are taught in madrassas.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The removal of Sufism from religious education has led to the rise of extremism and materialism.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Foreign geopolitical interests (US, Russia, UK) have historically influenced the educational and religious landscape of the region.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "The radicalization of the Pashtun generation is a direct result of the specific curriculum implemented in madrassas.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "null",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The audio is primarily speech in Urdu/Pashto with English subtitles. Entities are clearly named in the subtitles."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Serious, reflective, and historically grounded.",
+    "topic_hints": [
+      "Religious Extremism",
+      "Educational Curriculum",
+      "Pakistani History"
+    ],
+    "affect_hints": ["Concerned", "Informative", "Somber"],
+    "genre_hints": ["Interview", "Political Commentary", "Documentary Clip"]
+  },
+  "metrics": {
+    "input_tokens": 15953,
+    "output_tokens": 2688,
+    "total_tokens": 18641,
+    "cost_usd": 0.004006,
+    "latency_ms": 29884,
+    "upload_ms": 8092
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

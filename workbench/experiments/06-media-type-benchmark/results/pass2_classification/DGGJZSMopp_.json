@@ -1,0 +1,70 @@
+{
+  "item_id": "DGGJZSMopp_",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:08.262835+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "health",
+      "micro_labels": [
+        "breakfast recipes",
+        "one pot meal",
+        "potato hash",
+        "intermittent fasting"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "recipe",
+      "micro_labels": ["cooking tutorial", "step-by-step cooking"],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "funny",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["voiceover", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 10969,
+    "output_tokens": 346,
+    "total_tokens": 11315,
+    "cost_usd": 0.001853,
+    "latency_ms": 6808,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 7
+  }
+}

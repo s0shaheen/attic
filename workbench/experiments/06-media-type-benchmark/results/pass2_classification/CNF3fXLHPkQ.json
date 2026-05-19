@@ -1,0 +1,75 @@
+{
+  "item_id": "CNF3fXLHPkQ",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:25.149018+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "music",
+      "secondary": "career",
+      "micro_labels": [
+        "Nipsey Hussle",
+        "Hip-hop",
+        "Entrepreneurship",
+        "Community impact",
+        "Memorial"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "edit",
+      "micro_labels": ["Tribute video", "Photo montage", "Memorial edit"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "sad",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "wholesome",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "mixed"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.85
+    },
+    "communicative_intent": {
+      "label": "inspire",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 14015,
+    "output_tokens": 381,
+    "total_tokens": 14396,
+    "cost_usd": 0.002331,
+    "latency_ms": 7749,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 10
+  }
+}

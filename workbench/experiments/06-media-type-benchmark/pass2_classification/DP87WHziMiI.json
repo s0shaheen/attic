@@ -1,0 +1,71 @@
+{
+  "item_id": "DP87WHziMiI",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:22.563915+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "art",
+      "micro_labels": [
+        "TouchDesigner",
+        "creative coding",
+        "visual programming",
+        "particle effects",
+        "new media art"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "tutorial",
+      "micro_labels": ["creative process", "skit"],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "funny",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["screen_recording", "talking_head"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 7615,
+    "output_tokens": 349,
+    "total_tokens": 7964,
+    "cost_usd": 0.001352,
+    "latency_ms": 6773,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 4
+  }
+}

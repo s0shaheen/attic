@@ -1,0 +1,75 @@
+{
+  "item_id": "DPLBQs7jPMK",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:32.218406+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "news",
+      "secondary": "politics",
+      "micro_labels": [
+        "ICE",
+        "police chase",
+        "Chicago",
+        "immigration enforcement",
+        "delivery worker rights"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "news_commentary",
+      "micro_labels": ["citizen journalism", "on-the-scene footage"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "shocking",
+        "tier": "dominant"
+      },
+      {
+        "label": "angry",
+        "tier": "secondary"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["raw_footage", "text_overlay"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.98
+    },
+    "communicative_intent": {
+      "label": "document",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "anonymous",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 5372,
+    "output_tokens": 377,
+    "total_tokens": 5749,
+    "cost_usd": 0.001032,
+    "latency_ms": 7963,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 2
+  }
+}

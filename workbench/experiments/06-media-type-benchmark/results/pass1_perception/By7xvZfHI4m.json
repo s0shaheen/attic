@@ -1,0 +1,221 @@
+{
+  "item_id": "By7xvZfHI4m",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:36:43.937211+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "A blurry screenshot of a music video featuring a blonde woman dancing with a man in a blue shirt, overlaid with text.",
+        "text_detected": "This shit sent me back to 6th grade \ud83d\ude0c",
+        "primary_content": "Music Video: Avril Lavigne - 'Girlfriend' (2007)",
+        "entities": [
+          {
+            "name": "Avril Lavigne",
+            "type": "person",
+            "specifications": "Performing in 'Girlfriend' music video"
+          },
+          {
+            "name": "Girlfriend",
+            "type": "song",
+            "specifications": "Released 2007"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "A blurry close-up of a blonde woman in a red and black top dancing, likely from the same music video as slide 1.",
+        "text_detected": "None",
+        "primary_content": "Music Video: Avril Lavigne - 'Girlfriend'",
+        "entities": [
+          {
+            "name": "Avril Lavigne",
+            "type": "person",
+            "specifications": "Red and black outfit"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "A solid black image.",
+        "text_detected": "None",
+        "primary_content": "Placeholder or transition slide",
+        "entities": []
+      },
+      {
+        "image_number": 4,
+        "description": "A solid black image.",
+        "text_detected": "None",
+        "primary_content": "Placeholder or transition slide",
+        "entities": []
+      },
+      {
+        "image_number": 5,
+        "description": "A solid black image.",
+        "text_detected": "None",
+        "primary_content": "Placeholder or transition slide",
+        "entities": []
+      },
+      {
+        "image_number": 6,
+        "description": "A dark, low-resolution silhouette of a large cruise ship at night with some lights visible.",
+        "text_detected": "None",
+        "primary_content": "TV Show Reference: The SS Tipton from 'The Suite Life on Deck'",
+        "entities": [
+          {
+            "name": "SS Tipton",
+            "type": "place",
+            "specifications": "Fictional cruise ship from Disney Channel"
+          },
+          {
+            "name": "The Suite Life on Deck",
+            "type": "movie_or_show",
+            "specifications": "Disney Channel series (2008-2011)"
+          }
+        ]
+      },
+      {
+        "image_number": 7,
+        "description": "A very blurry, out-of-focus image of a neon sign with purple and red lighting.",
+        "text_detected": "H... NA",
+        "primary_content": "TV Show Reference: Hannah Montana logo",
+        "entities": [
+          {
+            "name": "Hannah Montana",
+            "type": "movie_or_show",
+            "specifications": "Disney Channel series logo"
+          }
+        ]
+      },
+      {
+        "image_number": 8,
+        "description": "An animated graphic of a wall calendar with the page for June 3rd flipping up.",
+        "text_detected": "JUNE 3",
+        "primary_content": "TV Show Reference: Phineas and Ferb intro (Start of Summer)",
+        "entities": [
+          {
+            "name": "Phineas and Ferb",
+            "type": "movie_or_show",
+            "specifications": "Animated series (2007-2015)"
+          },
+          {
+            "name": "June 3",
+            "type": "event",
+            "specifications": "First day of summer vacation in the show's lore"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This TikTok slideshow is a curated 'nostalgia dump' targeting Gen Z and younger Millennials who grew up in the late 2000s. It uses iconic visual cues like Avril Lavigne's 'Girlfriend' music video and various Disney Channel staples (The Suite Life on Deck, Hannah Montana, Phineas and Ferb) to trigger childhood memories. The user is likely sharing this to engage with a community that shares these specific cultural touchstones from their middle school years.",
+    "carousel_type": "photo_dump",
+    "narrative_thread": "The images move from a specific pop culture 'moment' (Avril Lavigne) through several iconic TV show settings, ending with the symbolic start of summer vacation.",
+    "entities": [
+      {
+        "name": "Avril Lavigne",
+        "display_name": "Avril Lavigne",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "The Suite Life on Deck",
+        "display_name": "The Suite Life on Deck (SS Tipton)",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "slide_number": 6,
+        "confidence": 4
+      },
+      {
+        "name": "Hannah Montana",
+        "display_name": "Hannah Montana",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 7,
+        "confidence": 4
+      },
+      {
+        "name": "Phineas and Ferb",
+        "display_name": "Phineas and Ferb",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "slide_number": 8,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Late 2000s pop culture serves as a powerful nostalgic trigger for the creator's demographic.",
+        "source": "implied",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Girlfriend by Avril Lavigne",
+          "details": "Music video reference",
+          "slide_number": 1
+        },
+        {
+          "name": "The Suite Life on Deck",
+          "details": "SS Tipton silhouette",
+          "slide_number": 6
+        },
+        {
+          "name": "Hannah Montana",
+          "details": "Neon logo reference",
+          "slide_number": 7
+        },
+        {
+          "name": "Phineas and Ferb",
+          "details": "June 3rd summer start calendar",
+          "slide_number": 8
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound \u2014 mrtraplord",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 4,
+      "notes": "Slides 3, 4, and 5 are blank. Slide 7 is extremely blurry but identifiable by color and shape as the Hannah Montana logo."
+    },
+    "presentation_style": {
+      "primary_format": "photo_dump",
+      "visual_style": "meme"
+    },
+    "visual_mood": "Nostalgic, hazy, and sentimental.",
+    "topic_hints": [
+      "2000s Pop Culture",
+      "Disney Channel",
+      "Childhood Memories"
+    ],
+    "affect_hints": ["Nostalgic", "Sentimental", "Amused"],
+    "genre_hints": ["Nostalgia TikTok", "Corecore-adjacent"]
+  },
+  "metrics": {
+    "input_tokens": 9969,
+    "output_tokens": 1893,
+    "total_tokens": 11862,
+    "cost_usd": 0.002631,
+    "latency_ms": 24668,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 8
+  }
+}

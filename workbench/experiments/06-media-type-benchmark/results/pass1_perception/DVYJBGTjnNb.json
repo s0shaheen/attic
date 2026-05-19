@@ -1,0 +1,231 @@
+{
+  "item_id": "DVYJBGTjnNb",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:41:53.291827+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Title card 'Spain' appears over a dark interior shot of a train or metro car.",
+        "audio_description": "Atmospheric, bass-heavy rap music begins.",
+        "text_on_screen": "Spain\n2.12.2025\n@sids.visuals",
+        "key_objects": ["train interior"]
+      },
+      {
+        "time_range": "0:02-0:04",
+        "visual_description": "A Blue Line train arrives at the O'Hare CTA station in Chicago.",
+        "audio_description": "Music continues with rhythmic beats.",
+        "text_on_screen": "O'Hare\nTake cta to Lincoln Park\nTake cta to Humboldt Park",
+        "key_objects": ["CTA Train", "O'Hare Station"]
+      },
+      {
+        "time_range": "0:04-0:14",
+        "visual_description": "Fast-paced montage of the creator and friends navigating O'Hare airport terminals, showing signs and walking through corridors.",
+        "audio_description": "Rap lyrics: 'I'm in the building my n****s...'",
+        "text_on_screen": "Transit\nTerminals 1 2 3 5",
+        "key_objects": [
+          "Arcteryx beanie",
+          "The North Face backpack",
+          "Airport signage"
+        ]
+      },
+      {
+        "time_range": "0:14-0:18",
+        "visual_description": "Transition scene: the creator in a red sweater performs a 'whip' camera transition that pans from a street level view to a wide panoramic shot of Barcelona.",
+        "audio_description": "Creator says: 'Boom! Again, again, again.'",
+        "text_on_screen": "BOOM!!!!!\nAgain, again, again",
+        "key_objects": ["Water bottle", "Barcelona cityscape"]
+      },
+      {
+        "time_range": "0:18-0:23",
+        "visual_description": "Rapid-fire montage of Spain highlights: the Sagrada Familia, pouring beer, friends shaking hands in a park, and stained glass windows.",
+        "audio_description": "Music intensifies with fast-paced lyrics.",
+        "text_on_screen": "SO\nVOL\n1",
+        "key_objects": ["Sagrada Familia", "Beer glasses", "Stained glass"]
+      },
+      {
+        "time_range": "0:23-0:26",
+        "visual_description": "A shot from inside a car showing the infotainment screen, which is masked to display video clips of a plane wing and a train interior.",
+        "audio_description": "Music continues.",
+        "text_on_screen": "COPE FM",
+        "key_objects": ["Car dashboard", "Infotainment system"]
+      },
+      {
+        "time_range": "0:26-0:32",
+        "visual_description": "Final shots of friends laughing in a Spanish street followed by a stylized 'S' logo animation.",
+        "audio_description": "Music fades out with a 'mwah' sound effect.",
+        "text_on_screen": null,
+        "key_objects": ["S logo"]
+      }
+    ],
+    "overall_summary": "This video is a high-energy travel edit documenting a trip to Spain (specifically Barcelona and Madrid) in December 2025. It begins with the transit phase at O'Hare International Airport in Chicago before transitioning into a fast-paced montage of Spanish landmarks, social moments, and cityscapes. The creator, @sids.visuals, utilizes advanced editing techniques such as masking, whip transitions, and synchronized SFX to showcase the 'leftover content' from his trip.",
+    "people": [
+      {
+        "description": "Young male creator with dark curly hair and glasses, wearing a red sweater and black hoodie.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@sids.visuals"
+      },
+      {
+        "description": "Young male friend with glasses and a black Arcteryx beanie.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Young male friend in a grey sweater.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Spain",
+        "display_name": "Spain",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["text_overlay", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Barcelona",
+        "display_name": "Barcelona, Spain",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Madrid",
+        "display_name": "Madrid, Spain",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "O'Hare International Airport",
+        "display_name": "O'Hare International Airport (ORD)",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["visual", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Sagrada Fam\u00edlia",
+        "display_name": "Bas\u00edlica de la Sagrada Fam\u00edlia",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "CTA",
+        "display_name": "Chicago Transit Authority (CTA)",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["visual", "text_overlay"],
+        "specifications": "Blue Line",
+        "confidence": 5
+      },
+      {
+        "name": "Arc'teryx",
+        "display_name": "Arc'teryx",
+        "type": "brand",
+        "relevance": "background",
+        "source": ["visual"],
+        "specifications": "Beanie",
+        "confidence": 5
+      },
+      {
+        "name": "The North Face",
+        "display_name": "The North Face",
+        "type": "brand",
+        "relevance": "background",
+        "source": ["visual"],
+        "specifications": "Backpack",
+        "confidence": 5
+      },
+      {
+        "name": "Homixide Gang",
+        "display_name": "Homixide Gang",
+        "type": "artist",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Creative masking and SFX transitions can significantly elevate the energy of a travel montage.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "The video documents a trip to Spain occurring between December 2nd and December 6th, 2025.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Barcelona",
+          "details": "Featured heavily with shots of the cityscape and Sagrada Familia."
+        },
+        {
+          "name": "Madrid",
+          "details": "Mentioned in hashtags as a destination on the trip."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "In The Building \u2014 Homixide Gang",
+      "metadata_song": "original audio - sids.visuals",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The song is 'In The Building' by Homixide Gang, which is a popular choice for high-energy edits."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "transitions",
+      "editing_style": "heavy_effects"
+    },
+    "visual_mood": "High-energy, cinematic, and adventurous with a focus on urban exploration.",
+    "topic_hints": [
+      "Travel Photography",
+      "Video Editing Techniques",
+      "Spain Tourism"
+    ],
+    "affect_hints": ["Excited", "Vibrant", "Nostalgic"],
+    "genre_hints": ["Travel Edit", "Cinematic Vlog"]
+  },
+  "metrics": {
+    "input_tokens": 4411,
+    "output_tokens": 2299,
+    "total_tokens": 6710,
+    "cost_usd": 0.002041,
+    "latency_ms": 24873,
+    "upload_ms": 6591
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

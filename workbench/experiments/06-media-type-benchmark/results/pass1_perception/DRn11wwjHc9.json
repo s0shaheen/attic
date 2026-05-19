@@ -1,0 +1,96 @@
+{
+  "item_id": "DRn11wwjHc9",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:37:52.622824+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:08",
+        "visual_description": "A young boy with glasses and blonde hair speaks directly to the camera in a selfie-style video.",
+        "audio_description": "The boy says, 'Bro, I wish I had a video of it, but there is so much... I don't know, there's not proof, but bro...'",
+        "text_on_screen": "Nothing against Mexicans btw",
+        "key_objects": ["glasses", "blue shirt"]
+      },
+      {
+        "time_range": "0:08-0:22",
+        "visual_description": "The boy continues his story, pulling his shirt up over his mouth at one point.",
+        "audio_description": "The boy says, 'Popular girls are b*tches. Bro, I told one I was going to a funeral. They're like, \"What are you doing over the weekend?\" I'm like, \"I'm going to a funeral,\" and she's like... gang, she started laughing. And of course, she's a fat Mexican.'",
+        "text_on_screen": "Nothing against Mexicans btw",
+        "key_objects": ["glasses", "blue shirt"]
+      }
+    ],
+    "overall_summary": "A young boy shares a story about an interaction with a 'popular girl' at his school. He claims that when he told her he was attending a funeral over the weekend, she laughed. He concludes the video by making a derogatory comment about her weight and ethnicity, despite the text overlay stating he has 'nothing against Mexicans.'",
+    "people": [
+      {
+        "description": "A young boy with blonde hair and glasses, wearing a blue shirt.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@declan.5015"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Mexican",
+        "display_name": "Mexican",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": ["audio", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The creator believes 'popular girls' are mean and shares a specific instance of one laughing at his mention of a funeral.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The creator uses a contradictory approach by including a disclaimer about having 'nothing against Mexicans' while making a derogatory comment about a Mexican girl's weight and ethnicity.",
+        "source": "text_overlay and voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video contains only spoken word, no music."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "selfie",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "casual, slightly agitated",
+    "topic_hints": [
+      "school social dynamics",
+      "personal anecdote",
+      "controversial comments"
+    ],
+    "affect_hints": ["frustrated", "judgmental"],
+    "genre_hints": ["storytime", "rant"]
+  },
+  "metrics": {
+    "input_tokens": 3409,
+    "output_tokens": 849,
+    "total_tokens": 4258,
+    "cost_usd": 0.001021,
+    "latency_ms": 12630,
+    "upload_ms": 6369
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

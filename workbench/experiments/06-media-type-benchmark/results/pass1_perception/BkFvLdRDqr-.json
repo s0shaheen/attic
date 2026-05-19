@@ -1,0 +1,107 @@
+{
+  "item_id": "BkFvLdRDqr-",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:32.095027+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A static meme image featuring a text-based exchange about sleep habits followed by a reaction image of the Tenth Doctor from Doctor Who.",
+        "audio_description": "null",
+        "text_on_screen": "why is it so easy to stay awake until 6 am but so hard to wake up at 6 am\nThings in motion tend to stay in motion, while things at rest tend to stay at rest.\nPHYSICS PHYSICS PHYSICS PHYSICS PHYSICS PHYSICS PHYSICS PHYSICS PHYSICS PHYSICS PHYSICS PHYSICS PHYSICS",
+        "key_objects": ["Tumblr post screenshot", "Reaction image"]
+      }
+    ],
+    "overall_summary": "This meme humorously applies Newton's First Law of Motion (Inertia) to explain why it is easier to stay awake late than it is to wake up early. It features a text-based question and answer followed by a high-energy reaction image of David Tennant as the Tenth Doctor from Doctor Who shouting 'PHYSICS'. The main takeaway is a relatable joke about sleep cycles framed through a scientific lens.",
+    "people": [
+      {
+        "description": "David Tennant as the Tenth Doctor, wearing glasses and a suit in a classroom setting, looking upwards and shouting.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "David Tennant"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Newton's First Law of Motion",
+        "display_name": "Newton's First Law (Inertia)",
+        "type": "technique",
+        "relevance": "primary",
+        "source": ["text_overlay", "inferred"],
+        "specifications": "An object at rest stays at rest and an object in motion stays in motion with the same speed and in the same direction unless acted upon by an unbalanced force.",
+        "confidence": 5
+      },
+      {
+        "name": "The Tenth Doctor",
+        "display_name": "The Tenth Doctor (Doctor Who)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "Character played by David Tennant",
+        "confidence": 5
+      },
+      {
+        "name": "David Tennant",
+        "display_name": "David Tennant",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Physics",
+        "display_name": "Physics",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": ["text_overlay", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The difficulty of changing sleep states (staying awake vs. waking up) can be humorously compared to the physical property of inertia.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Static image meme; all text and visual references are clearly identifiable."
+    },
+    "presentation_style": {
+      "primary_format": "text_overlay",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Humorous, relatable, and ironically academic.",
+    "topic_hints": ["Physics", "Sleep deprivation", "Internet memes"],
+    "affect_hints": ["Amused", "Relatable", "Energetic"],
+    "genre_hints": ["Meme", "Educational humor"]
+  },
+  "metrics": {
+    "input_tokens": 2536,
+    "output_tokens": 1014,
+    "total_tokens": 3550,
+    "cost_usd": 0.000989,
+    "latency_ms": 9974,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

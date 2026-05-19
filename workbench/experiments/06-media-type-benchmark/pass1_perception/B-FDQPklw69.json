@@ -1,0 +1,145 @@
+{
+  "item_id": "B-FDQPklw69",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:35.243091+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:01",
+        "visual_description": "A promotional poster for a 'Four Lions' live watch party. The image features a large black crow with a camera and timing device strapped to its chest, standing on a branch. Silhouettes of figures with firearms are visible at the top. The background is a textured green and beige gradient.",
+        "audio_description": "No audio provided; static image analysis.",
+        "text_on_screen": "A FILM BY CHRIS MORRIS\nFOUR LIONS\nLIVE WATCH PARTY\nWITH RIZ AHMED & KAYVAN NOVAK\n[AKA OMAR & WAJ]\nTODAY\n8PM GMT | 4PM EST | 1PM PST\nYOUTUBE.COM/RIZAHMED",
+        "key_objects": ["Crow", "Camera device", "Film poster"]
+      }
+    ],
+    "overall_summary": "This is a promotional announcement for a live watch party of the cult classic satirical film 'Four Lions'. The event features the film's stars, Riz Ahmed and Kayvan Novak (who played Omar and Waj), hosting a session on Riz Ahmed's YouTube channel. The post encourages viewers to stay at home during the COVID-19 lockdown and 'ride the rubber dinghy rapids', a famous quote from the movie.",
+    "people": [
+      {
+        "description": "Actor and creator of the post, known for his role as Omar in Four Lions.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Riz Ahmed"
+      },
+      {
+        "description": "Actor known for his role as Waj in Four Lions.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Kayvan Novak"
+      },
+      {
+        "description": "Director of the film Four Lions.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Chris Morris"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Four Lions",
+        "display_name": "Four Lions (2010 Film)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay", "metadata"],
+        "specifications": "Directed by Chris Morris",
+        "confidence": 5
+      },
+      {
+        "name": "Riz Ahmed",
+        "display_name": "Riz Ahmed",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["text_overlay", "metadata"],
+        "specifications": "Actor/Musician",
+        "confidence": 5
+      },
+      {
+        "name": "Kayvan Novak",
+        "display_name": "Kayvan Novak",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "specifications": "Actor/Comedian",
+        "confidence": 5
+      },
+      {
+        "name": "YouTube",
+        "display_name": "YouTube",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["text_overlay", "metadata"],
+        "specifications": "youtube.com/rizahmed",
+        "confidence": 5
+      },
+      {
+        "name": "Rubber Dinghy Rapids",
+        "display_name": "Rubber Dinghy Rapids",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Famous quote from the film Four Lions",
+        "confidence": 5
+      },
+      {
+        "name": "Stay at Home",
+        "display_name": "#StayatHome",
+        "type": "event",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "COVID-19 pandemic lockdown movement",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Riz Ahmed and Kayvan Novak are hosting a live digital event to engage fans during the COVID-19 lockdown.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Four Lions Live Watch Party",
+          "details": "Hosted by Riz Ahmed and Kayvan Novak on YouTube at 8PM GMT / 4PM EST / 1PM PST."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "Static image analysis; all text and entities extracted with high certainty."
+    },
+    "presentation_style": {
+      "primary_format": "other",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Satirical, dark comedy, promotional, and community-focused.",
+    "topic_hints": ["British Cinema", "Live Streaming Events", "Satire"],
+    "affect_hints": ["Nostalgic", "Excited", "Humorous"],
+    "genre_hints": ["Announcement", "Promotional"]
+  },
+  "metrics": {
+    "input_tokens": 2578,
+    "output_tokens": 1385,
+    "total_tokens": 3963,
+    "cost_usd": 0.001218,
+    "latency_ms": 12601,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

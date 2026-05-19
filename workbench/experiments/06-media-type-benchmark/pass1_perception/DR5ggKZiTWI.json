@@ -1,0 +1,130 @@
+{
+  "item_id": "DR5ggKZiTWI",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:42:09.771691+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "The creator makes exaggerated, distorted facial expressions and flails their arms while sitting in a chair.",
+        "audio_description": "A rap song plays: 'I just put an E in the liter, but a white bitch sniffin' on Bilu...'",
+        "text_on_screen": "Eating out Kirk:\nNetanyahu and Epstein: \"Can we get some too? \ud83e\udd7a\"",
+        "key_objects": [
+          "Taxidermy pheasant",
+          "Keizer Aluminum Wheels t-shirt",
+          "Framed artwork"
+        ]
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "The creator suddenly stops moving and stares intensely into the camera lens with wide eyes.",
+        "audio_description": "The music shifts to a deeper, more ominous tone: 'Are you sure you wanna party with the demons?'",
+        "text_on_screen": "Are you sure you wanna party with the demons?",
+        "key_objects": ["Keizer Aluminum Wheels t-shirt"]
+      }
+    ],
+    "overall_summary": "In this short skit, the creator uses a popular TikTok audio trend to make a provocative dark humor joke. The video features text overlays suggesting a sexual scenario involving 'Kirk' (likely Charlie Kirk), Benjamin Netanyahu, and Jeffrey Epstein. The creator transitions from chaotic movement to a deadpan stare to match the 'party with the demons' audio drop, leaning into shock-value political satire.",
+    "people": [
+      {
+        "description": "A young person with short red hair wearing a black Keizer Aluminum Wheels t-shirt.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Charlie Kirk",
+        "display_name": "Charlie Kirk",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["text_overlay", "inferred"],
+        "specifications": "Political commentator",
+        "confidence": 4
+      },
+      {
+        "name": "Benjamin Netanyahu",
+        "display_name": "Benjamin Netanyahu",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "specifications": "Prime Minister of Israel",
+        "confidence": 5
+      },
+      {
+        "name": "Jeffrey Epstein",
+        "display_name": "Jeffrey Epstein",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "specifications": "Convicted sex offender",
+        "confidence": 5
+      },
+      {
+        "name": "Keizer Aluminum Wheels",
+        "display_name": "Keizer Aluminum Wheels",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Racing wheel manufacturer",
+        "confidence": 5
+      },
+      {
+        "name": "E-In-The-Liter",
+        "display_name": "E-In-The-Liter \u2014 SahBabii",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video utilizes shock-value humor by associating controversial political and public figures with a sexualized and 'demonic' meme format.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "E-In-The-Liter \u2014 SahBabii",
+      "metadata_song": "original sound - freaky.cousin",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The identity of 'Kirk' is inferred as Charlie Kirk based on the common grouping of these figures in specific TikTok irony/political subcultures."
+    },
+    "presentation_style": {
+      "primary_format": "pov",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Chaotic, intense, and intentionally uncomfortable/edgy.",
+    "topic_hints": ["Political Satire", "Dark Humor", "TikTok Trends"],
+    "affect_hints": ["Shocked", "Amused", "Confused"],
+    "genre_hints": ["Edgy Meme", "Skit"]
+  },
+  "metrics": {
+    "input_tokens": 2066,
+    "output_tokens": 1208,
+    "total_tokens": 3274,
+    "cost_usd": 0.001035,
+    "latency_ms": 18794,
+    "upload_ms": 3609
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "item_id": "7463884459872423211",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:25:18.746780+00:00",
+  "parsed_output": {
+    "_parse_error": true,
+    "_raw_text": "{\n  \"per_image\": [\n    {\n      \"image_number\": 1,\n      \"description\": \"Title slide showing a single slice of thin-crust pizza topped with finely shredded cheese and chopped green onions on a circular metal tray.\",\n      \"text_detected\": \"My Top Pizza Spots | \ud83d\udccd Chicago\\n(Non Deep Dish)\",\n      \"primary_content\": \"Title card for a Chicago pizza recommendation list focusing on non-deep dish styles.\",\n      \"entities\": [\n        {\n          \"name\": \"Chicago\",\n          \"type\": \"place\",\n          \"specifications\": \"City location\"\n        }\n      ]\n    },\n    {\n      \"image_number\": 2,\n      \"description\": \"A slice of New York-style pepperoni pizza with fresh basil on a white paper plate, sitting on a dark wooden counter next to a pink water bottle.\",\n      \"text_detected\": \"Paulie Gee's\",\n      \"primary_content\": \"Restaurant: Paulie Gee's Logan Square\",\n      \"entities\": [\n        {\n          \"name\": \"Paulie Gee's\",\n          \"type\": \"restaurant\",\n          \"specifications\": \"Logan Square location\"\n        }\n      ]\n    },\n    {\n      \"image_number\": 3,\n      \"description\": \"Two Neapolitan-style pizzas on a wooden table: one margherita and one with large pepperoni slices. A pizza cutter is visible between them.\",\n      \"text_detected\": \"Spacca Napoli\",\n      \"primary_content\": \"Restaurant: Spacca Napoli Pizzeria\",\n      \"entities\": [\n        {\n          \"name\": \"Spacca Napoli\",\n          \"type\": \"restaurant\",\n          \"specifications\": \"Ravenswood location\"\n        }\n      ]\n    },\n    {\n      \"image_number\": 4,\n      \"description\": \"A thin-crust pepperoni pizza topped with large dollops of white ricotta cheese and a drizzle of honey or oil.\",\n      \"text_detected\": \"Ranalli's\",\n      \"primary_content\": \"Restaurant: Ranalli's\",\n      \"entities\": [\n        {\n          \"name\": \"Ranalli's\",\n          \"type\": \"restaurant\",\n          \"specifications\": \"Lincoln Park or West Loop location\"\n        }\n      ]\n    },\n    {\n      \"image_number\": 5,\n      \"description\": \"A peppero"
+  },
+  "metrics": {
+    "input_tokens": 12030,
+    "output_tokens": 2884,
+    "total_tokens": 14914,
+    "cost_usd": 0.003535,
+    "latency_ms": 19552,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 10
+  }
+}

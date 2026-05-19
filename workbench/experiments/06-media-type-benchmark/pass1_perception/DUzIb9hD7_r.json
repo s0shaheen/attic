@@ -1,0 +1,26 @@
+{
+  "item_id": "DUzIb9hD7_r",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:39:10.043177+00:00",
+  "parsed_output": {
+    "_parse_error": true,
+    "_raw_text": "{\n  \"scene_timeline\": [\n    {\n      \"time_range\": \"0:00-0:03\",\n      \"visual_description\": \"A woman splits an apple in half with her bare hands while looking at the camera.\",\n      \"audio_description\": \"A rhythmic, bass-heavy beat plays.\",\n      \"text_on_screen\": \"All eps put together\\nfine shyt: \\\"can you cut this apple for me?\\\"\\nVote \u2022 8,640 responses\",\n      \"key_objects\": [\"apple\"]\n    },\n    {\n      \"time_range\": \"0:04-0:06\",\n      \"visual_description\": \"Stas, wearing a black New York Yankees cap and earbuds, reacts skeptically to the apple video.\",\n      \"audio_description\": \"Stas says: \\\"So this is actually not possible because...\\\"\",\n      \"text_on_screen\": \"All eps put together\\n@staseatsstuff\",\n      \"key_objects\": [\"New York Yankees cap\", \"earbuds\"]\n    },\n    {\n      \"time_range\": \"0:07-0:10\",\n      \"visual_description\": \"Stephen Alexander reacts to Stas, calling him out for his skepticism.\",\n      \"audio_description\": \"Stephen says: \\\"If it wasn't possible then how the fuck did she just do that? Dumbass.\\\"\",\n      \"text_on_screen\": \"All eps put together\\n@stephenalexandertv\",\n      \"key_objects\": [\"Bass Pro Shops hat\"]\n    },\n    {\n      \"time_range\": \"0:11-0:12\",\n      \"visual_description\": \"A creator named swagoverload36 joins the reaction chain.\",\n      \"audio_description\": \"swagoverload36 says: \\\"Yo, I don't know what this [N-word] is talking about...\\\"\",\n      \"text_on_screen\": \"All eps put together\\n@swagoverload36\",\n      \"key_objects\": [\"glasses\"]\n    },\n    {\n      \"time_range\": \"0:13-0:14\",\n      \"visual_description\": \"Stephen Alexander reacts to being called a racial slur.\",\n      \"audio_description\": \"Stephen says: \\\"Why the fuck are you calling me the N-word?\\\"\",\n      \"text_on_screen\": \"All eps put together\\n@stephenalexandertv\",\n      \"key_objects\": [\"Bass Pro Shops hat\"]\n    },\n    {\n      \"time_range\": \"0:15-0:19\",\n      \"visual_description\": \"Stas explains the trick behind the apple video.\",\n      \"audio_description\": \"Stas says: \\\"Be"
+  },
+  "metrics": {
+    "input_tokens": 11455,
+    "output_tokens": 644,
+    "total_tokens": 12099,
+    "cost_usd": 0.002105,
+    "latency_ms": 78522,
+    "upload_ms": 5949
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

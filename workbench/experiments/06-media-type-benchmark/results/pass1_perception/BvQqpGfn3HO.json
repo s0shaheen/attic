@@ -1,0 +1,173 @@
+{
+  "item_id": "BvQqpGfn3HO",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:59.551740+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "A screenshot of a tweet by @therealchieff featuring a Genius lyric card.",
+        "text_detected": "ig @therealchieff @therealchieff Xbox niggas turning on their console Genius @Genius i am a sinner who's probably gonna sin again 08/02/2019, 20:04",
+        "primary_content": "Meme implying Xbox players are unfaithful/sinners.",
+        "entities": [
+          {
+            "name": "Xbox",
+            "type": "product",
+            "specifications": "Gaming console brand"
+          },
+          {
+            "name": "Genius",
+            "type": "app_or_tool",
+            "specifications": "Lyric and music knowledge platform"
+          },
+          {
+            "name": "@therealchieff",
+            "type": "person",
+            "specifications": "Twitter/Instagram user"
+          },
+          {
+            "name": "Bitch, Don't Kill My Vibe",
+            "type": "song",
+            "specifications": "Lyric: 'i am a sinner who's probably gonna sin again' by Kendrick Lamar"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "A screenshot of a tweet by @SlimFast_ regarding PlayStation 4 owners.",
+        "text_detected": "gianfranco.j Retweeted sydsational @SlimFast_ all the faithful niggas have a PS4 7:41 PM \u00b7 1/26/19 \u00b7 Twitter for iPhone 23.9K Retweets 53.8K Likes",
+        "primary_content": "Meme claiming PS4 owners are faithful in relationships.",
+        "entities": [
+          {
+            "name": "PS4",
+            "type": "product",
+            "specifications": "PlayStation 4 gaming console"
+          },
+          {
+            "name": "@SlimFast_",
+            "type": "person",
+            "specifications": "Twitter user 'sydsational'"
+          },
+          {
+            "name": "Twitter for iPhone",
+            "type": "app_or_tool",
+            "specifications": "Mobile client"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "A screenshot of a tweet by @emmymendoza11 comparing Xbox and PS4 players.",
+        "text_detected": "Emmy @emmymendoza11 Xbox players = Hoe ass niggas \ud83d\udcaf PS4 = Loyal husband material \ud83d\udcaf",
+        "primary_content": "Direct comparison of the perceived loyalty of Xbox vs PS4 players.",
+        "entities": [
+          {
+            "name": "Xbox",
+            "type": "product",
+            "specifications": "Gaming console brand"
+          },
+          {
+            "name": "PS4",
+            "type": "product",
+            "specifications": "PlayStation 4 gaming console"
+          },
+          {
+            "name": "@emmymendoza11",
+            "type": "person",
+            "specifications": "Twitter user 'Emmy'"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post is a collection of Twitter screenshots participating in a 'Console War' meme that humorously links gaming console preference to relationship loyalty. The narrative suggests that Xbox players are unfaithful or 'sinners,' while PlayStation 4 (PS4) players are 'faithful' and 'husband material.' The user is likely saving this as a relatable meme or to share in a group chat to tease friends based on their console of choice.",
+    "carousel_type": "meme",
+    "narrative_thread": "The images build a comedic argument that your choice of gaming console (Xbox vs. PS4) is a direct indicator of your romantic loyalty.",
+    "entities": [
+      {
+        "name": "Xbox",
+        "display_name": "Microsoft Xbox",
+        "type": "product",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 1,
+        "specifications": "Gaming console",
+        "confidence": 5
+      },
+      {
+        "name": "PlayStation 4",
+        "display_name": "Sony PS4",
+        "type": "product",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 2,
+        "specifications": "Gaming console",
+        "confidence": 5
+      },
+      {
+        "name": "Console Wars",
+        "display_name": "Console Wars Meme",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": ["inferred"],
+        "slide_number": 1,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The meme asserts that PS4 owners are more loyal in relationships than Xbox owners.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Xbox Players",
+          "details": "Characterized as unfaithful/sinners",
+          "slide_number": 1
+        },
+        {
+          "name": "PS4 Players",
+          "details": "Characterized as faithful/husband material",
+          "slide_number": 2
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound \u2014 @mrtraplord",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "Text is clear and verbatim. Cultural references to Kendrick Lamar lyrics are identified."
+    },
+    "presentation_style": {
+      "primary_format": "screenshot",
+      "visual_style": "meme"
+    },
+    "visual_mood": "Humorous, petty, and confrontational.",
+    "topic_hints": ["Gaming", "Relationships", "Console Wars"],
+    "affect_hints": ["Amusement", "Playful tribalism"],
+    "genre_hints": ["Meme dump"]
+  },
+  "metrics": {
+    "input_tokens": 4553,
+    "output_tokens": 1499,
+    "total_tokens": 6052,
+    "cost_usd": 0.001582,
+    "latency_ms": 11934,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 3
+  }
+}

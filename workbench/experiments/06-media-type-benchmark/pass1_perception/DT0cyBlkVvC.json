@@ -1,0 +1,213 @@
+{
+  "item_id": "DT0cyBlkVvC",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:40:18.982687+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "Cinematic close-ups of Jajangmyeon and Jjamppong being lifted with chopsticks, showcasing the texture of the noodles and sauces.",
+        "audio_description": "Creator explains that this restaurant isn't trendy or 'Instagram famous' but focuses on the food.",
+        "text_on_screen": "This place isn't trendy it's not Instagram famous there's no viral food here",
+        "key_objects": ["Jajangmyeon", "Jjamppong", "Chopsticks"]
+      },
+      {
+        "time_range": "0:08-0:17",
+        "visual_description": "Exterior shot of House of Wah Sun at night during a snowfall, followed by a POV shot entering the casual, fluorescent-lit interior.",
+        "audio_description": "Creator identifies the restaurant as House of Wah Sun, a no-frills neighborhood spot in Chicago.",
+        "text_on_screen": "This is House of Wah Sun A fluorescent lit, no white table cloth, neighborhood spot",
+        "key_objects": [
+          "House of Wah Sun neon sign",
+          "Restaurant interior",
+          "North Face jacket"
+        ]
+      },
+      {
+        "time_range": "0:18-0:52",
+        "visual_description": "Close-ups of the Jajangmyeon being mixed and the creator eating it. Focus on the glossy black bean sauce.",
+        "audio_description": "Detailed description of Jajangmyeon: rich, savory, slightly sweet, and bitter. He calls it 'comfort food with weight'.",
+        "text_on_screen": "Jajangmyeon and Jjamppong. Thick chewy noodles drowned in this glossy black bean sauce. It's rich, velvety, comfort food with weight.",
+        "key_objects": ["Menu", "Jajangmyeon", "Chopsticks"]
+      },
+      {
+        "time_range": "0:53-1:14",
+        "visual_description": "Close-ups of Jjamppong, showing the red broth, shrimp, and squid. The creator takes a large bite of the spicy noodles.",
+        "audio_description": "Description of Jjamppong: fiery, smoky, seafood-loaded, and 'hangover food'.",
+        "text_on_screen": "Jjamppong. It's a fiery smoky seafood loaded punch straight to the senses. This is hangover food.",
+        "key_objects": ["Jjamppong", "Shrimp", "Squid", "Soup spoon"]
+      },
+      {
+        "time_range": "1:15-1:42",
+        "visual_description": "Alternating shots of the two noodle dishes. A framed photo of a chef pulling noodles is shown.",
+        "audio_description": "The creator explains the 'yin and yang' balance between the rich Jajangmyeon and the spicy Jjamppong.",
+        "text_on_screen": "The broth cuts straight through the richness of the jajangmyeon sauce. It's the yin and yang of Korean-Chinese food.",
+        "key_objects": ["Chef photo", "Noodle dishes"]
+      },
+      {
+        "time_range": "1:43-1:55",
+        "visual_description": "Close-up of Tangsuyuk (sweet and sour chicken) being dipped into a side bowl of sauce.",
+        "audio_description": "Recommendation to order Tangsuyuk; he chose chicken this time, noting the double-fried potato starch batter.",
+        "text_on_screen": "And don't forget to order a side of tangsuyuk. Double fried potato starch batter. Dipping is not a preference, it's a principle.",
+        "key_objects": ["Tangsuyuk", "Sweet and sour sauce"]
+      },
+      {
+        "time_range": "1:56-2:26",
+        "visual_description": "Quick cuts of the menu, dumplings, and other dishes. The creator continues eating as he reflects on the history of the cuisine.",
+        "audio_description": "Final thoughts on the cultural significance of Korean-Chinese food as a hybrid born from immigration and adaptation.",
+        "text_on_screen": "It's a beautiful sauce-stained hybrid born from immigration, adaptation and survival. This is history you can slurp.",
+        "key_objects": [
+          "Menu",
+          "Dumplings",
+          "Beef dish",
+          "House of Wah Sun sign"
+        ]
+      }
+    ],
+    "overall_summary": "Tommy Joo Choi reviews House of Wah Sun, a classic, no-frills Korean-Chinese restaurant in Chicago. He highlights his 'every time' order: Jajangmyeon (black bean noodles), Jjamppong (spicy seafood noodle soup), and Tangsuyuk (sweet and sour chicken/pork). The video emphasizes the perfect balance between the rich, grounding Jajangmyeon and the fiery, palate-cleansing Jjamppong. Ultimately, Choi frames the meal as a 'sauce-stained hybrid' of immigrant history and essential comfort food.",
+    "people": [
+      {
+        "description": "Asian male creator wearing a pink quarter-zip pullover, eating and narrating.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Tommy Joo Choi"
+      },
+      {
+        "description": "Young girl sitting at the table eating.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      },
+      {
+        "description": "Woman sitting at the table in a pink hoodie.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "House of Wah Sun",
+        "display_name": "House of Wah Sun",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay", "metadata"],
+        "specifications": "Chicago, IL; Phone: 773.267.0801",
+        "confidence": 5
+      },
+      {
+        "name": "Chicago",
+        "display_name": "Chicago, IL",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["audio", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jajangmyeon",
+        "display_name": "Jajangmyeon (Black Bean Noodles)",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": "Thick noodles, black bean sauce, pork, onion, zucchini",
+        "confidence": 5
+      },
+      {
+        "name": "Jjamppong",
+        "display_name": "Jjamppong (Spicy Seafood Noodle Soup)",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": "Spicy broth, shrimp, squid, pork, vegetables",
+        "confidence": 5
+      },
+      {
+        "name": "Tangsuyuk",
+        "display_name": "Tangsuyuk (Sweet and Sour Chicken/Pork)",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": "Double fried, potato starch batter, sauce on the side",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Jajangmyeon and Jjamppong should be ordered together because they provide a perfect flavor balance (yin and yang).",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "House of Wah Sun is a top-tier Chicago spot for authentic, unpretentious Korean-Chinese comfort food.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Tangsuyuk sauce should be served on the side for dipping to maintain the crispiness of the batter.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Jajangmyeon",
+          "details": "Rich, savory black bean sauce with thick, chewy homemade noodles."
+        },
+        {
+          "name": "Jjamppong",
+          "details": "Spicy, smoky seafood noodle soup with shrimp, squid, and pork."
+        },
+        {
+          "name": "Tangsuyuk",
+          "details": "Double-fried chicken or pork in a potato starch batter; recommended with sauce on the side for dipping."
+        },
+        {
+          "name": "Dumplings",
+          "details": "Pan-fried potstickers shown as a side dish."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Unidentifiable lo-fi hip hop beat",
+      "metadata_song": "original sound - tommyjoochoi",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All food items and restaurant details were clearly stated and visible on the menu."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Cozy, warm, and appetizing with a touch of urban nostalgia.",
+    "topic_hints": [
+      "Chicago Food Scene",
+      "Korean-Chinese Cuisine",
+      "Restaurant Review"
+    ],
+    "affect_hints": ["Hungry", "Comforted", "Nostalgic"],
+    "genre_hints": ["Food Vlog", "Hidden Gem Discovery"]
+  },
+  "metrics": {
+    "input_tokens": 14611,
+    "output_tokens": 2472,
+    "total_tokens": 17083,
+    "cost_usd": 0.003675,
+    "latency_ms": 31998,
+    "upload_ms": 8338
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "item_id": "B69EySJJeFU",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:37:41.425549+00:00",
+  "parsed_output": {
+    "_parse_error": true,
+    "_raw_text": "{\n  \"per_image\": [\n    {\n      \"image_number\": 1,\n      \"description\": \"A parody of an academic research paper title page using the 'We are not the same' meme format.\",\n      \"text_detected\": \"You're in her DM's, I'm in her dissertation's references\\n\\nDank Dawkins and Danker Dawkins\\n\\nNew York University\\n\\nAbstract. We are not the same [1].\\n\\nReferences\\n\\n1. Dawkins, D.: She doesn't like you. Ph.D. thesis, New York University (2020)\",\n      \"primary_content\": \"Meme: Academic citation vs. social media direct messages.\",\n      \"entities\": [\n        {\n          \"name\": \"New York University\",\n          \"type\": \"place\",\n          \"specifications\": \"University affiliation\"\n        },\n        {\n          \"name\": \"Dank Dawkins\",\n          \"type\": \"brand\",\n          \"specifications\": \"Meme creator handle\"\n        }\n      ]\n    },\n    {\n      \"image_number\": 2,\n      \"description\": \"A meme featuring a man with long hair and a beard, overlaid with the definition of the Poincar\u00e9 conjecture and the phrase 'OK BOOMER'.\",\n      \"text_detected\": \"\u201cOK, but we don't KNOW that a compact 3-dimensional surface without boundary is topologically homeomorphic to a 3-sphere if every loop can be continuously tightened to a point.\u201d\\n\\nOK\\n\\nBOOMER\\n\\n@dankdawkins\",\n      \"primary_content\": \"Meme: Dismissing a complex mathematical statement (Poincar\u00e9 conjecture) with a generational insult.\",\n      \"entities\": [\n        {\n          \"name\": \"Poincar\u00e9 conjecture\",\n          \"type\": \"technique\",\n          \"specifications\": \"Mathematical theorem in topology\"\n        },\n        {\n          \"name\": \"Dank Dawkins\",\n          \"type\": \"brand\",\n          \"specifications\": \"Meme creator handle\"\n        }\n      ]\n    },\n    {\n      \"image_number\": 3,\n      \"description\": \"A meme showing a fallacious mathematical proof involving complex exponents, followed by the 'Listen here, you little shit' reaction image.\",\n      \"text_detected\": \"Me: e^i = (e^i)^(2\\u03c0/2\\u03c0) = (e^{2\\u03c0i})^{1/2\\u03c0} = 1^{"
+  },
+  "metrics": {
+    "input_tokens": 5649,
+    "output_tokens": 646,
+    "total_tokens": 6295,
+    "cost_usd": 0.001235,
+    "latency_ms": 56817,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 4
+  }
+}

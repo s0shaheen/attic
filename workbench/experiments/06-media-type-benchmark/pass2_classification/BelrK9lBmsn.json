@@ -1,0 +1,66 @@
+{
+  "item_id": "BelrK9lBmsn",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:59.046747+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "relationships",
+      "secondary": "comedy",
+      "micro_labels": [
+        "dating humor",
+        "unrequited love",
+        "FBI agent meme",
+        "ghosting"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["tweet screenshot", "image macro"],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "cringe",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["text_overlay"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 4198,
+    "output_tokens": 317,
+    "total_tokens": 4515,
+    "cost_usd": 0.00082,
+    "latency_ms": 5186,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "visual_input": "thumbnail",
+    "visual_count": 1
+  }
+}

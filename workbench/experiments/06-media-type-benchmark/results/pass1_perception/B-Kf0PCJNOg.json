@@ -1,0 +1,232 @@
+{
+  "item_id": "B-Kf0PCJNOg",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:36:19.266470+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "A black and white illustration of a woman and a man texting while lying down. The woman asks about their relationship status, and the man gives a literal answer about the pandemic.",
+        "text_detected": "so what are we? We're under quarantine",
+        "primary_content": "Meme about avoiding relationship labels using COVID-19 quarantine as an excuse.",
+        "entities": [
+          {
+            "name": "Quarantine",
+            "type": "event",
+            "specifications": "COVID-19 pandemic reference"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "The same illustration with different text. The man asks for sex, and the woman rejects him based on his lack of money.",
+        "text_detected": "When we gone fuck I'm sorry but my pussy dont make macaroni noises for a nigga who ain't got no cheese",
+        "primary_content": "Meme about financial requirements for sexual intimacy.",
+        "entities": [
+          {
+            "name": "Macaroni noises",
+            "type": "cultural_reference",
+            "specifications": "Slang for sexual sounds"
+          },
+          {
+            "name": "Cheese",
+            "type": "cultural_reference",
+            "specifications": "Slang for money"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "The illustration shows the man asking about a baby, and the woman revealing the baby is an infant and he should stop texting.",
+        "text_detected": "What my baby doin? Nigga she only 1 Month stop textin me",
+        "primary_content": "Meme about inappropriate or unwanted advances toward a new mother.",
+        "entities": [
+          {
+            "name": "Daddychopz1",
+            "type": "brand",
+            "specifications": "Watermark on image"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "The man expresses romantic feelings, and the woman responds with a literal interpretation to dismiss him.",
+        "text_detected": "i think i'm falling for you .... ....yeah you might wanna get up",
+        "primary_content": "Meme about rejecting a romantic confession with a joke.",
+        "entities": []
+      },
+      {
+        "image_number": 5,
+        "description": "The woman asks for money for a ride after being stranded, and the man responds with a dismissive phrase.",
+        "text_detected": "Omg, he just left me, and I have no way to get home, like all I literally need is $8 for an Uber Damm that's crazyyyyyyyyyyyyy",
+        "primary_content": "Meme about 'That's Crazy' as a dismissive response to someone's problems.",
+        "entities": [
+          {
+            "name": "Uber",
+            "type": "app_or_tool",
+            "specifications": "Ride-sharing service"
+          }
+        ]
+      },
+      {
+        "image_number": 6,
+        "description": "The woman offers to visit after guests leave, and the man claims she has already slept with everyone there.",
+        "text_detected": "I'll come when your Company leave U fucked all of us already, slide",
+        "primary_content": "Meme about promiscuity and 'sliding' (visiting).",
+        "entities": []
+      },
+      {
+        "image_number": 7,
+        "description": "The woman asks why the man left, and he reveals he found concerning medication in her bathroom.",
+        "text_detected": "Why did you leave? I googled them pills in yo bathroom",
+        "primary_content": "Meme about discovering red flags via medication.",
+        "entities": [
+          {
+            "name": "Google",
+            "type": "app_or_tool",
+            "specifications": "Search engine"
+          }
+        ]
+      },
+      {
+        "image_number": 8,
+        "description": "The woman sends a long, emotional paragraph about her insecurities and his behavior. The man responds with a three-letter acronym.",
+        "text_detected": "ive made it clear what I don't like about your behavior and the things you've been doing show me that you literally don't care. we're supposed to be in a relationship but it seems like you constantly ignore my insecurities, it's like you go out of your way to make me feel and look dumb, it's exhausting. I love you but you make it very hard to like you. wym",
+        "primary_content": "Meme about men giving low-effort responses ('what you mean') to serious relationship concerns.",
+        "entities": [
+          {
+            "name": "wym",
+            "type": "cultural_reference",
+            "specifications": "Acronym for 'What you mean?'"
+          }
+        ]
+      },
+      {
+        "image_number": 9,
+        "description": "The woman sends a long paragraph accusing the man of ignoring her for 'crazy bitches' and Ciroc. He ignores the substance of the message to correct a minor detail.",
+        "text_detected": "Why you be ignoring me? You be talking about how you want a good girl you can vibe with, take trips, and all that but you'll rather drink ciroc and go outta town with crazy bitches and ignore somebody who would TAKE YOU OUT and you don't even have to spend money. Am I not cute enough? Pussy not good? Just keep it 100 boo I don't even drink ciroc",
+        "primary_content": "Meme about deflection in arguments by focusing on trivial inaccuracies.",
+        "entities": [
+          {
+            "name": "Ciroc",
+            "type": "brand",
+            "specifications": "Vodka brand"
+          }
+        ]
+      },
+      {
+        "image_number": 10,
+        "description": "The woman asks if they are in a relationship. The man says no but demands she act as if they are.",
+        "text_detected": "So We together? Naw, but you better act like it",
+        "primary_content": "Meme about toxic relationship dynamics and 'girlfriend requirements' without the title.",
+        "entities": []
+      }
+    ],
+    "overall_summary": "This TikTok post is a compilation of memes featuring a recurring illustration of a man and a woman texting. Each slide depicts a 'wild' or toxic interaction, ranging from dismissive responses to serious relationship paragraphs to jokes about money and promiscuity. The user is likely saving or sharing this for its relatable, albeit cynical, humor regarding modern dating and 'toxic' communication styles.",
+    "carousel_type": "meme",
+    "narrative_thread": "The images follow a theme of dysfunctional, humorous, or 'savage' texting exchanges between romantic interests, highlighting common tropes in modern dating culture.",
+    "entities": [
+      {
+        "name": "Uber",
+        "display_name": "Uber",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "slide_number": 5,
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Ciroc",
+        "display_name": "Ciroc Vodka",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "slide_number": 9,
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Google",
+        "display_name": "Google Search",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "slide_number": 7,
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Modern dating is often characterized by 'toxic' or dismissive communication patterns.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "Low-effort responses like 'wym' or 'that's crazy' are common tools for avoiding serious conversations.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "The Quarantine Excuse",
+          "details": "Using the pandemic to avoid relationship labels.",
+          "slide_number": 1
+        },
+        {
+          "name": "The 'No Cheese' Rejection",
+          "details": "Refusing sex based on the partner's lack of money.",
+          "slide_number": 2
+        },
+        {
+          "name": "The 'That's Crazy' Response",
+          "details": "A dismissive reply to a request for help/money.",
+          "slide_number": 5
+        },
+        {
+          "name": "The 'WYM' Deflection",
+          "details": "Using a short acronym to ignore a long emotional message.",
+          "slide_number": 8
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound - mrtraplord",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "Text was clearly legible and transcribed verbatim."
+    },
+    "presentation_style": {
+      "primary_format": "meme",
+      "visual_style": "minimal"
+    },
+    "visual_mood": "cynical, humorous, and slightly toxic",
+    "topic_hints": ["dating culture", "toxic relationships", "texting memes"],
+    "affect_hints": ["amused", "cringing", "relatable"],
+    "genre_hints": ["meme slideshow"]
+  },
+  "metrics": {
+    "input_tokens": 12148,
+    "output_tokens": 2369,
+    "total_tokens": 14517,
+    "cost_usd": 0.003244,
+    "latency_ms": 19712,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 10
+  }
+}

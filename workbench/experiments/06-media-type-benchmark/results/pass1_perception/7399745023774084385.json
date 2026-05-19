@@ -1,0 +1,165 @@
+{
+  "item_id": "7399745023774084385",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:25:15.591897+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "A screenshot of an iPhone 'Conversations' list showing multiple messages from December and August 2022. Overlaid is a thick, impasto-style painting of a jester or harlequin figure in blue, pink, and purple, holding a yellow flower.",
+        "text_detected": "Search Conversations 12/12/2022 I love you too 12/12/2022 I love you 11/12/2022 love 10/12/2022 08/12/2022 I was about to say okay my love I'll you pair I love you 're perfect too 08/12/2022 As I love you and your perfect anyway",
+        "primary_content": "Artistic overlay on a list of 'I love you' messages, representing the performance or 'foolishness' of past love.",
+        "entities": [
+          {
+            "name": "Jester",
+            "type": "cultural_reference",
+            "specifications": "Impasto oil/acrylic style"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "A text message exchange on a black background. Overlaid is a painting of a knight in blue and teal armor with two red/purple arrows piercing its chest.",
+        "text_detected": "hey, how have you been? I'm good Read 19:07",
+        "primary_content": "Visual metaphor for feeling wounded while claiming to be 'good' in a text reply.",
+        "entities": [
+          {
+            "name": "Wounded Knight",
+            "type": "cultural_reference",
+            "specifications": "Blue and teal armor"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "A single text bubble on a black background. Overlaid is a painting of two figures holding hands, walking up a golden hill toward a castle under a vibrant blue sky.",
+        "text_detected": "we can dream",
+        "primary_content": "Illustration of hope or fantasy associated with the phrase 'we can dream'.",
+        "entities": [
+          {
+            "name": "Castle",
+            "type": "place",
+            "specifications": "Stylized architectural structure"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "A text message sequence showing a high compliment followed by a 'but' and a typing indicator. Overlaid is a painting of a sad-looking clown with a white face and red nose.",
+        "text_detected": "I can honestly say you are the best thing that's ever happened to me but ...",
+        "primary_content": "Visual representation of feeling like a 'clown' or a fool during a difficult conversation.",
+        "entities": [
+          {
+            "name": "Sad Clown",
+            "type": "cultural_reference",
+            "specifications": "White face paint, red nose, blue ruff"
+          }
+        ]
+      },
+      {
+        "image_number": 5,
+        "description": "A blue outgoing text bubble. Overlaid is a painting of a person lying down in blue and black tones, with a pink abstract cloud above them and a small purple elephant in the corner.",
+        "text_detected": "I dream about it all the time",
+        "primary_content": "Depiction of dreaming and subconscious thoughts.",
+        "entities": [
+          {
+            "name": "Elephant",
+            "type": "cultural_reference",
+            "specifications": "Small, purple, patterned"
+          }
+        ]
+      },
+      {
+        "image_number": 6,
+        "description": "A mundane incoming text message. Overlaid is a painting of a person in a bright red hoodie with their hands covering their face in a gesture of distress or hiding.",
+        "text_detected": "how many siblings do you have?",
+        "primary_content": "Contrast between a normal question and an intense emotional reaction.",
+        "entities": [
+          {
+            "name": "Red Hoodie",
+            "type": "clothing",
+            "specifications": "Bright red, textured paint"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This TikTok slideshow by artist @amaanjahangir features a series of expressive, impasto-style paintings overlaid on screenshots of past text messages. The artwork serves as a visual interpretation of the subtext and emotional weight behind the words, ranging from the 'foolishness' of past love to the pain of a 'but' in a relationship. The user is likely sharing this as a portfolio piece or a creative reflection on the nostalgia and hurt found in 'every old message'.",
+    "carousel_type": "other",
+    "narrative_thread": "The artist uses expressionist painting to reveal the hidden emotional reality of digital conversations, moving from the performance of love to the vulnerability of heartbreak.",
+    "entities": [
+      {
+        "name": "@amaanjahangir",
+        "display_name": "Amaan Jahangir",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "slide_number": 1,
+        "specifications": "Artist/Creator",
+        "confidence": 5
+      },
+      {
+        "name": "green to blue (Sped Up)",
+        "display_name": "green to blue (Sped Up) \u2014 Aurenth",
+        "type": "song",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "Impasto",
+        "display_name": "Impasto Painting Technique",
+        "type": "technique",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 1,
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Art can be used to process and visualize the complex emotions hidden within simple text messages.",
+        "source": "implied",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": null
+    },
+    "audio_identification": {
+      "actual_song": "green to blue (Sped Up) \u2014 Aurenth",
+      "metadata_song": "green to blue (Sped Up) \u2014 Aurenth",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "Text and visual content are very clear; artist identity is confirmed by metadata."
+    },
+    "presentation_style": {
+      "primary_format": "other",
+      "visual_style": "aesthetic"
+    },
+    "visual_mood": "Melancholic, expressive, and nostalgic.",
+    "topic_hints": ["Contemporary Art", "Relationships", "Digital Nostalgia"],
+    "affect_hints": ["Emotional", "Reflective", "Slightly pained"],
+    "genre_hints": ["Art TikTok", "Corecore-adjacent"]
+  },
+  "metrics": {
+    "input_tokens": 7702,
+    "output_tokens": 1697,
+    "total_tokens": 9399,
+    "cost_usd": 0.002174,
+    "latency_ms": 16398,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 6
+  }
+}

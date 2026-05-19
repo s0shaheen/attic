@@ -1,0 +1,71 @@
+{
+  "item_id": "B8hC6jJFrZi",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:58.900377+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fashion",
+      "secondary": null,
+      "micro_labels": [
+        "sneakers",
+        "sneakerhead culture",
+        "Nike SNKRS",
+        "Air Jordan",
+        "Off-White"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "compilation",
+      "micro_labels": ["satire", "montage"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "shocking",
+        "tier": "secondary"
+      },
+      {
+        "label": "cringe",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["raw_footage"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "brand",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 4294,
+    "output_tokens": 347,
+    "total_tokens": 4641,
+    "cost_usd": 0.000852,
+    "latency_ms": 5461,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}

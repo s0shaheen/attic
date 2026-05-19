@@ -1,0 +1,186 @@
+{
+  "item_id": "CITZyXmBnBe",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:36:04.101222+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "A screenshot of a tweet by nala (@PISSBABYSIMP) featuring a photo of a yellowed, typed document titled 'QUICK WHAT DOES UR 1979 HOROSCOPE SAY'. The document lists zodiac signs with highly insulting and offensive descriptions.",
+        "text_detected": "nala @PISSBABYSIMP QUICK WHAT DOES UR 1979 HOROSCOPE SAY AQUARIUS (JAN 20 - FEB 18) YOU HAVE AN INVENTIVE MIND AND ARE INCLINED TO BE PROGRESSIVE. YOU LIE A GREAT DEAL. YOU MAKE THS SAME MISTAKES REPEATEDLY BECAUSE YOU'RE STUPID. EVERYONE THINKS YOU'RE A FUCKING JERK. PISCES (FEB 19 - MAR 20) YOU HAVE A VIVID IMAGINATION AND OFTEN THINK YOU ARE FOLLOWED BY THE FBI OR CIA. YOU HAVE NO INFLUENCE ON YOUR FRIENDS AND PEOPLE RESENT YOU FOR FLAUNTING YOUR POWER. YOU LACK CONFIDENCE AND ARE GENERALLY A DIPSHIT. ARIES (MAR 21 - APR 19) YOU ARE THE PIONEER TYPE AND THINK THAT MOST PEOPLE ARE DICKHEADS. YOU ARE QUICK TEMPERED, IMPATIENT AND SCORNFUL OF ADVICE. YOU ARE A PRICK. TAURUS (APR 20 - MAY 20) YOU ARE PRACTICAL AND PERSISTENT. YOU HAVE DOGGED DETERMINATION TO WORK LIKE HELL. MOST PEOPLE THINK YOU ARE STUBBORN AND BULL-HEADED. YOUR NOTHING BUT A DAM COMMUNIST. GEMINI (MAY 21 - JUNE 20) YOU ARE A QUICK AND INTELLIGENT THINKER. PEOPLE LIKE YOU BECAUSE YOU ARE BI-SEXUAL. YOU ARE INCLINED TO EXPECT TOO MUCH FOR TOO LITTLE. THIS MEANS YOU ARE A CHEAP BASTARD/BITCH. CANCER (JUNE 21 - JULY 22) YOU ARE SYMPATHETIC AND UNDERSTANDING OF OTHER PEOPLE'S PROBLEMS, WHICH MAKES YOU A SUCKER. YOU ARE ALWAYS PUTTING THINGS OFF. THAT IS WHY YOU WILL ALWAYS BE ON WELFARE AND WON'T BE WORTH A SHIT. EVERYBODY IN PRISON IS A CANCER. LEO (JULY 23 - AUG 22) YOU CONSIDER YOURSELF A BORN LEADER. OTHERS THINK YOU ARE AN IDIOT. MOST LEOS ARE BULLIES. YOU ARE VAIN AND CAN'T TOLERATE HONEST CRITICISM. YOUR ARROGANCE IS DISGUSTING. LEO PEOPLE ARE THIEVING AND MOTHER FUCKERS AND SPEND MOST OF THEIR TIME KISSING MIRRORS. VIRGO (AUG 23 - SEPT 22) YOU ARE THE LOGICAL TYPE AND HATE DISCORD. THIS SHIT-PICKING IS SICKENING TO YOUR FRIENDS. YOU'RE UNEMOTIONAL AND OFTEN FALL ASLEEP WHILE FUCKING. VIRGOS ARE GOOD BUS DRIVERS AND P I M P S. LIBRA (SEPT 23 - OCT 22) YOU ARE THE ARTISTIC TYPE AND HAVE A DIFFICULT TIME WITH REALITY. IF YOU ARE MALE, YOU ARE NIL. MOST LIBRA WOMEN ARE WHORES. ALL LIBRAS DIE OF VENERAL DISEASE. SCORPIO (OCT 23 - NOV 21) THE WORST OF THE LOT. YOU ARE SHREWD IN BUSINESS AND CAN'T BE TRUSTED. YOU SHALL ACHIEVE THE PINNACLE OF SUCCESS BECAUSE OF YOUR TOTAL LACK OF ETHICS. YOU ARE A PERFECT SON-OF-A-BITCH. MOST SCORPIOS ARE MURDERERS.",
+        "primary_content": "A viral meme featuring a 'mean' or 'insulting' 1979 horoscope list for the first 10 zodiac signs.",
+        "entities": [
+          {
+            "name": "nala",
+            "type": "person",
+            "specifications": "@PISSBABYSIMP"
+          },
+          {
+            "name": "FBI",
+            "type": "app_or_tool",
+            "specifications": "Federal Bureau of Investigation"
+          },
+          {
+            "name": "CIA",
+            "type": "app_or_tool",
+            "specifications": "Central Intelligence Agency"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "A full-frame photo of the same typed document, showing the final two zodiac signs (Sagittarius and Capricorn) which were cut off in the previous slide.",
+        "text_detected": "AQUARIUS (JAN 20 - FEB 18) ... PISCES (FEB 19 - MAR 20) ... ARIES (MAR 21 - APR 19) ... TAURUS (APR 20 - MAY 20) ... GEMINI (MAY 21 - JUNE 20) ... CANCER (JUNE 21 - JULY 22) ... LEO (JULY 23 - AUG 22) ... VIRGO (AUG 23 - SEPT 22) ... LIBRA (SEPT 23 - OCT 22) ... SCORPIO (OCT 23 - NOV 21) ... SAGITTARIUS (NOV 22 - DEC 21) YOU ARE OPTOMISTIC AND ENTHUSIASTIC. YOU HAVE A RECKLESS TENDENCY TO RELY ON LUCK SINCE YOU HAVE NO TALENT. THE MAJORITY OF SAGITTARIANS ARE DRUNKS. NIXON IS A SAGITTARIAN. YOU ARE NOT WORTH THE TIME OF DAY. CAPRICORN (DEC 22 - JAN 19) YOU ARE CONSERVATIVE AND AFRAID OF TAKING RISKS. YOU ARE BASICALLY A CHICKENSHIT. THERE HAS NEVER BEEN A CAPRICORN OF ANY IMPORTANCE. YOU SHOULD KILL YOURSELF.",
+        "primary_content": "The complete list of the '1979 Horoscope' meme, including the controversial Sagittarius and Capricorn entries.",
+        "entities": [
+          {
+            "name": "Richard Nixon",
+            "type": "person",
+            "specifications": "Mentioned as a Sagittarian"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post features a viral '1979 Horoscope' meme that uses extreme insults, profanity, and offensive stereotypes for each zodiac sign. The document is presented as a vintage typed list, though it is a well-known piece of internet shock humor. The creator includes a trigger warning for suicide due to the highly aggressive 'Capricorn' entry at the end of the list. Users typically share this for shock value or to jokingly 'roast' friends based on their astrological signs.",
+    "carousel_type": "meme",
+    "narrative_thread": "The images present a complete list of 'mean' horoscopes, starting with a social media prompt and ending with the full text of the document.",
+    "entities": [
+      {
+        "name": "Zodiac Signs",
+        "display_name": "Astrological Zodiac Signs",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 1,
+        "specifications": "All 12 signs included",
+        "confidence": 5
+      },
+      {
+        "name": "Richard Nixon",
+        "display_name": "Richard Nixon",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "slide_number": 2,
+        "specifications": "37th US President",
+        "confidence": 5
+      },
+      {
+        "name": "1979 Horoscope Meme",
+        "display_name": "Insulting 1979 Horoscope",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 1,
+        "specifications": "Viral copypasta/image",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The '1979 Horoscope' is a satirical or shock-humor piece designed to be as offensive as possible to every zodiac sign.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "ranking",
+      "items": [
+        {
+          "name": "Aquarius",
+          "details": "Stupid, fucking jerk",
+          "slide_number": 1
+        },
+        {
+          "name": "Pisces",
+          "details": "Paranoid, dipshit",
+          "slide_number": 1
+        },
+        {
+          "name": "Aries",
+          "details": "Quick tempered, prick",
+          "slide_number": 1
+        },
+        {
+          "name": "Taurus",
+          "details": "Stubborn, communist",
+          "slide_number": 1
+        },
+        {
+          "name": "Gemini",
+          "details": "Bisexual, cheap bastard",
+          "slide_number": 1
+        },
+        {
+          "name": "Cancer",
+          "details": "Sucker, welfare recipient",
+          "slide_number": 1
+        },
+        {
+          "name": "Leo",
+          "details": "Arrogant, thieving",
+          "slide_number": 1
+        },
+        {
+          "name": "Virgo",
+          "details": "Unemotional, pimp",
+          "slide_number": 1
+        },
+        {
+          "name": "Libra",
+          "details": "Artistic, venereal disease",
+          "slide_number": 1
+        },
+        {
+          "name": "Scorpio",
+          "details": "Unethical, murderer",
+          "slide_number": 1
+        },
+        {
+          "name": "Sagittarius",
+          "details": "No talent, drunk",
+          "slide_number": 2
+        },
+        {
+          "name": "Capricorn",
+          "details": "Chickenshit, unimportant",
+          "slide_number": 2
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "Text is clearly legible and transcribed verbatim."
+    },
+    "presentation_style": {
+      "primary_format": "meme",
+      "visual_style": "minimal"
+    },
+    "visual_mood": "Cynical, aggressive, and vintage-aesthetic.",
+    "topic_hints": ["Astrology", "Internet Memes", "Shock Humor"],
+    "affect_hints": ["Shocked", "Amused", "Offended"],
+    "genre_hints": ["Meme", "Text-based humor"]
+  },
+  "metrics": {
+    "input_tokens": 3409,
+    "output_tokens": 2542,
+    "total_tokens": 5951,
+    "cost_usd": 0.002037,
+    "latency_ms": 17469,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 2
+  }
+}

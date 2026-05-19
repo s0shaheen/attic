@@ -1,0 +1,67 @@
+{
+  "item_id": "7405643343918599455",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:50.227430+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "art",
+      "secondary": "technology",
+      "micro_labels": [
+        "performance art",
+        "bio-art",
+        "body modification",
+        "Stelarc",
+        "cyborg art"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": ["educational summary"],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "shocking",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 8595,
+    "output_tokens": 324,
+    "total_tokens": 8919,
+    "cost_usd": 0.001484,
+    "latency_ms": 11566,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 5
+  }
+}

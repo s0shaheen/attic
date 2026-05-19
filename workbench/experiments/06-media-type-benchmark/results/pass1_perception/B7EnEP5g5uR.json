@@ -1,0 +1,152 @@
+{
+  "item_id": "B7EnEP5g5uR",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:41:40.635311+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:12",
+        "visual_description": "Lil Nas X addresses the camera directly, establishing the date and his current activity.",
+        "audio_description": "Lil Nas X says: 'All right, um, what day is it? January 8th, 2019. And I'm finna eat some fucking pizza and you know, say some words.'",
+        "text_on_screen": "",
+        "key_objects": ["pizza box"]
+      },
+      {
+        "time_range": "0:12-0:18",
+        "visual_description": "Lil Nas X briefly leaves the frame to retrieve something off-camera.",
+        "audio_description": "Ambient noise as he moves away from the camera.",
+        "text_on_screen": "",
+        "key_objects": ["window blinds"]
+      },
+      {
+        "time_range": "0:18-0:30",
+        "visual_description": "Lil Nas X returns to the frame, opens a pizza box, and begins eating while discussing his music.",
+        "audio_description": "Lil Nas X says: 'I just put out Old Town Road and it's doing pretty fucking good.'",
+        "text_on_screen": "",
+        "key_objects": ["pizza box", "pizza slice"]
+      },
+      {
+        "time_range": "0:30-0:50",
+        "visual_description": "Lil Nas X continues eating pizza while listing his current social media follower counts.",
+        "audio_description": "Lil Nas X says: 'And you know right now I'm at what, you know, 3k on Instagram, 2k on YouTube, not even 1k followers on Spotify yet I don't think.'",
+        "text_on_screen": "",
+        "key_objects": ["pizza slice"]
+      },
+      {
+        "time_range": "0:50-1:00",
+        "visual_description": "Lil Nas X looks into the camera and makes a prediction for the future before ending the recording.",
+        "audio_description": "Lil Nas X says: 'But I'm gonna hit y'all back a year from now and you know, we gonna see where I'm at. All right.'",
+        "text_on_screen": "",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "In this 'time capsule' video recorded on January 8, 2019, Lil Nas X documents his life and career status just as his breakout hit 'Old Town Road' was beginning to gain traction. While eating pizza in a casual setting, he shares his modest social media statistics at the time: 3,000 Instagram followers, 2,000 YouTube subscribers, and fewer than 1,000 Spotify followers. He concludes the video by promising to check back in one year to see how much his life has changed, capturing a pivotal moment right before his meteoric rise to global superstardom.",
+    "people": [
+      {
+        "description": "Young Black man with short hair, wearing a grey graphic t-shirt and red plaid shorts.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Lil Nas X"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Lil Nas X",
+        "display_name": "Lil Nas X",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "audio", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Old Town Road",
+        "display_name": "Old Town Road \u2014 Lil Nas X",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Instagram",
+        "display_name": "Instagram",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "3,000 followers",
+        "confidence": 5
+      },
+      {
+        "name": "YouTube",
+        "display_name": "YouTube",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "2,000 subscribers",
+        "confidence": 5
+      },
+      {
+        "name": "Spotify",
+        "display_name": "Spotify",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "Less than 1,000 followers",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Lil Nas X intentionally documented his humble beginnings to track his growth as an artist.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "At the start of 2019, Lil Nas X had a very small social media presence despite 'Old Town Road' already being released.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound - akademiks",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video is a clear personal vlog with high-quality audio for transcription."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Casual, authentic, and optimistic.",
+    "topic_hints": ["Music Career", "Social Media Growth", "Lil Nas X History"],
+    "affect_hints": ["Nostalgic", "Ambitious", "Relatable"],
+    "genre_hints": ["Vlog", "Time Capsule", "Throwback"]
+  },
+  "metrics": {
+    "input_tokens": 6807,
+    "output_tokens": 1593,
+    "total_tokens": 8400,
+    "cost_usd": 0.001977,
+    "latency_ms": 23696,
+    "upload_ms": 5870
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

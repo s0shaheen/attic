@@ -1,0 +1,70 @@
+{
+  "item_id": "CMsa_2rM1Ne",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:17.397617+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "art",
+      "secondary": "music",
+      "micro_labels": [
+        "Keith Haring style",
+        "album art",
+        "hip hop culture",
+        "graphic design"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "compilation",
+      "micro_labels": ["slideshow", "art showcase"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "satisfying",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "informative",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 11842,
+    "output_tokens": 340,
+    "total_tokens": 12182,
+    "cost_usd": 0.00198,
+    "latency_ms": 9131,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 8
+  }
+}

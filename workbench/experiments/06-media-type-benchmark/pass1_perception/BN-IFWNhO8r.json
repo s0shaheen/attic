@@ -1,0 +1,168 @@
+{
+  "item_id": "BN-IFWNhO8r",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:37:39.986456+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "Close-up of Loca, a pug, looking directly at the camera in a grassy yard.",
+        "audio_description": "A man sings with an Irish accent: 'Well hello my name is Loca and I'm a special pug.'",
+        "text_on_screen": "My favorite video ever\nWELL HELLO MY NAME IS LOCA\nAND I'M A SPECIAL PUG",
+        "key_objects": ["Pug"]
+      },
+      {
+        "time_range": "0:04-0:06",
+        "visual_description": "An animated map of the world zooms in on Belfast, Ireland.",
+        "audio_description": "Singer: 'I live in Belfast, Ireland.'",
+        "text_on_screen": "I LIVE IN BELFAST IRELAND",
+        "key_objects": ["Map"]
+      },
+      {
+        "time_range": "0:06-0:10",
+        "visual_description": "A blonde woman hugs Loca and feeds her a piece of roast chicken.",
+        "audio_description": "Singer: 'And me favorite things a hug. I love to eat roast chicken.'",
+        "text_on_screen": "AND ME FAVORITE THINGS A HUG\nI LOVE TO EAT ROAST CHICKEN",
+        "key_objects": ["Roast chicken"]
+      },
+      {
+        "time_range": "0:10-0:16",
+        "visual_description": "Loca attempts to run with two other dogs in a yard but stumbles and falls.",
+        "audio_description": "Singer: 'And my friends say I'm good fun, but the one thing that I cannot do is I can't feckin run.'",
+        "text_on_screen": "AND MY FRIENDS SAY I'M GOOD FUN\nBUT THE ONE THING THAT I CANNOT DO\nIS I CAN'T FECKIN RUN",
+        "key_objects": ["Pug", "Boxer dog", "Black Labrador"]
+      },
+      {
+        "time_range": "0:16-0:32",
+        "visual_description": "A montage of Loca attempting to run, showing her unique 'bouncing' gait and frequent tumbles.",
+        "audio_description": "Chorus: 'I'm bouncing, flouncing, falling all around the show. Rolling, bowling, I just can't get it right. Skipping, hopping, tripping up and floppying. I just can't get the hang of it though trying as I might.'",
+        "text_on_screen": "I'M BOUNCING FLOUNCING FALLING ALL AROUND THE SHOW\nROLLING BOWLING I JUST CAN'T GET IT RIGHT\nSKIPPING HOPPING TRIPPING UP AND FLOPPYING\nI JUST CAN'T GET THE HANG OF IT THOUGH TRYING AS I MIGHT",
+        "key_objects": ["Pug"]
+      },
+      {
+        "time_range": "0:32-0:40",
+        "visual_description": "Loca is shown with her brother Alfie, a black pug, who is sitting on the woman's lap.",
+        "audio_description": "Singer: 'I've got a brother Alfie, a little pug like me. Me mum says he's a lap dog as he's never off her knee.'",
+        "text_on_screen": "I'VE GOT A BROTHER ALFIE\nA LITTLE PUG LIKE ME\nME MUM SAYS HE'S A LAP DOG\nAS HE'S NEVER OFF HER KNEE",
+        "key_objects": ["Black Pug"]
+      },
+      {
+        "time_range": "0:40-0:48",
+        "visual_description": "Alfie runs swiftly through tall grass while Loca struggles to keep up, eventually falling over.",
+        "audio_description": "Singer: 'He runs just like a bullet that's been fired from a gun. And he's tried his best to teach me but I still can't feckin run.'",
+        "text_on_screen": "HE RUNS JUST LIKE A BULLET\nTHAT'S BEEN FIRED FROM A GUN\nAND HE'S TRIED HIS BEST TO TEACH ME\nBUT I STILL CAN'T FECKIN RUN",
+        "key_objects": ["Black Pug", "Pug"]
+      },
+      {
+        "time_range": "0:48-0:57",
+        "visual_description": "Final clips of Loca stumbling in the grass as the chorus repeats.",
+        "audio_description": "Chorus: 'I'm bouncing, flouncing, falling all around the show. Rolling, bowling, at running I'm a flop.'",
+        "text_on_screen": "I'M BOUNCING FLOUNCING FALLING ALL AROUND THE SHOW\nROLLING BOWLING AT RUNNING I'M A FLOP",
+        "key_objects": ["Pug"]
+      }
+    ],
+    "overall_summary": "This video is a viral classic featuring Loca the Pug, a dog from Belfast, Ireland, who has a neurological condition (cerebellar ataxia) that prevents her from running normally. The video is presented as a music video with an original song that humorously and affectionately describes Loca's 'bouncing and flouncing' gait. It contrasts her clumsy movements with her brother Alfie's speed, ultimately celebrating her unique spirit and the love her family has for her. The video remains a beloved piece of internet history for its heartwarming and funny portrayal of a 'special' pet.",
+    "people": [
+      {
+        "description": "Blonde woman, Loca's owner, seen hugging and feeding the dogs.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Loca's Mum"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Loca the Pug",
+        "display_name": "Loca the Pug",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": "Pug with cerebellar ataxia",
+        "confidence": 5
+      },
+      {
+        "name": "Alfie the Pug",
+        "display_name": "Alfie",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": "Black pug, Loca's brother",
+        "confidence": 5
+      },
+      {
+        "name": "Belfast",
+        "display_name": "Belfast, Northern Ireland",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Loca the Pug Song",
+        "display_name": "Loca the Pug (The Pug That Couldn't Run)",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": "Written and performed by Malachy Cush",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Loca is a 'special' pug who, despite her physical inability to run properly, is happy, loved, and a source of joy.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Loca's Favorite Things",
+          "details": "Hugs and Roast Chicken"
+        },
+        {
+          "name": "Loca's Running Style",
+          "details": "Bouncing, flouncing, falling, rolling, bowling, skipping, hopping, and floppying"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Loca the Pug \u2014 Malachy Cush",
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "This is a well-known viral video from 2012; all details are verified by cultural context and the video itself."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "handheld",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Whimsical, heartwarming, and humorous with a nostalgic low-resolution aesthetic.",
+    "topic_hints": ["Pets", "Dogs", "Disability Awareness"],
+    "affect_hints": ["Amused", "Sympathetic", "Joyful"],
+    "genre_hints": ["Viral Classic", "Animal Video", "Music Video"]
+  },
+  "metrics": {
+    "input_tokens": 6528,
+    "output_tokens": 2116,
+    "total_tokens": 8644,
+    "cost_usd": 0.002249,
+    "latency_ms": 26513,
+    "upload_ms": 5604
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "item_id": "CgqH0SguLlI",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:36:53.160560+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "Actor and comedian Aziz Ansari smiling on a cobblestone street in NYC, wearing a grey chore jacket over a white textured polo shirt.",
+        "text_detected": "",
+        "primary_content": "Celebrity sighting: Aziz Ansari",
+        "entities": [
+          {
+            "name": "Aziz Ansari",
+            "type": "person",
+            "specifications": "Grey chore jacket, white polo"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "Rapper Meek Mill standing by the open trunk of a black Maybach, wearing a white pocket t-shirt, multiple diamond chains including a 'DC' pendant, and silver sequined pants.",
+        "text_detected": "DC",
+        "primary_content": "Celebrity sighting: Meek Mill",
+        "entities": [
+          {
+            "name": "Meek Mill",
+            "type": "person",
+            "specifications": "White pocket tee, sequined trousers"
+          },
+          {
+            "name": "Dream Chasers",
+            "type": "brand",
+            "specifications": "DC logo pendant"
+          },
+          {
+            "name": "Maybach",
+            "type": "product",
+            "specifications": "Luxury SUV"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "Rapper A$AP Ferg leaning against a black Range Rover, wearing a navy t-shirt with a graphic of a person in a Nike headband, black Adidas shorts, and yellow socks.",
+        "text_detected": "RANGE ROVER",
+        "primary_content": "Celebrity sighting: A$AP Ferg",
+        "entities": [
+          {
+            "name": "A$AP Ferg",
+            "type": "person",
+            "specifications": "Navy graphic tee, Adidas shorts"
+          },
+          {
+            "name": "Nike",
+            "type": "brand",
+            "specifications": "Logo on t-shirt graphic"
+          },
+          {
+            "name": "Adidas",
+            "type": "brand",
+            "specifications": "Logo on shorts"
+          },
+          {
+            "name": "Range Rover",
+            "type": "product",
+            "specifications": "Black SUV"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "A woman posing against a brick wall wearing a beige linen suit, a white crop top, and a small turquoise Jacquemus crossbody bag.",
+        "text_detected": "JACQUEMUS",
+        "primary_content": "Street style: Beige linen suit with Jacquemus bag",
+        "entities": [
+          {
+            "name": "Jacquemus",
+            "type": "brand",
+            "specifications": "Le Chiquito mini bag in turquoise"
+          }
+        ]
+      },
+      {
+        "image_number": 5,
+        "description": "A man with an afro and sunglasses sitting at an outdoor cafe table with a red checkered tablecloth, holding a glass of white wine.",
+        "text_detected": "",
+        "primary_content": "Street style: Denim jacket and afro",
+        "entities": [
+          {
+            "name": "Denim Jacket",
+            "type": "clothing",
+            "specifications": "Light wash"
+          }
+        ]
+      },
+      {
+        "image_number": 6,
+        "description": "Jaden Smith at night wearing a black suit jacket with white text graphics and a black tie.",
+        "text_detected": "MSFTSREP MYSTERY INITIATE",
+        "primary_content": "Celebrity sighting: Jaden Smith",
+        "entities": [
+          {
+            "name": "Jaden Smith",
+            "type": "person",
+            "specifications": "MSFTSrep suit jacket"
+          },
+          {
+            "name": "MSFTSrep",
+            "type": "brand",
+            "specifications": "Graphic suit jacket"
+          }
+        ]
+      },
+      {
+        "image_number": 7,
+        "description": "Model Imaan Hammam wearing a vibrant green and yellow gradient jacket with human figure graphics, a printed mesh top, and green shorts.",
+        "text_detected": "",
+        "primary_content": "Celebrity sighting: Imaan Hammam",
+        "entities": [
+          {
+            "name": "Imaan Hammam",
+            "type": "person",
+            "specifications": "Green/yellow graphic jacket"
+          }
+        ]
+      },
+      {
+        "image_number": 8,
+        "description": "A person wearing a black Balenciaga hoodie with a silver 'drip' logo, a black balaclava, and sunglasses, carrying a white tote bag.",
+        "text_detected": "BALENCIAGA",
+        "primary_content": "Street style: Balenciaga 'Drip' hoodie",
+        "entities": [
+          {
+            "name": "Balenciaga",
+            "type": "brand",
+            "specifications": "Drip logo hoodie"
+          }
+        ]
+      },
+      {
+        "image_number": 9,
+        "description": "Rapper Lil Uzi Vert wearing a white long-sleeve shirt, a large 'LOW LIFE 4 LIFE' diamond chain, yellow shorts, and a red Goyard tote bag.",
+        "text_detected": "LOW LIFE 4 LIFE",
+        "primary_content": "Celebrity sighting: Lil Uzi Vert",
+        "entities": [
+          {
+            "name": "Lil Uzi Vert",
+            "type": "person",
+            "specifications": "White thermal, yellow shorts, Goyard bag"
+          },
+          {
+            "name": "Goyard",
+            "type": "brand",
+            "specifications": "Red St. Louis or Artois tote"
+          }
+        ]
+      },
+      {
+        "image_number": 10,
+        "description": "An older man with a white beard wearing a long brown leather coat over a burgundy turtleneck and matching trousers, holding a black briefcase.",
+        "text_detected": "ALLSAINTS",
+        "primary_content": "Street style: Mature fashion in leather and burgundy",
+        "entities": [
+          {
+            "name": "AllSaints",
+            "type": "brand",
+            "specifications": "Storefront in background"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post is a curated gallery of high-profile celebrity sightings and notable street style captured in New York City, specifically the Soho neighborhood. It features a mix of A-list entertainers like Aziz Ansari, Meek Mill, and Lil Uzi Vert alongside fashion models and stylish locals. The user is likely saving this for fashion inspiration, celebrity tracking, or as a reference for the 'The People Gallery' street photography style.",
+    "carousel_type": "photo_dump",
+    "narrative_thread": "A walk through the streets of NYC reveals a high concentration of celebrities and fashion-forward individuals, showcasing a variety of styles from luxury streetwear to high-fashion tailoring.",
+    "entities": [
+      {
+        "name": "Aziz Ansari",
+        "display_name": "Aziz Ansari",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 1,
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Meek Mill",
+        "display_name": "Meek Mill",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 2,
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "A$AP Ferg",
+        "display_name": "A$AP Ferg",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 3,
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jaden Smith",
+        "display_name": "Jaden Smith",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 6,
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Imaan Hammam",
+        "display_name": "Imaan Hammam",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 7,
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Lil Uzi Vert",
+        "display_name": "Lil Uzi Vert",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 9,
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jacquemus",
+        "display_name": "Jacquemus",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 4,
+        "specifications": "Mini bag",
+        "confidence": 5
+      },
+      {
+        "name": "Balenciaga",
+        "display_name": "Balenciaga",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["visual", "text_overlay"],
+        "slide_number": 8,
+        "specifications": "Drip logo hoodie",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Soho, NYC remains a primary hub for celebrity street style and high-end fashion displays.",
+        "source": "implied",
+        "confidence": 5
+      },
+      {
+        "statement": "Bold accessories (diamond chains, mini bags, Goyard totes) are central to current celebrity streetwear.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Aziz Ansari",
+          "details": "Grey chore jacket and white polo",
+          "slide_number": 1
+        },
+        {
+          "name": "Meek Mill",
+          "details": "White pocket tee and sequined pants",
+          "slide_number": 2
+        },
+        {
+          "name": "A$AP Ferg",
+          "details": "Graphic tee and Adidas shorts",
+          "slide_number": 3
+        },
+        {
+          "name": "Jaden Smith",
+          "details": "MSFTSrep graphic suit",
+          "slide_number": 6
+        },
+        {
+          "name": "Imaan Hammam",
+          "details": "Gradient graphic jacket",
+          "slide_number": 7
+        },
+        {
+          "name": "Lil Uzi Vert",
+          "details": "White thermal and Goyard bag",
+          "slide_number": 9
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "original sound - aplasticplant",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "Celebrities are highly recognizable; brand logos are clearly visible."
+    },
+    "presentation_style": {
+      "primary_format": "photo_dump",
+      "visual_style": "aesthetic"
+    },
+    "visual_mood": "Urban, trendy, and high-energy celebrity culture.",
+    "topic_hints": ["Street Fashion", "Celebrity Sightings", "NYC Culture"],
+    "affect_hints": ["Inspired", "Curious", "Fashion-forward"],
+    "genre_hints": ["Street Style Photography"]
+  },
+  "metrics": {
+    "input_tokens": 11989,
+    "output_tokens": 2883,
+    "total_tokens": 14872,
+    "cost_usd": 0.003528,
+    "latency_ms": 22155,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 10
+  }
+}

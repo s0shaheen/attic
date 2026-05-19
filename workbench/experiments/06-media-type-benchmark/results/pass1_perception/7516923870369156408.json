@@ -1,0 +1,161 @@
+{
+  "item_id": "7516923870369156408",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:25:14.052482+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "A UI design tip graphic showing two dark cards with rounded corners. The left card shows an incorrect example where the inner and outer radii are both 24px. The right card shows the correct method where the outer radius is 24px, the inner is 14px, and the padding is 10px.",
+        "text_detected": "Border Radius Tip\n24px\n24px\n24px\n14px\n10px\nSame value for inner and outer radius\nOuter radius = inner radius + padding\nAvoid the urge to round inner elements the same amount as the card. Decrease inner element slightly. Just scale up your the inner element to the size of your outer frame.\nSave for later",
+        "primary_content": "Technique: Calculating nested border radius using the formula Outer Radius = Inner Radius + Padding.",
+        "entities": [
+          {
+            "name": "Border Radius",
+            "type": "technique",
+            "specifications": "CSS property"
+          },
+          {
+            "name": "Padding",
+            "type": "technique",
+            "specifications": "CSS property"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "A light-themed infographic explaining nested border radius. It compares a 'wrong' version where outer and inner radii are equal (24px) to a 'right' version where the outer radius (24px) equals the inner radius (16px) plus padding (8px).",
+        "text_detected": "Better Nested Border Radius\n24px\n24px\n24px\n16px\n8px\nouter r = inner r\nouter r = inner r + padding\nWorks if both radius have the same center point. Or use a multiplier. To test, scale up your inner frame to the size of your outer frame.\nFollow us for more content like this",
+        "primary_content": "Technique: Ensuring nested corners share the same center point for visual harmony.",
+        "entities": [
+          {
+            "name": "Nested Border Radius",
+            "type": "technique",
+            "specifications": "UI Design principle"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "A dark-themed graphic with neon green and pink accents. It illustrates the 'Perfect border radius tips' using a formulaic approach: Outer R = Inner R + Padding, showing values of 40 for outer, 18 for inner, and 24 for padding.",
+        "text_detected": "Perfect border radius tips\n40\n40\n40\n18\n24\nOuter R = Inner R\nOuter R = Inner R + Padding\nSave it for later",
+        "primary_content": "Technique: Visualizing the mathematical relationship between nested rounded corners.",
+        "entities": [
+          {
+            "name": "UI Design",
+            "type": "technique",
+            "specifications": "Visual design"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "A final summary slide with an orange-to-red gradient title. It reiterates the core tip: Outer R = Inner R + Padding, using 24px outer, 16px inner, and 8px padding as the example.",
+        "text_detected": "Border Radius Tips\n24px\n24px\n24px\n16px\n8px\nOuter R = Inner R\nOuter R = Inner R + Padding\nFollow me for more content like this",
+        "primary_content": "Technique: Summary of the border-radius calculation for web developers.",
+        "entities": [
+          {
+            "name": "@techbyapdalla",
+            "type": "person",
+            "specifications": "Content creator"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post is a technical UI/UX and web development guide focusing on the 'nested border radius' problem. It teaches developers and designers that to maintain visual consistency in nested elements (like a card with a button inside), the outer radius must be the sum of the inner radius and the padding between them. The user is likely saving this as a quick reference for CSS styling and layout design to avoid 'clashing' rounded corners.",
+    "carousel_type": "infographic",
+    "narrative_thread": "The slideshow moves through multiple visual examples of the same mathematical principle to reinforce the 'correct' way to style nested rounded corners in web development.",
+    "entities": [
+      {
+        "name": "Border Radius",
+        "display_name": "CSS Border Radius",
+        "type": "technique",
+        "relevance": "primary",
+        "source": ["text_overlay", "metadata"],
+        "slide_number": 1,
+        "specifications": "CSS property: border-radius",
+        "confidence": 5
+      },
+      {
+        "name": "Padding",
+        "display_name": "CSS Padding",
+        "type": "technique",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 1,
+        "specifications": "CSS property: padding",
+        "confidence": 5
+      },
+      {
+        "name": "Web Development",
+        "display_name": "Web Development",
+        "type": "technique",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "slide_number": 1,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The formula for visually pleasing nested corners is: Outer Radius = Inner Radius + Padding.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Using the same radius value for both inner and outer elements creates a visual mismatch.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Nested Border Radius Formula",
+          "details": "Outer Radius = Inner Radius + Padding",
+          "slide_number": 1
+        },
+        {
+          "name": "Visual Test",
+          "details": "Scale up your inner frame to the size of your outer frame to check for alignment.",
+          "slide_number": 2
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Scars (Slowed Down) \u2014 Dionnysuss",
+      "metadata_song": "Scars (Slowed Down) \u2014 Dionnysuss",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "The mathematical values in slide 3 (40, 18, 24) don't perfectly sum to 40 (18+24=42), but the principle remains clear."
+    },
+    "presentation_style": {
+      "primary_format": "infographic",
+      "visual_style": "informational"
+    },
+    "visual_mood": "educational, clean, and professional",
+    "topic_hints": ["Web Development", "UI/UX Design", "CSS Tips"],
+    "affect_hints": ["informed", "capable", "organized"],
+    "genre_hints": ["Educational Tutorial"]
+  },
+  "metrics": {
+    "input_tokens": 5581,
+    "output_tokens": 1801,
+    "total_tokens": 7382,
+    "cost_usd": 0.001918,
+    "latency_ms": 14858,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 4
+  }
+}

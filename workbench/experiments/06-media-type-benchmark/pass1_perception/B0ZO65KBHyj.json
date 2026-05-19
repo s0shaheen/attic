@@ -1,0 +1,145 @@
+{
+  "item_id": "B0ZO65KBHyj",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:40:39.042519+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:13",
+        "visual_description": "Drake hypes himself up while talking to a young child in a crowd, asserting his dominance over Chris Brown.",
+        "audio_description": "Drake says, 'Chris Brown, dancer extraordinaire... whose time is it now though? Whose time is it king? Tell him.' The kid replies, 'Drake!'",
+        "text_on_screen": "",
+        "key_objects": ["Nike t-shirt", "Gold chain"]
+      },
+      {
+        "time_range": "0:13-0:30",
+        "visual_description": "Drake attempts to start the dance battle but experiences technical difficulties with his phone audio while Chris Brown looks on.",
+        "audio_description": "Drake asks how the music is so loud without speakers, then tells his associate to 'play off my phone... you know the code.'",
+        "text_on_screen": "",
+        "key_objects": ["Smartphone", "Red bandana"]
+      },
+      {
+        "time_range": "0:30-0:54",
+        "visual_description": "Drake performs a highly exaggerated and comical dance routine, including a 'snake' move, around a stoic Chris Brown.",
+        "audio_description": "Drake narrates his moves: 'Just remember you requested this... the snake is coming out first! Breezy, the snake is coming out!'",
+        "text_on_screen": "",
+        "key_objects": ["Red patterned shirt", "Multiple gold chains"]
+      }
+    ],
+    "overall_summary": "This video is a comedic segment from the 'No Guidance' music video featuring Drake and Chris Brown. Drake plays a humorous, overconfident version of himself challenging Chris Brown to a dance-off. The scene culminates in Drake performing a series of ridiculous, uncoordinated dance moves while Chris Brown watches with a serious expression, highlighting the comedic contrast between their dancing abilities.",
+    "people": [
+      {
+        "description": "Rapper wearing a black Nike t-shirt, acting as a comedic challenger in a dance battle.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Drake"
+      },
+      {
+        "description": "Singer and dancer wearing a red bandana and patterned shirt, acting as the professional foil to Drake's antics.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Chris Brown"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Drake",
+        "display_name": "Drake",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "audio", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Chris Brown",
+        "display_name": "Chris Brown",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "audio", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Nike",
+        "display_name": "Nike",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Swoosh logo on black t-shirt",
+        "confidence": 5
+      },
+      {
+        "name": "106 & Park",
+        "display_name": "106 & Park",
+        "type": "movie_or_show",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "BET music video countdown show",
+        "confidence": 5
+      },
+      {
+        "name": "No Guidance",
+        "display_name": "No Guidance \u2014 Chris Brown ft. Drake",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["audio", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "The Snake",
+        "display_name": "The Snake (Dance Move)",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": ["audio", "visual"],
+        "specifications": "Comedic dance move performed by Drake",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Drake uses self-deprecating humor regarding his dance skills to create a viral comedic moment in a music video.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "No Guidance \u2014 Chris Brown ft. Drake",
+      "metadata_song": "original sound - Complex",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "This is a well-known skit from a major music video."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Humorous, competitive, and high-energy with a touch of intentional 'cringe' comedy.",
+    "topic_hints": ["Music Video Skit", "Dance Battle", "Hip Hop Culture"],
+    "affect_hints": ["Amused", "Entertained", "Second-hand embarrassment"],
+    "genre_hints": ["Comedy", "Music Video"]
+  },
+  "metrics": {
+    "input_tokens": 6267,
+    "output_tokens": 1334,
+    "total_tokens": 7601,
+    "cost_usd": 0.00174,
+    "latency_ms": 20057,
+    "upload_ms": 5694
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

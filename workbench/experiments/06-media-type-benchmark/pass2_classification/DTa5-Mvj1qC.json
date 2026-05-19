@@ -1,0 +1,71 @@
+{
+  "item_id": "DTa5-Mvj1qC",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:31.396090+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "sports",
+      "secondary": "comedy",
+      "micro_labels": [
+        "NBA",
+        "Jaylen Brown",
+        "Boston Celtics",
+        "social justice",
+        "environmentalism"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["POV", "athlete edit"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      },
+      {
+        "label": "inspiring",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["talking_head", "text_overlay"],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.85
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 5311,
+    "output_tokens": 346,
+    "total_tokens": 5657,
+    "cost_usd": 0.001004,
+    "latency_ms": 6490,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 2
+  }
+}

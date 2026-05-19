@@ -1,0 +1,71 @@
+{
+  "item_id": "CgqH0SguLlI",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:25.865237+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fashion",
+      "secondary": "music",
+      "micro_labels": [
+        "street style",
+        "celebrity fashion",
+        "NYC street style",
+        "luxury brands",
+        "menswear"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "outfit_showcase",
+      "micro_labels": ["street photography", "celebrity sighting"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "neutral",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "raw_footage"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "document",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 13842,
+    "output_tokens": 354,
+    "total_tokens": 14196,
+    "cost_usd": 0.002289,
+    "latency_ms": 8993,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 10
+  }
+}

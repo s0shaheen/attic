@@ -1,0 +1,237 @@
+{
+  "item_id": "DK5X3oghgOW",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:42:26.084625+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Creator introduces the topic; brief archival clip of Mehdi Hassan performing.",
+        "audio_description": "Creator: 'Who's heard this ghazal before?' followed by Mehdi Hassan singing the opening line of 'Ranjish Hi Sahi'.",
+        "text_on_screen": "Who's heard this ghazal before? [Ranjish Hi Sahi]",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:05-0:14",
+        "visual_description": "Creator provides historical context with photos of Ahmad Faraz, Iqbal Bano, and Mehdi Hassan.",
+        "audio_description": "Creator explains that Ahmad Faraz wrote the ghazal decades ago, and it was brought to life by Iqbal Bano and Mehdi Hassan in the 60s and 70s.",
+        "text_on_screen": "Decades ago the poet Ahmad Faraz wrote the ghazal Ranjish Hi Sahi. Then in the late 60s and 70s the voices of Iqbal Bano and Mehdi Hassan brought those words to life.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:14-0:29",
+        "visual_description": "Title card with Urdu script; Creator explains the meaning of the word 'Ranjish'.",
+        "audio_description": "Creator: 'Ranjish' means sorrow or anguish, but the kind that only someone close to you would cause. The poem pleads for that person to return.",
+        "text_on_screen": "\u0631\u0646\u062c\u0634 \u06c1\u06cc \u0633\u06c1\u06cc Ranjish Hi Sahi. First things first. 'Ranjish' means sorrow or anguish but the kind that only someone close to you would cause. The poem pleads all the reasons for that someone to come back even if it only brings sorrow.",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:29-0:53",
+        "visual_description": "Archival footage of Mehdi Hassan singing; Creator translates the verse.",
+        "audio_description": "Mehdi Hassan sings: 'Kis ko bataayenge judaai kaa sabab ham / Tu mujh se khafaa hai to zamaanay kay liye aa'. Creator translates: 'How many people will I have to explain our separation to? Even if you're angry with me, come at least for the sake of appearances.'",
+        "text_on_screen": "[kis ko] [bataayenge] [judaai kaa sabab ham] [tu mujh se] [khafaa hai to] [zamaanay kay liye aa] He goes, How many people will I have to explain our separation to? even if you're angry with me come at least for the sake of appearances",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:53-1:18",
+        "visual_description": "Mehdi Hassan continues singing; Creator translates the next verse.",
+        "audio_description": "Mehdi Hassan sings: 'Ab tak dil-e-khush-feham ko hai tujh se ummeedain / Ye aakhri shammay bhi bujhaane ke liye aa'. Creator translates: 'Till now, my heart still had some sort of expectations from you. So even if it's to blow out this last candle of hope, come.'",
+        "text_on_screen": "[ab tak] [dil-e-khush-feham ko hai] [tujh se hain ummeedain] [ye aakhri] [shammay bhi] [bujhaane ke liye aa] Till now, my heart still had some sort of expectations from you So even if its to blow out this last candle of hope come",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:18-1:45",
+        "visual_description": "Mehdi Hassan continues singing; Creator translates the third verse.",
+        "audio_description": "Mehdi Hassan sings: 'Ek umr se hoon lazzat-e-giryaa se bhi mehroom / Ay raahat-e-jaan mujh ko rulaane ke liye aa'. Creator translates: 'For some time now, I've been deprived of even my tears. Ay raahat-e-jaan, the comfort of my soul, come, if only to make me cry again.'",
+        "text_on_screen": "[ek umr se hoon] [lazzat-e-giryaa] [se bhi mehroom] [aye raahat-e-jaan] [mujh ko rulaane ke liye aa] For some time now I've been deprived of even my tears ay rahat-e-jaan 'the comfort of soul' come, if only to make me cry again",
+        "key_objects": []
+      },
+      {
+        "time_range": "1:45-2:18",
+        "visual_description": "Creator mentions additional verses by Talib Baghpati; Mehdi Hassan sings the added verse.",
+        "audio_description": "Creator notes Mehdi Hassan added verses by Talib Baghpati. Mehdi Hassan sings: 'Jaise tujhe aate hain na aane ke bahaane / Aise hi kisi roz na jaane ke liye aa'. Creator translates: 'Just as you always find an excuse not to come, come every day with an excuse never to leave.'",
+        "text_on_screen": "[do sher ismain] [aur hain jo] [Ahmed Faraz sahab ka nahi hain] In his performances Mehdi Hassan began adding verses by Talib Baghpati this one became a personal favourite [jaise] [tujhe aate hain] [na aane ke bahaane] [aise hi] [kisi roz] [na jaane ke liye aa] He goes, just as you always find an excuse not to come come every day with an excuse never to leave",
+        "key_objects": []
+      },
+      {
+        "time_range": "2:18-2:30",
+        "visual_description": "Final snippet of the song; Creator concludes with a reflection on the beauty of the piece.",
+        "audio_description": "Mehdi Hassan sings the refrain. Creator: 'Faraz's words and Mehdi's voice... somehow anguish has now became this thing of beauty.'",
+        "text_on_screen": "[ranjish hi sahi] Faraz's words and Mehdi's voice In their hands together somehow anguish has now became this thing of beauty",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "In this video, creator Taha (@tahafortheculture) explores the history and profound meaning of the iconic ghazal 'Ranjish Hi Sahi'. He explains that while the poem was written by Ahmad Faraz, it was immortalized through the performances of Iqbal Bano and Mehdi Hassan. Taha breaks down the lyrics, defining 'Ranjish' as a specific type of sorrow caused by a loved one, and provides English translations for several verses. He also highlights how Mehdi Hassan incorporated additional verses by poet Talib Baghpati into his renditions, creating a masterpiece that turns anguish into beauty.",
+    "people": [
+      {
+        "description": "Bald man in a white t-shirt, content creator focusing on South Asian culture",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Taha (@tahafortheculture)"
+      },
+      {
+        "description": "Legendary Pakistani ghazal singer, seen in archival performance footage",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Mehdi Hassan"
+      },
+      {
+        "description": "Renowned Urdu poet who wrote the original ghazal",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Ahmad Faraz"
+      },
+      {
+        "description": "Highly acclaimed Pakistani ghazal singer",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Iqbal Bano"
+      },
+      {
+        "description": "Poet whose verses were added to the song by Mehdi Hassan",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Talib Baghpati"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Ranjish Hi Sahi",
+        "display_name": "Ranjish Hi Sahi",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay", "metadata"],
+        "specifications": "Ghazal written by Ahmad Faraz",
+        "confidence": 5
+      },
+      {
+        "name": "Ahmad Faraz",
+        "display_name": "Ahmad Faraz",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Urdu poet",
+        "confidence": 5
+      },
+      {
+        "name": "Mehdi Hassan",
+        "display_name": "Mehdi Hassan",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": "Ghazal singer",
+        "confidence": 5
+      },
+      {
+        "name": "Iqbal Bano",
+        "display_name": "Iqbal Bano",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Ghazal singer",
+        "confidence": 5
+      },
+      {
+        "name": "Talib Baghpati",
+        "display_name": "Talib Baghpati",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Poet",
+        "confidence": 5
+      },
+      {
+        "name": "Pakistan",
+        "display_name": "Pakistan",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "India",
+        "display_name": "India",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The word 'Ranjish' specifically refers to sorrow or anguish caused by someone close to you.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The ghazal 'Ranjish Hi Sahi' is a plea for a loved one to return, even if their presence only brings more pain, for the sake of appearances or to end lingering hope.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Mehdi Hassan's famous rendition of the ghazal includes verses by Talib Baghpati that were not in Ahmad Faraz's original poem.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Verse 1 Translation",
+          "details": "How many people will I have to explain our separation to? Even if you're angry with me, come at least for the sake of appearances."
+        },
+        {
+          "name": "Verse 2 Translation",
+          "details": "Till now, my heart still had some sort of expectations from you. So even if it's to blow out this last candle of hope, come."
+        },
+        {
+          "name": "Verse 3 Translation",
+          "details": "For some time now, I've been deprived of even my tears. O comfort of my soul, come, if only to make me cry again."
+        },
+        {
+          "name": "Added Verse Translation (Talib Baghpati)",
+          "details": "Just as you always find an excuse not to come, come every day with an excuse never to leave."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Ranjish Hi Sahi \u2014 Mehdi Hassan",
+      "metadata_song": "original sound - Taha",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Lyrics and translations are transcribed verbatim from the video's audio and text overlays."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Educational, nostalgic, and emotionally resonant, utilizing archival footage to enhance the cultural storytelling.",
+    "topic_hints": ["Urdu Poetry", "Ghazal Music", "South Asian Culture"],
+    "affect_hints": ["Melancholic", "Appreciative", "Nostalgic"],
+    "genre_hints": ["Educational", "Cultural Commentary"]
+  },
+  "metrics": {
+    "input_tokens": 14851,
+    "output_tokens": 3151,
+    "total_tokens": 18002,
+    "cost_usd": 0.004118,
+    "latency_ms": 32790,
+    "upload_ms": 6109
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

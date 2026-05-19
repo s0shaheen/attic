@@ -1,0 +1,114 @@
+{
+  "item_id": "C_2mdmgpV0K",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:38:13.949204+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "A toddler in a white t-shirt and grey shorts runs away from the camera down a hallway and into another room.",
+        "audio_description": "A woman speaks in Hindi about setting up the video: 'Aur yahan kar doon? Bas ab ban rahi hai video. Achha haan ye theek hai, ye chahiye tha mujhe.' (Should I do it here? Just, the video is being made now. Okay, yes, this is good, I wanted this.)",
+        "text_on_screen": "",
+        "key_objects": ["sandals", "doorway"]
+      },
+      {
+        "time_range": "0:05-0:10",
+        "visual_description": "The toddler peeks his head out from behind a door frame, looking back at the camera.",
+        "audio_description": "The woman calls out to the baby: 'Bacha kahan gaya? Motu? Aaru?' (Where did the baby go? Chubby? Aaru?)",
+        "text_on_screen": "",
+        "key_objects": ["wall decorations"]
+      },
+      {
+        "time_range": "0:10-0:19",
+        "visual_description": "The toddler runs back toward the camera, performing a wiggly, excited dance with his arms and legs. He stops near a pair of sandals on the floor.",
+        "audio_description": "The woman laughs and says: 'Aa gaya! Lindu-si, gindu-si! Ye dekho aapne ye chappalein kahan phenki, sandal kahan phenk di meri?' (He's here! [Cute nonsense words]! Look at this, where did you throw these slippers, where did you throw my sandals?)",
+        "text_on_screen": "",
+        "key_objects": ["sandals"]
+      }
+    ],
+    "overall_summary": "A toddler named Aaru plays a game of hide-and-seek in a hallway, running away and then peeking back at the person filming. When called, he runs back toward the camera while performing an adorable, energetic 'break dance' with his whole body. The woman filming laughs at his antics and playfully scolds him for throwing her sandals on the floor.",
+    "people": [
+      {
+        "description": "A young toddler boy wearing a white t-shirt and grey shorts, playing and dancing.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Aaru"
+      },
+      {
+        "description": "Off-camera woman filming and interacting with the child in Hindi.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Aaru",
+        "display_name": "Aaru",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": "toddler",
+        "confidence": 5
+      },
+      {
+        "name": "Sandals",
+        "display_name": "Women's Sandals",
+        "type": "clothing",
+        "relevance": "supporting",
+        "source": ["visual", "audio"],
+        "specifications": "brown/tan color",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Toddlers express joy and excitement through spontaneous, uncoordinated dancing.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Simple domestic interactions like hide-and-seek are key moments for family bonding and content creation.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": 5,
+      "notes": "The audio is original Hindi dialogue. The hashtags mention 'babygirl' but the audio uses masculine terms like 'Motu' and 'Bacha', suggesting the child is a boy or the hashtags are generic."
+    },
+    "presentation_style": {
+      "primary_format": "pov",
+      "camera_work": "handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Warm, joyful, and playful domestic atmosphere.",
+    "topic_hints": ["Parenting", "Toddler milestones", "Cute baby moments"],
+    "affect_hints": ["Amused", "Happy", "Endearing"],
+    "genre_hints": ["Baby video", "Home movie", "Family vlog"]
+  },
+  "metrics": {
+    "input_tokens": 3275,
+    "output_tokens": 1206,
+    "total_tokens": 4481,
+    "cost_usd": 0.001215,
+    "latency_ms": 21323,
+    "upload_ms": 5322
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

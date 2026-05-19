@@ -1,0 +1,71 @@
+{
+  "item_id": "DT0cyBlkVvC",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:08.918609+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "travel",
+      "micro_labels": [
+        "Korean-Chinese cuisine",
+        "Chicago restaurants",
+        "Jajangmyeon",
+        "Jjamppong",
+        "Tangsuyuk"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "review",
+      "micro_labels": ["restaurant review", "food review"],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["voiceover", "cinematic", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 19937,
+    "output_tokens": 362,
+    "total_tokens": 20299,
+    "cost_usd": 0.003208,
+    "latency_ms": 8418,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 15
+  }
+}

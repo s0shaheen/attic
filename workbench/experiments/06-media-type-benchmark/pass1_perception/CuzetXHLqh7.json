@@ -1,0 +1,171 @@
+{
+  "item_id": "CuzetXHLqh7",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:39:28.182518+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Close-up of the finished Tandoori chicken skewers served over yellow rice with a side of mint yogurt and flatbread.",
+        "audio_description": "If you like fakeaways, then you will love these air fryer tandoori chicken skewers.",
+        "text_on_screen": "Airfryer Tandoori Chicken Kebabs",
+        "key_objects": [
+          "chicken skewers",
+          "yellow rice",
+          "mint yogurt",
+          "flatbread"
+        ]
+      },
+      {
+        "time_range": "0:03-0:10",
+        "visual_description": "Creator adds yogurt, lemon juice, garlic, tomato puree, and various spices to a bowl of raw chicken pieces.",
+        "audio_description": "All it is is chicken thigh in yogurt, spices, tomato puree, lemon, and a dash of red food coloring.",
+        "text_on_screen": "Yogurt, Lemon, Garlic, Salt, Tomato puree, Spices below",
+        "key_objects": [
+          "chicken thigh",
+          "yogurt",
+          "lemon",
+          "garlic",
+          "tomato puree",
+          "spices",
+          "red food coloring"
+        ]
+      },
+      {
+        "time_range": "0:10-0:13",
+        "visual_description": "The chicken is mixed thoroughly until coated red and then threaded onto metal skewers.",
+        "audio_description": "You can use chicken breast or thigh and then add to skewers.",
+        "text_on_screen": "Add to skewers",
+        "key_objects": ["metal skewers", "marinated chicken"]
+      },
+      {
+        "time_range": "0:13-0:16",
+        "visual_description": "The skewers are placed into an air fryer basket and shown after cooking, looking charred and red.",
+        "audio_description": "Into the air fryer for 17 minutes at 200 and they'll come out nice, crispy, and red.",
+        "text_on_screen": "Airfry - 17 mins at 200",
+        "key_objects": ["air fryer", "cooked chicken skewers"]
+      },
+      {
+        "time_range": "0:16-0:18",
+        "visual_description": "Creator prepares a dip by mixing yogurt, lime juice, pepper, and fresh chopped mint in a small bowl.",
+        "audio_description": "Then throw together a mint and yogurt and lime dip.",
+        "text_on_screen": "Mint, Yogurt, Lime, Pepper",
+        "key_objects": ["yogurt", "lime", "mint", "pepper"]
+      },
+      {
+        "time_range": "0:18-0:25",
+        "visual_description": "The meal is plated: yellow rice is poured onto a plate, followed by the skewers and the dip.",
+        "audio_description": "With some rice and that's you sorted. Enjoy.",
+        "text_on_screen": "",
+        "key_objects": ["yellow rice", "tongs", "serving plate"]
+      }
+    ],
+    "overall_summary": "Nathan Anthony (@boredoflunch) demonstrates how to make a low-calorie 'fakeaway' meal of Airfryer Tandoori Chicken Skewers. He marinates chicken thighs in a mixture of yogurt, lemon, garlic, tomato puree, and traditional Indian spices before air frying them for 17 minutes. The dish is served with a homemade mint and lime yogurt dip, yellow rice, and flatbread, totaling 587 calories per serving.",
+    "people": [
+      {
+        "description": "Male creator seen only by his hands while preparing food.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Nathan Anthony (@boredoflunch)"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Airfryer Tandoori Chicken Skewers",
+        "display_name": "Airfryer Tandoori Chicken Skewers",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": ["text_overlay", "audio"],
+        "specifications": "587 calories per serving",
+        "confidence": 5
+      },
+      {
+        "name": "Ninja Foodi Air Fryer",
+        "display_name": "Ninja Air Fryer",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Dual basket model",
+        "confidence": 4
+      },
+      {
+        "name": "Bored of Lunch",
+        "display_name": "Bored of Lunch",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Tandoori chicken can be made quickly and healthily in an air fryer in 17 minutes at 200\u00b0C.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Using red food coloring is optional but gives the chicken its traditional vibrant tandoori appearance.",
+        "source": "metadata",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Chicken Marinade",
+          "details": "400g chicken (thigh or breast), 2 tsp paprika, 1 tsp cumin, 1 tsp garam masala, 1 tsp turmeric, 1 heaped tbsp yogurt, 1 tbsp tomato pur\u00e9e, 1 tbsp garlic pur\u00e9e, 1 tsp ground ginger, salt, pepper, 1 tsp oil, juice of a lemon, 1 tsp red food coloring (optional)."
+        },
+        {
+          "name": "Mint & Lime Yogurt",
+          "details": "1-2 tbsp fat-free yogurt, fresh mint, lime juice, pepper."
+        },
+        {
+          "name": "Cooking Instructions",
+          "details": "Coat chicken in marinade, thread onto skewers, air fry for 17 minutes at 200\u00b0C."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "L'amore dice ciao (From \"La matriarca - The Libertine\") - Main Titles \u2014 Armando Trovajoli",
+      "metadata_song": "original sound - Bored of Lunch",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The background music is a very popular aesthetic track often used in food videos."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "overhead",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Appetizing, bright, and efficient.",
+    "topic_hints": [
+      "Air fryer recipes",
+      "Healthy Indian food",
+      "Meal prep ideas"
+    ],
+    "affect_hints": ["Hungry", "Satisfied", "Productive"],
+    "genre_hints": ["Food TikTok", "Recipe tutorial"]
+  },
+  "metrics": {
+    "input_tokens": 3991,
+    "output_tokens": 1822,
+    "total_tokens": 5813,
+    "cost_usd": 0.001692,
+    "latency_ms": 18887,
+    "upload_ms": 5713
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "item_id": "CuzetXHLqh7",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:57.642137+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "health",
+      "micro_labels": [
+        "air fryer recipes",
+        "tandoori chicken",
+        "fakeaway",
+        "low calorie meals",
+        "meal prep"
+      ],
+      "confidence": 1.0
+    },
+    "genre": {
+      "label": "recipe",
+      "micro_labels": ["cooking tutorial", "air fryer demonstration"],
+      "confidence": 1.0
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      },
+      {
+        "label": "relaxing",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["voiceover", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 6823,
+    "output_tokens": 352,
+    "total_tokens": 7175,
+    "cost_usd": 0.001235,
+    "latency_ms": 6052,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 3
+  }
+}

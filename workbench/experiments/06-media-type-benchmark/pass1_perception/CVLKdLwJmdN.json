@@ -1,0 +1,300 @@
+{
+  "item_id": "CVLKdLwJmdN",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:36:20.315913+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "Hasan Minhaj standing with his wife, Beena Patel. Hasan wears a grey and white jumpsuit; Beena wears a yellow dress. A torn-paper effect on the right shows Hasan on stage in a white outfit.",
+        "text_detected": "Microsoft Theater",
+        "primary_content": "Hasan Minhaj and Beena Patel at the Microsoft Theater.",
+        "entities": [
+          {
+            "name": "Hasan Minhaj",
+            "type": "person",
+            "specifications": "Wearing grey/white jumpsuit"
+          },
+          {
+            "name": "Beena Patel",
+            "type": "person",
+            "specifications": "Wearing yellow dress"
+          },
+          {
+            "name": "Microsoft Theater",
+            "type": "place",
+            "specifications": "Venue in Los Angeles"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "A wide shot of Hasan Minhaj on a circular stage at the Microsoft Theater, viewed through a rectangular frame with torn edges. The audience is visible in the background.",
+        "text_detected": "",
+        "primary_content": "Hasan Minhaj performing on stage.",
+        "entities": [
+          {
+            "name": "Hasan Minhaj",
+            "type": "person",
+            "specifications": "On stage"
+          },
+          {
+            "name": "Microsoft Theater",
+            "type": "place",
+            "specifications": "Interior view"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "Hasan Minhaj on stage from behind, waving to a large, masked audience. A torn-paper overlay in the top right shows him walking backstage in his grey jumpsuit.",
+        "text_detected": "EXIT",
+        "primary_content": "Hasan Minhaj waving to the crowd.",
+        "entities": [
+          {
+            "name": "Hasan Minhaj",
+            "type": "person",
+            "specifications": "Waving to audience"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "A stylized text slide with a blurred background of red and white lights. A small inset at the bottom left shows Hasan Minhaj performing in a black shirt.",
+        "text_detected": "LOS ANGELES MICROSOFT THEATER OCTOBER 2021",
+        "primary_content": "Event location and date card.",
+        "entities": [
+          {
+            "name": "Los Angeles",
+            "type": "place",
+            "specifications": "City"
+          },
+          {
+            "name": "Microsoft Theater",
+            "type": "place",
+            "specifications": "Venue"
+          }
+        ]
+      },
+      {
+        "image_number": 5,
+        "description": "Hasan Minhaj standing in a backstage hallway wearing the grey jumpsuit. A torn-paper effect on the left shows a blurry, red-tinted motion shot.",
+        "text_detected": "",
+        "primary_content": "Hasan Minhaj backstage.",
+        "entities": [
+          {
+            "name": "Hasan Minhaj",
+            "type": "person",
+            "specifications": "Backstage portrait"
+          }
+        ]
+      },
+      {
+        "image_number": 6,
+        "description": "Hasan Minhaj with his arm around a woman with curly hair wearing a black crop top and a multi-colored plaid skirt in a backstage hallway.",
+        "text_detected": "",
+        "primary_content": "Hasan Minhaj with a friend/colleague backstage.",
+        "entities": [
+          {
+            "name": "Hasan Minhaj",
+            "type": "person",
+            "specifications": "Backstage"
+          }
+        ]
+      },
+      {
+        "image_number": 7,
+        "description": "A collage of three photos. Top: Hasan and Beena with a group of friends. Bottom left: Hasan with two men on stage (film strip border). Bottom right: A profile shot of Hasan looking down.",
+        "text_detected": "KODAK PORTRA 400 4",
+        "primary_content": "Collage of group photos and candid shots.",
+        "entities": [
+          {
+            "name": "Hasan Minhaj",
+            "type": "person",
+            "specifications": "Multiple shots"
+          },
+          {
+            "name": "Beena Patel",
+            "type": "person",
+            "specifications": "In group photo"
+          },
+          {
+            "name": "Kodak Portra 400",
+            "type": "brand",
+            "specifications": "Film stock aesthetic"
+          }
+        ]
+      },
+      {
+        "image_number": 8,
+        "description": "Hasan Minhaj in a black denim jacket with his arm around Lilly Singh, who is wearing a plaid shirt and a white Adidas cap.",
+        "text_detected": "HASAN MINHAJ",
+        "primary_content": "Hasan Minhaj with Lilly Singh.",
+        "entities": [
+          {
+            "name": "Hasan Minhaj",
+            "type": "person",
+            "specifications": "Wearing black jacket"
+          },
+          {
+            "name": "Lilly Singh",
+            "type": "person",
+            "specifications": "Wearing plaid shirt and white cap"
+          },
+          {
+            "name": "Adidas",
+            "type": "brand",
+            "specifications": "Hat logo"
+          }
+        ]
+      },
+      {
+        "image_number": 9,
+        "description": "Hasan Minhaj standing next to Ludwig Ahgren, who is wearing a brown corduroy jacket over a wavy-patterned shirt.",
+        "text_detected": "",
+        "primary_content": "Hasan Minhaj with Ludwig Ahgren.",
+        "entities": [
+          {
+            "name": "Hasan Minhaj",
+            "type": "person",
+            "specifications": "Wearing black jacket"
+          },
+          {
+            "name": "Ludwig Ahgren",
+            "type": "person",
+            "specifications": "Wearing corduroy jacket"
+          }
+        ]
+      },
+      {
+        "image_number": 10,
+        "description": "A collage of three photos. Top: Hasan talking to a group. Bottom left: Hasan posing with a man in a wheelchair. Bottom right: Hasan laughing with two other men.",
+        "text_detected": "HASAN MINHAJ",
+        "primary_content": "Candid moments with fans and friends.",
+        "entities": [
+          {
+            "name": "Hasan Minhaj",
+            "type": "person",
+            "specifications": "Interacting with guests"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post is a photo dump from Hasan Minhaj's comedy show weekend at the Microsoft Theater in Los Angeles in October 2021. It features a mix of professional stage photography, backstage portraits with his wife Beena Patel, and candid shots with fellow creators like Lilly Singh and Ludwig Ahgren. The creator is likely saving this as a career milestone and a thank-you to his LA audience.",
+    "carousel_type": "photo_dump",
+    "narrative_thread": "The images tell the story of a successful, high-energy performance weekend, transitioning from the scale of the theater stage to the intimate behind-the-scenes moments with family and famous friends.",
+    "entities": [
+      {
+        "name": "Hasan Minhaj",
+        "display_name": "Hasan Minhaj",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "Beena Patel",
+        "display_name": "Beena Patel",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "Lilly Singh",
+        "display_name": "Lilly Singh",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "slide_number": 8,
+        "confidence": 5
+      },
+      {
+        "name": "Ludwig Ahgren",
+        "display_name": "Ludwig Ahgren",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "slide_number": 9,
+        "confidence": 5
+      },
+      {
+        "name": "Microsoft Theater",
+        "display_name": "Microsoft Theater (Peacock Theater)",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["text_overlay", "visual"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "SpaceX",
+        "display_name": "SpaceX",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "slide_number": 1,
+        "confidence": 4,
+        "specifications": "Referenced as fashion inspiration for the jumpsuit"
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Hasan Minhaj successfully performed a multi-day run at the Microsoft Theater in LA in late 2021.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "The show attracted high-profile guests from the comedy and streaming communities.",
+        "source": "visual",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "The King's Jester Tour",
+          "details": "Live comedy performance at Microsoft Theater, Los Angeles",
+          "slide_number": 4
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "null",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "Identified key public figures (Lilly Singh, Ludwig) and venue details accurately."
+    },
+    "presentation_style": {
+      "primary_format": "photo_dump",
+      "visual_style": "aesthetic"
+    },
+    "visual_mood": "Triumphant, nostalgic, and professional with a 'scrapbook' torn-paper aesthetic.",
+    "topic_hints": ["Stand-up Comedy", "Live Events", "Los Angeles Culture"],
+    "affect_hints": ["Inspired", "Celebratory", "Connected"],
+    "genre_hints": ["Celebrity Recap", "Tour Diary"]
+  },
+  "metrics": {
+    "input_tokens": 12015,
+    "output_tokens": 2614,
+    "total_tokens": 14629,
+    "cost_usd": 0.003371,
+    "latency_ms": 22139,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 10
+  }
+}

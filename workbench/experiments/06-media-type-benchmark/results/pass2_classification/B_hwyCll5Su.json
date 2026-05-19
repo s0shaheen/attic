@@ -1,0 +1,67 @@
+{
+  "item_id": "B_hwyCll5Su",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:14.862474+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "travel",
+      "micro_labels": [
+        "tacos",
+        "NYC restaurants",
+        "Mexican food",
+        "Chelsea Manhattan",
+        "Taco Tuesday"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "review",
+      "micro_labels": ["restaurant recommendation", "food showcase"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["slideshow"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 5371,
+    "output_tokens": 318,
+    "total_tokens": 5689,
+    "cost_usd": 0.000996,
+    "latency_ms": 7953,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 2
+  }
+}

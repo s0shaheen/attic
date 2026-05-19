@@ -1,0 +1,153 @@
+{
+  "item_id": "DP87WHziMiI",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:41:11.137140+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "The creator shows a TouchDesigner workspace on her screen. She holds up her iPhone with the flashlight on, and digital white particles emit from the light source on the screen.",
+        "audio_description": "The creator says in Estonian: 'Laske ma n\u00e4itan teile midagi... taskulamp...' (Let me show you something... flashlight...)",
+        "text_on_screen": "fun webcam experiment from last night. pure white parts emit particles \u0f04\uff61\u00b0 / technique learnt from @tddsash on YouTube /",
+        "key_objects": ["iPhone", "TouchDesigner software", "Computer monitor"]
+      },
+      {
+        "time_range": "0:07-0:22",
+        "visual_description": "Close-up of the 'noise' operator parameters in TouchDesigner. The creator adjusts the 'Amplitude' and 'Offset' sliders, causing the particle flow on her phone screen to change density and movement.",
+        "audio_description": "Creator explains in Estonian: 'See on n\u00fc\u00fcd veits stabiilsem... sellel saab nii parameetreid muuta nii nagu sa ise tahad.' (It's a bit more stable now... you can change the parameters on this as you want.)",
+        "text_on_screen": "noise: noise1",
+        "key_objects": ["TouchDesigner UI", "Noise operator"]
+      },
+      {
+        "time_range": "0:22-0:25",
+        "visual_description": "The creator holds the phone again, showing the particles swirling around the bright screen like digital smoke.",
+        "audio_description": "Music lyrics: 'Yo, I got the worms in my phone.'",
+        "text_on_screen": "",
+        "key_objects": ["iPhone"]
+      },
+      {
+        "time_range": "0:25-0:35",
+        "visual_description": "The creator talks to the camera. She turns her head, and the particle effect (now yellow) tracks the highlights on her face. She then pretends to take a phone call.",
+        "audio_description": "Creator says in Estonian: 'POV: Natura Pharmaceuticals helistab sulle... Vabandage, ma ei saa r\u00e4\u00e4kida, ma olen alaealine.' (POV: Natura Pharmaceuticals calls you... Excuse me, I can't talk, I'm a minor.)",
+        "text_on_screen": "POV: NATURA PHARMACEUTICALS HELISTAB SULLE ET D-VITAMIINI M\u00dc\u00dcA",
+        "key_objects": ["iPhone"]
+      }
+    ],
+    "overall_summary": "Creator @nyltiek demonstrates a creative coding project built in TouchDesigner where white particles are programmed to emit from the brightest parts of a webcam feed. She shows the technical setup, specifically how adjusting noise parameters affects the particle behavior, and credits a tutorial by @tddsash for the technique. The video concludes with a humorous skit in Estonian where she uses the visual effect while pretending to decline a telemarketing call.",
+    "people": [
+      {
+        "description": "Young woman with dark hair, a new media artist and creator.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@nyltiek"
+      }
+    ],
+    "entities": [
+      {
+        "name": "TouchDesigner",
+        "display_name": "TouchDesigner",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": "Node-based visual programming language",
+        "confidence": 5
+      },
+      {
+        "name": "@tddsash",
+        "display_name": "tddsash",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "specifications": "YouTube tutorial creator",
+        "confidence": 5
+      },
+      {
+        "name": "iPhone",
+        "display_name": "Apple iPhone",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 4
+      },
+      {
+        "name": "Estonian",
+        "display_name": "Estonian Language",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Bright areas in a video feed can be isolated to act as emitters for particle systems in real-time visual software.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "Adjusting noise parameters like amplitude and offset allows for fine-tuning the aesthetic of generative art.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Software Requirement",
+          "details": "TouchDesigner"
+        },
+        {
+          "name": "Core Technique",
+          "details": "Thresholding or selecting 'pure white' parts of a webcam texture to emit particles."
+        },
+        {
+          "name": "Key Parameters",
+          "details": "Noise Operator (Simplex 3D GPU): Seed, Period, Harmonics, Amplitude, Offset."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Worms \u2014 No_4mat",
+      "metadata_song": "original sound - nyltiek",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Estonian speech transcribed and translated accurately."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "static",
+      "editing_style": "heavy_effects"
+    },
+    "visual_mood": "Creative, technical, and experimental with a playful ending.",
+    "topic_hints": [
+      "Generative Art",
+      "Creative Coding",
+      "TouchDesigner Tutorial"
+    ],
+    "affect_hints": ["Inspired", "Intrigued", "Amused"],
+    "genre_hints": ["Tech Demo", "Art Edit"]
+  },
+  "metrics": {
+    "input_tokens": 4709,
+    "output_tokens": 1522,
+    "total_tokens": 6231,
+    "cost_usd": 0.00162,
+    "latency_ms": 21638,
+    "upload_ms": 5589
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

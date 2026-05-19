@@ -1,0 +1,131 @@
+{
+  "item_id": "DTa5-Mvj1qC",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:37:13.471977+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:13",
+        "visual_description": "Jaylen Brown stands at a podium wearing glasses and a black shirt, delivering a sophisticated speech with a green leaf-patterned background.",
+        "audio_description": "Jaylen Brown: 'Today we're going to talk about the crossover and intersection between environmentalism, social justice and education... in combination with raising awareness, leveraging your platform and influence and investing in a sustainable future.'",
+        "text_on_screen": "How I start talking when fine shyt says she likes \ud83e\udd77's with intelligence",
+        "key_objects": ["glasses", "podium", "microphone"]
+      },
+      {
+        "time_range": "0:13-0:23",
+        "visual_description": "Jaylen Brown continues his lecture, gesturing with his hands to emphasize points about societal infrastructure.",
+        "audio_description": "Jaylen Brown: '...these events... put pressure on the infrastructure of our community, the infrastructure of our society, the infrastructure of our... economic and health systems.'",
+        "text_on_screen": "How I start talking when fine shyt says she likes \ud83e\udd77's with intelligence",
+        "key_objects": ["glasses"]
+      }
+    ],
+    "overall_summary": "This video features NBA star Jaylen Brown delivering an articulate and intellectual speech regarding the intersections of environmentalism, social justice, and education. The footage is framed by a humorous text overlay suggesting that this sophisticated persona is adopted to impress women who value intelligence. The video serves as both a tribute to Brown's intellectual depth and a relatable meme about 'performing' intelligence for a crush.",
+    "people": [
+      {
+        "description": "A Black man with a beard and glasses, wearing a black long-sleeve shirt, speaking articulately on a stage.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Jaylen Brown"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Jaylen Brown",
+        "display_name": "Jaylen Brown (NBA Player)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": "Boston Celtics Forward, #7",
+        "confidence": 5
+      },
+      {
+        "name": "Boston Celtics",
+        "display_name": "Boston Celtics",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "NBA Team",
+        "confidence": 5
+      },
+      {
+        "name": "Snooze",
+        "display_name": "Snooze \u2014 SZA",
+        "type": "song",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "Slowed and Reverb version",
+        "confidence": 4
+      },
+      {
+        "name": "Environmentalism",
+        "display_name": "Environmentalism",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Social Justice",
+        "display_name": "Social Justice",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Jaylen Brown is an articulate advocate for social and environmental issues outside of his basketball career.",
+        "source": "demonstration",
+        "confidence": 5
+      },
+      {
+        "statement": "The video uses a humorous framing to highlight the contrast between an athlete's physical reputation and their intellectual capacity.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": null
+    },
+    "audio_identification": {
+      "actual_song": "Snooze \u2014 SZA",
+      "metadata_song": "original sound - jaylenszn7",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Jaylen Brown is clearly identified from visual and metadata. The audio is a slowed version of SZA's 'Snooze'."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Intellectual, serious, and smooth with a humorous subtext.",
+    "topic_hints": ["NBA Players", "Social Activism", "Dating Humor"],
+    "affect_hints": ["Impressed", "Amused", "Inspired"],
+    "genre_hints": ["Sports Edit", "Meme"]
+  },
+  "metrics": {
+    "input_tokens": 3620,
+    "output_tokens": 1275,
+    "total_tokens": 4895,
+    "cost_usd": 0.001308,
+    "latency_ms": 20308,
+    "upload_ms": 5301
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

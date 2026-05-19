@@ -1,0 +1,70 @@
+{
+  "item_id": "7389839975719652650",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:40.295294+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "other",
+      "secondary": "relationships",
+      "micro_labels": [
+        "party culture",
+        "youth memories",
+        "aesthetic environments",
+        "lifestyle"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "pov",
+      "micro_labels": ["slideshow", "vibe edit"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "nostalgic",
+        "tier": "dominant"
+      },
+      {
+        "label": "relaxing",
+        "tier": "secondary"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 13930,
+    "output_tokens": 344,
+    "total_tokens": 14274,
+    "cost_usd": 0.002296,
+    "latency_ms": 8076,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 10
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "item_id": "DOclWfUjKYO",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:41:50.975288+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:07",
+        "visual_description": "The creator walks up to two young boys on a residential sidewalk and begins a comedic roast session.",
+        "audio_description": "Creator: 'How dare you try to cook me. How dare you. Where is... is there a neck in y'all family?'",
+        "text_on_screen": "Fck Dem Kids \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d\nPHUNNY_ASF",
+        "key_objects": ["Nike shirt", "Backpack"]
+      },
+      {
+        "time_range": "0:07-0:16",
+        "visual_description": "The creator continues to mock the boys' physical appearance as they walk alongside him, laughing and trying to retort.",
+        "audio_description": "Creator: 'Y'all look like... boy y'all look like two big ass... oh you got your haircut too!'",
+        "text_on_screen": "Fck Dem Kids \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d\nPHUNNY_ASF",
+        "key_objects": ["Khaki pants"]
+      },
+      {
+        "time_range": "0:16-0:25",
+        "visual_description": "The creator rubs the head of one of the boys, comparing his shaved head to a specific candy.",
+        "audio_description": "Creator: 'Your head look like a milk dud. Daaaang!' Kid: 'Why you so tight pimp?'",
+        "text_on_screen": "Fck Dem Kids \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d\nPHUNNY_ASF",
+        "key_objects": ["Milk Dud (reference)"]
+      },
+      {
+        "time_range": "0:25-0:33",
+        "visual_description": "The creator focuses on the second boy's forehead and their overall size while they continue walking.",
+        "audio_description": "Creator: 'Why your forehead bulging out like that? Y'all look like two gigantic wheels.'",
+        "text_on_screen": "Fck Dem Kids \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d\nPHUNNY_ASF",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:33-0:43",
+        "visual_description": "The camera pans down to the boys' shoes, and the creator uses a viral meme phrase to mock their footwear.",
+        "audio_description": "Creator: 'But look at your army shoes... what are those? What are... pull your pants leg up. What are those?!'",
+        "text_on_screen": "Fck Dem Kids \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d\nPHUNNY_ASF",
+        "key_objects": ["Black shoes", "Green shoes"]
+      }
+    ],
+    "overall_summary": "In this comedic POV video, creator @phunny_asf encounters two young boys on the street and engages in a lighthearted 'roast' session. He mocks various aspects of their appearance, including their lack of visible necks, their haircuts, their foreheads, and their choice of footwear. The kids attempt to roast him back, but the creator dominates the exchange with quick-witted insults. The video concludes with the creator using the viral 'What are those?' meme to make fun of their shoes.",
+    "people": [
+      {
+        "description": "The creator filming the video, seen only by his hand and heard off-camera.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@phunny_asf"
+      },
+      {
+        "description": "A young boy wearing a red graphic tee, a blue jacket, and khaki pants.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "A young boy wearing a black Nike t-shirt, a backpack, and khaki pants.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Nike",
+        "display_name": "Nike",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Swoosh logo on black t-shirt",
+        "confidence": 5
+      },
+      {
+        "name": "Milk Duds",
+        "display_name": "Milk Duds",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "Used as a comparison for a shaved head",
+        "confidence": 5
+      },
+      {
+        "name": "What are those?",
+        "display_name": "What are those? Meme",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video is a comedic street interaction centered on 'roasting' or 'joning' on others' appearances for entertainment.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound - Phunny_asf",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video relies entirely on dialogue and cultural meme references."
+    },
+    "presentation_style": {
+      "primary_format": "pov",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Humorous, chaotic, and high-energy street comedy.",
+    "topic_hints": ["Street Comedy", "Roasting", "Memes"],
+    "affect_hints": ["Amused", "Entertained", "Laughing"],
+    "genre_hints": ["Comedy Skit", "POV"]
+  },
+  "metrics": {
+    "input_tokens": 5378,
+    "output_tokens": 1510,
+    "total_tokens": 6888,
+    "cost_usd": 0.001713,
+    "latency_ms": 21475,
+    "upload_ms": 6071
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

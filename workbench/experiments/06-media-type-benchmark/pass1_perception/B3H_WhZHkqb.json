@@ -1,0 +1,130 @@
+{
+  "item_id": "B3H_WhZHkqb",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:37:27.152701+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "A person tilts a large-scale Pinscreen kinetic sculpture, causing thousands of metal pins to cascade through the frame in a wave-like motion.",
+        "audio_description": "The loud, rhythmic rushing sound of thousands of metal pins sliding through a grid.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Pinscreen sculpture",
+          "Metal pins",
+          "Diamond plate metal sheet"
+        ]
+      },
+      {
+        "time_range": "0:04-0:08",
+        "visual_description": "The demonstrator tilts the sculpture back and forth, showing the fluid movement of the pins as they reset and create new patterns.",
+        "audio_description": "Continued metallic sliding sounds as the pins shift positions.",
+        "text_on_screen": "",
+        "key_objects": ["Pinscreen sculpture"]
+      }
+    ],
+    "overall_summary": "This video demonstrates a large-scale kinetic sculpture known as a Pinscreen, invented by Ward Fleming. A person manipulates the device by tilting it, allowing thousands of individual metal pins to slide through a grid via gravity, creating fluid, wave-like visual patterns. The video highlights the tactile nature of the art piece and the distinct, satisfying metallic sound produced by the cascading pins.",
+    "people": [
+      {
+        "description": "A person whose hands and arms are visible as they manipulate the sculpture.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Ward Fleming",
+        "display_name": "Ward Fleming",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": "Inventor of the Pinscreen",
+        "confidence": 5
+      },
+      {
+        "name": "Pinscreen",
+        "display_name": "Pinscreen / Pin Art Sculpture",
+        "type": "product",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": "Large-scale kinetic metal pin sculpture",
+        "confidence": 5
+      },
+      {
+        "name": "@nervous_jessica",
+        "display_name": "Jessica (@nervous_jessica)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Video creator",
+        "confidence": 4
+      },
+      {
+        "name": "@ifyouhigh",
+        "display_name": "If You High (@ifyouhigh)",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Content curator account",
+        "confidence": 5
+      },
+      {
+        "name": "@fyu4a",
+        "display_name": "@fyu4a",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Source account",
+        "confidence": 3
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Kinetic art like the Pinscreen provides a multi-sensory experience through mechanical movement and gravity.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "null",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The audio consists entirely of the natural sound of the sculpture; no music is present."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Mesmerizing, tactile, and industrial.",
+    "topic_hints": ["Kinetic Art", "ASMR", "Industrial Design"],
+    "affect_hints": ["calm", "intrigued", "satisfied"],
+    "genre_hints": ["Oddly Satisfying", "Art Demo"]
+  },
+  "metrics": {
+    "input_tokens": 2190,
+    "output_tokens": 1122,
+    "total_tokens": 3312,
+    "cost_usd": 0.001002,
+    "latency_ms": 23434,
+    "upload_ms": 5668
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

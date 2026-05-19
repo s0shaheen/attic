@@ -1,0 +1,197 @@
+{
+  "item_id": "DOW6ZonjUkt",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:40:27.873482+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:21",
+        "visual_description": "Creator introduces his Uniqlo haul, explaining he specifically shopped in the women's section for better silhouettes.",
+        "audio_description": "Creator explains his strategy for shopping at Uniqlo, emphasizing the importance of trying things on in-store to find the right fit from the women's section.",
+        "text_on_screen": "Fall Favorites from Uniqlo\nRAIDED\nWOMEN'S SECTION",
+        "key_objects": ["Uniqlo clothing pile", "Trucker hat"]
+      },
+      {
+        "time_range": "0:21-1:04",
+        "visual_description": "Creator showcases the Jersey Barrel Pants in green and black, then demonstrates the fit on-camera.",
+        "audio_description": "He describes the fit of the barrel leg pants, noting he wears a size Large and is 5'10\" with a 31-32 waist. He mentions they are a thinner material suitable for fall transitions.",
+        "text_on_screen": "Jersey Barrel Pants",
+        "key_objects": [
+          "Uniqlo Jersey Barrel Pants (Green)",
+          "Uniqlo Jersey Barrel Pants (Black)"
+        ]
+      },
+      {
+        "time_range": "1:04-1:24",
+        "visual_description": "Creator presents the JW Anderson collaboration shirt, showing the tag and then wearing it over a white tee.",
+        "audio_description": "He discusses the boxy, cropped fit of the JW Anderson shirt, noting he chose an Extra Large.",
+        "text_on_screen": "JW Anderson Oxford Boxy Cropped Shirt",
+        "key_objects": ["Uniqlo x JW Anderson Oxford Boxy Cropped Shirt"]
+      },
+      {
+        "time_range": "1:24-1:43",
+        "visual_description": "Creator shows a green cardigan and puts it on, highlighting the cropped length.",
+        "audio_description": "He explains that most cardigans are too long, but this women's version provides a perfect cropped fit in size XL.",
+        "text_on_screen": "Souffl\u00e9 Yarn Short Cardigan",
+        "key_objects": ["Uniqlo Souffl\u00e9 Yarn Short Cardigan"]
+      },
+      {
+        "time_range": "1:43-2:00",
+        "visual_description": "Creator displays a grey waffle-knit long sleeve shirt.",
+        "audio_description": "He mentions he owns this in multiple colors and prefers to crop them for a more 'rugged' look.",
+        "text_on_screen": "Waffle T-Shirt Long Sleeve",
+        "key_objects": ["Uniqlo Waffle T-Shirt Long Sleeve"]
+      },
+      {
+        "time_range": "2:00-2:46",
+        "visual_description": "Creator tries on a dark grey ribbed polo sweater and discusses the fit and feedback from his mother.",
+        "audio_description": "He describes the soft material and the fit of the XL polo. He jokes about his mom thinking the neckline was too deep, but he likes the 'swag' of it.",
+        "text_on_screen": "Washable Knit Ribbed Polo Sweater",
+        "key_objects": ["Uniqlo Washable Knit Ribbed Polo Sweater"]
+      }
+    ],
+    "overall_summary": "Creator @shanmolu shares a curated list of fall fashion favorites from Uniqlo, specifically highlighting items sourced from the women's department to achieve unique silhouettes. He provides a detailed try-on for several pieces, including barrel-leg pants, cropped cardigans, and boxy shirts, while offering sizing advice based on his own measurements (5'10\", 31-32 waist). The video serves as a guide for men to experiment with proportions and cross-gender shopping to find specific fits like cropped lengths and wider legs that are often absent in standard menswear.",
+    "people": [
+      {
+        "description": "Male creator with a beard, wearing a trucker hat and various Uniqlo outfits.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@shanmolu"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Uniqlo",
+        "display_name": "Uniqlo",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Jersey Barrel Pants",
+        "display_name": "Uniqlo Women's Jersey Barrel Pants",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": "Size: Large; Colors: Green, Black",
+        "confidence": 5
+      },
+      {
+        "name": "JW Anderson Oxford Boxy Cropped Shirt",
+        "display_name": "Uniqlo x JW Anderson Oxford Boxy Cropped Shirt",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": "Size: Extra Large; Color: White",
+        "confidence": 5
+      },
+      {
+        "name": "Souffl\u00e9 Yarn Short Cardigan",
+        "display_name": "Uniqlo Women's Souffl\u00e9 Yarn Short Cardigan",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": "Size: Extra Large; Color: Green",
+        "confidence": 5
+      },
+      {
+        "name": "Waffle T-Shirt Long Sleeve",
+        "display_name": "Uniqlo Waffle T-Shirt Long Sleeve",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": "Color: Grey",
+        "confidence": 5
+      },
+      {
+        "name": "Washable Knit Ribbed Polo Sweater",
+        "display_name": "Uniqlo Women's Washable Knit Ribbed Polo Sweater",
+        "type": "clothing",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": "Size: Extra Large; Color: Dark Grey",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Shopping in the women's section at Uniqlo allows men to find specific silhouettes like barrel legs and cropped fits that are harder to find in menswear.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "When shopping across gendered sections, it is essential to try items on in-person to understand how the proportions translate to a different body type.",
+        "source": "voiceover",
+        "confidence": 4
+      },
+      {
+        "statement": "Sizing up (e.g., to XL) in women's tops can provide a desirable boxy and cropped fit for men around 5'10\".",
+        "source": "demonstration",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "product_list",
+      "items": [
+        {
+          "name": "Jersey Barrel Pants",
+          "details": "Size Large, available in Green and Black. Thinner material, good for fall transitions."
+        },
+        {
+          "name": "JW Anderson Oxford Boxy Cropped Shirt",
+          "details": "Size XL, White. Boxy and cropped silhouette."
+        },
+        {
+          "name": "Souffl\u00e9 Yarn Short Cardigan",
+          "details": "Size XL, Green. Shorter length than typical men's cardigans."
+        },
+        {
+          "name": "Waffle T-Shirt Long Sleeve",
+          "details": "Grey. Creator recommends cropping them for a better look."
+        },
+        {
+          "name": "Washable Knit Ribbed Polo Sweater",
+          "details": "Size XL, Dark Grey. Soft material, deep neckline."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "L'Amore Dice Ciao (Slowed) \u2014 Armando Trovajoli",
+      "metadata_song": "original sound - shan",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All products were explicitly named in text overlays and audio. Creator's height and waist measurements were clearly stated."
+    },
+    "presentation_style": {
+      "primary_format": "outfit_showcase",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Informative, stylish, and relaxed with a clean indoor aesthetic.",
+    "topic_hints": ["Men's Fashion", "Uniqlo Haul", "Style Tips"],
+    "affect_hints": ["Confident", "Inspirational", "Helpful"],
+    "genre_hints": ["Fashion Haul", "Try-on", "Style Guide"]
+  },
+  "metrics": {
+    "input_tokens": 16342,
+    "output_tokens": 2198,
+    "total_tokens": 18540,
+    "cost_usd": 0.00377,
+    "latency_ms": 37805,
+    "upload_ms": 14729
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

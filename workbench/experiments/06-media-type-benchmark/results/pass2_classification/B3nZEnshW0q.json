@@ -1,0 +1,66 @@
+{
+  "item_id": "B3nZEnshW0q",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:59.567863+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "technology",
+      "secondary": "education",
+      "micro_labels": [
+        "web development",
+        "programming",
+        "HTTP status codes",
+        "coding humor"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["educational meme", "tech humor"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "funny",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.85
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "educator",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 4255,
+    "output_tokens": 318,
+    "total_tokens": 4573,
+    "cost_usd": 0.000829,
+    "latency_ms": 5707,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "visual_input": "thumbnail",
+    "visual_count": 1
+  }
+}

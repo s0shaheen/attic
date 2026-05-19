@@ -1,0 +1,71 @@
+{
+  "item_id": "C4C6CpFCX1A",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:46:00.792214+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "fitness",
+      "secondary": "health",
+      "micro_labels": [
+        "mobility",
+        "stretching",
+        "lower back pain",
+        "flexibility",
+        "daily routine"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "workout",
+      "micro_labels": ["mobility flow", "stretching routine"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      },
+      {
+        "label": "relaxing",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["text_overlay", "cinematic"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.95
+    }
+  },
+  "metrics": {
+    "input_tokens": 6773,
+    "output_tokens": 349,
+    "total_tokens": 7122,
+    "cost_usd": 0.001225,
+    "latency_ms": 6176,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 3
+  }
+}

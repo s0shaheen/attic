@@ -1,0 +1,140 @@
+{
+  "item_id": "DQ4VRcFiHSX",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:39:18.211841+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:09",
+        "visual_description": "Pharrell Williams sits at a white desk with an Apple laptop, wearing a green cap and orange-tinted glasses. Overlaid text and social media comments appear as he begins to speak.",
+        "audio_description": "Pharrell says: 'The creative advice that I would give... write down all your fears, your flaws, insecurities, the guilt, the pressures. Look at them on a list.'",
+        "text_on_screen": "Probably one of the realest things Pharrell has ever said\nThe creative advice that I would give.\nWrite down all your fears, your flaws, insecurities, the guilt, the pressures. Look at them on a list.\nIt's winter\nMans hitting the ray charles\nif he could give creative advice to a younger version of himself, back when he was just getting started,, i wonder what he'd say?\nbro has one 808\nAre you the hsppy song guy",
+        "key_objects": [
+          "Apple MacBook",
+          "Green cap",
+          "Orange-tinted glasses",
+          "GQ logo"
+        ]
+      },
+      {
+        "time_range": "0:09-0:19",
+        "visual_description": "Close up on Pharrell as he gestures with his hands to emphasize his point about distractions. The background is a solid light blue.",
+        "audio_description": "Pharrell continues: 'No, they're all distractions. Once you do that, you will experience your life uninterrupted. That is the most important thing that you can do for your creativity is to eliminate all the distractions. Period.'",
+        "text_on_screen": "No, they're all distractions.\nOnce you do that, you will experience your life uninterrupted.\nThat is the most important thing that you can do for your creativity is to eliminate all the distractions.\nPeriod.",
+        "key_objects": ["Pharrell Williams"]
+      }
+    ],
+    "overall_summary": "In this GQ interview clip, Pharrell Williams shares a profound piece of creative advice centered on mental clarity. He suggests writing down all fears, flaws, and insecurities to visualize them as a list, then recognizing them as mere distractions. The main takeaway is that eliminating these mental 'noises' allows a person to live and create 'uninterrupted,' which he considers the most vital step for any creative individual.",
+    "people": [
+      {
+        "description": "Pharrell Williams, a famous musician and producer, wearing a brown sweatshirt, green 'Human Made' style hat, and orange glasses.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Pharrell Williams"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Pharrell Williams",
+        "display_name": "Pharrell Williams",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "GQ",
+        "display_name": "GQ Magazine",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Logo visible in top left",
+        "confidence": 5
+      },
+      {
+        "name": "Apple",
+        "display_name": "Apple MacBook",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Laptop with Apple logo",
+        "confidence": 5
+      },
+      {
+        "name": "Instagram",
+        "display_name": "Instagram",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Platform of origin",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Fears, flaws, and insecurities should be viewed as distractions rather than reality.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Eliminating mental distractions is the most important thing a person can do for their creativity.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Identify Distractions",
+          "details": "Write down all fears, flaws, insecurities, guilt, and pressures."
+        },
+        {
+          "name": "Visualize",
+          "details": "Look at them on a list to separate them from yourself."
+        },
+        {
+          "name": "Eliminate",
+          "details": "Recognize them as distractions to experience life uninterrupted."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Lo-fi hip hop background beat \u2014 Unidentified",
+      "metadata_song": "null",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Pharrell is clearly identified. The background music is generic lo-fi used for social media edits."
+    },
+    "presentation_style": {
+      "primary_format": "interview",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Reflective, professional, and focused.",
+    "topic_hints": ["Creativity", "Mental Health", "Self-Improvement"],
+    "affect_hints": ["Inspired", "Empowered", "Calm"],
+    "genre_hints": ["Motivational", "Interview Clip"]
+  },
+  "metrics": {
+    "input_tokens": 3314,
+    "output_tokens": 1364,
+    "total_tokens": 4678,
+    "cost_usd": 0.001316,
+    "latency_ms": 18382,
+    "upload_ms": 3689
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

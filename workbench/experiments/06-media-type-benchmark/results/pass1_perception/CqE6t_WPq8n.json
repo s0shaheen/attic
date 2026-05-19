@@ -1,0 +1,165 @@
+{
+  "item_id": "CqE6t_WPq8n",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:38:22.241369+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:10",
+        "visual_description": "Simon Sinek stands on a stage, gesturing with his hands while explaining a psychological concept about the brain.",
+        "audio_description": "The human brain cannot comprehend the negative. It is incapable. I'll give you an example. You ready? Don't think of an elephant.",
+        "text_on_screen": "The human brain\ncannot comprehend\nthe negative\nit is incapable\nI'll give you an example\nyou ready?\ndon't think of an elephant\nYoung + Alive\nThis video will change your life in 2023",
+        "key_objects": ["glasses", "button-down shirt"]
+      },
+      {
+        "time_range": "0:10-0:23",
+        "visual_description": "Sinek uses a skiing analogy, mimicking the motion of skiing and looking at trees.",
+        "audio_description": "You can't tell the human brain not to do something. Skiers know this. If you go through trees on skis and you go, 'don't hit a tree, don't hit a tree, don't hit a tree,' guess what you're watching? You're only looking at trees.",
+        "text_on_screen": "you can't tell the human brain\nnot to do something\nSkiers know this\nif you go through\ntrees on skis and you go\ndon't hit a tree\nguess what you're watching\nyou're only looking at trees",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:23-0:30",
+        "visual_description": "Sinek contrasts the previous example by showing the positive focus of following a path.",
+        "audio_description": "As opposed to 'follow the snow, follow the path, follow the path.' The only thing you see is the path.",
+        "text_on_screen": "as opposed to\nfollow the snow\nfollow the path\nthe only thing you see\nis the path",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:30-0:45",
+        "visual_description": "Sinek concludes by applying the analogy to career and life perspective, pointing toward the audience.",
+        "audio_description": "It's the same thing for you. If you focus on the obstacles, all you will see is obstacles. If you focus on the path through the trees, all you will see is path through the trees. It's your choice how you choose to perceive your own career. It's literally perspective.",
+        "text_on_screen": "it's the same thing for you\nif you focus on the obstacles\nall you will see is obstacles\nif you focus on the path\nthrough the trees\nall you will see\nis path through the trees\nit's your choice\nhow you choose to perceive\nyour own career\nit's literally perspective",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "In this motivational clip, Simon Sinek explains that the human brain is incapable of processing negative commands effectively. He uses the 'don't think of an elephant' exercise and a skiing analogy to show that focusing on what to avoid (obstacles) only makes those obstacles more prominent. The main takeaway is that by consciously choosing to focus on the 'path' or the goal rather than the hurdles, individuals can better navigate their careers and lives through a shift in perspective.",
+    "people": [
+      {
+        "description": "A man with short dark hair and glasses, wearing a dark navy button-down shirt, speaking as a motivational presenter.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Simon Sinek"
+      },
+      {
+        "description": "The account owner who shared the video with a Ramadan-themed caption.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Suhaib Webb"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Simon Sinek",
+        "display_name": "Simon Sinek",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Suhaib Webb",
+        "display_name": "Imam Suhaib Webb",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Ramadan 2023",
+        "display_name": "Ramadan 2023",
+        "type": "event",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Young + Alive",
+        "display_name": "Young + Alive",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "specifications": "Content watermark",
+        "confidence": 4
+      },
+      {
+        "name": "mindset.4.future",
+        "display_name": "mindset.4.future",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Original content curator",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The human brain cannot process negative instructions; it focuses on the subject of the command regardless of the 'don't'.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Focusing on obstacles makes them the only thing you see, whereas focusing on the path reveals the way forward.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Success in one's career and life is largely a matter of choosing the right perspective.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "instructions",
+      "items": [
+        {
+          "name": "Focus Shift",
+          "details": "Stop focusing on what you want to avoid (obstacles) and start focusing on the desired outcome (the path)."
+        },
+        {
+          "name": "Perspective Choice",
+          "details": "Actively choose to perceive your career through the lens of opportunities rather than limitations."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Ambient Motivational Background Music - Unidentified",
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": 3,
+      "notes": "The speaker is clearly Simon Sinek. The audio is a generic motivational background track common in social media edits."
+    },
+    "presentation_style": {
+      "primary_format": "talking_head",
+      "camera_work": "static",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Inspirational, focused, and educational with a clean, minimalist stage aesthetic.",
+    "topic_hints": ["Psychology", "Mindset", "Career Advice"],
+    "affect_hints": ["Empowered", "Enlightened", "Motivated"],
+    "genre_hints": ["Motivational Speech", "Educational Clip"]
+  },
+  "metrics": {
+    "input_tokens": 5528,
+    "output_tokens": 1885,
+    "total_tokens": 7413,
+    "cost_usd": 0.00196,
+    "latency_ms": 23516,
+    "upload_ms": 8339
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

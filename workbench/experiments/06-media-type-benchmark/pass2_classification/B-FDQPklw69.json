@@ -1,0 +1,71 @@
+{
+  "item_id": "B-FDQPklw69",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:04.044619+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "comedy",
+      "micro_labels": [
+        "Four Lions",
+        "Riz Ahmed",
+        "Watch Party",
+        "British Cinema",
+        "Satire"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": ["event announcement", "promotional poster"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "funny",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 4337,
+    "output_tokens": 352,
+    "total_tokens": 4689,
+    "cost_usd": 0.000862,
+    "latency_ms": 4997,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "visual_input": "thumbnail",
+    "visual_count": 1
+  }
+}

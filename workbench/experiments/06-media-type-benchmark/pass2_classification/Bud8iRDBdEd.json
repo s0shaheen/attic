@@ -1,0 +1,67 @@
+{
+  "item_id": "Bud8iRDBdEd",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:01.305974+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "relationships",
+      "secondary": "health",
+      "micro_labels": [
+        "family dynamics",
+        "mental health",
+        "parental rejection",
+        "dogelore",
+        "childhood trauma"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["dogelore", "comic strip", "doomer meme"],
+      "confidence": 0.98
+    },
+    "affect": [
+      {
+        "label": "sad",
+        "tier": "dominant"
+      },
+      {
+        "label": "funny",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.8
+    },
+    "communicative_intent": {
+      "label": "vent",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "emotional_regulation",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 4247,
+    "output_tokens": 335,
+    "total_tokens": 4582,
+    "cost_usd": 0.000838,
+    "latency_ms": 7446,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "visual_input": "thumbnail",
+    "visual_count": 1
+  }
+}

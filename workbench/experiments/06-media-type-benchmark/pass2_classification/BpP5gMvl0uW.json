@@ -1,0 +1,66 @@
+{
+  "item_id": "BpP5gMvl0uW",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:51.113812+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "comedy",
+      "secondary": "fashion",
+      "micro_labels": [
+        "Fashion Nova Men",
+        "streetwear",
+        "influencer skit",
+        "mispronunciation humor"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "skit",
+      "micro_labels": ["comedic dialogue"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["raw_footage"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 7506,
+    "output_tokens": 313,
+    "total_tokens": 7819,
+    "cost_usd": 0.001314,
+    "latency_ms": 5053,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 4
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "item_id": "CtY-pg3MFhW",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:40:55.036806+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Behind-the-scenes footage of Andrew Garfield as Spider-Man webbing Emma Stone's (Gwen Stacy) hand to a police car hood.",
+        "audio_description": "Spider-Man says: 'You're coming with me. Shut the thing.'",
+        "text_on_screen": "THE AMAZING SPIDER-MAN 2\nBEHIND THE SCENES",
+        "key_objects": ["Spider-Man suit", "NTPD Police Car", "Web shooter"]
+      },
+      {
+        "time_range": "0:03-0:06",
+        "visual_description": "Spider-Man runs away from the car while Gwen Stacy struggles to pull her hand free from the webbing. The bottom half of the screen shows the final movie version of the same scene.",
+        "audio_description": "Spider-Man: 'Sorry, I love you, don't hate me!'",
+        "text_on_screen": "THE AMAZING SPIDER-MAN 2\nBEHIND THE SCENES",
+        "key_objects": ["Police car"]
+      },
+      {
+        "time_range": "0:06-0:08",
+        "visual_description": "Gwen Stacy yells after Peter as he swings away. The bottom frame shows the cinematic lighting and effects of the final cut.",
+        "audio_description": "Gwen Stacy yells: 'Peter!'",
+        "text_on_screen": "THE AMAZING SPIDER-MAN 2\nBEHIND THE SCENES",
+        "key_objects": ["Police car"]
+      }
+    ],
+    "overall_summary": "This video features a side-by-side comparison of behind-the-scenes footage and the final cinematic cut from 'The Amazing Spider-Man 2'. It captures the moment Peter Parker (Andrew Garfield) webs Gwen Stacy's (Emma Stone) hand to a police car to keep her out of danger. The caption highlights a piece of movie trivia, noting that Emma Stone's yell of 'Peter' was an unscripted improvisation during filming.",
+    "people": [
+      {
+        "description": "Actor in the Spider-Man suit, performing the scene where he webs Gwen to a car.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Andrew Garfield"
+      },
+      {
+        "description": "Actress playing Gwen Stacy, wearing a green coat and purple skirt, reacting to being webbed to a car.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Emma Stone"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Andrew Garfield",
+        "display_name": "Andrew Garfield",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Emma Stone",
+        "display_name": "Emma Stone",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "The Amazing Spider-Man 2",
+        "display_name": "The Amazing Spider-Man 2",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["text_overlay", "metadata"],
+        "specifications": "2014 film",
+        "confidence": 5
+      },
+      {
+        "name": "Spider-Man",
+        "display_name": "Spider-Man (Peter Parker)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": "Marvel character",
+        "confidence": 5
+      },
+      {
+        "name": "Gwen Stacy",
+        "display_name": "Gwen Stacy",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": "Marvel character",
+        "confidence": 5
+      },
+      {
+        "name": "Marvel",
+        "display_name": "Marvel",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Emma Stone's yell of 'Peter' in the police car scene was unscripted.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "The video demonstrates the difference between raw on-set footage and the final color-graded movie scene.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Original movie dialogue and set audio",
+      "metadata_song": "null",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video is a well-known BTS clip from a major motion picture."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "split_screen",
+      "editing_style": "montage"
+    },
+    "visual_mood": "Nostalgic and energetic, contrasting the bright, raw set lighting with the dark, cinematic final cut.",
+    "topic_hints": ["Filmmaking", "Marvel Movies", "Spider-Man"],
+    "affect_hints": ["Nostalgic", "Amused", "Impressed"],
+    "genre_hints": ["Behind the scenes", "Movie trivia", "Fan edit"]
+  },
+  "metrics": {
+    "input_tokens": 2341,
+    "output_tokens": 1518,
+    "total_tokens": 3859,
+    "cost_usd": 0.001262,
+    "latency_ms": 18740,
+    "upload_ms": 3391
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "item_id": "DD4XTA2sOIc",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:46.005580+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "beauty",
+      "secondary": "fashion",
+      "micro_labels": [
+        "modern mullet",
+        "layered haircut",
+        "men's grooming",
+        "curly hair styling"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": ["haircut showcase", "visual reference"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["text_overlay", "raw_footage"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.95
+    }
+  },
+  "metrics": {
+    "input_tokens": 4327,
+    "output_tokens": 325,
+    "total_tokens": 4652,
+    "cost_usd": 0.000844,
+    "latency_ms": 6237,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}

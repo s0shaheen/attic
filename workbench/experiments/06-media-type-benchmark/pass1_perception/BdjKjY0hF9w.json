@@ -1,0 +1,125 @@
+{
+  "item_id": "BdjKjY0hF9w",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:34.542710+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "A high-contrast, composite-style photograph of the sun's disk. A diagonal line of dark silhouettes shows the path of the International Space Station (ISS) as it transits across the center of the sun.",
+        "audio_description": "No audio provided.",
+        "text_on_screen": "None",
+        "key_objects": ["Sun", "International Space Station (ISS)"]
+      }
+    ],
+    "overall_summary": "This image, captured by amateur astronomer Alan Strauss on New Year\u2019s Day in Tucson, Arizona, depicts the International Space Station (ISS) transiting the sun. The photo illustrates the incredible precision required to capture the station, which is only the size of a football field and travels at approximately 17,500 mph. The result is a striking visual of the ISS's silhouette bisecting the sun's middle.",
+    "people": [
+      {
+        "description": "Amateur astronomer and photographer who captured the image.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Alan Strauss"
+      }
+    ],
+    "entities": [
+      {
+        "name": "International Space Station",
+        "display_name": "International Space Station (ISS)",
+        "type": "product",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": "Size of a football field; speed of 17,500 mph",
+        "confidence": 5
+      },
+      {
+        "name": "Sun",
+        "display_name": "The Sun",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Tucson, Arizona",
+        "display_name": "Tucson, Arizona",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "NASA",
+        "display_name": "NASA",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "CNN",
+        "display_name": "CNN (@cnn)",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Alan Strauss",
+        "display_name": "Alan Strauss",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "specifications": "Amateur astronomer",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Capturing the ISS transiting the sun requires extreme precision due to the station's high speed (17,500 mph) and small relative size.",
+        "source": "metadata",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "Metadata provided all necessary context for the still image."
+    },
+    "presentation_style": {
+      "primary_format": "other",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Scientific, precise, and awe-inspiring.",
+    "topic_hints": ["Astronomy", "Astrophotography", "Space Exploration"],
+    "affect_hints": ["Wonder", "Amazement", "Curiosity"],
+    "genre_hints": ["Science News", "Photography Showcase"]
+  },
+  "metrics": {
+    "input_tokens": 2642,
+    "output_tokens": 1069,
+    "total_tokens": 3711,
+    "cost_usd": 0.001038,
+    "latency_ms": 11697,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

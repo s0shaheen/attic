@@ -1,0 +1,212 @@
+{
+  "item_id": "CdWqaWypXQQ",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:39:15.530247+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Close-up of various meats grilling on a circular Japanese BBQ grill.",
+        "audio_description": "Check out this all you can eat Japanese BBQ in Mass.",
+        "text_on_screen": "AYCE Japanese BBQ in MA",
+        "key_objects": ["Japanese BBQ grill", "meat"]
+      },
+      {
+        "time_range": "0:02-0:04",
+        "visual_description": "Shot of a restaurant booth followed by a close-up of the Gyu-Kaku AYCE menu showing three tiers.",
+        "audio_description": "First you choose between 3 all you can eat tier options & for",
+        "text_on_screen": "First you choose between 3 all you can eat tier options & for",
+        "key_objects": ["Gyu-Kaku menu", "restaurant booth"]
+      },
+      {
+        "time_range": "0:04-0:07",
+        "visual_description": "Montage of appetizers including salad, fried rice, chicken karaage, and crab rangoons.",
+        "audio_description": "appetizers my favorite was the chicken karaage & crab rangoons.",
+        "text_on_screen": "appetizers my favorite was the chicken karaage & crab rangoons.",
+        "key_objects": [
+          "chicken karaage",
+          "crab rangoons",
+          "fried rice",
+          "salad"
+        ]
+      },
+      {
+        "time_range": "0:07-0:11",
+        "visual_description": "Servers placing multiple plates of raw, marinated meats on the table.",
+        "audio_description": "Here you grill your own meats & can dip it into either ponzu, spicy, or sweet soy sauce.",
+        "text_on_screen": "Here you grill your own meats & can dip it into either ponzu, spicy, or sweet soy sauce.",
+        "key_objects": ["raw meat plates", "dipping sauces"]
+      },
+      {
+        "time_range": "0:11-0:14",
+        "visual_description": "Creator uses tongs to grill meat and then dips a cooked piece of bistro hanger steak into sauce.",
+        "audio_description": "My favorite was the bistro hanger steak.",
+        "text_on_screen": "My favorite was the bistro hanger steak.",
+        "key_objects": ["bistro hanger steak", "tongs", "dipping sauce"]
+      },
+      {
+        "time_range": "0:14-0:17",
+        "visual_description": "Display of mochi ice cream followed by marshmallows being roasted on skewers over the grill.",
+        "audio_description": "They also have unlimited desserts. I recommend trying the s'mores.",
+        "text_on_screen": "They also have unlimited desserts. I recommend trying the s'mores.",
+        "key_objects": ["mochi ice cream", "marshmallows", "skewers"]
+      },
+      {
+        "time_range": "0:17-0:19",
+        "visual_description": "Exterior shot of the Gyu-Kaku Japanese BBQ Dining entrance at night.",
+        "audio_description": "All of this at Gyu Kaku.",
+        "text_on_screen": "More food @sacha.eats on insta All of this at Gyu Kaku.",
+        "key_objects": ["Gyu-Kaku storefront"]
+      }
+    ],
+    "overall_summary": "This video is a review of Gyu-Kaku Japanese BBQ in Massachusetts, highlighting their All-You-Can-Eat (AYCE) dining options. The creator explains the three-tier menu system and showcases various appetizers like chicken karaage and crab rangoons. The main focus is on the DIY grilling experience with various meats, specifically recommending the bistro hanger steak. The video concludes by mentioning unlimited desserts, such as s'mores and mochi, making it a comprehensive guide for anyone looking to visit this restaurant.",
+    "people": [
+      {
+        "description": "Creator providing voiceover and showing food",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "@sacha.eats"
+      },
+      {
+        "description": "Restaurant servers delivering food to the table",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Gyu-Kaku Japanese BBQ",
+        "display_name": "Gyu-Kaku Japanese BBQ",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": ["visual", "audio", "metadata"],
+        "specifications": "AYCE tiers: Premium ($45), Ultimate ($55), Supreme ($66)",
+        "confidence": 5
+      },
+      {
+        "name": "Massachusetts",
+        "display_name": "Massachusetts",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Bistro Hanger Steak",
+        "display_name": "Bistro Hanger Steak",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Recommended meat option",
+        "confidence": 5
+      },
+      {
+        "name": "Chicken Karaage",
+        "display_name": "Chicken Karaage",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Appetizer",
+        "confidence": 5
+      },
+      {
+        "name": "Crab Rangoons",
+        "display_name": "Crab Rangoons",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Appetizer",
+        "confidence": 5
+      },
+      {
+        "name": "S'mores",
+        "display_name": "S'mores",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Dessert",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Gyu-Kaku offers three different tiers of All-You-Can-Eat Japanese BBQ.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The bistro hanger steak and chicken karaage are highly recommended menu items.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "The dining experience includes unlimited desserts like s'mores that you can roast at the table.",
+        "source": "voiceover",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Bistro Hanger Steak",
+          "details": "Creator's favorite meat option for grilling."
+        },
+        {
+          "name": "Chicken Karaage",
+          "details": "Recommended appetizer."
+        },
+        {
+          "name": "Crab Rangoons",
+          "details": "Recommended appetizer."
+        },
+        {
+          "name": "S'mores",
+          "details": "Recommended dessert roasted over the BBQ grill."
+        },
+        {
+          "name": "AYCE Tiers",
+          "details": "Premium ($45), Ultimate ($55), Supreme ($66)"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "L'amore dice ciao (From \"La matriarca\") - Main Titles - Armando Trovajoli",
+      "metadata_song": "original sound - sacha.eats",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": 4,
+      "notes": "The audio is a popular lo-fi remix of 'L'amore dice ciao' frequently used on TikTok."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Appetizing, warm, and energetic food-focused atmosphere.",
+    "topic_hints": ["Japanese BBQ", "All You Can Eat", "Boston Dining"],
+    "affect_hints": ["Hungry", "Excited", "Satisfied"],
+    "genre_hints": ["Food Review", "Restaurant Recommendation"]
+  },
+  "metrics": {
+    "input_tokens": 3456,
+    "output_tokens": 2241,
+    "total_tokens": 5697,
+    "cost_usd": 0.001863,
+    "latency_ms": 21391,
+    "upload_ms": 4565
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

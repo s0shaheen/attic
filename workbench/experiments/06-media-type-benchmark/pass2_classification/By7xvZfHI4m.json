@@ -1,0 +1,66 @@
+{
+  "item_id": "By7xvZfHI4m",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:20.433586+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "movies_tv",
+      "secondary": "music",
+      "micro_labels": [
+        "2000s nostalgia",
+        "Disney Channel",
+        "Gen Z culture",
+        "pop culture"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["nostalgia dump", "photo dump"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "nostalgic",
+        "tier": "dominant"
+      },
+      {
+        "label": "wholesome",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.85
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "emotional_regulation",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 11845,
+    "output_tokens": 330,
+    "total_tokens": 12175,
+    "cost_usd": 0.001975,
+    "latency_ms": 7984,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 8
+  }
+}

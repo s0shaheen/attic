@@ -1,0 +1,171 @@
+{
+  "item_id": "B_DM_dRlv-S",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:37:51.518604+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:19",
+        "visual_description": "Riz Ahmed, Guz Khan, and Hasan Minhaj appear in a three-way split-screen video call. Riz discusses fan art featuring their friend group.",
+        "audio_description": "Riz Ahmed mentions fan art of himself, Ramy Youssef, Mo Amer, and Hasan Minhaj, questioning the existence of a secret WhatsApp group.",
+        "text_on_screen": "cuz someone drew some fan art of you and Ramy; you two and Ramy and Mo Amer; I'm guessing you were joking but you said yeah; I've sent this to the WhatsApp group; and I was like \"Hahaha as if there's a WhatsApp group\" innit; coz then...",
+        "key_objects": ["Smartphone", "Webcam"]
+      },
+      {
+        "time_range": "0:20-0:25",
+        "visual_description": "Guz Khan reacts defensively with his hands up, laughing while Hasan Minhaj smiles in the bottom frame.",
+        "audio_description": "Guz Khan jokingly denies being the administrator of the alleged secret group chat.",
+        "text_on_screen": "I just want to say I'm not admin; I'm not admin; Hilarious",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:26-0:36",
+        "visual_description": "Riz Ahmed continues the joke while Hasan and Guz react with mock outrage and laughter.",
+        "audio_description": "Riz tells them they are 'going to hell' for the secret group; Guz responds with 'La hawla wala quwwata illa billah' (There is no power nor strength except by Allah).",
+        "text_on_screen": "Yeah I hope you guys are enjoying that WhatsApp group; you're all going to hell; Brother, excuse me brother. You can't say these things",
+        "key_objects": []
+      },
+      {
+        "time_range": "0:37-0:58",
+        "visual_description": "Riz Ahmed reveals his own exclusive connection, causing Hasan to lean back in mock despair and Guz to ask for an invite.",
+        "audio_description": "Riz claims he has a private chat with Mahershala Ali that is just the two of them. Guz asks to be added, but Riz jokingly asks who else would even fit in that group.",
+        "text_on_screen": "It's cool. I'll just stick, yeah to the; the WhatsApp group with me and Mahershala; Oh, come on don't do that; Na but put me in that one, put me in that one; You know what the sad thing is bro, it's not a group; It's just me and Mahershala; Who else would we put in that group bro?; It's not a WhatsApp group; Listen, I would liven it straight up; ...and I was like come on bro let me in",
+        "key_objects": []
+      }
+    ],
+    "overall_summary": "In this humorous video call snippet, actors Riz Ahmed, Guz Khan, and Hasan Minhaj engage in playful banter regarding 'side threads' and exclusive WhatsApp groups. Riz starts by teasing the others about a group chat he was excluded from, which Guz jokingly denies managing. Riz then turns the tables by revealing he has a private, two-person chat with Mahershala Ali, leaving Hasan and Guz jokingly begging for an invite. The video highlights the lighthearted friendship and shared cultural humor between the three stars.",
+    "people": [
+      {
+        "description": "British actor and musician, wearing a black shirt, leading the conversation.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Riz Ahmed"
+      },
+      {
+        "description": "British comedian and actor, wearing a white shirt, reacting with high energy.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Guz Khan"
+      },
+      {
+        "description": "American comedian and actor, wearing a green hoodie, laughing and participating in the banter.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Hasan Minhaj"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Riz Ahmed",
+        "display_name": "Riz Ahmed",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Guz Khan",
+        "display_name": "Guz Khan",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Hasan Minhaj",
+        "display_name": "Hasan Minhaj",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Ramy Youssef",
+        "display_name": "Ramy Youssef",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Mo Amer",
+        "display_name": "Mo Amer",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Mahershala Ali",
+        "display_name": "Mahershala Ali",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "WhatsApp",
+        "display_name": "WhatsApp",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": ["audio", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Celebrity friend groups experience the same humorous dynamics and 'FOMO' regarding group chats as anyone else.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound - Riz Ahmed",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All individuals and references are clearly identified through audio and visual cues."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Humorous, energetic, and friendly.",
+    "topic_hints": [
+      "Celebrity Friendships",
+      "Group Chat Culture",
+      "Muslim Comedians"
+    ],
+    "affect_hints": ["Amused", "Playful", "Excluded"],
+    "genre_hints": ["Comedy", "Interview Snippet", "Social Media Interaction"]
+  },
+  "metrics": {
+    "input_tokens": 6712,
+    "output_tokens": 1866,
+    "total_tokens": 8578,
+    "cost_usd": 0.002126,
+    "latency_ms": 24363,
+    "upload_ms": 5581
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

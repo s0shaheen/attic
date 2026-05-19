@@ -1,0 +1,254 @@
+{
+  "item_id": "7418683486002842912",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:25:32.890493+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "An overhead view of the Oklahoma City Thunder basketball team huddling around a coach or player drawing on a tactical whiteboard.",
+        "text_detected": "that pre-exam huddle when another class did the exam the other period\nTHUNDER 0\nTHUNDER 9\nDURANT 35",
+        "primary_content": "Meme scenario: Getting intel from students who already took the test.",
+        "entities": [
+          {
+            "name": "Oklahoma City Thunder",
+            "type": "brand",
+            "specifications": "NBA Team"
+          },
+          {
+            "name": "Russell Westbrook",
+            "type": "person",
+            "specifications": "Jersey #0"
+          },
+          {
+            "name": "Kevin Durant",
+            "type": "person",
+            "specifications": "Jersey #35"
+          },
+          {
+            "name": "Serge Ibaka",
+            "type": "person",
+            "specifications": "Jersey #9"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "LeBron James in a Cleveland Cavaliers huddle, speaking intensely to his teammates who are wearing holiday-themed warm-up shirts.",
+        "text_detected": "the pre-exam huddle with the smart one teaching everyone everything\nCLEVELAND CAVALIERS\nadidas",
+        "primary_content": "Meme scenario: The 'smart' student giving a last-minute crash course.",
+        "entities": [
+          {
+            "name": "LeBron James",
+            "type": "person",
+            "specifications": "Cleveland Cavaliers era"
+          },
+          {
+            "name": "Cleveland Cavaliers",
+            "type": "brand",
+            "specifications": "NBA Team"
+          },
+          {
+            "name": "Adidas",
+            "type": "brand",
+            "specifications": "Apparel manufacturer"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "Vintage photo of Los Angeles Lakers coach Pat Riley writing on a clipboard while Magic Johnson and Kareem Abdul-Jabbar look on.",
+        "text_detected": "the pre-exam huddle when someone got the questions\nLAKERS 33\nTAKERS 32",
+        "primary_content": "Meme scenario: When someone manages to leak the exam questions.",
+        "entities": [
+          {
+            "name": "Pat Riley",
+            "type": "person",
+            "specifications": "Head Coach"
+          },
+          {
+            "name": "Magic Johnson",
+            "type": "person",
+            "specifications": "Jersey #32"
+          },
+          {
+            "name": "Kareem Abdul-Jabbar",
+            "type": "person",
+            "specifications": "Jersey #33"
+          },
+          {
+            "name": "Los Angeles Lakers",
+            "type": "brand",
+            "specifications": "NBA Team"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "Chicago Bulls players including Derrick Rose and Joakim Noah huddling with the team mascot, Benny the Bull.",
+        "text_detected": "the pre-exam huddle with the guy hyping everyone up that it 'will all be fine'\nBULLS 1",
+        "primary_content": "Meme scenario: The optimistic friend providing emotional support despite the difficulty.",
+        "entities": [
+          {
+            "name": "Derrick Rose",
+            "type": "person",
+            "specifications": "Jersey #1"
+          },
+          {
+            "name": "Joakim Noah",
+            "type": "person",
+            "specifications": "Center"
+          },
+          {
+            "name": "Benny the Bull",
+            "type": "person",
+            "specifications": "Team Mascot"
+          },
+          {
+            "name": "Chicago Bulls",
+            "type": "brand",
+            "specifications": "NBA Team"
+          }
+        ]
+      },
+      {
+        "image_number": 5,
+        "description": "Team USA basketball players in a tight huddle with their hands raised together in the center.",
+        "text_detected": "the pre-exam huddle accepting we are all cooked\nBOSH 12\nBRYANT 10\n8",
+        "primary_content": "Meme scenario: Collective acceptance of failure/defeat before the exam starts.",
+        "entities": [
+          {
+            "name": "Kobe Bryant",
+            "type": "person",
+            "specifications": "Jersey #10"
+          },
+          {
+            "name": "Chris Bosh",
+            "type": "person",
+            "specifications": "Jersey #12"
+          },
+          {
+            "name": "Deron Williams",
+            "type": "person",
+            "specifications": "Jersey #8"
+          },
+          {
+            "name": "USA Basketball",
+            "type": "brand",
+            "specifications": "National Team"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This TikTok slideshow uses iconic NBA huddle imagery to represent various relatable student experiences immediately before an exam. Each slide depicts a different 'archetype' of pre-test behavior, such as the 'smart' student teaching others or the group collectively accepting they are unprepared. It targets a student demographic (GCSE/A-Level) using high-energy sports metaphors to evoke a sense of shared academic anxiety and humor.",
+    "carousel_type": "meme",
+    "narrative_thread": "The progression moves from strategic preparation (getting intel, being taught) to desperate measures (leaked questions) and finally to emotional support and the ultimate acceptance of failure ('being cooked').",
+    "entities": [
+      {
+        "name": "NBA",
+        "display_name": "National Basketball Association",
+        "type": "brand",
+        "relevance": "primary",
+        "source": ["metadata", "visual"],
+        "confidence": 5
+      },
+      {
+        "name": "LeBron James",
+        "display_name": "LeBron James",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 2,
+        "confidence": 5
+      },
+      {
+        "name": "Kobe Bryant",
+        "display_name": "Kobe Bryant",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "slide_number": 5,
+        "confidence": 5
+      },
+      {
+        "name": "GCSE / A-Level Exams",
+        "display_name": "UK Secondary Education Exams",
+        "type": "event",
+        "relevance": "primary",
+        "source": ["metadata", "text_overlay"],
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Student exam preparation is often a chaotic, collaborative social event characterized by last-minute cramming and emotional solidarity.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "The Intel Gatherer",
+          "details": "Asking students from previous periods about the test content.",
+          "slide_number": 1
+        },
+        {
+          "name": "The Tutor",
+          "details": "The high-achieving student explaining concepts to the group.",
+          "slide_number": 2
+        },
+        {
+          "name": "The Leaker",
+          "details": "The student who found the actual questions online or elsewhere.",
+          "slide_number": 3
+        },
+        {
+          "name": "The Hype Man",
+          "details": "The friend offering blind optimism to reduce stress.",
+          "slide_number": 4
+        },
+        {
+          "name": "The Defeated",
+          "details": "The group accepting that they are going to fail ('cooked').",
+          "slide_number": 5
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "original sound \u2014 kayed1tzz",
+      "metadata_song": "original sound - kayed1tzz \u2014 Kay",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "All major NBA players and teams correctly identified from visual cues and jersey numbers."
+    },
+    "presentation_style": {
+      "primary_format": "meme",
+      "visual_style": "informational"
+    },
+    "visual_mood": "Intense, focused, and humorous.",
+    "topic_hints": ["NBA Basketball", "School Exams", "Student Life"],
+    "affect_hints": ["Relatability", "Anxiety", "Camaraderie"],
+    "genre_hints": ["Relatable Student Content", "Sports Memes"]
+  },
+  "metrics": {
+    "input_tokens": 6679,
+    "output_tokens": 2172,
+    "total_tokens": 8851,
+    "cost_usd": 0.002305,
+    "latency_ms": 14141,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 5
+  }
+}

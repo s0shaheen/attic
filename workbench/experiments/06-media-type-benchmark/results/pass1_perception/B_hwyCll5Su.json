@@ -1,0 +1,158 @@
+{
+  "item_id": "B_hwyCll5Su",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:36:02.471711+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "Extreme close-up of four tacos on a dark plate. Two tacos feature golden-brown battered fried fish, and two feature grilled steak topped with bright green guacamole. Each taco is garnished with a thin, circular slice of yellow beet.",
+        "text_detected": "",
+        "primary_content": "Dish: Fish and Steak Tacos at Temerario",
+        "entities": [
+          {
+            "name": "Temerario",
+            "type": "restaurant",
+            "specifications": "Chelsea, Manhattan"
+          },
+          {
+            "name": "Fish Tacos",
+            "type": "recipe",
+            "specifications": "Battered and fried"
+          },
+          {
+            "name": "Steak Tacos",
+            "type": "recipe",
+            "specifications": "Grilled meat with guacamole"
+          },
+          {
+            "name": "Yellow Beet",
+            "type": "ingredient",
+            "specifications": "Sliced garnish"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "A top-down view of two steak tacos on a black plate. The tacos are loaded with grilled steak, green salsa/guacamole, and topped with a yellow beet slice. A lime wedge is on the side, and a bowl of black beans and rice is partially visible in the background.",
+        "text_detected": "",
+        "primary_content": "Dish: Steak Tacos at Temerario",
+        "entities": [
+          {
+            "name": "Temerario",
+            "type": "restaurant",
+            "specifications": "Chelsea, Manhattan"
+          },
+          {
+            "name": "Steak Tacos",
+            "type": "recipe",
+            "specifications": "Served with lime and side of beans"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post showcases a variety of tacos from Temerario in Chelsea, Manhattan, specifically for Taco Tuesday. The creator, @ariandthefoodie, presents high-quality close-ups of battered fish tacos and steak tacos topped with guacamole and unique yellow beet slices. The post is likely saved by users looking for Mexican food recommendations in NYC or specifically for Taco Tuesday inspiration.",
+    "carousel_type": "photo_dump",
+    "narrative_thread": "The images highlight the visual appeal of the food at Temerario, asking the audience to choose between fish and steak options.",
+    "entities": [
+      {
+        "name": "Temerario",
+        "display_name": "Temerario NYC",
+        "type": "restaurant",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "slide_number": 1,
+        "specifications": "Chelsea, Manhattan",
+        "confidence": 5
+      },
+      {
+        "name": "ariandthefoodie",
+        "display_name": "@ariandthefoodie",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["metadata"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "Fish Tacos",
+        "display_name": "Battered Fish Tacos",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "slide_number": 1,
+        "confidence": 5
+      },
+      {
+        "name": "Steak Tacos",
+        "display_name": "Steak Tacos with Guacamole",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "slide_number": 1,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Temerario in Chelsea is a recommended spot for Taco Tuesday.",
+        "source": "implied",
+        "confidence": 4
+      },
+      {
+        "statement": "The restaurant serves unique taco variations featuring yellow beet garnishes.",
+        "source": "visual",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Fish Tacos",
+          "details": "Battered and fried fish on corn tortillas with yellow beet garnish.",
+          "slide_number": 1
+        },
+        {
+          "name": "Steak Tacos",
+          "details": "Grilled steak with guacamole and yellow beet garnish.",
+          "slide_number": 2
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "Metadata provided clear location and dish names which match the visual evidence perfectly."
+    },
+    "presentation_style": {
+      "primary_format": "photo_dump",
+      "visual_style": "aesthetic"
+    },
+    "visual_mood": "Appetizing, vibrant, and colorful.",
+    "topic_hints": ["NYC Food", "Mexican Cuisine", "Taco Tuesday"],
+    "affect_hints": ["Hungry", "Inspired", "Indulgent"],
+    "genre_hints": ["Food Review", "Lifestyle"]
+  },
+  "metrics": {
+    "input_tokens": 3510,
+    "output_tokens": 1340,
+    "total_tokens": 4850,
+    "cost_usd": 0.001331,
+    "latency_ms": 8729,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 2
+  }
+}

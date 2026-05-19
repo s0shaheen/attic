@@ -1,0 +1,185 @@
+{
+  "item_id": "CnfuOqRBPqV",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:13.450556+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "A static, stylized watercolor painting of Spider-Man in a crouching pose against a dark, speckled background.",
+        "audio_description": "David Choe asks, 'You know what that is?' followed by the sound of a web shooter.",
+        "text_on_screen": "YOU KNOW WHAT THAT IS?",
+        "key_objects": ["Spider-Man painting"]
+      },
+      {
+        "time_range": "0:04-0:15",
+        "visual_description": "The painting remains static as the creator begins a story about teaching a child the web-shooting gesture.",
+        "audio_description": "Creator explains: 'Spider-Man shooting webs. I was teaching this little kid how to fold their hands to make the Spider-Man shooting webs symbol...'",
+        "text_on_screen": "SPIDER MAN SHOOTING WEBS I WAS TEACHING THIS LITTLE KID HOW TO FOLD THEIR HANDS TO MAKE THE SPIDER MAN SHOOTING WEBS SYMBOL",
+        "key_objects": ["Spider-Man painting"]
+      },
+      {
+        "time_range": "0:15-0:20",
+        "visual_description": "The static painting continues as the punchline of the anecdote is delivered.",
+        "audio_description": "Creator continues: '...and they flicked me off, they stuck their middle finger out.'",
+        "text_on_screen": "AND THEY FLICKED ME OFF THEY STUCK THEIR MIDDLE FINGER OUT",
+        "key_objects": ["Spider-Man painting"]
+      },
+      {
+        "time_range": "0:20-0:30",
+        "visual_description": "The painting remains on screen while the creator draws a connection between the gesture and sign language.",
+        "audio_description": "Creator notes: 'But you ever look at Spider-Man's hand when he shoots the webs, he puts his two fingers down and he hits, tries to hit his wrist. It's the same symbol as I love you.'",
+        "text_on_screen": "BUT YOU EVER LOOK AT SPIDERMAN'S HAND WHEN HE PUTS HIS TWO FINGERS DOWN AND HE HITS TRIES TO HIT HIS WRIST IT'S THE SAME SYMBOL AS I LOVE YOU",
+        "key_objects": ["Spider-Man painting"]
+      },
+      {
+        "time_range": "0:30-0:49",
+        "visual_description": "The static painting is shown as the creator lists Spider-Man's enemies and reinterprets his combat style.",
+        "audio_description": "Creator lists the Sinister Six: 'Doc Ock, Sandman, Mysterio, Electro, Kraven the Hunter, Vulture.' He concludes by suggesting Spider-Man is literally saying 'I love you' in sign language to them.",
+        "text_on_screen": "SO YOU SEE ALL THE TIMES SPIDER MAN FOUGHT THE SINISTER SIX DOC OCK, SANDMAN, MYSTERIO, ELECTRO, CRAVEN THE HUNTER, VULTURE. MAYBE MAYBE HE'S NOT TRYING TO ATTACK THEM MAYBE HE'S LITERALLY SAYING IN SIGN LANGUAGE I LOVE YOU TO THEM",
+        "key_objects": ["Spider-Man painting"]
+      }
+    ],
+    "overall_summary": "Artist David Choe shares a humorous and philosophical observation while displaying his own watercolor painting of Spider-Man. He recounts a story of trying to teach a child Spider-Man's web-shooting hand gesture, only to have the child flip him off. Choe then points out that the specific hand position used to shoot webs is identical to the American Sign Language (ASL) sign for 'I love you.' He jokingly suggests that every time Spider-Man fights the Sinister Six, he is actually expressing love to his enemies through his combat gestures.",
+    "people": [
+      {
+        "description": "Artist and creator narrating the video.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "David Choe"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Spider-Man",
+        "display_name": "Spider-Man (Peter Parker)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "audio", "text_overlay"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Sinister Six",
+        "display_name": "The Sinister Six",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Marvel villain group",
+        "confidence": 5
+      },
+      {
+        "name": "American Sign Language",
+        "display_name": "American Sign Language (ASL)",
+        "type": "technique",
+        "relevance": "supporting",
+        "source": ["audio", "text_overlay"],
+        "specifications": "I Love You sign",
+        "confidence": 5
+      },
+      {
+        "name": "Doc Ock",
+        "display_name": "Doctor Octopus",
+        "type": "person",
+        "relevance": "background",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Otto Octavius",
+        "confidence": 5
+      },
+      {
+        "name": "Sandman",
+        "display_name": "Sandman",
+        "type": "person",
+        "relevance": "background",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Flint Marko",
+        "confidence": 5
+      },
+      {
+        "name": "Mysterio",
+        "display_name": "Mysterio",
+        "type": "person",
+        "relevance": "background",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Quentin Beck",
+        "confidence": 5
+      },
+      {
+        "name": "Electro",
+        "display_name": "Electro",
+        "type": "person",
+        "relevance": "background",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Max Dillon",
+        "confidence": 5
+      },
+      {
+        "name": "Kraven the Hunter",
+        "display_name": "Kraven the Hunter",
+        "type": "person",
+        "relevance": "background",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Sergei Kravinoff",
+        "confidence": 5
+      },
+      {
+        "name": "Vulture",
+        "display_name": "Vulture",
+        "type": "person",
+        "relevance": "background",
+        "source": ["audio", "text_overlay"],
+        "specifications": "Adrian Toomes",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Spider-Man's web-shooting hand gesture is identical to the ASL sign for 'I love you'.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Spider-Man's battles can be humorously reinterpreted as him expressing love to his enemies.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": "original sound - davidchoe",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video features a static image of the creator's artwork with a voiceover story."
+    },
+    "presentation_style": {
+      "primary_format": "voiceover",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Artistic and contemplative with a humorous narrative tone.",
+    "topic_hints": ["Spider-Man", "Sign Language", "Marvel Comics", "Art"],
+    "affect_hints": ["Amused", "Thoughtful", "Creative"],
+    "genre_hints": ["Storytime", "Fan Theory", "Art Showcase"]
+  },
+  "metrics": {
+    "input_tokens": 5901,
+    "output_tokens": 2113,
+    "total_tokens": 8014,
+    "cost_usd": 0.002153,
+    "latency_ms": 25703,
+    "upload_ms": 5860
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

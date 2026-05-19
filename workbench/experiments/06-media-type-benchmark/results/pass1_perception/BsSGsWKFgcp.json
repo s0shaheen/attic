@@ -1,0 +1,102 @@
+{
+  "item_id": "BsSGsWKFgcp",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:42:25.454958+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "Nollywood actor Osita Iheme, carrying a purple bag and wearing a blue t-shirt, walks away from the camera while gesturing dismissively and speaking over his shoulder.",
+        "audio_description": "The character says, 'Please, please, I don't have any time for any gossip now. Eh? Yes. Look at him.'",
+        "text_on_screen": "When someone tries to tell me what I did when I was drunk last night.",
+        "key_objects": ["purple bag", "blue t-shirt"]
+      }
+    ],
+    "overall_summary": "This is a popular reaction meme featuring Nigerian actor Osita Iheme, commonly known as 'Pawpaw'. The video uses a clip from a Nollywood film where his character dismissively walks away from a conversation, labeling it as 'gossip'. The text overlay applies this to the relatable situation of avoiding hearing about one's embarrassing actions after a night of drinking.",
+    "people": [
+      {
+        "description": "A young-looking man with a dismissive attitude, carrying a bag and walking away.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Osita Iheme"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Osita Iheme",
+        "display_name": "Osita Iheme",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "cultural_reference"],
+        "specifications": "Nollywood actor",
+        "confidence": 5
+      },
+      {
+        "name": "Pawpaw",
+        "display_name": "Pawpaw (Character/Nickname)",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": ["cultural_reference"],
+        "specifications": "Famous meme persona",
+        "confidence": 5
+      },
+      {
+        "name": "Nollywood",
+        "display_name": "Nollywood",
+        "type": "cultural_reference",
+        "relevance": "supporting",
+        "source": ["inferred"],
+        "specifications": "Nigerian film industry",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The video humorously depicts the desire to remain in denial about one's behavior while intoxicated.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The subject is a very famous meme figure from Nigerian cinema."
+    },
+    "presentation_style": {
+      "primary_format": "skit",
+      "camera_work": "handheld",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Humorous, dismissive, and sassy.",
+    "topic_hints": [
+      "drinking culture",
+      "social embarrassment",
+      "Nollywood memes"
+    ],
+    "affect_hints": ["amused", "dismissive", "unbothered"],
+    "genre_hints": ["reaction meme", "comedy"]
+  },
+  "metrics": {
+    "input_tokens": 1907,
+    "output_tokens": 873,
+    "total_tokens": 2780,
+    "cost_usd": 0.00081,
+    "latency_ms": 15681,
+    "upload_ms": 3634
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "item_id": "CbSlcoND-jZ",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:41:29.497808+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:02",
+        "visual_description": "Close-up of three cooked salmon fillets glazed with sauce and topped with sesame seeds and chives; a fork flakes a piece off.",
+        "audio_description": "This is the salmon of my dreams.",
+        "text_on_screen": "",
+        "key_objects": ["Salmon fillets", "Sesame seeds", "Chives", "Fork"]
+      },
+      {
+        "time_range": "0:02-0:07",
+        "visual_description": "Creator mixes sriracha, mayonnaise, honey, and sesame oil in a white bowl.",
+        "audio_description": "In a bowl add sriracha and mayo, generous amounts of hot honey, a tiny bit of sesame oil and mix.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Sriracha bottle",
+          "Mayonnaise bottle",
+          "Honey bottle",
+          "Sesame oil",
+          "Mixing bowl"
+        ]
+      },
+      {
+        "time_range": "0:07-0:11",
+        "visual_description": "Creator shows a raw salmon fillet with skin, then seasons four fillets on a wire rack with salt and pepper.",
+        "audio_description": "I like skin on salmon fillets. Hefty pinch of salt, a dust of pepper.",
+        "text_on_screen": "",
+        "key_objects": [
+          "Salmon fillets",
+          "Salt",
+          "Black pepper",
+          "Wire cooling rack"
+        ]
+      },
+      {
+        "time_range": "0:11-0:16",
+        "visual_description": "Creator coats the salmon fillets in the sauce and arranges them in an air fryer basket.",
+        "audio_description": "Get each piece lost in the sauce. Make sure they're spaced out and beautiful like you. And into the air fryer at 400.",
+        "text_on_screen": "",
+        "key_objects": ["Sauce", "Air fryer basket", "Black nitrile gloves"]
+      },
+      {
+        "time_range": "0:16-0:22",
+        "visual_description": "Creator presents the finished salmon on a plate, takes a large bite, and expresses satisfaction.",
+        "audio_description": "They only need like 10-12 minutes. And as always, bismillah. It's so simple but so delicious.",
+        "text_on_screen": "",
+        "key_objects": ["Cooked salmon", "Plate", "Fork"]
+      }
+    ],
+    "overall_summary": "Ahmad Alzahabi (@thegoldenbalance) demonstrates a quick and easy recipe for Honey Sriracha Salmon. He prepares a glaze using sriracha, mayo, honey, and sesame oil, then seasons salmon fillets with salt and pepper. After coating the fish in the sauce, he air fries them at 400\u00b0F for approximately 10-12 minutes. The video concludes with him tasting the final product, emphasizing its simplicity and flavor.",
+    "people": [
+      {
+        "description": "Young man with dark curly hair and a beard, wearing a black t-shirt and black gloves.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Ahmad Alzahabi"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Ahmad Alzahabi",
+        "display_name": "Ahmad Alzahabi (@thegoldenbalance)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata", "visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Honey Sriracha Salmon",
+        "display_name": "Honey Sriracha Salmon",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": ["text_overlay", "audio", "metadata"],
+        "specifications": "Air fried at 400F",
+        "confidence": 5
+      },
+      {
+        "name": "Huy Fong Sriracha",
+        "display_name": "Huy Fong Sriracha Hot Chili Sauce",
+        "type": "product",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "1/4 cup",
+        "confidence": 5
+      },
+      {
+        "name": "Salmon",
+        "display_name": "Salmon Fillets",
+        "type": "ingredient",
+        "relevance": "primary",
+        "source": ["visual", "audio", "metadata"],
+        "specifications": "2lbs, skin-on",
+        "confidence": 5
+      },
+      {
+        "name": "Air Fryer",
+        "display_name": "Air Fryer",
+        "type": "app_or_tool",
+        "relevance": "supporting",
+        "source": ["visual", "audio", "metadata"],
+        "specifications": "400F for 10-15 minutes",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Honey Sriracha Salmon is a simple yet delicious meal that can be prepared quickly in an air fryer.",
+        "source": "voiceover",
+        "confidence": 5
+      },
+      {
+        "statement": "Air frying salmon at 400\u00b0F for 10-12 minutes results in a perfectly cooked fillet.",
+        "source": "voiceover",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Honey Sriracha Glaze",
+          "details": "1/4 cup sriracha, 1/4 cup mayo, 1/4 cup honey (or hot honey), 1 tsp sesame oil."
+        },
+        {
+          "name": "Salmon Preparation",
+          "details": "2lbs skin-on salmon fillets seasoned with salt and pepper to taste."
+        },
+        {
+          "name": "Cooking Instructions",
+          "details": "Coat salmon in glaze. Air fry at 400\u00b0F for 10-15 minutes. Alternatively, oven bake at 425\u00b0F for similar time and finish with a broil."
+        },
+        {
+          "name": "Garnish",
+          "details": "Sesame seeds and chopped chives."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Chill Lofi Hip Hop Beat - Unknown Artist",
+      "metadata_song": "null",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": false,
+      "notes": "The background music is a generic lofi hip hop track common in cooking videos; specific artist not identified. Recipe details are fully extracted from caption and audio."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "overhead",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Appetizing, energetic, and efficient.",
+    "topic_hints": [
+      "Air Fryer Recipes",
+      "Seafood Cooking",
+      "Quick Weeknight Meals"
+    ],
+    "affect_hints": ["Hungry", "Inspired", "Satisfied"],
+    "genre_hints": ["Food TikTok", "Recipe Tutorial"]
+  },
+  "metrics": {
+    "input_tokens": 3559,
+    "output_tokens": 1878,
+    "total_tokens": 5437,
+    "cost_usd": 0.001661,
+    "latency_ms": 23458,
+    "upload_ms": 5490
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "item_id": "BsIToEWghhy",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:14.020896+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "comedy",
+      "secondary": "music",
+      "micro_labels": [
+        "6ix9ine parody",
+        "rapper parody",
+        "morning routine parody"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "pov",
+      "micro_labels": ["skit", "parody", "satire"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "cringe",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["text_overlay", "voiceover"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 8607,
+    "output_tokens": 323,
+    "total_tokens": 8930,
+    "cost_usd": 0.001485,
+    "latency_ms": 9609,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 5
+  }
+}

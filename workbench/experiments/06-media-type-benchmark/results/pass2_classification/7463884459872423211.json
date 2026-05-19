@@ -1,0 +1,66 @@
+{
+  "item_id": "7463884459872423211",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:42.324347+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "travel",
+      "micro_labels": [
+        "chicago pizza",
+        "restaurant recommendations",
+        "non-deep dish pizza",
+        "chicago food guide"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "ranking",
+      "micro_labels": ["top spots list", "food recommendations"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 13367,
+    "output_tokens": 326,
+    "total_tokens": 13693,
+    "cost_usd": 0.002201,
+    "latency_ms": 10106,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 10
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "item_id": "C7p-tGiMP_-",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:43.249898+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "politics",
+      "secondary": "other",
+      "micro_labels": [
+        "student council",
+        "school election",
+        "campaign",
+        "student life"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "skit",
+      "micro_labels": ["campaign ad", "parody", "humorous pitch"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "cringe",
+        "tier": "secondary"
+      },
+      {
+        "label": "wholesome",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["talking_head", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "persuade",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 4276,
+    "output_tokens": 353,
+    "total_tokens": 4629,
+    "cost_usd": 0.000853,
+    "latency_ms": 10547,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}

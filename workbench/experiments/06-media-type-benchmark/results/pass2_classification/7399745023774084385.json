@@ -1,0 +1,70 @@
+{
+  "item_id": "7399745023774084385",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:43.129069+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "art",
+      "secondary": "relationships",
+      "micro_labels": [
+        "impasto painting",
+        "text message subtext",
+        "visual metaphor",
+        "emotional expression"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "other",
+      "micro_labels": ["art showcase"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "sad",
+        "tier": "dominant"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "secondary"
+      },
+      {
+        "label": "wholesome",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.98
+    },
+    "communicative_intent": {
+      "label": "vent",
+      "confidence": 0.85
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 9510,
+    "output_tokens": 341,
+    "total_tokens": 9851,
+    "cost_usd": 0.001631,
+    "latency_ms": 10911,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 6
+  }
+}

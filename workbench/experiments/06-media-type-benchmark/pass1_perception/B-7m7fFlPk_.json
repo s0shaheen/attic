@@ -1,0 +1,176 @@
+{
+  "item_id": "B-7m7fFlPk_",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:40:49.495509+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:15",
+        "visual_description": "Creator prepares strawberry pie filling by slicing fresh strawberries, mixing them with sugar and cornstarch in a bowl, and pouring them into a raw pie crust.",
+        "audio_description": "The song 'Le Festin' plays softly. Sounds of chopping and mixing are heard.",
+        "text_on_screen": "@rileybona",
+        "key_objects": [
+          "Driscoll's strawberries",
+          "mixing bowl",
+          "pie crust",
+          "knife",
+          "sugar",
+          "cornstarch"
+        ]
+      },
+      {
+        "time_range": "0:15-0:28",
+        "visual_description": "Creator applies the top crust, crimps the edges with a fork, cuts a decorative floral vent in the center, brushes with egg wash, and sprinkles with coarse sugar before placing it in the oven.",
+        "audio_description": "The music continues at a steady pace. Sounds of a fork crimping and sugar sprinkling.",
+        "text_on_screen": "100% GRASS-FED",
+        "key_objects": [
+          "pie dish",
+          "baking sheet",
+          "pastry brush",
+          "sugar bowl",
+          "oven"
+        ]
+      },
+      {
+        "time_range": "0:28-0:53",
+        "visual_description": "A chaotic, fast-paced montage showing the creator washing hands repeatedly, a rabbit and chicken eating strawberry scraps, news reports of the COVID-19 pandemic, and the creator curled in a ball on the kitchen floor looking stressed.",
+        "audio_description": "The music becomes distorted, sped up, and high-pitched. A tea kettle whistles loudly. Andrew Cuomo's voice from a news clip: 'The bad news isn't just bad...'",
+        "text_on_screen": "COVID-19 NEW YORK; BREAKING OVERNIGHT; NEW HOPE DESPITE SURGING DEATH TOLL; DOCTORS: SOCIAL DISTANCING IS WORKING, MUST CONTINUE; THE SPREAD; HOME; LIVES",
+        "key_objects": [
+          "Mrs. Meyer's Clean Day soap",
+          "Television",
+          "Andrew Cuomo",
+          "Rabbit",
+          "Chicken",
+          "Copper tea kettle",
+          "Cat"
+        ]
+      },
+      {
+        "time_range": "0:53-0:59",
+        "visual_description": "An oven timer dings, breaking the tension. The creator stands up from the floor, looking exhausted but relieved. The final shot shows the perfectly baked, golden-brown strawberry pie.",
+        "audio_description": "A sharp 'ding' sound. The music returns to its original, pleasant tempo and volume.",
+        "text_on_screen": "",
+        "key_objects": ["Baked strawberry pie", "Cooling rack"]
+      }
+    ],
+    "overall_summary": "This video starts as a serene strawberry pie-making tutorial but quickly transitions into a chaotic representation of life during the 2020 COVID-19 lockdowns. The creator uses fast-paced editing and distorted audio to juxtapose the peaceful act of baking with the anxiety of pandemic news, hand-washing, and isolation. It concludes with the oven timer dinging, signaling the completion of the pie and a brief moment of relief from the surrounding chaos.",
+    "people": [
+      {
+        "description": "Young male with brown hair, wearing a grey hoodie and green pants. He is seen baking and later appearing distressed on the floor.",
+        "is_creator": true,
+        "speaking": false,
+        "identified_as": "Riley Bona"
+      },
+      {
+        "description": "Former Governor of New York appearing on a television news broadcast regarding COVID-19.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Andrew Cuomo"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Driscoll's",
+        "display_name": "Driscoll's Strawberries",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Plastic clamshell packaging",
+        "confidence": 5
+      },
+      {
+        "name": "Mrs. Meyer's Clean Day",
+        "display_name": "Mrs. Meyer's Hand Soap",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Basil scent (green label)",
+        "confidence": 5
+      },
+      {
+        "name": "Le Festin",
+        "display_name": "Le Festin \u2014 Camille",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": "From the Ratatouille soundtrack",
+        "confidence": 5
+      },
+      {
+        "name": "COVID-19",
+        "display_name": "COVID-19 Pandemic",
+        "type": "event",
+        "relevance": "primary",
+        "source": ["text_overlay", "audio", "visual"],
+        "specifications": "2020 New York outbreak context",
+        "confidence": 5
+      },
+      {
+        "name": "Strawberry Pie",
+        "display_name": "Homemade Strawberry Pie",
+        "type": "recipe",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "Double crust with floral vents",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Baking served as a therapeutic but often frantic coping mechanism for many during the COVID-19 pandemic lockdowns.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recipe",
+      "items": [
+        {
+          "name": "Strawberry Pie Filling",
+          "details": "Fresh sliced strawberries, granulated sugar, cornstarch."
+        },
+        {
+          "name": "Pie Assembly",
+          "details": "Double pie crust, fork-crimped edges, floral vent cuts, egg wash/milk wash, coarse sugar topping."
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "Le Festin \u2014 Camille",
+      "metadata_song": "original sound - Riley Bona",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The video uses a very popular TikTok trend from 2020 that contrasts domestic tasks with pandemic anxiety."
+    },
+    "presentation_style": {
+      "primary_format": "tutorial_demo",
+      "camera_work": "overhead",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Starts cozy and aesthetic, shifts to high-anxiety and frantic, ends with a sense of accomplishment.",
+    "topic_hints": ["Baking", "Pandemic Life", "Mental Health"],
+    "affect_hints": ["Anxious", "Calm", "Overwhelmed", "Relieved"],
+    "genre_hints": ["Cooking Tutorial", "Relatable Skit"]
+  },
+  "metrics": {
+    "input_tokens": 6713,
+    "output_tokens": 1674,
+    "total_tokens": 8387,
+    "cost_usd": 0.002011,
+    "latency_ms": 21619,
+    "upload_ms": 5717
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "item_id": "BtY7Jz4nq7l",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:37:17.844535+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:03",
+        "visual_description": "Jim Halpert, Pam Beesly, and Dwight Schrute from 'The Office' begin a choreographed musical number in the Dunder Mifflin office.",
+        "audio_description": "Singing: 'We're in the brotherhood...'",
+        "text_on_screen": "",
+        "key_objects": ["Office desks", "Computers", "Dunder Mifflin signage"]
+      },
+      {
+        "time_range": "0:03-0:09",
+        "visual_description": "Darryl Philbin dances in his chair while Kelly Kapoor and Ryan Howard perform in the background hallway.",
+        "audio_description": "Singing: '...of man! Dedicated to giving all we can.'",
+        "text_on_screen": "",
+        "key_objects": ["Office chair"]
+      },
+      {
+        "time_range": "0:09-0:18",
+        "visual_description": "Andy Bernard takes center stage for a solo vocal part, leading into a full ensemble dance finale with the entire 'The Office' cast.",
+        "audio_description": "Andy singing: 'Oh aren't you proud to be in that fraternity, the great big brotherhood of man!'",
+        "text_on_screen": "",
+        "key_objects": ["Suit and tie"]
+      },
+      {
+        "time_range": "0:18-0:27",
+        "visual_description": "The scene transitions to the 'Parks and Recreation' cast, led by Leslie Knope, dancing and singing down their office hallway.",
+        "audio_description": "Leslie and cast singing: 'It's really a brotherhood, a benevolent brotherhood of man!'",
+        "text_on_screen": "",
+        "key_objects": ["Hallway", "Government office decor"]
+      }
+    ],
+    "overall_summary": "This video is a mashup of the musical opening from the 63rd Primetime Emmy Awards (2011), featuring the casts of 'The Office' and 'Parks and Recreation'. The actors perform a high-energy rendition of 'Brotherhood of Man' from the musical 'How to Succeed in Business Without Really Trying'. It showcases the ensemble casts of both iconic NBC sitcoms in their respective fictional office settings, celebrating the shared spirit of the shows.",
+    "people": [
+      {
+        "description": "Jim Halpert, wearing a blue tie and white shirt.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "John Krasinski"
+      },
+      {
+        "description": "Pam Beesly, wearing a pink cardigan.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Jenna Fischer"
+      },
+      {
+        "description": "Dwight Schrute, wearing his signature mustard shirt and glasses.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Rainn Wilson"
+      },
+      {
+        "description": "Andy Bernard, wearing a grey suit and purple tie.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Ed Helms"
+      },
+      {
+        "description": "Leslie Knope, wearing a dark blazer, leading the Parks department.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Amy Poehler"
+      },
+      {
+        "description": "Ron Swanson, standing stoically in the background.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Nick Offerman"
+      },
+      {
+        "description": "Chris Traeger, dancing enthusiastically.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": "Rob Lowe"
+      }
+    ],
+    "entities": [
+      {
+        "name": "The Office",
+        "display_name": "The Office (US)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Parks and Recreation",
+        "display_name": "Parks and Recreation",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Brotherhood of Man",
+        "display_name": "Brotherhood of Man (Song)",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["audio"],
+        "specifications": "From 'How to Succeed in Business Without Really Trying'",
+        "confidence": 5
+      },
+      {
+        "name": "63rd Primetime Emmy Awards",
+        "display_name": "63rd Primetime Emmy Awards (2011)",
+        "type": "event",
+        "relevance": "supporting",
+        "source": ["inferred"],
+        "specifications": "Opening musical number",
+        "confidence": 5
+      },
+      {
+        "name": "NBC",
+        "display_name": "NBC",
+        "type": "brand",
+        "relevance": "supporting",
+        "source": ["inferred"],
+        "specifications": "Network for both shows",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The casts of 'The Office' and 'Parks and Recreation' shared a significant cultural moment during their 2011 Emmy Awards musical collaboration.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "Brotherhood of Man \u2014 Frank Loesser",
+      "metadata_song": "original sound - theoffice4k",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The footage is specifically from the 2011 Emmy Awards opening sequence."
+    },
+    "presentation_style": {
+      "primary_format": "edit",
+      "camera_work": "panning",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "Joyful, theatrical, and nostalgic.",
+    "topic_hints": ["Sitcoms", "Musical Theater", "TV History"],
+    "affect_hints": ["Happy", "Nostalgic", "Entertained"],
+    "genre_hints": ["Fan Edit", "TV Clip"]
+  },
+  "metrics": {
+    "input_tokens": 3964,
+    "output_tokens": 1601,
+    "total_tokens": 5565,
+    "cost_usd": 0.001555,
+    "latency_ms": 23766,
+    "upload_ms": 5607
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

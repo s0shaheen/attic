@@ -1,0 +1,66 @@
+{
+  "item_id": "DOclWfUjKYO",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:33.452849+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "comedy",
+      "secondary": null,
+      "micro_labels": [
+        "roasting",
+        "street comedy",
+        "insult comedy",
+        "urban humor"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "pov",
+      "micro_labels": ["street interaction", "meme reference"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "cringe",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["raw_footage", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 7764,
+    "output_tokens": 321,
+    "total_tokens": 8085,
+    "cost_usd": 0.001357,
+    "latency_ms": 7278,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 4
+  }
+}

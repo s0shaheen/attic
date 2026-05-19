@@ -1,0 +1,220 @@
+{
+  "item_id": "Bq6ToW2heyG",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:43.078251+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "A group photo of the cast and creator of the US television series 'The Office' gathered outdoors for a reunion. They are standing and sitting around a table on a stone patio in front of a house with a brick fireplace.",
+        "audio_description": "null",
+        "text_on_screen": "null",
+        "key_objects": ["outdoor table", "brick fireplace", "folding chairs"]
+      }
+    ],
+    "overall_summary": "This image captures a nostalgic reunion of the cast and creator of the hit NBC sitcom 'The Office' (US). The photo, originally shared by Jenna Fischer, features key actors including Rainn Wilson, Ed Helms, and Angela Kinsey gathered at showrunner Greg Daniels' home. It serves as a significant piece of pop culture memorabilia for fans of the series, showcasing the enduring bond between the cast members years after the show's finale.",
+    "people": [
+      {
+        "description": "Seated on the left, wearing a blue denim shirt and grey pants.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Rainn Wilson"
+      },
+      {
+        "description": "Standing in the center, wearing a patterned blue sweater and green pants.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Jenna Fischer"
+      },
+      {
+        "description": "Seated on the right, wearing a dark green sweater, tan pants, and red patterned socks.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Ed Helms"
+      },
+      {
+        "description": "Standing to the right of Jenna Fischer, wearing a plaid shirt and jeans.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Greg Daniels"
+      },
+      {
+        "description": "Standing to the left of Jenna Fischer, wearing a grey sweater with a graphic design.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Angela Kinsey"
+      },
+      {
+        "description": "Standing far left in the back row, wearing a dark blue long-sleeve shirt.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Creed Bratton"
+      },
+      {
+        "description": "Standing second from left in the back row, wearing a black zip-up hoodie.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Paul Lieberstein"
+      },
+      {
+        "description": "Standing in the back row wearing a black jacket and baseball cap.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Brian Baumgartner"
+      },
+      {
+        "description": "Standing in the back row wearing a grey zip-up jacket.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Leslie David Baker"
+      },
+      {
+        "description": "Standing in the back row, partially obscured, wearing glasses.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Phyllis Smith"
+      },
+      {
+        "description": "Standing far right in the back row, wearing a grey sweater.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Oscar Nu\u00f1ez"
+      }
+    ],
+    "entities": [
+      {
+        "name": "The Office",
+        "display_name": "The Office (US)",
+        "type": "movie_or_show",
+        "relevance": "primary",
+        "source": ["metadata", "visual"],
+        "specifications": "NBC Sitcom",
+        "confidence": 5
+      },
+      {
+        "name": "Jenna Fischer",
+        "display_name": "Jenna Fischer",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["metadata", "visual"],
+        "specifications": "Played Pam Beesly",
+        "confidence": 5
+      },
+      {
+        "name": "Rainn Wilson",
+        "display_name": "Rainn Wilson",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "Played Dwight Schrute",
+        "confidence": 5
+      },
+      {
+        "name": "Greg Daniels",
+        "display_name": "Greg Daniels",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "Showrunner/Creator",
+        "confidence": 5
+      },
+      {
+        "name": "Ed Helms",
+        "display_name": "Ed Helms",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual"],
+        "specifications": "Played Andy Bernard",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The cast of 'The Office' remains close and continues to have reunions years after the show concluded.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Rainn Wilson",
+          "details": "Dwight Schrute"
+        },
+        {
+          "name": "Jenna Fischer",
+          "details": "Pam Beesly"
+        },
+        {
+          "name": "Ed Helms",
+          "details": "Andy Bernard"
+        },
+        {
+          "name": "Angela Kinsey",
+          "details": "Angela Martin"
+        },
+        {
+          "name": "Brian Baumgartner",
+          "details": "Kevin Malone"
+        },
+        {
+          "name": "Leslie David Baker",
+          "details": "Stanley Hudson"
+        },
+        {
+          "name": "Oscar Nu\u00f1ez",
+          "details": "Oscar Martinez"
+        },
+        {
+          "name": "Phyllis Smith",
+          "details": "Phyllis Vance"
+        },
+        {
+          "name": "Creed Bratton",
+          "details": "Creed Bratton"
+        },
+        {
+          "name": "Paul Lieberstein",
+          "details": "Toby Flenderson"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "null",
+      "metadata_song": "null",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The image is a well-known reunion photo of The Office cast."
+    },
+    "presentation_style": {
+      "primary_format": "other",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Warm, nostalgic, and casual.",
+    "topic_hints": ["The Office", "TV Cast Reunion", "Sitcom History"],
+    "affect_hints": ["Nostalgic", "Wholesome", "Excited"],
+    "genre_hints": ["Celebrity Photo", "Pop Culture"]
+  },
+  "metrics": {
+    "input_tokens": 2513,
+    "output_tokens": 1843,
+    "total_tokens": 4356,
+    "cost_usd": 0.001483,
+    "latency_ms": 10980,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "item_id": "DMcPNBkxck7",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:43:20.635590+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:05",
+        "visual_description": "A static image of a social media post by 'Dylano' (@essayful) featuring a highlighted paragraph from a book. The background is dark, and the post is presented as a screenshot with engagement metrics (likes, comments, shares) visible at the bottom.",
+        "audio_description": "A somber, ambient, and melancholic instrumental track plays, creating a contemplative atmosphere.",
+        "text_on_screen": "Dylano @essayful \u00b7 20d\nThere are whole books on psychology that don't get anywhere near this paragraph from Dostoevsky\n\nAbove all, don't lie to yourself. The man who lies to himself and listens to his own lie comes to such a pass that he cannot distinguish the truth within him, or around him, and so loses all respect for himself and for others. And having no respect he ceases to love, and in order to occupy and distract himself without love he gives way to passions and coarse pleasures, and sinks to bestiality in his vices, all from continual lying to other men and to himself. The man who lies to himself can be more easily offended than any one. You know it is sometimes very pleasant to take offense, isn't it? A man may know that nobody has insulted him, but that he has invented the insult for himself, has lied and exaggerated to make it picturesque, has caught at a word and made a mountain out of a molehill\u2014he knows that himself, yet he will be the first to take offense, and will revel in his resentment till he feels great pleasure in it, and so pass to genuine vindictiveness.",
+        "key_objects": ["Social media post screenshot", "Book excerpt"]
+      }
+    ],
+    "overall_summary": "This short video features a static screenshot of a social media post highlighting a profound paragraph by Fyodor Dostoevsky. The text explores the psychological dangers of self-deception, arguing that lying to oneself leads to a loss of truth, self-respect, and the capacity to love, eventually resulting in a tendency to take offense for the sake of resentment. The video is intended to be a philosophical 'thought-starter' or 'core' aesthetic post, using somber music to emphasize the weight of the literary insight.",
+    "people": [],
+    "entities": [
+      {
+        "name": "Fyodor Dostoevsky",
+        "display_name": "Fyodor Dostoevsky",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "specifications": "Russian novelist and philosopher",
+        "confidence": 5
+      },
+      {
+        "name": "The Brothers Karamazov",
+        "display_name": "The Brothers Karamazov by Fyodor Dostoevsky",
+        "type": "book",
+        "relevance": "primary",
+        "source": ["inferred"],
+        "specifications": "The source of the quoted text (Father Zosima's speech)",
+        "confidence": 5
+      },
+      {
+        "name": "Dylano",
+        "display_name": "Dylano (@essayful)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "specifications": "Social media content creator/curator",
+        "confidence": 4
+      },
+      {
+        "name": "storm with stillness",
+        "display_name": "storm with stillness",
+        "type": "song",
+        "relevance": "primary",
+        "source": ["metadata"],
+        "specifications": "Ambient/Instrumental track",
+        "confidence": 4
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Self-deception destroys a person's ability to perceive truth and maintain self-respect.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Lying to oneself leads to a cycle of seeking 'coarse pleasures' and taking offense to mask a lack of love.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "Dostoevsky's literary insights are often more psychologically profound than modern academic psychology books.",
+        "source": "text_overlay",
+        "confidence": 4
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": "storm with stillness",
+      "metadata_song": "storm with stillness",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The quote is a famous passage from 'The Brothers Karamazov'."
+    },
+    "presentation_style": {
+      "primary_format": "text_overlay",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Contemplative, melancholic, philosophical, and serious.",
+    "topic_hints": ["Psychology", "Philosophy", "Literature"],
+    "affect_hints": ["Reflective", "Somber", "Enlightened"],
+    "genre_hints": ["Philosophycore", "Literary Edit", "Textpost"]
+  },
+  "metrics": {
+    "input_tokens": 1995,
+    "output_tokens": 1293,
+    "total_tokens": 3288,
+    "cost_usd": 0.001075,
+    "latency_ms": 14430,
+    "upload_ms": 3563
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

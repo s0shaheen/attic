@@ -1,0 +1,63 @@
+{
+  "item_id": "BsSGsWKFgcp",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:39.310991+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "comedy",
+      "secondary": "movies_tv",
+      "micro_labels": [
+        "Nollywood",
+        "Pawpaw",
+        "Osita Iheme",
+        "drinking culture",
+        "relatable humor"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["reaction meme", "relatable"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      }
+    ],
+    "presentation_style": ["text_overlay", "raw_footage"],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "anonymous",
+      "confidence": 0.8
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 3976,
+    "output_tokens": 309,
+    "total_tokens": 4285,
+    "cost_usd": 0.000782,
+    "latency_ms": 5856,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}

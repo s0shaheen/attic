@@ -1,0 +1,71 @@
+{
+  "item_id": "DMcPNBkxck7",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:54.614250+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "books",
+      "secondary": "health",
+      "micro_labels": [
+        "Fyodor Dostoevsky",
+        "psychology",
+        "self-deception",
+        "literary quotes",
+        "The Brothers Karamazov"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["textpost", "quote card"],
+      "confidence": 0.85
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "relaxing",
+        "tier": "secondary"
+      },
+      {
+        "label": "sad",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["text_overlay"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "provoke",
+      "confidence": 0.85
+    },
+    "creator_role": {
+      "label": "anonymous",
+      "confidence": 0.7
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 4240,
+    "output_tokens": 351,
+    "total_tokens": 4591,
+    "cost_usd": 0.000847,
+    "latency_ms": 7015,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}

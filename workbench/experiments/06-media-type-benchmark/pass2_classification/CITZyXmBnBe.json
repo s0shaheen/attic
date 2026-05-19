@@ -1,0 +1,71 @@
+{
+  "item_id": "CITZyXmBnBe",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:12.447493+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "comedy",
+      "secondary": "other",
+      "micro_labels": [
+        "astrology",
+        "horoscopes",
+        "zodiac signs",
+        "insulting humor",
+        "1970s aesthetics"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["image macro", "viral artifact"],
+      "confidence": 0.98
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "shocking",
+        "tier": "secondary"
+      },
+      {
+        "label": "nostalgic",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "repost",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "amateur",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 5463,
+    "output_tokens": 358,
+    "total_tokens": 5821,
+    "cost_usd": 0.001034,
+    "latency_ms": 8402,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 2
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "item_id": "DEssE9vShSB",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:38:54.134996+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:04",
+        "visual_description": "Creator Ashton Herndon leads a large crowd in a call-and-response chant using a megaphone on a grassy campus area.",
+        "audio_description": "Ashton shouts 'When I say Hawk, you say Tuah!' followed by the crowd shouting 'Tuah!'",
+        "text_on_screen": "POV: you hosted a brainrot contest at your school",
+        "key_objects": ["megaphone", "backpack"]
+      },
+      {
+        "time_range": "0:04-0:19",
+        "visual_description": "A female student in a blue floral dress performs an operatic vocal piece into the megaphone.",
+        "audio_description": "She sings 'To Skibidi or not... Skibidi or not...' in a high-pitched operatic style.",
+        "text_on_screen": "POV: you hosted a brainrot contest at your school",
+        "key_objects": ["megaphone", "floral dress"]
+      },
+      {
+        "time_range": "0:19-0:27",
+        "visual_description": "A male student wearing a Green Bay Packers jersey addresses the crowd, referencing internet trends.",
+        "audio_description": "He says, 'We're leaving Vexbolts in 2024 and we're bringing me! Can I get three booms?' followed by the crowd shouting 'Boom! Boom! Boom!'",
+        "text_on_screen": "POV: you hosted a brainrot contest at your school",
+        "key_objects": ["Jordan Love Green Bay Packers Jersey", "megaphone"]
+      },
+      {
+        "time_range": "0:27-0:36",
+        "visual_description": "A female student in a leather jacket and fedora performs a 'Discord Mod' parody.",
+        "audio_description": "She says, 'I just want to give a big thank you to all my e-kittens in the cloud. I give you a fedora tip. I'm back!'",
+        "text_on_screen": "POV: you hosted a brainrot contest at your school",
+        "key_objects": ["fedora", "leather jacket", "megaphone"]
+      },
+      {
+        "time_range": "0:36-0:45",
+        "visual_description": "A male student in a grey hoodie gives rapid-fire shoutouts to viral internet personalities.",
+        "audio_description": "He shouts, 'Shoutout Livvy Dunne! Shoutout Baby Gronk! And shoutout Penn State University, we won the title!'",
+        "text_on_screen": "POV: you hosted a brainrot contest at your school",
+        "key_objects": ["megaphone", "backpack"]
+      },
+      {
+        "time_range": "0:45-0:53",
+        "visual_description": "A group of three male students perform a parody of a popular song.",
+        "audio_description": "They sing a parody of 'The Night We Met' with lyrics: 'I was the knight in shining armor in your movie.'",
+        "text_on_screen": "POV: you hosted a brainrot contest at your school",
+        "key_objects": ["megaphone"]
+      },
+      {
+        "time_range": "0:53-1:09",
+        "visual_description": "The student in the Packers jersey returns for a final high-energy rant about his lifestyle and the streamer Ninja.",
+        "audio_description": "He screams, 'I'm unemployed! I don't have a job! I don't shower! I do this every day! And almost every day I watch Ninja! You know why? Because it's massive!'",
+        "text_on_screen": "POV: you hosted a brainrot contest at your school",
+        "key_objects": ["megaphone"]
+      }
+    ],
+    "overall_summary": "This video captures a 'Brainrot Contest' held on the campus of Florida State University (FSU), hosted by creator Ashton Herndon. Various students take turns using a megaphone to perform skits, chants, and parodies based on viral internet memes and 'brainrot' culture, including references to Skibidi Toilet, the 'Hawk Tuah' girl, Vexbolts, and streamers like Ninja. The event is characterized by high energy, a large participating crowd, and a humorous embrace of niche internet subcultures.",
+    "people": [
+      {
+        "description": "Young man in a black t-shirt and grey pants, hosting the event with a megaphone.",
+        "is_creator": true,
+        "speaking": true,
+        "identified_as": "Ashton Herndon"
+      },
+      {
+        "description": "Young woman in a blue floral dress singing operatically.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "Young man wearing a #10 Jordan Love Green Bay Packers jersey.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      },
+      {
+        "description": "Young woman wearing a fedora and leather jacket doing a Discord mod impression.",
+        "is_creator": false,
+        "speaking": true,
+        "identified_as": null
+      }
+    ],
+    "entities": [
+      {
+        "name": "Florida State University",
+        "display_name": "FSU",
+        "type": "place",
+        "relevance": "primary",
+        "source": ["metadata", "visual"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Hawk Tuah",
+        "display_name": "Hawk Tuah Meme",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "Viral Haliey Welch interview reference",
+        "confidence": 5
+      },
+      {
+        "name": "Skibidi Toilet",
+        "display_name": "Skibidi Toilet",
+        "type": "trend_or_meme",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      },
+      {
+        "name": "Vexbolts",
+        "display_name": "Vexbolts",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["audio", "metadata"],
+        "specifications": "Content creator known for 'Three Booms' trend",
+        "confidence": 5
+      },
+      {
+        "name": "Jordan Love",
+        "display_name": "Jordan Love (Green Bay Packers)",
+        "type": "person",
+        "relevance": "background",
+        "source": ["visual"],
+        "specifications": "Jersey #10",
+        "confidence": 5
+      },
+      {
+        "name": "Livvy Dunne",
+        "display_name": "Olivia Dunne",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "LSU Gymnast and influencer",
+        "confidence": 5
+      },
+      {
+        "name": "Baby Gronk",
+        "display_name": "Baby Gronk (Madden San Miguel)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "Internet personality",
+        "confidence": 5
+      },
+      {
+        "name": "Ninja",
+        "display_name": "Ninja (Tyler Blevins)",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "Twitch Streamer",
+        "confidence": 5
+      },
+      {
+        "name": "The Night We Met",
+        "display_name": "The Night We Met \u2014 Lord Huron",
+        "type": "song",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": "Parodied by students",
+        "confidence": 4
+      },
+      {
+        "name": "Penn State University",
+        "display_name": "Penn State",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["audio"],
+        "specifications": null,
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Internet 'brainrot' culture has become a significant social touchstone for Gen Z college students, capable of drawing large crowds for live events.",
+        "source": "demonstration",
+        "confidence": 5
+      }
+    ],
+    "structured_content": {
+      "type": "recommendation_list",
+      "items": [
+        {
+          "name": "Hawk Tuah Chant",
+          "details": "Call and response led by Ashton Herndon"
+        },
+        {
+          "name": "Operatic Skibidi",
+          "details": "Vocal performance of Skibidi Toilet lyrics"
+        },
+        {
+          "name": "Vexbolts/Three Booms",
+          "details": "Crowd interaction based on Vexbolts' signature catchphrase"
+        },
+        {
+          "name": "Discord Mod Impression",
+          "details": "Satirical performance involving a fedora tip and 'e-kitten' references"
+        },
+        {
+          "name": "Rizz Shoutouts",
+          "details": "References to Livvy Dunne and Baby Gronk"
+        },
+        {
+          "name": "Ninja Rant",
+          "details": "High-energy monologue about watching the streamer Ninja"
+        }
+      ]
+    },
+    "audio_identification": {
+      "actual_song": "The Night We Met (Parody) \u2014 Lord Huron",
+      "metadata_song": "original sound - Ashton Herndon",
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "All major meme references and entities were successfully identified based on audio cues and visual context."
+    },
+    "presentation_style": {
+      "primary_format": "compilation",
+      "camera_work": "handheld",
+      "editing_style": "jump_cuts"
+    },
+    "visual_mood": "High-energy, chaotic, humorous, and communal.",
+    "topic_hints": ["Internet Memes", "College Life", "Brainrot Culture"],
+    "affect_hints": ["Amused", "Energetic", "Cringe-humor"],
+    "genre_hints": ["Skit", "Event Coverage", "Comedy"]
+  },
+  "metrics": {
+    "input_tokens": 7713,
+    "output_tokens": 2678,
+    "total_tokens": 10391,
+    "cost_usd": 0.002764,
+    "latency_ms": 31891,
+    "upload_ms": 5527
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "has_video": true,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

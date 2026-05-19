@@ -1,0 +1,224 @@
+{
+  "item_id": "7405643343918599455",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:25:41.787153+00:00",
+  "parsed_output": {
+    "per_image": [
+      {
+        "image_number": 1,
+        "description": "A close-up portrait of the artist Stelarc, showing his face in profile and his left forearm raised, which features a surgically implanted, cell-cultivated ear.",
+        "text_detected": "",
+        "primary_content": "Artist Stelarc showcasing his 'Ear on Arm' project.",
+        "entities": [
+          {
+            "name": "Stelarc",
+            "type": "person",
+            "specifications": "Performance artist"
+          },
+          {
+            "name": "Ear on Arm",
+            "type": "technique",
+            "specifications": "Surgically implanted cell-cultivated ear"
+          }
+        ]
+      },
+      {
+        "image_number": 2,
+        "description": "A medical close-up of the ear on the forearm. Two gloved hands are touching the skin around the ear, and surgical clamps are visible in the background on a blue surgical drape.",
+        "text_detected": "",
+        "primary_content": "Surgical or medical examination of the implanted ear.",
+        "entities": [
+          {
+            "name": "Ear on Arm",
+            "type": "technique",
+            "specifications": "Post-operative or clinical view"
+          }
+        ]
+      },
+      {
+        "image_number": 3,
+        "description": "A screenshot of a webpage or digital document titled 'The Internet Ear'. It features a photo of a polyurethane arm model with an ear and extensive text detailing the project, exhibitions, and credits.",
+        "text_detected": "Echo: I am mouthing a few words here Anonymous: Can you hear me? The Ear: I am listening in when Biotopia Revisited opens february 1 at LEAs Digital Platform. Anonymous: We are Anonymous. We are Legion. We do not forgive. We do not forget. Expect us. Anonymous: As we gather together in solidarity to express a feeling of mass injustice, we must not lose sight of what brought us together. We write so that all people who feel wronged by the corporate forces of the world can know... The Internet Ear The Internet Ear was developed specifically for the exhibition \"Biotopia - Art in the Wet Zone\" in the context PORT 20:10 Festival of Contemporary Art and Social Technology, October 15, 2010 - January 10, 2011 in Aalborg, Denmark. www.port2010.dk Port 2010 Conference / Biotopia Symposium October 15 - 17 www.port2010conference.dk Venues: Galerie l'Arche de Morph\u00e9e, 6 rue \u00c9tienne Dolet. 75020 Paris, France. Arranged by Artistist. LABORATORIA Art&Science Space, Moscow, Russia. Organizers: LABORATORIA Art&Science Space (Moscow) and The National Centre for Contemporary Arts (Kaliningrad branch, Russia). Curator in Moscow: Dmitry Bulatov. Utzon Center, Aalborg, Denmark. Biotopia - Art in the Wet Zone. Organizer: PORT 20:10 - Festival of Contemporary Art and Social Technology, KUNSTEN - Museum of Modern Art in Aalborg, CIT / Aalborg University, and Utzon Centre. Curator of Biotopia in Aalborg: Morten S\u00f8ndergaard. CIT - Copenhagen Institute of Technology / Aalborg University, Denmark. Credits: Curator of the Internet Arm Project by STELARC: Morten S\u00f8ndergaard, Denmark. Technological development: Mogens Jacobsen, Denmark. Polyurethane arms: Olivier Goulet. France. Special thanks to Fundere Foundry, Melbourne, Australia. STELARC's artwork is represented by the Scott Livesey Galleries, Melbourne, Australia.",
+        "primary_content": "Project documentation and exhibition details for 'The Internet Ear'.",
+        "entities": [
+          {
+            "name": "The Internet Ear",
+            "type": "product",
+            "specifications": "Web-interface listening project"
+          },
+          {
+            "name": "Anonymous",
+            "type": "cultural_reference",
+            "specifications": "Hacktivist group mentioned in chat log"
+          },
+          {
+            "name": "Biotopia - Art in the Wet Zone",
+            "type": "event",
+            "specifications": "Art exhibition"
+          },
+          {
+            "name": "PORT 20:10",
+            "type": "event",
+            "specifications": "Festival of Contemporary Art and Social Technology"
+          },
+          {
+            "name": "Galerie l'Arche de Morph\u00e9e",
+            "type": "place",
+            "specifications": "Paris, France"
+          },
+          {
+            "name": "LABORATORIA Art&Science Space",
+            "type": "place",
+            "specifications": "Moscow, Russia"
+          },
+          {
+            "name": "Utzon Center",
+            "type": "place",
+            "specifications": "Aalborg, Denmark"
+          },
+          {
+            "name": "Morten S\u00f8ndergaard",
+            "type": "person",
+            "specifications": "Curator"
+          },
+          {
+            "name": "Mogens Jacobsen",
+            "type": "person",
+            "specifications": "Technological developer"
+          },
+          {
+            "name": "Olivier Goulet",
+            "type": "person",
+            "specifications": "Polyurethane arm creator"
+          }
+        ]
+      },
+      {
+        "image_number": 4,
+        "description": "Stelarc posing against a white wall, holding his left arm up so the implanted ear is near his own head, creating a visual of three ears.",
+        "text_detected": "",
+        "primary_content": "Promotional portrait of Stelarc and his third ear.",
+        "entities": [
+          {
+            "name": "Stelarc",
+            "type": "person",
+            "specifications": "Artist"
+          }
+        ]
+      },
+      {
+        "image_number": 5,
+        "description": "An installation view showing a prosthetic arm with an ear mounted on a stand and connected to a cable. In the background, a projection screen displays a diagram and text.",
+        "text_detected": "just singing in the rain, what a glorious feeling",
+        "primary_content": "Gallery installation of the 'Internet Ear' project.",
+        "entities": [
+          {
+            "name": "Singin' in the Rain",
+            "type": "song",
+            "specifications": "Lyrics displayed on screen"
+          }
+        ]
+      }
+    ],
+    "overall_summary": "This post documents the 'Ear on Arm' performance art project by the artist Stelarc. It details the surgical process of growing a cell-cultivated ear on his forearm and the subsequent 'Internet Ear' installation, which allowed web users to listen through a microphone embedded in the arm. The user is likely saving this as a piece of transhumanist art history, bio-hacking interest, or a 'weird history' fact.",
+    "carousel_type": "other",
+    "narrative_thread": "The images move from the physical reality of the biological modification on the artist's body to the conceptual and digital framework of the project as a global listening device.",
+    "entities": [
+      {
+        "name": "Stelarc",
+        "display_name": "Stelarc (Performance Artist)",
+        "type": "person",
+        "relevance": "primary",
+        "source": ["visual", "text_overlay", "metadata"],
+        "slide_number": 1,
+        "specifications": "Known for body modification art",
+        "confidence": 5
+      },
+      {
+        "name": "Ear on Arm",
+        "display_name": "Ear on Arm Project",
+        "type": "technique",
+        "relevance": "primary",
+        "source": ["visual", "metadata"],
+        "slide_number": 1,
+        "specifications": "Cell-cultivated surgical implant",
+        "confidence": 5
+      },
+      {
+        "name": "The Internet Ear",
+        "display_name": "The Internet Ear",
+        "type": "app_or_tool",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "slide_number": 3,
+        "specifications": "Web interface for remote listening",
+        "confidence": 5
+      },
+      {
+        "name": "Biotopia - Art in the Wet Zone",
+        "display_name": "Biotopia Exhibition",
+        "type": "event",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "slide_number": 3,
+        "specifications": "2010-2011 exhibition",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "Stelarc spent ten years raising funds and finding surgeons to implant a third ear on his arm.",
+        "source": "metadata",
+        "confidence": 5
+      },
+      {
+        "statement": "The implanted ear was designed to function as a remote listening device for the internet.",
+        "source": "text_overlay",
+        "confidence": 5
+      },
+      {
+        "statement": "The project represents a significant moment in bio-art and transhumanist performance.",
+        "source": "implied",
+        "confidence": 4
+      }
+    ],
+    "structured_content": {
+      "type": "null",
+      "items": []
+    },
+    "audio_identification": {
+      "actual_song": "original sound \u2014 blurry.face.films",
+      "metadata_song": "original sound - blurry.face.films \u2014 Blurry Face Films",
+      "match": true
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "notes": "Text in image 3 was transcribed despite small font size. Metadata provided by the user was used to supplement visual details."
+    },
+    "presentation_style": {
+      "primary_format": "other",
+      "visual_style": "informational"
+    },
+    "visual_mood": "Clinical, surreal, and avant-garde.",
+    "topic_hints": ["Bio-art", "Transhumanism", "Performance Art"],
+    "affect_hints": ["Curiosity", "Discomfort", "Intrigue"],
+    "genre_hints": ["Documentary", "Weird History"]
+  },
+  "metrics": {
+    "input_tokens": 6812,
+    "output_tokens": 2417,
+    "total_tokens": 9229,
+    "cost_usd": 0.002472,
+    "latency_ms": 26192,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 5
+  }
+}

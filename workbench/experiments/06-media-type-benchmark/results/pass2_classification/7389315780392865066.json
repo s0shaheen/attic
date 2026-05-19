@@ -1,0 +1,75 @@
+{
+  "item_id": "7389315780392865066",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T08:26:51.945113+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "art",
+      "secondary": "education",
+      "micro_labels": [
+        "AP Art Portfolio",
+        "satirical art",
+        "social commentary",
+        "illustration",
+        "student art"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "compilation",
+      "micro_labels": ["portfolio showcase", "slideshow"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "satisfying",
+        "tier": "dominant"
+      },
+      {
+        "label": "informative",
+        "tier": "secondary"
+      },
+      {
+        "label": "funny",
+        "tier": "secondary"
+      },
+      {
+        "label": "inspiring",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["slideshow", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 1.0
+    },
+    "communicative_intent": {
+      "label": "document",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "artist",
+      "confidence": 0.95
+    },
+    "viewer_orientation": {
+      "label": "inspiration_saving",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 14077,
+    "output_tokens": 371,
+    "total_tokens": 14448,
+    "cost_usd": 0.002334,
+    "latency_ms": 8813,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "tiktok",
+    "media_type": "slideshow",
+    "is_slideshow": true,
+    "visual_input": "slideshow_images",
+    "visual_count": 10
+  }
+}

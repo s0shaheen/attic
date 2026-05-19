@@ -1,0 +1,66 @@
+{
+  "item_id": "CdWqaWypXQQ",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:44:53.825166+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "food",
+      "secondary": "travel",
+      "micro_labels": [
+        "Japanese BBQ",
+        "all you can eat",
+        "restaurant review",
+        "Boston food scene"
+      ],
+      "confidence": 0.98
+    },
+    "genre": {
+      "label": "review",
+      "micro_labels": ["food review", "restaurant recommendation"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "satisfying",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["voiceover", "text_overlay"],
+    "content_provenance": {
+      "label": "original",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "influencer",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "shopping_research",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 5638,
+    "output_tokens": 323,
+    "total_tokens": 5961,
+    "cost_usd": 0.00104,
+    "latency_ms": 4201,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 2
+  }
+}

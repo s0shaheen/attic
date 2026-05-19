@@ -1,0 +1,70 @@
+{
+  "item_id": "DTRXyFrD1DF",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:49.275116+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "relationships",
+      "secondary": "parenting",
+      "micro_labels": [
+        "social commentary",
+        "community dynamics",
+        "proverb subversion",
+        "cynicism"
+      ],
+      "confidence": 0.85
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["relatable clip", "speech segment"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "shocking",
+        "tier": "secondary"
+      },
+      {
+        "label": "informative",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["talking_head", "text_overlay"],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "provoke",
+      "confidence": 0.85
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "passive_consumption",
+      "confidence": 0.8
+    }
+  },
+  "metrics": {
+    "input_tokens": 4216,
+    "output_tokens": 347,
+    "total_tokens": 4563,
+    "cost_usd": 0.000841,
+    "latency_ms": 9963,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}

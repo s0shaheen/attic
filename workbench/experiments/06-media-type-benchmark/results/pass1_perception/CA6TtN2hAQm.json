@@ -1,0 +1,120 @@
+{
+  "item_id": "CA6TtN2hAQm",
+  "stage": "pass1_perception",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:35:22.639604+00:00",
+  "parsed_output": {
+    "scene_timeline": [
+      {
+        "time_range": "0:00-0:00",
+        "visual_description": "A static meme image showing a group of police officers in riot gear, focusing on one exceptionally large officer in the center wearing a gas mask and heavy tactical vest. The image includes a text caption at the top and a screenshot of a tweet by Justin Whang at the bottom.",
+        "audio_description": "No audio \u2014 static image.",
+        "text_on_screen": "OH SHIT THE COPS BROUGHT OUT BIG CHUNGUS\nJustin Whang @JustinWhang\nDefinitely had a cutscene when he came out",
+        "key_objects": [
+          "riot gear",
+          "gas mask",
+          "tactical vest",
+          "baton",
+          "traffic light",
+          "police uniform"
+        ]
+      }
+    ],
+    "overall_summary": "This is a viral meme image featuring a large riot police officer who is being compared to a video game 'final boss' or the 'Big Chungus' meme character. The post includes a humorous commentary from internet personality Justin Whang, suggesting the officer's appearance would be preceded by a cinematic cutscene in a game. The image captures a moment during a public demonstration where the officer's physical stature stands out significantly from his peers.",
+    "people": [
+      {
+        "description": "An exceptionally large police officer in full riot gear, including a gas mask, helmet, and tactical vest.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "null"
+      },
+      {
+        "description": "Internet personality and YouTuber known for 'Tales from the Internet', appearing via a Twitter screenshot.",
+        "is_creator": false,
+        "speaking": false,
+        "identified_as": "Justin Whang"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Big Chungus",
+        "display_name": "Big Chungus",
+        "type": "trend_or_meme",
+        "relevance": "primary",
+        "source": ["text_overlay"],
+        "specifications": "Meme featuring a heavy-set Bugs Bunny",
+        "confidence": 5
+      },
+      {
+        "name": "Justin Whang",
+        "display_name": "Justin Whang",
+        "type": "person",
+        "relevance": "supporting",
+        "source": ["text_overlay"],
+        "specifications": "@JustinWhang",
+        "confidence": 5
+      },
+      {
+        "name": "Chicago Police Department",
+        "display_name": "Chicago Police Department (CPD)",
+        "type": "place",
+        "relevance": "supporting",
+        "source": ["visual"],
+        "specifications": "Inferred from the 5-point star patch on the officer to the right",
+        "confidence": 4
+      },
+      {
+        "name": "Final Boss",
+        "display_name": "Final Boss Trope",
+        "type": "cultural_reference",
+        "relevance": "primary",
+        "source": ["metadata", "text_overlay"],
+        "specifications": "Video game reference to a powerful end-game enemy",
+        "confidence": 5
+      }
+    ],
+    "takeaways": [
+      {
+        "statement": "The physical presence of the central officer is so imposing it resembles a scripted video game encounter.",
+        "source": "text_overlay",
+        "confidence": 5
+      }
+    ],
+    "structured_content": null,
+    "audio_identification": {
+      "actual_song": null,
+      "metadata_song": null,
+      "match": false
+    },
+    "extraction_confidence": {
+      "entities_complete": 5,
+      "audio_identified": true,
+      "notes": "The location is likely Chicago based on the specific star-shaped police badge visible on the officer to the right of the central figure."
+    },
+    "presentation_style": {
+      "primary_format": "other",
+      "camera_work": "static",
+      "editing_style": "minimal"
+    },
+    "visual_mood": "Humorous, intimidating, and surreal.",
+    "topic_hints": ["Internet Memes", "Video Game Tropes", "Police Gear"],
+    "affect_hints": ["Amused", "Awe", "Surprise"],
+    "genre_hints": ["Meme", "Social Media Screenshot"]
+  },
+  "metrics": {
+    "input_tokens": 2531,
+    "output_tokens": 1097,
+    "total_tokens": 3628,
+    "cost_usd": 0.001038,
+    "latency_ms": 11230,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "image",
+    "is_slideshow": false,
+    "has_video": false,
+    "has_thumbnail": true,
+    "slideshow_image_count": 0
+  }
+}

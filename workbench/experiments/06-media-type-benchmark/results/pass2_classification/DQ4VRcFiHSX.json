@@ -1,0 +1,67 @@
+{
+  "item_id": "DQ4VRcFiHSX",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:00.499478+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "career",
+      "secondary": "art",
+      "micro_labels": [
+        "creative advice",
+        "productivity",
+        "mental clarity",
+        "mindset",
+        "entrepreneurship"
+      ],
+      "confidence": 0.9
+    },
+    "genre": {
+      "label": "interview",
+      "micro_labels": ["celebrity interview", "advice clip"],
+      "confidence": 0.95
+    },
+    "affect": [
+      {
+        "label": "informative",
+        "tier": "dominant"
+      },
+      {
+        "label": "inspiring",
+        "tier": "secondary"
+      }
+    ],
+    "presentation_style": ["talking_head", "text_overlay"],
+    "content_provenance": {
+      "label": "clip",
+      "confidence": 0.95
+    },
+    "communicative_intent": {
+      "label": "inform",
+      "confidence": 0.9
+    },
+    "creator_role": {
+      "label": "professional",
+      "confidence": 0.9
+    },
+    "viewer_orientation": {
+      "label": "active_learning",
+      "confidence": 0.85
+    }
+  },
+  "metrics": {
+    "input_tokens": 5377,
+    "output_tokens": 325,
+    "total_tokens": 5702,
+    "cost_usd": 0.001002,
+    "latency_ms": 9384,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 2
+  }
+}

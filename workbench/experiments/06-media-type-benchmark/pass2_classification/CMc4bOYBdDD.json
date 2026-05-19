@@ -1,0 +1,70 @@
+{
+  "item_id": "CMc4bOYBdDD",
+  "stage": "pass2_classification",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-04-03T07:45:32.547321+00:00",
+  "parsed_output": {
+    "topic": {
+      "primary": "comedy",
+      "secondary": "food",
+      "micro_labels": [
+        "McDonald's ice cream machine",
+        "Daym Drops",
+        "Internet memes",
+        "Soul for a soul"
+      ],
+      "confidence": 0.95
+    },
+    "genre": {
+      "label": "meme",
+      "micro_labels": ["ironic juxtaposition", "video edit"],
+      "confidence": 0.9
+    },
+    "affect": [
+      {
+        "label": "funny",
+        "tier": "dominant"
+      },
+      {
+        "label": "shocking",
+        "tier": "secondary"
+      },
+      {
+        "label": "sad",
+        "tier": "minor"
+      }
+    ],
+    "presentation_style": ["text_overlay", "mixed"],
+    "content_provenance": {
+      "label": "remix",
+      "confidence": 0.9
+    },
+    "communicative_intent": {
+      "label": "entertain",
+      "confidence": 0.95
+    },
+    "creator_role": {
+      "label": "anonymous",
+      "confidence": 0.85
+    },
+    "viewer_orientation": {
+      "label": "social_sharing",
+      "confidence": 0.9
+    }
+  },
+  "metrics": {
+    "input_tokens": 4272,
+    "output_tokens": 348,
+    "total_tokens": 4620,
+    "cost_usd": 0.00085,
+    "latency_ms": 5759,
+    "upload_ms": 0
+  },
+  "context_used": {
+    "platform": "instagram",
+    "media_type": "video",
+    "is_slideshow": false,
+    "visual_input": "keyframes_10s",
+    "visual_count": 1
+  }
+}
