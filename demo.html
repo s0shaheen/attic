@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attic — Content Intelligence Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600&family=DM+Mono&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --parchment: #F8F7F4;
+      --white: #FFFFFF;
+      --ink: #1C1B18;
+      --soft-black: #2C2926;
+      --stone: #9C9890;
+      --border: #E6E4DE;
+      --border-hover: #D0CCC4;
+      --subtle: #F0EEE8;
+      --cinnamon: #A06840;
+      --cinnamon-light: #BC8058;
+      --cinnamon-dark: #7E5030;
+      --cinnamon-subtle: rgba(160, 104, 64, 0.07);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--parchment);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 80px 0 64px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-badge {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--cinnamon-dark);
+      background: var(--cinnamon-subtle);
+      border: 1px solid rgba(160, 104, 64, 0.15);
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: 'Crimson Pro', serif;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero p {
+      font-size: 17px;
+      color: var(--stone);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ── Section ── */
+    section {
+      padding: 64px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    section:last-child { border-bottom: none; }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--stone);
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .section-desc {
+      color: var(--stone);
+      font-size: 15px;
+      margin-bottom: 40px;
+      max-width: 600px;
+    }
+
+    /* ── Before / After ── */
+    .before-after {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .before-after { grid-template-columns: 1fr; }
+    }
+
+    .panel {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .panel-header {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--stone);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .panel-header .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+    }
+    .dot-red { background: #B54040; }
+    .dot-green { background: #3D7A4A; }
+    .panel-body { padding: 20px; }
+
+    /* Raw TikTok panel */
+    .raw-export {
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--soft-black);
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    .raw-export .key { color: var(--stone); }
+    .raw-export .val { color: var(--ink); }
+
+    /* Classification panel */
+    .facet-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .facet {
+      padding: 0;
+    }
+    .facet-name {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--stone);
+      margin-bottom: 4px;
+    }
+    .facet-value {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--ink);
+    }
+    .facet-sub {
+      font-size: 12px;
+      color: var(--stone);
+      margin-top: 2px;
+    }
+    .micro-labels {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 6px;
+    }
+    .micro-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      background: var(--subtle);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 999px;
+      color: var(--soft-black);
+    }
+    .confidence {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      color: var(--stone);
+    }
+
+    /* ── Video cards grid ── */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .video-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.15s;
+    }
+    .video-card:hover { border-color: var(--border-hover); }
+
+    .video-card-header {
+      display: flex;
+      gap: 14px;
+      padding: 16px;
+      align-items: flex-start;
+    }
+    .video-thumb {
+      width: 72px;
+      height: 96px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      background: var(--subtle);
+      flex-shrink: 0;
+    }
+    .video-meta {
+      flex: 1;
+      min-width: 0;
+    }
+    .video-creator {
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      color: var(--stone);
+      margin-bottom: 2px;
+    }
+    .video-caption {
+      font-size: 13px;
+      color: var(--ink);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 6px;
+    }
+    .video-collection {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: var(--subtle);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 999px;
+      color: var(--stone);
+    }
+    .video-link {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--stone);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 10px 16px;
+      border-top: 1px solid var(--border);
+      width: 100%;
+      transition: color 0.15s;
+    }
+    .video-link:hover { color: var(--ink); }
+    .video-link svg {
+      width: 13px; height: 13px;
+      stroke: currentColor;
+      fill: none;
+      flex-shrink: 0;
+    }
+
+    .video-card-facets {
+      padding: 0 16px 16px;
+    }
+    .facet-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 5px 0;
+      border-top: 1px solid var(--border);
+    }
+    .facet-row:first-child { border-top: none; }
+    .facet-row-name {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--stone);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      flex-shrink: 0;
+    }
+    .facet-row-value {
+      font-size: 13px;
+      font-weight: 500;
+      text-align: right;
+    }
+
+    /* ── Agent chat ── */
+    .chat-window {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      max-width: 720px;
+    }
+    .chat-toolbar {
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      color: var(--stone);
+    }
+    .chat-toolbar .status-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: #3D7A4A;
+    }
+    .chat-messages {
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .msg {
+      max-width: 92%;
+      line-height: 1.55;
+    }
+    .msg-user {
+      align-self: flex-end;
+      background: var(--soft-black);
+      color: var(--parchment);
+      padding: 10px 16px;
+      border-radius: 16px 16px 4px 16px;
+      font-size: 14px;
+    }
+    .msg-assistant {
+      align-self: flex-start;
+      font-size: 14px;
+    }
+    .msg-assistant h4 {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 12px 0 6px;
+    }
+    .msg-assistant h4:first-child { margin-top: 0; }
+
+    .restaurant-item {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .restaurant-item:last-child { border-bottom: none; }
+    .restaurant-name {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .restaurant-location {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--stone);
+    }
+    .restaurant-desc {
+      font-size: 13px;
+      color: var(--soft-black);
+      margin-top: 2px;
+    }
+
+    .chat-media-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-top: 12px;
+    }
+    .chat-thumb {
+      width: 100%;
+      aspect-ratio: 9/16;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--subtle);
+    }
+
+    .tool-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      background: var(--subtle);
+      border: 1px solid var(--border);
+      padding: 3px 10px;
+      border-radius: 999px;
+      color: var(--stone);
+      margin-bottom: 8px;
+    }
+    .tool-badge svg {
+      width: 12px; height: 12px;
+      stroke: var(--stone);
+      fill: none;
+    }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      display: flex;
+      gap: 48px;
+      padding: 40px 0 0;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat-number {
+      font-family: 'Crimson Pro', serif;
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--cinnamon);
+      line-height: 1;
+    }
+    .stat-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--stone);
+      margin-top: 4px;
+    }
+
+    /* ── How it works ── */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 768px) {
+      .steps { grid-template-columns: 1fr; }
+    }
+    .step {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .step-number {
+      font-family: 'Crimson Pro', serif;
+      font-size: 32px;
+      font-weight: 500;
+      color: var(--border-hover);
+      margin-bottom: 8px;
+    }
+    .step h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .step p {
+      font-size: 13px;
+      color: var(--stone);
+      line-height: 1.5;
+    }
+
+    /* ── Facet legend ── */
+    .facet-legend {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 12px;
+    }
+    @media (max-width: 768px) {
+      .facet-legend { grid-template-columns: repeat(2, 1fr); }
+    }
+    .facet-legend-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .facet-legend-name {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--stone);
+      margin-bottom: 4px;
+    }
+    .facet-legend-question {
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .facet-legend-examples {
+      font-size: 12px;
+      color: var(--stone);
+    }
+
+    /* ── Footer ── */
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      color: var(--stone);
+      font-size: 13px;
+    }
+
+    /* ── Arrow between panels ── */
+    .arrow-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .arrow-col svg {
+      width: 32px;
+      height: 32px;
+      stroke: var(--border-hover);
+      fill: none;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 32px; }
+      .section-title { font-size: 22px; }
+      .facet-grid { grid-template-columns: 1fr; }
+      .chat-media-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats-bar { gap: 32px; }
+      .facet-legend { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-badge">Early Preview</div>
+      <h1>Your saved TikToks, actually understood</h1>
+      <p>Attic analyzes every video you've saved across 8 dimensions &mdash; then lets you search, ask questions, and rediscover everything through an AI assistant.</p>
+    </div>
+  </header>
+
+  <!-- How It Works -->
+  <section>
+    <div class="container">
+      <div class="section-label">How It Works</div>
+      <div class="section-title">Three steps, zero effort</div>
+      <div class="section-desc">Export your data from TikTok or Instagram, upload it, and Attic does the rest.</div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Export your data</h3>
+          <p>Request your data export from TikTok or Instagram. You'll get a JSON file with all your saved, liked, and favorited content.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Attic processes everything</h3>
+          <p>We enrich each video with metadata, extract visual content, and classify it across 8 facets using multi-modal AI. Every piece of content gets deep analysis.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Search and ask anything</h3>
+          <p>Chat with your content library. "What restaurants do I have saved?" "Show me workout videos." "Find that recipe from last month." Attic finds it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8-Facet System -->
+  <section>
+    <div class="container">
+      <div class="section-label">Classification System</div>
+      <div class="section-title">8 dimensions of understanding</div>
+      <div class="section-desc">Each video is analyzed across 8 facets that capture what it's about, how it feels, why you saved it, and how it was made.</div>
+
+      <div class="facet-legend">
+        <div class="facet-legend-item">
+          <div class="facet-legend-name">Topic</div>
+          <div class="facet-legend-question">What is it about?</div>
+          <div class="facet-legend-examples">food, fitness, travel, career, art...</div>
+        </div>
+        <div class="facet-legend-item">
+          <div class="facet-legend-name">Affect</div>
+          <div class="facet-legend-question">How does it feel?</div>
+          <div class="facet-legend-examples">funny, inspiring, informative, sad...</div>
+        </div>
+        <div class="facet-legend-item">
+          <div class="facet-legend-name">Genre</div>
+          <div class="facet-legend-question">What format is it?</div>
+          <div class="facet-legend-examples">tutorial, review, vlog, recipe, edit...</div>
+        </div>
+        <div class="facet-legend-item">
+          <div class="facet-legend-name">Intent</div>
+          <div class="facet-legend-question">What's the creator's goal?</div>
+          <div class="facet-legend-examples">entertain, inform, inspire, sell...</div>
+        </div>
+        <div class="facet-legend-item">
+          <div class="facet-legend-name">Creator Role</div>
+          <div class="facet-legend-question">Who made it?</div>
+          <div class="facet-legend-examples">professional, influencer, brand, artist...</div>
+        </div>
+        <div class="facet-legend-item">
+          <div class="facet-legend-name">Viewer Orientation</div>
+          <div class="facet-legend-question">Why did you save it?</div>
+          <div class="facet-legend-examples">active learning, inspiration, shopping...</div>
+        </div>
+        <div class="facet-legend-item">
+          <div class="facet-legend-name">Presentation</div>
+          <div class="facet-legend-question">How is it presented?</div>
+          <div class="facet-legend-examples">talking head, cinematic, text overlay...</div>
+        </div>
+        <div class="facet-legend-item">
+          <div class="facet-legend-name">Provenance</div>
+          <div class="facet-legend-question">Is it original?</div>
+          <div class="facet-legend-examples">original, remix, clip, repost, duet...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before / After -->
+  <section>
+    <div class="container">
+      <div class="section-label">Before &amp; After</div>
+      <div class="section-title">From a hashtag soup to real understanding</div>
+      <div class="section-desc">This is what TikTok gives you vs. what Attic extracts. Same video, completely different level of insight.</div>
+
+      <div class="before-after">
+        <!-- Before -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="dot dot-red"></span>
+            What TikTok gives you
+          </div>
+          <div class="panel-body">
+            <div class="raw-export"><span class="key">caption:</span> <span class="val">"#tech #techtok #networking #fyp #xyz"</span>
+
+<span class="key">creator:</span> <span class="val">evisdrenova</span>
+<span class="key">duration:</span> <span class="val">171 seconds</span>
+<span class="key">hashtags:</span> <span class="val">["tech", "techtok", "networking", "fyp", "xyz"]</span>
+<span class="key">music:</span> <span class="val">"original sound"</span>
+<span class="key">collection:</span> <span class="val">(none)</span>
+
+<span class="key" style="color: var(--stone); font-style: italic;">...that's it. No description. No context.
+Five hashtags and a username.</span></div>
+          </div>
+        </div>
+
+        <!-- After -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="dot dot-green"></span>
+            What Attic understands
+          </div>
+          <div class="panel-body">
+            <div class="facet-grid">
+              <div class="facet">
+                <div class="facet-name">Topic</div>
+                <div class="facet-value">Career <span class="confidence">95%</span></div>
+                <div class="facet-sub">secondary: Technology</div>
+                <div class="micro-labels">
+                  <span class="micro-label">networking</span>
+                  <span class="micro-label">professional outreach</span>
+                  <span class="micro-label">LinkedIn tips</span>
+                  <span class="micro-label">cold emailing</span>
+                  <span class="micro-label">startup culture</span>
+                </div>
+              </div>
+              <div class="facet">
+                <div class="facet-name">Genre</div>
+                <div class="facet-value">Tutorial <span class="confidence">90%</span></div>
+                <div class="micro-labels">
+                  <span class="micro-label">advice</span>
+                  <span class="micro-label">tips and tricks</span>
+                  <span class="micro-label">professional dev</span>
+                </div>
+              </div>
+              <div class="facet">
+                <div class="facet-name">Affect</div>
+                <div class="facet-value">Informative</div>
+                <div class="facet-sub">dominant</div>
+              </div>
+              <div class="facet">
+                <div class="facet-name">Intent</div>
+                <div class="facet-value">Inform <span class="confidence">95%</span></div>
+              </div>
+              <div class="facet">
+                <div class="facet-name">Creator Role</div>
+                <div class="facet-value">Professional <span class="confidence">90%</span></div>
+              </div>
+              <div class="facet">
+                <div class="facet-name">Viewer Orientation</div>
+                <div class="facet-value">Active Learning <span class="confidence">90%</span></div>
+              </div>
+              <div class="facet">
+                <div class="facet-name">Presentation</div>
+                <div class="facet-value">Talking Head</div>
+              </div>
+              <div class="facet">
+                <div class="facet-name">Provenance</div>
+                <div class="facet-value">Original <span class="confidence">95%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Classified Examples -->
+  <section>
+    <div class="container">
+      <div class="section-label">Real Examples</div>
+      <div class="section-title">Every video, deeply analyzed</div>
+      <div class="section-desc">These are real classifications from real saved TikToks across 11 collections. Each one processed in under 10 seconds.</div>
+
+      <div class="video-grid">
+        <!-- Travel: Amsterdam cafes -->
+        <div class="video-card">
+          <div class="video-card-header">
+            <img class="video-thumb"
+                 src="https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/d12b17db49364a3aaf62a2fb9ffde185_1662629014~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=Zu1hl0fVxlJLBUPIo4msi5VXoPg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+                 alt="Amsterdam coffee" onerror="this.style.display='none'">
+            <div class="video-meta">
+              <div class="video-creator">@jacquiealexander_</div>
+              <div class="video-caption">the best coffee in amsterdam</div>
+              <span class="video-collection">Europe</span>
+            </div>
+          </div>
+          <div class="video-card-facets">
+            <div class="facet-row">
+              <span class="facet-row-name">Topic</span>
+              <span class="facet-row-value">Travel + Food</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Genre</span>
+              <span class="facet-row-value">Compilation</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Affect</span>
+              <span class="facet-row-value">Informative, Relaxing</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Saved for</span>
+              <span class="facet-row-value">Inspiration</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Style</span>
+              <span class="facet-row-value">Text overlay + Cinematic</span>
+            </div>
+            <div style="margin-top: 8px;">
+              <div class="micro-labels">
+                <span class="micro-label">amsterdam</span>
+                <span class="micro-label">cafe recommendations</span>
+                <span class="micro-label">coffee shops</span>
+                <span class="micro-label">travel guide</span>
+              </div>
+            </div>
+          </div>
+          <a class="video-link" href="https://www.tiktok.com/@jacquiealexander_/video/7140937195505863938" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Watch on TikTok</a>
+        </div>
+
+        <!-- Fitness: Leg day -->
+        <div class="video-card">
+          <div class="video-card-header">
+            <img class="video-thumb"
+                 src="https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oQfTyGAegAkvjFFIOHhIGW5CbQQjASLdMCCaEe~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=YJxCfxC%2BoauBNGszXCltfIHze9Y%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+                 alt="Leg workout" onerror="this.style.display='none'">
+            <div class="video-meta">
+              <div class="video-creator">@jpgcoaching</div>
+              <div class="video-caption">Do you think I missed any exercises and if so why?</div>
+              <span class="video-collection">Workout</span>
+            </div>
+          </div>
+          <div class="video-card-facets">
+            <div class="facet-row">
+              <span class="facet-row-name">Topic</span>
+              <span class="facet-row-value">Fitness</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Genre</span>
+              <span class="facet-row-value">Tutorial</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Affect</span>
+              <span class="facet-row-value">Informative, Funny, Inspiring</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Saved for</span>
+              <span class="facet-row-value">Active Learning</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Creator</span>
+              <span class="facet-row-value">Influencer</span>
+            </div>
+            <div style="margin-top: 8px;">
+              <div class="micro-labels">
+                <span class="micro-label">leg day</span>
+                <span class="micro-label">hypertrophy</span>
+                <span class="micro-label">workout routine</span>
+                <span class="micro-label">exercise science</span>
+              </div>
+            </div>
+          </div>
+          <a class="video-link" href="https://www.tiktok.com/@jpgcoaching/video/7350052611262811438" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Watch on TikTok</a>
+        </div>
+
+        <!-- Deep: Corecore edit -->
+        <div class="video-card">
+          <div class="video-card-header">
+            <img class="video-thumb"
+                 src="https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/5f415902425843879f073a1039c78f74~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=SoJhAXesMInB7g%2ByLhEKzXxnyxQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+                 alt="Corecore edit" onerror="this.style.display='none'">
+            <div class="video-meta">
+              <div class="video-creator">@sleightedhead</div>
+              <div class="video-caption">feel better. #corecore #nichetok</div>
+              <span class="video-collection">Deep</span>
+            </div>
+          </div>
+          <div class="video-card-facets">
+            <div class="facet-row">
+              <span class="facet-row-name">Topic</span>
+              <span class="facet-row-value">Movies/TV</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Genre</span>
+              <span class="facet-row-value">Edit</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Affect</span>
+              <span class="facet-row-value">Sad, Nostalgic, Shocking</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Saved for</span>
+              <span class="facet-row-value">Emotional Regulation</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Creator</span>
+              <span class="facet-row-value">Artist</span>
+            </div>
+            <div style="margin-top: 8px;">
+              <div class="micro-labels">
+                <span class="micro-label">corecore</span>
+                <span class="micro-label">existential dread</span>
+                <span class="micro-label">modern alienation</span>
+                <span class="micro-label">film montage</span>
+              </div>
+            </div>
+          </div>
+          <a class="video-link" href="https://www.tiktok.com/@sleightedhead/video/7176414425530764586" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Watch on TikTok</a>
+        </div>
+        <!-- Comedy: Real Bros of Simi Valley -->
+        <div class="video-card">
+          <div class="video-card-header">
+            <img class="video-thumb"
+                 src="https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/1cfec779244a42dab68aca4aeb5830cf_1691985052~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=TYOCBN8YW0OT3DbZiEYzwpULaQM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+                 alt="Real Bros" onerror="this.style.display='none'">
+            <div class="video-meta">
+              <div class="video-creator">@realbrosofsimivalley1</div>
+              <div class="video-caption">Yo Xan get ur boy dawg</div>
+              <span class="video-collection">Cool</span>
+            </div>
+          </div>
+          <div class="video-card-facets">
+            <div class="facet-row">
+              <span class="facet-row-name">Topic</span>
+              <span class="facet-row-value">Comedy + Movies/TV</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Genre</span>
+              <span class="facet-row-value">Skit</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Affect</span>
+              <span class="facet-row-value">Funny, Cringe, Shocking</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Saved for</span>
+              <span class="facet-row-value">Passive Consumption</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Provenance</span>
+              <span class="facet-row-value">Clip</span>
+            </div>
+            <div style="margin-top: 8px;">
+              <div class="micro-labels">
+                <span class="micro-label">mockumentary</span>
+                <span class="micro-label">bro culture parody</span>
+                <span class="micro-label">Jimmy Tatro</span>
+                <span class="micro-label">scripted comedy</span>
+              </div>
+            </div>
+          </div>
+          <a class="video-link" href="https://www.tiktok.com/@realbrosofsimivalley1/video/7267020246026816798" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Watch on TikTok</a>
+        </div>
+
+        <!-- Tech: ML tutorial -->
+        <div class="video-card">
+          <div class="video-card-header">
+            <img class="video-thumb"
+                 src="https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIpF8RfeAhQYLOATIhR4GTeGAIcRIwAuhiQeQb~tplv-tiktokx-dmt-logom:tos-useast5-i-0068-tx/oYAESEPIDwnaKCplgEfoA9AAFFGIAmDEE3eRrQ.image?dr=9634&x-expires=1774641600&x-signature=SY5hr3DzjsopaZS5mCj9Yo1S0ps%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+                 alt="ML tutorial" onerror="this.style.display='none'">
+            <div class="video-meta">
+              <div class="video-creator">@codetourtiktok</div>
+              <div class="video-caption">I teach you machine learning in 4 minutes</div>
+              <span class="video-collection">Cool</span>
+            </div>
+          </div>
+          <div class="video-card-facets">
+            <div class="facet-row">
+              <span class="facet-row-name">Topic</span>
+              <span class="facet-row-value">Technology + Education</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Genre</span>
+              <span class="facet-row-value">Tutorial</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Affect</span>
+              <span class="facet-row-value">Informative</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Creator</span>
+              <span class="facet-row-value">Educator</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Style</span>
+              <span class="facet-row-value">Talking Head + Screen Rec</span>
+            </div>
+            <div style="margin-top: 8px;">
+              <div class="micro-labels">
+                <span class="micro-label">machine learning</span>
+                <span class="micro-label">tensorflow</span>
+                <span class="micro-label">keras</span>
+                <span class="micro-label">neural networks</span>
+              </div>
+            </div>
+          </div>
+          <a class="video-link" href="https://www.tiktok.com/@codetourtiktok/video/7354561231413431595" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Watch on TikTok</a>
+        </div>
+
+        <!-- Dune edit -->
+        <div class="video-card">
+          <div class="video-card-header">
+            <img class="video-thumb"
+                 src="https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/8be16b89828348d5b708a158be61612e_1713817500~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=Bp2fPiPqk0e1k1jn4vgUIbtab7o%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+                 alt="Dune edit" onerror="this.style.display='none'">
+            <div class="video-meta">
+              <div class="video-creator">@_pukatz_</div>
+              <div class="video-caption">"LISAN Al-GAIB"</div>
+              <span class="video-collection">Cool</span>
+            </div>
+          </div>
+          <div class="video-card-facets">
+            <div class="facet-row">
+              <span class="facet-row-name">Topic</span>
+              <span class="facet-row-value">Movies/TV + Music</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Genre</span>
+              <span class="facet-row-value">Edit</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Affect</span>
+              <span class="facet-row-value">Inspiring, Satisfying</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Saved for</span>
+              <span class="facet-row-value">Passive Consumption</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Provenance</span>
+              <span class="facet-row-value">Remix</span>
+            </div>
+            <div style="margin-top: 8px;">
+              <div class="micro-labels">
+                <span class="micro-label">Dune: Part Two</span>
+                <span class="micro-label">Paul Atreides</span>
+                <span class="micro-label">Kendrick Lamar</span>
+                <span class="micro-label">cinematic edit</span>
+              </div>
+            </div>
+          </div>
+          <a class="video-link" href="https://www.tiktok.com/@_pukatz_/video/7360789982048668974" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Watch on TikTok</a>
+        </div>
+
+        <!-- Music: Nujabes reaction -->
+        <div class="video-card">
+          <div class="video-card-header">
+            <img class="video-thumb"
+                 src="https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/o8BEMOeHE41ESJTBvP1DfD0RhsAFBpzgLospID~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=bR2S7QyNHIQEaE5KWlPV8LiQqVo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+                 alt="Nujabes reaction" onerror="this.style.display='none'">
+            <div class="video-meta">
+              <div class="video-creator">@shepgold</div>
+              <div class="video-caption">Nujabes blind reaction</div>
+              <span class="video-collection">Music</span>
+            </div>
+          </div>
+          <div class="video-card-facets">
+            <div class="facet-row">
+              <span class="facet-row-name">Topic</span>
+              <span class="facet-row-value">Music + Art</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Genre</span>
+              <span class="facet-row-value">Reaction</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Affect</span>
+              <span class="facet-row-value">Relaxing, Informative, Nostalgic</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Saved for</span>
+              <span class="facet-row-value">Passive Consumption</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Creator</span>
+              <span class="facet-row-value">Influencer</span>
+            </div>
+            <div style="margin-top: 8px;">
+              <div class="micro-labels">
+                <span class="micro-label">lo-fi hip hop</span>
+                <span class="micro-label">Nujabes</span>
+                <span class="micro-label">jazz hop</span>
+                <span class="micro-label">blind reaction</span>
+              </div>
+            </div>
+          </div>
+          <a class="video-link" href="https://www.tiktok.com/@shepgold/video/7588345892915121422" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Watch on TikTok</a>
+        </div>
+
+        <!-- FMA anime edit -->
+        <div class="video-card">
+          <div class="video-card-header">
+            <img class="video-thumb"
+                 src="https://p16-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/o0AF3gDFFxPzGrYvmR7GABfE46CIIkCfgpKHYE~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=q8ixr8X55k49%2FuKzLavW456DXcY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+                 alt="FMA edit" onerror="this.style.display='none'">
+            <div class="video-meta">
+              <div class="video-creator">@_11even_</div>
+              <div class="video-caption">Scar so tuff #fullmetalalchemist</div>
+              <span class="video-collection">Edits</span>
+            </div>
+          </div>
+          <div class="video-card-facets">
+            <div class="facet-row">
+              <span class="facet-row-name">Topic</span>
+              <span class="facet-row-value">Movies/TV + Art</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Genre</span>
+              <span class="facet-row-value">Edit (AMV)</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Affect</span>
+              <span class="facet-row-value">Satisfying, Nostalgic, Shocking</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Saved for</span>
+              <span class="facet-row-value">Passive Consumption</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Provenance</span>
+              <span class="facet-row-value">Remix</span>
+            </div>
+            <div style="margin-top: 8px;">
+              <div class="micro-labels">
+                <span class="micro-label">anime</span>
+                <span class="micro-label">Fullmetal Alchemist</span>
+                <span class="micro-label">Scar</span>
+                <span class="micro-label">AMV</span>
+              </div>
+            </div>
+          </div>
+          <a class="video-link" href="https://www.tiktok.com/@_11even_/video/7572994064656698646" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Watch on TikTok</a>
+        </div>
+
+        <!-- Food: Sushi Chicago -->
+        <div class="video-card">
+          <div class="video-card-header">
+            <img class="video-thumb"
+                 src="https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ogNH93GdLA33ufwnAjWwAEdII7aQgkAeAPHyeI~tplv-tiktokx-dmt-logom:tos-useast5-i-0068-tx/oEAAfvIIEHAP3JuefPLkcqD7R790oIAaGEHjAW.image?dr=9634&x-expires=1774641600&x-signature=Bn9wlK1Ckd8ZaFtO2WWD1v9riFw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+                 alt="Chicago sushi" onerror="this.style.display='none'">
+            <div class="video-meta">
+              <div class="video-creator">@isabellebanez</div>
+              <div class="video-caption">I've been going here since I was young. Their platters are perfect for birthdays</div>
+              <span class="video-collection">Food</span>
+            </div>
+          </div>
+          <div class="video-card-facets">
+            <div class="facet-row">
+              <span class="facet-row-name">Topic</span>
+              <span class="facet-row-value">Food + Travel</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Genre</span>
+              <span class="facet-row-value">Review</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Affect</span>
+              <span class="facet-row-value">Informative, Satisfying</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Saved for</span>
+              <span class="facet-row-value">Shopping Research</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Creator</span>
+              <span class="facet-row-value">Influencer</span>
+            </div>
+            <div style="margin-top: 8px;">
+              <div class="micro-labels">
+                <span class="micro-label">sushi</span>
+                <span class="micro-label">chicago restaurants</span>
+                <span class="micro-label">budget eats</span>
+                <span class="micro-label">hidden gems</span>
+              </div>
+            </div>
+          </div>
+          <a class="video-link" href="https://www.tiktok.com/@isabellebanez/video/7483926672128118062" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Watch on TikTok</a>
+        </div>
+
+        <!-- Cooking: Rigatoni recipe -->
+        <div class="video-card">
+          <div class="video-card-header">
+            <img class="video-thumb"
+                 src="https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-0037-euttp/oQAiAfyxBhAziA1C38i1m1EWnBHIIGOo39IiqA~tplv-tiktokx-dmt-logom:tos-useast2a-i-0068-euttp/oEWiE1F6AsPuhmo8DADAIVPeRgnQ1CAEANE9fh.image?dr=9634&x-expires=1774641600&x-signature=3l%2FX%2BPUZOEjWkbo%2FlSa3uT8xb5I%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+                 alt="Rigatoni recipe" onerror="this.style.display='none'">
+            <div class="video-meta">
+              <div class="video-creator">@whatinthechef</div>
+              <div class="video-caption">One Pot Spicy Creamy Rigatoni Pasta. Done in 30 minutes</div>
+              <span class="video-collection">Cooking</span>
+            </div>
+          </div>
+          <div class="video-card-facets">
+            <div class="facet-row">
+              <span class="facet-row-name">Topic</span>
+              <span class="facet-row-value">Food</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Genre</span>
+              <span class="facet-row-value">Recipe</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Affect</span>
+              <span class="facet-row-value">Informative, Funny, Satisfying</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Saved for</span>
+              <span class="facet-row-value">Active Learning</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Creator</span>
+              <span class="facet-row-value">Influencer</span>
+            </div>
+            <div style="margin-top: 8px;">
+              <div class="micro-labels">
+                <span class="micro-label">pasta recipe</span>
+                <span class="micro-label">one-pot meal</span>
+                <span class="micro-label">rigatoni</span>
+                <span class="micro-label">home cooking</span>
+              </div>
+            </div>
+          </div>
+          <a class="video-link" href="https://www.tiktok.com/@whatinthechef/video/7439055335580519712" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Watch on TikTok</a>
+        </div>
+
+        <!-- Sports: Basketball -->
+        <div class="video-card">
+          <div class="video-card-header">
+            <img class="video-thumb"
+                 src="https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/o8pPU03SMBMwBIXDiI4B32Z2BEEUoghOpi7AH~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=Q%2FSdYwVqLxoHda%2FgXlB4O5vF9r0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+                 alt="Basketball" onerror="this.style.display='none'">
+            <div class="video-meta">
+              <div class="video-creator">@christianyawpp</div>
+              <div class="video-caption">Omg #basketball #aau #hooper</div>
+              <span class="video-collection">Hoops</span>
+            </div>
+          </div>
+          <div class="video-card-facets">
+            <div class="facet-row">
+              <span class="facet-row-name">Topic</span>
+              <span class="facet-row-value">Sports</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Genre</span>
+              <span class="facet-row-value">Edit (Highlight)</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Affect</span>
+              <span class="facet-row-value">Satisfying, Inspiring</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Saved for</span>
+              <span class="facet-row-value">Passive Consumption</span>
+            </div>
+            <div class="facet-row">
+              <span class="facet-row-name">Intent</span>
+              <span class="facet-row-value">Entertain</span>
+            </div>
+            <div style="margin-top: 8px;">
+              <div class="micro-labels">
+                <span class="micro-label">basketball</span>
+                <span class="micro-label">ball handling</span>
+                <span class="micro-label">AAU basketball</span>
+                <span class="micro-label">sports highlights</span>
+              </div>
+            </div>
+          </div>
+          <a class="video-link" href="https://www.tiktok.com/@christianyawpp/video/7422452426055109934" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>Watch on TikTok</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agent Chat Demo -->
+  <section>
+    <div class="container">
+      <div class="section-label">AI Assistant</div>
+      <div class="section-title">Ask anything about your content</div>
+      <div class="section-desc">Attic's agent searches your classified library and gives you structured, contextual answers with direct links to your saved content.</div>
+
+      <div class="chat-window">
+        <div class="chat-toolbar">
+          <span class="status-dot"></span>
+          Attic Agent &mdash; Claude Haiku 4.5
+        </div>
+        <div class="chat-messages">
+          <div class="msg msg-user">what restaurants do i have saved?</div>
+          <div class="msg msg-assistant">
+            <div class="tool-badge">
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              query_items
+            </div>
+
+            <p>I found <strong>8 restaurant-related items</strong> in your saved TikToks:</p>
+
+            <h4>Restaurant Recommendations</h4>
+
+            <div class="restaurant-item">
+              <div class="restaurant-name">Lardon</div>
+              <div class="restaurant-location">Chicago (Logan Square)</div>
+              <div class="restaurant-desc">Michelin Guide 2026 recognition. Sandwiches with house-made meats, serious technique.</div>
+            </div>
+
+            <div class="restaurant-item">
+              <div class="restaurant-name">Falafel & Grill</div>
+              <div class="restaurant-location">Chicago</div>
+              <div class="restaurant-desc">Mediterranean/Lebanese. Falafel, kabobs, hummus. Vibrant food presentation.</div>
+            </div>
+
+            <div class="restaurant-item">
+              <div class="restaurant-name">Lawrence Fish Market</div>
+              <div class="restaurant-location">Chicago (Albany Park)</div>
+              <div class="restaurant-desc">Affordable sushi takeout platters. Cash-only, Michelin chef-approved.</div>
+            </div>
+
+            <div class="restaurant-item">
+              <div class="restaurant-name">RH Restaurant</div>
+              <div class="restaurant-location">Indianapolis</div>
+              <div class="restaurant-desc">Fine dining. Grand estate-like setting, elegant interior, champagne service.</div>
+            </div>
+
+            <p style="margin-top: 12px; color: var(--stone); font-size: 13px;">Three of your four saved restaurants are in Chicago, with a focus on quality ingredients and unique cuisines.</p>
+
+            <div class="chat-media-grid">
+              <img class="chat-thumb"
+                   src="https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oAIh0D7gpqEJnt0KBnFEAYD6EiARNU1IEefWVo~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=GHx1XfzHrh%2F7GN3hBIJkuCNWJyQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+                   alt="Lardon" onerror="this.style.background='var(--subtle)'">
+              <img class="chat-thumb"
+                   src="https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/osJEAzF7lEDoG1BAD5XgfUEensIMRMADS3NDMB~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=ApO%2FhzUAYpQGHnWzZp%2BgFiedvJc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+                   alt="Falafel & Grill" onerror="this.style.background='var(--subtle)'">
+              <img class="chat-thumb"
+                   src="https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ogNH93GdLA33ufwnAjWwAEdII7aQgkAeAPHyeI~tplv-tiktokx-dmt-logom:tos-useast5-i-0068-tx/oEAAfvIIEHAP3JuefPLkcqD7R790oIAaGEHjAW.image?dr=9634&x-expires=1774641600&x-signature=Bn9wlK1Ckd8ZaFtO2WWD1v9riFw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+                   alt="Lawrence Fish Market" onerror="this.style.background='var(--subtle)'">
+              <img class="chat-thumb"
+                   src="https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ogQGZRCqVe1fRFw4z7OOFVHAIqI4jBNIGAeLGe~tplv-tiktokx-origin.image?dr=9636&x-expires=1774641600&x-signature=EaBgupKExqqY8Ez%2BVMjBmtBla4k%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+                   alt="RH Restaurant" onerror="this.style.background='var(--subtle)'">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-number">8</div>
+          <div class="stat-label">Facets per video</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">&lt;10s</div>
+          <div class="stat-label">Classification time</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">$0.002</div>
+          <div class="stat-label">Cost per video</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">7.4s</div>
+          <div class="stat-label">Agent response</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p style="font-family: 'Crimson Pro', serif; font-size: 20px; color: var(--ink); margin-bottom: 8px;">Attic</p>
+      <p>Your content, finally organized.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
